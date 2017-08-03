@@ -1,0 +1,6 @@
+(setq foo
+      "class OrderedDict1(dict):
+    \"\"\"
+    This implementation of a dictionary keeps track of the order
+    in which keys were inserted.
+    \"\"\"")
