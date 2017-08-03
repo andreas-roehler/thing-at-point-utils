@@ -6,18 +6,6 @@ alpha-numerical chars below and around cursor as a
 string. `ar-bounds-of-alnum-atpt' returns the
 borders of that string as a list and so on.
 
-Here an extract of my settings making use of it:
-
-(global-set-key [(super \()] 'ar-parentize-region-atpt)
-(global-set-key [(super \/)] 'ar-slash-region-atpt)
-(global-set-key [(super \<)] 'ar-lesserangle-region-atpt)
-(global-set-key [(super \>)] 'ar-greaterangle-region-atpt)
-(global-set-key [(super \[)] 'ar-bracket-region-atpt)
-(global-set-key [(super \\)] 'ar-backslash-region-atpt)
-(global-set-key [(super \{)] 'ar-brace-region-atpt)
-
-Beside of <super>, the key already tells what to pick.
-
 `ar-doublequoted-atpt' will return the string at point,
 copied into the kill-ring, enabling yanking it and a
 lot of further actions.
