@@ -443,7 +443,7 @@
     (ar-list-triplequotedq-atpt)
     (should (looking-back "\"\"\""))))
 
-(ert-deftest ar-list-trim-atpt-brace-test ()
+(ert-deftest ar-trim-bracelist-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -453,10 +453,10 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-list-trim-atpt)
+    (ar-trim-list-atpt)
     (should (eq (char-after) 10))))
 
-(ert-deftest ar-list-left-trim-atpt-brace-test ()
+(ert-deftest ar-trim-list-left-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -466,7 +466,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-list-left-trim-atpt)
+    (ar-trim-list-left-atpt)
     (should (eq (char-after) 10))))
 
 

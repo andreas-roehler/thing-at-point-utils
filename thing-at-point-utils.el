@@ -1299,6 +1299,81 @@ See doku from `sort-subr', for details.
   (ar-th-backslashparen 'list arg arg))
 
 ;; ar-thing-at-point-utils-rest-unpaired-delimit ar-atpt-data-forms-aktiv-raw (list (list 'list))): end
+(defun ar-backslash-list-atpt (&optional arg)
+  "Backslash LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 92 92 arg arg))
+
+(defun ar-backtick-list-atpt (&optional arg)
+  "Backtick LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 96 96 arg arg))
+
+(defun ar-colon-list-atpt (&optional arg)
+  "Colon LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 58 58 arg arg))
+
+(defun ar-cross-list-atpt (&optional arg)
+  "Cross LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 43 43 arg arg))
+
+(defun ar-dollar-list-atpt (&optional arg)
+  "Dollar LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 36 36 arg arg))
+
+(defun ar-doublequote-list-atpt (&optional arg)
+  "Doublequote LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 34 34 arg arg))
+
+(defun ar-equalize-list-atpt (&optional arg)
+  "Equalize LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 61 61 arg arg))
+
+(defun ar-hash-list-atpt (&optional arg)
+  "Hash LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 35 35 arg arg))
+
+(defun ar-hyphen-list-atpt (&optional arg)
+  "Hyphen LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 45 45 arg arg))
+
+(defun ar-singlequote-list-atpt (&optional arg)
+  "Singlequote LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 39 39 arg arg))
+
+(defun ar-slash-list-atpt (&optional arg)
+  "Slash LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 47 47 arg arg))
+
+(defun ar-star-list-atpt (&optional arg)
+  "Star LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 42 42 arg arg))
+
+(defun ar-tild-list-atpt (&optional arg)
+  "Tild LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 126 126 arg arg))
+
+(defun ar-underscore-list-atpt (&optional arg)
+  "Underscore LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 95 95 arg arg))
+
+(defun ar-whitespace-list-atpt (&optional arg)
+  "Whitespace LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list 32 32 arg arg))
+
 ;; ar-thing-at-point-utils-rest-unpaired-delimit ar-atpt-delimlist-unpaired  ar-atpt-rest-list: start
 (defun ar-backslash-greateranglednested-atpt (&optional arg)
   "Backslash GREATERANGLEDNESTED at point."
@@ -15458,26 +15533,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'braced no-delimiters (interactive-p)))
 
-;; (defalias 'ar-braced-trim-atpt 'ar-trim-braced-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-braced-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'braced t t))
 
-;; (defalias 'ar-trim-left-braced-atpt 'ar-trim-braced-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-braced-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'braced t nil))
-
-;; (defalias 'ar-trim-right-braced-atpt 'ar-trim-braced-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-braced-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'braced nil t))
 
 ;;;###autoload
 (defun ar-underscore-braced-atpt (&optional no-delimiters)
@@ -15767,26 +15823,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'bracketed no-delimiters (interactive-p)))
 
-;; (defalias 'ar-bracketed-trim-atpt 'ar-trim-bracketed-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-bracketed-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'bracketed t t))
 
-;; (defalias 'ar-trim-left-bracketed-atpt 'ar-trim-bracketed-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-bracketed-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'bracketed t nil))
-
-;; (defalias 'ar-trim-right-bracketed-atpt 'ar-trim-bracketed-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-bracketed-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'bracketed nil t))
 
 ;;;###autoload
 (defun ar-underscore-bracketed-atpt (&optional no-delimiters)
@@ -16076,26 +16113,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'lesserangled no-delimiters (interactive-p)))
 
-;; (defalias 'ar-lesserangled-trim-atpt 'ar-trim-lesserangled-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-lesserangled-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'lesserangled t t))
 
-;; (defalias 'ar-trim-left-lesserangled-atpt 'ar-trim-lesserangled-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-lesserangled-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'lesserangled t nil))
-
-;; (defalias 'ar-trim-right-lesserangled-atpt 'ar-trim-lesserangled-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-lesserangled-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'lesserangled nil t))
 
 ;;;###autoload
 (defun ar-underscore-lesserangled-atpt (&optional no-delimiters)
@@ -16385,26 +16403,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'greaterangled no-delimiters (interactive-p)))
 
-;; (defalias 'ar-greaterangled-trim-atpt 'ar-trim-greaterangled-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-greaterangled-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'greaterangled t t))
 
-;; (defalias 'ar-trim-left-greaterangled-atpt 'ar-trim-greaterangled-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-greaterangled-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'greaterangled t nil))
-
-;; (defalias 'ar-trim-right-greaterangled-atpt 'ar-trim-greaterangled-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-greaterangled-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'greaterangled nil t))
 
 ;;;###autoload
 (defun ar-underscore-greaterangled-atpt (&optional no-delimiters)
@@ -16694,26 +16693,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'leftrightsinglequoted no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequoted-trim-atpt 'ar-trim-leftrightsinglequoted-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-leftrightsinglequoted-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'leftrightsinglequoted t t))
 
-;; (defalias 'ar-trim-left-leftrightsinglequoted-atpt 'ar-trim-leftrightsinglequoted-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-leftrightsinglequoted-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'leftrightsinglequoted t nil))
-
-;; (defalias 'ar-trim-right-leftrightsinglequoted-atpt 'ar-trim-leftrightsinglequoted-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-leftrightsinglequoted-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'leftrightsinglequoted nil t))
 
 ;;;###autoload
 (defun ar-underscore-leftrightsinglequoted-atpt (&optional no-delimiters)
@@ -17003,26 +16983,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'parentized no-delimiters (interactive-p)))
 
-;; (defalias 'ar-parentized-trim-atpt 'ar-trim-parentized-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-parentized-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'parentized t t))
 
-;; (defalias 'ar-trim-left-parentized-atpt 'ar-trim-parentized-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-parentized-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'parentized t nil))
-
-;; (defalias 'ar-trim-right-parentized-atpt 'ar-trim-parentized-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-parentized-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'parentized nil t))
 
 ;;;###autoload
 (defun ar-underscore-parentized-atpt (&optional no-delimiters)
@@ -17316,26 +17277,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'greateranglednested no-delimiters (interactive-p)))
 
-;; (defalias 'ar-greateranglednested-trim-atpt 'ar-trim-greateranglednested-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-greateranglednested-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'greateranglednested t t))
 
-;; (defalias 'ar-trim-left-greateranglednested-atpt 'ar-trim-greateranglednested-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-greateranglednested-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'greateranglednested t nil))
-
-;; (defalias 'ar-trim-right-greateranglednested-atpt 'ar-trim-greateranglednested-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-greateranglednested-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'greateranglednested nil t))
 
 ;;;###autoload
 (defun ar-underscore-greateranglednested-atpt (&optional no-delimiters)
@@ -17625,26 +17567,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'lesseranglednested no-delimiters (interactive-p)))
 
-;; (defalias 'ar-lesseranglednested-trim-atpt 'ar-trim-lesseranglednested-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-lesseranglednested-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'lesseranglednested t t))
 
-;; (defalias 'ar-trim-left-lesseranglednested-atpt 'ar-trim-lesseranglednested-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-lesseranglednested-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'lesseranglednested t nil))
-
-;; (defalias 'ar-trim-right-lesseranglednested-atpt 'ar-trim-lesseranglednested-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-lesseranglednested-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'lesseranglednested nil t))
 
 ;;;###autoload
 (defun ar-underscore-lesseranglednested-atpt (&optional no-delimiters)
@@ -17934,26 +17857,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'buffer no-delimiters (interactive-p)))
 
-;; (defalias 'ar-buffer-trim-atpt 'ar-trim-buffer-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-buffer-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'buffer t t))
 
-;; (defalias 'ar-trim-left-buffer-atpt 'ar-trim-buffer-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-buffer-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'buffer t nil))
-
-;; (defalias 'ar-trim-right-buffer-atpt 'ar-trim-buffer-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-buffer-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'buffer nil t))
 
 ;;;###autoload
 (defun ar-underscore-buffer-atpt (&optional no-delimiters)
@@ -18243,26 +18147,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'comment no-delimiters (interactive-p)))
 
-;; (defalias 'ar-comment-trim-atpt 'ar-trim-comment-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-comment-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'comment t t))
 
-;; (defalias 'ar-trim-left-comment-atpt 'ar-trim-comment-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-comment-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'comment t nil))
-
-;; (defalias 'ar-trim-right-comment-atpt 'ar-trim-comment-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-comment-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'comment nil t))
 
 ;;;###autoload
 (defun ar-underscore-comment-atpt (&optional no-delimiters)
@@ -18552,26 +18437,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'csv no-delimiters (interactive-p)))
 
-;; (defalias 'ar-csv-trim-atpt 'ar-trim-csv-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-csv-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'csv t t))
 
-;; (defalias 'ar-trim-left-csv-atpt 'ar-trim-csv-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-csv-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'csv t nil))
-
-;; (defalias 'ar-trim-right-csv-atpt 'ar-trim-csv-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-csv-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'csv nil t))
 
 ;;;###autoload
 (defun ar-underscore-csv-atpt (&optional no-delimiters)
@@ -18861,26 +18727,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'date no-delimiters (interactive-p)))
 
-;; (defalias 'ar-date-trim-atpt 'ar-trim-date-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-date-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'date t t))
 
-;; (defalias 'ar-trim-left-date-atpt 'ar-trim-date-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-date-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'date t nil))
-
-;; (defalias 'ar-trim-right-date-atpt 'ar-trim-date-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-date-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'date nil t))
 
 ;;;###autoload
 (defun ar-underscore-date-atpt (&optional no-delimiters)
@@ -19170,26 +19017,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'delimited no-delimiters (interactive-p)))
 
-;; (defalias 'ar-delimited-trim-atpt 'ar-trim-delimited-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-delimited-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'delimited t t))
 
-;; (defalias 'ar-trim-left-delimited-atpt 'ar-trim-delimited-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-delimited-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'delimited t nil))
-
-;; (defalias 'ar-trim-right-delimited-atpt 'ar-trim-delimited-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-delimited-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'delimited nil t))
 
 ;;;###autoload
 (defun ar-underscore-delimited-atpt (&optional no-delimiters)
@@ -19479,26 +19307,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'email no-delimiters (interactive-p)))
 
-;; (defalias 'ar-email-trim-atpt 'ar-trim-email-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-email-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'email t t))
 
-;; (defalias 'ar-trim-left-email-atpt 'ar-trim-email-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-email-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'email t nil))
-
-;; (defalias 'ar-trim-right-email-atpt 'ar-trim-email-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-email-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'email nil t))
 
 ;;;###autoload
 (defun ar-underscore-email-atpt (&optional no-delimiters)
@@ -19788,26 +19597,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'filename no-delimiters (interactive-p)))
 
-;; (defalias 'ar-filename-trim-atpt 'ar-trim-filename-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-filename-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'filename t t))
 
-;; (defalias 'ar-trim-left-filename-atpt 'ar-trim-filename-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-filename-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'filename t nil))
-
-;; (defalias 'ar-trim-right-filename-atpt 'ar-trim-filename-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-filename-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'filename nil t))
 
 ;;;###autoload
 (defun ar-underscore-filename-atpt (&optional no-delimiters)
@@ -20097,26 +19887,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'filenamenondirectory no-delimiters (interactive-p)))
 
-;; (defalias 'ar-filenamenondirectory-trim-atpt 'ar-trim-filenamenondirectory-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-filenamenondirectory-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'filenamenondirectory t t))
 
-;; (defalias 'ar-trim-left-filenamenondirectory-atpt 'ar-trim-filenamenondirectory-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-filenamenondirectory-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'filenamenondirectory t nil))
-
-;; (defalias 'ar-trim-right-filenamenondirectory-atpt 'ar-trim-filenamenondirectory-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-filenamenondirectory-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'filenamenondirectory nil t))
 
 ;;;###autoload
 (defun ar-underscore-filenamenondirectory-atpt (&optional no-delimiters)
@@ -20406,26 +20177,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'float no-delimiters (interactive-p)))
 
-;; (defalias 'ar-float-trim-atpt 'ar-trim-float-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-float-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'float t t))
 
-;; (defalias 'ar-trim-left-float-atpt 'ar-trim-float-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-float-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'float t nil))
-
-;; (defalias 'ar-trim-right-float-atpt 'ar-trim-float-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-float-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'float nil t))
 
 ;;;###autoload
 (defun ar-underscore-float-atpt (&optional no-delimiters)
@@ -20715,26 +20467,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'function no-delimiters (interactive-p)))
 
-;; (defalias 'ar-function-trim-atpt 'ar-trim-function-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-function-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'function t t))
 
-;; (defalias 'ar-trim-left-function-atpt 'ar-trim-function-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-function-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'function t nil))
-
-;; (defalias 'ar-trim-right-function-atpt 'ar-trim-function-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-function-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'function nil t))
 
 ;;;###autoload
 (defun ar-underscore-function-atpt (&optional no-delimiters)
@@ -21024,26 +20757,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'ip no-delimiters (interactive-p)))
 
-;; (defalias 'ar-ip-trim-atpt 'ar-trim-ip-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-ip-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'ip t t))
 
-;; (defalias 'ar-trim-left-ip-atpt 'ar-trim-ip-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-ip-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'ip t nil))
-
-;; (defalias 'ar-trim-right-ip-atpt 'ar-trim-ip-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-ip-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'ip nil t))
 
 ;;;###autoload
 (defun ar-underscore-ip-atpt (&optional no-delimiters)
@@ -21333,26 +21047,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'isbn no-delimiters (interactive-p)))
 
-;; (defalias 'ar-isbn-trim-atpt 'ar-trim-isbn-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-isbn-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'isbn t t))
 
-;; (defalias 'ar-trim-left-isbn-atpt 'ar-trim-isbn-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-isbn-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'isbn t nil))
-
-;; (defalias 'ar-trim-right-isbn-atpt 'ar-trim-isbn-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-isbn-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'isbn nil t))
 
 ;;;###autoload
 (defun ar-underscore-isbn-atpt (&optional no-delimiters)
@@ -21642,26 +21337,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'line no-delimiters (interactive-p)))
 
-;; (defalias 'ar-line-trim-atpt 'ar-trim-line-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-line-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'line t t))
 
-;; (defalias 'ar-trim-left-line-atpt 'ar-trim-line-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-line-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'line t nil))
-
-;; (defalias 'ar-trim-right-line-atpt 'ar-trim-line-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-line-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'line nil t))
 
 ;;;###autoload
 (defun ar-underscore-line-atpt (&optional no-delimiters)
@@ -21951,26 +21627,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'list no-delimiters (interactive-p)))
 
-;; (defalias 'ar-list-trim-atpt 'ar-trim-list-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-list-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'list t t))
 
-;; (defalias 'ar-trim-left-list-atpt 'ar-trim-list-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-list-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'list t nil))
-
-;; (defalias 'ar-trim-right-list-atpt 'ar-trim-list-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-list-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'list nil t))
 
 ;;;###autoload
 (defun ar-underscore-list-atpt (&optional no-delimiters)
@@ -22260,26 +21917,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'name no-delimiters (interactive-p)))
 
-;; (defalias 'ar-name-trim-atpt 'ar-trim-name-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-name-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'name t t))
 
-;; (defalias 'ar-trim-left-name-atpt 'ar-trim-name-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-name-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'name t nil))
-
-;; (defalias 'ar-trim-right-name-atpt 'ar-trim-name-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-name-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'name nil t))
 
 ;;;###autoload
 (defun ar-underscore-name-atpt (&optional no-delimiters)
@@ -22569,26 +22207,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'number no-delimiters (interactive-p)))
 
-;; (defalias 'ar-number-trim-atpt 'ar-trim-number-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-number-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'number t t))
 
-;; (defalias 'ar-trim-left-number-atpt 'ar-trim-number-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-number-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'number t nil))
-
-;; (defalias 'ar-trim-right-number-atpt 'ar-trim-number-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-number-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'number nil t))
 
 ;;;###autoload
 (defun ar-underscore-number-atpt (&optional no-delimiters)
@@ -22878,26 +22497,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'page no-delimiters (interactive-p)))
 
-;; (defalias 'ar-page-trim-atpt 'ar-trim-page-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-page-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'page t t))
 
-;; (defalias 'ar-trim-left-page-atpt 'ar-trim-page-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-page-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'page t nil))
-
-;; (defalias 'ar-trim-right-page-atpt 'ar-trim-page-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-page-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'page nil t))
 
 ;;;###autoload
 (defun ar-underscore-page-atpt (&optional no-delimiters)
@@ -23187,26 +22787,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'paragraph no-delimiters (interactive-p)))
 
-;; (defalias 'ar-paragraph-trim-atpt 'ar-trim-paragraph-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-paragraph-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'paragraph t t))
 
-;; (defalias 'ar-trim-left-paragraph-atpt 'ar-trim-paragraph-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-paragraph-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'paragraph t nil))
-
-;; (defalias 'ar-trim-right-paragraph-atpt 'ar-trim-paragraph-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-paragraph-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'paragraph nil t))
 
 ;;;###autoload
 (defun ar-underscore-paragraph-atpt (&optional no-delimiters)
@@ -23496,26 +23077,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'phone no-delimiters (interactive-p)))
 
-;; (defalias 'ar-phone-trim-atpt 'ar-trim-phone-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-phone-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'phone t t))
 
-;; (defalias 'ar-trim-left-phone-atpt 'ar-trim-phone-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-phone-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'phone t nil))
-
-;; (defalias 'ar-trim-right-phone-atpt 'ar-trim-phone-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-phone-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'phone nil t))
 
 ;;;###autoload
 (defun ar-underscore-phone-atpt (&optional no-delimiters)
@@ -23805,26 +23367,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'region no-delimiters (interactive-p)))
 
-;; (defalias 'ar-region-trim-atpt 'ar-trim-region-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-region-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'region t t))
 
-;; (defalias 'ar-trim-left-region-atpt 'ar-trim-region-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-region-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'region t nil))
-
-;; (defalias 'ar-trim-right-region-atpt 'ar-trim-region-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-region-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'region nil t))
 
 ;;;###autoload
 (defun ar-underscore-region-atpt (&optional no-delimiters)
@@ -24114,26 +23657,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'sentence no-delimiters (interactive-p)))
 
-;; (defalias 'ar-sentence-trim-atpt 'ar-trim-sentence-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-sentence-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'sentence t t))
 
-;; (defalias 'ar-trim-left-sentence-atpt 'ar-trim-sentence-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-sentence-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'sentence t nil))
-
-;; (defalias 'ar-trim-right-sentence-atpt 'ar-trim-sentence-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-sentence-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'sentence nil t))
 
 ;;;###autoload
 (defun ar-underscore-sentence-atpt (&optional no-delimiters)
@@ -24423,26 +23947,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'sexp no-delimiters (interactive-p)))
 
-;; (defalias 'ar-sexp-trim-atpt 'ar-trim-sexp-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-sexp-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'sexp t t))
 
-;; (defalias 'ar-trim-left-sexp-atpt 'ar-trim-sexp-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-sexp-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'sexp t nil))
-
-;; (defalias 'ar-trim-right-sexp-atpt 'ar-trim-sexp-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-sexp-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'sexp nil t))
 
 ;;;###autoload
 (defun ar-underscore-sexp-atpt (&optional no-delimiters)
@@ -24732,26 +24237,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'string no-delimiters (interactive-p)))
 
-;; (defalias 'ar-string-trim-atpt 'ar-trim-string-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-string-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'string t t))
 
-;; (defalias 'ar-trim-left-string-atpt 'ar-trim-string-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-string-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'string t nil))
-
-;; (defalias 'ar-trim-right-string-atpt 'ar-trim-string-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-string-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'string nil t))
 
 ;;;###autoload
 (defun ar-underscore-string-atpt (&optional no-delimiters)
@@ -25041,26 +24527,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'shstruct no-delimiters (interactive-p)))
 
-;; (defalias 'ar-shstruct-trim-atpt 'ar-trim-shstruct-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-shstruct-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'shstruct t t))
 
-;; (defalias 'ar-trim-left-shstruct-atpt 'ar-trim-shstruct-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-shstruct-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'shstruct t nil))
-
-;; (defalias 'ar-trim-right-shstruct-atpt 'ar-trim-shstruct-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-shstruct-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'shstruct nil t))
 
 ;;;###autoload
 (defun ar-underscore-shstruct-atpt (&optional no-delimiters)
@@ -25350,26 +24817,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'symbol no-delimiters (interactive-p)))
 
-;; (defalias 'ar-symbol-trim-atpt 'ar-trim-symbol-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-symbol-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'symbol t t))
 
-;; (defalias 'ar-trim-left-symbol-atpt 'ar-trim-symbol-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-symbol-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'symbol t nil))
-
-;; (defalias 'ar-trim-right-symbol-atpt 'ar-trim-symbol-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-symbol-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'symbol nil t))
 
 ;;;###autoload
 (defun ar-underscore-symbol-atpt (&optional no-delimiters)
@@ -25659,26 +25107,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'url no-delimiters (interactive-p)))
 
-;; (defalias 'ar-url-trim-atpt 'ar-trim-url-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-url-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'url t t))
 
-;; (defalias 'ar-trim-left-url-atpt 'ar-trim-url-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-url-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'url t nil))
-
-;; (defalias 'ar-trim-right-url-atpt 'ar-trim-url-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-url-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'url nil t))
 
 ;;;###autoload
 (defun ar-underscore-url-atpt (&optional no-delimiters)
@@ -25968,26 +25397,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'word no-delimiters (interactive-p)))
 
-;; (defalias 'ar-word-trim-atpt 'ar-trim-word-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-word-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'word t t))
 
-;; (defalias 'ar-trim-left-word-atpt 'ar-trim-word-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-word-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'word t nil))
-
-;; (defalias 'ar-trim-right-word-atpt 'ar-trim-word-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-word-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'word nil t))
 
 ;;;###autoload
 (defun ar-underscore-word-atpt (&optional no-delimiters)
@@ -26277,26 +25687,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'wordalphaonly no-delimiters (interactive-p)))
 
-;; (defalias 'ar-wordalphaonly-trim-atpt 'ar-trim-wordalphaonly-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-wordalphaonly-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'wordalphaonly t t))
 
-;; (defalias 'ar-trim-left-wordalphaonly-atpt 'ar-trim-wordalphaonly-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-wordalphaonly-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'wordalphaonly t nil))
-
-;; (defalias 'ar-trim-right-wordalphaonly-atpt 'ar-trim-wordalphaonly-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-wordalphaonly-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'wordalphaonly nil t))
 
 ;;;###autoload
 (defun ar-underscore-wordalphaonly-atpt (&optional no-delimiters)
@@ -26590,26 +25981,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'block no-delimiters (interactive-p)))
 
-;; (defalias 'ar-block-trim-atpt 'ar-trim-block-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-block-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'block t t))
 
-;; (defalias 'ar-trim-left-block-atpt 'ar-trim-block-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-block-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'block t nil))
-
-;; (defalias 'ar-trim-right-block-atpt 'ar-trim-block-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-block-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'block nil t))
 
 ;;;###autoload
 (defun ar-underscore-block-atpt (&optional no-delimiters)
@@ -26899,26 +26271,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'block-or-clause no-delimiters (interactive-p)))
 
-;; (defalias 'ar-block-or-clause-trim-atpt 'ar-trim-block-or-clause-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-block-or-clause-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'block-or-clause t t))
 
-;; (defalias 'ar-trim-left-block-or-clause-atpt 'ar-trim-block-or-clause-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-block-or-clause-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'block-or-clause t nil))
-
-;; (defalias 'ar-trim-right-block-or-clause-atpt 'ar-trim-block-or-clause-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-block-or-clause-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'block-or-clause nil t))
 
 ;;;###autoload
 (defun ar-underscore-block-or-clause-atpt (&optional no-delimiters)
@@ -27208,26 +26561,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'class no-delimiters (interactive-p)))
 
-;; (defalias 'ar-class-trim-atpt 'ar-trim-class-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-class-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'class t t))
 
-;; (defalias 'ar-trim-left-class-atpt 'ar-trim-class-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-class-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'class t nil))
-
-;; (defalias 'ar-trim-right-class-atpt 'ar-trim-class-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-class-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'class nil t))
 
 ;;;###autoload
 (defun ar-underscore-class-atpt (&optional no-delimiters)
@@ -27517,26 +26851,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'clause no-delimiters (interactive-p)))
 
-;; (defalias 'ar-clause-trim-atpt 'ar-trim-clause-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-clause-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'clause t t))
 
-;; (defalias 'ar-trim-left-clause-atpt 'ar-trim-clause-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-clause-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'clause t nil))
-
-;; (defalias 'ar-trim-right-clause-atpt 'ar-trim-clause-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-clause-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'clause nil t))
 
 ;;;###autoload
 (defun ar-underscore-clause-atpt (&optional no-delimiters)
@@ -27826,26 +27141,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'def-or-class no-delimiters (interactive-p)))
 
-;; (defalias 'ar-def-or-class-trim-atpt 'ar-trim-def-or-class-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-def-or-class-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'def-or-class t t))
 
-;; (defalias 'ar-trim-left-def-or-class-atpt 'ar-trim-def-or-class-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-def-or-class-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'def-or-class t nil))
-
-;; (defalias 'ar-trim-right-def-or-class-atpt 'ar-trim-def-or-class-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-def-or-class-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'def-or-class nil t))
 
 ;;;###autoload
 (defun ar-underscore-def-or-class-atpt (&optional no-delimiters)
@@ -28135,26 +27431,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'def no-delimiters (interactive-p)))
 
-;; (defalias 'ar-def-trim-atpt 'ar-trim-def-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-def-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'def t t))
 
-;; (defalias 'ar-trim-left-def-atpt 'ar-trim-def-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-def-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'def t nil))
-
-;; (defalias 'ar-trim-right-def-atpt 'ar-trim-def-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-def-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'def nil t))
 
 ;;;###autoload
 (defun ar-underscore-def-atpt (&optional no-delimiters)
@@ -28444,26 +27721,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'expression no-delimiters (interactive-p)))
 
-;; (defalias 'ar-expression-trim-atpt 'ar-trim-expression-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-expression-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'expression t t))
 
-;; (defalias 'ar-trim-left-expression-atpt 'ar-trim-expression-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-expression-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'expression t nil))
-
-;; (defalias 'ar-trim-right-expression-atpt 'ar-trim-expression-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-expression-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'expression nil t))
 
 ;;;###autoload
 (defun ar-underscore-expression-atpt (&optional no-delimiters)
@@ -28753,26 +28011,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'partial-expression no-delimiters (interactive-p)))
 
-;; (defalias 'ar-partial-expression-trim-atpt 'ar-trim-partial-expression-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-partial-expression-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'partial-expression t t))
 
-;; (defalias 'ar-trim-left-partial-expression-atpt 'ar-trim-partial-expression-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-partial-expression-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'partial-expression t nil))
-
-;; (defalias 'ar-trim-right-partial-expression-atpt 'ar-trim-partial-expression-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-partial-expression-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'partial-expression nil t))
 
 ;;;###autoload
 (defun ar-underscore-partial-expression-atpt (&optional no-delimiters)
@@ -29062,26 +28301,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'statement no-delimiters (interactive-p)))
 
-;; (defalias 'ar-statement-trim-atpt 'ar-trim-statement-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-statement-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'statement t t))
 
-;; (defalias 'ar-trim-left-statement-atpt 'ar-trim-statement-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-statement-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'statement t nil))
-
-;; (defalias 'ar-trim-right-statement-atpt 'ar-trim-statement-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-statement-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'statement nil t))
 
 ;;;###autoload
 (defun ar-underscore-statement-atpt (&optional no-delimiters)
@@ -29371,26 +28591,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'string no-delimiters (interactive-p)))
 
-;; (defalias 'ar-string-trim-atpt 'ar-trim-string-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-string-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'string t t))
 
-;; (defalias 'ar-trim-left-string-atpt 'ar-trim-string-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-string-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'string t nil))
-
-;; (defalias 'ar-trim-right-string-atpt 'ar-trim-string-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-string-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'string nil t))
 
 ;;;###autoload
 (defun ar-underscore-string-atpt (&optional no-delimiters)
@@ -29454,6 +28655,9 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list end
+
+
+;;;###autoload
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with backslash(s),
   otherwise copy backslash(ed) at point.
@@ -29462,6 +28666,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'backslash no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-backtick-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with backtick(s),
   otherwise copy backtick(ed) at point.
@@ -29470,6 +28675,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'backtick no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-colon-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with colon(s),
   otherwise copy colon(ed) at point.
@@ -29478,6 +28684,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'colon no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-cross-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with cross(s),
   otherwise copy cross(ed) at point.
@@ -29486,6 +28693,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'cross no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-dollar-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with dollar(s),
   otherwise copy dollar(ed) at point.
@@ -29494,6 +28702,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'dollar no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-doublequote-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with doublequote(s),
   otherwise copy doublequote(ed) at point.
@@ -29502,6 +28711,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'doublequote no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-equalize-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with equalize(s),
   otherwise copy equalize(ed) at point.
@@ -29510,6 +28720,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'equalize no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-escape-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with escape(s),
   otherwise copy escape(ed) at point.
@@ -29518,6 +28729,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'escape no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-hash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with hash(s),
   otherwise copy hash(ed) at point.
@@ -29526,6 +28738,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'hash no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-hyphen-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with hyphen(s),
   otherwise copy hyphen(ed) at point.
@@ -29534,6 +28747,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'hyphen no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-singlequote-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with singlequote(s),
   otherwise copy singlequote(ed) at point.
@@ -29542,6 +28756,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'singlequote no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-slash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with slash(s),
   otherwise copy slash(ed) at point.
@@ -29550,6 +28765,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'slash no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-star-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with star(s),
   otherwise copy star(ed) at point.
@@ -29558,6 +28774,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'star no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-tild-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with tild(s),
   otherwise copy tild(ed) at point.
@@ -29566,6 +28783,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'tild no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-underscore-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with underscore(s),
   otherwise copy underscore(ed) at point.
@@ -29574,6 +28792,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'underscore no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-whitespace-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with whitespace(s),
   otherwise copy whitespace(ed) at point.
@@ -29582,6 +28801,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'whitespace no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-doubleslash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with doubleslash(s),
   otherwise copy doubleslash(ed) at point.
@@ -29590,6 +28810,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'doubleslash no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-brace-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with brace(s),
   otherwise copy brace(ed) at point.
@@ -29598,6 +28819,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'brace no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-bracket-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with bracket(s),
   otherwise copy bracket(ed) at point.
@@ -29606,6 +28828,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'bracket no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-lesserangle-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with lesserangle(s),
   otherwise copy lesserangle(ed) at point.
@@ -29614,6 +28837,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'lesserangle no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-greaterangle-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with greaterangle(s),
   otherwise copy greaterangle(ed) at point.
@@ -29622,6 +28846,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'greaterangle no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with leftrightsinglequote(s),
   otherwise copy leftrightsinglequote(ed) at point.
@@ -29630,6 +28855,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with leftrightsinglequote(s),
   otherwise copy leftrightsinglequote(ed) at point.
@@ -29638,6 +28864,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-parentize-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with parentize(s),
   otherwise copy parentize(ed) at point.
@@ -29646,6 +28873,61 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'parentize no-delimiters (interactive-p)))
 
+;;;###autoload
+(defun ar-braced-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with braced(s),
+  otherwise copy braced(ed) at point.
+  With NO-DELIMITERS, copy braced(ed) without delimiters.
+  With negative argument kill braced(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'braced no-delimiters (interactive-p)))
+
+;;;###autoload
+(defun ar-bracketed-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with bracketed(s),
+  otherwise copy bracketed(ed) at point.
+  With NO-DELIMITERS, copy bracketed(ed) without delimiters.
+  With negative argument kill bracketed(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'bracketed no-delimiters (interactive-p)))
+
+;;;###autoload
+(defun ar-lesserangled-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with lesserangled(s),
+  otherwise copy lesserangled(ed) at point.
+  With NO-DELIMITERS, copy lesserangled(ed) without delimiters.
+  With negative argument kill lesserangled(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'lesserangled no-delimiters (interactive-p)))
+
+;;;###autoload
+(defun ar-greaterangled-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with greaterangled(s),
+  otherwise copy greaterangled(ed) at point.
+  With NO-DELIMITERS, copy greaterangled(ed) without delimiters.
+  With negative argument kill greaterangled(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'greaterangled no-delimiters (interactive-p)))
+
+;;;###autoload
+(defun ar-leftrightsinglequoted-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with leftrightsinglequoted(s),
+  otherwise copy leftrightsinglequoted(ed) at point.
+  With NO-DELIMITERS, copy leftrightsinglequoted(ed) without delimiters.
+  With negative argument kill leftrightsinglequoted(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'leftrightsinglequoted no-delimiters (interactive-p)))
+
+;;;###autoload
+(defun ar-parentized-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with parentized(s),
+  otherwise copy parentized(ed) at point.
+  With NO-DELIMITERS, copy parentized(ed) without delimiters.
+  With negative argument kill parentized(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'parentized no-delimiters (interactive-p)))
+
+;;;###autoload
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with greateranglednested(s),
   otherwise copy greateranglednested(ed) at point.
@@ -29654,6 +28936,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'greateranglednested no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-lesseranglednested-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with lesseranglednested(s),
   otherwise copy lesseranglednested(ed) at point.
@@ -29662,6 +28945,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'lesseranglednested no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-buffer-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with buffer(s),
   otherwise copy buffer(ed) at point.
@@ -29670,6 +28954,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'buffer no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-comment-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with comment(s),
   otherwise copy comment(ed) at point.
@@ -29678,6 +28963,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'comment no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-csv-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with csv(s),
   otherwise copy csv(ed) at point.
@@ -29686,6 +28972,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'csv no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-date-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with date(s),
   otherwise copy date(ed) at point.
@@ -29694,6 +28981,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'date no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-delimited-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with delimited(s),
   otherwise copy delimited(ed) at point.
@@ -29702,6 +28990,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'delimited no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-email-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with email(s),
   otherwise copy email(ed) at point.
@@ -29710,6 +28999,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'email no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-filename-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with filename(s),
   otherwise copy filename(ed) at point.
@@ -29718,6 +29008,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'filename no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-filenamenondirectory-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with filenamenondirectory(s),
   otherwise copy filenamenondirectory(ed) at point.
@@ -29726,6 +29017,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'filenamenondirectory no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-float-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with float(s),
   otherwise copy float(ed) at point.
@@ -29734,6 +29026,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'float no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-function-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with function(s),
   otherwise copy function(ed) at point.
@@ -29742,6 +29035,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'function no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-ip-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with ip(s),
   otherwise copy ip(ed) at point.
@@ -29750,6 +29044,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'ip no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-isbn-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with isbn(s),
   otherwise copy isbn(ed) at point.
@@ -29758,6 +29053,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'isbn no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-line-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with line(s),
   otherwise copy line(ed) at point.
@@ -29766,6 +29062,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'line no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-list-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with list(s),
   otherwise copy list(ed) at point.
@@ -29774,6 +29071,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'list no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-name-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with name(s),
   otherwise copy name(ed) at point.
@@ -29782,6 +29080,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'name no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-number-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with number(s),
   otherwise copy number(ed) at point.
@@ -29790,6 +29089,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'number no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-page-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with page(s),
   otherwise copy page(ed) at point.
@@ -29798,6 +29098,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'page no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-paragraph-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with paragraph(s),
   otherwise copy paragraph(ed) at point.
@@ -29806,6 +29107,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'paragraph no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-phone-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with phone(s),
   otherwise copy phone(ed) at point.
@@ -29814,6 +29116,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'phone no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-region-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with region(s),
   otherwise copy region(ed) at point.
@@ -29822,6 +29125,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'region no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-sentence-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with sentence(s),
   otherwise copy sentence(ed) at point.
@@ -29830,6 +29134,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'sentence no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-sexp-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with sexp(s),
   otherwise copy sexp(ed) at point.
@@ -29838,6 +29143,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'sexp no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-string-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with string(s),
   otherwise copy string(ed) at point.
@@ -29846,6 +29152,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'string no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-shstruct-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with shstruct(s),
   otherwise copy shstruct(ed) at point.
@@ -29854,6 +29161,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'shstruct no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-symbol-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with symbol(s),
   otherwise copy symbol(ed) at point.
@@ -29862,6 +29170,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'symbol no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-url-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with url(s),
   otherwise copy url(ed) at point.
@@ -29870,6 +29179,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'url no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-word-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with word(s),
   otherwise copy word(ed) at point.
@@ -29878,6 +29188,7 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'word no-delimiters (interactive-p)))
 
+;;;###autoload
 (defun ar-wordalphaonly-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with wordalphaonly(s),
   otherwise copy wordalphaonly(ed) at point.
@@ -29885,8 +29196,6 @@ See doku from `sort-subr', for details.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun emacs-batch-expression ()
@@ -29917,6 +29226,42 @@ See doku from `sort-subr', for details.
           (exchange-point-and-mark)
           (kill-new (buffer-substring-no-properties beg end)))
       (message "%s" "Can't detect beginning of emacs-batch-expression"))))
+
+;;;###autoload
+(defun ar-trim-list-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'list t t))
+
+;;;###autoload
+(defun ar-trim-list-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'list t nil))
+
+;;;###autoload
+(defun ar-trim-list-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'list nil t))
+
+;;;###autoload
+(defun ar-trim-region-atpt ()
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'region t t))
+
+;;;###autoload
+(defun ar-trim-region-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'region t nil))
+
+;;;###autoload
+(defun ar-trim-region-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'region nil t))
 
 
 

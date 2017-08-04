@@ -282,7 +282,7 @@
       "[[1, 2]]\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (ar-list-trim-atpt)
+    (ar-trim-list-atpt)
     (should (eq (char-after) ?1))))
 
 (ert-deftest ar-left-trim-bracketlist-atpt-test ()
@@ -290,7 +290,7 @@
       "[[1, 2]]\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (ar-left-trim-list-atpt)
+    (ar-trim-list-left-atpt)
     (should (eq (char-after) ?1))))
 
 

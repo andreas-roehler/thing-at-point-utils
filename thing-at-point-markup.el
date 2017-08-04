@@ -291,26 +291,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'beginendquote no-delimiters (interactive-p)))
 
-;; (defalias 'ar-beginendquote-trim-atpt 'ar-trim-beginendquote-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-beginendquote-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'beginendquote t t))
 
-;; (defalias 'ar-trim-left-beginendquote-atpt 'ar-trim-beginendquote-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-beginendquote-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'beginendquote t nil))
-
-;; (defalias 'ar-trim-right-beginendquote-atpt 'ar-trim-beginendquote-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-beginendquote-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'beginendquote nil t))
 
 ;;;###autoload
 (defun ar-underscore-beginendquote-atpt (&optional no-delimiters)
@@ -600,26 +581,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'blok no-delimiters (interactive-p)))
 
-;; (defalias 'ar-blok-trim-atpt 'ar-trim-blok-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-blok-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'blok t t))
 
-;; (defalias 'ar-trim-left-blok-atpt 'ar-trim-blok-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-blok-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'blok t nil))
-
-;; (defalias 'ar-trim-right-blok-atpt 'ar-trim-blok-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-blok-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'blok nil t))
 
 ;;;###autoload
 (defun ar-underscore-blok-atpt (&optional no-delimiters)
@@ -909,26 +871,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doublebackslashed no-delimiters (interactive-p)))
 
-;; (defalias 'ar-doublebackslashed-trim-atpt 'ar-trim-doublebackslashed-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doublebackslashed-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doublebackslashed t t))
 
-;; (defalias 'ar-trim-left-doublebackslashed-atpt 'ar-trim-doublebackslashed-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doublebackslashed-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doublebackslashed t nil))
-
-;; (defalias 'ar-trim-right-doublebackslashed-atpt 'ar-trim-doublebackslashed-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doublebackslashed-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doublebackslashed nil t))
 
 ;;;###autoload
 (defun ar-underscore-doublebackslashed-atpt (&optional no-delimiters)
@@ -1218,26 +1161,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doublebackslashedparen no-delimiters (interactive-p)))
 
-;; (defalias 'ar-doublebackslashedparen-trim-atpt 'ar-trim-doublebackslashedparen-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doublebackslashedparen-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doublebackslashedparen t t))
 
-;; (defalias 'ar-trim-left-doublebackslashedparen-atpt 'ar-trim-doublebackslashedparen-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doublebackslashedparen-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doublebackslashedparen t nil))
-
-;; (defalias 'ar-trim-right-doublebackslashedparen-atpt 'ar-trim-doublebackslashedparen-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doublebackslashedparen-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doublebackslashedparen nil t))
 
 ;;;###autoload
 (defun ar-underscore-doublebackslashedparen-atpt (&optional no-delimiters)
@@ -1527,26 +1451,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doubleslashed no-delimiters (interactive-p)))
 
-;; (defalias 'ar-doubleslashed-trim-atpt 'ar-trim-doubleslashed-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doubleslashed-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doubleslashed t t))
 
-;; (defalias 'ar-trim-left-doubleslashed-atpt 'ar-trim-doubleslashed-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doubleslashed-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doubleslashed t nil))
-
-;; (defalias 'ar-trim-right-doubleslashed-atpt 'ar-trim-doubleslashed-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doubleslashed-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doubleslashed nil t))
 
 ;;;###autoload
 (defun ar-underscore-doubleslashed-atpt (&optional no-delimiters)
@@ -1836,26 +1741,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doubleslashedparen no-delimiters (interactive-p)))
 
-;; (defalias 'ar-doubleslashedparen-trim-atpt 'ar-trim-doubleslashedparen-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doubleslashedparen-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doubleslashedparen t t))
 
-;; (defalias 'ar-trim-left-doubleslashedparen-atpt 'ar-trim-doubleslashedparen-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doubleslashedparen-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doubleslashedparen t nil))
-
-;; (defalias 'ar-trim-right-doubleslashedparen-atpt 'ar-trim-doubleslashedparen-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-doubleslashedparen-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'doubleslashedparen nil t))
 
 ;;;###autoload
 (defun ar-underscore-doubleslashedparen-atpt (&optional no-delimiters)
@@ -2145,26 +2031,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'markup no-delimiters (interactive-p)))
 
-;; (defalias 'ar-markup-trim-atpt 'ar-trim-markup-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-markup-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'markup t t))
 
-;; (defalias 'ar-trim-left-markup-atpt 'ar-trim-markup-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-markup-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'markup t nil))
-
-;; (defalias 'ar-trim-right-markup-atpt 'ar-trim-markup-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-markup-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'markup nil t))
 
 ;;;###autoload
 (defun ar-underscore-markup-atpt (&optional no-delimiters)
@@ -2454,26 +2321,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mldata no-delimiters (interactive-p)))
 
-;; (defalias 'ar-mldata-trim-atpt 'ar-trim-mldata-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mldata-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mldata t t))
 
-;; (defalias 'ar-trim-left-mldata-atpt 'ar-trim-mldata-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mldata-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mldata t nil))
-
-;; (defalias 'ar-trim-right-mldata-atpt 'ar-trim-mldata-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mldata-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mldata nil t))
 
 ;;;###autoload
 (defun ar-underscore-mldata-atpt (&optional no-delimiters)
@@ -2763,26 +2611,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mlattribut no-delimiters (interactive-p)))
 
-;; (defalias 'ar-mlattribut-trim-atpt 'ar-trim-mlattribut-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mlattribut-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mlattribut t t))
 
-;; (defalias 'ar-trim-left-mlattribut-atpt 'ar-trim-mlattribut-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mlattribut-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mlattribut t nil))
-
-;; (defalias 'ar-trim-right-mlattribut-atpt 'ar-trim-mlattribut-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mlattribut-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mlattribut nil t))
 
 ;;;###autoload
 (defun ar-underscore-mlattribut-atpt (&optional no-delimiters)
@@ -3072,26 +2901,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mltag no-delimiters (interactive-p)))
 
-;; (defalias 'ar-mltag-trim-atpt 'ar-trim-mltag-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mltag-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mltag t t))
 
-;; (defalias 'ar-trim-left-mltag-atpt 'ar-trim-mltag-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mltag-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mltag t nil))
-
-;; (defalias 'ar-trim-right-mltag-atpt 'ar-trim-mltag-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-mltag-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'mltag nil t))
 
 ;;;###autoload
 (defun ar-underscore-mltag-atpt (&optional no-delimiters)
@@ -3381,26 +3191,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'slashedparen no-delimiters (interactive-p)))
 
-;; (defalias 'ar-slashedparen-trim-atpt 'ar-trim-slashedparen-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-slashedparen-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'slashedparen t t))
 
-;; (defalias 'ar-trim-left-slashedparen-atpt 'ar-trim-slashedparen-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-slashedparen-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'slashedparen t nil))
-
-;; (defalias 'ar-trim-right-slashedparen-atpt 'ar-trim-slashedparen-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-slashedparen-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'slashedparen nil t))
 
 ;;;###autoload
 (defun ar-underscore-slashedparen-atpt (&optional no-delimiters)
@@ -3690,26 +3481,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'tabledata no-delimiters (interactive-p)))
 
-;; (defalias 'ar-tabledata-trim-atpt 'ar-trim-tabledata-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-tabledata-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'tabledata t t))
 
-;; (defalias 'ar-trim-left-tabledata-atpt 'ar-trim-tabledata-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-tabledata-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'tabledata t nil))
-
-;; (defalias 'ar-trim-right-tabledata-atpt 'ar-trim-tabledata-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-tabledata-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'tabledata nil t))
 
 ;;;###autoload
 (defun ar-underscore-tabledata-atpt (&optional no-delimiters)
@@ -3999,26 +3771,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'xslstylesheet no-delimiters (interactive-p)))
 
-;; (defalias 'ar-xslstylesheet-trim-atpt 'ar-trim-xslstylesheet-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-xslstylesheet-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'xslstylesheet t t))
 
-;; (defalias 'ar-trim-left-xslstylesheet-atpt 'ar-trim-xslstylesheet-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-xslstylesheet-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'xslstylesheet t nil))
-
-;; (defalias 'ar-trim-right-xslstylesheet-atpt 'ar-trim-xslstylesheet-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-xslstylesheet-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'xslstylesheet nil t))
 
 ;;;###autoload
 (defun ar-underscore-xslstylesheet-atpt (&optional no-delimiters)
@@ -4308,26 +4061,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'xsltemplate no-delimiters (interactive-p)))
 
-;; (defalias 'ar-xsltemplate-trim-atpt 'ar-trim-xsltemplate-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-xsltemplate-atpt (&optional no-delimiters)
-;;   "Removes leading and trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'xsltemplate t t))
 
-;; (defalias 'ar-trim-left-xsltemplate-atpt 'ar-trim-xsltemplate-left-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-xsltemplate-left-atpt ()
-;;   "Removes leading char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'xsltemplate t nil))
-
-;; (defalias 'ar-trim-right-xsltemplate-atpt 'ar-trim-xsltemplate-right-atpt)
-;; ;;;###autoload
-;; (defun ar-trim-xsltemplate-right-atpt ()
-;;   "Removes trailing char. "
-;;   (interactive "*")
-;;   (ar-th-trim 'xsltemplate nil t))
 
 ;;;###autoload
 (defun ar-underscore-xsltemplate-atpt (&optional no-delimiters)

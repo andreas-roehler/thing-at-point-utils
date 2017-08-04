@@ -282,12 +282,12 @@
     (ar-trim-list-atpt)
     (should (eq (char-after) ?c))))
 
-(ert-deftest ar-trim-left-list-atpt-test ()
+(ert-deftest ar-trim-list-left-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (ar-trim-left-list-atpt)
+    (ar-trim-list-left-atpt)
     (should (eq (char-after) ?c))))
 
 
