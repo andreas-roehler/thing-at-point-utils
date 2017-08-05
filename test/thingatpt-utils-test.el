@@ -26,6 +26,8 @@
 ;;; Commentary:
 
 ;;; Code:
+
+(require 'thingatpt-utils-core)
 (require 'time-stamp)
 
 (defvar ar-atpt-functions-testlist '())

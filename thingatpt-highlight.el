@@ -27,6 +27,8 @@
 
 ;;; Code:
 
+(require 'thingatpt-utils-core)
+
 ;;; highlight-thing stuff
 ;; Basicely inspired by `highlight-current-line.el'. Please
 ;; visit

@@ -27,6 +27,8 @@
 
 ;;; Code:
 
+(require 'thingatpt-utils-core)
+
 ;;; count/ratio ar-atpt-rest-list ar-atpt-classes start
 
 (defun ar-count-alnum-in-greateranglednested-atpt (&optional beg end) 

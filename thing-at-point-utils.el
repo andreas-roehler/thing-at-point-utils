@@ -27,6 +27,10 @@
 
 ;;; Code:
 
+(require 'thingatpt-utils-core)
+
+(require 'thingatpt-utils-core)
+
 
 ;; ar-thing-at-point-utils-delimited-intern: ar-atpt-delimited-list start
 
@@ -8671,723 +8675,6 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-doubleslash 'xdigit nil));; ar-thing-at-point-utils-unpaired-delim-aktiv: end
 
-;; ar-thing-at-point-utils-unpaired-paired: start
-
-
-(defalias 'ar-backslash-braced-atpt 'ar-braced-backslash-atpt)
-;;;###autoload
-(defun ar-braced-backslash-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backslash 'braced nil))
-
-(defalias 'ar-backtick-braced-atpt 'ar-braced-backtick-atpt)
-;;;###autoload
-(defun ar-braced-backtick-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backtick 'braced nil))
-
-(defalias 'ar-colon-braced-atpt 'ar-braced-colon-atpt)
-;;;###autoload
-(defun ar-braced-colon-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-colon 'braced nil))
-
-(defalias 'ar-cross-braced-atpt 'ar-braced-cross-atpt)
-;;;###autoload
-(defun ar-braced-cross-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-cross 'braced nil))
-
-(defalias 'ar-dollar-braced-atpt 'ar-braced-dollar-atpt)
-;;;###autoload
-(defun ar-braced-dollar-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-dollar 'braced nil))
-
-(defalias 'ar-doublequote-braced-atpt 'ar-braced-doublequote-atpt)
-;;;###autoload
-(defun ar-braced-doublequote-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doublequote 'braced nil))
-
-(defalias 'ar-equalize-braced-atpt 'ar-braced-equalize-atpt)
-;;;###autoload
-(defun ar-braced-equalize-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-equalize 'braced nil))
-
-(defalias 'ar-escape-braced-atpt 'ar-braced-escape-atpt)
-;;;###autoload
-(defun ar-braced-escape-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-escape 'braced nil))
-
-(defalias 'ar-hash-braced-atpt 'ar-braced-hash-atpt)
-;;;###autoload
-(defun ar-braced-hash-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hash 'braced nil))
-
-(defalias 'ar-hyphen-braced-atpt 'ar-braced-hyphen-atpt)
-;;;###autoload
-(defun ar-braced-hyphen-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hyphen 'braced nil))
-
-(defalias 'ar-singlequote-braced-atpt 'ar-braced-singlequote-atpt)
-;;;###autoload
-(defun ar-braced-singlequote-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-singlequote 'braced nil))
-
-(defalias 'ar-slash-braced-atpt 'ar-braced-slash-atpt)
-;;;###autoload
-(defun ar-braced-slash-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-slash 'braced nil))
-
-(defalias 'ar-star-braced-atpt 'ar-braced-star-atpt)
-;;;###autoload
-(defun ar-braced-star-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-star 'braced nil))
-
-(defalias 'ar-tild-braced-atpt 'ar-braced-tild-atpt)
-;;;###autoload
-(defun ar-braced-tild-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-tild 'braced nil))
-
-(defalias 'ar-underscore-braced-atpt 'ar-braced-underscore-atpt)
-;;;###autoload
-(defun ar-braced-underscore-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-underscore 'braced nil))
-
-(defalias 'ar-whitespace-braced-atpt 'ar-braced-whitespace-atpt)
-;;;###autoload
-(defun ar-braced-whitespace-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-whitespace 'braced nil))
-
-(defalias 'ar-doubleslash-braced-atpt 'ar-braced-doubleslash-atpt)
-;;;###autoload
-(defun ar-braced-doubleslash-atpt ()
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doubleslash 'braced nil))
-
-(defalias 'ar-backslash-bracketed-atpt 'ar-bracketed-backslash-atpt)
-;;;###autoload
-(defun ar-bracketed-backslash-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backslash 'bracketed nil))
-
-(defalias 'ar-backtick-bracketed-atpt 'ar-bracketed-backtick-atpt)
-;;;###autoload
-(defun ar-bracketed-backtick-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backtick 'bracketed nil))
-
-(defalias 'ar-colon-bracketed-atpt 'ar-bracketed-colon-atpt)
-;;;###autoload
-(defun ar-bracketed-colon-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-colon 'bracketed nil))
-
-(defalias 'ar-cross-bracketed-atpt 'ar-bracketed-cross-atpt)
-;;;###autoload
-(defun ar-bracketed-cross-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-cross 'bracketed nil))
-
-(defalias 'ar-dollar-bracketed-atpt 'ar-bracketed-dollar-atpt)
-;;;###autoload
-(defun ar-bracketed-dollar-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-dollar 'bracketed nil))
-
-(defalias 'ar-doublequote-bracketed-atpt 'ar-bracketed-doublequote-atpt)
-;;;###autoload
-(defun ar-bracketed-doublequote-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doublequote 'bracketed nil))
-
-(defalias 'ar-equalize-bracketed-atpt 'ar-bracketed-equalize-atpt)
-;;;###autoload
-(defun ar-bracketed-equalize-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-equalize 'bracketed nil))
-
-(defalias 'ar-escape-bracketed-atpt 'ar-bracketed-escape-atpt)
-;;;###autoload
-(defun ar-bracketed-escape-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-escape 'bracketed nil))
-
-(defalias 'ar-hash-bracketed-atpt 'ar-bracketed-hash-atpt)
-;;;###autoload
-(defun ar-bracketed-hash-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hash 'bracketed nil))
-
-(defalias 'ar-hyphen-bracketed-atpt 'ar-bracketed-hyphen-atpt)
-;;;###autoload
-(defun ar-bracketed-hyphen-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hyphen 'bracketed nil))
-
-(defalias 'ar-singlequote-bracketed-atpt 'ar-bracketed-singlequote-atpt)
-;;;###autoload
-(defun ar-bracketed-singlequote-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-singlequote 'bracketed nil))
-
-(defalias 'ar-slash-bracketed-atpt 'ar-bracketed-slash-atpt)
-;;;###autoload
-(defun ar-bracketed-slash-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-slash 'bracketed nil))
-
-(defalias 'ar-star-bracketed-atpt 'ar-bracketed-star-atpt)
-;;;###autoload
-(defun ar-bracketed-star-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-star 'bracketed nil))
-
-(defalias 'ar-tild-bracketed-atpt 'ar-bracketed-tild-atpt)
-;;;###autoload
-(defun ar-bracketed-tild-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-tild 'bracketed nil))
-
-(defalias 'ar-underscore-bracketed-atpt 'ar-bracketed-underscore-atpt)
-;;;###autoload
-(defun ar-bracketed-underscore-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-underscore 'bracketed nil))
-
-(defalias 'ar-whitespace-bracketed-atpt 'ar-bracketed-whitespace-atpt)
-;;;###autoload
-(defun ar-bracketed-whitespace-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-whitespace 'bracketed nil))
-
-(defalias 'ar-doubleslash-bracketed-atpt 'ar-bracketed-doubleslash-atpt)
-;;;###autoload
-(defun ar-bracketed-doubleslash-atpt ()
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doubleslash 'bracketed nil))
-
-(defalias 'ar-backslash-lesserangled-atpt 'ar-lesserangled-backslash-atpt)
-;;;###autoload
-(defun ar-lesserangled-backslash-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backslash 'lesserangled nil))
-
-(defalias 'ar-backtick-lesserangled-atpt 'ar-lesserangled-backtick-atpt)
-;;;###autoload
-(defun ar-lesserangled-backtick-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backtick 'lesserangled nil))
-
-(defalias 'ar-colon-lesserangled-atpt 'ar-lesserangled-colon-atpt)
-;;;###autoload
-(defun ar-lesserangled-colon-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-colon 'lesserangled nil))
-
-(defalias 'ar-cross-lesserangled-atpt 'ar-lesserangled-cross-atpt)
-;;;###autoload
-(defun ar-lesserangled-cross-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-cross 'lesserangled nil))
-
-(defalias 'ar-dollar-lesserangled-atpt 'ar-lesserangled-dollar-atpt)
-;;;###autoload
-(defun ar-lesserangled-dollar-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-dollar 'lesserangled nil))
-
-(defalias 'ar-doublequote-lesserangled-atpt 'ar-lesserangled-doublequote-atpt)
-;;;###autoload
-(defun ar-lesserangled-doublequote-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doublequote 'lesserangled nil))
-
-(defalias 'ar-equalize-lesserangled-atpt 'ar-lesserangled-equalize-atpt)
-;;;###autoload
-(defun ar-lesserangled-equalize-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-equalize 'lesserangled nil))
-
-(defalias 'ar-escape-lesserangled-atpt 'ar-lesserangled-escape-atpt)
-;;;###autoload
-(defun ar-lesserangled-escape-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-escape 'lesserangled nil))
-
-(defalias 'ar-hash-lesserangled-atpt 'ar-lesserangled-hash-atpt)
-;;;###autoload
-(defun ar-lesserangled-hash-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hash 'lesserangled nil))
-
-(defalias 'ar-hyphen-lesserangled-atpt 'ar-lesserangled-hyphen-atpt)
-;;;###autoload
-(defun ar-lesserangled-hyphen-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hyphen 'lesserangled nil))
-
-(defalias 'ar-singlequote-lesserangled-atpt 'ar-lesserangled-singlequote-atpt)
-;;;###autoload
-(defun ar-lesserangled-singlequote-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-singlequote 'lesserangled nil))
-
-(defalias 'ar-slash-lesserangled-atpt 'ar-lesserangled-slash-atpt)
-;;;###autoload
-(defun ar-lesserangled-slash-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-slash 'lesserangled nil))
-
-(defalias 'ar-star-lesserangled-atpt 'ar-lesserangled-star-atpt)
-;;;###autoload
-(defun ar-lesserangled-star-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-star 'lesserangled nil))
-
-(defalias 'ar-tild-lesserangled-atpt 'ar-lesserangled-tild-atpt)
-;;;###autoload
-(defun ar-lesserangled-tild-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-tild 'lesserangled nil))
-
-(defalias 'ar-underscore-lesserangled-atpt 'ar-lesserangled-underscore-atpt)
-;;;###autoload
-(defun ar-lesserangled-underscore-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-underscore 'lesserangled nil))
-
-(defalias 'ar-whitespace-lesserangled-atpt 'ar-lesserangled-whitespace-atpt)
-;;;###autoload
-(defun ar-lesserangled-whitespace-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-whitespace 'lesserangled nil))
-
-(defalias 'ar-doubleslash-lesserangled-atpt 'ar-lesserangled-doubleslash-atpt)
-;;;###autoload
-(defun ar-lesserangled-doubleslash-atpt ()
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doubleslash 'lesserangled nil))
-
-(defalias 'ar-backslash-greaterangled-atpt 'ar-greaterangled-backslash-atpt)
-;;;###autoload
-(defun ar-greaterangled-backslash-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backslash 'greaterangled nil))
-
-(defalias 'ar-backtick-greaterangled-atpt 'ar-greaterangled-backtick-atpt)
-;;;###autoload
-(defun ar-greaterangled-backtick-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backtick 'greaterangled nil))
-
-(defalias 'ar-colon-greaterangled-atpt 'ar-greaterangled-colon-atpt)
-;;;###autoload
-(defun ar-greaterangled-colon-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-colon 'greaterangled nil))
-
-(defalias 'ar-cross-greaterangled-atpt 'ar-greaterangled-cross-atpt)
-;;;###autoload
-(defun ar-greaterangled-cross-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-cross 'greaterangled nil))
-
-(defalias 'ar-dollar-greaterangled-atpt 'ar-greaterangled-dollar-atpt)
-;;;###autoload
-(defun ar-greaterangled-dollar-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-dollar 'greaterangled nil))
-
-(defalias 'ar-doublequote-greaterangled-atpt 'ar-greaterangled-doublequote-atpt)
-;;;###autoload
-(defun ar-greaterangled-doublequote-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doublequote 'greaterangled nil))
-
-(defalias 'ar-equalize-greaterangled-atpt 'ar-greaterangled-equalize-atpt)
-;;;###autoload
-(defun ar-greaterangled-equalize-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-equalize 'greaterangled nil))
-
-(defalias 'ar-escape-greaterangled-atpt 'ar-greaterangled-escape-atpt)
-;;;###autoload
-(defun ar-greaterangled-escape-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-escape 'greaterangled nil))
-
-(defalias 'ar-hash-greaterangled-atpt 'ar-greaterangled-hash-atpt)
-;;;###autoload
-(defun ar-greaterangled-hash-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hash 'greaterangled nil))
-
-(defalias 'ar-hyphen-greaterangled-atpt 'ar-greaterangled-hyphen-atpt)
-;;;###autoload
-(defun ar-greaterangled-hyphen-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hyphen 'greaterangled nil))
-
-(defalias 'ar-singlequote-greaterangled-atpt 'ar-greaterangled-singlequote-atpt)
-;;;###autoload
-(defun ar-greaterangled-singlequote-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-singlequote 'greaterangled nil))
-
-(defalias 'ar-slash-greaterangled-atpt 'ar-greaterangled-slash-atpt)
-;;;###autoload
-(defun ar-greaterangled-slash-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-slash 'greaterangled nil))
-
-(defalias 'ar-star-greaterangled-atpt 'ar-greaterangled-star-atpt)
-;;;###autoload
-(defun ar-greaterangled-star-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-star 'greaterangled nil))
-
-(defalias 'ar-tild-greaterangled-atpt 'ar-greaterangled-tild-atpt)
-;;;###autoload
-(defun ar-greaterangled-tild-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-tild 'greaterangled nil))
-
-(defalias 'ar-underscore-greaterangled-atpt 'ar-greaterangled-underscore-atpt)
-;;;###autoload
-(defun ar-greaterangled-underscore-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-underscore 'greaterangled nil))
-
-(defalias 'ar-whitespace-greaterangled-atpt 'ar-greaterangled-whitespace-atpt)
-;;;###autoload
-(defun ar-greaterangled-whitespace-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-whitespace 'greaterangled nil))
-
-(defalias 'ar-doubleslash-greaterangled-atpt 'ar-greaterangled-doubleslash-atpt)
-;;;###autoload
-(defun ar-greaterangled-doubleslash-atpt ()
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doubleslash 'greaterangled nil))
-
-(defalias 'ar-backslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backslash-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-backslash-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backslash 'leftrightsinglequoted nil))
-
-(defalias 'ar-backtick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backtick-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-backtick-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backtick 'leftrightsinglequoted nil))
-
-(defalias 'ar-colon-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-colon-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-colon-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-colon 'leftrightsinglequoted nil))
-
-(defalias 'ar-cross-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-cross-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-cross-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-cross 'leftrightsinglequoted nil))
-
-(defalias 'ar-dollar-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-dollar-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-dollar-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-dollar 'leftrightsinglequoted nil))
-
-(defalias 'ar-doublequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublequote-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-doublequote-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doublequote 'leftrightsinglequoted nil))
-
-(defalias 'ar-equalize-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-equalize-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-equalize-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-equalize 'leftrightsinglequoted nil))
-
-(defalias 'ar-escape-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-escape-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-escape-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-escape 'leftrightsinglequoted nil))
-
-(defalias 'ar-hash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hash-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-hash-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hash 'leftrightsinglequoted nil))
-
-(defalias 'ar-hyphen-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hyphen-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-hyphen-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hyphen 'leftrightsinglequoted nil))
-
-(defalias 'ar-singlequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-singlequote-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-singlequote-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-singlequote 'leftrightsinglequoted nil))
-
-(defalias 'ar-slash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-slash-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-slash-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-slash 'leftrightsinglequoted nil))
-
-(defalias 'ar-star-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-star-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-star-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-star 'leftrightsinglequoted nil))
-
-(defalias 'ar-tild-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-tild-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-tild-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-tild 'leftrightsinglequoted nil))
-
-(defalias 'ar-underscore-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-underscore-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-underscore-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-underscore 'leftrightsinglequoted nil))
-
-(defalias 'ar-whitespace-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-whitespace-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-whitespace-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-whitespace 'leftrightsinglequoted nil))
-
-(defalias 'ar-doubleslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doubleslash-atpt)
-;;;###autoload
-(defun ar-leftrightsinglequoted-doubleslash-atpt ()
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doubleslash 'leftrightsinglequoted nil))
-
-(defalias 'ar-backslash-parentized-atpt 'ar-parentized-backslash-atpt)
-;;;###autoload
-(defun ar-parentized-backslash-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backslash 'parentized nil))
-
-(defalias 'ar-backtick-parentized-atpt 'ar-parentized-backtick-atpt)
-;;;###autoload
-(defun ar-parentized-backtick-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-backtick 'parentized nil))
-
-(defalias 'ar-colon-parentized-atpt 'ar-parentized-colon-atpt)
-;;;###autoload
-(defun ar-parentized-colon-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-colon 'parentized nil))
-
-(defalias 'ar-cross-parentized-atpt 'ar-parentized-cross-atpt)
-;;;###autoload
-(defun ar-parentized-cross-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-cross 'parentized nil))
-
-(defalias 'ar-dollar-parentized-atpt 'ar-parentized-dollar-atpt)
-;;;###autoload
-(defun ar-parentized-dollar-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-dollar 'parentized nil))
-
-(defalias 'ar-doublequote-parentized-atpt 'ar-parentized-doublequote-atpt)
-;;;###autoload
-(defun ar-parentized-doublequote-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doublequote 'parentized nil))
-
-(defalias 'ar-equalize-parentized-atpt 'ar-parentized-equalize-atpt)
-;;;###autoload
-(defun ar-parentized-equalize-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-equalize 'parentized nil))
-
-(defalias 'ar-escape-parentized-atpt 'ar-parentized-escape-atpt)
-;;;###autoload
-(defun ar-parentized-escape-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-escape 'parentized nil))
-
-(defalias 'ar-hash-parentized-atpt 'ar-parentized-hash-atpt)
-;;;###autoload
-(defun ar-parentized-hash-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hash 'parentized nil))
-
-(defalias 'ar-hyphen-parentized-atpt 'ar-parentized-hyphen-atpt)
-;;;###autoload
-(defun ar-parentized-hyphen-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-hyphen 'parentized nil))
-
-(defalias 'ar-singlequote-parentized-atpt 'ar-parentized-singlequote-atpt)
-;;;###autoload
-(defun ar-parentized-singlequote-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-singlequote 'parentized nil))
-
-(defalias 'ar-slash-parentized-atpt 'ar-parentized-slash-atpt)
-;;;###autoload
-(defun ar-parentized-slash-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-slash 'parentized nil))
-
-(defalias 'ar-star-parentized-atpt 'ar-parentized-star-atpt)
-;;;###autoload
-(defun ar-parentized-star-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-star 'parentized nil))
-
-(defalias 'ar-tild-parentized-atpt 'ar-parentized-tild-atpt)
-;;;###autoload
-(defun ar-parentized-tild-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-tild 'parentized nil))
-
-(defalias 'ar-underscore-parentized-atpt 'ar-parentized-underscore-atpt)
-;;;###autoload
-(defun ar-parentized-underscore-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-underscore 'parentized nil))
-
-(defalias 'ar-whitespace-parentized-atpt 'ar-parentized-whitespace-atpt)
-;;;###autoload
-(defun ar-parentized-whitespace-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-whitespace 'parentized nil))
-
-(defalias 'ar-doubleslash-parentized-atpt 'ar-parentized-doubleslash-atpt)
-;;;###autoload
-(defun ar-parentized-doubleslash-atpt ()
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*")
-  (ar-th-doubleslash 'parentized nil));; ar-thing-at-point-utils-unpaired-paired: end
-
 ;; ar-thing-at-point-utils-delim-classes-paired: start
 
 
@@ -15533,8 +14820,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'braced no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-braced-atpt (&optional no-delimiters)
   "Put underscore char around BRACED. "
@@ -15822,8 +15107,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around bracketed. "
   (interactive "*p")
   (ar-th-triplequotesq 'bracketed no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-bracketed-atpt (&optional no-delimiters)
@@ -16113,8 +15396,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'lesserangled no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-lesserangled-atpt (&optional no-delimiters)
   "Put underscore char around LESSERANGLED. "
@@ -16402,8 +15683,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around greaterangled. "
   (interactive "*p")
   (ar-th-triplequotesq 'greaterangled no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-greaterangled-atpt (&optional no-delimiters)
@@ -16693,8 +15972,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'leftrightsinglequoted no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-leftrightsinglequoted-atpt (&optional no-delimiters)
   "Put underscore char around LEFTRIGHTSINGLEQUOTED. "
@@ -16982,8 +16259,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around parentized. "
   (interactive "*p")
   (ar-th-triplequotesq 'parentized no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-parentized-atpt (&optional no-delimiters)
@@ -17277,8 +16552,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'greateranglednested no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-greateranglednested-atpt (&optional no-delimiters)
   "Put underscore char around GREATERANGLEDNESTED. "
@@ -17566,8 +16839,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around lesseranglednested. "
   (interactive "*p")
   (ar-th-triplequotesq 'lesseranglednested no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-lesseranglednested-atpt (&optional no-delimiters)
@@ -17857,8 +17128,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'buffer no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-buffer-atpt (&optional no-delimiters)
   "Put underscore char around BUFFER. "
@@ -18146,8 +17415,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around comment. "
   (interactive "*p")
   (ar-th-triplequotesq 'comment no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-comment-atpt (&optional no-delimiters)
@@ -18437,8 +17704,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'csv no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-csv-atpt (&optional no-delimiters)
   "Put underscore char around CSV. "
@@ -18726,8 +17991,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around date. "
   (interactive "*p")
   (ar-th-triplequotesq 'date no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-date-atpt (&optional no-delimiters)
@@ -19017,8 +18280,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'delimited no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-delimited-atpt (&optional no-delimiters)
   "Put underscore char around DELIMITED. "
@@ -19306,8 +18567,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around email. "
   (interactive "*p")
   (ar-th-triplequotesq 'email no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-email-atpt (&optional no-delimiters)
@@ -19597,8 +18856,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'filename no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-filename-atpt (&optional no-delimiters)
   "Put underscore char around FILENAME. "
@@ -19886,8 +19143,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around filenamenondirectory. "
   (interactive "*p")
   (ar-th-triplequotesq 'filenamenondirectory no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-filenamenondirectory-atpt (&optional no-delimiters)
@@ -20177,8 +19432,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'float no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-float-atpt (&optional no-delimiters)
   "Put underscore char around FLOAT. "
@@ -20466,8 +19719,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around function. "
   (interactive "*p")
   (ar-th-triplequotesq 'function no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-function-atpt (&optional no-delimiters)
@@ -20757,8 +20008,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'ip no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-ip-atpt (&optional no-delimiters)
   "Put underscore char around IP. "
@@ -21046,8 +20295,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around isbn. "
   (interactive "*p")
   (ar-th-triplequotesq 'isbn no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-isbn-atpt (&optional no-delimiters)
@@ -21337,8 +20584,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'line no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-line-atpt (&optional no-delimiters)
   "Put underscore char around LINE. "
@@ -21626,8 +20871,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around list. "
   (interactive "*p")
   (ar-th-triplequotesq 'list no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-list-atpt (&optional no-delimiters)
@@ -21917,8 +21160,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'name no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-name-atpt (&optional no-delimiters)
   "Put underscore char around NAME. "
@@ -22206,8 +21447,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around number. "
   (interactive "*p")
   (ar-th-triplequotesq 'number no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-number-atpt (&optional no-delimiters)
@@ -22497,8 +21736,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'page no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-page-atpt (&optional no-delimiters)
   "Put underscore char around PAGE. "
@@ -22786,8 +22023,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around paragraph. "
   (interactive "*p")
   (ar-th-triplequotesq 'paragraph no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-paragraph-atpt (&optional no-delimiters)
@@ -23077,8 +22312,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'phone no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-phone-atpt (&optional no-delimiters)
   "Put underscore char around PHONE. "
@@ -23366,8 +22599,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around region. "
   (interactive "*p")
   (ar-th-triplequotesq 'region no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-region-atpt (&optional no-delimiters)
@@ -23657,8 +22888,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'sentence no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-sentence-atpt (&optional no-delimiters)
   "Put underscore char around SENTENCE. "
@@ -23946,8 +23175,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around sexp. "
   (interactive "*p")
   (ar-th-triplequotesq 'sexp no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-sexp-atpt (&optional no-delimiters)
@@ -24237,8 +23464,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'string no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-string-atpt (&optional no-delimiters)
   "Put underscore char around STRING. "
@@ -24526,8 +23751,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around shstruct. "
   (interactive "*p")
   (ar-th-triplequotesq 'shstruct no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-shstruct-atpt (&optional no-delimiters)
@@ -24817,8 +24040,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'symbol no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-symbol-atpt (&optional no-delimiters)
   "Put underscore char around SYMBOL. "
@@ -25106,8 +24327,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around url. "
   (interactive "*p")
   (ar-th-triplequotesq 'url no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-url-atpt (&optional no-delimiters)
@@ -25397,8 +24616,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'word no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-word-atpt (&optional no-delimiters)
   "Put underscore char around WORD. "
@@ -25686,8 +24903,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around wordalphaonly. "
   (interactive "*p")
   (ar-th-triplequotesq 'wordalphaonly no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-wordalphaonly-atpt (&optional no-delimiters)
@@ -25981,8 +25196,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'block no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-block-atpt (&optional no-delimiters)
   "Put underscore char around BLOCK. "
@@ -26270,8 +25483,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around block-or-clause. "
   (interactive "*p")
   (ar-th-triplequotesq 'block-or-clause no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-block-or-clause-atpt (&optional no-delimiters)
@@ -26561,8 +25772,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'class no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-class-atpt (&optional no-delimiters)
   "Put underscore char around CLASS. "
@@ -26850,8 +26059,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around clause. "
   (interactive "*p")
   (ar-th-triplequotesq 'clause no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-clause-atpt (&optional no-delimiters)
@@ -27141,8 +26348,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'def-or-class no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-def-or-class-atpt (&optional no-delimiters)
   "Put underscore char around DEF-OR-CLASS. "
@@ -27430,8 +26635,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around def. "
   (interactive "*p")
   (ar-th-triplequotesq 'def no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-def-atpt (&optional no-delimiters)
@@ -27721,8 +26924,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'expression no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-expression-atpt (&optional no-delimiters)
   "Put underscore char around EXPRESSION. "
@@ -28010,8 +27211,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around partial-expression. "
   (interactive "*p")
   (ar-th-triplequotesq 'partial-expression no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-partial-expression-atpt (&optional no-delimiters)
@@ -28301,8 +27500,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'statement no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-statement-atpt (&optional no-delimiters)
   "Put underscore char around STATEMENT. "
@@ -28590,8 +27787,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around string. "
   (interactive "*p")
   (ar-th-triplequotesq 'string no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-string-atpt (&optional no-delimiters)

@@ -27,6 +27,8 @@
 
 ;;; Code:
 
+(require 'thingatpt-utils-core)
+
 ;; ar-thing-at-point-utils-markup ar-atpt-markup-list start
 
 (defun ar-un-beginendquote-atpt (&optional arg)
@@ -290,8 +292,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around beginendquote. "
   (interactive "*p")
   (ar-th-triplequotesq 'beginendquote no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-beginendquote-atpt (&optional no-delimiters)
@@ -581,8 +581,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'blok no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-blok-atpt (&optional no-delimiters)
   "Put underscore char around BLOK. "
@@ -870,8 +868,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around doublebackslashed. "
   (interactive "*p")
   (ar-th-triplequotesq 'doublebackslashed no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-doublebackslashed-atpt (&optional no-delimiters)
@@ -1161,8 +1157,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doublebackslashedparen no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-doublebackslashedparen-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLEBACKSLASHEDPAREN. "
@@ -1450,8 +1444,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around doubleslashed. "
   (interactive "*p")
   (ar-th-triplequotesq 'doubleslashed no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-doubleslashed-atpt (&optional no-delimiters)
@@ -1741,8 +1733,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doubleslashedparen no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-doubleslashedparen-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLESLASHEDPAREN. "
@@ -2030,8 +2020,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around markup. "
   (interactive "*p")
   (ar-th-triplequotesq 'markup no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-markup-atpt (&optional no-delimiters)
@@ -2321,8 +2309,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mldata no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-mldata-atpt (&optional no-delimiters)
   "Put underscore char around MLDATA. "
@@ -2610,8 +2596,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around mlattribut. "
   (interactive "*p")
   (ar-th-triplequotesq 'mlattribut no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-mlattribut-atpt (&optional no-delimiters)
@@ -2901,8 +2885,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mltag no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-mltag-atpt (&optional no-delimiters)
   "Put underscore char around MLTAG. "
@@ -3190,8 +3172,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around slashedparen. "
   (interactive "*p")
   (ar-th-triplequotesq 'slashedparen no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-slashedparen-atpt (&optional no-delimiters)
@@ -3481,8 +3461,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'tabledata no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-tabledata-atpt (&optional no-delimiters)
   "Put underscore char around TABLEDATA. "
@@ -3771,8 +3749,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'xslstylesheet no-delimiters (interactive-p)))
 
-
-
 ;;;###autoload
 (defun ar-underscore-xslstylesheet-atpt (&optional no-delimiters)
   "Put underscore char around XSLSTYLESHEET. "
@@ -4060,8 +4036,6 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around xsltemplate. "
   (interactive "*p")
   (ar-th-triplequotesq 'xsltemplate no-delimiters (interactive-p)))
-
-
 
 ;;;###autoload
 (defun ar-underscore-xsltemplate-atpt (&optional no-delimiters)
