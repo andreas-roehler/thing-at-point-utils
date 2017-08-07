@@ -138,14 +138,6 @@
     (ar-doublebackslash-parentized-atpt)
     (should (eq (char-before) ?\\))))
 
-(ert-deftest ar-slashparen-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
-      "(list (cons 1 2))\n"
-    (forward-char 1)
-    (skip-chars-forward "^(")
-    (ar-slashparen-list-atpt)
-    (should (eq (char-before) ?\)))))
-
 (ert-deftest ar-dollar-list-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "(list (cons 1 2))\n"
@@ -285,12 +277,12 @@
     (ar-trim-list-atpt)
     (should (eq (char-after) ?c))))
 
-(ert-deftest ar-left-trim-list-atpt-test ()
+(ert-deftest ar-trim-list-left-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-chars-forward "^(")
-    (ar-left-trim-list-atpt)
+    (ar-trim-list-left-atpt)
     (should (eq (char-after) ?c))))
 
 

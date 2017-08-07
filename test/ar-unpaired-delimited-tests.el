@@ -63,18 +63,6 @@
     (let ((erg (ar-coloned-atpt)))
       (should (< 8 (length erg))))))
 
-(ert-deftest crossed-unpaired-delimited-test ()
-  (ar-test-with-temp-buffer "\+
-     ;;; \+ \+ Write 'etc. \" \+"
-      (text-mode)
-    (beginning-of-line)
- 
-    (let ((erg (ar-crossed-atpt)))
-      (should (< 7 (length erg))))
-    (goto-char 22)
-    (let ((erg (ar-crossed-atpt)))
-      (should (< 8 (length erg))))))
-
 (ert-deftest dollared-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "\$
      ;;; \$ \$ Write 'etc. \" \$"
@@ -109,18 +97,6 @@
       (should (< 7 (length erg))))
     (goto-char 22)
     (let ((erg (ar-equalized-atpt)))
-      (should (< 8 (length erg))))))
-
-(ert-deftest hashed-unpaired-delimited-test ()
-  (ar-test-with-temp-buffer "#
-     ;;; # # Write 'etc. \" #"
-      (text-mode)
-    (beginning-of-line)
- 
-    (let ((erg (ar-hashed-atpt)))
-      (should (< 7 (length erg))))
-    (goto-char 22)
-    (let ((erg (ar-hashed-atpt)))
       (should (< 8 (length erg))))))
 
 (ert-deftest hyphened-unpaired-delimited-test ()
@@ -169,18 +145,6 @@
       (should (< 7 (length erg))))
     (goto-char 22)
     (let ((erg (ar-stared-atpt)))
-      (should (< 8 (length erg))))))
-
-(ert-deftest tilded-unpaired-delimited-test ()
-  (ar-test-with-temp-buffer "~
-     ;;; ~ ~ Write 'etc. \" ~"
-      (text-mode)
-    (beginning-of-line)
- 
-    (let ((erg (ar-tilded-atpt)))
-      (should (< 7 (length erg))))
-    (goto-char 22)
-    (let ((erg (ar-tilded-atpt)))
       (should (< 8 (length erg))))))
 
 (ert-deftest underscored-unpaired-delimited-test ()

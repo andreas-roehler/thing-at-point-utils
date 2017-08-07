@@ -5442,7 +5442,7 @@
 ;;; count/ratio ar-atpt-rest-list ar-atpt-classes end
 
 
-;;; count/ratio ar-atpt-delimited-list ar-atpt-classes start
+;;; count/ratio ar-paired-delimited-passiv ar-atpt-classes start
 
 (defun ar-count-alnum-in-braced-atpt (&optional beg end) 
 "Counts matches of alnum in braced if useful, returns nil otherwise "
@@ -6692,10 +6692,10 @@
   (ar-th-ratio-base 'upper 'parentized beg end t (interactive-p)))
 
 
-;;; count/ratio ar-atpt-delimited-list ar-atpt-classes end
+;;; count/ratio ar-paired-delimited-passiv ar-atpt-classes end
 
 
-;;; count/ratio ar-atpt-delimited-list ar-atpt-delimited-list start
+;;; count/ratio ar-paired-delimited-passiv ar-paired-delimited-passiv start
 
 (defun ar-count-braced-in-braced-atpt (&optional beg end) 
 "Counts matches of braced in braced if useful, returns nil otherwise "
@@ -7273,10 +7273,10 @@
   (ar-th-ratio-base 'parentized 'parentized beg end t (interactive-p)))
 
 
-;;; count/ratio ar-atpt-delimited-list ar-atpt-delimited-list end
+;;; count/ratio ar-paired-delimited-passiv ar-paired-delimited-passiv end
 
 
-;;; count/ratio ar-atpt-unpaired-delimited-list ar-atpt-delimited-list start
+;;; count/ratio ar-unpaired-delimited-passiv ar-paired-delimited-passiv start
 
 (defun ar-count-braced-in-backslashed-atpt (&optional beg end) 
 "Counts matches of braced in backslashed if useful, returns nil otherwise "
@@ -8718,10 +8718,10 @@
   (ar-th-ratio-base 'parentized 'whitespaced beg end t (interactive-p)))
 
 
-;;; count/ratio ar-atpt-unpaired-delimited-list ar-atpt-delimited-list end
+;;; count/ratio ar-unpaired-delimited-passiv ar-paired-delimited-passiv end
 
 
-;;; count/ratio ar-atpt-delimited-list ar-atpt-unpaired-delimited-list  start
+;;; count/ratio ar-paired-delimited-passiv ar-unpaired-delimited-passiv  start
 
 (defun ar-count-backslashed-in-braced-atpt (&optional beg end) 
 "Counts matches of backslashed in braced if useful, returns nil otherwise "
@@ -10163,10 +10163,10 @@
   (ar-th-ratio-base 'whitespaced 'parentized beg end t (interactive-p)))
 
 
-;;; count/ratio ar-atpt-delimited-list ar-atpt-unpaired-delimited-list end
+;;; count/ratio ar-paired-delimited-passiv ar-unpaired-delimited-passiv end
 
 
-;;; count/ratio ar-atpt-counts-list ar-atpt-delimited-list start
+;;; count/ratio ar-atpt-counts-list ar-paired-delimited-passiv start
 
 (defun ar-count-braced-in-anglednonest-atpt (&optional beg end) 
 "Counts matches of braced in anglednonest if useful, returns nil otherwise "
@@ -11128,7 +11128,7 @@
   (ar-th-ratio-base 'parentized 'buffer beg end t (interactive-p)))
 
 
-;;; count/ratio  ar-atpt-counts-list ar-atpt-delimited-list end
+;;; count/ratio  ar-atpt-counts-list ar-paired-delimited-passiv end
 
 
 

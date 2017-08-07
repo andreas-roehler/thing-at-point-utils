@@ -162,10 +162,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "braced" "coloned"))
 
-(defun ar-braced2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "braced" "crossed"))
-
 (defun ar-braced2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "braced" "dollared"))
@@ -177,10 +173,6 @@
 (defun ar-braced2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "braced" "equalized"))
-
-(defun ar-braced2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "braced" "hashed"))
 
 (defun ar-braced2hyphened-atpt ()
   (interactive "*")
@@ -197,10 +189,6 @@
 (defun ar-braced2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "braced" "stared"))
-
-(defun ar-braced2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "braced" "tilded"))
 
 (defun ar-braced2underscored-atpt ()
   (interactive "*")
@@ -222,10 +210,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "bracketed" "coloned"))
 
-(defun ar-bracketed2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "bracketed" "crossed"))
-
 (defun ar-bracketed2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "bracketed" "dollared"))
@@ -237,10 +221,6 @@
 (defun ar-bracketed2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "bracketed" "equalized"))
-
-(defun ar-bracketed2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "bracketed" "hashed"))
 
 (defun ar-bracketed2hyphened-atpt ()
   (interactive "*")
@@ -257,10 +237,6 @@
 (defun ar-bracketed2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "bracketed" "stared"))
-
-(defun ar-bracketed2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "bracketed" "tilded"))
 
 (defun ar-bracketed2underscored-atpt ()
   (interactive "*")
@@ -282,10 +258,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "lesserangled" "coloned"))
 
-(defun ar-lesserangled2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "lesserangled" "crossed"))
-
 (defun ar-lesserangled2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "lesserangled" "dollared"))
@@ -297,10 +269,6 @@
 (defun ar-lesserangled2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "lesserangled" "equalized"))
-
-(defun ar-lesserangled2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "lesserangled" "hashed"))
 
 (defun ar-lesserangled2hyphened-atpt ()
   (interactive "*")
@@ -317,10 +285,6 @@
 (defun ar-lesserangled2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "lesserangled" "stared"))
-
-(defun ar-lesserangled2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "lesserangled" "tilded"))
 
 (defun ar-lesserangled2underscored-atpt ()
   (interactive "*")
@@ -342,10 +306,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "greaterangled" "coloned"))
 
-(defun ar-greaterangled2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "greaterangled" "crossed"))
-
 (defun ar-greaterangled2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "greaterangled" "dollared"))
@@ -357,10 +317,6 @@
 (defun ar-greaterangled2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "greaterangled" "equalized"))
-
-(defun ar-greaterangled2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "greaterangled" "hashed"))
 
 (defun ar-greaterangled2hyphened-atpt ()
   (interactive "*")
@@ -377,10 +333,6 @@
 (defun ar-greaterangled2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "greaterangled" "stared"))
-
-(defun ar-greaterangled2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "greaterangled" "tilded"))
 
 (defun ar-greaterangled2underscored-atpt ()
   (interactive "*")
@@ -402,10 +354,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "coloned"))
 
-(defun ar-leftrightsinglequoted2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "leftrightsinglequoted" "crossed"))
-
 (defun ar-leftrightsinglequoted2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "dollared"))
@@ -417,10 +365,6 @@
 (defun ar-leftrightsinglequoted2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "equalized"))
-
-(defun ar-leftrightsinglequoted2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "leftrightsinglequoted" "hashed"))
 
 (defun ar-leftrightsinglequoted2hyphened-atpt ()
   (interactive "*")
@@ -437,10 +381,6 @@
 (defun ar-leftrightsinglequoted2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "stared"))
-
-(defun ar-leftrightsinglequoted2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "leftrightsinglequoted" "tilded"))
 
 (defun ar-leftrightsinglequoted2underscored-atpt ()
   (interactive "*")
@@ -462,10 +402,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "parentized" "coloned"))
 
-(defun ar-parentized2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "parentized" "crossed"))
-
 (defun ar-parentized2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "parentized" "dollared"))
@@ -477,10 +413,6 @@
 (defun ar-parentized2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "parentized" "equalized"))
-
-(defun ar-parentized2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "parentized" "hashed"))
 
 (defun ar-parentized2hyphened-atpt ()
   (interactive "*")
@@ -497,10 +429,6 @@
 (defun ar-parentized2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "parentized" "stared"))
-
-(defun ar-parentized2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "parentized" "tilded"))
 
 (defun ar-parentized2underscored-atpt ()
   (interactive "*")
@@ -582,30 +510,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "parentized"))
 
-(defun ar-crossed2braced-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "braced"))
-
-(defun ar-crossed2bracketed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "bracketed"))
-
-(defun ar-crossed2lesserangled-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "lesserangled"))
-
-(defun ar-crossed2greaterangled-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "greaterangled"))
-
-(defun ar-crossed2leftrightsinglequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "leftrightsinglequoted"))
-
-(defun ar-crossed2parentized-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "parentized"))
-
 (defun ar-dollared2braced-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "dollared" "braced"))
@@ -677,30 +581,6 @@
 (defun ar-equalized2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "parentized"))
-
-(defun ar-hashed2braced-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "braced"))
-
-(defun ar-hashed2bracketed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "bracketed"))
-
-(defun ar-hashed2lesserangled-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "lesserangled"))
-
-(defun ar-hashed2greaterangled-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "greaterangled"))
-
-(defun ar-hashed2leftrightsinglequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "leftrightsinglequoted"))
-
-(defun ar-hashed2parentized-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "parentized"))
 
 (defun ar-hyphened2braced-atpt ()
   (interactive "*")
@@ -798,30 +678,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "stared" "parentized"))
 
-(defun ar-tilded2braced-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "braced"))
-
-(defun ar-tilded2bracketed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "bracketed"))
-
-(defun ar-tilded2lesserangled-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "lesserangled"))
-
-(defun ar-tilded2greaterangled-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "greaterangled"))
-
-(defun ar-tilded2leftrightsinglequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "leftrightsinglequoted"))
-
-(defun ar-tilded2parentized-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "parentized"))
-
 (defun ar-underscored2braced-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "braced"))
@@ -878,10 +734,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "coloned"))
 
-(defun ar-backslashed2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "backslashed" "crossed"))
-
 (defun ar-backslashed2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "dollared"))
@@ -893,10 +745,6 @@
 (defun ar-backslashed2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "equalized"))
-
-(defun ar-backslashed2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "backslashed" "hashed"))
 
 (defun ar-backslashed2hyphened-atpt ()
   (interactive "*")
@@ -914,10 +762,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "stared"))
 
-(defun ar-backslashed2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "backslashed" "tilded"))
-
 (defun ar-backslashed2underscored-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "underscored"))
@@ -934,10 +778,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "backticked" "coloned"))
 
-(defun ar-backticked2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "backticked" "crossed"))
-
 (defun ar-backticked2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backticked" "dollared"))
@@ -949,10 +789,6 @@
 (defun ar-backticked2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backticked" "equalized"))
-
-(defun ar-backticked2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "backticked" "hashed"))
 
 (defun ar-backticked2hyphened-atpt ()
   (interactive "*")
@@ -970,10 +806,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "backticked" "stared"))
 
-(defun ar-backticked2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "backticked" "tilded"))
-
 (defun ar-backticked2underscored-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backticked" "underscored"))
@@ -990,10 +822,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "backticked"))
 
-(defun ar-coloned2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "coloned" "crossed"))
-
 (defun ar-coloned2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "dollared"))
@@ -1005,10 +833,6 @@
 (defun ar-coloned2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "equalized"))
-
-(defun ar-coloned2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "coloned" "hashed"))
 
 (defun ar-coloned2hyphened-atpt ()
   (interactive "*")
@@ -1026,10 +850,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "stared"))
 
-(defun ar-coloned2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "coloned" "tilded"))
-
 (defun ar-coloned2underscored-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "underscored"))
@@ -1037,62 +857,6 @@
 (defun ar-coloned2whitespaced-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "whitespaced"))
-
-(defun ar-crossed2backslashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "backslashed"))
-
-(defun ar-crossed2backticked-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "backticked"))
-
-(defun ar-crossed2coloned-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "coloned"))
-
-(defun ar-crossed2dollared-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "dollared"))
-
-(defun ar-crossed2doublequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "doublequoted"))
-
-(defun ar-crossed2equalized-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "equalized"))
-
-(defun ar-crossed2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "hashed"))
-
-(defun ar-crossed2hyphened-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "hyphened"))
-
-(defun ar-crossed2singlequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "singlequoted"))
-
-(defun ar-crossed2slashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "slashed"))
-
-(defun ar-crossed2stared-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "stared"))
-
-(defun ar-crossed2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "tilded"))
-
-(defun ar-crossed2underscored-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "underscored"))
-
-(defun ar-crossed2whitespaced-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "crossed" "whitespaced"))
 
 (defun ar-dollared2backslashed-atpt ()
   (interactive "*")
@@ -1106,10 +870,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "dollared" "coloned"))
 
-(defun ar-dollared2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "dollared" "crossed"))
-
 (defun ar-dollared2doublequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "dollared" "doublequoted"))
@@ -1117,10 +877,6 @@
 (defun ar-dollared2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "dollared" "equalized"))
-
-(defun ar-dollared2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "dollared" "hashed"))
 
 (defun ar-dollared2hyphened-atpt ()
   (interactive "*")
@@ -1137,10 +893,6 @@
 (defun ar-dollared2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "dollared" "stared"))
-
-(defun ar-dollared2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "dollared" "tilded"))
 
 (defun ar-dollared2underscored-atpt ()
   (interactive "*")
@@ -1162,10 +914,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "doublequoted" "coloned"))
 
-(defun ar-doublequoted2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "doublequoted" "crossed"))
-
 (defun ar-doublequoted2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "doublequoted" "dollared"))
@@ -1173,10 +921,6 @@
 (defun ar-doublequoted2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "doublequoted" "equalized"))
-
-(defun ar-doublequoted2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "doublequoted" "hashed"))
 
 (defun ar-doublequoted2hyphened-atpt ()
   (interactive "*")
@@ -1193,10 +937,6 @@
 (defun ar-doublequoted2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "doublequoted" "stared"))
-
-(defun ar-doublequoted2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "doublequoted" "tilded"))
 
 (defun ar-doublequoted2underscored-atpt ()
   (interactive "*")
@@ -1218,10 +958,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "coloned"))
 
-(defun ar-equalized2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "equalized" "crossed"))
-
 (defun ar-equalized2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "dollared"))
@@ -1229,10 +965,6 @@
 (defun ar-equalized2doublequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "doublequoted"))
-
-(defun ar-equalized2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "equalized" "hashed"))
 
 (defun ar-equalized2hyphened-atpt ()
   (interactive "*")
@@ -1250,10 +982,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "stared"))
 
-(defun ar-equalized2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "equalized" "tilded"))
-
 (defun ar-equalized2underscored-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "underscored"))
@@ -1261,62 +989,6 @@
 (defun ar-equalized2whitespaced-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "whitespaced"))
-
-(defun ar-hashed2backslashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "backslashed"))
-
-(defun ar-hashed2backticked-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "backticked"))
-
-(defun ar-hashed2coloned-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "coloned"))
-
-(defun ar-hashed2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "crossed"))
-
-(defun ar-hashed2dollared-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "dollared"))
-
-(defun ar-hashed2doublequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "doublequoted"))
-
-(defun ar-hashed2equalized-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "equalized"))
-
-(defun ar-hashed2hyphened-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "hyphened"))
-
-(defun ar-hashed2singlequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "singlequoted"))
-
-(defun ar-hashed2slashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "slashed"))
-
-(defun ar-hashed2stared-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "stared"))
-
-(defun ar-hashed2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "tilded"))
-
-(defun ar-hashed2underscored-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "underscored"))
-
-(defun ar-hashed2whitespaced-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hashed" "whitespaced"))
 
 (defun ar-hyphened2backslashed-atpt ()
   (interactive "*")
@@ -1330,10 +1002,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "coloned"))
 
-(defun ar-hyphened2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hyphened" "crossed"))
-
 (defun ar-hyphened2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "dollared"))
@@ -1346,10 +1014,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "equalized"))
 
-(defun ar-hyphened2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hyphened" "hashed"))
-
 (defun ar-hyphened2singlequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "singlequoted"))
@@ -1361,10 +1025,6 @@
 (defun ar-hyphened2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "stared"))
-
-(defun ar-hyphened2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "hyphened" "tilded"))
 
 (defun ar-hyphened2underscored-atpt ()
   (interactive "*")
@@ -1386,10 +1046,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "singlequoted" "coloned"))
 
-(defun ar-singlequoted2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "singlequoted" "crossed"))
-
 (defun ar-singlequoted2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "singlequoted" "dollared"))
@@ -1402,10 +1058,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "singlequoted" "equalized"))
 
-(defun ar-singlequoted2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "singlequoted" "hashed"))
-
 (defun ar-singlequoted2hyphened-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "singlequoted" "hyphened"))
@@ -1417,10 +1069,6 @@
 (defun ar-singlequoted2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "singlequoted" "stared"))
-
-(defun ar-singlequoted2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "singlequoted" "tilded"))
 
 (defun ar-singlequoted2underscored-atpt ()
   (interactive "*")
@@ -1442,10 +1090,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "coloned"))
 
-(defun ar-slashed2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "slashed" "crossed"))
-
 (defun ar-slashed2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "dollared"))
@@ -1458,10 +1102,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "equalized"))
 
-(defun ar-slashed2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "slashed" "hashed"))
-
 (defun ar-slashed2hyphened-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "hyphened"))
@@ -1473,10 +1113,6 @@
 (defun ar-slashed2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "stared"))
-
-(defun ar-slashed2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "slashed" "tilded"))
 
 (defun ar-slashed2underscored-atpt ()
   (interactive "*")
@@ -1498,10 +1134,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "stared" "coloned"))
 
-(defun ar-stared2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "stared" "crossed"))
-
 (defun ar-stared2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "stared" "dollared"))
@@ -1513,10 +1145,6 @@
 (defun ar-stared2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "stared" "equalized"))
-
-(defun ar-stared2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "stared" "hashed"))
 
 (defun ar-stared2hyphened-atpt ()
   (interactive "*")
@@ -1530,10 +1158,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "stared" "slashed"))
 
-(defun ar-stared2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "stared" "tilded"))
-
 (defun ar-stared2underscored-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "stared" "underscored"))
@@ -1541,62 +1165,6 @@
 (defun ar-stared2whitespaced-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "stared" "whitespaced"))
-
-(defun ar-tilded2backslashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "backslashed"))
-
-(defun ar-tilded2backticked-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "backticked"))
-
-(defun ar-tilded2coloned-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "coloned"))
-
-(defun ar-tilded2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "crossed"))
-
-(defun ar-tilded2dollared-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "dollared"))
-
-(defun ar-tilded2doublequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "doublequoted"))
-
-(defun ar-tilded2equalized-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "equalized"))
-
-(defun ar-tilded2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "hashed"))
-
-(defun ar-tilded2hyphened-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "hyphened"))
-
-(defun ar-tilded2singlequoted-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "singlequoted"))
-
-(defun ar-tilded2slashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "slashed"))
-
-(defun ar-tilded2stared-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "stared"))
-
-(defun ar-tilded2underscored-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "underscored"))
-
-(defun ar-tilded2whitespaced-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "tilded" "whitespaced"))
 
 (defun ar-underscored2backslashed-atpt ()
   (interactive "*")
@@ -1610,10 +1178,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "coloned"))
 
-(defun ar-underscored2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "underscored" "crossed"))
-
 (defun ar-underscored2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "dollared"))
@@ -1625,10 +1189,6 @@
 (defun ar-underscored2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "equalized"))
-
-(defun ar-underscored2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "underscored" "hashed"))
 
 (defun ar-underscored2hyphened-atpt ()
   (interactive "*")
@@ -1646,10 +1206,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "stared"))
 
-(defun ar-underscored2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "underscored" "tilded"))
-
 (defun ar-underscored2whitespaced-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "whitespaced"))
@@ -1666,10 +1222,6 @@
   (interactive "*")
   (ar--transform-delimited-intern "whitespaced" "coloned"))
 
-(defun ar-whitespaced2crossed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "whitespaced" "crossed"))
-
 (defun ar-whitespaced2dollared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "whitespaced" "dollared"))
@@ -1681,10 +1233,6 @@
 (defun ar-whitespaced2equalized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "whitespaced" "equalized"))
-
-(defun ar-whitespaced2hashed-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "whitespaced" "hashed"))
 
 (defun ar-whitespaced2hyphened-atpt ()
   (interactive "*")
@@ -1701,10 +1249,6 @@
 (defun ar-whitespaced2stared-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "whitespaced" "stared"))
-
-(defun ar-whitespaced2tilded-atpt ()
-  (interactive "*")
-  (ar--transform-delimited-intern "whitespaced" "tilded"))
 
 (defun ar-whitespaced2underscored-atpt ()
   (interactive "*")

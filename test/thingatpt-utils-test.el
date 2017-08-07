@@ -284,7 +284,6 @@
     (goto-char orig)
     (ar-blok-graph-atpt)
     (goto-char orig)
-    (ar-slashparen-graph-atpt)
     (goto-char orig)
     (let ((bounds (ar-bounds-of-blok-atpt)))
       (assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
