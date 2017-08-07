@@ -1,4 +1,4 @@
-;;; ar-thing-atpt-other-test.el --- More thing-atpt tests -*- lexical-binding: t; -*- 
+;;; ar-thing-atpt-other-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015  Andreas Röhler
 
@@ -295,6 +295,12 @@ return wwrap"
     (python-mode)
     (search-forward "print")
     (should (< 2 (length (ar-string-atpt))))))
+
+(ert-deftest ar-delimited-coloned-test ()
+  (ar-test-with-temp-buffer
+      "(defun :foo1: ())"
+      (search-backward "1:")
+    (should (eq 8 (caar (ar-bounds-of-delimited-atpt))))))
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

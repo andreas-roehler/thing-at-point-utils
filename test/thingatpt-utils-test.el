@@ -35,7 +35,6 @@
   (defvar ar-atpt-delim-test-list '())
 
 (require 'time-stamp)
-(require 'thingatpt-utils-core)
 (require 'thing-at-point-utils)
 (require 'thing-classes-in-unpaired-delimited-list)
 (require 'ar-comment-lor)

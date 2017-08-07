@@ -29,8 +29,6 @@
 
 (require 'thingatpt-utils-core)
 
-(require 'thingatpt-utils-core)
-
 
 ;; ar-thing-at-point-utils-delimited-intern: ar-paired-delimited-passiv start
 
@@ -25015,6 +25013,8 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list end
+
+
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with backslash(s),
   otherwise copy backslash(ed) at point.
@@ -25206,6 +25206,54 @@ See doku from `sort-subr', for details.
   With negative argument kill parentize(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'parentize no-delimiters (interactive-p)))
+
+(defun ar-braced-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with braced(s),
+  otherwise copy braced(ed) at point.
+  With NO-DELIMITERS, copy braced(ed) without delimiters.
+  With negative argument kill braced(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'braced no-delimiters (interactive-p)))
+
+(defun ar-bracketed-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with bracketed(s),
+  otherwise copy bracketed(ed) at point.
+  With NO-DELIMITERS, copy bracketed(ed) without delimiters.
+  With negative argument kill bracketed(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'bracketed no-delimiters (interactive-p)))
+
+(defun ar-lesserangled-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with lesserangled(s),
+  otherwise copy lesserangled(ed) at point.
+  With NO-DELIMITERS, copy lesserangled(ed) without delimiters.
+  With negative argument kill lesserangled(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'lesserangled no-delimiters (interactive-p)))
+
+(defun ar-greaterangled-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with greaterangled(s),
+  otherwise copy greaterangled(ed) at point.
+  With NO-DELIMITERS, copy greaterangled(ed) without delimiters.
+  With negative argument kill greaterangled(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'greaterangled no-delimiters (interactive-p)))
+
+(defun ar-leftrightsinglequoted-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with leftrightsinglequoted(s),
+  otherwise copy leftrightsinglequoted(ed) at point.
+  With NO-DELIMITERS, copy leftrightsinglequoted(ed) without delimiters.
+  With negative argument kill leftrightsinglequoted(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'leftrightsinglequoted no-delimiters (interactive-p)))
+
+(defun ar-parentized-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with parentized(s),
+  otherwise copy parentized(ed) at point.
+  With NO-DELIMITERS, copy parentized(ed) without delimiters.
+  With negative argument kill parentized(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'parentized no-delimiters (interactive-p)))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with greateranglednested(s),
@@ -25446,8 +25494,6 @@ See doku from `sort-subr', for details.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters (interactive-p)))
-
-
 
 (defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
