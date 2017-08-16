@@ -28,8 +28,6 @@
 ;;; Code:
 
 (require 'thingatpt-utils-core)
-
-(require 'thingatpt-utils-core)
 (defun ar-braced2bracketed-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "braced" "bracketed"))
