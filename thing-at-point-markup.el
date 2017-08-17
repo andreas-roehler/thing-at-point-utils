@@ -135,20 +135,36 @@
   (interactive "*p")
   (ar-th-blok 'beginendquote no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-beginendquote-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-beginendquote-atpt 'ar-beginendquote-backslashparen-atpt)
+(defun ar-backslashparen-beginendquote-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around beginendquote at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'beginendquote no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-beginendquote-atpt 'ar-beginendquote-doublebackslash-atpt)
+(defun ar-beginendquote-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around BEGINENDQUOTE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'beginendquote no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-beginendquote-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-beginendquote-atpt 'ar-beginendquote-doubleslash-atpt)
+(defun ar-beginendquote-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around BEGINENDQUOTE at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'beginendquote no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-beginendquote-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-beginendquote-atpt 'ar-beginendquote-doublebackslashparen-atpt)
+(defun ar-beginendquote-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BEGINENDQUOTE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'beginendquote no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-beginendquote-atpt 'ar-beginendquote-slashparen-atpt)
+(defun ar-beginendquote-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around BEGINENDQUOTE at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'beginendquote no-delimiters (interactive-p)))
 
 (defun ar-comment-beginendquote-atpt (&optional no-delimiters)
   "Comments BEGINENDQUOTE at point if any. "
@@ -166,7 +182,8 @@
   (ar-th-quote 'beginendquote no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-beginendquote-atpt 'ar-beginendquote-hyphen-atpt)
-;; ;; (defun ar-beginendquote-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-beginendquote-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around BEGINENDQUOTE at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'beginendquote no-delimiters (interactive-p)))
@@ -214,14 +231,15 @@
   (interactive "*P")
   (ar-th-kill-backward 'beginendquote no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-beginendquote-atpt 'ar-beginendquote-leftrightsinglequote-atpt)
-;; ;; (defun ar-beginendquote-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'beginendquote no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-beginendquote-atpt 'ar-beginendquote-leftrightsinglequote-atpt)
+(defun ar-beginendquote-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'beginendquote no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-beginendquote-atpt 'ar-beginendquote-parentize-atpt)
-;; ;; (defun ar-beginendquote-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-beginendquote-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes BEGINENDQUOTE at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'beginendquote no-delimiters (interactive-p)))
@@ -234,7 +252,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'beginendquote no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-beginendquote-atpt 'ar-beginendquote-singlequote-atpt)
-;; ;; (defun ar-beginendquote-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-beginendquote-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes BEGINENDQUOTE at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'beginendquote no-delimiters (interactive-p)))
@@ -251,13 +270,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'beginendquote no-delimiters (interactive-p)))
 
+(defalias 'ar-beginendquote-trim-atpt 'ar-trim-beginendquote-atpt)
+(defun ar-trim-beginendquote-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'beginendquote t t))
+
+(defalias 'ar-trim-left-beginendquote-atpt 'ar-trim-beginendquote-left-atpt)
+(defun ar-trim-beginendquote-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'beginendquote t nil))
+
+(defalias 'ar-trim-right-beginendquote-atpt 'ar-trim-beginendquote-right-atpt)
+(defun ar-trim-beginendquote-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'beginendquote nil t))
+
 (defun ar-underscore-beginendquote-atpt (&optional no-delimiters)
   "Put underscore char around BEGINENDQUOTE. "
   (interactive "*p")
   (ar-th-underscore 'beginendquote no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-beginendquote-whitespace-atpt 'ar-whitespace-beginendquote-atpt)
-;; ;; (defun ar-whitespace-beginendquote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-beginendquote-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around BEGINENDQUOTE. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'beginendquote nil t))
@@ -374,20 +412,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'blok no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-blok-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-blok-atpt 'ar-blok-backslashparen-atpt)
+(defun ar-backslashparen-blok-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around blok at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'blok no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-blok-atpt 'ar-blok-doublebackslash-atpt)
+(defun ar-blok-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around BLOK at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'blok no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-blok-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-blok-atpt 'ar-blok-doubleslash-atpt)
+(defun ar-blok-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around BLOK at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'blok no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-blok-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-blok-atpt 'ar-blok-doublebackslashparen-atpt)
+(defun ar-blok-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BLOK at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'blok no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-blok-atpt 'ar-blok-slashparen-atpt)
+(defun ar-blok-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around BLOK at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'blok no-delimiters (interactive-p)))
 
 (defun ar-comment-blok-atpt (&optional no-delimiters)
   "Comments BLOK at point if any. "
@@ -405,7 +459,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'blok no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-blok-atpt 'ar-blok-hyphen-atpt)
-;; ;; (defun ar-blok-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-blok-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around BLOK at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'blok no-delimiters (interactive-p)))
@@ -453,14 +508,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'blok no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-blok-atpt 'ar-blok-leftrightsinglequote-atpt)
-;; ;; (defun ar-blok-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'blok no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-blok-atpt 'ar-blok-leftrightsinglequote-atpt)
+(defun ar-blok-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'blok no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-blok-atpt 'ar-blok-parentize-atpt)
-;; ;; (defun ar-blok-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-blok-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes BLOK at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'blok no-delimiters (interactive-p)))
@@ -473,7 +529,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'blok no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-blok-atpt 'ar-blok-singlequote-atpt)
-;; ;; (defun ar-blok-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-blok-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes BLOK at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'blok no-delimiters (interactive-p)))
@@ -490,13 +547,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'blok no-delimiters (interactive-p)))
 
+(defalias 'ar-blok-trim-atpt 'ar-trim-blok-atpt)
+(defun ar-trim-blok-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'blok t t))
+
+(defalias 'ar-trim-left-blok-atpt 'ar-trim-blok-left-atpt)
+(defun ar-trim-blok-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'blok t nil))
+
+(defalias 'ar-trim-right-blok-atpt 'ar-trim-blok-right-atpt)
+(defun ar-trim-blok-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'blok nil t))
+
 (defun ar-underscore-blok-atpt (&optional no-delimiters)
   "Put underscore char around BLOK. "
   (interactive "*p")
   (ar-th-underscore 'blok no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-blok-whitespace-atpt 'ar-whitespace-blok-atpt)
-;; ;; (defun ar-whitespace-blok-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-blok-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around BLOK. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'blok nil t))
@@ -613,20 +689,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'doublebackslashed no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-doublebackslashed-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-doublebackslashed-atpt 'ar-doublebackslashed-backslashparen-atpt)
+(defun ar-backslashparen-doublebackslashed-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around doublebackslashed at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'doublebackslashed no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-doublebackslashed-atpt 'ar-doublebackslashed-doublebackslash-atpt)
+(defun ar-doublebackslashed-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around DOUBLEBACKSLASHED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'doublebackslashed no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-doublebackslashed-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-doublebackslashed-atpt 'ar-doublebackslashed-doubleslash-atpt)
+(defun ar-doublebackslashed-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around DOUBLEBACKSLASHED at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'doublebackslashed no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-doublebackslashed-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-doublebackslashed-atpt 'ar-doublebackslashed-doublebackslashparen-atpt)
+(defun ar-doublebackslashed-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DOUBLEBACKSLASHED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'doublebackslashed no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-doublebackslashed-atpt 'ar-doublebackslashed-slashparen-atpt)
+(defun ar-doublebackslashed-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around DOUBLEBACKSLASHED at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'doublebackslashed no-delimiters (interactive-p)))
 
 (defun ar-comment-doublebackslashed-atpt (&optional no-delimiters)
   "Comments DOUBLEBACKSLASHED at point if any. "
@@ -644,7 +736,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'doublebackslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-doublebackslashed-atpt 'ar-doublebackslashed-hyphen-atpt)
-;; ;; (defun ar-doublebackslashed-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doublebackslashed-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around DOUBLEBACKSLASHED at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'doublebackslashed no-delimiters (interactive-p)))
@@ -692,14 +785,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'doublebackslashed no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-doublebackslashed-atpt 'ar-doublebackslashed-leftrightsinglequote-atpt)
-;; ;; (defun ar-doublebackslashed-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'doublebackslashed no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-doublebackslashed-atpt 'ar-doublebackslashed-leftrightsinglequote-atpt)
+(defun ar-doublebackslashed-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'doublebackslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-doublebackslashed-atpt 'ar-doublebackslashed-parentize-atpt)
-;; ;; (defun ar-doublebackslashed-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doublebackslashed-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes DOUBLEBACKSLASHED at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'doublebackslashed no-delimiters (interactive-p)))
@@ -712,7 +806,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'doublebackslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-doublebackslashed-atpt 'ar-doublebackslashed-singlequote-atpt)
-;; ;; (defun ar-doublebackslashed-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doublebackslashed-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes DOUBLEBACKSLASHED at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'doublebackslashed no-delimiters (interactive-p)))
@@ -729,13 +824,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doublebackslashed no-delimiters (interactive-p)))
 
+(defalias 'ar-doublebackslashed-trim-atpt 'ar-trim-doublebackslashed-atpt)
+(defun ar-trim-doublebackslashed-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doublebackslashed t t))
+
+(defalias 'ar-trim-left-doublebackslashed-atpt 'ar-trim-doublebackslashed-left-atpt)
+(defun ar-trim-doublebackslashed-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'doublebackslashed t nil))
+
+(defalias 'ar-trim-right-doublebackslashed-atpt 'ar-trim-doublebackslashed-right-atpt)
+(defun ar-trim-doublebackslashed-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doublebackslashed nil t))
+
 (defun ar-underscore-doublebackslashed-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLEBACKSLASHED. "
   (interactive "*p")
   (ar-th-underscore 'doublebackslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-doublebackslashed-whitespace-atpt 'ar-whitespace-doublebackslashed-atpt)
-;; ;; (defun ar-whitespace-doublebackslashed-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-doublebackslashed-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around DOUBLEBACKSLASHED. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'doublebackslashed nil t))
@@ -852,20 +966,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'doublebackslashedparen no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-doublebackslashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-doublebackslashedparen-atpt 'ar-doublebackslashedparen-backslashparen-atpt)
+(defun ar-backslashparen-doublebackslashedparen-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around doublebackslashedparen at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'doublebackslashedparen no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-doublebackslashedparen-atpt 'ar-doublebackslashedparen-doublebackslash-atpt)
+(defun ar-doublebackslashedparen-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'doublebackslashedparen no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-doublebackslashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-doublebackslashedparen-atpt 'ar-doublebackslashedparen-doubleslash-atpt)
+(defun ar-doublebackslashedparen-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'doublebackslashedparen no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-doublebackslashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-doublebackslashedparen-atpt 'ar-doublebackslashedparen-doublebackslashparen-atpt)
+(defun ar-doublebackslashedparen-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'doublebackslashedparen no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-doublebackslashedparen-atpt 'ar-doublebackslashedparen-slashparen-atpt)
+(defun ar-doublebackslashedparen-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'doublebackslashedparen no-delimiters (interactive-p)))
 
 (defun ar-comment-doublebackslashedparen-atpt (&optional no-delimiters)
   "Comments DOUBLEBACKSLASHEDPAREN at point if any. "
@@ -883,7 +1013,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'doublebackslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-doublebackslashedparen-atpt 'ar-doublebackslashedparen-hyphen-atpt)
-;; ;; (defun ar-doublebackslashedparen-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doublebackslashedparen-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around DOUBLEBACKSLASHEDPAREN at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'doublebackslashedparen no-delimiters (interactive-p)))
@@ -931,14 +1062,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'doublebackslashedparen no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-doublebackslashedparen-atpt 'ar-doublebackslashedparen-leftrightsinglequote-atpt)
-;; ;; (defun ar-doublebackslashedparen-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'doublebackslashedparen no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-doublebackslashedparen-atpt 'ar-doublebackslashedparen-leftrightsinglequote-atpt)
+(defun ar-doublebackslashedparen-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'doublebackslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-doublebackslashedparen-atpt 'ar-doublebackslashedparen-parentize-atpt)
-;; ;; (defun ar-doublebackslashedparen-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doublebackslashedparen-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes DOUBLEBACKSLASHEDPAREN at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'doublebackslashedparen no-delimiters (interactive-p)))
@@ -951,7 +1083,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'doublebackslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-doublebackslashedparen-atpt 'ar-doublebackslashedparen-singlequote-atpt)
-;; ;; (defun ar-doublebackslashedparen-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doublebackslashedparen-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes DOUBLEBACKSLASHEDPAREN at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'doublebackslashedparen no-delimiters (interactive-p)))
@@ -968,13 +1101,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doublebackslashedparen no-delimiters (interactive-p)))
 
+(defalias 'ar-doublebackslashedparen-trim-atpt 'ar-trim-doublebackslashedparen-atpt)
+(defun ar-trim-doublebackslashedparen-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doublebackslashedparen t t))
+
+(defalias 'ar-trim-left-doublebackslashedparen-atpt 'ar-trim-doublebackslashedparen-left-atpt)
+(defun ar-trim-doublebackslashedparen-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'doublebackslashedparen t nil))
+
+(defalias 'ar-trim-right-doublebackslashedparen-atpt 'ar-trim-doublebackslashedparen-right-atpt)
+(defun ar-trim-doublebackslashedparen-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doublebackslashedparen nil t))
+
 (defun ar-underscore-doublebackslashedparen-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLEBACKSLASHEDPAREN. "
   (interactive "*p")
   (ar-th-underscore 'doublebackslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-doublebackslashedparen-whitespace-atpt 'ar-whitespace-doublebackslashedparen-atpt)
-;; ;; (defun ar-whitespace-doublebackslashedparen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-doublebackslashedparen-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around DOUBLEBACKSLASHEDPAREN. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'doublebackslashedparen nil t))
@@ -1091,20 +1243,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'doubleslashed no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-doubleslashed-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-doubleslashed-atpt 'ar-doubleslashed-backslashparen-atpt)
+(defun ar-backslashparen-doubleslashed-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around doubleslashed at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'doubleslashed no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-doubleslashed-atpt 'ar-doubleslashed-doublebackslash-atpt)
+(defun ar-doubleslashed-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around DOUBLESLASHED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'doubleslashed no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-doubleslashed-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-doubleslashed-atpt 'ar-doubleslashed-doubleslash-atpt)
+(defun ar-doubleslashed-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around DOUBLESLASHED at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'doubleslashed no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-doubleslashed-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-doubleslashed-atpt 'ar-doubleslashed-doublebackslashparen-atpt)
+(defun ar-doubleslashed-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DOUBLESLASHED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'doubleslashed no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-doubleslashed-atpt 'ar-doubleslashed-slashparen-atpt)
+(defun ar-doubleslashed-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around DOUBLESLASHED at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'doubleslashed no-delimiters (interactive-p)))
 
 (defun ar-comment-doubleslashed-atpt (&optional no-delimiters)
   "Comments DOUBLESLASHED at point if any. "
@@ -1122,7 +1290,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'doubleslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-doubleslashed-atpt 'ar-doubleslashed-hyphen-atpt)
-;; ;; (defun ar-doubleslashed-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doubleslashed-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around DOUBLESLASHED at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'doubleslashed no-delimiters (interactive-p)))
@@ -1170,14 +1339,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'doubleslashed no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-doubleslashed-atpt 'ar-doubleslashed-leftrightsinglequote-atpt)
-;; ;; (defun ar-doubleslashed-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'doubleslashed no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-doubleslashed-atpt 'ar-doubleslashed-leftrightsinglequote-atpt)
+(defun ar-doubleslashed-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'doubleslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-doubleslashed-atpt 'ar-doubleslashed-parentize-atpt)
-;; ;; (defun ar-doubleslashed-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doubleslashed-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes DOUBLESLASHED at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'doubleslashed no-delimiters (interactive-p)))
@@ -1190,7 +1360,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'doubleslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-doubleslashed-atpt 'ar-doubleslashed-singlequote-atpt)
-;; ;; (defun ar-doubleslashed-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doubleslashed-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes DOUBLESLASHED at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'doubleslashed no-delimiters (interactive-p)))
@@ -1207,13 +1378,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doubleslashed no-delimiters (interactive-p)))
 
+(defalias 'ar-doubleslashed-trim-atpt 'ar-trim-doubleslashed-atpt)
+(defun ar-trim-doubleslashed-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doubleslashed t t))
+
+(defalias 'ar-trim-left-doubleslashed-atpt 'ar-trim-doubleslashed-left-atpt)
+(defun ar-trim-doubleslashed-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'doubleslashed t nil))
+
+(defalias 'ar-trim-right-doubleslashed-atpt 'ar-trim-doubleslashed-right-atpt)
+(defun ar-trim-doubleslashed-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doubleslashed nil t))
+
 (defun ar-underscore-doubleslashed-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLESLASHED. "
   (interactive "*p")
   (ar-th-underscore 'doubleslashed no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-doubleslashed-whitespace-atpt 'ar-whitespace-doubleslashed-atpt)
-;; ;; (defun ar-whitespace-doubleslashed-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-doubleslashed-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around DOUBLESLASHED. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'doubleslashed nil t))
@@ -1330,20 +1520,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'doubleslashedparen no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-doubleslashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-doubleslashedparen-atpt 'ar-doubleslashedparen-backslashparen-atpt)
+(defun ar-backslashparen-doubleslashedparen-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around doubleslashedparen at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'doubleslashedparen no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-doubleslashedparen-atpt 'ar-doubleslashedparen-doublebackslash-atpt)
+(defun ar-doubleslashedparen-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'doubleslashedparen no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-doubleslashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-doubleslashedparen-atpt 'ar-doubleslashedparen-doubleslash-atpt)
+(defun ar-doubleslashedparen-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'doubleslashedparen no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-doubleslashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-doubleslashedparen-atpt 'ar-doubleslashedparen-doublebackslashparen-atpt)
+(defun ar-doubleslashedparen-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'doubleslashedparen no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-doubleslashedparen-atpt 'ar-doubleslashedparen-slashparen-atpt)
+(defun ar-doubleslashedparen-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around DOUBLESLASHEDPAREN at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'doubleslashedparen no-delimiters (interactive-p)))
 
 (defun ar-comment-doubleslashedparen-atpt (&optional no-delimiters)
   "Comments DOUBLESLASHEDPAREN at point if any. "
@@ -1361,7 +1567,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'doubleslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-doubleslashedparen-atpt 'ar-doubleslashedparen-hyphen-atpt)
-;; ;; (defun ar-doubleslashedparen-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doubleslashedparen-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around DOUBLESLASHEDPAREN at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'doubleslashedparen no-delimiters (interactive-p)))
@@ -1409,14 +1616,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'doubleslashedparen no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-doubleslashedparen-atpt 'ar-doubleslashedparen-leftrightsinglequote-atpt)
-;; ;; (defun ar-doubleslashedparen-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'doubleslashedparen no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-doubleslashedparen-atpt 'ar-doubleslashedparen-leftrightsinglequote-atpt)
+(defun ar-doubleslashedparen-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'doubleslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-doubleslashedparen-atpt 'ar-doubleslashedparen-parentize-atpt)
-;; ;; (defun ar-doubleslashedparen-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doubleslashedparen-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes DOUBLESLASHEDPAREN at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'doubleslashedparen no-delimiters (interactive-p)))
@@ -1429,7 +1637,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'doubleslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-doubleslashedparen-atpt 'ar-doubleslashedparen-singlequote-atpt)
-;; ;; (defun ar-doubleslashedparen-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-doubleslashedparen-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes DOUBLESLASHEDPAREN at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'doubleslashedparen no-delimiters (interactive-p)))
@@ -1446,13 +1655,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'doubleslashedparen no-delimiters (interactive-p)))
 
+(defalias 'ar-doubleslashedparen-trim-atpt 'ar-trim-doubleslashedparen-atpt)
+(defun ar-trim-doubleslashedparen-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doubleslashedparen t t))
+
+(defalias 'ar-trim-left-doubleslashedparen-atpt 'ar-trim-doubleslashedparen-left-atpt)
+(defun ar-trim-doubleslashedparen-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'doubleslashedparen t nil))
+
+(defalias 'ar-trim-right-doubleslashedparen-atpt 'ar-trim-doubleslashedparen-right-atpt)
+(defun ar-trim-doubleslashedparen-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'doubleslashedparen nil t))
+
 (defun ar-underscore-doubleslashedparen-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLESLASHEDPAREN. "
   (interactive "*p")
   (ar-th-underscore 'doubleslashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-doubleslashedparen-whitespace-atpt 'ar-whitespace-doubleslashedparen-atpt)
-;; ;; (defun ar-whitespace-doubleslashedparen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-doubleslashedparen-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around DOUBLESLASHEDPAREN. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'doubleslashedparen nil t))
@@ -1569,20 +1797,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'markup no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-markup-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-markup-atpt 'ar-markup-backslashparen-atpt)
+(defun ar-backslashparen-markup-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around markup at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'markup no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-markup-atpt 'ar-markup-doublebackslash-atpt)
+(defun ar-markup-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around MARKUP at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'markup no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-markup-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-markup-atpt 'ar-markup-doubleslash-atpt)
+(defun ar-markup-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around MARKUP at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'markup no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-markup-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-markup-atpt 'ar-markup-doublebackslashparen-atpt)
+(defun ar-markup-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around MARKUP at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'markup no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-markup-atpt 'ar-markup-slashparen-atpt)
+(defun ar-markup-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around MARKUP at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'markup no-delimiters (interactive-p)))
 
 (defun ar-comment-markup-atpt (&optional no-delimiters)
   "Comments MARKUP at point if any. "
@@ -1600,7 +1844,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'markup no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-markup-atpt 'ar-markup-hyphen-atpt)
-;; ;; (defun ar-markup-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-markup-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around MARKUP at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'markup no-delimiters (interactive-p)))
@@ -1648,14 +1893,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'markup no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-markup-atpt 'ar-markup-leftrightsinglequote-atpt)
-;; ;; (defun ar-markup-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'markup no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-markup-atpt 'ar-markup-leftrightsinglequote-atpt)
+(defun ar-markup-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'markup no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-markup-atpt 'ar-markup-parentize-atpt)
-;; ;; (defun ar-markup-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-markup-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes MARKUP at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'markup no-delimiters (interactive-p)))
@@ -1668,7 +1914,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'markup no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-markup-atpt 'ar-markup-singlequote-atpt)
-;; ;; (defun ar-markup-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-markup-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes MARKUP at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'markup no-delimiters (interactive-p)))
@@ -1685,13 +1932,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'markup no-delimiters (interactive-p)))
 
+(defalias 'ar-markup-trim-atpt 'ar-trim-markup-atpt)
+(defun ar-trim-markup-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'markup t t))
+
+(defalias 'ar-trim-left-markup-atpt 'ar-trim-markup-left-atpt)
+(defun ar-trim-markup-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'markup t nil))
+
+(defalias 'ar-trim-right-markup-atpt 'ar-trim-markup-right-atpt)
+(defun ar-trim-markup-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'markup nil t))
+
 (defun ar-underscore-markup-atpt (&optional no-delimiters)
   "Put underscore char around MARKUP. "
   (interactive "*p")
   (ar-th-underscore 'markup no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-markup-whitespace-atpt 'ar-whitespace-markup-atpt)
-;; ;; (defun ar-whitespace-markup-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-markup-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around MARKUP. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'markup nil t))
@@ -1808,20 +2074,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'mldata no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-mldata-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-mldata-atpt 'ar-mldata-backslashparen-atpt)
+(defun ar-backslashparen-mldata-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around mldata at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'mldata no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-mldata-atpt 'ar-mldata-doublebackslash-atpt)
+(defun ar-mldata-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around MLDATA at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'mldata no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-mldata-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-mldata-atpt 'ar-mldata-doubleslash-atpt)
+(defun ar-mldata-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around MLDATA at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'mldata no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-mldata-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-mldata-atpt 'ar-mldata-doublebackslashparen-atpt)
+(defun ar-mldata-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around MLDATA at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'mldata no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-mldata-atpt 'ar-mldata-slashparen-atpt)
+(defun ar-mldata-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around MLDATA at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'mldata no-delimiters (interactive-p)))
 
 (defun ar-comment-mldata-atpt (&optional no-delimiters)
   "Comments MLDATA at point if any. "
@@ -1839,7 +2121,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'mldata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-mldata-atpt 'ar-mldata-hyphen-atpt)
-;; ;; (defun ar-mldata-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mldata-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around MLDATA at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'mldata no-delimiters (interactive-p)))
@@ -1887,14 +2170,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'mldata no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-mldata-atpt 'ar-mldata-leftrightsinglequote-atpt)
-;; ;; (defun ar-mldata-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'mldata no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-mldata-atpt 'ar-mldata-leftrightsinglequote-atpt)
+(defun ar-mldata-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'mldata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-mldata-atpt 'ar-mldata-parentize-atpt)
-;; ;; (defun ar-mldata-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mldata-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes MLDATA at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'mldata no-delimiters (interactive-p)))
@@ -1907,7 +2191,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'mldata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-mldata-atpt 'ar-mldata-singlequote-atpt)
-;; ;; (defun ar-mldata-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mldata-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes MLDATA at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'mldata no-delimiters (interactive-p)))
@@ -1924,13 +2209,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mldata no-delimiters (interactive-p)))
 
+(defalias 'ar-mldata-trim-atpt 'ar-trim-mldata-atpt)
+(defun ar-trim-mldata-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'mldata t t))
+
+(defalias 'ar-trim-left-mldata-atpt 'ar-trim-mldata-left-atpt)
+(defun ar-trim-mldata-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'mldata t nil))
+
+(defalias 'ar-trim-right-mldata-atpt 'ar-trim-mldata-right-atpt)
+(defun ar-trim-mldata-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'mldata nil t))
+
 (defun ar-underscore-mldata-atpt (&optional no-delimiters)
   "Put underscore char around MLDATA. "
   (interactive "*p")
   (ar-th-underscore 'mldata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-mldata-whitespace-atpt 'ar-whitespace-mldata-atpt)
-;; ;; (defun ar-whitespace-mldata-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-mldata-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around MLDATA. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'mldata nil t))
@@ -2047,20 +2351,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'mlattribut no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-mlattribut-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-mlattribut-atpt 'ar-mlattribut-backslashparen-atpt)
+(defun ar-backslashparen-mlattribut-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around mlattribut at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'mlattribut no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-mlattribut-atpt 'ar-mlattribut-doublebackslash-atpt)
+(defun ar-mlattribut-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around MLATTRIBUT at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'mlattribut no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-mlattribut-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-mlattribut-atpt 'ar-mlattribut-doubleslash-atpt)
+(defun ar-mlattribut-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around MLATTRIBUT at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'mlattribut no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-mlattribut-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-mlattribut-atpt 'ar-mlattribut-doublebackslashparen-atpt)
+(defun ar-mlattribut-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around MLATTRIBUT at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'mlattribut no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-mlattribut-atpt 'ar-mlattribut-slashparen-atpt)
+(defun ar-mlattribut-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around MLATTRIBUT at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'mlattribut no-delimiters (interactive-p)))
 
 (defun ar-comment-mlattribut-atpt (&optional no-delimiters)
   "Comments MLATTRIBUT at point if any. "
@@ -2078,7 +2398,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'mlattribut no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-mlattribut-atpt 'ar-mlattribut-hyphen-atpt)
-;; ;; (defun ar-mlattribut-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mlattribut-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around MLATTRIBUT at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'mlattribut no-delimiters (interactive-p)))
@@ -2126,14 +2447,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'mlattribut no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-mlattribut-atpt 'ar-mlattribut-leftrightsinglequote-atpt)
-;; ;; (defun ar-mlattribut-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'mlattribut no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-mlattribut-atpt 'ar-mlattribut-leftrightsinglequote-atpt)
+(defun ar-mlattribut-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'mlattribut no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-mlattribut-atpt 'ar-mlattribut-parentize-atpt)
-;; ;; (defun ar-mlattribut-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mlattribut-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes MLATTRIBUT at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'mlattribut no-delimiters (interactive-p)))
@@ -2146,7 +2468,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'mlattribut no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-mlattribut-atpt 'ar-mlattribut-singlequote-atpt)
-;; ;; (defun ar-mlattribut-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mlattribut-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes MLATTRIBUT at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'mlattribut no-delimiters (interactive-p)))
@@ -2163,13 +2486,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mlattribut no-delimiters (interactive-p)))
 
+(defalias 'ar-mlattribut-trim-atpt 'ar-trim-mlattribut-atpt)
+(defun ar-trim-mlattribut-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'mlattribut t t))
+
+(defalias 'ar-trim-left-mlattribut-atpt 'ar-trim-mlattribut-left-atpt)
+(defun ar-trim-mlattribut-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'mlattribut t nil))
+
+(defalias 'ar-trim-right-mlattribut-atpt 'ar-trim-mlattribut-right-atpt)
+(defun ar-trim-mlattribut-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'mlattribut nil t))
+
 (defun ar-underscore-mlattribut-atpt (&optional no-delimiters)
   "Put underscore char around MLATTRIBUT. "
   (interactive "*p")
   (ar-th-underscore 'mlattribut no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-mlattribut-whitespace-atpt 'ar-whitespace-mlattribut-atpt)
-;; ;; (defun ar-whitespace-mlattribut-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-mlattribut-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around MLATTRIBUT. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'mlattribut nil t))
@@ -2286,20 +2628,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'mltag no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-mltag-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-mltag-atpt 'ar-mltag-backslashparen-atpt)
+(defun ar-backslashparen-mltag-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around mltag at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'mltag no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-mltag-atpt 'ar-mltag-doublebackslash-atpt)
+(defun ar-mltag-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around MLTAG at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'mltag no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-mltag-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-mltag-atpt 'ar-mltag-doubleslash-atpt)
+(defun ar-mltag-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around MLTAG at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'mltag no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-mltag-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-mltag-atpt 'ar-mltag-doublebackslashparen-atpt)
+(defun ar-mltag-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around MLTAG at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'mltag no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-mltag-atpt 'ar-mltag-slashparen-atpt)
+(defun ar-mltag-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around MLTAG at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'mltag no-delimiters (interactive-p)))
 
 (defun ar-comment-mltag-atpt (&optional no-delimiters)
   "Comments MLTAG at point if any. "
@@ -2317,7 +2675,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'mltag no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-mltag-atpt 'ar-mltag-hyphen-atpt)
-;; ;; (defun ar-mltag-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mltag-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around MLTAG at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'mltag no-delimiters (interactive-p)))
@@ -2365,14 +2724,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'mltag no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-mltag-atpt 'ar-mltag-leftrightsinglequote-atpt)
-;; ;; (defun ar-mltag-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'mltag no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-mltag-atpt 'ar-mltag-leftrightsinglequote-atpt)
+(defun ar-mltag-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'mltag no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-mltag-atpt 'ar-mltag-parentize-atpt)
-;; ;; (defun ar-mltag-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mltag-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes MLTAG at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'mltag no-delimiters (interactive-p)))
@@ -2385,7 +2745,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'mltag no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-mltag-atpt 'ar-mltag-singlequote-atpt)
-;; ;; (defun ar-mltag-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-mltag-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes MLTAG at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'mltag no-delimiters (interactive-p)))
@@ -2402,13 +2763,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'mltag no-delimiters (interactive-p)))
 
+(defalias 'ar-mltag-trim-atpt 'ar-trim-mltag-atpt)
+(defun ar-trim-mltag-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'mltag t t))
+
+(defalias 'ar-trim-left-mltag-atpt 'ar-trim-mltag-left-atpt)
+(defun ar-trim-mltag-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'mltag t nil))
+
+(defalias 'ar-trim-right-mltag-atpt 'ar-trim-mltag-right-atpt)
+(defun ar-trim-mltag-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'mltag nil t))
+
 (defun ar-underscore-mltag-atpt (&optional no-delimiters)
   "Put underscore char around MLTAG. "
   (interactive "*p")
   (ar-th-underscore 'mltag no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-mltag-whitespace-atpt 'ar-whitespace-mltag-atpt)
-;; ;; (defun ar-whitespace-mltag-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-mltag-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around MLTAG. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'mltag nil t))
@@ -2525,20 +2905,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'slashedparen no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-slashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-slashedparen-atpt 'ar-slashedparen-backslashparen-atpt)
+(defun ar-backslashparen-slashedparen-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around slashedparen at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'slashedparen no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-slashedparen-atpt 'ar-slashedparen-doublebackslash-atpt)
+(defun ar-slashedparen-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around SLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'slashedparen no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-slashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-slashedparen-atpt 'ar-slashedparen-doubleslash-atpt)
+(defun ar-slashedparen-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around SLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'slashedparen no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-slashedparen-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-slashedparen-atpt 'ar-slashedparen-doublebackslashparen-atpt)
+(defun ar-slashedparen-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around SLASHEDPAREN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'slashedparen no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-slashedparen-atpt 'ar-slashedparen-slashparen-atpt)
+(defun ar-slashedparen-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around SLASHEDPAREN at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'slashedparen no-delimiters (interactive-p)))
 
 (defun ar-comment-slashedparen-atpt (&optional no-delimiters)
   "Comments SLASHEDPAREN at point if any. "
@@ -2556,7 +2952,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'slashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-slashedparen-atpt 'ar-slashedparen-hyphen-atpt)
-;; ;; (defun ar-slashedparen-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-slashedparen-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around SLASHEDPAREN at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'slashedparen no-delimiters (interactive-p)))
@@ -2604,14 +3001,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'slashedparen no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-slashedparen-atpt 'ar-slashedparen-leftrightsinglequote-atpt)
-;; ;; (defun ar-slashedparen-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'slashedparen no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-slashedparen-atpt 'ar-slashedparen-leftrightsinglequote-atpt)
+(defun ar-slashedparen-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'slashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-slashedparen-atpt 'ar-slashedparen-parentize-atpt)
-;; ;; (defun ar-slashedparen-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-slashedparen-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes SLASHEDPAREN at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'slashedparen no-delimiters (interactive-p)))
@@ -2624,7 +3022,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'slashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-slashedparen-atpt 'ar-slashedparen-singlequote-atpt)
-;; ;; (defun ar-slashedparen-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-slashedparen-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes SLASHEDPAREN at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'slashedparen no-delimiters (interactive-p)))
@@ -2641,13 +3040,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'slashedparen no-delimiters (interactive-p)))
 
+(defalias 'ar-slashedparen-trim-atpt 'ar-trim-slashedparen-atpt)
+(defun ar-trim-slashedparen-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'slashedparen t t))
+
+(defalias 'ar-trim-left-slashedparen-atpt 'ar-trim-slashedparen-left-atpt)
+(defun ar-trim-slashedparen-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'slashedparen t nil))
+
+(defalias 'ar-trim-right-slashedparen-atpt 'ar-trim-slashedparen-right-atpt)
+(defun ar-trim-slashedparen-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'slashedparen nil t))
+
 (defun ar-underscore-slashedparen-atpt (&optional no-delimiters)
   "Put underscore char around SLASHEDPAREN. "
   (interactive "*p")
   (ar-th-underscore 'slashedparen no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-slashedparen-whitespace-atpt 'ar-whitespace-slashedparen-atpt)
-;; ;; (defun ar-whitespace-slashedparen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-slashedparen-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around SLASHEDPAREN. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'slashedparen nil t))
@@ -2764,20 +3182,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'tabledata no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-tabledata-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-tabledata-atpt 'ar-tabledata-backslashparen-atpt)
+(defun ar-backslashparen-tabledata-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around tabledata at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'tabledata no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-tabledata-atpt 'ar-tabledata-doublebackslash-atpt)
+(defun ar-tabledata-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around TABLEDATA at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'tabledata no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-tabledata-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-tabledata-atpt 'ar-tabledata-doubleslash-atpt)
+(defun ar-tabledata-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around TABLEDATA at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'tabledata no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-tabledata-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-tabledata-atpt 'ar-tabledata-doublebackslashparen-atpt)
+(defun ar-tabledata-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around TABLEDATA at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'tabledata no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-tabledata-atpt 'ar-tabledata-slashparen-atpt)
+(defun ar-tabledata-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around TABLEDATA at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'tabledata no-delimiters (interactive-p)))
 
 (defun ar-comment-tabledata-atpt (&optional no-delimiters)
   "Comments TABLEDATA at point if any. "
@@ -2795,7 +3229,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'tabledata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-tabledata-atpt 'ar-tabledata-hyphen-atpt)
-;; ;; (defun ar-tabledata-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-tabledata-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around TABLEDATA at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'tabledata no-delimiters (interactive-p)))
@@ -2843,14 +3278,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'tabledata no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-tabledata-atpt 'ar-tabledata-leftrightsinglequote-atpt)
-;; ;; (defun ar-tabledata-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'tabledata no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-tabledata-atpt 'ar-tabledata-leftrightsinglequote-atpt)
+(defun ar-tabledata-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'tabledata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-tabledata-atpt 'ar-tabledata-parentize-atpt)
-;; ;; (defun ar-tabledata-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-tabledata-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes TABLEDATA at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'tabledata no-delimiters (interactive-p)))
@@ -2863,7 +3299,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'tabledata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-tabledata-atpt 'ar-tabledata-singlequote-atpt)
-;; ;; (defun ar-tabledata-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-tabledata-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes TABLEDATA at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'tabledata no-delimiters (interactive-p)))
@@ -2880,13 +3317,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'tabledata no-delimiters (interactive-p)))
 
+(defalias 'ar-tabledata-trim-atpt 'ar-trim-tabledata-atpt)
+(defun ar-trim-tabledata-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'tabledata t t))
+
+(defalias 'ar-trim-left-tabledata-atpt 'ar-trim-tabledata-left-atpt)
+(defun ar-trim-tabledata-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'tabledata t nil))
+
+(defalias 'ar-trim-right-tabledata-atpt 'ar-trim-tabledata-right-atpt)
+(defun ar-trim-tabledata-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'tabledata nil t))
+
 (defun ar-underscore-tabledata-atpt (&optional no-delimiters)
   "Put underscore char around TABLEDATA. "
   (interactive "*p")
   (ar-th-underscore 'tabledata no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-tabledata-whitespace-atpt 'ar-whitespace-tabledata-atpt)
-;; ;; (defun ar-whitespace-tabledata-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-tabledata-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around TABLEDATA. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'tabledata nil t))
@@ -3003,20 +3459,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'xslstylesheet no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-xslstylesheet-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-xslstylesheet-atpt 'ar-xslstylesheet-backslashparen-atpt)
+(defun ar-backslashparen-xslstylesheet-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around xslstylesheet at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'xslstylesheet no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-xslstylesheet-atpt 'ar-xslstylesheet-doublebackslash-atpt)
+(defun ar-xslstylesheet-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around XSLSTYLESHEET at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'xslstylesheet no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-xslstylesheet-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-xslstylesheet-atpt 'ar-xslstylesheet-doubleslash-atpt)
+(defun ar-xslstylesheet-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around XSLSTYLESHEET at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'xslstylesheet no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-xslstylesheet-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-xslstylesheet-atpt 'ar-xslstylesheet-doublebackslashparen-atpt)
+(defun ar-xslstylesheet-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around XSLSTYLESHEET at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'xslstylesheet no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-xslstylesheet-atpt 'ar-xslstylesheet-slashparen-atpt)
+(defun ar-xslstylesheet-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around XSLSTYLESHEET at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'xslstylesheet no-delimiters (interactive-p)))
 
 (defun ar-comment-xslstylesheet-atpt (&optional no-delimiters)
   "Comments XSLSTYLESHEET at point if any. "
@@ -3034,7 +3506,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'xslstylesheet no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-xslstylesheet-atpt 'ar-xslstylesheet-hyphen-atpt)
-;; ;; (defun ar-xslstylesheet-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-xslstylesheet-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around XSLSTYLESHEET at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'xslstylesheet no-delimiters (interactive-p)))
@@ -3082,14 +3555,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'xslstylesheet no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-xslstylesheet-atpt 'ar-xslstylesheet-leftrightsinglequote-atpt)
-;; ;; (defun ar-xslstylesheet-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'xslstylesheet no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-xslstylesheet-atpt 'ar-xslstylesheet-leftrightsinglequote-atpt)
+(defun ar-xslstylesheet-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'xslstylesheet no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-xslstylesheet-atpt 'ar-xslstylesheet-parentize-atpt)
-;; ;; (defun ar-xslstylesheet-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-xslstylesheet-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes XSLSTYLESHEET at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'xslstylesheet no-delimiters (interactive-p)))
@@ -3102,7 +3576,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'xslstylesheet no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-xslstylesheet-atpt 'ar-xslstylesheet-singlequote-atpt)
-;; ;; (defun ar-xslstylesheet-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-xslstylesheet-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes XSLSTYLESHEET at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'xslstylesheet no-delimiters (interactive-p)))
@@ -3119,13 +3594,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'xslstylesheet no-delimiters (interactive-p)))
 
+(defalias 'ar-xslstylesheet-trim-atpt 'ar-trim-xslstylesheet-atpt)
+(defun ar-trim-xslstylesheet-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'xslstylesheet t t))
+
+(defalias 'ar-trim-left-xslstylesheet-atpt 'ar-trim-xslstylesheet-left-atpt)
+(defun ar-trim-xslstylesheet-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'xslstylesheet t nil))
+
+(defalias 'ar-trim-right-xslstylesheet-atpt 'ar-trim-xslstylesheet-right-atpt)
+(defun ar-trim-xslstylesheet-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'xslstylesheet nil t))
+
 (defun ar-underscore-xslstylesheet-atpt (&optional no-delimiters)
   "Put underscore char around XSLSTYLESHEET. "
   (interactive "*p")
   (ar-th-underscore 'xslstylesheet no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-xslstylesheet-whitespace-atpt 'ar-whitespace-xslstylesheet-atpt)
-;; ;; (defun ar-whitespace-xslstylesheet-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-xslstylesheet-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around XSLSTYLESHEET. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'xslstylesheet nil t))
@@ -3242,20 +3736,36 @@ See doku from `sort-subr', for details.
   (interactive "*p")
   (ar-th-blok 'xsltemplate no-delimiters (interactive-p)))
 
-(defun ar-doublebackslash-xsltemplate-atpt (&optional no-delimiters)
+(defalias 'ar-backslashparen-xsltemplate-atpt 'ar-xsltemplate-backslashparen-atpt)
+(defun ar-backslashparen-xsltemplate-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around xsltemplate at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'xsltemplate no-delimiters (interactive-p)))
+
+(defalias 'ar-doublebackslash-xsltemplate-atpt 'ar-xsltemplate-doublebackslash-atpt)
+(defun ar-xsltemplate-doublebackslash-atpt (&optional no-delimiters)
   "Puts doubled backslashes around XSLTEMPLATE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslash 'xsltemplate no-delimiters (interactive-p)))
 
-(defun ar-doubleslash-xsltemplate-atpt (&optional no-delimiters)
+(defalias 'ar-doubleslash-xsltemplate-atpt 'ar-xsltemplate-doubleslash-atpt)
+(defun ar-xsltemplate-doubleslash-atpt (&optional no-delimiters)
   "Puts doubled slashes around XSLTEMPLATE at point if any. "
   (interactive "*p")
   (ar-th-doubleslash 'xsltemplate no-delimiters (interactive-p)))
 
-(defun ar-doublebackslashparen-xsltemplate-atpt (&optional no-delimiters)
+(defalias 'ar-doublebackslashparen-xsltemplate-atpt 'ar-xsltemplate-doublebackslashparen-atpt)
+(defun ar-xsltemplate-doublebackslashparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around XSLTEMPLATE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'xsltemplate no-delimiters (interactive-p)))
+
+(defalias 'ar-slashparen-xsltemplate-atpt 'ar-xsltemplate-slashparen-atpt)
+(defun ar-xsltemplate-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around XSLTEMPLATE at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'xsltemplate no-delimiters (interactive-p)))
 
 (defun ar-comment-xsltemplate-atpt (&optional no-delimiters)
   "Comments XSLTEMPLATE at point if any. "
@@ -3273,7 +3783,8 @@ See doku from `sort-subr', for details.
   (ar-th-quote 'xsltemplate no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-hyphen-xsltemplate-atpt 'ar-xsltemplate-hyphen-atpt)
-;; ;; (defun ar-xsltemplate-hyphen-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-xsltemplate-hyphen-atpt (&optional no-delimiters)
 ;;   "Puts hyphens around XSLTEMPLATE at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-hyphen 'xsltemplate no-delimiters (interactive-p)))
@@ -3321,14 +3832,15 @@ See doku from `sort-subr', for details.
   (interactive "*P")
   (ar-th-kill-backward 'xsltemplate no-delimiters (interactive-p)))
 
-;; (defalias 'ar-leftrightsinglequote-xsltemplate-atpt 'ar-xsltemplate-leftrightsinglequote-atpt)
-;; ;; (defun ar-xsltemplate-leftrightsinglequote-atpt (&optional no-delimiters)
-;;   "Singlequotes alnum at point if any. "
-;;   (interactive "*p")
-;;   (ar-th-leftrightsinglequote 'xsltemplate no-delimiters (interactive-p)))
+(defalias 'ar-leftrightsinglequote-xsltemplate-atpt 'ar-xsltemplate-leftrightsinglequote-atpt)
+(defun ar-xsltemplate-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'xsltemplate no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-parentize-xsltemplate-atpt 'ar-xsltemplate-parentize-atpt)
-;; ;; (defun ar-xsltemplate-parentize-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-xsltemplate-parentize-atpt (&optional no-delimiters)
 ;;   "Parentizes XSLTEMPLATE at point if any, does nothing otherwise"
 ;;   (interactive "*p")
 ;;   (ar-th-parentize 'xsltemplate no-delimiters (interactive-p)))
@@ -3341,7 +3853,8 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-separate 'xsltemplate no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-singlequote-xsltemplate-atpt 'ar-xsltemplate-singlequote-atpt)
-;; ;; (defun ar-xsltemplate-singlequote-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-xsltemplate-singlequote-atpt (&optional no-delimiters)
 ;;   "Singlequotes XSLTEMPLATE at point if any. "
 ;;   (interactive "*p")
 ;;   (ar-th-singlequote 'xsltemplate no-delimiters (interactive-p)))
@@ -3358,13 +3871,32 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
   (ar-th-triplequotesq 'xsltemplate no-delimiters (interactive-p)))
 
+(defalias 'ar-xsltemplate-trim-atpt 'ar-trim-xsltemplate-atpt)
+(defun ar-trim-xsltemplate-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'xsltemplate t t))
+
+(defalias 'ar-trim-left-xsltemplate-atpt 'ar-trim-xsltemplate-left-atpt)
+(defun ar-trim-xsltemplate-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'xsltemplate t nil))
+
+(defalias 'ar-trim-right-xsltemplate-atpt 'ar-trim-xsltemplate-right-atpt)
+(defun ar-trim-xsltemplate-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'xsltemplate nil t))
+
 (defun ar-underscore-xsltemplate-atpt (&optional no-delimiters)
   "Put underscore char around XSLTEMPLATE. "
   (interactive "*p")
   (ar-th-underscore 'xsltemplate no-delimiters (interactive-p)))
 
 ;; (defalias 'ar-xsltemplate-whitespace-atpt 'ar-whitespace-xsltemplate-atpt)
-;; ;; (defun ar-whitespace-xsltemplate-atpt (&optional no-delimiters)
+;; ;;;###autoload
+;; (defun ar-whitespace-xsltemplate-atpt (&optional no-delimiters)
 ;;   "Put whitespace char around XSLTEMPLATE. "
 ;;   (interactive "*p")
 ;;   (ar-th-whitespace 'xsltemplate nil t))
