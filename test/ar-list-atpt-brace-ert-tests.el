@@ -178,7 +178,7 @@
     (end-of-line)
     (skip-syntax-forward "^(")
     (ar-slash-list-atpt)
-    (should (eq 54 (length (ar-list-atpt))))))
+    (should (looking-back "}/")))) 
 
 (ert-deftest ar-doublebackslash-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
@@ -268,7 +268,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-greater-list-angle-atpt)
+    (ar-greaterangle-list-atpt)
     (should (eq (char-before) ?<))))
 
 (ert-deftest ar-lesserangle-list-atpt-brace-test ()
@@ -414,7 +414,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-list-singlequote-atpt)
+    (ar-singlequote-list-atpt)
     (should (eq (char-before) ?'))))
 
 (ert-deftest ar-list-triplequotesq-atpt-brace-test ()
