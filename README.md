@@ -1,3 +1,6 @@
+Thing-at-point-utils [![Build Status](https://travis-ci.org/thing-at-point-utils/thing-at-point-utils.svg?branch=master)](https://travis-ci.org/andreas-roehler/thing-at-point-utils)
+===
+
 # thing-at-point-utils
 Delivers a set of functions to return, mover over or
 manipulate a given THING. 
