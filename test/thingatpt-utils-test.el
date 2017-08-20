@@ -47,7 +47,7 @@
   " "
   (interactive)
   (ar-th-provide-test-buffer "emacs-lisp")
-  (when (interactive-p) (switch-to-buffer (current-buffer)))
+  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
   (emacs-lisp-mode)
   (goto-char 9)
   (ar-comment-or-uncomment-lor)
@@ -61,7 +61,7 @@
 (defun ar-th-html-comment-test (&optional arg)
   (interactive)
   (ar-th-provide-test-buffer "html")
-  (when (interactive-p) (switch-to-buffer (current-buffer)))
+  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
   (goto-char (point-min)) 
   (search-forward "<!-- ") 
   (sgml-mode)
@@ -108,7 +108,7 @@
                     (setq item (concat (format "%s" (car item))" "(format "%s" (cdr item)))))
                 (insert (concat (format "%s: " elt) (format "%s \n" item)))))))))
     (set-buffer "th-test")
-    (when (interactive-p) (switch-to-buffer (current-buffer)))
+    (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
     (goto-char (point-min))
     (message "%s %s" "th-test finished." (time-stamp-string))))
 
@@ -135,14 +135,14 @@
               (when (eq 4 (prefix-numeric-value delay)) (sit-for th-test-delay))))))
       ;;  don't work, bug?
       ;; (with-output-to-temp-buffer "mv-test-newlist"
-      (goto-outbuf outbuf (interactive-p))
+      (goto-outbuf outbuf (called-interactively-p 'any))
       (erase-buffer)
       (emacs-lisp-mode)
       ;; (when (eq 4 (prefix-numeric-value arg))
       ;; (list-insert-assert neuliste mv-test-assert-values "th-mv-test"))
       ;; (message "%s" "Need a \"emacs-lisp-test\"-buffer, run th-delimtest before")))
       (set-buffer old-buf)
-      (when (interactive-p) (switch-to-buffer (current-buffer)))
+      (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
       (message "%s %s" "th-mv-test done" (time-stamp-string))))
 
 
@@ -191,11 +191,11 @@
   (interactive "*P")
   (let ((testlist (or liste ar-atpt-delim-test-list)))
     (ar-th-provide-test-buffer "emacs-lisp")
-    (when (interactive-p) (switch-to-buffer (current-buffer)))
+    (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
     (goto-char 9)
     (save-excursion
       (dolist (elt testlist)
-        (when (interactive-p) (message "   %s" elt))
+        (when (called-interactively-p 'any) (message "   %s" elt))
         (save-excursion
           (let* ((command (format "%s" elt))
                  (point-max-orig (point-max))
@@ -213,7 +213,7 @@
   (interactive "p")
   (let ((new-sort-test-assert-values ())
         (old-buf (current-buffer)))
-    (inaugurate-test-buf "sort-test-assertions" nil (interactive-p))
+    (inaugurate-test-buf "sort-test-assertions" nil (called-interactively-p 'any))
     (when arg (switch-to-buffer (current-buffer)))
     (narrow-to-defun)
     (mark-whole-buffer)
@@ -247,7 +247,7 @@
 (defun ar-th-forward-backward-test ()
   (interactive)
   (ar-th-provide-test-buffer "html")
-  (when (interactive-p) (switch-to-buffer (current-buffer)))
+  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
   (goto-char 111)
   (assert (eq 119 (ar-forward-graph-atpt)))
   (assert (eq 169 (ar-forward-mlattribut-atpt)))
@@ -260,7 +260,7 @@
 (defun ar-th-markup-test ()
   (interactive)
   (ar-th-provide-test-buffer "html")
-  (when (interactive-p) (switch-to-buffer (current-buffer)))
+  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
   (goto-char (point-min)) 
   (search-forward ".org") 
   (ar-th-markup-attribut-test)
@@ -276,7 +276,7 @@
 (defun ar-th-delimit-tests ()
   (interactive)
   (ar-th-provide-test-buffer "html")
-  (when (interactive-p) (switch-to-buffer (current-buffer)))
+  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
   (goto-char 106)
   (let ((orig (copy-marker (point))))
     (ar-doublebackslashparen-alnum-atpt)
@@ -361,7 +361,7 @@ works on Emacs.
 		   (t (copy-marker (point-max))))))
     (save-excursion
       (goto-char beg))
-    (when (interactive-p) (message \"%s %s\" beg end))))
+    (when (called-interactively-p 'any) (message \"%s %s\" beg end))))
 
 \(defun foo2 (&optional beg end)
   \" \"
@@ -376,7 +376,7 @@ works on Emacs.
 		   (t (copy-marker (point-max))))))
     (save-excursion
       (goto-char beg))
-    (when (interactive-p) (message \"%s %s\" beg end))))
+    (when (called-interactively-p 'any) (message \"%s %s\" beg end))))
 
 \(defun foo3 (&optional beg end)
   \" \"
@@ -391,7 +391,7 @@ works on Emacs.
 		   (t (copy-marker (point-max))))))
     (save-excursion
       (goto-char beg))
-    (when (interactive-p) (message \"%s %s\" beg end))))")
+    (when (called-interactively-p 'any) (message \"%s %s\" beg end))))")
 ;; ar-th-emacs-lisp-test-string end
 (setq mv-test-assert-values '(343 459 343 494 343 350 337 351 1 826 1 1723 1 1723 1 1723 342 346 343 365 322 360 79 484 342 352 341 347 342 346 1 1722 1 1723 80 458 1 528 1 485 218 390 292 348 1 1722 1 1722 337 351 1 1723 332 432 343 494 282 348 1 528 1 1723 1 1723 80 483 1 1281 1 459 342 346 1 1723 322 360 338 350 1 459 342 353 1 1281 337 351 1 1723 1 1723 1 529 215 351 214 356 204 356 79 484 333 364 1 1722 330 365 332 421 332 366 343 494 343 459))
 

@@ -11022,6 +11022,39 @@ it defaults to `<', otherwise it defaults to `string<'."
 	 (end (or (ignore-errors (cdr (cadr bounds)))(ignore-errors (cadr (cadr bounds)))(cdr-safe bounds))))
     (ar-th-delim thing arg string1 string2 iact beg end)))
 
+;; ar-insert-delimit-forms-intern ar-paired-delimit-aktiv-raw: start
+
+;;;###autoload
+(defun ar-th-brace (thing &optional arg iact)
+  " "
+  (ar-th-delimit--intern thing "{" "}" arg iact))
+
+;;;###autoload
+(defun ar-th-bracket (thing &optional arg iact)
+  " "
+  (ar-th-delimit--intern thing "[" "]" arg iact))
+
+;;;###autoload
+(defun ar-th-lesserangle (thing &optional arg iact)
+  " "
+  (ar-th-delimit--intern thing "<" ">" arg iact))
+
+;;;###autoload
+(defun ar-th-greaterangle (thing &optional arg iact)
+  " "
+  (ar-th-delimit--intern thing ">" "<" arg iact))
+
+;;;###autoload
+(defun ar-th-leftrightsinglequote (thing &optional arg iact)
+  " "
+  (ar-th-delimit--intern thing "‘" "’" arg iact))
+
+;;;###autoload
+(defun ar-th-parentize (thing &optional arg iact)
+  " "
+  (ar-th-delimit--intern thing "(" ")" arg iact))
+;; ar-insert-delimit-forms-intern ar-paired-delimit-aktiv-raw: end
+
 
 ;; ar-triplequote-raw start
 
@@ -11129,44 +11162,6 @@ it defaults to `<', otherwise it defaults to `string<'."
   " "
   (ar-th-delimit--intern thing "//" "//" arg iact))
 ;; ar-insert-delimit-forms-intern ar-unpaired-delimit-aktiv-raw: end
-
-;; ar-insert-delimit-forms ar-paired-delimit-aktiv-raw: start
-
-;;;###autoload
-(defun ar-th-brace (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing "{" "}" arg iact))
-
-;;;###autoload
-(defun ar-th-bracket (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing "[" "]" arg iact))
-
-;;;###autoload
-(defun ar-th-lesserangle (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing "<" ">" arg iact))
-
-;;;###autoload
-(defun ar-th-greaterangle (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing ">" "<" arg iact))
-
-;;;###autoload
-(defun ar-th-leftrightsinglequote (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing "‘" "’" arg iact))
-
-;;;###autoload
-(defun ar-th-leftrightsinglequote (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing "‘" "’" arg iact))
-
-;;;###autoload
-(defun ar-th-parentize (thing &optional arg iact)
-  " "
-  (ar-th-delimit--intern thing "(" ")" arg iact))
-;; ar-insert-delimit-forms ar-paired-delimit-aktiv-raw: end
 
 ;; ar-atpt-data-forms-aktiv start
 
@@ -11350,6 +11345,26 @@ it defaults to `<', otherwise it defaults to `string<'."
 	  ;; (insert "]")
 	  (insert (ar--transform-return-closing-delimiter-according-to-type new-delimiter)))
       (message (concat "ar--transform-delimited-intern: can't see " from)))))
+(setq ar-paired-delimit-aktiv-raw
+  (list
+    '(brace 123 125)
+    '(bracket 91 93)
+    '(lesserangle 60 62)
+    '(greaterangle 62 60)
+    '(leftrightsinglequote 8216 8217)
+    '(parentize 40 41)
+    ))
+
+(setq ar-paired-delimit-aktiv
+  (list
+    'brace
+    'bracket
+    'lesserangle
+    'greaterangle
+    'leftrightsinglequote
+    'parentize
+    ))
+
 (setq ar-atpt-classes
   (list
     'alnum
@@ -11588,28 +11603,6 @@ it defaults to `<', otherwise it defaults to `string<'."
     'tabledata
     'xslstylesheet
     'xsltemplate
-    ))
-
-(setq ar-paired-delimit-aktiv-raw
-  (list
-    '(brace "{" "}")
-    '(bracket "[" "]")
-    '(lesserangle "<" ">")
-    '(greaterangle ">" "<")
-    '(leftrightsinglequote "‘" "’")
-    '(leftrightsinglequote "‘" "’")
-    '(parentize "(" ")")
-    ))
-
-(setq ar-paired-delimit-aktiv
-  (list
-    'brace
-    'bracket
-    'lesserangle
-    'greaterangle
-    'leftrightsinglequote
-    'leftrightsinglequote
-    'parentize
     ))
 
 (setq ar-paired-delimited-passiv-raw
