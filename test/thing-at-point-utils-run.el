@@ -42,32 +42,39 @@
 
     (let ((debug-on-error t)
           (tests (list
-		  "thing-at-point-utils-tests"
-		  "ar-paired-delimit-tests"
-		  "ar-trim-test"
-		  "ar-unpaired-delimited-tests"
-		  "ar-list-atpt-paren-ert-tests"
-		  "ar-thing-at-point-utils-forward-tests"
-		  "translate-paired-delimiters-test"
-		  "ar-thing-at-point-utils-nodelim-classes-test"
-		  "ar-thing-at-point-utils-delimited-tests"
-		  "thingatpt-transform-delimited-test"
-		  "ar-list-atpt-brace-ert-tests"
-		  "ar-paired-delimited-tests"
-		  "ar-peel-tests"
-		  "delimited2delimited-tests"
-		  "ar-separate-tests"
-		  "ar-list-atpt-parens-ert-tests"
-		  "ar-list-atpt-bracket-ert-tests"
-		  "ar-thing-atpt-other-test"
+		  "ar-thing-at-point-utils-setup-tests.el"
+		  "thing-at-point-utils-tests.el"
+		  "ar-paired-delimit-tests.el"
+		  "ar-trim-test.el"
+		  "ar-unpaired-delimited-tests.el"
+		  "ar-list-atpt-ert-tests.el"
+		  "ar-thing-at-point-utils-forward-tests.el"
+		  "translate-paired-delimiters-test.el"
+		  "ar-thing-at-point-utils-nodelim-classes-test.el"
+		  "ar-tatpt-utils-delimited-tests.el"
+		  "thingatpt-transform-delimited-test.el"
+		  "ar-list-atpt-brace-ert-tests.el"
+		  "ar-paired-delimited-tests.el"
+		  "ar-peel-tests.el"
+		  "delimited2delimited-tests.el"
+		  "ar-separate-tests.el"
+		  "ar-list-atpt-parens-ert-tests.el"
+		  "ar-bracketlist-atpt-ert-tests.el"
+		  "ar-thing-atpt-other-test.el"
 		  )))
       (load (expand-file-name "beg-end" source-directory))
       (load (expand-file-name "ar-subr" source-directory))
       (load (expand-file-name "thingatpt-utils-core" source-directory))
       (load (expand-file-name "thing-at-point-utils" source-directory))
-
+      (load (expand-file-name "thingatpt-highlight.el"source-directory))
+      (load (expand-file-name "thingatpt-transform-delimited.el"source-directory))
+      (load (expand-file-name "thing-unpaired-delimited-list-in-rest-list.el"source-directory))
+      (load (expand-file-name "thing-classes-in-rest-list.el"source-directory))
+      (load (expand-file-name "thing-delimited-list-in-counts-list.el"source-directory))
+      (load (expand-file-name "thing-unpaired-delimited-list-in-delimited-list.el"source-directory))
+      (load (expand-file-name "thing-classes-in-delimited-list.el"source-directory))
+      (load (expand-file-name "thing-at-point-peel.el"source-directory))
       (load (expand-file-name "ar-thing-at-point-utils-setup-tests" current-dir))
-
       (dolist (test-file tests)
         (load (expand-file-name test-file current-dir))))
 
