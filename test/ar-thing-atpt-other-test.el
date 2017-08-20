@@ -302,5 +302,12 @@ return wwrap"
       (search-backward "1:")
     (should (eq 8 (caar (ar-bounds-of-delimited-atpt))))))
 
+(ert-deftest ar-brace-greaterangled-test ()
+  (ar-test-with-temp-buffer
+      ">defun: ())<"
+      (forward-char -1) 
+      (ar-brace-greaterangled-atpt)
+    (should (eq (char-before) ?}))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

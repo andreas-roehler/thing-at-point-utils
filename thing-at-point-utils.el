@@ -2618,907 +2618,1359 @@
 
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 ;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
-(defun ar-(brace 123 125)-greateranglednested-atpt (&optional arg)
-  "(Brace 123 125) GREATERANGLEDNESTED at point."
+(defun ar-brace-greateranglednested-atpt (&optional arg)
+  "Brace GREATERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'greateranglednested "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-lesseranglednested-atpt (&optional arg)
-  "(Brace 123 125) LESSERANGLEDNESTED at point."
+(defun ar-brace-lesseranglednested-atpt (&optional arg)
+  "Brace LESSERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'lesseranglednested "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-buffer-atpt (&optional arg)
-  "(Brace 123 125) BUFFER at point."
+(defun ar-brace-buffer-atpt (&optional arg)
+  "Brace BUFFER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'buffer "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-comment-atpt (&optional arg)
-  "(Brace 123 125) COMMENT at point."
+(defun ar-brace-comment-atpt (&optional arg)
+  "Brace COMMENT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'comment "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-csv-atpt (&optional arg)
-  "(Brace 123 125) CSV at point."
+(defun ar-brace-csv-atpt (&optional arg)
+  "Brace CSV at point."
   (interactive "*p")
   (ar-th-delimit--intern 'csv "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-date-atpt (&optional arg)
-  "(Brace 123 125) DATE at point."
+(defun ar-brace-date-atpt (&optional arg)
+  "Brace DATE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'date "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-delimited-atpt (&optional arg)
-  "(Brace 123 125) DELIMITED at point."
+(defun ar-brace-delimited-atpt (&optional arg)
+  "Brace DELIMITED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'delimited "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-email-atpt (&optional arg)
-  "(Brace 123 125) EMAIL at point."
+(defun ar-brace-email-atpt (&optional arg)
+  "Brace EMAIL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'email "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-filename-atpt (&optional arg)
-  "(Brace 123 125) FILENAME at point."
+(defun ar-brace-filename-atpt (&optional arg)
+  "Brace FILENAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filename "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-filenamenondirectory-atpt (&optional arg)
-  "(Brace 123 125) FILENAMENONDIRECTORY at point."
+(defun ar-brace-filenamenondirectory-atpt (&optional arg)
+  "Brace FILENAMENONDIRECTORY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filenamenondirectory "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-float-atpt (&optional arg)
-  "(Brace 123 125) FLOAT at point."
+(defun ar-brace-float-atpt (&optional arg)
+  "Brace FLOAT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'float "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-function-atpt (&optional arg)
-  "(Brace 123 125) FUNCTION at point."
+(defun ar-brace-function-atpt (&optional arg)
+  "Brace FUNCTION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'function "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-ip-atpt (&optional arg)
-  "(Brace 123 125) IP at point."
+(defun ar-brace-ip-atpt (&optional arg)
+  "Brace IP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'ip "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-isbn-atpt (&optional arg)
-  "(Brace 123 125) ISBN at point."
+(defun ar-brace-isbn-atpt (&optional arg)
+  "Brace ISBN at point."
   (interactive "*p")
   (ar-th-delimit--intern 'isbn "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-line-atpt (&optional arg)
-  "(Brace 123 125) LINE at point."
+(defun ar-brace-line-atpt (&optional arg)
+  "Brace LINE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'line "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-list-atpt (&optional arg)
-  "(Brace 123 125) LIST at point."
+(defun ar-brace-list-atpt (&optional arg)
+  "Brace LIST at point."
   (interactive "*p")
   (ar-th-delimit--intern 'list "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-name-atpt (&optional arg)
-  "(Brace 123 125) NAME at point."
+(defun ar-brace-name-atpt (&optional arg)
+  "Brace NAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'name "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-number-atpt (&optional arg)
-  "(Brace 123 125) NUMBER at point."
+(defun ar-brace-number-atpt (&optional arg)
+  "Brace NUMBER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'number "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-page-atpt (&optional arg)
-  "(Brace 123 125) PAGE at point."
+(defun ar-brace-page-atpt (&optional arg)
+  "Brace PAGE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'page "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-paragraph-atpt (&optional arg)
-  "(Brace 123 125) PARAGRAPH at point."
+(defun ar-brace-paragraph-atpt (&optional arg)
+  "Brace PARAGRAPH at point."
   (interactive "*p")
   (ar-th-delimit--intern 'paragraph "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-phone-atpt (&optional arg)
-  "(Brace 123 125) PHONE at point."
+(defun ar-brace-phone-atpt (&optional arg)
+  "Brace PHONE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'phone "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-region-atpt (&optional arg)
-  "(Brace 123 125) REGION at point."
+(defun ar-brace-region-atpt (&optional arg)
+  "Brace REGION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'region "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-sentence-atpt (&optional arg)
-  "(Brace 123 125) SENTENCE at point."
+(defun ar-brace-sentence-atpt (&optional arg)
+  "Brace SENTENCE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sentence "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-sexp-atpt (&optional arg)
-  "(Brace 123 125) SEXP at point."
+(defun ar-brace-sexp-atpt (&optional arg)
+  "Brace SEXP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sexp "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-string-atpt (&optional arg)
-  "(Brace 123 125) STRING at point."
+(defun ar-brace-string-atpt (&optional arg)
+  "Brace STRING at point."
   (interactive "*p")
   (ar-th-delimit--intern 'string "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-shstruct-atpt (&optional arg)
-  "(Brace 123 125) SHSTRUCT at point."
+(defun ar-brace-shstruct-atpt (&optional arg)
+  "Brace SHSTRUCT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'shstruct "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-symbol-atpt (&optional arg)
-  "(Brace 123 125) SYMBOL at point."
+(defun ar-brace-symbol-atpt (&optional arg)
+  "Brace SYMBOL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'symbol "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-url-atpt (&optional arg)
-  "(Brace 123 125) URL at point."
+(defun ar-brace-url-atpt (&optional arg)
+  "Brace URL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'url "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-word-atpt (&optional arg)
-  "(Brace 123 125) WORD at point."
+(defun ar-brace-word-atpt (&optional arg)
+  "Brace WORD at point."
   (interactive "*p")
   (ar-th-delimit--intern 'word "{" "}" arg arg))
 
-(defun ar-(brace 123 125)-wordalphaonly-atpt (&optional arg)
-  "(Brace 123 125) WORDALPHAONLY at point."
+(defun ar-brace-wordalphaonly-atpt (&optional arg)
+  "Brace WORDALPHAONLY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly "{" "}" arg arg))
 
-(defun ar-(bracket 91 93)-greateranglednested-atpt (&optional arg)
-  "(Bracket 91 93) GREATERANGLEDNESTED at point."
+(defun ar-bracket-greateranglednested-atpt (&optional arg)
+  "Bracket GREATERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'greateranglednested "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-lesseranglednested-atpt (&optional arg)
-  "(Bracket 91 93) LESSERANGLEDNESTED at point."
+(defun ar-bracket-lesseranglednested-atpt (&optional arg)
+  "Bracket LESSERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'lesseranglednested "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-buffer-atpt (&optional arg)
-  "(Bracket 91 93) BUFFER at point."
+(defun ar-bracket-buffer-atpt (&optional arg)
+  "Bracket BUFFER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'buffer "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-comment-atpt (&optional arg)
-  "(Bracket 91 93) COMMENT at point."
+(defun ar-bracket-comment-atpt (&optional arg)
+  "Bracket COMMENT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'comment "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-csv-atpt (&optional arg)
-  "(Bracket 91 93) CSV at point."
+(defun ar-bracket-csv-atpt (&optional arg)
+  "Bracket CSV at point."
   (interactive "*p")
   (ar-th-delimit--intern 'csv "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-date-atpt (&optional arg)
-  "(Bracket 91 93) DATE at point."
+(defun ar-bracket-date-atpt (&optional arg)
+  "Bracket DATE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'date "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-delimited-atpt (&optional arg)
-  "(Bracket 91 93) DELIMITED at point."
+(defun ar-bracket-delimited-atpt (&optional arg)
+  "Bracket DELIMITED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'delimited "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-email-atpt (&optional arg)
-  "(Bracket 91 93) EMAIL at point."
+(defun ar-bracket-email-atpt (&optional arg)
+  "Bracket EMAIL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'email "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-filename-atpt (&optional arg)
-  "(Bracket 91 93) FILENAME at point."
+(defun ar-bracket-filename-atpt (&optional arg)
+  "Bracket FILENAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filename "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-filenamenondirectory-atpt (&optional arg)
-  "(Bracket 91 93) FILENAMENONDIRECTORY at point."
+(defun ar-bracket-filenamenondirectory-atpt (&optional arg)
+  "Bracket FILENAMENONDIRECTORY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filenamenondirectory "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-float-atpt (&optional arg)
-  "(Bracket 91 93) FLOAT at point."
+(defun ar-bracket-float-atpt (&optional arg)
+  "Bracket FLOAT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'float "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-function-atpt (&optional arg)
-  "(Bracket 91 93) FUNCTION at point."
+(defun ar-bracket-function-atpt (&optional arg)
+  "Bracket FUNCTION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'function "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-ip-atpt (&optional arg)
-  "(Bracket 91 93) IP at point."
+(defun ar-bracket-ip-atpt (&optional arg)
+  "Bracket IP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'ip "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-isbn-atpt (&optional arg)
-  "(Bracket 91 93) ISBN at point."
+(defun ar-bracket-isbn-atpt (&optional arg)
+  "Bracket ISBN at point."
   (interactive "*p")
   (ar-th-delimit--intern 'isbn "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-line-atpt (&optional arg)
-  "(Bracket 91 93) LINE at point."
+(defun ar-bracket-line-atpt (&optional arg)
+  "Bracket LINE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'line "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-list-atpt (&optional arg)
-  "(Bracket 91 93) LIST at point."
+(defun ar-bracket-list-atpt (&optional arg)
+  "Bracket LIST at point."
   (interactive "*p")
   (ar-th-delimit--intern 'list "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-name-atpt (&optional arg)
-  "(Bracket 91 93) NAME at point."
+(defun ar-bracket-name-atpt (&optional arg)
+  "Bracket NAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'name "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-number-atpt (&optional arg)
-  "(Bracket 91 93) NUMBER at point."
+(defun ar-bracket-number-atpt (&optional arg)
+  "Bracket NUMBER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'number "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-page-atpt (&optional arg)
-  "(Bracket 91 93) PAGE at point."
+(defun ar-bracket-page-atpt (&optional arg)
+  "Bracket PAGE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'page "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-paragraph-atpt (&optional arg)
-  "(Bracket 91 93) PARAGRAPH at point."
+(defun ar-bracket-paragraph-atpt (&optional arg)
+  "Bracket PARAGRAPH at point."
   (interactive "*p")
   (ar-th-delimit--intern 'paragraph "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-phone-atpt (&optional arg)
-  "(Bracket 91 93) PHONE at point."
+(defun ar-bracket-phone-atpt (&optional arg)
+  "Bracket PHONE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'phone "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-region-atpt (&optional arg)
-  "(Bracket 91 93) REGION at point."
+(defun ar-bracket-region-atpt (&optional arg)
+  "Bracket REGION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'region "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-sentence-atpt (&optional arg)
-  "(Bracket 91 93) SENTENCE at point."
+(defun ar-bracket-sentence-atpt (&optional arg)
+  "Bracket SENTENCE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sentence "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-sexp-atpt (&optional arg)
-  "(Bracket 91 93) SEXP at point."
+(defun ar-bracket-sexp-atpt (&optional arg)
+  "Bracket SEXP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sexp "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-string-atpt (&optional arg)
-  "(Bracket 91 93) STRING at point."
+(defun ar-bracket-string-atpt (&optional arg)
+  "Bracket STRING at point."
   (interactive "*p")
   (ar-th-delimit--intern 'string "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-shstruct-atpt (&optional arg)
-  "(Bracket 91 93) SHSTRUCT at point."
+(defun ar-bracket-shstruct-atpt (&optional arg)
+  "Bracket SHSTRUCT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'shstruct "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-symbol-atpt (&optional arg)
-  "(Bracket 91 93) SYMBOL at point."
+(defun ar-bracket-symbol-atpt (&optional arg)
+  "Bracket SYMBOL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'symbol "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-url-atpt (&optional arg)
-  "(Bracket 91 93) URL at point."
+(defun ar-bracket-url-atpt (&optional arg)
+  "Bracket URL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'url "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-word-atpt (&optional arg)
-  "(Bracket 91 93) WORD at point."
+(defun ar-bracket-word-atpt (&optional arg)
+  "Bracket WORD at point."
   (interactive "*p")
   (ar-th-delimit--intern 'word "[" "]" arg arg))
 
-(defun ar-(bracket 91 93)-wordalphaonly-atpt (&optional arg)
-  "(Bracket 91 93) WORDALPHAONLY at point."
+(defun ar-bracket-wordalphaonly-atpt (&optional arg)
+  "Bracket WORDALPHAONLY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly "[" "]" arg arg))
 
-(defun ar-(lesserangle 60 62)-greateranglednested-atpt (&optional arg)
-  "(Lesserangle 60 62) GREATERANGLEDNESTED at point."
+(defun ar-lesserangle-greateranglednested-atpt (&optional arg)
+  "Lesserangle GREATERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'greateranglednested "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-lesseranglednested-atpt (&optional arg)
-  "(Lesserangle 60 62) LESSERANGLEDNESTED at point."
+(defun ar-lesserangle-lesseranglednested-atpt (&optional arg)
+  "Lesserangle LESSERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'lesseranglednested "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-buffer-atpt (&optional arg)
-  "(Lesserangle 60 62) BUFFER at point."
+(defun ar-lesserangle-buffer-atpt (&optional arg)
+  "Lesserangle BUFFER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'buffer "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-comment-atpt (&optional arg)
-  "(Lesserangle 60 62) COMMENT at point."
+(defun ar-lesserangle-comment-atpt (&optional arg)
+  "Lesserangle COMMENT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'comment "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-csv-atpt (&optional arg)
-  "(Lesserangle 60 62) CSV at point."
+(defun ar-lesserangle-csv-atpt (&optional arg)
+  "Lesserangle CSV at point."
   (interactive "*p")
   (ar-th-delimit--intern 'csv "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-date-atpt (&optional arg)
-  "(Lesserangle 60 62) DATE at point."
+(defun ar-lesserangle-date-atpt (&optional arg)
+  "Lesserangle DATE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'date "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-delimited-atpt (&optional arg)
-  "(Lesserangle 60 62) DELIMITED at point."
+(defun ar-lesserangle-delimited-atpt (&optional arg)
+  "Lesserangle DELIMITED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'delimited "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-email-atpt (&optional arg)
-  "(Lesserangle 60 62) EMAIL at point."
+(defun ar-lesserangle-email-atpt (&optional arg)
+  "Lesserangle EMAIL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'email "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-filename-atpt (&optional arg)
-  "(Lesserangle 60 62) FILENAME at point."
+(defun ar-lesserangle-filename-atpt (&optional arg)
+  "Lesserangle FILENAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filename "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-filenamenondirectory-atpt (&optional arg)
-  "(Lesserangle 60 62) FILENAMENONDIRECTORY at point."
+(defun ar-lesserangle-filenamenondirectory-atpt (&optional arg)
+  "Lesserangle FILENAMENONDIRECTORY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filenamenondirectory "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-float-atpt (&optional arg)
-  "(Lesserangle 60 62) FLOAT at point."
+(defun ar-lesserangle-float-atpt (&optional arg)
+  "Lesserangle FLOAT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'float "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-function-atpt (&optional arg)
-  "(Lesserangle 60 62) FUNCTION at point."
+(defun ar-lesserangle-function-atpt (&optional arg)
+  "Lesserangle FUNCTION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'function "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-ip-atpt (&optional arg)
-  "(Lesserangle 60 62) IP at point."
+(defun ar-lesserangle-ip-atpt (&optional arg)
+  "Lesserangle IP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'ip "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-isbn-atpt (&optional arg)
-  "(Lesserangle 60 62) ISBN at point."
+(defun ar-lesserangle-isbn-atpt (&optional arg)
+  "Lesserangle ISBN at point."
   (interactive "*p")
   (ar-th-delimit--intern 'isbn "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-line-atpt (&optional arg)
-  "(Lesserangle 60 62) LINE at point."
+(defun ar-lesserangle-line-atpt (&optional arg)
+  "Lesserangle LINE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'line "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-list-atpt (&optional arg)
-  "(Lesserangle 60 62) LIST at point."
+(defun ar-lesserangle-list-atpt (&optional arg)
+  "Lesserangle LIST at point."
   (interactive "*p")
   (ar-th-delimit--intern 'list "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-name-atpt (&optional arg)
-  "(Lesserangle 60 62) NAME at point."
+(defun ar-lesserangle-name-atpt (&optional arg)
+  "Lesserangle NAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'name "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-number-atpt (&optional arg)
-  "(Lesserangle 60 62) NUMBER at point."
+(defun ar-lesserangle-number-atpt (&optional arg)
+  "Lesserangle NUMBER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'number "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-page-atpt (&optional arg)
-  "(Lesserangle 60 62) PAGE at point."
+(defun ar-lesserangle-page-atpt (&optional arg)
+  "Lesserangle PAGE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'page "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-paragraph-atpt (&optional arg)
-  "(Lesserangle 60 62) PARAGRAPH at point."
+(defun ar-lesserangle-paragraph-atpt (&optional arg)
+  "Lesserangle PARAGRAPH at point."
   (interactive "*p")
   (ar-th-delimit--intern 'paragraph "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-phone-atpt (&optional arg)
-  "(Lesserangle 60 62) PHONE at point."
+(defun ar-lesserangle-phone-atpt (&optional arg)
+  "Lesserangle PHONE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'phone "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-region-atpt (&optional arg)
-  "(Lesserangle 60 62) REGION at point."
+(defun ar-lesserangle-region-atpt (&optional arg)
+  "Lesserangle REGION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'region "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-sentence-atpt (&optional arg)
-  "(Lesserangle 60 62) SENTENCE at point."
+(defun ar-lesserangle-sentence-atpt (&optional arg)
+  "Lesserangle SENTENCE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sentence "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-sexp-atpt (&optional arg)
-  "(Lesserangle 60 62) SEXP at point."
+(defun ar-lesserangle-sexp-atpt (&optional arg)
+  "Lesserangle SEXP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sexp "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-string-atpt (&optional arg)
-  "(Lesserangle 60 62) STRING at point."
+(defun ar-lesserangle-string-atpt (&optional arg)
+  "Lesserangle STRING at point."
   (interactive "*p")
   (ar-th-delimit--intern 'string "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-shstruct-atpt (&optional arg)
-  "(Lesserangle 60 62) SHSTRUCT at point."
+(defun ar-lesserangle-shstruct-atpt (&optional arg)
+  "Lesserangle SHSTRUCT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'shstruct "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-symbol-atpt (&optional arg)
-  "(Lesserangle 60 62) SYMBOL at point."
+(defun ar-lesserangle-symbol-atpt (&optional arg)
+  "Lesserangle SYMBOL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'symbol "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-url-atpt (&optional arg)
-  "(Lesserangle 60 62) URL at point."
+(defun ar-lesserangle-url-atpt (&optional arg)
+  "Lesserangle URL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'url "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-word-atpt (&optional arg)
-  "(Lesserangle 60 62) WORD at point."
+(defun ar-lesserangle-word-atpt (&optional arg)
+  "Lesserangle WORD at point."
   (interactive "*p")
   (ar-th-delimit--intern 'word "<" ">" arg arg))
 
-(defun ar-(lesserangle 60 62)-wordalphaonly-atpt (&optional arg)
-  "(Lesserangle 60 62) WORDALPHAONLY at point."
+(defun ar-lesserangle-wordalphaonly-atpt (&optional arg)
+  "Lesserangle WORDALPHAONLY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly "<" ">" arg arg))
 
-(defun ar-(greaterangle 62 60)-greateranglednested-atpt (&optional arg)
-  "(Greaterangle 62 60) GREATERANGLEDNESTED at point."
+(defun ar-greaterangle-greateranglednested-atpt (&optional arg)
+  "Greaterangle GREATERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'greateranglednested ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-lesseranglednested-atpt (&optional arg)
-  "(Greaterangle 62 60) LESSERANGLEDNESTED at point."
+(defun ar-greaterangle-lesseranglednested-atpt (&optional arg)
+  "Greaterangle LESSERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'lesseranglednested ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-buffer-atpt (&optional arg)
-  "(Greaterangle 62 60) BUFFER at point."
+(defun ar-greaterangle-buffer-atpt (&optional arg)
+  "Greaterangle BUFFER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'buffer ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-comment-atpt (&optional arg)
-  "(Greaterangle 62 60) COMMENT at point."
+(defun ar-greaterangle-comment-atpt (&optional arg)
+  "Greaterangle COMMENT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'comment ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-csv-atpt (&optional arg)
-  "(Greaterangle 62 60) CSV at point."
+(defun ar-greaterangle-csv-atpt (&optional arg)
+  "Greaterangle CSV at point."
   (interactive "*p")
   (ar-th-delimit--intern 'csv ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-date-atpt (&optional arg)
-  "(Greaterangle 62 60) DATE at point."
+(defun ar-greaterangle-date-atpt (&optional arg)
+  "Greaterangle DATE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'date ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-delimited-atpt (&optional arg)
-  "(Greaterangle 62 60) DELIMITED at point."
+(defun ar-greaterangle-delimited-atpt (&optional arg)
+  "Greaterangle DELIMITED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'delimited ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-email-atpt (&optional arg)
-  "(Greaterangle 62 60) EMAIL at point."
+(defun ar-greaterangle-email-atpt (&optional arg)
+  "Greaterangle EMAIL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'email ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-filename-atpt (&optional arg)
-  "(Greaterangle 62 60) FILENAME at point."
+(defun ar-greaterangle-filename-atpt (&optional arg)
+  "Greaterangle FILENAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filename ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-filenamenondirectory-atpt (&optional arg)
-  "(Greaterangle 62 60) FILENAMENONDIRECTORY at point."
+(defun ar-greaterangle-filenamenondirectory-atpt (&optional arg)
+  "Greaterangle FILENAMENONDIRECTORY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filenamenondirectory ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-float-atpt (&optional arg)
-  "(Greaterangle 62 60) FLOAT at point."
+(defun ar-greaterangle-float-atpt (&optional arg)
+  "Greaterangle FLOAT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'float ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-function-atpt (&optional arg)
-  "(Greaterangle 62 60) FUNCTION at point."
+(defun ar-greaterangle-function-atpt (&optional arg)
+  "Greaterangle FUNCTION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'function ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-ip-atpt (&optional arg)
-  "(Greaterangle 62 60) IP at point."
+(defun ar-greaterangle-ip-atpt (&optional arg)
+  "Greaterangle IP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'ip ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-isbn-atpt (&optional arg)
-  "(Greaterangle 62 60) ISBN at point."
+(defun ar-greaterangle-isbn-atpt (&optional arg)
+  "Greaterangle ISBN at point."
   (interactive "*p")
   (ar-th-delimit--intern 'isbn ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-line-atpt (&optional arg)
-  "(Greaterangle 62 60) LINE at point."
+(defun ar-greaterangle-line-atpt (&optional arg)
+  "Greaterangle LINE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'line ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-list-atpt (&optional arg)
-  "(Greaterangle 62 60) LIST at point."
+(defun ar-greaterangle-list-atpt (&optional arg)
+  "Greaterangle LIST at point."
   (interactive "*p")
   (ar-th-delimit--intern 'list ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-name-atpt (&optional arg)
-  "(Greaterangle 62 60) NAME at point."
+(defun ar-greaterangle-name-atpt (&optional arg)
+  "Greaterangle NAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'name ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-number-atpt (&optional arg)
-  "(Greaterangle 62 60) NUMBER at point."
+(defun ar-greaterangle-number-atpt (&optional arg)
+  "Greaterangle NUMBER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'number ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-page-atpt (&optional arg)
-  "(Greaterangle 62 60) PAGE at point."
+(defun ar-greaterangle-page-atpt (&optional arg)
+  "Greaterangle PAGE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'page ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-paragraph-atpt (&optional arg)
-  "(Greaterangle 62 60) PARAGRAPH at point."
+(defun ar-greaterangle-paragraph-atpt (&optional arg)
+  "Greaterangle PARAGRAPH at point."
   (interactive "*p")
   (ar-th-delimit--intern 'paragraph ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-phone-atpt (&optional arg)
-  "(Greaterangle 62 60) PHONE at point."
+(defun ar-greaterangle-phone-atpt (&optional arg)
+  "Greaterangle PHONE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'phone ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-region-atpt (&optional arg)
-  "(Greaterangle 62 60) REGION at point."
+(defun ar-greaterangle-region-atpt (&optional arg)
+  "Greaterangle REGION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'region ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-sentence-atpt (&optional arg)
-  "(Greaterangle 62 60) SENTENCE at point."
+(defun ar-greaterangle-sentence-atpt (&optional arg)
+  "Greaterangle SENTENCE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sentence ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-sexp-atpt (&optional arg)
-  "(Greaterangle 62 60) SEXP at point."
+(defun ar-greaterangle-sexp-atpt (&optional arg)
+  "Greaterangle SEXP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sexp ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-string-atpt (&optional arg)
-  "(Greaterangle 62 60) STRING at point."
+(defun ar-greaterangle-string-atpt (&optional arg)
+  "Greaterangle STRING at point."
   (interactive "*p")
   (ar-th-delimit--intern 'string ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-shstruct-atpt (&optional arg)
-  "(Greaterangle 62 60) SHSTRUCT at point."
+(defun ar-greaterangle-shstruct-atpt (&optional arg)
+  "Greaterangle SHSTRUCT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'shstruct ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-symbol-atpt (&optional arg)
-  "(Greaterangle 62 60) SYMBOL at point."
+(defun ar-greaterangle-symbol-atpt (&optional arg)
+  "Greaterangle SYMBOL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'symbol ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-url-atpt (&optional arg)
-  "(Greaterangle 62 60) URL at point."
+(defun ar-greaterangle-url-atpt (&optional arg)
+  "Greaterangle URL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'url ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-word-atpt (&optional arg)
-  "(Greaterangle 62 60) WORD at point."
+(defun ar-greaterangle-word-atpt (&optional arg)
+  "Greaterangle WORD at point."
   (interactive "*p")
   (ar-th-delimit--intern 'word ">" "<" arg arg))
 
-(defun ar-(greaterangle 62 60)-wordalphaonly-atpt (&optional arg)
-  "(Greaterangle 62 60) WORDALPHAONLY at point."
+(defun ar-greaterangle-wordalphaonly-atpt (&optional arg)
+  "Greaterangle WORDALPHAONLY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly ">" "<" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-greateranglednested-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) GREATERANGLEDNESTED at point."
+(defun ar-leftrightsinglequote-greateranglednested-atpt (&optional arg)
+  "Leftrightsinglequote GREATERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'greateranglednested "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-lesseranglednested-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) LESSERANGLEDNESTED at point."
+(defun ar-leftrightsinglequote-lesseranglednested-atpt (&optional arg)
+  "Leftrightsinglequote LESSERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'lesseranglednested "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-buffer-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) BUFFER at point."
+(defun ar-leftrightsinglequote-buffer-atpt (&optional arg)
+  "Leftrightsinglequote BUFFER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'buffer "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-comment-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) COMMENT at point."
+(defun ar-leftrightsinglequote-comment-atpt (&optional arg)
+  "Leftrightsinglequote COMMENT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'comment "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-csv-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) CSV at point."
+(defun ar-leftrightsinglequote-csv-atpt (&optional arg)
+  "Leftrightsinglequote CSV at point."
   (interactive "*p")
   (ar-th-delimit--intern 'csv "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-date-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) DATE at point."
+(defun ar-leftrightsinglequote-date-atpt (&optional arg)
+  "Leftrightsinglequote DATE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'date "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-delimited-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) DELIMITED at point."
+(defun ar-leftrightsinglequote-delimited-atpt (&optional arg)
+  "Leftrightsinglequote DELIMITED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'delimited "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-email-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) EMAIL at point."
+(defun ar-leftrightsinglequote-email-atpt (&optional arg)
+  "Leftrightsinglequote EMAIL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'email "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-filename-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) FILENAME at point."
+(defun ar-leftrightsinglequote-filename-atpt (&optional arg)
+  "Leftrightsinglequote FILENAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filename "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-filenamenondirectory-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) FILENAMENONDIRECTORY at point."
+(defun ar-leftrightsinglequote-filenamenondirectory-atpt (&optional arg)
+  "Leftrightsinglequote FILENAMENONDIRECTORY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filenamenondirectory "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-float-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) FLOAT at point."
+(defun ar-leftrightsinglequote-float-atpt (&optional arg)
+  "Leftrightsinglequote FLOAT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'float "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-function-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) FUNCTION at point."
+(defun ar-leftrightsinglequote-function-atpt (&optional arg)
+  "Leftrightsinglequote FUNCTION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'function "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-ip-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) IP at point."
+(defun ar-leftrightsinglequote-ip-atpt (&optional arg)
+  "Leftrightsinglequote IP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'ip "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-isbn-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) ISBN at point."
+(defun ar-leftrightsinglequote-isbn-atpt (&optional arg)
+  "Leftrightsinglequote ISBN at point."
   (interactive "*p")
   (ar-th-delimit--intern 'isbn "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-line-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) LINE at point."
+(defun ar-leftrightsinglequote-line-atpt (&optional arg)
+  "Leftrightsinglequote LINE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'line "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-list-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) LIST at point."
+(defun ar-leftrightsinglequote-list-atpt (&optional arg)
+  "Leftrightsinglequote LIST at point."
   (interactive "*p")
   (ar-th-delimit--intern 'list "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-name-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) NAME at point."
+(defun ar-leftrightsinglequote-name-atpt (&optional arg)
+  "Leftrightsinglequote NAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'name "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-number-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) NUMBER at point."
+(defun ar-leftrightsinglequote-number-atpt (&optional arg)
+  "Leftrightsinglequote NUMBER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'number "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-page-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) PAGE at point."
+(defun ar-leftrightsinglequote-page-atpt (&optional arg)
+  "Leftrightsinglequote PAGE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'page "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-paragraph-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) PARAGRAPH at point."
+(defun ar-leftrightsinglequote-paragraph-atpt (&optional arg)
+  "Leftrightsinglequote PARAGRAPH at point."
   (interactive "*p")
   (ar-th-delimit--intern 'paragraph "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-phone-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) PHONE at point."
+(defun ar-leftrightsinglequote-phone-atpt (&optional arg)
+  "Leftrightsinglequote PHONE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'phone "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-region-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) REGION at point."
+(defun ar-leftrightsinglequote-region-atpt (&optional arg)
+  "Leftrightsinglequote REGION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'region "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-sentence-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) SENTENCE at point."
+(defun ar-leftrightsinglequote-sentence-atpt (&optional arg)
+  "Leftrightsinglequote SENTENCE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sentence "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-sexp-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) SEXP at point."
+(defun ar-leftrightsinglequote-sexp-atpt (&optional arg)
+  "Leftrightsinglequote SEXP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sexp "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-string-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) STRING at point."
+(defun ar-leftrightsinglequote-string-atpt (&optional arg)
+  "Leftrightsinglequote STRING at point."
   (interactive "*p")
   (ar-th-delimit--intern 'string "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-shstruct-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) SHSTRUCT at point."
+(defun ar-leftrightsinglequote-shstruct-atpt (&optional arg)
+  "Leftrightsinglequote SHSTRUCT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'shstruct "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-symbol-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) SYMBOL at point."
+(defun ar-leftrightsinglequote-symbol-atpt (&optional arg)
+  "Leftrightsinglequote SYMBOL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'symbol "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-url-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) URL at point."
+(defun ar-leftrightsinglequote-url-atpt (&optional arg)
+  "Leftrightsinglequote URL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'url "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-word-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) WORD at point."
+(defun ar-leftrightsinglequote-word-atpt (&optional arg)
+  "Leftrightsinglequote WORD at point."
   (interactive "*p")
   (ar-th-delimit--intern 'word "‘" "’" arg arg))
 
-(defun ar-(leftrightsinglequote 8216 8217)-wordalphaonly-atpt (&optional arg)
-  "(Leftrightsinglequote 8216 8217) WORDALPHAONLY at point."
+(defun ar-leftrightsinglequote-wordalphaonly-atpt (&optional arg)
+  "Leftrightsinglequote WORDALPHAONLY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly "‘" "’" arg arg))
 
-(defun ar-(parentize 40 41)-greateranglednested-atpt (&optional arg)
-  "(Parentize 40 41) GREATERANGLEDNESTED at point."
+(defun ar-parentize-greateranglednested-atpt (&optional arg)
+  "Parentize GREATERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'greateranglednested "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-lesseranglednested-atpt (&optional arg)
-  "(Parentize 40 41) LESSERANGLEDNESTED at point."
+(defun ar-parentize-lesseranglednested-atpt (&optional arg)
+  "Parentize LESSERANGLEDNESTED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'lesseranglednested "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-buffer-atpt (&optional arg)
-  "(Parentize 40 41) BUFFER at point."
+(defun ar-parentize-buffer-atpt (&optional arg)
+  "Parentize BUFFER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'buffer "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-comment-atpt (&optional arg)
-  "(Parentize 40 41) COMMENT at point."
+(defun ar-parentize-comment-atpt (&optional arg)
+  "Parentize COMMENT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'comment "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-csv-atpt (&optional arg)
-  "(Parentize 40 41) CSV at point."
+(defun ar-parentize-csv-atpt (&optional arg)
+  "Parentize CSV at point."
   (interactive "*p")
   (ar-th-delimit--intern 'csv "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-date-atpt (&optional arg)
-  "(Parentize 40 41) DATE at point."
+(defun ar-parentize-date-atpt (&optional arg)
+  "Parentize DATE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'date "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-delimited-atpt (&optional arg)
-  "(Parentize 40 41) DELIMITED at point."
+(defun ar-parentize-delimited-atpt (&optional arg)
+  "Parentize DELIMITED at point."
   (interactive "*p")
   (ar-th-delimit--intern 'delimited "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-email-atpt (&optional arg)
-  "(Parentize 40 41) EMAIL at point."
+(defun ar-parentize-email-atpt (&optional arg)
+  "Parentize EMAIL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'email "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-filename-atpt (&optional arg)
-  "(Parentize 40 41) FILENAME at point."
+(defun ar-parentize-filename-atpt (&optional arg)
+  "Parentize FILENAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filename "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-filenamenondirectory-atpt (&optional arg)
-  "(Parentize 40 41) FILENAMENONDIRECTORY at point."
+(defun ar-parentize-filenamenondirectory-atpt (&optional arg)
+  "Parentize FILENAMENONDIRECTORY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'filenamenondirectory "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-float-atpt (&optional arg)
-  "(Parentize 40 41) FLOAT at point."
+(defun ar-parentize-float-atpt (&optional arg)
+  "Parentize FLOAT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'float "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-function-atpt (&optional arg)
-  "(Parentize 40 41) FUNCTION at point."
+(defun ar-parentize-function-atpt (&optional arg)
+  "Parentize FUNCTION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'function "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-ip-atpt (&optional arg)
-  "(Parentize 40 41) IP at point."
+(defun ar-parentize-ip-atpt (&optional arg)
+  "Parentize IP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'ip "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-isbn-atpt (&optional arg)
-  "(Parentize 40 41) ISBN at point."
+(defun ar-parentize-isbn-atpt (&optional arg)
+  "Parentize ISBN at point."
   (interactive "*p")
   (ar-th-delimit--intern 'isbn "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-line-atpt (&optional arg)
-  "(Parentize 40 41) LINE at point."
+(defun ar-parentize-line-atpt (&optional arg)
+  "Parentize LINE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'line "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-list-atpt (&optional arg)
-  "(Parentize 40 41) LIST at point."
+(defun ar-parentize-list-atpt (&optional arg)
+  "Parentize LIST at point."
   (interactive "*p")
   (ar-th-delimit--intern 'list "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-name-atpt (&optional arg)
-  "(Parentize 40 41) NAME at point."
+(defun ar-parentize-name-atpt (&optional arg)
+  "Parentize NAME at point."
   (interactive "*p")
   (ar-th-delimit--intern 'name "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-number-atpt (&optional arg)
-  "(Parentize 40 41) NUMBER at point."
+(defun ar-parentize-number-atpt (&optional arg)
+  "Parentize NUMBER at point."
   (interactive "*p")
   (ar-th-delimit--intern 'number "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-page-atpt (&optional arg)
-  "(Parentize 40 41) PAGE at point."
+(defun ar-parentize-page-atpt (&optional arg)
+  "Parentize PAGE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'page "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-paragraph-atpt (&optional arg)
-  "(Parentize 40 41) PARAGRAPH at point."
+(defun ar-parentize-paragraph-atpt (&optional arg)
+  "Parentize PARAGRAPH at point."
   (interactive "*p")
   (ar-th-delimit--intern 'paragraph "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-phone-atpt (&optional arg)
-  "(Parentize 40 41) PHONE at point."
+(defun ar-parentize-phone-atpt (&optional arg)
+  "Parentize PHONE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'phone "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-region-atpt (&optional arg)
-  "(Parentize 40 41) REGION at point."
+(defun ar-parentize-region-atpt (&optional arg)
+  "Parentize REGION at point."
   (interactive "*p")
   (ar-th-delimit--intern 'region "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-sentence-atpt (&optional arg)
-  "(Parentize 40 41) SENTENCE at point."
+(defun ar-parentize-sentence-atpt (&optional arg)
+  "Parentize SENTENCE at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sentence "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-sexp-atpt (&optional arg)
-  "(Parentize 40 41) SEXP at point."
+(defun ar-parentize-sexp-atpt (&optional arg)
+  "Parentize SEXP at point."
   (interactive "*p")
   (ar-th-delimit--intern 'sexp "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-string-atpt (&optional arg)
-  "(Parentize 40 41) STRING at point."
+(defun ar-parentize-string-atpt (&optional arg)
+  "Parentize STRING at point."
   (interactive "*p")
   (ar-th-delimit--intern 'string "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-shstruct-atpt (&optional arg)
-  "(Parentize 40 41) SHSTRUCT at point."
+(defun ar-parentize-shstruct-atpt (&optional arg)
+  "Parentize SHSTRUCT at point."
   (interactive "*p")
   (ar-th-delimit--intern 'shstruct "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-symbol-atpt (&optional arg)
-  "(Parentize 40 41) SYMBOL at point."
+(defun ar-parentize-symbol-atpt (&optional arg)
+  "Parentize SYMBOL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'symbol "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-url-atpt (&optional arg)
-  "(Parentize 40 41) URL at point."
+(defun ar-parentize-url-atpt (&optional arg)
+  "Parentize URL at point."
   (interactive "*p")
   (ar-th-delimit--intern 'url "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-word-atpt (&optional arg)
-  "(Parentize 40 41) WORD at point."
+(defun ar-parentize-word-atpt (&optional arg)
+  "Parentize WORD at point."
   (interactive "*p")
   (ar-th-delimit--intern 'word "(" ")" arg arg))
 
-(defun ar-(parentize 40 41)-wordalphaonly-atpt (&optional arg)
-  "(Parentize 40 41) WORDALPHAONLY at point."
+(defun ar-parentize-wordalphaonly-atpt (&optional arg)
+  "Parentize WORDALPHAONLY at point."
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly "(" ")" arg arg))
 
 ;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: end
+;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: start
+(defun ar-brace-backslashed-atpt (&optional arg)
+  "Brace BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed "{" "}" arg arg))
+
+(defun ar-brace-backticked-atpt (&optional arg)
+  "Brace BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked "{" "}" arg arg))
+
+(defun ar-brace-coloned-atpt (&optional arg)
+  "Brace COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned "{" "}" arg arg))
+
+(defun ar-brace-crossed-atpt (&optional arg)
+  "Brace CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed "{" "}" arg arg))
+
+(defun ar-brace-dollared-atpt (&optional arg)
+  "Brace DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared "{" "}" arg arg))
+
+(defun ar-brace-doublequoted-atpt (&optional arg)
+  "Brace DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted "{" "}" arg arg))
+
+(defun ar-brace-equalized-atpt (&optional arg)
+  "Brace EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized "{" "}" arg arg))
+
+(defun ar-brace-hashed-atpt (&optional arg)
+  "Brace HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed "{" "}" arg arg))
+
+(defun ar-brace-hyphened-atpt (&optional arg)
+  "Brace HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened "{" "}" arg arg))
+
+(defun ar-brace-singlequoted-atpt (&optional arg)
+  "Brace SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted "{" "}" arg arg))
+
+(defun ar-brace-slashed-atpt (&optional arg)
+  "Brace SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed "{" "}" arg arg))
+
+(defun ar-brace-stared-atpt (&optional arg)
+  "Brace STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared "{" "}" arg arg))
+
+(defun ar-brace-tilded-atpt (&optional arg)
+  "Brace TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded "{" "}" arg arg))
+
+(defun ar-brace-underscored-atpt (&optional arg)
+  "Brace UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored "{" "}" arg arg))
+
+(defun ar-brace-whitespaced-atpt (&optional arg)
+  "Brace WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced "{" "}" arg arg))
+
+(defun ar-bracket-backslashed-atpt (&optional arg)
+  "Bracket BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed "[" "]" arg arg))
+
+(defun ar-bracket-backticked-atpt (&optional arg)
+  "Bracket BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked "[" "]" arg arg))
+
+(defun ar-bracket-coloned-atpt (&optional arg)
+  "Bracket COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned "[" "]" arg arg))
+
+(defun ar-bracket-crossed-atpt (&optional arg)
+  "Bracket CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed "[" "]" arg arg))
+
+(defun ar-bracket-dollared-atpt (&optional arg)
+  "Bracket DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared "[" "]" arg arg))
+
+(defun ar-bracket-doublequoted-atpt (&optional arg)
+  "Bracket DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted "[" "]" arg arg))
+
+(defun ar-bracket-equalized-atpt (&optional arg)
+  "Bracket EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized "[" "]" arg arg))
+
+(defun ar-bracket-hashed-atpt (&optional arg)
+  "Bracket HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed "[" "]" arg arg))
+
+(defun ar-bracket-hyphened-atpt (&optional arg)
+  "Bracket HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened "[" "]" arg arg))
+
+(defun ar-bracket-singlequoted-atpt (&optional arg)
+  "Bracket SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted "[" "]" arg arg))
+
+(defun ar-bracket-slashed-atpt (&optional arg)
+  "Bracket SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed "[" "]" arg arg))
+
+(defun ar-bracket-stared-atpt (&optional arg)
+  "Bracket STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared "[" "]" arg arg))
+
+(defun ar-bracket-tilded-atpt (&optional arg)
+  "Bracket TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded "[" "]" arg arg))
+
+(defun ar-bracket-underscored-atpt (&optional arg)
+  "Bracket UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored "[" "]" arg arg))
+
+(defun ar-bracket-whitespaced-atpt (&optional arg)
+  "Bracket WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced "[" "]" arg arg))
+
+(defun ar-lesserangle-backslashed-atpt (&optional arg)
+  "Lesserangle BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed "<" ">" arg arg))
+
+(defun ar-lesserangle-backticked-atpt (&optional arg)
+  "Lesserangle BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked "<" ">" arg arg))
+
+(defun ar-lesserangle-coloned-atpt (&optional arg)
+  "Lesserangle COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned "<" ">" arg arg))
+
+(defun ar-lesserangle-crossed-atpt (&optional arg)
+  "Lesserangle CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed "<" ">" arg arg))
+
+(defun ar-lesserangle-dollared-atpt (&optional arg)
+  "Lesserangle DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared "<" ">" arg arg))
+
+(defun ar-lesserangle-doublequoted-atpt (&optional arg)
+  "Lesserangle DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted "<" ">" arg arg))
+
+(defun ar-lesserangle-equalized-atpt (&optional arg)
+  "Lesserangle EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized "<" ">" arg arg))
+
+(defun ar-lesserangle-hashed-atpt (&optional arg)
+  "Lesserangle HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed "<" ">" arg arg))
+
+(defun ar-lesserangle-hyphened-atpt (&optional arg)
+  "Lesserangle HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened "<" ">" arg arg))
+
+(defun ar-lesserangle-singlequoted-atpt (&optional arg)
+  "Lesserangle SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted "<" ">" arg arg))
+
+(defun ar-lesserangle-slashed-atpt (&optional arg)
+  "Lesserangle SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed "<" ">" arg arg))
+
+(defun ar-lesserangle-stared-atpt (&optional arg)
+  "Lesserangle STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared "<" ">" arg arg))
+
+(defun ar-lesserangle-tilded-atpt (&optional arg)
+  "Lesserangle TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded "<" ">" arg arg))
+
+(defun ar-lesserangle-underscored-atpt (&optional arg)
+  "Lesserangle UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored "<" ">" arg arg))
+
+(defun ar-lesserangle-whitespaced-atpt (&optional arg)
+  "Lesserangle WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced "<" ">" arg arg))
+
+(defun ar-greaterangle-backslashed-atpt (&optional arg)
+  "Greaterangle BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed ">" "<" arg arg))
+
+(defun ar-greaterangle-backticked-atpt (&optional arg)
+  "Greaterangle BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked ">" "<" arg arg))
+
+(defun ar-greaterangle-coloned-atpt (&optional arg)
+  "Greaterangle COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned ">" "<" arg arg))
+
+(defun ar-greaterangle-crossed-atpt (&optional arg)
+  "Greaterangle CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed ">" "<" arg arg))
+
+(defun ar-greaterangle-dollared-atpt (&optional arg)
+  "Greaterangle DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared ">" "<" arg arg))
+
+(defun ar-greaterangle-doublequoted-atpt (&optional arg)
+  "Greaterangle DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted ">" "<" arg arg))
+
+(defun ar-greaterangle-equalized-atpt (&optional arg)
+  "Greaterangle EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized ">" "<" arg arg))
+
+(defun ar-greaterangle-hashed-atpt (&optional arg)
+  "Greaterangle HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed ">" "<" arg arg))
+
+(defun ar-greaterangle-hyphened-atpt (&optional arg)
+  "Greaterangle HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened ">" "<" arg arg))
+
+(defun ar-greaterangle-singlequoted-atpt (&optional arg)
+  "Greaterangle SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted ">" "<" arg arg))
+
+(defun ar-greaterangle-slashed-atpt (&optional arg)
+  "Greaterangle SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed ">" "<" arg arg))
+
+(defun ar-greaterangle-stared-atpt (&optional arg)
+  "Greaterangle STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared ">" "<" arg arg))
+
+(defun ar-greaterangle-tilded-atpt (&optional arg)
+  "Greaterangle TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded ">" "<" arg arg))
+
+(defun ar-greaterangle-underscored-atpt (&optional arg)
+  "Greaterangle UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored ">" "<" arg arg))
+
+(defun ar-greaterangle-whitespaced-atpt (&optional arg)
+  "Greaterangle WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced ">" "<" arg arg))
+
+(defun ar-leftrightsinglequote-backslashed-atpt (&optional arg)
+  "Leftrightsinglequote BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-backticked-atpt (&optional arg)
+  "Leftrightsinglequote BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-coloned-atpt (&optional arg)
+  "Leftrightsinglequote COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-crossed-atpt (&optional arg)
+  "Leftrightsinglequote CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-dollared-atpt (&optional arg)
+  "Leftrightsinglequote DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-doublequoted-atpt (&optional arg)
+  "Leftrightsinglequote DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-equalized-atpt (&optional arg)
+  "Leftrightsinglequote EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-hashed-atpt (&optional arg)
+  "Leftrightsinglequote HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-hyphened-atpt (&optional arg)
+  "Leftrightsinglequote HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-singlequoted-atpt (&optional arg)
+  "Leftrightsinglequote SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-slashed-atpt (&optional arg)
+  "Leftrightsinglequote SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-stared-atpt (&optional arg)
+  "Leftrightsinglequote STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-tilded-atpt (&optional arg)
+  "Leftrightsinglequote TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-underscored-atpt (&optional arg)
+  "Leftrightsinglequote UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored "‘" "’" arg arg))
+
+(defun ar-leftrightsinglequote-whitespaced-atpt (&optional arg)
+  "Leftrightsinglequote WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced "‘" "’" arg arg))
+
+(defun ar-parentize-backslashed-atpt (&optional arg)
+  "Parentize BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed "(" ")" arg arg))
+
+(defun ar-parentize-backticked-atpt (&optional arg)
+  "Parentize BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked "(" ")" arg arg))
+
+(defun ar-parentize-coloned-atpt (&optional arg)
+  "Parentize COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned "(" ")" arg arg))
+
+(defun ar-parentize-crossed-atpt (&optional arg)
+  "Parentize CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed "(" ")" arg arg))
+
+(defun ar-parentize-dollared-atpt (&optional arg)
+  "Parentize DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared "(" ")" arg arg))
+
+(defun ar-parentize-doublequoted-atpt (&optional arg)
+  "Parentize DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted "(" ")" arg arg))
+
+(defun ar-parentize-equalized-atpt (&optional arg)
+  "Parentize EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized "(" ")" arg arg))
+
+(defun ar-parentize-hashed-atpt (&optional arg)
+  "Parentize HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed "(" ")" arg arg))
+
+(defun ar-parentize-hyphened-atpt (&optional arg)
+  "Parentize HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened "(" ")" arg arg))
+
+(defun ar-parentize-singlequoted-atpt (&optional arg)
+  "Parentize SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted "(" ")" arg arg))
+
+(defun ar-parentize-slashed-atpt (&optional arg)
+  "Parentize SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed "(" ")" arg arg))
+
+(defun ar-parentize-stared-atpt (&optional arg)
+  "Parentize STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared "(" ")" arg arg))
+
+(defun ar-parentize-tilded-atpt (&optional arg)
+  "Parentize TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded "(" ")" arg arg))
+
+(defun ar-parentize-underscored-atpt (&optional arg)
+  "Parentize UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored "(" ")" arg arg))
+
+(defun ar-parentize-whitespaced-atpt (&optional arg)
+  "Parentize WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced "(" ")" arg arg))
+
+;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: end
 ;; ar-thing-at-point-utils-activ-passiv ar-paired-delimited-passiv-raw: start
 (defun ar-brace-braced-atpt ()
   "Brace BRACED at point."
