@@ -1,4 +1,4 @@
-;;; thing-at-point-utils.el -- Some more utilities
+;;; thing-at-point-utils.el --- Some more utilities
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise
@@ -7,6 +7,8 @@
 ;; indicated otherwise
 
 ;; Version: 0.1
+
+;; Package-Requires: ((emacs "24.1"))
 
 ;; Keywords: convenience
 
