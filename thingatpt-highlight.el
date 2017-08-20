@@ -1,4 +1,4 @@
-;;; thingatpt-highlight.el
+;;; thingatpt-highlight.el --- thing-at-point utils
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise
