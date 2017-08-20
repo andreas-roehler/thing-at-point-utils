@@ -63,6 +63,7 @@
 		  )))
       (load (expand-file-name "beg-end" source-directory))
       (load (expand-file-name "ar-subr" source-directory))
+      (load (expand-file-name "thingatpt-utils-core" source-directory))
       (load (expand-file-name "thing-at-point-utils" source-directory))
 
       (load (expand-file-name "ar-thing-at-point-utils-setup-tests" current-dir))
