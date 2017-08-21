@@ -67,7 +67,7 @@
       (load (expand-file-name "thingatpt-utils-core" source-directory))
       (load (expand-file-name "thing-at-point-utils" source-directory))
       (load (expand-file-name "thingatpt-highlight.el" source-directory))
-      (load (expand-file-name "thingatpt-transform-delimited.el" source-directory))
+      ;; (load (expand-file-name "thingatpt-transform-delimited.el" source-directory))
       ;; (load (expand-file-name "thing-unpaired-delimited-list-in-rest-list.el" source-directory))
       (load (expand-file-name "thing-classes-in-rest-list.el" source-directory))
       (load (expand-file-name "thing-delimited-list-in-counts-list.el" source-directory))
