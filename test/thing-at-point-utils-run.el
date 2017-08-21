@@ -73,6 +73,7 @@
       (load (expand-file-name "thing-delimited-list-in-counts-list.el" source-directory))
       (load (expand-file-name "thing-unpaired-delimited-list-in-delimited-list.el" source-directory))
       (load (expand-file-name "thing-classes-in-delimited-list.el" source-directory))
+      (load (expand-file-name "translate-paired-delimiters.el" source-directory))
       (load (expand-file-name "thing-at-point-peel.el" source-directory))
       (load (expand-file-name "ar-thing-at-point-utils-setup-tests" current-dir))
       (dolist (test-file tests)
