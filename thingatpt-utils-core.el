@@ -1,4 +1,4 @@
-;;; thingatpt-utils-core.el --- thing-at-point utils --- th-at-point edit functions -*- lexical-binding: t; -*- 
+;;; thingatpt-utils-core.el --- th-at-point edit functions -*- lexical-binding: t; -*- 
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise
@@ -2395,7 +2395,7 @@ If non-nil, return a list composed of
 	    (setq erg (gen-in-string-p-intern pps)))))
 
     ;; (list (nth 8 pps) (char-before) (1+ (skip-chars-forward (char-to-string (char-before)))))
-    (when (and gen-verbose-p (interactive-p)) (message "%s" erg))
+    (when (and gen-verbose-p (called-interactively-p 'any)) (message "%s" erg))
     erg)))
 
 ;;
@@ -2567,7 +2567,7 @@ it would doublequote a word at point "
     (when (symbolp arg) (setq arg '-1))
     (if (and (not (eq 1 arg))(not (eq 4 (prefix-numeric-value arg))))
         (when (or (< 1 arg) (> 1 arg))
-          (ar-th-forward thing arg (interactive-p)))
+          (ar-th-forward thing arg (called-interactively-p 'any)))
       (condition-case nil
           (let* ((bounds (ar-th-bounds thing no-delimiters))
 		 (beg (if no-delimiters
@@ -2928,13 +2928,11 @@ Inspired by stuff like `paredit-splice-sexp-killing-backward'; however, instead 
 ;;;###autoload
 (defun ar-thing-in-thing (thing-1th thing-2th th-function &optional iact beg-2th end-2th)
   "Addresses things of 1th kind within the borders of the 2th,
-If optional positions BEG-2TH END-2TH are given, works on them instead.
-With optional arg IACT, the resulting list is sent to the message-buffer too. "
+If optional positions BEG-2TH END-2TH are given, works on them instead. "
   (let* ((bounds (ar-th-bounds thing-2th))
 	 (beg (or (ignore-errors (caar bounds))(car-safe bounds)))
 	 (end (or (ignore-errors (cadr (cadr bounds)))(ignore-errors (cdr (cadr bounds)))(cdr-safe bounds)))
-	 (orig beg)
-	 erg-thing-in-thing)
+	 (orig beg))
     (save-excursion
       (save-restriction
         (narrow-to-region beg end)
@@ -2946,10 +2944,8 @@ With optional arg IACT, the resulting list is sent to the message-buffer too. "
 		      (<= orig (point)))
 	    (setq orig (point))
 	    (forward-char -1)
-	    (add-to-list 'erg-thing-in-thing
-			 (funcall th-function thing-1th))
-            (when (< (point) orig)(goto-char orig))))))
-    erg-thing-in-thing))
+	    (funcall th-function thing-1th)
+	    (when (< (point) orig)(goto-char orig))))))))
 
 ;;;###autoload
 (defun ar-th-kill (thing &optional arg iact)
@@ -11221,13 +11217,13 @@ it defaults to `<', otherwise it defaults to `string<'."
   (interactive)
   (let* ((pos (or pos (point)))
         (erg (logand (car (syntax-after pos)) 65535)))
-    (when (interactive-p) (message "%s" erg)) erg))
+    (when (called-interactively-p 'any) (message "%s" erg)) erg))
 
 (defun syntax-class-bfpt ()
   "Return the syntax class part of the syntax at point. "
   (interactive)
   (let ((erg (logand (car (syntax-after (1- (point)))) 65535)))
-    (when (interactive-p) (message "%s" erg)) erg))
+    (when (called-interactively-p 'any) (message "%s" erg)) erg))
 
 (defun ar-syntax-atpt (&optional docu pos)
   (interactive)
@@ -11252,7 +11248,7 @@ it defaults to `<', otherwise it defaults to `string<'."
                      ((eq elt 9) "9 escape")
                      ((eq elt 14) "14 generic comment")
                      ((eq elt 15) "15 generic string"))))
-    (when (interactive-p)
+    (when (called-interactively-p 'any)
       (message (format "%s" stax)))
     (if docu
         (format "%s" stax)
@@ -11272,7 +11268,7 @@ it defaults to `<', otherwise it defaults to `string<'."
 (defun syntax-bfpt ()
   (interactive)
   (let ((stax (syntax-after (1- (point)))))
-    (when (interactive-p)
+    (when (called-interactively-p 'any)
       (message (format "%s" stax)))
     stax))
 

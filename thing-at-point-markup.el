@@ -1,4 +1,4 @@
-;;; thing-at-point-markup.el --- thing-at-point utils
+;;; thing-at-point-markup.el
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise
@@ -34,32 +34,32 @@
 (defun ar-un-beginendquote-atpt (&optional arg)
   "Remove markups provided by beginendquote. "
   (interactive "P*")
-  (ar-th-un-ml 'beginendquote arg (interactive-p)))
+  (ar-th-un-ml 'beginendquote arg (called-interactively-p 'any)))
 
 (defun ar-un-blok-atpt (&optional arg)
   "Remove markups provided by blok. "
   (interactive "P*")
-  (ar-th-un-ml 'blok arg (interactive-p)))
+  (ar-th-un-ml 'blok arg (called-interactively-p 'any)))
 
 (defun ar-un-doublebackslashed-atpt (&optional arg)
   "Remove markups provided by doublebackslashed. "
   (interactive "P*")
-  (ar-th-un-ml 'doublebackslashed arg (interactive-p)))
+  (ar-th-un-ml 'doublebackslashed arg (called-interactively-p 'any)))
 
 (defun ar-un-doublebackslashedparen-atpt (&optional arg)
   "Remove markups provided by doublebackslashedparen. "
   (interactive "P*")
-  (ar-th-un-ml 'doublebackslashedparen arg (interactive-p)))
+  (ar-th-un-ml 'doublebackslashedparen arg (called-interactively-p 'any)))
 
 (defun ar-un-doubleslashed-atpt (&optional arg)
   "Remove markups provided by doubleslashed. "
   (interactive "P*")
-  (ar-th-un-ml 'doubleslashed arg (interactive-p)))
+  (ar-th-un-ml 'doubleslashed arg (called-interactively-p 'any)))
 
 (defun ar-un-tabledata-atpt (&optional arg)
   "Remove markups provided by tabledata. "
   (interactive "P*")
-  (ar-th-un-ml 'tabledata arg (interactive-p)))
+  (ar-th-un-ml 'tabledata arg (called-interactively-p 'any)))
 
 ;; ar-thing-at-point-utils-markup: ar-atpt-markup-list end
 
@@ -3991,14 +3991,14 @@ With \\[universal-argument] its returned without doublequotes"
   (ar-end-of-mlattribut-atpt)
   (forward-char -1)
   (let ((value (ar-string-atpt arg)))
-    (when (interactive-p) (message "%s" value))
+    (when (called-interactively-p 'any) (message "%s" value))
     value))
 
 (defun ar-name-of-mlattribut-atpt ()
   (interactive)
   (ar-beginning-of-mlattribut-atpt)
   (let ((name (ar-alnum-atpt)))
-    (when (interactive-p) (message "%s" name))
+    (when (called-interactively-p 'any) (message "%s" name))
     name))
 
 (defun ar-mlattribut-or-name-atpt (&optional arg)
@@ -4007,7 +4007,7 @@ With \\[universal-argument] its returned without doublequotes"
   (interactive "P")
   (if (eq 4 (prefix-numeric-value arg))
     (ar-name-of-mlattribut-atpt)
-  (ar-th 'mlattribut arg (interactive-p))))
+  (ar-th 'mlattribut arg (called-interactively-p 'any))))
 
 
 

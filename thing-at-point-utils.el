@@ -1,4 +1,4 @@
-;;; thing-at-point-utils.el --- thing-at-point utils
+;;; thing-at-point-utils.el
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise
@@ -27813,8 +27813,6 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list end
-
-
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with backslash(s),
   otherwise copy backslash(ed) at point.
@@ -27951,141 +27949,53 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any)))
 
-(defun ar-backslash-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with backslash(s),
-  otherwise copy backslash(ed) at point.
-  With NO-DELIMITERS, copy backslash(ed) without delimiters.
-  With negative argument kill backslash(ed) at point. "
+(defun ar-brace-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with brace(s),
+  otherwise copy brace(ed) at point.
+  With NO-DELIMITERS, copy brace(ed) without delimiters.
+  With negative argument kill brace(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'backslash no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'brace no-delimiters (called-interactively-p 'any)))
 
-(defun ar-backtick-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with backtick(s),
-  otherwise copy backtick(ed) at point.
-  With NO-DELIMITERS, copy backtick(ed) without delimiters.
-  With negative argument kill backtick(ed) at point. "
+(defun ar-bracket-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with bracket(s),
+  otherwise copy bracket(ed) at point.
+  With NO-DELIMITERS, copy bracket(ed) without delimiters.
+  With negative argument kill bracket(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'backtick no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'bracket no-delimiters (called-interactively-p 'any)))
 
-(defun ar-colon-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with colon(s),
-  otherwise copy colon(ed) at point.
-  With NO-DELIMITERS, copy colon(ed) without delimiters.
-  With negative argument kill colon(ed) at point. "
+(defun ar-lesserangle-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with lesserangle(s),
+  otherwise copy lesserangle(ed) at point.
+  With NO-DELIMITERS, copy lesserangle(ed) without delimiters.
+  With negative argument kill lesserangle(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'colon no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'lesserangle no-delimiters (called-interactively-p 'any)))
 
-(defun ar-cross-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with cross(s),
-  otherwise copy cross(ed) at point.
-  With NO-DELIMITERS, copy cross(ed) without delimiters.
-  With negative argument kill cross(ed) at point. "
+(defun ar-greaterangle-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with greaterangle(s),
+  otherwise copy greaterangle(ed) at point.
+  With NO-DELIMITERS, copy greaterangle(ed) without delimiters.
+  With negative argument kill greaterangle(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'cross no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'greaterangle no-delimiters (called-interactively-p 'any)))
 
-(defun ar-dollar-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with dollar(s),
-  otherwise copy dollar(ed) at point.
-  With NO-DELIMITERS, copy dollar(ed) without delimiters.
-  With negative argument kill dollar(ed) at point. "
+(defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with leftrightsinglequote(s),
+  otherwise copy leftrightsinglequote(ed) at point.
+  With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters.
+  With negative argument kill leftrightsinglequote(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'dollar no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (called-interactively-p 'any)))
 
-(defun ar-doublequote-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with doublequote(s),
-  otherwise copy doublequote(ed) at point.
-  With NO-DELIMITERS, copy doublequote(ed) without delimiters.
-  With negative argument kill doublequote(ed) at point. "
+(defun ar-parentize-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with parentize(s),
+  otherwise copy parentize(ed) at point.
+  With NO-DELIMITERS, copy parentize(ed) without delimiters.
+  With negative argument kill parentize(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'doublequote no-delimiters (called-interactively-p 'any)))
-
-(defun ar-equalize-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with equalize(s),
-  otherwise copy equalize(ed) at point.
-  With NO-DELIMITERS, copy equalize(ed) without delimiters.
-  With negative argument kill equalize(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'equalize no-delimiters (called-interactively-p 'any)))
-
-(defun ar-escape-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with escape(s),
-  otherwise copy escape(ed) at point.
-  With NO-DELIMITERS, copy escape(ed) without delimiters.
-  With negative argument kill escape(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'escape no-delimiters (called-interactively-p 'any)))
-
-(defun ar-hash-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with hash(s),
-  otherwise copy hash(ed) at point.
-  With NO-DELIMITERS, copy hash(ed) without delimiters.
-  With negative argument kill hash(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'hash no-delimiters (called-interactively-p 'any)))
-
-(defun ar-hyphen-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with hyphen(s),
-  otherwise copy hyphen(ed) at point.
-  With NO-DELIMITERS, copy hyphen(ed) without delimiters.
-  With negative argument kill hyphen(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'hyphen no-delimiters (called-interactively-p 'any)))
-
-(defun ar-singlequote-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with singlequote(s),
-  otherwise copy singlequote(ed) at point.
-  With NO-DELIMITERS, copy singlequote(ed) without delimiters.
-  With negative argument kill singlequote(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'singlequote no-delimiters (called-interactively-p 'any)))
-
-(defun ar-slash-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with slash(s),
-  otherwise copy slash(ed) at point.
-  With NO-DELIMITERS, copy slash(ed) without delimiters.
-  With negative argument kill slash(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'slash no-delimiters (called-interactively-p 'any)))
-
-(defun ar-star-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with star(s),
-  otherwise copy star(ed) at point.
-  With NO-DELIMITERS, copy star(ed) without delimiters.
-  With negative argument kill star(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'star no-delimiters (called-interactively-p 'any)))
-
-(defun ar-tild-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with tild(s),
-  otherwise copy tild(ed) at point.
-  With NO-DELIMITERS, copy tild(ed) without delimiters.
-  With negative argument kill tild(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'tild no-delimiters (called-interactively-p 'any)))
-
-(defun ar-underscore-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with underscore(s),
-  otherwise copy underscore(ed) at point.
-  With NO-DELIMITERS, copy underscore(ed) without delimiters.
-  With negative argument kill underscore(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'underscore no-delimiters (called-interactively-p 'any)))
-
-(defun ar-whitespace-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with whitespace(s),
-  otherwise copy whitespace(ed) at point.
-  With NO-DELIMITERS, copy whitespace(ed) without delimiters.
-  With negative argument kill whitespace(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'whitespace no-delimiters (called-interactively-p 'any)))
-
-(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with doubleslash(s),
-  otherwise copy doubleslash(ed) at point.
-  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
-  With negative argument kill doubleslash(ed) at point. "
-  (interactive "p")
-  (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'parentize no-delimiters (called-interactively-p 'any)))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with greateranglednested(s),
@@ -28326,6 +28236,8 @@ See doku from `sort-subr', for details.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters (called-interactively-p 'any)))
+
+
 
 (defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
