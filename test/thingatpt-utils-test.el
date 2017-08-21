@@ -1,4 +1,4 @@
-;;; thingatpt-utils-test.el
+;;; thingatpt-utils-test.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise

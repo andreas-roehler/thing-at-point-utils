@@ -1,4 +1,4 @@
-;;; thing-at-point-utils.el
+;;; thing-at-point-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2017 Andreas Röhler, unless
 ;; indicated otherwise
