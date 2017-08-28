@@ -309,5 +309,13 @@ return wwrap"
       (ar-brace-greaterangled-atpt)
     (should (eq (char-before) ?}))))
 
+
+(ert-deftest ar-delimited-leftrightsinglequoted-atpt-test ()
+  (ar-test-with-temp-buffer "asdf48"
+    (forward-char -1)
+    (ar-leftrightsinglequote-alnum-atpt)
+    (forward-char -1)
+    (should (eq 8 (length (ar-delimited-atpt))))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
