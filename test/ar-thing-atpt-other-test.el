@@ -317,5 +317,11 @@ return wwrap"
     (forward-char -1)
     (should (eq 8 (length (ar-delimited-atpt))))))
 
+;; not implemented
+;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
+;;   (ar-test-with-temp-buffer "`asdf48'"
+;;     (forward-char -1)
+;;     (should (eq 8 (length (ar-delimited-atpt))))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

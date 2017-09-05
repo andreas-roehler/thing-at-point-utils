@@ -15150,11 +15150,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'braced no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-braced-atpt 'ar-braced-doublebackslashparen-atpt)
-(defun ar-braced-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-braced-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BRACED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'braced no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-braced-atpt (&optional no-delimiters)
+  "Provides double backticks around BRACED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'braced no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-braced-atpt 'ar-braced-slashparen-atpt)
 (defun ar-braced-slashparen-atpt (&optional no-delimiters)
@@ -15427,11 +15431,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'bracketed no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-bracketed-atpt 'ar-bracketed-doublebackslashparen-atpt)
-(defun ar-bracketed-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-bracketed-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BRACKETED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'bracketed no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-bracketed-atpt (&optional no-delimiters)
+  "Provides double backticks around BRACKETED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'bracketed no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-bracketed-atpt 'ar-bracketed-slashparen-atpt)
 (defun ar-bracketed-slashparen-atpt (&optional no-delimiters)
@@ -15704,11 +15712,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'lesserangled no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-lesserangled-atpt 'ar-lesserangled-doublebackslashparen-atpt)
-(defun ar-lesserangled-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-lesserangled-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around LESSERANGLED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'lesserangled no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-lesserangled-atpt (&optional no-delimiters)
+  "Provides double backticks around LESSERANGLED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'lesserangled no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-lesserangled-atpt 'ar-lesserangled-slashparen-atpt)
 (defun ar-lesserangled-slashparen-atpt (&optional no-delimiters)
@@ -15981,11 +15993,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'greaterangled no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-greaterangled-atpt 'ar-greaterangled-doublebackslashparen-atpt)
-(defun ar-greaterangled-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-greaterangled-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around GREATERANGLED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'greaterangled no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-greaterangled-atpt (&optional no-delimiters)
+  "Provides double backticks around GREATERANGLED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'greaterangled no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-greaterangled-atpt 'ar-greaterangled-slashparen-atpt)
 (defun ar-greaterangled-slashparen-atpt (&optional no-delimiters)
@@ -16258,11 +16274,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'leftrightsinglequoted no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublebackslashparen-atpt)
-(defun ar-leftrightsinglequoted-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-leftrightsinglequoted-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around LEFTRIGHTSINGLEQUOTED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'leftrightsinglequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-leftrightsinglequoted-atpt (&optional no-delimiters)
+  "Provides double backticks around LEFTRIGHTSINGLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'leftrightsinglequoted no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-slashparen-atpt)
 (defun ar-leftrightsinglequoted-slashparen-atpt (&optional no-delimiters)
@@ -16535,11 +16555,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'parentized no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-parentized-atpt 'ar-parentized-doublebackslashparen-atpt)
-(defun ar-parentized-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-parentized-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around PARENTIZED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'parentized no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-parentized-atpt (&optional no-delimiters)
+  "Provides double backticks around PARENTIZED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'parentized no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-parentized-atpt 'ar-parentized-slashparen-atpt)
 (defun ar-parentized-slashparen-atpt (&optional no-delimiters)
@@ -16816,11 +16840,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'greateranglednested no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-greateranglednested-atpt 'ar-greateranglednested-doublebackslashparen-atpt)
-(defun ar-greateranglednested-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-greateranglednested-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around GREATERANGLEDNESTED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'greateranglednested no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-greateranglednested-atpt (&optional no-delimiters)
+  "Provides double backticks around GREATERANGLEDNESTED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'greateranglednested no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-greateranglednested-atpt 'ar-greateranglednested-slashparen-atpt)
 (defun ar-greateranglednested-slashparen-atpt (&optional no-delimiters)
@@ -17093,11 +17121,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'lesseranglednested no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-lesseranglednested-atpt 'ar-lesseranglednested-doublebackslashparen-atpt)
-(defun ar-lesseranglednested-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-lesseranglednested-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around LESSERANGLEDNESTED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'lesseranglednested no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-lesseranglednested-atpt (&optional no-delimiters)
+  "Provides double backticks around LESSERANGLEDNESTED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'lesseranglednested no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-lesseranglednested-atpt 'ar-lesseranglednested-slashparen-atpt)
 (defun ar-lesseranglednested-slashparen-atpt (&optional no-delimiters)
@@ -17370,11 +17402,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'buffer no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-buffer-atpt 'ar-buffer-doublebackslashparen-atpt)
-(defun ar-buffer-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-buffer-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BUFFER at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'buffer no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-buffer-atpt (&optional no-delimiters)
+  "Provides double backticks around BUFFER at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'buffer no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-buffer-atpt 'ar-buffer-slashparen-atpt)
 (defun ar-buffer-slashparen-atpt (&optional no-delimiters)
@@ -17647,11 +17683,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'comment no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-comment-atpt 'ar-comment-doublebackslashparen-atpt)
-(defun ar-comment-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-comment-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around COMMENT at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'comment no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-comment-atpt (&optional no-delimiters)
+  "Provides double backticks around COMMENT at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'comment no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-comment-atpt 'ar-comment-slashparen-atpt)
 (defun ar-comment-slashparen-atpt (&optional no-delimiters)
@@ -17924,11 +17964,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'csv no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-csv-atpt 'ar-csv-doublebackslashparen-atpt)
-(defun ar-csv-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-csv-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around CSV at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'csv no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-csv-atpt (&optional no-delimiters)
+  "Provides double backticks around CSV at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'csv no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-csv-atpt 'ar-csv-slashparen-atpt)
 (defun ar-csv-slashparen-atpt (&optional no-delimiters)
@@ -18201,11 +18245,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'date no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-date-atpt 'ar-date-doublebackslashparen-atpt)
-(defun ar-date-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-date-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DATE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'date no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-date-atpt (&optional no-delimiters)
+  "Provides double backticks around DATE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'date no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-date-atpt 'ar-date-slashparen-atpt)
 (defun ar-date-slashparen-atpt (&optional no-delimiters)
@@ -18478,11 +18526,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'delimited no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-delimited-atpt 'ar-delimited-doublebackslashparen-atpt)
-(defun ar-delimited-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-delimited-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DELIMITED at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'delimited no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-delimited-atpt (&optional no-delimiters)
+  "Provides double backticks around DELIMITED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'delimited no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-delimited-atpt 'ar-delimited-slashparen-atpt)
 (defun ar-delimited-slashparen-atpt (&optional no-delimiters)
@@ -18755,11 +18807,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'email no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-email-atpt 'ar-email-doublebackslashparen-atpt)
-(defun ar-email-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-email-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around EMAIL at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'email no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-email-atpt (&optional no-delimiters)
+  "Provides double backticks around EMAIL at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'email no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-email-atpt 'ar-email-slashparen-atpt)
 (defun ar-email-slashparen-atpt (&optional no-delimiters)
@@ -19032,11 +19088,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'filename no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-filename-atpt 'ar-filename-doublebackslashparen-atpt)
-(defun ar-filename-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-filename-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around FILENAME at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'filename no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-filename-atpt (&optional no-delimiters)
+  "Provides double backticks around FILENAME at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'filename no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-filename-atpt 'ar-filename-slashparen-atpt)
 (defun ar-filename-slashparen-atpt (&optional no-delimiters)
@@ -19309,11 +19369,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'filenamenondirectory no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-filenamenondirectory-atpt 'ar-filenamenondirectory-doublebackslashparen-atpt)
-(defun ar-filenamenondirectory-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-filenamenondirectory-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around FILENAMENONDIRECTORY at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'filenamenondirectory no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-filenamenondirectory-atpt (&optional no-delimiters)
+  "Provides double backticks around FILENAMENONDIRECTORY at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'filenamenondirectory no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-filenamenondirectory-atpt 'ar-filenamenondirectory-slashparen-atpt)
 (defun ar-filenamenondirectory-slashparen-atpt (&optional no-delimiters)
@@ -19586,11 +19650,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'float no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-float-atpt 'ar-float-doublebackslashparen-atpt)
-(defun ar-float-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-float-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around FLOAT at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'float no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-float-atpt (&optional no-delimiters)
+  "Provides double backticks around FLOAT at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'float no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-float-atpt 'ar-float-slashparen-atpt)
 (defun ar-float-slashparen-atpt (&optional no-delimiters)
@@ -19863,11 +19931,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'function no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-function-atpt 'ar-function-doublebackslashparen-atpt)
-(defun ar-function-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-function-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around FUNCTION at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'function no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-function-atpt (&optional no-delimiters)
+  "Provides double backticks around FUNCTION at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'function no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-function-atpt 'ar-function-slashparen-atpt)
 (defun ar-function-slashparen-atpt (&optional no-delimiters)
@@ -20140,11 +20212,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'ip no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-ip-atpt 'ar-ip-doublebackslashparen-atpt)
-(defun ar-ip-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-ip-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around IP at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'ip no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-ip-atpt (&optional no-delimiters)
+  "Provides double backticks around IP at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'ip no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-ip-atpt 'ar-ip-slashparen-atpt)
 (defun ar-ip-slashparen-atpt (&optional no-delimiters)
@@ -20417,11 +20493,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'isbn no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-isbn-atpt 'ar-isbn-doublebackslashparen-atpt)
-(defun ar-isbn-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-isbn-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around ISBN at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'isbn no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-isbn-atpt (&optional no-delimiters)
+  "Provides double backticks around ISBN at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'isbn no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-isbn-atpt 'ar-isbn-slashparen-atpt)
 (defun ar-isbn-slashparen-atpt (&optional no-delimiters)
@@ -20694,11 +20774,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'line no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-line-atpt 'ar-line-doublebackslashparen-atpt)
-(defun ar-line-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-line-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around LINE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'line no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-line-atpt (&optional no-delimiters)
+  "Provides double backticks around LINE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'line no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-line-atpt 'ar-line-slashparen-atpt)
 (defun ar-line-slashparen-atpt (&optional no-delimiters)
@@ -20971,11 +21055,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'list no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-list-atpt 'ar-list-doublebackslashparen-atpt)
-(defun ar-list-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-list-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around LIST at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'list no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-list-atpt (&optional no-delimiters)
+  "Provides double backticks around LIST at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'list no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-list-atpt 'ar-list-slashparen-atpt)
 (defun ar-list-slashparen-atpt (&optional no-delimiters)
@@ -21248,11 +21336,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'name no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-name-atpt 'ar-name-doublebackslashparen-atpt)
-(defun ar-name-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-name-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around NAME at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'name no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-name-atpt (&optional no-delimiters)
+  "Provides double backticks around NAME at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'name no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-name-atpt 'ar-name-slashparen-atpt)
 (defun ar-name-slashparen-atpt (&optional no-delimiters)
@@ -21525,11 +21617,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'number no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-number-atpt 'ar-number-doublebackslashparen-atpt)
-(defun ar-number-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-number-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around NUMBER at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'number no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-number-atpt (&optional no-delimiters)
+  "Provides double backticks around NUMBER at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'number no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-number-atpt 'ar-number-slashparen-atpt)
 (defun ar-number-slashparen-atpt (&optional no-delimiters)
@@ -21802,11 +21898,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'page no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-page-atpt 'ar-page-doublebackslashparen-atpt)
-(defun ar-page-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-page-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around PAGE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'page no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-page-atpt (&optional no-delimiters)
+  "Provides double backticks around PAGE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'page no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-page-atpt 'ar-page-slashparen-atpt)
 (defun ar-page-slashparen-atpt (&optional no-delimiters)
@@ -22079,11 +22179,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'paragraph no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-paragraph-atpt 'ar-paragraph-doublebackslashparen-atpt)
-(defun ar-paragraph-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-paragraph-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around PARAGRAPH at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'paragraph no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-paragraph-atpt (&optional no-delimiters)
+  "Provides double backticks around PARAGRAPH at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'paragraph no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-paragraph-atpt 'ar-paragraph-slashparen-atpt)
 (defun ar-paragraph-slashparen-atpt (&optional no-delimiters)
@@ -22356,11 +22460,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'phone no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-phone-atpt 'ar-phone-doublebackslashparen-atpt)
-(defun ar-phone-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-phone-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around PHONE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'phone no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-phone-atpt (&optional no-delimiters)
+  "Provides double backticks around PHONE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'phone no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-phone-atpt 'ar-phone-slashparen-atpt)
 (defun ar-phone-slashparen-atpt (&optional no-delimiters)
@@ -22633,11 +22741,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'region no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-region-atpt 'ar-region-doublebackslashparen-atpt)
-(defun ar-region-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-region-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around REGION at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'region no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-region-atpt (&optional no-delimiters)
+  "Provides double backticks around REGION at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'region no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-region-atpt 'ar-region-slashparen-atpt)
 (defun ar-region-slashparen-atpt (&optional no-delimiters)
@@ -22910,11 +23022,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'sentence no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-sentence-atpt 'ar-sentence-doublebackslashparen-atpt)
-(defun ar-sentence-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-sentence-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around SENTENCE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'sentence no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-sentence-atpt (&optional no-delimiters)
+  "Provides double backticks around SENTENCE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'sentence no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-sentence-atpt 'ar-sentence-slashparen-atpt)
 (defun ar-sentence-slashparen-atpt (&optional no-delimiters)
@@ -23187,11 +23303,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'sexp no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-sexp-atpt 'ar-sexp-doublebackslashparen-atpt)
-(defun ar-sexp-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-sexp-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around SEXP at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'sexp no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-sexp-atpt (&optional no-delimiters)
+  "Provides double backticks around SEXP at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'sexp no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-sexp-atpt 'ar-sexp-slashparen-atpt)
 (defun ar-sexp-slashparen-atpt (&optional no-delimiters)
@@ -23464,11 +23584,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'string no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-string-atpt 'ar-string-doublebackslashparen-atpt)
-(defun ar-string-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-string-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around STRING at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'string no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-string-atpt (&optional no-delimiters)
+  "Provides double backticks around STRING at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'string no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-string-atpt 'ar-string-slashparen-atpt)
 (defun ar-string-slashparen-atpt (&optional no-delimiters)
@@ -23741,11 +23865,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'shstruct no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-shstruct-atpt 'ar-shstruct-doublebackslashparen-atpt)
-(defun ar-shstruct-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-shstruct-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around SHSTRUCT at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'shstruct no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-shstruct-atpt (&optional no-delimiters)
+  "Provides double backticks around SHSTRUCT at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'shstruct no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-shstruct-atpt 'ar-shstruct-slashparen-atpt)
 (defun ar-shstruct-slashparen-atpt (&optional no-delimiters)
@@ -24018,11 +24146,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'symbol no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-symbol-atpt 'ar-symbol-doublebackslashparen-atpt)
-(defun ar-symbol-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-symbol-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around SYMBOL at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'symbol no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-symbol-atpt (&optional no-delimiters)
+  "Provides double backticks around SYMBOL at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'symbol no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-symbol-atpt 'ar-symbol-slashparen-atpt)
 (defun ar-symbol-slashparen-atpt (&optional no-delimiters)
@@ -24295,11 +24427,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'url no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-url-atpt 'ar-url-doublebackslashparen-atpt)
-(defun ar-url-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-url-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around URL at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'url no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-url-atpt (&optional no-delimiters)
+  "Provides double backticks around URL at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'url no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-url-atpt 'ar-url-slashparen-atpt)
 (defun ar-url-slashparen-atpt (&optional no-delimiters)
@@ -24572,11 +24708,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'word no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-word-atpt 'ar-word-doublebackslashparen-atpt)
-(defun ar-word-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-word-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around WORD at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'word no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-word-atpt (&optional no-delimiters)
+  "Provides double backticks around WORD at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'word no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-word-atpt 'ar-word-slashparen-atpt)
 (defun ar-word-slashparen-atpt (&optional no-delimiters)
@@ -24849,11 +24989,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'wordalphaonly no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-wordalphaonly-atpt 'ar-wordalphaonly-doublebackslashparen-atpt)
-(defun ar-wordalphaonly-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-wordalphaonly-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around WORDALPHAONLY at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'wordalphaonly no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-wordalphaonly-atpt (&optional no-delimiters)
+  "Provides double backticks around WORDALPHAONLY at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'wordalphaonly no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-wordalphaonly-atpt 'ar-wordalphaonly-slashparen-atpt)
 (defun ar-wordalphaonly-slashparen-atpt (&optional no-delimiters)
@@ -25130,11 +25274,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'block no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-block-atpt 'ar-block-doublebackslashparen-atpt)
-(defun ar-block-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-block-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BLOCK at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'block no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-block-atpt (&optional no-delimiters)
+  "Provides double backticks around BLOCK at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'block no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-block-atpt 'ar-block-slashparen-atpt)
 (defun ar-block-slashparen-atpt (&optional no-delimiters)
@@ -25407,11 +25555,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'block-or-clause no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-block-or-clause-atpt 'ar-block-or-clause-doublebackslashparen-atpt)
-(defun ar-block-or-clause-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-block-or-clause-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around BLOCK-OR-CLAUSE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'block-or-clause no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-block-or-clause-atpt (&optional no-delimiters)
+  "Provides double backticks around BLOCK-OR-CLAUSE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'block-or-clause no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-block-or-clause-atpt 'ar-block-or-clause-slashparen-atpt)
 (defun ar-block-or-clause-slashparen-atpt (&optional no-delimiters)
@@ -25684,11 +25836,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'class no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-class-atpt 'ar-class-doublebackslashparen-atpt)
-(defun ar-class-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-class-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around CLASS at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'class no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-class-atpt (&optional no-delimiters)
+  "Provides double backticks around CLASS at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'class no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-class-atpt 'ar-class-slashparen-atpt)
 (defun ar-class-slashparen-atpt (&optional no-delimiters)
@@ -25961,11 +26117,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'clause no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-clause-atpt 'ar-clause-doublebackslashparen-atpt)
-(defun ar-clause-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-clause-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around CLAUSE at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'clause no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-clause-atpt (&optional no-delimiters)
+  "Provides double backticks around CLAUSE at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'clause no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-clause-atpt 'ar-clause-slashparen-atpt)
 (defun ar-clause-slashparen-atpt (&optional no-delimiters)
@@ -26238,11 +26398,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'def-or-class no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-def-or-class-atpt 'ar-def-or-class-doublebackslashparen-atpt)
-(defun ar-def-or-class-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-def-or-class-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DEF-OR-CLASS at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'def-or-class no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-def-or-class-atpt (&optional no-delimiters)
+  "Provides double backticks around DEF-OR-CLASS at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'def-or-class no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-def-or-class-atpt 'ar-def-or-class-slashparen-atpt)
 (defun ar-def-or-class-slashparen-atpt (&optional no-delimiters)
@@ -26515,11 +26679,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'def no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-def-atpt 'ar-def-doublebackslashparen-atpt)
-(defun ar-def-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-def-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around DEF at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'def no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-def-atpt (&optional no-delimiters)
+  "Provides double backticks around DEF at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'def no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-def-atpt 'ar-def-slashparen-atpt)
 (defun ar-def-slashparen-atpt (&optional no-delimiters)
@@ -26792,11 +26960,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'expression no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-expression-atpt 'ar-expression-doublebackslashparen-atpt)
-(defun ar-expression-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-expression-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around EXPRESSION at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'expression no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-expression-atpt (&optional no-delimiters)
+  "Provides double backticks around EXPRESSION at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'expression no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-expression-atpt 'ar-expression-slashparen-atpt)
 (defun ar-expression-slashparen-atpt (&optional no-delimiters)
@@ -27069,11 +27241,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'partial-expression no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-partial-expression-atpt 'ar-partial-expression-doublebackslashparen-atpt)
-(defun ar-partial-expression-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-partial-expression-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around PARTIAL-EXPRESSION at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'partial-expression no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-partial-expression-atpt (&optional no-delimiters)
+  "Provides double backticks around PARTIAL-EXPRESSION at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'partial-expression no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-partial-expression-atpt 'ar-partial-expression-slashparen-atpt)
 (defun ar-partial-expression-slashparen-atpt (&optional no-delimiters)
@@ -27346,11 +27522,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'statement no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-statement-atpt 'ar-statement-doublebackslashparen-atpt)
-(defun ar-statement-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-statement-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around STATEMENT at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'statement no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-statement-atpt (&optional no-delimiters)
+  "Provides double backticks around STATEMENT at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'statement no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-statement-atpt 'ar-statement-slashparen-atpt)
 (defun ar-statement-slashparen-atpt (&optional no-delimiters)
@@ -27623,11 +27803,15 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*p")
   (ar-th-doubleslash 'string no-delimiters (called-interactively-p 'any)))
 
-(defalias 'ar-doublebackslashparen-string-atpt 'ar-string-doublebackslashparen-atpt)
-(defun ar-string-doublebackslashparen-atpt (&optional no-delimiters)
+(defun ar-doublebackslashparen-string-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around STRING at point if any. "
   (interactive "*p")
   (ar-th-doublebackslashparen 'string no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-string-atpt (&optional no-delimiters)
+  "Provides double backticks around STRING at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'string no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-slashparen-string-atpt 'ar-string-slashparen-atpt)
 (defun ar-string-slashparen-atpt (&optional no-delimiters)
@@ -27813,6 +27997,8 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list end
+
+
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with backslash(s),
   otherwise copy backslash(ed) at point.
@@ -27949,53 +28135,141 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any)))
 
-(defun ar-brace-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with brace(s),
-  otherwise copy brace(ed) at point.
-  With NO-DELIMITERS, copy brace(ed) without delimiters.
-  With negative argument kill brace(ed) at point. "
+(defun ar-backslash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with backslash(s),
+  otherwise copy backslash(ed) at point.
+  With NO-DELIMITERS, copy backslash(ed) without delimiters.
+  With negative argument kill backslash(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'brace no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'backslash no-delimiters (called-interactively-p 'any)))
 
-(defun ar-bracket-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with bracket(s),
-  otherwise copy bracket(ed) at point.
-  With NO-DELIMITERS, copy bracket(ed) without delimiters.
-  With negative argument kill bracket(ed) at point. "
+(defun ar-backtick-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with backtick(s),
+  otherwise copy backtick(ed) at point.
+  With NO-DELIMITERS, copy backtick(ed) without delimiters.
+  With negative argument kill backtick(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'bracket no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'backtick no-delimiters (called-interactively-p 'any)))
 
-(defun ar-lesserangle-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with lesserangle(s),
-  otherwise copy lesserangle(ed) at point.
-  With NO-DELIMITERS, copy lesserangle(ed) without delimiters.
-  With negative argument kill lesserangle(ed) at point. "
+(defun ar-colon-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with colon(s),
+  otherwise copy colon(ed) at point.
+  With NO-DELIMITERS, copy colon(ed) without delimiters.
+  With negative argument kill colon(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'lesserangle no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'colon no-delimiters (called-interactively-p 'any)))
 
-(defun ar-greaterangle-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with greaterangle(s),
-  otherwise copy greaterangle(ed) at point.
-  With NO-DELIMITERS, copy greaterangle(ed) without delimiters.
-  With negative argument kill greaterangle(ed) at point. "
+(defun ar-cross-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with cross(s),
+  otherwise copy cross(ed) at point.
+  With NO-DELIMITERS, copy cross(ed) without delimiters.
+  With negative argument kill cross(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'greaterangle no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'cross no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with leftrightsinglequote(s),
-  otherwise copy leftrightsinglequote(ed) at point.
-  With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters.
-  With negative argument kill leftrightsinglequote(ed) at point. "
+(defun ar-dollar-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with dollar(s),
+  otherwise copy dollar(ed) at point.
+  With NO-DELIMITERS, copy dollar(ed) without delimiters.
+  With negative argument kill dollar(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'dollar no-delimiters (called-interactively-p 'any)))
 
-(defun ar-parentize-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with parentize(s),
-  otherwise copy parentize(ed) at point.
-  With NO-DELIMITERS, copy parentize(ed) without delimiters.
-  With negative argument kill parentize(ed) at point. "
+(defun ar-doublequote-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with doublequote(s),
+  otherwise copy doublequote(ed) at point.
+  With NO-DELIMITERS, copy doublequote(ed) without delimiters.
+  With negative argument kill doublequote(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'parentize no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'doublequote no-delimiters (called-interactively-p 'any)))
+
+(defun ar-equalize-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with equalize(s),
+  otherwise copy equalize(ed) at point.
+  With NO-DELIMITERS, copy equalize(ed) without delimiters.
+  With negative argument kill equalize(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'equalize no-delimiters (called-interactively-p 'any)))
+
+(defun ar-escape-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with escape(s),
+  otherwise copy escape(ed) at point.
+  With NO-DELIMITERS, copy escape(ed) without delimiters.
+  With negative argument kill escape(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'escape no-delimiters (called-interactively-p 'any)))
+
+(defun ar-hash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with hash(s),
+  otherwise copy hash(ed) at point.
+  With NO-DELIMITERS, copy hash(ed) without delimiters.
+  With negative argument kill hash(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'hash no-delimiters (called-interactively-p 'any)))
+
+(defun ar-hyphen-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with hyphen(s),
+  otherwise copy hyphen(ed) at point.
+  With NO-DELIMITERS, copy hyphen(ed) without delimiters.
+  With negative argument kill hyphen(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'hyphen no-delimiters (called-interactively-p 'any)))
+
+(defun ar-singlequote-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with singlequote(s),
+  otherwise copy singlequote(ed) at point.
+  With NO-DELIMITERS, copy singlequote(ed) without delimiters.
+  With negative argument kill singlequote(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'singlequote no-delimiters (called-interactively-p 'any)))
+
+(defun ar-slash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with slash(s),
+  otherwise copy slash(ed) at point.
+  With NO-DELIMITERS, copy slash(ed) without delimiters.
+  With negative argument kill slash(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'slash no-delimiters (called-interactively-p 'any)))
+
+(defun ar-star-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with star(s),
+  otherwise copy star(ed) at point.
+  With NO-DELIMITERS, copy star(ed) without delimiters.
+  With negative argument kill star(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'star no-delimiters (called-interactively-p 'any)))
+
+(defun ar-tild-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with tild(s),
+  otherwise copy tild(ed) at point.
+  With NO-DELIMITERS, copy tild(ed) without delimiters.
+  With negative argument kill tild(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'tild no-delimiters (called-interactively-p 'any)))
+
+(defun ar-underscore-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with underscore(s),
+  otherwise copy underscore(ed) at point.
+  With NO-DELIMITERS, copy underscore(ed) without delimiters.
+  With negative argument kill underscore(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'underscore no-delimiters (called-interactively-p 'any)))
+
+(defun ar-whitespace-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with whitespace(s),
+  otherwise copy whitespace(ed) at point.
+  With NO-DELIMITERS, copy whitespace(ed) without delimiters.
+  With negative argument kill whitespace(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'whitespace no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with doubleslash(s),
+  otherwise copy doubleslash(ed) at point.
+  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
+  With negative argument kill doubleslash(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any)))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with greateranglednested(s),
@@ -28236,8 +28510,6 @@ See doku from `sort-subr', for details.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters (called-interactively-p 'any)))
-
-
 
 (defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
