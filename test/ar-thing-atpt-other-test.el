@@ -317,6 +317,15 @@ return wwrap"
     (forward-char -1)
     (should (eq 8 (length (ar-delimited-atpt))))))
 
+(ert-deftest ar-count-parentized-in-doublequoted-until-point-test ()
+  (ar-test-with-temp-buffer
+      "\"(foo) asdf ( foo1 ) (bar) (baz))\""
+      (forward-char -2)
+    (eq 4  (ar-count-parentized-in-doublequoted-until-point))))
+    
+
+
+
 ;; not implemented
 ;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
 ;;   (ar-test-with-temp-buffer "`asdf48'"
