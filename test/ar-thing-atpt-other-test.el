@@ -323,7 +323,11 @@ return wwrap"
       (forward-char -2)
     (eq 4  (ar-count-parentized-in-doublequoted-until-point))))
     
-
+(ert-deftest ar-delimited-twostarred-test ()
+  (ar-test-with-temp-buffer
+      "\*\*foo bar\*\*"
+      (forward-char -2) 
+    (should (eq 11 (length (ar-delimited-atpt))))))
 
 
 ;; not implemented
