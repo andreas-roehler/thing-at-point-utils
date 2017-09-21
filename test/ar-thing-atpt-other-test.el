@@ -310,25 +310,11 @@ return wwrap"
     (should (eq (char-before) ?}))))
 
 
-(ert-deftest ar-delimited-leftrightsinglequoted-atpt-test ()
-  (ar-test-with-temp-buffer "asdf48"
-    (forward-char -1)
-    (ar-leftrightsinglequote-alnum-atpt)
-    (forward-char -1)
-    (should (eq 8 (length (ar-delimited-atpt))))))
-
 (ert-deftest ar-count-parentized-in-doublequoted-until-point-test ()
   (ar-test-with-temp-buffer
       "\"(foo) asdf ( foo1 ) (bar) (baz))\""
       (forward-char -2)
     (eq 4  (ar-count-parentized-in-doublequoted-until-point))))
-    
-(ert-deftest ar-delimited-twostarred-test ()
-  (ar-test-with-temp-buffer
-      "\*\*foo bar\*\*"
-      (forward-char -2) 
-    (should (eq 11 (length (ar-delimited-atpt))))))
-
 
 ;; not implemented
 ;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
