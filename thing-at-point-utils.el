@@ -28523,7 +28523,7 @@ See doku from `sort-subr', for details.
 (defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
   (interactive)
-  (unless (looking-back "[ \t\r\n\f]")
+  (unless (looking-back "[ \t\r\n\f]" (line-beginning-position))
     (skip-chars-backward " \t\r\n\f"))
 
   (let ((beg (cond ((or (looking-at "--eval")(looking-at "-load"))
