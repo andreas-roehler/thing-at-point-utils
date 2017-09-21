@@ -30,41 +30,6 @@
 (require 'thingatpt-utils-core)
 
 
-;; (ar-thing-at-point-utils-aktiv-passiv ar-paired-delimit-aktiv (list 'list)): start
-(defun ar-brace-list-atpt (&optional arg)
-  "Brace LIST at point."
-  (interactive "*p")
-  (ar-th-brace 'list arg arg))
-
-(defun ar-bracket-list-atpt (&optional arg)
-  "Bracket LIST at point."
-  (interactive "*p")
-  (ar-th-bracket 'list arg arg))
-
-(defun ar-lesserangle-list-atpt (&optional arg)
-  "Lesserangle LIST at point."
-  (interactive "*p")
-  (ar-th-lesserangle 'list arg arg))
-
-(defun ar-greaterangle-list-atpt (&optional arg)
-  "Greaterangle LIST at point."
-  (interactive "*p")
-  (ar-th-greaterangle 'list arg arg))
-
-(defun ar-leftrightsinglequote-list-atpt (&optional arg)
-  "Leftrightsinglequote LIST at point."
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'list arg arg))
-
-(defun ar-parentize-list-atpt (&optional arg)
-  "Parentize LIST at point."
-  (interactive "*p")
-  (ar-th-parentize 'list arg arg))
-
-
-;; (ar-thing-at-point-utils-aktiv-passiv ar-paired-delimit-aktiv (list 'list)): end
-
-
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 (defun ar-backslash-greateranglednested-atpt (&optional arg)
   "Backslash GREATERANGLEDNESTED at point."
@@ -4240,6 +4205,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes ALNUM at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'alnum beg end (called-interactively-p 'any)))
+
 (defun ar-alpha-atpt ()
   "Returns alpha at point if any, nil otherwise. "
   (interactive)
@@ -4325,6 +4291,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes ALPHA at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'alpha beg end (called-interactively-p 'any)))
+
 (defun ar-ascii-atpt ()
   "Returns ascii at point if any, nil otherwise. "
   (interactive)
@@ -4410,6 +4377,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes ASCII at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'ascii beg end (called-interactively-p 'any)))
+
 (defun ar-blank-atpt ()
   "Returns blank at point if any, nil otherwise. "
   (interactive)
@@ -4495,6 +4463,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes BLANK at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'blank beg end (called-interactively-p 'any)))
+
 (defun ar-cntrl-atpt ()
   "Returns cntrl at point if any, nil otherwise. "
   (interactive)
@@ -4580,6 +4549,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes CNTRL at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'cntrl beg end (called-interactively-p 'any)))
+
 (defun ar-digit-atpt ()
   "Returns digit at point if any, nil otherwise. "
   (interactive)
@@ -4665,6 +4635,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes DIGIT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'digit beg end (called-interactively-p 'any)))
+
 (defun ar-graph-atpt ()
   "Returns graph at point if any, nil otherwise. "
   (interactive)
@@ -4750,6 +4721,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes GRAPH at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'graph beg end (called-interactively-p 'any)))
+
 (defun ar-lower-atpt ()
   "Returns lower at point if any, nil otherwise. "
   (interactive)
@@ -4835,6 +4807,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes LOWER at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'lower beg end (called-interactively-p 'any)))
+
 (defun ar-nonascii-atpt ()
   "Returns nonascii at point if any, nil otherwise. "
   (interactive)
@@ -4920,6 +4893,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes NONASCII at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'nonascii beg end (called-interactively-p 'any)))
+
 (defun ar-print-atpt ()
   "Returns print at point if any, nil otherwise. "
   (interactive)
@@ -5005,6 +4979,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes PRINT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'print beg end (called-interactively-p 'any)))
+
 (defun ar-punct-atpt ()
   "Returns punct at point if any, nil otherwise. "
   (interactive)
@@ -5090,6 +5065,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes PUNCT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'punct beg end (called-interactively-p 'any)))
+
 (defun ar-space-atpt ()
   "Returns space at point if any, nil otherwise. "
   (interactive)
@@ -5175,6 +5151,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes SPACE at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'space beg end (called-interactively-p 'any)))
+
 (defun ar-upper-atpt ()
   "Returns upper at point if any, nil otherwise. "
   (interactive)
@@ -5260,6 +5237,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes UPPER at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'upper beg end (called-interactively-p 'any)))
+
 (defun ar-xdigit-atpt ()
   "Returns xdigit at point if any, nil otherwise. "
   (interactive)
@@ -5344,7 +5322,8 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
 (defun ar-delete-xdigit-in-region (beg end)
   "Deletes XDIGIT at point if any. "
   (interactive "*r")
-  (ar-th-delete-in-region 'xdigit beg end (called-interactively-p 'any)));; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: end
+  (ar-th-delete-in-region 'xdigit beg end (called-interactively-p 'any)))
+;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: end
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list-raw: start
 
 (defun ar-greateranglednested-atpt ()
@@ -5432,6 +5411,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes GREATERANGLEDNESTED at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'greateranglednested beg end (called-interactively-p 'any)))
+
 (defun ar-lesseranglednested-atpt ()
   "Returns lesseranglednested at point if any, nil otherwise. "
   (interactive)
@@ -5517,6 +5497,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes LESSERANGLEDNESTED at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'lesseranglednested beg end (called-interactively-p 'any)))
+
 (defun ar-buffer-atpt ()
   "Returns buffer at point if any, nil otherwise. "
   (interactive)
@@ -5602,6 +5583,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes BUFFER at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'buffer beg end (called-interactively-p 'any)))
+
 (defun ar-comment-atpt ()
   "Returns comment at point if any, nil otherwise. "
   (interactive)
@@ -5687,6 +5669,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes COMMENT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'comment beg end (called-interactively-p 'any)))
+
 (defun ar-csv-atpt ()
   "Returns csv at point if any, nil otherwise. "
   (interactive)
@@ -5772,6 +5755,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes CSV at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'csv beg end (called-interactively-p 'any)))
+
 (defun ar-date-atpt ()
   "Returns date at point if any, nil otherwise. "
   (interactive)
@@ -5857,6 +5841,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes DATE at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'date beg end (called-interactively-p 'any)))
+
 (defun ar-delimited-atpt ()
   "Returns delimited at point if any, nil otherwise. "
   (interactive)
@@ -5942,6 +5927,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes DELIMITED at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'delimited beg end (called-interactively-p 'any)))
+
 (defun ar-email-atpt ()
   "Returns email at point if any, nil otherwise. "
   (interactive)
@@ -6027,6 +6013,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes EMAIL at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'email beg end (called-interactively-p 'any)))
+
 (defun ar-filename-atpt ()
   "Returns filename at point if any, nil otherwise. "
   (interactive)
@@ -6112,6 +6099,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes FILENAME at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'filename beg end (called-interactively-p 'any)))
+
 (defun ar-filenamenondirectory-atpt ()
   "Returns filenamenondirectory at point if any, nil otherwise. "
   (interactive)
@@ -6197,6 +6185,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes FILENAMENONDIRECTORY at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'filenamenondirectory beg end (called-interactively-p 'any)))
+
 (defun ar-float-atpt ()
   "Returns float at point if any, nil otherwise. "
   (interactive)
@@ -6282,6 +6271,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes FLOAT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'float beg end (called-interactively-p 'any)))
+
 (defun ar-function-atpt ()
   "Returns function at point if any, nil otherwise. "
   (interactive)
@@ -6367,6 +6357,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes FUNCTION at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'function beg end (called-interactively-p 'any)))
+
 (defun ar-ip-atpt ()
   "Returns ip at point if any, nil otherwise. "
   (interactive)
@@ -6452,6 +6443,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes IP at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'ip beg end (called-interactively-p 'any)))
+
 (defun ar-isbn-atpt ()
   "Returns isbn at point if any, nil otherwise. "
   (interactive)
@@ -6537,6 +6529,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes ISBN at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'isbn beg end (called-interactively-p 'any)))
+
 (defun ar-line-atpt ()
   "Returns line at point if any, nil otherwise. "
   (interactive)
@@ -6622,6 +6615,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes LINE at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'line beg end (called-interactively-p 'any)))
+
 (defun ar-list-atpt ()
   "Returns list at point if any, nil otherwise. "
   (interactive)
@@ -6707,6 +6701,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes LIST at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'list beg end (called-interactively-p 'any)))
+
 (defun ar-name-atpt ()
   "Returns name at point if any, nil otherwise. "
   (interactive)
@@ -6792,6 +6787,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes NAME at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'name beg end (called-interactively-p 'any)))
+
 (defun ar-number-atpt ()
   "Returns number at point if any, nil otherwise. "
   (interactive)
@@ -6877,6 +6873,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes NUMBER at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'number beg end (called-interactively-p 'any)))
+
 (defun ar-page-atpt ()
   "Returns page at point if any, nil otherwise. "
   (interactive)
@@ -6962,6 +6959,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes PAGE at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'page beg end (called-interactively-p 'any)))
+
 (defun ar-paragraph-atpt ()
   "Returns paragraph at point if any, nil otherwise. "
   (interactive)
@@ -7047,6 +7045,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes PARAGRAPH at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'paragraph beg end (called-interactively-p 'any)))
+
 (defun ar-phone-atpt ()
   "Returns phone at point if any, nil otherwise. "
   (interactive)
@@ -7132,6 +7131,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes PHONE at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'phone beg end (called-interactively-p 'any)))
+
 (defun ar-region-atpt ()
   "Returns region at point if any, nil otherwise. "
   (interactive)
@@ -7217,6 +7217,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes REGION at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'region beg end (called-interactively-p 'any)))
+
 (defun ar-sentence-atpt ()
   "Returns sentence at point if any, nil otherwise. "
   (interactive)
@@ -7302,6 +7303,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes SENTENCE at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'sentence beg end (called-interactively-p 'any)))
+
 (defun ar-sexp-atpt ()
   "Returns sexp at point if any, nil otherwise. "
   (interactive)
@@ -7387,6 +7389,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes SEXP at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'sexp beg end (called-interactively-p 'any)))
+
 (defun ar-string-atpt ()
   "Returns string at point if any, nil otherwise. "
   (interactive)
@@ -7472,6 +7475,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes STRING at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'string beg end (called-interactively-p 'any)))
+
 (defun ar-shstruct-atpt ()
   "Returns shstruct at point if any, nil otherwise. "
   (interactive)
@@ -7557,6 +7561,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes SHSTRUCT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'shstruct beg end (called-interactively-p 'any)))
+
 (defun ar-symbol-atpt ()
   "Returns symbol at point if any, nil otherwise. "
   (interactive)
@@ -7642,6 +7647,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes SYMBOL at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'symbol beg end (called-interactively-p 'any)))
+
 (defun ar-url-atpt ()
   "Returns url at point if any, nil otherwise. "
   (interactive)
@@ -7727,6 +7733,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes URL at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'url beg end (called-interactively-p 'any)))
+
 (defun ar-word-atpt ()
   "Returns word at point if any, nil otherwise. "
   (interactive)
@@ -7812,6 +7819,7 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Deletes WORD at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'word beg end (called-interactively-p 'any)))
+
 (defun ar-wordalphaonly-atpt ()
   "Returns wordalphaonly at point if any, nil otherwise. "
   (interactive)
@@ -7896,7 +7904,8 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
 (defun ar-delete-wordalphaonly-in-region (beg end)
   "Deletes WORDALPHAONLY at point if any. "
   (interactive "*r")
-  (ar-th-delete-in-region 'wordalphaonly beg end (called-interactively-p 'any)));; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list-raw: end
+  (ar-th-delete-in-region 'wordalphaonly beg end (called-interactively-p 'any)))
+;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list-raw: end
 
 ;; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 
@@ -12313,12 +12322,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'backslashed no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-backslashed-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-backslashed-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'backslashed no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'backslashed no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-backslashed-atpt (&optional no-delimiters)
   "Separates backslashed at point if any, does nothing otherwise
@@ -12544,12 +12553,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'backticked no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-backticked-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-backticked-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'backticked no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'backticked no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-backticked-atpt (&optional no-delimiters)
   "Separates backticked at point if any, does nothing otherwise
@@ -12775,12 +12784,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'coloned no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-coloned-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-coloned-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'coloned no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'coloned no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-coloned-atpt (&optional no-delimiters)
   "Separates coloned at point if any, does nothing otherwise
@@ -13006,12 +13015,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'dollared no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-dollared-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-dollared-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'dollared no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'dollared no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-dollared-atpt (&optional no-delimiters)
   "Separates dollared at point if any, does nothing otherwise
@@ -13237,12 +13246,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'doublequoted no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-doublequoted-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-doublequoted-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'doublequoted no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'doublequoted no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-doublequoted-atpt (&optional no-delimiters)
   "Separates doublequoted at point if any, does nothing otherwise
@@ -13468,12 +13477,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'equalized no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-equalized-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-equalized-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'equalized no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'equalized no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-equalized-atpt (&optional no-delimiters)
   "Separates equalized at point if any, does nothing otherwise
@@ -13699,12 +13708,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'hyphened no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-hyphened-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-hyphened-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'hyphened no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'hyphened no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-hyphened-atpt (&optional no-delimiters)
   "Separates hyphened at point if any, does nothing otherwise
@@ -13930,12 +13939,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'singlequoted no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-singlequoted-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-singlequoted-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'singlequoted no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'singlequoted no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-singlequoted-atpt (&optional no-delimiters)
   "Separates singlequoted at point if any, does nothing otherwise
@@ -14161,12 +14170,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'slashed no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-slashed-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-slashed-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'slashed no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'slashed no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-slashed-atpt (&optional no-delimiters)
   "Separates slashed at point if any, does nothing otherwise
@@ -14392,12 +14401,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'stared no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-stared-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-stared-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'stared no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'stared no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-stared-atpt (&optional no-delimiters)
   "Separates stared at point if any, does nothing otherwise
@@ -14623,12 +14632,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'underscored no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-underscored-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-underscored-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'underscored no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'underscored no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-underscored-atpt (&optional no-delimiters)
   "Separates underscored at point if any, does nothing otherwise
@@ -14854,12 +14863,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*P")
   (ar-th-kill-backward 'whitespaced no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-whitespaced-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any.
+;; (defun ar-leftrightsinglequote-whitespaced-atpt (&optional no-delimiters)
+;;   "Singlequotes alnum at point if any.
 
-With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'whitespaced no-delimiters (called-interactively-p 'any)))
+;; With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+;;   (interactive "*p")
+;;   (ar-th-leftrightsinglequote 'whitespaced no-delimiters (called-interactively-p 'any)))
 
 (defun ar-separate-whitespaced-atpt (&optional no-delimiters)
   "Separates whitespaced at point if any, does nothing otherwise
@@ -27997,6 +28006,8 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list end
+
+
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with backslash(s),
   otherwise copy backslash(ed) at point.
@@ -28133,53 +28144,141 @@ See doku from `sort-subr', for details.
   (interactive "p")
   (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any)))
 
-(defun ar-brace-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with brace(s),
-  otherwise copy brace(ed) at point.
-  With NO-DELIMITERS, copy brace(ed) without delimiters.
-  With negative argument kill brace(ed) at point. "
+(defun ar-backslash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with backslash(s),
+  otherwise copy backslash(ed) at point.
+  With NO-DELIMITERS, copy backslash(ed) without delimiters.
+  With negative argument kill backslash(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'brace no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'backslash no-delimiters (called-interactively-p 'any)))
 
-(defun ar-bracket-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with bracket(s),
-  otherwise copy bracket(ed) at point.
-  With NO-DELIMITERS, copy bracket(ed) without delimiters.
-  With negative argument kill bracket(ed) at point. "
+(defun ar-backtick-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with backtick(s),
+  otherwise copy backtick(ed) at point.
+  With NO-DELIMITERS, copy backtick(ed) without delimiters.
+  With negative argument kill backtick(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'bracket no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'backtick no-delimiters (called-interactively-p 'any)))
 
-(defun ar-lesserangle-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with lesserangle(s),
-  otherwise copy lesserangle(ed) at point.
-  With NO-DELIMITERS, copy lesserangle(ed) without delimiters.
-  With negative argument kill lesserangle(ed) at point. "
+(defun ar-colon-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with colon(s),
+  otherwise copy colon(ed) at point.
+  With NO-DELIMITERS, copy colon(ed) without delimiters.
+  With negative argument kill colon(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'lesserangle no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'colon no-delimiters (called-interactively-p 'any)))
 
-(defun ar-greaterangle-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with greaterangle(s),
-  otherwise copy greaterangle(ed) at point.
-  With NO-DELIMITERS, copy greaterangle(ed) without delimiters.
-  With negative argument kill greaterangle(ed) at point. "
+(defun ar-cross-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with cross(s),
+  otherwise copy cross(ed) at point.
+  With NO-DELIMITERS, copy cross(ed) without delimiters.
+  With negative argument kill cross(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'greaterangle no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'cross no-delimiters (called-interactively-p 'any)))
 
-(defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with leftrightsinglequote(s),
-  otherwise copy leftrightsinglequote(ed) at point.
-  With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters.
-  With negative argument kill leftrightsinglequote(ed) at point. "
+(defun ar-dollar-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with dollar(s),
+  otherwise copy dollar(ed) at point.
+  With NO-DELIMITERS, copy dollar(ed) without delimiters.
+  With negative argument kill dollar(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'dollar no-delimiters (called-interactively-p 'any)))
 
-(defun ar-parentize-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with parentize(s),
-  otherwise copy parentize(ed) at point.
-  With NO-DELIMITERS, copy parentize(ed) without delimiters.
-  With negative argument kill parentize(ed) at point. "
+(defun ar-doublequote-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with doublequote(s),
+  otherwise copy doublequote(ed) at point.
+  With NO-DELIMITERS, copy doublequote(ed) without delimiters.
+  With negative argument kill doublequote(ed) at point. "
   (interactive "p")
-  (ar-th-base-copy-or 'parentize no-delimiters (called-interactively-p 'any)))
+  (ar-th-base-copy-or 'doublequote no-delimiters (called-interactively-p 'any)))
+
+(defun ar-equalize-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with equalize(s),
+  otherwise copy equalize(ed) at point.
+  With NO-DELIMITERS, copy equalize(ed) without delimiters.
+  With negative argument kill equalize(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'equalize no-delimiters (called-interactively-p 'any)))
+
+(defun ar-escape-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with escape(s),
+  otherwise copy escape(ed) at point.
+  With NO-DELIMITERS, copy escape(ed) without delimiters.
+  With negative argument kill escape(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'escape no-delimiters (called-interactively-p 'any)))
+
+(defun ar-hash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with hash(s),
+  otherwise copy hash(ed) at point.
+  With NO-DELIMITERS, copy hash(ed) without delimiters.
+  With negative argument kill hash(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'hash no-delimiters (called-interactively-p 'any)))
+
+(defun ar-hyphen-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with hyphen(s),
+  otherwise copy hyphen(ed) at point.
+  With NO-DELIMITERS, copy hyphen(ed) without delimiters.
+  With negative argument kill hyphen(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'hyphen no-delimiters (called-interactively-p 'any)))
+
+(defun ar-singlequote-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with singlequote(s),
+  otherwise copy singlequote(ed) at point.
+  With NO-DELIMITERS, copy singlequote(ed) without delimiters.
+  With negative argument kill singlequote(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'singlequote no-delimiters (called-interactively-p 'any)))
+
+(defun ar-slash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with slash(s),
+  otherwise copy slash(ed) at point.
+  With NO-DELIMITERS, copy slash(ed) without delimiters.
+  With negative argument kill slash(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'slash no-delimiters (called-interactively-p 'any)))
+
+(defun ar-star-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with star(s),
+  otherwise copy star(ed) at point.
+  With NO-DELIMITERS, copy star(ed) without delimiters.
+  With negative argument kill star(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'star no-delimiters (called-interactively-p 'any)))
+
+(defun ar-tild-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with tild(s),
+  otherwise copy tild(ed) at point.
+  With NO-DELIMITERS, copy tild(ed) without delimiters.
+  With negative argument kill tild(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'tild no-delimiters (called-interactively-p 'any)))
+
+(defun ar-underscore-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with underscore(s),
+  otherwise copy underscore(ed) at point.
+  With NO-DELIMITERS, copy underscore(ed) without delimiters.
+  With negative argument kill underscore(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'underscore no-delimiters (called-interactively-p 'any)))
+
+(defun ar-whitespace-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with whitespace(s),
+  otherwise copy whitespace(ed) at point.
+  With NO-DELIMITERS, copy whitespace(ed) without delimiters.
+  With negative argument kill whitespace(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'whitespace no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with doubleslash(s),
+  otherwise copy doubleslash(ed) at point.
+  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
+  With negative argument kill doubleslash(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any)))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with greateranglednested(s),
@@ -28420,8 +28519,6 @@ See doku from `sort-subr', for details.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters (called-interactively-p 'any)))
-
-
 
 (defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
