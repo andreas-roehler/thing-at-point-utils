@@ -28529,7 +28529,8 @@ See doku from `sort-subr', for details.
   (let ((beg (cond ((or (looking-at "--eval")(looking-at "-load"))
                     (match-beginning 0))
                    ((re-search-backward "--eval\\|-load\\|--funcall" (line-beginning-position) 'move)
-                    (match-beginning 0)))))
+                    (match-beginning 0))))
+         end)
     (if beg
         (progn
           (push-mark (point) t t)
