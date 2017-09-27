@@ -44,6 +44,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "braced" "leftrightsinglequoted"))
 
+(defun ar-braced2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "braced" "leftrightdoublequoted"))
+
 (defun ar-braced2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "braced" "parentized"))
@@ -63,6 +67,10 @@
 (defun ar-bracketed2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "bracketed" "leftrightsinglequoted"))
+
+(defun ar-bracketed2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "bracketed" "leftrightdoublequoted"))
 
 (defun ar-bracketed2parentized-atpt ()
   (interactive "*")
@@ -84,6 +92,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "lesserangled" "leftrightsinglequoted"))
 
+(defun ar-lesserangled2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "lesserangled" "leftrightdoublequoted"))
+
 (defun ar-lesserangled2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "lesserangled" "parentized"))
@@ -103,6 +115,10 @@
 (defun ar-greaterangled2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "greaterangled" "leftrightsinglequoted"))
+
+(defun ar-greaterangled2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "greaterangled" "leftrightdoublequoted"))
 
 (defun ar-greaterangled2parentized-atpt ()
   (interactive "*")
@@ -124,9 +140,37 @@
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "greaterangled"))
 
+(defun ar-leftrightsinglequoted2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightsinglequoted" "leftrightdoublequoted"))
+
 (defun ar-leftrightsinglequoted2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "parentized"))
+
+(defun ar-leftrightdoublequoted2braced-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "braced"))
+
+(defun ar-leftrightdoublequoted2bracketed-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "bracketed"))
+
+(defun ar-leftrightdoublequoted2lesserangled-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "lesserangled"))
+
+(defun ar-leftrightdoublequoted2greaterangled-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "greaterangled"))
+
+(defun ar-leftrightdoublequoted2leftrightsinglequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "leftrightsinglequoted"))
+
+(defun ar-leftrightdoublequoted2parentized-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "parentized"))
 
 (defun ar-parentized2braced-atpt ()
   (interactive "*")
@@ -147,6 +191,10 @@
 (defun ar-parentized2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "parentized" "leftrightsinglequoted"))
+
+(defun ar-parentized2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "parentized" "leftrightdoublequoted"))
 
 (defun ar-braced2backslashed-atpt ()
   (interactive "*")
@@ -388,6 +436,54 @@
   (interactive "*")
   (ar--transform-delimited-intern "leftrightsinglequoted" "whitespaced"))
 
+(defun ar-leftrightdoublequoted2backslashed-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "backslashed"))
+
+(defun ar-leftrightdoublequoted2backticked-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "backticked"))
+
+(defun ar-leftrightdoublequoted2coloned-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "coloned"))
+
+(defun ar-leftrightdoublequoted2dollared-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "dollared"))
+
+(defun ar-leftrightdoublequoted2doublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "doublequoted"))
+
+(defun ar-leftrightdoublequoted2equalized-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "equalized"))
+
+(defun ar-leftrightdoublequoted2hyphened-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "hyphened"))
+
+(defun ar-leftrightdoublequoted2singlequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "singlequoted"))
+
+(defun ar-leftrightdoublequoted2slashed-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "slashed"))
+
+(defun ar-leftrightdoublequoted2stared-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "stared"))
+
+(defun ar-leftrightdoublequoted2underscored-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "underscored"))
+
+(defun ar-leftrightdoublequoted2whitespaced-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "leftrightdoublequoted" "whitespaced"))
+
 (defun ar-parentized2backslashed-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "parentized" "backslashed"))
@@ -456,6 +552,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "leftrightsinglequoted"))
 
+(defun ar-backslashed2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "backslashed" "leftrightdoublequoted"))
+
 (defun ar-backslashed2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backslashed" "parentized"))
@@ -479,6 +579,10 @@
 (defun ar-backticked2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "backticked" "leftrightsinglequoted"))
+
+(defun ar-backticked2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "backticked" "leftrightdoublequoted"))
 
 (defun ar-backticked2parentized-atpt ()
   (interactive "*")
@@ -504,6 +608,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "leftrightsinglequoted"))
 
+(defun ar-coloned2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "coloned" "leftrightdoublequoted"))
+
 (defun ar-coloned2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "coloned" "parentized"))
@@ -527,6 +635,10 @@
 (defun ar-dollared2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "dollared" "leftrightsinglequoted"))
+
+(defun ar-dollared2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "dollared" "leftrightdoublequoted"))
 
 (defun ar-dollared2parentized-atpt ()
   (interactive "*")
@@ -552,6 +664,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "doublequoted" "leftrightsinglequoted"))
 
+(defun ar-doublequoted2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "doublequoted" "leftrightdoublequoted"))
+
 (defun ar-doublequoted2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "doublequoted" "parentized"))
@@ -575,6 +691,10 @@
 (defun ar-equalized2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "equalized" "leftrightsinglequoted"))
+
+(defun ar-equalized2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "equalized" "leftrightdoublequoted"))
 
 (defun ar-equalized2parentized-atpt ()
   (interactive "*")
@@ -600,6 +720,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "leftrightsinglequoted"))
 
+(defun ar-hyphened2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "hyphened" "leftrightdoublequoted"))
+
 (defun ar-hyphened2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "hyphened" "parentized"))
@@ -623,6 +747,10 @@
 (defun ar-singlequoted2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "singlequoted" "leftrightsinglequoted"))
+
+(defun ar-singlequoted2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "singlequoted" "leftrightdoublequoted"))
 
 (defun ar-singlequoted2parentized-atpt ()
   (interactive "*")
@@ -648,6 +776,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "leftrightsinglequoted"))
 
+(defun ar-slashed2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "slashed" "leftrightdoublequoted"))
+
 (defun ar-slashed2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "slashed" "parentized"))
@@ -671,6 +803,10 @@
 (defun ar-stared2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "stared" "leftrightsinglequoted"))
+
+(defun ar-stared2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "stared" "leftrightdoublequoted"))
 
 (defun ar-stared2parentized-atpt ()
   (interactive "*")
@@ -696,6 +832,10 @@
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "leftrightsinglequoted"))
 
+(defun ar-underscored2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "underscored" "leftrightdoublequoted"))
+
 (defun ar-underscored2parentized-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "underscored" "parentized"))
@@ -719,6 +859,10 @@
 (defun ar-whitespaced2leftrightsinglequoted-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "whitespaced" "leftrightsinglequoted"))
+
+(defun ar-whitespaced2leftrightdoublequoted-atpt ()
+  (interactive "*")
+  (ar--transform-delimited-intern "whitespaced" "leftrightdoublequoted"))
 
 (defun ar-whitespaced2parentized-atpt ()
   (interactive "*")

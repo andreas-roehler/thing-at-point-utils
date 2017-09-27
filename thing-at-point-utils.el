@@ -3333,6 +3333,156 @@
   (interactive "*p")
   (ar-th-delimit--intern 'wordalphaonly "‘" "’" arg arg))
 
+(defun ar-leftrightdoublequote-greateranglednested-atpt (&optional arg)
+  "Leftrightdoublequote GREATERANGLEDNESTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'greateranglednested "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-lesseranglednested-atpt (&optional arg)
+  "Leftrightdoublequote LESSERANGLEDNESTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'lesseranglednested "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-buffer-atpt (&optional arg)
+  "Leftrightdoublequote BUFFER at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'buffer "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-comment-atpt (&optional arg)
+  "Leftrightdoublequote COMMENT at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'comment "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-csv-atpt (&optional arg)
+  "Leftrightdoublequote CSV at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'csv "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-date-atpt (&optional arg)
+  "Leftrightdoublequote DATE at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'date "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-delimited-atpt (&optional arg)
+  "Leftrightdoublequote DELIMITED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'delimited "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-email-atpt (&optional arg)
+  "Leftrightdoublequote EMAIL at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'email "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-filename-atpt (&optional arg)
+  "Leftrightdoublequote FILENAME at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'filename "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-filenamenondirectory-atpt (&optional arg)
+  "Leftrightdoublequote FILENAMENONDIRECTORY at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'filenamenondirectory "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-float-atpt (&optional arg)
+  "Leftrightdoublequote FLOAT at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'float "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-function-atpt (&optional arg)
+  "Leftrightdoublequote FUNCTION at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'function "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-ip-atpt (&optional arg)
+  "Leftrightdoublequote IP at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'ip "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-isbn-atpt (&optional arg)
+  "Leftrightdoublequote ISBN at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'isbn "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-line-atpt (&optional arg)
+  "Leftrightdoublequote LINE at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'line "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-list-atpt (&optional arg)
+  "Leftrightdoublequote LIST at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'list "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-name-atpt (&optional arg)
+  "Leftrightdoublequote NAME at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'name "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-number-atpt (&optional arg)
+  "Leftrightdoublequote NUMBER at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'number "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-page-atpt (&optional arg)
+  "Leftrightdoublequote PAGE at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'page "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-paragraph-atpt (&optional arg)
+  "Leftrightdoublequote PARAGRAPH at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'paragraph "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-phone-atpt (&optional arg)
+  "Leftrightdoublequote PHONE at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'phone "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-region-atpt (&optional arg)
+  "Leftrightdoublequote REGION at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'region "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-sentence-atpt (&optional arg)
+  "Leftrightdoublequote SENTENCE at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'sentence "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-sexp-atpt (&optional arg)
+  "Leftrightdoublequote SEXP at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'sexp "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-string-atpt (&optional arg)
+  "Leftrightdoublequote STRING at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'string "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-shstruct-atpt (&optional arg)
+  "Leftrightdoublequote SHSTRUCT at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'shstruct "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-symbol-atpt (&optional arg)
+  "Leftrightdoublequote SYMBOL at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'symbol "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-url-atpt (&optional arg)
+  "Leftrightdoublequote URL at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'url "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-word-atpt (&optional arg)
+  "Leftrightdoublequote WORD at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'word "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-wordalphaonly-atpt (&optional arg)
+  "Leftrightdoublequote WORDALPHAONLY at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'wordalphaonly "“" "”" arg arg))
+
 (defun ar-parentize-greateranglednested-atpt (&optional arg)
   "Parentize GREATERANGLEDNESTED at point."
   (interactive "*p")
@@ -3860,6 +4010,81 @@
   (interactive "*p")
   (ar-th-delimit--intern 'whitespaced "‘" "’" arg arg))
 
+(defun ar-leftrightdoublequote-backslashed-atpt (&optional arg)
+  "Leftrightdoublequote BACKSLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backslashed "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-backticked-atpt (&optional arg)
+  "Leftrightdoublequote BACKTICKED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'backticked "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-coloned-atpt (&optional arg)
+  "Leftrightdoublequote COLONED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'coloned "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-crossed-atpt (&optional arg)
+  "Leftrightdoublequote CROSSED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'crossed "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-dollared-atpt (&optional arg)
+  "Leftrightdoublequote DOLLARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'dollared "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-doublequoted-atpt (&optional arg)
+  "Leftrightdoublequote DOUBLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'doublequoted "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-equalized-atpt (&optional arg)
+  "Leftrightdoublequote EQUALIZED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'equalized "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-hashed-atpt (&optional arg)
+  "Leftrightdoublequote HASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hashed "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-hyphened-atpt (&optional arg)
+  "Leftrightdoublequote HYPHENED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'hyphened "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-singlequoted-atpt (&optional arg)
+  "Leftrightdoublequote SINGLEQUOTED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'singlequoted "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-slashed-atpt (&optional arg)
+  "Leftrightdoublequote SLASHED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'slashed "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-stared-atpt (&optional arg)
+  "Leftrightdoublequote STARED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'stared "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-tilded-atpt (&optional arg)
+  "Leftrightdoublequote TILDED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'tilded "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-underscored-atpt (&optional arg)
+  "Leftrightdoublequote UNDERSCORED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'underscored "“" "”" arg arg))
+
+(defun ar-leftrightdoublequote-whitespaced-atpt (&optional arg)
+  "Leftrightdoublequote WHITESPACED at point."
+  (interactive "*p")
+  (ar-th-delimit--intern 'whitespaced "“" "”" arg arg))
+
 (defun ar-parentize-backslashed-atpt (&optional arg)
   "Parentize BACKSLASHED at point."
   (interactive "*p")
@@ -3962,6 +4187,11 @@
   (interactive "*")
   (ar-th-delimit--intern 'leftrightsinglequoted "{" "}"))
 
+(defun ar-brace-leftrightdoublequoted-atpt ()
+  "Brace LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted "{" "}"))
+
 (defun ar-brace-parentized-atpt ()
   "Brace PARENTIZED at point."
   (interactive "*")
@@ -3991,6 +4221,11 @@
   "Bracket LEFTRIGHTSINGLEQUOTED at point."
   (interactive "*")
   (ar-th-delimit--intern 'leftrightsinglequoted "[" "]"))
+
+(defun ar-bracket-leftrightdoublequoted-atpt ()
+  "Bracket LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted "[" "]"))
 
 (defun ar-bracket-parentized-atpt ()
   "Bracket PARENTIZED at point."
@@ -4022,6 +4257,11 @@
   (interactive "*")
   (ar-th-delimit--intern 'leftrightsinglequoted "<" ">"))
 
+(defun ar-lesserangle-leftrightdoublequoted-atpt ()
+  "Lesserangle LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted "<" ">"))
+
 (defun ar-lesserangle-parentized-atpt ()
   "Lesserangle PARENTIZED at point."
   (interactive "*")
@@ -4051,6 +4291,11 @@
   "Greaterangle LEFTRIGHTSINGLEQUOTED at point."
   (interactive "*")
   (ar-th-delimit--intern 'leftrightsinglequoted ">" "<"))
+
+(defun ar-greaterangle-leftrightdoublequoted-atpt ()
+  "Greaterangle LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted ">" "<"))
 
 (defun ar-greaterangle-parentized-atpt ()
   "Greaterangle PARENTIZED at point."
@@ -4082,10 +4327,50 @@
   (interactive "*")
   (ar-th-delimit--intern 'leftrightsinglequoted "‘" "’"))
 
+(defun ar-leftrightsinglequote-leftrightdoublequoted-atpt ()
+  "Leftrightsinglequote LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted "‘" "’"))
+
 (defun ar-leftrightsinglequote-parentized-atpt ()
   "Leftrightsinglequote PARENTIZED at point."
   (interactive "*")
   (ar-th-delimit--intern 'parentized "‘" "’"))
+
+(defun ar-leftrightdoublequote-braced-atpt ()
+  "Leftrightdoublequote BRACED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'braced "“" "”"))
+
+(defun ar-leftrightdoublequote-bracketed-atpt ()
+  "Leftrightdoublequote BRACKETED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'bracketed "“" "”"))
+
+(defun ar-leftrightdoublequote-lesserangled-atpt ()
+  "Leftrightdoublequote LESSERANGLED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'lesserangled "“" "”"))
+
+(defun ar-leftrightdoublequote-greaterangled-atpt ()
+  "Leftrightdoublequote GREATERANGLED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'greaterangled "“" "”"))
+
+(defun ar-leftrightdoublequote-leftrightsinglequoted-atpt ()
+  "Leftrightdoublequote LEFTRIGHTSINGLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightsinglequoted "“" "”"))
+
+(defun ar-leftrightdoublequote-leftrightdoublequoted-atpt ()
+  "Leftrightdoublequote LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted "“" "”"))
+
+(defun ar-leftrightdoublequote-parentized-atpt ()
+  "Leftrightdoublequote PARENTIZED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'parentized "“" "”"))
 
 (defun ar-parentize-braced-atpt ()
   "Parentize BRACED at point."
@@ -4111,6 +4396,11 @@
   "Parentize LEFTRIGHTSINGLEQUOTED at point."
   (interactive "*")
   (ar-th-delimit--intern 'leftrightsinglequoted "(" ")"))
+
+(defun ar-parentize-leftrightdoublequoted-atpt ()
+  "Parentize LEFTRIGHTDOUBLEQUOTED at point."
+  (interactive "*")
+  (ar-th-delimit--intern 'leftrightdoublequoted "(" ")"))
 
 (defun ar-parentize-parentized-atpt ()
   "Parentize PARENTIZED at point."
@@ -9851,6 +10141,108 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-doubleslash 'leftrightsinglequoted nil))
 
+(defalias 'ar-backslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslash-atpt)
+(defun ar-leftrightdoublequoted-backslash-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-backslash 'leftrightdoublequoted nil))
+
+(defalias 'ar-backtick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backtick-atpt)
+(defun ar-leftrightdoublequoted-backtick-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-backtick 'leftrightdoublequoted nil))
+
+(defalias 'ar-colon-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-colon-atpt)
+(defun ar-leftrightdoublequoted-colon-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-colon 'leftrightdoublequoted nil))
+
+(defalias 'ar-cross-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-cross-atpt)
+(defun ar-leftrightdoublequoted-cross-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-cross 'leftrightdoublequoted nil))
+
+(defalias 'ar-dollar-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-dollar-atpt)
+(defun ar-leftrightdoublequoted-dollar-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-dollar 'leftrightdoublequoted nil))
+
+(defalias 'ar-doublequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublequote-atpt)
+(defun ar-leftrightdoublequoted-doublequote-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-doublequote 'leftrightdoublequoted nil))
+
+(defalias 'ar-equalize-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-equalize-atpt)
+(defun ar-leftrightdoublequoted-equalize-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-equalize 'leftrightdoublequoted nil))
+
+(defalias 'ar-escape-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-escape-atpt)
+(defun ar-leftrightdoublequoted-escape-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-escape 'leftrightdoublequoted nil))
+
+(defalias 'ar-hash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hash-atpt)
+(defun ar-leftrightdoublequoted-hash-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-hash 'leftrightdoublequoted nil))
+
+(defalias 'ar-hyphen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hyphen-atpt)
+(defun ar-leftrightdoublequoted-hyphen-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-hyphen 'leftrightdoublequoted nil))
+
+(defalias 'ar-singlequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-singlequote-atpt)
+(defun ar-leftrightdoublequoted-singlequote-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-singlequote 'leftrightdoublequoted nil))
+
+(defalias 'ar-slash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-slash-atpt)
+(defun ar-leftrightdoublequoted-slash-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-slash 'leftrightdoublequoted nil))
+
+(defalias 'ar-star-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-star-atpt)
+(defun ar-leftrightdoublequoted-star-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-star 'leftrightdoublequoted nil))
+
+(defalias 'ar-tild-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-tild-atpt)
+(defun ar-leftrightdoublequoted-tild-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-tild 'leftrightdoublequoted nil))
+
+(defalias 'ar-underscore-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-underscore-atpt)
+(defun ar-leftrightdoublequoted-underscore-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-underscore 'leftrightdoublequoted nil))
+
+(defalias 'ar-whitespace-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-whitespace-atpt)
+(defun ar-leftrightdoublequoted-whitespace-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-whitespace 'leftrightdoublequoted nil))
+
+(defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
+(defun ar-leftrightdoublequoted-doubleslash-atpt ()
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-doubleslash 'leftrightdoublequoted nil))
+
 (defalias 'ar-backslash-parentized-atpt 'ar-parentized-backslash-atpt)
 (defun ar-parentized-backslash-atpt ()
   "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
@@ -9986,6 +10378,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'alnum nil))
 
+(defalias 'ar-leftrightdoublequote-alnum-atpt 'ar-alnum-leftrightdoublequote-atpt)
+(defun ar-alnum-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote ALNUM at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'alnum nil))
+
 (defalias 'ar-parentize-alnum-atpt 'ar-alnum-parentize-atpt)
 (defun ar-alnum-parentize-atpt ()
   "Parentize ALNUM at point if any, nil otherwise "
@@ -10021,6 +10419,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote ALPHA at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'alpha nil))
+
+(defalias 'ar-leftrightdoublequote-alpha-atpt 'ar-alpha-leftrightdoublequote-atpt)
+(defun ar-alpha-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote ALPHA at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'alpha nil))
 
 (defalias 'ar-parentize-alpha-atpt 'ar-alpha-parentize-atpt)
 (defun ar-alpha-parentize-atpt ()
@@ -10058,6 +10462,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'ascii nil))
 
+(defalias 'ar-leftrightdoublequote-ascii-atpt 'ar-ascii-leftrightdoublequote-atpt)
+(defun ar-ascii-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote ASCII at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'ascii nil))
+
 (defalias 'ar-parentize-ascii-atpt 'ar-ascii-parentize-atpt)
 (defun ar-ascii-parentize-atpt ()
   "Parentize ASCII at point if any, nil otherwise "
@@ -10093,6 +10503,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote BLANK at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'blank nil))
+
+(defalias 'ar-leftrightdoublequote-blank-atpt 'ar-blank-leftrightdoublequote-atpt)
+(defun ar-blank-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote BLANK at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'blank nil))
 
 (defalias 'ar-parentize-blank-atpt 'ar-blank-parentize-atpt)
 (defun ar-blank-parentize-atpt ()
@@ -10130,6 +10546,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'cntrl nil))
 
+(defalias 'ar-leftrightdoublequote-cntrl-atpt 'ar-cntrl-leftrightdoublequote-atpt)
+(defun ar-cntrl-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote CNTRL at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'cntrl nil))
+
 (defalias 'ar-parentize-cntrl-atpt 'ar-cntrl-parentize-atpt)
 (defun ar-cntrl-parentize-atpt ()
   "Parentize CNTRL at point if any, nil otherwise "
@@ -10165,6 +10587,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote DIGIT at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'digit nil))
+
+(defalias 'ar-leftrightdoublequote-digit-atpt 'ar-digit-leftrightdoublequote-atpt)
+(defun ar-digit-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote DIGIT at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'digit nil))
 
 (defalias 'ar-parentize-digit-atpt 'ar-digit-parentize-atpt)
 (defun ar-digit-parentize-atpt ()
@@ -10202,6 +10630,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'graph nil))
 
+(defalias 'ar-leftrightdoublequote-graph-atpt 'ar-graph-leftrightdoublequote-atpt)
+(defun ar-graph-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote GRAPH at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'graph nil))
+
 (defalias 'ar-parentize-graph-atpt 'ar-graph-parentize-atpt)
 (defun ar-graph-parentize-atpt ()
   "Parentize GRAPH at point if any, nil otherwise "
@@ -10237,6 +10671,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote LOWER at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'lower nil))
+
+(defalias 'ar-leftrightdoublequote-lower-atpt 'ar-lower-leftrightdoublequote-atpt)
+(defun ar-lower-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote LOWER at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'lower nil))
 
 (defalias 'ar-parentize-lower-atpt 'ar-lower-parentize-atpt)
 (defun ar-lower-parentize-atpt ()
@@ -10274,6 +10714,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'nonascii nil))
 
+(defalias 'ar-leftrightdoublequote-nonascii-atpt 'ar-nonascii-leftrightdoublequote-atpt)
+(defun ar-nonascii-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote NONASCII at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'nonascii nil))
+
 (defalias 'ar-parentize-nonascii-atpt 'ar-nonascii-parentize-atpt)
 (defun ar-nonascii-parentize-atpt ()
   "Parentize NONASCII at point if any, nil otherwise "
@@ -10309,6 +10755,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote PRINT at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'print nil))
+
+(defalias 'ar-leftrightdoublequote-print-atpt 'ar-print-leftrightdoublequote-atpt)
+(defun ar-print-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote PRINT at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'print nil))
 
 (defalias 'ar-parentize-print-atpt 'ar-print-parentize-atpt)
 (defun ar-print-parentize-atpt ()
@@ -10346,6 +10798,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'punct nil))
 
+(defalias 'ar-leftrightdoublequote-punct-atpt 'ar-punct-leftrightdoublequote-atpt)
+(defun ar-punct-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote PUNCT at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'punct nil))
+
 (defalias 'ar-parentize-punct-atpt 'ar-punct-parentize-atpt)
 (defun ar-punct-parentize-atpt ()
   "Parentize PUNCT at point if any, nil otherwise "
@@ -10381,6 +10839,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote SPACE at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'space nil))
+
+(defalias 'ar-leftrightdoublequote-space-atpt 'ar-space-leftrightdoublequote-atpt)
+(defun ar-space-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote SPACE at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'space nil))
 
 (defalias 'ar-parentize-space-atpt 'ar-space-parentize-atpt)
 (defun ar-space-parentize-atpt ()
@@ -10418,6 +10882,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*")
   (ar-th-leftrightsinglequote 'upper nil))
 
+(defalias 'ar-leftrightdoublequote-upper-atpt 'ar-upper-leftrightdoublequote-atpt)
+(defun ar-upper-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote UPPER at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'upper nil))
+
 (defalias 'ar-parentize-upper-atpt 'ar-upper-parentize-atpt)
 (defun ar-upper-parentize-atpt ()
   "Parentize UPPER at point if any, nil otherwise "
@@ -10453,6 +10923,12 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   "Leftrightsinglequote XDIGIT at point if any, nil otherwise "
   (interactive "*")
   (ar-th-leftrightsinglequote 'xdigit nil))
+
+(defalias 'ar-leftrightdoublequote-xdigit-atpt 'ar-xdigit-leftrightdoublequote-atpt)
+(defun ar-xdigit-leftrightdoublequote-atpt ()
+  "Leftrightdoublequote XDIGIT at point if any, nil otherwise "
+  (interactive "*")
+  (ar-th-leftrightdoublequote 'xdigit nil))
 
 (defalias 'ar-parentize-xdigit-atpt 'ar-xdigit-parentize-atpt)
 (defun ar-xdigit-parentize-atpt ()
@@ -16472,6 +16948,287 @@ See doku from `sort-subr', for details.
   (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-leftrightsinglequoted-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-leftrightsinglequoted-end-position-atpt"))))
+        (erg (ignore-errors (< beg end))))
+    (when (called-interactively-p 'any) (message "%s" erg))
+   erg))
+
+(defun ar-leftrightdoublequoted-atpt (&optional arg no-delimiters)
+  "Returns leftrightdoublequoted at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
+  (interactive "p\nP")
+  (ar-th 'leftrightdoublequoted arg no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-bounds-of-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-bounds-atpt)
+(defun ar-leftrightdoublequoted-bounds-atpt (&optional no-delimiters)
+  "Returns a list, borders of leftrightdoublequoted if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-leftrightdoublequoted-beginning-position-atpt (&optional no-delimiters)
+  "Returns a number, beginning position LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise.  "
+  (interactive "P")
+  (ar-th-beg 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-leftrightdoublequoted-end-position-atpt (&optional no-delimiters)
+  "Returns a number, end position of LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-end 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-beginning-of-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-beginning-atpt)
+(defun ar-leftrightdoublequoted-beginning-atpt (&optional no-delimiters)
+  "Goto beginning of symbol or char-class LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotobeg 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-end-of-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-end-atpt)
+(defun ar-leftrightdoublequoted-end-atpt (&optional no-delimiters)
+  "Goto end of symbol or char-class LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-in-leftrightdoublequoted-p-atpt 'ar-leftrightdoublequoted-in-p-atpt)
+(defun ar-leftrightdoublequoted-in-p-atpt (&optional no-delimiters)
+  "Returns bounds of LEFTRIGHTDOUBLEQUOTED at point, a list, if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-length-of-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-length-atpt)
+(defun ar-leftrightdoublequoted-length-atpt (&optional no-delimiters)
+  "Returns beginning of symbol or char-class LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-copy-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-copy-atpt)
+(defun ar-leftrightdoublequoted-copy-atpt (&optional no-delimiters)
+  "Returns a copy of LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-copy 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-delete-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-delete-atpt)
+(defun ar-leftrightdoublequoted-delete-atpt (&optional arg)
+  "Deletes LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-delete 'leftrightdoublequoted arg (called-interactively-p 'any)))
+
+(defalias 'ar-delete-leftrightdoublequoted-in-region 'ar-leftrightdoublequoted-delete-in-region)
+(defun ar-leftrightdoublequoted-delete-in-region (beg end)
+  "Deletes LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'leftrightdoublequoted beg end (called-interactively-p 'any)))
+
+(defun ar-blok-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around leftrightdoublequoted.
+  Returns blok or nil if no LEFTRIGHTDOUBLEQUOTED at cursor-position. "
+  (interactive "*p")
+  (ar-th-blok 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-backslashparen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslashparen-atpt)
+(defun ar-backslashparen-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around leftrightdoublequoted at point if any.
+With optional NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backslashparen 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-doublebackslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublebackslash-atpt)
+(defun ar-leftrightdoublequoted-doublebackslash-atpt (&optional no-delimiters)
+  "Puts doubled backslashes around LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebackslash 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
+(defun ar-leftrightdoublequoted-doubleslash-atpt (&optional no-delimiters)
+  "Puts doubled slashes around LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-doubleslash 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebackslashparen-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebackslashparen 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-doublebacktick-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Provides double backticks around LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-doublebacktick 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-slashparen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-slashparen-atpt)
+(defun ar-leftrightdoublequoted-slashparen-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-slashparen 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-comment-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Comments LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-comment 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-commatize-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Put a comma after LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-commatize 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defun ar-quote-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Put a singlequote before LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*p")
+  (ar-th-quote 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+;; (defalias 'ar-hyphen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hyphen-atpt)
+;; ;;;###autoload
+;; (defun ar-leftrightdoublequoted-hyphen-atpt (&optional no-delimiters)
+;;   "Puts hyphens around LEFTRIGHTDOUBLEQUOTED at point if any. "
+;;   (interactive "*p")
+;;   (ar-th-hyphen 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-mark-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-mark-atpt)
+(defun ar-leftrightdoublequoted-mark-atpt ()
+  "Marks LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive)
+  (ar-th-mark 'leftrightdoublequoted))
+
+(defalias 'ar-hide-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hide-atpt)
+(defun ar-leftrightdoublequoted-hide-atpt ()
+  "Hides LEFTRIGHTDOUBLEQUOTED at point. "
+  (interactive)
+  (ar-th-hide 'leftrightdoublequoted))
+
+(defalias 'ar-show-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-show-atpt)
+(defun ar-leftrightdoublequoted-show-atpt ()
+  "Shows hidden LEFTRIGHTDOUBLEQUOTED at point. "
+  (interactive)
+  (ar-th-show 'leftrightdoublequoted))
+
+(defalias 'ar-hide-show-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hide-show-atpt)
+(defun ar-leftrightdoublequoted-hide-show-atpt ()
+  "Alternatively hides or shows LEFTRIGHTDOUBLEQUOTED at point. "
+  (interactive)
+  (ar-th-hide-show 'leftrightdoublequoted))
+
+(defalias 'ar-highlight-leftrightdoublequoted-atpt-mode 'ar-leftrightdoublequoted-highlight-atpt-mode)
+
+(defun ar-leftrightdoublequoted-highlight-atpt-mode (&optional no-delimiters)
+  "Toggles leftrightdoublequoted-highlight-atpt-mode "
+  (interactive "P")
+  (ar-th-highlight 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-kill-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-kill-atpt)
+(defun ar-leftrightdoublequoted-kill-atpt (&optional no-delimiters)
+  "Kills LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*P")
+  (ar-th-kill 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-kill-backward-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-kill-backward-atpt)
+(defun ar-leftrightdoublequoted-kill-backward-atpt (&optional no-delimiters)
+  "Kills LEFTRIGHTDOUBLEQUOTED at point if any. "
+  (interactive "*P")
+  (ar-th-kill-backward 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-leftrightsinglequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-leftrightsinglequote-atpt)
+(defun ar-leftrightdoublequoted-leftrightsinglequote-atpt (&optional no-delimiters)
+  "Singlequotes alnum at point if any. "
+  (interactive "*p")
+  (ar-th-leftrightsinglequote 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+;; (defalias 'ar-parentize-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-parentize-atpt)
+;; ;;;###autoload
+;; (defun ar-leftrightdoublequoted-parentize-atpt (&optional no-delimiters)
+;;   "Parentizes LEFTRIGHTDOUBLEQUOTED at point if any, does nothing otherwise"
+;;   (interactive "*p")
+;;   (ar-th-parentize 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-separate-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-separate-atpt)
+(defun ar-leftrightdoublequoted-separate-atpt (&optional no-delimiters)
+  "Separates LEFTRIGHTDOUBLEQUOTED at point if any, does nothing otherwise
+inserts newlines, borders are the beginning or the end of buffer "
+  (interactive "*p")
+  (ar-th-separate 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+;; (defalias 'ar-singlequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-singlequote-atpt)
+;; ;;;###autoload
+;; (defun ar-leftrightdoublequoted-singlequote-atpt (&optional no-delimiters)
+;;   "Singlequotes LEFTRIGHTDOUBLEQUOTED at point if any. "
+;;   (interactive "*p")
+;;   (ar-th-singlequote 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-triplequotedq-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-triplequotedq-atpt)
+(defun ar-leftrightdoublequoted-triplequotedq-atpt (&optional no-delimiters)
+  "Put triplequotes composed of doublequotes around leftrightdoublequoted. "
+  (interactive "*p")
+  (ar-th-triplequotedq 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-triplequotesq-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-triplequotesq-atpt)
+(defun ar-leftrightdoublequoted-triplequotesq-atpt (&optional no-delimiters)
+  "Put triplequotes composed of singlequotes around leftrightdoublequoted. "
+  (interactive "*p")
+  (ar-th-triplequotesq 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+(defalias 'ar-leftrightdoublequoted-trim-atpt 'ar-trim-leftrightdoublequoted-atpt)
+(defun ar-trim-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'leftrightdoublequoted t t))
+
+(defalias 'ar-trim-left-leftrightdoublequoted-atpt 'ar-trim-leftrightdoublequoted-left-atpt)
+(defun ar-trim-leftrightdoublequoted-left-atpt ()
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'leftrightdoublequoted t nil))
+
+(defalias 'ar-trim-right-leftrightdoublequoted-atpt 'ar-trim-leftrightdoublequoted-right-atpt)
+(defun ar-trim-leftrightdoublequoted-right-atpt ()
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'leftrightdoublequoted nil t))
+
+(defun ar-underscore-leftrightdoublequoted-atpt (&optional no-delimiters)
+  "Put underscore char around LEFTRIGHTDOUBLEQUOTED. "
+  (interactive "*p")
+  (ar-th-underscore 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
+
+;; (defalias 'ar-leftrightdoublequoted-whitespace-atpt 'ar-whitespace-leftrightdoublequoted-atpt)
+;; ;;;###autoload
+;; (defun ar-whitespace-leftrightdoublequoted-atpt (&optional no-delimiters)
+;;   "Put whitespace char around LEFTRIGHTDOUBLEQUOTED. "
+;;   (interactive "*p")
+;;   (ar-th-whitespace 'leftrightdoublequoted nil t))
+
+(defalias 'ar-forward-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-forward-atpt)
+(defun ar-leftrightdoublequoted-forward-atpt (&optional arg)
+  "Moves forward over LEFTRIGHTDOUBLEQUOTED at point if any, does nothing otherwise.
+Returns end position of LEFTRIGHTDOUBLEQUOTED "
+  (interactive "p")
+  (ar-th-forward 'leftrightdoublequoted arg (called-interactively-p 'any)))
+
+(defalias 'ar-backward-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backward-atpt)
+(defun ar-leftrightdoublequoted-backward-atpt (&optional arg)
+  "Moves backward over LEFTRIGHTDOUBLEQUOTED before point if any, does nothing otherwise.
+Returns beginning position of LEFTRIGHTDOUBLEQUOTED "
+  (interactive "p")
+  (ar-th-backward 'leftrightdoublequoted arg (called-interactively-p 'any)))
+
+(defalias 'ar-transpose-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-transpose-atpt)
+(defun ar-leftrightdoublequoted-transpose-atpt (&optional arg)
+  "Transposes LEFTRIGHTDOUBLEQUOTED with LEFTRIGHTDOUBLEQUOTED before point if any. "
+  (interactive "*p")
+  (ar-th-transpose 'leftrightdoublequoted arg (called-interactively-p 'any)))
+
+(defalias 'ar-sort-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-sort-atpt)
+(defun ar-leftrightdoublequoted-sort-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts leftrightdoublequoteds in region, with ARG in reverse order.
+STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
+ENDKEYFUN might be a function specifying THING's end when sorting.
+With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+See doku from `sort-subr', for details.
+  "
+  (interactive "*P\nr")
+  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
+  (unless (use-region-p) (message "%s" "Region must be active!"))
+  (ar-th-sort 'leftrightdoublequoted reverse beg end startkeyfun endkeyfun predicate)))
+
+(defalias 'ar-check-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-check-atpt)
+(defun ar-leftrightdoublequoted-check-atpt ()
+  "Return t if a LEFTRIGHTDOUBLEQUOTED at point exists, nil otherwise "
+  (interactive)
+  (let* ((beg (funcall (intern-soft (concat "ar-leftrightdoublequoted-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-leftrightdoublequoted-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
@@ -28181,6 +28938,14 @@ See doku from `sort-subr', for details.
   With negative argument kill leftrightsinglequote(ed) at point. "
   (interactive "p")
   (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (called-interactively-p 'any)))
+
+(defun ar-leftrightdoublequote-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with leftrightdoublequote(s),
+  otherwise copy leftrightdoublequote(ed) at point.
+  With NO-DELIMITERS, copy leftrightdoublequote(ed) without delimiters.
+  With negative argument kill leftrightdoublequote(ed) at point. "
+  (interactive "p")
+  (ar-th-base-copy-or 'leftrightdoublequote no-delimiters (called-interactively-p 'any)))
 
 (defun ar-parentize-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with parentize(s),

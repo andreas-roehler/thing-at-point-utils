@@ -6484,6 +6484,214 @@
   (ar-th-ratio-base 'upper 'leftrightsinglequoted beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-alnum-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of alnum in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'alnum 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-alnum-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of alnum in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'alnum 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-alnum-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of alnum in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'alnum 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-alpha-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of alpha in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'alpha 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-alpha-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of alpha in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'alpha 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-alpha-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of alpha in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'alpha 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-ascii-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of ascii in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'ascii 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-ascii-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of ascii in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'ascii 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-ascii-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of ascii in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'ascii 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-blank-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of blank in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'blank 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-blank-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of blank in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'blank 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-blank-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of blank in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'blank 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-cntrl-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of cntrl in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'cntrl 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-cntrl-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of cntrl in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'cntrl 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-cntrl-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of cntrl in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'cntrl 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-digit-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of digit in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'digit 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-digit-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of digit in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'digit 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-digit-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of digit in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'digit 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-graph-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of graph in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'graph 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-graph-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of graph in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'graph 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-graph-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of graph in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'graph 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-lower-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of lower in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'lower 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-lower-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of lower in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'lower 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-lower-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of lower in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'lower 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-nonascii-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of nonascii in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'nonascii 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-nonascii-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of nonascii in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'nonascii 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-nonascii-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of nonascii in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'nonascii 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-print-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of print in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'print 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-print-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of print in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'print 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-print-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of print in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'print 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-punct-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of punct in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'punct 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-punct-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of punct in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'punct 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-punct-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of punct in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'punct 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-space-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of space in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'space 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-space-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of space in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'space 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-space-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of space in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'space 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-upper-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of upper in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'upper 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-upper-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of upper in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'upper 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-upper-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of upper in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'upper 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-alnum-in-parentized-atpt (&optional beg end) 
 "Counts matches of alnum in parentized if useful, returns nil otherwise "
   (interactive)
@@ -6777,6 +6985,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'braced beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-braced-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in braced if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'braced beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-braced-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in braced if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'braced beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-braced-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in braced if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'braced beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-braced-atpt (&optional beg end) 
 "Counts matches of parentized in braced if useful, returns nil otherwise "
   (interactive)
@@ -6871,6 +7095,22 @@
 "Relation of leftrightsinglequoted in bracketed if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'bracketed beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-bracketed-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in bracketed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'bracketed beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-bracketed-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in bracketed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'bracketed beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-bracketed-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in bracketed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'bracketed beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-bracketed-atpt (&optional beg end) 
@@ -6969,6 +7209,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'lesserangled beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-lesserangled-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in lesserangled if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'lesserangled beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-lesserangled-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in lesserangled if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'lesserangled beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-lesserangled-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in lesserangled if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'lesserangled beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-lesserangled-atpt (&optional beg end) 
 "Counts matches of parentized in lesserangled if useful, returns nil otherwise "
   (interactive)
@@ -7063,6 +7319,22 @@
 "Relation of leftrightsinglequoted in greaterangled if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'greaterangled beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-greaterangled-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in greaterangled if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'greaterangled beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-greaterangled-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in greaterangled if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'greaterangled beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-greaterangled-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in greaterangled if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'greaterangled beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-greaterangled-atpt (&optional beg end) 
@@ -7161,6 +7433,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'leftrightsinglequoted beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightsinglequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-leftrightsinglequoted-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightsinglequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightsinglequoted beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-leftrightsinglequoted-atpt (&optional beg end) 
 "Counts matches of parentized in leftrightsinglequoted if useful, returns nil otherwise "
   (interactive)
@@ -7175,6 +7463,118 @@
 "Relation of parentized in leftrightsinglequoted if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'parentized 'leftrightsinglequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-braced-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of braced in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'braced 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-braced-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of braced in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'braced 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-braced-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of braced in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'braced 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-bracketed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of bracketed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'bracketed 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-bracketed-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of bracketed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'bracketed 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-bracketed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of bracketed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'bracketed 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-lesserangled-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of lesserangled in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'lesserangled 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-lesserangled-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of lesserangled in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'lesserangled 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-lesserangled-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of lesserangled in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'lesserangled 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-greaterangled-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of greaterangled in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'greaterangled 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-greaterangled-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of greaterangled in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'greaterangled 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-greaterangled-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of greaterangled in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'greaterangled 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightsinglequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of leftrightsinglequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightsinglequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of leftrightsinglequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightsinglequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of leftrightsinglequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-parentized-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of parentized in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'parentized 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-parentized-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of parentized in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'parentized 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-parentized-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of parentized in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'parentized 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-braced-in-parentized-atpt (&optional beg end) 
@@ -7255,6 +7655,22 @@
 "Relation of leftrightsinglequoted in parentized if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'parentized beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-parentized-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in parentized if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'parentized beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-parentized-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in parentized if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'parentized beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-parentized-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in parentized if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'parentized beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-parentized-atpt (&optional beg end) 
@@ -7358,6 +7774,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'backslashed beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-backslashed-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in backslashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'backslashed beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-backslashed-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in backslashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'backslashed beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-backslashed-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in backslashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'backslashed beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-backslashed-atpt (&optional beg end) 
 "Counts matches of parentized in backslashed if useful, returns nil otherwise "
   (interactive)
@@ -7452,6 +7884,22 @@
 "Relation of leftrightsinglequoted in backticked if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'backticked beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-backticked-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in backticked if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'backticked beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-backticked-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in backticked if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'backticked beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-backticked-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in backticked if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'backticked beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-backticked-atpt (&optional beg end) 
@@ -7550,6 +7998,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'coloned beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-coloned-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in coloned if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'coloned beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-coloned-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in coloned if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'coloned beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-coloned-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in coloned if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'coloned beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-coloned-atpt (&optional beg end) 
 "Counts matches of parentized in coloned if useful, returns nil otherwise "
   (interactive)
@@ -7644,6 +8108,22 @@
 "Relation of leftrightsinglequoted in crossed if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'crossed beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-crossed-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in crossed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'crossed beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-crossed-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in crossed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'crossed beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-crossed-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in crossed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'crossed beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-crossed-atpt (&optional beg end) 
@@ -7742,6 +8222,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'dollared beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-dollared-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in dollared if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'dollared beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-dollared-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in dollared if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'dollared beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-dollared-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in dollared if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'dollared beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-dollared-atpt (&optional beg end) 
 "Counts matches of parentized in dollared if useful, returns nil otherwise "
   (interactive)
@@ -7836,6 +8332,22 @@
 "Relation of leftrightsinglequoted in doublequoted if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'doublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-doublequoted-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in doublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'doublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-doublequoted-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in doublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'doublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-doublequoted-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in doublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'doublequoted beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-doublequoted-atpt (&optional beg end) 
@@ -7934,6 +8446,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'equalized beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-equalized-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in equalized if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'equalized beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-equalized-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in equalized if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'equalized beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-equalized-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in equalized if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'equalized beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-equalized-atpt (&optional beg end) 
 "Counts matches of parentized in equalized if useful, returns nil otherwise "
   (interactive)
@@ -8028,6 +8556,22 @@
 "Relation of leftrightsinglequoted in hashed if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'hashed beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-hashed-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in hashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'hashed beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-hashed-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in hashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'hashed beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-hashed-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in hashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'hashed beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-hashed-atpt (&optional beg end) 
@@ -8126,6 +8670,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'hyphened beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-hyphened-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in hyphened if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'hyphened beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-hyphened-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in hyphened if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'hyphened beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-hyphened-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in hyphened if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'hyphened beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-hyphened-atpt (&optional beg end) 
 "Counts matches of parentized in hyphened if useful, returns nil otherwise "
   (interactive)
@@ -8220,6 +8780,22 @@
 "Relation of leftrightsinglequoted in singlequoted if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'singlequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-singlequoted-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in singlequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'singlequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-singlequoted-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in singlequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'singlequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-singlequoted-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in singlequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'singlequoted beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-singlequoted-atpt (&optional beg end) 
@@ -8318,6 +8894,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'slashed beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-slashed-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in slashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'slashed beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-slashed-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in slashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'slashed beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-slashed-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in slashed if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'slashed beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-slashed-atpt (&optional beg end) 
 "Counts matches of parentized in slashed if useful, returns nil otherwise "
   (interactive)
@@ -8412,6 +9004,22 @@
 "Relation of leftrightsinglequoted in stared if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'stared beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-stared-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in stared if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'stared beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-stared-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in stared if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'stared beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-stared-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in stared if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'stared beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-stared-atpt (&optional beg end) 
@@ -8510,6 +9118,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'tilded beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-tilded-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in tilded if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'tilded beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-tilded-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in tilded if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'tilded beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-tilded-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in tilded if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'tilded beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-tilded-atpt (&optional beg end) 
 "Counts matches of parentized in tilded if useful, returns nil otherwise "
   (interactive)
@@ -8606,6 +9230,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'underscored beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-underscored-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in underscored if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'underscored beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-underscored-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in underscored if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'underscored beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-underscored-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in underscored if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'underscored beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-underscored-atpt (&optional beg end) 
 "Counts matches of parentized in underscored if useful, returns nil otherwise "
   (interactive)
@@ -8700,6 +9340,22 @@
 "Relation of leftrightsinglequoted in whitespaced if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'whitespaced beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-whitespaced-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in whitespaced if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'whitespaced beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-whitespaced-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in whitespaced if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'whitespaced beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-whitespaced-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in whitespaced if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'whitespaced beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-whitespaced-atpt (&optional beg end) 
@@ -9923,6 +10579,246 @@
   (ar-th-ratio-base 'whitespaced 'leftrightsinglequoted beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-backslashed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of backslashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'backslashed 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-backslashed-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of backslashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'backslashed 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-backslashed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of backslashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'backslashed 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-backticked-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of backticked in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'backticked 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-backticked-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of backticked in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'backticked 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-backticked-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of backticked in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'backticked 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-coloned-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of coloned in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'coloned 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-coloned-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of coloned in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'coloned 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-coloned-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of coloned in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'coloned 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-crossed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of crossed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'crossed 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-crossed-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of crossed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'crossed 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-crossed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of crossed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'crossed 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-dollared-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of dollared in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'dollared 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-dollared-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of dollared in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'dollared 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-dollared-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of dollared in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'dollared 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-doublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of doublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'doublequoted 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-doublequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of doublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'doublequoted 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-doublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of doublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'doublequoted 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-equalized-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of equalized in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'equalized 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-equalized-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of equalized in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'equalized 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-equalized-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of equalized in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'equalized 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-hashed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of hashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'hashed 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-hashed-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of hashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'hashed 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-hashed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of hashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'hashed 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-hyphened-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of hyphened in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'hyphened 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-hyphened-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of hyphened in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'hyphened 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-hyphened-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of hyphened in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'hyphened 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-singlequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of singlequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'singlequoted 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-singlequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of singlequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'singlequoted 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-singlequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of singlequoted in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'singlequoted 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-slashed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of slashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'slashed 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-slashed-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of slashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'slashed 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-slashed-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of slashed in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'slashed 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-stared-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of stared in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'stared 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-stared-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of stared in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'stared 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-stared-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of stared in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'stared 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-tilded-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of tilded in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'tilded 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-tilded-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of tilded in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'tilded 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-tilded-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of tilded in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'tilded 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-underscored-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of underscored in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'underscored 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-underscored-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of underscored in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'underscored 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-underscored-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of underscored in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'underscored 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-whitespaced-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Counts matches of whitespaced in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'whitespaced 'leftrightdoublequoted beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-whitespaced-in-leftrightdoublequoted-until-point (&optional beg end) 
+"Counts matches of whitespaced in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'whitespaced 'leftrightdoublequoted beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-whitespaced-in-leftrightdoublequoted-atpt (&optional beg end) 
+"Relation of whitespaced in leftrightdoublequoted if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'whitespaced 'leftrightdoublequoted beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-backslashed-in-parentized-atpt (&optional beg end) 
 "Counts matches of backslashed in parentized if useful, returns nil otherwise "
   (interactive)
@@ -10248,6 +11144,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'anglednonest beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-anglednonest-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in anglednonest if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'anglednonest beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-anglednonest-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in anglednonest if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'anglednonest beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-anglednonest-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in anglednonest if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'anglednonest beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-anglednonest-atpt (&optional beg end) 
 "Counts matches of parentized in anglednonest if useful, returns nil otherwise "
   (interactive)
@@ -10342,6 +11254,22 @@
 "Relation of leftrightsinglequoted in greateranglednested if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'greateranglednested beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-greateranglednested-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in greateranglednested if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'greateranglednested beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-greateranglednested-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in greateranglednested if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'greateranglednested beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-greateranglednested-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in greateranglednested if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'greateranglednested beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-greateranglednested-atpt (&optional beg end) 
@@ -10440,6 +11368,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'lesseranglednested beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-lesseranglednested-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in lesseranglednested if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'lesseranglednested beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-lesseranglednested-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in lesseranglednested if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'lesseranglednested beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-lesseranglednested-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in lesseranglednested if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'lesseranglednested beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-lesseranglednested-atpt (&optional beg end) 
 "Counts matches of parentized in lesseranglednested if useful, returns nil otherwise "
   (interactive)
@@ -10534,6 +11478,22 @@
 "Relation of leftrightsinglequoted in csv if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'csv beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-csv-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in csv if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'csv beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-csv-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in csv if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'csv beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-csv-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in csv if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'csv beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-csv-atpt (&optional beg end) 
@@ -10632,6 +11592,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'line beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-line-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in line if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'line beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-line-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in line if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'line beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-line-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in line if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'line beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-line-atpt (&optional beg end) 
 "Counts matches of parentized in line if useful, returns nil otherwise "
   (interactive)
@@ -10726,6 +11702,22 @@
 "Relation of leftrightsinglequoted in paragraph if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'paragraph beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-paragraph-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in paragraph if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'paragraph beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-paragraph-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in paragraph if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'paragraph beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-paragraph-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in paragraph if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'paragraph beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-paragraph-atpt (&optional beg end) 
@@ -10824,6 +11816,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'region beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-region-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in region if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'region beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-region-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in region if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'region beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-region-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in region if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'region beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-region-atpt (&optional beg end) 
 "Counts matches of parentized in region if useful, returns nil otherwise "
   (interactive)
@@ -10918,6 +11926,22 @@
 "Relation of leftrightsinglequoted in sentence if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'sentence beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-sentence-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in sentence if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'sentence beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-sentence-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in sentence if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'sentence beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-sentence-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in sentence if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'sentence beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-sentence-atpt (&optional beg end) 
@@ -11016,6 +12040,22 @@
   (ar-th-ratio-base 'leftrightsinglequoted 'string beg end t (called-interactively-p 'any)))
 
 
+(defun ar-count-leftrightdoublequoted-in-string-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in string if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'string beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-string-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in string if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'string beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-string-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in string if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'string beg end t (called-interactively-p 'any)))
+
+
 (defun ar-count-parentized-in-string-atpt (&optional beg end) 
 "Counts matches of parentized in string if useful, returns nil otherwise "
   (interactive)
@@ -11110,6 +12150,22 @@
 "Relation of leftrightsinglequoted in buffer if useful, returns nil otherwise "
   (interactive)
   (ar-th-ratio-base 'leftrightsinglequoted 'buffer beg end t (called-interactively-p 'any)))
+
+
+(defun ar-count-leftrightdoublequoted-in-buffer-atpt (&optional beg end) 
+"Counts matches of leftrightdoublequoted in buffer if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'buffer beg end nil (called-interactively-p 'any)))
+
+(defun ar-count-leftrightdoublequoted-in-buffer-until-point (&optional beg end) 
+"Counts matches of leftrightdoublequoted in buffer if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'buffer beg (point) nil (called-interactively-p 'any)))
+
+(defun ar-ratio-leftrightdoublequoted-in-buffer-atpt (&optional beg end) 
+"Relation of leftrightdoublequoted in buffer if useful, returns nil otherwise "
+  (interactive)
+  (ar-th-ratio-base 'leftrightdoublequoted 'buffer beg end t (called-interactively-p 'any)))
 
 
 (defun ar-count-parentized-in-buffer-atpt (&optional beg end) 
