@@ -68,7 +68,7 @@
 
 (defun ar-beginendquote-atpt (&optional no-delimiters)
   "Returns beginendquote at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'beginendquote no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-beginendquote-atpt 'ar-beginendquote-bounds-atpt)
@@ -331,7 +331,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-blok-atpt (&optional no-delimiters)
   "Returns blok at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'blok no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-blok-atpt 'ar-blok-bounds-atpt)
@@ -594,7 +594,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-doublebackslashed-atpt (&optional no-delimiters)
   "Returns doublebackslashed at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'doublebackslashed no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-doublebackslashed-atpt 'ar-doublebackslashed-bounds-atpt)
@@ -857,7 +857,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-doublebackticked-atpt (&optional no-delimiters)
   "Returns doublebackticked at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'doublebackticked no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-doublebackticked-atpt 'ar-doublebackticked-bounds-atpt)
@@ -1120,7 +1120,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-doublebackslashedparen-atpt (&optional no-delimiters)
   "Returns doublebackslashedparen at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'doublebackslashedparen no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-doublebackslashedparen-atpt 'ar-doublebackslashedparen-bounds-atpt)
@@ -1383,7 +1383,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-doubleslashed-atpt (&optional no-delimiters)
   "Returns doubleslashed at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'doubleslashed no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-doubleslashed-atpt 'ar-doubleslashed-bounds-atpt)
@@ -1646,7 +1646,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-doubleslashedparen-atpt (&optional no-delimiters)
   "Returns doubleslashedparen at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'doubleslashedparen no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-doubleslashedparen-atpt 'ar-doubleslashedparen-bounds-atpt)
@@ -1909,7 +1909,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-markup-atpt (&optional no-delimiters)
   "Returns markup at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'markup no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-markup-atpt 'ar-markup-bounds-atpt)
@@ -2172,7 +2172,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-mldata-atpt (&optional no-delimiters)
   "Returns mldata at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'mldata no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-mldata-atpt 'ar-mldata-bounds-atpt)
@@ -2435,7 +2435,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-mlattribut-atpt (&optional no-delimiters)
   "Returns mlattribut at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'mlattribut no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-mlattribut-atpt 'ar-mlattribut-bounds-atpt)
@@ -2698,7 +2698,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-mltag-atpt (&optional no-delimiters)
   "Returns mltag at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'mltag no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-mltag-atpt 'ar-mltag-bounds-atpt)
@@ -2961,7 +2961,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-slashedparen-atpt (&optional no-delimiters)
   "Returns slashedparen at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'slashedparen no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-slashedparen-atpt 'ar-slashedparen-bounds-atpt)
@@ -3224,7 +3224,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-tabledata-atpt (&optional no-delimiters)
   "Returns tabledata at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'tabledata no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-tabledata-atpt 'ar-tabledata-bounds-atpt)
@@ -3487,7 +3487,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-xslstylesheet-atpt (&optional no-delimiters)
   "Returns xslstylesheet at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'xslstylesheet no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-xslstylesheet-atpt 'ar-xslstylesheet-bounds-atpt)
@@ -3750,7 +3750,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-xsltemplate-atpt (&optional no-delimiters)
   "Returns xsltemplate at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
-  (interactive "p\nP")
+  (interactive "P")
   (ar-th 'xsltemplate no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-xsltemplate-atpt 'ar-xsltemplate-bounds-atpt)
