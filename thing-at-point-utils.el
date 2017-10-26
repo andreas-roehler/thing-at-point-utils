@@ -4410,10 +4410,10 @@
 ;; ar-thing-at-point-utils-activ-passiv ar-paired-delimited-passiv-raw: end
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: start
 
-(defun ar-alnum-atpt ()
+(defun ar-alnum-atpt () 
   "Returns alnum at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'alnum nil nil (called-interactively-p 'any)))
+  (ar-th 'alnum nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-alnum-atpt 'ar-alnum-bounds-atpt)
 (defun ar-alnum-bounds-atpt ()
@@ -4496,10 +4496,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'alnum beg end (called-interactively-p 'any)))
 
-(defun ar-alpha-atpt ()
+(defun ar-alpha-atpt () 
   "Returns alpha at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'alpha nil nil (called-interactively-p 'any)))
+  (ar-th 'alpha nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-alpha-atpt 'ar-alpha-bounds-atpt)
 (defun ar-alpha-bounds-atpt ()
@@ -4582,10 +4582,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'alpha beg end (called-interactively-p 'any)))
 
-(defun ar-ascii-atpt ()
+(defun ar-ascii-atpt () 
   "Returns ascii at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'ascii nil nil (called-interactively-p 'any)))
+  (ar-th 'ascii nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-ascii-atpt 'ar-ascii-bounds-atpt)
 (defun ar-ascii-bounds-atpt ()
@@ -4668,10 +4668,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'ascii beg end (called-interactively-p 'any)))
 
-(defun ar-blank-atpt ()
+(defun ar-blank-atpt () 
   "Returns blank at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'blank nil nil (called-interactively-p 'any)))
+  (ar-th 'blank nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-blank-atpt 'ar-blank-bounds-atpt)
 (defun ar-blank-bounds-atpt ()
@@ -4754,10 +4754,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'blank beg end (called-interactively-p 'any)))
 
-(defun ar-cntrl-atpt ()
+(defun ar-cntrl-atpt () 
   "Returns cntrl at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'cntrl nil nil (called-interactively-p 'any)))
+  (ar-th 'cntrl nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-cntrl-atpt 'ar-cntrl-bounds-atpt)
 (defun ar-cntrl-bounds-atpt ()
@@ -4840,10 +4840,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'cntrl beg end (called-interactively-p 'any)))
 
-(defun ar-digit-atpt ()
+(defun ar-digit-atpt () 
   "Returns digit at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'digit nil nil (called-interactively-p 'any)))
+  (ar-th 'digit nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-digit-atpt 'ar-digit-bounds-atpt)
 (defun ar-digit-bounds-atpt ()
@@ -4926,10 +4926,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'digit beg end (called-interactively-p 'any)))
 
-(defun ar-graph-atpt ()
+(defun ar-graph-atpt () 
   "Returns graph at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'graph nil nil (called-interactively-p 'any)))
+  (ar-th 'graph nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-graph-atpt 'ar-graph-bounds-atpt)
 (defun ar-graph-bounds-atpt ()
@@ -5012,10 +5012,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'graph beg end (called-interactively-p 'any)))
 
-(defun ar-lower-atpt ()
+(defun ar-lower-atpt () 
   "Returns lower at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'lower nil nil (called-interactively-p 'any)))
+  (ar-th 'lower nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-lower-atpt 'ar-lower-bounds-atpt)
 (defun ar-lower-bounds-atpt ()
@@ -5098,10 +5098,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'lower beg end (called-interactively-p 'any)))
 
-(defun ar-nonascii-atpt ()
+(defun ar-nonascii-atpt () 
   "Returns nonascii at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'nonascii nil nil (called-interactively-p 'any)))
+  (ar-th 'nonascii nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-nonascii-atpt 'ar-nonascii-bounds-atpt)
 (defun ar-nonascii-bounds-atpt ()
@@ -5184,10 +5184,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'nonascii beg end (called-interactively-p 'any)))
 
-(defun ar-print-atpt ()
+(defun ar-print-atpt () 
   "Returns print at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'print nil nil (called-interactively-p 'any)))
+  (ar-th 'print nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-print-atpt 'ar-print-bounds-atpt)
 (defun ar-print-bounds-atpt ()
@@ -5270,10 +5270,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'print beg end (called-interactively-p 'any)))
 
-(defun ar-punct-atpt ()
+(defun ar-punct-atpt () 
   "Returns punct at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'punct nil nil (called-interactively-p 'any)))
+  (ar-th 'punct nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-punct-atpt 'ar-punct-bounds-atpt)
 (defun ar-punct-bounds-atpt ()
@@ -5356,10 +5356,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'punct beg end (called-interactively-p 'any)))
 
-(defun ar-space-atpt ()
+(defun ar-space-atpt () 
   "Returns space at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'space nil nil (called-interactively-p 'any)))
+  (ar-th 'space nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-space-atpt 'ar-space-bounds-atpt)
 (defun ar-space-bounds-atpt ()
@@ -5442,10 +5442,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'space beg end (called-interactively-p 'any)))
 
-(defun ar-upper-atpt ()
+(defun ar-upper-atpt () 
   "Returns upper at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'upper nil nil (called-interactively-p 'any)))
+  (ar-th 'upper nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-upper-atpt 'ar-upper-bounds-atpt)
 (defun ar-upper-bounds-atpt ()
@@ -5528,10 +5528,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'upper beg end (called-interactively-p 'any)))
 
-(defun ar-xdigit-atpt ()
+(defun ar-xdigit-atpt () 
   "Returns xdigit at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'xdigit nil nil (called-interactively-p 'any)))
+  (ar-th 'xdigit nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-xdigit-atpt 'ar-xdigit-bounds-atpt)
 (defun ar-xdigit-bounds-atpt ()
@@ -5616,10 +5616,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: end
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list-raw: start
 
-(defun ar-greateranglednested-atpt ()
+(defun ar-greateranglednested-atpt () 
   "Returns greateranglednested at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'greateranglednested nil nil (called-interactively-p 'any)))
+  (ar-th 'greateranglednested nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-greateranglednested-atpt 'ar-greateranglednested-bounds-atpt)
 (defun ar-greateranglednested-bounds-atpt ()
@@ -5702,10 +5702,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'greateranglednested beg end (called-interactively-p 'any)))
 
-(defun ar-lesseranglednested-atpt ()
+(defun ar-lesseranglednested-atpt () 
   "Returns lesseranglednested at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'lesseranglednested nil nil (called-interactively-p 'any)))
+  (ar-th 'lesseranglednested nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-lesseranglednested-atpt 'ar-lesseranglednested-bounds-atpt)
 (defun ar-lesseranglednested-bounds-atpt ()
@@ -5788,10 +5788,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'lesseranglednested beg end (called-interactively-p 'any)))
 
-(defun ar-buffer-atpt ()
+(defun ar-buffer-atpt () 
   "Returns buffer at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'buffer nil nil (called-interactively-p 'any)))
+  (ar-th 'buffer nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-buffer-atpt 'ar-buffer-bounds-atpt)
 (defun ar-buffer-bounds-atpt ()
@@ -5874,10 +5874,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'buffer beg end (called-interactively-p 'any)))
 
-(defun ar-comment-atpt ()
+(defun ar-comment-atpt () 
   "Returns comment at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'comment nil nil (called-interactively-p 'any)))
+  (ar-th 'comment nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-comment-atpt 'ar-comment-bounds-atpt)
 (defun ar-comment-bounds-atpt ()
@@ -5960,10 +5960,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'comment beg end (called-interactively-p 'any)))
 
-(defun ar-csv-atpt ()
+(defun ar-csv-atpt () 
   "Returns csv at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'csv nil nil (called-interactively-p 'any)))
+  (ar-th 'csv nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-csv-atpt 'ar-csv-bounds-atpt)
 (defun ar-csv-bounds-atpt ()
@@ -6046,10 +6046,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'csv beg end (called-interactively-p 'any)))
 
-(defun ar-date-atpt ()
+(defun ar-date-atpt () 
   "Returns date at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'date nil nil (called-interactively-p 'any)))
+  (ar-th 'date nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-date-atpt 'ar-date-bounds-atpt)
 (defun ar-date-bounds-atpt ()
@@ -6132,10 +6132,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'date beg end (called-interactively-p 'any)))
 
-(defun ar-delimited-atpt ()
+(defun ar-delimited-atpt () 
   "Returns delimited at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'delimited nil nil (called-interactively-p 'any)))
+  (ar-th 'delimited nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-delimited-atpt 'ar-delimited-bounds-atpt)
 (defun ar-delimited-bounds-atpt ()
@@ -6218,10 +6218,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'delimited beg end (called-interactively-p 'any)))
 
-(defun ar-email-atpt ()
+(defun ar-email-atpt () 
   "Returns email at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'email nil nil (called-interactively-p 'any)))
+  (ar-th 'email nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-email-atpt 'ar-email-bounds-atpt)
 (defun ar-email-bounds-atpt ()
@@ -6304,10 +6304,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'email beg end (called-interactively-p 'any)))
 
-(defun ar-filename-atpt ()
+(defun ar-filename-atpt () 
   "Returns filename at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'filename nil nil (called-interactively-p 'any)))
+  (ar-th 'filename nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-filename-atpt 'ar-filename-bounds-atpt)
 (defun ar-filename-bounds-atpt ()
@@ -6390,10 +6390,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'filename beg end (called-interactively-p 'any)))
 
-(defun ar-filenamenondirectory-atpt ()
+(defun ar-filenamenondirectory-atpt () 
   "Returns filenamenondirectory at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'filenamenondirectory nil nil (called-interactively-p 'any)))
+  (ar-th 'filenamenondirectory nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-filenamenondirectory-atpt 'ar-filenamenondirectory-bounds-atpt)
 (defun ar-filenamenondirectory-bounds-atpt ()
@@ -6476,10 +6476,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'filenamenondirectory beg end (called-interactively-p 'any)))
 
-(defun ar-float-atpt ()
+(defun ar-float-atpt () 
   "Returns float at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'float nil nil (called-interactively-p 'any)))
+  (ar-th 'float nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-float-atpt 'ar-float-bounds-atpt)
 (defun ar-float-bounds-atpt ()
@@ -6562,10 +6562,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'float beg end (called-interactively-p 'any)))
 
-(defun ar-function-atpt ()
+(defun ar-function-atpt () 
   "Returns function at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'function nil nil (called-interactively-p 'any)))
+  (ar-th 'function nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-function-atpt 'ar-function-bounds-atpt)
 (defun ar-function-bounds-atpt ()
@@ -6648,10 +6648,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'function beg end (called-interactively-p 'any)))
 
-(defun ar-ip-atpt ()
+(defun ar-ip-atpt () 
   "Returns ip at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'ip nil nil (called-interactively-p 'any)))
+  (ar-th 'ip nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-ip-atpt 'ar-ip-bounds-atpt)
 (defun ar-ip-bounds-atpt ()
@@ -6734,10 +6734,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'ip beg end (called-interactively-p 'any)))
 
-(defun ar-isbn-atpt ()
+(defun ar-isbn-atpt () 
   "Returns isbn at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'isbn nil nil (called-interactively-p 'any)))
+  (ar-th 'isbn nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-isbn-atpt 'ar-isbn-bounds-atpt)
 (defun ar-isbn-bounds-atpt ()
@@ -6820,10 +6820,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'isbn beg end (called-interactively-p 'any)))
 
-(defun ar-line-atpt ()
+(defun ar-line-atpt () 
   "Returns line at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'line nil nil (called-interactively-p 'any)))
+  (ar-th 'line nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-line-atpt 'ar-line-bounds-atpt)
 (defun ar-line-bounds-atpt ()
@@ -6906,10 +6906,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'line beg end (called-interactively-p 'any)))
 
-(defun ar-list-atpt ()
+(defun ar-list-atpt () 
   "Returns list at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'list nil nil (called-interactively-p 'any)))
+  (ar-th 'list nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-list-atpt 'ar-list-bounds-atpt)
 (defun ar-list-bounds-atpt ()
@@ -6992,10 +6992,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'list beg end (called-interactively-p 'any)))
 
-(defun ar-name-atpt ()
+(defun ar-name-atpt () 
   "Returns name at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'name nil nil (called-interactively-p 'any)))
+  (ar-th 'name nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-name-atpt 'ar-name-bounds-atpt)
 (defun ar-name-bounds-atpt ()
@@ -7078,10 +7078,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'name beg end (called-interactively-p 'any)))
 
-(defun ar-number-atpt ()
+(defun ar-number-atpt () 
   "Returns number at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'number nil nil (called-interactively-p 'any)))
+  (ar-th 'number nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-number-atpt 'ar-number-bounds-atpt)
 (defun ar-number-bounds-atpt ()
@@ -7164,10 +7164,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'number beg end (called-interactively-p 'any)))
 
-(defun ar-page-atpt ()
+(defun ar-page-atpt () 
   "Returns page at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'page nil nil (called-interactively-p 'any)))
+  (ar-th 'page nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-page-atpt 'ar-page-bounds-atpt)
 (defun ar-page-bounds-atpt ()
@@ -7250,10 +7250,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'page beg end (called-interactively-p 'any)))
 
-(defun ar-paragraph-atpt ()
+(defun ar-paragraph-atpt () 
   "Returns paragraph at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'paragraph nil nil (called-interactively-p 'any)))
+  (ar-th 'paragraph nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-paragraph-atpt 'ar-paragraph-bounds-atpt)
 (defun ar-paragraph-bounds-atpt ()
@@ -7336,10 +7336,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'paragraph beg end (called-interactively-p 'any)))
 
-(defun ar-phone-atpt ()
+(defun ar-phone-atpt () 
   "Returns phone at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'phone nil nil (called-interactively-p 'any)))
+  (ar-th 'phone nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-phone-atpt 'ar-phone-bounds-atpt)
 (defun ar-phone-bounds-atpt ()
@@ -7422,10 +7422,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'phone beg end (called-interactively-p 'any)))
 
-(defun ar-region-atpt ()
+(defun ar-region-atpt () 
   "Returns region at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'region nil nil (called-interactively-p 'any)))
+  (ar-th 'region nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-region-atpt 'ar-region-bounds-atpt)
 (defun ar-region-bounds-atpt ()
@@ -7508,10 +7508,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'region beg end (called-interactively-p 'any)))
 
-(defun ar-sentence-atpt ()
+(defun ar-sentence-atpt () 
   "Returns sentence at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'sentence nil nil (called-interactively-p 'any)))
+  (ar-th 'sentence nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-sentence-atpt 'ar-sentence-bounds-atpt)
 (defun ar-sentence-bounds-atpt ()
@@ -7594,10 +7594,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'sentence beg end (called-interactively-p 'any)))
 
-(defun ar-sexp-atpt ()
+(defun ar-sexp-atpt () 
   "Returns sexp at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'sexp nil nil (called-interactively-p 'any)))
+  (ar-th 'sexp nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-sexp-atpt 'ar-sexp-bounds-atpt)
 (defun ar-sexp-bounds-atpt ()
@@ -7680,10 +7680,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'sexp beg end (called-interactively-p 'any)))
 
-(defun ar-string-atpt ()
+(defun ar-string-atpt () 
   "Returns string at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'string nil nil (called-interactively-p 'any)))
+  (ar-th 'string nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-string-atpt 'ar-string-bounds-atpt)
 (defun ar-string-bounds-atpt ()
@@ -7766,10 +7766,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'string beg end (called-interactively-p 'any)))
 
-(defun ar-shstruct-atpt ()
+(defun ar-shstruct-atpt () 
   "Returns shstruct at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'shstruct nil nil (called-interactively-p 'any)))
+  (ar-th 'shstruct nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-shstruct-atpt 'ar-shstruct-bounds-atpt)
 (defun ar-shstruct-bounds-atpt ()
@@ -7852,10 +7852,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'shstruct beg end (called-interactively-p 'any)))
 
-(defun ar-symbol-atpt ()
+(defun ar-symbol-atpt () 
   "Returns symbol at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'symbol nil nil (called-interactively-p 'any)))
+  (ar-th 'symbol nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-symbol-atpt 'ar-symbol-bounds-atpt)
 (defun ar-symbol-bounds-atpt ()
@@ -7938,10 +7938,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'symbol beg end (called-interactively-p 'any)))
 
-(defun ar-url-atpt ()
+(defun ar-url-atpt () 
   "Returns url at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'url nil nil (called-interactively-p 'any)))
+  (ar-th 'url nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-url-atpt 'ar-url-bounds-atpt)
 (defun ar-url-bounds-atpt ()
@@ -8024,10 +8024,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'url beg end (called-interactively-p 'any)))
 
-(defun ar-word-atpt ()
+(defun ar-word-atpt () 
   "Returns word at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'word nil nil (called-interactively-p 'any)))
+  (ar-th 'word nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-word-atpt 'ar-word-bounds-atpt)
 (defun ar-word-bounds-atpt ()
@@ -8110,10 +8110,10 @@ With optional NO-DELIMITERS resp. to inner position of delimiting char or string
   (interactive "*r")
   (ar-th-delete-in-region 'word beg end (called-interactively-p 'any)))
 
-(defun ar-wordalphaonly-atpt ()
+(defun ar-wordalphaonly-atpt () 
   "Returns wordalphaonly at point if any, nil otherwise. "
   (interactive)
-  (ar-th 'wordalphaonly nil nil (called-interactively-p 'any)))
+  (ar-th 'wordalphaonly nil (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-wordalphaonly-atpt 'ar-wordalphaonly-bounds-atpt)
 (defun ar-wordalphaonly-bounds-atpt ()
@@ -12341,14 +12341,14 @@ See doku from `sort-subr', for details.
 
 ;; ar-thing-at-point-utils-delimited-intern: ar-unpaired-delimited-raw start
 
-(defun ar-backslashed-atpt (&optional arg no-delimiters nested)
+(defun ar-backslashed-atpt (&optional no-delimiters nested)
   "Returns backslashed at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'backslashed arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'backslashed no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-backslashed-atpt (&optional no-delimiters check)
   "Returns a list, borders of backslashed if any, nil otherwise.
@@ -12562,14 +12562,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-backticked-atpt (&optional arg no-delimiters nested)
+(defun ar-backticked-atpt (&optional no-delimiters nested)
   "Returns backticked at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'backticked arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'backticked no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-backticked-atpt (&optional no-delimiters check)
   "Returns a list, borders of backticked if any, nil otherwise.
@@ -12783,14 +12783,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-coloned-atpt (&optional arg no-delimiters nested)
+(defun ar-coloned-atpt (&optional no-delimiters nested)
   "Returns coloned at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'coloned arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'coloned no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-coloned-atpt (&optional no-delimiters check)
   "Returns a list, borders of coloned if any, nil otherwise.
@@ -13004,14 +13004,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-dollared-atpt (&optional arg no-delimiters nested)
+(defun ar-dollared-atpt (&optional no-delimiters nested)
   "Returns dollared at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'dollared arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'dollared no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-dollared-atpt (&optional no-delimiters check)
   "Returns a list, borders of dollared if any, nil otherwise.
@@ -13225,14 +13225,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-doublequoted-atpt (&optional arg no-delimiters nested)
+(defun ar-doublequoted-atpt (&optional no-delimiters nested)
   "Returns doublequoted at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'doublequoted arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'doublequoted no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-doublequoted-atpt (&optional no-delimiters check)
   "Returns a list, borders of doublequoted if any, nil otherwise.
@@ -13446,14 +13446,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-equalized-atpt (&optional arg no-delimiters nested)
+(defun ar-equalized-atpt (&optional no-delimiters nested)
   "Returns equalized at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'equalized arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'equalized no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-equalized-atpt (&optional no-delimiters check)
   "Returns a list, borders of equalized if any, nil otherwise.
@@ -13667,14 +13667,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-hyphened-atpt (&optional arg no-delimiters nested)
+(defun ar-hyphened-atpt (&optional no-delimiters nested)
   "Returns hyphened at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'hyphened arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'hyphened no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-hyphened-atpt (&optional no-delimiters check)
   "Returns a list, borders of hyphened if any, nil otherwise.
@@ -13888,14 +13888,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-singlequoted-atpt (&optional arg no-delimiters nested)
+(defun ar-singlequoted-atpt (&optional no-delimiters nested)
   "Returns singlequoted at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'singlequoted arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'singlequoted no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-singlequoted-atpt (&optional no-delimiters check)
   "Returns a list, borders of singlequoted if any, nil otherwise.
@@ -14109,14 +14109,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-slashed-atpt (&optional arg no-delimiters nested)
+(defun ar-slashed-atpt (&optional no-delimiters nested)
   "Returns slashed at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'slashed arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'slashed no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-slashed-atpt (&optional no-delimiters check)
   "Returns a list, borders of slashed if any, nil otherwise.
@@ -14330,14 +14330,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-stared-atpt (&optional arg no-delimiters nested)
+(defun ar-stared-atpt (&optional no-delimiters nested)
   "Returns stared at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'stared arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'stared no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-stared-atpt (&optional no-delimiters check)
   "Returns a list, borders of stared if any, nil otherwise.
@@ -14551,14 +14551,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-underscored-atpt (&optional arg no-delimiters nested)
+(defun ar-underscored-atpt (&optional no-delimiters nested)
   "Returns underscored at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'underscored arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'underscored no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-underscored-atpt (&optional no-delimiters check)
   "Returns a list, borders of underscored if any, nil otherwise.
@@ -14772,14 +14772,14 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-whitespaced-atpt (&optional arg no-delimiters nested)
+(defun ar-whitespaced-atpt (&optional no-delimiters nested)
   "Returns whitespaced at point if any, nil otherwise.
 
 With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
 
 With optional NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
-  (ar-th 'whitespaced arg no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value arg)))))
+  (ar-th 'whitespaced no-delimiters (called-interactively-p 'any) (or nested (eq 2 (prefix-numeric-value no-delimiters)))))
 
 (defun ar-bounds-of-whitespaced-atpt (&optional no-delimiters check)
   "Returns a list, borders of whitespaced if any, nil otherwise.
@@ -15121,10 +15121,10 @@ Like check for in-comment, which is done internally."
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-paired-delimited-passiv start
 
-(defun ar-braced-atpt (&optional arg no-delimiters)
+(defun ar-braced-atpt (&optional no-delimiters)
   "Returns braced at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'braced arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'braced no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-braced-atpt 'ar-braced-bounds-atpt)
 (defun ar-braced-bounds-atpt (&optional no-delimiters check)
@@ -15384,10 +15384,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-bracketed-atpt (&optional arg no-delimiters)
+(defun ar-bracketed-atpt (&optional no-delimiters)
   "Returns bracketed at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'bracketed arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'bracketed no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-bracketed-atpt 'ar-bracketed-bounds-atpt)
 (defun ar-bracketed-bounds-atpt (&optional no-delimiters check)
@@ -15647,10 +15647,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-lesserangled-atpt (&optional arg no-delimiters)
+(defun ar-lesserangled-atpt (&optional no-delimiters)
   "Returns lesserangled at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'lesserangled arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'lesserangled no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-lesserangled-atpt 'ar-lesserangled-bounds-atpt)
 (defun ar-lesserangled-bounds-atpt (&optional no-delimiters check)
@@ -15910,10 +15910,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-greaterangled-atpt (&optional arg no-delimiters)
+(defun ar-greaterangled-atpt (&optional no-delimiters)
   "Returns greaterangled at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'greaterangled arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'greaterangled no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-greaterangled-atpt 'ar-greaterangled-bounds-atpt)
 (defun ar-greaterangled-bounds-atpt (&optional no-delimiters check)
@@ -16173,10 +16173,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-leftrightsinglequoted-atpt (&optional arg no-delimiters)
+(defun ar-leftrightsinglequoted-atpt (&optional no-delimiters)
   "Returns leftrightsinglequoted at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'leftrightsinglequoted arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'leftrightsinglequoted no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-bounds-atpt)
 (defun ar-leftrightsinglequoted-bounds-atpt (&optional no-delimiters check)
@@ -16436,10 +16436,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-leftrightdoublequoted-atpt (&optional arg no-delimiters)
+(defun ar-leftrightdoublequoted-atpt (&optional no-delimiters)
   "Returns leftrightdoublequoted at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'leftrightdoublequoted arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'leftrightdoublequoted no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-bounds-atpt)
 (defun ar-leftrightdoublequoted-bounds-atpt (&optional no-delimiters check)
@@ -16699,10 +16699,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-parentized-atpt (&optional arg no-delimiters)
+(defun ar-parentized-atpt (&optional no-delimiters)
   "Returns parentized at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'parentized arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'parentized no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-parentized-atpt 'ar-parentized-bounds-atpt)
 (defun ar-parentized-bounds-atpt (&optional no-delimiters check)
@@ -16966,10 +16966,10 @@ See doku from `sort-subr', for details.
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-rest-list start
 
-(defun ar-greateranglednested-atpt (&optional arg no-delimiters)
+(defun ar-greateranglednested-atpt (&optional no-delimiters)
   "Returns greateranglednested at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'greateranglednested arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'greateranglednested no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-greateranglednested-atpt 'ar-greateranglednested-bounds-atpt)
 (defun ar-greateranglednested-bounds-atpt (&optional no-delimiters check)
@@ -17229,10 +17229,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-lesseranglednested-atpt (&optional arg no-delimiters)
+(defun ar-lesseranglednested-atpt (&optional no-delimiters)
   "Returns lesseranglednested at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'lesseranglednested arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'lesseranglednested no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-lesseranglednested-atpt 'ar-lesseranglednested-bounds-atpt)
 (defun ar-lesseranglednested-bounds-atpt (&optional no-delimiters check)
@@ -17492,10 +17492,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-buffer-atpt (&optional arg no-delimiters)
+(defun ar-buffer-atpt (&optional no-delimiters)
   "Returns buffer at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'buffer arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'buffer no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-buffer-atpt 'ar-buffer-bounds-atpt)
 (defun ar-buffer-bounds-atpt (&optional no-delimiters check)
@@ -17755,10 +17755,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-comment-atpt (&optional arg no-delimiters)
+(defun ar-comment-atpt (&optional no-delimiters)
   "Returns comment at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'comment arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'comment no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-comment-atpt 'ar-comment-bounds-atpt)
 (defun ar-comment-bounds-atpt (&optional no-delimiters check)
@@ -18018,10 +18018,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-csv-atpt (&optional arg no-delimiters)
+(defun ar-csv-atpt (&optional no-delimiters)
   "Returns csv at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'csv arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'csv no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-csv-atpt 'ar-csv-bounds-atpt)
 (defun ar-csv-bounds-atpt (&optional no-delimiters check)
@@ -18281,10 +18281,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-date-atpt (&optional arg no-delimiters)
+(defun ar-date-atpt (&optional no-delimiters)
   "Returns date at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'date arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'date no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-date-atpt 'ar-date-bounds-atpt)
 (defun ar-date-bounds-atpt (&optional no-delimiters check)
@@ -18544,10 +18544,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-delimited-atpt (&optional arg no-delimiters)
+(defun ar-delimited-atpt (&optional no-delimiters)
   "Returns delimited at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'delimited arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'delimited no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-delimited-atpt 'ar-delimited-bounds-atpt)
 (defun ar-delimited-bounds-atpt (&optional no-delimiters check)
@@ -18807,10 +18807,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-email-atpt (&optional arg no-delimiters)
+(defun ar-email-atpt (&optional no-delimiters)
   "Returns email at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'email arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'email no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-email-atpt 'ar-email-bounds-atpt)
 (defun ar-email-bounds-atpt (&optional no-delimiters check)
@@ -19070,10 +19070,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-filename-atpt (&optional arg no-delimiters)
+(defun ar-filename-atpt (&optional no-delimiters)
   "Returns filename at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'filename arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'filename no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-filename-atpt 'ar-filename-bounds-atpt)
 (defun ar-filename-bounds-atpt (&optional no-delimiters check)
@@ -19333,10 +19333,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-filenamenondirectory-atpt (&optional arg no-delimiters)
+(defun ar-filenamenondirectory-atpt (&optional no-delimiters)
   "Returns filenamenondirectory at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'filenamenondirectory arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'filenamenondirectory no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-filenamenondirectory-atpt 'ar-filenamenondirectory-bounds-atpt)
 (defun ar-filenamenondirectory-bounds-atpt (&optional no-delimiters check)
@@ -19596,10 +19596,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-float-atpt (&optional arg no-delimiters)
+(defun ar-float-atpt (&optional no-delimiters)
   "Returns float at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'float arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'float no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-float-atpt 'ar-float-bounds-atpt)
 (defun ar-float-bounds-atpt (&optional no-delimiters check)
@@ -19859,10 +19859,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-function-atpt (&optional arg no-delimiters)
+(defun ar-function-atpt (&optional no-delimiters)
   "Returns function at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'function arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'function no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-function-atpt 'ar-function-bounds-atpt)
 (defun ar-function-bounds-atpt (&optional no-delimiters check)
@@ -20122,10 +20122,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-ip-atpt (&optional arg no-delimiters)
+(defun ar-ip-atpt (&optional no-delimiters)
   "Returns ip at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'ip arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'ip no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-ip-atpt 'ar-ip-bounds-atpt)
 (defun ar-ip-bounds-atpt (&optional no-delimiters check)
@@ -20385,10 +20385,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-isbn-atpt (&optional arg no-delimiters)
+(defun ar-isbn-atpt (&optional no-delimiters)
   "Returns isbn at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'isbn arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'isbn no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-isbn-atpt 'ar-isbn-bounds-atpt)
 (defun ar-isbn-bounds-atpt (&optional no-delimiters check)
@@ -20648,10 +20648,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-line-atpt (&optional arg no-delimiters)
+(defun ar-line-atpt (&optional no-delimiters)
   "Returns line at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'line arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'line no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-line-atpt 'ar-line-bounds-atpt)
 (defun ar-line-bounds-atpt (&optional no-delimiters check)
@@ -20911,10 +20911,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-list-atpt (&optional arg no-delimiters)
+(defun ar-list-atpt (&optional no-delimiters)
   "Returns list at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'list arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'list no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-list-atpt 'ar-list-bounds-atpt)
 (defun ar-list-bounds-atpt (&optional no-delimiters check)
@@ -21174,10 +21174,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-name-atpt (&optional arg no-delimiters)
+(defun ar-name-atpt (&optional no-delimiters)
   "Returns name at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'name arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'name no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-name-atpt 'ar-name-bounds-atpt)
 (defun ar-name-bounds-atpt (&optional no-delimiters check)
@@ -21437,10 +21437,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-number-atpt (&optional arg no-delimiters)
+(defun ar-number-atpt (&optional no-delimiters)
   "Returns number at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'number arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'number no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-number-atpt 'ar-number-bounds-atpt)
 (defun ar-number-bounds-atpt (&optional no-delimiters check)
@@ -21700,10 +21700,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-page-atpt (&optional arg no-delimiters)
+(defun ar-page-atpt (&optional no-delimiters)
   "Returns page at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'page arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'page no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-page-atpt 'ar-page-bounds-atpt)
 (defun ar-page-bounds-atpt (&optional no-delimiters check)
@@ -21963,10 +21963,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-paragraph-atpt (&optional arg no-delimiters)
+(defun ar-paragraph-atpt (&optional no-delimiters)
   "Returns paragraph at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'paragraph arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'paragraph no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-paragraph-atpt 'ar-paragraph-bounds-atpt)
 (defun ar-paragraph-bounds-atpt (&optional no-delimiters check)
@@ -22226,10 +22226,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-phone-atpt (&optional arg no-delimiters)
+(defun ar-phone-atpt (&optional no-delimiters)
   "Returns phone at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'phone arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'phone no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-phone-atpt 'ar-phone-bounds-atpt)
 (defun ar-phone-bounds-atpt (&optional no-delimiters check)
@@ -22489,10 +22489,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-region-atpt (&optional arg no-delimiters)
+(defun ar-region-atpt (&optional no-delimiters)
   "Returns region at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'region arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'region no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-region-atpt 'ar-region-bounds-atpt)
 (defun ar-region-bounds-atpt (&optional no-delimiters check)
@@ -22752,10 +22752,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-sentence-atpt (&optional arg no-delimiters)
+(defun ar-sentence-atpt (&optional no-delimiters)
   "Returns sentence at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'sentence arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'sentence no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-sentence-atpt 'ar-sentence-bounds-atpt)
 (defun ar-sentence-bounds-atpt (&optional no-delimiters check)
@@ -23015,10 +23015,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-sexp-atpt (&optional arg no-delimiters)
+(defun ar-sexp-atpt (&optional no-delimiters)
   "Returns sexp at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'sexp arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'sexp no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-sexp-atpt 'ar-sexp-bounds-atpt)
 (defun ar-sexp-bounds-atpt (&optional no-delimiters check)
@@ -23278,10 +23278,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-string-atpt (&optional arg no-delimiters)
+(defun ar-string-atpt (&optional no-delimiters)
   "Returns string at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'string arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'string no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-string-atpt 'ar-string-bounds-atpt)
 (defun ar-string-bounds-atpt (&optional no-delimiters check)
@@ -23541,10 +23541,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-shstruct-atpt (&optional arg no-delimiters)
+(defun ar-shstruct-atpt (&optional no-delimiters)
   "Returns shstruct at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'shstruct arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'shstruct no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-shstruct-atpt 'ar-shstruct-bounds-atpt)
 (defun ar-shstruct-bounds-atpt (&optional no-delimiters check)
@@ -23804,10 +23804,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-symbol-atpt (&optional arg no-delimiters)
+(defun ar-symbol-atpt (&optional no-delimiters)
   "Returns symbol at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'symbol arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'symbol no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-symbol-atpt 'ar-symbol-bounds-atpt)
 (defun ar-symbol-bounds-atpt (&optional no-delimiters check)
@@ -24067,10 +24067,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-url-atpt (&optional arg no-delimiters)
+(defun ar-url-atpt (&optional no-delimiters)
   "Returns url at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'url arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'url no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-url-atpt 'ar-url-bounds-atpt)
 (defun ar-url-bounds-atpt (&optional no-delimiters check)
@@ -24330,10 +24330,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-word-atpt (&optional arg no-delimiters)
+(defun ar-word-atpt (&optional no-delimiters)
   "Returns word at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'word arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'word no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-word-atpt 'ar-word-bounds-atpt)
 (defun ar-word-bounds-atpt (&optional no-delimiters check)
@@ -24593,10 +24593,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-wordalphaonly-atpt (&optional arg no-delimiters)
+(defun ar-wordalphaonly-atpt (&optional no-delimiters)
   "Returns wordalphaonly at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'wordalphaonly arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'wordalphaonly no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-wordalphaonly-atpt 'ar-wordalphaonly-bounds-atpt)
 (defun ar-wordalphaonly-bounds-atpt (&optional no-delimiters check)
@@ -24860,10 +24860,10 @@ See doku from `sort-subr', for details.
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list
 
-(defun ar-block-atpt (&optional arg no-delimiters)
+(defun ar-block-atpt (&optional no-delimiters)
   "Returns block at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'block arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'block no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-block-atpt 'ar-block-bounds-atpt)
 (defun ar-block-bounds-atpt (&optional no-delimiters check)
@@ -25123,10 +25123,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-block-or-clause-atpt (&optional arg no-delimiters)
+(defun ar-block-or-clause-atpt (&optional no-delimiters)
   "Returns block-or-clause at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'block-or-clause arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'block-or-clause no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-block-or-clause-atpt 'ar-block-or-clause-bounds-atpt)
 (defun ar-block-or-clause-bounds-atpt (&optional no-delimiters check)
@@ -25386,10 +25386,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-class-atpt (&optional arg no-delimiters)
+(defun ar-class-atpt (&optional no-delimiters)
   "Returns class at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'class arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'class no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-class-atpt 'ar-class-bounds-atpt)
 (defun ar-class-bounds-atpt (&optional no-delimiters check)
@@ -25649,10 +25649,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-clause-atpt (&optional arg no-delimiters)
+(defun ar-clause-atpt (&optional no-delimiters)
   "Returns clause at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'clause arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'clause no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-clause-atpt 'ar-clause-bounds-atpt)
 (defun ar-clause-bounds-atpt (&optional no-delimiters check)
@@ -25912,10 +25912,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-def-or-class-atpt (&optional arg no-delimiters)
+(defun ar-def-or-class-atpt (&optional no-delimiters)
   "Returns def-or-class at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'def-or-class arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'def-or-class no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-def-or-class-atpt 'ar-def-or-class-bounds-atpt)
 (defun ar-def-or-class-bounds-atpt (&optional no-delimiters check)
@@ -26175,10 +26175,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-def-atpt (&optional arg no-delimiters)
+(defun ar-def-atpt (&optional no-delimiters)
   "Returns def at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'def arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'def no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-def-atpt 'ar-def-bounds-atpt)
 (defun ar-def-bounds-atpt (&optional no-delimiters check)
@@ -26438,10 +26438,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-expression-atpt (&optional arg no-delimiters)
+(defun ar-expression-atpt (&optional no-delimiters)
   "Returns expression at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'expression arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'expression no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-expression-atpt 'ar-expression-bounds-atpt)
 (defun ar-expression-bounds-atpt (&optional no-delimiters check)
@@ -26701,10 +26701,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-partial-expression-atpt (&optional arg no-delimiters)
+(defun ar-partial-expression-atpt (&optional no-delimiters)
   "Returns partial-expression at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'partial-expression arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'partial-expression no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-partial-expression-atpt 'ar-partial-expression-bounds-atpt)
 (defun ar-partial-expression-bounds-atpt (&optional no-delimiters check)
@@ -26964,10 +26964,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-statement-atpt (&optional arg no-delimiters)
+(defun ar-statement-atpt (&optional no-delimiters)
   "Returns statement at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'statement arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'statement no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-statement-atpt 'ar-statement-bounds-atpt)
 (defun ar-statement-bounds-atpt (&optional no-delimiters check)
@@ -27227,10 +27227,10 @@ See doku from `sort-subr', for details.
     (when (called-interactively-p 'any) (message "%s" erg))
    erg))
 
-(defun ar-string-atpt (&optional arg no-delimiters)
+(defun ar-string-atpt (&optional no-delimiters)
   "Returns string at point if any, nil otherwise. Optional NO-DELIMITERS trims THING, i.e. returns delimited objects like `brackteted', `braced' etc. without delimiters. "
   (interactive "p\nP")
-  (ar-th 'string arg no-delimiters (called-interactively-p 'any)))
+  (ar-th 'string no-delimiters (called-interactively-p 'any)))
 
 (defalias 'ar-bounds-of-string-atpt 'ar-string-bounds-atpt)
 (defun ar-string-bounds-atpt (&optional no-delimiters check)

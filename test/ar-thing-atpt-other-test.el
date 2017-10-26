@@ -121,7 +121,7 @@ args = sys.argv"
       ";; (setq foo
 \"asdf\""
     (forward-char -1)
-    (should (eq 4 (length (ar-doublequoted-atpt nil t))))))
+    (should (eq 6 (length (ar-doublequoted-atpt nil t))))))
 
 (ert-deftest ar-in-string-atpt-test ()
   (ar-test-with-elisp-buffer
@@ -135,7 +135,7 @@ args = sys.argv"
       ";; (setq foo
 \"asdf\""
     (forward-char -1)
-    (should (eq 4 (length (ar-string-atpt nil t))))))
+    (should (eq 4 (length (ar-string-atpt t))))))
 
 (ert-deftest ar-peel-list-atpt-test ()
     (ar-test-with-elisp-buffer-point-min
