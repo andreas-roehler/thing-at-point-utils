@@ -235,11 +235,10 @@
     (ar-th-kill 'backslashed)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-backslashed-kill-backward-atpt-test ()
+(ert-deftest ar-backslashed-kill-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
-      (forward-char 1)
-    (ar-th-kill-backward 'backslashed)
+    (ar-th-kill 'backslashed)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-backslashed-leftrightsinglequote-atpt-test ()
@@ -382,7 +381,7 @@
 (ert-deftest  ar-blok-dollared-atpt-test-2 ()
   (ar-test-with-elisp-buffer
       "$asdf$"
-    (forward-char -1) 
+    (forward-char -1)
     (ar-th-blok 'dollared)
     (should (eq ?} (char-before)))))
 
@@ -420,7 +419,6 @@
       (forward-char 1)
     (ar-th-doubleslash 'dollared)
     (should (eq (char-before) ?/))))
-
 
 (ert-deftest ar-dollared-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -482,7 +480,7 @@
   (ar-test-with-elisp-buffer-point-min
       "$asdf$"
       (forward-char 1)
-    (ar-th-comment 'dollared)
+    (ar-comment-dollared-atpt)
     (end-of-line)
     (should (ar-in-comment-p))))
 
@@ -532,13 +530,6 @@
       "$asdf$"
       (forward-char 1)
     (ar-th-kill 'dollared)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-dollared-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "$asdf$"
-      (forward-char 1)
-    (ar-th-kill-backward 'dollared)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-dollared-leftrightsinglequote-atpt-test ()
@@ -712,7 +703,6 @@
     (ar-th-doubleslash 'doublequoted)
     (should (eq (char-before) ?/))))
 
-
 (ert-deftest ar-doublequoted-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\"asdf\""
@@ -825,13 +815,6 @@
     (ar-th-kill 'doublequoted)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-doublequoted-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "\"asdf\""
-      (forward-char 1)
-    (ar-th-kill-backward 'doublequoted)
-    (should (eq 1 (point)))))
-
 (ert-deftest ar-doublequoted-leftrightsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\"asdf\""
@@ -847,11 +830,12 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-doublequoted-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "\"asdf\""
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf\"asdf\""
+      (forward-char -1)
     (ar-th-separate 'doublequoted)
-    (should (eq 2 (point)))))
+    (forward-line -1) 
+    (should (bolp))))
 
 (ert-deftest ar-doublequoted-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1004,7 +988,6 @@
     (ar-th-doubleslash 'equalized)
     (should (eq (char-before) ?/))))
 
-
 (ert-deftest ar-equalized-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "=asdf="
@@ -1115,13 +1098,6 @@
       "=asdf="
       (forward-char 1)
     (ar-th-kill 'equalized)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-equalized-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "=asdf="
-      (forward-char 1)
-    (ar-th-kill-backward 'equalized)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-equalized-leftrightsinglequote-atpt-test ()
@@ -1296,7 +1272,6 @@
     (ar-th-doubleslash 'hyphened)
     (should (eq (char-before) ?/))))
 
-
 (ert-deftest ar-hyphened-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "-asdf-"
@@ -1407,13 +1382,6 @@
       "-asdf-"
       (forward-char 1)
     (ar-th-kill 'hyphened)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-hyphened-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "-asdf-"
-      (forward-char 1)
-    (ar-th-kill-backward 'hyphened)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-hyphened-leftrightsinglequote-atpt-test ()
@@ -1588,7 +1556,6 @@
     (ar-th-doubleslash 'singlequoted)
     (should (eq (char-before) ?/))))
 
-
 (ert-deftest ar-singlequoted-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "'asdf'"
@@ -1699,13 +1666,6 @@
       "'asdf'"
       (forward-char 1)
     (ar-th-kill 'singlequoted)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-singlequoted-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "'asdf'"
-      (forward-char 1)
-    (ar-th-kill-backward 'singlequoted)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-singlequoted-leftrightsinglequote-atpt-test ()
@@ -1880,7 +1840,6 @@
     (ar-th-doubleslash 'slashed)
     (should (eq (char-before) ?/))))
 
-
 (ert-deftest ar-slashed-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "/asdf/"
@@ -1991,13 +1950,6 @@
       "/asdf/"
       (forward-char 1)
     (ar-th-kill 'slashed)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-slashed-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "/asdf/"
-      (forward-char 1)
-    (ar-th-kill-backward 'slashed)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-slashed-leftrightsinglequote-atpt-test ()
@@ -2172,7 +2124,6 @@
     (ar-th-doubleslash 'underscored)
     (should (eq (char-before) ?/))))
 
-
 (ert-deftest ar-underscored-slash-paren-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "_asdf_"
@@ -2283,13 +2234,6 @@
       "_asdf_"
       (forward-char 1)
     (ar-th-kill 'underscored)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-underscored-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "_asdf_"
-      (forward-char 1)
-    (ar-th-kill-backward 'underscored)
     (should (eq 1 (point)))))
 
 (ert-deftest ar-underscored-leftrightsinglequote-atpt-test ()
@@ -2576,13 +2520,6 @@
     (ar-th-kill 'whitespaced)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-whitespaced-kill-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      " asdf "
-      (forward-char 1)
-    (ar-th-kill-backward 'whitespaced)
-    (should (eq 1 (point)))))
-
 (ert-deftest ar-whitespaced-leftrightsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       " asdf "
@@ -2645,13 +2582,6 @@
       (forward-char 1)
     (ar-th-whitespace 'whitespaced)
     (should (eq (char-before) ?\ ))))
-
-(ert-deftest ar-whitespaced-backward-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      " asdf "
-      (forward-char 1)
-    (ar-th-backward 'whitespaced)
-    (should (eq 1 (point)))))
 
 (ert-deftest ar-whitespaced-forward-atpt-test ()
   (ar-test-with-elisp-buffer-point-min

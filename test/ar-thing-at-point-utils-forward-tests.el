@@ -102,13 +102,12 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       "\"foo1\"\n\"[bar]\""
     (push-mark)
     (goto-char (point-min))
+    ;; (forward-char 1) 
     (ar-brace-doublequoted-in-region-atpt)
     (end-of-line)
-    (forward-char -1)
-    (should (eq (char-after) ?\}))
-    (forward-char -2)
+    (should (eq (char-before) ?\}))
+    (forward-char -3)
     (should (eq (char-after) ?1))
-
     ))
 
 (ert-deftest ar-brace-hyphened-in-region-test ()

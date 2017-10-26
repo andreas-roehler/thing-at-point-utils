@@ -75,14 +75,14 @@
     (skip-syntax-forward "^(")
     (should (ar-list-in-p-atpt))))
 
-(ert-deftest ar-bracketlist-length-atpt-test ()
+(ert-deftest ar-bracketlength-of-list-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "[[1, 2]]\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (should (eq 6 (ar-list-length-atpt)))
+    (should (eq 6 (ar-length-of-list-atpt)))
     (goto-char 1)
-    (should (eq 8 (ar-list-length-atpt)))))
+    (should (eq 8 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-bracketlist-copy-atpt-test ()
   (ar-test-with-python-buffer-point-min

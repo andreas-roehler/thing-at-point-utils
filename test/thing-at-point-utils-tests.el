@@ -1,4 +1,4 @@
-;;; thing-at-point-utils-tests.el --- -*- lexical-binding: t; -*- 
+;;; thing-at-point-utils-tests.el --- -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2014-2017  Andreas Roehler
 
@@ -27,19 +27,32 @@
 (require 'ar-thing-at-point-utils-setup-tests)
 
 ;; moved to ar-werkstatt-interactive-tests.el
-;; as failing from shell inly
+;; as failing from shell
 
-(ert-deftest ar-in-doublequoted-test ()
+(ert-deftest ar-in-doublequoted-test-1 ()
   (ar-test-with-temp-buffer
       "\"
 ;;;\" \"Write 'etc. \""
       (emacs-lisp-mode)
-    (goto-char 2)
-    (let ((erg (ar-doublequoted-atpt)))
-      (should (eq 6 (length erg))))
+    (let (ar-thing-no-nest)
+      (goto-char 2)
+      (let ((erg (ar-doublequoted-atpt)))
+	(should (eq 6 (length erg)))))))
+
+(ert-deftest ar-in-doublequoted-test-2 ()
+  (ar-test-with-temp-buffer
+      "\"
+;;;\" \"Write 'etc. \""
+      (emacs-lisp-mode)
     (goto-char 3)
     (let ((erg (ar-doublequoted-atpt)))
-      (should (eq 6 (length erg))))
+      (should (eq 6 (length erg))))))
+
+(ert-deftest ar-in-doublequoted-test-3 ()
+  (ar-test-with-temp-buffer
+      "\"
+;;;\" \"Write 'etc. \""
+      (emacs-lisp-mode)
     (goto-char 9)
     (let ((erg (ar-doublequoted-atpt)))
       (should (eq 14 (length erg))))))

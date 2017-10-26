@@ -237,7 +237,7 @@ args = sys.argv"
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (text-mode)
-    (goto-char 28)
+    (goto-char 29)
     (let ((erg (ar-doublequoted-atpt)))
       (should erg))))
 
@@ -245,25 +245,28 @@ args = sys.argv"
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (text-mode)
-    (goto-char 29)
-    (let ((erg (ar-doublequoted-atpt)))
-      (should-not erg))))
+    (goto-char 27)
+    (let* (ar-thing-no-nest
+	   (erg (ar-doublequoted-atpt)))
+      (should erg))))
 
 (ert-deftest doublequoted-unpaired-delimited-test-3 ()
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
-      (emacs-lisp-mode)
-    (goto-char 28)
-    (let ((erg (ar-doublequoted-atpt)))
-      (should erg))))
+      (text-mode)
+    (goto-char 29)
+    (let* ((ar-thing-no-nest t)
+	   (erg (ar-doublequoted-atpt)))
+      (should (< 0 (length erg))))))
 
-(ert-deftest doublequoted-unpaired-delimited-test-4 ()
+(ert-deftest doublequoted-scan-whole-buffer-delimited-test-1 ()
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (emacs-lisp-mode)
-    (goto-char 29)
-    (let ((erg (ar-doublequoted-atpt)))
-      (should-not erg))))
+    (goto-char 28)
+    (let* (ar-thing-no-nest
+	   (erg (ar-doublequoted-atpt)))
+      (should erg))))
 
 (ert-deftest doublequoted-unpaired-delimited-test-5 ()
   (ar-test-with-temp-buffer

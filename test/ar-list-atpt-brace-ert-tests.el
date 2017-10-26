@@ -114,7 +114,7 @@
     (skip-syntax-forward "^(")
     (should (ar-list-in-p-atpt))))
 
-(ert-deftest ar-list-length-atpt-brace-test ()
+(ert-deftest ar-length-of-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -124,10 +124,10 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (should (eq 54 (ar-list-length-atpt)))
+    (should (eq 54 (ar-length-of-list-atpt)))
     (goto-char (point-min))
     (end-of-line)
-    (should (eq 79 (ar-list-length-atpt)))))
+    (should (eq 79 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-copy-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
@@ -417,7 +417,7 @@
     (ar-singlequote-list-atpt)
     (should (eq (char-before) ?'))))
 
-(ert-deftest ar-list-triplequotesq-atpt-brace-test ()
+(ert-deftest ar-triplequotesq-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -427,10 +427,10 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-list-triplequotesq-atpt)
+    (ar-triplequotesq-list-atpt)
     (should (looking-back "'''"))))
 
-(ert-deftest ar-list-triplequotedq-atpt-brace-test ()
+(ert-deftest ar-triplequotedq-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -440,7 +440,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-list-triplequotedq-atpt)
+    (ar-triplequotedq-list-atpt)
     (should (looking-back "\"\"\""))))
 
 (ert-deftest ar-trim-bracelist-atpt-test ()

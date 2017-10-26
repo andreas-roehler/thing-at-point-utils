@@ -72,14 +72,14 @@
     (skip-syntax-forward "^(")
     (should (ar-list-in-p-atpt))))
 
-(ert-deftest ar-list-length-atpt-test ()
+(ert-deftest ar-length-of-list-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (should (eq 10 (ar-list-length-atpt)))
+    (should (eq 10 (ar-length-of-list-atpt)))
     (goto-char 1)
-    (should (eq 17 (ar-list-length-atpt)))))
+    (should (eq 17 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-copy-list-atpt-test ()
   (ar-test-with-python-buffer-point-min
