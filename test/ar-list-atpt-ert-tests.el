@@ -65,12 +65,12 @@
     (ar-list-end-atpt)
     (should (eq 16 (point)))))
 
-(ert-deftest ar-list-in-p-atpt-test ()
+(ert-deftest ar-in-list-p-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (should (ar-list-in-p-atpt))))
+    (should (ar-in-list-p-atpt))))
 
 (ert-deftest ar-length-of-list-atpt-test ()
   (ar-test-with-python-buffer-point-min

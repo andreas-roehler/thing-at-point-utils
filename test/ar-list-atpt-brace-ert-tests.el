@@ -102,7 +102,7 @@
     (ar-list-end-atpt)
     (should (eq 100 (point)))))
 
-(ert-deftest ar-list-in-p-atpt-brace-test ()
+(ert-deftest ar-in-list-p-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -112,7 +112,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (should (ar-list-in-p-atpt))))
+    (should (ar-in-list-p-atpt))))
 
 (ert-deftest ar-length-of-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
@@ -456,7 +456,7 @@
     (ar-trim-list-atpt)
     (should (eq (char-after) 10))))
 
-(ert-deftest ar-trim-list-left-atpt-brace-test ()
+(ert-deftest ar-left-trim-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -466,7 +466,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-trim-list-left-atpt)
+    (ar-left-trim-list-atpt)
     (should (eq (char-after) 10))))
 
 

@@ -68,12 +68,12 @@
     (ar-list-end-atpt)
     (should (eq 7 (point)))))
 
-(ert-deftest ar-bracketlist-in-p-atpt-test ()
+(ert-deftest ar-in-bracketlist-p-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "[[1, 2]]\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (should (ar-list-in-p-atpt))))
+    (should (ar-in-list-p-atpt))))
 
 (ert-deftest ar-bracketlength-of-list-atpt-test ()
   (ar-test-with-python-buffer-point-min
@@ -290,7 +290,7 @@
       "[[1, 2]]\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (ar-trim-list-left-atpt)
+    (ar-left-trim-list-atpt)
     (should (eq (char-after) ?1))))
 
 
