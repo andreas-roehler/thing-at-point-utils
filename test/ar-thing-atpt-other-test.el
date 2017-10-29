@@ -135,7 +135,7 @@ args = sys.argv"
       ";; (setq foo
 \"asdf\""
     (forward-char -1)
-    (should (eq 4 (length (ar-string-atpt t))))))
+    (should (eq 4 (length (ar-string-atpt '(4)))))))
 
 (ert-deftest ar-peel-list-atpt-test ()
     (ar-test-with-elisp-buffer-point-min
