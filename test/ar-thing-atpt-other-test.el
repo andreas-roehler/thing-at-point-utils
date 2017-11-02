@@ -313,6 +313,20 @@ return wwrap"
       (forward-char -2)
     (eq 4  (ar-count-parentized-in-doublequoted-until-point))))
 
+(ert-deftest ar-kill-doublequoted-test-1 ()
+  (ar-test-with-temp-buffer
+      "\"ssss\"a"
+      (forward-char -2)
+      (ar-kill-doublequoted-atpt)
+    (should (eq (char-after) ?a))))
+
+(ert-deftest ar-kill-doublequoted-test-2 ()
+  (ar-test-with-temp-buffer
+      "\"ssss\"a"
+      (forward-char -2)
+      (ar-doublequote-or-copy-atpt -1)
+    (should (eq (char-after) ?a))))
+
 ;; not implemented
 ;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
 ;;   (ar-test-with-temp-buffer "`asdf48'"
