@@ -19212,10 +19212,8 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: end
-
-
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backslash(s)
+  "If region is highlighted, provide THING at point with backslash(s),
 
   otherwise copy backslash(ed) at point.
   With NO-DELIMITERS, copy backslash(ed) without delimiters.
@@ -19224,7 +19222,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'backslash no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backtick(s)
+  "If region is highlighted, provide THING at point with backtick(s),
 
   otherwise copy backtick(ed) at point.
   With NO-DELIMITERS, copy backtick(ed) without delimiters.
@@ -19233,7 +19231,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'backtick no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-colon-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with colon(s)
+  "If region is highlighted, provide THING at point with colon(s),
 
   otherwise copy colon(ed) at point.
   With NO-DELIMITERS, copy colon(ed) without delimiters.
@@ -19242,7 +19240,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'colon no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-cross-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with cross(s)
+  "If region is highlighted, provide THING at point with cross(s),
 
   otherwise copy cross(ed) at point.
   With NO-DELIMITERS, copy cross(ed) without delimiters.
@@ -19251,7 +19249,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'cross no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with dollar(s)
+  "If region is highlighted, provide THING at point with dollar(s),
 
   otherwise copy dollar(ed) at point.
   With NO-DELIMITERS, copy dollar(ed) without delimiters.
@@ -19260,7 +19258,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'dollar no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doublequote(s)
+  "If region is highlighted, provide THING at point with doublequote(s),
 
   otherwise copy doublequote(ed) at point.
   With NO-DELIMITERS, copy doublequote(ed) without delimiters.
@@ -19269,7 +19267,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doublequote no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-equalize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with equalize(s)
+  "If region is highlighted, provide THING at point with equalize(s),
 
   otherwise copy equalize(ed) at point.
   With NO-DELIMITERS, copy equalize(ed) without delimiters.
@@ -19278,7 +19276,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'equalize no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-escape-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with escape(s)
+  "If region is highlighted, provide THING at point with escape(s),
 
   otherwise copy escape(ed) at point.
   With NO-DELIMITERS, copy escape(ed) without delimiters.
@@ -19287,7 +19285,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'escape no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-hash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hash(s)
+  "If region is highlighted, provide THING at point with hash(s),
 
   otherwise copy hash(ed) at point.
   With NO-DELIMITERS, copy hash(ed) without delimiters.
@@ -19296,7 +19294,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'hash no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-hyphen-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hyphen(s)
+  "If region is highlighted, provide THING at point with hyphen(s),
 
   otherwise copy hyphen(ed) at point.
   With NO-DELIMITERS, copy hyphen(ed) without delimiters.
@@ -19305,7 +19303,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'hyphen no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with singlequote(s)
+  "If region is highlighted, provide THING at point with singlequote(s),
 
   otherwise copy singlequote(ed) at point.
   With NO-DELIMITERS, copy singlequote(ed) without delimiters.
@@ -19314,7 +19312,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'singlequote no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-slash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with slash(s)
+  "If region is highlighted, provide THING at point with slash(s),
 
   otherwise copy slash(ed) at point.
   With NO-DELIMITERS, copy slash(ed) without delimiters.
@@ -19323,7 +19321,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'slash no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-star-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with star(s)
+  "If region is highlighted, provide THING at point with star(s),
 
   otherwise copy star(ed) at point.
   With NO-DELIMITERS, copy star(ed) without delimiters.
@@ -19332,7 +19330,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'star no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-tild-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with tild(s)
+  "If region is highlighted, provide THING at point with tild(s),
 
   otherwise copy tild(ed) at point.
   With NO-DELIMITERS, copy tild(ed) without delimiters.
@@ -19341,7 +19339,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'tild no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with underscore(s)
+  "If region is highlighted, provide THING at point with underscore(s),
 
   otherwise copy underscore(ed) at point.
   With NO-DELIMITERS, copy underscore(ed) without delimiters.
@@ -19350,7 +19348,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'underscore no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-whitespace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with whitespace(s)
+  "If region is highlighted, provide THING at point with whitespace(s),
 
   otherwise copy whitespace(ed) at point.
   With NO-DELIMITERS, copy whitespace(ed) without delimiters.
@@ -19359,160 +19357,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'whitespace no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doubleslash(s)
-
-  otherwise copy doubleslash(ed) at point.
-  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
-  With negative argument kill doubleslash(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backslash(s)
-
-  otherwise copy backslash(ed) at point.
-  With NO-DELIMITERS, copy backslash(ed) without delimiters.
-  With negative argument kill backslash(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'backslash no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backtick(s)
-
-  otherwise copy backtick(ed) at point.
-  With NO-DELIMITERS, copy backtick(ed) without delimiters.
-  With negative argument kill backtick(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'backtick no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-colon-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with colon(s)
-
-  otherwise copy colon(ed) at point.
-  With NO-DELIMITERS, copy colon(ed) without delimiters.
-  With negative argument kill colon(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'colon no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-cross-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with cross(s)
-
-  otherwise copy cross(ed) at point.
-  With NO-DELIMITERS, copy cross(ed) without delimiters.
-  With negative argument kill cross(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'cross no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with dollar(s)
-
-  otherwise copy dollar(ed) at point.
-  With NO-DELIMITERS, copy dollar(ed) without delimiters.
-  With negative argument kill dollar(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'dollar no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doublequote(s)
-
-  otherwise copy doublequote(ed) at point.
-  With NO-DELIMITERS, copy doublequote(ed) without delimiters.
-  With negative argument kill doublequote(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'doublequote no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-equalize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with equalize(s)
-
-  otherwise copy equalize(ed) at point.
-  With NO-DELIMITERS, copy equalize(ed) without delimiters.
-  With negative argument kill equalize(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'equalize no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-escape-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with escape(s)
-
-  otherwise copy escape(ed) at point.
-  With NO-DELIMITERS, copy escape(ed) without delimiters.
-  With negative argument kill escape(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'escape no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-hash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hash(s)
-
-  otherwise copy hash(ed) at point.
-  With NO-DELIMITERS, copy hash(ed) without delimiters.
-  With negative argument kill hash(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'hash no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-hyphen-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hyphen(s)
-
-  otherwise copy hyphen(ed) at point.
-  With NO-DELIMITERS, copy hyphen(ed) without delimiters.
-  With negative argument kill hyphen(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'hyphen no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with singlequote(s)
-
-  otherwise copy singlequote(ed) at point.
-  With NO-DELIMITERS, copy singlequote(ed) without delimiters.
-  With negative argument kill singlequote(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'singlequote no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-slash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with slash(s)
-
-  otherwise copy slash(ed) at point.
-  With NO-DELIMITERS, copy slash(ed) without delimiters.
-  With negative argument kill slash(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'slash no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-star-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with star(s)
-
-  otherwise copy star(ed) at point.
-  With NO-DELIMITERS, copy star(ed) without delimiters.
-  With negative argument kill star(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'star no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-tild-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with tild(s)
-
-  otherwise copy tild(ed) at point.
-  With NO-DELIMITERS, copy tild(ed) without delimiters.
-  With negative argument kill tild(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'tild no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with underscore(s)
-
-  otherwise copy underscore(ed) at point.
-  With NO-DELIMITERS, copy underscore(ed) without delimiters.
-  With negative argument kill underscore(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'underscore no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-whitespace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with whitespace(s)
-
-  otherwise copy whitespace(ed) at point.
-  With NO-DELIMITERS, copy whitespace(ed) without delimiters.
-  With negative argument kill whitespace(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'whitespace no-delimiters (called-interactively-p 'any) check))
-
-(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doubleslash(s)
+  "If region is highlighted, provide THING at point with doubleslash(s),
 
   otherwise copy doubleslash(ed) at point.
   With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
@@ -19521,7 +19366,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doubleslash no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-brace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with brace(s)
+  "If region is highlighted, provide THING at point with brace(s),
 
   otherwise copy brace(ed) at point.
   With NO-DELIMITERS, copy brace(ed) without delimiters.
@@ -19530,7 +19375,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'brace no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-bracket-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with bracket(s)
+  "If region is highlighted, provide THING at point with bracket(s),
 
   otherwise copy bracket(ed) at point.
   With NO-DELIMITERS, copy bracket(ed) without delimiters.
@@ -19539,7 +19384,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'bracket no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-lesserangle-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with lesserangle(s)
+  "If region is highlighted, provide THING at point with lesserangle(s),
 
   otherwise copy lesserangle(ed) at point.
   With NO-DELIMITERS, copy lesserangle(ed) without delimiters.
@@ -19548,7 +19393,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'lesserangle no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-greaterangle-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with greaterangle(s)
+  "If region is highlighted, provide THING at point with greaterangle(s),
 
   otherwise copy greaterangle(ed) at point.
   With NO-DELIMITERS, copy greaterangle(ed) without delimiters.
@@ -19557,7 +19402,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'greaterangle no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightsinglequote(s)
+  "If region is highlighted, provide THING at point with leftrightsinglequote(s),
 
   otherwise copy leftrightsinglequote(ed) at point.
   With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters.
@@ -19566,7 +19411,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'leftrightsinglequote no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-leftrightdoublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightdoublequote(s)
+  "If region is highlighted, provide THING at point with leftrightdoublequote(s),
 
   otherwise copy leftrightdoublequote(ed) at point.
   With NO-DELIMITERS, copy leftrightdoublequote(ed) without delimiters.
@@ -19575,7 +19420,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'leftrightdoublequote no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-parentize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with parentize(s)
+  "If region is highlighted, provide THING at point with parentize(s),
 
   otherwise copy parentize(ed) at point.
   With NO-DELIMITERS, copy parentize(ed) without delimiters.
@@ -19584,7 +19429,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'parentize no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with greateranglednested(s)
+  "If region is highlighted, provide THING at point with greateranglednested(s),
 
   otherwise copy greateranglednested(ed) at point.
   With NO-DELIMITERS, copy greateranglednested(ed) without delimiters.
@@ -19593,7 +19438,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'greateranglednested no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-lesseranglednested-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with lesseranglednested(s)
+  "If region is highlighted, provide THING at point with lesseranglednested(s),
 
   otherwise copy lesseranglednested(ed) at point.
   With NO-DELIMITERS, copy lesseranglednested(ed) without delimiters.
@@ -19602,7 +19447,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'lesseranglednested no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-buffer-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with buffer(s)
+  "If region is highlighted, provide THING at point with buffer(s),
 
   otherwise copy buffer(ed) at point.
   With NO-DELIMITERS, copy buffer(ed) without delimiters.
@@ -19611,7 +19456,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'buffer no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-comment-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with comment(s)
+  "If region is highlighted, provide THING at point with comment(s),
 
   otherwise copy comment(ed) at point.
   With NO-DELIMITERS, copy comment(ed) without delimiters.
@@ -19620,7 +19465,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'comment no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-csv-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with csv(s)
+  "If region is highlighted, provide THING at point with csv(s),
 
   otherwise copy csv(ed) at point.
   With NO-DELIMITERS, copy csv(ed) without delimiters.
@@ -19629,7 +19474,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'csv no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-date-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with date(s)
+  "If region is highlighted, provide THING at point with date(s),
 
   otherwise copy date(ed) at point.
   With NO-DELIMITERS, copy date(ed) without delimiters.
@@ -19638,7 +19483,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'date no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-email-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with email(s)
+  "If region is highlighted, provide THING at point with email(s),
 
   otherwise copy email(ed) at point.
   With NO-DELIMITERS, copy email(ed) without delimiters.
@@ -19647,7 +19492,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'email no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-filename-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with filename(s)
+  "If region is highlighted, provide THING at point with filename(s),
 
   otherwise copy filename(ed) at point.
   With NO-DELIMITERS, copy filename(ed) without delimiters.
@@ -19656,7 +19501,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'filename no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-filenamenondirectory-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with filenamenondirectory(s)
+  "If region is highlighted, provide THING at point with filenamenondirectory(s),
 
   otherwise copy filenamenondirectory(ed) at point.
   With NO-DELIMITERS, copy filenamenondirectory(ed) without delimiters.
@@ -19665,7 +19510,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'filenamenondirectory no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-float-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with float(s)
+  "If region is highlighted, provide THING at point with float(s),
 
   otherwise copy float(ed) at point.
   With NO-DELIMITERS, copy float(ed) without delimiters.
@@ -19674,7 +19519,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'float no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-function-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with function(s)
+  "If region is highlighted, provide THING at point with function(s),
 
   otherwise copy function(ed) at point.
   With NO-DELIMITERS, copy function(ed) without delimiters.
@@ -19683,7 +19528,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'function no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-ip-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with ip(s)
+  "If region is highlighted, provide THING at point with ip(s),
 
   otherwise copy ip(ed) at point.
   With NO-DELIMITERS, copy ip(ed) without delimiters.
@@ -19692,7 +19537,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'ip no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-isbn-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with isbn(s)
+  "If region is highlighted, provide THING at point with isbn(s),
 
   otherwise copy isbn(ed) at point.
   With NO-DELIMITERS, copy isbn(ed) without delimiters.
@@ -19701,7 +19546,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'isbn no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-line-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with line(s)
+  "If region is highlighted, provide THING at point with line(s),
 
   otherwise copy line(ed) at point.
   With NO-DELIMITERS, copy line(ed) without delimiters.
@@ -19710,7 +19555,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'line no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-list-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with list(s)
+  "If region is highlighted, provide THING at point with list(s),
 
   otherwise copy list(ed) at point.
   With NO-DELIMITERS, copy list(ed) without delimiters.
@@ -19719,7 +19564,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'list no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-name-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with name(s)
+  "If region is highlighted, provide THING at point with name(s),
 
   otherwise copy name(ed) at point.
   With NO-DELIMITERS, copy name(ed) without delimiters.
@@ -19728,7 +19573,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'name no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-number-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with number(s)
+  "If region is highlighted, provide THING at point with number(s),
 
   otherwise copy number(ed) at point.
   With NO-DELIMITERS, copy number(ed) without delimiters.
@@ -19737,7 +19582,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'number no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-page-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with page(s)
+  "If region is highlighted, provide THING at point with page(s),
 
   otherwise copy page(ed) at point.
   With NO-DELIMITERS, copy page(ed) without delimiters.
@@ -19746,7 +19591,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'page no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-paragraph-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with paragraph(s)
+  "If region is highlighted, provide THING at point with paragraph(s),
 
   otherwise copy paragraph(ed) at point.
   With NO-DELIMITERS, copy paragraph(ed) without delimiters.
@@ -19755,7 +19600,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'paragraph no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-phone-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with phone(s)
+  "If region is highlighted, provide THING at point with phone(s),
 
   otherwise copy phone(ed) at point.
   With NO-DELIMITERS, copy phone(ed) without delimiters.
@@ -19764,7 +19609,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'phone no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-region-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with region(s)
+  "If region is highlighted, provide THING at point with region(s),
 
   otherwise copy region(ed) at point.
   With NO-DELIMITERS, copy region(ed) without delimiters.
@@ -19773,7 +19618,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'region no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-sentence-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with sentence(s)
+  "If region is highlighted, provide THING at point with sentence(s),
 
   otherwise copy sentence(ed) at point.
   With NO-DELIMITERS, copy sentence(ed) without delimiters.
@@ -19782,7 +19627,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'sentence no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-sexp-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with sexp(s)
+  "If region is highlighted, provide THING at point with sexp(s),
 
   otherwise copy sexp(ed) at point.
   With NO-DELIMITERS, copy sexp(ed) without delimiters.
@@ -19791,7 +19636,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'sexp no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-shstruct-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with shstruct(s)
+  "If region is highlighted, provide THING at point with shstruct(s),
 
   otherwise copy shstruct(ed) at point.
   With NO-DELIMITERS, copy shstruct(ed) without delimiters.
@@ -19800,7 +19645,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'shstruct no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-symbol-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with symbol(s)
+  "If region is highlighted, provide THING at point with symbol(s),
 
   otherwise copy symbol(ed) at point.
   With NO-DELIMITERS, copy symbol(ed) without delimiters.
@@ -19809,7 +19654,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'symbol no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-url-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with url(s)
+  "If region is highlighted, provide THING at point with url(s),
 
   otherwise copy url(ed) at point.
   With NO-DELIMITERS, copy url(ed) without delimiters.
@@ -19818,7 +19663,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'url no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-word-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with word(s)
+  "If region is highlighted, provide THING at point with word(s),
 
   otherwise copy word(ed) at point.
   With NO-DELIMITERS, copy word(ed) without delimiters.
@@ -19827,13 +19672,15 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'word no-delimiters (called-interactively-p 'any) check))
 
 (defun ar-wordalphaonly-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with wordalphaonly(s)
+  "If region is highlighted, provide THING at point with wordalphaonly(s),
 
   otherwise copy wordalphaonly(ed) at point.
   With NO-DELIMITERS, copy wordalphaonly(ed) without delimiters.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "P")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters (called-interactively-p 'any) check))
+
+
 
 (defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
