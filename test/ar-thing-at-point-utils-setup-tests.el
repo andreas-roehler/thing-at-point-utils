@@ -29,6 +29,8 @@
 (defvar ar-debug-p nil
   "Switch into test-buffer.")
 
+;; (setq ar-debug-p t)
+
 (defmacro ar-test-with-temp-buffer (contents &rest body)
   "Create temp buffer inserting CONTENTS.
 BODY is code to be executed within the temp buffer.  Point is

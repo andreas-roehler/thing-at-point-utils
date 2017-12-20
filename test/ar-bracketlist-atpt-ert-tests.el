@@ -293,10 +293,13 @@
     (ar-left-trim-list-atpt)
     (should (eq (char-after) ?1))))
 
-;; (ert-deftest ar-scala-bracketlist-atpt-test-1 ()
-;;   (ar-test-with-scala-buffer-point-min
-;;       "  * [[http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html]] and"
-;;     (search-backward "B" nil t 1)
-;;     (should (eq 4  (length (ar-bracketed-atpt))))))
+(ert-deftest ar-double-bracketlist-atpt-test-1 ()
+  (ar-test-with-temp-buffer
+      "[[http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html]] and"
+      (search-backward "B" nil t 1)
+    (let* ((bounds (ar-bounds-of-bracketed-atpt))
+	   (beg (caar bounds))
+	   (end (cadr (cadr bounds))))
+      (should (eq 51 (- end beg))))))
 
 (provide 'ar-bracketlist-atpt-ert-tests)
