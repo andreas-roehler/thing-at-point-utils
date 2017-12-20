@@ -327,6 +327,16 @@ return wwrap"
       (ar-doublequote-or-copy-atpt -1)
     (should (eq (char-after) ?a))))
 
+
+(ert-deftest ar-ar-delimited2bracket-test-1 ()
+  (ar-test-with-temp-buffer
+      "(asdf)"
+      (forward-char -1)
+    (ar-delimited2bracketed-atpt)
+    (should (char-equal (char-after) ?\]))))
+
+
+
 ;; not implemented
 ;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
 ;;   (ar-test-with-temp-buffer "`asdf48'"

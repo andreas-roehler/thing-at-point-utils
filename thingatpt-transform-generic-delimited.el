@@ -26,7 +26,7 @@
 
 (defun ar--transform-generic-delimited-atpt (replacement)
   (interactive "*")
-  (let* ((bounds (ar-delimited-in-p-atpt))
+  (let* ((bounds (ar-bounds-of-delimited-atpt))
 	 ;; (startc (save-excursion (goto-char (car bounds))
 	 ;; 			 (char-after)))
 	 ;; (endc (save-excursion (goto-char (cdr bounds))
@@ -38,12 +38,15 @@
 		     (cdr replacement)
 		   replacement)))
     (save-excursion
-      (goto-char (car bounds))
+      (or (ignore-errors (goto-char (car bounds)))
+	  (goto-char (caar bounds)))
       (delete-char 1)
       (insert startnew)
-      (goto-char (cdr bounds))
-      (delete-char -1)
-      (insert endnew))))
+      (when (or
+	     (ignore-errors (goto-char (cdr bounds)))
+	     (goto-char (cdr (cadr bounds))))
+	(delete-char -1)
+	(insert endnew)))))
 
 (defun ar-delimited2backslashed-atpt ()
   (interactive "*")

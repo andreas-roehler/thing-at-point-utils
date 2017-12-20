@@ -26,6 +26,9 @@
 (defvar ar-switch-p nil
   "Switch into test-buffer.")
 
+(defvar ar-debug-p nil
+  "Switch into test-buffer.")
+
 (defmacro ar-test-with-temp-buffer (contents &rest body)
   "Create temp buffer inserting CONTENTS.
 BODY is code to be executed within the temp buffer.  Point is
@@ -113,10 +116,10 @@ BODY is code to be executed within the temp buffer.  Point is
        ,@body)))
 
 
-(defvar py-debug-p nil
+(defvar ar-debug-p nil
   "Avoid error")
 
-;; (setq py-debug-p t)
+;; (setq ar-debug-p t)
 
 (defvar py-kugel-text
 "class kugel(object):
@@ -218,7 +221,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (python-mode)
        (goto-char (point-min))
        ;; (message "(current-buffer): %s" (current-buffer))
-       (when py-debug-p (switch-to-buffer (current-buffer))
+       (when ar-debug-p (switch-to-buffer (current-buffer))
 	     (font-lock-fontify-buffer))
        ,@body)
      (sit-for 0.1)))
@@ -233,7 +236,42 @@ BODY is code to be executed within the temp buffer.  Point is
      (let (hs-minor-mode py--imenu-create-index-p)
        (insert ,contents)
        (python-mode)
-       (when py-debug-p (switch-to-buffer (current-buffer))
+       (when ar-debug-p (switch-to-buffer (current-buffer))
+	     (font-lock-fontify-buffer))
+       ;; (message "ERT %s" (point))
+       ,@body)
+     (sit-for 0.1)))
+
+(defmacro ar-test-with-scala-buffer-point-min (contents &rest body)
+  "Create temp buffer in `scala-mode' inserting CONTENTS.
+BODY is code to be executed within the temp buffer.  Point is
+ at the beginning of buffer."
+  (declare (indent 1) (debug t))
+  `(with-temp-buffer
+     ;; requires scala.el
+     ;; (and (featurep 'semantic) (unload-feature 'semantic))
+     ;; (and (featurep 'scala) (unload-feature 'scala))
+     (let (hs-minor-mode py--imenu-create-index-p)
+       (insert ,contents)
+       (scala-mode)
+       (goto-char (point-min))
+       ;; (message "(current-buffer): %s" (current-buffer))
+       (when ar-debug-p (switch-to-buffer (current-buffer))
+	     (font-lock-fontify-buffer))
+       ,@body)
+     (sit-for 0.1)))
+
+(defmacro ar-test-with-scala-buffer (contents &rest body)
+  "Create temp buffer in `scala-mode' inserting CONTENTS.
+BODY is code to be executed within the temp buffer.  Point is
+ at the end of buffer."
+  (declare (indent 1) (debug t))
+  `(with-temp-buffer
+     ;; (and (featurep 'scala) (unload-feature 'scala))
+     (let (hs-minor-mode py--imenu-create-index-p)
+       (insert ,contents)
+       (scala-mode)
+       (when ar-debug-p (switch-to-buffer (current-buffer))
 	     (font-lock-fontify-buffer))
        ;; (message "ERT %s" (point))
        ,@body)
@@ -282,7 +320,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (python-mode)
        (goto-char (point-min))
        ;; (message "(current-buffer): %s" (current-buffer))
-       (when py-debug-p (switch-to-buffer (current-buffer))
+       (when ar-debug-p (switch-to-buffer (current-buffer))
 	     (font-lock-fontify-buffer))
        ,@body)
      (sit-for 0.1)))
@@ -297,7 +335,7 @@ BODY is code to be executed within the temp buffer.  Point is
      (let (hs-minor-mode py--imenu-create-index-p)
        (insert ,contents)
        (python-mode)
-       (when py-debug-p (switch-to-buffer (current-buffer))
+       (when ar-debug-p (switch-to-buffer (current-buffer))
 	     (font-lock-fontify-buffer))
        ;; (message "ERT %s" (point))
        ,@body)
