@@ -77,6 +77,7 @@
       (load (expand-file-name "translate-paired-delimiters.el" source-directory))
       (load (expand-file-name "thing-at-point-peel.el" source-directory))
       (load (expand-file-name "thingatpt-count-ratio.el" source-directory))
+      (load (expand-file-name "thingatpt-transform-generic-delimited.el" source-directory))
       (load (expand-file-name "ar-thing-at-point-utils-setup-tests" current-dir))
       (dolist (test-file tests)
         (load (expand-file-name test-file current-dir))))

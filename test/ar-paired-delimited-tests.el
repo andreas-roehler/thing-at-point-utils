@@ -53,7 +53,7 @@
         (goto-char 7)
         (should (eq leftrightsinglequoted-laenge (length (ar-leftrightsinglequoted-atpt)))))))
       
-(ert-deftest ar-ar-parentized-atpt-test ()
+(ert-deftest ar-parentized-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
       (let ((parentized-laenge 21))

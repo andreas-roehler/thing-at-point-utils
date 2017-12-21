@@ -328,7 +328,7 @@ return wwrap"
     (should (eq (char-after) ?a))))
 
 
-(ert-deftest ar-ar-delimited2bracket-test-1 ()
+(ert-deftest ar-delimited2bracket-test-1 ()
   (ar-test-with-temp-buffer
       "(asdf)"
       (forward-char -1)
