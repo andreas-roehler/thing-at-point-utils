@@ -135,7 +135,7 @@
               (when (eq 4 (prefix-numeric-value delay)) (sit-for th-test-delay))))))
       ;;  don't work, bug?
       ;; (with-output-to-temp-buffer "mv-test-newlist"
-      (goto-outbuf outbuf (called-interactively-p 'any))
+      (goto-outbuf outbuf arg)
       (erase-buffer)
       (emacs-lisp-mode)
       ;; (when (eq 4 (prefix-numeric-value arg))
@@ -163,7 +163,6 @@
 (defun inaugurate-test-buf (test-buffer-name &optional vorlage iact)
   (let ((test-buffer-content (or vorlage ar-th-emacs-lisp-test-string)))
     (set-buffer (get-buffer-create test-buffer-name))
-    (when iact (switch-to-buffer (current-buffer)))
     (erase-buffer)
     (save-excursion
       (insert test-buffer-content))))
@@ -174,7 +173,6 @@
   (if (buffer-live-p outbuf)
       (set-buffer outbuf)
     (set-buffer (get-buffer-create outbuf)))
-  (when iact (switch-to-buffer (current-buffer)))
   (goto-char (point-max))
   (unless (empty-line-p) (newline)))
 
@@ -213,7 +211,7 @@
   (interactive "p")
   (let ((new-sort-test-assert-values ())
         (old-buf (current-buffer)))
-    (inaugurate-test-buf "sort-test-assertions" nil (called-interactively-p 'any))
+    (inaugurate-test-buf "sort-test-assertions" nil arg)
     (when arg (switch-to-buffer (current-buffer)))
     (narrow-to-defun)
     (mark-whole-buffer)

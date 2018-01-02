@@ -32,7 +32,7 @@
      ;;; \\ \\ Write 'etc. \" \\"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-backslashed-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -44,7 +44,7 @@
      ;;; ` ` Write 'etc. \" `"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-backticked-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -56,7 +56,7 @@
      ;;; : : Write 'etc. \" :"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-coloned-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -68,7 +68,7 @@
      ;;; \$ \$ Write 'etc. \" \$"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-dollared-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -80,7 +80,7 @@
      ;;; \" \" Write 'etc. \" \""
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-doublequoted-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -92,7 +92,7 @@
      ;;; = = Write 'etc. \" ="
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-equalized-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -104,7 +104,7 @@
      ;;; - - Write 'etc. \" -"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-hyphened-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -116,7 +116,7 @@
      ;;; ' ' Write 'etc. \" '"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-singlequoted-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -128,7 +128,7 @@
      ;;; / / Write 'etc. \" /"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-slashed-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -140,7 +140,7 @@
      ;;; \* \* Write 'etc. \" \*"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-stared-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -152,7 +152,7 @@
      ;;; _ _ Write 'etc. \" _"
       (text-mode)
     (beginning-of-line)
- 
+
     (let ((erg (ar-underscored-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
@@ -164,7 +164,7 @@
      ;;;     Write 'etc. \"  "
       (text-mode)
     (beginning-of-line)
-    (search-forward "rit") 
+    (search-forward "rit")
     (let ((erg (ar-whitespaced-atpt)))
       (should (< 2 (length erg))))
     (goto-char 22)
