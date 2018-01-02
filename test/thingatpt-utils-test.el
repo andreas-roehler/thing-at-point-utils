@@ -45,9 +45,9 @@
 
 (defun ar-th-emacs-lisp-comment-test (&optional arg)
   " "
-  (interactive)
+  (interactive "p")
   (ar-th-provide-test-buffer "emacs-lisp")
-  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+  (when arg (switch-to-buffer (current-buffer)))
   (emacs-lisp-mode)
   (goto-char 9)
   (ar-comment-or-uncomment-lor)
@@ -59,9 +59,9 @@
    (message "%s" "ar-th-emacs-lisp-comment-test passed")))
 
 (defun ar-th-html-comment-test (&optional arg)
-  (interactive)
+  (interactive "p")
   (ar-th-provide-test-buffer "html")
-  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+  (when arg (switch-to-buffer (current-buffer)))
   (goto-char (point-min)) 
   (search-forward "<!-- ") 
   (sgml-mode)
@@ -108,7 +108,7 @@
                     (setq item (concat (format "%s" (car item))" "(format "%s" (cdr item)))))
                 (insert (concat (format "%s: " elt) (format "%s \n" item)))))))))
     (set-buffer "th-test")
-    (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+    (when arg (switch-to-buffer (current-buffer)))
     (goto-char (point-min))
     (message "%s %s" "th-test finished." (time-stamp-string))))
 
@@ -142,7 +142,7 @@
       ;; (list-insert-assert neuliste mv-test-assert-values "th-mv-test"))
       ;; (message "%s" "Need a \"emacs-lisp-test\"-buffer, run th-delimtest before")))
       (set-buffer old-buf)
-      (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+      (when arg (switch-to-buffer (current-buffer)))
       (message "%s %s" "th-mv-test done" (time-stamp-string))))
 
 
@@ -179,7 +179,7 @@
   (unless (empty-line-p) (newline)))
 
 (defun mv-test-assertions (&optional mv-liste)
-  (interactive)
+  (interactive "p")
     (let ((liste (or mv-liste mv-liste (nreverse mv-test-assert-values))))
     (dolist (elt ar-atpt-mv-functionlist)
       (save-excursion (funcall elt)
@@ -191,11 +191,11 @@
   (interactive "*P")
   (let ((testlist (or liste ar-atpt-delim-test-list)))
     (ar-th-provide-test-buffer "emacs-lisp")
-    (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+    (when arg (switch-to-buffer (current-buffer)))
     (goto-char 9)
     (save-excursion
       (dolist (elt testlist)
-        (when (called-interactively-p 'any) (message "   %s" elt))
+        (when arg (message "   %s" elt))
         (save-excursion
           (let* ((command (format "%s" elt))
                  (point-max-orig (point-max))
@@ -230,7 +230,7 @@
     (message "   %s" "Test sort-test-assertions done!")))
 
 (defun ar-th-string-strip-test ()
-  (interactive)
+  (interactive "p")
   (let ((text " asdf "))
     (assert (eq 4 (length (strip text))))
     (assert (eq 5 (length (lstrip text))))
@@ -245,9 +245,9 @@
 
 
 (defun ar-th-forward-backward-test ()
-  (interactive)
+  (interactive "p")
   (ar-th-provide-test-buffer "html")
-  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+  (when arg (switch-to-buffer (current-buffer)))
   (goto-char 111)
   (assert (eq 119 (ar-forward-graph-atpt)))
   (assert (eq 169 (ar-forward-mlattribut-atpt)))
@@ -258,9 +258,9 @@
   (message "%s %s" "ar-th-forward-backward-test done" (time-stamp-string)))
 
 (defun ar-th-markup-test ()
-  (interactive)
+  (interactive "p")
   (ar-th-provide-test-buffer "html")
-  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+  (when arg (switch-to-buffer (current-buffer)))
   (goto-char (point-min)) 
   (search-forward ".org") 
   (ar-th-markup-attribut-test)
@@ -273,10 +273,10 @@
     (assert (not (string= "" att)))
     (assert (< (car bounds) (cdr bounds)))))
 
-(defun ar-th-delimit-tests ()
-  (interactive)
+(defun ar-th-delimit-tests (&optional arg) 
+  (interactive "p")
   (ar-th-provide-test-buffer "html")
-  (when (called-interactively-p 'any) (switch-to-buffer (current-buffer)))
+  (when arg (switch-to-buffer (current-buffer)))
   (goto-char 106)
   (let ((orig (copy-marker (point))))
     (ar-doublebackslashparen-alnum-atpt)
@@ -348,9 +348,9 @@ works on Emacs.
 (setq ar-atpt-delim-test-list '(ar-brace-alnum-atpt  ar-bracket-alnum-atpt  ar-lesserangle-alnum-atpt  ar-greaterangle-alnum-atpt  ar-leftrightsinglequote-alnum-atpt  ar-leftrightdoublequote-alnum-atpt  ar-parentize-alnum-atpt  ar-backslash-alnum-atpt  ar-backtick-alnum-atpt  ar-colon-alnum-atpt  ar-cross-alnum-atpt  ar-dollar-alnum-atpt  ar-doublequote-alnum-atpt  ar-equalize-alnum-atpt  ar-escape-alnum-atpt  ar-hash-alnum-atpt  ar-hyphen-alnum-atpt  ar-singlequote-alnum-atpt  ar-slash-alnum-atpt  ar-star-alnum-atpt  ar-tild-alnum-atpt  ar-underscore-alnum-atpt  ar-whitespace-alnum-atpt  ar-doubleslash-alnum-atpt  ar-brace-alpha-atpt  ar-bracket-alpha-atpt  ar-lesserangle-alpha-atpt  ar-greaterangle-alpha-atpt  ar-leftrightsinglequote-alpha-atpt  ar-leftrightdoublequote-alpha-atpt  ar-parentize-alpha-atpt  ar-backslash-alpha-atpt  ar-backtick-alpha-atpt  ar-colon-alpha-atpt  ar-cross-alpha-atpt  ar-dollar-alpha-atpt  ar-doublequote-alpha-atpt  ar-equalize-alpha-atpt  ar-escape-alpha-atpt  ar-hash-alpha-atpt  ar-hyphen-alpha-atpt  ar-singlequote-alpha-atpt  ar-slash-alpha-atpt  ar-star-alpha-atpt  ar-tild-alpha-atpt  ar-underscore-alpha-atpt  ar-whitespace-alpha-atpt  ar-doubleslash-alpha-atpt  ar-brace-ascii-atpt  ar-bracket-ascii-atpt  ar-lesserangle-ascii-atpt  ar-greaterangle-ascii-atpt  ar-leftrightsinglequote-ascii-atpt  ar-leftrightdoublequote-ascii-atpt  ar-parentize-ascii-atpt  ar-backslash-ascii-atpt  ar-backtick-ascii-atpt  ar-colon-ascii-atpt  ar-cross-ascii-atpt  ar-dollar-ascii-atpt  ar-doublequote-ascii-atpt  ar-equalize-ascii-atpt  ar-escape-ascii-atpt  ar-hash-ascii-atpt  ar-hyphen-ascii-atpt  ar-singlequote-ascii-atpt  ar-slash-ascii-atpt  ar-star-ascii-atpt  ar-tild-ascii-atpt  ar-underscore-ascii-atpt  ar-whitespace-ascii-atpt  ar-doubleslash-ascii-atpt  ar-brace-blank-atpt  ar-bracket-blank-atpt  ar-lesserangle-blank-atpt  ar-greaterangle-blank-atpt  ar-leftrightsinglequote-blank-atpt  ar-leftrightdoublequote-blank-atpt  ar-parentize-blank-atpt  ar-backslash-blank-atpt  ar-backtick-blank-atpt  ar-colon-blank-atpt  ar-cross-blank-atpt  ar-dollar-blank-atpt  ar-doublequote-blank-atpt  ar-equalize-blank-atpt  ar-escape-blank-atpt  ar-hash-blank-atpt  ar-hyphen-blank-atpt  ar-singlequote-blank-atpt  ar-slash-blank-atpt  ar-star-blank-atpt  ar-tild-blank-atpt  ar-underscore-blank-atpt  ar-whitespace-blank-atpt  ar-doubleslash-blank-atpt  ar-brace-cntrl-atpt  ar-bracket-cntrl-atpt  ar-lesserangle-cntrl-atpt  ar-greaterangle-cntrl-atpt  ar-leftrightsinglequote-cntrl-atpt  ar-leftrightdoublequote-cntrl-atpt  ar-parentize-cntrl-atpt  ar-backslash-cntrl-atpt  ar-backtick-cntrl-atpt  ar-colon-cntrl-atpt  ar-cross-cntrl-atpt  ar-dollar-cntrl-atpt  ar-doublequote-cntrl-atpt  ar-equalize-cntrl-atpt  ar-escape-cntrl-atpt  ar-hash-cntrl-atpt  ar-hyphen-cntrl-atpt  ar-singlequote-cntrl-atpt  ar-slash-cntrl-atpt  ar-star-cntrl-atpt  ar-tild-cntrl-atpt  ar-underscore-cntrl-atpt  ar-whitespace-cntrl-atpt  ar-doubleslash-cntrl-atpt  ar-brace-digit-atpt  ar-bracket-digit-atpt  ar-lesserangle-digit-atpt  ar-greaterangle-digit-atpt  ar-leftrightsinglequote-digit-atpt  ar-leftrightdoublequote-digit-atpt  ar-parentize-digit-atpt  ar-backslash-digit-atpt  ar-backtick-digit-atpt  ar-colon-digit-atpt  ar-cross-digit-atpt  ar-dollar-digit-atpt  ar-doublequote-digit-atpt  ar-equalize-digit-atpt  ar-escape-digit-atpt  ar-hash-digit-atpt  ar-hyphen-digit-atpt  ar-singlequote-digit-atpt  ar-slash-digit-atpt  ar-star-digit-atpt  ar-tild-digit-atpt  ar-underscore-digit-atpt  ar-whitespace-digit-atpt  ar-doubleslash-digit-atpt  ar-brace-graph-atpt  ar-bracket-graph-atpt  ar-lesserangle-graph-atpt  ar-greaterangle-graph-atpt  ar-leftrightsinglequote-graph-atpt  ar-leftrightdoublequote-graph-atpt  ar-parentize-graph-atpt  ar-backslash-graph-atpt  ar-backtick-graph-atpt  ar-colon-graph-atpt  ar-cross-graph-atpt  ar-dollar-graph-atpt  ar-doublequote-graph-atpt  ar-equalize-graph-atpt  ar-escape-graph-atpt  ar-hash-graph-atpt  ar-hyphen-graph-atpt  ar-singlequote-graph-atpt  ar-slash-graph-atpt  ar-star-graph-atpt  ar-tild-graph-atpt  ar-underscore-graph-atpt  ar-whitespace-graph-atpt  ar-doubleslash-graph-atpt  ar-brace-lower-atpt  ar-bracket-lower-atpt  ar-lesserangle-lower-atpt  ar-greaterangle-lower-atpt  ar-leftrightsinglequote-lower-atpt  ar-leftrightdoublequote-lower-atpt  ar-parentize-lower-atpt  ar-backslash-lower-atpt  ar-backtick-lower-atpt  ar-colon-lower-atpt  ar-cross-lower-atpt  ar-dollar-lower-atpt  ar-doublequote-lower-atpt  ar-equalize-lower-atpt  ar-escape-lower-atpt  ar-hash-lower-atpt  ar-hyphen-lower-atpt  ar-singlequote-lower-atpt  ar-slash-lower-atpt  ar-star-lower-atpt  ar-tild-lower-atpt  ar-underscore-lower-atpt  ar-whitespace-lower-atpt  ar-doubleslash-lower-atpt  ar-brace-nonascii-atpt  ar-bracket-nonascii-atpt  ar-lesserangle-nonascii-atpt  ar-greaterangle-nonascii-atpt  ar-leftrightsinglequote-nonascii-atpt  ar-leftrightdoublequote-nonascii-atpt  ar-parentize-nonascii-atpt  ar-backslash-nonascii-atpt  ar-backtick-nonascii-atpt  ar-colon-nonascii-atpt  ar-cross-nonascii-atpt  ar-dollar-nonascii-atpt  ar-doublequote-nonascii-atpt  ar-equalize-nonascii-atpt  ar-escape-nonascii-atpt  ar-hash-nonascii-atpt  ar-hyphen-nonascii-atpt  ar-singlequote-nonascii-atpt  ar-slash-nonascii-atpt  ar-star-nonascii-atpt  ar-tild-nonascii-atpt  ar-underscore-nonascii-atpt  ar-whitespace-nonascii-atpt  ar-doubleslash-nonascii-atpt  ar-brace-print-atpt  ar-bracket-print-atpt  ar-lesserangle-print-atpt  ar-greaterangle-print-atpt  ar-leftrightsinglequote-print-atpt  ar-leftrightdoublequote-print-atpt  ar-parentize-print-atpt  ar-backslash-print-atpt  ar-backtick-print-atpt  ar-colon-print-atpt  ar-cross-print-atpt  ar-dollar-print-atpt  ar-doublequote-print-atpt  ar-equalize-print-atpt  ar-escape-print-atpt  ar-hash-print-atpt  ar-hyphen-print-atpt  ar-singlequote-print-atpt  ar-slash-print-atpt  ar-star-print-atpt  ar-tild-print-atpt  ar-underscore-print-atpt  ar-whitespace-print-atpt  ar-doubleslash-print-atpt  ar-brace-punct-atpt  ar-bracket-punct-atpt  ar-lesserangle-punct-atpt  ar-greaterangle-punct-atpt  ar-leftrightsinglequote-punct-atpt  ar-leftrightdoublequote-punct-atpt  ar-parentize-punct-atpt  ar-backslash-punct-atpt  ar-backtick-punct-atpt  ar-colon-punct-atpt  ar-cross-punct-atpt  ar-dollar-punct-atpt  ar-doublequote-punct-atpt  ar-equalize-punct-atpt  ar-escape-punct-atpt  ar-hash-punct-atpt  ar-hyphen-punct-atpt  ar-singlequote-punct-atpt  ar-slash-punct-atpt  ar-star-punct-atpt  ar-tild-punct-atpt  ar-underscore-punct-atpt  ar-whitespace-punct-atpt  ar-doubleslash-punct-atpt  ar-brace-space-atpt  ar-bracket-space-atpt  ar-lesserangle-space-atpt  ar-greaterangle-space-atpt  ar-leftrightsinglequote-space-atpt  ar-leftrightdoublequote-space-atpt  ar-parentize-space-atpt  ar-backslash-space-atpt  ar-backtick-space-atpt  ar-colon-space-atpt  ar-cross-space-atpt  ar-dollar-space-atpt  ar-doublequote-space-atpt  ar-equalize-space-atpt  ar-escape-space-atpt  ar-hash-space-atpt  ar-hyphen-space-atpt  ar-singlequote-space-atpt  ar-slash-space-atpt  ar-star-space-atpt  ar-tild-space-atpt  ar-underscore-space-atpt  ar-whitespace-space-atpt  ar-doubleslash-space-atpt  ar-brace-upper-atpt  ar-bracket-upper-atpt  ar-lesserangle-upper-atpt  ar-greaterangle-upper-atpt  ar-leftrightsinglequote-upper-atpt  ar-leftrightdoublequote-upper-atpt  ar-parentize-upper-atpt  ar-backslash-upper-atpt  ar-backtick-upper-atpt  ar-colon-upper-atpt  ar-cross-upper-atpt  ar-dollar-upper-atpt  ar-doublequote-upper-atpt  ar-equalize-upper-atpt  ar-escape-upper-atpt  ar-hash-upper-atpt  ar-hyphen-upper-atpt  ar-singlequote-upper-atpt  ar-slash-upper-atpt  ar-star-upper-atpt  ar-tild-upper-atpt  ar-underscore-upper-atpt  ar-whitespace-upper-atpt  ar-doubleslash-upper-atpt  ar-brace-xdigit-atpt  ar-bracket-xdigit-atpt  ar-lesserangle-xdigit-atpt  ar-greaterangle-xdigit-atpt  ar-leftrightsinglequote-xdigit-atpt  ar-leftrightdoublequote-xdigit-atpt  ar-parentize-xdigit-atpt  ar-backslash-xdigit-atpt  ar-backtick-xdigit-atpt  ar-colon-xdigit-atpt  ar-cross-xdigit-atpt  ar-dollar-xdigit-atpt  ar-doublequote-xdigit-atpt  ar-equalize-xdigit-atpt  ar-escape-xdigit-atpt  ar-hash-xdigit-atpt  ar-hyphen-xdigit-atpt  ar-singlequote-xdigit-atpt  ar-slash-xdigit-atpt  ar-star-xdigit-atpt  ar-tild-xdigit-atpt  ar-underscore-xdigit-atpt  ar-whitespace-xdigit-atpt  ar-doubleslash-xdigit-atpt  ar-brace-braced-atpt  ar-bracket-braced-atpt  ar-lesserangle-braced-atpt  ar-greaterangle-braced-atpt  ar-leftrightsinglequote-braced-atpt  ar-leftrightdoublequote-braced-atpt  ar-parentize-braced-atpt  ar-backslash-braced-atpt  ar-backtick-braced-atpt  ar-colon-braced-atpt  ar-cross-braced-atpt  ar-dollar-braced-atpt  ar-doublequote-braced-atpt  ar-equalize-braced-atpt  ar-escape-braced-atpt  ar-hash-braced-atpt  ar-hyphen-braced-atpt  ar-singlequote-braced-atpt  ar-slash-braced-atpt  ar-star-braced-atpt  ar-tild-braced-atpt  ar-underscore-braced-atpt  ar-whitespace-braced-atpt  ar-doubleslash-braced-atpt  ar-brace-bracketed-atpt  ar-bracket-bracketed-atpt  ar-lesserangle-bracketed-atpt  ar-greaterangle-bracketed-atpt  ar-leftrightsinglequote-bracketed-atpt  ar-leftrightdoublequote-bracketed-atpt  ar-parentize-bracketed-atpt  ar-backslash-bracketed-atpt  ar-backtick-bracketed-atpt  ar-colon-bracketed-atpt  ar-cross-bracketed-atpt  ar-dollar-bracketed-atpt  ar-doublequote-bracketed-atpt  ar-equalize-bracketed-atpt  ar-escape-bracketed-atpt  ar-hash-bracketed-atpt  ar-hyphen-bracketed-atpt  ar-singlequote-bracketed-atpt  ar-slash-bracketed-atpt  ar-star-bracketed-atpt  ar-tild-bracketed-atpt  ar-underscore-bracketed-atpt  ar-whitespace-bracketed-atpt  ar-doubleslash-bracketed-atpt  ar-brace-lesserangled-atpt  ar-bracket-lesserangled-atpt  ar-lesserangle-lesserangled-atpt  ar-greaterangle-lesserangled-atpt  ar-leftrightsinglequote-lesserangled-atpt  ar-leftrightdoublequote-lesserangled-atpt  ar-parentize-lesserangled-atpt  ar-backslash-lesserangled-atpt  ar-backtick-lesserangled-atpt  ar-colon-lesserangled-atpt  ar-cross-lesserangled-atpt  ar-dollar-lesserangled-atpt  ar-doublequote-lesserangled-atpt  ar-equalize-lesserangled-atpt  ar-escape-lesserangled-atpt  ar-hash-lesserangled-atpt  ar-hyphen-lesserangled-atpt  ar-singlequote-lesserangled-atpt  ar-slash-lesserangled-atpt  ar-star-lesserangled-atpt  ar-tild-lesserangled-atpt  ar-underscore-lesserangled-atpt  ar-whitespace-lesserangled-atpt  ar-doubleslash-lesserangled-atpt  ar-brace-greaterangled-atpt  ar-bracket-greaterangled-atpt  ar-lesserangle-greaterangled-atpt  ar-greaterangle-greaterangled-atpt  ar-leftrightsinglequote-greaterangled-atpt  ar-leftrightdoublequote-greaterangled-atpt  ar-parentize-greaterangled-atpt  ar-backslash-greaterangled-atpt  ar-backtick-greaterangled-atpt  ar-colon-greaterangled-atpt  ar-cross-greaterangled-atpt  ar-dollar-greaterangled-atpt  ar-doublequote-greaterangled-atpt  ar-equalize-greaterangled-atpt  ar-escape-greaterangled-atpt  ar-hash-greaterangled-atpt  ar-hyphen-greaterangled-atpt  ar-singlequote-greaterangled-atpt  ar-slash-greaterangled-atpt  ar-star-greaterangled-atpt  ar-tild-greaterangled-atpt  ar-underscore-greaterangled-atpt  ar-whitespace-greaterangled-atpt  ar-doubleslash-greaterangled-atpt  ar-brace-leftrightsinglequoted-atpt  ar-bracket-leftrightsinglequoted-atpt  ar-lesserangle-leftrightsinglequoted-atpt  ar-greaterangle-leftrightsinglequoted-atpt  ar-leftrightsinglequote-leftrightsinglequoted-atpt  ar-leftrightdoublequote-leftrightsinglequoted-atpt  ar-parentize-leftrightsinglequoted-atpt  ar-backslash-leftrightsinglequoted-atpt  ar-backtick-leftrightsinglequoted-atpt  ar-colon-leftrightsinglequoted-atpt  ar-cross-leftrightsinglequoted-atpt  ar-dollar-leftrightsinglequoted-atpt  ar-doublequote-leftrightsinglequoted-atpt  ar-equalize-leftrightsinglequoted-atpt  ar-escape-leftrightsinglequoted-atpt  ar-hash-leftrightsinglequoted-atpt  ar-hyphen-leftrightsinglequoted-atpt  ar-singlequote-leftrightsinglequoted-atpt  ar-slash-leftrightsinglequoted-atpt  ar-star-leftrightsinglequoted-atpt  ar-tild-leftrightsinglequoted-atpt  ar-underscore-leftrightsinglequoted-atpt  ar-whitespace-leftrightsinglequoted-atpt  ar-doubleslash-leftrightsinglequoted-atpt  ar-brace-leftrightdoublequoted-atpt  ar-bracket-leftrightdoublequoted-atpt  ar-lesserangle-leftrightdoublequoted-atpt  ar-greaterangle-leftrightdoublequoted-atpt  ar-leftrightsinglequote-leftrightdoublequoted-atpt  ar-leftrightdoublequote-leftrightdoublequoted-atpt  ar-parentize-leftrightdoublequoted-atpt  ar-backslash-leftrightdoublequoted-atpt  ar-backtick-leftrightdoublequoted-atpt  ar-colon-leftrightdoublequoted-atpt  ar-cross-leftrightdoublequoted-atpt  ar-dollar-leftrightdoublequoted-atpt  ar-doublequote-leftrightdoublequoted-atpt  ar-equalize-leftrightdoublequoted-atpt  ar-escape-leftrightdoublequoted-atpt  ar-hash-leftrightdoublequoted-atpt  ar-hyphen-leftrightdoublequoted-atpt  ar-singlequote-leftrightdoublequoted-atpt  ar-slash-leftrightdoublequoted-atpt  ar-star-leftrightdoublequoted-atpt  ar-tild-leftrightdoublequoted-atpt  ar-underscore-leftrightdoublequoted-atpt  ar-whitespace-leftrightdoublequoted-atpt  ar-doubleslash-leftrightdoublequoted-atpt  ar-brace-parentized-atpt  ar-bracket-parentized-atpt  ar-lesserangle-parentized-atpt  ar-greaterangle-parentized-atpt  ar-leftrightsinglequote-parentized-atpt  ar-leftrightdoublequote-parentized-atpt  ar-parentize-parentized-atpt  ar-backslash-parentized-atpt  ar-backtick-parentized-atpt  ar-colon-parentized-atpt  ar-cross-parentized-atpt  ar-dollar-parentized-atpt  ar-doublequote-parentized-atpt  ar-equalize-parentized-atpt  ar-escape-parentized-atpt  ar-hash-parentized-atpt  ar-hyphen-parentized-atpt  ar-singlequote-parentized-atpt  ar-slash-parentized-atpt  ar-star-parentized-atpt  ar-tild-parentized-atpt  ar-underscore-parentized-atpt  ar-whitespace-parentized-atpt  ar-doubleslash-parentized-atpt  ))
 ;; ar-th-emacs-lisp-test-string start
 (setq ar-th-emacs-lisp-test-string "
-\(defun foo1 (&optional beg end)
+\(defun foo1 (&optional arg beg end)
   \" \"
-  (interactive \"\*\")
+  (interactive \"\*p\")
   (let ((beg (cond (beg beg)
 		   ((use-region-p)
 		    (region-beginning))
@@ -361,11 +361,11 @@ works on Emacs.
 		   (t (copy-marker (point-max))))))
     (save-excursion
       (goto-char beg))
-    (when (called-interactively-p 'any) (message \"%s %s\" beg end))))
+    (when arg (message \"%s %s\" beg end))))
 
-\(defun foo2 (&optional beg end)
+\(defun foo2 (&optional arg beg end)
   \" \"
-  (interactive \"\*\")
+  (interactive \"\*p\")
   (let ((beg (cond (beg beg)
 		   ((use-region-p)
 		    (region-beginning))
@@ -376,11 +376,11 @@ works on Emacs.
 		   (t (copy-marker (point-max))))))
     (save-excursion
       (goto-char beg))
-    (when (called-interactively-p 'any) (message \"%s %s\" beg end))))
+    (when arg (message \"%s %s\" beg end))))
 
-\(defun foo3 (&optional beg end)
+\(defun foo3 (&optional arg beg end)
   \" \"
-  (interactive \"\*\")
+  (interactive \"\*p\")
   (let ((beg (cond (beg beg)
 		   ((use-region-p)
 		    (region-beginning))
@@ -391,7 +391,7 @@ works on Emacs.
 		   (t (copy-marker (point-max))))))
     (save-excursion
       (goto-char beg))
-    (when (called-interactively-p 'any) (message \"%s %s\" beg end))))")
+    (when arg (message \"%s %s\" beg end))))")
 ;; ar-th-emacs-lisp-test-string end
 (setq mv-test-assert-values '(343 459 343 494 343 350 337 351 1 826 1 1723 1 1723 1 1723 342 346 343 365 322 360 79 484 342 352 341 347 342 346 1 1722 1 1723 80 458 1 528 1 485 218 390 292 348 1 1722 1 1722 337 351 1 1723 332 432 343 494 282 348 1 528 1 1723 1 1723 80 483 1 1281 1 459 342 346 1 1723 322 360 338 350 1 459 342 353 1 1281 337 351 1 1723 1 1723 1 529 215 351 214 356 204 356 79 484 333 364 1 1722 330 365 332 421 332 366 343 494 343 459))
 
