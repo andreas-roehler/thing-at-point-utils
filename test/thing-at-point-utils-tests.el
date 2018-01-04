@@ -1,6 +1,6 @@
 ;;; thing-at-point-utils-tests.el --- -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2014-2017  Andreas Roehler
+;; Copyright (C) 2014-2018  Andreas Roehler
 
 ;; Author: Andreas Roehler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp

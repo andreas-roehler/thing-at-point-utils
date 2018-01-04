@@ -1,6 +1,6 @@
 ;;; thing-at-point-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2017 Andreas Röhler, unless
+;; Copyright (C) 2010-2018 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
@@ -4171,9 +4171,11 @@
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: start
 
 (defun ar-alnum-atpt (&optional arg) 
-  "Returns alnum at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'alnum nil))
+  "Returns alnum at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'alnum arg))
 
 (defun ar-bounds-of-alnum-atpt (&optional arg)
   "Returns a list, borders of alnum if any, nil otherwise. "
@@ -4259,13 +4261,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-alnum-in-region (beg end)
   "Deletes ALNUM at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'alnum beg end))
 
 (defun ar-alpha-atpt (&optional arg) 
-  "Returns alpha at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'alpha nil))
+  "Returns alpha at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'alpha arg))
 
 (defun ar-bounds-of-alpha-atpt (&optional arg)
   "Returns a list, borders of alpha if any, nil otherwise. "
@@ -4351,13 +4355,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-alpha-in-region (beg end)
   "Deletes ALPHA at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'alpha beg end))
 
 (defun ar-ascii-atpt (&optional arg) 
-  "Returns ascii at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'ascii nil))
+  "Returns ascii at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'ascii arg))
 
 (defun ar-bounds-of-ascii-atpt (&optional arg)
   "Returns a list, borders of ascii if any, nil otherwise. "
@@ -4443,13 +4449,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-ascii-in-region (beg end)
   "Deletes ASCII at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'ascii beg end))
 
 (defun ar-blank-atpt (&optional arg) 
-  "Returns blank at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'blank nil))
+  "Returns blank at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'blank arg))
 
 (defun ar-bounds-of-blank-atpt (&optional arg)
   "Returns a list, borders of blank if any, nil otherwise. "
@@ -4535,13 +4543,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-blank-in-region (beg end)
   "Deletes BLANK at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'blank beg end))
 
 (defun ar-cntrl-atpt (&optional arg) 
-  "Returns cntrl at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'cntrl nil))
+  "Returns cntrl at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'cntrl arg))
 
 (defun ar-bounds-of-cntrl-atpt (&optional arg)
   "Returns a list, borders of cntrl if any, nil otherwise. "
@@ -4627,13 +4637,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-cntrl-in-region (beg end)
   "Deletes CNTRL at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'cntrl beg end))
 
 (defun ar-digit-atpt (&optional arg) 
-  "Returns digit at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'digit nil))
+  "Returns digit at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'digit arg))
 
 (defun ar-bounds-of-digit-atpt (&optional arg)
   "Returns a list, borders of digit if any, nil otherwise. "
@@ -4719,13 +4731,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-digit-in-region (beg end)
   "Deletes DIGIT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'digit beg end))
 
 (defun ar-graph-atpt (&optional arg) 
-  "Returns graph at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'graph nil))
+  "Returns graph at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'graph arg))
 
 (defun ar-bounds-of-graph-atpt (&optional arg)
   "Returns a list, borders of graph if any, nil otherwise. "
@@ -4811,13 +4825,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-graph-in-region (beg end)
   "Deletes GRAPH at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'graph beg end))
 
 (defun ar-lower-atpt (&optional arg) 
-  "Returns lower at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'lower nil))
+  "Returns lower at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'lower arg))
 
 (defun ar-bounds-of-lower-atpt (&optional arg)
   "Returns a list, borders of lower if any, nil otherwise. "
@@ -4903,13 +4919,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-lower-in-region (beg end)
   "Deletes LOWER at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'lower beg end))
 
 (defun ar-nonascii-atpt (&optional arg) 
-  "Returns nonascii at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'nonascii nil))
+  "Returns nonascii at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'nonascii arg))
 
 (defun ar-bounds-of-nonascii-atpt (&optional arg)
   "Returns a list, borders of nonascii if any, nil otherwise. "
@@ -4995,13 +5013,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-nonascii-in-region (beg end)
   "Deletes NONASCII at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'nonascii beg end))
 
 (defun ar-print-atpt (&optional arg) 
-  "Returns print at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'print nil))
+  "Returns print at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'print arg))
 
 (defun ar-bounds-of-print-atpt (&optional arg)
   "Returns a list, borders of print if any, nil otherwise. "
@@ -5087,13 +5107,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-print-in-region (beg end)
   "Deletes PRINT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'print beg end))
 
 (defun ar-punct-atpt (&optional arg) 
-  "Returns punct at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'punct nil))
+  "Returns punct at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'punct arg))
 
 (defun ar-bounds-of-punct-atpt (&optional arg)
   "Returns a list, borders of punct if any, nil otherwise. "
@@ -5179,13 +5201,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-punct-in-region (beg end)
   "Deletes PUNCT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'punct beg end))
 
 (defun ar-space-atpt (&optional arg) 
-  "Returns space at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'space nil))
+  "Returns space at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'space arg))
 
 (defun ar-bounds-of-space-atpt (&optional arg)
   "Returns a list, borders of space if any, nil otherwise. "
@@ -5271,13 +5295,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-space-in-region (beg end)
   "Deletes SPACE at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'space beg end))
 
 (defun ar-upper-atpt (&optional arg) 
-  "Returns upper at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'upper nil))
+  "Returns upper at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'upper arg))
 
 (defun ar-bounds-of-upper-atpt (&optional arg)
   "Returns a list, borders of upper if any, nil otherwise. "
@@ -5363,13 +5389,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-upper-in-region (beg end)
   "Deletes UPPER at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'upper beg end))
 
 (defun ar-xdigit-atpt (&optional arg) 
-  "Returns xdigit at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'xdigit nil))
+  "Returns xdigit at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'xdigit arg))
 
 (defun ar-bounds-of-xdigit-atpt (&optional arg)
   "Returns a list, borders of xdigit if any, nil otherwise. "
@@ -5455,15 +5483,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-xdigit-in-region (beg end)
   "Deletes XDIGIT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'xdigit beg end))
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: end
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list: start
 
 (defun ar-greateranglednested-atpt (&optional arg) 
-  "Returns greateranglednested at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'greateranglednested nil))
+  "Returns greateranglednested at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'greateranglednested arg))
 
 (defun ar-bounds-of-greateranglednested-atpt (&optional arg)
   "Returns a list, borders of greateranglednested if any, nil otherwise. "
@@ -5549,13 +5579,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-greateranglednested-in-region (beg end)
   "Deletes GREATERANGLEDNESTED at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'greateranglednested beg end))
 
 (defun ar-lesseranglednested-atpt (&optional arg) 
-  "Returns lesseranglednested at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'lesseranglednested nil))
+  "Returns lesseranglednested at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'lesseranglednested arg))
 
 (defun ar-bounds-of-lesseranglednested-atpt (&optional arg)
   "Returns a list, borders of lesseranglednested if any, nil otherwise. "
@@ -5641,13 +5673,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-lesseranglednested-in-region (beg end)
   "Deletes LESSERANGLEDNESTED at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'lesseranglednested beg end))
 
 (defun ar-buffer-atpt (&optional arg) 
-  "Returns buffer at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'buffer nil))
+  "Returns buffer at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'buffer arg))
 
 (defun ar-bounds-of-buffer-atpt (&optional arg)
   "Returns a list, borders of buffer if any, nil otherwise. "
@@ -5733,13 +5767,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-buffer-in-region (beg end)
   "Deletes BUFFER at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'buffer beg end))
 
 (defun ar-comment-atpt (&optional arg) 
-  "Returns comment at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'comment nil))
+  "Returns comment at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'comment arg))
 
 (defun ar-bounds-of-comment-atpt (&optional arg)
   "Returns a list, borders of comment if any, nil otherwise. "
@@ -5825,13 +5861,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-comment-in-region (beg end)
   "Deletes COMMENT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'comment beg end))
 
 (defun ar-csv-atpt (&optional arg) 
-  "Returns csv at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'csv nil))
+  "Returns csv at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'csv arg))
 
 (defun ar-bounds-of-csv-atpt (&optional arg)
   "Returns a list, borders of csv if any, nil otherwise. "
@@ -5917,13 +5955,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-csv-in-region (beg end)
   "Deletes CSV at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'csv beg end))
 
 (defun ar-date-atpt (&optional arg) 
-  "Returns date at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'date nil))
+  "Returns date at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'date arg))
 
 (defun ar-bounds-of-date-atpt (&optional arg)
   "Returns a list, borders of date if any, nil otherwise. "
@@ -6009,13 +6049,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-date-in-region (beg end)
   "Deletes DATE at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'date beg end))
 
 (defun ar-email-atpt (&optional arg) 
-  "Returns email at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'email nil))
+  "Returns email at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'email arg))
 
 (defun ar-bounds-of-email-atpt (&optional arg)
   "Returns a list, borders of email if any, nil otherwise. "
@@ -6101,13 +6143,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-email-in-region (beg end)
   "Deletes EMAIL at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'email beg end))
 
 (defun ar-filename-atpt (&optional arg) 
-  "Returns filename at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'filename nil))
+  "Returns filename at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'filename arg))
 
 (defun ar-bounds-of-filename-atpt (&optional arg)
   "Returns a list, borders of filename if any, nil otherwise. "
@@ -6193,13 +6237,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-filename-in-region (beg end)
   "Deletes FILENAME at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'filename beg end))
 
 (defun ar-filenamenondirectory-atpt (&optional arg) 
-  "Returns filenamenondirectory at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'filenamenondirectory nil))
+  "Returns filenamenondirectory at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'filenamenondirectory arg))
 
 (defun ar-bounds-of-filenamenondirectory-atpt (&optional arg)
   "Returns a list, borders of filenamenondirectory if any, nil otherwise. "
@@ -6285,13 +6331,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-filenamenondirectory-in-region (beg end)
   "Deletes FILENAMENONDIRECTORY at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'filenamenondirectory beg end))
 
 (defun ar-float-atpt (&optional arg) 
-  "Returns float at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'float nil))
+  "Returns float at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'float arg))
 
 (defun ar-bounds-of-float-atpt (&optional arg)
   "Returns a list, borders of float if any, nil otherwise. "
@@ -6377,13 +6425,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-float-in-region (beg end)
   "Deletes FLOAT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'float beg end))
 
 (defun ar-function-atpt (&optional arg) 
-  "Returns function at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'function nil))
+  "Returns function at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'function arg))
 
 (defun ar-bounds-of-function-atpt (&optional arg)
   "Returns a list, borders of function if any, nil otherwise. "
@@ -6469,13 +6519,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-function-in-region (beg end)
   "Deletes FUNCTION at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'function beg end))
 
 (defun ar-ip-atpt (&optional arg) 
-  "Returns ip at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'ip nil))
+  "Returns ip at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'ip arg))
 
 (defun ar-bounds-of-ip-atpt (&optional arg)
   "Returns a list, borders of ip if any, nil otherwise. "
@@ -6561,13 +6613,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-ip-in-region (beg end)
   "Deletes IP at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'ip beg end))
 
 (defun ar-isbn-atpt (&optional arg) 
-  "Returns isbn at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'isbn nil))
+  "Returns isbn at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'isbn arg))
 
 (defun ar-bounds-of-isbn-atpt (&optional arg)
   "Returns a list, borders of isbn if any, nil otherwise. "
@@ -6653,13 +6707,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-isbn-in-region (beg end)
   "Deletes ISBN at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'isbn beg end))
 
 (defun ar-line-atpt (&optional arg) 
-  "Returns line at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'line nil))
+  "Returns line at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'line arg))
 
 (defun ar-bounds-of-line-atpt (&optional arg)
   "Returns a list, borders of line if any, nil otherwise. "
@@ -6745,13 +6801,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-line-in-region (beg end)
   "Deletes LINE at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'line beg end))
 
 (defun ar-list-atpt (&optional arg) 
-  "Returns list at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'list nil))
+  "Returns list at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'list arg))
 
 (defun ar-bounds-of-list-atpt (&optional arg)
   "Returns a list, borders of list if any, nil otherwise. "
@@ -6837,13 +6895,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-list-in-region (beg end)
   "Deletes LIST at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'list beg end))
 
 (defun ar-name-atpt (&optional arg) 
-  "Returns name at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'name nil))
+  "Returns name at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'name arg))
 
 (defun ar-bounds-of-name-atpt (&optional arg)
   "Returns a list, borders of name if any, nil otherwise. "
@@ -6929,13 +6989,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-name-in-region (beg end)
   "Deletes NAME at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'name beg end))
 
 (defun ar-number-atpt (&optional arg) 
-  "Returns number at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'number nil))
+  "Returns number at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'number arg))
 
 (defun ar-bounds-of-number-atpt (&optional arg)
   "Returns a list, borders of number if any, nil otherwise. "
@@ -7021,13 +7083,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-number-in-region (beg end)
   "Deletes NUMBER at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'number beg end))
 
 (defun ar-page-atpt (&optional arg) 
-  "Returns page at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'page nil))
+  "Returns page at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'page arg))
 
 (defun ar-bounds-of-page-atpt (&optional arg)
   "Returns a list, borders of page if any, nil otherwise. "
@@ -7113,13 +7177,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-page-in-region (beg end)
   "Deletes PAGE at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'page beg end))
 
 (defun ar-paragraph-atpt (&optional arg) 
-  "Returns paragraph at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'paragraph nil))
+  "Returns paragraph at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'paragraph arg))
 
 (defun ar-bounds-of-paragraph-atpt (&optional arg)
   "Returns a list, borders of paragraph if any, nil otherwise. "
@@ -7205,13 +7271,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-paragraph-in-region (beg end)
   "Deletes PARAGRAPH at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'paragraph beg end))
 
 (defun ar-phone-atpt (&optional arg) 
-  "Returns phone at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'phone nil))
+  "Returns phone at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'phone arg))
 
 (defun ar-bounds-of-phone-atpt (&optional arg)
   "Returns a list, borders of phone if any, nil otherwise. "
@@ -7297,13 +7365,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-phone-in-region (beg end)
   "Deletes PHONE at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'phone beg end))
 
 (defun ar-region-atpt (&optional arg) 
-  "Returns region at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'region nil))
+  "Returns region at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'region arg))
 
 (defun ar-bounds-of-region-atpt (&optional arg)
   "Returns a list, borders of region if any, nil otherwise. "
@@ -7389,13 +7459,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-region-in-region (beg end)
   "Deletes REGION at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'region beg end))
 
 (defun ar-sentence-atpt (&optional arg) 
-  "Returns sentence at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'sentence nil))
+  "Returns sentence at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'sentence arg))
 
 (defun ar-bounds-of-sentence-atpt (&optional arg)
   "Returns a list, borders of sentence if any, nil otherwise. "
@@ -7481,13 +7553,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-sentence-in-region (beg end)
   "Deletes SENTENCE at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'sentence beg end))
 
 (defun ar-sexp-atpt (&optional arg) 
-  "Returns sexp at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'sexp nil))
+  "Returns sexp at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'sexp arg))
 
 (defun ar-bounds-of-sexp-atpt (&optional arg)
   "Returns a list, borders of sexp if any, nil otherwise. "
@@ -7573,13 +7647,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-sexp-in-region (beg end)
   "Deletes SEXP at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'sexp beg end))
 
 (defun ar-shstruct-atpt (&optional arg) 
-  "Returns shstruct at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'shstruct nil))
+  "Returns shstruct at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'shstruct arg))
 
 (defun ar-bounds-of-shstruct-atpt (&optional arg)
   "Returns a list, borders of shstruct if any, nil otherwise. "
@@ -7665,13 +7741,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-shstruct-in-region (beg end)
   "Deletes SHSTRUCT at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'shstruct beg end))
 
 (defun ar-symbol-atpt (&optional arg) 
-  "Returns symbol at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'symbol nil))
+  "Returns symbol at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'symbol arg))
 
 (defun ar-bounds-of-symbol-atpt (&optional arg)
   "Returns a list, borders of symbol if any, nil otherwise. "
@@ -7757,13 +7835,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-symbol-in-region (beg end)
   "Deletes SYMBOL at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'symbol beg end))
 
 (defun ar-url-atpt (&optional arg) 
-  "Returns url at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'url nil))
+  "Returns url at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'url arg))
 
 (defun ar-bounds-of-url-atpt (&optional arg)
   "Returns a list, borders of url if any, nil otherwise. "
@@ -7849,13 +7929,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-url-in-region (beg end)
   "Deletes URL at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'url beg end))
 
 (defun ar-word-atpt (&optional arg) 
-  "Returns word at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'word nil))
+  "Returns word at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'word arg))
 
 (defun ar-bounds-of-word-atpt (&optional arg)
   "Returns a list, borders of word if any, nil otherwise. "
@@ -7941,13 +8023,15 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-word-in-region (beg end)
   "Deletes WORD at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'word beg end))
 
 (defun ar-wordalphaonly-atpt (&optional arg) 
-  "Returns wordalphaonly at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th 'wordalphaonly nil))
+  "Returns wordalphaonly at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'wordalphaonly arg))
 
 (defun ar-bounds-of-wordalphaonly-atpt (&optional arg)
   "Returns a list, borders of wordalphaonly if any, nil otherwise. "
@@ -8033,7 +8117,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-delete-wordalphaonly-in-region (beg end)
   "Deletes WORDALPHAONLY at point if any. "
-  (interactive "*p")
+  (interactive "*r")
   (ar-th-delete-in-region 'wordalphaonly beg end))
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list: end
 
@@ -19212,8 +19296,10 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: end
+
+
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backslash(s),
+  "If region is highlighted, provide THING at point with backslash(s)
 
   otherwise copy backslash(ed) at point.
   With NO-DELIMITERS, copy backslash(ed) without delimiters.
@@ -19222,7 +19308,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'backslash no-delimiters check))
 
 (defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backtick(s),
+  "If region is highlighted, provide THING at point with backtick(s)
 
   otherwise copy backtick(ed) at point.
   With NO-DELIMITERS, copy backtick(ed) without delimiters.
@@ -19231,7 +19317,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'backtick no-delimiters check))
 
 (defun ar-colon-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with colon(s),
+  "If region is highlighted, provide THING at point with colon(s)
 
   otherwise copy colon(ed) at point.
   With NO-DELIMITERS, copy colon(ed) without delimiters.
@@ -19240,7 +19326,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'colon no-delimiters check))
 
 (defun ar-cross-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with cross(s),
+  "If region is highlighted, provide THING at point with cross(s)
 
   otherwise copy cross(ed) at point.
   With NO-DELIMITERS, copy cross(ed) without delimiters.
@@ -19249,7 +19335,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'cross no-delimiters check))
 
 (defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with dollar(s),
+  "If region is highlighted, provide THING at point with dollar(s)
 
   otherwise copy dollar(ed) at point.
   With NO-DELIMITERS, copy dollar(ed) without delimiters.
@@ -19258,7 +19344,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'dollar no-delimiters check))
 
 (defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doublequote(s),
+  "If region is highlighted, provide THING at point with doublequote(s)
 
   otherwise copy doublequote(ed) at point.
   With NO-DELIMITERS, copy doublequote(ed) without delimiters.
@@ -19267,7 +19353,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doublequote no-delimiters check))
 
 (defun ar-equalize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with equalize(s),
+  "If region is highlighted, provide THING at point with equalize(s)
 
   otherwise copy equalize(ed) at point.
   With NO-DELIMITERS, copy equalize(ed) without delimiters.
@@ -19276,7 +19362,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'equalize no-delimiters check))
 
 (defun ar-escape-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with escape(s),
+  "If region is highlighted, provide THING at point with escape(s)
 
   otherwise copy escape(ed) at point.
   With NO-DELIMITERS, copy escape(ed) without delimiters.
@@ -19285,7 +19371,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'escape no-delimiters check))
 
 (defun ar-hash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hash(s),
+  "If region is highlighted, provide THING at point with hash(s)
 
   otherwise copy hash(ed) at point.
   With NO-DELIMITERS, copy hash(ed) without delimiters.
@@ -19294,7 +19380,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'hash no-delimiters check))
 
 (defun ar-hyphen-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hyphen(s),
+  "If region is highlighted, provide THING at point with hyphen(s)
 
   otherwise copy hyphen(ed) at point.
   With NO-DELIMITERS, copy hyphen(ed) without delimiters.
@@ -19303,7 +19389,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'hyphen no-delimiters check))
 
 (defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with singlequote(s),
+  "If region is highlighted, provide THING at point with singlequote(s)
 
   otherwise copy singlequote(ed) at point.
   With NO-DELIMITERS, copy singlequote(ed) without delimiters.
@@ -19312,7 +19398,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'singlequote no-delimiters check))
 
 (defun ar-slash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with slash(s),
+  "If region is highlighted, provide THING at point with slash(s)
 
   otherwise copy slash(ed) at point.
   With NO-DELIMITERS, copy slash(ed) without delimiters.
@@ -19321,7 +19407,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'slash no-delimiters check))
 
 (defun ar-star-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with star(s),
+  "If region is highlighted, provide THING at point with star(s)
 
   otherwise copy star(ed) at point.
   With NO-DELIMITERS, copy star(ed) without delimiters.
@@ -19330,7 +19416,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'star no-delimiters check))
 
 (defun ar-tild-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with tild(s),
+  "If region is highlighted, provide THING at point with tild(s)
 
   otherwise copy tild(ed) at point.
   With NO-DELIMITERS, copy tild(ed) without delimiters.
@@ -19339,7 +19425,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'tild no-delimiters check))
 
 (defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with underscore(s),
+  "If region is highlighted, provide THING at point with underscore(s)
 
   otherwise copy underscore(ed) at point.
   With NO-DELIMITERS, copy underscore(ed) without delimiters.
@@ -19348,7 +19434,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'underscore no-delimiters check))
 
 (defun ar-whitespace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with whitespace(s),
+  "If region is highlighted, provide THING at point with whitespace(s)
 
   otherwise copy whitespace(ed) at point.
   With NO-DELIMITERS, copy whitespace(ed) without delimiters.
@@ -19357,7 +19443,160 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'whitespace no-delimiters check))
 
 (defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doubleslash(s),
+  "If region is highlighted, provide THING at point with doubleslash(s)
+
+  otherwise copy doubleslash(ed) at point.
+  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
+  With negative argument kill doubleslash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doubleslash no-delimiters check))
+
+(defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with backslash(s)
+
+  otherwise copy backslash(ed) at point.
+  With NO-DELIMITERS, copy backslash(ed) without delimiters.
+  With negative argument kill backslash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'backslash no-delimiters check))
+
+(defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with backtick(s)
+
+  otherwise copy backtick(ed) at point.
+  With NO-DELIMITERS, copy backtick(ed) without delimiters.
+  With negative argument kill backtick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'backtick no-delimiters check))
+
+(defun ar-colon-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with colon(s)
+
+  otherwise copy colon(ed) at point.
+  With NO-DELIMITERS, copy colon(ed) without delimiters.
+  With negative argument kill colon(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'colon no-delimiters check))
+
+(defun ar-cross-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with cross(s)
+
+  otherwise copy cross(ed) at point.
+  With NO-DELIMITERS, copy cross(ed) without delimiters.
+  With negative argument kill cross(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'cross no-delimiters check))
+
+(defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with dollar(s)
+
+  otherwise copy dollar(ed) at point.
+  With NO-DELIMITERS, copy dollar(ed) without delimiters.
+  With negative argument kill dollar(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'dollar no-delimiters check))
+
+(defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doublequote(s)
+
+  otherwise copy doublequote(ed) at point.
+  With NO-DELIMITERS, copy doublequote(ed) without delimiters.
+  With negative argument kill doublequote(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doublequote no-delimiters check))
+
+(defun ar-equalize-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with equalize(s)
+
+  otherwise copy equalize(ed) at point.
+  With NO-DELIMITERS, copy equalize(ed) without delimiters.
+  With negative argument kill equalize(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'equalize no-delimiters check))
+
+(defun ar-escape-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with escape(s)
+
+  otherwise copy escape(ed) at point.
+  With NO-DELIMITERS, copy escape(ed) without delimiters.
+  With negative argument kill escape(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'escape no-delimiters check))
+
+(defun ar-hash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with hash(s)
+
+  otherwise copy hash(ed) at point.
+  With NO-DELIMITERS, copy hash(ed) without delimiters.
+  With negative argument kill hash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'hash no-delimiters check))
+
+(defun ar-hyphen-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with hyphen(s)
+
+  otherwise copy hyphen(ed) at point.
+  With NO-DELIMITERS, copy hyphen(ed) without delimiters.
+  With negative argument kill hyphen(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'hyphen no-delimiters check))
+
+(defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with singlequote(s)
+
+  otherwise copy singlequote(ed) at point.
+  With NO-DELIMITERS, copy singlequote(ed) without delimiters.
+  With negative argument kill singlequote(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'singlequote no-delimiters check))
+
+(defun ar-slash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with slash(s)
+
+  otherwise copy slash(ed) at point.
+  With NO-DELIMITERS, copy slash(ed) without delimiters.
+  With negative argument kill slash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'slash no-delimiters check))
+
+(defun ar-star-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with star(s)
+
+  otherwise copy star(ed) at point.
+  With NO-DELIMITERS, copy star(ed) without delimiters.
+  With negative argument kill star(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'star no-delimiters check))
+
+(defun ar-tild-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with tild(s)
+
+  otherwise copy tild(ed) at point.
+  With NO-DELIMITERS, copy tild(ed) without delimiters.
+  With negative argument kill tild(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'tild no-delimiters check))
+
+(defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with underscore(s)
+
+  otherwise copy underscore(ed) at point.
+  With NO-DELIMITERS, copy underscore(ed) without delimiters.
+  With negative argument kill underscore(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'underscore no-delimiters check))
+
+(defun ar-whitespace-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with whitespace(s)
+
+  otherwise copy whitespace(ed) at point.
+  With NO-DELIMITERS, copy whitespace(ed) without delimiters.
+  With negative argument kill whitespace(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'whitespace no-delimiters check))
+
+(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doubleslash(s)
 
   otherwise copy doubleslash(ed) at point.
   With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
@@ -19366,7 +19605,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doubleslash no-delimiters check))
 
 (defun ar-brace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with brace(s),
+  "If region is highlighted, provide THING at point with brace(s)
 
   otherwise copy brace(ed) at point.
   With NO-DELIMITERS, copy brace(ed) without delimiters.
@@ -19375,7 +19614,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'brace no-delimiters check))
 
 (defun ar-bracket-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with bracket(s),
+  "If region is highlighted, provide THING at point with bracket(s)
 
   otherwise copy bracket(ed) at point.
   With NO-DELIMITERS, copy bracket(ed) without delimiters.
@@ -19384,7 +19623,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'bracket no-delimiters check))
 
 (defun ar-lesserangle-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with lesserangle(s),
+  "If region is highlighted, provide THING at point with lesserangle(s)
 
   otherwise copy lesserangle(ed) at point.
   With NO-DELIMITERS, copy lesserangle(ed) without delimiters.
@@ -19393,7 +19632,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'lesserangle no-delimiters check))
 
 (defun ar-greaterangle-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with greaterangle(s),
+  "If region is highlighted, provide THING at point with greaterangle(s)
 
   otherwise copy greaterangle(ed) at point.
   With NO-DELIMITERS, copy greaterangle(ed) without delimiters.
@@ -19402,7 +19641,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'greaterangle no-delimiters check))
 
 (defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightsinglequote(s),
+  "If region is highlighted, provide THING at point with leftrightsinglequote(s)
 
   otherwise copy leftrightsinglequote(ed) at point.
   With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters.
@@ -19411,7 +19650,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'leftrightsinglequote no-delimiters check))
 
 (defun ar-leftrightdoublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightdoublequote(s),
+  "If region is highlighted, provide THING at point with leftrightdoublequote(s)
 
   otherwise copy leftrightdoublequote(ed) at point.
   With NO-DELIMITERS, copy leftrightdoublequote(ed) without delimiters.
@@ -19420,7 +19659,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'leftrightdoublequote no-delimiters check))
 
 (defun ar-parentize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with parentize(s),
+  "If region is highlighted, provide THING at point with parentize(s)
 
   otherwise copy parentize(ed) at point.
   With NO-DELIMITERS, copy parentize(ed) without delimiters.
@@ -19429,7 +19668,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'parentize no-delimiters check))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with greateranglednested(s),
+  "If region is highlighted, provide THING at point with greateranglednested(s)
 
   otherwise copy greateranglednested(ed) at point.
   With NO-DELIMITERS, copy greateranglednested(ed) without delimiters.
@@ -19438,7 +19677,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'greateranglednested no-delimiters check))
 
 (defun ar-lesseranglednested-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with lesseranglednested(s),
+  "If region is highlighted, provide THING at point with lesseranglednested(s)
 
   otherwise copy lesseranglednested(ed) at point.
   With NO-DELIMITERS, copy lesseranglednested(ed) without delimiters.
@@ -19447,7 +19686,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'lesseranglednested no-delimiters check))
 
 (defun ar-buffer-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with buffer(s),
+  "If region is highlighted, provide THING at point with buffer(s)
 
   otherwise copy buffer(ed) at point.
   With NO-DELIMITERS, copy buffer(ed) without delimiters.
@@ -19456,7 +19695,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'buffer no-delimiters check))
 
 (defun ar-comment-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with comment(s),
+  "If region is highlighted, provide THING at point with comment(s)
 
   otherwise copy comment(ed) at point.
   With NO-DELIMITERS, copy comment(ed) without delimiters.
@@ -19465,7 +19704,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'comment no-delimiters check))
 
 (defun ar-csv-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with csv(s),
+  "If region is highlighted, provide THING at point with csv(s)
 
   otherwise copy csv(ed) at point.
   With NO-DELIMITERS, copy csv(ed) without delimiters.
@@ -19474,7 +19713,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'csv no-delimiters check))
 
 (defun ar-date-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with date(s),
+  "If region is highlighted, provide THING at point with date(s)
 
   otherwise copy date(ed) at point.
   With NO-DELIMITERS, copy date(ed) without delimiters.
@@ -19483,7 +19722,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'date no-delimiters check))
 
 (defun ar-email-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with email(s),
+  "If region is highlighted, provide THING at point with email(s)
 
   otherwise copy email(ed) at point.
   With NO-DELIMITERS, copy email(ed) without delimiters.
@@ -19492,7 +19731,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'email no-delimiters check))
 
 (defun ar-filename-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with filename(s),
+  "If region is highlighted, provide THING at point with filename(s)
 
   otherwise copy filename(ed) at point.
   With NO-DELIMITERS, copy filename(ed) without delimiters.
@@ -19501,7 +19740,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'filename no-delimiters check))
 
 (defun ar-filenamenondirectory-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with filenamenondirectory(s),
+  "If region is highlighted, provide THING at point with filenamenondirectory(s)
 
   otherwise copy filenamenondirectory(ed) at point.
   With NO-DELIMITERS, copy filenamenondirectory(ed) without delimiters.
@@ -19510,7 +19749,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'filenamenondirectory no-delimiters check))
 
 (defun ar-float-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with float(s),
+  "If region is highlighted, provide THING at point with float(s)
 
   otherwise copy float(ed) at point.
   With NO-DELIMITERS, copy float(ed) without delimiters.
@@ -19519,7 +19758,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'float no-delimiters check))
 
 (defun ar-function-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with function(s),
+  "If region is highlighted, provide THING at point with function(s)
 
   otherwise copy function(ed) at point.
   With NO-DELIMITERS, copy function(ed) without delimiters.
@@ -19528,7 +19767,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'function no-delimiters check))
 
 (defun ar-ip-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with ip(s),
+  "If region is highlighted, provide THING at point with ip(s)
 
   otherwise copy ip(ed) at point.
   With NO-DELIMITERS, copy ip(ed) without delimiters.
@@ -19537,7 +19776,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'ip no-delimiters check))
 
 (defun ar-isbn-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with isbn(s),
+  "If region is highlighted, provide THING at point with isbn(s)
 
   otherwise copy isbn(ed) at point.
   With NO-DELIMITERS, copy isbn(ed) without delimiters.
@@ -19546,7 +19785,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'isbn no-delimiters check))
 
 (defun ar-line-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with line(s),
+  "If region is highlighted, provide THING at point with line(s)
 
   otherwise copy line(ed) at point.
   With NO-DELIMITERS, copy line(ed) without delimiters.
@@ -19555,7 +19794,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'line no-delimiters check))
 
 (defun ar-list-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with list(s),
+  "If region is highlighted, provide THING at point with list(s)
 
   otherwise copy list(ed) at point.
   With NO-DELIMITERS, copy list(ed) without delimiters.
@@ -19564,7 +19803,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'list no-delimiters check))
 
 (defun ar-name-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with name(s),
+  "If region is highlighted, provide THING at point with name(s)
 
   otherwise copy name(ed) at point.
   With NO-DELIMITERS, copy name(ed) without delimiters.
@@ -19573,7 +19812,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'name no-delimiters check))
 
 (defun ar-number-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with number(s),
+  "If region is highlighted, provide THING at point with number(s)
 
   otherwise copy number(ed) at point.
   With NO-DELIMITERS, copy number(ed) without delimiters.
@@ -19582,7 +19821,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'number no-delimiters check))
 
 (defun ar-page-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with page(s),
+  "If region is highlighted, provide THING at point with page(s)
 
   otherwise copy page(ed) at point.
   With NO-DELIMITERS, copy page(ed) without delimiters.
@@ -19591,7 +19830,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'page no-delimiters check))
 
 (defun ar-paragraph-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with paragraph(s),
+  "If region is highlighted, provide THING at point with paragraph(s)
 
   otherwise copy paragraph(ed) at point.
   With NO-DELIMITERS, copy paragraph(ed) without delimiters.
@@ -19600,7 +19839,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'paragraph no-delimiters check))
 
 (defun ar-phone-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with phone(s),
+  "If region is highlighted, provide THING at point with phone(s)
 
   otherwise copy phone(ed) at point.
   With NO-DELIMITERS, copy phone(ed) without delimiters.
@@ -19609,7 +19848,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'phone no-delimiters check))
 
 (defun ar-region-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with region(s),
+  "If region is highlighted, provide THING at point with region(s)
 
   otherwise copy region(ed) at point.
   With NO-DELIMITERS, copy region(ed) without delimiters.
@@ -19618,7 +19857,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'region no-delimiters check))
 
 (defun ar-sentence-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with sentence(s),
+  "If region is highlighted, provide THING at point with sentence(s)
 
   otherwise copy sentence(ed) at point.
   With NO-DELIMITERS, copy sentence(ed) without delimiters.
@@ -19627,7 +19866,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'sentence no-delimiters check))
 
 (defun ar-sexp-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with sexp(s),
+  "If region is highlighted, provide THING at point with sexp(s)
 
   otherwise copy sexp(ed) at point.
   With NO-DELIMITERS, copy sexp(ed) without delimiters.
@@ -19636,7 +19875,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'sexp no-delimiters check))
 
 (defun ar-shstruct-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with shstruct(s),
+  "If region is highlighted, provide THING at point with shstruct(s)
 
   otherwise copy shstruct(ed) at point.
   With NO-DELIMITERS, copy shstruct(ed) without delimiters.
@@ -19645,7 +19884,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'shstruct no-delimiters check))
 
 (defun ar-symbol-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with symbol(s),
+  "If region is highlighted, provide THING at point with symbol(s)
 
   otherwise copy symbol(ed) at point.
   With NO-DELIMITERS, copy symbol(ed) without delimiters.
@@ -19654,7 +19893,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'symbol no-delimiters check))
 
 (defun ar-url-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with url(s),
+  "If region is highlighted, provide THING at point with url(s)
 
   otherwise copy url(ed) at point.
   With NO-DELIMITERS, copy url(ed) without delimiters.
@@ -19663,7 +19902,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'url no-delimiters check))
 
 (defun ar-word-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with word(s),
+  "If region is highlighted, provide THING at point with word(s)
 
   otherwise copy word(ed) at point.
   With NO-DELIMITERS, copy word(ed) without delimiters.
@@ -19672,15 +19911,13 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'word no-delimiters check))
 
 (defun ar-wordalphaonly-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with wordalphaonly(s),
+  "If region is highlighted, provide THING at point with wordalphaonly(s)
 
   otherwise copy wordalphaonly(ed) at point.
   With NO-DELIMITERS, copy wordalphaonly(ed) without delimiters.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "P")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters check))
-
-
 
 (defun emacs-batch-expression (&optional arg)
   "Copy and highlight an expression starting with \"eval\" or \"load\". "

@@ -1,6 +1,6 @@
 ;;; ar-paired-delimited-tests.el --- more th-at-point tests
 
-;; Copyright (C) 2010-2017 Andreas Roehler, unless
+;; Copyright (C) 2010-2018 Andreas Roehler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Roehler <andreas.roehler@easy-emacs.de>, unless

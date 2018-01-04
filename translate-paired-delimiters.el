@@ -1,6 +1,6 @@
 ;;; translate-paired-delimiters.el --- Translate delimiter chars
 
-;; Copyright (C) 2014-2017  Andreas Röhler
+;; Copyright (C) 2014-2018  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
