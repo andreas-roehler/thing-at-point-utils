@@ -1,4 +1,4 @@
-;;; ar-tatp-utils-delimited-tests.el --- tests
+;;; ar-tatpt-utils-delimited-tests.el --- tests
 
 ;; Copyright (C) 2015-2018  Andreas Röhler
 
@@ -2589,7 +2589,13 @@
       (forward-char 1)
     (should (ar-th-forward 'whitespaced))))
 
+(ert-deftest ar-backtick-word-atpt-test ()
+  (ar-test-with-elisp-buffer-point-min
+      "asdf"
+    (ar-backtick-word-atpt)
+    (should (eq (char-before) ?`))))
+
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 
-(provide 'ar-tatp-utils-delimited-tests)
-;;; ar-tatp-utils-delimited-tests.el ends here
+(provide 'ar-tatpt-utils-delimited-tests)
+;;; ar-tatpt-utils-delimited-tests.el ends here
