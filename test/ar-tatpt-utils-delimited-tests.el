@@ -2595,6 +2595,12 @@
     (ar-backtick-word-atpt)
     (should (eq (char-before) ?`))))
 
+(ert-deftest ar-triplebacktick-word-atpt-test ()
+  (ar-test-with-elisp-buffer-point-min
+      "asdf"
+    (ar-triplebacktick-word-atpt)
+    (should (looking-back "```" (line-beginning-position))))) 
+
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 
 (provide 'ar-tatpt-utils-delimited-tests)
