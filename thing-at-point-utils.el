@@ -31,286 +31,6 @@
 (require 'thingatpt-utils-map)
 
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
-(defun ar-backslash-greateranglednested-atpt (&optional arg)
-  "Backslash GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backslash 'greateranglednested arg arg))
-
-(defun ar-backslash-lesseranglednested-atpt (&optional arg)
-  "Backslash LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backslash 'lesseranglednested arg arg))
-
-(defun ar-backslash-buffer-atpt (&optional arg)
-  "Backslash BUFFER at point."
-  (interactive "*P")
-  (ar-th-backslash 'buffer arg arg))
-
-(defun ar-backslash-comment-atpt (&optional arg)
-  "Backslash COMMENT at point."
-  (interactive "*P")
-  (ar-th-backslash 'comment arg arg))
-
-(defun ar-backslash-csv-atpt (&optional arg)
-  "Backslash CSV at point."
-  (interactive "*P")
-  (ar-th-backslash 'csv arg arg))
-
-(defun ar-backslash-date-atpt (&optional arg)
-  "Backslash DATE at point."
-  (interactive "*P")
-  (ar-th-backslash 'date arg arg))
-
-(defun ar-backslash-email-atpt (&optional arg)
-  "Backslash EMAIL at point."
-  (interactive "*P")
-  (ar-th-backslash 'email arg arg))
-
-(defun ar-backslash-filename-atpt (&optional arg)
-  "Backslash FILENAME at point."
-  (interactive "*P")
-  (ar-th-backslash 'filename arg arg))
-
-(defun ar-backslash-filenamenondirectory-atpt (&optional arg)
-  "Backslash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-backslash 'filenamenondirectory arg arg))
-
-(defun ar-backslash-float-atpt (&optional arg)
-  "Backslash FLOAT at point."
-  (interactive "*P")
-  (ar-th-backslash 'float arg arg))
-
-(defun ar-backslash-function-atpt (&optional arg)
-  "Backslash FUNCTION at point."
-  (interactive "*P")
-  (ar-th-backslash 'function arg arg))
-
-(defun ar-backslash-ip-atpt (&optional arg)
-  "Backslash IP at point."
-  (interactive "*P")
-  (ar-th-backslash 'ip arg arg))
-
-(defun ar-backslash-isbn-atpt (&optional arg)
-  "Backslash ISBN at point."
-  (interactive "*P")
-  (ar-th-backslash 'isbn arg arg))
-
-(defun ar-backslash-line-atpt (&optional arg)
-  "Backslash LINE at point."
-  (interactive "*P")
-  (ar-th-backslash 'line arg arg))
-
-(defun ar-backslash-list-atpt (&optional arg)
-  "Backslash LIST at point."
-  (interactive "*P")
-  (ar-th-backslash 'list arg arg))
-
-(defun ar-backslash-name-atpt (&optional arg)
-  "Backslash NAME at point."
-  (interactive "*P")
-  (ar-th-backslash 'name arg arg))
-
-(defun ar-backslash-number-atpt (&optional arg)
-  "Backslash NUMBER at point."
-  (interactive "*P")
-  (ar-th-backslash 'number arg arg))
-
-(defun ar-backslash-page-atpt (&optional arg)
-  "Backslash PAGE at point."
-  (interactive "*P")
-  (ar-th-backslash 'page arg arg))
-
-(defun ar-backslash-paragraph-atpt (&optional arg)
-  "Backslash PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-backslash 'paragraph arg arg))
-
-(defun ar-backslash-phone-atpt (&optional arg)
-  "Backslash PHONE at point."
-  (interactive "*P")
-  (ar-th-backslash 'phone arg arg))
-
-(defun ar-backslash-region-atpt (&optional arg)
-  "Backslash REGION at point."
-  (interactive "*P")
-  (ar-th-backslash 'region arg arg))
-
-(defun ar-backslash-sentence-atpt (&optional arg)
-  "Backslash SENTENCE at point."
-  (interactive "*P")
-  (ar-th-backslash 'sentence arg arg))
-
-(defun ar-backslash-sexp-atpt (&optional arg)
-  "Backslash SEXP at point."
-  (interactive "*P")
-  (ar-th-backslash 'sexp arg arg))
-
-(defun ar-backslash-shstruct-atpt (&optional arg)
-  "Backslash SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-backslash 'shstruct arg arg))
-
-(defun ar-backslash-symbol-atpt (&optional arg)
-  "Backslash SYMBOL at point."
-  (interactive "*P")
-  (ar-th-backslash 'symbol arg arg))
-
-(defun ar-backslash-url-atpt (&optional arg)
-  "Backslash URL at point."
-  (interactive "*P")
-  (ar-th-backslash 'url arg arg))
-
-(defun ar-backslash-word-atpt (&optional arg)
-  "Backslash WORD at point."
-  (interactive "*P")
-  (ar-th-backslash 'word arg arg))
-
-(defun ar-backslash-wordalphaonly-atpt (&optional arg)
-  "Backslash WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-backslash 'wordalphaonly arg arg))
-
-(defun ar-backtick-greateranglednested-atpt (&optional arg)
-  "Backtick GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backtick 'greateranglednested arg arg))
-
-(defun ar-backtick-lesseranglednested-atpt (&optional arg)
-  "Backtick LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backtick 'lesseranglednested arg arg))
-
-(defun ar-backtick-buffer-atpt (&optional arg)
-  "Backtick BUFFER at point."
-  (interactive "*P")
-  (ar-th-backtick 'buffer arg arg))
-
-(defun ar-backtick-comment-atpt (&optional arg)
-  "Backtick COMMENT at point."
-  (interactive "*P")
-  (ar-th-backtick 'comment arg arg))
-
-(defun ar-backtick-csv-atpt (&optional arg)
-  "Backtick CSV at point."
-  (interactive "*P")
-  (ar-th-backtick 'csv arg arg))
-
-(defun ar-backtick-date-atpt (&optional arg)
-  "Backtick DATE at point."
-  (interactive "*P")
-  (ar-th-backtick 'date arg arg))
-
-(defun ar-backtick-email-atpt (&optional arg)
-  "Backtick EMAIL at point."
-  (interactive "*P")
-  (ar-th-backtick 'email arg arg))
-
-(defun ar-backtick-filename-atpt (&optional arg)
-  "Backtick FILENAME at point."
-  (interactive "*P")
-  (ar-th-backtick 'filename arg arg))
-
-(defun ar-backtick-filenamenondirectory-atpt (&optional arg)
-  "Backtick FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-backtick 'filenamenondirectory arg arg))
-
-(defun ar-backtick-float-atpt (&optional arg)
-  "Backtick FLOAT at point."
-  (interactive "*P")
-  (ar-th-backtick 'float arg arg))
-
-(defun ar-backtick-function-atpt (&optional arg)
-  "Backtick FUNCTION at point."
-  (interactive "*P")
-  (ar-th-backtick 'function arg arg))
-
-(defun ar-backtick-ip-atpt (&optional arg)
-  "Backtick IP at point."
-  (interactive "*P")
-  (ar-th-backtick 'ip arg arg))
-
-(defun ar-backtick-isbn-atpt (&optional arg)
-  "Backtick ISBN at point."
-  (interactive "*P")
-  (ar-th-backtick 'isbn arg arg))
-
-(defun ar-backtick-line-atpt (&optional arg)
-  "Backtick LINE at point."
-  (interactive "*P")
-  (ar-th-backtick 'line arg arg))
-
-(defun ar-backtick-list-atpt (&optional arg)
-  "Backtick LIST at point."
-  (interactive "*P")
-  (ar-th-backtick 'list arg arg))
-
-(defun ar-backtick-name-atpt (&optional arg)
-  "Backtick NAME at point."
-  (interactive "*P")
-  (ar-th-backtick 'name arg arg))
-
-(defun ar-backtick-number-atpt (&optional arg)
-  "Backtick NUMBER at point."
-  (interactive "*P")
-  (ar-th-backtick 'number arg arg))
-
-(defun ar-backtick-page-atpt (&optional arg)
-  "Backtick PAGE at point."
-  (interactive "*P")
-  (ar-th-backtick 'page arg arg))
-
-(defun ar-backtick-paragraph-atpt (&optional arg)
-  "Backtick PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-backtick 'paragraph arg arg))
-
-(defun ar-backtick-phone-atpt (&optional arg)
-  "Backtick PHONE at point."
-  (interactive "*P")
-  (ar-th-backtick 'phone arg arg))
-
-(defun ar-backtick-region-atpt (&optional arg)
-  "Backtick REGION at point."
-  (interactive "*P")
-  (ar-th-backtick 'region arg arg))
-
-(defun ar-backtick-sentence-atpt (&optional arg)
-  "Backtick SENTENCE at point."
-  (interactive "*P")
-  (ar-th-backtick 'sentence arg arg))
-
-(defun ar-backtick-sexp-atpt (&optional arg)
-  "Backtick SEXP at point."
-  (interactive "*P")
-  (ar-th-backtick 'sexp arg arg))
-
-(defun ar-backtick-shstruct-atpt (&optional arg)
-  "Backtick SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-backtick 'shstruct arg arg))
-
-(defun ar-backtick-symbol-atpt (&optional arg)
-  "Backtick SYMBOL at point."
-  (interactive "*P")
-  (ar-th-backtick 'symbol arg arg))
-
-(defun ar-backtick-url-atpt (&optional arg)
-  "Backtick URL at point."
-  (interactive "*P")
-  (ar-th-backtick 'url arg arg))
-
-(defun ar-backtick-word-atpt (&optional arg)
-  "Backtick WORD at point."
-  (interactive "*P")
-  (ar-th-backtick 'word arg arg))
-
-(defun ar-backtick-wordalphaonly-atpt (&optional arg)
-  "Backtick WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-backtick 'wordalphaonly arg arg))
-
 (defun ar-colon-greateranglednested-atpt (&optional arg)
   "Colon GREATERANGLEDNESTED at point."
   (interactive "*P")
@@ -591,6 +311,426 @@
   (interactive "*P")
   (ar-th-cross 'wordalphaonly arg arg))
 
+(defun ar-doubleslash-greateranglednested-atpt (&optional arg)
+  "Doubleslash GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'greateranglednested arg arg))
+
+(defun ar-doubleslash-lesseranglednested-atpt (&optional arg)
+  "Doubleslash LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'lesseranglednested arg arg))
+
+(defun ar-doubleslash-buffer-atpt (&optional arg)
+  "Doubleslash BUFFER at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'buffer arg arg))
+
+(defun ar-doubleslash-comment-atpt (&optional arg)
+  "Doubleslash COMMENT at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'comment arg arg))
+
+(defun ar-doubleslash-csv-atpt (&optional arg)
+  "Doubleslash CSV at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'csv arg arg))
+
+(defun ar-doubleslash-date-atpt (&optional arg)
+  "Doubleslash DATE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'date arg arg))
+
+(defun ar-doubleslash-email-atpt (&optional arg)
+  "Doubleslash EMAIL at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'email arg arg))
+
+(defun ar-doubleslash-filename-atpt (&optional arg)
+  "Doubleslash FILENAME at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'filename arg arg))
+
+(defun ar-doubleslash-filenamenondirectory-atpt (&optional arg)
+  "Doubleslash FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'filenamenondirectory arg arg))
+
+(defun ar-doubleslash-float-atpt (&optional arg)
+  "Doubleslash FLOAT at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'float arg arg))
+
+(defun ar-doubleslash-function-atpt (&optional arg)
+  "Doubleslash FUNCTION at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'function arg arg))
+
+(defun ar-doubleslash-ip-atpt (&optional arg)
+  "Doubleslash IP at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'ip arg arg))
+
+(defun ar-doubleslash-isbn-atpt (&optional arg)
+  "Doubleslash ISBN at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'isbn arg arg))
+
+(defun ar-doubleslash-line-atpt (&optional arg)
+  "Doubleslash LINE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'line arg arg))
+
+(defun ar-doubleslash-list-atpt (&optional arg)
+  "Doubleslash LIST at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'list arg arg))
+
+(defun ar-doubleslash-name-atpt (&optional arg)
+  "Doubleslash NAME at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'name arg arg))
+
+(defun ar-doubleslash-number-atpt (&optional arg)
+  "Doubleslash NUMBER at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'number arg arg))
+
+(defun ar-doubleslash-page-atpt (&optional arg)
+  "Doubleslash PAGE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'page arg arg))
+
+(defun ar-doubleslash-paragraph-atpt (&optional arg)
+  "Doubleslash PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'paragraph arg arg))
+
+(defun ar-doubleslash-phone-atpt (&optional arg)
+  "Doubleslash PHONE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'phone arg arg))
+
+(defun ar-doubleslash-region-atpt (&optional arg)
+  "Doubleslash REGION at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'region arg arg))
+
+(defun ar-doubleslash-sentence-atpt (&optional arg)
+  "Doubleslash SENTENCE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'sentence arg arg))
+
+(defun ar-doubleslash-sexp-atpt (&optional arg)
+  "Doubleslash SEXP at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'sexp arg arg))
+
+(defun ar-doubleslash-shstruct-atpt (&optional arg)
+  "Doubleslash SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'shstruct arg arg))
+
+(defun ar-doubleslash-symbol-atpt (&optional arg)
+  "Doubleslash SYMBOL at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'symbol arg arg))
+
+(defun ar-doubleslash-url-atpt (&optional arg)
+  "Doubleslash URL at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'url arg arg))
+
+(defun ar-doubleslash-word-atpt (&optional arg)
+  "Doubleslash WORD at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'word arg arg))
+
+(defun ar-doubleslash-wordalphaonly-atpt (&optional arg)
+  "Doubleslash WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'wordalphaonly arg arg))
+
+(defun ar-backslash-greateranglednested-atpt (&optional arg)
+  "Backslash GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backslash 'greateranglednested arg arg))
+
+(defun ar-backslash-lesseranglednested-atpt (&optional arg)
+  "Backslash LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backslash 'lesseranglednested arg arg))
+
+(defun ar-backslash-buffer-atpt (&optional arg)
+  "Backslash BUFFER at point."
+  (interactive "*P")
+  (ar-th-backslash 'buffer arg arg))
+
+(defun ar-backslash-comment-atpt (&optional arg)
+  "Backslash COMMENT at point."
+  (interactive "*P")
+  (ar-th-backslash 'comment arg arg))
+
+(defun ar-backslash-csv-atpt (&optional arg)
+  "Backslash CSV at point."
+  (interactive "*P")
+  (ar-th-backslash 'csv arg arg))
+
+(defun ar-backslash-date-atpt (&optional arg)
+  "Backslash DATE at point."
+  (interactive "*P")
+  (ar-th-backslash 'date arg arg))
+
+(defun ar-backslash-email-atpt (&optional arg)
+  "Backslash EMAIL at point."
+  (interactive "*P")
+  (ar-th-backslash 'email arg arg))
+
+(defun ar-backslash-filename-atpt (&optional arg)
+  "Backslash FILENAME at point."
+  (interactive "*P")
+  (ar-th-backslash 'filename arg arg))
+
+(defun ar-backslash-filenamenondirectory-atpt (&optional arg)
+  "Backslash FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-backslash 'filenamenondirectory arg arg))
+
+(defun ar-backslash-float-atpt (&optional arg)
+  "Backslash FLOAT at point."
+  (interactive "*P")
+  (ar-th-backslash 'float arg arg))
+
+(defun ar-backslash-function-atpt (&optional arg)
+  "Backslash FUNCTION at point."
+  (interactive "*P")
+  (ar-th-backslash 'function arg arg))
+
+(defun ar-backslash-ip-atpt (&optional arg)
+  "Backslash IP at point."
+  (interactive "*P")
+  (ar-th-backslash 'ip arg arg))
+
+(defun ar-backslash-isbn-atpt (&optional arg)
+  "Backslash ISBN at point."
+  (interactive "*P")
+  (ar-th-backslash 'isbn arg arg))
+
+(defun ar-backslash-line-atpt (&optional arg)
+  "Backslash LINE at point."
+  (interactive "*P")
+  (ar-th-backslash 'line arg arg))
+
+(defun ar-backslash-list-atpt (&optional arg)
+  "Backslash LIST at point."
+  (interactive "*P")
+  (ar-th-backslash 'list arg arg))
+
+(defun ar-backslash-name-atpt (&optional arg)
+  "Backslash NAME at point."
+  (interactive "*P")
+  (ar-th-backslash 'name arg arg))
+
+(defun ar-backslash-number-atpt (&optional arg)
+  "Backslash NUMBER at point."
+  (interactive "*P")
+  (ar-th-backslash 'number arg arg))
+
+(defun ar-backslash-page-atpt (&optional arg)
+  "Backslash PAGE at point."
+  (interactive "*P")
+  (ar-th-backslash 'page arg arg))
+
+(defun ar-backslash-paragraph-atpt (&optional arg)
+  "Backslash PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-backslash 'paragraph arg arg))
+
+(defun ar-backslash-phone-atpt (&optional arg)
+  "Backslash PHONE at point."
+  (interactive "*P")
+  (ar-th-backslash 'phone arg arg))
+
+(defun ar-backslash-region-atpt (&optional arg)
+  "Backslash REGION at point."
+  (interactive "*P")
+  (ar-th-backslash 'region arg arg))
+
+(defun ar-backslash-sentence-atpt (&optional arg)
+  "Backslash SENTENCE at point."
+  (interactive "*P")
+  (ar-th-backslash 'sentence arg arg))
+
+(defun ar-backslash-sexp-atpt (&optional arg)
+  "Backslash SEXP at point."
+  (interactive "*P")
+  (ar-th-backslash 'sexp arg arg))
+
+(defun ar-backslash-shstruct-atpt (&optional arg)
+  "Backslash SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-backslash 'shstruct arg arg))
+
+(defun ar-backslash-symbol-atpt (&optional arg)
+  "Backslash SYMBOL at point."
+  (interactive "*P")
+  (ar-th-backslash 'symbol arg arg))
+
+(defun ar-backslash-url-atpt (&optional arg)
+  "Backslash URL at point."
+  (interactive "*P")
+  (ar-th-backslash 'url arg arg))
+
+(defun ar-backslash-word-atpt (&optional arg)
+  "Backslash WORD at point."
+  (interactive "*P")
+  (ar-th-backslash 'word arg arg))
+
+(defun ar-backslash-wordalphaonly-atpt (&optional arg)
+  "Backslash WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-backslash 'wordalphaonly arg arg))
+
+(defun ar-backtick-greateranglednested-atpt (&optional arg)
+  "Backtick GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backtick 'greateranglednested arg arg))
+
+(defun ar-backtick-lesseranglednested-atpt (&optional arg)
+  "Backtick LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backtick 'lesseranglednested arg arg))
+
+(defun ar-backtick-buffer-atpt (&optional arg)
+  "Backtick BUFFER at point."
+  (interactive "*P")
+  (ar-th-backtick 'buffer arg arg))
+
+(defun ar-backtick-comment-atpt (&optional arg)
+  "Backtick COMMENT at point."
+  (interactive "*P")
+  (ar-th-backtick 'comment arg arg))
+
+(defun ar-backtick-csv-atpt (&optional arg)
+  "Backtick CSV at point."
+  (interactive "*P")
+  (ar-th-backtick 'csv arg arg))
+
+(defun ar-backtick-date-atpt (&optional arg)
+  "Backtick DATE at point."
+  (interactive "*P")
+  (ar-th-backtick 'date arg arg))
+
+(defun ar-backtick-email-atpt (&optional arg)
+  "Backtick EMAIL at point."
+  (interactive "*P")
+  (ar-th-backtick 'email arg arg))
+
+(defun ar-backtick-filename-atpt (&optional arg)
+  "Backtick FILENAME at point."
+  (interactive "*P")
+  (ar-th-backtick 'filename arg arg))
+
+(defun ar-backtick-filenamenondirectory-atpt (&optional arg)
+  "Backtick FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-backtick 'filenamenondirectory arg arg))
+
+(defun ar-backtick-float-atpt (&optional arg)
+  "Backtick FLOAT at point."
+  (interactive "*P")
+  (ar-th-backtick 'float arg arg))
+
+(defun ar-backtick-function-atpt (&optional arg)
+  "Backtick FUNCTION at point."
+  (interactive "*P")
+  (ar-th-backtick 'function arg arg))
+
+(defun ar-backtick-ip-atpt (&optional arg)
+  "Backtick IP at point."
+  (interactive "*P")
+  (ar-th-backtick 'ip arg arg))
+
+(defun ar-backtick-isbn-atpt (&optional arg)
+  "Backtick ISBN at point."
+  (interactive "*P")
+  (ar-th-backtick 'isbn arg arg))
+
+(defun ar-backtick-line-atpt (&optional arg)
+  "Backtick LINE at point."
+  (interactive "*P")
+  (ar-th-backtick 'line arg arg))
+
+(defun ar-backtick-list-atpt (&optional arg)
+  "Backtick LIST at point."
+  (interactive "*P")
+  (ar-th-backtick 'list arg arg))
+
+(defun ar-backtick-name-atpt (&optional arg)
+  "Backtick NAME at point."
+  (interactive "*P")
+  (ar-th-backtick 'name arg arg))
+
+(defun ar-backtick-number-atpt (&optional arg)
+  "Backtick NUMBER at point."
+  (interactive "*P")
+  (ar-th-backtick 'number arg arg))
+
+(defun ar-backtick-page-atpt (&optional arg)
+  "Backtick PAGE at point."
+  (interactive "*P")
+  (ar-th-backtick 'page arg arg))
+
+(defun ar-backtick-paragraph-atpt (&optional arg)
+  "Backtick PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-backtick 'paragraph arg arg))
+
+(defun ar-backtick-phone-atpt (&optional arg)
+  "Backtick PHONE at point."
+  (interactive "*P")
+  (ar-th-backtick 'phone arg arg))
+
+(defun ar-backtick-region-atpt (&optional arg)
+  "Backtick REGION at point."
+  (interactive "*P")
+  (ar-th-backtick 'region arg arg))
+
+(defun ar-backtick-sentence-atpt (&optional arg)
+  "Backtick SENTENCE at point."
+  (interactive "*P")
+  (ar-th-backtick 'sentence arg arg))
+
+(defun ar-backtick-sexp-atpt (&optional arg)
+  "Backtick SEXP at point."
+  (interactive "*P")
+  (ar-th-backtick 'sexp arg arg))
+
+(defun ar-backtick-shstruct-atpt (&optional arg)
+  "Backtick SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-backtick 'shstruct arg arg))
+
+(defun ar-backtick-symbol-atpt (&optional arg)
+  "Backtick SYMBOL at point."
+  (interactive "*P")
+  (ar-th-backtick 'symbol arg arg))
+
+(defun ar-backtick-url-atpt (&optional arg)
+  "Backtick URL at point."
+  (interactive "*P")
+  (ar-th-backtick 'url arg arg))
+
+(defun ar-backtick-word-atpt (&optional arg)
+  "Backtick WORD at point."
+  (interactive "*P")
+  (ar-th-backtick 'word arg arg))
+
+(defun ar-backtick-wordalphaonly-atpt (&optional arg)
+  "Backtick WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-backtick 'wordalphaonly arg arg))
+
 (defun ar-dollar-greateranglednested-atpt (&optional arg)
   "Dollar GREATERANGLEDNESTED at point."
   (interactive "*P")
@@ -730,6 +870,146 @@
   "Dollar WORDALPHAONLY at point."
   (interactive "*P")
   (ar-th-dollar 'wordalphaonly arg arg))
+
+(defun ar-doublebacktick-greateranglednested-atpt (&optional arg)
+  "Doublebacktick GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'greateranglednested arg arg))
+
+(defun ar-doublebacktick-lesseranglednested-atpt (&optional arg)
+  "Doublebacktick LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'lesseranglednested arg arg))
+
+(defun ar-doublebacktick-buffer-atpt (&optional arg)
+  "Doublebacktick BUFFER at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'buffer arg arg))
+
+(defun ar-doublebacktick-comment-atpt (&optional arg)
+  "Doublebacktick COMMENT at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'comment arg arg))
+
+(defun ar-doublebacktick-csv-atpt (&optional arg)
+  "Doublebacktick CSV at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'csv arg arg))
+
+(defun ar-doublebacktick-date-atpt (&optional arg)
+  "Doublebacktick DATE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'date arg arg))
+
+(defun ar-doublebacktick-email-atpt (&optional arg)
+  "Doublebacktick EMAIL at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'email arg arg))
+
+(defun ar-doublebacktick-filename-atpt (&optional arg)
+  "Doublebacktick FILENAME at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'filename arg arg))
+
+(defun ar-doublebacktick-filenamenondirectory-atpt (&optional arg)
+  "Doublebacktick FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'filenamenondirectory arg arg))
+
+(defun ar-doublebacktick-float-atpt (&optional arg)
+  "Doublebacktick FLOAT at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'float arg arg))
+
+(defun ar-doublebacktick-function-atpt (&optional arg)
+  "Doublebacktick FUNCTION at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'function arg arg))
+
+(defun ar-doublebacktick-ip-atpt (&optional arg)
+  "Doublebacktick IP at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'ip arg arg))
+
+(defun ar-doublebacktick-isbn-atpt (&optional arg)
+  "Doublebacktick ISBN at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'isbn arg arg))
+
+(defun ar-doublebacktick-line-atpt (&optional arg)
+  "Doublebacktick LINE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'line arg arg))
+
+(defun ar-doublebacktick-list-atpt (&optional arg)
+  "Doublebacktick LIST at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'list arg arg))
+
+(defun ar-doublebacktick-name-atpt (&optional arg)
+  "Doublebacktick NAME at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'name arg arg))
+
+(defun ar-doublebacktick-number-atpt (&optional arg)
+  "Doublebacktick NUMBER at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'number arg arg))
+
+(defun ar-doublebacktick-page-atpt (&optional arg)
+  "Doublebacktick PAGE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'page arg arg))
+
+(defun ar-doublebacktick-paragraph-atpt (&optional arg)
+  "Doublebacktick PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'paragraph arg arg))
+
+(defun ar-doublebacktick-phone-atpt (&optional arg)
+  "Doublebacktick PHONE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'phone arg arg))
+
+(defun ar-doublebacktick-region-atpt (&optional arg)
+  "Doublebacktick REGION at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'region arg arg))
+
+(defun ar-doublebacktick-sentence-atpt (&optional arg)
+  "Doublebacktick SENTENCE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'sentence arg arg))
+
+(defun ar-doublebacktick-sexp-atpt (&optional arg)
+  "Doublebacktick SEXP at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'sexp arg arg))
+
+(defun ar-doublebacktick-shstruct-atpt (&optional arg)
+  "Doublebacktick SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'shstruct arg arg))
+
+(defun ar-doublebacktick-symbol-atpt (&optional arg)
+  "Doublebacktick SYMBOL at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'symbol arg arg))
+
+(defun ar-doublebacktick-url-atpt (&optional arg)
+  "Doublebacktick URL at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'url arg arg))
+
+(defun ar-doublebacktick-word-atpt (&optional arg)
+  "Doublebacktick WORD at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'word arg arg))
+
+(defun ar-doublebacktick-wordalphaonly-atpt (&optional arg)
+  "Doublebacktick WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'wordalphaonly arg arg))
 
 (defun ar-doublequote-greateranglednested-atpt (&optional arg)
   "Doublequote GREATERANGLEDNESTED at point."
@@ -1991,6 +2271,146 @@
   (interactive "*P")
   (ar-th-tild 'wordalphaonly arg arg))
 
+(defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
+  "Triplebacktick GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'greateranglednested arg arg))
+
+(defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
+  "Triplebacktick LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'lesseranglednested arg arg))
+
+(defun ar-triplebacktick-buffer-atpt (&optional arg)
+  "Triplebacktick BUFFER at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'buffer arg arg))
+
+(defun ar-triplebacktick-comment-atpt (&optional arg)
+  "Triplebacktick COMMENT at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'comment arg arg))
+
+(defun ar-triplebacktick-csv-atpt (&optional arg)
+  "Triplebacktick CSV at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'csv arg arg))
+
+(defun ar-triplebacktick-date-atpt (&optional arg)
+  "Triplebacktick DATE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'date arg arg))
+
+(defun ar-triplebacktick-email-atpt (&optional arg)
+  "Triplebacktick EMAIL at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'email arg arg))
+
+(defun ar-triplebacktick-filename-atpt (&optional arg)
+  "Triplebacktick FILENAME at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'filename arg arg))
+
+(defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
+  "Triplebacktick FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'filenamenondirectory arg arg))
+
+(defun ar-triplebacktick-float-atpt (&optional arg)
+  "Triplebacktick FLOAT at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'float arg arg))
+
+(defun ar-triplebacktick-function-atpt (&optional arg)
+  "Triplebacktick FUNCTION at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'function arg arg))
+
+(defun ar-triplebacktick-ip-atpt (&optional arg)
+  "Triplebacktick IP at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'ip arg arg))
+
+(defun ar-triplebacktick-isbn-atpt (&optional arg)
+  "Triplebacktick ISBN at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'isbn arg arg))
+
+(defun ar-triplebacktick-line-atpt (&optional arg)
+  "Triplebacktick LINE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'line arg arg))
+
+(defun ar-triplebacktick-list-atpt (&optional arg)
+  "Triplebacktick LIST at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'list arg arg))
+
+(defun ar-triplebacktick-name-atpt (&optional arg)
+  "Triplebacktick NAME at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'name arg arg))
+
+(defun ar-triplebacktick-number-atpt (&optional arg)
+  "Triplebacktick NUMBER at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'number arg arg))
+
+(defun ar-triplebacktick-page-atpt (&optional arg)
+  "Triplebacktick PAGE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'page arg arg))
+
+(defun ar-triplebacktick-paragraph-atpt (&optional arg)
+  "Triplebacktick PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'paragraph arg arg))
+
+(defun ar-triplebacktick-phone-atpt (&optional arg)
+  "Triplebacktick PHONE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'phone arg arg))
+
+(defun ar-triplebacktick-region-atpt (&optional arg)
+  "Triplebacktick REGION at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'region arg arg))
+
+(defun ar-triplebacktick-sentence-atpt (&optional arg)
+  "Triplebacktick SENTENCE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'sentence arg arg))
+
+(defun ar-triplebacktick-sexp-atpt (&optional arg)
+  "Triplebacktick SEXP at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'sexp arg arg))
+
+(defun ar-triplebacktick-shstruct-atpt (&optional arg)
+  "Triplebacktick SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'shstruct arg arg))
+
+(defun ar-triplebacktick-symbol-atpt (&optional arg)
+  "Triplebacktick SYMBOL at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'symbol arg arg))
+
+(defun ar-triplebacktick-url-atpt (&optional arg)
+  "Triplebacktick URL at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'url arg arg))
+
+(defun ar-triplebacktick-word-atpt (&optional arg)
+  "Triplebacktick WORD at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'word arg arg))
+
+(defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
+  "Triplebacktick WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'wordalphaonly arg arg))
+
 (defun ar-underscore-greateranglednested-atpt (&optional arg)
   "Underscore GREATERANGLEDNESTED at point."
   (interactive "*P")
@@ -2270,146 +2690,6 @@
   "Whitespace WORDALPHAONLY at point."
   (interactive "*P")
   (ar-th-whitespace 'wordalphaonly arg arg))
-
-(defun ar-doubleslash-greateranglednested-atpt (&optional arg)
-  "Doubleslash GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'greateranglednested arg arg))
-
-(defun ar-doubleslash-lesseranglednested-atpt (&optional arg)
-  "Doubleslash LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'lesseranglednested arg arg))
-
-(defun ar-doubleslash-buffer-atpt (&optional arg)
-  "Doubleslash BUFFER at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'buffer arg arg))
-
-(defun ar-doubleslash-comment-atpt (&optional arg)
-  "Doubleslash COMMENT at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'comment arg arg))
-
-(defun ar-doubleslash-csv-atpt (&optional arg)
-  "Doubleslash CSV at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'csv arg arg))
-
-(defun ar-doubleslash-date-atpt (&optional arg)
-  "Doubleslash DATE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'date arg arg))
-
-(defun ar-doubleslash-email-atpt (&optional arg)
-  "Doubleslash EMAIL at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'email arg arg))
-
-(defun ar-doubleslash-filename-atpt (&optional arg)
-  "Doubleslash FILENAME at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'filename arg arg))
-
-(defun ar-doubleslash-filenamenondirectory-atpt (&optional arg)
-  "Doubleslash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'filenamenondirectory arg arg))
-
-(defun ar-doubleslash-float-atpt (&optional arg)
-  "Doubleslash FLOAT at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'float arg arg))
-
-(defun ar-doubleslash-function-atpt (&optional arg)
-  "Doubleslash FUNCTION at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'function arg arg))
-
-(defun ar-doubleslash-ip-atpt (&optional arg)
-  "Doubleslash IP at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'ip arg arg))
-
-(defun ar-doubleslash-isbn-atpt (&optional arg)
-  "Doubleslash ISBN at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'isbn arg arg))
-
-(defun ar-doubleslash-line-atpt (&optional arg)
-  "Doubleslash LINE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'line arg arg))
-
-(defun ar-doubleslash-list-atpt (&optional arg)
-  "Doubleslash LIST at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'list arg arg))
-
-(defun ar-doubleslash-name-atpt (&optional arg)
-  "Doubleslash NAME at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'name arg arg))
-
-(defun ar-doubleslash-number-atpt (&optional arg)
-  "Doubleslash NUMBER at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'number arg arg))
-
-(defun ar-doubleslash-page-atpt (&optional arg)
-  "Doubleslash PAGE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'page arg arg))
-
-(defun ar-doubleslash-paragraph-atpt (&optional arg)
-  "Doubleslash PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'paragraph arg arg))
-
-(defun ar-doubleslash-phone-atpt (&optional arg)
-  "Doubleslash PHONE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'phone arg arg))
-
-(defun ar-doubleslash-region-atpt (&optional arg)
-  "Doubleslash REGION at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'region arg arg))
-
-(defun ar-doubleslash-sentence-atpt (&optional arg)
-  "Doubleslash SENTENCE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'sentence arg arg))
-
-(defun ar-doubleslash-sexp-atpt (&optional arg)
-  "Doubleslash SEXP at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'sexp arg arg))
-
-(defun ar-doubleslash-shstruct-atpt (&optional arg)
-  "Doubleslash SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'shstruct arg arg))
-
-(defun ar-doubleslash-symbol-atpt (&optional arg)
-  "Doubleslash SYMBOL at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'symbol arg arg))
-
-(defun ar-doubleslash-url-atpt (&optional arg)
-  "Doubleslash URL at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'url arg arg))
-
-(defun ar-doubleslash-word-atpt (&optional arg)
-  "Doubleslash WORD at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'word arg arg))
-
-(defun ar-doubleslash-wordalphaonly-atpt (&optional arg)
-  "Doubleslash WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'wordalphaonly arg arg))
 
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 ;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
@@ -8124,18 +8404,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 ;; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 
 
-(defalias 'ar-backslash-alnum-atpt 'ar-alnum-backslash-atpt)
-(defun ar-alnum-backslash-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'alnum nil))
-
-(defalias 'ar-backtick-alnum-atpt 'ar-alnum-backtick-atpt)
-(defun ar-alnum-backtick-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'alnum nil))
-
 (defalias 'ar-colon-alnum-atpt 'ar-alnum-colon-atpt)
 (defun ar-alnum-colon-atpt (&optional arg)
   "Returns regexp-quoted ALNUM at point if any, nil otherwise "
@@ -8148,11 +8416,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'alnum nil))
 
+(defalias 'ar-doubleslash-alnum-atpt 'ar-alnum-doubleslash-atpt)
+(defun ar-alnum-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'alnum nil))
+
+(defalias 'ar-backslash-alnum-atpt 'ar-alnum-backslash-atpt)
+(defun ar-alnum-backslash-atpt (&optional arg)
+  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'alnum nil))
+
+(defalias 'ar-backtick-alnum-atpt 'ar-alnum-backtick-atpt)
+(defun ar-alnum-backtick-atpt (&optional arg)
+  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'alnum nil))
+
 (defalias 'ar-dollar-alnum-atpt 'ar-alnum-dollar-atpt)
 (defun ar-alnum-dollar-atpt (&optional arg)
   "Returns regexp-quoted ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'alnum nil))
+
+(defalias 'ar-doublebacktick-alnum-atpt 'ar-alnum-doublebacktick-atpt)
+(defun ar-alnum-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'alnum nil))
 
 (defalias 'ar-doublequote-alnum-atpt 'ar-alnum-doublequote-atpt)
 (defun ar-alnum-doublequote-atpt (&optional arg)
@@ -8208,6 +8500,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'alnum nil))
 
+(defalias 'ar-triplebacktick-alnum-atpt 'ar-alnum-triplebacktick-atpt)
+(defun ar-alnum-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'alnum nil))
+
 (defalias 'ar-underscore-alnum-atpt 'ar-alnum-underscore-atpt)
 (defun ar-alnum-underscore-atpt (&optional arg)
   "Returns regexp-quoted ALNUM at point if any, nil otherwise "
@@ -8219,24 +8517,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'alnum nil))
-
-(defalias 'ar-doubleslash-alnum-atpt 'ar-alnum-doubleslash-atpt)
-(defun ar-alnum-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'alnum nil))
-
-(defalias 'ar-backslash-alpha-atpt 'ar-alpha-backslash-atpt)
-(defun ar-alpha-backslash-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'alpha nil))
-
-(defalias 'ar-backtick-alpha-atpt 'ar-alpha-backtick-atpt)
-(defun ar-alpha-backtick-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'alpha nil))
 
 (defalias 'ar-colon-alpha-atpt 'ar-alpha-colon-atpt)
 (defun ar-alpha-colon-atpt (&optional arg)
@@ -8250,11 +8530,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'alpha nil))
 
+(defalias 'ar-doubleslash-alpha-atpt 'ar-alpha-doubleslash-atpt)
+(defun ar-alpha-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'alpha nil))
+
+(defalias 'ar-backslash-alpha-atpt 'ar-alpha-backslash-atpt)
+(defun ar-alpha-backslash-atpt (&optional arg)
+  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'alpha nil))
+
+(defalias 'ar-backtick-alpha-atpt 'ar-alpha-backtick-atpt)
+(defun ar-alpha-backtick-atpt (&optional arg)
+  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'alpha nil))
+
 (defalias 'ar-dollar-alpha-atpt 'ar-alpha-dollar-atpt)
 (defun ar-alpha-dollar-atpt (&optional arg)
   "Returns regexp-quoted ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'alpha nil))
+
+(defalias 'ar-doublebacktick-alpha-atpt 'ar-alpha-doublebacktick-atpt)
+(defun ar-alpha-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'alpha nil))
 
 (defalias 'ar-doublequote-alpha-atpt 'ar-alpha-doublequote-atpt)
 (defun ar-alpha-doublequote-atpt (&optional arg)
@@ -8310,6 +8614,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'alpha nil))
 
+(defalias 'ar-triplebacktick-alpha-atpt 'ar-alpha-triplebacktick-atpt)
+(defun ar-alpha-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'alpha nil))
+
 (defalias 'ar-underscore-alpha-atpt 'ar-alpha-underscore-atpt)
 (defun ar-alpha-underscore-atpt (&optional arg)
   "Returns regexp-quoted ALPHA at point if any, nil otherwise "
@@ -8321,24 +8631,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'alpha nil))
-
-(defalias 'ar-doubleslash-alpha-atpt 'ar-alpha-doubleslash-atpt)
-(defun ar-alpha-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'alpha nil))
-
-(defalias 'ar-backslash-ascii-atpt 'ar-ascii-backslash-atpt)
-(defun ar-ascii-backslash-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'ascii nil))
-
-(defalias 'ar-backtick-ascii-atpt 'ar-ascii-backtick-atpt)
-(defun ar-ascii-backtick-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'ascii nil))
 
 (defalias 'ar-colon-ascii-atpt 'ar-ascii-colon-atpt)
 (defun ar-ascii-colon-atpt (&optional arg)
@@ -8352,11 +8644,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'ascii nil))
 
+(defalias 'ar-doubleslash-ascii-atpt 'ar-ascii-doubleslash-atpt)
+(defun ar-ascii-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'ascii nil))
+
+(defalias 'ar-backslash-ascii-atpt 'ar-ascii-backslash-atpt)
+(defun ar-ascii-backslash-atpt (&optional arg)
+  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'ascii nil))
+
+(defalias 'ar-backtick-ascii-atpt 'ar-ascii-backtick-atpt)
+(defun ar-ascii-backtick-atpt (&optional arg)
+  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'ascii nil))
+
 (defalias 'ar-dollar-ascii-atpt 'ar-ascii-dollar-atpt)
 (defun ar-ascii-dollar-atpt (&optional arg)
   "Returns regexp-quoted ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'ascii nil))
+
+(defalias 'ar-doublebacktick-ascii-atpt 'ar-ascii-doublebacktick-atpt)
+(defun ar-ascii-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'ascii nil))
 
 (defalias 'ar-doublequote-ascii-atpt 'ar-ascii-doublequote-atpt)
 (defun ar-ascii-doublequote-atpt (&optional arg)
@@ -8412,6 +8728,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'ascii nil))
 
+(defalias 'ar-triplebacktick-ascii-atpt 'ar-ascii-triplebacktick-atpt)
+(defun ar-ascii-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'ascii nil))
+
 (defalias 'ar-underscore-ascii-atpt 'ar-ascii-underscore-atpt)
 (defun ar-ascii-underscore-atpt (&optional arg)
   "Returns regexp-quoted ASCII at point if any, nil otherwise "
@@ -8423,24 +8745,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'ascii nil))
-
-(defalias 'ar-doubleslash-ascii-atpt 'ar-ascii-doubleslash-atpt)
-(defun ar-ascii-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'ascii nil))
-
-(defalias 'ar-backslash-blank-atpt 'ar-blank-backslash-atpt)
-(defun ar-blank-backslash-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'blank nil))
-
-(defalias 'ar-backtick-blank-atpt 'ar-blank-backtick-atpt)
-(defun ar-blank-backtick-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'blank nil))
 
 (defalias 'ar-colon-blank-atpt 'ar-blank-colon-atpt)
 (defun ar-blank-colon-atpt (&optional arg)
@@ -8454,11 +8758,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'blank nil))
 
+(defalias 'ar-doubleslash-blank-atpt 'ar-blank-doubleslash-atpt)
+(defun ar-blank-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'blank nil))
+
+(defalias 'ar-backslash-blank-atpt 'ar-blank-backslash-atpt)
+(defun ar-blank-backslash-atpt (&optional arg)
+  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'blank nil))
+
+(defalias 'ar-backtick-blank-atpt 'ar-blank-backtick-atpt)
+(defun ar-blank-backtick-atpt (&optional arg)
+  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'blank nil))
+
 (defalias 'ar-dollar-blank-atpt 'ar-blank-dollar-atpt)
 (defun ar-blank-dollar-atpt (&optional arg)
   "Returns regexp-quoted BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'blank nil))
+
+(defalias 'ar-doublebacktick-blank-atpt 'ar-blank-doublebacktick-atpt)
+(defun ar-blank-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'blank nil))
 
 (defalias 'ar-doublequote-blank-atpt 'ar-blank-doublequote-atpt)
 (defun ar-blank-doublequote-atpt (&optional arg)
@@ -8514,6 +8842,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'blank nil))
 
+(defalias 'ar-triplebacktick-blank-atpt 'ar-blank-triplebacktick-atpt)
+(defun ar-blank-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'blank nil))
+
 (defalias 'ar-underscore-blank-atpt 'ar-blank-underscore-atpt)
 (defun ar-blank-underscore-atpt (&optional arg)
   "Returns regexp-quoted BLANK at point if any, nil otherwise "
@@ -8525,24 +8859,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'blank nil))
-
-(defalias 'ar-doubleslash-blank-atpt 'ar-blank-doubleslash-atpt)
-(defun ar-blank-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'blank nil))
-
-(defalias 'ar-backslash-cntrl-atpt 'ar-cntrl-backslash-atpt)
-(defun ar-cntrl-backslash-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'cntrl nil))
-
-(defalias 'ar-backtick-cntrl-atpt 'ar-cntrl-backtick-atpt)
-(defun ar-cntrl-backtick-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'cntrl nil))
 
 (defalias 'ar-colon-cntrl-atpt 'ar-cntrl-colon-atpt)
 (defun ar-cntrl-colon-atpt (&optional arg)
@@ -8556,11 +8872,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'cntrl nil))
 
+(defalias 'ar-doubleslash-cntrl-atpt 'ar-cntrl-doubleslash-atpt)
+(defun ar-cntrl-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'cntrl nil))
+
+(defalias 'ar-backslash-cntrl-atpt 'ar-cntrl-backslash-atpt)
+(defun ar-cntrl-backslash-atpt (&optional arg)
+  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'cntrl nil))
+
+(defalias 'ar-backtick-cntrl-atpt 'ar-cntrl-backtick-atpt)
+(defun ar-cntrl-backtick-atpt (&optional arg)
+  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'cntrl nil))
+
 (defalias 'ar-dollar-cntrl-atpt 'ar-cntrl-dollar-atpt)
 (defun ar-cntrl-dollar-atpt (&optional arg)
   "Returns regexp-quoted CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'cntrl nil))
+
+(defalias 'ar-doublebacktick-cntrl-atpt 'ar-cntrl-doublebacktick-atpt)
+(defun ar-cntrl-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'cntrl nil))
 
 (defalias 'ar-doublequote-cntrl-atpt 'ar-cntrl-doublequote-atpt)
 (defun ar-cntrl-doublequote-atpt (&optional arg)
@@ -8616,6 +8956,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'cntrl nil))
 
+(defalias 'ar-triplebacktick-cntrl-atpt 'ar-cntrl-triplebacktick-atpt)
+(defun ar-cntrl-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'cntrl nil))
+
 (defalias 'ar-underscore-cntrl-atpt 'ar-cntrl-underscore-atpt)
 (defun ar-cntrl-underscore-atpt (&optional arg)
   "Returns regexp-quoted CNTRL at point if any, nil otherwise "
@@ -8627,24 +8973,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'cntrl nil))
-
-(defalias 'ar-doubleslash-cntrl-atpt 'ar-cntrl-doubleslash-atpt)
-(defun ar-cntrl-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'cntrl nil))
-
-(defalias 'ar-backslash-digit-atpt 'ar-digit-backslash-atpt)
-(defun ar-digit-backslash-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'digit nil))
-
-(defalias 'ar-backtick-digit-atpt 'ar-digit-backtick-atpt)
-(defun ar-digit-backtick-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'digit nil))
 
 (defalias 'ar-colon-digit-atpt 'ar-digit-colon-atpt)
 (defun ar-digit-colon-atpt (&optional arg)
@@ -8658,11 +8986,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'digit nil))
 
+(defalias 'ar-doubleslash-digit-atpt 'ar-digit-doubleslash-atpt)
+(defun ar-digit-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'digit nil))
+
+(defalias 'ar-backslash-digit-atpt 'ar-digit-backslash-atpt)
+(defun ar-digit-backslash-atpt (&optional arg)
+  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'digit nil))
+
+(defalias 'ar-backtick-digit-atpt 'ar-digit-backtick-atpt)
+(defun ar-digit-backtick-atpt (&optional arg)
+  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'digit nil))
+
 (defalias 'ar-dollar-digit-atpt 'ar-digit-dollar-atpt)
 (defun ar-digit-dollar-atpt (&optional arg)
   "Returns regexp-quoted DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'digit nil))
+
+(defalias 'ar-doublebacktick-digit-atpt 'ar-digit-doublebacktick-atpt)
+(defun ar-digit-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'digit nil))
 
 (defalias 'ar-doublequote-digit-atpt 'ar-digit-doublequote-atpt)
 (defun ar-digit-doublequote-atpt (&optional arg)
@@ -8718,6 +9070,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'digit nil))
 
+(defalias 'ar-triplebacktick-digit-atpt 'ar-digit-triplebacktick-atpt)
+(defun ar-digit-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'digit nil))
+
 (defalias 'ar-underscore-digit-atpt 'ar-digit-underscore-atpt)
 (defun ar-digit-underscore-atpt (&optional arg)
   "Returns regexp-quoted DIGIT at point if any, nil otherwise "
@@ -8729,24 +9087,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'digit nil))
-
-(defalias 'ar-doubleslash-digit-atpt 'ar-digit-doubleslash-atpt)
-(defun ar-digit-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'digit nil))
-
-(defalias 'ar-backslash-graph-atpt 'ar-graph-backslash-atpt)
-(defun ar-graph-backslash-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'graph nil))
-
-(defalias 'ar-backtick-graph-atpt 'ar-graph-backtick-atpt)
-(defun ar-graph-backtick-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'graph nil))
 
 (defalias 'ar-colon-graph-atpt 'ar-graph-colon-atpt)
 (defun ar-graph-colon-atpt (&optional arg)
@@ -8760,11 +9100,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'graph nil))
 
+(defalias 'ar-doubleslash-graph-atpt 'ar-graph-doubleslash-atpt)
+(defun ar-graph-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'graph nil))
+
+(defalias 'ar-backslash-graph-atpt 'ar-graph-backslash-atpt)
+(defun ar-graph-backslash-atpt (&optional arg)
+  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'graph nil))
+
+(defalias 'ar-backtick-graph-atpt 'ar-graph-backtick-atpt)
+(defun ar-graph-backtick-atpt (&optional arg)
+  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'graph nil))
+
 (defalias 'ar-dollar-graph-atpt 'ar-graph-dollar-atpt)
 (defun ar-graph-dollar-atpt (&optional arg)
   "Returns regexp-quoted GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'graph nil))
+
+(defalias 'ar-doublebacktick-graph-atpt 'ar-graph-doublebacktick-atpt)
+(defun ar-graph-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'graph nil))
 
 (defalias 'ar-doublequote-graph-atpt 'ar-graph-doublequote-atpt)
 (defun ar-graph-doublequote-atpt (&optional arg)
@@ -8820,6 +9184,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'graph nil))
 
+(defalias 'ar-triplebacktick-graph-atpt 'ar-graph-triplebacktick-atpt)
+(defun ar-graph-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'graph nil))
+
 (defalias 'ar-underscore-graph-atpt 'ar-graph-underscore-atpt)
 (defun ar-graph-underscore-atpt (&optional arg)
   "Returns regexp-quoted GRAPH at point if any, nil otherwise "
@@ -8831,24 +9201,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'graph nil))
-
-(defalias 'ar-doubleslash-graph-atpt 'ar-graph-doubleslash-atpt)
-(defun ar-graph-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'graph nil))
-
-(defalias 'ar-backslash-lower-atpt 'ar-lower-backslash-atpt)
-(defun ar-lower-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'lower nil))
-
-(defalias 'ar-backtick-lower-atpt 'ar-lower-backtick-atpt)
-(defun ar-lower-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'lower nil))
 
 (defalias 'ar-colon-lower-atpt 'ar-lower-colon-atpt)
 (defun ar-lower-colon-atpt (&optional arg)
@@ -8862,11 +9214,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'lower nil))
 
+(defalias 'ar-doubleslash-lower-atpt 'ar-lower-doubleslash-atpt)
+(defun ar-lower-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'lower nil))
+
+(defalias 'ar-backslash-lower-atpt 'ar-lower-backslash-atpt)
+(defun ar-lower-backslash-atpt (&optional arg)
+  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'lower nil))
+
+(defalias 'ar-backtick-lower-atpt 'ar-lower-backtick-atpt)
+(defun ar-lower-backtick-atpt (&optional arg)
+  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'lower nil))
+
 (defalias 'ar-dollar-lower-atpt 'ar-lower-dollar-atpt)
 (defun ar-lower-dollar-atpt (&optional arg)
   "Returns regexp-quoted LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'lower nil))
+
+(defalias 'ar-doublebacktick-lower-atpt 'ar-lower-doublebacktick-atpt)
+(defun ar-lower-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'lower nil))
 
 (defalias 'ar-doublequote-lower-atpt 'ar-lower-doublequote-atpt)
 (defun ar-lower-doublequote-atpt (&optional arg)
@@ -8922,6 +9298,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'lower nil))
 
+(defalias 'ar-triplebacktick-lower-atpt 'ar-lower-triplebacktick-atpt)
+(defun ar-lower-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'lower nil))
+
 (defalias 'ar-underscore-lower-atpt 'ar-lower-underscore-atpt)
 (defun ar-lower-underscore-atpt (&optional arg)
   "Returns regexp-quoted LOWER at point if any, nil otherwise "
@@ -8933,24 +9315,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'lower nil))
-
-(defalias 'ar-doubleslash-lower-atpt 'ar-lower-doubleslash-atpt)
-(defun ar-lower-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'lower nil))
-
-(defalias 'ar-backslash-nonascii-atpt 'ar-nonascii-backslash-atpt)
-(defun ar-nonascii-backslash-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'nonascii nil))
-
-(defalias 'ar-backtick-nonascii-atpt 'ar-nonascii-backtick-atpt)
-(defun ar-nonascii-backtick-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'nonascii nil))
 
 (defalias 'ar-colon-nonascii-atpt 'ar-nonascii-colon-atpt)
 (defun ar-nonascii-colon-atpt (&optional arg)
@@ -8964,11 +9328,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'nonascii nil))
 
+(defalias 'ar-doubleslash-nonascii-atpt 'ar-nonascii-doubleslash-atpt)
+(defun ar-nonascii-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'nonascii nil))
+
+(defalias 'ar-backslash-nonascii-atpt 'ar-nonascii-backslash-atpt)
+(defun ar-nonascii-backslash-atpt (&optional arg)
+  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'nonascii nil))
+
+(defalias 'ar-backtick-nonascii-atpt 'ar-nonascii-backtick-atpt)
+(defun ar-nonascii-backtick-atpt (&optional arg)
+  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'nonascii nil))
+
 (defalias 'ar-dollar-nonascii-atpt 'ar-nonascii-dollar-atpt)
 (defun ar-nonascii-dollar-atpt (&optional arg)
   "Returns regexp-quoted NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'nonascii nil))
+
+(defalias 'ar-doublebacktick-nonascii-atpt 'ar-nonascii-doublebacktick-atpt)
+(defun ar-nonascii-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'nonascii nil))
 
 (defalias 'ar-doublequote-nonascii-atpt 'ar-nonascii-doublequote-atpt)
 (defun ar-nonascii-doublequote-atpt (&optional arg)
@@ -9024,6 +9412,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'nonascii nil))
 
+(defalias 'ar-triplebacktick-nonascii-atpt 'ar-nonascii-triplebacktick-atpt)
+(defun ar-nonascii-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'nonascii nil))
+
 (defalias 'ar-underscore-nonascii-atpt 'ar-nonascii-underscore-atpt)
 (defun ar-nonascii-underscore-atpt (&optional arg)
   "Returns regexp-quoted NONASCII at point if any, nil otherwise "
@@ -9035,24 +9429,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'nonascii nil))
-
-(defalias 'ar-doubleslash-nonascii-atpt 'ar-nonascii-doubleslash-atpt)
-(defun ar-nonascii-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'nonascii nil))
-
-(defalias 'ar-backslash-print-atpt 'ar-print-backslash-atpt)
-(defun ar-print-backslash-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'print nil))
-
-(defalias 'ar-backtick-print-atpt 'ar-print-backtick-atpt)
-(defun ar-print-backtick-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'print nil))
 
 (defalias 'ar-colon-print-atpt 'ar-print-colon-atpt)
 (defun ar-print-colon-atpt (&optional arg)
@@ -9066,11 +9442,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'print nil))
 
+(defalias 'ar-doubleslash-print-atpt 'ar-print-doubleslash-atpt)
+(defun ar-print-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'print nil))
+
+(defalias 'ar-backslash-print-atpt 'ar-print-backslash-atpt)
+(defun ar-print-backslash-atpt (&optional arg)
+  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'print nil))
+
+(defalias 'ar-backtick-print-atpt 'ar-print-backtick-atpt)
+(defun ar-print-backtick-atpt (&optional arg)
+  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'print nil))
+
 (defalias 'ar-dollar-print-atpt 'ar-print-dollar-atpt)
 (defun ar-print-dollar-atpt (&optional arg)
   "Returns regexp-quoted PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'print nil))
+
+(defalias 'ar-doublebacktick-print-atpt 'ar-print-doublebacktick-atpt)
+(defun ar-print-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'print nil))
 
 (defalias 'ar-doublequote-print-atpt 'ar-print-doublequote-atpt)
 (defun ar-print-doublequote-atpt (&optional arg)
@@ -9126,6 +9526,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'print nil))
 
+(defalias 'ar-triplebacktick-print-atpt 'ar-print-triplebacktick-atpt)
+(defun ar-print-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'print nil))
+
 (defalias 'ar-underscore-print-atpt 'ar-print-underscore-atpt)
 (defun ar-print-underscore-atpt (&optional arg)
   "Returns regexp-quoted PRINT at point if any, nil otherwise "
@@ -9137,24 +9543,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'print nil))
-
-(defalias 'ar-doubleslash-print-atpt 'ar-print-doubleslash-atpt)
-(defun ar-print-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'print nil))
-
-(defalias 'ar-backslash-punct-atpt 'ar-punct-backslash-atpt)
-(defun ar-punct-backslash-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'punct nil))
-
-(defalias 'ar-backtick-punct-atpt 'ar-punct-backtick-atpt)
-(defun ar-punct-backtick-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'punct nil))
 
 (defalias 'ar-colon-punct-atpt 'ar-punct-colon-atpt)
 (defun ar-punct-colon-atpt (&optional arg)
@@ -9168,11 +9556,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'punct nil))
 
+(defalias 'ar-doubleslash-punct-atpt 'ar-punct-doubleslash-atpt)
+(defun ar-punct-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'punct nil))
+
+(defalias 'ar-backslash-punct-atpt 'ar-punct-backslash-atpt)
+(defun ar-punct-backslash-atpt (&optional arg)
+  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'punct nil))
+
+(defalias 'ar-backtick-punct-atpt 'ar-punct-backtick-atpt)
+(defun ar-punct-backtick-atpt (&optional arg)
+  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'punct nil))
+
 (defalias 'ar-dollar-punct-atpt 'ar-punct-dollar-atpt)
 (defun ar-punct-dollar-atpt (&optional arg)
   "Returns regexp-quoted PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'punct nil))
+
+(defalias 'ar-doublebacktick-punct-atpt 'ar-punct-doublebacktick-atpt)
+(defun ar-punct-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'punct nil))
 
 (defalias 'ar-doublequote-punct-atpt 'ar-punct-doublequote-atpt)
 (defun ar-punct-doublequote-atpt (&optional arg)
@@ -9228,6 +9640,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'punct nil))
 
+(defalias 'ar-triplebacktick-punct-atpt 'ar-punct-triplebacktick-atpt)
+(defun ar-punct-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'punct nil))
+
 (defalias 'ar-underscore-punct-atpt 'ar-punct-underscore-atpt)
 (defun ar-punct-underscore-atpt (&optional arg)
   "Returns regexp-quoted PUNCT at point if any, nil otherwise "
@@ -9239,24 +9657,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'punct nil))
-
-(defalias 'ar-doubleslash-punct-atpt 'ar-punct-doubleslash-atpt)
-(defun ar-punct-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'punct nil))
-
-(defalias 'ar-backslash-space-atpt 'ar-space-backslash-atpt)
-(defun ar-space-backslash-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'space nil))
-
-(defalias 'ar-backtick-space-atpt 'ar-space-backtick-atpt)
-(defun ar-space-backtick-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'space nil))
 
 (defalias 'ar-colon-space-atpt 'ar-space-colon-atpt)
 (defun ar-space-colon-atpt (&optional arg)
@@ -9270,11 +9670,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'space nil))
 
+(defalias 'ar-doubleslash-space-atpt 'ar-space-doubleslash-atpt)
+(defun ar-space-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'space nil))
+
+(defalias 'ar-backslash-space-atpt 'ar-space-backslash-atpt)
+(defun ar-space-backslash-atpt (&optional arg)
+  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'space nil))
+
+(defalias 'ar-backtick-space-atpt 'ar-space-backtick-atpt)
+(defun ar-space-backtick-atpt (&optional arg)
+  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'space nil))
+
 (defalias 'ar-dollar-space-atpt 'ar-space-dollar-atpt)
 (defun ar-space-dollar-atpt (&optional arg)
   "Returns regexp-quoted SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'space nil))
+
+(defalias 'ar-doublebacktick-space-atpt 'ar-space-doublebacktick-atpt)
+(defun ar-space-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'space nil))
 
 (defalias 'ar-doublequote-space-atpt 'ar-space-doublequote-atpt)
 (defun ar-space-doublequote-atpt (&optional arg)
@@ -9330,6 +9754,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'space nil))
 
+(defalias 'ar-triplebacktick-space-atpt 'ar-space-triplebacktick-atpt)
+(defun ar-space-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'space nil))
+
 (defalias 'ar-underscore-space-atpt 'ar-space-underscore-atpt)
 (defun ar-space-underscore-atpt (&optional arg)
   "Returns regexp-quoted SPACE at point if any, nil otherwise "
@@ -9341,24 +9771,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'space nil))
-
-(defalias 'ar-doubleslash-space-atpt 'ar-space-doubleslash-atpt)
-(defun ar-space-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'space nil))
-
-(defalias 'ar-backslash-upper-atpt 'ar-upper-backslash-atpt)
-(defun ar-upper-backslash-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'upper nil))
-
-(defalias 'ar-backtick-upper-atpt 'ar-upper-backtick-atpt)
-(defun ar-upper-backtick-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'upper nil))
 
 (defalias 'ar-colon-upper-atpt 'ar-upper-colon-atpt)
 (defun ar-upper-colon-atpt (&optional arg)
@@ -9372,11 +9784,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'upper nil))
 
+(defalias 'ar-doubleslash-upper-atpt 'ar-upper-doubleslash-atpt)
+(defun ar-upper-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'upper nil))
+
+(defalias 'ar-backslash-upper-atpt 'ar-upper-backslash-atpt)
+(defun ar-upper-backslash-atpt (&optional arg)
+  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'upper nil))
+
+(defalias 'ar-backtick-upper-atpt 'ar-upper-backtick-atpt)
+(defun ar-upper-backtick-atpt (&optional arg)
+  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'upper nil))
+
 (defalias 'ar-dollar-upper-atpt 'ar-upper-dollar-atpt)
 (defun ar-upper-dollar-atpt (&optional arg)
   "Returns regexp-quoted UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'upper nil))
+
+(defalias 'ar-doublebacktick-upper-atpt 'ar-upper-doublebacktick-atpt)
+(defun ar-upper-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'upper nil))
 
 (defalias 'ar-doublequote-upper-atpt 'ar-upper-doublequote-atpt)
 (defun ar-upper-doublequote-atpt (&optional arg)
@@ -9432,6 +9868,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'upper nil))
 
+(defalias 'ar-triplebacktick-upper-atpt 'ar-upper-triplebacktick-atpt)
+(defun ar-upper-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'upper nil))
+
 (defalias 'ar-underscore-upper-atpt 'ar-upper-underscore-atpt)
 (defun ar-upper-underscore-atpt (&optional arg)
   "Returns regexp-quoted UPPER at point if any, nil otherwise "
@@ -9443,24 +9885,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'upper nil))
-
-(defalias 'ar-doubleslash-upper-atpt 'ar-upper-doubleslash-atpt)
-(defun ar-upper-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'upper nil))
-
-(defalias 'ar-backslash-xdigit-atpt 'ar-xdigit-backslash-atpt)
-(defun ar-xdigit-backslash-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'xdigit nil))
-
-(defalias 'ar-backtick-xdigit-atpt 'ar-xdigit-backtick-atpt)
-(defun ar-xdigit-backtick-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'xdigit nil))
 
 (defalias 'ar-colon-xdigit-atpt 'ar-xdigit-colon-atpt)
 (defun ar-xdigit-colon-atpt (&optional arg)
@@ -9474,11 +9898,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'xdigit nil))
 
+(defalias 'ar-doubleslash-xdigit-atpt 'ar-xdigit-doubleslash-atpt)
+(defun ar-xdigit-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'xdigit nil))
+
+(defalias 'ar-backslash-xdigit-atpt 'ar-xdigit-backslash-atpt)
+(defun ar-xdigit-backslash-atpt (&optional arg)
+  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'xdigit nil))
+
+(defalias 'ar-backtick-xdigit-atpt 'ar-xdigit-backtick-atpt)
+(defun ar-xdigit-backtick-atpt (&optional arg)
+  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'xdigit nil))
+
 (defalias 'ar-dollar-xdigit-atpt 'ar-xdigit-dollar-atpt)
 (defun ar-xdigit-dollar-atpt (&optional arg)
   "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'xdigit nil))
+
+(defalias 'ar-doublebacktick-xdigit-atpt 'ar-xdigit-doublebacktick-atpt)
+(defun ar-xdigit-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'xdigit nil))
 
 (defalias 'ar-doublequote-xdigit-atpt 'ar-xdigit-doublequote-atpt)
 (defun ar-xdigit-doublequote-atpt (&optional arg)
@@ -9534,6 +9982,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'xdigit nil))
 
+(defalias 'ar-triplebacktick-xdigit-atpt 'ar-xdigit-triplebacktick-atpt)
+(defun ar-xdigit-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'xdigit nil))
+
 (defalias 'ar-underscore-xdigit-atpt 'ar-xdigit-underscore-atpt)
 (defun ar-xdigit-underscore-atpt (&optional arg)
   "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
@@ -9544,28 +9998,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-xdigit-whitespace-atpt (&optional arg)
   "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'xdigit nil))
-
-(defalias 'ar-doubleslash-xdigit-atpt 'ar-xdigit-doubleslash-atpt)
-(defun ar-xdigit-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'xdigit nil));; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
+  (ar-th-whitespace 'xdigit nil));; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 
 ;; ar-thing-at-point-utils-unpaired-paired: start
 
-
-(defalias 'ar-backslash-braced-atpt 'ar-braced-backslash-atpt)
-(defun ar-braced-backslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'braced nil))
-
-(defalias 'ar-backtick-braced-atpt 'ar-braced-backtick-atpt)
-(defun ar-braced-backtick-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'braced nil))
 
 (defalias 'ar-colon-braced-atpt 'ar-braced-colon-atpt)
 (defun ar-braced-colon-atpt (&optional arg)
@@ -9579,11 +10015,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'braced nil))
 
+(defalias 'ar-doubleslash-braced-atpt 'ar-braced-doubleslash-atpt)
+(defun ar-braced-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'braced nil))
+
+(defalias 'ar-backslash-braced-atpt 'ar-braced-backslash-atpt)
+(defun ar-braced-backslash-atpt (&optional arg)
+  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'braced nil))
+
+(defalias 'ar-backtick-braced-atpt 'ar-braced-backtick-atpt)
+(defun ar-braced-backtick-atpt (&optional arg)
+  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'braced nil))
+
 (defalias 'ar-dollar-braced-atpt 'ar-braced-dollar-atpt)
 (defun ar-braced-dollar-atpt (&optional arg)
   "Returns regexp-quoted BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'braced nil))
+
+(defalias 'ar-doublebacktick-braced-atpt 'ar-braced-doublebacktick-atpt)
+(defun ar-braced-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'braced nil))
 
 (defalias 'ar-doublequote-braced-atpt 'ar-braced-doublequote-atpt)
 (defun ar-braced-doublequote-atpt (&optional arg)
@@ -9639,6 +10099,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'braced nil))
 
+(defalias 'ar-triplebacktick-braced-atpt 'ar-braced-triplebacktick-atpt)
+(defun ar-braced-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'braced nil))
+
 (defalias 'ar-underscore-braced-atpt 'ar-braced-underscore-atpt)
 (defun ar-braced-underscore-atpt (&optional arg)
   "Returns regexp-quoted BRACED at point if any, nil otherwise "
@@ -9650,24 +10116,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'braced nil))
-
-(defalias 'ar-doubleslash-braced-atpt 'ar-braced-doubleslash-atpt)
-(defun ar-braced-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'braced nil))
-
-(defalias 'ar-backslash-bracketed-atpt 'ar-bracketed-backslash-atpt)
-(defun ar-bracketed-backslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'bracketed nil))
-
-(defalias 'ar-backtick-bracketed-atpt 'ar-bracketed-backtick-atpt)
-(defun ar-bracketed-backtick-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'bracketed nil))
 
 (defalias 'ar-colon-bracketed-atpt 'ar-bracketed-colon-atpt)
 (defun ar-bracketed-colon-atpt (&optional arg)
@@ -9681,11 +10129,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'bracketed nil))
 
+(defalias 'ar-doubleslash-bracketed-atpt 'ar-bracketed-doubleslash-atpt)
+(defun ar-bracketed-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'bracketed nil))
+
+(defalias 'ar-backslash-bracketed-atpt 'ar-bracketed-backslash-atpt)
+(defun ar-bracketed-backslash-atpt (&optional arg)
+  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'bracketed nil))
+
+(defalias 'ar-backtick-bracketed-atpt 'ar-bracketed-backtick-atpt)
+(defun ar-bracketed-backtick-atpt (&optional arg)
+  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'bracketed nil))
+
 (defalias 'ar-dollar-bracketed-atpt 'ar-bracketed-dollar-atpt)
 (defun ar-bracketed-dollar-atpt (&optional arg)
   "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'bracketed nil))
+
+(defalias 'ar-doublebacktick-bracketed-atpt 'ar-bracketed-doublebacktick-atpt)
+(defun ar-bracketed-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'bracketed nil))
 
 (defalias 'ar-doublequote-bracketed-atpt 'ar-bracketed-doublequote-atpt)
 (defun ar-bracketed-doublequote-atpt (&optional arg)
@@ -9741,6 +10213,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'bracketed nil))
 
+(defalias 'ar-triplebacktick-bracketed-atpt 'ar-bracketed-triplebacktick-atpt)
+(defun ar-bracketed-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'bracketed nil))
+
 (defalias 'ar-underscore-bracketed-atpt 'ar-bracketed-underscore-atpt)
 (defun ar-bracketed-underscore-atpt (&optional arg)
   "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
@@ -9752,24 +10230,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'bracketed nil))
-
-(defalias 'ar-doubleslash-bracketed-atpt 'ar-bracketed-doubleslash-atpt)
-(defun ar-bracketed-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'bracketed nil))
-
-(defalias 'ar-backslash-lesserangled-atpt 'ar-lesserangled-backslash-atpt)
-(defun ar-lesserangled-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'lesserangled nil))
-
-(defalias 'ar-backtick-lesserangled-atpt 'ar-lesserangled-backtick-atpt)
-(defun ar-lesserangled-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'lesserangled nil))
 
 (defalias 'ar-colon-lesserangled-atpt 'ar-lesserangled-colon-atpt)
 (defun ar-lesserangled-colon-atpt (&optional arg)
@@ -9783,11 +10243,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'lesserangled nil))
 
+(defalias 'ar-doubleslash-lesserangled-atpt 'ar-lesserangled-doubleslash-atpt)
+(defun ar-lesserangled-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'lesserangled nil))
+
+(defalias 'ar-backslash-lesserangled-atpt 'ar-lesserangled-backslash-atpt)
+(defun ar-lesserangled-backslash-atpt (&optional arg)
+  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'lesserangled nil))
+
+(defalias 'ar-backtick-lesserangled-atpt 'ar-lesserangled-backtick-atpt)
+(defun ar-lesserangled-backtick-atpt (&optional arg)
+  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'lesserangled nil))
+
 (defalias 'ar-dollar-lesserangled-atpt 'ar-lesserangled-dollar-atpt)
 (defun ar-lesserangled-dollar-atpt (&optional arg)
   "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'lesserangled nil))
+
+(defalias 'ar-doublebacktick-lesserangled-atpt 'ar-lesserangled-doublebacktick-atpt)
+(defun ar-lesserangled-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'lesserangled nil))
 
 (defalias 'ar-doublequote-lesserangled-atpt 'ar-lesserangled-doublequote-atpt)
 (defun ar-lesserangled-doublequote-atpt (&optional arg)
@@ -9843,6 +10327,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'lesserangled nil))
 
+(defalias 'ar-triplebacktick-lesserangled-atpt 'ar-lesserangled-triplebacktick-atpt)
+(defun ar-lesserangled-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'lesserangled nil))
+
 (defalias 'ar-underscore-lesserangled-atpt 'ar-lesserangled-underscore-atpt)
 (defun ar-lesserangled-underscore-atpt (&optional arg)
   "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
@@ -9854,24 +10344,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'lesserangled nil))
-
-(defalias 'ar-doubleslash-lesserangled-atpt 'ar-lesserangled-doubleslash-atpt)
-(defun ar-lesserangled-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'lesserangled nil))
-
-(defalias 'ar-backslash-greaterangled-atpt 'ar-greaterangled-backslash-atpt)
-(defun ar-greaterangled-backslash-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'greaterangled nil))
-
-(defalias 'ar-backtick-greaterangled-atpt 'ar-greaterangled-backtick-atpt)
-(defun ar-greaterangled-backtick-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'greaterangled nil))
 
 (defalias 'ar-colon-greaterangled-atpt 'ar-greaterangled-colon-atpt)
 (defun ar-greaterangled-colon-atpt (&optional arg)
@@ -9885,11 +10357,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'greaterangled nil))
 
+(defalias 'ar-doubleslash-greaterangled-atpt 'ar-greaterangled-doubleslash-atpt)
+(defun ar-greaterangled-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'greaterangled nil))
+
+(defalias 'ar-backslash-greaterangled-atpt 'ar-greaterangled-backslash-atpt)
+(defun ar-greaterangled-backslash-atpt (&optional arg)
+  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'greaterangled nil))
+
+(defalias 'ar-backtick-greaterangled-atpt 'ar-greaterangled-backtick-atpt)
+(defun ar-greaterangled-backtick-atpt (&optional arg)
+  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'greaterangled nil))
+
 (defalias 'ar-dollar-greaterangled-atpt 'ar-greaterangled-dollar-atpt)
 (defun ar-greaterangled-dollar-atpt (&optional arg)
   "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'greaterangled nil))
+
+(defalias 'ar-doublebacktick-greaterangled-atpt 'ar-greaterangled-doublebacktick-atpt)
+(defun ar-greaterangled-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'greaterangled nil))
 
 (defalias 'ar-doublequote-greaterangled-atpt 'ar-greaterangled-doublequote-atpt)
 (defun ar-greaterangled-doublequote-atpt (&optional arg)
@@ -9945,6 +10441,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'greaterangled nil))
 
+(defalias 'ar-triplebacktick-greaterangled-atpt 'ar-greaterangled-triplebacktick-atpt)
+(defun ar-greaterangled-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'greaterangled nil))
+
 (defalias 'ar-underscore-greaterangled-atpt 'ar-greaterangled-underscore-atpt)
 (defun ar-greaterangled-underscore-atpt (&optional arg)
   "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
@@ -9956,24 +10458,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'greaterangled nil))
-
-(defalias 'ar-doubleslash-greaterangled-atpt 'ar-greaterangled-doubleslash-atpt)
-(defun ar-greaterangled-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'greaterangled nil))
-
-(defalias 'ar-backslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backslash-atpt)
-(defun ar-leftrightsinglequoted-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'leftrightsinglequoted nil))
-
-(defalias 'ar-backtick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backtick-atpt)
-(defun ar-leftrightsinglequoted-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'leftrightsinglequoted nil))
 
 (defalias 'ar-colon-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-colon-atpt)
 (defun ar-leftrightsinglequoted-colon-atpt (&optional arg)
@@ -9987,11 +10471,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'leftrightsinglequoted nil))
 
+(defalias 'ar-doubleslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doubleslash-atpt)
+(defun ar-leftrightsinglequoted-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'leftrightsinglequoted nil))
+
+(defalias 'ar-backslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backslash-atpt)
+(defun ar-leftrightsinglequoted-backslash-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'leftrightsinglequoted nil))
+
+(defalias 'ar-backtick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backtick-atpt)
+(defun ar-leftrightsinglequoted-backtick-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'leftrightsinglequoted nil))
+
 (defalias 'ar-dollar-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-dollar-atpt)
 (defun ar-leftrightsinglequoted-dollar-atpt (&optional arg)
   "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'leftrightsinglequoted nil))
+
+(defalias 'ar-doublebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublebacktick-atpt)
+(defun ar-leftrightsinglequoted-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'leftrightsinglequoted nil))
 
 (defalias 'ar-doublequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublequote-atpt)
 (defun ar-leftrightsinglequoted-doublequote-atpt (&optional arg)
@@ -10047,6 +10555,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'leftrightsinglequoted nil))
 
+(defalias 'ar-triplebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-triplebacktick-atpt)
+(defun ar-leftrightsinglequoted-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'leftrightsinglequoted nil))
+
 (defalias 'ar-underscore-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-underscore-atpt)
 (defun ar-leftrightsinglequoted-underscore-atpt (&optional arg)
   "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
@@ -10058,24 +10572,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'leftrightsinglequoted nil))
-
-(defalias 'ar-doubleslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doubleslash-atpt)
-(defun ar-leftrightsinglequoted-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'leftrightsinglequoted nil))
-
-(defalias 'ar-backslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslash-atpt)
-(defun ar-leftrightdoublequoted-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'leftrightdoublequoted nil))
-
-(defalias 'ar-backtick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backtick-atpt)
-(defun ar-leftrightdoublequoted-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'leftrightdoublequoted nil))
 
 (defalias 'ar-colon-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-colon-atpt)
 (defun ar-leftrightdoublequoted-colon-atpt (&optional arg)
@@ -10089,11 +10585,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'leftrightdoublequoted nil))
 
+(defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
+(defun ar-leftrightdoublequoted-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'leftrightdoublequoted nil))
+
+(defalias 'ar-backslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslash-atpt)
+(defun ar-leftrightdoublequoted-backslash-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'leftrightdoublequoted nil))
+
+(defalias 'ar-backtick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backtick-atpt)
+(defun ar-leftrightdoublequoted-backtick-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'leftrightdoublequoted nil))
+
 (defalias 'ar-dollar-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-dollar-atpt)
 (defun ar-leftrightdoublequoted-dollar-atpt (&optional arg)
   "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'leftrightdoublequoted nil))
+
+(defalias 'ar-doublebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublebacktick-atpt)
+(defun ar-leftrightdoublequoted-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'leftrightdoublequoted nil))
 
 (defalias 'ar-doublequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublequote-atpt)
 (defun ar-leftrightdoublequoted-doublequote-atpt (&optional arg)
@@ -10149,6 +10669,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'leftrightdoublequoted nil))
 
+(defalias 'ar-triplebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-triplebacktick-atpt)
+(defun ar-leftrightdoublequoted-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'leftrightdoublequoted nil))
+
 (defalias 'ar-underscore-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-underscore-atpt)
 (defun ar-leftrightdoublequoted-underscore-atpt (&optional arg)
   "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
@@ -10160,24 +10686,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'leftrightdoublequoted nil))
-
-(defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
-(defun ar-leftrightdoublequoted-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'leftrightdoublequoted nil))
-
-(defalias 'ar-backslash-parentized-atpt 'ar-parentized-backslash-atpt)
-(defun ar-parentized-backslash-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'parentized nil))
-
-(defalias 'ar-backtick-parentized-atpt 'ar-parentized-backtick-atpt)
-(defun ar-parentized-backtick-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'parentized nil))
 
 (defalias 'ar-colon-parentized-atpt 'ar-parentized-colon-atpt)
 (defun ar-parentized-colon-atpt (&optional arg)
@@ -10191,11 +10699,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-cross 'parentized nil))
 
+(defalias 'ar-doubleslash-parentized-atpt 'ar-parentized-doubleslash-atpt)
+(defun ar-parentized-doubleslash-atpt (&optional arg)
+  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doubleslash 'parentized nil))
+
+(defalias 'ar-backslash-parentized-atpt 'ar-parentized-backslash-atpt)
+(defun ar-parentized-backslash-atpt (&optional arg)
+  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backslash 'parentized nil))
+
+(defalias 'ar-backtick-parentized-atpt 'ar-parentized-backtick-atpt)
+(defun ar-parentized-backtick-atpt (&optional arg)
+  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-backtick 'parentized nil))
+
 (defalias 'ar-dollar-parentized-atpt 'ar-parentized-dollar-atpt)
 (defun ar-parentized-dollar-atpt (&optional arg)
   "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'parentized nil))
+
+(defalias 'ar-doublebacktick-parentized-atpt 'ar-parentized-doublebacktick-atpt)
+(defun ar-parentized-doublebacktick-atpt (&optional arg)
+  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-doublebacktick 'parentized nil))
 
 (defalias 'ar-doublequote-parentized-atpt 'ar-parentized-doublequote-atpt)
 (defun ar-parentized-doublequote-atpt (&optional arg)
@@ -10251,6 +10783,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-tild 'parentized nil))
 
+(defalias 'ar-triplebacktick-parentized-atpt 'ar-parentized-triplebacktick-atpt)
+(defun ar-parentized-triplebacktick-atpt (&optional arg)
+  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  (interactive "*p")
+  (ar-th-triplebacktick 'parentized nil))
+
 (defalias 'ar-underscore-parentized-atpt 'ar-parentized-underscore-atpt)
 (defun ar-parentized-underscore-atpt (&optional arg)
   "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
@@ -10261,13 +10799,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-parentized-whitespace-atpt (&optional arg)
   "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'parentized nil))
-
-(defalias 'ar-doubleslash-parentized-atpt 'ar-parentized-doubleslash-atpt)
-(defun ar-parentized-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'parentized nil));; ar-thing-at-point-utils-unpaired-paired: end
+  (ar-th-whitespace 'parentized nil));; ar-thing-at-point-utils-unpaired-paired: end
 
 ;; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: start
 
@@ -19296,24 +19828,6 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: end
-(defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backslash(s),
-
-  otherwise copy backslash(ed) at point.
-  With NO-DELIMITERS, copy backslash(ed) without delimiters.
-  With negative argument kill backslash(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'backslash no-delimiters check))
-
-(defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backtick(s),
-
-  otherwise copy backtick(ed) at point.
-  With NO-DELIMITERS, copy backtick(ed) without delimiters.
-  With negative argument kill backtick(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'backtick no-delimiters check))
-
 (defun ar-colon-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with colon(s),
 
@@ -19332,6 +19846,33 @@ See doku from `sort-subr', for details.
   (interactive "P")
   (ar-th-base-copy-or 'cross no-delimiters check))
 
+(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doubleslash(s),
+
+  otherwise copy doubleslash(ed) at point.
+  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
+  With negative argument kill doubleslash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doubleslash no-delimiters check))
+
+(defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with backslash(s),
+
+  otherwise copy backslash(ed) at point.
+  With NO-DELIMITERS, copy backslash(ed) without delimiters.
+  With negative argument kill backslash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'backslash no-delimiters check))
+
+(defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with backtick(s),
+
+  otherwise copy backtick(ed) at point.
+  With NO-DELIMITERS, copy backtick(ed) without delimiters.
+  With negative argument kill backtick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'backtick no-delimiters check))
+
 (defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with dollar(s),
 
@@ -19340,6 +19881,15 @@ See doku from `sort-subr', for details.
   With negative argument kill dollar(ed) at point. "
   (interactive "P")
   (ar-th-base-copy-or 'dollar no-delimiters check))
+
+(defun ar-doublebacktick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doublebacktick(s),
+
+  otherwise copy doublebacktick(ed) at point.
+  With NO-DELIMITERS, copy doublebacktick(ed) without delimiters.
+  With negative argument kill doublebacktick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doublebacktick no-delimiters check))
 
 (defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with doublequote(s),
@@ -19422,6 +19972,15 @@ See doku from `sort-subr', for details.
   (interactive "P")
   (ar-th-base-copy-or 'tild no-delimiters check))
 
+(defun ar-triplebacktick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with triplebacktick(s),
+
+  otherwise copy triplebacktick(ed) at point.
+  With NO-DELIMITERS, copy triplebacktick(ed) without delimiters.
+  With negative argument kill triplebacktick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'triplebacktick no-delimiters check))
+
 (defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with underscore(s),
 
@@ -19439,15 +19998,6 @@ See doku from `sort-subr', for details.
   With negative argument kill whitespace(ed) at point. "
   (interactive "P")
   (ar-th-base-copy-or 'whitespace no-delimiters check))
-
-(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doubleslash(s),
-
-  otherwise copy doubleslash(ed) at point.
-  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
-  With negative argument kill doubleslash(ed) at point. "
-  (interactive "P")
-  (ar-th-base-copy-or 'doubleslash no-delimiters check))
 
 (defun ar-brace-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with brace(s),
