@@ -4539,6 +4539,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'alnum arg))
 
+(defun ar-triplebacktick-alnum-atpt (&optional arg)
+  "Deletes alnum at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'alnum arg))
+
 (defun ar-delete-alnum-in-region (beg end)
   "Deletes ALNUM at point if any. "
   (interactive "*r")
@@ -4632,6 +4639,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'alpha arg))
+
+(defun ar-triplebacktick-alpha-atpt (&optional arg)
+  "Deletes alpha at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'alpha arg))
 
 (defun ar-delete-alpha-in-region (beg end)
   "Deletes ALPHA at point if any. "
@@ -4727,6 +4741,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'ascii arg))
 
+(defun ar-triplebacktick-ascii-atpt (&optional arg)
+  "Deletes ascii at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'ascii arg))
+
 (defun ar-delete-ascii-in-region (beg end)
   "Deletes ASCII at point if any. "
   (interactive "*r")
@@ -4820,6 +4841,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'blank arg))
+
+(defun ar-triplebacktick-blank-atpt (&optional arg)
+  "Deletes blank at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'blank arg))
 
 (defun ar-delete-blank-in-region (beg end)
   "Deletes BLANK at point if any. "
@@ -4915,6 +4943,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'cntrl arg))
 
+(defun ar-triplebacktick-cntrl-atpt (&optional arg)
+  "Deletes cntrl at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'cntrl arg))
+
 (defun ar-delete-cntrl-in-region (beg end)
   "Deletes CNTRL at point if any. "
   (interactive "*r")
@@ -5008,6 +5043,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'digit arg))
+
+(defun ar-triplebacktick-digit-atpt (&optional arg)
+  "Deletes digit at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'digit arg))
 
 (defun ar-delete-digit-in-region (beg end)
   "Deletes DIGIT at point if any. "
@@ -5103,6 +5145,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'graph arg))
 
+(defun ar-triplebacktick-graph-atpt (&optional arg)
+  "Deletes graph at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'graph arg))
+
 (defun ar-delete-graph-in-region (beg end)
   "Deletes GRAPH at point if any. "
   (interactive "*r")
@@ -5196,6 +5245,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'lower arg))
+
+(defun ar-triplebacktick-lower-atpt (&optional arg)
+  "Deletes lower at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'lower arg))
 
 (defun ar-delete-lower-in-region (beg end)
   "Deletes LOWER at point if any. "
@@ -5291,6 +5347,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'nonascii arg))
 
+(defun ar-triplebacktick-nonascii-atpt (&optional arg)
+  "Deletes nonascii at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'nonascii arg))
+
 (defun ar-delete-nonascii-in-region (beg end)
   "Deletes NONASCII at point if any. "
   (interactive "*r")
@@ -5384,6 +5447,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'print arg))
+
+(defun ar-triplebacktick-print-atpt (&optional arg)
+  "Deletes print at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'print arg))
 
 (defun ar-delete-print-in-region (beg end)
   "Deletes PRINT at point if any. "
@@ -5479,6 +5549,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'punct arg))
 
+(defun ar-triplebacktick-punct-atpt (&optional arg)
+  "Deletes punct at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'punct arg))
+
 (defun ar-delete-punct-in-region (beg end)
   "Deletes PUNCT at point if any. "
   (interactive "*r")
@@ -5572,6 +5649,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'space arg))
+
+(defun ar-triplebacktick-space-atpt (&optional arg)
+  "Deletes space at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'space arg))
 
 (defun ar-delete-space-in-region (beg end)
   "Deletes SPACE at point if any. "
@@ -5667,6 +5751,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'upper arg))
 
+(defun ar-triplebacktick-upper-atpt (&optional arg)
+  "Deletes upper at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'upper arg))
+
 (defun ar-delete-upper-in-region (beg end)
   "Deletes UPPER at point if any. "
   (interactive "*r")
@@ -5760,6 +5851,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'xdigit arg))
+
+(defun ar-triplebacktick-xdigit-atpt (&optional arg)
+  "Deletes xdigit at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'xdigit arg))
 
 (defun ar-delete-xdigit-in-region (beg end)
   "Deletes XDIGIT at point if any. "
@@ -5857,6 +5955,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'greateranglednested arg))
 
+(defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
+  "Deletes greateranglednested at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'greateranglednested arg))
+
 (defun ar-delete-greateranglednested-in-region (beg end)
   "Deletes GREATERANGLEDNESTED at point if any. "
   (interactive "*r")
@@ -5950,6 +6055,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'lesseranglednested arg))
+
+(defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
+  "Deletes lesseranglednested at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'lesseranglednested arg))
 
 (defun ar-delete-lesseranglednested-in-region (beg end)
   "Deletes LESSERANGLEDNESTED at point if any. "
@@ -6045,6 +6157,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'buffer arg))
 
+(defun ar-triplebacktick-buffer-atpt (&optional arg)
+  "Deletes buffer at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'buffer arg))
+
 (defun ar-delete-buffer-in-region (beg end)
   "Deletes BUFFER at point if any. "
   (interactive "*r")
@@ -6138,6 +6257,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'comment arg))
+
+(defun ar-triplebacktick-comment-atpt (&optional arg)
+  "Deletes comment at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'comment arg))
 
 (defun ar-delete-comment-in-region (beg end)
   "Deletes COMMENT at point if any. "
@@ -6233,6 +6359,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'csv arg))
 
+(defun ar-triplebacktick-csv-atpt (&optional arg)
+  "Deletes csv at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'csv arg))
+
 (defun ar-delete-csv-in-region (beg end)
   "Deletes CSV at point if any. "
   (interactive "*r")
@@ -6326,6 +6459,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'date arg))
+
+(defun ar-triplebacktick-date-atpt (&optional arg)
+  "Deletes date at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'date arg))
 
 (defun ar-delete-date-in-region (beg end)
   "Deletes DATE at point if any. "
@@ -6421,6 +6561,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'email arg))
 
+(defun ar-triplebacktick-email-atpt (&optional arg)
+  "Deletes email at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'email arg))
+
 (defun ar-delete-email-in-region (beg end)
   "Deletes EMAIL at point if any. "
   (interactive "*r")
@@ -6514,6 +6661,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'filename arg))
+
+(defun ar-triplebacktick-filename-atpt (&optional arg)
+  "Deletes filename at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'filename arg))
 
 (defun ar-delete-filename-in-region (beg end)
   "Deletes FILENAME at point if any. "
@@ -6609,6 +6763,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'filenamenondirectory arg))
 
+(defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
+  "Deletes filenamenondirectory at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'filenamenondirectory arg))
+
 (defun ar-delete-filenamenondirectory-in-region (beg end)
   "Deletes FILENAMENONDIRECTORY at point if any. "
   (interactive "*r")
@@ -6702,6 +6863,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'float arg))
+
+(defun ar-triplebacktick-float-atpt (&optional arg)
+  "Deletes float at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'float arg))
 
 (defun ar-delete-float-in-region (beg end)
   "Deletes FLOAT at point if any. "
@@ -6797,6 +6965,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'function arg))
 
+(defun ar-triplebacktick-function-atpt (&optional arg)
+  "Deletes function at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'function arg))
+
 (defun ar-delete-function-in-region (beg end)
   "Deletes FUNCTION at point if any. "
   (interactive "*r")
@@ -6890,6 +7065,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'ip arg))
+
+(defun ar-triplebacktick-ip-atpt (&optional arg)
+  "Deletes ip at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'ip arg))
 
 (defun ar-delete-ip-in-region (beg end)
   "Deletes IP at point if any. "
@@ -6985,6 +7167,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'isbn arg))
 
+(defun ar-triplebacktick-isbn-atpt (&optional arg)
+  "Deletes isbn at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'isbn arg))
+
 (defun ar-delete-isbn-in-region (beg end)
   "Deletes ISBN at point if any. "
   (interactive "*r")
@@ -7078,6 +7267,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'line arg))
+
+(defun ar-triplebacktick-line-atpt (&optional arg)
+  "Deletes line at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'line arg))
 
 (defun ar-delete-line-in-region (beg end)
   "Deletes LINE at point if any. "
@@ -7173,6 +7369,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'list arg))
 
+(defun ar-triplebacktick-list-atpt (&optional arg)
+  "Deletes list at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'list arg))
+
 (defun ar-delete-list-in-region (beg end)
   "Deletes LIST at point if any. "
   (interactive "*r")
@@ -7266,6 +7469,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'name arg))
+
+(defun ar-triplebacktick-name-atpt (&optional arg)
+  "Deletes name at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'name arg))
 
 (defun ar-delete-name-in-region (beg end)
   "Deletes NAME at point if any. "
@@ -7361,6 +7571,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'number arg))
 
+(defun ar-triplebacktick-number-atpt (&optional arg)
+  "Deletes number at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'number arg))
+
 (defun ar-delete-number-in-region (beg end)
   "Deletes NUMBER at point if any. "
   (interactive "*r")
@@ -7454,6 +7671,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'page arg))
+
+(defun ar-triplebacktick-page-atpt (&optional arg)
+  "Deletes page at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'page arg))
 
 (defun ar-delete-page-in-region (beg end)
   "Deletes PAGE at point if any. "
@@ -7549,6 +7773,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'paragraph arg))
 
+(defun ar-triplebacktick-paragraph-atpt (&optional arg)
+  "Deletes paragraph at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'paragraph arg))
+
 (defun ar-delete-paragraph-in-region (beg end)
   "Deletes PARAGRAPH at point if any. "
   (interactive "*r")
@@ -7642,6 +7873,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'phone arg))
+
+(defun ar-triplebacktick-phone-atpt (&optional arg)
+  "Deletes phone at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'phone arg))
 
 (defun ar-delete-phone-in-region (beg end)
   "Deletes PHONE at point if any. "
@@ -7737,6 +7975,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'region arg))
 
+(defun ar-triplebacktick-region-atpt (&optional arg)
+  "Deletes region at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'region arg))
+
 (defun ar-delete-region-in-region (beg end)
   "Deletes REGION at point if any. "
   (interactive "*r")
@@ -7830,6 +8075,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'sentence arg))
+
+(defun ar-triplebacktick-sentence-atpt (&optional arg)
+  "Deletes sentence at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'sentence arg))
 
 (defun ar-delete-sentence-in-region (beg end)
   "Deletes SENTENCE at point if any. "
@@ -7925,6 +8177,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'sexp arg))
 
+(defun ar-triplebacktick-sexp-atpt (&optional arg)
+  "Deletes sexp at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'sexp arg))
+
 (defun ar-delete-sexp-in-region (beg end)
   "Deletes SEXP at point if any. "
   (interactive "*r")
@@ -8018,6 +8277,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'shstruct arg))
+
+(defun ar-triplebacktick-shstruct-atpt (&optional arg)
+  "Deletes shstruct at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'shstruct arg))
 
 (defun ar-delete-shstruct-in-region (beg end)
   "Deletes SHSTRUCT at point if any. "
@@ -8113,6 +8379,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'symbol arg))
 
+(defun ar-triplebacktick-symbol-atpt (&optional arg)
+  "Deletes symbol at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'symbol arg))
+
 (defun ar-delete-symbol-in-region (beg end)
   "Deletes SYMBOL at point if any. "
   (interactive "*r")
@@ -8206,6 +8479,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
   (ar-th-triplequotesq 'url arg))
+
+(defun ar-triplebacktick-url-atpt (&optional arg)
+  "Deletes url at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'url arg))
 
 (defun ar-delete-url-in-region (beg end)
   "Deletes URL at point if any. "
@@ -8301,6 +8581,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'word arg))
 
+(defun ar-triplebacktick-word-atpt (&optional arg)
+  "Deletes word at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'word arg))
+
 (defun ar-delete-word-in-region (beg end)
   "Deletes WORD at point if any. "
   (interactive "*r")
@@ -8395,6 +8682,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*p")
   (ar-th-triplequotesq 'wordalphaonly arg))
 
+(defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
+  "Deletes wordalphaonly at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'wordalphaonly arg))
+
 (defun ar-delete-wordalphaonly-in-region (beg end)
   "Deletes WORDALPHAONLY at point if any. "
   (interactive "*r")
@@ -8406,1597 +8700,1597 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defalias 'ar-colon-alnum-atpt 'ar-alnum-colon-atpt)
 (defun ar-alnum-colon-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'alnum nil))
 
 (defalias 'ar-cross-alnum-atpt 'ar-alnum-cross-atpt)
 (defun ar-alnum-cross-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'alnum nil))
 
 (defalias 'ar-doubleslash-alnum-atpt 'ar-alnum-doubleslash-atpt)
 (defun ar-alnum-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'alnum nil))
 
 (defalias 'ar-backslash-alnum-atpt 'ar-alnum-backslash-atpt)
 (defun ar-alnum-backslash-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'alnum nil))
 
 (defalias 'ar-backtick-alnum-atpt 'ar-alnum-backtick-atpt)
 (defun ar-alnum-backtick-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'alnum nil))
 
 (defalias 'ar-dollar-alnum-atpt 'ar-alnum-dollar-atpt)
 (defun ar-alnum-dollar-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'alnum nil))
 
 (defalias 'ar-doublebacktick-alnum-atpt 'ar-alnum-doublebacktick-atpt)
 (defun ar-alnum-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'alnum nil))
 
 (defalias 'ar-doublequote-alnum-atpt 'ar-alnum-doublequote-atpt)
 (defun ar-alnum-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'alnum nil))
 
 (defalias 'ar-equalize-alnum-atpt 'ar-alnum-equalize-atpt)
 (defun ar-alnum-equalize-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'alnum nil))
 
 (defalias 'ar-escape-alnum-atpt 'ar-alnum-escape-atpt)
 (defun ar-alnum-escape-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'alnum nil))
 
 (defalias 'ar-hash-alnum-atpt 'ar-alnum-hash-atpt)
 (defun ar-alnum-hash-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'alnum nil))
 
 (defalias 'ar-hyphen-alnum-atpt 'ar-alnum-hyphen-atpt)
 (defun ar-alnum-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'alnum nil))
 
 (defalias 'ar-singlequote-alnum-atpt 'ar-alnum-singlequote-atpt)
 (defun ar-alnum-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'alnum nil))
 
 (defalias 'ar-slash-alnum-atpt 'ar-alnum-slash-atpt)
 (defun ar-alnum-slash-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'alnum nil))
 
 (defalias 'ar-star-alnum-atpt 'ar-alnum-star-atpt)
 (defun ar-alnum-star-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'alnum nil))
 
 (defalias 'ar-tild-alnum-atpt 'ar-alnum-tild-atpt)
 (defun ar-alnum-tild-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'alnum nil))
 
 (defalias 'ar-triplebacktick-alnum-atpt 'ar-alnum-triplebacktick-atpt)
 (defun ar-alnum-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'alnum nil))
 
 (defalias 'ar-underscore-alnum-atpt 'ar-alnum-underscore-atpt)
 (defun ar-alnum-underscore-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'alnum nil))
 
 (defalias 'ar-whitespace-alnum-atpt 'ar-alnum-whitespace-atpt)
 (defun ar-alnum-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted ALNUM at point if any, nil otherwise "
+  "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'alnum nil))
 
 (defalias 'ar-colon-alpha-atpt 'ar-alpha-colon-atpt)
 (defun ar-alpha-colon-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'alpha nil))
 
 (defalias 'ar-cross-alpha-atpt 'ar-alpha-cross-atpt)
 (defun ar-alpha-cross-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'alpha nil))
 
 (defalias 'ar-doubleslash-alpha-atpt 'ar-alpha-doubleslash-atpt)
 (defun ar-alpha-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'alpha nil))
 
 (defalias 'ar-backslash-alpha-atpt 'ar-alpha-backslash-atpt)
 (defun ar-alpha-backslash-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'alpha nil))
 
 (defalias 'ar-backtick-alpha-atpt 'ar-alpha-backtick-atpt)
 (defun ar-alpha-backtick-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'alpha nil))
 
 (defalias 'ar-dollar-alpha-atpt 'ar-alpha-dollar-atpt)
 (defun ar-alpha-dollar-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'alpha nil))
 
 (defalias 'ar-doublebacktick-alpha-atpt 'ar-alpha-doublebacktick-atpt)
 (defun ar-alpha-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'alpha nil))
 
 (defalias 'ar-doublequote-alpha-atpt 'ar-alpha-doublequote-atpt)
 (defun ar-alpha-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'alpha nil))
 
 (defalias 'ar-equalize-alpha-atpt 'ar-alpha-equalize-atpt)
 (defun ar-alpha-equalize-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'alpha nil))
 
 (defalias 'ar-escape-alpha-atpt 'ar-alpha-escape-atpt)
 (defun ar-alpha-escape-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'alpha nil))
 
 (defalias 'ar-hash-alpha-atpt 'ar-alpha-hash-atpt)
 (defun ar-alpha-hash-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'alpha nil))
 
 (defalias 'ar-hyphen-alpha-atpt 'ar-alpha-hyphen-atpt)
 (defun ar-alpha-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'alpha nil))
 
 (defalias 'ar-singlequote-alpha-atpt 'ar-alpha-singlequote-atpt)
 (defun ar-alpha-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'alpha nil))
 
 (defalias 'ar-slash-alpha-atpt 'ar-alpha-slash-atpt)
 (defun ar-alpha-slash-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'alpha nil))
 
 (defalias 'ar-star-alpha-atpt 'ar-alpha-star-atpt)
 (defun ar-alpha-star-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'alpha nil))
 
 (defalias 'ar-tild-alpha-atpt 'ar-alpha-tild-atpt)
 (defun ar-alpha-tild-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'alpha nil))
 
 (defalias 'ar-triplebacktick-alpha-atpt 'ar-alpha-triplebacktick-atpt)
 (defun ar-alpha-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'alpha nil))
 
 (defalias 'ar-underscore-alpha-atpt 'ar-alpha-underscore-atpt)
 (defun ar-alpha-underscore-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'alpha nil))
 
 (defalias 'ar-whitespace-alpha-atpt 'ar-alpha-whitespace-atpt)
 (defun ar-alpha-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted ALPHA at point if any, nil otherwise "
+  "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'alpha nil))
 
 (defalias 'ar-colon-ascii-atpt 'ar-ascii-colon-atpt)
 (defun ar-ascii-colon-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'ascii nil))
 
 (defalias 'ar-cross-ascii-atpt 'ar-ascii-cross-atpt)
 (defun ar-ascii-cross-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'ascii nil))
 
 (defalias 'ar-doubleslash-ascii-atpt 'ar-ascii-doubleslash-atpt)
 (defun ar-ascii-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'ascii nil))
 
 (defalias 'ar-backslash-ascii-atpt 'ar-ascii-backslash-atpt)
 (defun ar-ascii-backslash-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'ascii nil))
 
 (defalias 'ar-backtick-ascii-atpt 'ar-ascii-backtick-atpt)
 (defun ar-ascii-backtick-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'ascii nil))
 
 (defalias 'ar-dollar-ascii-atpt 'ar-ascii-dollar-atpt)
 (defun ar-ascii-dollar-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'ascii nil))
 
 (defalias 'ar-doublebacktick-ascii-atpt 'ar-ascii-doublebacktick-atpt)
 (defun ar-ascii-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'ascii nil))
 
 (defalias 'ar-doublequote-ascii-atpt 'ar-ascii-doublequote-atpt)
 (defun ar-ascii-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'ascii nil))
 
 (defalias 'ar-equalize-ascii-atpt 'ar-ascii-equalize-atpt)
 (defun ar-ascii-equalize-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'ascii nil))
 
 (defalias 'ar-escape-ascii-atpt 'ar-ascii-escape-atpt)
 (defun ar-ascii-escape-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'ascii nil))
 
 (defalias 'ar-hash-ascii-atpt 'ar-ascii-hash-atpt)
 (defun ar-ascii-hash-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'ascii nil))
 
 (defalias 'ar-hyphen-ascii-atpt 'ar-ascii-hyphen-atpt)
 (defun ar-ascii-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'ascii nil))
 
 (defalias 'ar-singlequote-ascii-atpt 'ar-ascii-singlequote-atpt)
 (defun ar-ascii-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'ascii nil))
 
 (defalias 'ar-slash-ascii-atpt 'ar-ascii-slash-atpt)
 (defun ar-ascii-slash-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'ascii nil))
 
 (defalias 'ar-star-ascii-atpt 'ar-ascii-star-atpt)
 (defun ar-ascii-star-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'ascii nil))
 
 (defalias 'ar-tild-ascii-atpt 'ar-ascii-tild-atpt)
 (defun ar-ascii-tild-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'ascii nil))
 
 (defalias 'ar-triplebacktick-ascii-atpt 'ar-ascii-triplebacktick-atpt)
 (defun ar-ascii-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'ascii nil))
 
 (defalias 'ar-underscore-ascii-atpt 'ar-ascii-underscore-atpt)
 (defun ar-ascii-underscore-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'ascii nil))
 
 (defalias 'ar-whitespace-ascii-atpt 'ar-ascii-whitespace-atpt)
 (defun ar-ascii-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted ASCII at point if any, nil otherwise "
+  "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'ascii nil))
 
 (defalias 'ar-colon-blank-atpt 'ar-blank-colon-atpt)
 (defun ar-blank-colon-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'blank nil))
 
 (defalias 'ar-cross-blank-atpt 'ar-blank-cross-atpt)
 (defun ar-blank-cross-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'blank nil))
 
 (defalias 'ar-doubleslash-blank-atpt 'ar-blank-doubleslash-atpt)
 (defun ar-blank-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'blank nil))
 
 (defalias 'ar-backslash-blank-atpt 'ar-blank-backslash-atpt)
 (defun ar-blank-backslash-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'blank nil))
 
 (defalias 'ar-backtick-blank-atpt 'ar-blank-backtick-atpt)
 (defun ar-blank-backtick-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'blank nil))
 
 (defalias 'ar-dollar-blank-atpt 'ar-blank-dollar-atpt)
 (defun ar-blank-dollar-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'blank nil))
 
 (defalias 'ar-doublebacktick-blank-atpt 'ar-blank-doublebacktick-atpt)
 (defun ar-blank-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'blank nil))
 
 (defalias 'ar-doublequote-blank-atpt 'ar-blank-doublequote-atpt)
 (defun ar-blank-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'blank nil))
 
 (defalias 'ar-equalize-blank-atpt 'ar-blank-equalize-atpt)
 (defun ar-blank-equalize-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'blank nil))
 
 (defalias 'ar-escape-blank-atpt 'ar-blank-escape-atpt)
 (defun ar-blank-escape-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'blank nil))
 
 (defalias 'ar-hash-blank-atpt 'ar-blank-hash-atpt)
 (defun ar-blank-hash-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'blank nil))
 
 (defalias 'ar-hyphen-blank-atpt 'ar-blank-hyphen-atpt)
 (defun ar-blank-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'blank nil))
 
 (defalias 'ar-singlequote-blank-atpt 'ar-blank-singlequote-atpt)
 (defun ar-blank-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'blank nil))
 
 (defalias 'ar-slash-blank-atpt 'ar-blank-slash-atpt)
 (defun ar-blank-slash-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'blank nil))
 
 (defalias 'ar-star-blank-atpt 'ar-blank-star-atpt)
 (defun ar-blank-star-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'blank nil))
 
 (defalias 'ar-tild-blank-atpt 'ar-blank-tild-atpt)
 (defun ar-blank-tild-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'blank nil))
 
 (defalias 'ar-triplebacktick-blank-atpt 'ar-blank-triplebacktick-atpt)
 (defun ar-blank-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'blank nil))
 
 (defalias 'ar-underscore-blank-atpt 'ar-blank-underscore-atpt)
 (defun ar-blank-underscore-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'blank nil))
 
 (defalias 'ar-whitespace-blank-atpt 'ar-blank-whitespace-atpt)
 (defun ar-blank-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted BLANK at point if any, nil otherwise "
+  "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'blank nil))
 
 (defalias 'ar-colon-cntrl-atpt 'ar-cntrl-colon-atpt)
 (defun ar-cntrl-colon-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'cntrl nil))
 
 (defalias 'ar-cross-cntrl-atpt 'ar-cntrl-cross-atpt)
 (defun ar-cntrl-cross-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'cntrl nil))
 
 (defalias 'ar-doubleslash-cntrl-atpt 'ar-cntrl-doubleslash-atpt)
 (defun ar-cntrl-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'cntrl nil))
 
 (defalias 'ar-backslash-cntrl-atpt 'ar-cntrl-backslash-atpt)
 (defun ar-cntrl-backslash-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'cntrl nil))
 
 (defalias 'ar-backtick-cntrl-atpt 'ar-cntrl-backtick-atpt)
 (defun ar-cntrl-backtick-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'cntrl nil))
 
 (defalias 'ar-dollar-cntrl-atpt 'ar-cntrl-dollar-atpt)
 (defun ar-cntrl-dollar-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'cntrl nil))
 
 (defalias 'ar-doublebacktick-cntrl-atpt 'ar-cntrl-doublebacktick-atpt)
 (defun ar-cntrl-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'cntrl nil))
 
 (defalias 'ar-doublequote-cntrl-atpt 'ar-cntrl-doublequote-atpt)
 (defun ar-cntrl-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'cntrl nil))
 
 (defalias 'ar-equalize-cntrl-atpt 'ar-cntrl-equalize-atpt)
 (defun ar-cntrl-equalize-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'cntrl nil))
 
 (defalias 'ar-escape-cntrl-atpt 'ar-cntrl-escape-atpt)
 (defun ar-cntrl-escape-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'cntrl nil))
 
 (defalias 'ar-hash-cntrl-atpt 'ar-cntrl-hash-atpt)
 (defun ar-cntrl-hash-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'cntrl nil))
 
 (defalias 'ar-hyphen-cntrl-atpt 'ar-cntrl-hyphen-atpt)
 (defun ar-cntrl-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'cntrl nil))
 
 (defalias 'ar-singlequote-cntrl-atpt 'ar-cntrl-singlequote-atpt)
 (defun ar-cntrl-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'cntrl nil))
 
 (defalias 'ar-slash-cntrl-atpt 'ar-cntrl-slash-atpt)
 (defun ar-cntrl-slash-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'cntrl nil))
 
 (defalias 'ar-star-cntrl-atpt 'ar-cntrl-star-atpt)
 (defun ar-cntrl-star-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'cntrl nil))
 
 (defalias 'ar-tild-cntrl-atpt 'ar-cntrl-tild-atpt)
 (defun ar-cntrl-tild-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'cntrl nil))
 
 (defalias 'ar-triplebacktick-cntrl-atpt 'ar-cntrl-triplebacktick-atpt)
 (defun ar-cntrl-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'cntrl nil))
 
 (defalias 'ar-underscore-cntrl-atpt 'ar-cntrl-underscore-atpt)
 (defun ar-cntrl-underscore-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'cntrl nil))
 
 (defalias 'ar-whitespace-cntrl-atpt 'ar-cntrl-whitespace-atpt)
 (defun ar-cntrl-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted CNTRL at point if any, nil otherwise "
+  "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'cntrl nil))
 
 (defalias 'ar-colon-digit-atpt 'ar-digit-colon-atpt)
 (defun ar-digit-colon-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'digit nil))
 
 (defalias 'ar-cross-digit-atpt 'ar-digit-cross-atpt)
 (defun ar-digit-cross-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'digit nil))
 
 (defalias 'ar-doubleslash-digit-atpt 'ar-digit-doubleslash-atpt)
 (defun ar-digit-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'digit nil))
 
 (defalias 'ar-backslash-digit-atpt 'ar-digit-backslash-atpt)
 (defun ar-digit-backslash-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'digit nil))
 
 (defalias 'ar-backtick-digit-atpt 'ar-digit-backtick-atpt)
 (defun ar-digit-backtick-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'digit nil))
 
 (defalias 'ar-dollar-digit-atpt 'ar-digit-dollar-atpt)
 (defun ar-digit-dollar-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'digit nil))
 
 (defalias 'ar-doublebacktick-digit-atpt 'ar-digit-doublebacktick-atpt)
 (defun ar-digit-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'digit nil))
 
 (defalias 'ar-doublequote-digit-atpt 'ar-digit-doublequote-atpt)
 (defun ar-digit-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'digit nil))
 
 (defalias 'ar-equalize-digit-atpt 'ar-digit-equalize-atpt)
 (defun ar-digit-equalize-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'digit nil))
 
 (defalias 'ar-escape-digit-atpt 'ar-digit-escape-atpt)
 (defun ar-digit-escape-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'digit nil))
 
 (defalias 'ar-hash-digit-atpt 'ar-digit-hash-atpt)
 (defun ar-digit-hash-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'digit nil))
 
 (defalias 'ar-hyphen-digit-atpt 'ar-digit-hyphen-atpt)
 (defun ar-digit-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'digit nil))
 
 (defalias 'ar-singlequote-digit-atpt 'ar-digit-singlequote-atpt)
 (defun ar-digit-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'digit nil))
 
 (defalias 'ar-slash-digit-atpt 'ar-digit-slash-atpt)
 (defun ar-digit-slash-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'digit nil))
 
 (defalias 'ar-star-digit-atpt 'ar-digit-star-atpt)
 (defun ar-digit-star-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'digit nil))
 
 (defalias 'ar-tild-digit-atpt 'ar-digit-tild-atpt)
 (defun ar-digit-tild-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'digit nil))
 
 (defalias 'ar-triplebacktick-digit-atpt 'ar-digit-triplebacktick-atpt)
 (defun ar-digit-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'digit nil))
 
 (defalias 'ar-underscore-digit-atpt 'ar-digit-underscore-atpt)
 (defun ar-digit-underscore-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'digit nil))
 
 (defalias 'ar-whitespace-digit-atpt 'ar-digit-whitespace-atpt)
 (defun ar-digit-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted DIGIT at point if any, nil otherwise "
+  "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'digit nil))
 
 (defalias 'ar-colon-graph-atpt 'ar-graph-colon-atpt)
 (defun ar-graph-colon-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'graph nil))
 
 (defalias 'ar-cross-graph-atpt 'ar-graph-cross-atpt)
 (defun ar-graph-cross-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'graph nil))
 
 (defalias 'ar-doubleslash-graph-atpt 'ar-graph-doubleslash-atpt)
 (defun ar-graph-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'graph nil))
 
 (defalias 'ar-backslash-graph-atpt 'ar-graph-backslash-atpt)
 (defun ar-graph-backslash-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'graph nil))
 
 (defalias 'ar-backtick-graph-atpt 'ar-graph-backtick-atpt)
 (defun ar-graph-backtick-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'graph nil))
 
 (defalias 'ar-dollar-graph-atpt 'ar-graph-dollar-atpt)
 (defun ar-graph-dollar-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'graph nil))
 
 (defalias 'ar-doublebacktick-graph-atpt 'ar-graph-doublebacktick-atpt)
 (defun ar-graph-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'graph nil))
 
 (defalias 'ar-doublequote-graph-atpt 'ar-graph-doublequote-atpt)
 (defun ar-graph-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'graph nil))
 
 (defalias 'ar-equalize-graph-atpt 'ar-graph-equalize-atpt)
 (defun ar-graph-equalize-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'graph nil))
 
 (defalias 'ar-escape-graph-atpt 'ar-graph-escape-atpt)
 (defun ar-graph-escape-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'graph nil))
 
 (defalias 'ar-hash-graph-atpt 'ar-graph-hash-atpt)
 (defun ar-graph-hash-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'graph nil))
 
 (defalias 'ar-hyphen-graph-atpt 'ar-graph-hyphen-atpt)
 (defun ar-graph-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'graph nil))
 
 (defalias 'ar-singlequote-graph-atpt 'ar-graph-singlequote-atpt)
 (defun ar-graph-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'graph nil))
 
 (defalias 'ar-slash-graph-atpt 'ar-graph-slash-atpt)
 (defun ar-graph-slash-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'graph nil))
 
 (defalias 'ar-star-graph-atpt 'ar-graph-star-atpt)
 (defun ar-graph-star-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'graph nil))
 
 (defalias 'ar-tild-graph-atpt 'ar-graph-tild-atpt)
 (defun ar-graph-tild-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'graph nil))
 
 (defalias 'ar-triplebacktick-graph-atpt 'ar-graph-triplebacktick-atpt)
 (defun ar-graph-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'graph nil))
 
 (defalias 'ar-underscore-graph-atpt 'ar-graph-underscore-atpt)
 (defun ar-graph-underscore-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'graph nil))
 
 (defalias 'ar-whitespace-graph-atpt 'ar-graph-whitespace-atpt)
 (defun ar-graph-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted GRAPH at point if any, nil otherwise "
+  "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'graph nil))
 
 (defalias 'ar-colon-lower-atpt 'ar-lower-colon-atpt)
 (defun ar-lower-colon-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'lower nil))
 
 (defalias 'ar-cross-lower-atpt 'ar-lower-cross-atpt)
 (defun ar-lower-cross-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'lower nil))
 
 (defalias 'ar-doubleslash-lower-atpt 'ar-lower-doubleslash-atpt)
 (defun ar-lower-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'lower nil))
 
 (defalias 'ar-backslash-lower-atpt 'ar-lower-backslash-atpt)
 (defun ar-lower-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'lower nil))
 
 (defalias 'ar-backtick-lower-atpt 'ar-lower-backtick-atpt)
 (defun ar-lower-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'lower nil))
 
 (defalias 'ar-dollar-lower-atpt 'ar-lower-dollar-atpt)
 (defun ar-lower-dollar-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'lower nil))
 
 (defalias 'ar-doublebacktick-lower-atpt 'ar-lower-doublebacktick-atpt)
 (defun ar-lower-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'lower nil))
 
 (defalias 'ar-doublequote-lower-atpt 'ar-lower-doublequote-atpt)
 (defun ar-lower-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'lower nil))
 
 (defalias 'ar-equalize-lower-atpt 'ar-lower-equalize-atpt)
 (defun ar-lower-equalize-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'lower nil))
 
 (defalias 'ar-escape-lower-atpt 'ar-lower-escape-atpt)
 (defun ar-lower-escape-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'lower nil))
 
 (defalias 'ar-hash-lower-atpt 'ar-lower-hash-atpt)
 (defun ar-lower-hash-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'lower nil))
 
 (defalias 'ar-hyphen-lower-atpt 'ar-lower-hyphen-atpt)
 (defun ar-lower-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'lower nil))
 
 (defalias 'ar-singlequote-lower-atpt 'ar-lower-singlequote-atpt)
 (defun ar-lower-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'lower nil))
 
 (defalias 'ar-slash-lower-atpt 'ar-lower-slash-atpt)
 (defun ar-lower-slash-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'lower nil))
 
 (defalias 'ar-star-lower-atpt 'ar-lower-star-atpt)
 (defun ar-lower-star-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'lower nil))
 
 (defalias 'ar-tild-lower-atpt 'ar-lower-tild-atpt)
 (defun ar-lower-tild-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'lower nil))
 
 (defalias 'ar-triplebacktick-lower-atpt 'ar-lower-triplebacktick-atpt)
 (defun ar-lower-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'lower nil))
 
 (defalias 'ar-underscore-lower-atpt 'ar-lower-underscore-atpt)
 (defun ar-lower-underscore-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'lower nil))
 
 (defalias 'ar-whitespace-lower-atpt 'ar-lower-whitespace-atpt)
 (defun ar-lower-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted LOWER at point if any, nil otherwise "
+  "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'lower nil))
 
 (defalias 'ar-colon-nonascii-atpt 'ar-nonascii-colon-atpt)
 (defun ar-nonascii-colon-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'nonascii nil))
 
 (defalias 'ar-cross-nonascii-atpt 'ar-nonascii-cross-atpt)
 (defun ar-nonascii-cross-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'nonascii nil))
 
 (defalias 'ar-doubleslash-nonascii-atpt 'ar-nonascii-doubleslash-atpt)
 (defun ar-nonascii-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'nonascii nil))
 
 (defalias 'ar-backslash-nonascii-atpt 'ar-nonascii-backslash-atpt)
 (defun ar-nonascii-backslash-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'nonascii nil))
 
 (defalias 'ar-backtick-nonascii-atpt 'ar-nonascii-backtick-atpt)
 (defun ar-nonascii-backtick-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'nonascii nil))
 
 (defalias 'ar-dollar-nonascii-atpt 'ar-nonascii-dollar-atpt)
 (defun ar-nonascii-dollar-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'nonascii nil))
 
 (defalias 'ar-doublebacktick-nonascii-atpt 'ar-nonascii-doublebacktick-atpt)
 (defun ar-nonascii-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'nonascii nil))
 
 (defalias 'ar-doublequote-nonascii-atpt 'ar-nonascii-doublequote-atpt)
 (defun ar-nonascii-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'nonascii nil))
 
 (defalias 'ar-equalize-nonascii-atpt 'ar-nonascii-equalize-atpt)
 (defun ar-nonascii-equalize-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'nonascii nil))
 
 (defalias 'ar-escape-nonascii-atpt 'ar-nonascii-escape-atpt)
 (defun ar-nonascii-escape-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'nonascii nil))
 
 (defalias 'ar-hash-nonascii-atpt 'ar-nonascii-hash-atpt)
 (defun ar-nonascii-hash-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'nonascii nil))
 
 (defalias 'ar-hyphen-nonascii-atpt 'ar-nonascii-hyphen-atpt)
 (defun ar-nonascii-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'nonascii nil))
 
 (defalias 'ar-singlequote-nonascii-atpt 'ar-nonascii-singlequote-atpt)
 (defun ar-nonascii-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'nonascii nil))
 
 (defalias 'ar-slash-nonascii-atpt 'ar-nonascii-slash-atpt)
 (defun ar-nonascii-slash-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'nonascii nil))
 
 (defalias 'ar-star-nonascii-atpt 'ar-nonascii-star-atpt)
 (defun ar-nonascii-star-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'nonascii nil))
 
 (defalias 'ar-tild-nonascii-atpt 'ar-nonascii-tild-atpt)
 (defun ar-nonascii-tild-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'nonascii nil))
 
 (defalias 'ar-triplebacktick-nonascii-atpt 'ar-nonascii-triplebacktick-atpt)
 (defun ar-nonascii-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'nonascii nil))
 
 (defalias 'ar-underscore-nonascii-atpt 'ar-nonascii-underscore-atpt)
 (defun ar-nonascii-underscore-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'nonascii nil))
 
 (defalias 'ar-whitespace-nonascii-atpt 'ar-nonascii-whitespace-atpt)
 (defun ar-nonascii-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted NONASCII at point if any, nil otherwise "
+  "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'nonascii nil))
 
 (defalias 'ar-colon-print-atpt 'ar-print-colon-atpt)
 (defun ar-print-colon-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'print nil))
 
 (defalias 'ar-cross-print-atpt 'ar-print-cross-atpt)
 (defun ar-print-cross-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'print nil))
 
 (defalias 'ar-doubleslash-print-atpt 'ar-print-doubleslash-atpt)
 (defun ar-print-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'print nil))
 
 (defalias 'ar-backslash-print-atpt 'ar-print-backslash-atpt)
 (defun ar-print-backslash-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'print nil))
 
 (defalias 'ar-backtick-print-atpt 'ar-print-backtick-atpt)
 (defun ar-print-backtick-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'print nil))
 
 (defalias 'ar-dollar-print-atpt 'ar-print-dollar-atpt)
 (defun ar-print-dollar-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'print nil))
 
 (defalias 'ar-doublebacktick-print-atpt 'ar-print-doublebacktick-atpt)
 (defun ar-print-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'print nil))
 
 (defalias 'ar-doublequote-print-atpt 'ar-print-doublequote-atpt)
 (defun ar-print-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'print nil))
 
 (defalias 'ar-equalize-print-atpt 'ar-print-equalize-atpt)
 (defun ar-print-equalize-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'print nil))
 
 (defalias 'ar-escape-print-atpt 'ar-print-escape-atpt)
 (defun ar-print-escape-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'print nil))
 
 (defalias 'ar-hash-print-atpt 'ar-print-hash-atpt)
 (defun ar-print-hash-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'print nil))
 
 (defalias 'ar-hyphen-print-atpt 'ar-print-hyphen-atpt)
 (defun ar-print-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'print nil))
 
 (defalias 'ar-singlequote-print-atpt 'ar-print-singlequote-atpt)
 (defun ar-print-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'print nil))
 
 (defalias 'ar-slash-print-atpt 'ar-print-slash-atpt)
 (defun ar-print-slash-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'print nil))
 
 (defalias 'ar-star-print-atpt 'ar-print-star-atpt)
 (defun ar-print-star-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'print nil))
 
 (defalias 'ar-tild-print-atpt 'ar-print-tild-atpt)
 (defun ar-print-tild-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'print nil))
 
 (defalias 'ar-triplebacktick-print-atpt 'ar-print-triplebacktick-atpt)
 (defun ar-print-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'print nil))
 
 (defalias 'ar-underscore-print-atpt 'ar-print-underscore-atpt)
 (defun ar-print-underscore-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'print nil))
 
 (defalias 'ar-whitespace-print-atpt 'ar-print-whitespace-atpt)
 (defun ar-print-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted PRINT at point if any, nil otherwise "
+  "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'print nil))
 
 (defalias 'ar-colon-punct-atpt 'ar-punct-colon-atpt)
 (defun ar-punct-colon-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'punct nil))
 
 (defalias 'ar-cross-punct-atpt 'ar-punct-cross-atpt)
 (defun ar-punct-cross-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'punct nil))
 
 (defalias 'ar-doubleslash-punct-atpt 'ar-punct-doubleslash-atpt)
 (defun ar-punct-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'punct nil))
 
 (defalias 'ar-backslash-punct-atpt 'ar-punct-backslash-atpt)
 (defun ar-punct-backslash-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'punct nil))
 
 (defalias 'ar-backtick-punct-atpt 'ar-punct-backtick-atpt)
 (defun ar-punct-backtick-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'punct nil))
 
 (defalias 'ar-dollar-punct-atpt 'ar-punct-dollar-atpt)
 (defun ar-punct-dollar-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'punct nil))
 
 (defalias 'ar-doublebacktick-punct-atpt 'ar-punct-doublebacktick-atpt)
 (defun ar-punct-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'punct nil))
 
 (defalias 'ar-doublequote-punct-atpt 'ar-punct-doublequote-atpt)
 (defun ar-punct-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'punct nil))
 
 (defalias 'ar-equalize-punct-atpt 'ar-punct-equalize-atpt)
 (defun ar-punct-equalize-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'punct nil))
 
 (defalias 'ar-escape-punct-atpt 'ar-punct-escape-atpt)
 (defun ar-punct-escape-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'punct nil))
 
 (defalias 'ar-hash-punct-atpt 'ar-punct-hash-atpt)
 (defun ar-punct-hash-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'punct nil))
 
 (defalias 'ar-hyphen-punct-atpt 'ar-punct-hyphen-atpt)
 (defun ar-punct-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'punct nil))
 
 (defalias 'ar-singlequote-punct-atpt 'ar-punct-singlequote-atpt)
 (defun ar-punct-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'punct nil))
 
 (defalias 'ar-slash-punct-atpt 'ar-punct-slash-atpt)
 (defun ar-punct-slash-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'punct nil))
 
 (defalias 'ar-star-punct-atpt 'ar-punct-star-atpt)
 (defun ar-punct-star-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'punct nil))
 
 (defalias 'ar-tild-punct-atpt 'ar-punct-tild-atpt)
 (defun ar-punct-tild-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'punct nil))
 
 (defalias 'ar-triplebacktick-punct-atpt 'ar-punct-triplebacktick-atpt)
 (defun ar-punct-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'punct nil))
 
 (defalias 'ar-underscore-punct-atpt 'ar-punct-underscore-atpt)
 (defun ar-punct-underscore-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'punct nil))
 
 (defalias 'ar-whitespace-punct-atpt 'ar-punct-whitespace-atpt)
 (defun ar-punct-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted PUNCT at point if any, nil otherwise "
+  "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'punct nil))
 
 (defalias 'ar-colon-space-atpt 'ar-space-colon-atpt)
 (defun ar-space-colon-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'space nil))
 
 (defalias 'ar-cross-space-atpt 'ar-space-cross-atpt)
 (defun ar-space-cross-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'space nil))
 
 (defalias 'ar-doubleslash-space-atpt 'ar-space-doubleslash-atpt)
 (defun ar-space-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'space nil))
 
 (defalias 'ar-backslash-space-atpt 'ar-space-backslash-atpt)
 (defun ar-space-backslash-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'space nil))
 
 (defalias 'ar-backtick-space-atpt 'ar-space-backtick-atpt)
 (defun ar-space-backtick-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'space nil))
 
 (defalias 'ar-dollar-space-atpt 'ar-space-dollar-atpt)
 (defun ar-space-dollar-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'space nil))
 
 (defalias 'ar-doublebacktick-space-atpt 'ar-space-doublebacktick-atpt)
 (defun ar-space-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'space nil))
 
 (defalias 'ar-doublequote-space-atpt 'ar-space-doublequote-atpt)
 (defun ar-space-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'space nil))
 
 (defalias 'ar-equalize-space-atpt 'ar-space-equalize-atpt)
 (defun ar-space-equalize-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'space nil))
 
 (defalias 'ar-escape-space-atpt 'ar-space-escape-atpt)
 (defun ar-space-escape-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'space nil))
 
 (defalias 'ar-hash-space-atpt 'ar-space-hash-atpt)
 (defun ar-space-hash-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'space nil))
 
 (defalias 'ar-hyphen-space-atpt 'ar-space-hyphen-atpt)
 (defun ar-space-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'space nil))
 
 (defalias 'ar-singlequote-space-atpt 'ar-space-singlequote-atpt)
 (defun ar-space-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'space nil))
 
 (defalias 'ar-slash-space-atpt 'ar-space-slash-atpt)
 (defun ar-space-slash-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'space nil))
 
 (defalias 'ar-star-space-atpt 'ar-space-star-atpt)
 (defun ar-space-star-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'space nil))
 
 (defalias 'ar-tild-space-atpt 'ar-space-tild-atpt)
 (defun ar-space-tild-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'space nil))
 
 (defalias 'ar-triplebacktick-space-atpt 'ar-space-triplebacktick-atpt)
 (defun ar-space-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'space nil))
 
 (defalias 'ar-underscore-space-atpt 'ar-space-underscore-atpt)
 (defun ar-space-underscore-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'space nil))
 
 (defalias 'ar-whitespace-space-atpt 'ar-space-whitespace-atpt)
 (defun ar-space-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted SPACE at point if any, nil otherwise "
+  "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'space nil))
 
 (defalias 'ar-colon-upper-atpt 'ar-upper-colon-atpt)
 (defun ar-upper-colon-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'upper nil))
 
 (defalias 'ar-cross-upper-atpt 'ar-upper-cross-atpt)
 (defun ar-upper-cross-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'upper nil))
 
 (defalias 'ar-doubleslash-upper-atpt 'ar-upper-doubleslash-atpt)
 (defun ar-upper-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'upper nil))
 
 (defalias 'ar-backslash-upper-atpt 'ar-upper-backslash-atpt)
 (defun ar-upper-backslash-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'upper nil))
 
 (defalias 'ar-backtick-upper-atpt 'ar-upper-backtick-atpt)
 (defun ar-upper-backtick-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'upper nil))
 
 (defalias 'ar-dollar-upper-atpt 'ar-upper-dollar-atpt)
 (defun ar-upper-dollar-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'upper nil))
 
 (defalias 'ar-doublebacktick-upper-atpt 'ar-upper-doublebacktick-atpt)
 (defun ar-upper-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'upper nil))
 
 (defalias 'ar-doublequote-upper-atpt 'ar-upper-doublequote-atpt)
 (defun ar-upper-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'upper nil))
 
 (defalias 'ar-equalize-upper-atpt 'ar-upper-equalize-atpt)
 (defun ar-upper-equalize-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'upper nil))
 
 (defalias 'ar-escape-upper-atpt 'ar-upper-escape-atpt)
 (defun ar-upper-escape-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'upper nil))
 
 (defalias 'ar-hash-upper-atpt 'ar-upper-hash-atpt)
 (defun ar-upper-hash-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'upper nil))
 
 (defalias 'ar-hyphen-upper-atpt 'ar-upper-hyphen-atpt)
 (defun ar-upper-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'upper nil))
 
 (defalias 'ar-singlequote-upper-atpt 'ar-upper-singlequote-atpt)
 (defun ar-upper-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'upper nil))
 
 (defalias 'ar-slash-upper-atpt 'ar-upper-slash-atpt)
 (defun ar-upper-slash-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'upper nil))
 
 (defalias 'ar-star-upper-atpt 'ar-upper-star-atpt)
 (defun ar-upper-star-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'upper nil))
 
 (defalias 'ar-tild-upper-atpt 'ar-upper-tild-atpt)
 (defun ar-upper-tild-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'upper nil))
 
 (defalias 'ar-triplebacktick-upper-atpt 'ar-upper-triplebacktick-atpt)
 (defun ar-upper-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'upper nil))
 
 (defalias 'ar-underscore-upper-atpt 'ar-upper-underscore-atpt)
 (defun ar-upper-underscore-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'upper nil))
 
 (defalias 'ar-whitespace-upper-atpt 'ar-upper-whitespace-atpt)
 (defun ar-upper-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted UPPER at point if any, nil otherwise "
+  "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'upper nil))
 
 (defalias 'ar-colon-xdigit-atpt 'ar-xdigit-colon-atpt)
 (defun ar-xdigit-colon-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'xdigit nil))
 
 (defalias 'ar-cross-xdigit-atpt 'ar-xdigit-cross-atpt)
 (defun ar-xdigit-cross-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'xdigit nil))
 
 (defalias 'ar-doubleslash-xdigit-atpt 'ar-xdigit-doubleslash-atpt)
 (defun ar-xdigit-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'xdigit nil))
 
 (defalias 'ar-backslash-xdigit-atpt 'ar-xdigit-backslash-atpt)
 (defun ar-xdigit-backslash-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'xdigit nil))
 
 (defalias 'ar-backtick-xdigit-atpt 'ar-xdigit-backtick-atpt)
 (defun ar-xdigit-backtick-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'xdigit nil))
 
 (defalias 'ar-dollar-xdigit-atpt 'ar-xdigit-dollar-atpt)
 (defun ar-xdigit-dollar-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'xdigit nil))
 
 (defalias 'ar-doublebacktick-xdigit-atpt 'ar-xdigit-doublebacktick-atpt)
 (defun ar-xdigit-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'xdigit nil))
 
 (defalias 'ar-doublequote-xdigit-atpt 'ar-xdigit-doublequote-atpt)
 (defun ar-xdigit-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'xdigit nil))
 
 (defalias 'ar-equalize-xdigit-atpt 'ar-xdigit-equalize-atpt)
 (defun ar-xdigit-equalize-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'xdigit nil))
 
 (defalias 'ar-escape-xdigit-atpt 'ar-xdigit-escape-atpt)
 (defun ar-xdigit-escape-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'xdigit nil))
 
 (defalias 'ar-hash-xdigit-atpt 'ar-xdigit-hash-atpt)
 (defun ar-xdigit-hash-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'xdigit nil))
 
 (defalias 'ar-hyphen-xdigit-atpt 'ar-xdigit-hyphen-atpt)
 (defun ar-xdigit-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'xdigit nil))
 
 (defalias 'ar-singlequote-xdigit-atpt 'ar-xdigit-singlequote-atpt)
 (defun ar-xdigit-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'xdigit nil))
 
 (defalias 'ar-slash-xdigit-atpt 'ar-xdigit-slash-atpt)
 (defun ar-xdigit-slash-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'xdigit nil))
 
 (defalias 'ar-star-xdigit-atpt 'ar-xdigit-star-atpt)
 (defun ar-xdigit-star-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'xdigit nil))
 
 (defalias 'ar-tild-xdigit-atpt 'ar-xdigit-tild-atpt)
 (defun ar-xdigit-tild-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'xdigit nil))
 
 (defalias 'ar-triplebacktick-xdigit-atpt 'ar-xdigit-triplebacktick-atpt)
 (defun ar-xdigit-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'xdigit nil))
 
 (defalias 'ar-underscore-xdigit-atpt 'ar-xdigit-underscore-atpt)
 (defun ar-xdigit-underscore-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'xdigit nil))
 
 (defalias 'ar-whitespace-xdigit-atpt 'ar-xdigit-whitespace-atpt)
 (defun ar-xdigit-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted XDIGIT at point if any, nil otherwise "
+  "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'xdigit nil));; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 
@@ -10005,799 +10299,799 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defalias 'ar-colon-braced-atpt 'ar-braced-colon-atpt)
 (defun ar-braced-colon-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'braced nil))
 
 (defalias 'ar-cross-braced-atpt 'ar-braced-cross-atpt)
 (defun ar-braced-cross-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'braced nil))
 
 (defalias 'ar-doubleslash-braced-atpt 'ar-braced-doubleslash-atpt)
 (defun ar-braced-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'braced nil))
 
 (defalias 'ar-backslash-braced-atpt 'ar-braced-backslash-atpt)
 (defun ar-braced-backslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'braced nil))
 
 (defalias 'ar-backtick-braced-atpt 'ar-braced-backtick-atpt)
 (defun ar-braced-backtick-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'braced nil))
 
 (defalias 'ar-dollar-braced-atpt 'ar-braced-dollar-atpt)
 (defun ar-braced-dollar-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'braced nil))
 
 (defalias 'ar-doublebacktick-braced-atpt 'ar-braced-doublebacktick-atpt)
 (defun ar-braced-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'braced nil))
 
 (defalias 'ar-doublequote-braced-atpt 'ar-braced-doublequote-atpt)
 (defun ar-braced-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'braced nil))
 
 (defalias 'ar-equalize-braced-atpt 'ar-braced-equalize-atpt)
 (defun ar-braced-equalize-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'braced nil))
 
 (defalias 'ar-escape-braced-atpt 'ar-braced-escape-atpt)
 (defun ar-braced-escape-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'braced nil))
 
 (defalias 'ar-hash-braced-atpt 'ar-braced-hash-atpt)
 (defun ar-braced-hash-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'braced nil))
 
 (defalias 'ar-hyphen-braced-atpt 'ar-braced-hyphen-atpt)
 (defun ar-braced-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'braced nil))
 
 (defalias 'ar-singlequote-braced-atpt 'ar-braced-singlequote-atpt)
 (defun ar-braced-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'braced nil))
 
 (defalias 'ar-slash-braced-atpt 'ar-braced-slash-atpt)
 (defun ar-braced-slash-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'braced nil))
 
 (defalias 'ar-star-braced-atpt 'ar-braced-star-atpt)
 (defun ar-braced-star-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'braced nil))
 
 (defalias 'ar-tild-braced-atpt 'ar-braced-tild-atpt)
 (defun ar-braced-tild-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'braced nil))
 
 (defalias 'ar-triplebacktick-braced-atpt 'ar-braced-triplebacktick-atpt)
 (defun ar-braced-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'braced nil))
 
 (defalias 'ar-underscore-braced-atpt 'ar-braced-underscore-atpt)
 (defun ar-braced-underscore-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'braced nil))
 
 (defalias 'ar-whitespace-braced-atpt 'ar-braced-whitespace-atpt)
 (defun ar-braced-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted BRACED at point if any, nil otherwise "
+  "Returns BRACED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'braced nil))
 
 (defalias 'ar-colon-bracketed-atpt 'ar-bracketed-colon-atpt)
 (defun ar-bracketed-colon-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'bracketed nil))
 
 (defalias 'ar-cross-bracketed-atpt 'ar-bracketed-cross-atpt)
 (defun ar-bracketed-cross-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'bracketed nil))
 
 (defalias 'ar-doubleslash-bracketed-atpt 'ar-bracketed-doubleslash-atpt)
 (defun ar-bracketed-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'bracketed nil))
 
 (defalias 'ar-backslash-bracketed-atpt 'ar-bracketed-backslash-atpt)
 (defun ar-bracketed-backslash-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'bracketed nil))
 
 (defalias 'ar-backtick-bracketed-atpt 'ar-bracketed-backtick-atpt)
 (defun ar-bracketed-backtick-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'bracketed nil))
 
 (defalias 'ar-dollar-bracketed-atpt 'ar-bracketed-dollar-atpt)
 (defun ar-bracketed-dollar-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'bracketed nil))
 
 (defalias 'ar-doublebacktick-bracketed-atpt 'ar-bracketed-doublebacktick-atpt)
 (defun ar-bracketed-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'bracketed nil))
 
 (defalias 'ar-doublequote-bracketed-atpt 'ar-bracketed-doublequote-atpt)
 (defun ar-bracketed-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'bracketed nil))
 
 (defalias 'ar-equalize-bracketed-atpt 'ar-bracketed-equalize-atpt)
 (defun ar-bracketed-equalize-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'bracketed nil))
 
 (defalias 'ar-escape-bracketed-atpt 'ar-bracketed-escape-atpt)
 (defun ar-bracketed-escape-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'bracketed nil))
 
 (defalias 'ar-hash-bracketed-atpt 'ar-bracketed-hash-atpt)
 (defun ar-bracketed-hash-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'bracketed nil))
 
 (defalias 'ar-hyphen-bracketed-atpt 'ar-bracketed-hyphen-atpt)
 (defun ar-bracketed-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'bracketed nil))
 
 (defalias 'ar-singlequote-bracketed-atpt 'ar-bracketed-singlequote-atpt)
 (defun ar-bracketed-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'bracketed nil))
 
 (defalias 'ar-slash-bracketed-atpt 'ar-bracketed-slash-atpt)
 (defun ar-bracketed-slash-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'bracketed nil))
 
 (defalias 'ar-star-bracketed-atpt 'ar-bracketed-star-atpt)
 (defun ar-bracketed-star-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'bracketed nil))
 
 (defalias 'ar-tild-bracketed-atpt 'ar-bracketed-tild-atpt)
 (defun ar-bracketed-tild-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'bracketed nil))
 
 (defalias 'ar-triplebacktick-bracketed-atpt 'ar-bracketed-triplebacktick-atpt)
 (defun ar-bracketed-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'bracketed nil))
 
 (defalias 'ar-underscore-bracketed-atpt 'ar-bracketed-underscore-atpt)
 (defun ar-bracketed-underscore-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'bracketed nil))
 
 (defalias 'ar-whitespace-bracketed-atpt 'ar-bracketed-whitespace-atpt)
 (defun ar-bracketed-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted BRACKETED at point if any, nil otherwise "
+  "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'bracketed nil))
 
 (defalias 'ar-colon-lesserangled-atpt 'ar-lesserangled-colon-atpt)
 (defun ar-lesserangled-colon-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'lesserangled nil))
 
 (defalias 'ar-cross-lesserangled-atpt 'ar-lesserangled-cross-atpt)
 (defun ar-lesserangled-cross-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'lesserangled nil))
 
 (defalias 'ar-doubleslash-lesserangled-atpt 'ar-lesserangled-doubleslash-atpt)
 (defun ar-lesserangled-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'lesserangled nil))
 
 (defalias 'ar-backslash-lesserangled-atpt 'ar-lesserangled-backslash-atpt)
 (defun ar-lesserangled-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'lesserangled nil))
 
 (defalias 'ar-backtick-lesserangled-atpt 'ar-lesserangled-backtick-atpt)
 (defun ar-lesserangled-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'lesserangled nil))
 
 (defalias 'ar-dollar-lesserangled-atpt 'ar-lesserangled-dollar-atpt)
 (defun ar-lesserangled-dollar-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'lesserangled nil))
 
 (defalias 'ar-doublebacktick-lesserangled-atpt 'ar-lesserangled-doublebacktick-atpt)
 (defun ar-lesserangled-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'lesserangled nil))
 
 (defalias 'ar-doublequote-lesserangled-atpt 'ar-lesserangled-doublequote-atpt)
 (defun ar-lesserangled-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'lesserangled nil))
 
 (defalias 'ar-equalize-lesserangled-atpt 'ar-lesserangled-equalize-atpt)
 (defun ar-lesserangled-equalize-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'lesserangled nil))
 
 (defalias 'ar-escape-lesserangled-atpt 'ar-lesserangled-escape-atpt)
 (defun ar-lesserangled-escape-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'lesserangled nil))
 
 (defalias 'ar-hash-lesserangled-atpt 'ar-lesserangled-hash-atpt)
 (defun ar-lesserangled-hash-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'lesserangled nil))
 
 (defalias 'ar-hyphen-lesserangled-atpt 'ar-lesserangled-hyphen-atpt)
 (defun ar-lesserangled-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'lesserangled nil))
 
 (defalias 'ar-singlequote-lesserangled-atpt 'ar-lesserangled-singlequote-atpt)
 (defun ar-lesserangled-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'lesserangled nil))
 
 (defalias 'ar-slash-lesserangled-atpt 'ar-lesserangled-slash-atpt)
 (defun ar-lesserangled-slash-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'lesserangled nil))
 
 (defalias 'ar-star-lesserangled-atpt 'ar-lesserangled-star-atpt)
 (defun ar-lesserangled-star-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'lesserangled nil))
 
 (defalias 'ar-tild-lesserangled-atpt 'ar-lesserangled-tild-atpt)
 (defun ar-lesserangled-tild-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'lesserangled nil))
 
 (defalias 'ar-triplebacktick-lesserangled-atpt 'ar-lesserangled-triplebacktick-atpt)
 (defun ar-lesserangled-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'lesserangled nil))
 
 (defalias 'ar-underscore-lesserangled-atpt 'ar-lesserangled-underscore-atpt)
 (defun ar-lesserangled-underscore-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'lesserangled nil))
 
 (defalias 'ar-whitespace-lesserangled-atpt 'ar-lesserangled-whitespace-atpt)
 (defun ar-lesserangled-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted LESSERANGLED at point if any, nil otherwise "
+  "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'lesserangled nil))
 
 (defalias 'ar-colon-greaterangled-atpt 'ar-greaterangled-colon-atpt)
 (defun ar-greaterangled-colon-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'greaterangled nil))
 
 (defalias 'ar-cross-greaterangled-atpt 'ar-greaterangled-cross-atpt)
 (defun ar-greaterangled-cross-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'greaterangled nil))
 
 (defalias 'ar-doubleslash-greaterangled-atpt 'ar-greaterangled-doubleslash-atpt)
 (defun ar-greaterangled-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'greaterangled nil))
 
 (defalias 'ar-backslash-greaterangled-atpt 'ar-greaterangled-backslash-atpt)
 (defun ar-greaterangled-backslash-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'greaterangled nil))
 
 (defalias 'ar-backtick-greaterangled-atpt 'ar-greaterangled-backtick-atpt)
 (defun ar-greaterangled-backtick-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'greaterangled nil))
 
 (defalias 'ar-dollar-greaterangled-atpt 'ar-greaterangled-dollar-atpt)
 (defun ar-greaterangled-dollar-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'greaterangled nil))
 
 (defalias 'ar-doublebacktick-greaterangled-atpt 'ar-greaterangled-doublebacktick-atpt)
 (defun ar-greaterangled-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'greaterangled nil))
 
 (defalias 'ar-doublequote-greaterangled-atpt 'ar-greaterangled-doublequote-atpt)
 (defun ar-greaterangled-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'greaterangled nil))
 
 (defalias 'ar-equalize-greaterangled-atpt 'ar-greaterangled-equalize-atpt)
 (defun ar-greaterangled-equalize-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'greaterangled nil))
 
 (defalias 'ar-escape-greaterangled-atpt 'ar-greaterangled-escape-atpt)
 (defun ar-greaterangled-escape-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'greaterangled nil))
 
 (defalias 'ar-hash-greaterangled-atpt 'ar-greaterangled-hash-atpt)
 (defun ar-greaterangled-hash-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'greaterangled nil))
 
 (defalias 'ar-hyphen-greaterangled-atpt 'ar-greaterangled-hyphen-atpt)
 (defun ar-greaterangled-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'greaterangled nil))
 
 (defalias 'ar-singlequote-greaterangled-atpt 'ar-greaterangled-singlequote-atpt)
 (defun ar-greaterangled-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'greaterangled nil))
 
 (defalias 'ar-slash-greaterangled-atpt 'ar-greaterangled-slash-atpt)
 (defun ar-greaterangled-slash-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'greaterangled nil))
 
 (defalias 'ar-star-greaterangled-atpt 'ar-greaterangled-star-atpt)
 (defun ar-greaterangled-star-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'greaterangled nil))
 
 (defalias 'ar-tild-greaterangled-atpt 'ar-greaterangled-tild-atpt)
 (defun ar-greaterangled-tild-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'greaterangled nil))
 
 (defalias 'ar-triplebacktick-greaterangled-atpt 'ar-greaterangled-triplebacktick-atpt)
 (defun ar-greaterangled-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'greaterangled nil))
 
 (defalias 'ar-underscore-greaterangled-atpt 'ar-greaterangled-underscore-atpt)
 (defun ar-greaterangled-underscore-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'greaterangled nil))
 
 (defalias 'ar-whitespace-greaterangled-atpt 'ar-greaterangled-whitespace-atpt)
 (defun ar-greaterangled-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted GREATERANGLED at point if any, nil otherwise "
+  "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'greaterangled nil))
 
 (defalias 'ar-colon-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-colon-atpt)
 (defun ar-leftrightsinglequoted-colon-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'leftrightsinglequoted nil))
 
 (defalias 'ar-cross-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-cross-atpt)
 (defun ar-leftrightsinglequoted-cross-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'leftrightsinglequoted nil))
 
 (defalias 'ar-doubleslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doubleslash-atpt)
 (defun ar-leftrightsinglequoted-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'leftrightsinglequoted nil))
 
 (defalias 'ar-backslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backslash-atpt)
 (defun ar-leftrightsinglequoted-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'leftrightsinglequoted nil))
 
 (defalias 'ar-backtick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backtick-atpt)
 (defun ar-leftrightsinglequoted-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'leftrightsinglequoted nil))
 
 (defalias 'ar-dollar-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-dollar-atpt)
 (defun ar-leftrightsinglequoted-dollar-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'leftrightsinglequoted nil))
 
 (defalias 'ar-doublebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublebacktick-atpt)
 (defun ar-leftrightsinglequoted-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'leftrightsinglequoted nil))
 
 (defalias 'ar-doublequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublequote-atpt)
 (defun ar-leftrightsinglequoted-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'leftrightsinglequoted nil))
 
 (defalias 'ar-equalize-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-equalize-atpt)
 (defun ar-leftrightsinglequoted-equalize-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'leftrightsinglequoted nil))
 
 (defalias 'ar-escape-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-escape-atpt)
 (defun ar-leftrightsinglequoted-escape-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'leftrightsinglequoted nil))
 
 (defalias 'ar-hash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hash-atpt)
 (defun ar-leftrightsinglequoted-hash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'leftrightsinglequoted nil))
 
 (defalias 'ar-hyphen-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hyphen-atpt)
 (defun ar-leftrightsinglequoted-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'leftrightsinglequoted nil))
 
 (defalias 'ar-singlequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-singlequote-atpt)
 (defun ar-leftrightsinglequoted-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'leftrightsinglequoted nil))
 
 (defalias 'ar-slash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-slash-atpt)
 (defun ar-leftrightsinglequoted-slash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'leftrightsinglequoted nil))
 
 (defalias 'ar-star-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-star-atpt)
 (defun ar-leftrightsinglequoted-star-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'leftrightsinglequoted nil))
 
 (defalias 'ar-tild-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-tild-atpt)
 (defun ar-leftrightsinglequoted-tild-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'leftrightsinglequoted nil))
 
 (defalias 'ar-triplebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-triplebacktick-atpt)
 (defun ar-leftrightsinglequoted-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'leftrightsinglequoted nil))
 
 (defalias 'ar-underscore-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-underscore-atpt)
 (defun ar-leftrightsinglequoted-underscore-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'leftrightsinglequoted nil))
 
 (defalias 'ar-whitespace-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-whitespace-atpt)
 (defun ar-leftrightsinglequoted-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'leftrightsinglequoted nil))
 
 (defalias 'ar-colon-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-colon-atpt)
 (defun ar-leftrightdoublequoted-colon-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'leftrightdoublequoted nil))
 
 (defalias 'ar-cross-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-cross-atpt)
 (defun ar-leftrightdoublequoted-cross-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'leftrightdoublequoted nil))
 
 (defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
 (defun ar-leftrightdoublequoted-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'leftrightdoublequoted nil))
 
 (defalias 'ar-backslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslash-atpt)
 (defun ar-leftrightdoublequoted-backslash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'leftrightdoublequoted nil))
 
 (defalias 'ar-backtick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backtick-atpt)
 (defun ar-leftrightdoublequoted-backtick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'leftrightdoublequoted nil))
 
 (defalias 'ar-dollar-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-dollar-atpt)
 (defun ar-leftrightdoublequoted-dollar-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'leftrightdoublequoted nil))
 
 (defalias 'ar-doublebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublebacktick-atpt)
 (defun ar-leftrightdoublequoted-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'leftrightdoublequoted nil))
 
 (defalias 'ar-doublequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublequote-atpt)
 (defun ar-leftrightdoublequoted-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'leftrightdoublequoted nil))
 
 (defalias 'ar-equalize-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-equalize-atpt)
 (defun ar-leftrightdoublequoted-equalize-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'leftrightdoublequoted nil))
 
 (defalias 'ar-escape-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-escape-atpt)
 (defun ar-leftrightdoublequoted-escape-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'leftrightdoublequoted nil))
 
 (defalias 'ar-hash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hash-atpt)
 (defun ar-leftrightdoublequoted-hash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'leftrightdoublequoted nil))
 
 (defalias 'ar-hyphen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hyphen-atpt)
 (defun ar-leftrightdoublequoted-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'leftrightdoublequoted nil))
 
 (defalias 'ar-singlequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-singlequote-atpt)
 (defun ar-leftrightdoublequoted-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'leftrightdoublequoted nil))
 
 (defalias 'ar-slash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-slash-atpt)
 (defun ar-leftrightdoublequoted-slash-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'leftrightdoublequoted nil))
 
 (defalias 'ar-star-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-star-atpt)
 (defun ar-leftrightdoublequoted-star-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'leftrightdoublequoted nil))
 
 (defalias 'ar-tild-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-tild-atpt)
 (defun ar-leftrightdoublequoted-tild-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'leftrightdoublequoted nil))
 
 (defalias 'ar-triplebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-triplebacktick-atpt)
 (defun ar-leftrightdoublequoted-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'leftrightdoublequoted nil))
 
 (defalias 'ar-underscore-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-underscore-atpt)
 (defun ar-leftrightdoublequoted-underscore-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'leftrightdoublequoted nil))
 
 (defalias 'ar-whitespace-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-whitespace-atpt)
 (defun ar-leftrightdoublequoted-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'leftrightdoublequoted nil))
 
 (defalias 'ar-colon-parentized-atpt 'ar-parentized-colon-atpt)
 (defun ar-parentized-colon-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-colon 'parentized nil))
 
 (defalias 'ar-cross-parentized-atpt 'ar-parentized-cross-atpt)
 (defun ar-parentized-cross-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-cross 'parentized nil))
 
 (defalias 'ar-doubleslash-parentized-atpt 'ar-parentized-doubleslash-atpt)
 (defun ar-parentized-doubleslash-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doubleslash 'parentized nil))
 
 (defalias 'ar-backslash-parentized-atpt 'ar-parentized-backslash-atpt)
 (defun ar-parentized-backslash-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backslash 'parentized nil))
 
 (defalias 'ar-backtick-parentized-atpt 'ar-parentized-backtick-atpt)
 (defun ar-parentized-backtick-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-backtick 'parentized nil))
 
 (defalias 'ar-dollar-parentized-atpt 'ar-parentized-dollar-atpt)
 (defun ar-parentized-dollar-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-dollar 'parentized nil))
 
 (defalias 'ar-doublebacktick-parentized-atpt 'ar-parentized-doublebacktick-atpt)
 (defun ar-parentized-doublebacktick-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublebacktick 'parentized nil))
 
 (defalias 'ar-doublequote-parentized-atpt 'ar-parentized-doublequote-atpt)
 (defun ar-parentized-doublequote-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-doublequote 'parentized nil))
 
 (defalias 'ar-equalize-parentized-atpt 'ar-parentized-equalize-atpt)
 (defun ar-parentized-equalize-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-equalize 'parentized nil))
 
 (defalias 'ar-escape-parentized-atpt 'ar-parentized-escape-atpt)
 (defun ar-parentized-escape-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-escape 'parentized nil))
 
 (defalias 'ar-hash-parentized-atpt 'ar-parentized-hash-atpt)
 (defun ar-parentized-hash-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hash 'parentized nil))
 
 (defalias 'ar-hyphen-parentized-atpt 'ar-parentized-hyphen-atpt)
 (defun ar-parentized-hyphen-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-hyphen 'parentized nil))
 
 (defalias 'ar-singlequote-parentized-atpt 'ar-parentized-singlequote-atpt)
 (defun ar-parentized-singlequote-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-singlequote 'parentized nil))
 
 (defalias 'ar-slash-parentized-atpt 'ar-parentized-slash-atpt)
 (defun ar-parentized-slash-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-slash 'parentized nil))
 
 (defalias 'ar-star-parentized-atpt 'ar-parentized-star-atpt)
 (defun ar-parentized-star-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-star 'parentized nil))
 
 (defalias 'ar-tild-parentized-atpt 'ar-parentized-tild-atpt)
 (defun ar-parentized-tild-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-tild 'parentized nil))
 
 (defalias 'ar-triplebacktick-parentized-atpt 'ar-parentized-triplebacktick-atpt)
 (defun ar-parentized-triplebacktick-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-triplebacktick 'parentized nil))
 
 (defalias 'ar-underscore-parentized-atpt 'ar-parentized-underscore-atpt)
 (defun ar-parentized-underscore-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-underscore 'parentized nil))
 
 (defalias 'ar-whitespace-parentized-atpt 'ar-parentized-whitespace-atpt)
 (defun ar-parentized-whitespace-atpt (&optional arg)
-  "Returns regexp-quoted PARENTIZED at point if any, nil otherwise "
+  "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*p")
   (ar-th-whitespace 'parentized nil));; ar-thing-at-point-utils-unpaired-paired: end
 
@@ -15542,6 +15836,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'braced (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-braced-atpt (&optional arg)
+  "Deletes braced at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'braced arg))
+
 (defun ar-trim-braced-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -15775,6 +16076,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around bracketed. "
   (interactive "*P")
   (ar-th-triplequotesq 'bracketed (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-bracketed-atpt (&optional arg)
+  "Deletes bracketed at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'bracketed arg))
 
 (defun ar-trim-bracketed-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -16010,6 +16318,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'lesserangled (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-lesserangled-atpt (&optional arg)
+  "Deletes lesserangled at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'lesserangled arg))
+
 (defun ar-trim-lesserangled-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -16243,6 +16558,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around greaterangled. "
   (interactive "*P")
   (ar-th-triplequotesq 'greaterangled (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-greaterangled-atpt (&optional arg)
+  "Deletes greaterangled at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'greaterangled arg))
 
 (defun ar-trim-greaterangled-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -16478,6 +16800,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'leftrightsinglequoted (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-leftrightsinglequoted-atpt (&optional arg)
+  "Deletes leftrightsinglequoted at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'leftrightsinglequoted arg))
+
 (defun ar-trim-leftrightsinglequoted-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -16712,6 +17041,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'leftrightdoublequoted (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-leftrightdoublequoted-atpt (&optional arg)
+  "Deletes leftrightdoublequoted at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'leftrightdoublequoted arg))
+
 (defun ar-trim-leftrightdoublequoted-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -16945,6 +17281,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around parentized. "
   (interactive "*P")
   (ar-th-triplequotesq 'parentized (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-parentized-atpt (&optional arg)
+  "Deletes parentized at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'parentized arg))
 
 (defun ar-trim-parentized-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -17184,6 +17527,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'list (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-list-atpt (&optional arg)
+  "Deletes list at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'list arg))
+
 (defun ar-trim-list-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -17422,6 +17772,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'block (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-block-atpt (&optional arg)
+  "Deletes block at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'block arg))
+
 (defun ar-trim-block-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -17655,6 +18012,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around block-or-clause. "
   (interactive "*P")
   (ar-th-triplequotesq 'block-or-clause (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-block-or-clause-atpt (&optional arg)
+  "Deletes block-or-clause at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'block-or-clause arg))
 
 (defun ar-trim-block-or-clause-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -17890,6 +18254,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'class (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-class-atpt (&optional arg)
+  "Deletes class at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'class arg))
+
 (defun ar-trim-class-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -18123,6 +18494,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around clause. "
   (interactive "*P")
   (ar-th-triplequotesq 'clause (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-clause-atpt (&optional arg)
+  "Deletes clause at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'clause arg))
 
 (defun ar-trim-clause-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -18358,6 +18736,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'def-or-class (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-def-or-class-atpt (&optional arg)
+  "Deletes def-or-class at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'def-or-class arg))
+
 (defun ar-trim-def-or-class-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -18591,6 +18976,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around def. "
   (interactive "*P")
   (ar-th-triplequotesq 'def (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-def-atpt (&optional arg)
+  "Deletes def at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'def arg))
 
 (defun ar-trim-def-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -18826,6 +19218,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'delimited (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-delimited-atpt (&optional arg)
+  "Deletes delimited at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'delimited arg))
+
 (defun ar-trim-delimited-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -19059,6 +19458,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around expression. "
   (interactive "*P")
   (ar-th-triplequotesq 'expression (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-expression-atpt (&optional arg)
+  "Deletes expression at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'expression arg))
 
 (defun ar-trim-expression-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -19294,6 +19700,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'partial-expression (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-partial-expression-atpt (&optional arg)
+  "Deletes partial-expression at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'partial-expression arg))
+
 (defun ar-trim-partial-expression-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -19527,6 +19940,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around statement. "
   (interactive "*P")
   (ar-th-triplequotesq 'statement (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-statement-atpt (&optional arg)
+  "Deletes statement at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'statement arg))
 
 (defun ar-trim-statement-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -19762,6 +20182,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'string (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-string-atpt (&optional arg)
+  "Deletes string at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'string arg))
+
 (defun ar-trim-string-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -19828,8 +20255,10 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: end
+
+
 (defun ar-colon-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with colon(s),
+  "If region is highlighted, provide THING at point with colon(s)
 
   otherwise copy colon(ed) at point.
   With NO-DELIMITERS, copy colon(ed) without delimiters.
@@ -19838,7 +20267,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'colon no-delimiters check))
 
 (defun ar-cross-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with cross(s),
+  "If region is highlighted, provide THING at point with cross(s)
 
   otherwise copy cross(ed) at point.
   With NO-DELIMITERS, copy cross(ed) without delimiters.
@@ -19847,7 +20276,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'cross no-delimiters check))
 
 (defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doubleslash(s),
+  "If region is highlighted, provide THING at point with doubleslash(s)
 
   otherwise copy doubleslash(ed) at point.
   With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
@@ -19856,7 +20285,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doubleslash no-delimiters check))
 
 (defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backslash(s),
+  "If region is highlighted, provide THING at point with backslash(s)
 
   otherwise copy backslash(ed) at point.
   With NO-DELIMITERS, copy backslash(ed) without delimiters.
@@ -19865,7 +20294,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'backslash no-delimiters check))
 
 (defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with backtick(s),
+  "If region is highlighted, provide THING at point with backtick(s)
 
   otherwise copy backtick(ed) at point.
   With NO-DELIMITERS, copy backtick(ed) without delimiters.
@@ -19874,7 +20303,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'backtick no-delimiters check))
 
 (defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with dollar(s),
+  "If region is highlighted, provide THING at point with dollar(s)
 
   otherwise copy dollar(ed) at point.
   With NO-DELIMITERS, copy dollar(ed) without delimiters.
@@ -19883,7 +20312,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'dollar no-delimiters check))
 
 (defun ar-doublebacktick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doublebacktick(s),
+  "If region is highlighted, provide THING at point with doublebacktick(s)
 
   otherwise copy doublebacktick(ed) at point.
   With NO-DELIMITERS, copy doublebacktick(ed) without delimiters.
@@ -19892,7 +20321,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doublebacktick no-delimiters check))
 
 (defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with doublequote(s),
+  "If region is highlighted, provide THING at point with doublequote(s)
 
   otherwise copy doublequote(ed) at point.
   With NO-DELIMITERS, copy doublequote(ed) without delimiters.
@@ -19901,7 +20330,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'doublequote no-delimiters check))
 
 (defun ar-equalize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with equalize(s),
+  "If region is highlighted, provide THING at point with equalize(s)
 
   otherwise copy equalize(ed) at point.
   With NO-DELIMITERS, copy equalize(ed) without delimiters.
@@ -19910,7 +20339,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'equalize no-delimiters check))
 
 (defun ar-escape-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with escape(s),
+  "If region is highlighted, provide THING at point with escape(s)
 
   otherwise copy escape(ed) at point.
   With NO-DELIMITERS, copy escape(ed) without delimiters.
@@ -19919,7 +20348,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'escape no-delimiters check))
 
 (defun ar-hash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hash(s),
+  "If region is highlighted, provide THING at point with hash(s)
 
   otherwise copy hash(ed) at point.
   With NO-DELIMITERS, copy hash(ed) without delimiters.
@@ -19928,7 +20357,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'hash no-delimiters check))
 
 (defun ar-hyphen-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with hyphen(s),
+  "If region is highlighted, provide THING at point with hyphen(s)
 
   otherwise copy hyphen(ed) at point.
   With NO-DELIMITERS, copy hyphen(ed) without delimiters.
@@ -19937,7 +20366,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'hyphen no-delimiters check))
 
 (defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with singlequote(s),
+  "If region is highlighted, provide THING at point with singlequote(s)
 
   otherwise copy singlequote(ed) at point.
   With NO-DELIMITERS, copy singlequote(ed) without delimiters.
@@ -19946,7 +20375,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'singlequote no-delimiters check))
 
 (defun ar-slash-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with slash(s),
+  "If region is highlighted, provide THING at point with slash(s)
 
   otherwise copy slash(ed) at point.
   With NO-DELIMITERS, copy slash(ed) without delimiters.
@@ -19955,7 +20384,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'slash no-delimiters check))
 
 (defun ar-star-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with star(s),
+  "If region is highlighted, provide THING at point with star(s)
 
   otherwise copy star(ed) at point.
   With NO-DELIMITERS, copy star(ed) without delimiters.
@@ -19964,7 +20393,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'star no-delimiters check))
 
 (defun ar-tild-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with tild(s),
+  "If region is highlighted, provide THING at point with tild(s)
 
   otherwise copy tild(ed) at point.
   With NO-DELIMITERS, copy tild(ed) without delimiters.
@@ -19973,7 +20402,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'tild no-delimiters check))
 
 (defun ar-triplebacktick-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with triplebacktick(s),
+  "If region is highlighted, provide THING at point with triplebacktick(s)
 
   otherwise copy triplebacktick(ed) at point.
   With NO-DELIMITERS, copy triplebacktick(ed) without delimiters.
@@ -19982,7 +20411,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'triplebacktick no-delimiters check))
 
 (defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with underscore(s),
+  "If region is highlighted, provide THING at point with underscore(s)
 
   otherwise copy underscore(ed) at point.
   With NO-DELIMITERS, copy underscore(ed) without delimiters.
@@ -19991,7 +20420,178 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'underscore no-delimiters check))
 
 (defun ar-whitespace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with whitespace(s),
+  "If region is highlighted, provide THING at point with whitespace(s)
+
+  otherwise copy whitespace(ed) at point.
+  With NO-DELIMITERS, copy whitespace(ed) without delimiters.
+  With negative argument kill whitespace(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'whitespace no-delimiters check))
+
+(defun ar-colon-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with colon(s)
+
+  otherwise copy colon(ed) at point.
+  With NO-DELIMITERS, copy colon(ed) without delimiters.
+  With negative argument kill colon(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'colon no-delimiters check))
+
+(defun ar-cross-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with cross(s)
+
+  otherwise copy cross(ed) at point.
+  With NO-DELIMITERS, copy cross(ed) without delimiters.
+  With negative argument kill cross(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'cross no-delimiters check))
+
+(defun ar-doubleslash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doubleslash(s)
+
+  otherwise copy doubleslash(ed) at point.
+  With NO-DELIMITERS, copy doubleslash(ed) without delimiters.
+  With negative argument kill doubleslash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doubleslash no-delimiters check))
+
+(defun ar-backslash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with backslash(s)
+
+  otherwise copy backslash(ed) at point.
+  With NO-DELIMITERS, copy backslash(ed) without delimiters.
+  With negative argument kill backslash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'backslash no-delimiters check))
+
+(defun ar-backtick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with backtick(s)
+
+  otherwise copy backtick(ed) at point.
+  With NO-DELIMITERS, copy backtick(ed) without delimiters.
+  With negative argument kill backtick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'backtick no-delimiters check))
+
+(defun ar-dollar-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with dollar(s)
+
+  otherwise copy dollar(ed) at point.
+  With NO-DELIMITERS, copy dollar(ed) without delimiters.
+  With negative argument kill dollar(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'dollar no-delimiters check))
+
+(defun ar-doublebacktick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doublebacktick(s)
+
+  otherwise copy doublebacktick(ed) at point.
+  With NO-DELIMITERS, copy doublebacktick(ed) without delimiters.
+  With negative argument kill doublebacktick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doublebacktick no-delimiters check))
+
+(defun ar-doublequote-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with doublequote(s)
+
+  otherwise copy doublequote(ed) at point.
+  With NO-DELIMITERS, copy doublequote(ed) without delimiters.
+  With negative argument kill doublequote(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'doublequote no-delimiters check))
+
+(defun ar-equalize-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with equalize(s)
+
+  otherwise copy equalize(ed) at point.
+  With NO-DELIMITERS, copy equalize(ed) without delimiters.
+  With negative argument kill equalize(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'equalize no-delimiters check))
+
+(defun ar-escape-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with escape(s)
+
+  otherwise copy escape(ed) at point.
+  With NO-DELIMITERS, copy escape(ed) without delimiters.
+  With negative argument kill escape(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'escape no-delimiters check))
+
+(defun ar-hash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with hash(s)
+
+  otherwise copy hash(ed) at point.
+  With NO-DELIMITERS, copy hash(ed) without delimiters.
+  With negative argument kill hash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'hash no-delimiters check))
+
+(defun ar-hyphen-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with hyphen(s)
+
+  otherwise copy hyphen(ed) at point.
+  With NO-DELIMITERS, copy hyphen(ed) without delimiters.
+  With negative argument kill hyphen(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'hyphen no-delimiters check))
+
+(defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with singlequote(s)
+
+  otherwise copy singlequote(ed) at point.
+  With NO-DELIMITERS, copy singlequote(ed) without delimiters.
+  With negative argument kill singlequote(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'singlequote no-delimiters check))
+
+(defun ar-slash-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with slash(s)
+
+  otherwise copy slash(ed) at point.
+  With NO-DELIMITERS, copy slash(ed) without delimiters.
+  With negative argument kill slash(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'slash no-delimiters check))
+
+(defun ar-star-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with star(s)
+
+  otherwise copy star(ed) at point.
+  With NO-DELIMITERS, copy star(ed) without delimiters.
+  With negative argument kill star(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'star no-delimiters check))
+
+(defun ar-tild-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with tild(s)
+
+  otherwise copy tild(ed) at point.
+  With NO-DELIMITERS, copy tild(ed) without delimiters.
+  With negative argument kill tild(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'tild no-delimiters check))
+
+(defun ar-triplebacktick-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with triplebacktick(s)
+
+  otherwise copy triplebacktick(ed) at point.
+  With NO-DELIMITERS, copy triplebacktick(ed) without delimiters.
+  With negative argument kill triplebacktick(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'triplebacktick no-delimiters check))
+
+(defun ar-underscore-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with underscore(s)
+
+  otherwise copy underscore(ed) at point.
+  With NO-DELIMITERS, copy underscore(ed) without delimiters.
+  With negative argument kill underscore(ed) at point. "
+  (interactive "P")
+  (ar-th-base-copy-or 'underscore no-delimiters check))
+
+(defun ar-whitespace-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with whitespace(s)
 
   otherwise copy whitespace(ed) at point.
   With NO-DELIMITERS, copy whitespace(ed) without delimiters.
@@ -20000,7 +20600,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'whitespace no-delimiters check))
 
 (defun ar-brace-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with brace(s),
+  "If region is highlighted, provide THING at point with brace(s)
 
   otherwise copy brace(ed) at point.
   With NO-DELIMITERS, copy brace(ed) without delimiters.
@@ -20009,7 +20609,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'brace no-delimiters check))
 
 (defun ar-bracket-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with bracket(s),
+  "If region is highlighted, provide THING at point with bracket(s)
 
   otherwise copy bracket(ed) at point.
   With NO-DELIMITERS, copy bracket(ed) without delimiters.
@@ -20018,7 +20618,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'bracket no-delimiters check))
 
 (defun ar-lesserangle-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with lesserangle(s),
+  "If region is highlighted, provide THING at point with lesserangle(s)
 
   otherwise copy lesserangle(ed) at point.
   With NO-DELIMITERS, copy lesserangle(ed) without delimiters.
@@ -20027,7 +20627,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'lesserangle no-delimiters check))
 
 (defun ar-greaterangle-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with greaterangle(s),
+  "If region is highlighted, provide THING at point with greaterangle(s)
 
   otherwise copy greaterangle(ed) at point.
   With NO-DELIMITERS, copy greaterangle(ed) without delimiters.
@@ -20036,7 +20636,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'greaterangle no-delimiters check))
 
 (defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightsinglequote(s),
+  "If region is highlighted, provide THING at point with leftrightsinglequote(s)
 
   otherwise copy leftrightsinglequote(ed) at point.
   With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters.
@@ -20045,7 +20645,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'leftrightsinglequote no-delimiters check))
 
 (defun ar-leftrightdoublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightdoublequote(s),
+  "If region is highlighted, provide THING at point with leftrightdoublequote(s)
 
   otherwise copy leftrightdoublequote(ed) at point.
   With NO-DELIMITERS, copy leftrightdoublequote(ed) without delimiters.
@@ -20054,7 +20654,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'leftrightdoublequote no-delimiters check))
 
 (defun ar-parentize-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with parentize(s),
+  "If region is highlighted, provide THING at point with parentize(s)
 
   otherwise copy parentize(ed) at point.
   With NO-DELIMITERS, copy parentize(ed) without delimiters.
@@ -20063,7 +20663,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'parentize no-delimiters check))
 
 (defun ar-greateranglednested-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with greateranglednested(s),
+  "If region is highlighted, provide THING at point with greateranglednested(s)
 
   otherwise copy greateranglednested(ed) at point.
   With NO-DELIMITERS, copy greateranglednested(ed) without delimiters.
@@ -20072,7 +20672,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'greateranglednested no-delimiters check))
 
 (defun ar-lesseranglednested-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with lesseranglednested(s),
+  "If region is highlighted, provide THING at point with lesseranglednested(s)
 
   otherwise copy lesseranglednested(ed) at point.
   With NO-DELIMITERS, copy lesseranglednested(ed) without delimiters.
@@ -20081,7 +20681,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'lesseranglednested no-delimiters check))
 
 (defun ar-buffer-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with buffer(s),
+  "If region is highlighted, provide THING at point with buffer(s)
 
   otherwise copy buffer(ed) at point.
   With NO-DELIMITERS, copy buffer(ed) without delimiters.
@@ -20090,7 +20690,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'buffer no-delimiters check))
 
 (defun ar-comment-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with comment(s),
+  "If region is highlighted, provide THING at point with comment(s)
 
   otherwise copy comment(ed) at point.
   With NO-DELIMITERS, copy comment(ed) without delimiters.
@@ -20099,7 +20699,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'comment no-delimiters check))
 
 (defun ar-csv-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with csv(s),
+  "If region is highlighted, provide THING at point with csv(s)
 
   otherwise copy csv(ed) at point.
   With NO-DELIMITERS, copy csv(ed) without delimiters.
@@ -20108,7 +20708,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'csv no-delimiters check))
 
 (defun ar-date-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with date(s),
+  "If region is highlighted, provide THING at point with date(s)
 
   otherwise copy date(ed) at point.
   With NO-DELIMITERS, copy date(ed) without delimiters.
@@ -20117,7 +20717,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'date no-delimiters check))
 
 (defun ar-email-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with email(s),
+  "If region is highlighted, provide THING at point with email(s)
 
   otherwise copy email(ed) at point.
   With NO-DELIMITERS, copy email(ed) without delimiters.
@@ -20126,7 +20726,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'email no-delimiters check))
 
 (defun ar-filename-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with filename(s),
+  "If region is highlighted, provide THING at point with filename(s)
 
   otherwise copy filename(ed) at point.
   With NO-DELIMITERS, copy filename(ed) without delimiters.
@@ -20135,7 +20735,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'filename no-delimiters check))
 
 (defun ar-filenamenondirectory-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with filenamenondirectory(s),
+  "If region is highlighted, provide THING at point with filenamenondirectory(s)
 
   otherwise copy filenamenondirectory(ed) at point.
   With NO-DELIMITERS, copy filenamenondirectory(ed) without delimiters.
@@ -20144,7 +20744,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'filenamenondirectory no-delimiters check))
 
 (defun ar-float-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with float(s),
+  "If region is highlighted, provide THING at point with float(s)
 
   otherwise copy float(ed) at point.
   With NO-DELIMITERS, copy float(ed) without delimiters.
@@ -20153,7 +20753,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'float no-delimiters check))
 
 (defun ar-function-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with function(s),
+  "If region is highlighted, provide THING at point with function(s)
 
   otherwise copy function(ed) at point.
   With NO-DELIMITERS, copy function(ed) without delimiters.
@@ -20162,7 +20762,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'function no-delimiters check))
 
 (defun ar-ip-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with ip(s),
+  "If region is highlighted, provide THING at point with ip(s)
 
   otherwise copy ip(ed) at point.
   With NO-DELIMITERS, copy ip(ed) without delimiters.
@@ -20171,7 +20771,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'ip no-delimiters check))
 
 (defun ar-isbn-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with isbn(s),
+  "If region is highlighted, provide THING at point with isbn(s)
 
   otherwise copy isbn(ed) at point.
   With NO-DELIMITERS, copy isbn(ed) without delimiters.
@@ -20180,7 +20780,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'isbn no-delimiters check))
 
 (defun ar-line-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with line(s),
+  "If region is highlighted, provide THING at point with line(s)
 
   otherwise copy line(ed) at point.
   With NO-DELIMITERS, copy line(ed) without delimiters.
@@ -20189,7 +20789,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'line no-delimiters check))
 
 (defun ar-list-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with list(s),
+  "If region is highlighted, provide THING at point with list(s)
 
   otherwise copy list(ed) at point.
   With NO-DELIMITERS, copy list(ed) without delimiters.
@@ -20198,7 +20798,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'list no-delimiters check))
 
 (defun ar-name-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with name(s),
+  "If region is highlighted, provide THING at point with name(s)
 
   otherwise copy name(ed) at point.
   With NO-DELIMITERS, copy name(ed) without delimiters.
@@ -20207,7 +20807,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'name no-delimiters check))
 
 (defun ar-number-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with number(s),
+  "If region is highlighted, provide THING at point with number(s)
 
   otherwise copy number(ed) at point.
   With NO-DELIMITERS, copy number(ed) without delimiters.
@@ -20216,7 +20816,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'number no-delimiters check))
 
 (defun ar-page-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with page(s),
+  "If region is highlighted, provide THING at point with page(s)
 
   otherwise copy page(ed) at point.
   With NO-DELIMITERS, copy page(ed) without delimiters.
@@ -20225,7 +20825,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'page no-delimiters check))
 
 (defun ar-paragraph-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with paragraph(s),
+  "If region is highlighted, provide THING at point with paragraph(s)
 
   otherwise copy paragraph(ed) at point.
   With NO-DELIMITERS, copy paragraph(ed) without delimiters.
@@ -20234,7 +20834,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'paragraph no-delimiters check))
 
 (defun ar-phone-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with phone(s),
+  "If region is highlighted, provide THING at point with phone(s)
 
   otherwise copy phone(ed) at point.
   With NO-DELIMITERS, copy phone(ed) without delimiters.
@@ -20243,7 +20843,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'phone no-delimiters check))
 
 (defun ar-region-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with region(s),
+  "If region is highlighted, provide THING at point with region(s)
 
   otherwise copy region(ed) at point.
   With NO-DELIMITERS, copy region(ed) without delimiters.
@@ -20252,7 +20852,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'region no-delimiters check))
 
 (defun ar-sentence-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with sentence(s),
+  "If region is highlighted, provide THING at point with sentence(s)
 
   otherwise copy sentence(ed) at point.
   With NO-DELIMITERS, copy sentence(ed) without delimiters.
@@ -20261,7 +20861,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'sentence no-delimiters check))
 
 (defun ar-sexp-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with sexp(s),
+  "If region is highlighted, provide THING at point with sexp(s)
 
   otherwise copy sexp(ed) at point.
   With NO-DELIMITERS, copy sexp(ed) without delimiters.
@@ -20270,7 +20870,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'sexp no-delimiters check))
 
 (defun ar-shstruct-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with shstruct(s),
+  "If region is highlighted, provide THING at point with shstruct(s)
 
   otherwise copy shstruct(ed) at point.
   With NO-DELIMITERS, copy shstruct(ed) without delimiters.
@@ -20279,7 +20879,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'shstruct no-delimiters check))
 
 (defun ar-symbol-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with symbol(s),
+  "If region is highlighted, provide THING at point with symbol(s)
 
   otherwise copy symbol(ed) at point.
   With NO-DELIMITERS, copy symbol(ed) without delimiters.
@@ -20288,7 +20888,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'symbol no-delimiters check))
 
 (defun ar-url-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with url(s),
+  "If region is highlighted, provide THING at point with url(s)
 
   otherwise copy url(ed) at point.
   With NO-DELIMITERS, copy url(ed) without delimiters.
@@ -20297,7 +20897,7 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'url no-delimiters check))
 
 (defun ar-word-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with word(s),
+  "If region is highlighted, provide THING at point with word(s)
 
   otherwise copy word(ed) at point.
   With NO-DELIMITERS, copy word(ed) without delimiters.
@@ -20306,15 +20906,13 @@ See doku from `sort-subr', for details.
   (ar-th-base-copy-or 'word no-delimiters check))
 
 (defun ar-wordalphaonly-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with wordalphaonly(s),
+  "If region is highlighted, provide THING at point with wordalphaonly(s)
 
   otherwise copy wordalphaonly(ed) at point.
   With NO-DELIMITERS, copy wordalphaonly(ed) without delimiters.
   With negative argument kill wordalphaonly(ed) at point. "
   (interactive "P")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters check))
-
-
 
 (defun emacs-batch-expression (&optional arg)
   "Copy and highlight an expression starting with \"eval\" or \"load\". "

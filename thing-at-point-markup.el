@@ -235,6 +235,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-beginendquote-atpt (&optional arg)
+  "Deletes beginendquote at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'beginendquote arg))
+
 (defun ar-trim-beginendquote-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -468,6 +475,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around blok. "
   (interactive "*P")
   (ar-th-triplequotesq 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-blok-atpt (&optional arg)
+  "Deletes blok at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'blok arg))
 
 (defun ar-trim-blok-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -703,6 +717,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-doublebackslashed-atpt (&optional arg)
+  "Deletes doublebackslashed at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'doublebackslashed arg))
+
 (defun ar-trim-doublebackslashed-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -936,6 +957,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around doublebackticked. "
   (interactive "*P")
   (ar-th-triplequotesq 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-doublebackticked-atpt (&optional arg)
+  "Deletes doublebackticked at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'doublebackticked arg))
 
 (defun ar-trim-doublebackticked-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -1171,6 +1199,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-doublebackslashedparen-atpt (&optional arg)
+  "Deletes doublebackslashedparen at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'doublebackslashedparen arg))
+
 (defun ar-trim-doublebackslashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -1404,6 +1439,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around doubleslashed. "
   (interactive "*P")
   (ar-th-triplequotesq 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-doubleslashed-atpt (&optional arg)
+  "Deletes doubleslashed at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'doubleslashed arg))
 
 (defun ar-trim-doubleslashed-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -1639,6 +1681,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-doubleslashedparen-atpt (&optional arg)
+  "Deletes doubleslashedparen at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'doubleslashedparen arg))
+
 (defun ar-trim-doubleslashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -1872,6 +1921,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around markup. "
   (interactive "*P")
   (ar-th-triplequotesq 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-markup-atpt (&optional arg)
+  "Deletes markup at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'markup arg))
 
 (defun ar-trim-markup-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -2107,6 +2163,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-mldata-atpt (&optional arg)
+  "Deletes mldata at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'mldata arg))
+
 (defun ar-trim-mldata-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -2340,6 +2403,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around mlattribut. "
   (interactive "*P")
   (ar-th-triplequotesq 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-mlattribut-atpt (&optional arg)
+  "Deletes mlattribut at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'mlattribut arg))
 
 (defun ar-trim-mlattribut-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -2575,6 +2645,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-mltag-atpt (&optional arg)
+  "Deletes mltag at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'mltag arg))
+
 (defun ar-trim-mltag-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -2808,6 +2885,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around slashedparen. "
   (interactive "*P")
   (ar-th-triplequotesq 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-slashedparen-atpt (&optional arg)
+  "Deletes slashedparen at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'slashedparen arg))
 
 (defun ar-trim-slashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
@@ -3043,6 +3127,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-tabledata-atpt (&optional arg)
+  "Deletes tabledata at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'tabledata arg))
+
 (defun ar-trim-tabledata-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -3277,6 +3368,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
   (ar-th-triplequotesq 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
 
+(defun ar-triplebacktick-xslstylesheet-atpt (&optional arg)
+  "Deletes xslstylesheet at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'xslstylesheet arg))
+
 (defun ar-trim-xslstylesheet-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
@@ -3510,6 +3608,13 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Put triplequotes composed of singlequotes around xsltemplate. "
   (interactive "*P")
   (ar-th-triplequotesq 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+
+(defun ar-triplebacktick-xsltemplate-atpt (&optional arg)
+  "Deletes xsltemplate at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'xsltemplate arg))
 
 (defun ar-trim-xsltemplate-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
