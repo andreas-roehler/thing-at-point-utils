@@ -33,6 +33,7 @@ FILE12=thing-classes-in-delimited-list.el
 FILE13=thing-at-point-peel.el
 FILE14=thingatpt-count-ratio.el
 FILE15=thingatpt-transform-generic-delimited.el
+FILE16=translate-paired-delimiters.el
 
 TEST1=test/ar-thing-at-point-utils-setup-tests.el
 TEST2=test/thing-at-point-utils-tests.el
@@ -85,6 +86,7 @@ hier () {
 -load $FILE13 \
 -load $FILE14 \
 -load $FILE15 \
+-load $FILE16 \
 \
 -load $TEST1 \
 -load $TEST2 \
@@ -123,6 +125,7 @@ entfernt () {
 -load $FILE13 \
 -load $FILE14 \
 -load $FILE15 \
+-load $FILE16 \
 \
 -load $TEST1 \
 -load $TEST2 \
