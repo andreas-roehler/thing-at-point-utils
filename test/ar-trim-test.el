@@ -41,7 +41,7 @@
 ;;     (should-not (nth 1 (parse-partial-sexp (point-min) (point))))
 ;;     (should (nth 3 (parse-partial-sexp (point-min) (point))))))
 
-(ert-deftest ar-peel-list-with-string-test-2 ()
+(ert-deftest ar-bounds-of-list-with-string-test-1 ()
   (ar-test-with-elisp-buffer-point-min
       "(expand-file-name \"~/werkstatt/general-key\")"
       "(defun foo1 (&optional beg end)

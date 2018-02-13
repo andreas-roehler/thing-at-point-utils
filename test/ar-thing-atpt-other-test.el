@@ -306,7 +306,6 @@ return wwrap"
       (ar-brace-greaterangled-atpt)
     (should (eq (char-before) ?}))))
 
-
 (ert-deftest ar-count-parentized-in-doublequoted-until-point-test ()
   (ar-test-with-temp-buffer
       "\"(foo) asdf ( foo1 ) (bar) (baz))\""
@@ -327,7 +326,6 @@ return wwrap"
       (ar-doublequote-or-copy-atpt -1)
     (should (eq (char-after) ?a))))
 
-
 (ert-deftest ar-delimited2bracket-test-1 ()
   (ar-test-with-temp-buffer
       "(asdf)"
@@ -335,7 +333,13 @@ return wwrap"
     (ar-delimited2bracketed-atpt)
     (should (char-equal (char-after) ?\]))))
 
-
+(ert-deftest ar-ert-peel-list-test-1 ()
+  (ar-test-with-elisp-buffer-point-min
+      "(/ (* (* n 1) (1+ (* n 1))) 2)"
+      (forward-char 2)
+    (ar-peel-list-atpt)
+    (forward-sexp)
+    (should (eobp))))
 
 ;; not implemented
 ;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()

@@ -71,55 +71,55 @@
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'beginendquote no-delimiters))
 
 (defun ar-bounds-of-beginendquote-atpt (&optional no-delimiters check)
   "Returns a list, borders of beginendquote if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'beginendquote no-delimiters))
 
 (defun ar-beginendquote-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position BEGINENDQUOTE at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'beginendquote no-delimiters))
 
 (defun ar-beginendquote-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of BEGINENDQUOTE at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'beginendquote no-delimiters))
 
 (defun ar-beginning-of-beginendquote-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class BEGINENDQUOTE at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'beginendquote no-delimiters))
 
 (defun ar-end-of-beginendquote-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class BEGINENDQUOTE at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'beginendquote no-delimiters))
 
 (defun ar-in-beginendquote-p-atpt (&optional no-delimiters check)
   "Returns bounds of BEGINENDQUOTE at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'beginendquote no-delimiters))
 
 (defun ar-length-of-beginendquote-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class BEGINENDQUOTE at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'beginendquote no-delimiters))
 
 (defun ar-copy-beginendquote-atpt (&optional no-delimiters check)
   "Returns a copy of BEGINENDQUOTE at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'beginendquote no-delimiters))
 
 (defun ar-delete-beginendquote-atpt (&optional arg)
   "Deletes BEGINENDQUOTE at point if any. "
@@ -135,53 +135,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around beginendquote.
   Returns blok or nil if no BEGINENDQUOTE at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'beginendquote no-delimiters))
 
 (defun ar-backslashparen-beginendquote-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around beginendquote at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'beginendquote no-delimiters))
 
 (defun ar-doublebackslash-beginendquote-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'beginendquote no-delimiters))
 
 (defun ar-doubleslash-beginendquote-atpt (&optional no-delimiters check)
   "Puts doubled slashes around BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'beginendquote no-delimiters))
 
 (defun ar-doublebackslashparen-beginendquote-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'beginendquote no-delimiters))
 
 (defun ar-doublebacktick-beginendquote-atpt (&optional no-delimiters check)
   "Provides double backticks around BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'beginendquote no-delimiters))
 
 (defun ar-slashparen-beginendquote-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'beginendquote no-delimiters))
 
 (defun ar-comment-beginendquote-atpt (&optional no-delimiters check)
   "Comments BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-comment 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'beginendquote no-delimiters))
 
 (defun ar-commatize-beginendquote-atpt (&optional no-delimiters check)
   "Put a comma after BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'beginendquote no-delimiters))
 
 (defun ar-quote-beginendquote-atpt (&optional no-delimiters check)
   "Put a singlequote before BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-quote 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'beginendquote no-delimiters))
 
 
 (defun ar-mark-beginendquote-atpt (&optional arg)
@@ -207,33 +207,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-beginendquote-atpt-mode (&optional no-delimiters check)
   "Toggles beginendquote-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'beginendquote no-delimiters))
 
 (defun ar-kill-beginendquote-atpt (&optional no-delimiters check)
   "Kills BEGINENDQUOTE at point if any. "
   (interactive "*P")
-  (ar-th-kill 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'beginendquote no-delimiters))
 
 (defun ar-leftrightsinglequote-beginendquote-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'beginendquote no-delimiters))
 
 (defun ar-separate-beginendquote-atpt (&optional no-delimiters check)
   "Separates BEGINENDQUOTE at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'beginendquote no-delimiters))
 
 (defun ar-triplequotedq-beginendquote-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around beginendquote. "
   (interactive "*P")
-  (ar-th-triplequotedq 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'beginendquote no-delimiters))
 
 (defun ar-triplequotesq-beginendquote-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around beginendquote. "
   (interactive "*P")
-  (ar-th-triplequotesq 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'beginendquote no-delimiters))
 
 (defun ar-triplebacktick-beginendquote-atpt (&optional arg)
   "Deletes beginendquote at point if any.
@@ -245,22 +245,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-beginendquote-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'beginendquote (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'beginendquote no-delimiters iact check t t))
 
 (defun ar-left-trim-beginendquote-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'beginendquote (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'beginendquote no-delimiters iact check t nil))
 
 (defun ar-right-trim-beginendquote-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'beginendquote n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'beginendquote n no-delimiters iact check nil t))
 
 (defun ar-underscore-beginendquote-atpt (&optional no-delimiters check)
   "Put underscore char around BEGINENDQUOTE. "
   (interactive "*P")
-  (ar-th-underscore 'beginendquote (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'beginendquote no-delimiters))
 
 ;; (defalias 'ar-beginendquote-whitespace-atpt 'ar-whitespace-beginendquote-atpt)
 ;; ;;;###autoload
@@ -312,55 +312,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'blok no-delimiters))
 
 (defun ar-bounds-of-blok-atpt (&optional no-delimiters check)
   "Returns a list, borders of blok if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'blok no-delimiters))
 
 (defun ar-blok-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position BLOK at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'blok no-delimiters))
 
 (defun ar-blok-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of BLOK at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'blok no-delimiters))
 
 (defun ar-beginning-of-blok-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class BLOK at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'blok no-delimiters))
 
 (defun ar-end-of-blok-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class BLOK at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'blok no-delimiters))
 
 (defun ar-in-blok-p-atpt (&optional no-delimiters check)
   "Returns bounds of BLOK at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'blok no-delimiters))
 
 (defun ar-length-of-blok-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class BLOK at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'blok no-delimiters))
 
 (defun ar-copy-blok-atpt (&optional no-delimiters check)
   "Returns a copy of BLOK at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'blok no-delimiters))
 
 (defun ar-delete-blok-atpt (&optional arg)
   "Deletes BLOK at point if any. "
@@ -376,53 +376,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around blok.
   Returns blok or nil if no BLOK at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'blok no-delimiters))
 
 (defun ar-backslashparen-blok-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around blok at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'blok no-delimiters))
 
 (defun ar-doublebackslash-blok-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around BLOK at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'blok no-delimiters))
 
 (defun ar-doubleslash-blok-atpt (&optional no-delimiters check)
   "Puts doubled slashes around BLOK at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'blok no-delimiters))
 
 (defun ar-doublebackslashparen-blok-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around BLOK at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'blok no-delimiters))
 
 (defun ar-doublebacktick-blok-atpt (&optional no-delimiters check)
   "Provides double backticks around BLOK at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'blok no-delimiters))
 
 (defun ar-slashparen-blok-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around BLOK at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'blok no-delimiters))
 
 (defun ar-comment-blok-atpt (&optional no-delimiters check)
   "Comments BLOK at point if any. "
   (interactive "*P")
-  (ar-th-comment 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'blok no-delimiters))
 
 (defun ar-commatize-blok-atpt (&optional no-delimiters check)
   "Put a comma after BLOK at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'blok no-delimiters))
 
 (defun ar-quote-blok-atpt (&optional no-delimiters check)
   "Put a singlequote before BLOK at point if any. "
   (interactive "*P")
-  (ar-th-quote 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'blok no-delimiters))
 
 
 (defun ar-mark-blok-atpt (&optional arg)
@@ -448,33 +448,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-blok-atpt-mode (&optional no-delimiters check)
   "Toggles blok-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'blok no-delimiters))
 
 (defun ar-kill-blok-atpt (&optional no-delimiters check)
   "Kills BLOK at point if any. "
   (interactive "*P")
-  (ar-th-kill 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'blok no-delimiters))
 
 (defun ar-leftrightsinglequote-blok-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'blok no-delimiters))
 
 (defun ar-separate-blok-atpt (&optional no-delimiters check)
   "Separates BLOK at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'blok no-delimiters))
 
 (defun ar-triplequotedq-blok-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around blok. "
   (interactive "*P")
-  (ar-th-triplequotedq 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'blok no-delimiters))
 
 (defun ar-triplequotesq-blok-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around blok. "
   (interactive "*P")
-  (ar-th-triplequotesq 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'blok no-delimiters))
 
 (defun ar-triplebacktick-blok-atpt (&optional arg)
   "Deletes blok at point if any.
@@ -486,22 +486,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-blok-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'blok (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'blok no-delimiters iact check t t))
 
 (defun ar-left-trim-blok-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'blok (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'blok no-delimiters iact check t nil))
 
 (defun ar-right-trim-blok-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'blok n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'blok n no-delimiters iact check nil t))
 
 (defun ar-underscore-blok-atpt (&optional no-delimiters check)
   "Put underscore char around BLOK. "
   (interactive "*P")
-  (ar-th-underscore 'blok (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'blok no-delimiters))
 
 ;; (defalias 'ar-blok-whitespace-atpt 'ar-whitespace-blok-atpt)
 ;; ;;;###autoload
@@ -553,55 +553,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'doublebackslashed no-delimiters))
 
 (defun ar-bounds-of-doublebackslashed-atpt (&optional no-delimiters check)
   "Returns a list, borders of doublebackslashed if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashed-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position DOUBLEBACKSLASHED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashed-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of DOUBLEBACKSLASHED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'doublebackslashed no-delimiters))
 
 (defun ar-beginning-of-doublebackslashed-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class DOUBLEBACKSLASHED at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'doublebackslashed no-delimiters))
 
 (defun ar-end-of-doublebackslashed-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class DOUBLEBACKSLASHED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'doublebackslashed no-delimiters))
 
 (defun ar-in-doublebackslashed-p-atpt (&optional no-delimiters check)
   "Returns bounds of DOUBLEBACKSLASHED at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doublebackslashed no-delimiters))
 
 (defun ar-length-of-doublebackslashed-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class DOUBLEBACKSLASHED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'doublebackslashed no-delimiters))
 
 (defun ar-copy-doublebackslashed-atpt (&optional no-delimiters check)
   "Returns a copy of DOUBLEBACKSLASHED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'doublebackslashed no-delimiters))
 
 (defun ar-delete-doublebackslashed-atpt (&optional arg)
   "Deletes DOUBLEBACKSLASHED at point if any. "
@@ -617,53 +617,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublebackslashed.
   Returns blok or nil if no DOUBLEBACKSLASHED at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'doublebackslashed no-delimiters))
 
 (defun ar-backslashparen-doublebackslashed-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around doublebackslashed at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslash-doublebackslashed-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'doublebackslashed no-delimiters))
 
 (defun ar-doubleslash-doublebackslashed-atpt (&optional no-delimiters check)
   "Puts doubled slashes around DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashparen-doublebackslashed-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'doublebackslashed no-delimiters))
 
 (defun ar-doublebacktick-doublebackslashed-atpt (&optional no-delimiters check)
   "Provides double backticks around DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'doublebackslashed no-delimiters))
 
 (defun ar-slashparen-doublebackslashed-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'doublebackslashed no-delimiters))
 
 (defun ar-comment-doublebackslashed-atpt (&optional no-delimiters check)
   "Comments DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-comment 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'doublebackslashed no-delimiters))
 
 (defun ar-commatize-doublebackslashed-atpt (&optional no-delimiters check)
   "Put a comma after DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'doublebackslashed no-delimiters))
 
 (defun ar-quote-doublebackslashed-atpt (&optional no-delimiters check)
   "Put a singlequote before DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-quote 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'doublebackslashed no-delimiters))
 
 
 (defun ar-mark-doublebackslashed-atpt (&optional arg)
@@ -689,33 +689,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-doublebackslashed-atpt-mode (&optional no-delimiters check)
   "Toggles doublebackslashed-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'doublebackslashed no-delimiters))
 
 (defun ar-kill-doublebackslashed-atpt (&optional no-delimiters check)
   "Kills DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
-  (ar-th-kill 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'doublebackslashed no-delimiters))
 
 (defun ar-leftrightsinglequote-doublebackslashed-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'doublebackslashed no-delimiters))
 
 (defun ar-separate-doublebackslashed-atpt (&optional no-delimiters check)
   "Separates DOUBLEBACKSLASHED at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'doublebackslashed no-delimiters))
 
 (defun ar-triplequotedq-doublebackslashed-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around doublebackslashed. "
   (interactive "*P")
-  (ar-th-triplequotedq 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'doublebackslashed no-delimiters))
 
 (defun ar-triplequotesq-doublebackslashed-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around doublebackslashed. "
   (interactive "*P")
-  (ar-th-triplequotesq 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'doublebackslashed no-delimiters))
 
 (defun ar-triplebacktick-doublebackslashed-atpt (&optional arg)
   "Deletes doublebackslashed at point if any.
@@ -727,22 +727,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-doublebackslashed-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'doublebackslashed no-delimiters iact check t t))
 
 (defun ar-left-trim-doublebackslashed-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'doublebackslashed no-delimiters iact check t nil))
 
 (defun ar-right-trim-doublebackslashed-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashed n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'doublebackslashed n no-delimiters iact check nil t))
 
 (defun ar-underscore-doublebackslashed-atpt (&optional no-delimiters check)
   "Put underscore char around DOUBLEBACKSLASHED. "
   (interactive "*P")
-  (ar-th-underscore 'doublebackslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'doublebackslashed no-delimiters))
 
 ;; (defalias 'ar-doublebackslashed-whitespace-atpt 'ar-whitespace-doublebackslashed-atpt)
 ;; ;;;###autoload
@@ -794,55 +794,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'doublebackticked no-delimiters))
 
 (defun ar-bounds-of-doublebackticked-atpt (&optional no-delimiters check)
   "Returns a list, borders of doublebackticked if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doublebackticked no-delimiters))
 
 (defun ar-doublebackticked-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position DOUBLEBACKTICKED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'doublebackticked no-delimiters))
 
 (defun ar-doublebackticked-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of DOUBLEBACKTICKED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'doublebackticked no-delimiters))
 
 (defun ar-beginning-of-doublebackticked-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class DOUBLEBACKTICKED at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'doublebackticked no-delimiters))
 
 (defun ar-end-of-doublebackticked-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class DOUBLEBACKTICKED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'doublebackticked no-delimiters))
 
 (defun ar-in-doublebackticked-p-atpt (&optional no-delimiters check)
   "Returns bounds of DOUBLEBACKTICKED at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doublebackticked no-delimiters))
 
 (defun ar-length-of-doublebackticked-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class DOUBLEBACKTICKED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'doublebackticked no-delimiters))
 
 (defun ar-copy-doublebackticked-atpt (&optional no-delimiters check)
   "Returns a copy of DOUBLEBACKTICKED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'doublebackticked no-delimiters))
 
 (defun ar-delete-doublebackticked-atpt (&optional arg)
   "Deletes DOUBLEBACKTICKED at point if any. "
@@ -858,53 +858,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublebackticked.
   Returns blok or nil if no DOUBLEBACKTICKED at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'doublebackticked no-delimiters))
 
 (defun ar-backslashparen-doublebackticked-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around doublebackticked at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'doublebackticked no-delimiters))
 
 (defun ar-doublebackslash-doublebackticked-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'doublebackticked no-delimiters))
 
 (defun ar-doubleslash-doublebackticked-atpt (&optional no-delimiters check)
   "Puts doubled slashes around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'doublebackticked no-delimiters))
 
 (defun ar-doublebackslashparen-doublebackticked-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'doublebackticked no-delimiters))
 
 (defun ar-doublebacktick-doublebackticked-atpt (&optional no-delimiters check)
   "Provides double backticks around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'doublebackticked no-delimiters))
 
 (defun ar-slashparen-doublebackticked-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'doublebackticked no-delimiters))
 
 (defun ar-comment-doublebackticked-atpt (&optional no-delimiters check)
   "Comments DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-comment 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'doublebackticked no-delimiters))
 
 (defun ar-commatize-doublebackticked-atpt (&optional no-delimiters check)
   "Put a comma after DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'doublebackticked no-delimiters))
 
 (defun ar-quote-doublebackticked-atpt (&optional no-delimiters check)
   "Put a singlequote before DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-quote 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'doublebackticked no-delimiters))
 
 
 (defun ar-mark-doublebackticked-atpt (&optional arg)
@@ -930,33 +930,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-doublebackticked-atpt-mode (&optional no-delimiters check)
   "Toggles doublebackticked-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'doublebackticked no-delimiters))
 
 (defun ar-kill-doublebackticked-atpt (&optional no-delimiters check)
   "Kills DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
-  (ar-th-kill 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'doublebackticked no-delimiters))
 
 (defun ar-leftrightsinglequote-doublebackticked-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'doublebackticked no-delimiters))
 
 (defun ar-separate-doublebackticked-atpt (&optional no-delimiters check)
   "Separates DOUBLEBACKTICKED at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'doublebackticked no-delimiters))
 
 (defun ar-triplequotedq-doublebackticked-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around doublebackticked. "
   (interactive "*P")
-  (ar-th-triplequotedq 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'doublebackticked no-delimiters))
 
 (defun ar-triplequotesq-doublebackticked-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around doublebackticked. "
   (interactive "*P")
-  (ar-th-triplequotesq 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'doublebackticked no-delimiters))
 
 (defun ar-triplebacktick-doublebackticked-atpt (&optional arg)
   "Deletes doublebackticked at point if any.
@@ -968,22 +968,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-doublebackticked-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'doublebackticked no-delimiters iact check t t))
 
 (defun ar-left-trim-doublebackticked-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'doublebackticked no-delimiters iact check t nil))
 
 (defun ar-right-trim-doublebackticked-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackticked n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'doublebackticked n no-delimiters iact check nil t))
 
 (defun ar-underscore-doublebackticked-atpt (&optional no-delimiters check)
   "Put underscore char around DOUBLEBACKTICKED. "
   (interactive "*P")
-  (ar-th-underscore 'doublebackticked (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'doublebackticked no-delimiters))
 
 ;; (defalias 'ar-doublebackticked-whitespace-atpt 'ar-whitespace-doublebackticked-atpt)
 ;; ;;;###autoload
@@ -1035,55 +1035,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'doublebackslashedparen no-delimiters))
 
 (defun ar-bounds-of-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Returns a list, borders of doublebackslashedparen if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashedparen-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashedparen-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'doublebackslashedparen no-delimiters))
 
 (defun ar-beginning-of-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'doublebackslashedparen no-delimiters))
 
 (defun ar-end-of-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'doublebackslashedparen no-delimiters))
 
 (defun ar-in-doublebackslashedparen-p-atpt (&optional no-delimiters check)
   "Returns bounds of DOUBLEBACKSLASHEDPAREN at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
 (defun ar-length-of-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'doublebackslashedparen no-delimiters))
 
 (defun ar-copy-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Returns a copy of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'doublebackslashedparen no-delimiters))
 
 (defun ar-delete-doublebackslashedparen-atpt (&optional arg)
   "Deletes DOUBLEBACKSLASHEDPAREN at point if any. "
@@ -1099,53 +1099,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublebackslashedparen.
   Returns blok or nil if no DOUBLEBACKSLASHEDPAREN at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'doublebackslashedparen no-delimiters))
 
 (defun ar-backslashparen-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around doublebackslashedparen at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslash-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'doublebackslashedparen no-delimiters))
 
 (defun ar-doubleslash-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Puts doubled slashes around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashparen-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebacktick-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Provides double backticks around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'doublebackslashedparen no-delimiters))
 
 (defun ar-slashparen-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'doublebackslashedparen no-delimiters))
 
 (defun ar-comment-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Comments DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-comment 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'doublebackslashedparen no-delimiters))
 
 (defun ar-commatize-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Put a comma after DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'doublebackslashedparen no-delimiters))
 
 (defun ar-quote-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Put a singlequote before DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-quote 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'doublebackslashedparen no-delimiters))
 
 
 (defun ar-mark-doublebackslashedparen-atpt (&optional arg)
@@ -1171,33 +1171,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-doublebackslashedparen-atpt-mode (&optional no-delimiters check)
   "Toggles doublebackslashedparen-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'doublebackslashedparen no-delimiters))
 
 (defun ar-kill-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Kills DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-kill 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'doublebackslashedparen no-delimiters))
 
 (defun ar-leftrightsinglequote-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'doublebackslashedparen no-delimiters))
 
 (defun ar-separate-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Separates DOUBLEBACKSLASHEDPAREN at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'doublebackslashedparen no-delimiters))
 
 (defun ar-triplequotedq-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around doublebackslashedparen. "
   (interactive "*P")
-  (ar-th-triplequotedq 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'doublebackslashedparen no-delimiters))
 
 (defun ar-triplequotesq-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around doublebackslashedparen. "
   (interactive "*P")
-  (ar-th-triplequotesq 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'doublebackslashedparen no-delimiters))
 
 (defun ar-triplebacktick-doublebackslashedparen-atpt (&optional arg)
   "Deletes doublebackslashedparen at point if any.
@@ -1209,22 +1209,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-doublebackslashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'doublebackslashedparen no-delimiters iact check t t))
 
 (defun ar-left-trim-doublebackslashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'doublebackslashedparen no-delimiters iact check t nil))
 
 (defun ar-right-trim-doublebackslashedparen-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashedparen n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'doublebackslashedparen n no-delimiters iact check nil t))
 
 (defun ar-underscore-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Put underscore char around DOUBLEBACKSLASHEDPAREN. "
   (interactive "*P")
-  (ar-th-underscore 'doublebackslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'doublebackslashedparen no-delimiters))
 
 ;; (defalias 'ar-doublebackslashedparen-whitespace-atpt 'ar-whitespace-doublebackslashedparen-atpt)
 ;; ;;;###autoload
@@ -1276,55 +1276,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'doubleslashed no-delimiters))
 
 (defun ar-bounds-of-doubleslashed-atpt (&optional no-delimiters check)
   "Returns a list, borders of doubleslashed if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doubleslashed no-delimiters))
 
 (defun ar-doubleslashed-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position DOUBLESLASHED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'doubleslashed no-delimiters))
 
 (defun ar-doubleslashed-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of DOUBLESLASHED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'doubleslashed no-delimiters))
 
 (defun ar-beginning-of-doubleslashed-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class DOUBLESLASHED at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'doubleslashed no-delimiters))
 
 (defun ar-end-of-doubleslashed-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class DOUBLESLASHED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'doubleslashed no-delimiters))
 
 (defun ar-in-doubleslashed-p-atpt (&optional no-delimiters check)
   "Returns bounds of DOUBLESLASHED at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doubleslashed no-delimiters))
 
 (defun ar-length-of-doubleslashed-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class DOUBLESLASHED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'doubleslashed no-delimiters))
 
 (defun ar-copy-doubleslashed-atpt (&optional no-delimiters check)
   "Returns a copy of DOUBLESLASHED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'doubleslashed no-delimiters))
 
 (defun ar-delete-doubleslashed-atpt (&optional arg)
   "Deletes DOUBLESLASHED at point if any. "
@@ -1340,53 +1340,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doubleslashed.
   Returns blok or nil if no DOUBLESLASHED at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'doubleslashed no-delimiters))
 
 (defun ar-backslashparen-doubleslashed-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around doubleslashed at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'doubleslashed no-delimiters))
 
 (defun ar-doublebackslash-doubleslashed-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'doubleslashed no-delimiters))
 
 (defun ar-doubleslash-doubleslashed-atpt (&optional no-delimiters check)
   "Puts doubled slashes around DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'doubleslashed no-delimiters))
 
 (defun ar-doublebackslashparen-doubleslashed-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'doubleslashed no-delimiters))
 
 (defun ar-doublebacktick-doubleslashed-atpt (&optional no-delimiters check)
   "Provides double backticks around DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'doubleslashed no-delimiters))
 
 (defun ar-slashparen-doubleslashed-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'doubleslashed no-delimiters))
 
 (defun ar-comment-doubleslashed-atpt (&optional no-delimiters check)
   "Comments DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-comment 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'doubleslashed no-delimiters))
 
 (defun ar-commatize-doubleslashed-atpt (&optional no-delimiters check)
   "Put a comma after DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'doubleslashed no-delimiters))
 
 (defun ar-quote-doubleslashed-atpt (&optional no-delimiters check)
   "Put a singlequote before DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-quote 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'doubleslashed no-delimiters))
 
 
 (defun ar-mark-doubleslashed-atpt (&optional arg)
@@ -1412,33 +1412,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-doubleslashed-atpt-mode (&optional no-delimiters check)
   "Toggles doubleslashed-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'doubleslashed no-delimiters))
 
 (defun ar-kill-doubleslashed-atpt (&optional no-delimiters check)
   "Kills DOUBLESLASHED at point if any. "
   (interactive "*P")
-  (ar-th-kill 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'doubleslashed no-delimiters))
 
 (defun ar-leftrightsinglequote-doubleslashed-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'doubleslashed no-delimiters))
 
 (defun ar-separate-doubleslashed-atpt (&optional no-delimiters check)
   "Separates DOUBLESLASHED at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'doubleslashed no-delimiters))
 
 (defun ar-triplequotedq-doubleslashed-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around doubleslashed. "
   (interactive "*P")
-  (ar-th-triplequotedq 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'doubleslashed no-delimiters))
 
 (defun ar-triplequotesq-doubleslashed-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around doubleslashed. "
   (interactive "*P")
-  (ar-th-triplequotesq 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'doubleslashed no-delimiters))
 
 (defun ar-triplebacktick-doubleslashed-atpt (&optional arg)
   "Deletes doubleslashed at point if any.
@@ -1450,22 +1450,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-doubleslashed-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'doubleslashed no-delimiters iact check t t))
 
 (defun ar-left-trim-doubleslashed-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'doubleslashed no-delimiters iact check t nil))
 
 (defun ar-right-trim-doubleslashed-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashed n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'doubleslashed n no-delimiters iact check nil t))
 
 (defun ar-underscore-doubleslashed-atpt (&optional no-delimiters check)
   "Put underscore char around DOUBLESLASHED. "
   (interactive "*P")
-  (ar-th-underscore 'doubleslashed (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'doubleslashed no-delimiters))
 
 ;; (defalias 'ar-doubleslashed-whitespace-atpt 'ar-whitespace-doubleslashed-atpt)
 ;; ;;;###autoload
@@ -1517,55 +1517,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'doubleslashedparen no-delimiters))
 
 (defun ar-bounds-of-doubleslashedparen-atpt (&optional no-delimiters check)
   "Returns a list, borders of doubleslashedparen if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslashedparen-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position DOUBLESLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslashedparen-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of DOUBLESLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'doubleslashedparen no-delimiters))
 
 (defun ar-beginning-of-doubleslashedparen-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class DOUBLESLASHEDPAREN at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'doubleslashedparen no-delimiters))
 
 (defun ar-end-of-doubleslashedparen-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class DOUBLESLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'doubleslashedparen no-delimiters))
 
 (defun ar-in-doubleslashedparen-p-atpt (&optional no-delimiters check)
   "Returns bounds of DOUBLESLASHEDPAREN at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'doubleslashedparen no-delimiters))
 
 (defun ar-length-of-doubleslashedparen-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class DOUBLESLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'doubleslashedparen no-delimiters))
 
 (defun ar-copy-doubleslashedparen-atpt (&optional no-delimiters check)
   "Returns a copy of DOUBLESLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'doubleslashedparen no-delimiters))
 
 (defun ar-delete-doubleslashedparen-atpt (&optional arg)
   "Deletes DOUBLESLASHEDPAREN at point if any. "
@@ -1581,53 +1581,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doubleslashedparen.
   Returns blok or nil if no DOUBLESLASHEDPAREN at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'doubleslashedparen no-delimiters))
 
 (defun ar-backslashparen-doubleslashedparen-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around doubleslashedparen at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'doubleslashedparen no-delimiters))
 
 (defun ar-doublebackslash-doubleslashedparen-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslash-doubleslashedparen-atpt (&optional no-delimiters check)
   "Puts doubled slashes around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'doubleslashedparen no-delimiters))
 
 (defun ar-doublebackslashparen-doubleslashedparen-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'doubleslashedparen no-delimiters))
 
 (defun ar-doublebacktick-doubleslashedparen-atpt (&optional no-delimiters check)
   "Provides double backticks around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'doubleslashedparen no-delimiters))
 
 (defun ar-slashparen-doubleslashedparen-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'doubleslashedparen no-delimiters))
 
 (defun ar-comment-doubleslashedparen-atpt (&optional no-delimiters check)
   "Comments DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-comment 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'doubleslashedparen no-delimiters))
 
 (defun ar-commatize-doubleslashedparen-atpt (&optional no-delimiters check)
   "Put a comma after DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'doubleslashedparen no-delimiters))
 
 (defun ar-quote-doubleslashedparen-atpt (&optional no-delimiters check)
   "Put a singlequote before DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-quote 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'doubleslashedparen no-delimiters))
 
 
 (defun ar-mark-doubleslashedparen-atpt (&optional arg)
@@ -1653,33 +1653,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-doubleslashedparen-atpt-mode (&optional no-delimiters check)
   "Toggles doubleslashedparen-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'doubleslashedparen no-delimiters))
 
 (defun ar-kill-doubleslashedparen-atpt (&optional no-delimiters check)
   "Kills DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-kill 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'doubleslashedparen no-delimiters))
 
 (defun ar-leftrightsinglequote-doubleslashedparen-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'doubleslashedparen no-delimiters))
 
 (defun ar-separate-doubleslashedparen-atpt (&optional no-delimiters check)
   "Separates DOUBLESLASHEDPAREN at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'doubleslashedparen no-delimiters))
 
 (defun ar-triplequotedq-doubleslashedparen-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around doubleslashedparen. "
   (interactive "*P")
-  (ar-th-triplequotedq 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'doubleslashedparen no-delimiters))
 
 (defun ar-triplequotesq-doubleslashedparen-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around doubleslashedparen. "
   (interactive "*P")
-  (ar-th-triplequotesq 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'doubleslashedparen no-delimiters))
 
 (defun ar-triplebacktick-doubleslashedparen-atpt (&optional arg)
   "Deletes doubleslashedparen at point if any.
@@ -1691,22 +1691,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-doubleslashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'doubleslashedparen no-delimiters iact check t t))
 
 (defun ar-left-trim-doubleslashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'doubleslashedparen no-delimiters iact check t nil))
 
 (defun ar-right-trim-doubleslashedparen-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashedparen n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'doubleslashedparen n no-delimiters iact check nil t))
 
 (defun ar-underscore-doubleslashedparen-atpt (&optional no-delimiters check)
   "Put underscore char around DOUBLESLASHEDPAREN. "
   (interactive "*P")
-  (ar-th-underscore 'doubleslashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'doubleslashedparen no-delimiters))
 
 ;; (defalias 'ar-doubleslashedparen-whitespace-atpt 'ar-whitespace-doubleslashedparen-atpt)
 ;; ;;;###autoload
@@ -1758,55 +1758,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'markup no-delimiters))
 
 (defun ar-bounds-of-markup-atpt (&optional no-delimiters check)
   "Returns a list, borders of markup if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'markup no-delimiters))
 
 (defun ar-markup-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position MARKUP at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'markup no-delimiters))
 
 (defun ar-markup-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of MARKUP at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'markup no-delimiters))
 
 (defun ar-beginning-of-markup-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class MARKUP at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'markup no-delimiters))
 
 (defun ar-end-of-markup-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class MARKUP at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'markup no-delimiters))
 
 (defun ar-in-markup-p-atpt (&optional no-delimiters check)
   "Returns bounds of MARKUP at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'markup no-delimiters))
 
 (defun ar-length-of-markup-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class MARKUP at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'markup no-delimiters))
 
 (defun ar-copy-markup-atpt (&optional no-delimiters check)
   "Returns a copy of MARKUP at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'markup no-delimiters))
 
 (defun ar-delete-markup-atpt (&optional arg)
   "Deletes MARKUP at point if any. "
@@ -1822,53 +1822,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around markup.
   Returns blok or nil if no MARKUP at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'markup no-delimiters))
 
 (defun ar-backslashparen-markup-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around markup at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'markup no-delimiters))
 
 (defun ar-doublebackslash-markup-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'markup no-delimiters))
 
 (defun ar-doubleslash-markup-atpt (&optional no-delimiters check)
   "Puts doubled slashes around MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'markup no-delimiters))
 
 (defun ar-doublebackslashparen-markup-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'markup no-delimiters))
 
 (defun ar-doublebacktick-markup-atpt (&optional no-delimiters check)
   "Provides double backticks around MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'markup no-delimiters))
 
 (defun ar-slashparen-markup-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'markup no-delimiters))
 
 (defun ar-comment-markup-atpt (&optional no-delimiters check)
   "Comments MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-comment 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'markup no-delimiters))
 
 (defun ar-commatize-markup-atpt (&optional no-delimiters check)
   "Put a comma after MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'markup no-delimiters))
 
 (defun ar-quote-markup-atpt (&optional no-delimiters check)
   "Put a singlequote before MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-quote 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'markup no-delimiters))
 
 
 (defun ar-mark-markup-atpt (&optional arg)
@@ -1894,33 +1894,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-markup-atpt-mode (&optional no-delimiters check)
   "Toggles markup-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'markup no-delimiters))
 
 (defun ar-kill-markup-atpt (&optional no-delimiters check)
   "Kills MARKUP at point if any. "
   (interactive "*P")
-  (ar-th-kill 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'markup no-delimiters))
 
 (defun ar-leftrightsinglequote-markup-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'markup no-delimiters))
 
 (defun ar-separate-markup-atpt (&optional no-delimiters check)
   "Separates MARKUP at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'markup no-delimiters))
 
 (defun ar-triplequotedq-markup-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around markup. "
   (interactive "*P")
-  (ar-th-triplequotedq 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'markup no-delimiters))
 
 (defun ar-triplequotesq-markup-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around markup. "
   (interactive "*P")
-  (ar-th-triplequotesq 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'markup no-delimiters))
 
 (defun ar-triplebacktick-markup-atpt (&optional arg)
   "Deletes markup at point if any.
@@ -1932,22 +1932,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-markup-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'markup (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'markup no-delimiters iact check t t))
 
 (defun ar-left-trim-markup-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'markup (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'markup no-delimiters iact check t nil))
 
 (defun ar-right-trim-markup-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'markup n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'markup n no-delimiters iact check nil t))
 
 (defun ar-underscore-markup-atpt (&optional no-delimiters check)
   "Put underscore char around MARKUP. "
   (interactive "*P")
-  (ar-th-underscore 'markup (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'markup no-delimiters))
 
 ;; (defalias 'ar-markup-whitespace-atpt 'ar-whitespace-markup-atpt)
 ;; ;;;###autoload
@@ -1999,55 +1999,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'mldata no-delimiters))
 
 (defun ar-bounds-of-mldata-atpt (&optional no-delimiters check)
   "Returns a list, borders of mldata if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'mldata no-delimiters))
 
 (defun ar-mldata-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position MLDATA at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'mldata no-delimiters))
 
 (defun ar-mldata-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of MLDATA at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'mldata no-delimiters))
 
 (defun ar-beginning-of-mldata-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class MLDATA at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'mldata no-delimiters))
 
 (defun ar-end-of-mldata-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class MLDATA at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'mldata no-delimiters))
 
 (defun ar-in-mldata-p-atpt (&optional no-delimiters check)
   "Returns bounds of MLDATA at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'mldata no-delimiters))
 
 (defun ar-length-of-mldata-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class MLDATA at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'mldata no-delimiters))
 
 (defun ar-copy-mldata-atpt (&optional no-delimiters check)
   "Returns a copy of MLDATA at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'mldata no-delimiters))
 
 (defun ar-delete-mldata-atpt (&optional arg)
   "Deletes MLDATA at point if any. "
@@ -2063,53 +2063,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around mldata.
   Returns blok or nil if no MLDATA at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'mldata no-delimiters))
 
 (defun ar-backslashparen-mldata-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around mldata at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'mldata no-delimiters))
 
 (defun ar-doublebackslash-mldata-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'mldata no-delimiters))
 
 (defun ar-doubleslash-mldata-atpt (&optional no-delimiters check)
   "Puts doubled slashes around MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'mldata no-delimiters))
 
 (defun ar-doublebackslashparen-mldata-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'mldata no-delimiters))
 
 (defun ar-doublebacktick-mldata-atpt (&optional no-delimiters check)
   "Provides double backticks around MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'mldata no-delimiters))
 
 (defun ar-slashparen-mldata-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'mldata no-delimiters))
 
 (defun ar-comment-mldata-atpt (&optional no-delimiters check)
   "Comments MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-comment 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'mldata no-delimiters))
 
 (defun ar-commatize-mldata-atpt (&optional no-delimiters check)
   "Put a comma after MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'mldata no-delimiters))
 
 (defun ar-quote-mldata-atpt (&optional no-delimiters check)
   "Put a singlequote before MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-quote 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'mldata no-delimiters))
 
 
 (defun ar-mark-mldata-atpt (&optional arg)
@@ -2135,33 +2135,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-mldata-atpt-mode (&optional no-delimiters check)
   "Toggles mldata-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'mldata no-delimiters))
 
 (defun ar-kill-mldata-atpt (&optional no-delimiters check)
   "Kills MLDATA at point if any. "
   (interactive "*P")
-  (ar-th-kill 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'mldata no-delimiters))
 
 (defun ar-leftrightsinglequote-mldata-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'mldata no-delimiters))
 
 (defun ar-separate-mldata-atpt (&optional no-delimiters check)
   "Separates MLDATA at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'mldata no-delimiters))
 
 (defun ar-triplequotedq-mldata-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around mldata. "
   (interactive "*P")
-  (ar-th-triplequotedq 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'mldata no-delimiters))
 
 (defun ar-triplequotesq-mldata-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around mldata. "
   (interactive "*P")
-  (ar-th-triplequotesq 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'mldata no-delimiters))
 
 (defun ar-triplebacktick-mldata-atpt (&optional arg)
   "Deletes mldata at point if any.
@@ -2173,22 +2173,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-mldata-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'mldata (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'mldata no-delimiters iact check t t))
 
 (defun ar-left-trim-mldata-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'mldata (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'mldata no-delimiters iact check t nil))
 
 (defun ar-right-trim-mldata-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'mldata n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'mldata n no-delimiters iact check nil t))
 
 (defun ar-underscore-mldata-atpt (&optional no-delimiters check)
   "Put underscore char around MLDATA. "
   (interactive "*P")
-  (ar-th-underscore 'mldata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'mldata no-delimiters))
 
 ;; (defalias 'ar-mldata-whitespace-atpt 'ar-whitespace-mldata-atpt)
 ;; ;;;###autoload
@@ -2240,55 +2240,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'mlattribut no-delimiters))
 
 (defun ar-bounds-of-mlattribut-atpt (&optional no-delimiters check)
   "Returns a list, borders of mlattribut if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'mlattribut no-delimiters))
 
 (defun ar-mlattribut-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position MLATTRIBUT at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'mlattribut no-delimiters))
 
 (defun ar-mlattribut-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of MLATTRIBUT at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'mlattribut no-delimiters))
 
 (defun ar-beginning-of-mlattribut-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class MLATTRIBUT at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'mlattribut no-delimiters))
 
 (defun ar-end-of-mlattribut-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class MLATTRIBUT at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'mlattribut no-delimiters))
 
 (defun ar-in-mlattribut-p-atpt (&optional no-delimiters check)
   "Returns bounds of MLATTRIBUT at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'mlattribut no-delimiters))
 
 (defun ar-length-of-mlattribut-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class MLATTRIBUT at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'mlattribut no-delimiters))
 
 (defun ar-copy-mlattribut-atpt (&optional no-delimiters check)
   "Returns a copy of MLATTRIBUT at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'mlattribut no-delimiters))
 
 (defun ar-delete-mlattribut-atpt (&optional arg)
   "Deletes MLATTRIBUT at point if any. "
@@ -2304,53 +2304,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around mlattribut.
   Returns blok or nil if no MLATTRIBUT at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'mlattribut no-delimiters))
 
 (defun ar-backslashparen-mlattribut-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around mlattribut at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'mlattribut no-delimiters))
 
 (defun ar-doublebackslash-mlattribut-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'mlattribut no-delimiters))
 
 (defun ar-doubleslash-mlattribut-atpt (&optional no-delimiters check)
   "Puts doubled slashes around MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'mlattribut no-delimiters))
 
 (defun ar-doublebackslashparen-mlattribut-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'mlattribut no-delimiters))
 
 (defun ar-doublebacktick-mlattribut-atpt (&optional no-delimiters check)
   "Provides double backticks around MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'mlattribut no-delimiters))
 
 (defun ar-slashparen-mlattribut-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'mlattribut no-delimiters))
 
 (defun ar-comment-mlattribut-atpt (&optional no-delimiters check)
   "Comments MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-comment 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'mlattribut no-delimiters))
 
 (defun ar-commatize-mlattribut-atpt (&optional no-delimiters check)
   "Put a comma after MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'mlattribut no-delimiters))
 
 (defun ar-quote-mlattribut-atpt (&optional no-delimiters check)
   "Put a singlequote before MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-quote 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'mlattribut no-delimiters))
 
 
 (defun ar-mark-mlattribut-atpt (&optional arg)
@@ -2376,33 +2376,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-mlattribut-atpt-mode (&optional no-delimiters check)
   "Toggles mlattribut-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'mlattribut no-delimiters))
 
 (defun ar-kill-mlattribut-atpt (&optional no-delimiters check)
   "Kills MLATTRIBUT at point if any. "
   (interactive "*P")
-  (ar-th-kill 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'mlattribut no-delimiters))
 
 (defun ar-leftrightsinglequote-mlattribut-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'mlattribut no-delimiters))
 
 (defun ar-separate-mlattribut-atpt (&optional no-delimiters check)
   "Separates MLATTRIBUT at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'mlattribut no-delimiters))
 
 (defun ar-triplequotedq-mlattribut-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around mlattribut. "
   (interactive "*P")
-  (ar-th-triplequotedq 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'mlattribut no-delimiters))
 
 (defun ar-triplequotesq-mlattribut-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around mlattribut. "
   (interactive "*P")
-  (ar-th-triplequotesq 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'mlattribut no-delimiters))
 
 (defun ar-triplebacktick-mlattribut-atpt (&optional arg)
   "Deletes mlattribut at point if any.
@@ -2414,22 +2414,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-mlattribut-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'mlattribut (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'mlattribut no-delimiters iact check t t))
 
 (defun ar-left-trim-mlattribut-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'mlattribut (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'mlattribut no-delimiters iact check t nil))
 
 (defun ar-right-trim-mlattribut-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'mlattribut n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'mlattribut n no-delimiters iact check nil t))
 
 (defun ar-underscore-mlattribut-atpt (&optional no-delimiters check)
   "Put underscore char around MLATTRIBUT. "
   (interactive "*P")
-  (ar-th-underscore 'mlattribut (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'mlattribut no-delimiters))
 
 ;; (defalias 'ar-mlattribut-whitespace-atpt 'ar-whitespace-mlattribut-atpt)
 ;; ;;;###autoload
@@ -2481,55 +2481,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'mltag no-delimiters))
 
 (defun ar-bounds-of-mltag-atpt (&optional no-delimiters check)
   "Returns a list, borders of mltag if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'mltag no-delimiters))
 
 (defun ar-mltag-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position MLTAG at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'mltag no-delimiters))
 
 (defun ar-mltag-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of MLTAG at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'mltag no-delimiters))
 
 (defun ar-beginning-of-mltag-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class MLTAG at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'mltag no-delimiters))
 
 (defun ar-end-of-mltag-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class MLTAG at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'mltag no-delimiters))
 
 (defun ar-in-mltag-p-atpt (&optional no-delimiters check)
   "Returns bounds of MLTAG at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'mltag no-delimiters))
 
 (defun ar-length-of-mltag-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class MLTAG at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'mltag no-delimiters))
 
 (defun ar-copy-mltag-atpt (&optional no-delimiters check)
   "Returns a copy of MLTAG at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'mltag no-delimiters))
 
 (defun ar-delete-mltag-atpt (&optional arg)
   "Deletes MLTAG at point if any. "
@@ -2545,53 +2545,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around mltag.
   Returns blok or nil if no MLTAG at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'mltag no-delimiters))
 
 (defun ar-backslashparen-mltag-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around mltag at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'mltag no-delimiters))
 
 (defun ar-doublebackslash-mltag-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'mltag no-delimiters))
 
 (defun ar-doubleslash-mltag-atpt (&optional no-delimiters check)
   "Puts doubled slashes around MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'mltag no-delimiters))
 
 (defun ar-doublebackslashparen-mltag-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'mltag no-delimiters))
 
 (defun ar-doublebacktick-mltag-atpt (&optional no-delimiters check)
   "Provides double backticks around MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'mltag no-delimiters))
 
 (defun ar-slashparen-mltag-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'mltag no-delimiters))
 
 (defun ar-comment-mltag-atpt (&optional no-delimiters check)
   "Comments MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-comment 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'mltag no-delimiters))
 
 (defun ar-commatize-mltag-atpt (&optional no-delimiters check)
   "Put a comma after MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'mltag no-delimiters))
 
 (defun ar-quote-mltag-atpt (&optional no-delimiters check)
   "Put a singlequote before MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-quote 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'mltag no-delimiters))
 
 
 (defun ar-mark-mltag-atpt (&optional arg)
@@ -2617,33 +2617,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-mltag-atpt-mode (&optional no-delimiters check)
   "Toggles mltag-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'mltag no-delimiters))
 
 (defun ar-kill-mltag-atpt (&optional no-delimiters check)
   "Kills MLTAG at point if any. "
   (interactive "*P")
-  (ar-th-kill 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'mltag no-delimiters))
 
 (defun ar-leftrightsinglequote-mltag-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'mltag no-delimiters))
 
 (defun ar-separate-mltag-atpt (&optional no-delimiters check)
   "Separates MLTAG at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'mltag no-delimiters))
 
 (defun ar-triplequotedq-mltag-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around mltag. "
   (interactive "*P")
-  (ar-th-triplequotedq 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'mltag no-delimiters))
 
 (defun ar-triplequotesq-mltag-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around mltag. "
   (interactive "*P")
-  (ar-th-triplequotesq 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'mltag no-delimiters))
 
 (defun ar-triplebacktick-mltag-atpt (&optional arg)
   "Deletes mltag at point if any.
@@ -2655,22 +2655,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-mltag-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'mltag (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'mltag no-delimiters iact check t t))
 
 (defun ar-left-trim-mltag-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'mltag (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'mltag no-delimiters iact check t nil))
 
 (defun ar-right-trim-mltag-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'mltag n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'mltag n no-delimiters iact check nil t))
 
 (defun ar-underscore-mltag-atpt (&optional no-delimiters check)
   "Put underscore char around MLTAG. "
   (interactive "*P")
-  (ar-th-underscore 'mltag (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'mltag no-delimiters))
 
 ;; (defalias 'ar-mltag-whitespace-atpt 'ar-whitespace-mltag-atpt)
 ;; ;;;###autoload
@@ -2722,55 +2722,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'slashedparen no-delimiters))
 
 (defun ar-bounds-of-slashedparen-atpt (&optional no-delimiters check)
   "Returns a list, borders of slashedparen if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'slashedparen no-delimiters))
 
 (defun ar-slashedparen-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position SLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'slashedparen no-delimiters))
 
 (defun ar-slashedparen-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of SLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'slashedparen no-delimiters))
 
 (defun ar-beginning-of-slashedparen-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class SLASHEDPAREN at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'slashedparen no-delimiters))
 
 (defun ar-end-of-slashedparen-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class SLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'slashedparen no-delimiters))
 
 (defun ar-in-slashedparen-p-atpt (&optional no-delimiters check)
   "Returns bounds of SLASHEDPAREN at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'slashedparen no-delimiters))
 
 (defun ar-length-of-slashedparen-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class SLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'slashedparen no-delimiters))
 
 (defun ar-copy-slashedparen-atpt (&optional no-delimiters check)
   "Returns a copy of SLASHEDPAREN at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'slashedparen no-delimiters))
 
 (defun ar-delete-slashedparen-atpt (&optional arg)
   "Deletes SLASHEDPAREN at point if any. "
@@ -2786,53 +2786,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around slashedparen.
   Returns blok or nil if no SLASHEDPAREN at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'slashedparen no-delimiters))
 
 (defun ar-backslashparen-slashedparen-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around slashedparen at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'slashedparen no-delimiters))
 
 (defun ar-doublebackslash-slashedparen-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'slashedparen no-delimiters))
 
 (defun ar-doubleslash-slashedparen-atpt (&optional no-delimiters check)
   "Puts doubled slashes around SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'slashedparen no-delimiters))
 
 (defun ar-doublebackslashparen-slashedparen-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'slashedparen no-delimiters))
 
 (defun ar-doublebacktick-slashedparen-atpt (&optional no-delimiters check)
   "Provides double backticks around SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'slashedparen no-delimiters))
 
 (defun ar-slashparen-slashedparen-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'slashedparen no-delimiters))
 
 (defun ar-comment-slashedparen-atpt (&optional no-delimiters check)
   "Comments SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-comment 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'slashedparen no-delimiters))
 
 (defun ar-commatize-slashedparen-atpt (&optional no-delimiters check)
   "Put a comma after SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'slashedparen no-delimiters))
 
 (defun ar-quote-slashedparen-atpt (&optional no-delimiters check)
   "Put a singlequote before SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-quote 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'slashedparen no-delimiters))
 
 
 (defun ar-mark-slashedparen-atpt (&optional arg)
@@ -2858,33 +2858,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-slashedparen-atpt-mode (&optional no-delimiters check)
   "Toggles slashedparen-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'slashedparen no-delimiters))
 
 (defun ar-kill-slashedparen-atpt (&optional no-delimiters check)
   "Kills SLASHEDPAREN at point if any. "
   (interactive "*P")
-  (ar-th-kill 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'slashedparen no-delimiters))
 
 (defun ar-leftrightsinglequote-slashedparen-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'slashedparen no-delimiters))
 
 (defun ar-separate-slashedparen-atpt (&optional no-delimiters check)
   "Separates SLASHEDPAREN at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'slashedparen no-delimiters))
 
 (defun ar-triplequotedq-slashedparen-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around slashedparen. "
   (interactive "*P")
-  (ar-th-triplequotedq 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'slashedparen no-delimiters))
 
 (defun ar-triplequotesq-slashedparen-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around slashedparen. "
   (interactive "*P")
-  (ar-th-triplequotesq 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'slashedparen no-delimiters))
 
 (defun ar-triplebacktick-slashedparen-atpt (&optional arg)
   "Deletes slashedparen at point if any.
@@ -2896,22 +2896,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-slashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'slashedparen (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'slashedparen no-delimiters iact check t t))
 
 (defun ar-left-trim-slashedparen-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'slashedparen (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'slashedparen no-delimiters iact check t nil))
 
 (defun ar-right-trim-slashedparen-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'slashedparen n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'slashedparen n no-delimiters iact check nil t))
 
 (defun ar-underscore-slashedparen-atpt (&optional no-delimiters check)
   "Put underscore char around SLASHEDPAREN. "
   (interactive "*P")
-  (ar-th-underscore 'slashedparen (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'slashedparen no-delimiters))
 
 ;; (defalias 'ar-slashedparen-whitespace-atpt 'ar-whitespace-slashedparen-atpt)
 ;; ;;;###autoload
@@ -2963,55 +2963,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'tabledata no-delimiters))
 
 (defun ar-bounds-of-tabledata-atpt (&optional no-delimiters check)
   "Returns a list, borders of tabledata if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'tabledata no-delimiters))
 
 (defun ar-tabledata-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position TABLEDATA at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'tabledata no-delimiters))
 
 (defun ar-tabledata-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of TABLEDATA at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'tabledata no-delimiters))
 
 (defun ar-beginning-of-tabledata-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class TABLEDATA at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'tabledata no-delimiters))
 
 (defun ar-end-of-tabledata-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class TABLEDATA at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'tabledata no-delimiters))
 
 (defun ar-in-tabledata-p-atpt (&optional no-delimiters check)
   "Returns bounds of TABLEDATA at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'tabledata no-delimiters))
 
 (defun ar-length-of-tabledata-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class TABLEDATA at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'tabledata no-delimiters))
 
 (defun ar-copy-tabledata-atpt (&optional no-delimiters check)
   "Returns a copy of TABLEDATA at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'tabledata no-delimiters))
 
 (defun ar-delete-tabledata-atpt (&optional arg)
   "Deletes TABLEDATA at point if any. "
@@ -3027,53 +3027,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around tabledata.
   Returns blok or nil if no TABLEDATA at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'tabledata no-delimiters))
 
 (defun ar-backslashparen-tabledata-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around tabledata at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'tabledata no-delimiters))
 
 (defun ar-doublebackslash-tabledata-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'tabledata no-delimiters))
 
 (defun ar-doubleslash-tabledata-atpt (&optional no-delimiters check)
   "Puts doubled slashes around TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'tabledata no-delimiters))
 
 (defun ar-doublebackslashparen-tabledata-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'tabledata no-delimiters))
 
 (defun ar-doublebacktick-tabledata-atpt (&optional no-delimiters check)
   "Provides double backticks around TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'tabledata no-delimiters))
 
 (defun ar-slashparen-tabledata-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'tabledata no-delimiters))
 
 (defun ar-comment-tabledata-atpt (&optional no-delimiters check)
   "Comments TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-comment 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'tabledata no-delimiters))
 
 (defun ar-commatize-tabledata-atpt (&optional no-delimiters check)
   "Put a comma after TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'tabledata no-delimiters))
 
 (defun ar-quote-tabledata-atpt (&optional no-delimiters check)
   "Put a singlequote before TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-quote 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'tabledata no-delimiters))
 
 
 (defun ar-mark-tabledata-atpt (&optional arg)
@@ -3099,33 +3099,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-tabledata-atpt-mode (&optional no-delimiters check)
   "Toggles tabledata-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'tabledata no-delimiters))
 
 (defun ar-kill-tabledata-atpt (&optional no-delimiters check)
   "Kills TABLEDATA at point if any. "
   (interactive "*P")
-  (ar-th-kill 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'tabledata no-delimiters))
 
 (defun ar-leftrightsinglequote-tabledata-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'tabledata no-delimiters))
 
 (defun ar-separate-tabledata-atpt (&optional no-delimiters check)
   "Separates TABLEDATA at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'tabledata no-delimiters))
 
 (defun ar-triplequotedq-tabledata-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around tabledata. "
   (interactive "*P")
-  (ar-th-triplequotedq 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'tabledata no-delimiters))
 
 (defun ar-triplequotesq-tabledata-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around tabledata. "
   (interactive "*P")
-  (ar-th-triplequotesq 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'tabledata no-delimiters))
 
 (defun ar-triplebacktick-tabledata-atpt (&optional arg)
   "Deletes tabledata at point if any.
@@ -3137,22 +3137,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-tabledata-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'tabledata (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'tabledata no-delimiters iact check t t))
 
 (defun ar-left-trim-tabledata-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'tabledata (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'tabledata no-delimiters iact check t nil))
 
 (defun ar-right-trim-tabledata-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'tabledata n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'tabledata n no-delimiters iact check nil t))
 
 (defun ar-underscore-tabledata-atpt (&optional no-delimiters check)
   "Put underscore char around TABLEDATA. "
   (interactive "*P")
-  (ar-th-underscore 'tabledata (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'tabledata no-delimiters))
 
 ;; (defalias 'ar-tabledata-whitespace-atpt 'ar-whitespace-tabledata-atpt)
 ;; ;;;###autoload
@@ -3204,55 +3204,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'xslstylesheet no-delimiters))
 
 (defun ar-bounds-of-xslstylesheet-atpt (&optional no-delimiters check)
   "Returns a list, borders of xslstylesheet if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'xslstylesheet no-delimiters))
 
 (defun ar-xslstylesheet-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position XSLSTYLESHEET at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'xslstylesheet no-delimiters))
 
 (defun ar-xslstylesheet-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of XSLSTYLESHEET at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'xslstylesheet no-delimiters))
 
 (defun ar-beginning-of-xslstylesheet-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class XSLSTYLESHEET at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'xslstylesheet no-delimiters))
 
 (defun ar-end-of-xslstylesheet-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class XSLSTYLESHEET at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'xslstylesheet no-delimiters))
 
 (defun ar-in-xslstylesheet-p-atpt (&optional no-delimiters check)
   "Returns bounds of XSLSTYLESHEET at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'xslstylesheet no-delimiters))
 
 (defun ar-length-of-xslstylesheet-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class XSLSTYLESHEET at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'xslstylesheet no-delimiters))
 
 (defun ar-copy-xslstylesheet-atpt (&optional no-delimiters check)
   "Returns a copy of XSLSTYLESHEET at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'xslstylesheet no-delimiters))
 
 (defun ar-delete-xslstylesheet-atpt (&optional arg)
   "Deletes XSLSTYLESHEET at point if any. "
@@ -3268,53 +3268,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around xslstylesheet.
   Returns blok or nil if no XSLSTYLESHEET at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'xslstylesheet no-delimiters))
 
 (defun ar-backslashparen-xslstylesheet-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around xslstylesheet at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'xslstylesheet no-delimiters))
 
 (defun ar-doublebackslash-xslstylesheet-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'xslstylesheet no-delimiters))
 
 (defun ar-doubleslash-xslstylesheet-atpt (&optional no-delimiters check)
   "Puts doubled slashes around XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'xslstylesheet no-delimiters))
 
 (defun ar-doublebackslashparen-xslstylesheet-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'xslstylesheet no-delimiters))
 
 (defun ar-doublebacktick-xslstylesheet-atpt (&optional no-delimiters check)
   "Provides double backticks around XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'xslstylesheet no-delimiters))
 
 (defun ar-slashparen-xslstylesheet-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'xslstylesheet no-delimiters))
 
 (defun ar-comment-xslstylesheet-atpt (&optional no-delimiters check)
   "Comments XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-comment 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'xslstylesheet no-delimiters))
 
 (defun ar-commatize-xslstylesheet-atpt (&optional no-delimiters check)
   "Put a comma after XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'xslstylesheet no-delimiters))
 
 (defun ar-quote-xslstylesheet-atpt (&optional no-delimiters check)
   "Put a singlequote before XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-quote 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'xslstylesheet no-delimiters))
 
 
 (defun ar-mark-xslstylesheet-atpt (&optional arg)
@@ -3340,33 +3340,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-xslstylesheet-atpt-mode (&optional no-delimiters check)
   "Toggles xslstylesheet-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'xslstylesheet no-delimiters))
 
 (defun ar-kill-xslstylesheet-atpt (&optional no-delimiters check)
   "Kills XSLSTYLESHEET at point if any. "
   (interactive "*P")
-  (ar-th-kill 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'xslstylesheet no-delimiters))
 
 (defun ar-leftrightsinglequote-xslstylesheet-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'xslstylesheet no-delimiters))
 
 (defun ar-separate-xslstylesheet-atpt (&optional no-delimiters check)
   "Separates XSLSTYLESHEET at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'xslstylesheet no-delimiters))
 
 (defun ar-triplequotedq-xslstylesheet-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around xslstylesheet. "
   (interactive "*P")
-  (ar-th-triplequotedq 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'xslstylesheet no-delimiters))
 
 (defun ar-triplequotesq-xslstylesheet-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around xslstylesheet. "
   (interactive "*P")
-  (ar-th-triplequotesq 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'xslstylesheet no-delimiters))
 
 (defun ar-triplebacktick-xslstylesheet-atpt (&optional arg)
   "Deletes xslstylesheet at point if any.
@@ -3378,22 +3378,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-xslstylesheet-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'xslstylesheet no-delimiters iact check t t))
 
 (defun ar-left-trim-xslstylesheet-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'xslstylesheet no-delimiters iact check t nil))
 
 (defun ar-right-trim-xslstylesheet-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'xslstylesheet n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'xslstylesheet n no-delimiters iact check nil t))
 
 (defun ar-underscore-xslstylesheet-atpt (&optional no-delimiters check)
   "Put underscore char around XSLSTYLESHEET. "
   (interactive "*P")
-  (ar-th-underscore 'xslstylesheet (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'xslstylesheet no-delimiters))
 
 ;; (defalias 'ar-xslstylesheet-whitespace-atpt 'ar-whitespace-xslstylesheet-atpt)
 ;; ;;;###autoload
@@ -3445,55 +3445,55 @@ See doku from `sort-subr', for details.
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th 'xsltemplate no-delimiters))
 
 (defun ar-bounds-of-xsltemplate-atpt (&optional no-delimiters check)
   "Returns a list, borders of xsltemplate if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'xsltemplate no-delimiters))
 
 (defun ar-xsltemplate-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position XSLTEMPLATE at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-beg 'xsltemplate no-delimiters))
 
 (defun ar-xsltemplate-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of XSLTEMPLATE at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-end 'xsltemplate no-delimiters))
 
 (defun ar-beginning-of-xsltemplate-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class XSLTEMPLATE at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotobeg 'xsltemplate no-delimiters))
 
 (defun ar-end-of-xsltemplate-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class XSLTEMPLATE at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-gotoend 'xsltemplate no-delimiters))
 
 (defun ar-in-xsltemplate-p-atpt (&optional no-delimiters check)
   "Returns bounds of XSLTEMPLATE at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-bounds 'xsltemplate no-delimiters))
 
 (defun ar-length-of-xsltemplate-atpt (&optional no-delimiters check)
   "Returns beginning of symbol or char-class XSLTEMPLATE at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-length 'xsltemplate no-delimiters))
 
 (defun ar-copy-xsltemplate-atpt (&optional no-delimiters check)
   "Returns a copy of XSLTEMPLATE at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-copy 'xsltemplate no-delimiters))
 
 (defun ar-delete-xsltemplate-atpt (&optional arg)
   "Deletes XSLTEMPLATE at point if any. "
@@ -3509,53 +3509,53 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around xsltemplate.
   Returns blok or nil if no XSLTEMPLATE at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-blok 'xsltemplate no-delimiters))
 
 (defun ar-backslashparen-xsltemplate-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around xsltemplate at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-backslashparen 'xsltemplate no-delimiters))
 
 (defun ar-doublebackslash-xsltemplate-atpt (&optional no-delimiters check)
   "Puts doubled backslashes around XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslash 'xsltemplate no-delimiters))
 
 (defun ar-doubleslash-xsltemplate-atpt (&optional no-delimiters check)
   "Puts doubled slashes around XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doubleslash 'xsltemplate no-delimiters))
 
 (defun ar-doublebackslashparen-xsltemplate-atpt (&optional no-delimiters check)
   "Provides doubleslashed parentheses around XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebackslashparen 'xsltemplate no-delimiters))
 
 (defun ar-doublebacktick-xsltemplate-atpt (&optional no-delimiters check)
   "Provides double backticks around XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-doublebacktick 'xsltemplate no-delimiters))
 
 (defun ar-slashparen-xsltemplate-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-slashparen 'xsltemplate no-delimiters))
 
 (defun ar-comment-xsltemplate-atpt (&optional no-delimiters check)
   "Comments XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-comment 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-comment 'xsltemplate no-delimiters))
 
 (defun ar-commatize-xsltemplate-atpt (&optional no-delimiters check)
   "Put a comma after XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-commatize 'xsltemplate no-delimiters))
 
 (defun ar-quote-xsltemplate-atpt (&optional no-delimiters check)
   "Put a singlequote before XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-quote 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-quote 'xsltemplate no-delimiters))
 
 
 (defun ar-mark-xsltemplate-atpt (&optional arg)
@@ -3581,33 +3581,33 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-highlight-xsltemplate-atpt-mode (&optional no-delimiters check)
   "Toggles xsltemplate-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-highlight 'xsltemplate no-delimiters))
 
 (defun ar-kill-xsltemplate-atpt (&optional no-delimiters check)
   "Kills XSLTEMPLATE at point if any. "
   (interactive "*P")
-  (ar-th-kill 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-kill 'xsltemplate no-delimiters))
 
 (defun ar-leftrightsinglequote-xsltemplate-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-leftrightsinglequote 'xsltemplate no-delimiters))
 
 (defun ar-separate-xsltemplate-atpt (&optional no-delimiters check)
   "Separates XSLTEMPLATE at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-separate 'xsltemplate no-delimiters))
 
 (defun ar-triplequotedq-xsltemplate-atpt (&optional no-delimiters check)
   "Put triplequotes composed of doublequotes around xsltemplate. "
   (interactive "*P")
-  (ar-th-triplequotedq 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotedq 'xsltemplate no-delimiters))
 
 (defun ar-triplequotesq-xsltemplate-atpt (&optional no-delimiters check)
   "Put triplequotes composed of singlequotes around xsltemplate. "
   (interactive "*P")
-  (ar-th-triplequotesq 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-triplequotesq 'xsltemplate no-delimiters))
 
 (defun ar-triplebacktick-xsltemplate-atpt (&optional arg)
   "Deletes xsltemplate at point if any.
@@ -3619,22 +3619,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-trim-xsltemplate-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters)) iact check t t))
+  (ar-th-trim 'xsltemplate no-delimiters iact check t t))
 
 (defun ar-left-trim-xsltemplate-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters)) iact check t nil))
+  (ar-th-trim 'xsltemplate no-delimiters iact check t nil))
 
 (defun ar-right-trim-xsltemplate-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'xsltemplate n (eq 4  (prefix-numeric-value no-delimiters)) iact check nil t))
+  (ar-th-trim 'xsltemplate n no-delimiters iact check nil t))
 
 (defun ar-underscore-xsltemplate-atpt (&optional no-delimiters check)
   "Put underscore char around XSLTEMPLATE. "
   (interactive "*P")
-  (ar-th-underscore 'xsltemplate (eq 4  (prefix-numeric-value no-delimiters))))
+  (ar-th-underscore 'xsltemplate no-delimiters))
 
 ;; (defalias 'ar-xsltemplate-whitespace-atpt 'ar-whitespace-xsltemplate-atpt)
 ;; ;;;###autoload
