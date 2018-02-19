@@ -341,6 +341,14 @@ return wwrap"
     (forward-sexp)
     (should (eobp))))
 
+;; (ert-deftest ar-ert-transpose-list-test-1 ()
+;;   (ar-test-with-elisp-buffer-point-min
+;;       "(/ (* (* n 1) (1+ (* n 1))) 2)"
+;;       (search-forward "(" nil t 3) 
+;;       (forward-char -1)
+;;       (forward-sexp)  
+;;     (ar-transpose-parentized-atpt)))
+
 ;; not implemented
 ;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
 ;;   (ar-test-with-temp-buffer "`asdf48'"

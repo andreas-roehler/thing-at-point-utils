@@ -13268,7 +13268,7 @@ Returns beginning position of backslashed "
   (ar-th-backward 'backslashed arg))
 
 (defun ar-transpose-backslashed-atpt (&optional arg)
-  "Transposes backslashed with backslashed before point if any.
+  "Transposes backslashed at point with backslashed before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -13472,7 +13472,7 @@ Returns beginning position of backticked "
   (ar-th-backward 'backticked arg))
 
 (defun ar-transpose-backticked-atpt (&optional arg)
-  "Transposes backticked with backticked before point if any.
+  "Transposes backticked at point with backticked before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -13676,7 +13676,7 @@ Returns beginning position of coloned "
   (ar-th-backward 'coloned arg))
 
 (defun ar-transpose-coloned-atpt (&optional arg)
-  "Transposes coloned with coloned before point if any.
+  "Transposes coloned at point with coloned before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -13880,7 +13880,7 @@ Returns beginning position of dollared "
   (ar-th-backward 'dollared arg))
 
 (defun ar-transpose-dollared-atpt (&optional arg)
-  "Transposes dollared with dollared before point if any.
+  "Transposes dollared at point with dollared before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -14084,7 +14084,7 @@ Returns beginning position of doublequoted "
   (ar-th-backward 'doublequoted arg))
 
 (defun ar-transpose-doublequoted-atpt (&optional arg)
-  "Transposes doublequoted with doublequoted before point if any.
+  "Transposes doublequoted at point with doublequoted before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -14288,7 +14288,7 @@ Returns beginning position of equalized "
   (ar-th-backward 'equalized arg))
 
 (defun ar-transpose-equalized-atpt (&optional arg)
-  "Transposes equalized with equalized before point if any.
+  "Transposes equalized at point with equalized before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -14492,7 +14492,7 @@ Returns beginning position of hyphened "
   (ar-th-backward 'hyphened arg))
 
 (defun ar-transpose-hyphened-atpt (&optional arg)
-  "Transposes hyphened with hyphened before point if any.
+  "Transposes hyphened at point with hyphened before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -14696,7 +14696,7 @@ Returns beginning position of singlequoted "
   (ar-th-backward 'singlequoted arg))
 
 (defun ar-transpose-singlequoted-atpt (&optional arg)
-  "Transposes singlequoted with singlequoted before point if any.
+  "Transposes singlequoted at point with singlequoted before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -14900,7 +14900,7 @@ Returns beginning position of slashed "
   (ar-th-backward 'slashed arg))
 
 (defun ar-transpose-slashed-atpt (&optional arg)
-  "Transposes slashed with slashed before point if any.
+  "Transposes slashed at point with slashed before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -15104,7 +15104,7 @@ Returns beginning position of stared "
   (ar-th-backward 'stared arg))
 
 (defun ar-transpose-stared-atpt (&optional arg)
-  "Transposes stared with stared before point if any.
+  "Transposes stared at point with stared before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -15308,7 +15308,7 @@ Returns beginning position of underscored "
   (ar-th-backward 'underscored arg))
 
 (defun ar-transpose-underscored-atpt (&optional arg)
-  "Transposes underscored with underscored before point if any.
+  "Transposes underscored at point with underscored before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -15512,7 +15512,7 @@ Returns beginning position of whitespaced "
   (ar-th-backward 'whitespaced arg))
 
 (defun ar-transpose-whitespaced-atpt (&optional arg)
-  "Transposes whitespaced with whitespaced before point if any.
+  "Transposes whitespaced at point with whitespaced before if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
