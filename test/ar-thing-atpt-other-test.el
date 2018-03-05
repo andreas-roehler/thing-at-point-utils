@@ -86,15 +86,16 @@ args = sys.argv"
 
 (ert-deftest ar-separate-doublequoted-in-bracketed-atpt-test ()
   (ar-test-with-elisp-buffer
-      "[\"defun\" \"asdf\" \"&optional\" \"arg\" \"for\" \"bar\"]"
-    (forward-char -3)
-    (ar-separate-doublequoted-in-bracketed-atpt)
-    (beginning-of-line)
-    (back-to-indentation)
-    (should (char-equal ?\" (char-after)))
-    (forward-line -1)
-    (back-to-indentation)
-    (should (char-equal ?\" (char-after)))))
+	"[\"defun\" \"asdf\" \"&optional\" \"arg\" \"for\" \"bar\"]"
+      (let ((ar-thing-no-nest t))
+	(forward-char -3)
+	(ar-separate-doublequoted-in-bracketed-atpt)
+	(beginning-of-line)
+	(back-to-indentation)
+	(should (char-equal ?\" (char-after)))
+	(forward-line -1)
+	(back-to-indentation)
+	(should (char-equal ?\" (char-after))))))
 
 (ert-deftest ar-doublequote-alnum-atpt-test ()
     (ar-test-with-elisp-buffer-point-min
@@ -237,7 +238,7 @@ args = sys.argv"
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (text-mode)
-    (goto-char 29)
+    (search-backward "rite")
     (let ((erg (ar-doublequoted-atpt)))
       (should erg))))
 
@@ -254,7 +255,7 @@ args = sys.argv"
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (text-mode)
-    (goto-char 29)
+    (search-backward "rite")
     (let* ((ar-thing-no-nest t)
 	   (erg (ar-doublequoted-atpt)))
       (should (< 0 (length erg))))))
@@ -341,12 +342,31 @@ return wwrap"
     (forward-sexp)
     (should (eobp))))
 
+(ert-deftest ar-ert-forward-parentized-test-1 ()
+  (ar-test-with-elisp-buffer-point-min
+      "(/ (* (* n 1) (1+ (* n 1))) 2)"
+      (search-forward ")" nil t 1)
+    (forward-char -1)
+    (ar-forward-parentized-atpt)
+    (should (eq (char-after) ?\)))))
+
+(ert-deftest doublequoted-escaped-commented-delimited-test ()
+  (ar-test-with-elisp-buffer "\"
+     ;;; \" \\\" Writer 'etc. \" \""
+    (search-backward "riter")
+    (let*  ((ar-thing-escaped t)
+	    (ar-thing-inside-comments t)
+	    (ar-scan-whole-buffer t)
+	    (erg (ar-doublequoted-atpt)))
+      (should (< 7 (length erg))))))
+
+
 ;; (ert-deftest ar-ert-transpose-list-test-1 ()
 ;;   (ar-test-with-elisp-buffer-point-min
 ;;       "(/ (* (* n 1) (1+ (* n 1))) 2)"
-;;       (search-forward "(" nil t 3) 
+;;       (search-forward "(" nil t 3)
 ;;       (forward-char -1)
-;;       (forward-sexp)  
+;;       (forward-sexp)
 ;;     (ar-transpose-parentized-atpt)))
 
 ;; not implemented

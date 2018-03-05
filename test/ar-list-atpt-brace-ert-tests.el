@@ -400,9 +400,7 @@
     (end-of-line)
     (skip-syntax-forward "^(")
     (ar-separate-list-atpt)
-    (should (looking-back "^ +"))
-    (end-of-line)
-    (should (eq (char-after) 10))))
+    (should (bolp))))
 
 (ert-deftest ar-singlequote-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min

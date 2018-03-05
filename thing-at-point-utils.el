@@ -13094,7 +13094,7 @@ See doku from `sort-subr', for details.
 (defun ar-backslashed-atpt (&optional no-delimiters nested)
   "Returns backslashed at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -13104,7 +13104,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of backslashed if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'backslashed no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'backslashed no-delimiters (interactive-p) check))
 
 (defun ar-backslashed-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position backslashed at point if any, nil otherwise.
@@ -13113,7 +13113,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'backslashed no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'backslashed no-delimiters (interactive-p) check))
 
 (defun ar-backslashed-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of backslashed at point if any, nil otherwise.
@@ -13121,14 +13121,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'backslashed no-delimiters check))
+  (ar-th-end 'backslashed no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-backslashed-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class backslashed at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'backslashed no-delimiters check))
+  (ar-th-gotobeg 'backslashed no-delimiters (interactive-p) check))
 
 (defun ar-end-of-backslashed-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class backslashed at point if any, nil otherwise.
@@ -13156,12 +13156,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'backslashed arg))
+  (ar-th-delete 'backslashed arg arg))
 
-(defun ar-delete-backslashed-in-region (beg end)
+(defun ar-delete-backslashed-in-region (beg end &optional arg check no-delimiters)
   "Deletes backslashed at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'backslashed beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'backslashed beg end (interactive-p)))
 
 (defun ar-blok-backslashed-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around backslashed.
@@ -13171,7 +13171,7 @@ If region is active, do that for all elements \"backslashed\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'backslashed no-delimiters))
+  (ar-th-blok 'backslashed no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-backslashed-atpt (&optional no-delimiters check)
   "Puts doubled slashes around backslashed at point if any.
@@ -13298,7 +13298,7 @@ See doku from `sort-subr', for details.
 (defun ar-backticked-atpt (&optional no-delimiters nested)
   "Returns backticked at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -13308,7 +13308,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of backticked if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'backticked no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'backticked no-delimiters (interactive-p) check))
 
 (defun ar-backticked-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position backticked at point if any, nil otherwise.
@@ -13317,7 +13317,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'backticked no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'backticked no-delimiters (interactive-p) check))
 
 (defun ar-backticked-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of backticked at point if any, nil otherwise.
@@ -13325,14 +13325,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'backticked no-delimiters check))
+  (ar-th-end 'backticked no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-backticked-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class backticked at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'backticked no-delimiters check))
+  (ar-th-gotobeg 'backticked no-delimiters (interactive-p) check))
 
 (defun ar-end-of-backticked-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class backticked at point if any, nil otherwise.
@@ -13360,12 +13360,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'backticked arg))
+  (ar-th-delete 'backticked arg arg))
 
-(defun ar-delete-backticked-in-region (beg end)
+(defun ar-delete-backticked-in-region (beg end &optional arg check no-delimiters)
   "Deletes backticked at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'backticked beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'backticked beg end (interactive-p)))
 
 (defun ar-blok-backticked-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around backticked.
@@ -13375,7 +13375,7 @@ If region is active, do that for all elements \"backticked\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'backticked no-delimiters))
+  (ar-th-blok 'backticked no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-backticked-atpt (&optional no-delimiters check)
   "Puts doubled slashes around backticked at point if any.
@@ -13502,7 +13502,7 @@ See doku from `sort-subr', for details.
 (defun ar-coloned-atpt (&optional no-delimiters nested)
   "Returns coloned at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -13512,7 +13512,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of coloned if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'coloned no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'coloned no-delimiters (interactive-p) check))
 
 (defun ar-coloned-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position coloned at point if any, nil otherwise.
@@ -13521,7 +13521,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'coloned no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'coloned no-delimiters (interactive-p) check))
 
 (defun ar-coloned-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of coloned at point if any, nil otherwise.
@@ -13529,14 +13529,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'coloned no-delimiters check))
+  (ar-th-end 'coloned no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-coloned-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class coloned at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'coloned no-delimiters check))
+  (ar-th-gotobeg 'coloned no-delimiters (interactive-p) check))
 
 (defun ar-end-of-coloned-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class coloned at point if any, nil otherwise.
@@ -13564,12 +13564,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'coloned arg))
+  (ar-th-delete 'coloned arg arg))
 
-(defun ar-delete-coloned-in-region (beg end)
+(defun ar-delete-coloned-in-region (beg end &optional arg check no-delimiters)
   "Deletes coloned at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'coloned beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'coloned beg end (interactive-p)))
 
 (defun ar-blok-coloned-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around coloned.
@@ -13579,7 +13579,7 @@ If region is active, do that for all elements \"coloned\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'coloned no-delimiters))
+  (ar-th-blok 'coloned no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-coloned-atpt (&optional no-delimiters check)
   "Puts doubled slashes around coloned at point if any.
@@ -13706,7 +13706,7 @@ See doku from `sort-subr', for details.
 (defun ar-dollared-atpt (&optional no-delimiters nested)
   "Returns dollared at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -13716,7 +13716,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of dollared if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'dollared no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'dollared no-delimiters (interactive-p) check))
 
 (defun ar-dollared-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position dollared at point if any, nil otherwise.
@@ -13725,7 +13725,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'dollared no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'dollared no-delimiters (interactive-p) check))
 
 (defun ar-dollared-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of dollared at point if any, nil otherwise.
@@ -13733,14 +13733,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'dollared no-delimiters check))
+  (ar-th-end 'dollared no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-dollared-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class dollared at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'dollared no-delimiters check))
+  (ar-th-gotobeg 'dollared no-delimiters (interactive-p) check))
 
 (defun ar-end-of-dollared-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class dollared at point if any, nil otherwise.
@@ -13768,12 +13768,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'dollared arg))
+  (ar-th-delete 'dollared arg arg))
 
-(defun ar-delete-dollared-in-region (beg end)
+(defun ar-delete-dollared-in-region (beg end &optional arg check no-delimiters)
   "Deletes dollared at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'dollared beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'dollared beg end (interactive-p)))
 
 (defun ar-blok-dollared-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around dollared.
@@ -13783,7 +13783,7 @@ If region is active, do that for all elements \"dollared\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'dollared no-delimiters))
+  (ar-th-blok 'dollared no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-dollared-atpt (&optional no-delimiters check)
   "Puts doubled slashes around dollared at point if any.
@@ -13910,7 +13910,7 @@ See doku from `sort-subr', for details.
 (defun ar-doublequoted-atpt (&optional no-delimiters nested)
   "Returns doublequoted at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -13920,7 +13920,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of doublequoted if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'doublequoted no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'doublequoted no-delimiters (interactive-p) check))
 
 (defun ar-doublequoted-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position doublequoted at point if any, nil otherwise.
@@ -13929,7 +13929,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'doublequoted no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'doublequoted no-delimiters (interactive-p) check))
 
 (defun ar-doublequoted-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of doublequoted at point if any, nil otherwise.
@@ -13937,14 +13937,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'doublequoted no-delimiters check))
+  (ar-th-end 'doublequoted no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-doublequoted-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class doublequoted at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'doublequoted no-delimiters check))
+  (ar-th-gotobeg 'doublequoted no-delimiters (interactive-p) check))
 
 (defun ar-end-of-doublequoted-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class doublequoted at point if any, nil otherwise.
@@ -13972,12 +13972,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'doublequoted arg))
+  (ar-th-delete 'doublequoted arg arg))
 
-(defun ar-delete-doublequoted-in-region (beg end)
+(defun ar-delete-doublequoted-in-region (beg end &optional arg check no-delimiters)
   "Deletes doublequoted at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'doublequoted beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'doublequoted beg end (interactive-p)))
 
 (defun ar-blok-doublequoted-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublequoted.
@@ -13987,7 +13987,7 @@ If region is active, do that for all elements \"doublequoted\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'doublequoted no-delimiters))
+  (ar-th-blok 'doublequoted no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-doublequoted-atpt (&optional no-delimiters check)
   "Puts doubled slashes around doublequoted at point if any.
@@ -14114,7 +14114,7 @@ See doku from `sort-subr', for details.
 (defun ar-equalized-atpt (&optional no-delimiters nested)
   "Returns equalized at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -14124,7 +14124,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of equalized if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'equalized no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'equalized no-delimiters (interactive-p) check))
 
 (defun ar-equalized-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position equalized at point if any, nil otherwise.
@@ -14133,7 +14133,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'equalized no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'equalized no-delimiters (interactive-p) check))
 
 (defun ar-equalized-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of equalized at point if any, nil otherwise.
@@ -14141,14 +14141,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'equalized no-delimiters check))
+  (ar-th-end 'equalized no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-equalized-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class equalized at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'equalized no-delimiters check))
+  (ar-th-gotobeg 'equalized no-delimiters (interactive-p) check))
 
 (defun ar-end-of-equalized-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class equalized at point if any, nil otherwise.
@@ -14176,12 +14176,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'equalized arg))
+  (ar-th-delete 'equalized arg arg))
 
-(defun ar-delete-equalized-in-region (beg end)
+(defun ar-delete-equalized-in-region (beg end &optional arg check no-delimiters)
   "Deletes equalized at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'equalized beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'equalized beg end (interactive-p)))
 
 (defun ar-blok-equalized-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around equalized.
@@ -14191,7 +14191,7 @@ If region is active, do that for all elements \"equalized\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'equalized no-delimiters))
+  (ar-th-blok 'equalized no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-equalized-atpt (&optional no-delimiters check)
   "Puts doubled slashes around equalized at point if any.
@@ -14318,7 +14318,7 @@ See doku from `sort-subr', for details.
 (defun ar-hyphened-atpt (&optional no-delimiters nested)
   "Returns hyphened at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -14328,7 +14328,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of hyphened if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'hyphened no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'hyphened no-delimiters (interactive-p) check))
 
 (defun ar-hyphened-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position hyphened at point if any, nil otherwise.
@@ -14337,7 +14337,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'hyphened no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'hyphened no-delimiters (interactive-p) check))
 
 (defun ar-hyphened-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of hyphened at point if any, nil otherwise.
@@ -14345,14 +14345,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'hyphened no-delimiters check))
+  (ar-th-end 'hyphened no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-hyphened-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class hyphened at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'hyphened no-delimiters check))
+  (ar-th-gotobeg 'hyphened no-delimiters (interactive-p) check))
 
 (defun ar-end-of-hyphened-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class hyphened at point if any, nil otherwise.
@@ -14380,12 +14380,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'hyphened arg))
+  (ar-th-delete 'hyphened arg arg))
 
-(defun ar-delete-hyphened-in-region (beg end)
+(defun ar-delete-hyphened-in-region (beg end &optional arg check no-delimiters)
   "Deletes hyphened at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'hyphened beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'hyphened beg end (interactive-p)))
 
 (defun ar-blok-hyphened-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around hyphened.
@@ -14395,7 +14395,7 @@ If region is active, do that for all elements \"hyphened\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'hyphened no-delimiters))
+  (ar-th-blok 'hyphened no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-hyphened-atpt (&optional no-delimiters check)
   "Puts doubled slashes around hyphened at point if any.
@@ -14522,7 +14522,7 @@ See doku from `sort-subr', for details.
 (defun ar-singlequoted-atpt (&optional no-delimiters nested)
   "Returns singlequoted at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -14532,7 +14532,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of singlequoted if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'singlequoted no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'singlequoted no-delimiters (interactive-p) check))
 
 (defun ar-singlequoted-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position singlequoted at point if any, nil otherwise.
@@ -14541,7 +14541,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'singlequoted no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'singlequoted no-delimiters (interactive-p) check))
 
 (defun ar-singlequoted-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of singlequoted at point if any, nil otherwise.
@@ -14549,14 +14549,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'singlequoted no-delimiters check))
+  (ar-th-end 'singlequoted no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-singlequoted-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class singlequoted at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'singlequoted no-delimiters check))
+  (ar-th-gotobeg 'singlequoted no-delimiters (interactive-p) check))
 
 (defun ar-end-of-singlequoted-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class singlequoted at point if any, nil otherwise.
@@ -14584,12 +14584,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'singlequoted arg))
+  (ar-th-delete 'singlequoted arg arg))
 
-(defun ar-delete-singlequoted-in-region (beg end)
+(defun ar-delete-singlequoted-in-region (beg end &optional arg check no-delimiters)
   "Deletes singlequoted at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'singlequoted beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'singlequoted beg end (interactive-p)))
 
 (defun ar-blok-singlequoted-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around singlequoted.
@@ -14599,7 +14599,7 @@ If region is active, do that for all elements \"singlequoted\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'singlequoted no-delimiters))
+  (ar-th-blok 'singlequoted no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-singlequoted-atpt (&optional no-delimiters check)
   "Puts doubled slashes around singlequoted at point if any.
@@ -14726,7 +14726,7 @@ See doku from `sort-subr', for details.
 (defun ar-slashed-atpt (&optional no-delimiters nested)
   "Returns slashed at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -14736,7 +14736,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of slashed if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'slashed no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'slashed no-delimiters (interactive-p) check))
 
 (defun ar-slashed-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position slashed at point if any, nil otherwise.
@@ -14745,7 +14745,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'slashed no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'slashed no-delimiters (interactive-p) check))
 
 (defun ar-slashed-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of slashed at point if any, nil otherwise.
@@ -14753,14 +14753,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'slashed no-delimiters check))
+  (ar-th-end 'slashed no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-slashed-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class slashed at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'slashed no-delimiters check))
+  (ar-th-gotobeg 'slashed no-delimiters (interactive-p) check))
 
 (defun ar-end-of-slashed-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class slashed at point if any, nil otherwise.
@@ -14788,12 +14788,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'slashed arg))
+  (ar-th-delete 'slashed arg arg))
 
-(defun ar-delete-slashed-in-region (beg end)
+(defun ar-delete-slashed-in-region (beg end &optional arg check no-delimiters)
   "Deletes slashed at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'slashed beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'slashed beg end (interactive-p)))
 
 (defun ar-blok-slashed-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around slashed.
@@ -14803,7 +14803,7 @@ If region is active, do that for all elements \"slashed\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'slashed no-delimiters))
+  (ar-th-blok 'slashed no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-slashed-atpt (&optional no-delimiters check)
   "Puts doubled slashes around slashed at point if any.
@@ -14930,7 +14930,7 @@ See doku from `sort-subr', for details.
 (defun ar-stared-atpt (&optional no-delimiters nested)
   "Returns stared at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -14940,7 +14940,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of stared if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'stared no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'stared no-delimiters (interactive-p) check))
 
 (defun ar-stared-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position stared at point if any, nil otherwise.
@@ -14949,7 +14949,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'stared no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'stared no-delimiters (interactive-p) check))
 
 (defun ar-stared-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of stared at point if any, nil otherwise.
@@ -14957,14 +14957,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'stared no-delimiters check))
+  (ar-th-end 'stared no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-stared-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class stared at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'stared no-delimiters check))
+  (ar-th-gotobeg 'stared no-delimiters (interactive-p) check))
 
 (defun ar-end-of-stared-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class stared at point if any, nil otherwise.
@@ -14992,12 +14992,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'stared arg))
+  (ar-th-delete 'stared arg arg))
 
-(defun ar-delete-stared-in-region (beg end)
+(defun ar-delete-stared-in-region (beg end &optional arg check no-delimiters)
   "Deletes stared at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'stared beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'stared beg end (interactive-p)))
 
 (defun ar-blok-stared-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around stared.
@@ -15007,7 +15007,7 @@ If region is active, do that for all elements \"stared\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'stared no-delimiters))
+  (ar-th-blok 'stared no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-stared-atpt (&optional no-delimiters check)
   "Puts doubled slashes around stared at point if any.
@@ -15134,7 +15134,7 @@ See doku from `sort-subr', for details.
 (defun ar-underscored-atpt (&optional no-delimiters nested)
   "Returns underscored at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -15144,7 +15144,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of underscored if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'underscored no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'underscored no-delimiters (interactive-p) check))
 
 (defun ar-underscored-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position underscored at point if any, nil otherwise.
@@ -15153,7 +15153,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'underscored no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'underscored no-delimiters (interactive-p) check))
 
 (defun ar-underscored-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of underscored at point if any, nil otherwise.
@@ -15161,14 +15161,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'underscored no-delimiters check))
+  (ar-th-end 'underscored no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-underscored-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class underscored at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'underscored no-delimiters check))
+  (ar-th-gotobeg 'underscored no-delimiters (interactive-p) check))
 
 (defun ar-end-of-underscored-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class underscored at point if any, nil otherwise.
@@ -15196,12 +15196,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'underscored arg))
+  (ar-th-delete 'underscored arg arg))
 
-(defun ar-delete-underscored-in-region (beg end)
+(defun ar-delete-underscored-in-region (beg end &optional arg check no-delimiters)
   "Deletes underscored at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'underscored beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'underscored beg end (interactive-p)))
 
 (defun ar-blok-underscored-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around underscored.
@@ -15211,7 +15211,7 @@ If region is active, do that for all elements \"underscored\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'underscored no-delimiters))
+  (ar-th-blok 'underscored no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-underscored-atpt (&optional no-delimiters check)
   "Puts doubled slashes around underscored at point if any.
@@ -15338,7 +15338,7 @@ See doku from `sort-subr', for details.
 (defun ar-whitespaced-atpt (&optional no-delimiters nested)
   "Returns whitespaced at point if any, nil otherwise.
 
-With numerical ARG 2 `ar-thing-no-nest' is non-nil, scan whole buffer 
+With numerical ARG 2 `ar-scan-whole-buffer' is non-nil, scan whole buffer 
 
 With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
   (interactive "p\nP")
@@ -15348,7 +15348,7 @@ With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of d
   "Returns a list, borders of whitespaced if any, nil otherwise.
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
   (interactive "P")
-  (ar-th-bounds 'whitespaced no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-bounds 'whitespaced no-delimiters (interactive-p) check))
 
 (defun ar-whitespaced-beginning-position-atpt (&optional no-delimiters check)
   "Returns a number, beginning position whitespaced at point if any, nil otherwise.
@@ -15357,7 +15357,7 @@ With optional \\[universal-argument] NO-DELIMITERS, return inner position of del
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "P")
-  (ar-th-beg 'whitespaced no-delimiters (or check (eq 2 (prefix-numeric-value no-delimiters)))))
+  (ar-th-beg 'whitespaced no-delimiters (interactive-p) check))
 
 (defun ar-whitespaced-end-position-atpt (&optional no-delimiters check)
   "Returns a number, end position of whitespaced at point if any, nil otherwise.
@@ -15365,14 +15365,14 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. 
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "P")
-  (ar-th-end 'whitespaced no-delimiters check))
+  (ar-th-end 'whitespaced no-delimiters (interactive-p) check))
 
 (defun ar-beginning-of-whitespaced-atpt (&optional no-delimiters check)
   "Goto beginning of symbol or char-class whitespaced at point if any, nil otherwise.
 
 With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
   (interactive "P")
-  (ar-th-gotobeg 'whitespaced no-delimiters check))
+  (ar-th-gotobeg 'whitespaced no-delimiters (interactive-p) check))
 
 (defun ar-end-of-whitespaced-atpt (&optional no-delimiters check)
   "Goto end of symbol or char-class whitespaced at point if any, nil otherwise.
@@ -15400,12 +15400,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*p")
-  (ar-th-delete 'whitespaced arg))
+  (ar-th-delete 'whitespaced arg arg))
 
-(defun ar-delete-whitespaced-in-region (beg end)
+(defun ar-delete-whitespaced-in-region (beg end &optional arg check no-delimiters)
   "Deletes whitespaced at point if any. "
-  (interactive "*p")
-  (ar-th-delete-in-region 'whitespaced beg end))
+  (interactive "*r")
+  (ar-th-delete-in-region 'whitespaced beg end (interactive-p)))
 
 (defun ar-blok-whitespaced-atpt (&optional no-delimiters check)
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around whitespaced.
@@ -15415,7 +15415,7 @@ If region is active, do that for all elements \"whitespaced\" in region.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-blok 'whitespaced no-delimiters))
+  (ar-th-blok 'whitespaced no-delimiters (interactive-p)))
 
 (defun ar-doubleslash-whitespaced-atpt (&optional no-delimiters check)
   "Puts doubled slashes around whitespaced at point if any.

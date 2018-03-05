@@ -249,9 +249,7 @@
     (forward-char 1)
     (skip-syntax-forward "^(")
     (ar-separate-list-atpt)
-    (should (looking-back "^ +"))
-    (end-of-line)
-    (should (eq (char-after) 10))))
+    (should (eq (char-after) ?\]))))
 
 (ert-deftest ar-singlequote-bracketlist-atpt-test ()
   (ar-test-with-python-buffer-point-min

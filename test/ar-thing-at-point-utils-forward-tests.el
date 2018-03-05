@@ -1,4 +1,4 @@
-;;; ar-thing-at-point-utils-forward-tests.el --- test forward forms -*- lexical-binding: t; -*- 
+;;; ar-thing-at-point-utils-forward-tests.el --- test forward forms -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Andreas Röhler
 
@@ -59,8 +59,8 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       ;; "{asdf} {asdf} {asdf}"
       ar-atpt-forward-test-string
       (end-of-line)
-    (ar-forward-sentence-atpt) 
-    (should (eq (char-before) ?!)))) 
+    (ar-forward-sentence-atpt)
+    (should (eq (char-before) ?!))))
 
 ;; (search-forward "worden." nil t 1)
 
@@ -102,13 +102,11 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       "\"foo1\"\n\"[bar]\""
     (push-mark)
     (goto-char (point-min))
-    ;; (forward-char 1) 
     (ar-brace-doublequoted-in-region-atpt)
     (end-of-line)
     (should (eq (char-before) ?\}))
     (forward-char -3)
-    (should (eq (char-after) ?1))
-    ))
+    (should (eq (char-after) ?1))))
 
 (ert-deftest ar-brace-hyphened-in-region-test ()
   (ar-test-with-elisp-buffer
@@ -120,7 +118,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
     (forward-char -1)
     (should (eq (char-after) ?}))
     (forward-char -2)
-    (should (eq (char-after) ?1)) ))
+    (should (eq (char-after) ?1))))
 
 (provide 'ar-thing-at-point-utils-forward-tests)
 ;;; ar-thing-at-point-utils-forward-tests.el ends here

@@ -6,6 +6,8 @@
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
 ;; indicated otherwise
 
+;; Version: 0.1
+
 ;; Keywords: convenience
 
 ;; This file is free software; you can redistribute it
@@ -26,45 +28,66 @@
 ;;; Code:
 
 (ert-deftest ar-separate-braced-paired-delimited-test ()
-  (ar-test-with-temp-buffer "<{([>{([‘asdf’])}<])}>"
-    (goto-char 10) 
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 10)
     (ar-separate-braced-atpt)
     (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
     (should (char-equal ?\{ (char-after)))))
 
 (ert-deftest ar-separate-bracketed-paired-delimited-test ()
-  (ar-test-with-temp-buffer "<{([>{([‘asdf’])}<])}>"
-    (goto-char 10) 
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 10)
     (ar-separate-bracketed-atpt)
     (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
     (should (char-equal ?\[ (char-after)))))
 
 (ert-deftest ar-separate-lesserangled-paired-delimited-test ()
-  (ar-test-with-temp-buffer "<{([>{([‘asdf’])}<])}>"
-    (goto-char 2) 
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 2)
     (ar-separate-lesserangled-atpt)
     (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
     (should (char-equal ?\< (char-after)))))
 
 (ert-deftest ar-separate-greaterangled-paired-delimited-test ()
-  (ar-test-with-temp-buffer "<{([>{([‘asdf’])}<])}>"
-    (goto-char 10) 
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 10)
     (ar-separate-greaterangled-atpt)
     (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
     (should (char-equal ?\> (char-after)))))
 
 (ert-deftest ar-separate-leftrightsinglequoted-paired-delimited-test ()
-  (ar-test-with-temp-buffer "<{([>{([‘asdf’])}<])}>"
-    (goto-char 10) 
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 10)
     (ar-separate-leftrightsinglequoted-atpt)
     (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
     (should (char-equal ?\‘ (char-after)))))
 
+(ert-deftest ar-separate-leftrightdoublequoted-paired-delimited-test ()
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 10)
+    (ar-separate-leftrightdoublequoted-atpt)
+    (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
+    (should (char-equal ?\“ (char-after)))))
+
 (ert-deftest ar-separate-parentized-paired-delimited-test ()
-  (ar-test-with-temp-buffer "<{([>{([‘asdf’])}<])}>"
-    (goto-char 10) 
+  (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
+    (goto-char 10)
     (ar-separate-parentized-atpt)
     (should (bolp))
+    (forward-line -1)
+    (beginning-of-line)  
     (should (char-equal ?\( (char-after)))))
 
 (provide 'ar-separate-tests)

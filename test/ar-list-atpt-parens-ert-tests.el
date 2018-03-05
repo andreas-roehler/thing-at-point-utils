@@ -235,15 +235,13 @@
     (ar-parentize-list-atpt)
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-separate-list-python-test ()
-  (ar-test-with-python-buffer-point-min
+(ert-deftest ar-separate-list-elisp-test ()
+  (ar-test-with-elisp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-chars-forward "^(")
     (ar-separate-list-atpt)
-    (should (looking-back "^ +"))
-    (end-of-line)
-    (should (eq (char-after) 10))))
+    (should (eq (char-after) ?\)))))
 
 (ert-deftest ar-singlequote-list-python-test ()
   (ar-test-with-python-buffer-point-min

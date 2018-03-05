@@ -29,7 +29,7 @@
 
 (ert-deftest backslashed-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "\\
-     ;;; \\ \\ Write 'etc. \" \\"
+     ;;; \\ \\ Writer 'etc. \" \\"
       (text-mode)
     (beginning-of-line)
 
@@ -38,10 +38,11 @@
     (goto-char 22)
     (let ((erg (ar-backslashed-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest backticked-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "`
-     ;;; ` ` Write 'etc. \" `"
+     ;;; ` ` Writer 'etc. \" `"
       (text-mode)
     (beginning-of-line)
 
@@ -50,10 +51,11 @@
     (goto-char 22)
     (let ((erg (ar-backticked-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest coloned-unpaired-delimited-test ()
   (ar-test-with-temp-buffer ":
-     ;;; : : Write 'etc. \" :"
+     ;;; : : Writer 'etc. \" :"
       (text-mode)
     (beginning-of-line)
 
@@ -62,10 +64,11 @@
     (goto-char 22)
     (let ((erg (ar-coloned-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest dollared-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "\$
-     ;;; \$ \$ Write 'etc. \" \$"
+     ;;; \$ \$ Writer 'etc. \" \$"
       (text-mode)
     (beginning-of-line)
 
@@ -74,10 +77,11 @@
     (goto-char 22)
     (let ((erg (ar-dollared-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest doublequoted-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "\"
-     ;;; \" \" Write 'etc. \" \""
+     ;;; \" \" Writer 'etc. \" \""
       (text-mode)
     (beginning-of-line)
 
@@ -86,10 +90,11 @@
     (goto-char 22)
     (let ((erg (ar-doublequoted-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest equalized-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "=
-     ;;; = = Write 'etc. \" ="
+     ;;; = = Writer 'etc. \" ="
       (text-mode)
     (beginning-of-line)
 
@@ -98,10 +103,11 @@
     (goto-char 22)
     (let ((erg (ar-equalized-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest hyphened-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "-
-     ;;; - - Write 'etc. \" -"
+     ;;; - - Writer 'etc. \" -"
       (text-mode)
     (beginning-of-line)
 
@@ -110,10 +116,11 @@
     (goto-char 22)
     (let ((erg (ar-hyphened-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest singlequoted-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "'
-     ;;; ' ' Write 'etc. \" '"
+     ;;; ' ' Writer 'etc. \" '"
       (text-mode)
     (beginning-of-line)
 
@@ -122,10 +129,11 @@
     (goto-char 22)
     (let ((erg (ar-singlequoted-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest slashed-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "/
-     ;;; / / Write 'etc. \" /"
+     ;;; / / Writer 'etc. \" /"
       (text-mode)
     (beginning-of-line)
 
@@ -134,10 +142,11 @@
     (goto-char 22)
     (let ((erg (ar-slashed-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest stared-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "\*
-     ;;; \* \* Write 'etc. \" \*"
+     ;;; \* \* Writer 'etc. \" \*"
       (text-mode)
     (beginning-of-line)
 
@@ -146,10 +155,11 @@
     (goto-char 22)
     (let ((erg (ar-stared-atpt)))
       (should (< 8 (length erg))))))
+
 
 (ert-deftest underscored-unpaired-delimited-test ()
   (ar-test-with-temp-buffer "_
-     ;;; _ _ Write 'etc. \" _"
+     ;;; _ _ Writer 'etc. \" _"
       (text-mode)
     (beginning-of-line)
 
@@ -159,9 +169,10 @@
     (let ((erg (ar-underscored-atpt)))
       (should (< 8 (length erg))))))
 
+
 (ert-deftest whitespaced-unpaired-delimited-test ()
   (ar-test-with-temp-buffer " 
-     ;;;     Write 'etc. \"  "
+     ;;;     Writer 'etc. \"  "
       (text-mode)
     (beginning-of-line)
     (search-forward "rit")
@@ -170,6 +181,7 @@
     (goto-char 22)
     (let ((erg (ar-whitespaced-atpt)))
       (should (< 4 (length erg))))))
+
 
 (provide 'ar-unpaired-delimited-tests)
 ;; ar-unpaired-delimited-tests.el ends here

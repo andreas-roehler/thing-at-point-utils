@@ -256,11 +256,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-backslashed-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "\\asdf\\"
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf\\asdf\\"
+      (forward-char -1)
     (ar-th-separate 'backslashed)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-backslashed-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -547,11 +547,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-dollared-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "$asdf$"
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf$asdf$"
+      (forward-char -1)
     (ar-th-separate 'dollared)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-dollared-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1115,11 +1115,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-equalized-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "=asdf="
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf=asdf="
+      (forward-char -1)
     (ar-th-separate 'equalized)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-equalized-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1399,11 +1399,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-hyphened-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "-asdf-"
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf-asdf-"
+      (forward-char -1)
     (ar-th-separate 'hyphened)
-    (should (eq 2 (point)))))
+    (should (bolp)))) 
 
 (ert-deftest ar-hyphened-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1683,11 +1683,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-singlequoted-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "'asdf'"
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf'asdf'"
+      (forward-char -1)
     (ar-th-separate 'singlequoted)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-singlequoted-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1967,11 +1967,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-slashed-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "/asdf/"
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf/asdf/"
+      (forward-char -1)
     (ar-th-separate 'slashed)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-slashed-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2251,11 +2251,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-underscored-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "_asdf_"
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf_asdf_"
+      (forward-char -1)
     (ar-th-separate 'underscored)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-underscored-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2535,11 +2535,11 @@
     (should (eq ?\) (char-before)))))
 
 (ert-deftest ar-whitespaced-separate-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      " asdf "
-      (forward-char 1)
+  (ar-test-with-elisp-buffer
+      "asdf asdf "
+      (forward-char -2)
     (ar-th-separate 'whitespaced)
-    (should (eq 2 (point)))))
+    (should (bolp))))
 
 (ert-deftest ar-whitespaced-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
