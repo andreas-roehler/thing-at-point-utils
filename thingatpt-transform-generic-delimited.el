@@ -44,6 +44,7 @@
       (insert startnew)
       (when (or
 	     (ignore-errors (goto-char (cdr bounds)))
+	     (ignore-errors (goto-char (cadr (cadr bounds))))
 	     (goto-char (cdr (cadr bounds))))
 	(delete-char -1)
 	(insert endnew)))))

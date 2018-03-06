@@ -360,6 +360,13 @@ return wwrap"
 	    (erg (ar-doublequoted-atpt)))
       (should (< 7 (length erg))))))
 
+(ert-deftest kill-delimited-test-1 ()
+  (ar-test-with-elisp-buffer 
+      "(defun foo1 (&optional beg end)
+    )"
+    (search-backward "foo")
+    (ar-kill-delimited-atpt)
+    (should (eobp)))) 
 
 ;; (ert-deftest ar-ert-transpose-list-test-1 ()
 ;;   (ar-test-with-elisp-buffer-point-min
