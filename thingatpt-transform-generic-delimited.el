@@ -24,31 +24,6 @@
 
 ;;; Code:
 
-(defun ar--transform-generic-delimited-atpt (replacement)
-  (interactive "*")
-  (let* ((bounds (ar-bounds-of-delimited-atpt))
-	 ;; (startc (save-excursion (goto-char (car bounds))
-	 ;; 			 (char-after)))
-	 ;; (endc (save-excursion (goto-char (cdr bounds))
-	 ;; 		       (char-before)))
-	 (startnew (if (consp replacement)
-		       (car replacement)
-		     replacement))
-	 (endnew (if (consp replacement)
-		     (cdr replacement)
-		   replacement)))
-    (save-excursion
-      (or (ignore-errors (goto-char (car bounds)))
-	  (goto-char (caar bounds)))
-      (delete-char 1)
-      (insert startnew)
-      (when (or
-	     (ignore-errors (goto-char (cdr bounds)))
-	     (ignore-errors (goto-char (cadr (cadr bounds))))
-	     (goto-char (cdr (cadr bounds))))
-	(delete-char -1)
-	(insert endnew)))))
-
 (defun ar-delimited2backslashed-atpt ()
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?\\))

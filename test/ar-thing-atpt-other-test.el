@@ -332,7 +332,8 @@ return wwrap"
       "(asdf)"
       (forward-char -1)
     (ar-delimited2bracketed-atpt)
-    (should (char-equal (char-after) ?\]))))
+    (sit-for 0.1) 
+    (should (eq 93 (char-after)))))
 
 (ert-deftest ar-ert-peel-list-test-1 ()
   (ar-test-with-elisp-buffer-point-min
@@ -361,12 +362,12 @@ return wwrap"
       (should (< 7 (length erg))))))
 
 (ert-deftest kill-delimited-test-1 ()
-  (ar-test-with-elisp-buffer 
-      "(defun foo1 (&optional beg end)
-    )"
+  (ar-test-with-elisp-buffer
+      "(defun foo1 (&optional beg end))"
     (search-backward "foo")
     (ar-kill-delimited-atpt)
-    (should (eobp)))) 
+    (sit-for 0.1) 
+    (should-not (char-after))))
 
 ;; (ert-deftest ar-ert-transpose-list-test-1 ()
 ;;   (ar-test-with-elisp-buffer-point-min
