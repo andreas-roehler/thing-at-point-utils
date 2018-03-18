@@ -362,6 +362,31 @@ return wwrap"
 	    (erg (ar-doublequoted-atpt)))
       (should (< 7 (length erg))))))
 
+(ert-deftest elisp-delete-comment-test ()
+  (ar-test-with-elisp-buffer 
+      "(defun ;; foo1"
+    (ar-delete-comment-atpt)
+    (should (not (eq (char-before) ?\;)))))
+
+(ert-deftest elisp-comment-backward-test ()
+  (ar-test-with-elisp-buffer 
+      "(defun ;; foo1"
+    (ar-backward-comment-atpt)
+    (should (not (eq (char-before) ?\;)))))
+
+(ert-deftest elisp-comment-beginning-pos-test ()
+  (ar-test-with-elisp-buffer 
+      "(defun ;; foo1
+;; asdf"
+    (should (eq (ar-comment-beginning-position-atpt) 8))))
+
+(ert-deftest elisp-comment-beginning-pos-test-2 ()
+  (ar-test-with-elisp-buffer
+      "(defun \;\; foo1 (\&optional beg end)
+  \;\; \" \"
+  \;\; (interactive \"\*\")"
+        (should (eq (ar-comment-beginning-position-atpt) 8))))
+
 ;; fails in batch-mode only, moved into interactive tests
 ;; (ert-deftest kill-delimited-test-1 ()
 ;;   (ar-test-with-elisp-buffer

@@ -287,7 +287,6 @@
   (ar-test-with-python-buffer-point-min
       "[[1, 2]]\n"
     (forward-char 1)
-    (skip-syntax-forward "^(")
     (ar-left-trim-list-atpt)
     (should (eq (char-after) ?1))))
 
