@@ -4459,43 +4459,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-alnum-atpt (&optional arg)
   "Returns a list, borders of alnum if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'alnum nil))
+  (interactive "P")
+  (ar-th-bounds 'alnum arg))
 
 (defun ar-alnum-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position ALNUM at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'alnum nil))
+  (interactive "P")
+  (ar-th-beg 'alnum arg))
 
 (defun ar-alnum-end-position-atpt (&optional arg)
   "Returns a number, end position of ALNUM at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'alnum nil))
+  (interactive "P")
+  (ar-th-end 'alnum arg))
 
 (defun ar-alnum-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class ALNUM at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'alnum nil))
+  (interactive "P")
+  (ar-th-gotobeg 'alnum arg))
 
 (defun ar-alnum-end-atpt (&optional arg)
   "Goto end of symbol or char-class ALNUM at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'alnum nil))
+  (interactive "P")
+  (ar-th-gotoend 'alnum arg))
 
 (defun ar-in-alnum-p-atpt (&optional arg)
   "Returns bounds of ALNUM at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'alnum nil))
+  (interactive "P")
+  (ar-th-bounds 'alnum arg))
 
 (defun ar-length-of-alnum-atpt (&optional arg)
   "Returns beginning of symbol or char-class ALNUM at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'alnum nil))
+  (interactive "P")
+  (ar-th-length 'alnum arg))
 
 (defun ar-copy-alnum-atpt (&optional arg)
   "Returns a copy of ALNUM at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'alnum nil))
+  (interactive "P")
+  (ar-th-copy 'alnum arg))
 
 (defun ar-delete-alnum-atpt (&optional arg)
   "Deletes alnum at point if any.
@@ -4560,43 +4560,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-alpha-atpt (&optional arg)
   "Returns a list, borders of alpha if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'alpha nil))
+  (interactive "P")
+  (ar-th-bounds 'alpha arg))
 
 (defun ar-alpha-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position ALPHA at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'alpha nil))
+  (interactive "P")
+  (ar-th-beg 'alpha arg))
 
 (defun ar-alpha-end-position-atpt (&optional arg)
   "Returns a number, end position of ALPHA at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'alpha nil))
+  (interactive "P")
+  (ar-th-end 'alpha arg))
 
 (defun ar-alpha-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class ALPHA at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'alpha nil))
+  (interactive "P")
+  (ar-th-gotobeg 'alpha arg))
 
 (defun ar-alpha-end-atpt (&optional arg)
   "Goto end of symbol or char-class ALPHA at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'alpha nil))
+  (interactive "P")
+  (ar-th-gotoend 'alpha arg))
 
 (defun ar-in-alpha-p-atpt (&optional arg)
   "Returns bounds of ALPHA at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'alpha nil))
+  (interactive "P")
+  (ar-th-bounds 'alpha arg))
 
 (defun ar-length-of-alpha-atpt (&optional arg)
   "Returns beginning of symbol or char-class ALPHA at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'alpha nil))
+  (interactive "P")
+  (ar-th-length 'alpha arg))
 
 (defun ar-copy-alpha-atpt (&optional arg)
   "Returns a copy of ALPHA at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'alpha nil))
+  (interactive "P")
+  (ar-th-copy 'alpha arg))
 
 (defun ar-delete-alpha-atpt (&optional arg)
   "Deletes alpha at point if any.
@@ -4661,43 +4661,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-ascii-atpt (&optional arg)
   "Returns a list, borders of ascii if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'ascii nil))
+  (interactive "P")
+  (ar-th-bounds 'ascii arg))
 
 (defun ar-ascii-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position ASCII at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'ascii nil))
+  (interactive "P")
+  (ar-th-beg 'ascii arg))
 
 (defun ar-ascii-end-position-atpt (&optional arg)
   "Returns a number, end position of ASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'ascii nil))
+  (interactive "P")
+  (ar-th-end 'ascii arg))
 
 (defun ar-ascii-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class ASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'ascii nil))
+  (interactive "P")
+  (ar-th-gotobeg 'ascii arg))
 
 (defun ar-ascii-end-atpt (&optional arg)
   "Goto end of symbol or char-class ASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'ascii nil))
+  (interactive "P")
+  (ar-th-gotoend 'ascii arg))
 
 (defun ar-in-ascii-p-atpt (&optional arg)
   "Returns bounds of ASCII at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'ascii nil))
+  (interactive "P")
+  (ar-th-bounds 'ascii arg))
 
 (defun ar-length-of-ascii-atpt (&optional arg)
   "Returns beginning of symbol or char-class ASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'ascii nil))
+  (interactive "P")
+  (ar-th-length 'ascii arg))
 
 (defun ar-copy-ascii-atpt (&optional arg)
   "Returns a copy of ASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'ascii nil))
+  (interactive "P")
+  (ar-th-copy 'ascii arg))
 
 (defun ar-delete-ascii-atpt (&optional arg)
   "Deletes ascii at point if any.
@@ -4762,43 +4762,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-blank-atpt (&optional arg)
   "Returns a list, borders of blank if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'blank nil))
+  (interactive "P")
+  (ar-th-bounds 'blank arg))
 
 (defun ar-blank-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position BLANK at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'blank nil))
+  (interactive "P")
+  (ar-th-beg 'blank arg))
 
 (defun ar-blank-end-position-atpt (&optional arg)
   "Returns a number, end position of BLANK at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'blank nil))
+  (interactive "P")
+  (ar-th-end 'blank arg))
 
 (defun ar-blank-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class BLANK at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'blank nil))
+  (interactive "P")
+  (ar-th-gotobeg 'blank arg))
 
 (defun ar-blank-end-atpt (&optional arg)
   "Goto end of symbol or char-class BLANK at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'blank nil))
+  (interactive "P")
+  (ar-th-gotoend 'blank arg))
 
 (defun ar-in-blank-p-atpt (&optional arg)
   "Returns bounds of BLANK at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'blank nil))
+  (interactive "P")
+  (ar-th-bounds 'blank arg))
 
 (defun ar-length-of-blank-atpt (&optional arg)
   "Returns beginning of symbol or char-class BLANK at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'blank nil))
+  (interactive "P")
+  (ar-th-length 'blank arg))
 
 (defun ar-copy-blank-atpt (&optional arg)
   "Returns a copy of BLANK at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'blank nil))
+  (interactive "P")
+  (ar-th-copy 'blank arg))
 
 (defun ar-delete-blank-atpt (&optional arg)
   "Deletes blank at point if any.
@@ -4863,43 +4863,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-cntrl-atpt (&optional arg)
   "Returns a list, borders of cntrl if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'cntrl nil))
+  (interactive "P")
+  (ar-th-bounds 'cntrl arg))
 
 (defun ar-cntrl-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position CNTRL at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'cntrl nil))
+  (interactive "P")
+  (ar-th-beg 'cntrl arg))
 
 (defun ar-cntrl-end-position-atpt (&optional arg)
   "Returns a number, end position of CNTRL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'cntrl nil))
+  (interactive "P")
+  (ar-th-end 'cntrl arg))
 
 (defun ar-cntrl-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class CNTRL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'cntrl nil))
+  (interactive "P")
+  (ar-th-gotobeg 'cntrl arg))
 
 (defun ar-cntrl-end-atpt (&optional arg)
   "Goto end of symbol or char-class CNTRL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'cntrl nil))
+  (interactive "P")
+  (ar-th-gotoend 'cntrl arg))
 
 (defun ar-in-cntrl-p-atpt (&optional arg)
   "Returns bounds of CNTRL at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'cntrl nil))
+  (interactive "P")
+  (ar-th-bounds 'cntrl arg))
 
 (defun ar-length-of-cntrl-atpt (&optional arg)
   "Returns beginning of symbol or char-class CNTRL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'cntrl nil))
+  (interactive "P")
+  (ar-th-length 'cntrl arg))
 
 (defun ar-copy-cntrl-atpt (&optional arg)
   "Returns a copy of CNTRL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'cntrl nil))
+  (interactive "P")
+  (ar-th-copy 'cntrl arg))
 
 (defun ar-delete-cntrl-atpt (&optional arg)
   "Deletes cntrl at point if any.
@@ -4964,43 +4964,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-digit-atpt (&optional arg)
   "Returns a list, borders of digit if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'digit nil))
+  (interactive "P")
+  (ar-th-bounds 'digit arg))
 
 (defun ar-digit-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position DIGIT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'digit nil))
+  (interactive "P")
+  (ar-th-beg 'digit arg))
 
 (defun ar-digit-end-position-atpt (&optional arg)
   "Returns a number, end position of DIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'digit nil))
+  (interactive "P")
+  (ar-th-end 'digit arg))
 
 (defun ar-digit-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class DIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'digit nil))
+  (interactive "P")
+  (ar-th-gotobeg 'digit arg))
 
 (defun ar-digit-end-atpt (&optional arg)
   "Goto end of symbol or char-class DIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'digit nil))
+  (interactive "P")
+  (ar-th-gotoend 'digit arg))
 
 (defun ar-in-digit-p-atpt (&optional arg)
   "Returns bounds of DIGIT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'digit nil))
+  (interactive "P")
+  (ar-th-bounds 'digit arg))
 
 (defun ar-length-of-digit-atpt (&optional arg)
   "Returns beginning of symbol or char-class DIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'digit nil))
+  (interactive "P")
+  (ar-th-length 'digit arg))
 
 (defun ar-copy-digit-atpt (&optional arg)
   "Returns a copy of DIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'digit nil))
+  (interactive "P")
+  (ar-th-copy 'digit arg))
 
 (defun ar-delete-digit-atpt (&optional arg)
   "Deletes digit at point if any.
@@ -5065,43 +5065,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-graph-atpt (&optional arg)
   "Returns a list, borders of graph if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'graph nil))
+  (interactive "P")
+  (ar-th-bounds 'graph arg))
 
 (defun ar-graph-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position GRAPH at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'graph nil))
+  (interactive "P")
+  (ar-th-beg 'graph arg))
 
 (defun ar-graph-end-position-atpt (&optional arg)
   "Returns a number, end position of GRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'graph nil))
+  (interactive "P")
+  (ar-th-end 'graph arg))
 
 (defun ar-graph-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class GRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'graph nil))
+  (interactive "P")
+  (ar-th-gotobeg 'graph arg))
 
 (defun ar-graph-end-atpt (&optional arg)
   "Goto end of symbol or char-class GRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'graph nil))
+  (interactive "P")
+  (ar-th-gotoend 'graph arg))
 
 (defun ar-in-graph-p-atpt (&optional arg)
   "Returns bounds of GRAPH at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'graph nil))
+  (interactive "P")
+  (ar-th-bounds 'graph arg))
 
 (defun ar-length-of-graph-atpt (&optional arg)
   "Returns beginning of symbol or char-class GRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'graph nil))
+  (interactive "P")
+  (ar-th-length 'graph arg))
 
 (defun ar-copy-graph-atpt (&optional arg)
   "Returns a copy of GRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'graph nil))
+  (interactive "P")
+  (ar-th-copy 'graph arg))
 
 (defun ar-delete-graph-atpt (&optional arg)
   "Deletes graph at point if any.
@@ -5166,43 +5166,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-lower-atpt (&optional arg)
   "Returns a list, borders of lower if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'lower nil))
+  (interactive "P")
+  (ar-th-bounds 'lower arg))
 
 (defun ar-lower-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position LOWER at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'lower nil))
+  (interactive "P")
+  (ar-th-beg 'lower arg))
 
 (defun ar-lower-end-position-atpt (&optional arg)
   "Returns a number, end position of LOWER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'lower nil))
+  (interactive "P")
+  (ar-th-end 'lower arg))
 
 (defun ar-lower-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class LOWER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'lower nil))
+  (interactive "P")
+  (ar-th-gotobeg 'lower arg))
 
 (defun ar-lower-end-atpt (&optional arg)
   "Goto end of symbol or char-class LOWER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'lower nil))
+  (interactive "P")
+  (ar-th-gotoend 'lower arg))
 
 (defun ar-in-lower-p-atpt (&optional arg)
   "Returns bounds of LOWER at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'lower nil))
+  (interactive "P")
+  (ar-th-bounds 'lower arg))
 
 (defun ar-length-of-lower-atpt (&optional arg)
   "Returns beginning of symbol or char-class LOWER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'lower nil))
+  (interactive "P")
+  (ar-th-length 'lower arg))
 
 (defun ar-copy-lower-atpt (&optional arg)
   "Returns a copy of LOWER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'lower nil))
+  (interactive "P")
+  (ar-th-copy 'lower arg))
 
 (defun ar-delete-lower-atpt (&optional arg)
   "Deletes lower at point if any.
@@ -5267,43 +5267,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-nonascii-atpt (&optional arg)
   "Returns a list, borders of nonascii if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'nonascii nil))
+  (interactive "P")
+  (ar-th-bounds 'nonascii arg))
 
 (defun ar-nonascii-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position NONASCII at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'nonascii nil))
+  (interactive "P")
+  (ar-th-beg 'nonascii arg))
 
 (defun ar-nonascii-end-position-atpt (&optional arg)
   "Returns a number, end position of NONASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'nonascii nil))
+  (interactive "P")
+  (ar-th-end 'nonascii arg))
 
 (defun ar-nonascii-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class NONASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'nonascii nil))
+  (interactive "P")
+  (ar-th-gotobeg 'nonascii arg))
 
 (defun ar-nonascii-end-atpt (&optional arg)
   "Goto end of symbol or char-class NONASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'nonascii nil))
+  (interactive "P")
+  (ar-th-gotoend 'nonascii arg))
 
 (defun ar-in-nonascii-p-atpt (&optional arg)
   "Returns bounds of NONASCII at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'nonascii nil))
+  (interactive "P")
+  (ar-th-bounds 'nonascii arg))
 
 (defun ar-length-of-nonascii-atpt (&optional arg)
   "Returns beginning of symbol or char-class NONASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'nonascii nil))
+  (interactive "P")
+  (ar-th-length 'nonascii arg))
 
 (defun ar-copy-nonascii-atpt (&optional arg)
   "Returns a copy of NONASCII at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'nonascii nil))
+  (interactive "P")
+  (ar-th-copy 'nonascii arg))
 
 (defun ar-delete-nonascii-atpt (&optional arg)
   "Deletes nonascii at point if any.
@@ -5368,43 +5368,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-print-atpt (&optional arg)
   "Returns a list, borders of print if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'print nil))
+  (interactive "P")
+  (ar-th-bounds 'print arg))
 
 (defun ar-print-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position PRINT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'print nil))
+  (interactive "P")
+  (ar-th-beg 'print arg))
 
 (defun ar-print-end-position-atpt (&optional arg)
   "Returns a number, end position of PRINT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'print nil))
+  (interactive "P")
+  (ar-th-end 'print arg))
 
 (defun ar-print-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class PRINT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'print nil))
+  (interactive "P")
+  (ar-th-gotobeg 'print arg))
 
 (defun ar-print-end-atpt (&optional arg)
   "Goto end of symbol or char-class PRINT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'print nil))
+  (interactive "P")
+  (ar-th-gotoend 'print arg))
 
 (defun ar-in-print-p-atpt (&optional arg)
   "Returns bounds of PRINT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'print nil))
+  (interactive "P")
+  (ar-th-bounds 'print arg))
 
 (defun ar-length-of-print-atpt (&optional arg)
   "Returns beginning of symbol or char-class PRINT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'print nil))
+  (interactive "P")
+  (ar-th-length 'print arg))
 
 (defun ar-copy-print-atpt (&optional arg)
   "Returns a copy of PRINT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'print nil))
+  (interactive "P")
+  (ar-th-copy 'print arg))
 
 (defun ar-delete-print-atpt (&optional arg)
   "Deletes print at point if any.
@@ -5469,43 +5469,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-punct-atpt (&optional arg)
   "Returns a list, borders of punct if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'punct nil))
+  (interactive "P")
+  (ar-th-bounds 'punct arg))
 
 (defun ar-punct-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position PUNCT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'punct nil))
+  (interactive "P")
+  (ar-th-beg 'punct arg))
 
 (defun ar-punct-end-position-atpt (&optional arg)
   "Returns a number, end position of PUNCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'punct nil))
+  (interactive "P")
+  (ar-th-end 'punct arg))
 
 (defun ar-punct-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class PUNCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'punct nil))
+  (interactive "P")
+  (ar-th-gotobeg 'punct arg))
 
 (defun ar-punct-end-atpt (&optional arg)
   "Goto end of symbol or char-class PUNCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'punct nil))
+  (interactive "P")
+  (ar-th-gotoend 'punct arg))
 
 (defun ar-in-punct-p-atpt (&optional arg)
   "Returns bounds of PUNCT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'punct nil))
+  (interactive "P")
+  (ar-th-bounds 'punct arg))
 
 (defun ar-length-of-punct-atpt (&optional arg)
   "Returns beginning of symbol or char-class PUNCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'punct nil))
+  (interactive "P")
+  (ar-th-length 'punct arg))
 
 (defun ar-copy-punct-atpt (&optional arg)
   "Returns a copy of PUNCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'punct nil))
+  (interactive "P")
+  (ar-th-copy 'punct arg))
 
 (defun ar-delete-punct-atpt (&optional arg)
   "Deletes punct at point if any.
@@ -5570,43 +5570,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-space-atpt (&optional arg)
   "Returns a list, borders of space if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'space nil))
+  (interactive "P")
+  (ar-th-bounds 'space arg))
 
 (defun ar-space-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position SPACE at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'space nil))
+  (interactive "P")
+  (ar-th-beg 'space arg))
 
 (defun ar-space-end-position-atpt (&optional arg)
   "Returns a number, end position of SPACE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'space nil))
+  (interactive "P")
+  (ar-th-end 'space arg))
 
 (defun ar-space-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class SPACE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'space nil))
+  (interactive "P")
+  (ar-th-gotobeg 'space arg))
 
 (defun ar-space-end-atpt (&optional arg)
   "Goto end of symbol or char-class SPACE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'space nil))
+  (interactive "P")
+  (ar-th-gotoend 'space arg))
 
 (defun ar-in-space-p-atpt (&optional arg)
   "Returns bounds of SPACE at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'space nil))
+  (interactive "P")
+  (ar-th-bounds 'space arg))
 
 (defun ar-length-of-space-atpt (&optional arg)
   "Returns beginning of symbol or char-class SPACE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'space nil))
+  (interactive "P")
+  (ar-th-length 'space arg))
 
 (defun ar-copy-space-atpt (&optional arg)
   "Returns a copy of SPACE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'space nil))
+  (interactive "P")
+  (ar-th-copy 'space arg))
 
 (defun ar-delete-space-atpt (&optional arg)
   "Deletes space at point if any.
@@ -5671,43 +5671,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-upper-atpt (&optional arg)
   "Returns a list, borders of upper if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'upper nil))
+  (interactive "P")
+  (ar-th-bounds 'upper arg))
 
 (defun ar-upper-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position UPPER at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'upper nil))
+  (interactive "P")
+  (ar-th-beg 'upper arg))
 
 (defun ar-upper-end-position-atpt (&optional arg)
   "Returns a number, end position of UPPER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'upper nil))
+  (interactive "P")
+  (ar-th-end 'upper arg))
 
 (defun ar-upper-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class UPPER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'upper nil))
+  (interactive "P")
+  (ar-th-gotobeg 'upper arg))
 
 (defun ar-upper-end-atpt (&optional arg)
   "Goto end of symbol or char-class UPPER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'upper nil))
+  (interactive "P")
+  (ar-th-gotoend 'upper arg))
 
 (defun ar-in-upper-p-atpt (&optional arg)
   "Returns bounds of UPPER at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'upper nil))
+  (interactive "P")
+  (ar-th-bounds 'upper arg))
 
 (defun ar-length-of-upper-atpt (&optional arg)
   "Returns beginning of symbol or char-class UPPER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'upper nil))
+  (interactive "P")
+  (ar-th-length 'upper arg))
 
 (defun ar-copy-upper-atpt (&optional arg)
   "Returns a copy of UPPER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'upper nil))
+  (interactive "P")
+  (ar-th-copy 'upper arg))
 
 (defun ar-delete-upper-atpt (&optional arg)
   "Deletes upper at point if any.
@@ -5772,43 +5772,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-xdigit-atpt (&optional arg)
   "Returns a list, borders of xdigit if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'xdigit nil))
+  (interactive "P")
+  (ar-th-bounds 'xdigit arg))
 
 (defun ar-xdigit-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position XDIGIT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'xdigit nil))
+  (interactive "P")
+  (ar-th-beg 'xdigit arg))
 
 (defun ar-xdigit-end-position-atpt (&optional arg)
   "Returns a number, end position of XDIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'xdigit nil))
+  (interactive "P")
+  (ar-th-end 'xdigit arg))
 
 (defun ar-xdigit-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class XDIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'xdigit nil))
+  (interactive "P")
+  (ar-th-gotobeg 'xdigit arg))
 
 (defun ar-xdigit-end-atpt (&optional arg)
   "Goto end of symbol or char-class XDIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'xdigit nil))
+  (interactive "P")
+  (ar-th-gotoend 'xdigit arg))
 
 (defun ar-in-xdigit-p-atpt (&optional arg)
   "Returns bounds of XDIGIT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'xdigit nil))
+  (interactive "P")
+  (ar-th-bounds 'xdigit arg))
 
 (defun ar-length-of-xdigit-atpt (&optional arg)
   "Returns beginning of symbol or char-class XDIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'xdigit nil))
+  (interactive "P")
+  (ar-th-length 'xdigit arg))
 
 (defun ar-copy-xdigit-atpt (&optional arg)
   "Returns a copy of XDIGIT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'xdigit nil))
+  (interactive "P")
+  (ar-th-copy 'xdigit arg))
 
 (defun ar-delete-xdigit-atpt (&optional arg)
   "Deletes xdigit at point if any.
@@ -5875,43 +5875,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-greateranglednested-atpt (&optional arg)
   "Returns a list, borders of greateranglednested if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-bounds 'greateranglednested arg))
 
 (defun ar-greateranglednested-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position GREATERANGLEDNESTED at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-beg 'greateranglednested arg))
 
 (defun ar-greateranglednested-end-position-atpt (&optional arg)
   "Returns a number, end position of GREATERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-end 'greateranglednested arg))
 
 (defun ar-greateranglednested-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class GREATERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-gotobeg 'greateranglednested arg))
 
 (defun ar-greateranglednested-end-atpt (&optional arg)
   "Goto end of symbol or char-class GREATERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-gotoend 'greateranglednested arg))
 
 (defun ar-in-greateranglednested-p-atpt (&optional arg)
   "Returns bounds of GREATERANGLEDNESTED at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-bounds 'greateranglednested arg))
 
 (defun ar-length-of-greateranglednested-atpt (&optional arg)
   "Returns beginning of symbol or char-class GREATERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-length 'greateranglednested arg))
 
 (defun ar-copy-greateranglednested-atpt (&optional arg)
   "Returns a copy of GREATERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'greateranglednested nil))
+  (interactive "P")
+  (ar-th-copy 'greateranglednested arg))
 
 (defun ar-delete-greateranglednested-atpt (&optional arg)
   "Deletes greateranglednested at point if any.
@@ -5976,43 +5976,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-lesseranglednested-atpt (&optional arg)
   "Returns a list, borders of lesseranglednested if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-bounds 'lesseranglednested arg))
 
 (defun ar-lesseranglednested-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position LESSERANGLEDNESTED at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-beg 'lesseranglednested arg))
 
 (defun ar-lesseranglednested-end-position-atpt (&optional arg)
   "Returns a number, end position of LESSERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-end 'lesseranglednested arg))
 
 (defun ar-lesseranglednested-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class LESSERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-gotobeg 'lesseranglednested arg))
 
 (defun ar-lesseranglednested-end-atpt (&optional arg)
   "Goto end of symbol or char-class LESSERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-gotoend 'lesseranglednested arg))
 
 (defun ar-in-lesseranglednested-p-atpt (&optional arg)
   "Returns bounds of LESSERANGLEDNESTED at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-bounds 'lesseranglednested arg))
 
 (defun ar-length-of-lesseranglednested-atpt (&optional arg)
   "Returns beginning of symbol or char-class LESSERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-length 'lesseranglednested arg))
 
 (defun ar-copy-lesseranglednested-atpt (&optional arg)
   "Returns a copy of LESSERANGLEDNESTED at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'lesseranglednested nil))
+  (interactive "P")
+  (ar-th-copy 'lesseranglednested arg))
 
 (defun ar-delete-lesseranglednested-atpt (&optional arg)
   "Deletes lesseranglednested at point if any.
@@ -6077,43 +6077,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-buffer-atpt (&optional arg)
   "Returns a list, borders of buffer if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'buffer nil))
+  (interactive "P")
+  (ar-th-bounds 'buffer arg))
 
 (defun ar-buffer-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position BUFFER at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'buffer nil))
+  (interactive "P")
+  (ar-th-beg 'buffer arg))
 
 (defun ar-buffer-end-position-atpt (&optional arg)
   "Returns a number, end position of BUFFER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'buffer nil))
+  (interactive "P")
+  (ar-th-end 'buffer arg))
 
 (defun ar-buffer-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class BUFFER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'buffer nil))
+  (interactive "P")
+  (ar-th-gotobeg 'buffer arg))
 
 (defun ar-buffer-end-atpt (&optional arg)
   "Goto end of symbol or char-class BUFFER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'buffer nil))
+  (interactive "P")
+  (ar-th-gotoend 'buffer arg))
 
 (defun ar-in-buffer-p-atpt (&optional arg)
   "Returns bounds of BUFFER at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'buffer nil))
+  (interactive "P")
+  (ar-th-bounds 'buffer arg))
 
 (defun ar-length-of-buffer-atpt (&optional arg)
   "Returns beginning of symbol or char-class BUFFER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'buffer nil))
+  (interactive "P")
+  (ar-th-length 'buffer arg))
 
 (defun ar-copy-buffer-atpt (&optional arg)
   "Returns a copy of BUFFER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'buffer nil))
+  (interactive "P")
+  (ar-th-copy 'buffer arg))
 
 (defun ar-delete-buffer-atpt (&optional arg)
   "Deletes buffer at point if any.
@@ -6178,43 +6178,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-comment-atpt (&optional arg)
   "Returns a list, borders of comment if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'comment nil))
+  (interactive "P")
+  (ar-th-bounds 'comment arg))
 
 (defun ar-comment-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position COMMENT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'comment nil))
+  (interactive "P")
+  (ar-th-beg 'comment arg))
 
 (defun ar-comment-end-position-atpt (&optional arg)
   "Returns a number, end position of COMMENT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'comment nil))
+  (interactive "P")
+  (ar-th-end 'comment arg))
 
 (defun ar-comment-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class COMMENT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'comment nil))
+  (interactive "P")
+  (ar-th-gotobeg 'comment arg))
 
 (defun ar-comment-end-atpt (&optional arg)
   "Goto end of symbol or char-class COMMENT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'comment nil))
+  (interactive "P")
+  (ar-th-gotoend 'comment arg))
 
 (defun ar-in-comment-p-atpt (&optional arg)
   "Returns bounds of COMMENT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'comment nil))
+  (interactive "P")
+  (ar-th-bounds 'comment arg))
 
 (defun ar-length-of-comment-atpt (&optional arg)
   "Returns beginning of symbol or char-class COMMENT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'comment nil))
+  (interactive "P")
+  (ar-th-length 'comment arg))
 
 (defun ar-copy-comment-atpt (&optional arg)
   "Returns a copy of COMMENT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'comment nil))
+  (interactive "P")
+  (ar-th-copy 'comment arg))
 
 (defun ar-delete-comment-atpt (&optional arg)
   "Deletes comment at point if any.
@@ -6279,43 +6279,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-csv-atpt (&optional arg)
   "Returns a list, borders of csv if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'csv nil))
+  (interactive "P")
+  (ar-th-bounds 'csv arg))
 
 (defun ar-csv-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position CSV at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'csv nil))
+  (interactive "P")
+  (ar-th-beg 'csv arg))
 
 (defun ar-csv-end-position-atpt (&optional arg)
   "Returns a number, end position of CSV at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'csv nil))
+  (interactive "P")
+  (ar-th-end 'csv arg))
 
 (defun ar-csv-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class CSV at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'csv nil))
+  (interactive "P")
+  (ar-th-gotobeg 'csv arg))
 
 (defun ar-csv-end-atpt (&optional arg)
   "Goto end of symbol or char-class CSV at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'csv nil))
+  (interactive "P")
+  (ar-th-gotoend 'csv arg))
 
 (defun ar-in-csv-p-atpt (&optional arg)
   "Returns bounds of CSV at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'csv nil))
+  (interactive "P")
+  (ar-th-bounds 'csv arg))
 
 (defun ar-length-of-csv-atpt (&optional arg)
   "Returns beginning of symbol or char-class CSV at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'csv nil))
+  (interactive "P")
+  (ar-th-length 'csv arg))
 
 (defun ar-copy-csv-atpt (&optional arg)
   "Returns a copy of CSV at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'csv nil))
+  (interactive "P")
+  (ar-th-copy 'csv arg))
 
 (defun ar-delete-csv-atpt (&optional arg)
   "Deletes csv at point if any.
@@ -6380,43 +6380,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-date-atpt (&optional arg)
   "Returns a list, borders of date if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'date nil))
+  (interactive "P")
+  (ar-th-bounds 'date arg))
 
 (defun ar-date-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position DATE at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'date nil))
+  (interactive "P")
+  (ar-th-beg 'date arg))
 
 (defun ar-date-end-position-atpt (&optional arg)
   "Returns a number, end position of DATE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'date nil))
+  (interactive "P")
+  (ar-th-end 'date arg))
 
 (defun ar-date-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class DATE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'date nil))
+  (interactive "P")
+  (ar-th-gotobeg 'date arg))
 
 (defun ar-date-end-atpt (&optional arg)
   "Goto end of symbol or char-class DATE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'date nil))
+  (interactive "P")
+  (ar-th-gotoend 'date arg))
 
 (defun ar-in-date-p-atpt (&optional arg)
   "Returns bounds of DATE at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'date nil))
+  (interactive "P")
+  (ar-th-bounds 'date arg))
 
 (defun ar-length-of-date-atpt (&optional arg)
   "Returns beginning of symbol or char-class DATE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'date nil))
+  (interactive "P")
+  (ar-th-length 'date arg))
 
 (defun ar-copy-date-atpt (&optional arg)
   "Returns a copy of DATE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'date nil))
+  (interactive "P")
+  (ar-th-copy 'date arg))
 
 (defun ar-delete-date-atpt (&optional arg)
   "Deletes date at point if any.
@@ -6481,43 +6481,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-email-atpt (&optional arg)
   "Returns a list, borders of email if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'email nil))
+  (interactive "P")
+  (ar-th-bounds 'email arg))
 
 (defun ar-email-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position EMAIL at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'email nil))
+  (interactive "P")
+  (ar-th-beg 'email arg))
 
 (defun ar-email-end-position-atpt (&optional arg)
   "Returns a number, end position of EMAIL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'email nil))
+  (interactive "P")
+  (ar-th-end 'email arg))
 
 (defun ar-email-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class EMAIL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'email nil))
+  (interactive "P")
+  (ar-th-gotobeg 'email arg))
 
 (defun ar-email-end-atpt (&optional arg)
   "Goto end of symbol or char-class EMAIL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'email nil))
+  (interactive "P")
+  (ar-th-gotoend 'email arg))
 
 (defun ar-in-email-p-atpt (&optional arg)
   "Returns bounds of EMAIL at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'email nil))
+  (interactive "P")
+  (ar-th-bounds 'email arg))
 
 (defun ar-length-of-email-atpt (&optional arg)
   "Returns beginning of symbol or char-class EMAIL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'email nil))
+  (interactive "P")
+  (ar-th-length 'email arg))
 
 (defun ar-copy-email-atpt (&optional arg)
   "Returns a copy of EMAIL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'email nil))
+  (interactive "P")
+  (ar-th-copy 'email arg))
 
 (defun ar-delete-email-atpt (&optional arg)
   "Deletes email at point if any.
@@ -6582,43 +6582,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-filename-atpt (&optional arg)
   "Returns a list, borders of filename if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'filename nil))
+  (interactive "P")
+  (ar-th-bounds 'filename arg))
 
 (defun ar-filename-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position FILENAME at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'filename nil))
+  (interactive "P")
+  (ar-th-beg 'filename arg))
 
 (defun ar-filename-end-position-atpt (&optional arg)
   "Returns a number, end position of FILENAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'filename nil))
+  (interactive "P")
+  (ar-th-end 'filename arg))
 
 (defun ar-filename-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class FILENAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'filename nil))
+  (interactive "P")
+  (ar-th-gotobeg 'filename arg))
 
 (defun ar-filename-end-atpt (&optional arg)
   "Goto end of symbol or char-class FILENAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'filename nil))
+  (interactive "P")
+  (ar-th-gotoend 'filename arg))
 
 (defun ar-in-filename-p-atpt (&optional arg)
   "Returns bounds of FILENAME at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'filename nil))
+  (interactive "P")
+  (ar-th-bounds 'filename arg))
 
 (defun ar-length-of-filename-atpt (&optional arg)
   "Returns beginning of symbol or char-class FILENAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'filename nil))
+  (interactive "P")
+  (ar-th-length 'filename arg))
 
 (defun ar-copy-filename-atpt (&optional arg)
   "Returns a copy of FILENAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'filename nil))
+  (interactive "P")
+  (ar-th-copy 'filename arg))
 
 (defun ar-delete-filename-atpt (&optional arg)
   "Deletes filename at point if any.
@@ -6683,43 +6683,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-filenamenondirectory-atpt (&optional arg)
   "Returns a list, borders of filenamenondirectory if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-bounds 'filenamenondirectory arg))
 
 (defun ar-filenamenondirectory-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position FILENAMENONDIRECTORY at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-beg 'filenamenondirectory arg))
 
 (defun ar-filenamenondirectory-end-position-atpt (&optional arg)
   "Returns a number, end position of FILENAMENONDIRECTORY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-end 'filenamenondirectory arg))
 
 (defun ar-filenamenondirectory-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class FILENAMENONDIRECTORY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-gotobeg 'filenamenondirectory arg))
 
 (defun ar-filenamenondirectory-end-atpt (&optional arg)
   "Goto end of symbol or char-class FILENAMENONDIRECTORY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-gotoend 'filenamenondirectory arg))
 
 (defun ar-in-filenamenondirectory-p-atpt (&optional arg)
   "Returns bounds of FILENAMENONDIRECTORY at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-bounds 'filenamenondirectory arg))
 
 (defun ar-length-of-filenamenondirectory-atpt (&optional arg)
   "Returns beginning of symbol or char-class FILENAMENONDIRECTORY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-length 'filenamenondirectory arg))
 
 (defun ar-copy-filenamenondirectory-atpt (&optional arg)
   "Returns a copy of FILENAMENONDIRECTORY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'filenamenondirectory nil))
+  (interactive "P")
+  (ar-th-copy 'filenamenondirectory arg))
 
 (defun ar-delete-filenamenondirectory-atpt (&optional arg)
   "Deletes filenamenondirectory at point if any.
@@ -6784,43 +6784,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-float-atpt (&optional arg)
   "Returns a list, borders of float if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'float nil))
+  (interactive "P")
+  (ar-th-bounds 'float arg))
 
 (defun ar-float-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position FLOAT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'float nil))
+  (interactive "P")
+  (ar-th-beg 'float arg))
 
 (defun ar-float-end-position-atpt (&optional arg)
   "Returns a number, end position of FLOAT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'float nil))
+  (interactive "P")
+  (ar-th-end 'float arg))
 
 (defun ar-float-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class FLOAT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'float nil))
+  (interactive "P")
+  (ar-th-gotobeg 'float arg))
 
 (defun ar-float-end-atpt (&optional arg)
   "Goto end of symbol or char-class FLOAT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'float nil))
+  (interactive "P")
+  (ar-th-gotoend 'float arg))
 
 (defun ar-in-float-p-atpt (&optional arg)
   "Returns bounds of FLOAT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'float nil))
+  (interactive "P")
+  (ar-th-bounds 'float arg))
 
 (defun ar-length-of-float-atpt (&optional arg)
   "Returns beginning of symbol or char-class FLOAT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'float nil))
+  (interactive "P")
+  (ar-th-length 'float arg))
 
 (defun ar-copy-float-atpt (&optional arg)
   "Returns a copy of FLOAT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'float nil))
+  (interactive "P")
+  (ar-th-copy 'float arg))
 
 (defun ar-delete-float-atpt (&optional arg)
   "Deletes float at point if any.
@@ -6885,43 +6885,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-function-atpt (&optional arg)
   "Returns a list, borders of function if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'function nil))
+  (interactive "P")
+  (ar-th-bounds 'function arg))
 
 (defun ar-function-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position FUNCTION at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'function nil))
+  (interactive "P")
+  (ar-th-beg 'function arg))
 
 (defun ar-function-end-position-atpt (&optional arg)
   "Returns a number, end position of FUNCTION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'function nil))
+  (interactive "P")
+  (ar-th-end 'function arg))
 
 (defun ar-function-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class FUNCTION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'function nil))
+  (interactive "P")
+  (ar-th-gotobeg 'function arg))
 
 (defun ar-function-end-atpt (&optional arg)
   "Goto end of symbol or char-class FUNCTION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'function nil))
+  (interactive "P")
+  (ar-th-gotoend 'function arg))
 
 (defun ar-in-function-p-atpt (&optional arg)
   "Returns bounds of FUNCTION at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'function nil))
+  (interactive "P")
+  (ar-th-bounds 'function arg))
 
 (defun ar-length-of-function-atpt (&optional arg)
   "Returns beginning of symbol or char-class FUNCTION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'function nil))
+  (interactive "P")
+  (ar-th-length 'function arg))
 
 (defun ar-copy-function-atpt (&optional arg)
   "Returns a copy of FUNCTION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'function nil))
+  (interactive "P")
+  (ar-th-copy 'function arg))
 
 (defun ar-delete-function-atpt (&optional arg)
   "Deletes function at point if any.
@@ -6986,43 +6986,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-ip-atpt (&optional arg)
   "Returns a list, borders of ip if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'ip nil))
+  (interactive "P")
+  (ar-th-bounds 'ip arg))
 
 (defun ar-ip-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position IP at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'ip nil))
+  (interactive "P")
+  (ar-th-beg 'ip arg))
 
 (defun ar-ip-end-position-atpt (&optional arg)
   "Returns a number, end position of IP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'ip nil))
+  (interactive "P")
+  (ar-th-end 'ip arg))
 
 (defun ar-ip-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class IP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'ip nil))
+  (interactive "P")
+  (ar-th-gotobeg 'ip arg))
 
 (defun ar-ip-end-atpt (&optional arg)
   "Goto end of symbol or char-class IP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'ip nil))
+  (interactive "P")
+  (ar-th-gotoend 'ip arg))
 
 (defun ar-in-ip-p-atpt (&optional arg)
   "Returns bounds of IP at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'ip nil))
+  (interactive "P")
+  (ar-th-bounds 'ip arg))
 
 (defun ar-length-of-ip-atpt (&optional arg)
   "Returns beginning of symbol or char-class IP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'ip nil))
+  (interactive "P")
+  (ar-th-length 'ip arg))
 
 (defun ar-copy-ip-atpt (&optional arg)
   "Returns a copy of IP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'ip nil))
+  (interactive "P")
+  (ar-th-copy 'ip arg))
 
 (defun ar-delete-ip-atpt (&optional arg)
   "Deletes ip at point if any.
@@ -7087,43 +7087,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-isbn-atpt (&optional arg)
   "Returns a list, borders of isbn if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'isbn nil))
+  (interactive "P")
+  (ar-th-bounds 'isbn arg))
 
 (defun ar-isbn-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position ISBN at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'isbn nil))
+  (interactive "P")
+  (ar-th-beg 'isbn arg))
 
 (defun ar-isbn-end-position-atpt (&optional arg)
   "Returns a number, end position of ISBN at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'isbn nil))
+  (interactive "P")
+  (ar-th-end 'isbn arg))
 
 (defun ar-isbn-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class ISBN at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'isbn nil))
+  (interactive "P")
+  (ar-th-gotobeg 'isbn arg))
 
 (defun ar-isbn-end-atpt (&optional arg)
   "Goto end of symbol or char-class ISBN at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'isbn nil))
+  (interactive "P")
+  (ar-th-gotoend 'isbn arg))
 
 (defun ar-in-isbn-p-atpt (&optional arg)
   "Returns bounds of ISBN at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'isbn nil))
+  (interactive "P")
+  (ar-th-bounds 'isbn arg))
 
 (defun ar-length-of-isbn-atpt (&optional arg)
   "Returns beginning of symbol or char-class ISBN at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'isbn nil))
+  (interactive "P")
+  (ar-th-length 'isbn arg))
 
 (defun ar-copy-isbn-atpt (&optional arg)
   "Returns a copy of ISBN at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'isbn nil))
+  (interactive "P")
+  (ar-th-copy 'isbn arg))
 
 (defun ar-delete-isbn-atpt (&optional arg)
   "Deletes isbn at point if any.
@@ -7188,43 +7188,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-line-atpt (&optional arg)
   "Returns a list, borders of line if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'line nil))
+  (interactive "P")
+  (ar-th-bounds 'line arg))
 
 (defun ar-line-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position LINE at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'line nil))
+  (interactive "P")
+  (ar-th-beg 'line arg))
 
 (defun ar-line-end-position-atpt (&optional arg)
   "Returns a number, end position of LINE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'line nil))
+  (interactive "P")
+  (ar-th-end 'line arg))
 
 (defun ar-line-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class LINE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'line nil))
+  (interactive "P")
+  (ar-th-gotobeg 'line arg))
 
 (defun ar-line-end-atpt (&optional arg)
   "Goto end of symbol or char-class LINE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'line nil))
+  (interactive "P")
+  (ar-th-gotoend 'line arg))
 
 (defun ar-in-line-p-atpt (&optional arg)
   "Returns bounds of LINE at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'line nil))
+  (interactive "P")
+  (ar-th-bounds 'line arg))
 
 (defun ar-length-of-line-atpt (&optional arg)
   "Returns beginning of symbol or char-class LINE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'line nil))
+  (interactive "P")
+  (ar-th-length 'line arg))
 
 (defun ar-copy-line-atpt (&optional arg)
   "Returns a copy of LINE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'line nil))
+  (interactive "P")
+  (ar-th-copy 'line arg))
 
 (defun ar-delete-line-atpt (&optional arg)
   "Deletes line at point if any.
@@ -7289,43 +7289,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-list-atpt (&optional arg)
   "Returns a list, borders of list if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'list nil))
+  (interactive "P")
+  (ar-th-bounds 'list arg))
 
 (defun ar-list-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position LIST at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'list nil))
+  (interactive "P")
+  (ar-th-beg 'list arg))
 
 (defun ar-list-end-position-atpt (&optional arg)
   "Returns a number, end position of LIST at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'list nil))
+  (interactive "P")
+  (ar-th-end 'list arg))
 
 (defun ar-list-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class LIST at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'list nil))
+  (interactive "P")
+  (ar-th-gotobeg 'list arg))
 
 (defun ar-list-end-atpt (&optional arg)
   "Goto end of symbol or char-class LIST at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'list nil))
+  (interactive "P")
+  (ar-th-gotoend 'list arg))
 
 (defun ar-in-list-p-atpt (&optional arg)
   "Returns bounds of LIST at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'list nil))
+  (interactive "P")
+  (ar-th-bounds 'list arg))
 
 (defun ar-length-of-list-atpt (&optional arg)
   "Returns beginning of symbol or char-class LIST at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'list nil))
+  (interactive "P")
+  (ar-th-length 'list arg))
 
 (defun ar-copy-list-atpt (&optional arg)
   "Returns a copy of LIST at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'list nil))
+  (interactive "P")
+  (ar-th-copy 'list arg))
 
 (defun ar-delete-list-atpt (&optional arg)
   "Deletes list at point if any.
@@ -7390,43 +7390,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-name-atpt (&optional arg)
   "Returns a list, borders of name if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'name nil))
+  (interactive "P")
+  (ar-th-bounds 'name arg))
 
 (defun ar-name-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position NAME at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'name nil))
+  (interactive "P")
+  (ar-th-beg 'name arg))
 
 (defun ar-name-end-position-atpt (&optional arg)
   "Returns a number, end position of NAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'name nil))
+  (interactive "P")
+  (ar-th-end 'name arg))
 
 (defun ar-name-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class NAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'name nil))
+  (interactive "P")
+  (ar-th-gotobeg 'name arg))
 
 (defun ar-name-end-atpt (&optional arg)
   "Goto end of symbol or char-class NAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'name nil))
+  (interactive "P")
+  (ar-th-gotoend 'name arg))
 
 (defun ar-in-name-p-atpt (&optional arg)
   "Returns bounds of NAME at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'name nil))
+  (interactive "P")
+  (ar-th-bounds 'name arg))
 
 (defun ar-length-of-name-atpt (&optional arg)
   "Returns beginning of symbol or char-class NAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'name nil))
+  (interactive "P")
+  (ar-th-length 'name arg))
 
 (defun ar-copy-name-atpt (&optional arg)
   "Returns a copy of NAME at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'name nil))
+  (interactive "P")
+  (ar-th-copy 'name arg))
 
 (defun ar-delete-name-atpt (&optional arg)
   "Deletes name at point if any.
@@ -7491,43 +7491,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-number-atpt (&optional arg)
   "Returns a list, borders of number if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'number nil))
+  (interactive "P")
+  (ar-th-bounds 'number arg))
 
 (defun ar-number-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position NUMBER at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'number nil))
+  (interactive "P")
+  (ar-th-beg 'number arg))
 
 (defun ar-number-end-position-atpt (&optional arg)
   "Returns a number, end position of NUMBER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'number nil))
+  (interactive "P")
+  (ar-th-end 'number arg))
 
 (defun ar-number-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class NUMBER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'number nil))
+  (interactive "P")
+  (ar-th-gotobeg 'number arg))
 
 (defun ar-number-end-atpt (&optional arg)
   "Goto end of symbol or char-class NUMBER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'number nil))
+  (interactive "P")
+  (ar-th-gotoend 'number arg))
 
 (defun ar-in-number-p-atpt (&optional arg)
   "Returns bounds of NUMBER at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'number nil))
+  (interactive "P")
+  (ar-th-bounds 'number arg))
 
 (defun ar-length-of-number-atpt (&optional arg)
   "Returns beginning of symbol or char-class NUMBER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'number nil))
+  (interactive "P")
+  (ar-th-length 'number arg))
 
 (defun ar-copy-number-atpt (&optional arg)
   "Returns a copy of NUMBER at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'number nil))
+  (interactive "P")
+  (ar-th-copy 'number arg))
 
 (defun ar-delete-number-atpt (&optional arg)
   "Deletes number at point if any.
@@ -7592,43 +7592,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-page-atpt (&optional arg)
   "Returns a list, borders of page if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'page nil))
+  (interactive "P")
+  (ar-th-bounds 'page arg))
 
 (defun ar-page-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position PAGE at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'page nil))
+  (interactive "P")
+  (ar-th-beg 'page arg))
 
 (defun ar-page-end-position-atpt (&optional arg)
   "Returns a number, end position of PAGE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'page nil))
+  (interactive "P")
+  (ar-th-end 'page arg))
 
 (defun ar-page-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class PAGE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'page nil))
+  (interactive "P")
+  (ar-th-gotobeg 'page arg))
 
 (defun ar-page-end-atpt (&optional arg)
   "Goto end of symbol or char-class PAGE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'page nil))
+  (interactive "P")
+  (ar-th-gotoend 'page arg))
 
 (defun ar-in-page-p-atpt (&optional arg)
   "Returns bounds of PAGE at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'page nil))
+  (interactive "P")
+  (ar-th-bounds 'page arg))
 
 (defun ar-length-of-page-atpt (&optional arg)
   "Returns beginning of symbol or char-class PAGE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'page nil))
+  (interactive "P")
+  (ar-th-length 'page arg))
 
 (defun ar-copy-page-atpt (&optional arg)
   "Returns a copy of PAGE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'page nil))
+  (interactive "P")
+  (ar-th-copy 'page arg))
 
 (defun ar-delete-page-atpt (&optional arg)
   "Deletes page at point if any.
@@ -7693,43 +7693,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-paragraph-atpt (&optional arg)
   "Returns a list, borders of paragraph if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'paragraph nil))
+  (interactive "P")
+  (ar-th-bounds 'paragraph arg))
 
 (defun ar-paragraph-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position PARAGRAPH at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'paragraph nil))
+  (interactive "P")
+  (ar-th-beg 'paragraph arg))
 
 (defun ar-paragraph-end-position-atpt (&optional arg)
   "Returns a number, end position of PARAGRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'paragraph nil))
+  (interactive "P")
+  (ar-th-end 'paragraph arg))
 
 (defun ar-paragraph-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class PARAGRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'paragraph nil))
+  (interactive "P")
+  (ar-th-gotobeg 'paragraph arg))
 
 (defun ar-paragraph-end-atpt (&optional arg)
   "Goto end of symbol or char-class PARAGRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'paragraph nil))
+  (interactive "P")
+  (ar-th-gotoend 'paragraph arg))
 
 (defun ar-in-paragraph-p-atpt (&optional arg)
   "Returns bounds of PARAGRAPH at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'paragraph nil))
+  (interactive "P")
+  (ar-th-bounds 'paragraph arg))
 
 (defun ar-length-of-paragraph-atpt (&optional arg)
   "Returns beginning of symbol or char-class PARAGRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'paragraph nil))
+  (interactive "P")
+  (ar-th-length 'paragraph arg))
 
 (defun ar-copy-paragraph-atpt (&optional arg)
   "Returns a copy of PARAGRAPH at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'paragraph nil))
+  (interactive "P")
+  (ar-th-copy 'paragraph arg))
 
 (defun ar-delete-paragraph-atpt (&optional arg)
   "Deletes paragraph at point if any.
@@ -7794,43 +7794,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-phone-atpt (&optional arg)
   "Returns a list, borders of phone if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'phone nil))
+  (interactive "P")
+  (ar-th-bounds 'phone arg))
 
 (defun ar-phone-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position PHONE at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'phone nil))
+  (interactive "P")
+  (ar-th-beg 'phone arg))
 
 (defun ar-phone-end-position-atpt (&optional arg)
   "Returns a number, end position of PHONE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'phone nil))
+  (interactive "P")
+  (ar-th-end 'phone arg))
 
 (defun ar-phone-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class PHONE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'phone nil))
+  (interactive "P")
+  (ar-th-gotobeg 'phone arg))
 
 (defun ar-phone-end-atpt (&optional arg)
   "Goto end of symbol or char-class PHONE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'phone nil))
+  (interactive "P")
+  (ar-th-gotoend 'phone arg))
 
 (defun ar-in-phone-p-atpt (&optional arg)
   "Returns bounds of PHONE at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'phone nil))
+  (interactive "P")
+  (ar-th-bounds 'phone arg))
 
 (defun ar-length-of-phone-atpt (&optional arg)
   "Returns beginning of symbol or char-class PHONE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'phone nil))
+  (interactive "P")
+  (ar-th-length 'phone arg))
 
 (defun ar-copy-phone-atpt (&optional arg)
   "Returns a copy of PHONE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'phone nil))
+  (interactive "P")
+  (ar-th-copy 'phone arg))
 
 (defun ar-delete-phone-atpt (&optional arg)
   "Deletes phone at point if any.
@@ -7895,43 +7895,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-region-atpt (&optional arg)
   "Returns a list, borders of region if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'region nil))
+  (interactive "P")
+  (ar-th-bounds 'region arg))
 
 (defun ar-region-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position REGION at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'region nil))
+  (interactive "P")
+  (ar-th-beg 'region arg))
 
 (defun ar-region-end-position-atpt (&optional arg)
   "Returns a number, end position of REGION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'region nil))
+  (interactive "P")
+  (ar-th-end 'region arg))
 
 (defun ar-region-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class REGION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'region nil))
+  (interactive "P")
+  (ar-th-gotobeg 'region arg))
 
 (defun ar-region-end-atpt (&optional arg)
   "Goto end of symbol or char-class REGION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'region nil))
+  (interactive "P")
+  (ar-th-gotoend 'region arg))
 
 (defun ar-in-region-p-atpt (&optional arg)
   "Returns bounds of REGION at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'region nil))
+  (interactive "P")
+  (ar-th-bounds 'region arg))
 
 (defun ar-length-of-region-atpt (&optional arg)
   "Returns beginning of symbol or char-class REGION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'region nil))
+  (interactive "P")
+  (ar-th-length 'region arg))
 
 (defun ar-copy-region-atpt (&optional arg)
   "Returns a copy of REGION at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'region nil))
+  (interactive "P")
+  (ar-th-copy 'region arg))
 
 (defun ar-delete-region-atpt (&optional arg)
   "Deletes region at point if any.
@@ -7996,43 +7996,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-sentence-atpt (&optional arg)
   "Returns a list, borders of sentence if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'sentence nil))
+  (interactive "P")
+  (ar-th-bounds 'sentence arg))
 
 (defun ar-sentence-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position SENTENCE at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'sentence nil))
+  (interactive "P")
+  (ar-th-beg 'sentence arg))
 
 (defun ar-sentence-end-position-atpt (&optional arg)
   "Returns a number, end position of SENTENCE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'sentence nil))
+  (interactive "P")
+  (ar-th-end 'sentence arg))
 
 (defun ar-sentence-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class SENTENCE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'sentence nil))
+  (interactive "P")
+  (ar-th-gotobeg 'sentence arg))
 
 (defun ar-sentence-end-atpt (&optional arg)
   "Goto end of symbol or char-class SENTENCE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'sentence nil))
+  (interactive "P")
+  (ar-th-gotoend 'sentence arg))
 
 (defun ar-in-sentence-p-atpt (&optional arg)
   "Returns bounds of SENTENCE at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'sentence nil))
+  (interactive "P")
+  (ar-th-bounds 'sentence arg))
 
 (defun ar-length-of-sentence-atpt (&optional arg)
   "Returns beginning of symbol or char-class SENTENCE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'sentence nil))
+  (interactive "P")
+  (ar-th-length 'sentence arg))
 
 (defun ar-copy-sentence-atpt (&optional arg)
   "Returns a copy of SENTENCE at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'sentence nil))
+  (interactive "P")
+  (ar-th-copy 'sentence arg))
 
 (defun ar-delete-sentence-atpt (&optional arg)
   "Deletes sentence at point if any.
@@ -8097,43 +8097,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-sexp-atpt (&optional arg)
   "Returns a list, borders of sexp if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'sexp nil))
+  (interactive "P")
+  (ar-th-bounds 'sexp arg))
 
 (defun ar-sexp-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position SEXP at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'sexp nil))
+  (interactive "P")
+  (ar-th-beg 'sexp arg))
 
 (defun ar-sexp-end-position-atpt (&optional arg)
   "Returns a number, end position of SEXP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'sexp nil))
+  (interactive "P")
+  (ar-th-end 'sexp arg))
 
 (defun ar-sexp-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class SEXP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'sexp nil))
+  (interactive "P")
+  (ar-th-gotobeg 'sexp arg))
 
 (defun ar-sexp-end-atpt (&optional arg)
   "Goto end of symbol or char-class SEXP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'sexp nil))
+  (interactive "P")
+  (ar-th-gotoend 'sexp arg))
 
 (defun ar-in-sexp-p-atpt (&optional arg)
   "Returns bounds of SEXP at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'sexp nil))
+  (interactive "P")
+  (ar-th-bounds 'sexp arg))
 
 (defun ar-length-of-sexp-atpt (&optional arg)
   "Returns beginning of symbol or char-class SEXP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'sexp nil))
+  (interactive "P")
+  (ar-th-length 'sexp arg))
 
 (defun ar-copy-sexp-atpt (&optional arg)
   "Returns a copy of SEXP at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'sexp nil))
+  (interactive "P")
+  (ar-th-copy 'sexp arg))
 
 (defun ar-delete-sexp-atpt (&optional arg)
   "Deletes sexp at point if any.
@@ -8198,43 +8198,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-shstruct-atpt (&optional arg)
   "Returns a list, borders of shstruct if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'shstruct nil))
+  (interactive "P")
+  (ar-th-bounds 'shstruct arg))
 
 (defun ar-shstruct-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position SHSTRUCT at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'shstruct nil))
+  (interactive "P")
+  (ar-th-beg 'shstruct arg))
 
 (defun ar-shstruct-end-position-atpt (&optional arg)
   "Returns a number, end position of SHSTRUCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'shstruct nil))
+  (interactive "P")
+  (ar-th-end 'shstruct arg))
 
 (defun ar-shstruct-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class SHSTRUCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'shstruct nil))
+  (interactive "P")
+  (ar-th-gotobeg 'shstruct arg))
 
 (defun ar-shstruct-end-atpt (&optional arg)
   "Goto end of symbol or char-class SHSTRUCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'shstruct nil))
+  (interactive "P")
+  (ar-th-gotoend 'shstruct arg))
 
 (defun ar-in-shstruct-p-atpt (&optional arg)
   "Returns bounds of SHSTRUCT at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'shstruct nil))
+  (interactive "P")
+  (ar-th-bounds 'shstruct arg))
 
 (defun ar-length-of-shstruct-atpt (&optional arg)
   "Returns beginning of symbol or char-class SHSTRUCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'shstruct nil))
+  (interactive "P")
+  (ar-th-length 'shstruct arg))
 
 (defun ar-copy-shstruct-atpt (&optional arg)
   "Returns a copy of SHSTRUCT at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'shstruct nil))
+  (interactive "P")
+  (ar-th-copy 'shstruct arg))
 
 (defun ar-delete-shstruct-atpt (&optional arg)
   "Deletes shstruct at point if any.
@@ -8299,43 +8299,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-symbol-atpt (&optional arg)
   "Returns a list, borders of symbol if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'symbol nil))
+  (interactive "P")
+  (ar-th-bounds 'symbol arg))
 
 (defun ar-symbol-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position SYMBOL at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'symbol nil))
+  (interactive "P")
+  (ar-th-beg 'symbol arg))
 
 (defun ar-symbol-end-position-atpt (&optional arg)
   "Returns a number, end position of SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'symbol nil))
+  (interactive "P")
+  (ar-th-end 'symbol arg))
 
 (defun ar-symbol-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'symbol nil))
+  (interactive "P")
+  (ar-th-gotobeg 'symbol arg))
 
 (defun ar-symbol-end-atpt (&optional arg)
   "Goto end of symbol or char-class SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'symbol nil))
+  (interactive "P")
+  (ar-th-gotoend 'symbol arg))
 
 (defun ar-in-symbol-p-atpt (&optional arg)
   "Returns bounds of SYMBOL at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'symbol nil))
+  (interactive "P")
+  (ar-th-bounds 'symbol arg))
 
 (defun ar-length-of-symbol-atpt (&optional arg)
   "Returns beginning of symbol or char-class SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'symbol nil))
+  (interactive "P")
+  (ar-th-length 'symbol arg))
 
 (defun ar-copy-symbol-atpt (&optional arg)
   "Returns a copy of SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'symbol nil))
+  (interactive "P")
+  (ar-th-copy 'symbol arg))
 
 (defun ar-delete-symbol-atpt (&optional arg)
   "Deletes symbol at point if any.
@@ -8400,43 +8400,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-url-atpt (&optional arg)
   "Returns a list, borders of url if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'url nil))
+  (interactive "P")
+  (ar-th-bounds 'url arg))
 
 (defun ar-url-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position URL at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'url nil))
+  (interactive "P")
+  (ar-th-beg 'url arg))
 
 (defun ar-url-end-position-atpt (&optional arg)
   "Returns a number, end position of URL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'url nil))
+  (interactive "P")
+  (ar-th-end 'url arg))
 
 (defun ar-url-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class URL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'url nil))
+  (interactive "P")
+  (ar-th-gotobeg 'url arg))
 
 (defun ar-url-end-atpt (&optional arg)
   "Goto end of symbol or char-class URL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'url nil))
+  (interactive "P")
+  (ar-th-gotoend 'url arg))
 
 (defun ar-in-url-p-atpt (&optional arg)
   "Returns bounds of URL at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'url nil))
+  (interactive "P")
+  (ar-th-bounds 'url arg))
 
 (defun ar-length-of-url-atpt (&optional arg)
   "Returns beginning of symbol or char-class URL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'url nil))
+  (interactive "P")
+  (ar-th-length 'url arg))
 
 (defun ar-copy-url-atpt (&optional arg)
   "Returns a copy of URL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'url nil))
+  (interactive "P")
+  (ar-th-copy 'url arg))
 
 (defun ar-delete-url-atpt (&optional arg)
   "Deletes url at point if any.
@@ -8501,43 +8501,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-word-atpt (&optional arg)
   "Returns a list, borders of word if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'word nil))
+  (interactive "P")
+  (ar-th-bounds 'word arg))
 
 (defun ar-word-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position WORD at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'word nil))
+  (interactive "P")
+  (ar-th-beg 'word arg))
 
 (defun ar-word-end-position-atpt (&optional arg)
   "Returns a number, end position of WORD at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'word nil))
+  (interactive "P")
+  (ar-th-end 'word arg))
 
 (defun ar-word-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class WORD at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'word nil))
+  (interactive "P")
+  (ar-th-gotobeg 'word arg))
 
 (defun ar-word-end-atpt (&optional arg)
   "Goto end of symbol or char-class WORD at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'word nil))
+  (interactive "P")
+  (ar-th-gotoend 'word arg))
 
 (defun ar-in-word-p-atpt (&optional arg)
   "Returns bounds of WORD at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'word nil))
+  (interactive "P")
+  (ar-th-bounds 'word arg))
 
 (defun ar-length-of-word-atpt (&optional arg)
   "Returns beginning of symbol or char-class WORD at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'word nil))
+  (interactive "P")
+  (ar-th-length 'word arg))
 
 (defun ar-copy-word-atpt (&optional arg)
   "Returns a copy of WORD at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'word nil))
+  (interactive "P")
+  (ar-th-copy 'word arg))
 
 (defun ar-delete-word-atpt (&optional arg)
   "Deletes word at point if any.
@@ -8602,43 +8602,43 @@ With \\[universal-argument] strip delimiters if suitable"
 
 (defun ar-bounds-of-wordalphaonly-atpt (&optional arg)
   "Returns a list, borders of wordalphaonly if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-bounds 'wordalphaonly arg))
 
 (defun ar-wordalphaonly-beginning-position-atpt (&optional arg)
   "Returns a number, beginning position WORDALPHAONLY at point if any, nil otherwise.  "
-  (interactive "p")
-  (ar-th-beg 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-beg 'wordalphaonly arg))
 
 (defun ar-wordalphaonly-end-position-atpt (&optional arg)
   "Returns a number, end position of WORDALPHAONLY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-end 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-end 'wordalphaonly arg))
 
 (defun ar-wordalphaonly-beginning-atpt (&optional arg)
   "Goto beginning of symbol or char-class WORDALPHAONLY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotobeg 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-gotobeg 'wordalphaonly arg))
 
 (defun ar-wordalphaonly-end-atpt (&optional arg)
   "Goto end of symbol or char-class WORDALPHAONLY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-gotoend 'wordalphaonly arg))
 
 (defun ar-in-wordalphaonly-p-atpt (&optional arg)
   "Returns bounds of WORDALPHAONLY at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-bounds 'wordalphaonly arg))
 
 (defun ar-length-of-wordalphaonly-atpt (&optional arg)
   "Returns beginning of symbol or char-class WORDALPHAONLY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-length 'wordalphaonly arg))
 
 (defun ar-copy-wordalphaonly-atpt (&optional arg)
   "Returns a copy of WORDALPHAONLY at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'wordalphaonly nil))
+  (interactive "P")
+  (ar-th-copy 'wordalphaonly arg))
 
 (defun ar-delete-wordalphaonly-atpt (&optional arg)
   "Deletes wordalphaonly at point if any.
@@ -8702,1597 +8702,1597 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-alnum-colon-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'alnum nil))
+  (ar-th-colon 'alnum arg))
 
 (defalias 'ar-cross-alnum-atpt 'ar-alnum-cross-atpt)
 (defun ar-alnum-cross-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'alnum nil))
+  (ar-th-cross 'alnum arg))
 
 (defalias 'ar-doubleslash-alnum-atpt 'ar-alnum-doubleslash-atpt)
 (defun ar-alnum-doubleslash-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'alnum nil))
+  (ar-th-doubleslash 'alnum arg))
 
 (defalias 'ar-backslash-alnum-atpt 'ar-alnum-backslash-atpt)
 (defun ar-alnum-backslash-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'alnum nil))
+  (ar-th-backslash 'alnum arg))
 
 (defalias 'ar-backtick-alnum-atpt 'ar-alnum-backtick-atpt)
 (defun ar-alnum-backtick-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'alnum nil))
+  (ar-th-backtick 'alnum arg))
 
 (defalias 'ar-dollar-alnum-atpt 'ar-alnum-dollar-atpt)
 (defun ar-alnum-dollar-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'alnum nil))
+  (ar-th-dollar 'alnum arg))
 
 (defalias 'ar-doublebacktick-alnum-atpt 'ar-alnum-doublebacktick-atpt)
 (defun ar-alnum-doublebacktick-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'alnum nil))
+  (ar-th-doublebacktick 'alnum arg))
 
 (defalias 'ar-doublequote-alnum-atpt 'ar-alnum-doublequote-atpt)
 (defun ar-alnum-doublequote-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'alnum nil))
+  (ar-th-doublequote 'alnum arg))
 
 (defalias 'ar-equalize-alnum-atpt 'ar-alnum-equalize-atpt)
 (defun ar-alnum-equalize-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'alnum nil))
+  (ar-th-equalize 'alnum arg))
 
 (defalias 'ar-escape-alnum-atpt 'ar-alnum-escape-atpt)
 (defun ar-alnum-escape-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'alnum nil))
+  (ar-th-escape 'alnum arg))
 
 (defalias 'ar-hash-alnum-atpt 'ar-alnum-hash-atpt)
 (defun ar-alnum-hash-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'alnum nil))
+  (ar-th-hash 'alnum arg))
 
 (defalias 'ar-hyphen-alnum-atpt 'ar-alnum-hyphen-atpt)
 (defun ar-alnum-hyphen-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'alnum nil))
+  (ar-th-hyphen 'alnum arg))
 
 (defalias 'ar-singlequote-alnum-atpt 'ar-alnum-singlequote-atpt)
 (defun ar-alnum-singlequote-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'alnum nil))
+  (ar-th-singlequote 'alnum arg))
 
 (defalias 'ar-slash-alnum-atpt 'ar-alnum-slash-atpt)
 (defun ar-alnum-slash-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'alnum nil))
+  (ar-th-slash 'alnum arg))
 
 (defalias 'ar-star-alnum-atpt 'ar-alnum-star-atpt)
 (defun ar-alnum-star-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'alnum nil))
+  (ar-th-star 'alnum arg))
 
 (defalias 'ar-tild-alnum-atpt 'ar-alnum-tild-atpt)
 (defun ar-alnum-tild-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'alnum nil))
+  (ar-th-tild 'alnum arg))
 
 (defalias 'ar-triplebacktick-alnum-atpt 'ar-alnum-triplebacktick-atpt)
 (defun ar-alnum-triplebacktick-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'alnum nil))
+  (ar-th-triplebacktick 'alnum arg))
 
 (defalias 'ar-underscore-alnum-atpt 'ar-alnum-underscore-atpt)
 (defun ar-alnum-underscore-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'alnum nil))
+  (ar-th-underscore 'alnum arg))
 
 (defalias 'ar-whitespace-alnum-atpt 'ar-alnum-whitespace-atpt)
 (defun ar-alnum-whitespace-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'alnum nil))
+  (ar-th-whitespace 'alnum arg))
 
 (defalias 'ar-colon-alpha-atpt 'ar-alpha-colon-atpt)
 (defun ar-alpha-colon-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'alpha nil))
+  (ar-th-colon 'alpha arg))
 
 (defalias 'ar-cross-alpha-atpt 'ar-alpha-cross-atpt)
 (defun ar-alpha-cross-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'alpha nil))
+  (ar-th-cross 'alpha arg))
 
 (defalias 'ar-doubleslash-alpha-atpt 'ar-alpha-doubleslash-atpt)
 (defun ar-alpha-doubleslash-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'alpha nil))
+  (ar-th-doubleslash 'alpha arg))
 
 (defalias 'ar-backslash-alpha-atpt 'ar-alpha-backslash-atpt)
 (defun ar-alpha-backslash-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'alpha nil))
+  (ar-th-backslash 'alpha arg))
 
 (defalias 'ar-backtick-alpha-atpt 'ar-alpha-backtick-atpt)
 (defun ar-alpha-backtick-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'alpha nil))
+  (ar-th-backtick 'alpha arg))
 
 (defalias 'ar-dollar-alpha-atpt 'ar-alpha-dollar-atpt)
 (defun ar-alpha-dollar-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'alpha nil))
+  (ar-th-dollar 'alpha arg))
 
 (defalias 'ar-doublebacktick-alpha-atpt 'ar-alpha-doublebacktick-atpt)
 (defun ar-alpha-doublebacktick-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'alpha nil))
+  (ar-th-doublebacktick 'alpha arg))
 
 (defalias 'ar-doublequote-alpha-atpt 'ar-alpha-doublequote-atpt)
 (defun ar-alpha-doublequote-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'alpha nil))
+  (ar-th-doublequote 'alpha arg))
 
 (defalias 'ar-equalize-alpha-atpt 'ar-alpha-equalize-atpt)
 (defun ar-alpha-equalize-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'alpha nil))
+  (ar-th-equalize 'alpha arg))
 
 (defalias 'ar-escape-alpha-atpt 'ar-alpha-escape-atpt)
 (defun ar-alpha-escape-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'alpha nil))
+  (ar-th-escape 'alpha arg))
 
 (defalias 'ar-hash-alpha-atpt 'ar-alpha-hash-atpt)
 (defun ar-alpha-hash-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'alpha nil))
+  (ar-th-hash 'alpha arg))
 
 (defalias 'ar-hyphen-alpha-atpt 'ar-alpha-hyphen-atpt)
 (defun ar-alpha-hyphen-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'alpha nil))
+  (ar-th-hyphen 'alpha arg))
 
 (defalias 'ar-singlequote-alpha-atpt 'ar-alpha-singlequote-atpt)
 (defun ar-alpha-singlequote-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'alpha nil))
+  (ar-th-singlequote 'alpha arg))
 
 (defalias 'ar-slash-alpha-atpt 'ar-alpha-slash-atpt)
 (defun ar-alpha-slash-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'alpha nil))
+  (ar-th-slash 'alpha arg))
 
 (defalias 'ar-star-alpha-atpt 'ar-alpha-star-atpt)
 (defun ar-alpha-star-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'alpha nil))
+  (ar-th-star 'alpha arg))
 
 (defalias 'ar-tild-alpha-atpt 'ar-alpha-tild-atpt)
 (defun ar-alpha-tild-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'alpha nil))
+  (ar-th-tild 'alpha arg))
 
 (defalias 'ar-triplebacktick-alpha-atpt 'ar-alpha-triplebacktick-atpt)
 (defun ar-alpha-triplebacktick-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'alpha nil))
+  (ar-th-triplebacktick 'alpha arg))
 
 (defalias 'ar-underscore-alpha-atpt 'ar-alpha-underscore-atpt)
 (defun ar-alpha-underscore-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'alpha nil))
+  (ar-th-underscore 'alpha arg))
 
 (defalias 'ar-whitespace-alpha-atpt 'ar-alpha-whitespace-atpt)
 (defun ar-alpha-whitespace-atpt (&optional arg)
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'alpha nil))
+  (ar-th-whitespace 'alpha arg))
 
 (defalias 'ar-colon-ascii-atpt 'ar-ascii-colon-atpt)
 (defun ar-ascii-colon-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'ascii nil))
+  (ar-th-colon 'ascii arg))
 
 (defalias 'ar-cross-ascii-atpt 'ar-ascii-cross-atpt)
 (defun ar-ascii-cross-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'ascii nil))
+  (ar-th-cross 'ascii arg))
 
 (defalias 'ar-doubleslash-ascii-atpt 'ar-ascii-doubleslash-atpt)
 (defun ar-ascii-doubleslash-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'ascii nil))
+  (ar-th-doubleslash 'ascii arg))
 
 (defalias 'ar-backslash-ascii-atpt 'ar-ascii-backslash-atpt)
 (defun ar-ascii-backslash-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'ascii nil))
+  (ar-th-backslash 'ascii arg))
 
 (defalias 'ar-backtick-ascii-atpt 'ar-ascii-backtick-atpt)
 (defun ar-ascii-backtick-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'ascii nil))
+  (ar-th-backtick 'ascii arg))
 
 (defalias 'ar-dollar-ascii-atpt 'ar-ascii-dollar-atpt)
 (defun ar-ascii-dollar-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'ascii nil))
+  (ar-th-dollar 'ascii arg))
 
 (defalias 'ar-doublebacktick-ascii-atpt 'ar-ascii-doublebacktick-atpt)
 (defun ar-ascii-doublebacktick-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'ascii nil))
+  (ar-th-doublebacktick 'ascii arg))
 
 (defalias 'ar-doublequote-ascii-atpt 'ar-ascii-doublequote-atpt)
 (defun ar-ascii-doublequote-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'ascii nil))
+  (ar-th-doublequote 'ascii arg))
 
 (defalias 'ar-equalize-ascii-atpt 'ar-ascii-equalize-atpt)
 (defun ar-ascii-equalize-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'ascii nil))
+  (ar-th-equalize 'ascii arg))
 
 (defalias 'ar-escape-ascii-atpt 'ar-ascii-escape-atpt)
 (defun ar-ascii-escape-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'ascii nil))
+  (ar-th-escape 'ascii arg))
 
 (defalias 'ar-hash-ascii-atpt 'ar-ascii-hash-atpt)
 (defun ar-ascii-hash-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'ascii nil))
+  (ar-th-hash 'ascii arg))
 
 (defalias 'ar-hyphen-ascii-atpt 'ar-ascii-hyphen-atpt)
 (defun ar-ascii-hyphen-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'ascii nil))
+  (ar-th-hyphen 'ascii arg))
 
 (defalias 'ar-singlequote-ascii-atpt 'ar-ascii-singlequote-atpt)
 (defun ar-ascii-singlequote-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'ascii nil))
+  (ar-th-singlequote 'ascii arg))
 
 (defalias 'ar-slash-ascii-atpt 'ar-ascii-slash-atpt)
 (defun ar-ascii-slash-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'ascii nil))
+  (ar-th-slash 'ascii arg))
 
 (defalias 'ar-star-ascii-atpt 'ar-ascii-star-atpt)
 (defun ar-ascii-star-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'ascii nil))
+  (ar-th-star 'ascii arg))
 
 (defalias 'ar-tild-ascii-atpt 'ar-ascii-tild-atpt)
 (defun ar-ascii-tild-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'ascii nil))
+  (ar-th-tild 'ascii arg))
 
 (defalias 'ar-triplebacktick-ascii-atpt 'ar-ascii-triplebacktick-atpt)
 (defun ar-ascii-triplebacktick-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'ascii nil))
+  (ar-th-triplebacktick 'ascii arg))
 
 (defalias 'ar-underscore-ascii-atpt 'ar-ascii-underscore-atpt)
 (defun ar-ascii-underscore-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'ascii nil))
+  (ar-th-underscore 'ascii arg))
 
 (defalias 'ar-whitespace-ascii-atpt 'ar-ascii-whitespace-atpt)
 (defun ar-ascii-whitespace-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'ascii nil))
+  (ar-th-whitespace 'ascii arg))
 
 (defalias 'ar-colon-blank-atpt 'ar-blank-colon-atpt)
 (defun ar-blank-colon-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'blank nil))
+  (ar-th-colon 'blank arg))
 
 (defalias 'ar-cross-blank-atpt 'ar-blank-cross-atpt)
 (defun ar-blank-cross-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'blank nil))
+  (ar-th-cross 'blank arg))
 
 (defalias 'ar-doubleslash-blank-atpt 'ar-blank-doubleslash-atpt)
 (defun ar-blank-doubleslash-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'blank nil))
+  (ar-th-doubleslash 'blank arg))
 
 (defalias 'ar-backslash-blank-atpt 'ar-blank-backslash-atpt)
 (defun ar-blank-backslash-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'blank nil))
+  (ar-th-backslash 'blank arg))
 
 (defalias 'ar-backtick-blank-atpt 'ar-blank-backtick-atpt)
 (defun ar-blank-backtick-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'blank nil))
+  (ar-th-backtick 'blank arg))
 
 (defalias 'ar-dollar-blank-atpt 'ar-blank-dollar-atpt)
 (defun ar-blank-dollar-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'blank nil))
+  (ar-th-dollar 'blank arg))
 
 (defalias 'ar-doublebacktick-blank-atpt 'ar-blank-doublebacktick-atpt)
 (defun ar-blank-doublebacktick-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'blank nil))
+  (ar-th-doublebacktick 'blank arg))
 
 (defalias 'ar-doublequote-blank-atpt 'ar-blank-doublequote-atpt)
 (defun ar-blank-doublequote-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'blank nil))
+  (ar-th-doublequote 'blank arg))
 
 (defalias 'ar-equalize-blank-atpt 'ar-blank-equalize-atpt)
 (defun ar-blank-equalize-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'blank nil))
+  (ar-th-equalize 'blank arg))
 
 (defalias 'ar-escape-blank-atpt 'ar-blank-escape-atpt)
 (defun ar-blank-escape-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'blank nil))
+  (ar-th-escape 'blank arg))
 
 (defalias 'ar-hash-blank-atpt 'ar-blank-hash-atpt)
 (defun ar-blank-hash-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'blank nil))
+  (ar-th-hash 'blank arg))
 
 (defalias 'ar-hyphen-blank-atpt 'ar-blank-hyphen-atpt)
 (defun ar-blank-hyphen-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'blank nil))
+  (ar-th-hyphen 'blank arg))
 
 (defalias 'ar-singlequote-blank-atpt 'ar-blank-singlequote-atpt)
 (defun ar-blank-singlequote-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'blank nil))
+  (ar-th-singlequote 'blank arg))
 
 (defalias 'ar-slash-blank-atpt 'ar-blank-slash-atpt)
 (defun ar-blank-slash-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'blank nil))
+  (ar-th-slash 'blank arg))
 
 (defalias 'ar-star-blank-atpt 'ar-blank-star-atpt)
 (defun ar-blank-star-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'blank nil))
+  (ar-th-star 'blank arg))
 
 (defalias 'ar-tild-blank-atpt 'ar-blank-tild-atpt)
 (defun ar-blank-tild-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'blank nil))
+  (ar-th-tild 'blank arg))
 
 (defalias 'ar-triplebacktick-blank-atpt 'ar-blank-triplebacktick-atpt)
 (defun ar-blank-triplebacktick-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'blank nil))
+  (ar-th-triplebacktick 'blank arg))
 
 (defalias 'ar-underscore-blank-atpt 'ar-blank-underscore-atpt)
 (defun ar-blank-underscore-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'blank nil))
+  (ar-th-underscore 'blank arg))
 
 (defalias 'ar-whitespace-blank-atpt 'ar-blank-whitespace-atpt)
 (defun ar-blank-whitespace-atpt (&optional arg)
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'blank nil))
+  (ar-th-whitespace 'blank arg))
 
 (defalias 'ar-colon-cntrl-atpt 'ar-cntrl-colon-atpt)
 (defun ar-cntrl-colon-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'cntrl nil))
+  (ar-th-colon 'cntrl arg))
 
 (defalias 'ar-cross-cntrl-atpt 'ar-cntrl-cross-atpt)
 (defun ar-cntrl-cross-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'cntrl nil))
+  (ar-th-cross 'cntrl arg))
 
 (defalias 'ar-doubleslash-cntrl-atpt 'ar-cntrl-doubleslash-atpt)
 (defun ar-cntrl-doubleslash-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'cntrl nil))
+  (ar-th-doubleslash 'cntrl arg))
 
 (defalias 'ar-backslash-cntrl-atpt 'ar-cntrl-backslash-atpt)
 (defun ar-cntrl-backslash-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'cntrl nil))
+  (ar-th-backslash 'cntrl arg))
 
 (defalias 'ar-backtick-cntrl-atpt 'ar-cntrl-backtick-atpt)
 (defun ar-cntrl-backtick-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'cntrl nil))
+  (ar-th-backtick 'cntrl arg))
 
 (defalias 'ar-dollar-cntrl-atpt 'ar-cntrl-dollar-atpt)
 (defun ar-cntrl-dollar-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'cntrl nil))
+  (ar-th-dollar 'cntrl arg))
 
 (defalias 'ar-doublebacktick-cntrl-atpt 'ar-cntrl-doublebacktick-atpt)
 (defun ar-cntrl-doublebacktick-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'cntrl nil))
+  (ar-th-doublebacktick 'cntrl arg))
 
 (defalias 'ar-doublequote-cntrl-atpt 'ar-cntrl-doublequote-atpt)
 (defun ar-cntrl-doublequote-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'cntrl nil))
+  (ar-th-doublequote 'cntrl arg))
 
 (defalias 'ar-equalize-cntrl-atpt 'ar-cntrl-equalize-atpt)
 (defun ar-cntrl-equalize-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'cntrl nil))
+  (ar-th-equalize 'cntrl arg))
 
 (defalias 'ar-escape-cntrl-atpt 'ar-cntrl-escape-atpt)
 (defun ar-cntrl-escape-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'cntrl nil))
+  (ar-th-escape 'cntrl arg))
 
 (defalias 'ar-hash-cntrl-atpt 'ar-cntrl-hash-atpt)
 (defun ar-cntrl-hash-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'cntrl nil))
+  (ar-th-hash 'cntrl arg))
 
 (defalias 'ar-hyphen-cntrl-atpt 'ar-cntrl-hyphen-atpt)
 (defun ar-cntrl-hyphen-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'cntrl nil))
+  (ar-th-hyphen 'cntrl arg))
 
 (defalias 'ar-singlequote-cntrl-atpt 'ar-cntrl-singlequote-atpt)
 (defun ar-cntrl-singlequote-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'cntrl nil))
+  (ar-th-singlequote 'cntrl arg))
 
 (defalias 'ar-slash-cntrl-atpt 'ar-cntrl-slash-atpt)
 (defun ar-cntrl-slash-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'cntrl nil))
+  (ar-th-slash 'cntrl arg))
 
 (defalias 'ar-star-cntrl-atpt 'ar-cntrl-star-atpt)
 (defun ar-cntrl-star-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'cntrl nil))
+  (ar-th-star 'cntrl arg))
 
 (defalias 'ar-tild-cntrl-atpt 'ar-cntrl-tild-atpt)
 (defun ar-cntrl-tild-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'cntrl nil))
+  (ar-th-tild 'cntrl arg))
 
 (defalias 'ar-triplebacktick-cntrl-atpt 'ar-cntrl-triplebacktick-atpt)
 (defun ar-cntrl-triplebacktick-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'cntrl nil))
+  (ar-th-triplebacktick 'cntrl arg))
 
 (defalias 'ar-underscore-cntrl-atpt 'ar-cntrl-underscore-atpt)
 (defun ar-cntrl-underscore-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'cntrl nil))
+  (ar-th-underscore 'cntrl arg))
 
 (defalias 'ar-whitespace-cntrl-atpt 'ar-cntrl-whitespace-atpt)
 (defun ar-cntrl-whitespace-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'cntrl nil))
+  (ar-th-whitespace 'cntrl arg))
 
 (defalias 'ar-colon-digit-atpt 'ar-digit-colon-atpt)
 (defun ar-digit-colon-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'digit nil))
+  (ar-th-colon 'digit arg))
 
 (defalias 'ar-cross-digit-atpt 'ar-digit-cross-atpt)
 (defun ar-digit-cross-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'digit nil))
+  (ar-th-cross 'digit arg))
 
 (defalias 'ar-doubleslash-digit-atpt 'ar-digit-doubleslash-atpt)
 (defun ar-digit-doubleslash-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'digit nil))
+  (ar-th-doubleslash 'digit arg))
 
 (defalias 'ar-backslash-digit-atpt 'ar-digit-backslash-atpt)
 (defun ar-digit-backslash-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'digit nil))
+  (ar-th-backslash 'digit arg))
 
 (defalias 'ar-backtick-digit-atpt 'ar-digit-backtick-atpt)
 (defun ar-digit-backtick-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'digit nil))
+  (ar-th-backtick 'digit arg))
 
 (defalias 'ar-dollar-digit-atpt 'ar-digit-dollar-atpt)
 (defun ar-digit-dollar-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'digit nil))
+  (ar-th-dollar 'digit arg))
 
 (defalias 'ar-doublebacktick-digit-atpt 'ar-digit-doublebacktick-atpt)
 (defun ar-digit-doublebacktick-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'digit nil))
+  (ar-th-doublebacktick 'digit arg))
 
 (defalias 'ar-doublequote-digit-atpt 'ar-digit-doublequote-atpt)
 (defun ar-digit-doublequote-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'digit nil))
+  (ar-th-doublequote 'digit arg))
 
 (defalias 'ar-equalize-digit-atpt 'ar-digit-equalize-atpt)
 (defun ar-digit-equalize-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'digit nil))
+  (ar-th-equalize 'digit arg))
 
 (defalias 'ar-escape-digit-atpt 'ar-digit-escape-atpt)
 (defun ar-digit-escape-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'digit nil))
+  (ar-th-escape 'digit arg))
 
 (defalias 'ar-hash-digit-atpt 'ar-digit-hash-atpt)
 (defun ar-digit-hash-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'digit nil))
+  (ar-th-hash 'digit arg))
 
 (defalias 'ar-hyphen-digit-atpt 'ar-digit-hyphen-atpt)
 (defun ar-digit-hyphen-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'digit nil))
+  (ar-th-hyphen 'digit arg))
 
 (defalias 'ar-singlequote-digit-atpt 'ar-digit-singlequote-atpt)
 (defun ar-digit-singlequote-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'digit nil))
+  (ar-th-singlequote 'digit arg))
 
 (defalias 'ar-slash-digit-atpt 'ar-digit-slash-atpt)
 (defun ar-digit-slash-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'digit nil))
+  (ar-th-slash 'digit arg))
 
 (defalias 'ar-star-digit-atpt 'ar-digit-star-atpt)
 (defun ar-digit-star-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'digit nil))
+  (ar-th-star 'digit arg))
 
 (defalias 'ar-tild-digit-atpt 'ar-digit-tild-atpt)
 (defun ar-digit-tild-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'digit nil))
+  (ar-th-tild 'digit arg))
 
 (defalias 'ar-triplebacktick-digit-atpt 'ar-digit-triplebacktick-atpt)
 (defun ar-digit-triplebacktick-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'digit nil))
+  (ar-th-triplebacktick 'digit arg))
 
 (defalias 'ar-underscore-digit-atpt 'ar-digit-underscore-atpt)
 (defun ar-digit-underscore-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'digit nil))
+  (ar-th-underscore 'digit arg))
 
 (defalias 'ar-whitespace-digit-atpt 'ar-digit-whitespace-atpt)
 (defun ar-digit-whitespace-atpt (&optional arg)
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'digit nil))
+  (ar-th-whitespace 'digit arg))
 
 (defalias 'ar-colon-graph-atpt 'ar-graph-colon-atpt)
 (defun ar-graph-colon-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'graph nil))
+  (ar-th-colon 'graph arg))
 
 (defalias 'ar-cross-graph-atpt 'ar-graph-cross-atpt)
 (defun ar-graph-cross-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'graph nil))
+  (ar-th-cross 'graph arg))
 
 (defalias 'ar-doubleslash-graph-atpt 'ar-graph-doubleslash-atpt)
 (defun ar-graph-doubleslash-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'graph nil))
+  (ar-th-doubleslash 'graph arg))
 
 (defalias 'ar-backslash-graph-atpt 'ar-graph-backslash-atpt)
 (defun ar-graph-backslash-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'graph nil))
+  (ar-th-backslash 'graph arg))
 
 (defalias 'ar-backtick-graph-atpt 'ar-graph-backtick-atpt)
 (defun ar-graph-backtick-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'graph nil))
+  (ar-th-backtick 'graph arg))
 
 (defalias 'ar-dollar-graph-atpt 'ar-graph-dollar-atpt)
 (defun ar-graph-dollar-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'graph nil))
+  (ar-th-dollar 'graph arg))
 
 (defalias 'ar-doublebacktick-graph-atpt 'ar-graph-doublebacktick-atpt)
 (defun ar-graph-doublebacktick-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'graph nil))
+  (ar-th-doublebacktick 'graph arg))
 
 (defalias 'ar-doublequote-graph-atpt 'ar-graph-doublequote-atpt)
 (defun ar-graph-doublequote-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'graph nil))
+  (ar-th-doublequote 'graph arg))
 
 (defalias 'ar-equalize-graph-atpt 'ar-graph-equalize-atpt)
 (defun ar-graph-equalize-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'graph nil))
+  (ar-th-equalize 'graph arg))
 
 (defalias 'ar-escape-graph-atpt 'ar-graph-escape-atpt)
 (defun ar-graph-escape-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'graph nil))
+  (ar-th-escape 'graph arg))
 
 (defalias 'ar-hash-graph-atpt 'ar-graph-hash-atpt)
 (defun ar-graph-hash-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'graph nil))
+  (ar-th-hash 'graph arg))
 
 (defalias 'ar-hyphen-graph-atpt 'ar-graph-hyphen-atpt)
 (defun ar-graph-hyphen-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'graph nil))
+  (ar-th-hyphen 'graph arg))
 
 (defalias 'ar-singlequote-graph-atpt 'ar-graph-singlequote-atpt)
 (defun ar-graph-singlequote-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'graph nil))
+  (ar-th-singlequote 'graph arg))
 
 (defalias 'ar-slash-graph-atpt 'ar-graph-slash-atpt)
 (defun ar-graph-slash-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'graph nil))
+  (ar-th-slash 'graph arg))
 
 (defalias 'ar-star-graph-atpt 'ar-graph-star-atpt)
 (defun ar-graph-star-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'graph nil))
+  (ar-th-star 'graph arg))
 
 (defalias 'ar-tild-graph-atpt 'ar-graph-tild-atpt)
 (defun ar-graph-tild-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'graph nil))
+  (ar-th-tild 'graph arg))
 
 (defalias 'ar-triplebacktick-graph-atpt 'ar-graph-triplebacktick-atpt)
 (defun ar-graph-triplebacktick-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'graph nil))
+  (ar-th-triplebacktick 'graph arg))
 
 (defalias 'ar-underscore-graph-atpt 'ar-graph-underscore-atpt)
 (defun ar-graph-underscore-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'graph nil))
+  (ar-th-underscore 'graph arg))
 
 (defalias 'ar-whitespace-graph-atpt 'ar-graph-whitespace-atpt)
 (defun ar-graph-whitespace-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'graph nil))
+  (ar-th-whitespace 'graph arg))
 
 (defalias 'ar-colon-lower-atpt 'ar-lower-colon-atpt)
 (defun ar-lower-colon-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'lower nil))
+  (ar-th-colon 'lower arg))
 
 (defalias 'ar-cross-lower-atpt 'ar-lower-cross-atpt)
 (defun ar-lower-cross-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'lower nil))
+  (ar-th-cross 'lower arg))
 
 (defalias 'ar-doubleslash-lower-atpt 'ar-lower-doubleslash-atpt)
 (defun ar-lower-doubleslash-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'lower nil))
+  (ar-th-doubleslash 'lower arg))
 
 (defalias 'ar-backslash-lower-atpt 'ar-lower-backslash-atpt)
 (defun ar-lower-backslash-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'lower nil))
+  (ar-th-backslash 'lower arg))
 
 (defalias 'ar-backtick-lower-atpt 'ar-lower-backtick-atpt)
 (defun ar-lower-backtick-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'lower nil))
+  (ar-th-backtick 'lower arg))
 
 (defalias 'ar-dollar-lower-atpt 'ar-lower-dollar-atpt)
 (defun ar-lower-dollar-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'lower nil))
+  (ar-th-dollar 'lower arg))
 
 (defalias 'ar-doublebacktick-lower-atpt 'ar-lower-doublebacktick-atpt)
 (defun ar-lower-doublebacktick-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'lower nil))
+  (ar-th-doublebacktick 'lower arg))
 
 (defalias 'ar-doublequote-lower-atpt 'ar-lower-doublequote-atpt)
 (defun ar-lower-doublequote-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'lower nil))
+  (ar-th-doublequote 'lower arg))
 
 (defalias 'ar-equalize-lower-atpt 'ar-lower-equalize-atpt)
 (defun ar-lower-equalize-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'lower nil))
+  (ar-th-equalize 'lower arg))
 
 (defalias 'ar-escape-lower-atpt 'ar-lower-escape-atpt)
 (defun ar-lower-escape-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'lower nil))
+  (ar-th-escape 'lower arg))
 
 (defalias 'ar-hash-lower-atpt 'ar-lower-hash-atpt)
 (defun ar-lower-hash-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'lower nil))
+  (ar-th-hash 'lower arg))
 
 (defalias 'ar-hyphen-lower-atpt 'ar-lower-hyphen-atpt)
 (defun ar-lower-hyphen-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'lower nil))
+  (ar-th-hyphen 'lower arg))
 
 (defalias 'ar-singlequote-lower-atpt 'ar-lower-singlequote-atpt)
 (defun ar-lower-singlequote-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'lower nil))
+  (ar-th-singlequote 'lower arg))
 
 (defalias 'ar-slash-lower-atpt 'ar-lower-slash-atpt)
 (defun ar-lower-slash-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'lower nil))
+  (ar-th-slash 'lower arg))
 
 (defalias 'ar-star-lower-atpt 'ar-lower-star-atpt)
 (defun ar-lower-star-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'lower nil))
+  (ar-th-star 'lower arg))
 
 (defalias 'ar-tild-lower-atpt 'ar-lower-tild-atpt)
 (defun ar-lower-tild-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'lower nil))
+  (ar-th-tild 'lower arg))
 
 (defalias 'ar-triplebacktick-lower-atpt 'ar-lower-triplebacktick-atpt)
 (defun ar-lower-triplebacktick-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'lower nil))
+  (ar-th-triplebacktick 'lower arg))
 
 (defalias 'ar-underscore-lower-atpt 'ar-lower-underscore-atpt)
 (defun ar-lower-underscore-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'lower nil))
+  (ar-th-underscore 'lower arg))
 
 (defalias 'ar-whitespace-lower-atpt 'ar-lower-whitespace-atpt)
 (defun ar-lower-whitespace-atpt (&optional arg)
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'lower nil))
+  (ar-th-whitespace 'lower arg))
 
 (defalias 'ar-colon-nonascii-atpt 'ar-nonascii-colon-atpt)
 (defun ar-nonascii-colon-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'nonascii nil))
+  (ar-th-colon 'nonascii arg))
 
 (defalias 'ar-cross-nonascii-atpt 'ar-nonascii-cross-atpt)
 (defun ar-nonascii-cross-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'nonascii nil))
+  (ar-th-cross 'nonascii arg))
 
 (defalias 'ar-doubleslash-nonascii-atpt 'ar-nonascii-doubleslash-atpt)
 (defun ar-nonascii-doubleslash-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'nonascii nil))
+  (ar-th-doubleslash 'nonascii arg))
 
 (defalias 'ar-backslash-nonascii-atpt 'ar-nonascii-backslash-atpt)
 (defun ar-nonascii-backslash-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'nonascii nil))
+  (ar-th-backslash 'nonascii arg))
 
 (defalias 'ar-backtick-nonascii-atpt 'ar-nonascii-backtick-atpt)
 (defun ar-nonascii-backtick-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'nonascii nil))
+  (ar-th-backtick 'nonascii arg))
 
 (defalias 'ar-dollar-nonascii-atpt 'ar-nonascii-dollar-atpt)
 (defun ar-nonascii-dollar-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'nonascii nil))
+  (ar-th-dollar 'nonascii arg))
 
 (defalias 'ar-doublebacktick-nonascii-atpt 'ar-nonascii-doublebacktick-atpt)
 (defun ar-nonascii-doublebacktick-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'nonascii nil))
+  (ar-th-doublebacktick 'nonascii arg))
 
 (defalias 'ar-doublequote-nonascii-atpt 'ar-nonascii-doublequote-atpt)
 (defun ar-nonascii-doublequote-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'nonascii nil))
+  (ar-th-doublequote 'nonascii arg))
 
 (defalias 'ar-equalize-nonascii-atpt 'ar-nonascii-equalize-atpt)
 (defun ar-nonascii-equalize-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'nonascii nil))
+  (ar-th-equalize 'nonascii arg))
 
 (defalias 'ar-escape-nonascii-atpt 'ar-nonascii-escape-atpt)
 (defun ar-nonascii-escape-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'nonascii nil))
+  (ar-th-escape 'nonascii arg))
 
 (defalias 'ar-hash-nonascii-atpt 'ar-nonascii-hash-atpt)
 (defun ar-nonascii-hash-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'nonascii nil))
+  (ar-th-hash 'nonascii arg))
 
 (defalias 'ar-hyphen-nonascii-atpt 'ar-nonascii-hyphen-atpt)
 (defun ar-nonascii-hyphen-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'nonascii nil))
+  (ar-th-hyphen 'nonascii arg))
 
 (defalias 'ar-singlequote-nonascii-atpt 'ar-nonascii-singlequote-atpt)
 (defun ar-nonascii-singlequote-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'nonascii nil))
+  (ar-th-singlequote 'nonascii arg))
 
 (defalias 'ar-slash-nonascii-atpt 'ar-nonascii-slash-atpt)
 (defun ar-nonascii-slash-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'nonascii nil))
+  (ar-th-slash 'nonascii arg))
 
 (defalias 'ar-star-nonascii-atpt 'ar-nonascii-star-atpt)
 (defun ar-nonascii-star-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'nonascii nil))
+  (ar-th-star 'nonascii arg))
 
 (defalias 'ar-tild-nonascii-atpt 'ar-nonascii-tild-atpt)
 (defun ar-nonascii-tild-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'nonascii nil))
+  (ar-th-tild 'nonascii arg))
 
 (defalias 'ar-triplebacktick-nonascii-atpt 'ar-nonascii-triplebacktick-atpt)
 (defun ar-nonascii-triplebacktick-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'nonascii nil))
+  (ar-th-triplebacktick 'nonascii arg))
 
 (defalias 'ar-underscore-nonascii-atpt 'ar-nonascii-underscore-atpt)
 (defun ar-nonascii-underscore-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'nonascii nil))
+  (ar-th-underscore 'nonascii arg))
 
 (defalias 'ar-whitespace-nonascii-atpt 'ar-nonascii-whitespace-atpt)
 (defun ar-nonascii-whitespace-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'nonascii nil))
+  (ar-th-whitespace 'nonascii arg))
 
 (defalias 'ar-colon-print-atpt 'ar-print-colon-atpt)
 (defun ar-print-colon-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'print nil))
+  (ar-th-colon 'print arg))
 
 (defalias 'ar-cross-print-atpt 'ar-print-cross-atpt)
 (defun ar-print-cross-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'print nil))
+  (ar-th-cross 'print arg))
 
 (defalias 'ar-doubleslash-print-atpt 'ar-print-doubleslash-atpt)
 (defun ar-print-doubleslash-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'print nil))
+  (ar-th-doubleslash 'print arg))
 
 (defalias 'ar-backslash-print-atpt 'ar-print-backslash-atpt)
 (defun ar-print-backslash-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'print nil))
+  (ar-th-backslash 'print arg))
 
 (defalias 'ar-backtick-print-atpt 'ar-print-backtick-atpt)
 (defun ar-print-backtick-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'print nil))
+  (ar-th-backtick 'print arg))
 
 (defalias 'ar-dollar-print-atpt 'ar-print-dollar-atpt)
 (defun ar-print-dollar-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'print nil))
+  (ar-th-dollar 'print arg))
 
 (defalias 'ar-doublebacktick-print-atpt 'ar-print-doublebacktick-atpt)
 (defun ar-print-doublebacktick-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'print nil))
+  (ar-th-doublebacktick 'print arg))
 
 (defalias 'ar-doublequote-print-atpt 'ar-print-doublequote-atpt)
 (defun ar-print-doublequote-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'print nil))
+  (ar-th-doublequote 'print arg))
 
 (defalias 'ar-equalize-print-atpt 'ar-print-equalize-atpt)
 (defun ar-print-equalize-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'print nil))
+  (ar-th-equalize 'print arg))
 
 (defalias 'ar-escape-print-atpt 'ar-print-escape-atpt)
 (defun ar-print-escape-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'print nil))
+  (ar-th-escape 'print arg))
 
 (defalias 'ar-hash-print-atpt 'ar-print-hash-atpt)
 (defun ar-print-hash-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'print nil))
+  (ar-th-hash 'print arg))
 
 (defalias 'ar-hyphen-print-atpt 'ar-print-hyphen-atpt)
 (defun ar-print-hyphen-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'print nil))
+  (ar-th-hyphen 'print arg))
 
 (defalias 'ar-singlequote-print-atpt 'ar-print-singlequote-atpt)
 (defun ar-print-singlequote-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'print nil))
+  (ar-th-singlequote 'print arg))
 
 (defalias 'ar-slash-print-atpt 'ar-print-slash-atpt)
 (defun ar-print-slash-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'print nil))
+  (ar-th-slash 'print arg))
 
 (defalias 'ar-star-print-atpt 'ar-print-star-atpt)
 (defun ar-print-star-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'print nil))
+  (ar-th-star 'print arg))
 
 (defalias 'ar-tild-print-atpt 'ar-print-tild-atpt)
 (defun ar-print-tild-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'print nil))
+  (ar-th-tild 'print arg))
 
 (defalias 'ar-triplebacktick-print-atpt 'ar-print-triplebacktick-atpt)
 (defun ar-print-triplebacktick-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'print nil))
+  (ar-th-triplebacktick 'print arg))
 
 (defalias 'ar-underscore-print-atpt 'ar-print-underscore-atpt)
 (defun ar-print-underscore-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'print nil))
+  (ar-th-underscore 'print arg))
 
 (defalias 'ar-whitespace-print-atpt 'ar-print-whitespace-atpt)
 (defun ar-print-whitespace-atpt (&optional arg)
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'print nil))
+  (ar-th-whitespace 'print arg))
 
 (defalias 'ar-colon-punct-atpt 'ar-punct-colon-atpt)
 (defun ar-punct-colon-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'punct nil))
+  (ar-th-colon 'punct arg))
 
 (defalias 'ar-cross-punct-atpt 'ar-punct-cross-atpt)
 (defun ar-punct-cross-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'punct nil))
+  (ar-th-cross 'punct arg))
 
 (defalias 'ar-doubleslash-punct-atpt 'ar-punct-doubleslash-atpt)
 (defun ar-punct-doubleslash-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'punct nil))
+  (ar-th-doubleslash 'punct arg))
 
 (defalias 'ar-backslash-punct-atpt 'ar-punct-backslash-atpt)
 (defun ar-punct-backslash-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'punct nil))
+  (ar-th-backslash 'punct arg))
 
 (defalias 'ar-backtick-punct-atpt 'ar-punct-backtick-atpt)
 (defun ar-punct-backtick-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'punct nil))
+  (ar-th-backtick 'punct arg))
 
 (defalias 'ar-dollar-punct-atpt 'ar-punct-dollar-atpt)
 (defun ar-punct-dollar-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'punct nil))
+  (ar-th-dollar 'punct arg))
 
 (defalias 'ar-doublebacktick-punct-atpt 'ar-punct-doublebacktick-atpt)
 (defun ar-punct-doublebacktick-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'punct nil))
+  (ar-th-doublebacktick 'punct arg))
 
 (defalias 'ar-doublequote-punct-atpt 'ar-punct-doublequote-atpt)
 (defun ar-punct-doublequote-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'punct nil))
+  (ar-th-doublequote 'punct arg))
 
 (defalias 'ar-equalize-punct-atpt 'ar-punct-equalize-atpt)
 (defun ar-punct-equalize-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'punct nil))
+  (ar-th-equalize 'punct arg))
 
 (defalias 'ar-escape-punct-atpt 'ar-punct-escape-atpt)
 (defun ar-punct-escape-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'punct nil))
+  (ar-th-escape 'punct arg))
 
 (defalias 'ar-hash-punct-atpt 'ar-punct-hash-atpt)
 (defun ar-punct-hash-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'punct nil))
+  (ar-th-hash 'punct arg))
 
 (defalias 'ar-hyphen-punct-atpt 'ar-punct-hyphen-atpt)
 (defun ar-punct-hyphen-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'punct nil))
+  (ar-th-hyphen 'punct arg))
 
 (defalias 'ar-singlequote-punct-atpt 'ar-punct-singlequote-atpt)
 (defun ar-punct-singlequote-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'punct nil))
+  (ar-th-singlequote 'punct arg))
 
 (defalias 'ar-slash-punct-atpt 'ar-punct-slash-atpt)
 (defun ar-punct-slash-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'punct nil))
+  (ar-th-slash 'punct arg))
 
 (defalias 'ar-star-punct-atpt 'ar-punct-star-atpt)
 (defun ar-punct-star-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'punct nil))
+  (ar-th-star 'punct arg))
 
 (defalias 'ar-tild-punct-atpt 'ar-punct-tild-atpt)
 (defun ar-punct-tild-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'punct nil))
+  (ar-th-tild 'punct arg))
 
 (defalias 'ar-triplebacktick-punct-atpt 'ar-punct-triplebacktick-atpt)
 (defun ar-punct-triplebacktick-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'punct nil))
+  (ar-th-triplebacktick 'punct arg))
 
 (defalias 'ar-underscore-punct-atpt 'ar-punct-underscore-atpt)
 (defun ar-punct-underscore-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'punct nil))
+  (ar-th-underscore 'punct arg))
 
 (defalias 'ar-whitespace-punct-atpt 'ar-punct-whitespace-atpt)
 (defun ar-punct-whitespace-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'punct nil))
+  (ar-th-whitespace 'punct arg))
 
 (defalias 'ar-colon-space-atpt 'ar-space-colon-atpt)
 (defun ar-space-colon-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'space nil))
+  (ar-th-colon 'space arg))
 
 (defalias 'ar-cross-space-atpt 'ar-space-cross-atpt)
 (defun ar-space-cross-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'space nil))
+  (ar-th-cross 'space arg))
 
 (defalias 'ar-doubleslash-space-atpt 'ar-space-doubleslash-atpt)
 (defun ar-space-doubleslash-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'space nil))
+  (ar-th-doubleslash 'space arg))
 
 (defalias 'ar-backslash-space-atpt 'ar-space-backslash-atpt)
 (defun ar-space-backslash-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'space nil))
+  (ar-th-backslash 'space arg))
 
 (defalias 'ar-backtick-space-atpt 'ar-space-backtick-atpt)
 (defun ar-space-backtick-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'space nil))
+  (ar-th-backtick 'space arg))
 
 (defalias 'ar-dollar-space-atpt 'ar-space-dollar-atpt)
 (defun ar-space-dollar-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'space nil))
+  (ar-th-dollar 'space arg))
 
 (defalias 'ar-doublebacktick-space-atpt 'ar-space-doublebacktick-atpt)
 (defun ar-space-doublebacktick-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'space nil))
+  (ar-th-doublebacktick 'space arg))
 
 (defalias 'ar-doublequote-space-atpt 'ar-space-doublequote-atpt)
 (defun ar-space-doublequote-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'space nil))
+  (ar-th-doublequote 'space arg))
 
 (defalias 'ar-equalize-space-atpt 'ar-space-equalize-atpt)
 (defun ar-space-equalize-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'space nil))
+  (ar-th-equalize 'space arg))
 
 (defalias 'ar-escape-space-atpt 'ar-space-escape-atpt)
 (defun ar-space-escape-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'space nil))
+  (ar-th-escape 'space arg))
 
 (defalias 'ar-hash-space-atpt 'ar-space-hash-atpt)
 (defun ar-space-hash-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'space nil))
+  (ar-th-hash 'space arg))
 
 (defalias 'ar-hyphen-space-atpt 'ar-space-hyphen-atpt)
 (defun ar-space-hyphen-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'space nil))
+  (ar-th-hyphen 'space arg))
 
 (defalias 'ar-singlequote-space-atpt 'ar-space-singlequote-atpt)
 (defun ar-space-singlequote-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'space nil))
+  (ar-th-singlequote 'space arg))
 
 (defalias 'ar-slash-space-atpt 'ar-space-slash-atpt)
 (defun ar-space-slash-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'space nil))
+  (ar-th-slash 'space arg))
 
 (defalias 'ar-star-space-atpt 'ar-space-star-atpt)
 (defun ar-space-star-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'space nil))
+  (ar-th-star 'space arg))
 
 (defalias 'ar-tild-space-atpt 'ar-space-tild-atpt)
 (defun ar-space-tild-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'space nil))
+  (ar-th-tild 'space arg))
 
 (defalias 'ar-triplebacktick-space-atpt 'ar-space-triplebacktick-atpt)
 (defun ar-space-triplebacktick-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'space nil))
+  (ar-th-triplebacktick 'space arg))
 
 (defalias 'ar-underscore-space-atpt 'ar-space-underscore-atpt)
 (defun ar-space-underscore-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'space nil))
+  (ar-th-underscore 'space arg))
 
 (defalias 'ar-whitespace-space-atpt 'ar-space-whitespace-atpt)
 (defun ar-space-whitespace-atpt (&optional arg)
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'space nil))
+  (ar-th-whitespace 'space arg))
 
 (defalias 'ar-colon-upper-atpt 'ar-upper-colon-atpt)
 (defun ar-upper-colon-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'upper nil))
+  (ar-th-colon 'upper arg))
 
 (defalias 'ar-cross-upper-atpt 'ar-upper-cross-atpt)
 (defun ar-upper-cross-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'upper nil))
+  (ar-th-cross 'upper arg))
 
 (defalias 'ar-doubleslash-upper-atpt 'ar-upper-doubleslash-atpt)
 (defun ar-upper-doubleslash-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'upper nil))
+  (ar-th-doubleslash 'upper arg))
 
 (defalias 'ar-backslash-upper-atpt 'ar-upper-backslash-atpt)
 (defun ar-upper-backslash-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'upper nil))
+  (ar-th-backslash 'upper arg))
 
 (defalias 'ar-backtick-upper-atpt 'ar-upper-backtick-atpt)
 (defun ar-upper-backtick-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'upper nil))
+  (ar-th-backtick 'upper arg))
 
 (defalias 'ar-dollar-upper-atpt 'ar-upper-dollar-atpt)
 (defun ar-upper-dollar-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'upper nil))
+  (ar-th-dollar 'upper arg))
 
 (defalias 'ar-doublebacktick-upper-atpt 'ar-upper-doublebacktick-atpt)
 (defun ar-upper-doublebacktick-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'upper nil))
+  (ar-th-doublebacktick 'upper arg))
 
 (defalias 'ar-doublequote-upper-atpt 'ar-upper-doublequote-atpt)
 (defun ar-upper-doublequote-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'upper nil))
+  (ar-th-doublequote 'upper arg))
 
 (defalias 'ar-equalize-upper-atpt 'ar-upper-equalize-atpt)
 (defun ar-upper-equalize-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'upper nil))
+  (ar-th-equalize 'upper arg))
 
 (defalias 'ar-escape-upper-atpt 'ar-upper-escape-atpt)
 (defun ar-upper-escape-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'upper nil))
+  (ar-th-escape 'upper arg))
 
 (defalias 'ar-hash-upper-atpt 'ar-upper-hash-atpt)
 (defun ar-upper-hash-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'upper nil))
+  (ar-th-hash 'upper arg))
 
 (defalias 'ar-hyphen-upper-atpt 'ar-upper-hyphen-atpt)
 (defun ar-upper-hyphen-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'upper nil))
+  (ar-th-hyphen 'upper arg))
 
 (defalias 'ar-singlequote-upper-atpt 'ar-upper-singlequote-atpt)
 (defun ar-upper-singlequote-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'upper nil))
+  (ar-th-singlequote 'upper arg))
 
 (defalias 'ar-slash-upper-atpt 'ar-upper-slash-atpt)
 (defun ar-upper-slash-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'upper nil))
+  (ar-th-slash 'upper arg))
 
 (defalias 'ar-star-upper-atpt 'ar-upper-star-atpt)
 (defun ar-upper-star-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'upper nil))
+  (ar-th-star 'upper arg))
 
 (defalias 'ar-tild-upper-atpt 'ar-upper-tild-atpt)
 (defun ar-upper-tild-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'upper nil))
+  (ar-th-tild 'upper arg))
 
 (defalias 'ar-triplebacktick-upper-atpt 'ar-upper-triplebacktick-atpt)
 (defun ar-upper-triplebacktick-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'upper nil))
+  (ar-th-triplebacktick 'upper arg))
 
 (defalias 'ar-underscore-upper-atpt 'ar-upper-underscore-atpt)
 (defun ar-upper-underscore-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'upper nil))
+  (ar-th-underscore 'upper arg))
 
 (defalias 'ar-whitespace-upper-atpt 'ar-upper-whitespace-atpt)
 (defun ar-upper-whitespace-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'upper nil))
+  (ar-th-whitespace 'upper arg))
 
 (defalias 'ar-colon-xdigit-atpt 'ar-xdigit-colon-atpt)
 (defun ar-xdigit-colon-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-colon 'xdigit nil))
+  (ar-th-colon 'xdigit arg))
 
 (defalias 'ar-cross-xdigit-atpt 'ar-xdigit-cross-atpt)
 (defun ar-xdigit-cross-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-cross 'xdigit nil))
+  (ar-th-cross 'xdigit arg))
 
 (defalias 'ar-doubleslash-xdigit-atpt 'ar-xdigit-doubleslash-atpt)
 (defun ar-xdigit-doubleslash-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doubleslash 'xdigit nil))
+  (ar-th-doubleslash 'xdigit arg))
 
 (defalias 'ar-backslash-xdigit-atpt 'ar-xdigit-backslash-atpt)
 (defun ar-xdigit-backslash-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backslash 'xdigit nil))
+  (ar-th-backslash 'xdigit arg))
 
 (defalias 'ar-backtick-xdigit-atpt 'ar-xdigit-backtick-atpt)
 (defun ar-xdigit-backtick-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-backtick 'xdigit nil))
+  (ar-th-backtick 'xdigit arg))
 
 (defalias 'ar-dollar-xdigit-atpt 'ar-xdigit-dollar-atpt)
 (defun ar-xdigit-dollar-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-dollar 'xdigit nil))
+  (ar-th-dollar 'xdigit arg))
 
 (defalias 'ar-doublebacktick-xdigit-atpt 'ar-xdigit-doublebacktick-atpt)
 (defun ar-xdigit-doublebacktick-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublebacktick 'xdigit nil))
+  (ar-th-doublebacktick 'xdigit arg))
 
 (defalias 'ar-doublequote-xdigit-atpt 'ar-xdigit-doublequote-atpt)
 (defun ar-xdigit-doublequote-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-doublequote 'xdigit nil))
+  (ar-th-doublequote 'xdigit arg))
 
 (defalias 'ar-equalize-xdigit-atpt 'ar-xdigit-equalize-atpt)
 (defun ar-xdigit-equalize-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-equalize 'xdigit nil))
+  (ar-th-equalize 'xdigit arg))
 
 (defalias 'ar-escape-xdigit-atpt 'ar-xdigit-escape-atpt)
 (defun ar-xdigit-escape-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-escape 'xdigit nil))
+  (ar-th-escape 'xdigit arg))
 
 (defalias 'ar-hash-xdigit-atpt 'ar-xdigit-hash-atpt)
 (defun ar-xdigit-hash-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hash 'xdigit nil))
+  (ar-th-hash 'xdigit arg))
 
 (defalias 'ar-hyphen-xdigit-atpt 'ar-xdigit-hyphen-atpt)
 (defun ar-xdigit-hyphen-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-hyphen 'xdigit nil))
+  (ar-th-hyphen 'xdigit arg))
 
 (defalias 'ar-singlequote-xdigit-atpt 'ar-xdigit-singlequote-atpt)
 (defun ar-xdigit-singlequote-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-singlequote 'xdigit nil))
+  (ar-th-singlequote 'xdigit arg))
 
 (defalias 'ar-slash-xdigit-atpt 'ar-xdigit-slash-atpt)
 (defun ar-xdigit-slash-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-slash 'xdigit nil))
+  (ar-th-slash 'xdigit arg))
 
 (defalias 'ar-star-xdigit-atpt 'ar-xdigit-star-atpt)
 (defun ar-xdigit-star-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-star 'xdigit nil))
+  (ar-th-star 'xdigit arg))
 
 (defalias 'ar-tild-xdigit-atpt 'ar-xdigit-tild-atpt)
 (defun ar-xdigit-tild-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-tild 'xdigit nil))
+  (ar-th-tild 'xdigit arg))
 
 (defalias 'ar-triplebacktick-xdigit-atpt 'ar-xdigit-triplebacktick-atpt)
 (defun ar-xdigit-triplebacktick-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-triplebacktick 'xdigit nil))
+  (ar-th-triplebacktick 'xdigit arg))
 
 (defalias 'ar-underscore-xdigit-atpt 'ar-xdigit-underscore-atpt)
 (defun ar-xdigit-underscore-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-underscore 'xdigit nil))
+  (ar-th-underscore 'xdigit arg))
 
 (defalias 'ar-whitespace-xdigit-atpt 'ar-xdigit-whitespace-atpt)
 (defun ar-xdigit-whitespace-atpt (&optional arg)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*p")
-  (ar-th-whitespace 'xdigit nil));; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
+  (ar-th-whitespace 'xdigit arg));; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 
 ;; ar-thing-at-point-utils-unpaired-paired: start
 
@@ -10300,800 +10300,800 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defalias 'ar-colon-braced-atpt 'ar-braced-colon-atpt)
 (defun ar-braced-colon-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'braced nil))
+  (interactive "*P")
+  (ar-th-colon 'braced arg))
 
 (defalias 'ar-cross-braced-atpt 'ar-braced-cross-atpt)
 (defun ar-braced-cross-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'braced nil))
+  (interactive "*P")
+  (ar-th-cross 'braced arg))
 
 (defalias 'ar-doubleslash-braced-atpt 'ar-braced-doubleslash-atpt)
 (defun ar-braced-doubleslash-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'braced nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'braced arg))
 
 (defalias 'ar-backslash-braced-atpt 'ar-braced-backslash-atpt)
 (defun ar-braced-backslash-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'braced nil))
+  (interactive "*P")
+  (ar-th-backslash 'braced arg))
 
 (defalias 'ar-backtick-braced-atpt 'ar-braced-backtick-atpt)
 (defun ar-braced-backtick-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'braced nil))
+  (interactive "*P")
+  (ar-th-backtick 'braced arg))
 
 (defalias 'ar-dollar-braced-atpt 'ar-braced-dollar-atpt)
 (defun ar-braced-dollar-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'braced nil))
+  (interactive "*P")
+  (ar-th-dollar 'braced arg))
 
 (defalias 'ar-doublebacktick-braced-atpt 'ar-braced-doublebacktick-atpt)
 (defun ar-braced-doublebacktick-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'braced nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'braced arg))
 
 (defalias 'ar-doublequote-braced-atpt 'ar-braced-doublequote-atpt)
 (defun ar-braced-doublequote-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'braced nil))
+  (interactive "*P")
+  (ar-th-doublequote 'braced arg))
 
 (defalias 'ar-equalize-braced-atpt 'ar-braced-equalize-atpt)
 (defun ar-braced-equalize-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'braced nil))
+  (interactive "*P")
+  (ar-th-equalize 'braced arg))
 
 (defalias 'ar-escape-braced-atpt 'ar-braced-escape-atpt)
 (defun ar-braced-escape-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'braced nil))
+  (interactive "*P")
+  (ar-th-escape 'braced arg))
 
 (defalias 'ar-hash-braced-atpt 'ar-braced-hash-atpt)
 (defun ar-braced-hash-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'braced nil))
+  (interactive "*P")
+  (ar-th-hash 'braced arg))
 
 (defalias 'ar-hyphen-braced-atpt 'ar-braced-hyphen-atpt)
 (defun ar-braced-hyphen-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'braced nil))
+  (interactive "*P")
+  (ar-th-hyphen 'braced arg))
 
 (defalias 'ar-singlequote-braced-atpt 'ar-braced-singlequote-atpt)
 (defun ar-braced-singlequote-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'braced nil))
+  (interactive "*P")
+  (ar-th-singlequote 'braced arg))
 
 (defalias 'ar-slash-braced-atpt 'ar-braced-slash-atpt)
 (defun ar-braced-slash-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'braced nil))
+  (interactive "*P")
+  (ar-th-slash 'braced arg))
 
 (defalias 'ar-star-braced-atpt 'ar-braced-star-atpt)
 (defun ar-braced-star-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'braced nil))
+  (interactive "*P")
+  (ar-th-star 'braced arg))
 
 (defalias 'ar-tild-braced-atpt 'ar-braced-tild-atpt)
 (defun ar-braced-tild-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'braced nil))
+  (interactive "*P")
+  (ar-th-tild 'braced arg))
 
 (defalias 'ar-triplebacktick-braced-atpt 'ar-braced-triplebacktick-atpt)
 (defun ar-braced-triplebacktick-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'braced nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'braced arg))
 
 (defalias 'ar-underscore-braced-atpt 'ar-braced-underscore-atpt)
 (defun ar-braced-underscore-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'braced nil))
+  (interactive "*P")
+  (ar-th-underscore 'braced arg))
 
 (defalias 'ar-whitespace-braced-atpt 'ar-braced-whitespace-atpt)
 (defun ar-braced-whitespace-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'braced nil))
+  (interactive "*P")
+  (ar-th-whitespace 'braced arg))
 
 (defalias 'ar-colon-bracketed-atpt 'ar-bracketed-colon-atpt)
 (defun ar-bracketed-colon-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'bracketed nil))
+  (interactive "*P")
+  (ar-th-colon 'bracketed arg))
 
 (defalias 'ar-cross-bracketed-atpt 'ar-bracketed-cross-atpt)
 (defun ar-bracketed-cross-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'bracketed nil))
+  (interactive "*P")
+  (ar-th-cross 'bracketed arg))
 
 (defalias 'ar-doubleslash-bracketed-atpt 'ar-bracketed-doubleslash-atpt)
 (defun ar-bracketed-doubleslash-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'bracketed nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'bracketed arg))
 
 (defalias 'ar-backslash-bracketed-atpt 'ar-bracketed-backslash-atpt)
 (defun ar-bracketed-backslash-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'bracketed nil))
+  (interactive "*P")
+  (ar-th-backslash 'bracketed arg))
 
 (defalias 'ar-backtick-bracketed-atpt 'ar-bracketed-backtick-atpt)
 (defun ar-bracketed-backtick-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'bracketed nil))
+  (interactive "*P")
+  (ar-th-backtick 'bracketed arg))
 
 (defalias 'ar-dollar-bracketed-atpt 'ar-bracketed-dollar-atpt)
 (defun ar-bracketed-dollar-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'bracketed nil))
+  (interactive "*P")
+  (ar-th-dollar 'bracketed arg))
 
 (defalias 'ar-doublebacktick-bracketed-atpt 'ar-bracketed-doublebacktick-atpt)
 (defun ar-bracketed-doublebacktick-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'bracketed nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'bracketed arg))
 
 (defalias 'ar-doublequote-bracketed-atpt 'ar-bracketed-doublequote-atpt)
 (defun ar-bracketed-doublequote-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'bracketed nil))
+  (interactive "*P")
+  (ar-th-doublequote 'bracketed arg))
 
 (defalias 'ar-equalize-bracketed-atpt 'ar-bracketed-equalize-atpt)
 (defun ar-bracketed-equalize-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'bracketed nil))
+  (interactive "*P")
+  (ar-th-equalize 'bracketed arg))
 
 (defalias 'ar-escape-bracketed-atpt 'ar-bracketed-escape-atpt)
 (defun ar-bracketed-escape-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'bracketed nil))
+  (interactive "*P")
+  (ar-th-escape 'bracketed arg))
 
 (defalias 'ar-hash-bracketed-atpt 'ar-bracketed-hash-atpt)
 (defun ar-bracketed-hash-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'bracketed nil))
+  (interactive "*P")
+  (ar-th-hash 'bracketed arg))
 
 (defalias 'ar-hyphen-bracketed-atpt 'ar-bracketed-hyphen-atpt)
 (defun ar-bracketed-hyphen-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'bracketed nil))
+  (interactive "*P")
+  (ar-th-hyphen 'bracketed arg))
 
 (defalias 'ar-singlequote-bracketed-atpt 'ar-bracketed-singlequote-atpt)
 (defun ar-bracketed-singlequote-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'bracketed nil))
+  (interactive "*P")
+  (ar-th-singlequote 'bracketed arg))
 
 (defalias 'ar-slash-bracketed-atpt 'ar-bracketed-slash-atpt)
 (defun ar-bracketed-slash-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'bracketed nil))
+  (interactive "*P")
+  (ar-th-slash 'bracketed arg))
 
 (defalias 'ar-star-bracketed-atpt 'ar-bracketed-star-atpt)
 (defun ar-bracketed-star-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'bracketed nil))
+  (interactive "*P")
+  (ar-th-star 'bracketed arg))
 
 (defalias 'ar-tild-bracketed-atpt 'ar-bracketed-tild-atpt)
 (defun ar-bracketed-tild-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'bracketed nil))
+  (interactive "*P")
+  (ar-th-tild 'bracketed arg))
 
 (defalias 'ar-triplebacktick-bracketed-atpt 'ar-bracketed-triplebacktick-atpt)
 (defun ar-bracketed-triplebacktick-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'bracketed nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'bracketed arg))
 
 (defalias 'ar-underscore-bracketed-atpt 'ar-bracketed-underscore-atpt)
 (defun ar-bracketed-underscore-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'bracketed nil))
+  (interactive "*P")
+  (ar-th-underscore 'bracketed arg))
 
 (defalias 'ar-whitespace-bracketed-atpt 'ar-bracketed-whitespace-atpt)
 (defun ar-bracketed-whitespace-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'bracketed nil))
+  (interactive "*P")
+  (ar-th-whitespace 'bracketed arg))
 
 (defalias 'ar-colon-lesserangled-atpt 'ar-lesserangled-colon-atpt)
 (defun ar-lesserangled-colon-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-colon 'lesserangled arg))
 
 (defalias 'ar-cross-lesserangled-atpt 'ar-lesserangled-cross-atpt)
 (defun ar-lesserangled-cross-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-cross 'lesserangled arg))
 
 (defalias 'ar-doubleslash-lesserangled-atpt 'ar-lesserangled-doubleslash-atpt)
 (defun ar-lesserangled-doubleslash-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'lesserangled arg))
 
 (defalias 'ar-backslash-lesserangled-atpt 'ar-lesserangled-backslash-atpt)
 (defun ar-lesserangled-backslash-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-backslash 'lesserangled arg))
 
 (defalias 'ar-backtick-lesserangled-atpt 'ar-lesserangled-backtick-atpt)
 (defun ar-lesserangled-backtick-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-backtick 'lesserangled arg))
 
 (defalias 'ar-dollar-lesserangled-atpt 'ar-lesserangled-dollar-atpt)
 (defun ar-lesserangled-dollar-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-dollar 'lesserangled arg))
 
 (defalias 'ar-doublebacktick-lesserangled-atpt 'ar-lesserangled-doublebacktick-atpt)
 (defun ar-lesserangled-doublebacktick-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'lesserangled arg))
 
 (defalias 'ar-doublequote-lesserangled-atpt 'ar-lesserangled-doublequote-atpt)
 (defun ar-lesserangled-doublequote-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-doublequote 'lesserangled arg))
 
 (defalias 'ar-equalize-lesserangled-atpt 'ar-lesserangled-equalize-atpt)
 (defun ar-lesserangled-equalize-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-equalize 'lesserangled arg))
 
 (defalias 'ar-escape-lesserangled-atpt 'ar-lesserangled-escape-atpt)
 (defun ar-lesserangled-escape-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-escape 'lesserangled arg))
 
 (defalias 'ar-hash-lesserangled-atpt 'ar-lesserangled-hash-atpt)
 (defun ar-lesserangled-hash-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-hash 'lesserangled arg))
 
 (defalias 'ar-hyphen-lesserangled-atpt 'ar-lesserangled-hyphen-atpt)
 (defun ar-lesserangled-hyphen-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-hyphen 'lesserangled arg))
 
 (defalias 'ar-singlequote-lesserangled-atpt 'ar-lesserangled-singlequote-atpt)
 (defun ar-lesserangled-singlequote-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-singlequote 'lesserangled arg))
 
 (defalias 'ar-slash-lesserangled-atpt 'ar-lesserangled-slash-atpt)
 (defun ar-lesserangled-slash-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-slash 'lesserangled arg))
 
 (defalias 'ar-star-lesserangled-atpt 'ar-lesserangled-star-atpt)
 (defun ar-lesserangled-star-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-star 'lesserangled arg))
 
 (defalias 'ar-tild-lesserangled-atpt 'ar-lesserangled-tild-atpt)
 (defun ar-lesserangled-tild-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-tild 'lesserangled arg))
 
 (defalias 'ar-triplebacktick-lesserangled-atpt 'ar-lesserangled-triplebacktick-atpt)
 (defun ar-lesserangled-triplebacktick-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'lesserangled arg))
 
 (defalias 'ar-underscore-lesserangled-atpt 'ar-lesserangled-underscore-atpt)
 (defun ar-lesserangled-underscore-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-underscore 'lesserangled arg))
 
 (defalias 'ar-whitespace-lesserangled-atpt 'ar-lesserangled-whitespace-atpt)
 (defun ar-lesserangled-whitespace-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'lesserangled nil))
+  (interactive "*P")
+  (ar-th-whitespace 'lesserangled arg))
 
 (defalias 'ar-colon-greaterangled-atpt 'ar-greaterangled-colon-atpt)
 (defun ar-greaterangled-colon-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-colon 'greaterangled arg))
 
 (defalias 'ar-cross-greaterangled-atpt 'ar-greaterangled-cross-atpt)
 (defun ar-greaterangled-cross-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-cross 'greaterangled arg))
 
 (defalias 'ar-doubleslash-greaterangled-atpt 'ar-greaterangled-doubleslash-atpt)
 (defun ar-greaterangled-doubleslash-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'greaterangled arg))
 
 (defalias 'ar-backslash-greaterangled-atpt 'ar-greaterangled-backslash-atpt)
 (defun ar-greaterangled-backslash-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-backslash 'greaterangled arg))
 
 (defalias 'ar-backtick-greaterangled-atpt 'ar-greaterangled-backtick-atpt)
 (defun ar-greaterangled-backtick-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-backtick 'greaterangled arg))
 
 (defalias 'ar-dollar-greaterangled-atpt 'ar-greaterangled-dollar-atpt)
 (defun ar-greaterangled-dollar-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-dollar 'greaterangled arg))
 
 (defalias 'ar-doublebacktick-greaterangled-atpt 'ar-greaterangled-doublebacktick-atpt)
 (defun ar-greaterangled-doublebacktick-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'greaterangled arg))
 
 (defalias 'ar-doublequote-greaterangled-atpt 'ar-greaterangled-doublequote-atpt)
 (defun ar-greaterangled-doublequote-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-doublequote 'greaterangled arg))
 
 (defalias 'ar-equalize-greaterangled-atpt 'ar-greaterangled-equalize-atpt)
 (defun ar-greaterangled-equalize-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-equalize 'greaterangled arg))
 
 (defalias 'ar-escape-greaterangled-atpt 'ar-greaterangled-escape-atpt)
 (defun ar-greaterangled-escape-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-escape 'greaterangled arg))
 
 (defalias 'ar-hash-greaterangled-atpt 'ar-greaterangled-hash-atpt)
 (defun ar-greaterangled-hash-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-hash 'greaterangled arg))
 
 (defalias 'ar-hyphen-greaterangled-atpt 'ar-greaterangled-hyphen-atpt)
 (defun ar-greaterangled-hyphen-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-hyphen 'greaterangled arg))
 
 (defalias 'ar-singlequote-greaterangled-atpt 'ar-greaterangled-singlequote-atpt)
 (defun ar-greaterangled-singlequote-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-singlequote 'greaterangled arg))
 
 (defalias 'ar-slash-greaterangled-atpt 'ar-greaterangled-slash-atpt)
 (defun ar-greaterangled-slash-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-slash 'greaterangled arg))
 
 (defalias 'ar-star-greaterangled-atpt 'ar-greaterangled-star-atpt)
 (defun ar-greaterangled-star-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-star 'greaterangled arg))
 
 (defalias 'ar-tild-greaterangled-atpt 'ar-greaterangled-tild-atpt)
 (defun ar-greaterangled-tild-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-tild 'greaterangled arg))
 
 (defalias 'ar-triplebacktick-greaterangled-atpt 'ar-greaterangled-triplebacktick-atpt)
 (defun ar-greaterangled-triplebacktick-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'greaterangled arg))
 
 (defalias 'ar-underscore-greaterangled-atpt 'ar-greaterangled-underscore-atpt)
 (defun ar-greaterangled-underscore-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-underscore 'greaterangled arg))
 
 (defalias 'ar-whitespace-greaterangled-atpt 'ar-greaterangled-whitespace-atpt)
 (defun ar-greaterangled-whitespace-atpt (&optional arg)
   "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'greaterangled nil))
+  (interactive "*P")
+  (ar-th-whitespace 'greaterangled arg))
 
 (defalias 'ar-colon-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-colon-atpt)
 (defun ar-leftrightsinglequoted-colon-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-colon 'leftrightsinglequoted arg))
 
 (defalias 'ar-cross-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-cross-atpt)
 (defun ar-leftrightsinglequoted-cross-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-cross 'leftrightsinglequoted arg))
 
 (defalias 'ar-doubleslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doubleslash-atpt)
 (defun ar-leftrightsinglequoted-doubleslash-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'leftrightsinglequoted arg))
 
 (defalias 'ar-backslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backslash-atpt)
 (defun ar-leftrightsinglequoted-backslash-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-backslash 'leftrightsinglequoted arg))
 
 (defalias 'ar-backtick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backtick-atpt)
 (defun ar-leftrightsinglequoted-backtick-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-backtick 'leftrightsinglequoted arg))
 
 (defalias 'ar-dollar-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-dollar-atpt)
 (defun ar-leftrightsinglequoted-dollar-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-dollar 'leftrightsinglequoted arg))
 
 (defalias 'ar-doublebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublebacktick-atpt)
 (defun ar-leftrightsinglequoted-doublebacktick-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'leftrightsinglequoted arg))
 
 (defalias 'ar-doublequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublequote-atpt)
 (defun ar-leftrightsinglequoted-doublequote-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-doublequote 'leftrightsinglequoted arg))
 
 (defalias 'ar-equalize-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-equalize-atpt)
 (defun ar-leftrightsinglequoted-equalize-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-equalize 'leftrightsinglequoted arg))
 
 (defalias 'ar-escape-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-escape-atpt)
 (defun ar-leftrightsinglequoted-escape-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-escape 'leftrightsinglequoted arg))
 
 (defalias 'ar-hash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hash-atpt)
 (defun ar-leftrightsinglequoted-hash-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-hash 'leftrightsinglequoted arg))
 
 (defalias 'ar-hyphen-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hyphen-atpt)
 (defun ar-leftrightsinglequoted-hyphen-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-hyphen 'leftrightsinglequoted arg))
 
 (defalias 'ar-singlequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-singlequote-atpt)
 (defun ar-leftrightsinglequoted-singlequote-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-singlequote 'leftrightsinglequoted arg))
 
 (defalias 'ar-slash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-slash-atpt)
 (defun ar-leftrightsinglequoted-slash-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-slash 'leftrightsinglequoted arg))
 
 (defalias 'ar-star-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-star-atpt)
 (defun ar-leftrightsinglequoted-star-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-star 'leftrightsinglequoted arg))
 
 (defalias 'ar-tild-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-tild-atpt)
 (defun ar-leftrightsinglequoted-tild-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-tild 'leftrightsinglequoted arg))
 
 (defalias 'ar-triplebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-triplebacktick-atpt)
 (defun ar-leftrightsinglequoted-triplebacktick-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'leftrightsinglequoted arg))
 
 (defalias 'ar-underscore-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-underscore-atpt)
 (defun ar-leftrightsinglequoted-underscore-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-underscore 'leftrightsinglequoted arg))
 
 (defalias 'ar-whitespace-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-whitespace-atpt)
 (defun ar-leftrightsinglequoted-whitespace-atpt (&optional arg)
   "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'leftrightsinglequoted nil))
+  (interactive "*P")
+  (ar-th-whitespace 'leftrightsinglequoted arg))
 
 (defalias 'ar-colon-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-colon-atpt)
 (defun ar-leftrightdoublequoted-colon-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-colon 'leftrightdoublequoted arg))
 
 (defalias 'ar-cross-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-cross-atpt)
 (defun ar-leftrightdoublequoted-cross-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-cross 'leftrightdoublequoted arg))
 
 (defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
 (defun ar-leftrightdoublequoted-doubleslash-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'leftrightdoublequoted arg))
 
 (defalias 'ar-backslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslash-atpt)
 (defun ar-leftrightdoublequoted-backslash-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-backslash 'leftrightdoublequoted arg))
 
 (defalias 'ar-backtick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backtick-atpt)
 (defun ar-leftrightdoublequoted-backtick-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-backtick 'leftrightdoublequoted arg))
 
 (defalias 'ar-dollar-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-dollar-atpt)
 (defun ar-leftrightdoublequoted-dollar-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-dollar 'leftrightdoublequoted arg))
 
 (defalias 'ar-doublebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublebacktick-atpt)
 (defun ar-leftrightdoublequoted-doublebacktick-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'leftrightdoublequoted arg))
 
 (defalias 'ar-doublequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublequote-atpt)
 (defun ar-leftrightdoublequoted-doublequote-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-doublequote 'leftrightdoublequoted arg))
 
 (defalias 'ar-equalize-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-equalize-atpt)
 (defun ar-leftrightdoublequoted-equalize-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-equalize 'leftrightdoublequoted arg))
 
 (defalias 'ar-escape-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-escape-atpt)
 (defun ar-leftrightdoublequoted-escape-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-escape 'leftrightdoublequoted arg))
 
 (defalias 'ar-hash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hash-atpt)
 (defun ar-leftrightdoublequoted-hash-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-hash 'leftrightdoublequoted arg))
 
 (defalias 'ar-hyphen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hyphen-atpt)
 (defun ar-leftrightdoublequoted-hyphen-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-hyphen 'leftrightdoublequoted arg))
 
 (defalias 'ar-singlequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-singlequote-atpt)
 (defun ar-leftrightdoublequoted-singlequote-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-singlequote 'leftrightdoublequoted arg))
 
 (defalias 'ar-slash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-slash-atpt)
 (defun ar-leftrightdoublequoted-slash-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-slash 'leftrightdoublequoted arg))
 
 (defalias 'ar-star-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-star-atpt)
 (defun ar-leftrightdoublequoted-star-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-star 'leftrightdoublequoted arg))
 
 (defalias 'ar-tild-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-tild-atpt)
 (defun ar-leftrightdoublequoted-tild-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-tild 'leftrightdoublequoted arg))
 
 (defalias 'ar-triplebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-triplebacktick-atpt)
 (defun ar-leftrightdoublequoted-triplebacktick-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'leftrightdoublequoted arg))
 
 (defalias 'ar-underscore-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-underscore-atpt)
 (defun ar-leftrightdoublequoted-underscore-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-underscore 'leftrightdoublequoted arg))
 
 (defalias 'ar-whitespace-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-whitespace-atpt)
 (defun ar-leftrightdoublequoted-whitespace-atpt (&optional arg)
   "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'leftrightdoublequoted nil))
+  (interactive "*P")
+  (ar-th-whitespace 'leftrightdoublequoted arg))
 
 (defalias 'ar-colon-parentized-atpt 'ar-parentized-colon-atpt)
 (defun ar-parentized-colon-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-colon 'parentized nil))
+  (interactive "*P")
+  (ar-th-colon 'parentized arg))
 
 (defalias 'ar-cross-parentized-atpt 'ar-parentized-cross-atpt)
 (defun ar-parentized-cross-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-cross 'parentized nil))
+  (interactive "*P")
+  (ar-th-cross 'parentized arg))
 
 (defalias 'ar-doubleslash-parentized-atpt 'ar-parentized-doubleslash-atpt)
 (defun ar-parentized-doubleslash-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doubleslash 'parentized nil))
+  (interactive "*P")
+  (ar-th-doubleslash 'parentized arg))
 
 (defalias 'ar-backslash-parentized-atpt 'ar-parentized-backslash-atpt)
 (defun ar-parentized-backslash-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backslash 'parentized nil))
+  (interactive "*P")
+  (ar-th-backslash 'parentized arg))
 
 (defalias 'ar-backtick-parentized-atpt 'ar-parentized-backtick-atpt)
 (defun ar-parentized-backtick-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-backtick 'parentized nil))
+  (interactive "*P")
+  (ar-th-backtick 'parentized arg))
 
 (defalias 'ar-dollar-parentized-atpt 'ar-parentized-dollar-atpt)
 (defun ar-parentized-dollar-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-dollar 'parentized nil))
+  (interactive "*P")
+  (ar-th-dollar 'parentized arg))
 
 (defalias 'ar-doublebacktick-parentized-atpt 'ar-parentized-doublebacktick-atpt)
 (defun ar-parentized-doublebacktick-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublebacktick 'parentized nil))
+  (interactive "*P")
+  (ar-th-doublebacktick 'parentized arg))
 
 (defalias 'ar-doublequote-parentized-atpt 'ar-parentized-doublequote-atpt)
 (defun ar-parentized-doublequote-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-doublequote 'parentized nil))
+  (interactive "*P")
+  (ar-th-doublequote 'parentized arg))
 
 (defalias 'ar-equalize-parentized-atpt 'ar-parentized-equalize-atpt)
 (defun ar-parentized-equalize-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-equalize 'parentized nil))
+  (interactive "*P")
+  (ar-th-equalize 'parentized arg))
 
 (defalias 'ar-escape-parentized-atpt 'ar-parentized-escape-atpt)
 (defun ar-parentized-escape-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-escape 'parentized nil))
+  (interactive "*P")
+  (ar-th-escape 'parentized arg))
 
 (defalias 'ar-hash-parentized-atpt 'ar-parentized-hash-atpt)
 (defun ar-parentized-hash-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hash 'parentized nil))
+  (interactive "*P")
+  (ar-th-hash 'parentized arg))
 
 (defalias 'ar-hyphen-parentized-atpt 'ar-parentized-hyphen-atpt)
 (defun ar-parentized-hyphen-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-hyphen 'parentized nil))
+  (interactive "*P")
+  (ar-th-hyphen 'parentized arg))
 
 (defalias 'ar-singlequote-parentized-atpt 'ar-parentized-singlequote-atpt)
 (defun ar-parentized-singlequote-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-singlequote 'parentized nil))
+  (interactive "*P")
+  (ar-th-singlequote 'parentized arg))
 
 (defalias 'ar-slash-parentized-atpt 'ar-parentized-slash-atpt)
 (defun ar-parentized-slash-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-slash 'parentized nil))
+  (interactive "*P")
+  (ar-th-slash 'parentized arg))
 
 (defalias 'ar-star-parentized-atpt 'ar-parentized-star-atpt)
 (defun ar-parentized-star-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-star 'parentized nil))
+  (interactive "*P")
+  (ar-th-star 'parentized arg))
 
 (defalias 'ar-tild-parentized-atpt 'ar-parentized-tild-atpt)
 (defun ar-parentized-tild-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-tild 'parentized nil))
+  (interactive "*P")
+  (ar-th-tild 'parentized arg))
 
 (defalias 'ar-triplebacktick-parentized-atpt 'ar-parentized-triplebacktick-atpt)
 (defun ar-parentized-triplebacktick-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-triplebacktick 'parentized nil))
+  (interactive "*P")
+  (ar-th-triplebacktick 'parentized arg))
 
 (defalias 'ar-underscore-parentized-atpt 'ar-parentized-underscore-atpt)
 (defun ar-parentized-underscore-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-underscore 'parentized nil))
+  (interactive "*P")
+  (ar-th-underscore 'parentized arg))
 
 (defalias 'ar-whitespace-parentized-atpt 'ar-parentized-whitespace-atpt)
 (defun ar-parentized-whitespace-atpt (&optional arg)
   "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-whitespace 'parentized nil));; ar-thing-at-point-utils-unpaired-paired: end
+  (interactive "*P")
+  (ar-th-whitespace 'parentized arg));; ar-thing-at-point-utils-unpaired-paired: end
 
 ;; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: start
 
@@ -11101,590 +11101,590 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defalias 'ar-brace-alnum-atpt 'ar-alnum-brace-atpt)
 (defun ar-alnum-brace-atpt (&optional arg)
   "Brace ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'alnum nil))
+  (interactive "*P")
+  (ar-th-brace 'alnum arg))
 
 (defalias 'ar-bracket-alnum-atpt 'ar-alnum-bracket-atpt)
 (defun ar-alnum-bracket-atpt (&optional arg)
   "Bracket ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'alnum nil))
+  (interactive "*P")
+  (ar-th-bracket 'alnum arg))
 
 (defalias 'ar-lesserangle-alnum-atpt 'ar-alnum-lesserangle-atpt)
 (defun ar-alnum-lesserangle-atpt (&optional arg)
   "Lesserangle ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'alnum nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'alnum arg))
 
 (defalias 'ar-greaterangle-alnum-atpt 'ar-alnum-greaterangle-atpt)
 (defun ar-alnum-greaterangle-atpt (&optional arg)
   "Greaterangle ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'alnum nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'alnum arg))
 
 (defalias 'ar-leftrightsinglequote-alnum-atpt 'ar-alnum-leftrightsinglequote-atpt)
 (defun ar-alnum-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'alnum nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'alnum arg))
 
 (defalias 'ar-leftrightdoublequote-alnum-atpt 'ar-alnum-leftrightdoublequote-atpt)
 (defun ar-alnum-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'alnum nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'alnum arg))
 
 (defalias 'ar-parentize-alnum-atpt 'ar-alnum-parentize-atpt)
 (defun ar-alnum-parentize-atpt (&optional arg)
   "Parentize ALNUM at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'alnum nil))
+  (interactive "*P")
+  (ar-th-parentize 'alnum arg))
 
 (defalias 'ar-brace-alpha-atpt 'ar-alpha-brace-atpt)
 (defun ar-alpha-brace-atpt (&optional arg)
   "Brace ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'alpha nil))
+  (interactive "*P")
+  (ar-th-brace 'alpha arg))
 
 (defalias 'ar-bracket-alpha-atpt 'ar-alpha-bracket-atpt)
 (defun ar-alpha-bracket-atpt (&optional arg)
   "Bracket ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'alpha nil))
+  (interactive "*P")
+  (ar-th-bracket 'alpha arg))
 
 (defalias 'ar-lesserangle-alpha-atpt 'ar-alpha-lesserangle-atpt)
 (defun ar-alpha-lesserangle-atpt (&optional arg)
   "Lesserangle ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'alpha nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'alpha arg))
 
 (defalias 'ar-greaterangle-alpha-atpt 'ar-alpha-greaterangle-atpt)
 (defun ar-alpha-greaterangle-atpt (&optional arg)
   "Greaterangle ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'alpha nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'alpha arg))
 
 (defalias 'ar-leftrightsinglequote-alpha-atpt 'ar-alpha-leftrightsinglequote-atpt)
 (defun ar-alpha-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'alpha nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'alpha arg))
 
 (defalias 'ar-leftrightdoublequote-alpha-atpt 'ar-alpha-leftrightdoublequote-atpt)
 (defun ar-alpha-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'alpha nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'alpha arg))
 
 (defalias 'ar-parentize-alpha-atpt 'ar-alpha-parentize-atpt)
 (defun ar-alpha-parentize-atpt (&optional arg)
   "Parentize ALPHA at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'alpha nil))
+  (interactive "*P")
+  (ar-th-parentize 'alpha arg))
 
 (defalias 'ar-brace-ascii-atpt 'ar-ascii-brace-atpt)
 (defun ar-ascii-brace-atpt (&optional arg)
   "Brace ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'ascii nil))
+  (interactive "*P")
+  (ar-th-brace 'ascii arg))
 
 (defalias 'ar-bracket-ascii-atpt 'ar-ascii-bracket-atpt)
 (defun ar-ascii-bracket-atpt (&optional arg)
   "Bracket ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'ascii nil))
+  (interactive "*P")
+  (ar-th-bracket 'ascii arg))
 
 (defalias 'ar-lesserangle-ascii-atpt 'ar-ascii-lesserangle-atpt)
 (defun ar-ascii-lesserangle-atpt (&optional arg)
   "Lesserangle ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'ascii nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'ascii arg))
 
 (defalias 'ar-greaterangle-ascii-atpt 'ar-ascii-greaterangle-atpt)
 (defun ar-ascii-greaterangle-atpt (&optional arg)
   "Greaterangle ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'ascii nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'ascii arg))
 
 (defalias 'ar-leftrightsinglequote-ascii-atpt 'ar-ascii-leftrightsinglequote-atpt)
 (defun ar-ascii-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'ascii nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'ascii arg))
 
 (defalias 'ar-leftrightdoublequote-ascii-atpt 'ar-ascii-leftrightdoublequote-atpt)
 (defun ar-ascii-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'ascii nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'ascii arg))
 
 (defalias 'ar-parentize-ascii-atpt 'ar-ascii-parentize-atpt)
 (defun ar-ascii-parentize-atpt (&optional arg)
   "Parentize ASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'ascii nil))
+  (interactive "*P")
+  (ar-th-parentize 'ascii arg))
 
 (defalias 'ar-brace-blank-atpt 'ar-blank-brace-atpt)
 (defun ar-blank-brace-atpt (&optional arg)
   "Brace BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'blank nil))
+  (interactive "*P")
+  (ar-th-brace 'blank arg))
 
 (defalias 'ar-bracket-blank-atpt 'ar-blank-bracket-atpt)
 (defun ar-blank-bracket-atpt (&optional arg)
   "Bracket BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'blank nil))
+  (interactive "*P")
+  (ar-th-bracket 'blank arg))
 
 (defalias 'ar-lesserangle-blank-atpt 'ar-blank-lesserangle-atpt)
 (defun ar-blank-lesserangle-atpt (&optional arg)
   "Lesserangle BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'blank nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'blank arg))
 
 (defalias 'ar-greaterangle-blank-atpt 'ar-blank-greaterangle-atpt)
 (defun ar-blank-greaterangle-atpt (&optional arg)
   "Greaterangle BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'blank nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'blank arg))
 
 (defalias 'ar-leftrightsinglequote-blank-atpt 'ar-blank-leftrightsinglequote-atpt)
 (defun ar-blank-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'blank nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'blank arg))
 
 (defalias 'ar-leftrightdoublequote-blank-atpt 'ar-blank-leftrightdoublequote-atpt)
 (defun ar-blank-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'blank nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'blank arg))
 
 (defalias 'ar-parentize-blank-atpt 'ar-blank-parentize-atpt)
 (defun ar-blank-parentize-atpt (&optional arg)
   "Parentize BLANK at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'blank nil))
+  (interactive "*P")
+  (ar-th-parentize 'blank arg))
 
 (defalias 'ar-brace-cntrl-atpt 'ar-cntrl-brace-atpt)
 (defun ar-cntrl-brace-atpt (&optional arg)
   "Brace CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'cntrl nil))
+  (interactive "*P")
+  (ar-th-brace 'cntrl arg))
 
 (defalias 'ar-bracket-cntrl-atpt 'ar-cntrl-bracket-atpt)
 (defun ar-cntrl-bracket-atpt (&optional arg)
   "Bracket CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'cntrl nil))
+  (interactive "*P")
+  (ar-th-bracket 'cntrl arg))
 
 (defalias 'ar-lesserangle-cntrl-atpt 'ar-cntrl-lesserangle-atpt)
 (defun ar-cntrl-lesserangle-atpt (&optional arg)
   "Lesserangle CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'cntrl nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'cntrl arg))
 
 (defalias 'ar-greaterangle-cntrl-atpt 'ar-cntrl-greaterangle-atpt)
 (defun ar-cntrl-greaterangle-atpt (&optional arg)
   "Greaterangle CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'cntrl nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'cntrl arg))
 
 (defalias 'ar-leftrightsinglequote-cntrl-atpt 'ar-cntrl-leftrightsinglequote-atpt)
 (defun ar-cntrl-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'cntrl nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'cntrl arg))
 
 (defalias 'ar-leftrightdoublequote-cntrl-atpt 'ar-cntrl-leftrightdoublequote-atpt)
 (defun ar-cntrl-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'cntrl nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'cntrl arg))
 
 (defalias 'ar-parentize-cntrl-atpt 'ar-cntrl-parentize-atpt)
 (defun ar-cntrl-parentize-atpt (&optional arg)
   "Parentize CNTRL at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'cntrl nil))
+  (interactive "*P")
+  (ar-th-parentize 'cntrl arg))
 
 (defalias 'ar-brace-digit-atpt 'ar-digit-brace-atpt)
 (defun ar-digit-brace-atpt (&optional arg)
   "Brace DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'digit nil))
+  (interactive "*P")
+  (ar-th-brace 'digit arg))
 
 (defalias 'ar-bracket-digit-atpt 'ar-digit-bracket-atpt)
 (defun ar-digit-bracket-atpt (&optional arg)
   "Bracket DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'digit nil))
+  (interactive "*P")
+  (ar-th-bracket 'digit arg))
 
 (defalias 'ar-lesserangle-digit-atpt 'ar-digit-lesserangle-atpt)
 (defun ar-digit-lesserangle-atpt (&optional arg)
   "Lesserangle DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'digit nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'digit arg))
 
 (defalias 'ar-greaterangle-digit-atpt 'ar-digit-greaterangle-atpt)
 (defun ar-digit-greaterangle-atpt (&optional arg)
   "Greaterangle DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'digit nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'digit arg))
 
 (defalias 'ar-leftrightsinglequote-digit-atpt 'ar-digit-leftrightsinglequote-atpt)
 (defun ar-digit-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'digit nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'digit arg))
 
 (defalias 'ar-leftrightdoublequote-digit-atpt 'ar-digit-leftrightdoublequote-atpt)
 (defun ar-digit-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'digit nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'digit arg))
 
 (defalias 'ar-parentize-digit-atpt 'ar-digit-parentize-atpt)
 (defun ar-digit-parentize-atpt (&optional arg)
   "Parentize DIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'digit nil))
+  (interactive "*P")
+  (ar-th-parentize 'digit arg))
 
 (defalias 'ar-brace-graph-atpt 'ar-graph-brace-atpt)
 (defun ar-graph-brace-atpt (&optional arg)
   "Brace GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'graph nil))
+  (interactive "*P")
+  (ar-th-brace 'graph arg))
 
 (defalias 'ar-bracket-graph-atpt 'ar-graph-bracket-atpt)
 (defun ar-graph-bracket-atpt (&optional arg)
   "Bracket GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'graph nil))
+  (interactive "*P")
+  (ar-th-bracket 'graph arg))
 
 (defalias 'ar-lesserangle-graph-atpt 'ar-graph-lesserangle-atpt)
 (defun ar-graph-lesserangle-atpt (&optional arg)
   "Lesserangle GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'graph nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'graph arg))
 
 (defalias 'ar-greaterangle-graph-atpt 'ar-graph-greaterangle-atpt)
 (defun ar-graph-greaterangle-atpt (&optional arg)
   "Greaterangle GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'graph nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'graph arg))
 
 (defalias 'ar-leftrightsinglequote-graph-atpt 'ar-graph-leftrightsinglequote-atpt)
 (defun ar-graph-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'graph nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'graph arg))
 
 (defalias 'ar-leftrightdoublequote-graph-atpt 'ar-graph-leftrightdoublequote-atpt)
 (defun ar-graph-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'graph nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'graph arg))
 
 (defalias 'ar-parentize-graph-atpt 'ar-graph-parentize-atpt)
 (defun ar-graph-parentize-atpt (&optional arg)
   "Parentize GRAPH at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'graph nil))
+  (interactive "*P")
+  (ar-th-parentize 'graph arg))
 
 (defalias 'ar-brace-lower-atpt 'ar-lower-brace-atpt)
 (defun ar-lower-brace-atpt (&optional arg)
   "Brace LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'lower nil))
+  (interactive "*P")
+  (ar-th-brace 'lower arg))
 
 (defalias 'ar-bracket-lower-atpt 'ar-lower-bracket-atpt)
 (defun ar-lower-bracket-atpt (&optional arg)
   "Bracket LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'lower nil))
+  (interactive "*P")
+  (ar-th-bracket 'lower arg))
 
 (defalias 'ar-lesserangle-lower-atpt 'ar-lower-lesserangle-atpt)
 (defun ar-lower-lesserangle-atpt (&optional arg)
   "Lesserangle LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'lower nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'lower arg))
 
 (defalias 'ar-greaterangle-lower-atpt 'ar-lower-greaterangle-atpt)
 (defun ar-lower-greaterangle-atpt (&optional arg)
   "Greaterangle LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'lower nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'lower arg))
 
 (defalias 'ar-leftrightsinglequote-lower-atpt 'ar-lower-leftrightsinglequote-atpt)
 (defun ar-lower-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'lower nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'lower arg))
 
 (defalias 'ar-leftrightdoublequote-lower-atpt 'ar-lower-leftrightdoublequote-atpt)
 (defun ar-lower-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'lower nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'lower arg))
 
 (defalias 'ar-parentize-lower-atpt 'ar-lower-parentize-atpt)
 (defun ar-lower-parentize-atpt (&optional arg)
   "Parentize LOWER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'lower nil))
+  (interactive "*P")
+  (ar-th-parentize 'lower arg))
 
 (defalias 'ar-brace-nonascii-atpt 'ar-nonascii-brace-atpt)
 (defun ar-nonascii-brace-atpt (&optional arg)
   "Brace NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'nonascii nil))
+  (interactive "*P")
+  (ar-th-brace 'nonascii arg))
 
 (defalias 'ar-bracket-nonascii-atpt 'ar-nonascii-bracket-atpt)
 (defun ar-nonascii-bracket-atpt (&optional arg)
   "Bracket NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'nonascii nil))
+  (interactive "*P")
+  (ar-th-bracket 'nonascii arg))
 
 (defalias 'ar-lesserangle-nonascii-atpt 'ar-nonascii-lesserangle-atpt)
 (defun ar-nonascii-lesserangle-atpt (&optional arg)
   "Lesserangle NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'nonascii nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'nonascii arg))
 
 (defalias 'ar-greaterangle-nonascii-atpt 'ar-nonascii-greaterangle-atpt)
 (defun ar-nonascii-greaterangle-atpt (&optional arg)
   "Greaterangle NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'nonascii nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'nonascii arg))
 
 (defalias 'ar-leftrightsinglequote-nonascii-atpt 'ar-nonascii-leftrightsinglequote-atpt)
 (defun ar-nonascii-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'nonascii nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'nonascii arg))
 
 (defalias 'ar-leftrightdoublequote-nonascii-atpt 'ar-nonascii-leftrightdoublequote-atpt)
 (defun ar-nonascii-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'nonascii nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'nonascii arg))
 
 (defalias 'ar-parentize-nonascii-atpt 'ar-nonascii-parentize-atpt)
 (defun ar-nonascii-parentize-atpt (&optional arg)
   "Parentize NONASCII at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'nonascii nil))
+  (interactive "*P")
+  (ar-th-parentize 'nonascii arg))
 
 (defalias 'ar-brace-print-atpt 'ar-print-brace-atpt)
 (defun ar-print-brace-atpt (&optional arg)
   "Brace PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'print nil))
+  (interactive "*P")
+  (ar-th-brace 'print arg))
 
 (defalias 'ar-bracket-print-atpt 'ar-print-bracket-atpt)
 (defun ar-print-bracket-atpt (&optional arg)
   "Bracket PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'print nil))
+  (interactive "*P")
+  (ar-th-bracket 'print arg))
 
 (defalias 'ar-lesserangle-print-atpt 'ar-print-lesserangle-atpt)
 (defun ar-print-lesserangle-atpt (&optional arg)
   "Lesserangle PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'print nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'print arg))
 
 (defalias 'ar-greaterangle-print-atpt 'ar-print-greaterangle-atpt)
 (defun ar-print-greaterangle-atpt (&optional arg)
   "Greaterangle PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'print nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'print arg))
 
 (defalias 'ar-leftrightsinglequote-print-atpt 'ar-print-leftrightsinglequote-atpt)
 (defun ar-print-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'print nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'print arg))
 
 (defalias 'ar-leftrightdoublequote-print-atpt 'ar-print-leftrightdoublequote-atpt)
 (defun ar-print-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'print nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'print arg))
 
 (defalias 'ar-parentize-print-atpt 'ar-print-parentize-atpt)
 (defun ar-print-parentize-atpt (&optional arg)
   "Parentize PRINT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'print nil))
+  (interactive "*P")
+  (ar-th-parentize 'print arg))
 
 (defalias 'ar-brace-punct-atpt 'ar-punct-brace-atpt)
 (defun ar-punct-brace-atpt (&optional arg)
   "Brace PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'punct nil))
+  (interactive "*P")
+  (ar-th-brace 'punct arg))
 
 (defalias 'ar-bracket-punct-atpt 'ar-punct-bracket-atpt)
 (defun ar-punct-bracket-atpt (&optional arg)
   "Bracket PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'punct nil))
+  (interactive "*P")
+  (ar-th-bracket 'punct arg))
 
 (defalias 'ar-lesserangle-punct-atpt 'ar-punct-lesserangle-atpt)
 (defun ar-punct-lesserangle-atpt (&optional arg)
   "Lesserangle PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'punct nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'punct arg))
 
 (defalias 'ar-greaterangle-punct-atpt 'ar-punct-greaterangle-atpt)
 (defun ar-punct-greaterangle-atpt (&optional arg)
   "Greaterangle PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'punct nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'punct arg))
 
 (defalias 'ar-leftrightsinglequote-punct-atpt 'ar-punct-leftrightsinglequote-atpt)
 (defun ar-punct-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'punct nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'punct arg))
 
 (defalias 'ar-leftrightdoublequote-punct-atpt 'ar-punct-leftrightdoublequote-atpt)
 (defun ar-punct-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'punct nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'punct arg))
 
 (defalias 'ar-parentize-punct-atpt 'ar-punct-parentize-atpt)
 (defun ar-punct-parentize-atpt (&optional arg)
   "Parentize PUNCT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'punct nil))
+  (interactive "*P")
+  (ar-th-parentize 'punct arg))
 
 (defalias 'ar-brace-space-atpt 'ar-space-brace-atpt)
 (defun ar-space-brace-atpt (&optional arg)
   "Brace SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'space nil))
+  (interactive "*P")
+  (ar-th-brace 'space arg))
 
 (defalias 'ar-bracket-space-atpt 'ar-space-bracket-atpt)
 (defun ar-space-bracket-atpt (&optional arg)
   "Bracket SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'space nil))
+  (interactive "*P")
+  (ar-th-bracket 'space arg))
 
 (defalias 'ar-lesserangle-space-atpt 'ar-space-lesserangle-atpt)
 (defun ar-space-lesserangle-atpt (&optional arg)
   "Lesserangle SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'space nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'space arg))
 
 (defalias 'ar-greaterangle-space-atpt 'ar-space-greaterangle-atpt)
 (defun ar-space-greaterangle-atpt (&optional arg)
   "Greaterangle SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'space nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'space arg))
 
 (defalias 'ar-leftrightsinglequote-space-atpt 'ar-space-leftrightsinglequote-atpt)
 (defun ar-space-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'space nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'space arg))
 
 (defalias 'ar-leftrightdoublequote-space-atpt 'ar-space-leftrightdoublequote-atpt)
 (defun ar-space-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'space nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'space arg))
 
 (defalias 'ar-parentize-space-atpt 'ar-space-parentize-atpt)
 (defun ar-space-parentize-atpt (&optional arg)
   "Parentize SPACE at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'space nil))
+  (interactive "*P")
+  (ar-th-parentize 'space arg))
 
 (defalias 'ar-brace-upper-atpt 'ar-upper-brace-atpt)
 (defun ar-upper-brace-atpt (&optional arg)
   "Brace UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'upper nil))
+  (interactive "*P")
+  (ar-th-brace 'upper arg))
 
 (defalias 'ar-bracket-upper-atpt 'ar-upper-bracket-atpt)
 (defun ar-upper-bracket-atpt (&optional arg)
   "Bracket UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'upper nil))
+  (interactive "*P")
+  (ar-th-bracket 'upper arg))
 
 (defalias 'ar-lesserangle-upper-atpt 'ar-upper-lesserangle-atpt)
 (defun ar-upper-lesserangle-atpt (&optional arg)
   "Lesserangle UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'upper nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'upper arg))
 
 (defalias 'ar-greaterangle-upper-atpt 'ar-upper-greaterangle-atpt)
 (defun ar-upper-greaterangle-atpt (&optional arg)
   "Greaterangle UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'upper nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'upper arg))
 
 (defalias 'ar-leftrightsinglequote-upper-atpt 'ar-upper-leftrightsinglequote-atpt)
 (defun ar-upper-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'upper nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'upper arg))
 
 (defalias 'ar-leftrightdoublequote-upper-atpt 'ar-upper-leftrightdoublequote-atpt)
 (defun ar-upper-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'upper nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'upper arg))
 
 (defalias 'ar-parentize-upper-atpt 'ar-upper-parentize-atpt)
 (defun ar-upper-parentize-atpt (&optional arg)
   "Parentize UPPER at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'upper nil))
+  (interactive "*P")
+  (ar-th-parentize 'upper arg))
 
 (defalias 'ar-brace-xdigit-atpt 'ar-xdigit-brace-atpt)
 (defun ar-xdigit-brace-atpt (&optional arg)
   "Brace XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-brace 'xdigit nil))
+  (interactive "*P")
+  (ar-th-brace 'xdigit arg))
 
 (defalias 'ar-bracket-xdigit-atpt 'ar-xdigit-bracket-atpt)
 (defun ar-xdigit-bracket-atpt (&optional arg)
   "Bracket XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-bracket 'xdigit nil))
+  (interactive "*P")
+  (ar-th-bracket 'xdigit arg))
 
 (defalias 'ar-lesserangle-xdigit-atpt 'ar-xdigit-lesserangle-atpt)
 (defun ar-xdigit-lesserangle-atpt (&optional arg)
   "Lesserangle XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-lesserangle 'xdigit nil))
+  (interactive "*P")
+  (ar-th-lesserangle 'xdigit arg))
 
 (defalias 'ar-greaterangle-xdigit-atpt 'ar-xdigit-greaterangle-atpt)
 (defun ar-xdigit-greaterangle-atpt (&optional arg)
   "Greaterangle XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-greaterangle 'xdigit nil))
+  (interactive "*P")
+  (ar-th-greaterangle 'xdigit arg))
 
 (defalias 'ar-leftrightsinglequote-xdigit-atpt 'ar-xdigit-leftrightsinglequote-atpt)
 (defun ar-xdigit-leftrightsinglequote-atpt (&optional arg)
   "Leftrightsinglequote XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightsinglequote 'xdigit nil))
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'xdigit arg))
 
 (defalias 'ar-leftrightdoublequote-xdigit-atpt 'ar-xdigit-leftrightdoublequote-atpt)
 (defun ar-xdigit-leftrightdoublequote-atpt (&optional arg)
   "Leftrightdoublequote XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-leftrightdoublequote 'xdigit nil))
+  (interactive "*P")
+  (ar-th-leftrightdoublequote 'xdigit arg))
 
 (defalias 'ar-parentize-xdigit-atpt 'ar-xdigit-parentize-atpt)
 (defun ar-xdigit-parentize-atpt (&optional arg)
   "Parentize XDIGIT at point if any, nil otherwise "
-  (interactive "*p")
-  (ar-th-parentize 'xdigit nil));; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: end
+  (interactive "*P")
+  (ar-th-parentize 'xdigit arg));; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: end
 
 ;; ar-thing-at-point-utils-nodelim-einzeln: start
 
@@ -11692,74 +11692,74 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around alnum.
   Returns blok or nil if no ALNUM at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'alnum nil))
+  (ar-th-blok 'alnum arg))
 
 (defun ar-comment-alnum-atpt (&optional arg)
   "Comments ALNUM at point if any. "
   (interactive "*p")
-  (ar-th-comment 'alnum nil))
+  (ar-th-comment 'alnum arg))
 
 (defun ar-commatize-alnum-atpt (&optional arg)
   "Put a comma after ALNUM at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'alnum nil))
+  (ar-th-commatize 'alnum arg))
 
 (defun ar-mark-alnum-atpt (&optional arg)
   "Marks ALNUM at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'alnum))
 
 (defun ar-hide-alnum-atpt (&optional arg)
   "Hides ALNUM at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'alnum))
 
 (defun ar-show-alnum-atpt (&optional arg)
   "Shows hidden ALNUM at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'alnum))
 
 (defun ar-hide-show-alnum-atpt (&optional arg)
   "Alternatively hides or shows ALNUM at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'alnum))
 
 (defun ar-highlight-alnum-atpt-mode (&optional arg)
   "Toggles alnum-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'alnum nil))
+  (interactive "P")
+  (ar-th-highlight 'alnum arg))
 
 (defun ar-kill-alnum-atpt (&optional arg)
   "Kills ALNUM at point if any. "
   (interactive "*p")
-  (ar-th-kill 'alnum nil))
+  (ar-th-kill 'alnum arg))
 
 (defun ar-separate-alnum-atpt (&optional arg)
   "Separates ALNUM at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'alnum nil))
+  (ar-th-separate 'alnum arg))
 
 (defun ar-triplequotedq-alnum-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around alnum. "
   (interactive "*p")
-  (ar-th-triplequotedq 'alnum nil))
+  (ar-th-triplequotedq 'alnum arg))
 
 (defun ar-triplequotesq-alnum-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around alnum. "
   (interactive "*p")
-  (ar-th-triplequotesq 'alnum nil))
+  (ar-th-triplequotesq 'alnum arg))
 
 (defun ar-forward-alnum-atpt (&optional arg)
   "Moves forward over ALNUM at point if any, does nothing otherwise.
 Returns end position of ALNUM "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'alnum arg))
 
 (defun ar-backward-alnum-atpt (&optional arg)
   "Moves backward over ALNUM before point if any, does nothing otherwise.
 Returns beginning position of ALNUM "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'alnum arg))
 
 (defun ar-transpose-alnum-atpt (&optional arg)
@@ -11781,7 +11781,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-alnum-atpt (&optional arg) 
   "Return t if a ALNUM at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-alnum-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-alnum-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -11792,74 +11792,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around alpha.
   Returns blok or nil if no ALPHA at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'alpha nil))
+  (ar-th-blok 'alpha arg))
 
 (defun ar-comment-alpha-atpt (&optional arg)
   "Comments ALPHA at point if any. "
   (interactive "*p")
-  (ar-th-comment 'alpha nil))
+  (ar-th-comment 'alpha arg))
 
 (defun ar-commatize-alpha-atpt (&optional arg)
   "Put a comma after ALPHA at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'alpha nil))
+  (ar-th-commatize 'alpha arg))
 
 (defun ar-mark-alpha-atpt (&optional arg)
   "Marks ALPHA at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'alpha))
 
 (defun ar-hide-alpha-atpt (&optional arg)
   "Hides ALPHA at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'alpha))
 
 (defun ar-show-alpha-atpt (&optional arg)
   "Shows hidden ALPHA at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'alpha))
 
 (defun ar-hide-show-alpha-atpt (&optional arg)
   "Alternatively hides or shows ALPHA at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'alpha))
 
 (defun ar-highlight-alpha-atpt-mode (&optional arg)
   "Toggles alpha-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'alpha nil))
+  (interactive "P")
+  (ar-th-highlight 'alpha arg))
 
 (defun ar-kill-alpha-atpt (&optional arg)
   "Kills ALPHA at point if any. "
   (interactive "*p")
-  (ar-th-kill 'alpha nil))
+  (ar-th-kill 'alpha arg))
 
 (defun ar-separate-alpha-atpt (&optional arg)
   "Separates ALPHA at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'alpha nil))
+  (ar-th-separate 'alpha arg))
 
 (defun ar-triplequotedq-alpha-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around alpha. "
   (interactive "*p")
-  (ar-th-triplequotedq 'alpha nil))
+  (ar-th-triplequotedq 'alpha arg))
 
 (defun ar-triplequotesq-alpha-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around alpha. "
   (interactive "*p")
-  (ar-th-triplequotesq 'alpha nil))
+  (ar-th-triplequotesq 'alpha arg))
 
 (defun ar-forward-alpha-atpt (&optional arg)
   "Moves forward over ALPHA at point if any, does nothing otherwise.
 Returns end position of ALPHA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'alpha arg))
 
 (defun ar-backward-alpha-atpt (&optional arg)
   "Moves backward over ALPHA before point if any, does nothing otherwise.
 Returns beginning position of ALPHA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'alpha arg))
 
 (defun ar-transpose-alpha-atpt (&optional arg)
@@ -11881,7 +11881,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-alpha-atpt (&optional arg) 
   "Return t if a ALPHA at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-alpha-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-alpha-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -11892,74 +11892,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around ascii.
   Returns blok or nil if no ASCII at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'ascii nil))
+  (ar-th-blok 'ascii arg))
 
 (defun ar-comment-ascii-atpt (&optional arg)
   "Comments ASCII at point if any. "
   (interactive "*p")
-  (ar-th-comment 'ascii nil))
+  (ar-th-comment 'ascii arg))
 
 (defun ar-commatize-ascii-atpt (&optional arg)
   "Put a comma after ASCII at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'ascii nil))
+  (ar-th-commatize 'ascii arg))
 
 (defun ar-mark-ascii-atpt (&optional arg)
   "Marks ASCII at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'ascii))
 
 (defun ar-hide-ascii-atpt (&optional arg)
   "Hides ASCII at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'ascii))
 
 (defun ar-show-ascii-atpt (&optional arg)
   "Shows hidden ASCII at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'ascii))
 
 (defun ar-hide-show-ascii-atpt (&optional arg)
   "Alternatively hides or shows ASCII at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'ascii))
 
 (defun ar-highlight-ascii-atpt-mode (&optional arg)
   "Toggles ascii-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'ascii nil))
+  (interactive "P")
+  (ar-th-highlight 'ascii arg))
 
 (defun ar-kill-ascii-atpt (&optional arg)
   "Kills ASCII at point if any. "
   (interactive "*p")
-  (ar-th-kill 'ascii nil))
+  (ar-th-kill 'ascii arg))
 
 (defun ar-separate-ascii-atpt (&optional arg)
   "Separates ASCII at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'ascii nil))
+  (ar-th-separate 'ascii arg))
 
 (defun ar-triplequotedq-ascii-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around ascii. "
   (interactive "*p")
-  (ar-th-triplequotedq 'ascii nil))
+  (ar-th-triplequotedq 'ascii arg))
 
 (defun ar-triplequotesq-ascii-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around ascii. "
   (interactive "*p")
-  (ar-th-triplequotesq 'ascii nil))
+  (ar-th-triplequotesq 'ascii arg))
 
 (defun ar-forward-ascii-atpt (&optional arg)
   "Moves forward over ASCII at point if any, does nothing otherwise.
 Returns end position of ASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'ascii arg))
 
 (defun ar-backward-ascii-atpt (&optional arg)
   "Moves backward over ASCII before point if any, does nothing otherwise.
 Returns beginning position of ASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'ascii arg))
 
 (defun ar-transpose-ascii-atpt (&optional arg)
@@ -11981,7 +11981,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-ascii-atpt (&optional arg) 
   "Return t if a ASCII at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-ascii-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-ascii-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -11992,74 +11992,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around blank.
   Returns blok or nil if no BLANK at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'blank nil))
+  (ar-th-blok 'blank arg))
 
 (defun ar-comment-blank-atpt (&optional arg)
   "Comments BLANK at point if any. "
   (interactive "*p")
-  (ar-th-comment 'blank nil))
+  (ar-th-comment 'blank arg))
 
 (defun ar-commatize-blank-atpt (&optional arg)
   "Put a comma after BLANK at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'blank nil))
+  (ar-th-commatize 'blank arg))
 
 (defun ar-mark-blank-atpt (&optional arg)
   "Marks BLANK at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'blank))
 
 (defun ar-hide-blank-atpt (&optional arg)
   "Hides BLANK at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'blank))
 
 (defun ar-show-blank-atpt (&optional arg)
   "Shows hidden BLANK at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'blank))
 
 (defun ar-hide-show-blank-atpt (&optional arg)
   "Alternatively hides or shows BLANK at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'blank))
 
 (defun ar-highlight-blank-atpt-mode (&optional arg)
   "Toggles blank-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'blank nil))
+  (interactive "P")
+  (ar-th-highlight 'blank arg))
 
 (defun ar-kill-blank-atpt (&optional arg)
   "Kills BLANK at point if any. "
   (interactive "*p")
-  (ar-th-kill 'blank nil))
+  (ar-th-kill 'blank arg))
 
 (defun ar-separate-blank-atpt (&optional arg)
   "Separates BLANK at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'blank nil))
+  (ar-th-separate 'blank arg))
 
 (defun ar-triplequotedq-blank-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around blank. "
   (interactive "*p")
-  (ar-th-triplequotedq 'blank nil))
+  (ar-th-triplequotedq 'blank arg))
 
 (defun ar-triplequotesq-blank-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around blank. "
   (interactive "*p")
-  (ar-th-triplequotesq 'blank nil))
+  (ar-th-triplequotesq 'blank arg))
 
 (defun ar-forward-blank-atpt (&optional arg)
   "Moves forward over BLANK at point if any, does nothing otherwise.
 Returns end position of BLANK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'blank arg))
 
 (defun ar-backward-blank-atpt (&optional arg)
   "Moves backward over BLANK before point if any, does nothing otherwise.
 Returns beginning position of BLANK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'blank arg))
 
 (defun ar-transpose-blank-atpt (&optional arg)
@@ -12081,7 +12081,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-blank-atpt (&optional arg) 
   "Return t if a BLANK at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-blank-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-blank-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12092,74 +12092,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around cntrl.
   Returns blok or nil if no CNTRL at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'cntrl nil))
+  (ar-th-blok 'cntrl arg))
 
 (defun ar-comment-cntrl-atpt (&optional arg)
   "Comments CNTRL at point if any. "
   (interactive "*p")
-  (ar-th-comment 'cntrl nil))
+  (ar-th-comment 'cntrl arg))
 
 (defun ar-commatize-cntrl-atpt (&optional arg)
   "Put a comma after CNTRL at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'cntrl nil))
+  (ar-th-commatize 'cntrl arg))
 
 (defun ar-mark-cntrl-atpt (&optional arg)
   "Marks CNTRL at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'cntrl))
 
 (defun ar-hide-cntrl-atpt (&optional arg)
   "Hides CNTRL at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'cntrl))
 
 (defun ar-show-cntrl-atpt (&optional arg)
   "Shows hidden CNTRL at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'cntrl))
 
 (defun ar-hide-show-cntrl-atpt (&optional arg)
   "Alternatively hides or shows CNTRL at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'cntrl))
 
 (defun ar-highlight-cntrl-atpt-mode (&optional arg)
   "Toggles cntrl-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'cntrl nil))
+  (interactive "P")
+  (ar-th-highlight 'cntrl arg))
 
 (defun ar-kill-cntrl-atpt (&optional arg)
   "Kills CNTRL at point if any. "
   (interactive "*p")
-  (ar-th-kill 'cntrl nil))
+  (ar-th-kill 'cntrl arg))
 
 (defun ar-separate-cntrl-atpt (&optional arg)
   "Separates CNTRL at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'cntrl nil))
+  (ar-th-separate 'cntrl arg))
 
 (defun ar-triplequotedq-cntrl-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around cntrl. "
   (interactive "*p")
-  (ar-th-triplequotedq 'cntrl nil))
+  (ar-th-triplequotedq 'cntrl arg))
 
 (defun ar-triplequotesq-cntrl-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around cntrl. "
   (interactive "*p")
-  (ar-th-triplequotesq 'cntrl nil))
+  (ar-th-triplequotesq 'cntrl arg))
 
 (defun ar-forward-cntrl-atpt (&optional arg)
   "Moves forward over CNTRL at point if any, does nothing otherwise.
 Returns end position of CNTRL "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'cntrl arg))
 
 (defun ar-backward-cntrl-atpt (&optional arg)
   "Moves backward over CNTRL before point if any, does nothing otherwise.
 Returns beginning position of CNTRL "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'cntrl arg))
 
 (defun ar-transpose-cntrl-atpt (&optional arg)
@@ -12181,7 +12181,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-cntrl-atpt (&optional arg) 
   "Return t if a CNTRL at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-cntrl-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-cntrl-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12192,74 +12192,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around digit.
   Returns blok or nil if no DIGIT at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'digit nil))
+  (ar-th-blok 'digit arg))
 
 (defun ar-comment-digit-atpt (&optional arg)
   "Comments DIGIT at point if any. "
   (interactive "*p")
-  (ar-th-comment 'digit nil))
+  (ar-th-comment 'digit arg))
 
 (defun ar-commatize-digit-atpt (&optional arg)
   "Put a comma after DIGIT at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'digit nil))
+  (ar-th-commatize 'digit arg))
 
 (defun ar-mark-digit-atpt (&optional arg)
   "Marks DIGIT at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'digit))
 
 (defun ar-hide-digit-atpt (&optional arg)
   "Hides DIGIT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'digit))
 
 (defun ar-show-digit-atpt (&optional arg)
   "Shows hidden DIGIT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'digit))
 
 (defun ar-hide-show-digit-atpt (&optional arg)
   "Alternatively hides or shows DIGIT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'digit))
 
 (defun ar-highlight-digit-atpt-mode (&optional arg)
   "Toggles digit-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'digit nil))
+  (interactive "P")
+  (ar-th-highlight 'digit arg))
 
 (defun ar-kill-digit-atpt (&optional arg)
   "Kills DIGIT at point if any. "
   (interactive "*p")
-  (ar-th-kill 'digit nil))
+  (ar-th-kill 'digit arg))
 
 (defun ar-separate-digit-atpt (&optional arg)
   "Separates DIGIT at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'digit nil))
+  (ar-th-separate 'digit arg))
 
 (defun ar-triplequotedq-digit-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around digit. "
   (interactive "*p")
-  (ar-th-triplequotedq 'digit nil))
+  (ar-th-triplequotedq 'digit arg))
 
 (defun ar-triplequotesq-digit-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around digit. "
   (interactive "*p")
-  (ar-th-triplequotesq 'digit nil))
+  (ar-th-triplequotesq 'digit arg))
 
 (defun ar-forward-digit-atpt (&optional arg)
   "Moves forward over DIGIT at point if any, does nothing otherwise.
 Returns end position of DIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'digit arg))
 
 (defun ar-backward-digit-atpt (&optional arg)
   "Moves backward over DIGIT before point if any, does nothing otherwise.
 Returns beginning position of DIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'digit arg))
 
 (defun ar-transpose-digit-atpt (&optional arg)
@@ -12281,7 +12281,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-digit-atpt (&optional arg) 
   "Return t if a DIGIT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-digit-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-digit-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12292,74 +12292,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around graph.
   Returns blok or nil if no GRAPH at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'graph nil))
+  (ar-th-blok 'graph arg))
 
 (defun ar-comment-graph-atpt (&optional arg)
   "Comments GRAPH at point if any. "
   (interactive "*p")
-  (ar-th-comment 'graph nil))
+  (ar-th-comment 'graph arg))
 
 (defun ar-commatize-graph-atpt (&optional arg)
   "Put a comma after GRAPH at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'graph nil))
+  (ar-th-commatize 'graph arg))
 
 (defun ar-mark-graph-atpt (&optional arg)
   "Marks GRAPH at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'graph))
 
 (defun ar-hide-graph-atpt (&optional arg)
   "Hides GRAPH at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'graph))
 
 (defun ar-show-graph-atpt (&optional arg)
   "Shows hidden GRAPH at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'graph))
 
 (defun ar-hide-show-graph-atpt (&optional arg)
   "Alternatively hides or shows GRAPH at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'graph))
 
 (defun ar-highlight-graph-atpt-mode (&optional arg)
   "Toggles graph-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'graph nil))
+  (interactive "P")
+  (ar-th-highlight 'graph arg))
 
 (defun ar-kill-graph-atpt (&optional arg)
   "Kills GRAPH at point if any. "
   (interactive "*p")
-  (ar-th-kill 'graph nil))
+  (ar-th-kill 'graph arg))
 
 (defun ar-separate-graph-atpt (&optional arg)
   "Separates GRAPH at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'graph nil))
+  (ar-th-separate 'graph arg))
 
 (defun ar-triplequotedq-graph-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around graph. "
   (interactive "*p")
-  (ar-th-triplequotedq 'graph nil))
+  (ar-th-triplequotedq 'graph arg))
 
 (defun ar-triplequotesq-graph-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around graph. "
   (interactive "*p")
-  (ar-th-triplequotesq 'graph nil))
+  (ar-th-triplequotesq 'graph arg))
 
 (defun ar-forward-graph-atpt (&optional arg)
   "Moves forward over GRAPH at point if any, does nothing otherwise.
 Returns end position of GRAPH "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'graph arg))
 
 (defun ar-backward-graph-atpt (&optional arg)
   "Moves backward over GRAPH before point if any, does nothing otherwise.
 Returns beginning position of GRAPH "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'graph arg))
 
 (defun ar-transpose-graph-atpt (&optional arg)
@@ -12381,7 +12381,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-graph-atpt (&optional arg) 
   "Return t if a GRAPH at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-graph-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-graph-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12392,74 +12392,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around lower.
   Returns blok or nil if no LOWER at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'lower nil))
+  (ar-th-blok 'lower arg))
 
 (defun ar-comment-lower-atpt (&optional arg)
   "Comments LOWER at point if any. "
   (interactive "*p")
-  (ar-th-comment 'lower nil))
+  (ar-th-comment 'lower arg))
 
 (defun ar-commatize-lower-atpt (&optional arg)
   "Put a comma after LOWER at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'lower nil))
+  (ar-th-commatize 'lower arg))
 
 (defun ar-mark-lower-atpt (&optional arg)
   "Marks LOWER at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'lower))
 
 (defun ar-hide-lower-atpt (&optional arg)
   "Hides LOWER at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'lower))
 
 (defun ar-show-lower-atpt (&optional arg)
   "Shows hidden LOWER at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'lower))
 
 (defun ar-hide-show-lower-atpt (&optional arg)
   "Alternatively hides or shows LOWER at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'lower))
 
 (defun ar-highlight-lower-atpt-mode (&optional arg)
   "Toggles lower-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'lower nil))
+  (interactive "P")
+  (ar-th-highlight 'lower arg))
 
 (defun ar-kill-lower-atpt (&optional arg)
   "Kills LOWER at point if any. "
   (interactive "*p")
-  (ar-th-kill 'lower nil))
+  (ar-th-kill 'lower arg))
 
 (defun ar-separate-lower-atpt (&optional arg)
   "Separates LOWER at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'lower nil))
+  (ar-th-separate 'lower arg))
 
 (defun ar-triplequotedq-lower-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around lower. "
   (interactive "*p")
-  (ar-th-triplequotedq 'lower nil))
+  (ar-th-triplequotedq 'lower arg))
 
 (defun ar-triplequotesq-lower-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around lower. "
   (interactive "*p")
-  (ar-th-triplequotesq 'lower nil))
+  (ar-th-triplequotesq 'lower arg))
 
 (defun ar-forward-lower-atpt (&optional arg)
   "Moves forward over LOWER at point if any, does nothing otherwise.
 Returns end position of LOWER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'lower arg))
 
 (defun ar-backward-lower-atpt (&optional arg)
   "Moves backward over LOWER before point if any, does nothing otherwise.
 Returns beginning position of LOWER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'lower arg))
 
 (defun ar-transpose-lower-atpt (&optional arg)
@@ -12481,7 +12481,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-lower-atpt (&optional arg) 
   "Return t if a LOWER at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-lower-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-lower-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12492,74 +12492,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around nonascii.
   Returns blok or nil if no NONASCII at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'nonascii nil))
+  (ar-th-blok 'nonascii arg))
 
 (defun ar-comment-nonascii-atpt (&optional arg)
   "Comments NONASCII at point if any. "
   (interactive "*p")
-  (ar-th-comment 'nonascii nil))
+  (ar-th-comment 'nonascii arg))
 
 (defun ar-commatize-nonascii-atpt (&optional arg)
   "Put a comma after NONASCII at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'nonascii nil))
+  (ar-th-commatize 'nonascii arg))
 
 (defun ar-mark-nonascii-atpt (&optional arg)
   "Marks NONASCII at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'nonascii))
 
 (defun ar-hide-nonascii-atpt (&optional arg)
   "Hides NONASCII at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'nonascii))
 
 (defun ar-show-nonascii-atpt (&optional arg)
   "Shows hidden NONASCII at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'nonascii))
 
 (defun ar-hide-show-nonascii-atpt (&optional arg)
   "Alternatively hides or shows NONASCII at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'nonascii))
 
 (defun ar-highlight-nonascii-atpt-mode (&optional arg)
   "Toggles nonascii-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'nonascii nil))
+  (interactive "P")
+  (ar-th-highlight 'nonascii arg))
 
 (defun ar-kill-nonascii-atpt (&optional arg)
   "Kills NONASCII at point if any. "
   (interactive "*p")
-  (ar-th-kill 'nonascii nil))
+  (ar-th-kill 'nonascii arg))
 
 (defun ar-separate-nonascii-atpt (&optional arg)
   "Separates NONASCII at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'nonascii nil))
+  (ar-th-separate 'nonascii arg))
 
 (defun ar-triplequotedq-nonascii-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around nonascii. "
   (interactive "*p")
-  (ar-th-triplequotedq 'nonascii nil))
+  (ar-th-triplequotedq 'nonascii arg))
 
 (defun ar-triplequotesq-nonascii-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around nonascii. "
   (interactive "*p")
-  (ar-th-triplequotesq 'nonascii nil))
+  (ar-th-triplequotesq 'nonascii arg))
 
 (defun ar-forward-nonascii-atpt (&optional arg)
   "Moves forward over NONASCII at point if any, does nothing otherwise.
 Returns end position of NONASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'nonascii arg))
 
 (defun ar-backward-nonascii-atpt (&optional arg)
   "Moves backward over NONASCII before point if any, does nothing otherwise.
 Returns beginning position of NONASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'nonascii arg))
 
 (defun ar-transpose-nonascii-atpt (&optional arg)
@@ -12581,7 +12581,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-nonascii-atpt (&optional arg) 
   "Return t if a NONASCII at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-nonascii-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-nonascii-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12592,74 +12592,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around print.
   Returns blok or nil if no PRINT at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'print nil))
+  (ar-th-blok 'print arg))
 
 (defun ar-comment-print-atpt (&optional arg)
   "Comments PRINT at point if any. "
   (interactive "*p")
-  (ar-th-comment 'print nil))
+  (ar-th-comment 'print arg))
 
 (defun ar-commatize-print-atpt (&optional arg)
   "Put a comma after PRINT at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'print nil))
+  (ar-th-commatize 'print arg))
 
 (defun ar-mark-print-atpt (&optional arg)
   "Marks PRINT at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'print))
 
 (defun ar-hide-print-atpt (&optional arg)
   "Hides PRINT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'print))
 
 (defun ar-show-print-atpt (&optional arg)
   "Shows hidden PRINT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'print))
 
 (defun ar-hide-show-print-atpt (&optional arg)
   "Alternatively hides or shows PRINT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'print))
 
 (defun ar-highlight-print-atpt-mode (&optional arg)
   "Toggles print-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'print nil))
+  (interactive "P")
+  (ar-th-highlight 'print arg))
 
 (defun ar-kill-print-atpt (&optional arg)
   "Kills PRINT at point if any. "
   (interactive "*p")
-  (ar-th-kill 'print nil))
+  (ar-th-kill 'print arg))
 
 (defun ar-separate-print-atpt (&optional arg)
   "Separates PRINT at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'print nil))
+  (ar-th-separate 'print arg))
 
 (defun ar-triplequotedq-print-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around print. "
   (interactive "*p")
-  (ar-th-triplequotedq 'print nil))
+  (ar-th-triplequotedq 'print arg))
 
 (defun ar-triplequotesq-print-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around print. "
   (interactive "*p")
-  (ar-th-triplequotesq 'print nil))
+  (ar-th-triplequotesq 'print arg))
 
 (defun ar-forward-print-atpt (&optional arg)
   "Moves forward over PRINT at point if any, does nothing otherwise.
 Returns end position of PRINT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'print arg))
 
 (defun ar-backward-print-atpt (&optional arg)
   "Moves backward over PRINT before point if any, does nothing otherwise.
 Returns beginning position of PRINT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'print arg))
 
 (defun ar-transpose-print-atpt (&optional arg)
@@ -12681,7 +12681,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-print-atpt (&optional arg) 
   "Return t if a PRINT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-print-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-print-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12692,74 +12692,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around punct.
   Returns blok or nil if no PUNCT at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'punct nil))
+  (ar-th-blok 'punct arg))
 
 (defun ar-comment-punct-atpt (&optional arg)
   "Comments PUNCT at point if any. "
   (interactive "*p")
-  (ar-th-comment 'punct nil))
+  (ar-th-comment 'punct arg))
 
 (defun ar-commatize-punct-atpt (&optional arg)
   "Put a comma after PUNCT at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'punct nil))
+  (ar-th-commatize 'punct arg))
 
 (defun ar-mark-punct-atpt (&optional arg)
   "Marks PUNCT at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'punct))
 
 (defun ar-hide-punct-atpt (&optional arg)
   "Hides PUNCT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'punct))
 
 (defun ar-show-punct-atpt (&optional arg)
   "Shows hidden PUNCT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'punct))
 
 (defun ar-hide-show-punct-atpt (&optional arg)
   "Alternatively hides or shows PUNCT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'punct))
 
 (defun ar-highlight-punct-atpt-mode (&optional arg)
   "Toggles punct-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'punct nil))
+  (interactive "P")
+  (ar-th-highlight 'punct arg))
 
 (defun ar-kill-punct-atpt (&optional arg)
   "Kills PUNCT at point if any. "
   (interactive "*p")
-  (ar-th-kill 'punct nil))
+  (ar-th-kill 'punct arg))
 
 (defun ar-separate-punct-atpt (&optional arg)
   "Separates PUNCT at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'punct nil))
+  (ar-th-separate 'punct arg))
 
 (defun ar-triplequotedq-punct-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around punct. "
   (interactive "*p")
-  (ar-th-triplequotedq 'punct nil))
+  (ar-th-triplequotedq 'punct arg))
 
 (defun ar-triplequotesq-punct-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around punct. "
   (interactive "*p")
-  (ar-th-triplequotesq 'punct nil))
+  (ar-th-triplequotesq 'punct arg))
 
 (defun ar-forward-punct-atpt (&optional arg)
   "Moves forward over PUNCT at point if any, does nothing otherwise.
 Returns end position of PUNCT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'punct arg))
 
 (defun ar-backward-punct-atpt (&optional arg)
   "Moves backward over PUNCT before point if any, does nothing otherwise.
 Returns beginning position of PUNCT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'punct arg))
 
 (defun ar-transpose-punct-atpt (&optional arg)
@@ -12781,7 +12781,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-punct-atpt (&optional arg) 
   "Return t if a PUNCT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-punct-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-punct-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12792,74 +12792,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around space.
   Returns blok or nil if no SPACE at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'space nil))
+  (ar-th-blok 'space arg))
 
 (defun ar-comment-space-atpt (&optional arg)
   "Comments SPACE at point if any. "
   (interactive "*p")
-  (ar-th-comment 'space nil))
+  (ar-th-comment 'space arg))
 
 (defun ar-commatize-space-atpt (&optional arg)
   "Put a comma after SPACE at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'space nil))
+  (ar-th-commatize 'space arg))
 
 (defun ar-mark-space-atpt (&optional arg)
   "Marks SPACE at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'space))
 
 (defun ar-hide-space-atpt (&optional arg)
   "Hides SPACE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'space))
 
 (defun ar-show-space-atpt (&optional arg)
   "Shows hidden SPACE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'space))
 
 (defun ar-hide-show-space-atpt (&optional arg)
   "Alternatively hides or shows SPACE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'space))
 
 (defun ar-highlight-space-atpt-mode (&optional arg)
   "Toggles space-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'space nil))
+  (interactive "P")
+  (ar-th-highlight 'space arg))
 
 (defun ar-kill-space-atpt (&optional arg)
   "Kills SPACE at point if any. "
   (interactive "*p")
-  (ar-th-kill 'space nil))
+  (ar-th-kill 'space arg))
 
 (defun ar-separate-space-atpt (&optional arg)
   "Separates SPACE at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'space nil))
+  (ar-th-separate 'space arg))
 
 (defun ar-triplequotedq-space-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around space. "
   (interactive "*p")
-  (ar-th-triplequotedq 'space nil))
+  (ar-th-triplequotedq 'space arg))
 
 (defun ar-triplequotesq-space-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around space. "
   (interactive "*p")
-  (ar-th-triplequotesq 'space nil))
+  (ar-th-triplequotesq 'space arg))
 
 (defun ar-forward-space-atpt (&optional arg)
   "Moves forward over SPACE at point if any, does nothing otherwise.
 Returns end position of SPACE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'space arg))
 
 (defun ar-backward-space-atpt (&optional arg)
   "Moves backward over SPACE before point if any, does nothing otherwise.
 Returns beginning position of SPACE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'space arg))
 
 (defun ar-transpose-space-atpt (&optional arg)
@@ -12881,7 +12881,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-space-atpt (&optional arg) 
   "Return t if a SPACE at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-space-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-space-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12892,74 +12892,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around upper.
   Returns blok or nil if no UPPER at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'upper nil))
+  (ar-th-blok 'upper arg))
 
 (defun ar-comment-upper-atpt (&optional arg)
   "Comments UPPER at point if any. "
   (interactive "*p")
-  (ar-th-comment 'upper nil))
+  (ar-th-comment 'upper arg))
 
 (defun ar-commatize-upper-atpt (&optional arg)
   "Put a comma after UPPER at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'upper nil))
+  (ar-th-commatize 'upper arg))
 
 (defun ar-mark-upper-atpt (&optional arg)
   "Marks UPPER at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'upper))
 
 (defun ar-hide-upper-atpt (&optional arg)
   "Hides UPPER at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'upper))
 
 (defun ar-show-upper-atpt (&optional arg)
   "Shows hidden UPPER at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'upper))
 
 (defun ar-hide-show-upper-atpt (&optional arg)
   "Alternatively hides or shows UPPER at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'upper))
 
 (defun ar-highlight-upper-atpt-mode (&optional arg)
   "Toggles upper-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'upper nil))
+  (interactive "P")
+  (ar-th-highlight 'upper arg))
 
 (defun ar-kill-upper-atpt (&optional arg)
   "Kills UPPER at point if any. "
   (interactive "*p")
-  (ar-th-kill 'upper nil))
+  (ar-th-kill 'upper arg))
 
 (defun ar-separate-upper-atpt (&optional arg)
   "Separates UPPER at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'upper nil))
+  (ar-th-separate 'upper arg))
 
 (defun ar-triplequotedq-upper-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around upper. "
   (interactive "*p")
-  (ar-th-triplequotedq 'upper nil))
+  (ar-th-triplequotedq 'upper arg))
 
 (defun ar-triplequotesq-upper-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around upper. "
   (interactive "*p")
-  (ar-th-triplequotesq 'upper nil))
+  (ar-th-triplequotesq 'upper arg))
 
 (defun ar-forward-upper-atpt (&optional arg)
   "Moves forward over UPPER at point if any, does nothing otherwise.
 Returns end position of UPPER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'upper arg))
 
 (defun ar-backward-upper-atpt (&optional arg)
   "Moves backward over UPPER before point if any, does nothing otherwise.
 Returns beginning position of UPPER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'upper arg))
 
 (defun ar-transpose-upper-atpt (&optional arg)
@@ -12981,7 +12981,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-upper-atpt (&optional arg) 
   "Return t if a UPPER at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-upper-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-upper-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -12992,74 +12992,74 @@ See doku from `sort-subr', for details.
   "Puts `blok-startstring-atpt', `blok-endstring-atpt' around xdigit.
   Returns blok or nil if no XDIGIT at cursor-position. "
   (interactive "*p")
-  (ar-th-blok 'xdigit nil))
+  (ar-th-blok 'xdigit arg))
 
 (defun ar-comment-xdigit-atpt (&optional arg)
   "Comments XDIGIT at point if any. "
   (interactive "*p")
-  (ar-th-comment 'xdigit nil))
+  (ar-th-comment 'xdigit arg))
 
 (defun ar-commatize-xdigit-atpt (&optional arg)
   "Put a comma after XDIGIT at point if any. "
   (interactive "*p")
-  (ar-th-commatize 'xdigit nil))
+  (ar-th-commatize 'xdigit arg))
 
 (defun ar-mark-xdigit-atpt (&optional arg)
   "Marks XDIGIT at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'xdigit))
 
 (defun ar-hide-xdigit-atpt (&optional arg)
   "Hides XDIGIT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'xdigit))
 
 (defun ar-show-xdigit-atpt (&optional arg)
   "Shows hidden XDIGIT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'xdigit))
 
 (defun ar-hide-show-xdigit-atpt (&optional arg)
   "Alternatively hides or shows XDIGIT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'xdigit))
 
 (defun ar-highlight-xdigit-atpt-mode (&optional arg)
   "Toggles xdigit-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'xdigit nil))
+  (interactive "P")
+  (ar-th-highlight 'xdigit arg))
 
 (defun ar-kill-xdigit-atpt (&optional arg)
   "Kills XDIGIT at point if any. "
   (interactive "*p")
-  (ar-th-kill 'xdigit nil))
+  (ar-th-kill 'xdigit arg))
 
 (defun ar-separate-xdigit-atpt (&optional arg)
   "Separates XDIGIT at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*p")
-  (ar-th-separate 'xdigit nil))
+  (ar-th-separate 'xdigit arg))
 
 (defun ar-triplequotedq-xdigit-atpt (&optional arg)
   "Put triplequotes composed of doublequotes around xdigit. "
   (interactive "*p")
-  (ar-th-triplequotedq 'xdigit nil))
+  (ar-th-triplequotedq 'xdigit arg))
 
 (defun ar-triplequotesq-xdigit-atpt (&optional arg)
   "Put triplequotes composed of singlequotes around xdigit. "
   (interactive "*p")
-  (ar-th-triplequotesq 'xdigit nil))
+  (ar-th-triplequotesq 'xdigit arg))
 
 (defun ar-forward-xdigit-atpt (&optional arg)
   "Moves forward over XDIGIT at point if any, does nothing otherwise.
 Returns end position of XDIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'xdigit arg))
 
 (defun ar-backward-xdigit-atpt (&optional arg)
   "Moves backward over XDIGIT before point if any, does nothing otherwise.
 Returns beginning position of XDIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'xdigit arg))
 
 (defun ar-transpose-xdigit-atpt (&optional arg)
@@ -13081,7 +13081,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-xdigit-atpt (&optional arg) 
   "Return t if a XDIGIT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-xdigit-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-xdigit-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -15787,22 +15787,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-braced-atpt (&optional arg)
   "Marks BRACED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'braced))
 
 (defun ar-hide-braced-atpt (&optional arg)
   "Hides BRACED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'braced))
 
 (defun ar-show-braced-atpt (&optional arg)
   "Shows hidden BRACED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'braced))
 
 (defun ar-hide-show-braced-atpt (&optional arg)
   "Alternatively hides or shows BRACED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'braced))
 
 (defun ar-highlight-braced-atpt-mode (&optional no-delimiters check)
@@ -15851,7 +15851,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-braced-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'braced no-delimiters iact check t nil))
+  (ar-th-trim 'braced no-delimiters iact check t))
 
 (defun ar-right-trim-braced-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -15873,13 +15873,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-braced-atpt (&optional arg)
   "Moves forward over BRACED at point if any, does nothing otherwise.
 Returns end position of BRACED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'braced arg))
 
 (defun ar-backward-braced-atpt (&optional arg)
   "Moves backward over BRACED before point if any, does nothing otherwise.
 Returns beginning position of BRACED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'braced arg))
 
 (defun ar-transpose-braced-atpt (&optional arg)
@@ -15901,7 +15901,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-braced-atpt (&optional arg) 
   "Return t if a BRACED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-braced-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-braced-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16028,22 +16028,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-bracketed-atpt (&optional arg)
   "Marks BRACKETED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'bracketed))
 
 (defun ar-hide-bracketed-atpt (&optional arg)
   "Hides BRACKETED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'bracketed))
 
 (defun ar-show-bracketed-atpt (&optional arg)
   "Shows hidden BRACKETED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'bracketed))
 
 (defun ar-hide-show-bracketed-atpt (&optional arg)
   "Alternatively hides or shows BRACKETED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'bracketed))
 
 (defun ar-highlight-bracketed-atpt-mode (&optional no-delimiters check)
@@ -16092,7 +16092,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-bracketed-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'bracketed no-delimiters iact check t nil))
+  (ar-th-trim 'bracketed no-delimiters iact check t))
 
 (defun ar-right-trim-bracketed-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -16114,13 +16114,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-bracketed-atpt (&optional arg)
   "Moves forward over BRACKETED at point if any, does nothing otherwise.
 Returns end position of BRACKETED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'bracketed arg))
 
 (defun ar-backward-bracketed-atpt (&optional arg)
   "Moves backward over BRACKETED before point if any, does nothing otherwise.
 Returns beginning position of BRACKETED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'bracketed arg))
 
 (defun ar-transpose-bracketed-atpt (&optional arg)
@@ -16142,7 +16142,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-bracketed-atpt (&optional arg) 
   "Return t if a BRACKETED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-bracketed-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-bracketed-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16269,22 +16269,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-lesserangled-atpt (&optional arg)
   "Marks LESSERANGLED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'lesserangled))
 
 (defun ar-hide-lesserangled-atpt (&optional arg)
   "Hides LESSERANGLED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'lesserangled))
 
 (defun ar-show-lesserangled-atpt (&optional arg)
   "Shows hidden LESSERANGLED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'lesserangled))
 
 (defun ar-hide-show-lesserangled-atpt (&optional arg)
   "Alternatively hides or shows LESSERANGLED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'lesserangled))
 
 (defun ar-highlight-lesserangled-atpt-mode (&optional no-delimiters check)
@@ -16333,7 +16333,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-lesserangled-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'lesserangled no-delimiters iact check t nil))
+  (ar-th-trim 'lesserangled no-delimiters iact check t))
 
 (defun ar-right-trim-lesserangled-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -16355,13 +16355,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-lesserangled-atpt (&optional arg)
   "Moves forward over LESSERANGLED at point if any, does nothing otherwise.
 Returns end position of LESSERANGLED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'lesserangled arg))
 
 (defun ar-backward-lesserangled-atpt (&optional arg)
   "Moves backward over LESSERANGLED before point if any, does nothing otherwise.
 Returns beginning position of LESSERANGLED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'lesserangled arg))
 
 (defun ar-transpose-lesserangled-atpt (&optional arg)
@@ -16383,7 +16383,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-lesserangled-atpt (&optional arg) 
   "Return t if a LESSERANGLED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-lesserangled-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-lesserangled-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16510,22 +16510,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-greaterangled-atpt (&optional arg)
   "Marks GREATERANGLED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'greaterangled))
 
 (defun ar-hide-greaterangled-atpt (&optional arg)
   "Hides GREATERANGLED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'greaterangled))
 
 (defun ar-show-greaterangled-atpt (&optional arg)
   "Shows hidden GREATERANGLED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'greaterangled))
 
 (defun ar-hide-show-greaterangled-atpt (&optional arg)
   "Alternatively hides or shows GREATERANGLED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'greaterangled))
 
 (defun ar-highlight-greaterangled-atpt-mode (&optional no-delimiters check)
@@ -16574,7 +16574,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-greaterangled-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'greaterangled no-delimiters iact check t nil))
+  (ar-th-trim 'greaterangled no-delimiters iact check t))
 
 (defun ar-right-trim-greaterangled-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -16596,13 +16596,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-greaterangled-atpt (&optional arg)
   "Moves forward over GREATERANGLED at point if any, does nothing otherwise.
 Returns end position of GREATERANGLED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'greaterangled arg))
 
 (defun ar-backward-greaterangled-atpt (&optional arg)
   "Moves backward over GREATERANGLED before point if any, does nothing otherwise.
 Returns beginning position of GREATERANGLED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'greaterangled arg))
 
 (defun ar-transpose-greaterangled-atpt (&optional arg)
@@ -16624,7 +16624,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-greaterangled-atpt (&optional arg) 
   "Return t if a GREATERANGLED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-greaterangled-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-greaterangled-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16751,22 +16751,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-leftrightsinglequoted-atpt (&optional arg)
   "Marks LEFTRIGHTSINGLEQUOTED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'leftrightsinglequoted))
 
 (defun ar-hide-leftrightsinglequoted-atpt (&optional arg)
   "Hides LEFTRIGHTSINGLEQUOTED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'leftrightsinglequoted))
 
 (defun ar-show-leftrightsinglequoted-atpt (&optional arg)
   "Shows hidden LEFTRIGHTSINGLEQUOTED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'leftrightsinglequoted))
 
 (defun ar-hide-show-leftrightsinglequoted-atpt (&optional arg)
   "Alternatively hides or shows LEFTRIGHTSINGLEQUOTED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'leftrightsinglequoted))
 
 (defun ar-highlight-leftrightsinglequoted-atpt-mode (&optional no-delimiters check)
@@ -16815,7 +16815,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-leftrightsinglequoted-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'leftrightsinglequoted no-delimiters iact check t nil))
+  (ar-th-trim 'leftrightsinglequoted no-delimiters iact check t))
 
 (defun ar-right-trim-leftrightsinglequoted-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -16837,13 +16837,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-leftrightsinglequoted-atpt (&optional arg)
   "Moves forward over LEFTRIGHTSINGLEQUOTED at point if any, does nothing otherwise.
 Returns end position of LEFTRIGHTSINGLEQUOTED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'leftrightsinglequoted arg))
 
 (defun ar-backward-leftrightsinglequoted-atpt (&optional arg)
   "Moves backward over LEFTRIGHTSINGLEQUOTED before point if any, does nothing otherwise.
 Returns beginning position of LEFTRIGHTSINGLEQUOTED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'leftrightsinglequoted arg))
 
 (defun ar-transpose-leftrightsinglequoted-atpt (&optional arg)
@@ -16865,7 +16865,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-leftrightsinglequoted-atpt (&optional arg) 
   "Return t if a LEFTRIGHTSINGLEQUOTED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-leftrightsinglequoted-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-leftrightsinglequoted-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16992,22 +16992,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-leftrightdoublequoted-atpt (&optional arg)
   "Marks LEFTRIGHTDOUBLEQUOTED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'leftrightdoublequoted))
 
 (defun ar-hide-leftrightdoublequoted-atpt (&optional arg)
   "Hides LEFTRIGHTDOUBLEQUOTED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'leftrightdoublequoted))
 
 (defun ar-show-leftrightdoublequoted-atpt (&optional arg)
   "Shows hidden LEFTRIGHTDOUBLEQUOTED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'leftrightdoublequoted))
 
 (defun ar-hide-show-leftrightdoublequoted-atpt (&optional arg)
   "Alternatively hides or shows LEFTRIGHTDOUBLEQUOTED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'leftrightdoublequoted))
 
 (defun ar-highlight-leftrightdoublequoted-atpt-mode (&optional no-delimiters check)
@@ -17056,7 +17056,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-leftrightdoublequoted-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'leftrightdoublequoted no-delimiters iact check t nil))
+  (ar-th-trim 'leftrightdoublequoted no-delimiters iact check t))
 
 (defun ar-right-trim-leftrightdoublequoted-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -17078,13 +17078,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-leftrightdoublequoted-atpt (&optional arg)
   "Moves forward over LEFTRIGHTDOUBLEQUOTED at point if any, does nothing otherwise.
 Returns end position of LEFTRIGHTDOUBLEQUOTED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'leftrightdoublequoted arg))
 
 (defun ar-backward-leftrightdoublequoted-atpt (&optional arg)
   "Moves backward over LEFTRIGHTDOUBLEQUOTED before point if any, does nothing otherwise.
 Returns beginning position of LEFTRIGHTDOUBLEQUOTED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'leftrightdoublequoted arg))
 
 (defun ar-transpose-leftrightdoublequoted-atpt (&optional arg)
@@ -17106,7 +17106,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-leftrightdoublequoted-atpt (&optional arg) 
   "Return t if a LEFTRIGHTDOUBLEQUOTED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-leftrightdoublequoted-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-leftrightdoublequoted-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17233,22 +17233,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-parentized-atpt (&optional arg)
   "Marks PARENTIZED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'parentized))
 
 (defun ar-hide-parentized-atpt (&optional arg)
   "Hides PARENTIZED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'parentized))
 
 (defun ar-show-parentized-atpt (&optional arg)
   "Shows hidden PARENTIZED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'parentized))
 
 (defun ar-hide-show-parentized-atpt (&optional arg)
   "Alternatively hides or shows PARENTIZED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'parentized))
 
 (defun ar-highlight-parentized-atpt-mode (&optional no-delimiters check)
@@ -17297,7 +17297,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-parentized-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'parentized no-delimiters iact check t nil))
+  (ar-th-trim 'parentized no-delimiters iact check t))
 
 (defun ar-right-trim-parentized-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -17319,13 +17319,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-parentized-atpt (&optional arg)
   "Moves forward over PARENTIZED at point if any, does nothing otherwise.
 Returns end position of PARENTIZED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'parentized arg))
 
 (defun ar-backward-parentized-atpt (&optional arg)
   "Moves backward over PARENTIZED before point if any, does nothing otherwise.
 Returns beginning position of PARENTIZED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'parentized arg))
 
 (defun ar-transpose-parentized-atpt (&optional arg)
@@ -17347,7 +17347,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-parentized-atpt (&optional arg) 
   "Return t if a PARENTIZED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-parentized-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-parentized-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17478,22 +17478,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-list-atpt (&optional arg)
   "Marks LIST at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'list))
 
 (defun ar-hide-list-atpt (&optional arg)
   "Hides LIST at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'list))
 
 (defun ar-show-list-atpt (&optional arg)
   "Shows hidden LIST at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'list))
 
 (defun ar-hide-show-list-atpt (&optional arg)
   "Alternatively hides or shows LIST at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'list))
 
 (defun ar-highlight-list-atpt-mode (&optional no-delimiters check)
@@ -17542,7 +17542,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-list-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'list no-delimiters iact check t nil))
+  (ar-th-trim 'list no-delimiters iact check t))
 
 (defun ar-right-trim-list-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -17564,13 +17564,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-list-atpt (&optional arg)
   "Moves forward over LIST at point if any, does nothing otherwise.
 Returns end position of LIST "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'list arg))
 
 (defun ar-backward-list-atpt (&optional arg)
   "Moves backward over LIST before point if any, does nothing otherwise.
 Returns beginning position of LIST "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'list arg))
 
 (defun ar-transpose-list-atpt (&optional arg)
@@ -17592,7 +17592,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-list-atpt (&optional arg) 
   "Return t if a LIST at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-list-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-list-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17723,22 +17723,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-block-atpt (&optional arg)
   "Marks BLOCK at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'block))
 
 (defun ar-hide-block-atpt (&optional arg)
   "Hides BLOCK at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'block))
 
 (defun ar-show-block-atpt (&optional arg)
   "Shows hidden BLOCK at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'block))
 
 (defun ar-hide-show-block-atpt (&optional arg)
   "Alternatively hides or shows BLOCK at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'block))
 
 (defun ar-highlight-block-atpt-mode (&optional no-delimiters check)
@@ -17787,7 +17787,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-block-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'block no-delimiters iact check t nil))
+  (ar-th-trim 'block no-delimiters iact check t))
 
 (defun ar-right-trim-block-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -17809,13 +17809,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-block-atpt (&optional arg)
   "Moves forward over BLOCK at point if any, does nothing otherwise.
 Returns end position of BLOCK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'block arg))
 
 (defun ar-backward-block-atpt (&optional arg)
   "Moves backward over BLOCK before point if any, does nothing otherwise.
 Returns beginning position of BLOCK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'block arg))
 
 (defun ar-transpose-block-atpt (&optional arg)
@@ -17837,7 +17837,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-block-atpt (&optional arg) 
   "Return t if a BLOCK at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-block-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-block-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17964,22 +17964,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-block-or-clause-atpt (&optional arg)
   "Marks BLOCK-OR-CLAUSE at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'block-or-clause))
 
 (defun ar-hide-block-or-clause-atpt (&optional arg)
   "Hides BLOCK-OR-CLAUSE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'block-or-clause))
 
 (defun ar-show-block-or-clause-atpt (&optional arg)
   "Shows hidden BLOCK-OR-CLAUSE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'block-or-clause))
 
 (defun ar-hide-show-block-or-clause-atpt (&optional arg)
   "Alternatively hides or shows BLOCK-OR-CLAUSE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'block-or-clause))
 
 (defun ar-highlight-block-or-clause-atpt-mode (&optional no-delimiters check)
@@ -18028,7 +18028,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-block-or-clause-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'block-or-clause no-delimiters iact check t nil))
+  (ar-th-trim 'block-or-clause no-delimiters iact check t))
 
 (defun ar-right-trim-block-or-clause-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -18050,13 +18050,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-block-or-clause-atpt (&optional arg)
   "Moves forward over BLOCK-OR-CLAUSE at point if any, does nothing otherwise.
 Returns end position of BLOCK-OR-CLAUSE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'block-or-clause arg))
 
 (defun ar-backward-block-or-clause-atpt (&optional arg)
   "Moves backward over BLOCK-OR-CLAUSE before point if any, does nothing otherwise.
 Returns beginning position of BLOCK-OR-CLAUSE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'block-or-clause arg))
 
 (defun ar-transpose-block-or-clause-atpt (&optional arg)
@@ -18078,7 +18078,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-block-or-clause-atpt (&optional arg) 
   "Return t if a BLOCK-OR-CLAUSE at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-block-or-clause-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-block-or-clause-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -18205,22 +18205,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-class-atpt (&optional arg)
   "Marks CLASS at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'class))
 
 (defun ar-hide-class-atpt (&optional arg)
   "Hides CLASS at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'class))
 
 (defun ar-show-class-atpt (&optional arg)
   "Shows hidden CLASS at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'class))
 
 (defun ar-hide-show-class-atpt (&optional arg)
   "Alternatively hides or shows CLASS at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'class))
 
 (defun ar-highlight-class-atpt-mode (&optional no-delimiters check)
@@ -18269,7 +18269,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-class-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'class no-delimiters iact check t nil))
+  (ar-th-trim 'class no-delimiters iact check t))
 
 (defun ar-right-trim-class-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -18291,13 +18291,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-class-atpt (&optional arg)
   "Moves forward over CLASS at point if any, does nothing otherwise.
 Returns end position of CLASS "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'class arg))
 
 (defun ar-backward-class-atpt (&optional arg)
   "Moves backward over CLASS before point if any, does nothing otherwise.
 Returns beginning position of CLASS "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'class arg))
 
 (defun ar-transpose-class-atpt (&optional arg)
@@ -18319,7 +18319,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-class-atpt (&optional arg) 
   "Return t if a CLASS at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-class-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-class-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -18446,22 +18446,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-clause-atpt (&optional arg)
   "Marks CLAUSE at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'clause))
 
 (defun ar-hide-clause-atpt (&optional arg)
   "Hides CLAUSE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'clause))
 
 (defun ar-show-clause-atpt (&optional arg)
   "Shows hidden CLAUSE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'clause))
 
 (defun ar-hide-show-clause-atpt (&optional arg)
   "Alternatively hides or shows CLAUSE at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'clause))
 
 (defun ar-highlight-clause-atpt-mode (&optional no-delimiters check)
@@ -18510,7 +18510,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-clause-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'clause no-delimiters iact check t nil))
+  (ar-th-trim 'clause no-delimiters iact check t))
 
 (defun ar-right-trim-clause-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -18532,13 +18532,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-clause-atpt (&optional arg)
   "Moves forward over CLAUSE at point if any, does nothing otherwise.
 Returns end position of CLAUSE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'clause arg))
 
 (defun ar-backward-clause-atpt (&optional arg)
   "Moves backward over CLAUSE before point if any, does nothing otherwise.
 Returns beginning position of CLAUSE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'clause arg))
 
 (defun ar-transpose-clause-atpt (&optional arg)
@@ -18560,7 +18560,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-clause-atpt (&optional arg) 
   "Return t if a CLAUSE at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-clause-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-clause-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -18687,22 +18687,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-def-or-class-atpt (&optional arg)
   "Marks DEF-OR-CLASS at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'def-or-class))
 
 (defun ar-hide-def-or-class-atpt (&optional arg)
   "Hides DEF-OR-CLASS at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'def-or-class))
 
 (defun ar-show-def-or-class-atpt (&optional arg)
   "Shows hidden DEF-OR-CLASS at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'def-or-class))
 
 (defun ar-hide-show-def-or-class-atpt (&optional arg)
   "Alternatively hides or shows DEF-OR-CLASS at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'def-or-class))
 
 (defun ar-highlight-def-or-class-atpt-mode (&optional no-delimiters check)
@@ -18751,7 +18751,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-def-or-class-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'def-or-class no-delimiters iact check t nil))
+  (ar-th-trim 'def-or-class no-delimiters iact check t))
 
 (defun ar-right-trim-def-or-class-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -18773,13 +18773,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-def-or-class-atpt (&optional arg)
   "Moves forward over DEF-OR-CLASS at point if any, does nothing otherwise.
 Returns end position of DEF-OR-CLASS "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'def-or-class arg))
 
 (defun ar-backward-def-or-class-atpt (&optional arg)
   "Moves backward over DEF-OR-CLASS before point if any, does nothing otherwise.
 Returns beginning position of DEF-OR-CLASS "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'def-or-class arg))
 
 (defun ar-transpose-def-or-class-atpt (&optional arg)
@@ -18801,7 +18801,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-def-or-class-atpt (&optional arg) 
   "Return t if a DEF-OR-CLASS at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-def-or-class-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-def-or-class-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -18928,22 +18928,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-def-atpt (&optional arg)
   "Marks DEF at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'def))
 
 (defun ar-hide-def-atpt (&optional arg)
   "Hides DEF at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'def))
 
 (defun ar-show-def-atpt (&optional arg)
   "Shows hidden DEF at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'def))
 
 (defun ar-hide-show-def-atpt (&optional arg)
   "Alternatively hides or shows DEF at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'def))
 
 (defun ar-highlight-def-atpt-mode (&optional no-delimiters check)
@@ -18992,7 +18992,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-def-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'def no-delimiters iact check t nil))
+  (ar-th-trim 'def no-delimiters iact check t))
 
 (defun ar-right-trim-def-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -19014,13 +19014,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-def-atpt (&optional arg)
   "Moves forward over DEF at point if any, does nothing otherwise.
 Returns end position of DEF "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'def arg))
 
 (defun ar-backward-def-atpt (&optional arg)
   "Moves backward over DEF before point if any, does nothing otherwise.
 Returns beginning position of DEF "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'def arg))
 
 (defun ar-transpose-def-atpt (&optional arg)
@@ -19042,7 +19042,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-def-atpt (&optional arg) 
   "Return t if a DEF at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-def-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-def-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -19169,22 +19169,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-delimited-atpt (&optional arg)
   "Marks DELIMITED at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'delimited))
 
 (defun ar-hide-delimited-atpt (&optional arg)
   "Hides DELIMITED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'delimited))
 
 (defun ar-show-delimited-atpt (&optional arg)
   "Shows hidden DELIMITED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'delimited))
 
 (defun ar-hide-show-delimited-atpt (&optional arg)
   "Alternatively hides or shows DELIMITED at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'delimited))
 
 (defun ar-highlight-delimited-atpt-mode (&optional no-delimiters check)
@@ -19233,7 +19233,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-delimited-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'delimited no-delimiters iact check t nil))
+  (ar-th-trim 'delimited no-delimiters iact check t))
 
 (defun ar-right-trim-delimited-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -19255,13 +19255,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-delimited-atpt (&optional arg)
   "Moves forward over DELIMITED at point if any, does nothing otherwise.
 Returns end position of DELIMITED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'delimited arg))
 
 (defun ar-backward-delimited-atpt (&optional arg)
   "Moves backward over DELIMITED before point if any, does nothing otherwise.
 Returns beginning position of DELIMITED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'delimited arg))
 
 (defun ar-transpose-delimited-atpt (&optional arg)
@@ -19283,7 +19283,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-delimited-atpt (&optional arg) 
   "Return t if a DELIMITED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-delimited-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-delimited-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -19410,22 +19410,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-expression-atpt (&optional arg)
   "Marks EXPRESSION at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'expression))
 
 (defun ar-hide-expression-atpt (&optional arg)
   "Hides EXPRESSION at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'expression))
 
 (defun ar-show-expression-atpt (&optional arg)
   "Shows hidden EXPRESSION at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'expression))
 
 (defun ar-hide-show-expression-atpt (&optional arg)
   "Alternatively hides or shows EXPRESSION at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'expression))
 
 (defun ar-highlight-expression-atpt-mode (&optional no-delimiters check)
@@ -19474,7 +19474,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-expression-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'expression no-delimiters iact check t nil))
+  (ar-th-trim 'expression no-delimiters iact check t))
 
 (defun ar-right-trim-expression-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -19496,13 +19496,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-expression-atpt (&optional arg)
   "Moves forward over EXPRESSION at point if any, does nothing otherwise.
 Returns end position of EXPRESSION "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'expression arg))
 
 (defun ar-backward-expression-atpt (&optional arg)
   "Moves backward over EXPRESSION before point if any, does nothing otherwise.
 Returns beginning position of EXPRESSION "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'expression arg))
 
 (defun ar-transpose-expression-atpt (&optional arg)
@@ -19524,7 +19524,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-expression-atpt (&optional arg) 
   "Return t if a EXPRESSION at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-expression-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-expression-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -19651,22 +19651,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-partial-expression-atpt (&optional arg)
   "Marks PARTIAL-EXPRESSION at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'partial-expression))
 
 (defun ar-hide-partial-expression-atpt (&optional arg)
   "Hides PARTIAL-EXPRESSION at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'partial-expression))
 
 (defun ar-show-partial-expression-atpt (&optional arg)
   "Shows hidden PARTIAL-EXPRESSION at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'partial-expression))
 
 (defun ar-hide-show-partial-expression-atpt (&optional arg)
   "Alternatively hides or shows PARTIAL-EXPRESSION at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'partial-expression))
 
 (defun ar-highlight-partial-expression-atpt-mode (&optional no-delimiters check)
@@ -19715,7 +19715,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-partial-expression-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'partial-expression no-delimiters iact check t nil))
+  (ar-th-trim 'partial-expression no-delimiters iact check t))
 
 (defun ar-right-trim-partial-expression-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -19737,13 +19737,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-partial-expression-atpt (&optional arg)
   "Moves forward over PARTIAL-EXPRESSION at point if any, does nothing otherwise.
 Returns end position of PARTIAL-EXPRESSION "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'partial-expression arg))
 
 (defun ar-backward-partial-expression-atpt (&optional arg)
   "Moves backward over PARTIAL-EXPRESSION before point if any, does nothing otherwise.
 Returns beginning position of PARTIAL-EXPRESSION "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'partial-expression arg))
 
 (defun ar-transpose-partial-expression-atpt (&optional arg)
@@ -19765,7 +19765,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-partial-expression-atpt (&optional arg) 
   "Return t if a PARTIAL-EXPRESSION at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-partial-expression-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-partial-expression-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -19892,22 +19892,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-statement-atpt (&optional arg)
   "Marks STATEMENT at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'statement))
 
 (defun ar-hide-statement-atpt (&optional arg)
   "Hides STATEMENT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'statement))
 
 (defun ar-show-statement-atpt (&optional arg)
   "Shows hidden STATEMENT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'statement))
 
 (defun ar-hide-show-statement-atpt (&optional arg)
   "Alternatively hides or shows STATEMENT at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'statement))
 
 (defun ar-highlight-statement-atpt-mode (&optional no-delimiters check)
@@ -19956,7 +19956,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-statement-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'statement no-delimiters iact check t nil))
+  (ar-th-trim 'statement no-delimiters iact check t))
 
 (defun ar-right-trim-statement-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -19978,13 +19978,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-statement-atpt (&optional arg)
   "Moves forward over STATEMENT at point if any, does nothing otherwise.
 Returns end position of STATEMENT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'statement arg))
 
 (defun ar-backward-statement-atpt (&optional arg)
   "Moves backward over STATEMENT before point if any, does nothing otherwise.
 Returns beginning position of STATEMENT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'statement arg))
 
 (defun ar-transpose-statement-atpt (&optional arg)
@@ -20006,7 +20006,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-statement-atpt (&optional arg) 
   "Return t if a STATEMENT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-statement-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-statement-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -20133,22 +20133,22 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-string-atpt (&optional arg)
   "Marks STRING at point if any. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-mark 'string))
 
 (defun ar-hide-string-atpt (&optional arg)
   "Hides STRING at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide 'string))
 
 (defun ar-show-string-atpt (&optional arg)
   "Shows hidden STRING at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-show 'string))
 
 (defun ar-hide-show-string-atpt (&optional arg)
   "Alternatively hides or shows STRING at point. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-hide-show 'string))
 
 (defun ar-highlight-string-atpt-mode (&optional no-delimiters check)
@@ -20197,7 +20197,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-left-trim-string-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'string no-delimiters iact check t nil))
+  (ar-th-trim 'string no-delimiters iact check t))
 
 (defun ar-right-trim-string-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
@@ -20219,13 +20219,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-string-atpt (&optional arg)
   "Moves forward over STRING at point if any, does nothing otherwise.
 Returns end position of STRING "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'string arg))
 
 (defun ar-backward-string-atpt (&optional arg)
   "Moves backward over STRING before point if any, does nothing otherwise.
 Returns beginning position of STRING "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'string arg))
 
 (defun ar-transpose-string-atpt (&optional arg)
@@ -20247,7 +20247,7 @@ See doku from `sort-subr', for details.
 
 (defun ar-check-string-atpt (&optional arg) 
   "Return t if a STRING at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-string-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-string-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -20916,7 +20916,7 @@ See doku from `sort-subr', for details.
 
 (defun emacs-batch-expression (&optional arg)
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
-  (interactive "p")
+  (interactive "P")
   (unless (looking-back "[ \t\r\n\f]" (line-beginning-position))
     (skip-chars-backward " \t\r\n\f"))
 
