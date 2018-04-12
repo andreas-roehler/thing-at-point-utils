@@ -35,8 +35,8 @@
   (defvar ar-atpt-delim-test-list '())
 
 (require 'time-stamp)
+(add-to-list 'load-path (expand-file-name "~/werkstatt/thing-at-point-utils"))
 (require 'thing-at-point-utils)
-(require 'thing-classes-in-unpaired-delimited-list)
 (require 'ar-comment-lor)
 (defcustom th-test-delay 1
     "Seconds to wait until next delimtest functioncall"
@@ -54,7 +54,7 @@
   (forward-line -1)
   (ar-forward-comment-atpt)
   (and
-   (assert (eolp)
+   (cl-assert (eolp)
 	   nil "ar-th-emacs-lisp-comment-test failed")
    (message "%s" "ar-th-emacs-lisp-comment-test passed")))
 
@@ -65,10 +65,10 @@
   (goto-char (point-min)) 
   (search-forward "<!-- ") 
   (sgml-mode)
-  (assert (< 0 (ar-length-of-comment-atpt)))
+  (cl-assert (< 0 (ar-length-of-comment-atpt)))
   (ar-backward-comment-atpt)
-  (assert (eq (char-after) ?<))
-  (assert (and (ar-forward-comment-atpt)(eolp)))
+  (cl-assert (eq (char-after) ?<))
+  (cl-assert (and (ar-forward-comment-atpt)(eolp)))
   (message "ar-th-html-comment-tests passed! %s " (time-stamp-string)))
 
 
@@ -158,7 +158,7 @@
   (narrow-to-region (point) (progn (forward-list) (point)))
   (eval-buffer)
   (widen)
-  (assert (equal newlist oldlist) t info))
+  (cl-assert (equal newlist oldlist) t info))
 
 (defun inaugurate-test-buf (test-buffer-name &optional vorlage iact)
   (let ((test-buffer-content (or vorlage ar-th-emacs-lisp-test-string)))
@@ -181,7 +181,7 @@
     (let ((liste (or mv-liste mv-liste (nreverse mv-test-assert-values))))
     (dolist (elt ar-atpt-mv-functionlist)
       (save-excursion (funcall elt)
-                      (assert (eq (pop liste) (point)))))
+                      (cl-assert (eq (pop liste) (point)))))
   (message "%s %s" "Test mv-test-assertions done!" (time-stamp-string))))
 
 (defun ar-th-delimtest (&optional arg liste)
@@ -202,7 +202,7 @@
               (skip-chars-forward (concat "^[:" zeichen ":]")))
             (funcall elt)
 ;;            (unless (string-match "abbrev\\|acronym\\|angled-greater\\|comment\\|date\\|upper" command)
-;;              (assert (< point-max-orig (point-max)) t (concat command " schlug fehl!")))
+;;              (cl-assert (< point-max-orig (point-max)) t (concat command " schlug fehl!")))
             (when (eq 4 (prefix-numeric-value arg)) (sit-for th-test-delay)))))
       (message "%s %s" "th-delimtest done" (time-stamp-string)))))
 
@@ -224,15 +224,15 @@
   (let ((sort-test-assert-values sort-test-assert-values))
     (while (ar-forward-word-atpt)
       (dolist (elt sort-test-assert-values)
-        (assert (string= (pop sort-test-assert-values) (word-at-point)))))
+        (cl-assert (string= (pop sort-test-assert-values) (word-at-point)))))
     (message "   %s" "Test sort-test-assertions done!")))
 
 (defun ar-th-string-strip-test ()
   (interactive "p")
   (let ((text " asdf "))
-    (assert (eq 4 (length (strip text))))
-    (assert (eq 5 (length (lstrip text))))
-    (assert (eq 5 (length (rstrip text)))))
+    (cl-assert (eq 4 (length (strip text))))
+    (cl-assert (eq 5 (length (lstrip text))))
+    (cl-assert (eq 5 (length (rstrip text)))))
   (message "%s %s" "ar-th-string-strip-test done" (time-stamp-string)))
 
 (defun ar-th-provide-test-buffer (mode)
@@ -247,12 +247,12 @@
   (ar-th-provide-test-buffer "html")
   (when arg (switch-to-buffer (current-buffer)))
   (goto-char 111)
-  (assert (eq 119 (ar-forward-graph-atpt)))
-  (assert (eq 169 (ar-forward-mlattribut-atpt)))
-  (assert (eq 202 (ar-forward-mlattribut-atpt)))
-  (assert (eq 175 (ar-backward-mlattribut-atpt)))
-  (assert (eq 134 (ar-backward-mlattribut-atpt)))
-  (assert (eq 246 (ar-forward-markup-atpt)))
+  (cl-assert (eq 119 (ar-forward-graph-atpt)))
+  (cl-assert (eq 169 (ar-forward-mlattribut-atpt)))
+  (cl-assert (eq 202 (ar-forward-mlattribut-atpt)))
+  (cl-assert (eq 175 (ar-backward-mlattribut-atpt)))
+  (cl-assert (eq 134 (ar-backward-mlattribut-atpt)))
+  (cl-assert (eq 246 (ar-forward-markup-atpt)))
   (message "%s %s" "ar-th-forward-backward-test done" (time-stamp-string)))
 
 (defun ar-th-markup-test ()
@@ -267,9 +267,9 @@
 (defun ar-th-markup-attribut-test ()
   (let ((att (ar-mlattribut-atpt))
         (bounds (ar-bounds-of-mlattribut-atpt)))
-    (assert (stringp att))
-    (assert (not (string= "" att)))
-    (assert (< (car bounds) (cdr bounds)))))
+    (cl-assert (stringp att))
+    (cl-assert (not (string= "" att)))
+    (cl-assert (< (car bounds) (cdr bounds)))))
 
 (defun ar-th-delimit-tests (&optional arg) 
   (interactive "p")
@@ -283,11 +283,11 @@
     (goto-char orig)
     (goto-char orig)
     (let ((bounds (ar-bounds-of-blok-atpt)))
-      (assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
+      (cl-assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
     (let ((bounds (ar-bounds-of-backslashedparen-atpt)))
-      (assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
+      (cl-assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
     (let ((bounds (ar-bounds-of-doublebackslashedparen-atpt)))
-      (assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
+      (cl-assert (and (< (car bounds) orig) (< orig (cdr bounds)))))
     (message "%s %s" "ar-th-delimit-tests done" (time-stamp-string))))
 
 (setq ar-th-html-test-string "
