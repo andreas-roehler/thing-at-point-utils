@@ -28,35 +28,40 @@
 (ert-deftest ar-braced-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((braced-laenge 25))
+      (let ((braced-laenge 25)
+	    (ar-match-in-string-p t))
         (goto-char 7)
         (should (eq braced-laenge (length (ar-braced-atpt)))))))
       
 (ert-deftest ar-bracketed-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((bracketed-laenge 23))
+      (let ((bracketed-laenge 23)
+	    (ar-match-in-string-p t))
         (goto-char 7)
         (should (eq bracketed-laenge (length (ar-bracketed-atpt)))))))
       
 (ert-deftest ar-lesserangled-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((lesserangled-laenge 27))
+      (let ((ar-match-in-string-p t)
+	    (lesserangled-laenge 27))
         (goto-char 7)
         (should (eq lesserangled-laenge (length (ar-lesserangled-atpt)))))))
       
 (ert-deftest ar-leftrightsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((leftrightsinglequoted-laenge 19))
+      (let ((leftrightsinglequoted-laenge 19)
+	    (ar-match-in-string-p t))
         (goto-char 7)
         (should (eq leftrightsinglequoted-laenge (length (ar-leftrightsinglequoted-atpt)))))))
       
 (ert-deftest ar-parentized-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((parentized-laenge 21))
+      (let ((ar-match-in-string-p t)
+	    (parentized-laenge 21))
         (goto-char 7)
         (should (eq parentized-laenge (length (ar-parentized-atpt)))))))
       
