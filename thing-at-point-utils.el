@@ -18085,6 +18085,247 @@ See doku from `sort-subr', for details.
     (when arg (message "%s" erg))
    erg))
 
+(defun ar-char-atpt (&optional no-delimiters)
+  "Returns char at point if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+  (interactive "P")
+  (ar-th 'char no-delimiters))
+
+(defun ar-bounds-of-char-atpt (&optional no-delimiters check)
+  "Returns a list, borders of char if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+  (interactive "P")
+  (ar-th-bounds 'char no-delimiters))
+
+(defun ar-char-beginning-position-atpt (&optional no-delimiters check)
+  "Returns a number, beginning position CHAR at point if any, nil otherwise.
+
+Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+  (interactive "P")
+  (ar-th-beg 'char no-delimiters))
+
+(defun ar-char-end-position-atpt (&optional no-delimiters check)
+  "Returns a number, end position of CHAR at point if any, nil otherwise.
+
+Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+  (interactive "P")
+  (ar-th-end 'char no-delimiters))
+
+(defun ar-beginning-of-char-atpt (&optional no-delimiters check)
+  "Goto beginning of symbol or char-class CHAR at point if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+  (interactive "P")
+  (ar-th-gotobeg 'char no-delimiters))
+
+(defun ar-end-of-char-atpt (&optional no-delimiters check)
+  "Goto end of symbol or char-class CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'char no-delimiters))
+
+(defun ar-in-char-p-atpt (&optional no-delimiters check)
+  "Returns bounds of CHAR at point, a list, if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'char no-delimiters))
+
+(defun ar-length-of-char-atpt (&optional no-delimiters check)
+  "Returns beginning of symbol or char-class CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'char no-delimiters))
+
+(defun ar-copy-char-atpt (&optional no-delimiters check)
+  "Returns a copy of CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-copy 'char no-delimiters))
+
+(defun ar-delete-char-atpt (&optional arg)
+  "Deletes CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-delete 'char arg))
+
+(defun ar-delete-char-in-region (beg end)
+  "Deletes CHAR at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'char beg end))
+
+(defun ar-blok-char-atpt (&optional no-delimiters check)
+  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around char.
+  Returns blok or nil if no CHAR at cursor-position. "
+  (interactive "*P")
+  (ar-th-blok 'char no-delimiters))
+
+(defun ar-backslashparen-char-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around char at point if any.
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*P")
+  (ar-th-backslashparen 'char no-delimiters))
+
+(defun ar-doublebackslash-char-atpt (&optional no-delimiters check)
+  "Puts doubled backslashes around CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslash 'char no-delimiters))
+
+(defun ar-doubleslash-char-atpt (&optional no-delimiters check)
+  "Puts doubled slashes around CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-doubleslash 'char no-delimiters))
+
+(defun ar-doublebackslashparen-char-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslashparen 'char no-delimiters))
+
+(defun ar-doublebacktick-char-atpt (&optional no-delimiters check)
+  "Provides double backticks around CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-doublebacktick 'char no-delimiters))
+
+(defun ar-slashparen-char-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'char no-delimiters))
+
+(defun ar-comment-char-atpt (&optional no-delimiters check)
+  "Comments CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-comment 'char no-delimiters))
+
+(defun ar-commatize-char-atpt (&optional no-delimiters check)
+  "Put a comma after CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-commatize 'char no-delimiters))
+
+(defun ar-quote-char-atpt (&optional no-delimiters check)
+  "Put a singlequote before CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-quote 'char no-delimiters))
+
+
+(defun ar-mark-char-atpt (&optional arg)
+  "Marks CHAR at point if any. "
+  (interactive "P")
+  (ar-th-mark 'char))
+
+(defun ar-hide-char-atpt (&optional arg)
+  "Hides CHAR at point. "
+  (interactive "P")
+  (ar-th-hide 'char))
+
+(defun ar-show-char-atpt (&optional arg)
+  "Shows hidden CHAR at point. "
+  (interactive "P")
+  (ar-th-show 'char))
+
+(defun ar-hide-show-char-atpt (&optional arg)
+  "Alternatively hides or shows CHAR at point. "
+  (interactive "P")
+  (ar-th-hide-show 'char))
+
+(defun ar-highlight-char-atpt-mode (&optional no-delimiters check)
+  "Toggles char-highlight-atpt-mode "
+  (interactive "P")
+  (ar-th-highlight 'char no-delimiters))
+
+(defun ar-kill-char-atpt (&optional no-delimiters check)
+  "Kills CHAR at point if any. "
+  (interactive "*P")
+  (ar-th-kill 'char no-delimiters))
+
+(defun ar-leftrightsinglequote-char-atpt (&optional no-delimiters check)
+  "Singlequotes alnum at point if any. "
+  (interactive "*P")
+  (ar-th-leftrightsinglequote 'char no-delimiters))
+
+(defun ar-separate-char-atpt (&optional no-delimiters check)
+  "Separates CHAR at point if any, does nothing otherwise
+inserts newlines, borders are the beginning or the end of buffer "
+  (interactive "*P")
+  (ar-th-separate 'char no-delimiters))
+
+(defun ar-triplequotedq-char-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of doublequotes around char. "
+  (interactive "*P")
+  (ar-th-triplequotedq 'char no-delimiters))
+
+(defun ar-triplequotesq-char-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of singlequotes around char. "
+  (interactive "*P")
+  (ar-th-triplequotesq 'char no-delimiters))
+
+(defun ar-triplebacktick-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'char arg))
+
+(defun ar-trim-char-atpt (&optional no-delimiters iact check)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'char no-delimiters iact check t t))
+
+(defun ar-left-trim-char-atpt (&optional no-delimiters iact check)
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'char no-delimiters iact check t))
+
+(defun ar-right-trim-char-atpt (&optional no-delimiters iact check)
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'char n no-delimiters iact check nil t))
+
+(defun ar-underscore-char-atpt (&optional no-delimiters check)
+  "Put underscore char around CHAR. "
+  (interactive "*P")
+  (ar-th-underscore 'char no-delimiters))
+
+;; (defalias 'ar-char-whitespace-atpt 'ar-whitespace-char-atpt)
+;; ;;;###autoload
+;; (defun ar-whitespace-char-atpt (&optional no-delimiters check)
+;;   "Put whitespace char around CHAR. "
+;;   (interactive "*P")
+;;   (ar-th-whitespace 'char nil t))
+
+(defun ar-forward-char-atpt (&optional arg)
+  "Moves forward over CHAR at point if any, does nothing otherwise.
+Returns end position of CHAR "
+  (interactive "P")
+  (ar-th-forward 'char arg))
+
+(defun ar-backward-char-atpt (&optional arg)
+  "Moves backward over CHAR before point if any, does nothing otherwise.
+Returns beginning position of CHAR "
+  (interactive "P")
+  (ar-th-backward 'char arg))
+
+(defun ar-transpose-char-atpt (&optional arg)
+  "Transposes CHAR with CHAR before point if any. "
+  (interactive "*P")
+  (ar-th-transpose 'char arg))
+
+(defun ar-sort-char-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts chars in region, with ARG in reverse order.
+STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
+ENDKEYFUN might be a function specifying THING's end when sorting.
+With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+See doku from `sort-subr', for details.
+  "
+  (interactive "*P\nr")
+  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
+  (unless (use-region-p) (message "%s" "Region must be active!"))
+  (ar-th-sort 'char reverse beg end startkeyfun endkeyfun predicate)))
+
+(defun ar-check-char-atpt (&optional arg) 
+  "Return t if a CHAR at point exists, nil otherwise "
+  (interactive "P")
+  (let* ((beg (funcall (intern-soft (concat "ar-char-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-char-end-position-atpt"))))
+        (erg (ignore-errors (< beg end))))
+    (when arg (message "%s" erg))
+   erg))
+
 (defun ar-class-atpt (&optional no-delimiters)
   "Returns class at point if any, nil otherwise. 
 
