@@ -854,5 +854,21 @@ Returns position if successful, nil otherwise"
     (when (and ar-verbose-p (interactive-p)) (message "%s" erg))
     erg))
 
+(defun ar-reverse-at-point (&optional beg end)
+  "Replace a string or region at point by result of ‘reverse’."
+  (interactive "*")
+  (let* ((beg (cond (beg)
+		   ((use-region-p)
+		    (region-beginning))
+		   (t (save-excursion (cadr (ar-beginning-of-string-atpt))))))
+        (end (cond (end)
+		   ((use-region-p)
+		    (copy-marker (region-end)))
+		   (t (copy-marker (cdr (ar-end-of-string-atpt))))))
+	(erg (buffer-substring beg end)))
+    (when (and beg end)
+      (delete-region beg end)
+      (insert (reverse erg)))))
+
 (provide 'ar-subr)
 ;;; ar-subr.el ends here
