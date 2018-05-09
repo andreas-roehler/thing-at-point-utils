@@ -655,6 +655,214 @@
   (ar-th-ratio-base 'upper 'buffer beg end t))
 
 
+(defun ar-count-alnum-in-char-atpt (&optional beg end) 
+"Counts matches of alnum in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'char beg end nil))
+
+(defun ar-count-alnum-in-char-until-point (&optional beg end) 
+"Counts matches of alnum in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'char beg (point) nil))
+
+(defun ar-ratio-alnum-in-char-atpt (&optional beg end) 
+"Relation of alnum in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'char beg end t))
+
+
+(defun ar-count-alpha-in-char-atpt (&optional beg end) 
+"Counts matches of alpha in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'char beg end nil))
+
+(defun ar-count-alpha-in-char-until-point (&optional beg end) 
+"Counts matches of alpha in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'char beg (point) nil))
+
+(defun ar-ratio-alpha-in-char-atpt (&optional beg end) 
+"Relation of alpha in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'char beg end t))
+
+
+(defun ar-count-ascii-in-char-atpt (&optional beg end) 
+"Counts matches of ascii in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'char beg end nil))
+
+(defun ar-count-ascii-in-char-until-point (&optional beg end) 
+"Counts matches of ascii in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'char beg (point) nil))
+
+(defun ar-ratio-ascii-in-char-atpt (&optional beg end) 
+"Relation of ascii in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'char beg end t))
+
+
+(defun ar-count-blank-in-char-atpt (&optional beg end) 
+"Counts matches of blank in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'char beg end nil))
+
+(defun ar-count-blank-in-char-until-point (&optional beg end) 
+"Counts matches of blank in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'char beg (point) nil))
+
+(defun ar-ratio-blank-in-char-atpt (&optional beg end) 
+"Relation of blank in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'char beg end t))
+
+
+(defun ar-count-cntrl-in-char-atpt (&optional beg end) 
+"Counts matches of cntrl in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'char beg end nil))
+
+(defun ar-count-cntrl-in-char-until-point (&optional beg end) 
+"Counts matches of cntrl in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'char beg (point) nil))
+
+(defun ar-ratio-cntrl-in-char-atpt (&optional beg end) 
+"Relation of cntrl in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'char beg end t))
+
+
+(defun ar-count-digit-in-char-atpt (&optional beg end) 
+"Counts matches of digit in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'char beg end nil))
+
+(defun ar-count-digit-in-char-until-point (&optional beg end) 
+"Counts matches of digit in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'char beg (point) nil))
+
+(defun ar-ratio-digit-in-char-atpt (&optional beg end) 
+"Relation of digit in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'char beg end t))
+
+
+(defun ar-count-graph-in-char-atpt (&optional beg end) 
+"Counts matches of graph in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'char beg end nil))
+
+(defun ar-count-graph-in-char-until-point (&optional beg end) 
+"Counts matches of graph in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'char beg (point) nil))
+
+(defun ar-ratio-graph-in-char-atpt (&optional beg end) 
+"Relation of graph in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'char beg end t))
+
+
+(defun ar-count-lower-in-char-atpt (&optional beg end) 
+"Counts matches of lower in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'char beg end nil))
+
+(defun ar-count-lower-in-char-until-point (&optional beg end) 
+"Counts matches of lower in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'char beg (point) nil))
+
+(defun ar-ratio-lower-in-char-atpt (&optional beg end) 
+"Relation of lower in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'char beg end t))
+
+
+(defun ar-count-nonascii-in-char-atpt (&optional beg end) 
+"Counts matches of nonascii in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'char beg end nil))
+
+(defun ar-count-nonascii-in-char-until-point (&optional beg end) 
+"Counts matches of nonascii in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'char beg (point) nil))
+
+(defun ar-ratio-nonascii-in-char-atpt (&optional beg end) 
+"Relation of nonascii in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'char beg end t))
+
+
+(defun ar-count-print-in-char-atpt (&optional beg end) 
+"Counts matches of print in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'char beg end nil))
+
+(defun ar-count-print-in-char-until-point (&optional beg end) 
+"Counts matches of print in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'char beg (point) nil))
+
+(defun ar-ratio-print-in-char-atpt (&optional beg end) 
+"Relation of print in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'char beg end t))
+
+
+(defun ar-count-punct-in-char-atpt (&optional beg end) 
+"Counts matches of punct in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'char beg end nil))
+
+(defun ar-count-punct-in-char-until-point (&optional beg end) 
+"Counts matches of punct in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'char beg (point) nil))
+
+(defun ar-ratio-punct-in-char-atpt (&optional beg end) 
+"Relation of punct in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'char beg end t))
+
+
+(defun ar-count-space-in-char-atpt (&optional beg end) 
+"Counts matches of space in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'char beg end nil))
+
+(defun ar-count-space-in-char-until-point (&optional beg end) 
+"Counts matches of space in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'char beg (point) nil))
+
+(defun ar-ratio-space-in-char-atpt (&optional beg end) 
+"Relation of space in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'char beg end t))
+
+
+(defun ar-count-upper-in-char-atpt (&optional beg end) 
+"Counts matches of upper in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'char beg end nil))
+
+(defun ar-count-upper-in-char-until-point (&optional beg end) 
+"Counts matches of upper in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'char beg (point) nil))
+
+(defun ar-ratio-upper-in-char-atpt (&optional beg end) 
+"Relation of upper in char if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'char beg end t))
+
+
 (defun ar-count-alnum-in-comment-atpt (&optional beg end) 
 "Counts matches of alnum in comment if useful, returns nil otherwise "
   (interactive "p")

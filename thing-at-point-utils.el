@@ -46,6 +46,11 @@
   (interactive "*P")
   (ar-th-colon 'buffer arg arg))
 
+(defun ar-colon-char-atpt (&optional arg)
+  "Colon CHAR at point."
+  (interactive "*P")
+  (ar-th-colon 'char arg arg))
+
 (defun ar-colon-comment-atpt (&optional arg)
   "Colon COMMENT at point."
   (interactive "*P")
@@ -185,6 +190,11 @@
   "Cross BUFFER at point."
   (interactive "*P")
   (ar-th-cross 'buffer arg arg))
+
+(defun ar-cross-char-atpt (&optional arg)
+  "Cross CHAR at point."
+  (interactive "*P")
+  (ar-th-cross 'char arg arg))
 
 (defun ar-cross-comment-atpt (&optional arg)
   "Cross COMMENT at point."
@@ -326,6 +336,11 @@
   (interactive "*P")
   (ar-th-doubleslash 'buffer arg arg))
 
+(defun ar-doubleslash-char-atpt (&optional arg)
+  "Doubleslash CHAR at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'char arg arg))
+
 (defun ar-doubleslash-comment-atpt (&optional arg)
   "Doubleslash COMMENT at point."
   (interactive "*P")
@@ -465,6 +480,11 @@
   "Backslash BUFFER at point."
   (interactive "*P")
   (ar-th-backslash 'buffer arg arg))
+
+(defun ar-backslash-char-atpt (&optional arg)
+  "Backslash CHAR at point."
+  (interactive "*P")
+  (ar-th-backslash 'char arg arg))
 
 (defun ar-backslash-comment-atpt (&optional arg)
   "Backslash COMMENT at point."
@@ -606,6 +626,11 @@
   (interactive "*P")
   (ar-th-backtick 'buffer arg arg))
 
+(defun ar-backtick-char-atpt (&optional arg)
+  "Backtick CHAR at point."
+  (interactive "*P")
+  (ar-th-backtick 'char arg arg))
+
 (defun ar-backtick-comment-atpt (&optional arg)
   "Backtick COMMENT at point."
   (interactive "*P")
@@ -745,6 +770,11 @@
   "Dollar BUFFER at point."
   (interactive "*P")
   (ar-th-dollar 'buffer arg arg))
+
+(defun ar-dollar-char-atpt (&optional arg)
+  "Dollar CHAR at point."
+  (interactive "*P")
+  (ar-th-dollar 'char arg arg))
 
 (defun ar-dollar-comment-atpt (&optional arg)
   "Dollar COMMENT at point."
@@ -886,6 +916,11 @@
   (interactive "*P")
   (ar-th-doublebacktick 'buffer arg arg))
 
+(defun ar-doublebacktick-char-atpt (&optional arg)
+  "Doublebacktick CHAR at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'char arg arg))
+
 (defun ar-doublebacktick-comment-atpt (&optional arg)
   "Doublebacktick COMMENT at point."
   (interactive "*P")
@@ -1025,6 +1060,11 @@
   "Doublequote BUFFER at point."
   (interactive "*P")
   (ar-th-doublequote 'buffer arg arg))
+
+(defun ar-doublequote-char-atpt (&optional arg)
+  "Doublequote CHAR at point."
+  (interactive "*P")
+  (ar-th-doublequote 'char arg arg))
 
 (defun ar-doublequote-comment-atpt (&optional arg)
   "Doublequote COMMENT at point."
@@ -1166,6 +1206,11 @@
   (interactive "*P")
   (ar-th-equalize 'buffer arg arg))
 
+(defun ar-equalize-char-atpt (&optional arg)
+  "Equalize CHAR at point."
+  (interactive "*P")
+  (ar-th-equalize 'char arg arg))
+
 (defun ar-equalize-comment-atpt (&optional arg)
   "Equalize COMMENT at point."
   (interactive "*P")
@@ -1305,6 +1350,11 @@
   "Escape BUFFER at point."
   (interactive "*P")
   (ar-th-escape 'buffer arg arg))
+
+(defun ar-escape-char-atpt (&optional arg)
+  "Escape CHAR at point."
+  (interactive "*P")
+  (ar-th-escape 'char arg arg))
 
 (defun ar-escape-comment-atpt (&optional arg)
   "Escape COMMENT at point."
@@ -1446,6 +1496,11 @@
   (interactive "*P")
   (ar-th-hash 'buffer arg arg))
 
+(defun ar-hash-char-atpt (&optional arg)
+  "Hash CHAR at point."
+  (interactive "*P")
+  (ar-th-hash 'char arg arg))
+
 (defun ar-hash-comment-atpt (&optional arg)
   "Hash COMMENT at point."
   (interactive "*P")
@@ -1585,6 +1640,11 @@
   "Hyphen BUFFER at point."
   (interactive "*P")
   (ar-th-hyphen 'buffer arg arg))
+
+(defun ar-hyphen-char-atpt (&optional arg)
+  "Hyphen CHAR at point."
+  (interactive "*P")
+  (ar-th-hyphen 'char arg arg))
 
 (defun ar-hyphen-comment-atpt (&optional arg)
   "Hyphen COMMENT at point."
@@ -1726,6 +1786,11 @@
   (interactive "*P")
   (ar-th-singlequote 'buffer arg arg))
 
+(defun ar-singlequote-char-atpt (&optional arg)
+  "Singlequote CHAR at point."
+  (interactive "*P")
+  (ar-th-singlequote 'char arg arg))
+
 (defun ar-singlequote-comment-atpt (&optional arg)
   "Singlequote COMMENT at point."
   (interactive "*P")
@@ -1865,6 +1930,11 @@
   "Slash BUFFER at point."
   (interactive "*P")
   (ar-th-slash 'buffer arg arg))
+
+(defun ar-slash-char-atpt (&optional arg)
+  "Slash CHAR at point."
+  (interactive "*P")
+  (ar-th-slash 'char arg arg))
 
 (defun ar-slash-comment-atpt (&optional arg)
   "Slash COMMENT at point."
@@ -2006,6 +2076,11 @@
   (interactive "*P")
   (ar-th-star 'buffer arg arg))
 
+(defun ar-star-char-atpt (&optional arg)
+  "Star CHAR at point."
+  (interactive "*P")
+  (ar-th-star 'char arg arg))
+
 (defun ar-star-comment-atpt (&optional arg)
   "Star COMMENT at point."
   (interactive "*P")
@@ -2145,6 +2220,11 @@
   "Tild BUFFER at point."
   (interactive "*P")
   (ar-th-tild 'buffer arg arg))
+
+(defun ar-tild-char-atpt (&optional arg)
+  "Tild CHAR at point."
+  (interactive "*P")
+  (ar-th-tild 'char arg arg))
 
 (defun ar-tild-comment-atpt (&optional arg)
   "Tild COMMENT at point."
@@ -2286,6 +2366,11 @@
   (interactive "*P")
   (ar-th-triplebacktick 'buffer arg arg))
 
+(defun ar-triplebacktick-char-atpt (&optional arg)
+  "Triplebacktick CHAR at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'char arg arg))
+
 (defun ar-triplebacktick-comment-atpt (&optional arg)
   "Triplebacktick COMMENT at point."
   (interactive "*P")
@@ -2426,6 +2511,11 @@
   (interactive "*P")
   (ar-th-underscore 'buffer arg arg))
 
+(defun ar-underscore-char-atpt (&optional arg)
+  "Underscore CHAR at point."
+  (interactive "*P")
+  (ar-th-underscore 'char arg arg))
+
 (defun ar-underscore-comment-atpt (&optional arg)
   "Underscore COMMENT at point."
   (interactive "*P")
@@ -2565,6 +2655,11 @@
   "Whitespace BUFFER at point."
   (interactive "*P")
   (ar-th-whitespace 'buffer arg arg))
+
+(defun ar-whitespace-char-atpt (&optional arg)
+  "Whitespace CHAR at point."
+  (interactive "*P")
+  (ar-th-whitespace 'char arg arg))
 
 (defun ar-whitespace-comment-atpt (&optional arg)
   "Whitespace COMMENT at point."
@@ -2708,6 +2803,11 @@
   (interactive "*P")
   (ar-th-delimit--intern 'buffer "{" "}" arg arg))
 
+(defun ar-brace-char-atpt (&optional arg)
+  "Brace CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char "{" "}" arg arg))
+
 (defun ar-brace-comment-atpt (&optional arg)
   "Brace COMMENT at point."
   (interactive "*P")
@@ -2847,6 +2947,11 @@
   "Bracket BUFFER at point."
   (interactive "*P")
   (ar-th-delimit--intern 'buffer "[" "]" arg arg))
+
+(defun ar-bracket-char-atpt (&optional arg)
+  "Bracket CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char "[" "]" arg arg))
 
 (defun ar-bracket-comment-atpt (&optional arg)
   "Bracket COMMENT at point."
@@ -2988,6 +3093,11 @@
   (interactive "*P")
   (ar-th-delimit--intern 'buffer "<" ">" arg arg))
 
+(defun ar-lesserangle-char-atpt (&optional arg)
+  "Lesserangle CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char "<" ">" arg arg))
+
 (defun ar-lesserangle-comment-atpt (&optional arg)
   "Lesserangle COMMENT at point."
   (interactive "*P")
@@ -3127,6 +3237,11 @@
   "Greaterangle BUFFER at point."
   (interactive "*P")
   (ar-th-delimit--intern 'buffer ">" "<" arg arg))
+
+(defun ar-greaterangle-char-atpt (&optional arg)
+  "Greaterangle CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char ">" "<" arg arg))
 
 (defun ar-greaterangle-comment-atpt (&optional arg)
   "Greaterangle COMMENT at point."
@@ -3268,6 +3383,11 @@
   (interactive "*P")
   (ar-th-delimit--intern 'buffer "‘" "’" arg arg))
 
+(defun ar-leftrightsinglequote-char-atpt (&optional arg)
+  "Leftrightsinglequote CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char "‘" "’" arg arg))
+
 (defun ar-leftrightsinglequote-comment-atpt (&optional arg)
   "Leftrightsinglequote COMMENT at point."
   (interactive "*P")
@@ -3408,6 +3528,11 @@
   (interactive "*P")
   (ar-th-delimit--intern 'buffer "“" "”" arg arg))
 
+(defun ar-leftrightdoublequote-char-atpt (&optional arg)
+  "Leftrightdoublequote CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char "“" "”" arg arg))
+
 (defun ar-leftrightdoublequote-comment-atpt (&optional arg)
   "Leftrightdoublequote COMMENT at point."
   (interactive "*P")
@@ -3547,6 +3672,11 @@
   "Parentize BUFFER at point."
   (interactive "*P")
   (ar-th-delimit--intern 'buffer "(" ")" arg arg))
+
+(defun ar-parentize-char-atpt (&optional arg)
+  "Parentize CHAR at point."
+  (interactive "*P")
+  (ar-th-delimit--intern 'char "(" ")" arg arg))
 
 (defun ar-parentize-comment-atpt (&optional arg)
   "Parentize COMMENT at point."
@@ -6168,6 +6298,107 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Deletes BUFFER at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'buffer beg end))
+
+(defun ar-char-atpt (&optional arg) 
+  "Returns char at point if any, nil otherwise. 
+
+With \\[universal-argument] strip delimiters if suitable"
+  (interactive "P")
+  (ar-th 'char arg))
+
+(defun ar-bounds-of-char-atpt (&optional arg)
+  "Returns a list, borders of char if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'char arg))
+
+(defun ar-char-beginning-position-atpt (&optional arg)
+  "Returns a number, beginning position CHAR at point if any, nil otherwise.  "
+  (interactive "P")
+  (ar-th-beg 'char arg))
+
+(defun ar-char-end-position-atpt (&optional arg)
+  "Returns a number, end position of CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-end 'char arg))
+
+(defun ar-char-beginning-atpt (&optional arg)
+  "Goto beginning of symbol or char-class CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotobeg 'char arg))
+
+(defun ar-char-end-atpt (&optional arg)
+  "Goto end of symbol or char-class CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'char arg))
+
+(defun ar-in-char-p-atpt (&optional arg)
+  "Returns bounds of CHAR at point, a list, if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'char arg))
+
+(defun ar-length-of-char-atpt (&optional arg)
+  "Returns beginning of symbol or char-class CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'char arg))
+
+(defun ar-copy-char-atpt (&optional arg)
+  "Returns a copy of CHAR at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-copy 'char arg))
+
+(defun ar-delete-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-delete 'char arg))
+
+(defun ar-kill-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-kill 'char arg))
+
+(defun ar-forward-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-forward 'char arg))
+
+(defun ar-backward-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-backward 'char arg))
+
+(defun ar-triplequotedq-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplequotedq 'char arg))
+
+(defun ar-triplequotesq-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplequotesq 'char arg))
+
+(defun ar-triplebacktick-char-atpt (&optional arg)
+  "Deletes char at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*p")
+  (ar-th-triplebacktick 'char arg))
+
+(defun ar-delete-char-in-region (beg end)
+  "Deletes CHAR at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'char beg end))
 
 (defun ar-comment-atpt (&optional arg) 
   "Returns comment at point if any, nil otherwise. 
@@ -20977,6 +21208,16 @@ See doku from `sort-subr', for details.
   With negative argument kill buffer(ed) at point "
   (interactive "P")
   (ar-th-base-copy-or 'buffer no-delimiters check))
+
+(defun ar-char-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with char(s).
+
+  Otherwise copy char(ed) at point
+  With NO-DELIMITERS, copy char(ed) without delimiters
+  With numerical argument 2 trim char
+  With negative argument kill char(ed) at point "
+  (interactive "P")
+  (ar-th-base-copy-or 'char no-delimiters check))
 
 (defun ar-comment-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with comment(s).
