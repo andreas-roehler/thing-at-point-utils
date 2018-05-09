@@ -64,6 +64,21 @@ args = sys.argv"
     (ar-beginning-of-defun)
     (should (bobp))))
 
+(ert-deftest ar-doubleslash-char-test ()
+  (ar-test-with-elisp-buffer-point-min "asdf"
+    (ar-doubleslash-char-atpt)
+    (should (eq (char-before) ?\/))))
+
+(ert-deftest ar-doublebackslash-char-test ()
+  (ar-test-with-elisp-buffer-point-min "asdf"
+    (ar-doublebackslash-char-atpt)
+    (should (eq (char-before) ?\\))))
+
+(ert-deftest ar-doublebackslashparen-char-test ()
+  (ar-test-with-elisp-buffer-point-min "as"
+    (ar-doublebackslashparen-char-atpt 2)
+    (should (eq (char-before) ?\)))))
+
 (ert-deftest ar-separate-alnum-in-parentized-atpt-test ()
   (ar-test-with-elisp-buffer
       "(defun asdf (&optional arg for bar))"
