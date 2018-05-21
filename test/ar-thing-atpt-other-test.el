@@ -79,6 +79,13 @@ args = sys.argv"
     (ar-doublebackslashparen-char-atpt 2)
     (should (eq (char-before) ?\)))))
 
+(ert-deftest ar-bracked-braced-numarg-test ()
+  (ar-test-with-elisp-buffer-point-min "[a][s][d][f]"
+      (forward-char 2)
+    (ar-brace-bracketed-atpt 4)
+    (should (eobp))
+    (should (eq (char-before) ?}))))
+
 (ert-deftest ar-separate-alnum-in-parentized-atpt-test ()
   (ar-test-with-elisp-buffer
       "(defun asdf (&optional arg for bar))"
@@ -348,7 +355,7 @@ return wwrap"
 ;;       "(asdf)"
 ;;       (forward-char -1)
 ;;     (ar-delimited2bracketed-atpt)
-;;     (sit-for 0.1) 
+;;     (sit-for 0.1)
 ;;     (should (eq 93 (char-after)))))
 
 (ert-deftest ar-ert-peel-list-test-1 ()
@@ -378,19 +385,19 @@ return wwrap"
       (should (< 7 (length erg))))))
 
 (ert-deftest elisp-delete-comment-test ()
-  (ar-test-with-elisp-buffer 
+  (ar-test-with-elisp-buffer
       "(defun ;; foo1"
     (ar-delete-comment-atpt)
     (should (not (eq (char-before) ?\;)))))
 
 (ert-deftest elisp-comment-backward-test ()
-  (ar-test-with-elisp-buffer 
+  (ar-test-with-elisp-buffer
       "(defun ;; foo1"
     (ar-backward-comment-atpt)
     (should (not (eq (char-before) ?\;)))))
 
 (ert-deftest elisp-comment-beginning-pos-test ()
-  (ar-test-with-elisp-buffer 
+  (ar-test-with-elisp-buffer
       "(defun ;; foo1
 ;; asdf"
     (should (eq (ar-comment-beginning-position-atpt) 8))))
@@ -402,13 +409,19 @@ return wwrap"
   \;\; (interactive \"\*\")"
         (should (eq (ar-comment-beginning-position-atpt) 8))))
 
+(ert-deftest elisp-forward-number-test ()
+  (ar-test-with-elisp-buffer-point-min
+      "f2oo1"
+      (ar-forward-number-atpt)
+    (should (eq (char-after) ?2))))
+
 ;; fails in batch-mode only, moved into interactive tests
 ;; (ert-deftest kill-delimited-test-1 ()
 ;;   (ar-test-with-elisp-buffer
 ;;       "(defun foo1 (&optional beg end))\n"
 ;;     (search-backward "foo")
 ;;     (ar-kill-delimited-atpt)
-;;     (sit-for 0.1) 
+;;     (sit-for 0.1)
 ;;     (should (eolp))))
 
 ;; (ert-deftest ar-ert-transpose-list-test-1 ()
