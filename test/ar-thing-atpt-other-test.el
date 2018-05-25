@@ -415,28 +415,11 @@ return wwrap"
       (ar-forward-number-atpt)
     (should (eq (char-after) ?2))))
 
-;; fails in batch-mode only, moved into interactive tests
-;; (ert-deftest kill-delimited-test-1 ()
-;;   (ar-test-with-elisp-buffer
-;;       "(defun foo1 (&optional beg end))\n"
-;;     (search-backward "foo")
-;;     (ar-kill-delimited-atpt)
-;;     (sit-for 0.1)
-;;     (should (eolp))))
+(ert-deftest delimited-paren-test ()
+  (ar-test-with-elisp-buffer-point-min
+      "(f2oo1)"
+      (should (eq 7 (length (ar-delimited-atpt))))))
 
-;; (ert-deftest ar-ert-transpose-list-test-1 ()
-;;   (ar-test-with-elisp-buffer-point-min
-;;       "(/ (* (* n 1) (1+ (* n 1))) 2)"
-;;       (search-forward "(" nil t 3)
-;;       (forward-char -1)
-;;       (forward-sexp)
-;;     (ar-transpose-parentized-atpt)))
-
-;; not implemented
-;; (ert-deftest ar-graveaccentsinglequoted-delimited-atpt-test ()
-;;   (ar-test-with-temp-buffer "`asdf48'"
-;;     (forward-char -1)
-;;     (should (eq 8 (length (ar-delimited-atpt))))))
-
+;
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
