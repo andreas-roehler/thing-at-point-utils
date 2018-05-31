@@ -73,7 +73,7 @@
 (defun ar-bracket2paren (beg end)
   (interactive "r*")
   "Translate delimiter chars FROM into char TO. "
-  (ar--translate-paired-delimiters-base beg end ?\[ ?( ?)))
+  (ar--translate-paired-delimiters-base beg end ?\[ ?\( ?\)))
 
 (defun ar-bracket2brace (beg end)
   (interactive "r*")
