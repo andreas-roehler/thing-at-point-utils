@@ -1,5 +1,4 @@
-buffer
-      "(f2oo1);;; ar-thing-atpt-other-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+;;; ar-thing-atpt-other-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015  Andreas Röhler
 
@@ -421,14 +420,14 @@ return wwrap"
       "(f2oo1)"
       (should (eq 7 (length (ar-delimited-atpt))))))
 
-(ert-deftest ar-doublebackslashparen-print-in-region-test ()
+(ert-deftest ar-doublebackslashparen-char-in-region-test ()
   (ar-test-with-elisp-buffer
       "asdf"
     (push-mark)
     (goto-char (point-min))
-    (ar-doublebackslashparen-print-in-region-atpt)
+    (ar-doublebackslashparen-char-in-region-atpt)
     (skip-chars-forward "^s")
-    (should (eq (char-before) 41))
+    (should (eq (char-before) 40))
     ))
 
 (provide 'ar-thing-atpt-other-test)
