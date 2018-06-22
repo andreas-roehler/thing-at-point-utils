@@ -35,6 +35,7 @@ FILE14=thingatpt-count-ratio.el
 FILE15=thingatpt-transform-generic-delimited.el
 FILE16=translate-paired-delimiters.el
 FILE17=thing-rest-list-in-region-only.el
+FILE18=thing-data-forms-aktiv-in-rest-list.el
 
 TEST1=test/ar-thing-at-point-utils-setup-tests.el
 TEST2=test/thing-at-point-utils-tests.el
@@ -89,6 +90,7 @@ hier () {
 -load $FILE15 \
 -load $FILE16 \
 -load $FILE17 \
+-load $FILE18 \
 \
 -load $TEST1 \
 -load $TEST2 \
