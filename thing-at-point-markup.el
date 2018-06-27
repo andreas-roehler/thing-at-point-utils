@@ -239,7 +239,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes beginendquote at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'beginendquote arg))
 
 (defun ar-trim-beginendquote-atpt (&optional no-delimiters iact check)
@@ -480,7 +480,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes blok at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'blok arg))
 
 (defun ar-trim-blok-atpt (&optional no-delimiters iact check)
@@ -721,7 +721,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes doublebackslashed at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'doublebackslashed arg))
 
 (defun ar-trim-doublebackslashed-atpt (&optional no-delimiters iact check)
@@ -962,7 +962,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes doublebackticked at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'doublebackticked arg))
 
 (defun ar-trim-doublebackticked-atpt (&optional no-delimiters iact check)
@@ -1203,7 +1203,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes doublebackslashedparen at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'doublebackslashedparen arg))
 
 (defun ar-trim-doublebackslashedparen-atpt (&optional no-delimiters iact check)
@@ -1444,7 +1444,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes doubleslashed at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'doubleslashed arg))
 
 (defun ar-trim-doubleslashed-atpt (&optional no-delimiters iact check)
@@ -1685,7 +1685,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes doubleslashedparen at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'doubleslashedparen arg))
 
 (defun ar-trim-doubleslashedparen-atpt (&optional no-delimiters iact check)
@@ -1926,7 +1926,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes markup at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'markup arg))
 
 (defun ar-trim-markup-atpt (&optional no-delimiters iact check)
@@ -2167,7 +2167,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes mldata at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'mldata arg))
 
 (defun ar-trim-mldata-atpt (&optional no-delimiters iact check)
@@ -2408,7 +2408,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes mlattribut at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'mlattribut arg))
 
 (defun ar-trim-mlattribut-atpt (&optional no-delimiters iact check)
@@ -2649,7 +2649,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes mltag at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'mltag arg))
 
 (defun ar-trim-mltag-atpt (&optional no-delimiters iact check)
@@ -2890,7 +2890,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes slashedparen at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'slashedparen arg))
 
 (defun ar-trim-slashedparen-atpt (&optional no-delimiters iact check)
@@ -3131,7 +3131,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes tabledata at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'tabledata arg))
 
 (defun ar-trim-tabledata-atpt (&optional no-delimiters iact check)
@@ -3372,7 +3372,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes xslstylesheet at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'xslstylesheet arg))
 
 (defun ar-trim-xslstylesheet-atpt (&optional no-delimiters iact check)
@@ -3613,7 +3613,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   "Deletes xsltemplate at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*p")
+  (interactive "*P")
   (ar-th-triplebacktick 'xsltemplate arg))
 
 (defun ar-trim-xsltemplate-atpt (&optional no-delimiters iact check)
