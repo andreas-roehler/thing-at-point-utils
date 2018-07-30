@@ -28,7 +28,6 @@
 ;;; Code:
 
 (require 'thingatpt-utils-core)
-(require 'thingatpt-utils-map)
 
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 (defun ar-colon-greateranglednested-atpt (&optional arg)
