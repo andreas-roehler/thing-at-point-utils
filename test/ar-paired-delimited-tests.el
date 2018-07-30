@@ -29,7 +29,7 @@
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
       (let ((braced-laenge 25)
-	    (ar-match-in-string-p t))
+	    (ar-generic-match-p t))
         (goto-char 7)
         (should (eq braced-laenge (length (ar-braced-atpt)))))))
       
@@ -37,14 +37,14 @@
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
       (let ((bracketed-laenge 23)
-	    (ar-match-in-string-p t))
+	    (ar-generic-match-p t))
         (goto-char 7)
         (should (eq bracketed-laenge (length (ar-bracketed-atpt)))))))
       
 (ert-deftest ar-lesserangled-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((ar-match-in-string-p t)
+      (let ((ar-generic-match-p t)
 	    (lesserangled-laenge 27))
         (goto-char 7)
         (should (eq lesserangled-laenge (length (ar-lesserangled-atpt)))))))
@@ -53,14 +53,14 @@
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
       (let ((leftrightsinglequoted-laenge 19)
-	    (ar-match-in-string-p t))
+	    (ar-generic-match-p t))
         (goto-char 7)
         (should (eq leftrightsinglequoted-laenge (length (ar-leftrightsinglequoted-atpt)))))))
       
 (ert-deftest ar-parentized-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((ar-match-in-string-p t)
+      (let ((ar-generic-match-p t)
 	    (parentized-laenge 21))
         (goto-char 7)
         (should (eq parentized-laenge (length (ar-parentized-atpt)))))))
