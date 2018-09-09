@@ -55,12 +55,12 @@
     (forward-char -1)
     (should (eq 8 (length (ar-greaterangled-atpt))))))
 
-(ert-deftest ar-leftrightsinglequote-alnum-atpt-test ()
+(ert-deftest ar-curvedsinglequote-alnum-atpt-test ()
   (ar-test-with-temp-buffer "asdf48"
     (forward-char -1)
-    (ar-leftrightsinglequote-alnum-atpt)
+    (ar-curvedsinglequote-alnum-atpt)
     (forward-char -1)
-    (should (eq 8 (length (ar-leftrightsinglequoted-atpt))))))
+    (should (eq 8 (length (ar-curvedsinglequoted-atpt))))))
 
 (ert-deftest ar-parentize-alnum-atpt-test ()
   (ar-test-with-temp-buffer "asdf48"

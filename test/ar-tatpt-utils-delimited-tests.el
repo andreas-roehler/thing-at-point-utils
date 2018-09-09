@@ -241,11 +241,11 @@
     (ar-th-kill 'backslashed)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-backslashed-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-backslashed-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'backslashed)
+    (ar-th-curvedsinglequote 'backslashed)
     (should (eq (char-before) 8217))))
 
 (ert-deftest ar-backslashed-parentize-atpt-test ()
@@ -532,11 +532,11 @@
     (ar-th-kill 'dollared)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-dollared-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-dollared-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "$asdf$"
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'dollared)
+    (ar-th-curvedsinglequote 'dollared)
     (should (eq 8217 (char-before)))))
 
 (ert-deftest ar-dollared-parentize-atpt-test ()
@@ -815,11 +815,11 @@
     (ar-th-kill 'doublequoted)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-doublequoted-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-doublequoted-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\"asdf\""
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'doublequoted)
+    (ar-th-curvedsinglequote 'doublequoted)
     (should (eq (char-before) 8217))))
 
 (ert-deftest ar-doublequoted-parentize-atpt-test ()
@@ -1100,11 +1100,11 @@
     (ar-th-kill 'equalized)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-equalized-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-equalized-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "=asdf="
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'equalized)
+    (ar-th-curvedsinglequote 'equalized)
     (should (eq (char-before) 8217))))
 
 (ert-deftest ar-equalized-parentize-atpt-test ()
@@ -1384,11 +1384,11 @@
     (ar-th-kill 'hyphened)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-hyphened-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-hyphened-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "-asdf-"
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'hyphened)
+    (ar-th-curvedsinglequote 'hyphened)
     (should (eq 8217 (char-before)))))
 
 (ert-deftest ar-hyphened-parentize-atpt-test ()
@@ -1668,11 +1668,11 @@
     (ar-th-kill 'singlequoted)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-singlequoted-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-singlequoted-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "'asdf'"
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'singlequoted)
+    (ar-th-curvedsinglequote 'singlequoted)
     (should (eq (char-before) 8217))))
 
 (ert-deftest ar-singlequoted-parentize-atpt-test ()
@@ -1952,11 +1952,11 @@
     (ar-th-kill 'slashed)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-slashed-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-slashed-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "/asdf/"
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'slashed)
+    (ar-th-curvedsinglequote 'slashed)
     (should (eq 8217 (char-before)))))
 
 (ert-deftest ar-slashed-parentize-atpt-test ()
@@ -2236,11 +2236,11 @@
     (ar-th-kill 'underscored)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-underscored-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-underscored-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "_asdf_"
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'underscored)
+    (ar-th-curvedsinglequote 'underscored)
     (should (eq 8217 (char-before)))))
 
 (ert-deftest ar-underscored-parentize-atpt-test ()
@@ -2520,11 +2520,11 @@
     (ar-th-kill 'whitespaced)
     (should (eq 1 (point)))))
 
-(ert-deftest ar-whitespaced-leftrightsinglequote-atpt-test ()
+(ert-deftest ar-whitespaced-curvedsinglequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       " asdf "
       (forward-char 1)
-    (ar-th-leftrightsinglequote 'whitespaced)
+    (ar-th-curvedsinglequote 'whitespaced)
     (should (eq (char-before) ?’))))
 
 (ert-deftest ar-whitespaced-parentize-atpt-test ()

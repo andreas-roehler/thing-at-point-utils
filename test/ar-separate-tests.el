@@ -63,19 +63,19 @@
     (beginning-of-line)  
     (should (char-equal ?\> (char-after)))))
 
-(ert-deftest ar-separate-leftrightsinglequoted-paired-delimited-test ()
+(ert-deftest ar-separate-curvedsinglequoted-paired-delimited-test ()
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
     (goto-char 10)
-    (ar-separate-leftrightsinglequoted-atpt)
+    (ar-separate-curvedsinglequoted-atpt)
     (should (bolp))
     (forward-line -1)
     (beginning-of-line)  
     (should (char-equal ?\‘ (char-after)))))
 
-(ert-deftest ar-separate-leftrightdoublequoted-paired-delimited-test ()
+(ert-deftest ar-separate-curveddoublequoted-paired-delimited-test ()
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
     (goto-char 10)
-    (ar-separate-leftrightdoublequoted-atpt)
+    (ar-separate-curveddoublequoted-atpt)
     (should (bolp))
     (forward-line -1)
     (beginning-of-line)  

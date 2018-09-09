@@ -6068,420 +6068,420 @@
   (ar-th-ratio-base 'upper 'greaterangled beg end t))
 
 
-(defun ar-count-alnum-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of alnum in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-alnum-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of alnum in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alnum 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'alnum 'curvedsinglequoted beg end nil))
 
-(defun ar-count-alnum-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of alnum in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-alnum-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of alnum in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alnum 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'alnum 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-alnum-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of alnum in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-alnum-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of alnum in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alnum 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'alnum 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-alpha-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of alpha in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-alpha-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of alpha in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alpha 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'alpha 'curvedsinglequoted beg end nil))
 
-(defun ar-count-alpha-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of alpha in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-alpha-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of alpha in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alpha 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'alpha 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-alpha-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of alpha in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-alpha-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of alpha in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alpha 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'alpha 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-ascii-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of ascii in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-ascii-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of ascii in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'ascii 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'ascii 'curvedsinglequoted beg end nil))
 
-(defun ar-count-ascii-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of ascii in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-ascii-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of ascii in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'ascii 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'ascii 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-ascii-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of ascii in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-ascii-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of ascii in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'ascii 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'ascii 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-blank-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of blank in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-blank-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of blank in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'blank 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'blank 'curvedsinglequoted beg end nil))
 
-(defun ar-count-blank-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of blank in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-blank-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of blank in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'blank 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'blank 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-blank-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of blank in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-blank-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of blank in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'blank 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'blank 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-cntrl-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of cntrl in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-cntrl-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of cntrl in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'cntrl 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'cntrl 'curvedsinglequoted beg end nil))
 
-(defun ar-count-cntrl-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of cntrl in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-cntrl-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of cntrl in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'cntrl 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'cntrl 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-cntrl-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of cntrl in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-cntrl-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of cntrl in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'cntrl 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'cntrl 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-digit-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of digit in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-digit-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of digit in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'digit 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'digit 'curvedsinglequoted beg end nil))
 
-(defun ar-count-digit-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of digit in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-digit-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of digit in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'digit 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'digit 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-digit-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of digit in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-digit-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of digit in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'digit 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'digit 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-graph-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of graph in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-graph-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of graph in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'graph 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'graph 'curvedsinglequoted beg end nil))
 
-(defun ar-count-graph-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of graph in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-graph-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of graph in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'graph 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'graph 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-graph-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of graph in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-graph-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of graph in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'graph 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'graph 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-lower-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of lower in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-lower-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of lower in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lower 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'lower 'curvedsinglequoted beg end nil))
 
-(defun ar-count-lower-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of lower in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-lower-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of lower in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lower 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'lower 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-lower-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of lower in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-lower-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of lower in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lower 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'lower 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-nonascii-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of nonascii in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-nonascii-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of nonascii in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'nonascii 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'nonascii 'curvedsinglequoted beg end nil))
 
-(defun ar-count-nonascii-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of nonascii in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-nonascii-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of nonascii in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'nonascii 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'nonascii 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-nonascii-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of nonascii in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-nonascii-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of nonascii in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'nonascii 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'nonascii 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-print-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of print in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-print-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of print in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'print 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'print 'curvedsinglequoted beg end nil))
 
-(defun ar-count-print-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of print in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-print-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of print in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'print 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'print 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-print-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of print in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-print-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of print in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'print 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'print 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-punct-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of punct in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-punct-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of punct in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'punct 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'punct 'curvedsinglequoted beg end nil))
 
-(defun ar-count-punct-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of punct in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-punct-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of punct in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'punct 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'punct 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-punct-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of punct in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-punct-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of punct in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'punct 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'punct 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-space-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of space in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-space-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of space in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'space 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'space 'curvedsinglequoted beg end nil))
 
-(defun ar-count-space-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of space in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-space-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of space in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'space 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'space 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-space-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of space in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-space-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of space in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'space 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'space 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-upper-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of upper in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-upper-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of upper in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'upper 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'upper 'curvedsinglequoted beg end nil))
 
-(defun ar-count-upper-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of upper in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-upper-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of upper in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'upper 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'upper 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-upper-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of upper in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-upper-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of upper in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'upper 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'upper 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-alnum-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of alnum in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-alnum-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of alnum in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alnum 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'alnum 'curveddoublequoted beg end nil))
 
-(defun ar-count-alnum-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of alnum in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-alnum-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of alnum in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alnum 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'alnum 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-alnum-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of alnum in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-alnum-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of alnum in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alnum 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'alnum 'curveddoublequoted beg end t))
 
 
-(defun ar-count-alpha-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of alpha in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-alpha-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of alpha in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alpha 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'alpha 'curveddoublequoted beg end nil))
 
-(defun ar-count-alpha-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of alpha in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-alpha-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of alpha in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alpha 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'alpha 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-alpha-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of alpha in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-alpha-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of alpha in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'alpha 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'alpha 'curveddoublequoted beg end t))
 
 
-(defun ar-count-ascii-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of ascii in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-ascii-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of ascii in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'ascii 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'ascii 'curveddoublequoted beg end nil))
 
-(defun ar-count-ascii-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of ascii in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-ascii-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of ascii in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'ascii 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'ascii 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-ascii-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of ascii in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-ascii-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of ascii in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'ascii 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'ascii 'curveddoublequoted beg end t))
 
 
-(defun ar-count-blank-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of blank in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-blank-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of blank in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'blank 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'blank 'curveddoublequoted beg end nil))
 
-(defun ar-count-blank-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of blank in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-blank-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of blank in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'blank 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'blank 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-blank-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of blank in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-blank-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of blank in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'blank 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'blank 'curveddoublequoted beg end t))
 
 
-(defun ar-count-cntrl-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of cntrl in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-cntrl-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of cntrl in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'cntrl 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'cntrl 'curveddoublequoted beg end nil))
 
-(defun ar-count-cntrl-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of cntrl in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-cntrl-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of cntrl in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'cntrl 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'cntrl 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-cntrl-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of cntrl in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-cntrl-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of cntrl in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'cntrl 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'cntrl 'curveddoublequoted beg end t))
 
 
-(defun ar-count-digit-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of digit in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-digit-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of digit in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'digit 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'digit 'curveddoublequoted beg end nil))
 
-(defun ar-count-digit-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of digit in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-digit-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of digit in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'digit 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'digit 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-digit-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of digit in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-digit-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of digit in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'digit 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'digit 'curveddoublequoted beg end t))
 
 
-(defun ar-count-graph-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of graph in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-graph-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of graph in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'graph 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'graph 'curveddoublequoted beg end nil))
 
-(defun ar-count-graph-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of graph in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-graph-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of graph in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'graph 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'graph 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-graph-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of graph in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-graph-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of graph in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'graph 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'graph 'curveddoublequoted beg end t))
 
 
-(defun ar-count-lower-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of lower in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-lower-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of lower in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lower 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'lower 'curveddoublequoted beg end nil))
 
-(defun ar-count-lower-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of lower in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-lower-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of lower in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lower 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'lower 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-lower-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of lower in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-lower-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of lower in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lower 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'lower 'curveddoublequoted beg end t))
 
 
-(defun ar-count-nonascii-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of nonascii in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-nonascii-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of nonascii in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'nonascii 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'nonascii 'curveddoublequoted beg end nil))
 
-(defun ar-count-nonascii-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of nonascii in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-nonascii-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of nonascii in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'nonascii 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'nonascii 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-nonascii-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of nonascii in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-nonascii-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of nonascii in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'nonascii 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'nonascii 'curveddoublequoted beg end t))
 
 
-(defun ar-count-print-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of print in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-print-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of print in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'print 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'print 'curveddoublequoted beg end nil))
 
-(defun ar-count-print-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of print in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-print-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of print in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'print 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'print 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-print-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of print in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-print-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of print in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'print 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'print 'curveddoublequoted beg end t))
 
 
-(defun ar-count-punct-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of punct in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-punct-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of punct in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'punct 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'punct 'curveddoublequoted beg end nil))
 
-(defun ar-count-punct-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of punct in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-punct-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of punct in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'punct 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'punct 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-punct-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of punct in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-punct-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of punct in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'punct 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'punct 'curveddoublequoted beg end t))
 
 
-(defun ar-count-space-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of space in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-space-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of space in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'space 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'space 'curveddoublequoted beg end nil))
 
-(defun ar-count-space-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of space in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-space-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of space in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'space 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'space 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-space-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of space in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-space-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of space in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'space 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'space 'curveddoublequoted beg end t))
 
 
-(defun ar-count-upper-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of upper in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-upper-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of upper in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'upper 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'upper 'curveddoublequoted beg end nil))
 
-(defun ar-count-upper-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of upper in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-upper-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of upper in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'upper 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'upper 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-upper-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of upper in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-upper-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of upper in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'upper 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'upper 'curveddoublequoted beg end t))
 
 
 (defun ar-count-alnum-in-parentized-atpt (&optional beg end) 
@@ -6761,36 +6761,36 @@
   (ar-th-ratio-base 'greaterangled 'braced beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-braced-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in braced if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-braced-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in braced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'braced beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'braced beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-braced-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in braced if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-braced-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in braced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'braced beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'braced beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-braced-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in braced if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-braced-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in braced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'braced beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'braced beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-braced-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in braced if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-braced-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in braced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'braced beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'braced beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-braced-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in braced if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-braced-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in braced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'braced beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'braced beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-braced-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in braced if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-braced-atpt (&optional beg end) 
+"Relation of curveddoublequoted in braced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'braced beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'braced beg end t))
 
 
 (defun ar-count-parentized-in-braced-atpt (&optional beg end) 
@@ -6873,36 +6873,36 @@
   (ar-th-ratio-base 'greaterangled 'bracketed beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-bracketed-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in bracketed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-bracketed-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in bracketed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'bracketed beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'bracketed beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-bracketed-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in bracketed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-bracketed-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in bracketed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'bracketed beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'bracketed beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-bracketed-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in bracketed if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-bracketed-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in bracketed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'bracketed beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'bracketed beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-bracketed-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in bracketed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-bracketed-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in bracketed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'bracketed beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'bracketed beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-bracketed-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in bracketed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-bracketed-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in bracketed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'bracketed beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'bracketed beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-bracketed-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in bracketed if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-bracketed-atpt (&optional beg end) 
+"Relation of curveddoublequoted in bracketed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'bracketed beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'bracketed beg end t))
 
 
 (defun ar-count-parentized-in-bracketed-atpt (&optional beg end) 
@@ -6985,36 +6985,36 @@
   (ar-th-ratio-base 'greaterangled 'lesserangled beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-lesserangled-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in lesserangled if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-lesserangled-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'lesserangled beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'lesserangled beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-lesserangled-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in lesserangled if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-lesserangled-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'lesserangled beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'lesserangled beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-lesserangled-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in lesserangled if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-lesserangled-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'lesserangled beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'lesserangled beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-lesserangled-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in lesserangled if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-lesserangled-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'lesserangled beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'lesserangled beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-lesserangled-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in lesserangled if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-lesserangled-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'lesserangled beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'lesserangled beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-lesserangled-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in lesserangled if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-lesserangled-atpt (&optional beg end) 
+"Relation of curveddoublequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'lesserangled beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'lesserangled beg end t))
 
 
 (defun ar-count-parentized-in-lesserangled-atpt (&optional beg end) 
@@ -7097,36 +7097,36 @@
   (ar-th-ratio-base 'greaterangled 'greaterangled beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-greaterangled-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in greaterangled if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-greaterangled-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in greaterangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'greaterangled beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'greaterangled beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-greaterangled-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in greaterangled if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-greaterangled-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in greaterangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'greaterangled beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'greaterangled beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-greaterangled-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in greaterangled if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-greaterangled-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in greaterangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'greaterangled beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'greaterangled beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-greaterangled-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in greaterangled if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-greaterangled-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in greaterangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'greaterangled beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'greaterangled beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-greaterangled-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in greaterangled if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-greaterangled-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in greaterangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'greaterangled beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'greaterangled beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-greaterangled-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in greaterangled if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-greaterangled-atpt (&optional beg end) 
+"Relation of curveddoublequoted in greaterangled if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'greaterangled beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'greaterangled beg end t))
 
 
 (defun ar-count-parentized-in-greaterangled-atpt (&optional beg end) 
@@ -7145,228 +7145,228 @@
   (ar-th-ratio-base 'parentized 'greaterangled beg end t))
 
 
-(defun ar-count-braced-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of braced in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-braced-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of braced in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'braced 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'braced 'curvedsinglequoted beg end nil))
 
-(defun ar-count-braced-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of braced in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-braced-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of braced in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'braced 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'braced 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-braced-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of braced in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-braced-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of braced in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'braced 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'braced 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-bracketed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of bracketed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-bracketed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of bracketed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'bracketed 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'bracketed 'curvedsinglequoted beg end nil))
 
-(defun ar-count-bracketed-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of bracketed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-bracketed-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of bracketed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'bracketed 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'bracketed 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-bracketed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of bracketed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-bracketed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of bracketed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'bracketed 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'bracketed 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-lesserangled-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of lesserangled in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-lesserangled-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of lesserangled in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lesserangled 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'lesserangled 'curvedsinglequoted beg end nil))
 
-(defun ar-count-lesserangled-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of lesserangled in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-lesserangled-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of lesserangled in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lesserangled 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'lesserangled 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-lesserangled-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of lesserangled in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-lesserangled-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of lesserangled in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lesserangled 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'lesserangled 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-greaterangled-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of greaterangled in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-greaterangled-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of greaterangled in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'greaterangled 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'greaterangled 'curvedsinglequoted beg end nil))
 
-(defun ar-count-greaterangled-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of greaterangled in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-greaterangled-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of greaterangled in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'greaterangled 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'greaterangled 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-greaterangled-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of greaterangled in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-greaterangled-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of greaterangled in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'greaterangled 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'greaterangled 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'curvedsinglequoted beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'curvedsinglequoted beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of curveddoublequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-parentized-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of parentized in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-parentized-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of parentized in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'parentized 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'parentized 'curvedsinglequoted beg end nil))
 
-(defun ar-count-parentized-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of parentized in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-parentized-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of parentized in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'parentized 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'parentized 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-parentized-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of parentized in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-parentized-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of parentized in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'parentized 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'parentized 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-braced-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of braced in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-braced-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of braced in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'braced 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'braced 'curveddoublequoted beg end nil))
 
-(defun ar-count-braced-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of braced in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-braced-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of braced in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'braced 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'braced 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-braced-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of braced in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-braced-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of braced in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'braced 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'braced 'curveddoublequoted beg end t))
 
 
-(defun ar-count-bracketed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of bracketed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-bracketed-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of bracketed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'bracketed 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'bracketed 'curveddoublequoted beg end nil))
 
-(defun ar-count-bracketed-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of bracketed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-bracketed-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of bracketed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'bracketed 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'bracketed 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-bracketed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of bracketed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-bracketed-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of bracketed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'bracketed 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'bracketed 'curveddoublequoted beg end t))
 
 
-(defun ar-count-lesserangled-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of lesserangled in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-lesserangled-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of lesserangled in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lesserangled 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'lesserangled 'curveddoublequoted beg end nil))
 
-(defun ar-count-lesserangled-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of lesserangled in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-lesserangled-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of lesserangled in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lesserangled 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'lesserangled 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-lesserangled-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of lesserangled in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-lesserangled-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of lesserangled in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'lesserangled 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'lesserangled 'curveddoublequoted beg end t))
 
 
-(defun ar-count-greaterangled-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of greaterangled in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-greaterangled-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of greaterangled in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'greaterangled 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'greaterangled 'curveddoublequoted beg end nil))
 
-(defun ar-count-greaterangled-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of greaterangled in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-greaterangled-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of greaterangled in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'greaterangled 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'greaterangled 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-greaterangled-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of greaterangled in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-greaterangled-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of greaterangled in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'greaterangled 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'greaterangled 'curveddoublequoted beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'curveddoublequoted beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'curveddoublequoted beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'curveddoublequoted beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of curveddoublequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'curveddoublequoted beg end t))
 
 
-(defun ar-count-parentized-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of parentized in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-parentized-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of parentized in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'parentized 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'parentized 'curveddoublequoted beg end nil))
 
-(defun ar-count-parentized-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of parentized in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-parentized-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of parentized in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'parentized 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'parentized 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-parentized-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of parentized in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-parentized-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of parentized in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'parentized 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'parentized 'curveddoublequoted beg end t))
 
 
 (defun ar-count-braced-in-parentized-atpt (&optional beg end) 
@@ -7433,36 +7433,36 @@
   (ar-th-ratio-base 'greaterangled 'parentized beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-parentized-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in parentized if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-parentized-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in parentized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'parentized beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'parentized beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-parentized-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in parentized if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-parentized-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in parentized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'parentized beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'parentized beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-parentized-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in parentized if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-parentized-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in parentized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'parentized beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'parentized beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-parentized-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in parentized if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-parentized-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in parentized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'parentized beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'parentized beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-parentized-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in parentized if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-parentized-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in parentized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'parentized beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'parentized beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-parentized-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in parentized if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-parentized-atpt (&optional beg end) 
+"Relation of curveddoublequoted in parentized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'parentized beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'parentized beg end t))
 
 
 (defun ar-count-parentized-in-parentized-atpt (&optional beg end) 
@@ -7550,36 +7550,36 @@
   (ar-th-ratio-base 'greaterangled 'backslashed beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-backslashed-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in backslashed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-backslashed-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in backslashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'backslashed beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'backslashed beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-backslashed-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in backslashed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-backslashed-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in backslashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'backslashed beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'backslashed beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-backslashed-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in backslashed if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-backslashed-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in backslashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'backslashed beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'backslashed beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-backslashed-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in backslashed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-backslashed-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in backslashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'backslashed beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'backslashed beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-backslashed-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in backslashed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-backslashed-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in backslashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'backslashed beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'backslashed beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-backslashed-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in backslashed if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-backslashed-atpt (&optional beg end) 
+"Relation of curveddoublequoted in backslashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'backslashed beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'backslashed beg end t))
 
 
 (defun ar-count-parentized-in-backslashed-atpt (&optional beg end) 
@@ -7662,36 +7662,36 @@
   (ar-th-ratio-base 'greaterangled 'backticked beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-backticked-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in backticked if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-backticked-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in backticked if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'backticked beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'backticked beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-backticked-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in backticked if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-backticked-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in backticked if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'backticked beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'backticked beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-backticked-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in backticked if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-backticked-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in backticked if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'backticked beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'backticked beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-backticked-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in backticked if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-backticked-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in backticked if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'backticked beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'backticked beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-backticked-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in backticked if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-backticked-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in backticked if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'backticked beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'backticked beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-backticked-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in backticked if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-backticked-atpt (&optional beg end) 
+"Relation of curveddoublequoted in backticked if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'backticked beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'backticked beg end t))
 
 
 (defun ar-count-parentized-in-backticked-atpt (&optional beg end) 
@@ -7774,36 +7774,36 @@
   (ar-th-ratio-base 'greaterangled 'coloned beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-coloned-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in coloned if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-coloned-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in coloned if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'coloned beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'coloned beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-coloned-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in coloned if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-coloned-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in coloned if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'coloned beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'coloned beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-coloned-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in coloned if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-coloned-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in coloned if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'coloned beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'coloned beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-coloned-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in coloned if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-coloned-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in coloned if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'coloned beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'coloned beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-coloned-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in coloned if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-coloned-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in coloned if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'coloned beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'coloned beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-coloned-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in coloned if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-coloned-atpt (&optional beg end) 
+"Relation of curveddoublequoted in coloned if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'coloned beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'coloned beg end t))
 
 
 (defun ar-count-parentized-in-coloned-atpt (&optional beg end) 
@@ -7886,36 +7886,36 @@
   (ar-th-ratio-base 'greaterangled 'crossed beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-crossed-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in crossed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-crossed-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in crossed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'crossed beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'crossed beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-crossed-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in crossed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-crossed-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in crossed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'crossed beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'crossed beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-crossed-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in crossed if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-crossed-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in crossed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'crossed beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'crossed beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-crossed-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in crossed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-crossed-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in crossed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'crossed beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'crossed beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-crossed-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in crossed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-crossed-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in crossed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'crossed beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'crossed beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-crossed-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in crossed if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-crossed-atpt (&optional beg end) 
+"Relation of curveddoublequoted in crossed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'crossed beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'crossed beg end t))
 
 
 (defun ar-count-parentized-in-crossed-atpt (&optional beg end) 
@@ -7998,36 +7998,36 @@
   (ar-th-ratio-base 'greaterangled 'dollared beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-dollared-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in dollared if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-dollared-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in dollared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'dollared beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'dollared beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-dollared-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in dollared if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-dollared-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in dollared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'dollared beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'dollared beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-dollared-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in dollared if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-dollared-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in dollared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'dollared beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'dollared beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-dollared-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in dollared if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-dollared-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in dollared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'dollared beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'dollared beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-dollared-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in dollared if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-dollared-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in dollared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'dollared beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'dollared beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-dollared-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in dollared if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-dollared-atpt (&optional beg end) 
+"Relation of curveddoublequoted in dollared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'dollared beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'dollared beg end t))
 
 
 (defun ar-count-parentized-in-dollared-atpt (&optional beg end) 
@@ -8110,36 +8110,36 @@
   (ar-th-ratio-base 'greaterangled 'doublequoted beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-doublequoted-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in doublequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-doublequoted-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in doublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'doublequoted beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'doublequoted beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-doublequoted-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in doublequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-doublequoted-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in doublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'doublequoted beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'doublequoted beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-doublequoted-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in doublequoted if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-doublequoted-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in doublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'doublequoted beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'doublequoted beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-doublequoted-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in doublequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-doublequoted-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in doublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'doublequoted beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'doublequoted beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-doublequoted-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in doublequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-doublequoted-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in doublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'doublequoted beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'doublequoted beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-doublequoted-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in doublequoted if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-doublequoted-atpt (&optional beg end) 
+"Relation of curveddoublequoted in doublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'doublequoted beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'doublequoted beg end t))
 
 
 (defun ar-count-parentized-in-doublequoted-atpt (&optional beg end) 
@@ -8222,36 +8222,36 @@
   (ar-th-ratio-base 'greaterangled 'equalized beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-equalized-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in equalized if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-equalized-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in equalized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'equalized beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'equalized beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-equalized-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in equalized if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-equalized-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in equalized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'equalized beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'equalized beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-equalized-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in equalized if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-equalized-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in equalized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'equalized beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'equalized beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-equalized-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in equalized if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-equalized-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in equalized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'equalized beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'equalized beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-equalized-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in equalized if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-equalized-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in equalized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'equalized beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'equalized beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-equalized-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in equalized if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-equalized-atpt (&optional beg end) 
+"Relation of curveddoublequoted in equalized if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'equalized beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'equalized beg end t))
 
 
 (defun ar-count-parentized-in-equalized-atpt (&optional beg end) 
@@ -8334,36 +8334,36 @@
   (ar-th-ratio-base 'greaterangled 'hashed beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-hashed-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in hashed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-hashed-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in hashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'hashed beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'hashed beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-hashed-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in hashed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-hashed-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in hashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'hashed beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'hashed beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-hashed-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in hashed if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-hashed-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in hashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'hashed beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'hashed beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-hashed-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in hashed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-hashed-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in hashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'hashed beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'hashed beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-hashed-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in hashed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-hashed-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in hashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'hashed beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'hashed beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-hashed-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in hashed if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-hashed-atpt (&optional beg end) 
+"Relation of curveddoublequoted in hashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'hashed beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'hashed beg end t))
 
 
 (defun ar-count-parentized-in-hashed-atpt (&optional beg end) 
@@ -8446,36 +8446,36 @@
   (ar-th-ratio-base 'greaterangled 'hyphened beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-hyphened-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in hyphened if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-hyphened-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in hyphened if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'hyphened beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'hyphened beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-hyphened-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in hyphened if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-hyphened-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in hyphened if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'hyphened beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'hyphened beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-hyphened-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in hyphened if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-hyphened-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in hyphened if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'hyphened beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'hyphened beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-hyphened-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in hyphened if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-hyphened-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in hyphened if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'hyphened beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'hyphened beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-hyphened-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in hyphened if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-hyphened-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in hyphened if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'hyphened beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'hyphened beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-hyphened-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in hyphened if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-hyphened-atpt (&optional beg end) 
+"Relation of curveddoublequoted in hyphened if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'hyphened beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'hyphened beg end t))
 
 
 (defun ar-count-parentized-in-hyphened-atpt (&optional beg end) 
@@ -8558,36 +8558,36 @@
   (ar-th-ratio-base 'greaterangled 'singlequoted beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-singlequoted-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in singlequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-singlequoted-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in singlequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'singlequoted beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'singlequoted beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-singlequoted-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in singlequoted if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-singlequoted-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in singlequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'singlequoted beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'singlequoted beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-singlequoted-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in singlequoted if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-singlequoted-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in singlequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'singlequoted beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'singlequoted beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-singlequoted-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in singlequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-singlequoted-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in singlequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'singlequoted beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'singlequoted beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-singlequoted-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in singlequoted if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-singlequoted-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in singlequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'singlequoted beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'singlequoted beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-singlequoted-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in singlequoted if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-singlequoted-atpt (&optional beg end) 
+"Relation of curveddoublequoted in singlequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'singlequoted beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'singlequoted beg end t))
 
 
 (defun ar-count-parentized-in-singlequoted-atpt (&optional beg end) 
@@ -8670,36 +8670,36 @@
   (ar-th-ratio-base 'greaterangled 'slashed beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-slashed-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in slashed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-slashed-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in slashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'slashed beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'slashed beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-slashed-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in slashed if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-slashed-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in slashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'slashed beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'slashed beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-slashed-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in slashed if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-slashed-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in slashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'slashed beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'slashed beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-slashed-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in slashed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-slashed-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in slashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'slashed beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'slashed beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-slashed-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in slashed if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-slashed-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in slashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'slashed beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'slashed beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-slashed-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in slashed if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-slashed-atpt (&optional beg end) 
+"Relation of curveddoublequoted in slashed if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'slashed beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'slashed beg end t))
 
 
 (defun ar-count-parentized-in-slashed-atpt (&optional beg end) 
@@ -8782,36 +8782,36 @@
   (ar-th-ratio-base 'greaterangled 'stared beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-stared-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in stared if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-stared-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in stared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'stared beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'stared beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-stared-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in stared if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-stared-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in stared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'stared beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'stared beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-stared-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in stared if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-stared-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in stared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'stared beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'stared beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-stared-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in stared if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-stared-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in stared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'stared beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'stared beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-stared-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in stared if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-stared-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in stared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'stared beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'stared beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-stared-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in stared if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-stared-atpt (&optional beg end) 
+"Relation of curveddoublequoted in stared if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'stared beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'stared beg end t))
 
 
 (defun ar-count-parentized-in-stared-atpt (&optional beg end) 
@@ -8894,36 +8894,36 @@
   (ar-th-ratio-base 'greaterangled 'tilded beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-tilded-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in tilded if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-tilded-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in tilded if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'tilded beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'tilded beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-tilded-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in tilded if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-tilded-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in tilded if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'tilded beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'tilded beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-tilded-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in tilded if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-tilded-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in tilded if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'tilded beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'tilded beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-tilded-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in tilded if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-tilded-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in tilded if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'tilded beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'tilded beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-tilded-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in tilded if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-tilded-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in tilded if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'tilded beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'tilded beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-tilded-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in tilded if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-tilded-atpt (&optional beg end) 
+"Relation of curveddoublequoted in tilded if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'tilded beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'tilded beg end t))
 
 
 (defun ar-count-parentized-in-tilded-atpt (&optional beg end) 
@@ -9006,36 +9006,36 @@
   (ar-th-ratio-base 'greaterangled 'underscored beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-underscored-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in underscored if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-underscored-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in underscored if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'underscored beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'underscored beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-underscored-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in underscored if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-underscored-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in underscored if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'underscored beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'underscored beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-underscored-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in underscored if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-underscored-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in underscored if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'underscored beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'underscored beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-underscored-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in underscored if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-underscored-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in underscored if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'underscored beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'underscored beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-underscored-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in underscored if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-underscored-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in underscored if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'underscored beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'underscored beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-underscored-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in underscored if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-underscored-atpt (&optional beg end) 
+"Relation of curveddoublequoted in underscored if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'underscored beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'underscored beg end t))
 
 
 (defun ar-count-parentized-in-underscored-atpt (&optional beg end) 
@@ -9118,36 +9118,36 @@
   (ar-th-ratio-base 'greaterangled 'whitespaced beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-whitespaced-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in whitespaced if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-whitespaced-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in whitespaced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'whitespaced beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'whitespaced beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-whitespaced-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in whitespaced if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-whitespaced-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in whitespaced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'whitespaced beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'whitespaced beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-whitespaced-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in whitespaced if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-whitespaced-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in whitespaced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'whitespaced beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'whitespaced beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-whitespaced-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in whitespaced if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-whitespaced-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in whitespaced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'whitespaced beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'whitespaced beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-whitespaced-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in whitespaced if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-whitespaced-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in whitespaced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'whitespaced beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'whitespaced beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-whitespaced-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in whitespaced if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-whitespaced-atpt (&optional beg end) 
+"Relation of curveddoublequoted in whitespaced if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'whitespaced beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'whitespaced beg end t))
 
 
 (defun ar-count-parentized-in-whitespaced-atpt (&optional beg end) 
@@ -10131,484 +10131,484 @@
   (ar-th-ratio-base 'whitespaced 'greaterangled beg end t))
 
 
-(defun ar-count-backslashed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of backslashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-backslashed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of backslashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backslashed 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'backslashed 'curvedsinglequoted beg end nil))
 
-(defun ar-count-backslashed-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of backslashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-backslashed-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of backslashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backslashed 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'backslashed 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-backslashed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of backslashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-backslashed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of backslashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backslashed 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'backslashed 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-backticked-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of backticked in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-backticked-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of backticked in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backticked 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'backticked 'curvedsinglequoted beg end nil))
 
-(defun ar-count-backticked-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of backticked in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-backticked-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of backticked in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backticked 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'backticked 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-backticked-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of backticked in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-backticked-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of backticked in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backticked 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'backticked 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-coloned-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of coloned in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-coloned-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of coloned in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'coloned 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'coloned 'curvedsinglequoted beg end nil))
 
-(defun ar-count-coloned-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of coloned in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-coloned-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of coloned in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'coloned 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'coloned 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-coloned-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of coloned in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-coloned-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of coloned in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'coloned 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'coloned 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-crossed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of crossed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-crossed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of crossed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'crossed 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'crossed 'curvedsinglequoted beg end nil))
 
-(defun ar-count-crossed-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of crossed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-crossed-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of crossed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'crossed 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'crossed 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-crossed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of crossed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-crossed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of crossed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'crossed 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'crossed 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-dollared-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of dollared in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-dollared-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of dollared in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'dollared 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'dollared 'curvedsinglequoted beg end nil))
 
-(defun ar-count-dollared-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of dollared in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-dollared-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of dollared in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'dollared 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'dollared 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-dollared-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of dollared in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-dollared-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of dollared in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'dollared 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'dollared 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-doublequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of doublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-doublequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of doublequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'doublequoted 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'doublequoted 'curvedsinglequoted beg end nil))
 
-(defun ar-count-doublequoted-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of doublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-doublequoted-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of doublequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'doublequoted 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'doublequoted 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-doublequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of doublequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-doublequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of doublequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'doublequoted 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'doublequoted 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-equalized-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of equalized in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-equalized-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of equalized in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'equalized 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'equalized 'curvedsinglequoted beg end nil))
 
-(defun ar-count-equalized-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of equalized in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-equalized-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of equalized in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'equalized 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'equalized 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-equalized-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of equalized in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-equalized-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of equalized in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'equalized 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'equalized 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-hashed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of hashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-hashed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of hashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hashed 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'hashed 'curvedsinglequoted beg end nil))
 
-(defun ar-count-hashed-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of hashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-hashed-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of hashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hashed 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'hashed 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-hashed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of hashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-hashed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of hashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hashed 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'hashed 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-hyphened-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of hyphened in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-hyphened-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of hyphened in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hyphened 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'hyphened 'curvedsinglequoted beg end nil))
 
-(defun ar-count-hyphened-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of hyphened in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-hyphened-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of hyphened in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hyphened 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'hyphened 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-hyphened-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of hyphened in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-hyphened-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of hyphened in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hyphened 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'hyphened 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-singlequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of singlequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-singlequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of singlequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'singlequoted 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'singlequoted 'curvedsinglequoted beg end nil))
 
-(defun ar-count-singlequoted-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of singlequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-singlequoted-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of singlequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'singlequoted 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'singlequoted 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-singlequoted-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of singlequoted in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-singlequoted-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of singlequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'singlequoted 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'singlequoted 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-slashed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of slashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-slashed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of slashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'slashed 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'slashed 'curvedsinglequoted beg end nil))
 
-(defun ar-count-slashed-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of slashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-slashed-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of slashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'slashed 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'slashed 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-slashed-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of slashed in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-slashed-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of slashed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'slashed 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'slashed 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-stared-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of stared in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-stared-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of stared in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'stared 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'stared 'curvedsinglequoted beg end nil))
 
-(defun ar-count-stared-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of stared in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-stared-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of stared in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'stared 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'stared 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-stared-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of stared in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-stared-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of stared in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'stared 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'stared 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-tilded-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of tilded in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-tilded-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of tilded in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'tilded 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'tilded 'curvedsinglequoted beg end nil))
 
-(defun ar-count-tilded-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of tilded in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-tilded-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of tilded in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'tilded 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'tilded 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-tilded-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of tilded in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-tilded-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of tilded in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'tilded 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'tilded 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-underscored-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of underscored in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-underscored-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of underscored in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'underscored 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'underscored 'curvedsinglequoted beg end nil))
 
-(defun ar-count-underscored-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of underscored in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-underscored-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of underscored in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'underscored 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'underscored 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-underscored-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of underscored in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-underscored-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of underscored in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'underscored 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'underscored 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-whitespaced-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Counts matches of whitespaced in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-whitespaced-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of whitespaced in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'whitespaced 'leftrightsinglequoted beg end nil))
+  (ar-th-ratio-base 'whitespaced 'curvedsinglequoted beg end nil))
 
-(defun ar-count-whitespaced-in-leftrightsinglequoted-until-point (&optional beg end) 
-"Counts matches of whitespaced in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-count-whitespaced-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of whitespaced in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'whitespaced 'leftrightsinglequoted beg (point) nil))
+  (ar-th-ratio-base 'whitespaced 'curvedsinglequoted beg (point) nil))
 
-(defun ar-ratio-whitespaced-in-leftrightsinglequoted-atpt (&optional beg end) 
-"Relation of whitespaced in leftrightsinglequoted if useful, returns nil otherwise "
+(defun ar-ratio-whitespaced-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of whitespaced in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'whitespaced 'leftrightsinglequoted beg end t))
+  (ar-th-ratio-base 'whitespaced 'curvedsinglequoted beg end t))
 
 
-(defun ar-count-backslashed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of backslashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-backslashed-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of backslashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backslashed 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'backslashed 'curveddoublequoted beg end nil))
 
-(defun ar-count-backslashed-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of backslashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-backslashed-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of backslashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backslashed 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'backslashed 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-backslashed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of backslashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-backslashed-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of backslashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backslashed 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'backslashed 'curveddoublequoted beg end t))
 
 
-(defun ar-count-backticked-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of backticked in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-backticked-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of backticked in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backticked 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'backticked 'curveddoublequoted beg end nil))
 
-(defun ar-count-backticked-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of backticked in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-backticked-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of backticked in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backticked 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'backticked 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-backticked-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of backticked in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-backticked-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of backticked in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'backticked 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'backticked 'curveddoublequoted beg end t))
 
 
-(defun ar-count-coloned-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of coloned in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-coloned-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of coloned in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'coloned 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'coloned 'curveddoublequoted beg end nil))
 
-(defun ar-count-coloned-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of coloned in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-coloned-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of coloned in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'coloned 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'coloned 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-coloned-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of coloned in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-coloned-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of coloned in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'coloned 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'coloned 'curveddoublequoted beg end t))
 
 
-(defun ar-count-crossed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of crossed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-crossed-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of crossed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'crossed 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'crossed 'curveddoublequoted beg end nil))
 
-(defun ar-count-crossed-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of crossed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-crossed-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of crossed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'crossed 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'crossed 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-crossed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of crossed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-crossed-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of crossed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'crossed 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'crossed 'curveddoublequoted beg end t))
 
 
-(defun ar-count-dollared-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of dollared in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-dollared-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of dollared in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'dollared 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'dollared 'curveddoublequoted beg end nil))
 
-(defun ar-count-dollared-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of dollared in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-dollared-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of dollared in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'dollared 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'dollared 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-dollared-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of dollared in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-dollared-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of dollared in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'dollared 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'dollared 'curveddoublequoted beg end t))
 
 
-(defun ar-count-doublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of doublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-doublequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of doublequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'doublequoted 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'doublequoted 'curveddoublequoted beg end nil))
 
-(defun ar-count-doublequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of doublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-doublequoted-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of doublequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'doublequoted 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'doublequoted 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-doublequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of doublequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-doublequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of doublequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'doublequoted 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'doublequoted 'curveddoublequoted beg end t))
 
 
-(defun ar-count-equalized-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of equalized in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-equalized-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of equalized in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'equalized 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'equalized 'curveddoublequoted beg end nil))
 
-(defun ar-count-equalized-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of equalized in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-equalized-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of equalized in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'equalized 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'equalized 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-equalized-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of equalized in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-equalized-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of equalized in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'equalized 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'equalized 'curveddoublequoted beg end t))
 
 
-(defun ar-count-hashed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of hashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-hashed-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of hashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hashed 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'hashed 'curveddoublequoted beg end nil))
 
-(defun ar-count-hashed-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of hashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-hashed-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of hashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hashed 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'hashed 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-hashed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of hashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-hashed-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of hashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hashed 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'hashed 'curveddoublequoted beg end t))
 
 
-(defun ar-count-hyphened-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of hyphened in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-hyphened-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of hyphened in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hyphened 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'hyphened 'curveddoublequoted beg end nil))
 
-(defun ar-count-hyphened-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of hyphened in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-hyphened-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of hyphened in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hyphened 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'hyphened 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-hyphened-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of hyphened in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-hyphened-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of hyphened in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'hyphened 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'hyphened 'curveddoublequoted beg end t))
 
 
-(defun ar-count-singlequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of singlequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-singlequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of singlequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'singlequoted 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'singlequoted 'curveddoublequoted beg end nil))
 
-(defun ar-count-singlequoted-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of singlequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-singlequoted-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of singlequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'singlequoted 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'singlequoted 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-singlequoted-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of singlequoted in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-singlequoted-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of singlequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'singlequoted 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'singlequoted 'curveddoublequoted beg end t))
 
 
-(defun ar-count-slashed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of slashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-slashed-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of slashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'slashed 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'slashed 'curveddoublequoted beg end nil))
 
-(defun ar-count-slashed-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of slashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-slashed-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of slashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'slashed 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'slashed 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-slashed-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of slashed in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-slashed-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of slashed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'slashed 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'slashed 'curveddoublequoted beg end t))
 
 
-(defun ar-count-stared-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of stared in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-stared-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of stared in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'stared 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'stared 'curveddoublequoted beg end nil))
 
-(defun ar-count-stared-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of stared in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-stared-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of stared in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'stared 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'stared 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-stared-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of stared in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-stared-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of stared in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'stared 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'stared 'curveddoublequoted beg end t))
 
 
-(defun ar-count-tilded-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of tilded in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-tilded-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of tilded in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'tilded 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'tilded 'curveddoublequoted beg end nil))
 
-(defun ar-count-tilded-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of tilded in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-tilded-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of tilded in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'tilded 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'tilded 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-tilded-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of tilded in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-tilded-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of tilded in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'tilded 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'tilded 'curveddoublequoted beg end t))
 
 
-(defun ar-count-underscored-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of underscored in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-underscored-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of underscored in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'underscored 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'underscored 'curveddoublequoted beg end nil))
 
-(defun ar-count-underscored-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of underscored in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-underscored-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of underscored in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'underscored 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'underscored 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-underscored-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of underscored in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-underscored-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of underscored in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'underscored 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'underscored 'curveddoublequoted beg end t))
 
 
-(defun ar-count-whitespaced-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Counts matches of whitespaced in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-whitespaced-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of whitespaced in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'whitespaced 'leftrightdoublequoted beg end nil))
+  (ar-th-ratio-base 'whitespaced 'curveddoublequoted beg end nil))
 
-(defun ar-count-whitespaced-in-leftrightdoublequoted-until-point (&optional beg end) 
-"Counts matches of whitespaced in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-count-whitespaced-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of whitespaced in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'whitespaced 'leftrightdoublequoted beg (point) nil))
+  (ar-th-ratio-base 'whitespaced 'curveddoublequoted beg (point) nil))
 
-(defun ar-ratio-whitespaced-in-leftrightdoublequoted-atpt (&optional beg end) 
-"Relation of whitespaced in leftrightdoublequoted if useful, returns nil otherwise "
+(defun ar-ratio-whitespaced-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of whitespaced in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'whitespaced 'leftrightdoublequoted beg end t))
+  (ar-th-ratio-base 'whitespaced 'curveddoublequoted beg end t))
 
 
 (defun ar-count-backslashed-in-parentized-atpt (&optional beg end) 
@@ -10920,36 +10920,36 @@
   (ar-th-ratio-base 'greaterangled 'anglednonest beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-anglednonest-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in anglednonest if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-anglednonest-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in anglednonest if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'anglednonest beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'anglednonest beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-anglednonest-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in anglednonest if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-anglednonest-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in anglednonest if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'anglednonest beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'anglednonest beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-anglednonest-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in anglednonest if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-anglednonest-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in anglednonest if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'anglednonest beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'anglednonest beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-anglednonest-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in anglednonest if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-anglednonest-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in anglednonest if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'anglednonest beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'anglednonest beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-anglednonest-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in anglednonest if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-anglednonest-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in anglednonest if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'anglednonest beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'anglednonest beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-anglednonest-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in anglednonest if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-anglednonest-atpt (&optional beg end) 
+"Relation of curveddoublequoted in anglednonest if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'anglednonest beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'anglednonest beg end t))
 
 
 (defun ar-count-parentized-in-anglednonest-atpt (&optional beg end) 
@@ -11032,36 +11032,36 @@
   (ar-th-ratio-base 'greaterangled 'greateranglednested beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-greateranglednested-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in greateranglednested if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-greateranglednested-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'greateranglednested beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'greateranglednested beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-greateranglednested-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in greateranglednested if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-greateranglednested-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'greateranglednested beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'greateranglednested beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-greateranglednested-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in greateranglednested if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-greateranglednested-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'greateranglednested beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'greateranglednested beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-greateranglednested-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in greateranglednested if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-greateranglednested-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'greateranglednested beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'greateranglednested beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-greateranglednested-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in greateranglednested if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-greateranglednested-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'greateranglednested beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'greateranglednested beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-greateranglednested-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in greateranglednested if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-greateranglednested-atpt (&optional beg end) 
+"Relation of curveddoublequoted in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'greateranglednested beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'greateranglednested beg end t))
 
 
 (defun ar-count-parentized-in-greateranglednested-atpt (&optional beg end) 
@@ -11144,36 +11144,36 @@
   (ar-th-ratio-base 'greaterangled 'lesseranglednested beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-lesseranglednested-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in lesseranglednested if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-lesseranglednested-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'lesseranglednested beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'lesseranglednested beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-lesseranglednested-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in lesseranglednested if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-lesseranglednested-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'lesseranglednested beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'lesseranglednested beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-lesseranglednested-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in lesseranglednested if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-lesseranglednested-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'lesseranglednested beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'lesseranglednested beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-lesseranglednested-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in lesseranglednested if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-lesseranglednested-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'lesseranglednested beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'lesseranglednested beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-lesseranglednested-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in lesseranglednested if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-lesseranglednested-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'lesseranglednested beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'lesseranglednested beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-lesseranglednested-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in lesseranglednested if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-lesseranglednested-atpt (&optional beg end) 
+"Relation of curveddoublequoted in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'lesseranglednested beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'lesseranglednested beg end t))
 
 
 (defun ar-count-parentized-in-lesseranglednested-atpt (&optional beg end) 
@@ -11256,36 +11256,36 @@
   (ar-th-ratio-base 'greaterangled 'csv beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-csv-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in csv if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-csv-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in csv if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'csv beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'csv beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-csv-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in csv if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-csv-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in csv if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'csv beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'csv beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-csv-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in csv if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-csv-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in csv if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'csv beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'csv beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-csv-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in csv if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-csv-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in csv if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'csv beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'csv beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-csv-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in csv if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-csv-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in csv if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'csv beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'csv beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-csv-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in csv if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-csv-atpt (&optional beg end) 
+"Relation of curveddoublequoted in csv if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'csv beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'csv beg end t))
 
 
 (defun ar-count-parentized-in-csv-atpt (&optional beg end) 
@@ -11368,36 +11368,36 @@
   (ar-th-ratio-base 'greaterangled 'line beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-line-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in line if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-line-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in line if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'line beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'line beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-line-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in line if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-line-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in line if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'line beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'line beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-line-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in line if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-line-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in line if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'line beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'line beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-line-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in line if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-line-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in line if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'line beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'line beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-line-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in line if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-line-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in line if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'line beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'line beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-line-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in line if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-line-atpt (&optional beg end) 
+"Relation of curveddoublequoted in line if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'line beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'line beg end t))
 
 
 (defun ar-count-parentized-in-line-atpt (&optional beg end) 
@@ -11480,36 +11480,36 @@
   (ar-th-ratio-base 'greaterangled 'paragraph beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-paragraph-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in paragraph if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-paragraph-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in paragraph if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'paragraph beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'paragraph beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-paragraph-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in paragraph if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-paragraph-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in paragraph if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'paragraph beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'paragraph beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-paragraph-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in paragraph if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-paragraph-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in paragraph if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'paragraph beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'paragraph beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-paragraph-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in paragraph if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-paragraph-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in paragraph if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'paragraph beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'paragraph beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-paragraph-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in paragraph if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-paragraph-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in paragraph if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'paragraph beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'paragraph beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-paragraph-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in paragraph if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-paragraph-atpt (&optional beg end) 
+"Relation of curveddoublequoted in paragraph if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'paragraph beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'paragraph beg end t))
 
 
 (defun ar-count-parentized-in-paragraph-atpt (&optional beg end) 
@@ -11592,36 +11592,36 @@
   (ar-th-ratio-base 'greaterangled 'region beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-region-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in region if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-region-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in region if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'region beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'region beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-region-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in region if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-region-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in region if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'region beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'region beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-region-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in region if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-region-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in region if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'region beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'region beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-region-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in region if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-region-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in region if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'region beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'region beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-region-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in region if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-region-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in region if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'region beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'region beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-region-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in region if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-region-atpt (&optional beg end) 
+"Relation of curveddoublequoted in region if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'region beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'region beg end t))
 
 
 (defun ar-count-parentized-in-region-atpt (&optional beg end) 
@@ -11704,36 +11704,36 @@
   (ar-th-ratio-base 'greaterangled 'sentence beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-sentence-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in sentence if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-sentence-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in sentence if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'sentence beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'sentence beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-sentence-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in sentence if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-sentence-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in sentence if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'sentence beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'sentence beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-sentence-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in sentence if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-sentence-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in sentence if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'sentence beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'sentence beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-sentence-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in sentence if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-sentence-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in sentence if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'sentence beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'sentence beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-sentence-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in sentence if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-sentence-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in sentence if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'sentence beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'sentence beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-sentence-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in sentence if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-sentence-atpt (&optional beg end) 
+"Relation of curveddoublequoted in sentence if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'sentence beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'sentence beg end t))
 
 
 (defun ar-count-parentized-in-sentence-atpt (&optional beg end) 
@@ -11816,36 +11816,36 @@
   (ar-th-ratio-base 'greaterangled 'string beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-string-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in string if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-string-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in string if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'string beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'string beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-string-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in string if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-string-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in string if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'string beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'string beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-string-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in string if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-string-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in string if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'string beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'string beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-string-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in string if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-string-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in string if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'string beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'string beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-string-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in string if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-string-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in string if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'string beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'string beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-string-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in string if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-string-atpt (&optional beg end) 
+"Relation of curveddoublequoted in string if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'string beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'string beg end t))
 
 
 (defun ar-count-parentized-in-string-atpt (&optional beg end) 
@@ -11928,36 +11928,36 @@
   (ar-th-ratio-base 'greaterangled 'buffer beg end t))
 
 
-(defun ar-count-leftrightsinglequoted-in-buffer-atpt (&optional beg end) 
-"Counts matches of leftrightsinglequoted in buffer if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-buffer-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in buffer if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'buffer beg end nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'buffer beg end nil))
 
-(defun ar-count-leftrightsinglequoted-in-buffer-until-point (&optional beg end) 
-"Counts matches of leftrightsinglequoted in buffer if useful, returns nil otherwise "
+(defun ar-count-curvedsinglequoted-in-buffer-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in buffer if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'buffer beg (point) nil))
+  (ar-th-ratio-base 'curvedsinglequoted 'buffer beg (point) nil))
 
-(defun ar-ratio-leftrightsinglequoted-in-buffer-atpt (&optional beg end) 
-"Relation of leftrightsinglequoted in buffer if useful, returns nil otherwise "
+(defun ar-ratio-curvedsinglequoted-in-buffer-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in buffer if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightsinglequoted 'buffer beg end t))
+  (ar-th-ratio-base 'curvedsinglequoted 'buffer beg end t))
 
 
-(defun ar-count-leftrightdoublequoted-in-buffer-atpt (&optional beg end) 
-"Counts matches of leftrightdoublequoted in buffer if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-buffer-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in buffer if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'buffer beg end nil))
+  (ar-th-ratio-base 'curveddoublequoted 'buffer beg end nil))
 
-(defun ar-count-leftrightdoublequoted-in-buffer-until-point (&optional beg end) 
-"Counts matches of leftrightdoublequoted in buffer if useful, returns nil otherwise "
+(defun ar-count-curveddoublequoted-in-buffer-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in buffer if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'buffer beg (point) nil))
+  (ar-th-ratio-base 'curveddoublequoted 'buffer beg (point) nil))
 
-(defun ar-ratio-leftrightdoublequoted-in-buffer-atpt (&optional beg end) 
-"Relation of leftrightdoublequoted in buffer if useful, returns nil otherwise "
+(defun ar-ratio-curveddoublequoted-in-buffer-atpt (&optional beg end) 
+"Relation of curveddoublequoted in buffer if useful, returns nil otherwise "
   (interactive "p")
-  (ar-th-ratio-base 'leftrightdoublequoted 'buffer beg end t))
+  (ar-th-ratio-base 'curveddoublequoted 'buffer beg end t))
 
 
 (defun ar-count-parentized-in-buffer-atpt (&optional beg end) 

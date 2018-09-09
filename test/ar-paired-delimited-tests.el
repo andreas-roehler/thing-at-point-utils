@@ -49,13 +49,13 @@
         (goto-char 7)
         (should (eq lesserangled-laenge (length (ar-lesserangled-atpt)))))))
       
-(ert-deftest ar-leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘
      ;;  'etc. \"’)]}>"
-      (let ((leftrightsinglequoted-laenge 19)
+      (let ((curvedsinglequoted-laenge 19)
 	    (ar-generic-match-p t))
         (goto-char 7)
-        (should (eq leftrightsinglequoted-laenge (length (ar-leftrightsinglequoted-atpt)))))))
+        (should (eq curvedsinglequoted-laenge (length (ar-curvedsinglequoted-atpt)))))))
       
 (ert-deftest ar-parentized-atpt-test ()
   (ar-test-with-temp-buffer "<{[(‘

@@ -3483,350 +3483,350 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'wordalphaonly ">" "<" arg arg)))
 
-(defun ar-leftrightsinglequote-greateranglednested-atpt (&optional arg)
-  "Leftrightsinglequote GREATERANGLEDNESTED at point ARG times."
+(defun ar-curvedsinglequote-greateranglednested-atpt (&optional arg)
+  "Curvedsinglequote GREATERANGLEDNESTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greateranglednested "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-lesseranglednested-atpt (&optional arg)
-  "Leftrightsinglequote LESSERANGLEDNESTED at point ARG times."
+(defun ar-curvedsinglequote-lesseranglednested-atpt (&optional arg)
+  "Curvedsinglequote LESSERANGLEDNESTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'lesseranglednested "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-buffer-atpt (&optional arg)
-  "Leftrightsinglequote BUFFER at point ARG times."
+(defun ar-curvedsinglequote-buffer-atpt (&optional arg)
+  "Curvedsinglequote BUFFER at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'buffer "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-char-atpt (&optional arg)
-  "Leftrightsinglequote CHAR at point ARG times."
+(defun ar-curvedsinglequote-char-atpt (&optional arg)
+  "Curvedsinglequote CHAR at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'char "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-comment-atpt (&optional arg)
-  "Leftrightsinglequote COMMENT at point ARG times."
+(defun ar-curvedsinglequote-comment-atpt (&optional arg)
+  "Curvedsinglequote COMMENT at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'comment "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-csv-atpt (&optional arg)
-  "Leftrightsinglequote CSV at point ARG times."
+(defun ar-curvedsinglequote-csv-atpt (&optional arg)
+  "Curvedsinglequote CSV at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'csv "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-date-atpt (&optional arg)
-  "Leftrightsinglequote DATE at point ARG times."
+(defun ar-curvedsinglequote-date-atpt (&optional arg)
+  "Curvedsinglequote DATE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'date "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-email-atpt (&optional arg)
-  "Leftrightsinglequote EMAIL at point ARG times."
+(defun ar-curvedsinglequote-email-atpt (&optional arg)
+  "Curvedsinglequote EMAIL at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'email "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-filename-atpt (&optional arg)
-  "Leftrightsinglequote FILENAME at point ARG times."
+(defun ar-curvedsinglequote-filename-atpt (&optional arg)
+  "Curvedsinglequote FILENAME at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'filename "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-filenamenondirectory-atpt (&optional arg)
-  "Leftrightsinglequote FILENAMENONDIRECTORY at point ARG times."
+(defun ar-curvedsinglequote-filenamenondirectory-atpt (&optional arg)
+  "Curvedsinglequote FILENAMENONDIRECTORY at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'filenamenondirectory "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-float-atpt (&optional arg)
-  "Leftrightsinglequote FLOAT at point ARG times."
+(defun ar-curvedsinglequote-float-atpt (&optional arg)
+  "Curvedsinglequote FLOAT at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'float "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-function-atpt (&optional arg)
-  "Leftrightsinglequote FUNCTION at point ARG times."
+(defun ar-curvedsinglequote-function-atpt (&optional arg)
+  "Curvedsinglequote FUNCTION at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'function "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-ip-atpt (&optional arg)
-  "Leftrightsinglequote IP at point ARG times."
+(defun ar-curvedsinglequote-ip-atpt (&optional arg)
+  "Curvedsinglequote IP at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'ip "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-isbn-atpt (&optional arg)
-  "Leftrightsinglequote ISBN at point ARG times."
+(defun ar-curvedsinglequote-isbn-atpt (&optional arg)
+  "Curvedsinglequote ISBN at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'isbn "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-line-atpt (&optional arg)
-  "Leftrightsinglequote LINE at point ARG times."
+(defun ar-curvedsinglequote-line-atpt (&optional arg)
+  "Curvedsinglequote LINE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'line "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-list-atpt (&optional arg)
-  "Leftrightsinglequote LIST at point ARG times."
+(defun ar-curvedsinglequote-list-atpt (&optional arg)
+  "Curvedsinglequote LIST at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'list "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-name-atpt (&optional arg)
-  "Leftrightsinglequote NAME at point ARG times."
+(defun ar-curvedsinglequote-name-atpt (&optional arg)
+  "Curvedsinglequote NAME at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'name "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-number-atpt (&optional arg)
-  "Leftrightsinglequote NUMBER at point ARG times."
+(defun ar-curvedsinglequote-number-atpt (&optional arg)
+  "Curvedsinglequote NUMBER at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'number "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-page-atpt (&optional arg)
-  "Leftrightsinglequote PAGE at point ARG times."
+(defun ar-curvedsinglequote-page-atpt (&optional arg)
+  "Curvedsinglequote PAGE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'page "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-paragraph-atpt (&optional arg)
-  "Leftrightsinglequote PARAGRAPH at point ARG times."
+(defun ar-curvedsinglequote-paragraph-atpt (&optional arg)
+  "Curvedsinglequote PARAGRAPH at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'paragraph "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-phone-atpt (&optional arg)
-  "Leftrightsinglequote PHONE at point ARG times."
+(defun ar-curvedsinglequote-phone-atpt (&optional arg)
+  "Curvedsinglequote PHONE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'phone "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-region-atpt (&optional arg)
-  "Leftrightsinglequote REGION at point ARG times."
+(defun ar-curvedsinglequote-region-atpt (&optional arg)
+  "Curvedsinglequote REGION at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'region "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-sentence-atpt (&optional arg)
-  "Leftrightsinglequote SENTENCE at point ARG times."
+(defun ar-curvedsinglequote-sentence-atpt (&optional arg)
+  "Curvedsinglequote SENTENCE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'sentence "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-sexp-atpt (&optional arg)
-  "Leftrightsinglequote SEXP at point ARG times."
+(defun ar-curvedsinglequote-sexp-atpt (&optional arg)
+  "Curvedsinglequote SEXP at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'sexp "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-shstruct-atpt (&optional arg)
-  "Leftrightsinglequote SHSTRUCT at point ARG times."
+(defun ar-curvedsinglequote-shstruct-atpt (&optional arg)
+  "Curvedsinglequote SHSTRUCT at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'shstruct "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-symbol-atpt (&optional arg)
-  "Leftrightsinglequote SYMBOL at point ARG times."
+(defun ar-curvedsinglequote-symbol-atpt (&optional arg)
+  "Curvedsinglequote SYMBOL at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'symbol "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-url-atpt (&optional arg)
-  "Leftrightsinglequote URL at point ARG times."
+(defun ar-curvedsinglequote-url-atpt (&optional arg)
+  "Curvedsinglequote URL at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'url "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-word-atpt (&optional arg)
-  "Leftrightsinglequote WORD at point ARG times."
+(defun ar-curvedsinglequote-word-atpt (&optional arg)
+  "Curvedsinglequote WORD at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'word "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-wordalphaonly-atpt (&optional arg)
-  "Leftrightsinglequote WORDALPHAONLY at point ARG times."
+(defun ar-curvedsinglequote-wordalphaonly-atpt (&optional arg)
+  "Curvedsinglequote WORDALPHAONLY at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'wordalphaonly "‘" "’" arg arg)))
 
-(defun ar-leftrightdoublequote-greateranglednested-atpt (&optional arg)
-  "Leftrightdoublequote GREATERANGLEDNESTED at point ARG times."
+(defun ar-curveddoublequote-greateranglednested-atpt (&optional arg)
+  "Curveddoublequote GREATERANGLEDNESTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greateranglednested "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-lesseranglednested-atpt (&optional arg)
-  "Leftrightdoublequote LESSERANGLEDNESTED at point ARG times."
+(defun ar-curveddoublequote-lesseranglednested-atpt (&optional arg)
+  "Curveddoublequote LESSERANGLEDNESTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'lesseranglednested "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-buffer-atpt (&optional arg)
-  "Leftrightdoublequote BUFFER at point ARG times."
+(defun ar-curveddoublequote-buffer-atpt (&optional arg)
+  "Curveddoublequote BUFFER at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'buffer "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-char-atpt (&optional arg)
-  "Leftrightdoublequote CHAR at point ARG times."
+(defun ar-curveddoublequote-char-atpt (&optional arg)
+  "Curveddoublequote CHAR at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'char "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-comment-atpt (&optional arg)
-  "Leftrightdoublequote COMMENT at point ARG times."
+(defun ar-curveddoublequote-comment-atpt (&optional arg)
+  "Curveddoublequote COMMENT at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'comment "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-csv-atpt (&optional arg)
-  "Leftrightdoublequote CSV at point ARG times."
+(defun ar-curveddoublequote-csv-atpt (&optional arg)
+  "Curveddoublequote CSV at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'csv "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-date-atpt (&optional arg)
-  "Leftrightdoublequote DATE at point ARG times."
+(defun ar-curveddoublequote-date-atpt (&optional arg)
+  "Curveddoublequote DATE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'date "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-email-atpt (&optional arg)
-  "Leftrightdoublequote EMAIL at point ARG times."
+(defun ar-curveddoublequote-email-atpt (&optional arg)
+  "Curveddoublequote EMAIL at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'email "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-filename-atpt (&optional arg)
-  "Leftrightdoublequote FILENAME at point ARG times."
+(defun ar-curveddoublequote-filename-atpt (&optional arg)
+  "Curveddoublequote FILENAME at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'filename "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-filenamenondirectory-atpt (&optional arg)
-  "Leftrightdoublequote FILENAMENONDIRECTORY at point ARG times."
+(defun ar-curveddoublequote-filenamenondirectory-atpt (&optional arg)
+  "Curveddoublequote FILENAMENONDIRECTORY at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'filenamenondirectory "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-float-atpt (&optional arg)
-  "Leftrightdoublequote FLOAT at point ARG times."
+(defun ar-curveddoublequote-float-atpt (&optional arg)
+  "Curveddoublequote FLOAT at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'float "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-function-atpt (&optional arg)
-  "Leftrightdoublequote FUNCTION at point ARG times."
+(defun ar-curveddoublequote-function-atpt (&optional arg)
+  "Curveddoublequote FUNCTION at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'function "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-ip-atpt (&optional arg)
-  "Leftrightdoublequote IP at point ARG times."
+(defun ar-curveddoublequote-ip-atpt (&optional arg)
+  "Curveddoublequote IP at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'ip "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-isbn-atpt (&optional arg)
-  "Leftrightdoublequote ISBN at point ARG times."
+(defun ar-curveddoublequote-isbn-atpt (&optional arg)
+  "Curveddoublequote ISBN at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'isbn "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-line-atpt (&optional arg)
-  "Leftrightdoublequote LINE at point ARG times."
+(defun ar-curveddoublequote-line-atpt (&optional arg)
+  "Curveddoublequote LINE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'line "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-list-atpt (&optional arg)
-  "Leftrightdoublequote LIST at point ARG times."
+(defun ar-curveddoublequote-list-atpt (&optional arg)
+  "Curveddoublequote LIST at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'list "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-name-atpt (&optional arg)
-  "Leftrightdoublequote NAME at point ARG times."
+(defun ar-curveddoublequote-name-atpt (&optional arg)
+  "Curveddoublequote NAME at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'name "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-number-atpt (&optional arg)
-  "Leftrightdoublequote NUMBER at point ARG times."
+(defun ar-curveddoublequote-number-atpt (&optional arg)
+  "Curveddoublequote NUMBER at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'number "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-page-atpt (&optional arg)
-  "Leftrightdoublequote PAGE at point ARG times."
+(defun ar-curveddoublequote-page-atpt (&optional arg)
+  "Curveddoublequote PAGE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'page "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-paragraph-atpt (&optional arg)
-  "Leftrightdoublequote PARAGRAPH at point ARG times."
+(defun ar-curveddoublequote-paragraph-atpt (&optional arg)
+  "Curveddoublequote PARAGRAPH at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'paragraph "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-phone-atpt (&optional arg)
-  "Leftrightdoublequote PHONE at point ARG times."
+(defun ar-curveddoublequote-phone-atpt (&optional arg)
+  "Curveddoublequote PHONE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'phone "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-region-atpt (&optional arg)
-  "Leftrightdoublequote REGION at point ARG times."
+(defun ar-curveddoublequote-region-atpt (&optional arg)
+  "Curveddoublequote REGION at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'region "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-sentence-atpt (&optional arg)
-  "Leftrightdoublequote SENTENCE at point ARG times."
+(defun ar-curveddoublequote-sentence-atpt (&optional arg)
+  "Curveddoublequote SENTENCE at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'sentence "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-sexp-atpt (&optional arg)
-  "Leftrightdoublequote SEXP at point ARG times."
+(defun ar-curveddoublequote-sexp-atpt (&optional arg)
+  "Curveddoublequote SEXP at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'sexp "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-shstruct-atpt (&optional arg)
-  "Leftrightdoublequote SHSTRUCT at point ARG times."
+(defun ar-curveddoublequote-shstruct-atpt (&optional arg)
+  "Curveddoublequote SHSTRUCT at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'shstruct "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-symbol-atpt (&optional arg)
-  "Leftrightdoublequote SYMBOL at point ARG times."
+(defun ar-curveddoublequote-symbol-atpt (&optional arg)
+  "Curveddoublequote SYMBOL at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'symbol "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-url-atpt (&optional arg)
-  "Leftrightdoublequote URL at point ARG times."
+(defun ar-curveddoublequote-url-atpt (&optional arg)
+  "Curveddoublequote URL at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'url "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-word-atpt (&optional arg)
-  "Leftrightdoublequote WORD at point ARG times."
+(defun ar-curveddoublequote-word-atpt (&optional arg)
+  "Curveddoublequote WORD at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'word "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-wordalphaonly-atpt (&optional arg)
-  "Leftrightdoublequote WORDALPHAONLY at point ARG times."
+(defun ar-curveddoublequote-wordalphaonly-atpt (&optional arg)
+  "Curveddoublequote WORDALPHAONLY at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'wordalphaonly "“" "”" arg arg)))
@@ -4367,182 +4367,182 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'whitespaced ">" "<" arg arg)))
 
-(defun ar-leftrightsinglequote-backslashed-atpt (&optional arg)
-  "Leftrightsinglequote BACKSLASHED at point ARG times."
+(defun ar-curvedsinglequote-backslashed-atpt (&optional arg)
+  "Curvedsinglequote BACKSLASHED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'backslashed "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-backticked-atpt (&optional arg)
-  "Leftrightsinglequote BACKTICKED at point ARG times."
+(defun ar-curvedsinglequote-backticked-atpt (&optional arg)
+  "Curvedsinglequote BACKTICKED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'backticked "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-coloned-atpt (&optional arg)
-  "Leftrightsinglequote COLONED at point ARG times."
+(defun ar-curvedsinglequote-coloned-atpt (&optional arg)
+  "Curvedsinglequote COLONED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'coloned "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-crossed-atpt (&optional arg)
-  "Leftrightsinglequote CROSSED at point ARG times."
+(defun ar-curvedsinglequote-crossed-atpt (&optional arg)
+  "Curvedsinglequote CROSSED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'crossed "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-dollared-atpt (&optional arg)
-  "Leftrightsinglequote DOLLARED at point ARG times."
+(defun ar-curvedsinglequote-dollared-atpt (&optional arg)
+  "Curvedsinglequote DOLLARED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'dollared "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-doublequoted-atpt (&optional arg)
-  "Leftrightsinglequote DOUBLEQUOTED at point ARG times."
+(defun ar-curvedsinglequote-doublequoted-atpt (&optional arg)
+  "Curvedsinglequote DOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'doublequoted "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-equalized-atpt (&optional arg)
-  "Leftrightsinglequote EQUALIZED at point ARG times."
+(defun ar-curvedsinglequote-equalized-atpt (&optional arg)
+  "Curvedsinglequote EQUALIZED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'equalized "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-hashed-atpt (&optional arg)
-  "Leftrightsinglequote HASHED at point ARG times."
+(defun ar-curvedsinglequote-hashed-atpt (&optional arg)
+  "Curvedsinglequote HASHED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hashed "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-hyphened-atpt (&optional arg)
-  "Leftrightsinglequote HYPHENED at point ARG times."
+(defun ar-curvedsinglequote-hyphened-atpt (&optional arg)
+  "Curvedsinglequote HYPHENED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-singlequoted-atpt (&optional arg)
-  "Leftrightsinglequote SINGLEQUOTED at point ARG times."
+(defun ar-curvedsinglequote-singlequoted-atpt (&optional arg)
+  "Curvedsinglequote SINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'singlequoted "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-slashed-atpt (&optional arg)
-  "Leftrightsinglequote SLASHED at point ARG times."
+(defun ar-curvedsinglequote-slashed-atpt (&optional arg)
+  "Curvedsinglequote SLASHED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'slashed "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-stared-atpt (&optional arg)
-  "Leftrightsinglequote STARED at point ARG times."
+(defun ar-curvedsinglequote-stared-atpt (&optional arg)
+  "Curvedsinglequote STARED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'stared "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-tilded-atpt (&optional arg)
-  "Leftrightsinglequote TILDED at point ARG times."
+(defun ar-curvedsinglequote-tilded-atpt (&optional arg)
+  "Curvedsinglequote TILDED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'tilded "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-underscored-atpt (&optional arg)
-  "Leftrightsinglequote UNDERSCORED at point ARG times."
+(defun ar-curvedsinglequote-underscored-atpt (&optional arg)
+  "Curvedsinglequote UNDERSCORED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'underscored "‘" "’" arg arg)))
 
-(defun ar-leftrightsinglequote-whitespaced-atpt (&optional arg)
-  "Leftrightsinglequote WHITESPACED at point ARG times."
+(defun ar-curvedsinglequote-whitespaced-atpt (&optional arg)
+  "Curvedsinglequote WHITESPACED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'whitespaced "‘" "’" arg arg)))
 
-(defun ar-leftrightdoublequote-backslashed-atpt (&optional arg)
-  "Leftrightdoublequote BACKSLASHED at point ARG times."
+(defun ar-curveddoublequote-backslashed-atpt (&optional arg)
+  "Curveddoublequote BACKSLASHED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'backslashed "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-backticked-atpt (&optional arg)
-  "Leftrightdoublequote BACKTICKED at point ARG times."
+(defun ar-curveddoublequote-backticked-atpt (&optional arg)
+  "Curveddoublequote BACKTICKED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'backticked "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-coloned-atpt (&optional arg)
-  "Leftrightdoublequote COLONED at point ARG times."
+(defun ar-curveddoublequote-coloned-atpt (&optional arg)
+  "Curveddoublequote COLONED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'coloned "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-crossed-atpt (&optional arg)
-  "Leftrightdoublequote CROSSED at point ARG times."
+(defun ar-curveddoublequote-crossed-atpt (&optional arg)
+  "Curveddoublequote CROSSED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'crossed "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-dollared-atpt (&optional arg)
-  "Leftrightdoublequote DOLLARED at point ARG times."
+(defun ar-curveddoublequote-dollared-atpt (&optional arg)
+  "Curveddoublequote DOLLARED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'dollared "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-doublequoted-atpt (&optional arg)
-  "Leftrightdoublequote DOUBLEQUOTED at point ARG times."
+(defun ar-curveddoublequote-doublequoted-atpt (&optional arg)
+  "Curveddoublequote DOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'doublequoted "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-equalized-atpt (&optional arg)
-  "Leftrightdoublequote EQUALIZED at point ARG times."
+(defun ar-curveddoublequote-equalized-atpt (&optional arg)
+  "Curveddoublequote EQUALIZED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'equalized "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-hashed-atpt (&optional arg)
-  "Leftrightdoublequote HASHED at point ARG times."
+(defun ar-curveddoublequote-hashed-atpt (&optional arg)
+  "Curveddoublequote HASHED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hashed "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-hyphened-atpt (&optional arg)
-  "Leftrightdoublequote HYPHENED at point ARG times."
+(defun ar-curveddoublequote-hyphened-atpt (&optional arg)
+  "Curveddoublequote HYPHENED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-singlequoted-atpt (&optional arg)
-  "Leftrightdoublequote SINGLEQUOTED at point ARG times."
+(defun ar-curveddoublequote-singlequoted-atpt (&optional arg)
+  "Curveddoublequote SINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'singlequoted "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-slashed-atpt (&optional arg)
-  "Leftrightdoublequote SLASHED at point ARG times."
+(defun ar-curveddoublequote-slashed-atpt (&optional arg)
+  "Curveddoublequote SLASHED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'slashed "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-stared-atpt (&optional arg)
-  "Leftrightdoublequote STARED at point ARG times."
+(defun ar-curveddoublequote-stared-atpt (&optional arg)
+  "Curveddoublequote STARED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'stared "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-tilded-atpt (&optional arg)
-  "Leftrightdoublequote TILDED at point ARG times."
+(defun ar-curveddoublequote-tilded-atpt (&optional arg)
+  "Curveddoublequote TILDED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'tilded "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-underscored-atpt (&optional arg)
-  "Leftrightdoublequote UNDERSCORED at point ARG times."
+(defun ar-curveddoublequote-underscored-atpt (&optional arg)
+  "Curveddoublequote UNDERSCORED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'underscored "“" "”" arg arg)))
 
-(defun ar-leftrightdoublequote-whitespaced-atpt (&optional arg)
-  "Leftrightdoublequote WHITESPACED at point ARG times."
+(defun ar-curveddoublequote-whitespaced-atpt (&optional arg)
+  "Curveddoublequote WHITESPACED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'whitespaced "“" "”" arg arg)))
@@ -4663,17 +4663,17 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled "{" "}")))
 
-(defun ar-brace-leftrightsinglequoted-atpt (&optional arg)
-  "Brace LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-brace-curvedsinglequoted-atpt (&optional arg)
+  "Brace CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted "{" "}")))
+    (ar-th-delimit--intern 'curvedsinglequoted "{" "}")))
 
-(defun ar-brace-leftrightdoublequoted-atpt (&optional arg)
-  "Brace LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-brace-curveddoublequoted-atpt (&optional arg)
+  "Brace CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted "{" "}")))
+    (ar-th-delimit--intern 'curveddoublequoted "{" "}")))
 
 (defun ar-brace-parentized-atpt (&optional arg)
   "Brace PARENTIZED at point ARG times."
@@ -4705,17 +4705,17 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled "[" "]")))
 
-(defun ar-bracket-leftrightsinglequoted-atpt (&optional arg)
-  "Bracket LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-bracket-curvedsinglequoted-atpt (&optional arg)
+  "Bracket CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted "[" "]")))
+    (ar-th-delimit--intern 'curvedsinglequoted "[" "]")))
 
-(defun ar-bracket-leftrightdoublequoted-atpt (&optional arg)
-  "Bracket LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-bracket-curveddoublequoted-atpt (&optional arg)
+  "Bracket CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted "[" "]")))
+    (ar-th-delimit--intern 'curveddoublequoted "[" "]")))
 
 (defun ar-bracket-parentized-atpt (&optional arg)
   "Bracket PARENTIZED at point ARG times."
@@ -4747,17 +4747,17 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled "<" ">")))
 
-(defun ar-lesserangle-leftrightsinglequoted-atpt (&optional arg)
-  "Lesserangle LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-lesserangle-curvedsinglequoted-atpt (&optional arg)
+  "Lesserangle CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted "<" ">")))
+    (ar-th-delimit--intern 'curvedsinglequoted "<" ">")))
 
-(defun ar-lesserangle-leftrightdoublequoted-atpt (&optional arg)
-  "Lesserangle LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-lesserangle-curveddoublequoted-atpt (&optional arg)
+  "Lesserangle CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted "<" ">")))
+    (ar-th-delimit--intern 'curveddoublequoted "<" ">")))
 
 (defun ar-lesserangle-parentized-atpt (&optional arg)
   "Lesserangle PARENTIZED at point ARG times."
@@ -4789,17 +4789,17 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled ">" "<")))
 
-(defun ar-greaterangle-leftrightsinglequoted-atpt (&optional arg)
-  "Greaterangle LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-greaterangle-curvedsinglequoted-atpt (&optional arg)
+  "Greaterangle CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted ">" "<")))
+    (ar-th-delimit--intern 'curvedsinglequoted ">" "<")))
 
-(defun ar-greaterangle-leftrightdoublequoted-atpt (&optional arg)
-  "Greaterangle LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-greaterangle-curveddoublequoted-atpt (&optional arg)
+  "Greaterangle CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted ">" "<")))
+    (ar-th-delimit--intern 'curveddoublequoted ">" "<")))
 
 (defun ar-greaterangle-parentized-atpt (&optional arg)
   "Greaterangle PARENTIZED at point ARG times."
@@ -4807,86 +4807,86 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'parentized ">" "<")))
 
-(defun ar-leftrightsinglequote-braced-atpt (&optional arg)
-  "Leftrightsinglequote BRACED at point ARG times."
+(defun ar-curvedsinglequote-braced-atpt (&optional arg)
+  "Curvedsinglequote BRACED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "‘" "’")))
 
-(defun ar-leftrightsinglequote-bracketed-atpt (&optional arg)
-  "Leftrightsinglequote BRACKETED at point ARG times."
+(defun ar-curvedsinglequote-bracketed-atpt (&optional arg)
+  "Curvedsinglequote BRACKETED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'bracketed "‘" "’")))
 
-(defun ar-leftrightsinglequote-lesserangled-atpt (&optional arg)
-  "Leftrightsinglequote LESSERANGLED at point ARG times."
+(defun ar-curvedsinglequote-lesserangled-atpt (&optional arg)
+  "Curvedsinglequote LESSERANGLED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'lesserangled "‘" "’")))
 
-(defun ar-leftrightsinglequote-greaterangled-atpt (&optional arg)
-  "Leftrightsinglequote GREATERANGLED at point ARG times."
+(defun ar-curvedsinglequote-greaterangled-atpt (&optional arg)
+  "Curvedsinglequote GREATERANGLED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled "‘" "’")))
 
-(defun ar-leftrightsinglequote-leftrightsinglequoted-atpt (&optional arg)
-  "Leftrightsinglequote LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-curvedsinglequote-curvedsinglequoted-atpt (&optional arg)
+  "Curvedsinglequote CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted "‘" "’")))
+    (ar-th-delimit--intern 'curvedsinglequoted "‘" "’")))
 
-(defun ar-leftrightsinglequote-leftrightdoublequoted-atpt (&optional arg)
-  "Leftrightsinglequote LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-curvedsinglequote-curveddoublequoted-atpt (&optional arg)
+  "Curvedsinglequote CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted "‘" "’")))
+    (ar-th-delimit--intern 'curveddoublequoted "‘" "’")))
 
-(defun ar-leftrightsinglequote-parentized-atpt (&optional arg)
-  "Leftrightsinglequote PARENTIZED at point ARG times."
+(defun ar-curvedsinglequote-parentized-atpt (&optional arg)
+  "Curvedsinglequote PARENTIZED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'parentized "‘" "’")))
 
-(defun ar-leftrightdoublequote-braced-atpt (&optional arg)
-  "Leftrightdoublequote BRACED at point ARG times."
+(defun ar-curveddoublequote-braced-atpt (&optional arg)
+  "Curveddoublequote BRACED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "“" "”")))
 
-(defun ar-leftrightdoublequote-bracketed-atpt (&optional arg)
-  "Leftrightdoublequote BRACKETED at point ARG times."
+(defun ar-curveddoublequote-bracketed-atpt (&optional arg)
+  "Curveddoublequote BRACKETED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'bracketed "“" "”")))
 
-(defun ar-leftrightdoublequote-lesserangled-atpt (&optional arg)
-  "Leftrightdoublequote LESSERANGLED at point ARG times."
+(defun ar-curveddoublequote-lesserangled-atpt (&optional arg)
+  "Curveddoublequote LESSERANGLED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'lesserangled "“" "”")))
 
-(defun ar-leftrightdoublequote-greaterangled-atpt (&optional arg)
-  "Leftrightdoublequote GREATERANGLED at point ARG times."
+(defun ar-curveddoublequote-greaterangled-atpt (&optional arg)
+  "Curveddoublequote GREATERANGLED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled "“" "”")))
 
-(defun ar-leftrightdoublequote-leftrightsinglequoted-atpt (&optional arg)
-  "Leftrightdoublequote LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-curveddoublequote-curvedsinglequoted-atpt (&optional arg)
+  "Curveddoublequote CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted "“" "”")))
+    (ar-th-delimit--intern 'curvedsinglequoted "“" "”")))
 
-(defun ar-leftrightdoublequote-leftrightdoublequoted-atpt (&optional arg)
-  "Leftrightdoublequote LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-curveddoublequote-curveddoublequoted-atpt (&optional arg)
+  "Curveddoublequote CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted "“" "”")))
+    (ar-th-delimit--intern 'curveddoublequoted "“" "”")))
 
-(defun ar-leftrightdoublequote-parentized-atpt (&optional arg)
-  "Leftrightdoublequote PARENTIZED at point ARG times."
+(defun ar-curveddoublequote-parentized-atpt (&optional arg)
+  "Curveddoublequote PARENTIZED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'parentized "“" "”")))
@@ -4915,17 +4915,17 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'greaterangled "(" ")")))
 
-(defun ar-parentize-leftrightsinglequoted-atpt (&optional arg)
-  "Parentize LEFTRIGHTSINGLEQUOTED at point ARG times."
+(defun ar-parentize-curvedsinglequoted-atpt (&optional arg)
+  "Parentize CURVEDSINGLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightsinglequoted "(" ")")))
+    (ar-th-delimit--intern 'curvedsinglequoted "(" ")")))
 
-(defun ar-parentize-leftrightdoublequoted-atpt (&optional arg)
-  "Parentize LEFTRIGHTDOUBLEQUOTED at point ARG times."
+(defun ar-parentize-curveddoublequoted-atpt (&optional arg)
+  "Parentize CURVEDDOUBLEQUOTED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
-    (ar-th-delimit--intern 'leftrightdoublequoted "(" ")")))
+    (ar-th-delimit--intern 'curveddoublequoted "(" ")")))
 
 (defun ar-parentize-parentized-atpt (&optional arg)
   "Parentize PARENTIZED at point ARG times."
@@ -11340,233 +11340,233 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-whitespace 'greaterangled arg))
 
-(defalias 'ar-colon-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-colon-atpt)
-(defun ar-leftrightsinglequoted-colon-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-colon-curvedsinglequoted-atpt 'ar-curvedsinglequoted-colon-atpt)
+(defun ar-curvedsinglequoted-colon-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-colon 'leftrightsinglequoted arg))
+  (ar-th-colon 'curvedsinglequoted arg))
 
-(defalias 'ar-cross-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-cross-atpt)
-(defun ar-leftrightsinglequoted-cross-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-cross-curvedsinglequoted-atpt 'ar-curvedsinglequoted-cross-atpt)
+(defun ar-curvedsinglequoted-cross-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-cross 'leftrightsinglequoted arg))
+  (ar-th-cross 'curvedsinglequoted arg))
 
-(defalias 'ar-doubleslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doubleslash-atpt)
-(defun ar-leftrightsinglequoted-doubleslash-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-doubleslash-curvedsinglequoted-atpt 'ar-curvedsinglequoted-doubleslash-atpt)
+(defun ar-curvedsinglequoted-doubleslash-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-doubleslash 'leftrightsinglequoted arg))
+  (ar-th-doubleslash 'curvedsinglequoted arg))
 
-(defalias 'ar-backslash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backslash-atpt)
-(defun ar-leftrightsinglequoted-backslash-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-backslash-curvedsinglequoted-atpt 'ar-curvedsinglequoted-backslash-atpt)
+(defun ar-curvedsinglequoted-backslash-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-backslash 'leftrightsinglequoted arg))
+  (ar-th-backslash 'curvedsinglequoted arg))
 
-(defalias 'ar-backtick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-backtick-atpt)
-(defun ar-leftrightsinglequoted-backtick-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-backtick-curvedsinglequoted-atpt 'ar-curvedsinglequoted-backtick-atpt)
+(defun ar-curvedsinglequoted-backtick-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-backtick 'leftrightsinglequoted arg))
+  (ar-th-backtick 'curvedsinglequoted arg))
 
-(defalias 'ar-dollar-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-dollar-atpt)
-(defun ar-leftrightsinglequoted-dollar-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-dollar-curvedsinglequoted-atpt 'ar-curvedsinglequoted-dollar-atpt)
+(defun ar-curvedsinglequoted-dollar-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-dollar 'leftrightsinglequoted arg))
+  (ar-th-dollar 'curvedsinglequoted arg))
 
-(defalias 'ar-doublebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublebacktick-atpt)
-(defun ar-leftrightsinglequoted-doublebacktick-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-doublebacktick-curvedsinglequoted-atpt 'ar-curvedsinglequoted-doublebacktick-atpt)
+(defun ar-curvedsinglequoted-doublebacktick-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-doublebacktick 'leftrightsinglequoted arg))
+  (ar-th-doublebacktick 'curvedsinglequoted arg))
 
-(defalias 'ar-doublequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-doublequote-atpt)
-(defun ar-leftrightsinglequoted-doublequote-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-doublequote-curvedsinglequoted-atpt 'ar-curvedsinglequoted-doublequote-atpt)
+(defun ar-curvedsinglequoted-doublequote-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-doublequote 'leftrightsinglequoted arg))
+  (ar-th-doublequote 'curvedsinglequoted arg))
 
-(defalias 'ar-equalize-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-equalize-atpt)
-(defun ar-leftrightsinglequoted-equalize-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-equalize-curvedsinglequoted-atpt 'ar-curvedsinglequoted-equalize-atpt)
+(defun ar-curvedsinglequoted-equalize-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-equalize 'leftrightsinglequoted arg))
+  (ar-th-equalize 'curvedsinglequoted arg))
 
-(defalias 'ar-escape-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-escape-atpt)
-(defun ar-leftrightsinglequoted-escape-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-escape-curvedsinglequoted-atpt 'ar-curvedsinglequoted-escape-atpt)
+(defun ar-curvedsinglequoted-escape-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-escape 'leftrightsinglequoted arg))
+  (ar-th-escape 'curvedsinglequoted arg))
 
-(defalias 'ar-hash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hash-atpt)
-(defun ar-leftrightsinglequoted-hash-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-hash-curvedsinglequoted-atpt 'ar-curvedsinglequoted-hash-atpt)
+(defun ar-curvedsinglequoted-hash-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-hash 'leftrightsinglequoted arg))
+  (ar-th-hash 'curvedsinglequoted arg))
 
-(defalias 'ar-hyphen-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-hyphen-atpt)
-(defun ar-leftrightsinglequoted-hyphen-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-hyphen-curvedsinglequoted-atpt 'ar-curvedsinglequoted-hyphen-atpt)
+(defun ar-curvedsinglequoted-hyphen-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-hyphen 'leftrightsinglequoted arg))
+  (ar-th-hyphen 'curvedsinglequoted arg))
 
-(defalias 'ar-singlequote-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-singlequote-atpt)
-(defun ar-leftrightsinglequoted-singlequote-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-singlequote-curvedsinglequoted-atpt 'ar-curvedsinglequoted-singlequote-atpt)
+(defun ar-curvedsinglequoted-singlequote-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-singlequote 'leftrightsinglequoted arg))
+  (ar-th-singlequote 'curvedsinglequoted arg))
 
-(defalias 'ar-slash-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-slash-atpt)
-(defun ar-leftrightsinglequoted-slash-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-slash-curvedsinglequoted-atpt 'ar-curvedsinglequoted-slash-atpt)
+(defun ar-curvedsinglequoted-slash-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-slash 'leftrightsinglequoted arg))
+  (ar-th-slash 'curvedsinglequoted arg))
 
-(defalias 'ar-star-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-star-atpt)
-(defun ar-leftrightsinglequoted-star-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-star-curvedsinglequoted-atpt 'ar-curvedsinglequoted-star-atpt)
+(defun ar-curvedsinglequoted-star-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-star 'leftrightsinglequoted arg))
+  (ar-th-star 'curvedsinglequoted arg))
 
-(defalias 'ar-tild-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-tild-atpt)
-(defun ar-leftrightsinglequoted-tild-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-tild-curvedsinglequoted-atpt 'ar-curvedsinglequoted-tild-atpt)
+(defun ar-curvedsinglequoted-tild-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-tild 'leftrightsinglequoted arg))
+  (ar-th-tild 'curvedsinglequoted arg))
 
-(defalias 'ar-triplebacktick-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-triplebacktick-atpt)
-(defun ar-leftrightsinglequoted-triplebacktick-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-triplebacktick-curvedsinglequoted-atpt 'ar-curvedsinglequoted-triplebacktick-atpt)
+(defun ar-curvedsinglequoted-triplebacktick-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-triplebacktick 'leftrightsinglequoted arg))
+  (ar-th-triplebacktick 'curvedsinglequoted arg))
 
-(defalias 'ar-underscore-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-underscore-atpt)
-(defun ar-leftrightsinglequoted-underscore-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-underscore-curvedsinglequoted-atpt 'ar-curvedsinglequoted-underscore-atpt)
+(defun ar-curvedsinglequoted-underscore-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-underscore 'leftrightsinglequoted arg))
+  (ar-th-underscore 'curvedsinglequoted arg))
 
-(defalias 'ar-whitespace-leftrightsinglequoted-atpt 'ar-leftrightsinglequoted-whitespace-atpt)
-(defun ar-leftrightsinglequoted-whitespace-atpt (&optional arg)
-  "Returns LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-whitespace-curvedsinglequoted-atpt 'ar-curvedsinglequoted-whitespace-atpt)
+(defun ar-curvedsinglequoted-whitespace-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-whitespace 'leftrightsinglequoted arg))
+  (ar-th-whitespace 'curvedsinglequoted arg))
 
-(defalias 'ar-colon-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-colon-atpt)
-(defun ar-leftrightdoublequoted-colon-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-colon-curveddoublequoted-atpt 'ar-curveddoublequoted-colon-atpt)
+(defun ar-curveddoublequoted-colon-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-colon 'leftrightdoublequoted arg))
+  (ar-th-colon 'curveddoublequoted arg))
 
-(defalias 'ar-cross-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-cross-atpt)
-(defun ar-leftrightdoublequoted-cross-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-cross-curveddoublequoted-atpt 'ar-curveddoublequoted-cross-atpt)
+(defun ar-curveddoublequoted-cross-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-cross 'leftrightdoublequoted arg))
+  (ar-th-cross 'curveddoublequoted arg))
 
-(defalias 'ar-doubleslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doubleslash-atpt)
-(defun ar-leftrightdoublequoted-doubleslash-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-doubleslash-curveddoublequoted-atpt 'ar-curveddoublequoted-doubleslash-atpt)
+(defun ar-curveddoublequoted-doubleslash-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-doubleslash 'leftrightdoublequoted arg))
+  (ar-th-doubleslash 'curveddoublequoted arg))
 
-(defalias 'ar-backslash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backslash-atpt)
-(defun ar-leftrightdoublequoted-backslash-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-backslash-curveddoublequoted-atpt 'ar-curveddoublequoted-backslash-atpt)
+(defun ar-curveddoublequoted-backslash-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-backslash 'leftrightdoublequoted arg))
+  (ar-th-backslash 'curveddoublequoted arg))
 
-(defalias 'ar-backtick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-backtick-atpt)
-(defun ar-leftrightdoublequoted-backtick-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-backtick-curveddoublequoted-atpt 'ar-curveddoublequoted-backtick-atpt)
+(defun ar-curveddoublequoted-backtick-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-backtick 'leftrightdoublequoted arg))
+  (ar-th-backtick 'curveddoublequoted arg))
 
-(defalias 'ar-dollar-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-dollar-atpt)
-(defun ar-leftrightdoublequoted-dollar-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-dollar-curveddoublequoted-atpt 'ar-curveddoublequoted-dollar-atpt)
+(defun ar-curveddoublequoted-dollar-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-dollar 'leftrightdoublequoted arg))
+  (ar-th-dollar 'curveddoublequoted arg))
 
-(defalias 'ar-doublebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublebacktick-atpt)
-(defun ar-leftrightdoublequoted-doublebacktick-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-doublebacktick-curveddoublequoted-atpt 'ar-curveddoublequoted-doublebacktick-atpt)
+(defun ar-curveddoublequoted-doublebacktick-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-doublebacktick 'leftrightdoublequoted arg))
+  (ar-th-doublebacktick 'curveddoublequoted arg))
 
-(defalias 'ar-doublequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-doublequote-atpt)
-(defun ar-leftrightdoublequoted-doublequote-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-doublequote-curveddoublequoted-atpt 'ar-curveddoublequoted-doublequote-atpt)
+(defun ar-curveddoublequoted-doublequote-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-doublequote 'leftrightdoublequoted arg))
+  (ar-th-doublequote 'curveddoublequoted arg))
 
-(defalias 'ar-equalize-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-equalize-atpt)
-(defun ar-leftrightdoublequoted-equalize-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-equalize-curveddoublequoted-atpt 'ar-curveddoublequoted-equalize-atpt)
+(defun ar-curveddoublequoted-equalize-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-equalize 'leftrightdoublequoted arg))
+  (ar-th-equalize 'curveddoublequoted arg))
 
-(defalias 'ar-escape-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-escape-atpt)
-(defun ar-leftrightdoublequoted-escape-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-escape-curveddoublequoted-atpt 'ar-curveddoublequoted-escape-atpt)
+(defun ar-curveddoublequoted-escape-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-escape 'leftrightdoublequoted arg))
+  (ar-th-escape 'curveddoublequoted arg))
 
-(defalias 'ar-hash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hash-atpt)
-(defun ar-leftrightdoublequoted-hash-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-hash-curveddoublequoted-atpt 'ar-curveddoublequoted-hash-atpt)
+(defun ar-curveddoublequoted-hash-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-hash 'leftrightdoublequoted arg))
+  (ar-th-hash 'curveddoublequoted arg))
 
-(defalias 'ar-hyphen-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-hyphen-atpt)
-(defun ar-leftrightdoublequoted-hyphen-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-hyphen-curveddoublequoted-atpt 'ar-curveddoublequoted-hyphen-atpt)
+(defun ar-curveddoublequoted-hyphen-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-hyphen 'leftrightdoublequoted arg))
+  (ar-th-hyphen 'curveddoublequoted arg))
 
-(defalias 'ar-singlequote-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-singlequote-atpt)
-(defun ar-leftrightdoublequoted-singlequote-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-singlequote-curveddoublequoted-atpt 'ar-curveddoublequoted-singlequote-atpt)
+(defun ar-curveddoublequoted-singlequote-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-singlequote 'leftrightdoublequoted arg))
+  (ar-th-singlequote 'curveddoublequoted arg))
 
-(defalias 'ar-slash-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-slash-atpt)
-(defun ar-leftrightdoublequoted-slash-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-slash-curveddoublequoted-atpt 'ar-curveddoublequoted-slash-atpt)
+(defun ar-curveddoublequoted-slash-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-slash 'leftrightdoublequoted arg))
+  (ar-th-slash 'curveddoublequoted arg))
 
-(defalias 'ar-star-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-star-atpt)
-(defun ar-leftrightdoublequoted-star-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-star-curveddoublequoted-atpt 'ar-curveddoublequoted-star-atpt)
+(defun ar-curveddoublequoted-star-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-star 'leftrightdoublequoted arg))
+  (ar-th-star 'curveddoublequoted arg))
 
-(defalias 'ar-tild-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-tild-atpt)
-(defun ar-leftrightdoublequoted-tild-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-tild-curveddoublequoted-atpt 'ar-curveddoublequoted-tild-atpt)
+(defun ar-curveddoublequoted-tild-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-tild 'leftrightdoublequoted arg))
+  (ar-th-tild 'curveddoublequoted arg))
 
-(defalias 'ar-triplebacktick-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-triplebacktick-atpt)
-(defun ar-leftrightdoublequoted-triplebacktick-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-triplebacktick-curveddoublequoted-atpt 'ar-curveddoublequoted-triplebacktick-atpt)
+(defun ar-curveddoublequoted-triplebacktick-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-triplebacktick 'leftrightdoublequoted arg))
+  (ar-th-triplebacktick 'curveddoublequoted arg))
 
-(defalias 'ar-underscore-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-underscore-atpt)
-(defun ar-leftrightdoublequoted-underscore-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-underscore-curveddoublequoted-atpt 'ar-curveddoublequoted-underscore-atpt)
+(defun ar-curveddoublequoted-underscore-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-underscore 'leftrightdoublequoted arg))
+  (ar-th-underscore 'curveddoublequoted arg))
 
-(defalias 'ar-whitespace-leftrightdoublequoted-atpt 'ar-leftrightdoublequoted-whitespace-atpt)
-(defun ar-leftrightdoublequoted-whitespace-atpt (&optional arg)
-  "Returns LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise "
+(defalias 'ar-whitespace-curveddoublequoted-atpt 'ar-curveddoublequoted-whitespace-atpt)
+(defun ar-curveddoublequoted-whitespace-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-whitespace 'leftrightdoublequoted arg))
+  (ar-th-whitespace 'curveddoublequoted arg))
 
 (defalias 'ar-colon-parentized-atpt 'ar-parentized-colon-atpt)
 (defun ar-parentized-colon-atpt (&optional arg)
@@ -11709,17 +11709,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'alnum arg))
 
-(defalias 'ar-leftrightsinglequote-alnum-atpt 'ar-alnum-leftrightsinglequote-atpt)
-(defun ar-alnum-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote ALNUM at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-alnum-atpt 'ar-alnum-curvedsinglequote-atpt)
+(defun ar-alnum-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote ALNUM at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'alnum arg))
+  (ar-th-curvedsinglequote 'alnum arg))
 
-(defalias 'ar-leftrightdoublequote-alnum-atpt 'ar-alnum-leftrightdoublequote-atpt)
-(defun ar-alnum-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote ALNUM at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-alnum-atpt 'ar-alnum-curveddoublequote-atpt)
+(defun ar-alnum-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote ALNUM at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'alnum arg))
+  (ar-th-curveddoublequote 'alnum arg))
 
 (defalias 'ar-parentize-alnum-atpt 'ar-alnum-parentize-atpt)
 (defun ar-alnum-parentize-atpt (&optional arg)
@@ -11751,17 +11751,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'alpha arg))
 
-(defalias 'ar-leftrightsinglequote-alpha-atpt 'ar-alpha-leftrightsinglequote-atpt)
-(defun ar-alpha-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote ALPHA at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-alpha-atpt 'ar-alpha-curvedsinglequote-atpt)
+(defun ar-alpha-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote ALPHA at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'alpha arg))
+  (ar-th-curvedsinglequote 'alpha arg))
 
-(defalias 'ar-leftrightdoublequote-alpha-atpt 'ar-alpha-leftrightdoublequote-atpt)
-(defun ar-alpha-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote ALPHA at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-alpha-atpt 'ar-alpha-curveddoublequote-atpt)
+(defun ar-alpha-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote ALPHA at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'alpha arg))
+  (ar-th-curveddoublequote 'alpha arg))
 
 (defalias 'ar-parentize-alpha-atpt 'ar-alpha-parentize-atpt)
 (defun ar-alpha-parentize-atpt (&optional arg)
@@ -11793,17 +11793,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'ascii arg))
 
-(defalias 'ar-leftrightsinglequote-ascii-atpt 'ar-ascii-leftrightsinglequote-atpt)
-(defun ar-ascii-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote ASCII at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-ascii-atpt 'ar-ascii-curvedsinglequote-atpt)
+(defun ar-ascii-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote ASCII at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'ascii arg))
+  (ar-th-curvedsinglequote 'ascii arg))
 
-(defalias 'ar-leftrightdoublequote-ascii-atpt 'ar-ascii-leftrightdoublequote-atpt)
-(defun ar-ascii-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote ASCII at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-ascii-atpt 'ar-ascii-curveddoublequote-atpt)
+(defun ar-ascii-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote ASCII at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'ascii arg))
+  (ar-th-curveddoublequote 'ascii arg))
 
 (defalias 'ar-parentize-ascii-atpt 'ar-ascii-parentize-atpt)
 (defun ar-ascii-parentize-atpt (&optional arg)
@@ -11835,17 +11835,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'blank arg))
 
-(defalias 'ar-leftrightsinglequote-blank-atpt 'ar-blank-leftrightsinglequote-atpt)
-(defun ar-blank-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote BLANK at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-blank-atpt 'ar-blank-curvedsinglequote-atpt)
+(defun ar-blank-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote BLANK at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'blank arg))
+  (ar-th-curvedsinglequote 'blank arg))
 
-(defalias 'ar-leftrightdoublequote-blank-atpt 'ar-blank-leftrightdoublequote-atpt)
-(defun ar-blank-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote BLANK at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-blank-atpt 'ar-blank-curveddoublequote-atpt)
+(defun ar-blank-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote BLANK at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'blank arg))
+  (ar-th-curveddoublequote 'blank arg))
 
 (defalias 'ar-parentize-blank-atpt 'ar-blank-parentize-atpt)
 (defun ar-blank-parentize-atpt (&optional arg)
@@ -11877,17 +11877,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'cntrl arg))
 
-(defalias 'ar-leftrightsinglequote-cntrl-atpt 'ar-cntrl-leftrightsinglequote-atpt)
-(defun ar-cntrl-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote CNTRL at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-cntrl-atpt 'ar-cntrl-curvedsinglequote-atpt)
+(defun ar-cntrl-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote CNTRL at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'cntrl arg))
+  (ar-th-curvedsinglequote 'cntrl arg))
 
-(defalias 'ar-leftrightdoublequote-cntrl-atpt 'ar-cntrl-leftrightdoublequote-atpt)
-(defun ar-cntrl-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote CNTRL at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-cntrl-atpt 'ar-cntrl-curveddoublequote-atpt)
+(defun ar-cntrl-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote CNTRL at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'cntrl arg))
+  (ar-th-curveddoublequote 'cntrl arg))
 
 (defalias 'ar-parentize-cntrl-atpt 'ar-cntrl-parentize-atpt)
 (defun ar-cntrl-parentize-atpt (&optional arg)
@@ -11919,17 +11919,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'digit arg))
 
-(defalias 'ar-leftrightsinglequote-digit-atpt 'ar-digit-leftrightsinglequote-atpt)
-(defun ar-digit-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote DIGIT at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-digit-atpt 'ar-digit-curvedsinglequote-atpt)
+(defun ar-digit-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote DIGIT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'digit arg))
+  (ar-th-curvedsinglequote 'digit arg))
 
-(defalias 'ar-leftrightdoublequote-digit-atpt 'ar-digit-leftrightdoublequote-atpt)
-(defun ar-digit-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote DIGIT at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-digit-atpt 'ar-digit-curveddoublequote-atpt)
+(defun ar-digit-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote DIGIT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'digit arg))
+  (ar-th-curveddoublequote 'digit arg))
 
 (defalias 'ar-parentize-digit-atpt 'ar-digit-parentize-atpt)
 (defun ar-digit-parentize-atpt (&optional arg)
@@ -11961,17 +11961,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'graph arg))
 
-(defalias 'ar-leftrightsinglequote-graph-atpt 'ar-graph-leftrightsinglequote-atpt)
-(defun ar-graph-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote GRAPH at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-graph-atpt 'ar-graph-curvedsinglequote-atpt)
+(defun ar-graph-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote GRAPH at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'graph arg))
+  (ar-th-curvedsinglequote 'graph arg))
 
-(defalias 'ar-leftrightdoublequote-graph-atpt 'ar-graph-leftrightdoublequote-atpt)
-(defun ar-graph-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote GRAPH at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-graph-atpt 'ar-graph-curveddoublequote-atpt)
+(defun ar-graph-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote GRAPH at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'graph arg))
+  (ar-th-curveddoublequote 'graph arg))
 
 (defalias 'ar-parentize-graph-atpt 'ar-graph-parentize-atpt)
 (defun ar-graph-parentize-atpt (&optional arg)
@@ -12003,17 +12003,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'lower arg))
 
-(defalias 'ar-leftrightsinglequote-lower-atpt 'ar-lower-leftrightsinglequote-atpt)
-(defun ar-lower-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote LOWER at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-lower-atpt 'ar-lower-curvedsinglequote-atpt)
+(defun ar-lower-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote LOWER at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'lower arg))
+  (ar-th-curvedsinglequote 'lower arg))
 
-(defalias 'ar-leftrightdoublequote-lower-atpt 'ar-lower-leftrightdoublequote-atpt)
-(defun ar-lower-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote LOWER at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-lower-atpt 'ar-lower-curveddoublequote-atpt)
+(defun ar-lower-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote LOWER at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'lower arg))
+  (ar-th-curveddoublequote 'lower arg))
 
 (defalias 'ar-parentize-lower-atpt 'ar-lower-parentize-atpt)
 (defun ar-lower-parentize-atpt (&optional arg)
@@ -12045,17 +12045,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'nonascii arg))
 
-(defalias 'ar-leftrightsinglequote-nonascii-atpt 'ar-nonascii-leftrightsinglequote-atpt)
-(defun ar-nonascii-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote NONASCII at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-nonascii-atpt 'ar-nonascii-curvedsinglequote-atpt)
+(defun ar-nonascii-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote NONASCII at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'nonascii arg))
+  (ar-th-curvedsinglequote 'nonascii arg))
 
-(defalias 'ar-leftrightdoublequote-nonascii-atpt 'ar-nonascii-leftrightdoublequote-atpt)
-(defun ar-nonascii-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote NONASCII at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-nonascii-atpt 'ar-nonascii-curveddoublequote-atpt)
+(defun ar-nonascii-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote NONASCII at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'nonascii arg))
+  (ar-th-curveddoublequote 'nonascii arg))
 
 (defalias 'ar-parentize-nonascii-atpt 'ar-nonascii-parentize-atpt)
 (defun ar-nonascii-parentize-atpt (&optional arg)
@@ -12087,17 +12087,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'print arg))
 
-(defalias 'ar-leftrightsinglequote-print-atpt 'ar-print-leftrightsinglequote-atpt)
-(defun ar-print-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote PRINT at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-print-atpt 'ar-print-curvedsinglequote-atpt)
+(defun ar-print-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote PRINT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'print arg))
+  (ar-th-curvedsinglequote 'print arg))
 
-(defalias 'ar-leftrightdoublequote-print-atpt 'ar-print-leftrightdoublequote-atpt)
-(defun ar-print-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote PRINT at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-print-atpt 'ar-print-curveddoublequote-atpt)
+(defun ar-print-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote PRINT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'print arg))
+  (ar-th-curveddoublequote 'print arg))
 
 (defalias 'ar-parentize-print-atpt 'ar-print-parentize-atpt)
 (defun ar-print-parentize-atpt (&optional arg)
@@ -12129,17 +12129,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'punct arg))
 
-(defalias 'ar-leftrightsinglequote-punct-atpt 'ar-punct-leftrightsinglequote-atpt)
-(defun ar-punct-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote PUNCT at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-punct-atpt 'ar-punct-curvedsinglequote-atpt)
+(defun ar-punct-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote PUNCT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'punct arg))
+  (ar-th-curvedsinglequote 'punct arg))
 
-(defalias 'ar-leftrightdoublequote-punct-atpt 'ar-punct-leftrightdoublequote-atpt)
-(defun ar-punct-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote PUNCT at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-punct-atpt 'ar-punct-curveddoublequote-atpt)
+(defun ar-punct-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote PUNCT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'punct arg))
+  (ar-th-curveddoublequote 'punct arg))
 
 (defalias 'ar-parentize-punct-atpt 'ar-punct-parentize-atpt)
 (defun ar-punct-parentize-atpt (&optional arg)
@@ -12171,17 +12171,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'space arg))
 
-(defalias 'ar-leftrightsinglequote-space-atpt 'ar-space-leftrightsinglequote-atpt)
-(defun ar-space-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote SPACE at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-space-atpt 'ar-space-curvedsinglequote-atpt)
+(defun ar-space-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote SPACE at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'space arg))
+  (ar-th-curvedsinglequote 'space arg))
 
-(defalias 'ar-leftrightdoublequote-space-atpt 'ar-space-leftrightdoublequote-atpt)
-(defun ar-space-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote SPACE at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-space-atpt 'ar-space-curveddoublequote-atpt)
+(defun ar-space-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote SPACE at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'space arg))
+  (ar-th-curveddoublequote 'space arg))
 
 (defalias 'ar-parentize-space-atpt 'ar-space-parentize-atpt)
 (defun ar-space-parentize-atpt (&optional arg)
@@ -12213,17 +12213,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'upper arg))
 
-(defalias 'ar-leftrightsinglequote-upper-atpt 'ar-upper-leftrightsinglequote-atpt)
-(defun ar-upper-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote UPPER at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-upper-atpt 'ar-upper-curvedsinglequote-atpt)
+(defun ar-upper-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote UPPER at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'upper arg))
+  (ar-th-curvedsinglequote 'upper arg))
 
-(defalias 'ar-leftrightdoublequote-upper-atpt 'ar-upper-leftrightdoublequote-atpt)
-(defun ar-upper-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote UPPER at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-upper-atpt 'ar-upper-curveddoublequote-atpt)
+(defun ar-upper-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote UPPER at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'upper arg))
+  (ar-th-curveddoublequote 'upper arg))
 
 (defalias 'ar-parentize-upper-atpt 'ar-upper-parentize-atpt)
 (defun ar-upper-parentize-atpt (&optional arg)
@@ -12255,17 +12255,17 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-greaterangle 'xdigit arg))
 
-(defalias 'ar-leftrightsinglequote-xdigit-atpt 'ar-xdigit-leftrightsinglequote-atpt)
-(defun ar-xdigit-leftrightsinglequote-atpt (&optional arg)
-  "Leftrightsinglequote XDIGIT at point if any, nil otherwise "
+(defalias 'ar-curvedsinglequote-xdigit-atpt 'ar-xdigit-curvedsinglequote-atpt)
+(defun ar-xdigit-curvedsinglequote-atpt (&optional arg)
+  "Curvedsinglequote XDIGIT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'xdigit arg))
+  (ar-th-curvedsinglequote 'xdigit arg))
 
-(defalias 'ar-leftrightdoublequote-xdigit-atpt 'ar-xdigit-leftrightdoublequote-atpt)
-(defun ar-xdigit-leftrightdoublequote-atpt (&optional arg)
-  "Leftrightdoublequote XDIGIT at point if any, nil otherwise "
+(defalias 'ar-curveddoublequote-xdigit-atpt 'ar-xdigit-curveddoublequote-atpt)
+(defun ar-xdigit-curveddoublequote-atpt (&optional arg)
+  "Curveddoublequote XDIGIT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-leftrightdoublequote 'xdigit arg))
+  (ar-th-curveddoublequote 'xdigit arg))
 
 (defalias 'ar-parentize-xdigit-atpt 'ar-xdigit-parentize-atpt)
 (defun ar-xdigit-parentize-atpt (&optional arg)
@@ -16402,10 +16402,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'braced no-delimiters))
 
-(defun ar-leftrightsinglequote-braced-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-braced-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'braced no-delimiters))
+  (ar-th-curvedsinglequote 'braced no-delimiters))
 
 (defun ar-separate-braced-atpt (&optional no-delimiters check)
   "Separates BRACED at point if any, does nothing otherwise
@@ -16643,10 +16643,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'bracketed no-delimiters))
 
-(defun ar-leftrightsinglequote-bracketed-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-bracketed-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'bracketed no-delimiters))
+  (ar-th-curvedsinglequote 'bracketed no-delimiters))
 
 (defun ar-separate-bracketed-atpt (&optional no-delimiters check)
   "Separates BRACKETED at point if any, does nothing otherwise
@@ -16884,10 +16884,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'lesserangled no-delimiters))
 
-(defun ar-leftrightsinglequote-lesserangled-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-lesserangled-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'lesserangled no-delimiters))
+  (ar-th-curvedsinglequote 'lesserangled no-delimiters))
 
 (defun ar-separate-lesserangled-atpt (&optional no-delimiters check)
   "Separates LESSERANGLED at point if any, does nothing otherwise
@@ -17125,10 +17125,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'greaterangled no-delimiters))
 
-(defun ar-leftrightsinglequote-greaterangled-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-greaterangled-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'greaterangled no-delimiters))
+  (ar-th-curvedsinglequote 'greaterangled no-delimiters))
 
 (defun ar-separate-greaterangled-atpt (&optional no-delimiters check)
   "Separates GREATERANGLED at point if any, does nothing otherwise
@@ -17218,228 +17218,228 @@ See doku from `sort-subr', for details.
     (when arg (message "%s" erg))
    erg))
 
-(defun ar-leftrightsinglequoted-atpt (&optional no-delimiters)
-  "Returns leftrightsinglequoted at point if any, nil otherwise. 
+(defun ar-curvedsinglequoted-atpt (&optional no-delimiters)
+  "Returns curvedsinglequoted at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'leftrightsinglequoted no-delimiters))
+  (ar-th 'curvedsinglequoted no-delimiters))
 
-(defun ar-bounds-of-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Returns a list, borders of leftrightsinglequoted if any, nil otherwise. 
+(defun ar-bounds-of-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Returns a list, borders of curvedsinglequoted if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'leftrightsinglequoted no-delimiters))
+  (ar-th-bounds 'curvedsinglequoted no-delimiters))
 
-(defun ar-leftrightsinglequoted-beginning-position-atpt (&optional no-delimiters check)
-  "Returns a number, beginning position LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise.
+(defun ar-curvedsinglequoted-beginning-position-atpt (&optional no-delimiters check)
+  "Returns a number, beginning position CURVEDSINGLEQUOTED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'leftrightsinglequoted no-delimiters))
+  (ar-th-beg 'curvedsinglequoted no-delimiters))
 
-(defun ar-leftrightsinglequoted-end-position-atpt (&optional no-delimiters check)
-  "Returns a number, end position of LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise.
+(defun ar-curvedsinglequoted-end-position-atpt (&optional no-delimiters check)
+  "Returns a number, end position of CURVEDSINGLEQUOTED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'leftrightsinglequoted no-delimiters))
+  (ar-th-end 'curvedsinglequoted no-delimiters))
 
-(defun ar-beginning-of-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Goto beginning of symbol or char-class LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise. 
+(defun ar-beginning-of-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Goto beginning of symbol or char-class CURVEDSINGLEQUOTED at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'leftrightsinglequoted no-delimiters))
+  (ar-th-gotobeg 'curvedsinglequoted no-delimiters))
 
-(defun ar-end-of-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Goto end of symbol or char-class LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise. "
+(defun ar-end-of-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Goto end of symbol or char-class CURVEDSINGLEQUOTED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'leftrightsinglequoted no-delimiters))
+  (ar-th-gotoend 'curvedsinglequoted no-delimiters))
 
-(defun ar-in-leftrightsinglequoted-p-atpt (&optional no-delimiters check)
-  "Returns bounds of LEFTRIGHTSINGLEQUOTED at point, a list, if inside, nil otherwise. "
+(defun ar-in-curvedsinglequoted-p-atpt (&optional no-delimiters check)
+  "Returns bounds of CURVEDSINGLEQUOTED at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'leftrightsinglequoted no-delimiters))
+  (ar-th-bounds 'curvedsinglequoted no-delimiters))
 
-(defun ar-length-of-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Returns beginning of symbol or char-class LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise. "
+(defun ar-length-of-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Returns beginning of symbol or char-class CURVEDSINGLEQUOTED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'leftrightsinglequoted no-delimiters))
+  (ar-th-length 'curvedsinglequoted no-delimiters))
 
-(defun ar-copy-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Returns a copy of LEFTRIGHTSINGLEQUOTED at point if any, nil otherwise. "
+(defun ar-copy-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Returns a copy of CURVEDSINGLEQUOTED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'leftrightsinglequoted no-delimiters))
+  (ar-th-copy 'curvedsinglequoted no-delimiters))
 
-(defun ar-delete-leftrightsinglequoted-atpt (&optional arg)
-  "Deletes LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-delete-curvedsinglequoted-atpt (&optional arg)
+  "Deletes CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-delete 'leftrightsinglequoted arg))
+  (ar-th-delete 'curvedsinglequoted arg))
 
-(defun ar-delete-leftrightsinglequoted-in-region (beg end)
-  "Deletes LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-delete-curvedsinglequoted-in-region (beg end)
+  "Deletes CURVEDSINGLEQUOTED at point if any. "
   (interactive "*r")
-  (ar-th-delete-in-region 'leftrightsinglequoted beg end))
+  (ar-th-delete-in-region 'curvedsinglequoted beg end))
 
-(defun ar-blok-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around leftrightsinglequoted.
-  Returns blok or nil if no LEFTRIGHTSINGLEQUOTED at cursor-position. "
+(defun ar-blok-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around curvedsinglequoted.
+  Returns blok or nil if no CURVEDSINGLEQUOTED at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'leftrightsinglequoted no-delimiters))
+  (ar-th-blok 'curvedsinglequoted no-delimiters))
 
-(defun ar-backslashparen-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Provides doubleslashed parentheses around leftrightsinglequoted at point if any.
+(defun ar-backslashparen-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around curvedsinglequoted at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'leftrightsinglequoted no-delimiters))
+  (ar-th-backslashparen 'curvedsinglequoted no-delimiters))
 
-(defun ar-doublebackslash-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Puts doubled backslashes around LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-doublebackslash-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Puts doubled backslashes around CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'leftrightsinglequoted no-delimiters))
+  (ar-th-doublebackslash 'curvedsinglequoted no-delimiters))
 
-(defun ar-doubleslash-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Puts doubled slashes around LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-doubleslash-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Puts doubled slashes around CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'leftrightsinglequoted no-delimiters))
+  (ar-th-doubleslash 'curvedsinglequoted no-delimiters))
 
-(defun ar-doublebackslashparen-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Provides doubleslashed parentheses around LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-doublebackslashparen-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'leftrightsinglequoted no-delimiters))
+  (ar-th-doublebackslashparen 'curvedsinglequoted no-delimiters))
 
-(defun ar-doublebacktick-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Provides double backticks around LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-doublebacktick-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Provides double backticks around CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'leftrightsinglequoted no-delimiters))
+  (ar-th-doublebacktick 'curvedsinglequoted no-delimiters))
 
-(defun ar-slashparen-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Provides slashed parentheses around LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-slashparen-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'leftrightsinglequoted no-delimiters))
+  (ar-th-slashparen 'curvedsinglequoted no-delimiters))
 
-(defun ar-comment-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Comments LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-comment-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Comments CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-comment 'leftrightsinglequoted no-delimiters))
+  (ar-th-comment 'curvedsinglequoted no-delimiters))
 
-(defun ar-commatize-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Put a comma after LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-commatize-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Put a comma after CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'leftrightsinglequoted no-delimiters))
+  (ar-th-commatize 'curvedsinglequoted no-delimiters))
 
-(defun ar-quote-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Put a singlequote before LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-quote-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Put a singlequote before CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-quote 'leftrightsinglequoted no-delimiters))
+  (ar-th-quote 'curvedsinglequoted no-delimiters))
 
 
-(defun ar-mark-leftrightsinglequoted-atpt (&optional arg)
-  "Marks LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-mark-curvedsinglequoted-atpt (&optional arg)
+  "Marks CURVEDSINGLEQUOTED at point if any. "
   (interactive "P")
-  (ar-th-mark 'leftrightsinglequoted))
+  (ar-th-mark 'curvedsinglequoted))
 
-(defun ar-hide-leftrightsinglequoted-atpt (&optional arg)
-  "Hides LEFTRIGHTSINGLEQUOTED at point. "
+(defun ar-hide-curvedsinglequoted-atpt (&optional arg)
+  "Hides CURVEDSINGLEQUOTED at point. "
   (interactive "P")
-  (ar-th-hide 'leftrightsinglequoted))
+  (ar-th-hide 'curvedsinglequoted))
 
-(defun ar-show-leftrightsinglequoted-atpt (&optional arg)
-  "Shows hidden LEFTRIGHTSINGLEQUOTED at point. "
+(defun ar-show-curvedsinglequoted-atpt (&optional arg)
+  "Shows hidden CURVEDSINGLEQUOTED at point. "
   (interactive "P")
-  (ar-th-show 'leftrightsinglequoted))
+  (ar-th-show 'curvedsinglequoted))
 
-(defun ar-hide-show-leftrightsinglequoted-atpt (&optional arg)
-  "Alternatively hides or shows LEFTRIGHTSINGLEQUOTED at point. "
+(defun ar-hide-show-curvedsinglequoted-atpt (&optional arg)
+  "Alternatively hides or shows CURVEDSINGLEQUOTED at point. "
   (interactive "P")
-  (ar-th-hide-show 'leftrightsinglequoted))
+  (ar-th-hide-show 'curvedsinglequoted))
 
-(defun ar-highlight-leftrightsinglequoted-atpt-mode (&optional no-delimiters check)
-  "Toggles leftrightsinglequoted-highlight-atpt-mode "
+(defun ar-highlight-curvedsinglequoted-atpt-mode (&optional no-delimiters check)
+  "Toggles curvedsinglequoted-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'leftrightsinglequoted no-delimiters))
+  (ar-th-highlight 'curvedsinglequoted no-delimiters))
 
-(defun ar-kill-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Kills LEFTRIGHTSINGLEQUOTED at point if any. "
+(defun ar-kill-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Kills CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-kill 'leftrightsinglequoted no-delimiters))
+  (ar-th-kill 'curvedsinglequoted no-delimiters))
 
-(defun ar-leftrightsinglequote-leftrightsinglequoted-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-curvedsinglequoted-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'leftrightsinglequoted no-delimiters))
+  (ar-th-curvedsinglequote 'curvedsinglequoted no-delimiters))
 
-(defun ar-separate-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Separates LEFTRIGHTSINGLEQUOTED at point if any, does nothing otherwise
+(defun ar-separate-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Separates CURVEDSINGLEQUOTED at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'leftrightsinglequoted no-delimiters))
+  (ar-th-separate 'curvedsinglequoted no-delimiters))
 
-(defun ar-triplequotedq-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Put triplequotes composed of doublequotes around leftrightsinglequoted. "
+(defun ar-triplequotedq-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of doublequotes around curvedsinglequoted. "
   (interactive "*P")
-  (ar-th-triplequotedq 'leftrightsinglequoted no-delimiters))
+  (ar-th-triplequotedq 'curvedsinglequoted no-delimiters))
 
-(defun ar-triplequotesq-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Put triplequotes composed of singlequotes around leftrightsinglequoted. "
+(defun ar-triplequotesq-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of singlequotes around curvedsinglequoted. "
   (interactive "*P")
-  (ar-th-triplequotesq 'leftrightsinglequoted no-delimiters))
+  (ar-th-triplequotesq 'curvedsinglequoted no-delimiters))
 
-(defun ar-triplebacktick-leftrightsinglequoted-atpt (&optional arg)
-  "Deletes leftrightsinglequoted at point if any.
+(defun ar-triplebacktick-curvedsinglequoted-atpt (&optional arg)
+  "Deletes curvedsinglequoted at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-triplebacktick 'leftrightsinglequoted arg))
+  (ar-th-triplebacktick 'curvedsinglequoted arg))
 
-(defun ar-trim-leftrightsinglequoted-atpt (&optional no-delimiters iact check)
+(defun ar-trim-curvedsinglequoted-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'leftrightsinglequoted no-delimiters iact check t t))
+  (ar-th-trim 'curvedsinglequoted no-delimiters iact check t t))
 
-(defun ar-left-trim-leftrightsinglequoted-atpt (&optional no-delimiters iact check)
+(defun ar-left-trim-curvedsinglequoted-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'leftrightsinglequoted no-delimiters iact check t))
+  (ar-th-trim 'curvedsinglequoted no-delimiters iact check t))
 
-(defun ar-right-trim-leftrightsinglequoted-atpt (&optional no-delimiters iact check)
+(defun ar-right-trim-curvedsinglequoted-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'leftrightsinglequoted n no-delimiters iact check nil t))
+  (ar-th-trim 'curvedsinglequoted n no-delimiters iact check nil t))
 
-(defun ar-underscore-leftrightsinglequoted-atpt (&optional no-delimiters check)
-  "Put underscore char around LEFTRIGHTSINGLEQUOTED. "
+(defun ar-underscore-curvedsinglequoted-atpt (&optional no-delimiters check)
+  "Put underscore char around CURVEDSINGLEQUOTED. "
   (interactive "*P")
-  (ar-th-underscore 'leftrightsinglequoted no-delimiters))
+  (ar-th-underscore 'curvedsinglequoted no-delimiters))
 
-;; (defalias 'ar-leftrightsinglequoted-whitespace-atpt 'ar-whitespace-leftrightsinglequoted-atpt)
+;; (defalias 'ar-curvedsinglequoted-whitespace-atpt 'ar-whitespace-curvedsinglequoted-atpt)
 ;; ;;;###autoload
-;; (defun ar-whitespace-leftrightsinglequoted-atpt (&optional no-delimiters check)
-;;   "Put whitespace char around LEFTRIGHTSINGLEQUOTED. "
+;; (defun ar-whitespace-curvedsinglequoted-atpt (&optional no-delimiters check)
+;;   "Put whitespace char around CURVEDSINGLEQUOTED. "
 ;;   (interactive "*P")
-;;   (ar-th-whitespace 'leftrightsinglequoted nil t))
+;;   (ar-th-whitespace 'curvedsinglequoted nil t))
 
-(defun ar-forward-leftrightsinglequoted-atpt (&optional arg)
-  "Moves forward over LEFTRIGHTSINGLEQUOTED at point if any, does nothing otherwise.
-Returns end position of LEFTRIGHTSINGLEQUOTED "
+(defun ar-forward-curvedsinglequoted-atpt (&optional arg)
+  "Moves forward over CURVEDSINGLEQUOTED at point if any, does nothing otherwise.
+Returns end position of CURVEDSINGLEQUOTED "
   (interactive "P")
-  (ar-th-forward 'leftrightsinglequoted arg))
+  (ar-th-forward 'curvedsinglequoted arg))
 
-(defun ar-backward-leftrightsinglequoted-atpt (&optional arg)
-  "Moves backward over LEFTRIGHTSINGLEQUOTED before point if any, does nothing otherwise.
-Returns beginning position of LEFTRIGHTSINGLEQUOTED "
+(defun ar-backward-curvedsinglequoted-atpt (&optional arg)
+  "Moves backward over CURVEDSINGLEQUOTED before point if any, does nothing otherwise.
+Returns beginning position of CURVEDSINGLEQUOTED "
   (interactive "P")
-  (ar-th-backward 'leftrightsinglequoted arg))
+  (ar-th-backward 'curvedsinglequoted arg))
 
-(defun ar-transpose-leftrightsinglequoted-atpt (&optional arg)
-  "Transposes LEFTRIGHTSINGLEQUOTED with LEFTRIGHTSINGLEQUOTED before point if any. "
+(defun ar-transpose-curvedsinglequoted-atpt (&optional arg)
+  "Transposes CURVEDSINGLEQUOTED with CURVEDSINGLEQUOTED before point if any. "
   (interactive "*P")
-  (ar-th-transpose 'leftrightsinglequoted arg))
+  (ar-th-transpose 'curvedsinglequoted arg))
 
-(defun ar-sort-leftrightsinglequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts leftrightsinglequoteds in region, with ARG in reverse order.
+(defun ar-sort-curvedsinglequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts curvedsinglequoteds in region, with ARG in reverse order.
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
@@ -17448,239 +17448,239 @@ See doku from `sort-subr', for details.
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'leftrightsinglequoted reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'curvedsinglequoted reverse beg end startkeyfun endkeyfun predicate)))
 
-(defun ar-check-leftrightsinglequoted-atpt (&optional arg) 
-  "Return t if a LEFTRIGHTSINGLEQUOTED at point exists, nil otherwise "
+(defun ar-check-curvedsinglequoted-atpt (&optional arg) 
+  "Return t if a CURVEDSINGLEQUOTED at point exists, nil otherwise "
   (interactive "P")
-  (let* ((beg (funcall (intern-soft (concat "ar-leftrightsinglequoted-beginning-position-atpt"))))
-        (end (funcall (intern-soft (concat "ar-leftrightsinglequoted-end-position-atpt"))))
+  (let* ((beg (funcall (intern-soft (concat "ar-curvedsinglequoted-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-curvedsinglequoted-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when arg (message "%s" erg))
    erg))
 
-(defun ar-leftrightdoublequoted-atpt (&optional no-delimiters)
-  "Returns leftrightdoublequoted at point if any, nil otherwise. 
+(defun ar-curveddoublequoted-atpt (&optional no-delimiters)
+  "Returns curveddoublequoted at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
   (interactive "P")
-  (ar-th 'leftrightdoublequoted no-delimiters))
+  (ar-th 'curveddoublequoted no-delimiters))
 
-(defun ar-bounds-of-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Returns a list, borders of leftrightdoublequoted if any, nil otherwise. 
+(defun ar-bounds-of-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Returns a list, borders of curveddoublequoted if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
   (interactive "P")
-  (ar-th-bounds 'leftrightdoublequoted no-delimiters))
+  (ar-th-bounds 'curveddoublequoted no-delimiters))
 
-(defun ar-leftrightdoublequoted-beginning-position-atpt (&optional no-delimiters check)
-  "Returns a number, beginning position LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise.
+(defun ar-curveddoublequoted-beginning-position-atpt (&optional no-delimiters check)
+  "Returns a number, beginning position CURVEDDOUBLEQUOTED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-beg 'leftrightdoublequoted no-delimiters))
+  (ar-th-beg 'curveddoublequoted no-delimiters))
 
-(defun ar-leftrightdoublequoted-end-position-atpt (&optional no-delimiters check)
-  "Returns a number, end position of LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise.
+(defun ar-curveddoublequoted-end-position-atpt (&optional no-delimiters check)
+  "Returns a number, end position of CURVEDDOUBLEQUOTED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
   (interactive "P")
-  (ar-th-end 'leftrightdoublequoted no-delimiters))
+  (ar-th-end 'curveddoublequoted no-delimiters))
 
-(defun ar-beginning-of-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Goto beginning of symbol or char-class LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. 
+(defun ar-beginning-of-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Goto beginning of symbol or char-class CURVEDDOUBLEQUOTED at point if any, nil otherwise. 
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "P")
-  (ar-th-gotobeg 'leftrightdoublequoted no-delimiters))
+  (ar-th-gotobeg 'curveddoublequoted no-delimiters))
 
-(defun ar-end-of-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Goto end of symbol or char-class LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+(defun ar-end-of-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Goto end of symbol or char-class CURVEDDOUBLEQUOTED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-gotoend 'leftrightdoublequoted no-delimiters))
+  (ar-th-gotoend 'curveddoublequoted no-delimiters))
 
-(defun ar-in-leftrightdoublequoted-p-atpt (&optional no-delimiters check)
-  "Returns bounds of LEFTRIGHTDOUBLEQUOTED at point, a list, if inside, nil otherwise. "
+(defun ar-in-curveddoublequoted-p-atpt (&optional no-delimiters check)
+  "Returns bounds of CURVEDDOUBLEQUOTED at point, a list, if inside, nil otherwise. "
   (interactive "P")
-  (ar-th-bounds 'leftrightdoublequoted no-delimiters))
+  (ar-th-bounds 'curveddoublequoted no-delimiters))
 
-(defun ar-length-of-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Returns beginning of symbol or char-class LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+(defun ar-length-of-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Returns beginning of symbol or char-class CURVEDDOUBLEQUOTED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-length 'leftrightdoublequoted no-delimiters))
+  (ar-th-length 'curveddoublequoted no-delimiters))
 
-(defun ar-copy-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Returns a copy of LEFTRIGHTDOUBLEQUOTED at point if any, nil otherwise. "
+(defun ar-copy-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Returns a copy of CURVEDDOUBLEQUOTED at point if any, nil otherwise. "
   (interactive "P")
-  (ar-th-copy 'leftrightdoublequoted no-delimiters))
+  (ar-th-copy 'curveddoublequoted no-delimiters))
 
-(defun ar-delete-leftrightdoublequoted-atpt (&optional arg)
-  "Deletes LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-delete-curveddoublequoted-atpt (&optional arg)
+  "Deletes CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-delete 'leftrightdoublequoted arg))
+  (ar-th-delete 'curveddoublequoted arg))
 
-(defun ar-delete-leftrightdoublequoted-in-region (beg end)
-  "Deletes LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-delete-curveddoublequoted-in-region (beg end)
+  "Deletes CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*r")
-  (ar-th-delete-in-region 'leftrightdoublequoted beg end))
+  (ar-th-delete-in-region 'curveddoublequoted beg end))
 
-(defun ar-blok-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around leftrightdoublequoted.
-  Returns blok or nil if no LEFTRIGHTDOUBLEQUOTED at cursor-position. "
+(defun ar-blok-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around curveddoublequoted.
+  Returns blok or nil if no CURVEDDOUBLEQUOTED at cursor-position. "
   (interactive "*P")
-  (ar-th-blok 'leftrightdoublequoted no-delimiters))
+  (ar-th-blok 'curveddoublequoted no-delimiters))
 
-(defun ar-backslashparen-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Provides doubleslashed parentheses around leftrightdoublequoted at point if any.
+(defun ar-backslashparen-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around curveddoublequoted at point if any.
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-backslashparen 'leftrightdoublequoted no-delimiters))
+  (ar-th-backslashparen 'curveddoublequoted no-delimiters))
 
-(defun ar-doublebackslash-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Puts doubled backslashes around LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-doublebackslash-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Puts doubled backslashes around CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslash 'leftrightdoublequoted no-delimiters))
+  (ar-th-doublebackslash 'curveddoublequoted no-delimiters))
 
-(defun ar-doubleslash-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Puts doubled slashes around LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-doubleslash-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Puts doubled slashes around CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doubleslash 'leftrightdoublequoted no-delimiters))
+  (ar-th-doubleslash 'curveddoublequoted no-delimiters))
 
-(defun ar-doublebackslashparen-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Provides doubleslashed parentheses around LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-doublebackslashparen-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doublebackslashparen 'leftrightdoublequoted no-delimiters))
+  (ar-th-doublebackslashparen 'curveddoublequoted no-delimiters))
 
-(defun ar-doublebacktick-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Provides double backticks around LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-doublebacktick-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Provides double backticks around CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-doublebacktick 'leftrightdoublequoted no-delimiters))
+  (ar-th-doublebacktick 'curveddoublequoted no-delimiters))
 
-(defun ar-slashparen-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Provides slashed parentheses around LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-slashparen-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-slashparen 'leftrightdoublequoted no-delimiters))
+  (ar-th-slashparen 'curveddoublequoted no-delimiters))
 
-(defun ar-comment-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Comments LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-comment-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Comments CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-comment 'leftrightdoublequoted no-delimiters))
+  (ar-th-comment 'curveddoublequoted no-delimiters))
 
-(defun ar-commatize-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Put a comma after LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-commatize-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Put a comma after CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-commatize 'leftrightdoublequoted no-delimiters))
+  (ar-th-commatize 'curveddoublequoted no-delimiters))
 
-(defun ar-quote-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Put a singlequote before LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-quote-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Put a singlequote before CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-quote 'leftrightdoublequoted no-delimiters))
+  (ar-th-quote 'curveddoublequoted no-delimiters))
 
 
-(defun ar-mark-leftrightdoublequoted-atpt (&optional arg)
-  "Marks LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-mark-curveddoublequoted-atpt (&optional arg)
+  "Marks CURVEDDOUBLEQUOTED at point if any. "
   (interactive "P")
-  (ar-th-mark 'leftrightdoublequoted))
+  (ar-th-mark 'curveddoublequoted))
 
-(defun ar-hide-leftrightdoublequoted-atpt (&optional arg)
-  "Hides LEFTRIGHTDOUBLEQUOTED at point. "
+(defun ar-hide-curveddoublequoted-atpt (&optional arg)
+  "Hides CURVEDDOUBLEQUOTED at point. "
   (interactive "P")
-  (ar-th-hide 'leftrightdoublequoted))
+  (ar-th-hide 'curveddoublequoted))
 
-(defun ar-show-leftrightdoublequoted-atpt (&optional arg)
-  "Shows hidden LEFTRIGHTDOUBLEQUOTED at point. "
+(defun ar-show-curveddoublequoted-atpt (&optional arg)
+  "Shows hidden CURVEDDOUBLEQUOTED at point. "
   (interactive "P")
-  (ar-th-show 'leftrightdoublequoted))
+  (ar-th-show 'curveddoublequoted))
 
-(defun ar-hide-show-leftrightdoublequoted-atpt (&optional arg)
-  "Alternatively hides or shows LEFTRIGHTDOUBLEQUOTED at point. "
+(defun ar-hide-show-curveddoublequoted-atpt (&optional arg)
+  "Alternatively hides or shows CURVEDDOUBLEQUOTED at point. "
   (interactive "P")
-  (ar-th-hide-show 'leftrightdoublequoted))
+  (ar-th-hide-show 'curveddoublequoted))
 
-(defun ar-highlight-leftrightdoublequoted-atpt-mode (&optional no-delimiters check)
-  "Toggles leftrightdoublequoted-highlight-atpt-mode "
+(defun ar-highlight-curveddoublequoted-atpt-mode (&optional no-delimiters check)
+  "Toggles curveddoublequoted-highlight-atpt-mode "
   (interactive "P")
-  (ar-th-highlight 'leftrightdoublequoted no-delimiters))
+  (ar-th-highlight 'curveddoublequoted no-delimiters))
 
-(defun ar-kill-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Kills LEFTRIGHTDOUBLEQUOTED at point if any. "
+(defun ar-kill-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Kills CURVEDDOUBLEQUOTED at point if any. "
   (interactive "*P")
-  (ar-th-kill 'leftrightdoublequoted no-delimiters))
+  (ar-th-kill 'curveddoublequoted no-delimiters))
 
-(defun ar-leftrightsinglequote-leftrightdoublequoted-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-curveddoublequoted-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'leftrightdoublequoted no-delimiters))
+  (ar-th-curvedsinglequote 'curveddoublequoted no-delimiters))
 
-(defun ar-separate-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Separates LEFTRIGHTDOUBLEQUOTED at point if any, does nothing otherwise
+(defun ar-separate-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Separates CURVEDDOUBLEQUOTED at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
   (interactive "*P")
-  (ar-th-separate 'leftrightdoublequoted no-delimiters))
+  (ar-th-separate 'curveddoublequoted no-delimiters))
 
-(defun ar-triplequotedq-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Put triplequotes composed of doublequotes around leftrightdoublequoted. "
+(defun ar-triplequotedq-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of doublequotes around curveddoublequoted. "
   (interactive "*P")
-  (ar-th-triplequotedq 'leftrightdoublequoted no-delimiters))
+  (ar-th-triplequotedq 'curveddoublequoted no-delimiters))
 
-(defun ar-triplequotesq-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Put triplequotes composed of singlequotes around leftrightdoublequoted. "
+(defun ar-triplequotesq-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of singlequotes around curveddoublequoted. "
   (interactive "*P")
-  (ar-th-triplequotesq 'leftrightdoublequoted no-delimiters))
+  (ar-th-triplequotesq 'curveddoublequoted no-delimiters))
 
-(defun ar-triplebacktick-leftrightdoublequoted-atpt (&optional arg)
-  "Deletes leftrightdoublequoted at point if any.
+(defun ar-triplebacktick-curveddoublequoted-atpt (&optional arg)
+  "Deletes curveddoublequoted at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
-  (ar-th-triplebacktick 'leftrightdoublequoted arg))
+  (ar-th-triplebacktick 'curveddoublequoted arg))
 
-(defun ar-trim-leftrightdoublequoted-atpt (&optional no-delimiters iact check)
+(defun ar-trim-curveddoublequoted-atpt (&optional no-delimiters iact check)
   "Removes leading and trailing char. "
   (interactive "*")
-  (ar-th-trim 'leftrightdoublequoted no-delimiters iact check t t))
+  (ar-th-trim 'curveddoublequoted no-delimiters iact check t t))
 
-(defun ar-left-trim-leftrightdoublequoted-atpt (&optional no-delimiters iact check)
+(defun ar-left-trim-curveddoublequoted-atpt (&optional no-delimiters iact check)
   "Removes leading char. "
   (interactive "*")
-  (ar-th-trim 'leftrightdoublequoted no-delimiters iact check t))
+  (ar-th-trim 'curveddoublequoted no-delimiters iact check t))
 
-(defun ar-right-trim-leftrightdoublequoted-atpt (&optional no-delimiters iact check)
+(defun ar-right-trim-curveddoublequoted-atpt (&optional no-delimiters iact check)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'leftrightdoublequoted n no-delimiters iact check nil t))
+  (ar-th-trim 'curveddoublequoted n no-delimiters iact check nil t))
 
-(defun ar-underscore-leftrightdoublequoted-atpt (&optional no-delimiters check)
-  "Put underscore char around LEFTRIGHTDOUBLEQUOTED. "
+(defun ar-underscore-curveddoublequoted-atpt (&optional no-delimiters check)
+  "Put underscore char around CURVEDDOUBLEQUOTED. "
   (interactive "*P")
-  (ar-th-underscore 'leftrightdoublequoted no-delimiters))
+  (ar-th-underscore 'curveddoublequoted no-delimiters))
 
-;; (defalias 'ar-leftrightdoublequoted-whitespace-atpt 'ar-whitespace-leftrightdoublequoted-atpt)
+;; (defalias 'ar-curveddoublequoted-whitespace-atpt 'ar-whitespace-curveddoublequoted-atpt)
 ;; ;;;###autoload
-;; (defun ar-whitespace-leftrightdoublequoted-atpt (&optional no-delimiters check)
-;;   "Put whitespace char around LEFTRIGHTDOUBLEQUOTED. "
+;; (defun ar-whitespace-curveddoublequoted-atpt (&optional no-delimiters check)
+;;   "Put whitespace char around CURVEDDOUBLEQUOTED. "
 ;;   (interactive "*P")
-;;   (ar-th-whitespace 'leftrightdoublequoted nil t))
+;;   (ar-th-whitespace 'curveddoublequoted nil t))
 
-(defun ar-forward-leftrightdoublequoted-atpt (&optional arg)
-  "Moves forward over LEFTRIGHTDOUBLEQUOTED at point if any, does nothing otherwise.
-Returns end position of LEFTRIGHTDOUBLEQUOTED "
+(defun ar-forward-curveddoublequoted-atpt (&optional arg)
+  "Moves forward over CURVEDDOUBLEQUOTED at point if any, does nothing otherwise.
+Returns end position of CURVEDDOUBLEQUOTED "
   (interactive "P")
-  (ar-th-forward 'leftrightdoublequoted arg))
+  (ar-th-forward 'curveddoublequoted arg))
 
-(defun ar-backward-leftrightdoublequoted-atpt (&optional arg)
-  "Moves backward over LEFTRIGHTDOUBLEQUOTED before point if any, does nothing otherwise.
-Returns beginning position of LEFTRIGHTDOUBLEQUOTED "
+(defun ar-backward-curveddoublequoted-atpt (&optional arg)
+  "Moves backward over CURVEDDOUBLEQUOTED before point if any, does nothing otherwise.
+Returns beginning position of CURVEDDOUBLEQUOTED "
   (interactive "P")
-  (ar-th-backward 'leftrightdoublequoted arg))
+  (ar-th-backward 'curveddoublequoted arg))
 
-(defun ar-transpose-leftrightdoublequoted-atpt (&optional arg)
-  "Transposes LEFTRIGHTDOUBLEQUOTED with LEFTRIGHTDOUBLEQUOTED before point if any. "
+(defun ar-transpose-curveddoublequoted-atpt (&optional arg)
+  "Transposes CURVEDDOUBLEQUOTED with CURVEDDOUBLEQUOTED before point if any. "
   (interactive "*P")
-  (ar-th-transpose 'leftrightdoublequoted arg))
+  (ar-th-transpose 'curveddoublequoted arg))
 
-(defun ar-sort-leftrightdoublequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts leftrightdoublequoteds in region, with ARG in reverse order.
+(defun ar-sort-curveddoublequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts curveddoublequoteds in region, with ARG in reverse order.
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
@@ -17689,13 +17689,13 @@ See doku from `sort-subr', for details.
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'leftrightdoublequoted reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'curveddoublequoted reverse beg end startkeyfun endkeyfun predicate)))
 
-(defun ar-check-leftrightdoublequoted-atpt (&optional arg) 
-  "Return t if a LEFTRIGHTDOUBLEQUOTED at point exists, nil otherwise "
+(defun ar-check-curveddoublequoted-atpt (&optional arg) 
+  "Return t if a CURVEDDOUBLEQUOTED at point exists, nil otherwise "
   (interactive "P")
-  (let* ((beg (funcall (intern-soft (concat "ar-leftrightdoublequoted-beginning-position-atpt"))))
-        (end (funcall (intern-soft (concat "ar-leftrightdoublequoted-end-position-atpt"))))
+  (let* ((beg (funcall (intern-soft (concat "ar-curveddoublequoted-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-curveddoublequoted-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when arg (message "%s" erg))
    erg))
@@ -17848,10 +17848,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'parentized no-delimiters))
 
-(defun ar-leftrightsinglequote-parentized-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-parentized-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'parentized no-delimiters))
+  (ar-th-curvedsinglequote 'parentized no-delimiters))
 
 (defun ar-separate-parentized-atpt (&optional no-delimiters check)
   "Separates PARENTIZED at point if any, does nothing otherwise
@@ -18093,10 +18093,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'list no-delimiters))
 
-(defun ar-leftrightsinglequote-list-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-list-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'list no-delimiters))
+  (ar-th-curvedsinglequote 'list no-delimiters))
 
 (defun ar-separate-list-atpt (&optional no-delimiters check)
   "Separates LIST at point if any, does nothing otherwise
@@ -18338,10 +18338,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'block no-delimiters))
 
-(defun ar-leftrightsinglequote-block-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-block-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'block no-delimiters))
+  (ar-th-curvedsinglequote 'block no-delimiters))
 
 (defun ar-separate-block-atpt (&optional no-delimiters check)
   "Separates BLOCK at point if any, does nothing otherwise
@@ -18579,10 +18579,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'block-or-clause no-delimiters))
 
-(defun ar-leftrightsinglequote-block-or-clause-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-block-or-clause-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'block-or-clause no-delimiters))
+  (ar-th-curvedsinglequote 'block-or-clause no-delimiters))
 
 (defun ar-separate-block-or-clause-atpt (&optional no-delimiters check)
   "Separates BLOCK-OR-CLAUSE at point if any, does nothing otherwise
@@ -18820,10 +18820,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'char no-delimiters))
 
-(defun ar-leftrightsinglequote-char-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-char-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'char no-delimiters))
+  (ar-th-curvedsinglequote 'char no-delimiters))
 
 (defun ar-separate-char-atpt (&optional no-delimiters check)
   "Separates CHAR at point if any, does nothing otherwise
@@ -19061,10 +19061,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'class no-delimiters))
 
-(defun ar-leftrightsinglequote-class-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-class-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'class no-delimiters))
+  (ar-th-curvedsinglequote 'class no-delimiters))
 
 (defun ar-separate-class-atpt (&optional no-delimiters check)
   "Separates CLASS at point if any, does nothing otherwise
@@ -19302,10 +19302,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'clause no-delimiters))
 
-(defun ar-leftrightsinglequote-clause-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-clause-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'clause no-delimiters))
+  (ar-th-curvedsinglequote 'clause no-delimiters))
 
 (defun ar-separate-clause-atpt (&optional no-delimiters check)
   "Separates CLAUSE at point if any, does nothing otherwise
@@ -19543,10 +19543,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'def-or-class no-delimiters))
 
-(defun ar-leftrightsinglequote-def-or-class-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-def-or-class-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'def-or-class no-delimiters))
+  (ar-th-curvedsinglequote 'def-or-class no-delimiters))
 
 (defun ar-separate-def-or-class-atpt (&optional no-delimiters check)
   "Separates DEF-OR-CLASS at point if any, does nothing otherwise
@@ -19784,10 +19784,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'def no-delimiters))
 
-(defun ar-leftrightsinglequote-def-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-def-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'def no-delimiters))
+  (ar-th-curvedsinglequote 'def no-delimiters))
 
 (defun ar-separate-def-atpt (&optional no-delimiters check)
   "Separates DEF at point if any, does nothing otherwise
@@ -20025,10 +20025,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'delimited no-delimiters))
 
-(defun ar-leftrightsinglequote-delimited-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-delimited-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'delimited no-delimiters))
+  (ar-th-curvedsinglequote 'delimited no-delimiters))
 
 (defun ar-separate-delimited-atpt (&optional no-delimiters check)
   "Separates DELIMITED at point if any, does nothing otherwise
@@ -20266,10 +20266,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'expression no-delimiters))
 
-(defun ar-leftrightsinglequote-expression-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-expression-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'expression no-delimiters))
+  (ar-th-curvedsinglequote 'expression no-delimiters))
 
 (defun ar-separate-expression-atpt (&optional no-delimiters check)
   "Separates EXPRESSION at point if any, does nothing otherwise
@@ -20507,10 +20507,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'partial-expression no-delimiters))
 
-(defun ar-leftrightsinglequote-partial-expression-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-partial-expression-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'partial-expression no-delimiters))
+  (ar-th-curvedsinglequote 'partial-expression no-delimiters))
 
 (defun ar-separate-partial-expression-atpt (&optional no-delimiters check)
   "Separates PARTIAL-EXPRESSION at point if any, does nothing otherwise
@@ -20748,10 +20748,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'statement no-delimiters))
 
-(defun ar-leftrightsinglequote-statement-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-statement-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'statement no-delimiters))
+  (ar-th-curvedsinglequote 'statement no-delimiters))
 
 (defun ar-separate-statement-atpt (&optional no-delimiters check)
   "Separates STATEMENT at point if any, does nothing otherwise
@@ -20989,10 +20989,10 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'string no-delimiters))
 
-(defun ar-leftrightsinglequote-string-atpt (&optional no-delimiters check)
+(defun ar-curvedsinglequote-string-atpt (&optional no-delimiters check)
   "Singlequotes alnum at point if any. "
   (interactive "*P")
-  (ar-th-leftrightsinglequote 'string no-delimiters))
+  (ar-th-curvedsinglequote 'string no-delimiters))
 
 (defun ar-separate-string-atpt (&optional no-delimiters check)
   "Separates STRING at point if any, does nothing otherwise
@@ -21505,25 +21505,25 @@ See doku from `sort-subr', for details.
   (interactive "P")
   (ar-th-base-copy-or 'greaterangle no-delimiters check))
 
-(defun ar-leftrightsinglequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightsinglequote(s).
+(defun ar-curvedsinglequote-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with curvedsinglequote(s).
 
-  Otherwise copy leftrightsinglequote(ed) at point
-  With NO-DELIMITERS, copy leftrightsinglequote(ed) without delimiters
-  With numerical argument 2 trim leftrightsinglequote
-  With negative argument kill leftrightsinglequote(ed) at point "
+  Otherwise copy curvedsinglequote(ed) at point
+  With NO-DELIMITERS, copy curvedsinglequote(ed) without delimiters
+  With numerical argument 2 trim curvedsinglequote
+  With negative argument kill curvedsinglequote(ed) at point "
   (interactive "P")
-  (ar-th-base-copy-or 'leftrightsinglequote no-delimiters check))
+  (ar-th-base-copy-or 'curvedsinglequote no-delimiters check))
 
-(defun ar-leftrightdoublequote-or-copy-atpt (&optional no-delimiters check)
-  "If region is highlighted, provide THING at point with leftrightdoublequote(s).
+(defun ar-curveddoublequote-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with curveddoublequote(s).
 
-  Otherwise copy leftrightdoublequote(ed) at point
-  With NO-DELIMITERS, copy leftrightdoublequote(ed) without delimiters
-  With numerical argument 2 trim leftrightdoublequote
-  With negative argument kill leftrightdoublequote(ed) at point "
+  Otherwise copy curveddoublequote(ed) at point
+  With NO-DELIMITERS, copy curveddoublequote(ed) without delimiters
+  With numerical argument 2 trim curveddoublequote
+  With negative argument kill curveddoublequote(ed) at point "
   (interactive "P")
-  (ar-th-base-copy-or 'leftrightdoublequote no-delimiters check))
+  (ar-th-base-copy-or 'curveddoublequote no-delimiters check))
 
 (defun ar-parentize-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with parentize(s).

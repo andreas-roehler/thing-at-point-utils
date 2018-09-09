@@ -33,7 +33,7 @@
   (ar-test-with-elisp-buffer-point-min
   "<foo>"
 
-(ert-deftest ar-ert-braced2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-braced2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -53,7 +53,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-bracketed2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-bracketed2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -73,7 +73,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-lesserangled2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-lesserangled2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -93,7 +93,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-greaterangled2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-greaterangled2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -101,23 +101,23 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2braced-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2braced-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2bracketed-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2bracketed-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2lesserangled-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2lesserangled-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2greaterangled-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2greaterangled-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2parentized-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2parentized-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -137,7 +137,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-parentized2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-parentized2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -301,43 +301,43 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2backslashed-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2backslashed-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2backticked-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2backticked-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2dollared-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2dollared-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2doublequoted-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2doublequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2equalized-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2equalized-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2hyphened-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2hyphened-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2singlequoted-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2singlequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2slashed-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2slashed-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2underscored-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2underscored-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-leftrightsinglequoted2whitespaced-atpt ()
+(ert-deftest ar-ert-curvedsinglequoted2whitespaced-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -397,7 +397,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-backslashed2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-backslashed2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -421,7 +421,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-backticked2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-backticked2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -445,7 +445,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-dollared2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-dollared2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -469,7 +469,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-doublequoted2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-doublequoted2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -493,7 +493,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-equalized2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-equalized2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -517,7 +517,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-hyphened2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-hyphened2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -541,7 +541,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-singlequoted2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-singlequoted2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -565,7 +565,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-slashed2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-slashed2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -589,7 +589,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-underscored2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-underscored2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
@@ -613,7 +613,7 @@
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 
-(ert-deftest ar-ert-whitespaced2leftrightsinglequoted-atpt ()
+(ert-deftest ar-ert-whitespaced2curvedsinglequoted-atpt ()
   (ar-test-with-elisp-buffer-point-min
   "{foo}"
 

@@ -363,172 +363,172 @@
     (ar-greaterangled2whitespaced-atpt)
     (should (eq (char-before) ? ))))
 
-(ert-deftest ar-leftrightsinglequoted2backslashed-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2backslashed-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2backslashed-atpt)
+    (ar-curvedsinglequoted2backslashed-atpt)
     (should (eq (char-before) ?\\))))
 
-(ert-deftest ar-leftrightsinglequoted2backticked-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2backticked-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2backticked-atpt)
+    (ar-curvedsinglequoted2backticked-atpt)
     (should (eq (char-before) ?`))))
 
-(ert-deftest ar-leftrightsinglequoted2coloned-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2coloned-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2coloned-atpt)
+    (ar-curvedsinglequoted2coloned-atpt)
     (should (eq (char-before) ?:))))
 
-(ert-deftest ar-leftrightsinglequoted2dollared-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2dollared-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2dollared-atpt)
+    (ar-curvedsinglequoted2dollared-atpt)
     (should (eq (char-before) ?$))))
 
-(ert-deftest ar-leftrightsinglequoted2doublequoted-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2doublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2doublequoted-atpt)
+    (ar-curvedsinglequoted2doublequoted-atpt)
     (should (eq (char-before) ?\"))))
 
-(ert-deftest ar-leftrightsinglequoted2equalized-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2equalized-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2equalized-atpt)
+    (ar-curvedsinglequoted2equalized-atpt)
     (should (eq (char-before) ?=))))
 
-(ert-deftest ar-leftrightsinglequoted2hyphened-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2hyphened-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2hyphened-atpt)
+    (ar-curvedsinglequoted2hyphened-atpt)
     (should (eq (char-before) ?-))))
 
-(ert-deftest ar-leftrightsinglequoted2singlequoted-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2singlequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2singlequoted-atpt)
+    (ar-curvedsinglequoted2singlequoted-atpt)
     (should (eq (char-before) ?'))))
 
-(ert-deftest ar-leftrightsinglequoted2slashed-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2slashed-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2slashed-atpt)
+    (ar-curvedsinglequoted2slashed-atpt)
     (should (eq (char-before) ?/))))
 
-(ert-deftest ar-leftrightsinglequoted2stared-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2stared-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2stared-atpt)
+    (ar-curvedsinglequoted2stared-atpt)
     (should (eq (char-before) ?*))))
 
-(ert-deftest ar-leftrightsinglequoted2underscored-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2underscored-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2underscored-atpt)
+    (ar-curvedsinglequoted2underscored-atpt)
     (should (eq (char-before) ?_))))
 
-(ert-deftest ar-leftrightsinglequoted2whitespaced-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2whitespaced-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2whitespaced-atpt)
+    (ar-curvedsinglequoted2whitespaced-atpt)
     (should (eq (char-before) ? ))))
 
-(ert-deftest ar-leftrightdoublequoted2backslashed-atpt-test ()
+(ert-deftest ar-curveddoublequoted2backslashed-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2backslashed-atpt)
+    (ar-curveddoublequoted2backslashed-atpt)
     (should (eq (char-before) ?\\))))
 
-(ert-deftest ar-leftrightdoublequoted2backticked-atpt-test ()
+(ert-deftest ar-curveddoublequoted2backticked-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2backticked-atpt)
+    (ar-curveddoublequoted2backticked-atpt)
     (should (eq (char-before) ?`))))
 
-(ert-deftest ar-leftrightdoublequoted2coloned-atpt-test ()
+(ert-deftest ar-curveddoublequoted2coloned-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2coloned-atpt)
+    (ar-curveddoublequoted2coloned-atpt)
     (should (eq (char-before) ?:))))
 
-(ert-deftest ar-leftrightdoublequoted2dollared-atpt-test ()
+(ert-deftest ar-curveddoublequoted2dollared-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2dollared-atpt)
+    (ar-curveddoublequoted2dollared-atpt)
     (should (eq (char-before) ?$))))
 
-(ert-deftest ar-leftrightdoublequoted2doublequoted-atpt-test ()
+(ert-deftest ar-curveddoublequoted2doublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2doublequoted-atpt)
+    (ar-curveddoublequoted2doublequoted-atpt)
     (should (eq (char-before) ?\"))))
 
-(ert-deftest ar-leftrightdoublequoted2equalized-atpt-test ()
+(ert-deftest ar-curveddoublequoted2equalized-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2equalized-atpt)
+    (ar-curveddoublequoted2equalized-atpt)
     (should (eq (char-before) ?=))))
 
-(ert-deftest ar-leftrightdoublequoted2hyphened-atpt-test ()
+(ert-deftest ar-curveddoublequoted2hyphened-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2hyphened-atpt)
+    (ar-curveddoublequoted2hyphened-atpt)
     (should (eq (char-before) ?-))))
 
-(ert-deftest ar-leftrightdoublequoted2singlequoted-atpt-test ()
+(ert-deftest ar-curveddoublequoted2singlequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2singlequoted-atpt)
+    (ar-curveddoublequoted2singlequoted-atpt)
     (should (eq (char-before) ?'))))
 
-(ert-deftest ar-leftrightdoublequoted2slashed-atpt-test ()
+(ert-deftest ar-curveddoublequoted2slashed-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2slashed-atpt)
+    (ar-curveddoublequoted2slashed-atpt)
     (should (eq (char-before) ?/))))
 
-(ert-deftest ar-leftrightdoublequoted2stared-atpt-test ()
+(ert-deftest ar-curveddoublequoted2stared-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2stared-atpt)
+    (ar-curveddoublequoted2stared-atpt)
     (should (eq (char-before) ?*))))
 
-(ert-deftest ar-leftrightdoublequoted2underscored-atpt-test ()
+(ert-deftest ar-curveddoublequoted2underscored-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2underscored-atpt)
+    (ar-curveddoublequoted2underscored-atpt)
     (should (eq (char-before) ?_))))
 
-(ert-deftest ar-leftrightdoublequoted2whitespaced-atpt-test ()
+(ert-deftest ar-curveddoublequoted2whitespaced-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2whitespaced-atpt)
+    (ar-curveddoublequoted2whitespaced-atpt)
     (should (eq (char-before) ? ))))
 
 (ert-deftest ar-parentized2backslashed-atpt-test ()
@@ -643,18 +643,18 @@
     (ar-backslashed2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-backslashed2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-backslashed2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "\\asdf\\"
     (forward-char -2)
-    (ar-backslashed2leftrightsinglequoted-atpt)
+    (ar-backslashed2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-backslashed2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-backslashed2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "\\asdf\\"
     (forward-char -2)
-    (ar-backslashed2leftrightdoublequoted-atpt)
+    (ar-backslashed2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-backslashed2parentized-atpt-test ()
@@ -692,18 +692,18 @@
     (ar-backticked2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-backticked2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-backticked2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "`asdf`"
     (forward-char -2)
-    (ar-backticked2leftrightsinglequoted-atpt)
+    (ar-backticked2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-backticked2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-backticked2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "`asdf`"
     (forward-char -2)
-    (ar-backticked2leftrightdoublequoted-atpt)
+    (ar-backticked2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-backticked2parentized-atpt-test ()
@@ -741,18 +741,18 @@
     (ar-coloned2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-coloned2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-coloned2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     ":asdf:"
     (forward-char -2)
-    (ar-coloned2leftrightsinglequoted-atpt)
+    (ar-coloned2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-coloned2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-coloned2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     ":asdf:"
     (forward-char -2)
-    (ar-coloned2leftrightdoublequoted-atpt)
+    (ar-coloned2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-coloned2parentized-atpt-test ()
@@ -790,18 +790,18 @@
     (ar-dollared2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-dollared2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-dollared2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "$asdf$"
     (forward-char -2)
-    (ar-dollared2leftrightsinglequoted-atpt)
+    (ar-dollared2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-dollared2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-dollared2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "$asdf$"
     (forward-char -2)
-    (ar-dollared2leftrightdoublequoted-atpt)
+    (ar-dollared2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-dollared2parentized-atpt-test ()
@@ -839,18 +839,18 @@
     (ar-doublequoted2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-doublequoted2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-doublequoted2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "\"asdf\""
     (forward-char -2)
-    (ar-doublequoted2leftrightsinglequoted-atpt)
+    (ar-doublequoted2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-doublequoted2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-doublequoted2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "\"asdf\""
     (forward-char -2)
-    (ar-doublequoted2leftrightdoublequoted-atpt)
+    (ar-doublequoted2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-doublequoted2parentized-atpt-test ()
@@ -888,18 +888,18 @@
     (ar-equalized2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-equalized2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-equalized2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "=asdf="
     (forward-char -2)
-    (ar-equalized2leftrightsinglequoted-atpt)
+    (ar-equalized2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-equalized2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-equalized2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "=asdf="
     (forward-char -2)
-    (ar-equalized2leftrightdoublequoted-atpt)
+    (ar-equalized2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-equalized2parentized-atpt-test ()
@@ -937,18 +937,18 @@
     (ar-hyphened2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-hyphened2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-hyphened2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "-asdf-"
     (forward-char -2)
-    (ar-hyphened2leftrightsinglequoted-atpt)
+    (ar-hyphened2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-hyphened2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-hyphened2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "-asdf-"
     (forward-char -2)
-    (ar-hyphened2leftrightdoublequoted-atpt)
+    (ar-hyphened2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-hyphened2parentized-atpt-test ()
@@ -986,18 +986,18 @@
     (ar-singlequoted2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-singlequoted2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-singlequoted2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "'asdf'"
     (forward-char -2)
-    (ar-singlequoted2leftrightsinglequoted-atpt)
+    (ar-singlequoted2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-singlequoted2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-singlequoted2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "'asdf'"
     (forward-char -2)
-    (ar-singlequoted2leftrightdoublequoted-atpt)
+    (ar-singlequoted2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-singlequoted2parentized-atpt-test ()
@@ -1035,18 +1035,18 @@
     (ar-slashed2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-slashed2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-slashed2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "/asdf/"
     (forward-char -2)
-    (ar-slashed2leftrightsinglequoted-atpt)
+    (ar-slashed2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-slashed2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-slashed2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "/asdf/"
     (forward-char -2)
-    (ar-slashed2leftrightdoublequoted-atpt)
+    (ar-slashed2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-slashed2parentized-atpt-test ()
@@ -1084,18 +1084,18 @@
     (ar-stared2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-stared2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-stared2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "*asdf*"
     (forward-char -2)
-    (ar-stared2leftrightsinglequoted-atpt)
+    (ar-stared2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-stared2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-stared2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "*asdf*"
     (forward-char -2)
-    (ar-stared2leftrightdoublequoted-atpt)
+    (ar-stared2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-stared2parentized-atpt-test ()
@@ -1133,18 +1133,18 @@
     (ar-underscored2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-underscored2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-underscored2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "_asdf_"
     (forward-char -2)
-    (ar-underscored2leftrightsinglequoted-atpt)
+    (ar-underscored2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-underscored2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-underscored2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "_asdf_"
     (forward-char -2)
-    (ar-underscored2leftrightdoublequoted-atpt)
+    (ar-underscored2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-underscored2parentized-atpt-test ()
@@ -1182,18 +1182,18 @@
     (ar-whitespaced2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-whitespaced2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-whitespaced2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     " asdf "
     (forward-char -2)
-    (ar-whitespaced2leftrightsinglequoted-atpt)
+    (ar-whitespaced2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-whitespaced2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-whitespaced2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     " asdf "
     (forward-char -2)
-    (ar-whitespaced2leftrightdoublequoted-atpt)
+    (ar-whitespaced2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-whitespaced2parentized-atpt-test ()
@@ -1224,18 +1224,18 @@
     (ar-braced2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-braced2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-braced2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "{asdf}"
     (forward-char -2)
-    (ar-braced2leftrightsinglequoted-atpt)
+    (ar-braced2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-braced2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-braced2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "{asdf}"
     (forward-char -2)
-    (ar-braced2leftrightdoublequoted-atpt)
+    (ar-braced2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-braced2parentized-atpt-test ()
@@ -1266,18 +1266,18 @@
     (ar-bracketed2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-bracketed2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-bracketed2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "[asdf]"
     (forward-char -2)
-    (ar-bracketed2leftrightsinglequoted-atpt)
+    (ar-bracketed2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-bracketed2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-bracketed2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "[asdf]"
     (forward-char -2)
-    (ar-bracketed2leftrightdoublequoted-atpt)
+    (ar-bracketed2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-bracketed2parentized-atpt-test ()
@@ -1308,18 +1308,18 @@
     (ar-lesserangled2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-lesserangled2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-lesserangled2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "<asdf>"
     (forward-char -2)
-    (ar-lesserangled2leftrightsinglequoted-atpt)
+    (ar-lesserangled2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-lesserangled2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-lesserangled2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "<asdf>"
     (forward-char -2)
-    (ar-lesserangled2leftrightdoublequoted-atpt)
+    (ar-lesserangled2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-lesserangled2parentized-atpt-test ()
@@ -1350,18 +1350,18 @@
     (ar-greaterangled2lesserangled-atpt)
     (should (eq (char-before) ?>))))
 
-(ert-deftest ar-greaterangled2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-greaterangled2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     ">asdf<"
     (forward-char -2)
-    (ar-greaterangled2leftrightsinglequoted-atpt)
+    (ar-greaterangled2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-greaterangled2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-greaterangled2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     ">asdf<"
     (forward-char -2)
-    (ar-greaterangled2leftrightdoublequoted-atpt)
+    (ar-greaterangled2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-greaterangled2parentized-atpt-test ()
@@ -1371,88 +1371,88 @@
     (ar-greaterangled2parentized-atpt)
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-leftrightsinglequoted2braced-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2braced-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2braced-atpt)
+    (ar-curvedsinglequoted2braced-atpt)
     (should (eq (char-before) ?}))))
 
-(ert-deftest ar-leftrightsinglequoted2bracketed-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2bracketed-atpt)
+    (ar-curvedsinglequoted2bracketed-atpt)
     (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-leftrightsinglequoted2lesserangled-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2lesserangled-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2lesserangled-atpt)
+    (ar-curvedsinglequoted2lesserangled-atpt)
     (should (eq (char-before) ?>))))
 
-(ert-deftest ar-leftrightsinglequoted2greaterangled-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2greaterangled-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2greaterangled-atpt)
+    (ar-curvedsinglequoted2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-leftrightsinglequoted2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2leftrightdoublequoted-atpt)
+    (ar-curvedsinglequoted2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
-(ert-deftest ar-leftrightsinglequoted2parentized-atpt-test ()
+(ert-deftest ar-curvedsinglequoted2parentized-atpt-test ()
   (ar-test-with-temp-buffer
     "‘asdf’"
     (forward-char -2)
-    (ar-leftrightsinglequoted2parentized-atpt)
+    (ar-curvedsinglequoted2parentized-atpt)
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-leftrightdoublequoted2braced-atpt-test ()
+(ert-deftest ar-curveddoublequoted2braced-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2braced-atpt)
+    (ar-curveddoublequoted2braced-atpt)
     (should (eq (char-before) ?}))))
 
-(ert-deftest ar-leftrightdoublequoted2bracketed-atpt-test ()
+(ert-deftest ar-curveddoublequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2bracketed-atpt)
+    (ar-curveddoublequoted2bracketed-atpt)
     (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-leftrightdoublequoted2lesserangled-atpt-test ()
+(ert-deftest ar-curveddoublequoted2lesserangled-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2lesserangled-atpt)
+    (ar-curveddoublequoted2lesserangled-atpt)
     (should (eq (char-before) ?>))))
 
-(ert-deftest ar-leftrightdoublequoted2greaterangled-atpt-test ()
+(ert-deftest ar-curveddoublequoted2greaterangled-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2greaterangled-atpt)
+    (ar-curveddoublequoted2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-leftrightdoublequoted2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-curveddoublequoted2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2leftrightsinglequoted-atpt)
+    (ar-curveddoublequoted2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-leftrightdoublequoted2parentized-atpt-test ()
+(ert-deftest ar-curveddoublequoted2parentized-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
     (forward-char -2)
-    (ar-leftrightdoublequoted2parentized-atpt)
+    (ar-curveddoublequoted2parentized-atpt)
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-parentized2braced-atpt-test ()
@@ -1483,18 +1483,18 @@
     (ar-parentized2greaterangled-atpt)
     (should (eq (char-before) ?<))))
 
-(ert-deftest ar-parentized2leftrightsinglequoted-atpt-test ()
+(ert-deftest ar-parentized2curvedsinglequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "(asdf)"
     (forward-char -2)
-    (ar-parentized2leftrightsinglequoted-atpt)
+    (ar-parentized2curvedsinglequoted-atpt)
     (should (eq (char-before) ?’))))
 
-(ert-deftest ar-parentized2leftrightdoublequoted-atpt-test ()
+(ert-deftest ar-parentized2curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
     "(asdf)"
     (forward-char -2)
-    (ar-parentized2leftrightdoublequoted-atpt)
+    (ar-parentized2curveddoublequoted-atpt)
     (should (eq (char-before) ?”))))
 
 (ert-deftest ar-backslashed2backticked-atpt-test ()
