@@ -4937,7 +4937,7 @@
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: start
 
 (defun ar-alnum-atpt (&optional arg) 
-  "Returns alnum at point if any, nil otherwise. 
+  "Returns alnum at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -4998,35 +4998,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'alnum arg))
 
 (defun ar-forward-alnum-atpt (&optional arg)
-  "Deletes alnum at point if any.
+  "Forward alnum at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'alnum arg))
 
 (defun ar-backward-alnum-atpt (&optional arg)
-  "Deletes alnum at point if any.
+  "Backward alnum at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'alnum arg))
 
 (defun ar-triplequotedq-alnum-atpt (&optional arg)
-  "Deletes alnum at point if any.
+  "Put triple doublequotes around alnum at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'alnum arg))
 
 (defun ar-triplequotesq-alnum-atpt (&optional arg)
-  "Deletes alnum at point if any.
+  "Put triple singlequotes around alnum at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'alnum arg))
 
 (defun ar-triplebacktick-alnum-atpt (&optional arg)
-  "Deletes alnum at point if any.
+  "Put triple backticks around alnum at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5038,7 +5038,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'alnum beg end))
 
 (defun ar-alpha-atpt (&optional arg) 
-  "Returns alpha at point if any, nil otherwise. 
+  "Returns alpha at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5099,35 +5099,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'alpha arg))
 
 (defun ar-forward-alpha-atpt (&optional arg)
-  "Deletes alpha at point if any.
+  "Forward alpha at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'alpha arg))
 
 (defun ar-backward-alpha-atpt (&optional arg)
-  "Deletes alpha at point if any.
+  "Backward alpha at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'alpha arg))
 
 (defun ar-triplequotedq-alpha-atpt (&optional arg)
-  "Deletes alpha at point if any.
+  "Put triple doublequotes around alpha at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'alpha arg))
 
 (defun ar-triplequotesq-alpha-atpt (&optional arg)
-  "Deletes alpha at point if any.
+  "Put triple singlequotes around alpha at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'alpha arg))
 
 (defun ar-triplebacktick-alpha-atpt (&optional arg)
-  "Deletes alpha at point if any.
+  "Put triple backticks around alpha at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5139,7 +5139,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'alpha beg end))
 
 (defun ar-ascii-atpt (&optional arg) 
-  "Returns ascii at point if any, nil otherwise. 
+  "Returns ascii at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5200,35 +5200,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'ascii arg))
 
 (defun ar-forward-ascii-atpt (&optional arg)
-  "Deletes ascii at point if any.
+  "Forward ascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'ascii arg))
 
 (defun ar-backward-ascii-atpt (&optional arg)
-  "Deletes ascii at point if any.
+  "Backward ascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'ascii arg))
 
 (defun ar-triplequotedq-ascii-atpt (&optional arg)
-  "Deletes ascii at point if any.
+  "Put triple doublequotes around ascii at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'ascii arg))
 
 (defun ar-triplequotesq-ascii-atpt (&optional arg)
-  "Deletes ascii at point if any.
+  "Put triple singlequotes around ascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'ascii arg))
 
 (defun ar-triplebacktick-ascii-atpt (&optional arg)
-  "Deletes ascii at point if any.
+  "Put triple backticks around ascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5240,7 +5240,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'ascii beg end))
 
 (defun ar-blank-atpt (&optional arg) 
-  "Returns blank at point if any, nil otherwise. 
+  "Returns blank at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5301,35 +5301,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'blank arg))
 
 (defun ar-forward-blank-atpt (&optional arg)
-  "Deletes blank at point if any.
+  "Forward blank at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'blank arg))
 
 (defun ar-backward-blank-atpt (&optional arg)
-  "Deletes blank at point if any.
+  "Backward blank at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'blank arg))
 
 (defun ar-triplequotedq-blank-atpt (&optional arg)
-  "Deletes blank at point if any.
+  "Put triple doublequotes around blank at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'blank arg))
 
 (defun ar-triplequotesq-blank-atpt (&optional arg)
-  "Deletes blank at point if any.
+  "Put triple singlequotes around blank at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'blank arg))
 
 (defun ar-triplebacktick-blank-atpt (&optional arg)
-  "Deletes blank at point if any.
+  "Put triple backticks around blank at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5341,7 +5341,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'blank beg end))
 
 (defun ar-cntrl-atpt (&optional arg) 
-  "Returns cntrl at point if any, nil otherwise. 
+  "Returns cntrl at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5402,35 +5402,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'cntrl arg))
 
 (defun ar-forward-cntrl-atpt (&optional arg)
-  "Deletes cntrl at point if any.
+  "Forward cntrl at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'cntrl arg))
 
 (defun ar-backward-cntrl-atpt (&optional arg)
-  "Deletes cntrl at point if any.
+  "Backward cntrl at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'cntrl arg))
 
 (defun ar-triplequotedq-cntrl-atpt (&optional arg)
-  "Deletes cntrl at point if any.
+  "Put triple doublequotes around cntrl at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'cntrl arg))
 
 (defun ar-triplequotesq-cntrl-atpt (&optional arg)
-  "Deletes cntrl at point if any.
+  "Put triple singlequotes around cntrl at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'cntrl arg))
 
 (defun ar-triplebacktick-cntrl-atpt (&optional arg)
-  "Deletes cntrl at point if any.
+  "Put triple backticks around cntrl at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5442,7 +5442,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'cntrl beg end))
 
 (defun ar-digit-atpt (&optional arg) 
-  "Returns digit at point if any, nil otherwise. 
+  "Returns digit at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5503,35 +5503,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'digit arg))
 
 (defun ar-forward-digit-atpt (&optional arg)
-  "Deletes digit at point if any.
+  "Forward digit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'digit arg))
 
 (defun ar-backward-digit-atpt (&optional arg)
-  "Deletes digit at point if any.
+  "Backward digit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'digit arg))
 
 (defun ar-triplequotedq-digit-atpt (&optional arg)
-  "Deletes digit at point if any.
+  "Put triple doublequotes around digit at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'digit arg))
 
 (defun ar-triplequotesq-digit-atpt (&optional arg)
-  "Deletes digit at point if any.
+  "Put triple singlequotes around digit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'digit arg))
 
 (defun ar-triplebacktick-digit-atpt (&optional arg)
-  "Deletes digit at point if any.
+  "Put triple backticks around digit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5543,7 +5543,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'digit beg end))
 
 (defun ar-graph-atpt (&optional arg) 
-  "Returns graph at point if any, nil otherwise. 
+  "Returns graph at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5604,35 +5604,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'graph arg))
 
 (defun ar-forward-graph-atpt (&optional arg)
-  "Deletes graph at point if any.
+  "Forward graph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'graph arg))
 
 (defun ar-backward-graph-atpt (&optional arg)
-  "Deletes graph at point if any.
+  "Backward graph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'graph arg))
 
 (defun ar-triplequotedq-graph-atpt (&optional arg)
-  "Deletes graph at point if any.
+  "Put triple doublequotes around graph at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'graph arg))
 
 (defun ar-triplequotesq-graph-atpt (&optional arg)
-  "Deletes graph at point if any.
+  "Put triple singlequotes around graph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'graph arg))
 
 (defun ar-triplebacktick-graph-atpt (&optional arg)
-  "Deletes graph at point if any.
+  "Put triple backticks around graph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5644,7 +5644,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'graph beg end))
 
 (defun ar-lower-atpt (&optional arg) 
-  "Returns lower at point if any, nil otherwise. 
+  "Returns lower at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5705,35 +5705,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'lower arg))
 
 (defun ar-forward-lower-atpt (&optional arg)
-  "Deletes lower at point if any.
+  "Forward lower at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'lower arg))
 
 (defun ar-backward-lower-atpt (&optional arg)
-  "Deletes lower at point if any.
+  "Backward lower at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'lower arg))
 
 (defun ar-triplequotedq-lower-atpt (&optional arg)
-  "Deletes lower at point if any.
+  "Put triple doublequotes around lower at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'lower arg))
 
 (defun ar-triplequotesq-lower-atpt (&optional arg)
-  "Deletes lower at point if any.
+  "Put triple singlequotes around lower at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'lower arg))
 
 (defun ar-triplebacktick-lower-atpt (&optional arg)
-  "Deletes lower at point if any.
+  "Put triple backticks around lower at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5745,7 +5745,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'lower beg end))
 
 (defun ar-nonascii-atpt (&optional arg) 
-  "Returns nonascii at point if any, nil otherwise. 
+  "Returns nonascii at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5806,35 +5806,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'nonascii arg))
 
 (defun ar-forward-nonascii-atpt (&optional arg)
-  "Deletes nonascii at point if any.
+  "Forward nonascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'nonascii arg))
 
 (defun ar-backward-nonascii-atpt (&optional arg)
-  "Deletes nonascii at point if any.
+  "Backward nonascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'nonascii arg))
 
 (defun ar-triplequotedq-nonascii-atpt (&optional arg)
-  "Deletes nonascii at point if any.
+  "Put triple doublequotes around nonascii at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'nonascii arg))
 
 (defun ar-triplequotesq-nonascii-atpt (&optional arg)
-  "Deletes nonascii at point if any.
+  "Put triple singlequotes around nonascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'nonascii arg))
 
 (defun ar-triplebacktick-nonascii-atpt (&optional arg)
-  "Deletes nonascii at point if any.
+  "Put triple backticks around nonascii at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5846,7 +5846,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'nonascii beg end))
 
 (defun ar-print-atpt (&optional arg) 
-  "Returns print at point if any, nil otherwise. 
+  "Returns print at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -5907,35 +5907,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'print arg))
 
 (defun ar-forward-print-atpt (&optional arg)
-  "Deletes print at point if any.
+  "Forward print at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'print arg))
 
 (defun ar-backward-print-atpt (&optional arg)
-  "Deletes print at point if any.
+  "Backward print at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'print arg))
 
 (defun ar-triplequotedq-print-atpt (&optional arg)
-  "Deletes print at point if any.
+  "Put triple doublequotes around print at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'print arg))
 
 (defun ar-triplequotesq-print-atpt (&optional arg)
-  "Deletes print at point if any.
+  "Put triple singlequotes around print at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'print arg))
 
 (defun ar-triplebacktick-print-atpt (&optional arg)
-  "Deletes print at point if any.
+  "Put triple backticks around print at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -5947,7 +5947,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'print beg end))
 
 (defun ar-punct-atpt (&optional arg) 
-  "Returns punct at point if any, nil otherwise. 
+  "Returns punct at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6008,35 +6008,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'punct arg))
 
 (defun ar-forward-punct-atpt (&optional arg)
-  "Deletes punct at point if any.
+  "Forward punct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'punct arg))
 
 (defun ar-backward-punct-atpt (&optional arg)
-  "Deletes punct at point if any.
+  "Backward punct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'punct arg))
 
 (defun ar-triplequotedq-punct-atpt (&optional arg)
-  "Deletes punct at point if any.
+  "Put triple doublequotes around punct at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'punct arg))
 
 (defun ar-triplequotesq-punct-atpt (&optional arg)
-  "Deletes punct at point if any.
+  "Put triple singlequotes around punct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'punct arg))
 
 (defun ar-triplebacktick-punct-atpt (&optional arg)
-  "Deletes punct at point if any.
+  "Put triple backticks around punct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6048,7 +6048,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'punct beg end))
 
 (defun ar-space-atpt (&optional arg) 
-  "Returns space at point if any, nil otherwise. 
+  "Returns space at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6109,35 +6109,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'space arg))
 
 (defun ar-forward-space-atpt (&optional arg)
-  "Deletes space at point if any.
+  "Forward space at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'space arg))
 
 (defun ar-backward-space-atpt (&optional arg)
-  "Deletes space at point if any.
+  "Backward space at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'space arg))
 
 (defun ar-triplequotedq-space-atpt (&optional arg)
-  "Deletes space at point if any.
+  "Put triple doublequotes around space at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'space arg))
 
 (defun ar-triplequotesq-space-atpt (&optional arg)
-  "Deletes space at point if any.
+  "Put triple singlequotes around space at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'space arg))
 
 (defun ar-triplebacktick-space-atpt (&optional arg)
-  "Deletes space at point if any.
+  "Put triple backticks around space at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6149,7 +6149,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'space beg end))
 
 (defun ar-upper-atpt (&optional arg) 
-  "Returns upper at point if any, nil otherwise. 
+  "Returns upper at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6210,35 +6210,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'upper arg))
 
 (defun ar-forward-upper-atpt (&optional arg)
-  "Deletes upper at point if any.
+  "Forward upper at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'upper arg))
 
 (defun ar-backward-upper-atpt (&optional arg)
-  "Deletes upper at point if any.
+  "Backward upper at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'upper arg))
 
 (defun ar-triplequotedq-upper-atpt (&optional arg)
-  "Deletes upper at point if any.
+  "Put triple doublequotes around upper at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'upper arg))
 
 (defun ar-triplequotesq-upper-atpt (&optional arg)
-  "Deletes upper at point if any.
+  "Put triple singlequotes around upper at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'upper arg))
 
 (defun ar-triplebacktick-upper-atpt (&optional arg)
-  "Deletes upper at point if any.
+  "Put triple backticks around upper at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6250,7 +6250,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'upper beg end))
 
 (defun ar-xdigit-atpt (&optional arg) 
-  "Returns xdigit at point if any, nil otherwise. 
+  "Returns xdigit at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6311,35 +6311,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'xdigit arg))
 
 (defun ar-forward-xdigit-atpt (&optional arg)
-  "Deletes xdigit at point if any.
+  "Forward xdigit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'xdigit arg))
 
 (defun ar-backward-xdigit-atpt (&optional arg)
-  "Deletes xdigit at point if any.
+  "Backward xdigit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'xdigit arg))
 
 (defun ar-triplequotedq-xdigit-atpt (&optional arg)
-  "Deletes xdigit at point if any.
+  "Put triple doublequotes around xdigit at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'xdigit arg))
 
 (defun ar-triplequotesq-xdigit-atpt (&optional arg)
-  "Deletes xdigit at point if any.
+  "Put triple singlequotes around xdigit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'xdigit arg))
 
 (defun ar-triplebacktick-xdigit-atpt (&optional arg)
-  "Deletes xdigit at point if any.
+  "Put triple backticks around xdigit at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6353,7 +6353,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 ;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list: start
 
 (defun ar-greateranglednested-atpt (&optional arg) 
-  "Returns greateranglednested at point if any, nil otherwise. 
+  "Returns greateranglednested at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6414,35 +6414,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'greateranglednested arg))
 
 (defun ar-forward-greateranglednested-atpt (&optional arg)
-  "Deletes greateranglednested at point if any.
+  "Forward greateranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'greateranglednested arg))
 
 (defun ar-backward-greateranglednested-atpt (&optional arg)
-  "Deletes greateranglednested at point if any.
+  "Backward greateranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'greateranglednested arg))
 
 (defun ar-triplequotedq-greateranglednested-atpt (&optional arg)
-  "Deletes greateranglednested at point if any.
+  "Put triple doublequotes around greateranglednested at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'greateranglednested arg))
 
 (defun ar-triplequotesq-greateranglednested-atpt (&optional arg)
-  "Deletes greateranglednested at point if any.
+  "Put triple singlequotes around greateranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'greateranglednested arg))
 
 (defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
-  "Deletes greateranglednested at point if any.
+  "Put triple backticks around greateranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6454,7 +6454,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'greateranglednested beg end))
 
 (defun ar-lesseranglednested-atpt (&optional arg) 
-  "Returns lesseranglednested at point if any, nil otherwise. 
+  "Returns lesseranglednested at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6515,35 +6515,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'lesseranglednested arg))
 
 (defun ar-forward-lesseranglednested-atpt (&optional arg)
-  "Deletes lesseranglednested at point if any.
+  "Forward lesseranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'lesseranglednested arg))
 
 (defun ar-backward-lesseranglednested-atpt (&optional arg)
-  "Deletes lesseranglednested at point if any.
+  "Backward lesseranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'lesseranglednested arg))
 
 (defun ar-triplequotedq-lesseranglednested-atpt (&optional arg)
-  "Deletes lesseranglednested at point if any.
+  "Put triple doublequotes around lesseranglednested at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'lesseranglednested arg))
 
 (defun ar-triplequotesq-lesseranglednested-atpt (&optional arg)
-  "Deletes lesseranglednested at point if any.
+  "Put triple singlequotes around lesseranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'lesseranglednested arg))
 
 (defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
-  "Deletes lesseranglednested at point if any.
+  "Put triple backticks around lesseranglednested at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6555,7 +6555,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'lesseranglednested beg end))
 
 (defun ar-buffer-atpt (&optional arg) 
-  "Returns buffer at point if any, nil otherwise. 
+  "Returns buffer at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6616,35 +6616,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'buffer arg))
 
 (defun ar-forward-buffer-atpt (&optional arg)
-  "Deletes buffer at point if any.
+  "Forward buffer at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'buffer arg))
 
 (defun ar-backward-buffer-atpt (&optional arg)
-  "Deletes buffer at point if any.
+  "Backward buffer at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'buffer arg))
 
 (defun ar-triplequotedq-buffer-atpt (&optional arg)
-  "Deletes buffer at point if any.
+  "Put triple doublequotes around buffer at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'buffer arg))
 
 (defun ar-triplequotesq-buffer-atpt (&optional arg)
-  "Deletes buffer at point if any.
+  "Put triple singlequotes around buffer at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'buffer arg))
 
 (defun ar-triplebacktick-buffer-atpt (&optional arg)
-  "Deletes buffer at point if any.
+  "Put triple backticks around buffer at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6656,7 +6656,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'buffer beg end))
 
 (defun ar-char-atpt (&optional arg) 
-  "Returns char at point if any, nil otherwise. 
+  "Returns char at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6717,35 +6717,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'char arg))
 
 (defun ar-forward-char-atpt (&optional arg)
-  "Deletes char at point if any.
+  "Forward char at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'char arg))
 
 (defun ar-backward-char-atpt (&optional arg)
-  "Deletes char at point if any.
+  "Backward char at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'char arg))
 
 (defun ar-triplequotedq-char-atpt (&optional arg)
-  "Deletes char at point if any.
+  "Put triple doublequotes around char at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'char arg))
 
 (defun ar-triplequotesq-char-atpt (&optional arg)
-  "Deletes char at point if any.
+  "Put triple singlequotes around char at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'char arg))
 
 (defun ar-triplebacktick-char-atpt (&optional arg)
-  "Deletes char at point if any.
+  "Put triple backticks around char at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6757,7 +6757,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'char beg end))
 
 (defun ar-comment-atpt (&optional arg) 
-  "Returns comment at point if any, nil otherwise. 
+  "Returns comment at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6818,35 +6818,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'comment arg))
 
 (defun ar-forward-comment-atpt (&optional arg)
-  "Deletes comment at point if any.
+  "Forward comment at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'comment arg))
 
 (defun ar-backward-comment-atpt (&optional arg)
-  "Deletes comment at point if any.
+  "Backward comment at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'comment arg))
 
 (defun ar-triplequotedq-comment-atpt (&optional arg)
-  "Deletes comment at point if any.
+  "Put triple doublequotes around comment at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'comment arg))
 
 (defun ar-triplequotesq-comment-atpt (&optional arg)
-  "Deletes comment at point if any.
+  "Put triple singlequotes around comment at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'comment arg))
 
 (defun ar-triplebacktick-comment-atpt (&optional arg)
-  "Deletes comment at point if any.
+  "Put triple backticks around comment at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6858,7 +6858,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'comment beg end))
 
 (defun ar-csv-atpt (&optional arg) 
-  "Returns csv at point if any, nil otherwise. 
+  "Returns csv at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -6919,35 +6919,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'csv arg))
 
 (defun ar-forward-csv-atpt (&optional arg)
-  "Deletes csv at point if any.
+  "Forward csv at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'csv arg))
 
 (defun ar-backward-csv-atpt (&optional arg)
-  "Deletes csv at point if any.
+  "Backward csv at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'csv arg))
 
 (defun ar-triplequotedq-csv-atpt (&optional arg)
-  "Deletes csv at point if any.
+  "Put triple doublequotes around csv at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'csv arg))
 
 (defun ar-triplequotesq-csv-atpt (&optional arg)
-  "Deletes csv at point if any.
+  "Put triple singlequotes around csv at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'csv arg))
 
 (defun ar-triplebacktick-csv-atpt (&optional arg)
-  "Deletes csv at point if any.
+  "Put triple backticks around csv at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -6959,7 +6959,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'csv beg end))
 
 (defun ar-date-atpt (&optional arg) 
-  "Returns date at point if any, nil otherwise. 
+  "Returns date at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7020,35 +7020,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'date arg))
 
 (defun ar-forward-date-atpt (&optional arg)
-  "Deletes date at point if any.
+  "Forward date at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'date arg))
 
 (defun ar-backward-date-atpt (&optional arg)
-  "Deletes date at point if any.
+  "Backward date at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'date arg))
 
 (defun ar-triplequotedq-date-atpt (&optional arg)
-  "Deletes date at point if any.
+  "Put triple doublequotes around date at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'date arg))
 
 (defun ar-triplequotesq-date-atpt (&optional arg)
-  "Deletes date at point if any.
+  "Put triple singlequotes around date at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'date arg))
 
 (defun ar-triplebacktick-date-atpt (&optional arg)
-  "Deletes date at point if any.
+  "Put triple backticks around date at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7060,7 +7060,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'date beg end))
 
 (defun ar-email-atpt (&optional arg) 
-  "Returns email at point if any, nil otherwise. 
+  "Returns email at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7121,35 +7121,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'email arg))
 
 (defun ar-forward-email-atpt (&optional arg)
-  "Deletes email at point if any.
+  "Forward email at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'email arg))
 
 (defun ar-backward-email-atpt (&optional arg)
-  "Deletes email at point if any.
+  "Backward email at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'email arg))
 
 (defun ar-triplequotedq-email-atpt (&optional arg)
-  "Deletes email at point if any.
+  "Put triple doublequotes around email at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'email arg))
 
 (defun ar-triplequotesq-email-atpt (&optional arg)
-  "Deletes email at point if any.
+  "Put triple singlequotes around email at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'email arg))
 
 (defun ar-triplebacktick-email-atpt (&optional arg)
-  "Deletes email at point if any.
+  "Put triple backticks around email at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7161,7 +7161,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'email beg end))
 
 (defun ar-filename-atpt (&optional arg) 
-  "Returns filename at point if any, nil otherwise. 
+  "Returns filename at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7222,35 +7222,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'filename arg))
 
 (defun ar-forward-filename-atpt (&optional arg)
-  "Deletes filename at point if any.
+  "Forward filename at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'filename arg))
 
 (defun ar-backward-filename-atpt (&optional arg)
-  "Deletes filename at point if any.
+  "Backward filename at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'filename arg))
 
 (defun ar-triplequotedq-filename-atpt (&optional arg)
-  "Deletes filename at point if any.
+  "Put triple doublequotes around filename at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'filename arg))
 
 (defun ar-triplequotesq-filename-atpt (&optional arg)
-  "Deletes filename at point if any.
+  "Put triple singlequotes around filename at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'filename arg))
 
 (defun ar-triplebacktick-filename-atpt (&optional arg)
-  "Deletes filename at point if any.
+  "Put triple backticks around filename at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7262,7 +7262,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'filename beg end))
 
 (defun ar-filenamenondirectory-atpt (&optional arg) 
-  "Returns filenamenondirectory at point if any, nil otherwise. 
+  "Returns filenamenondirectory at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7323,35 +7323,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'filenamenondirectory arg))
 
 (defun ar-forward-filenamenondirectory-atpt (&optional arg)
-  "Deletes filenamenondirectory at point if any.
+  "Forward filenamenondirectory at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'filenamenondirectory arg))
 
 (defun ar-backward-filenamenondirectory-atpt (&optional arg)
-  "Deletes filenamenondirectory at point if any.
+  "Backward filenamenondirectory at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'filenamenondirectory arg))
 
 (defun ar-triplequotedq-filenamenondirectory-atpt (&optional arg)
-  "Deletes filenamenondirectory at point if any.
+  "Put triple doublequotes around filenamenondirectory at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'filenamenondirectory arg))
 
 (defun ar-triplequotesq-filenamenondirectory-atpt (&optional arg)
-  "Deletes filenamenondirectory at point if any.
+  "Put triple singlequotes around filenamenondirectory at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'filenamenondirectory arg))
 
 (defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
-  "Deletes filenamenondirectory at point if any.
+  "Put triple backticks around filenamenondirectory at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7363,7 +7363,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'filenamenondirectory beg end))
 
 (defun ar-float-atpt (&optional arg) 
-  "Returns float at point if any, nil otherwise. 
+  "Returns float at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7424,35 +7424,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'float arg))
 
 (defun ar-forward-float-atpt (&optional arg)
-  "Deletes float at point if any.
+  "Forward float at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'float arg))
 
 (defun ar-backward-float-atpt (&optional arg)
-  "Deletes float at point if any.
+  "Backward float at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'float arg))
 
 (defun ar-triplequotedq-float-atpt (&optional arg)
-  "Deletes float at point if any.
+  "Put triple doublequotes around float at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'float arg))
 
 (defun ar-triplequotesq-float-atpt (&optional arg)
-  "Deletes float at point if any.
+  "Put triple singlequotes around float at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'float arg))
 
 (defun ar-triplebacktick-float-atpt (&optional arg)
-  "Deletes float at point if any.
+  "Put triple backticks around float at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7464,7 +7464,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'float beg end))
 
 (defun ar-function-atpt (&optional arg) 
-  "Returns function at point if any, nil otherwise. 
+  "Returns function at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7525,35 +7525,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'function arg))
 
 (defun ar-forward-function-atpt (&optional arg)
-  "Deletes function at point if any.
+  "Forward function at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'function arg))
 
 (defun ar-backward-function-atpt (&optional arg)
-  "Deletes function at point if any.
+  "Backward function at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'function arg))
 
 (defun ar-triplequotedq-function-atpt (&optional arg)
-  "Deletes function at point if any.
+  "Put triple doublequotes around function at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'function arg))
 
 (defun ar-triplequotesq-function-atpt (&optional arg)
-  "Deletes function at point if any.
+  "Put triple singlequotes around function at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'function arg))
 
 (defun ar-triplebacktick-function-atpt (&optional arg)
-  "Deletes function at point if any.
+  "Put triple backticks around function at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7565,7 +7565,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'function beg end))
 
 (defun ar-ip-atpt (&optional arg) 
-  "Returns ip at point if any, nil otherwise. 
+  "Returns ip at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7626,35 +7626,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'ip arg))
 
 (defun ar-forward-ip-atpt (&optional arg)
-  "Deletes ip at point if any.
+  "Forward ip at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'ip arg))
 
 (defun ar-backward-ip-atpt (&optional arg)
-  "Deletes ip at point if any.
+  "Backward ip at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'ip arg))
 
 (defun ar-triplequotedq-ip-atpt (&optional arg)
-  "Deletes ip at point if any.
+  "Put triple doublequotes around ip at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'ip arg))
 
 (defun ar-triplequotesq-ip-atpt (&optional arg)
-  "Deletes ip at point if any.
+  "Put triple singlequotes around ip at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'ip arg))
 
 (defun ar-triplebacktick-ip-atpt (&optional arg)
-  "Deletes ip at point if any.
+  "Put triple backticks around ip at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7666,7 +7666,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'ip beg end))
 
 (defun ar-isbn-atpt (&optional arg) 
-  "Returns isbn at point if any, nil otherwise. 
+  "Returns isbn at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7727,35 +7727,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'isbn arg))
 
 (defun ar-forward-isbn-atpt (&optional arg)
-  "Deletes isbn at point if any.
+  "Forward isbn at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'isbn arg))
 
 (defun ar-backward-isbn-atpt (&optional arg)
-  "Deletes isbn at point if any.
+  "Backward isbn at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'isbn arg))
 
 (defun ar-triplequotedq-isbn-atpt (&optional arg)
-  "Deletes isbn at point if any.
+  "Put triple doublequotes around isbn at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'isbn arg))
 
 (defun ar-triplequotesq-isbn-atpt (&optional arg)
-  "Deletes isbn at point if any.
+  "Put triple singlequotes around isbn at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'isbn arg))
 
 (defun ar-triplebacktick-isbn-atpt (&optional arg)
-  "Deletes isbn at point if any.
+  "Put triple backticks around isbn at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7767,7 +7767,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'isbn beg end))
 
 (defun ar-line-atpt (&optional arg) 
-  "Returns line at point if any, nil otherwise. 
+  "Returns line at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7828,35 +7828,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'line arg))
 
 (defun ar-forward-line-atpt (&optional arg)
-  "Deletes line at point if any.
+  "Forward line at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'line arg))
 
 (defun ar-backward-line-atpt (&optional arg)
-  "Deletes line at point if any.
+  "Backward line at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'line arg))
 
 (defun ar-triplequotedq-line-atpt (&optional arg)
-  "Deletes line at point if any.
+  "Put triple doublequotes around line at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'line arg))
 
 (defun ar-triplequotesq-line-atpt (&optional arg)
-  "Deletes line at point if any.
+  "Put triple singlequotes around line at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'line arg))
 
 (defun ar-triplebacktick-line-atpt (&optional arg)
-  "Deletes line at point if any.
+  "Put triple backticks around line at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7868,7 +7868,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'line beg end))
 
 (defun ar-list-atpt (&optional arg) 
-  "Returns list at point if any, nil otherwise. 
+  "Returns list at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -7929,35 +7929,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'list arg))
 
 (defun ar-forward-list-atpt (&optional arg)
-  "Deletes list at point if any.
+  "Forward list at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'list arg))
 
 (defun ar-backward-list-atpt (&optional arg)
-  "Deletes list at point if any.
+  "Backward list at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'list arg))
 
 (defun ar-triplequotedq-list-atpt (&optional arg)
-  "Deletes list at point if any.
+  "Put triple doublequotes around list at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'list arg))
 
 (defun ar-triplequotesq-list-atpt (&optional arg)
-  "Deletes list at point if any.
+  "Put triple singlequotes around list at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'list arg))
 
 (defun ar-triplebacktick-list-atpt (&optional arg)
-  "Deletes list at point if any.
+  "Put triple backticks around list at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -7969,7 +7969,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'list beg end))
 
 (defun ar-name-atpt (&optional arg) 
-  "Returns name at point if any, nil otherwise. 
+  "Returns name at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8030,35 +8030,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'name arg))
 
 (defun ar-forward-name-atpt (&optional arg)
-  "Deletes name at point if any.
+  "Forward name at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'name arg))
 
 (defun ar-backward-name-atpt (&optional arg)
-  "Deletes name at point if any.
+  "Backward name at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'name arg))
 
 (defun ar-triplequotedq-name-atpt (&optional arg)
-  "Deletes name at point if any.
+  "Put triple doublequotes around name at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'name arg))
 
 (defun ar-triplequotesq-name-atpt (&optional arg)
-  "Deletes name at point if any.
+  "Put triple singlequotes around name at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'name arg))
 
 (defun ar-triplebacktick-name-atpt (&optional arg)
-  "Deletes name at point if any.
+  "Put triple backticks around name at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8070,7 +8070,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'name beg end))
 
 (defun ar-number-atpt (&optional arg) 
-  "Returns number at point if any, nil otherwise. 
+  "Returns number at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8131,35 +8131,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'number arg))
 
 (defun ar-forward-number-atpt (&optional arg)
-  "Deletes number at point if any.
+  "Forward number at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'number arg))
 
 (defun ar-backward-number-atpt (&optional arg)
-  "Deletes number at point if any.
+  "Backward number at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'number arg))
 
 (defun ar-triplequotedq-number-atpt (&optional arg)
-  "Deletes number at point if any.
+  "Put triple doublequotes around number at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'number arg))
 
 (defun ar-triplequotesq-number-atpt (&optional arg)
-  "Deletes number at point if any.
+  "Put triple singlequotes around number at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'number arg))
 
 (defun ar-triplebacktick-number-atpt (&optional arg)
-  "Deletes number at point if any.
+  "Put triple backticks around number at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8171,7 +8171,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'number beg end))
 
 (defun ar-page-atpt (&optional arg) 
-  "Returns page at point if any, nil otherwise. 
+  "Returns page at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8232,35 +8232,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'page arg))
 
 (defun ar-forward-page-atpt (&optional arg)
-  "Deletes page at point if any.
+  "Forward page at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'page arg))
 
 (defun ar-backward-page-atpt (&optional arg)
-  "Deletes page at point if any.
+  "Backward page at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'page arg))
 
 (defun ar-triplequotedq-page-atpt (&optional arg)
-  "Deletes page at point if any.
+  "Put triple doublequotes around page at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'page arg))
 
 (defun ar-triplequotesq-page-atpt (&optional arg)
-  "Deletes page at point if any.
+  "Put triple singlequotes around page at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'page arg))
 
 (defun ar-triplebacktick-page-atpt (&optional arg)
-  "Deletes page at point if any.
+  "Put triple backticks around page at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8272,7 +8272,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'page beg end))
 
 (defun ar-paragraph-atpt (&optional arg) 
-  "Returns paragraph at point if any, nil otherwise. 
+  "Returns paragraph at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8333,35 +8333,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'paragraph arg))
 
 (defun ar-forward-paragraph-atpt (&optional arg)
-  "Deletes paragraph at point if any.
+  "Forward paragraph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'paragraph arg))
 
 (defun ar-backward-paragraph-atpt (&optional arg)
-  "Deletes paragraph at point if any.
+  "Backward paragraph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'paragraph arg))
 
 (defun ar-triplequotedq-paragraph-atpt (&optional arg)
-  "Deletes paragraph at point if any.
+  "Put triple doublequotes around paragraph at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'paragraph arg))
 
 (defun ar-triplequotesq-paragraph-atpt (&optional arg)
-  "Deletes paragraph at point if any.
+  "Put triple singlequotes around paragraph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'paragraph arg))
 
 (defun ar-triplebacktick-paragraph-atpt (&optional arg)
-  "Deletes paragraph at point if any.
+  "Put triple backticks around paragraph at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8373,7 +8373,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'paragraph beg end))
 
 (defun ar-phone-atpt (&optional arg) 
-  "Returns phone at point if any, nil otherwise. 
+  "Returns phone at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8434,35 +8434,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'phone arg))
 
 (defun ar-forward-phone-atpt (&optional arg)
-  "Deletes phone at point if any.
+  "Forward phone at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'phone arg))
 
 (defun ar-backward-phone-atpt (&optional arg)
-  "Deletes phone at point if any.
+  "Backward phone at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'phone arg))
 
 (defun ar-triplequotedq-phone-atpt (&optional arg)
-  "Deletes phone at point if any.
+  "Put triple doublequotes around phone at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'phone arg))
 
 (defun ar-triplequotesq-phone-atpt (&optional arg)
-  "Deletes phone at point if any.
+  "Put triple singlequotes around phone at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'phone arg))
 
 (defun ar-triplebacktick-phone-atpt (&optional arg)
-  "Deletes phone at point if any.
+  "Put triple backticks around phone at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8474,7 +8474,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'phone beg end))
 
 (defun ar-region-atpt (&optional arg) 
-  "Returns region at point if any, nil otherwise. 
+  "Returns region at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8535,35 +8535,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'region arg))
 
 (defun ar-forward-region-atpt (&optional arg)
-  "Deletes region at point if any.
+  "Forward region at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'region arg))
 
 (defun ar-backward-region-atpt (&optional arg)
-  "Deletes region at point if any.
+  "Backward region at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'region arg))
 
 (defun ar-triplequotedq-region-atpt (&optional arg)
-  "Deletes region at point if any.
+  "Put triple doublequotes around region at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'region arg))
 
 (defun ar-triplequotesq-region-atpt (&optional arg)
-  "Deletes region at point if any.
+  "Put triple singlequotes around region at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'region arg))
 
 (defun ar-triplebacktick-region-atpt (&optional arg)
-  "Deletes region at point if any.
+  "Put triple backticks around region at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8575,7 +8575,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'region beg end))
 
 (defun ar-sentence-atpt (&optional arg) 
-  "Returns sentence at point if any, nil otherwise. 
+  "Returns sentence at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8636,35 +8636,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'sentence arg))
 
 (defun ar-forward-sentence-atpt (&optional arg)
-  "Deletes sentence at point if any.
+  "Forward sentence at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'sentence arg))
 
 (defun ar-backward-sentence-atpt (&optional arg)
-  "Deletes sentence at point if any.
+  "Backward sentence at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'sentence arg))
 
 (defun ar-triplequotedq-sentence-atpt (&optional arg)
-  "Deletes sentence at point if any.
+  "Put triple doublequotes around sentence at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'sentence arg))
 
 (defun ar-triplequotesq-sentence-atpt (&optional arg)
-  "Deletes sentence at point if any.
+  "Put triple singlequotes around sentence at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'sentence arg))
 
 (defun ar-triplebacktick-sentence-atpt (&optional arg)
-  "Deletes sentence at point if any.
+  "Put triple backticks around sentence at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8676,7 +8676,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'sentence beg end))
 
 (defun ar-sexp-atpt (&optional arg) 
-  "Returns sexp at point if any, nil otherwise. 
+  "Returns sexp at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8737,35 +8737,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'sexp arg))
 
 (defun ar-forward-sexp-atpt (&optional arg)
-  "Deletes sexp at point if any.
+  "Forward sexp at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'sexp arg))
 
 (defun ar-backward-sexp-atpt (&optional arg)
-  "Deletes sexp at point if any.
+  "Backward sexp at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'sexp arg))
 
 (defun ar-triplequotedq-sexp-atpt (&optional arg)
-  "Deletes sexp at point if any.
+  "Put triple doublequotes around sexp at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'sexp arg))
 
 (defun ar-triplequotesq-sexp-atpt (&optional arg)
-  "Deletes sexp at point if any.
+  "Put triple singlequotes around sexp at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'sexp arg))
 
 (defun ar-triplebacktick-sexp-atpt (&optional arg)
-  "Deletes sexp at point if any.
+  "Put triple backticks around sexp at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8777,7 +8777,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'sexp beg end))
 
 (defun ar-shstruct-atpt (&optional arg) 
-  "Returns shstruct at point if any, nil otherwise. 
+  "Returns shstruct at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8838,35 +8838,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'shstruct arg))
 
 (defun ar-forward-shstruct-atpt (&optional arg)
-  "Deletes shstruct at point if any.
+  "Forward shstruct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'shstruct arg))
 
 (defun ar-backward-shstruct-atpt (&optional arg)
-  "Deletes shstruct at point if any.
+  "Backward shstruct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'shstruct arg))
 
 (defun ar-triplequotedq-shstruct-atpt (&optional arg)
-  "Deletes shstruct at point if any.
+  "Put triple doublequotes around shstruct at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'shstruct arg))
 
 (defun ar-triplequotesq-shstruct-atpt (&optional arg)
-  "Deletes shstruct at point if any.
+  "Put triple singlequotes around shstruct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'shstruct arg))
 
 (defun ar-triplebacktick-shstruct-atpt (&optional arg)
-  "Deletes shstruct at point if any.
+  "Put triple backticks around shstruct at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8878,7 +8878,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'shstruct beg end))
 
 (defun ar-symbol-atpt (&optional arg) 
-  "Returns symbol at point if any, nil otherwise. 
+  "Returns symbol at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -8939,35 +8939,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'symbol arg))
 
 (defun ar-forward-symbol-atpt (&optional arg)
-  "Deletes symbol at point if any.
+  "Forward symbol at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'symbol arg))
 
 (defun ar-backward-symbol-atpt (&optional arg)
-  "Deletes symbol at point if any.
+  "Backward symbol at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'symbol arg))
 
 (defun ar-triplequotedq-symbol-atpt (&optional arg)
-  "Deletes symbol at point if any.
+  "Put triple doublequotes around symbol at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'symbol arg))
 
 (defun ar-triplequotesq-symbol-atpt (&optional arg)
-  "Deletes symbol at point if any.
+  "Put triple singlequotes around symbol at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'symbol arg))
 
 (defun ar-triplebacktick-symbol-atpt (&optional arg)
-  "Deletes symbol at point if any.
+  "Put triple backticks around symbol at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -8979,7 +8979,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'symbol beg end))
 
 (defun ar-url-atpt (&optional arg) 
-  "Returns url at point if any, nil otherwise. 
+  "Returns url at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -9040,35 +9040,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'url arg))
 
 (defun ar-forward-url-atpt (&optional arg)
-  "Deletes url at point if any.
+  "Forward url at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'url arg))
 
 (defun ar-backward-url-atpt (&optional arg)
-  "Deletes url at point if any.
+  "Backward url at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'url arg))
 
 (defun ar-triplequotedq-url-atpt (&optional arg)
-  "Deletes url at point if any.
+  "Put triple doublequotes around url at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'url arg))
 
 (defun ar-triplequotesq-url-atpt (&optional arg)
-  "Deletes url at point if any.
+  "Put triple singlequotes around url at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'url arg))
 
 (defun ar-triplebacktick-url-atpt (&optional arg)
-  "Deletes url at point if any.
+  "Put triple backticks around url at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -9080,7 +9080,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'url beg end))
 
 (defun ar-word-atpt (&optional arg) 
-  "Returns word at point if any, nil otherwise. 
+  "Returns word at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -9141,35 +9141,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'word arg))
 
 (defun ar-forward-word-atpt (&optional arg)
-  "Deletes word at point if any.
+  "Forward word at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'word arg))
 
 (defun ar-backward-word-atpt (&optional arg)
-  "Deletes word at point if any.
+  "Backward word at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'word arg))
 
 (defun ar-triplequotedq-word-atpt (&optional arg)
-  "Deletes word at point if any.
+  "Put triple doublequotes around word at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'word arg))
 
 (defun ar-triplequotesq-word-atpt (&optional arg)
-  "Deletes word at point if any.
+  "Put triple singlequotes around word at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'word arg))
 
 (defun ar-triplebacktick-word-atpt (&optional arg)
-  "Deletes word at point if any.
+  "Put triple backticks around word at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -9181,7 +9181,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-delete-in-region 'word beg end))
 
 (defun ar-wordalphaonly-atpt (&optional arg) 
-  "Returns wordalphaonly at point if any, nil otherwise. 
+  "Returns wordalphaonly at point as string if any, nil otherwise. 
 
 With \\[universal-argument] strip delimiters if suitable"
   (interactive "P")
@@ -9242,35 +9242,35 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-kill 'wordalphaonly arg))
 
 (defun ar-forward-wordalphaonly-atpt (&optional arg)
-  "Deletes wordalphaonly at point if any.
+  "Forward wordalphaonly at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-forward 'wordalphaonly arg))
 
 (defun ar-backward-wordalphaonly-atpt (&optional arg)
-  "Deletes wordalphaonly at point if any.
+  "Backward wordalphaonly at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-backward 'wordalphaonly arg))
 
 (defun ar-triplequotedq-wordalphaonly-atpt (&optional arg)
-  "Deletes wordalphaonly at point if any.
+  "Put triple doublequotes around wordalphaonly at point as string if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotedq 'wordalphaonly arg))
 
 (defun ar-triplequotesq-wordalphaonly-atpt (&optional arg)
-  "Deletes wordalphaonly at point if any.
+  "Put triple singlequotes around wordalphaonly at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'wordalphaonly arg))
 
 (defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
-  "Deletes wordalphaonly at point if any.
+  "Put triple backticks around wordalphaonly at point if any.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")

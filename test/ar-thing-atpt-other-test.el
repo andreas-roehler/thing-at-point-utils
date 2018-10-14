@@ -430,5 +430,12 @@ return wwrap"
     (should (eq (char-before) 40))
     ))
 
+(ert-deftest ar-hide-delimited-test-cZqMPO ()
+  (ar-test-with-elisp-buffer
+      "(bar . [((qux . \"hello\")) 3])"
+    (search-backward "l")
+    (ar-hide-delimited-atpt)
+    (skip-chars-backward "^(")))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
