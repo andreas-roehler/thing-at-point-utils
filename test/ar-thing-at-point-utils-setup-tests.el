@@ -1,4 +1,4 @@
-;;; ar-thing-at-point-utils-setup-tests.el --- Provide needed forms -*- lexical-binding: t; -*- 
+;;; ar-thing-at-point-utils-setup-tests.el --- Provide needed forms -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015-2016  Andreas Röhler
 
@@ -33,15 +33,15 @@
 
 (defmacro ar-test-with-temp-buffer (contents &rest body)
   "Create temp buffer inserting CONTENTS.
-BODY is code to be executed within the temp buffer.  Point is
+ BODY is code to be executed within the temp buffer.  Point is
  at the end of buffer."
   (declare (indent 2) (debug t))
   `(with-temp-buffer
      (let (hs-minor-mode)
        (insert ,contents)
        (when ar-switch-p
-	 (switch-to-buffer (current-buffer)))
-       (font-lock-fontify-buffer)
+	 (switch-to-buffer (current-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 (defmacro ar-test-with-temp-buffer-point-min (contents &rest body)
@@ -54,8 +54,8 @@ BODY is code to be executed within the temp buffer.  Point is
        (insert ,contents)
        (goto-char (point-min))
        (when ar-switch-p
-	 (switch-to-buffer (current-buffer)))
-       (font-lock-fontify-buffer)
+	 (switch-to-buffer (current-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 (defmacro ar-test (contents mode verbose &rest body)
@@ -69,7 +69,7 @@ BODY is code to be executed within the temp buffer "
        (funcall ,mode)
        (when ,verbose
 	 (switch-to-buffer (current-buffer))
-	 (font-lock-fontify-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body))
   (sit-for 0.1))
 
@@ -85,7 +85,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (goto-char (point-min))
        (when ,verbose
 	 (switch-to-buffer (current-buffer))
-	 (font-lock-fontify-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 (defmacro ar-test-with-elisp-buffer (contents &rest body)
@@ -98,8 +98,8 @@ BODY is code to be executed within the temp buffer.  Point is
        (emacs-lisp-mode)
        (insert ,contents)
        (when ar-switch-p
-	 (switch-to-buffer (current-buffer)))
-       (font-lock-fontify-buffer)
+	 (switch-to-buffer (current-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 (defmacro ar-test-with-elisp-buffer-point-min (contents &rest body)
@@ -113,8 +113,8 @@ BODY is code to be executed within the temp buffer.  Point is
        (emacs-lisp-mode)
        (goto-char (point-min))
        (when ar-switch-p
-	 (switch-to-buffer (current-buffer)))
-       (font-lock-fontify-buffer)
+	 (switch-to-buffer (current-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 
@@ -224,7 +224,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (goto-char (point-min))
        ;; (message "(current-buffer): %s" (current-buffer))
        (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-buffer))
+	     (font-lock-fontify-region (point-min) (point-max)))
        ,@body)
      (sit-for 0.1)))
 
@@ -239,7 +239,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (insert ,contents)
        (python-mode)
        (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-buffer))
+	     (font-lock-fontify-region (point-min) (point-max)))
        ;; (message "ERT %s" (point))
        ,@body)
      (sit-for 0.1)))
@@ -259,7 +259,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (goto-char (point-min))
        ;; (message "(current-buffer): %s" (current-buffer))
        (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-buffer))
+	     (font-lock-fontify-region (point-min) (point-max)))
        ,@body)
      (sit-for 0.1)))
 
@@ -274,7 +274,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (insert ,contents)
        (scala-mode)
        (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-buffer))
+	     (font-lock-fontify-region (point-min) (point-max)))
        ;; (message "ERT %s" (point))
        ,@body)
      (sit-for 0.1)))
@@ -289,8 +289,8 @@ BODY is code to be executed within the temp buffer.  Point is
        (shell-script-mode)
        (insert ,contents)
        (when ar-switch-p
-	 (switch-to-buffer (current-buffer)))
-       (font-lock-fontify-buffer)
+	 (switch-to-buffer (current-buffer))
+       (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 (defmacro ar-test-with-shell-script-buffer-point-min (contents &rest body)
@@ -304,8 +304,8 @@ BODY is code to be executed within the temp buffer.  Point is
        (shell-script-mode)
        (goto-char (point-min))
        (when ar-switch-p
-	 (switch-to-buffer (current-buffer)))
-       (font-lock-fontify-buffer)
+	 (switch-to-buffer (current-buffer))
+       (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
 (defmacro py-test-with-temp-buffer-point-min (contents &rest body)
@@ -323,7 +323,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (goto-char (point-min))
        ;; (message "(current-buffer): %s" (current-buffer))
        (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-buffer))
+	     (font-lock-fontify-region (point-min) (point-max)))
        ,@body)
      (sit-for 0.1)))
 
@@ -338,7 +338,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (insert ,contents)
        (python-mode)
        (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-buffer))
+	     (font-lock-fontify-region (point-min) (point-max)))
        ;; (message "ERT %s" (point))
        ,@body)
      (sit-for 0.1)))
