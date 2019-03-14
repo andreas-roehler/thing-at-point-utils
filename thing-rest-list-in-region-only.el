@@ -161,10 +161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'greateranglednested 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-greateranglednested-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-greateranglednested-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GREATERANGLEDNESTED residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'greateranglednested 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'greateranglednested 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-greateranglednested-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GREATERANGLEDNESTED residing withing REGION. "
@@ -361,10 +361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lesseranglednested 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lesseranglednested-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-lesseranglednested-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LESSERANGLEDNESTED residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'lesseranglednested 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lesseranglednested 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lesseranglednested-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LESSERANGLEDNESTED residing withing REGION. "
@@ -561,10 +561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'buffer 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-buffer-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-buffer-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BUFFER residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'buffer 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'buffer 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-buffer-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BUFFER residing withing REGION. "
@@ -761,10 +761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'char 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-char-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-char-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CHAR residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'char 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'char 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-char-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CHAR residing withing REGION. "
@@ -961,10 +961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'comment 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-comment-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-comment-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of COMMENT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'comment 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'comment 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-comment-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of COMMENT residing withing REGION. "
@@ -1161,10 +1161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'csv 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-csv-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-csv-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CSV residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'csv 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'csv 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-csv-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CSV residing withing REGION. "
@@ -1361,10 +1361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'date 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-date-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-date-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DATE residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'date 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'date 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-date-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DATE residing withing REGION. "
@@ -1561,10 +1561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'email 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-email-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-email-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of EMAIL residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'email 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'email 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-email-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of EMAIL residing withing REGION. "
@@ -1761,10 +1761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'filename 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-filename-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-filename-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of FILENAME residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'filename 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'filename 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-filename-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of FILENAME residing withing REGION. "
@@ -1961,10 +1961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'filenamenondirectory 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-filenamenondirectory-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-filenamenondirectory-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of FILENAMENONDIRECTORY residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'filenamenondirectory 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'filenamenondirectory 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-filenamenondirectory-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of FILENAMENONDIRECTORY residing withing REGION. "
@@ -2161,10 +2161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'float 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-float-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-float-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of FLOAT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'float 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'float 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-float-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of FLOAT residing withing REGION. "
@@ -2361,10 +2361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'function 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-function-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-function-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of FUNCTION residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'function 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'function 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-function-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of FUNCTION residing withing REGION. "
@@ -2561,10 +2561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ip 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ip-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-ip-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of IP residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'ip 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ip 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ip-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of IP residing withing REGION. "
@@ -2761,10 +2761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'isbn 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-isbn-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-isbn-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ISBN residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'isbn 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'isbn 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-isbn-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ISBN residing withing REGION. "
@@ -2961,10 +2961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'line 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-line-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-line-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LINE residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'line 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'line 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-line-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LINE residing withing REGION. "
@@ -3161,10 +3161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'list 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-list-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-list-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LIST residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'list 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'list 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-list-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LIST residing withing REGION. "
@@ -3361,10 +3361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'name 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-name-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-name-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NAME residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'name 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'name 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-name-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NAME residing withing REGION. "
@@ -3561,10 +3561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'number 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-number-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-number-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NUMBER residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'number 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'number 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-number-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NUMBER residing withing REGION. "
@@ -3761,10 +3761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'page 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-page-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-page-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PAGE residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'page 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'page 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-page-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PAGE residing withing REGION. "
@@ -3961,10 +3961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'paragraph 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-paragraph-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-paragraph-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PARAGRAPH residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'paragraph 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'paragraph 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-paragraph-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PARAGRAPH residing withing REGION. "
@@ -4161,10 +4161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'phone 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-phone-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-phone-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PHONE residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'phone 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'phone 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-phone-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PHONE residing withing REGION. "
@@ -4361,10 +4361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'region 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-region-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-region-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of REGION residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'region 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'region 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-region-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of REGION residing withing REGION. "
@@ -4561,10 +4561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'sentence 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-sentence-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-sentence-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SENTENCE residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'sentence 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'sentence 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-sentence-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SENTENCE residing withing REGION. "
@@ -4761,10 +4761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'sexp 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-sexp-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-sexp-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SEXP residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'sexp 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'sexp 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-sexp-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SEXP residing withing REGION. "
@@ -4961,10 +4961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'shstruct 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-shstruct-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-shstruct-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SHSTRUCT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'shstruct 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'shstruct 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-shstruct-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SHSTRUCT residing withing REGION. "
@@ -5161,10 +5161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'symbol 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-symbol-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-symbol-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SYMBOL residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'symbol 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'symbol 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-symbol-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SYMBOL residing withing REGION. "
@@ -5361,10 +5361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'url 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-url-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-url-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of URL residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'url 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'url 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-url-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of URL residing withing REGION. "
@@ -5561,10 +5561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'word 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-word-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-word-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of WORD residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'word 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'word 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-word-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of WORD residing withing REGION. "
@@ -5761,10 +5761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'wordalphaonly 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-wordalphaonly-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-wordalphaonly-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of WORDALPHAONLY residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'wordalphaonly 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'wordalphaonly 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-wordalphaonly-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of WORDALPHAONLY residing withing REGION. "

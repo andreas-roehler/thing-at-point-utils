@@ -161,10 +161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing GREATERANGLEDNESTED. "
@@ -361,10 +361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing LESSERANGLEDNESTED. "
@@ -561,10 +561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing BUFFER. "
@@ -761,10 +761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing COMMENT. "
@@ -961,10 +961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing CSV. "
@@ -1161,10 +1161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing DATE. "
@@ -1361,10 +1361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing EMAIL. "
@@ -1561,10 +1561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing FILENAME. "
@@ -1761,10 +1761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing FILENAMENONDIRECTORY. "
@@ -1961,10 +1961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing FLOAT. "
@@ -2161,10 +2161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing FUNCTION. "
@@ -2361,10 +2361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing IP. "
@@ -2561,10 +2561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing ISBN. "
@@ -2761,10 +2761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing LINE. "
@@ -2961,10 +2961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing LIST. "
@@ -3161,10 +3161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing NAME. "
@@ -3361,10 +3361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing NUMBER. "
@@ -3561,10 +3561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing PAGE. "
@@ -3761,10 +3761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing PARAGRAPH. "
@@ -3961,10 +3961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing PHONE. "
@@ -4161,10 +4161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing REGION. "
@@ -4361,10 +4361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing SENTENCE. "
@@ -4561,10 +4561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing SEXP. "
@@ -4761,10 +4761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing SHSTRUCT. "
@@ -4961,10 +4961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing SYMBOL. "
@@ -5161,10 +5161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing URL. "
@@ -5361,10 +5361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing WORD. "
@@ -5561,10 +5561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alnum 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alnum-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-alnum-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALNUM residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'alnum 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alnum 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alnum-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALNUM residing withing WORDALPHAONLY. "
@@ -5761,10 +5761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing GREATERANGLEDNESTED. "
@@ -5961,10 +5961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing LESSERANGLEDNESTED. "
@@ -6161,10 +6161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing BUFFER. "
@@ -6361,10 +6361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing COMMENT. "
@@ -6561,10 +6561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing CSV. "
@@ -6761,10 +6761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing DATE. "
@@ -6961,10 +6961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing EMAIL. "
@@ -7161,10 +7161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing FILENAME. "
@@ -7361,10 +7361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing FILENAMENONDIRECTORY. "
@@ -7561,10 +7561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing FLOAT. "
@@ -7761,10 +7761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing FUNCTION. "
@@ -7961,10 +7961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing IP. "
@@ -8161,10 +8161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing ISBN. "
@@ -8361,10 +8361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing LINE. "
@@ -8561,10 +8561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing LIST. "
@@ -8761,10 +8761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing NAME. "
@@ -8961,10 +8961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing NUMBER. "
@@ -9161,10 +9161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing PAGE. "
@@ -9361,10 +9361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing PARAGRAPH. "
@@ -9561,10 +9561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing PHONE. "
@@ -9761,10 +9761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing REGION. "
@@ -9961,10 +9961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing SENTENCE. "
@@ -10161,10 +10161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing SEXP. "
@@ -10361,10 +10361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing SHSTRUCT. "
@@ -10561,10 +10561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing SYMBOL. "
@@ -10761,10 +10761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing URL. "
@@ -10961,10 +10961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing WORD. "
@@ -11161,10 +11161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'alpha 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-alpha-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-alpha-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ALPHA residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'alpha 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'alpha 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-alpha-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ALPHA residing withing WORDALPHAONLY. "
@@ -11361,10 +11361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing GREATERANGLEDNESTED. "
@@ -11561,10 +11561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing LESSERANGLEDNESTED. "
@@ -11761,10 +11761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing BUFFER. "
@@ -11961,10 +11961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing COMMENT. "
@@ -12161,10 +12161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing CSV. "
@@ -12361,10 +12361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing DATE. "
@@ -12561,10 +12561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing EMAIL. "
@@ -12761,10 +12761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing FILENAME. "
@@ -12961,10 +12961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing FILENAMENONDIRECTORY. "
@@ -13161,10 +13161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing FLOAT. "
@@ -13361,10 +13361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing FUNCTION. "
@@ -13561,10 +13561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing IP. "
@@ -13761,10 +13761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing ISBN. "
@@ -13961,10 +13961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing LINE. "
@@ -14161,10 +14161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing LIST. "
@@ -14361,10 +14361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing NAME. "
@@ -14561,10 +14561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing NUMBER. "
@@ -14761,10 +14761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing PAGE. "
@@ -14961,10 +14961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing PARAGRAPH. "
@@ -15161,10 +15161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing PHONE. "
@@ -15361,10 +15361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing REGION. "
@@ -15561,10 +15561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing SENTENCE. "
@@ -15761,10 +15761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing SEXP. "
@@ -15961,10 +15961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing SHSTRUCT. "
@@ -16161,10 +16161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing SYMBOL. "
@@ -16361,10 +16361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing URL. "
@@ -16561,10 +16561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing WORD. "
@@ -16761,10 +16761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'ascii 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-ascii-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-ascii-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of ASCII residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'ascii 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'ascii 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-ascii-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of ASCII residing withing WORDALPHAONLY. "
@@ -16961,10 +16961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing GREATERANGLEDNESTED. "
@@ -17161,10 +17161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing LESSERANGLEDNESTED. "
@@ -17361,10 +17361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing BUFFER. "
@@ -17561,10 +17561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing COMMENT. "
@@ -17761,10 +17761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing CSV. "
@@ -17961,10 +17961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing DATE. "
@@ -18161,10 +18161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing EMAIL. "
@@ -18361,10 +18361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing FILENAME. "
@@ -18561,10 +18561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing FILENAMENONDIRECTORY. "
@@ -18761,10 +18761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing FLOAT. "
@@ -18961,10 +18961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing FUNCTION. "
@@ -19161,10 +19161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing IP. "
@@ -19361,10 +19361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing ISBN. "
@@ -19561,10 +19561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing LINE. "
@@ -19761,10 +19761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing LIST. "
@@ -19961,10 +19961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing NAME. "
@@ -20161,10 +20161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing NUMBER. "
@@ -20361,10 +20361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing PAGE. "
@@ -20561,10 +20561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing PARAGRAPH. "
@@ -20761,10 +20761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing PHONE. "
@@ -20961,10 +20961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing REGION. "
@@ -21161,10 +21161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing SENTENCE. "
@@ -21361,10 +21361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing SEXP. "
@@ -21561,10 +21561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing SHSTRUCT. "
@@ -21761,10 +21761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing SYMBOL. "
@@ -21961,10 +21961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing URL. "
@@ -22161,10 +22161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing WORD. "
@@ -22361,10 +22361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'blank 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-blank-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-blank-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of BLANK residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'blank 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'blank 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-blank-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of BLANK residing withing WORDALPHAONLY. "
@@ -22561,10 +22561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing GREATERANGLEDNESTED. "
@@ -22761,10 +22761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing LESSERANGLEDNESTED. "
@@ -22961,10 +22961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing BUFFER. "
@@ -23161,10 +23161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing COMMENT. "
@@ -23361,10 +23361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing CSV. "
@@ -23561,10 +23561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing DATE. "
@@ -23761,10 +23761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing EMAIL. "
@@ -23961,10 +23961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing FILENAME. "
@@ -24161,10 +24161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing FILENAMENONDIRECTORY. "
@@ -24361,10 +24361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing FLOAT. "
@@ -24561,10 +24561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing FUNCTION. "
@@ -24761,10 +24761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing IP. "
@@ -24961,10 +24961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing ISBN. "
@@ -25161,10 +25161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing LINE. "
@@ -25361,10 +25361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing LIST. "
@@ -25561,10 +25561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing NAME. "
@@ -25761,10 +25761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing NUMBER. "
@@ -25961,10 +25961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing PAGE. "
@@ -26161,10 +26161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing PARAGRAPH. "
@@ -26361,10 +26361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing PHONE. "
@@ -26561,10 +26561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing REGION. "
@@ -26761,10 +26761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing SENTENCE. "
@@ -26961,10 +26961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing SEXP. "
@@ -27161,10 +27161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing SHSTRUCT. "
@@ -27361,10 +27361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing SYMBOL. "
@@ -27561,10 +27561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing URL. "
@@ -27761,10 +27761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing WORD. "
@@ -27961,10 +27961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'cntrl 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-cntrl-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-cntrl-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of CNTRL residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'cntrl 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'cntrl 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-cntrl-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of CNTRL residing withing WORDALPHAONLY. "
@@ -28161,10 +28161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing GREATERANGLEDNESTED. "
@@ -28361,10 +28361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing LESSERANGLEDNESTED. "
@@ -28561,10 +28561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing BUFFER. "
@@ -28761,10 +28761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing COMMENT. "
@@ -28961,10 +28961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing CSV. "
@@ -29161,10 +29161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing DATE. "
@@ -29361,10 +29361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing EMAIL. "
@@ -29561,10 +29561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing FILENAME. "
@@ -29761,10 +29761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing FILENAMENONDIRECTORY. "
@@ -29961,10 +29961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing FLOAT. "
@@ -30161,10 +30161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing FUNCTION. "
@@ -30361,10 +30361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing IP. "
@@ -30561,10 +30561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing ISBN. "
@@ -30761,10 +30761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing LINE. "
@@ -30961,10 +30961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing LIST. "
@@ -31161,10 +31161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing NAME. "
@@ -31361,10 +31361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing NUMBER. "
@@ -31561,10 +31561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing PAGE. "
@@ -31761,10 +31761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing PARAGRAPH. "
@@ -31961,10 +31961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing PHONE. "
@@ -32161,10 +32161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing REGION. "
@@ -32361,10 +32361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing SENTENCE. "
@@ -32561,10 +32561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing SEXP. "
@@ -32761,10 +32761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing SHSTRUCT. "
@@ -32961,10 +32961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing SYMBOL. "
@@ -33161,10 +33161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing URL. "
@@ -33361,10 +33361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing WORD. "
@@ -33561,10 +33561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'digit 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-digit-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-digit-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of DIGIT residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'digit 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'digit 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-digit-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of DIGIT residing withing WORDALPHAONLY. "
@@ -33761,10 +33761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing GREATERANGLEDNESTED. "
@@ -33961,10 +33961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing LESSERANGLEDNESTED. "
@@ -34161,10 +34161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing BUFFER. "
@@ -34361,10 +34361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing COMMENT. "
@@ -34561,10 +34561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing CSV. "
@@ -34761,10 +34761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing DATE. "
@@ -34961,10 +34961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing EMAIL. "
@@ -35161,10 +35161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing FILENAME. "
@@ -35361,10 +35361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing FILENAMENONDIRECTORY. "
@@ -35561,10 +35561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing FLOAT. "
@@ -35761,10 +35761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing FUNCTION. "
@@ -35961,10 +35961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing IP. "
@@ -36161,10 +36161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing ISBN. "
@@ -36361,10 +36361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing LINE. "
@@ -36561,10 +36561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing LIST. "
@@ -36761,10 +36761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing NAME. "
@@ -36961,10 +36961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing NUMBER. "
@@ -37161,10 +37161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing PAGE. "
@@ -37361,10 +37361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing PARAGRAPH. "
@@ -37561,10 +37561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing PHONE. "
@@ -37761,10 +37761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing REGION. "
@@ -37961,10 +37961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing SENTENCE. "
@@ -38161,10 +38161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing SEXP. "
@@ -38361,10 +38361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing SHSTRUCT. "
@@ -38561,10 +38561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing SYMBOL. "
@@ -38761,10 +38761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing URL. "
@@ -38961,10 +38961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing WORD. "
@@ -39161,10 +39161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'graph 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-graph-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-graph-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of GRAPH residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'graph 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'graph 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-graph-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of GRAPH residing withing WORDALPHAONLY. "
@@ -39361,10 +39361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing GREATERANGLEDNESTED. "
@@ -39561,10 +39561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing LESSERANGLEDNESTED. "
@@ -39761,10 +39761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing BUFFER. "
@@ -39961,10 +39961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing COMMENT. "
@@ -40161,10 +40161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing CSV. "
@@ -40361,10 +40361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing DATE. "
@@ -40561,10 +40561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing EMAIL. "
@@ -40761,10 +40761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing FILENAME. "
@@ -40961,10 +40961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing FILENAMENONDIRECTORY. "
@@ -41161,10 +41161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing FLOAT. "
@@ -41361,10 +41361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing FUNCTION. "
@@ -41561,10 +41561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing IP. "
@@ -41761,10 +41761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing ISBN. "
@@ -41961,10 +41961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing LINE. "
@@ -42161,10 +42161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing LIST. "
@@ -42361,10 +42361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing NAME. "
@@ -42561,10 +42561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing NUMBER. "
@@ -42761,10 +42761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing PAGE. "
@@ -42961,10 +42961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing PARAGRAPH. "
@@ -43161,10 +43161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing PHONE. "
@@ -43361,10 +43361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing REGION. "
@@ -43561,10 +43561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing SENTENCE. "
@@ -43761,10 +43761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing SEXP. "
@@ -43961,10 +43961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing SHSTRUCT. "
@@ -44161,10 +44161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing SYMBOL. "
@@ -44361,10 +44361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing URL. "
@@ -44561,10 +44561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing WORD. "
@@ -44761,10 +44761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'lower 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-lower-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-lower-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of LOWER residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'lower 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'lower 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-lower-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of LOWER residing withing WORDALPHAONLY. "
@@ -44961,10 +44961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing GREATERANGLEDNESTED. "
@@ -45161,10 +45161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing LESSERANGLEDNESTED. "
@@ -45361,10 +45361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing BUFFER. "
@@ -45561,10 +45561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing COMMENT. "
@@ -45761,10 +45761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing CSV. "
@@ -45961,10 +45961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing DATE. "
@@ -46161,10 +46161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing EMAIL. "
@@ -46361,10 +46361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing FILENAME. "
@@ -46561,10 +46561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing FILENAMENONDIRECTORY. "
@@ -46761,10 +46761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing FLOAT. "
@@ -46961,10 +46961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing FUNCTION. "
@@ -47161,10 +47161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing IP. "
@@ -47361,10 +47361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing ISBN. "
@@ -47561,10 +47561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing LINE. "
@@ -47761,10 +47761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing LIST. "
@@ -47961,10 +47961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing NAME. "
@@ -48161,10 +48161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing NUMBER. "
@@ -48361,10 +48361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing PAGE. "
@@ -48561,10 +48561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing PARAGRAPH. "
@@ -48761,10 +48761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing PHONE. "
@@ -48961,10 +48961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing REGION. "
@@ -49161,10 +49161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing SENTENCE. "
@@ -49361,10 +49361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing SEXP. "
@@ -49561,10 +49561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing SHSTRUCT. "
@@ -49761,10 +49761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing SYMBOL. "
@@ -49961,10 +49961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing URL. "
@@ -50161,10 +50161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing WORD. "
@@ -50361,10 +50361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'nonascii 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-nonascii-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-nonascii-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of NONASCII residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'nonascii 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'nonascii 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-nonascii-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of NONASCII residing withing WORDALPHAONLY. "
@@ -50561,10 +50561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing GREATERANGLEDNESTED. "
@@ -50761,10 +50761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing LESSERANGLEDNESTED. "
@@ -50961,10 +50961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing BUFFER. "
@@ -51161,10 +51161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing COMMENT. "
@@ -51361,10 +51361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing CSV. "
@@ -51561,10 +51561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing DATE. "
@@ -51761,10 +51761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing EMAIL. "
@@ -51961,10 +51961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing FILENAME. "
@@ -52161,10 +52161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing FILENAMENONDIRECTORY. "
@@ -52361,10 +52361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing FLOAT. "
@@ -52561,10 +52561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing FUNCTION. "
@@ -52761,10 +52761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing IP. "
@@ -52961,10 +52961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing ISBN. "
@@ -53161,10 +53161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing LINE. "
@@ -53361,10 +53361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing LIST. "
@@ -53561,10 +53561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing NAME. "
@@ -53761,10 +53761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing NUMBER. "
@@ -53961,10 +53961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing PAGE. "
@@ -54161,10 +54161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing PARAGRAPH. "
@@ -54361,10 +54361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing PHONE. "
@@ -54561,10 +54561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing REGION. "
@@ -54761,10 +54761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing SENTENCE. "
@@ -54961,10 +54961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing SEXP. "
@@ -55161,10 +55161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing SHSTRUCT. "
@@ -55361,10 +55361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing SYMBOL. "
@@ -55561,10 +55561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing URL. "
@@ -55761,10 +55761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing WORD. "
@@ -55961,10 +55961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'print 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-print-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-print-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PRINT residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'print 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'print 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-print-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PRINT residing withing WORDALPHAONLY. "
@@ -56161,10 +56161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing GREATERANGLEDNESTED. "
@@ -56361,10 +56361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing LESSERANGLEDNESTED. "
@@ -56561,10 +56561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing BUFFER. "
@@ -56761,10 +56761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing COMMENT. "
@@ -56961,10 +56961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing CSV. "
@@ -57161,10 +57161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing DATE. "
@@ -57361,10 +57361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing EMAIL. "
@@ -57561,10 +57561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing FILENAME. "
@@ -57761,10 +57761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing FILENAMENONDIRECTORY. "
@@ -57961,10 +57961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing FLOAT. "
@@ -58161,10 +58161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing FUNCTION. "
@@ -58361,10 +58361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing IP. "
@@ -58561,10 +58561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing ISBN. "
@@ -58761,10 +58761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing LINE. "
@@ -58961,10 +58961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing LIST. "
@@ -59161,10 +59161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing NAME. "
@@ -59361,10 +59361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing NUMBER. "
@@ -59561,10 +59561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing PAGE. "
@@ -59761,10 +59761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing PARAGRAPH. "
@@ -59961,10 +59961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing PHONE. "
@@ -60161,10 +60161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing REGION. "
@@ -60361,10 +60361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing SENTENCE. "
@@ -60561,10 +60561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing SEXP. "
@@ -60761,10 +60761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing SHSTRUCT. "
@@ -60961,10 +60961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing SYMBOL. "
@@ -61161,10 +61161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing URL. "
@@ -61361,10 +61361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing WORD. "
@@ -61561,10 +61561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'punct 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-punct-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-punct-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of PUNCT residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'punct 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'punct 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-punct-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of PUNCT residing withing WORDALPHAONLY. "
@@ -61761,10 +61761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing GREATERANGLEDNESTED. "
@@ -61961,10 +61961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing LESSERANGLEDNESTED. "
@@ -62161,10 +62161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing BUFFER. "
@@ -62361,10 +62361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing COMMENT. "
@@ -62561,10 +62561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing CSV. "
@@ -62761,10 +62761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing DATE. "
@@ -62961,10 +62961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing EMAIL. "
@@ -63161,10 +63161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing FILENAME. "
@@ -63361,10 +63361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing FILENAMENONDIRECTORY. "
@@ -63561,10 +63561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing FLOAT. "
@@ -63761,10 +63761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing FUNCTION. "
@@ -63961,10 +63961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing IP. "
@@ -64161,10 +64161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing ISBN. "
@@ -64361,10 +64361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing LINE. "
@@ -64561,10 +64561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing LIST. "
@@ -64761,10 +64761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing NAME. "
@@ -64961,10 +64961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing NUMBER. "
@@ -65161,10 +65161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing PAGE. "
@@ -65361,10 +65361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing PARAGRAPH. "
@@ -65561,10 +65561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing PHONE. "
@@ -65761,10 +65761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing REGION. "
@@ -65961,10 +65961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing SENTENCE. "
@@ -66161,10 +66161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing SEXP. "
@@ -66361,10 +66361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing SHSTRUCT. "
@@ -66561,10 +66561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing SYMBOL. "
@@ -66761,10 +66761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing URL. "
@@ -66961,10 +66961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing WORD. "
@@ -67161,10 +67161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'space 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-space-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-space-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of SPACE residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'space 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'space 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-space-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of SPACE residing withing WORDALPHAONLY. "
@@ -67361,10 +67361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing GREATERANGLEDNESTED. "
@@ -67561,10 +67561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing LESSERANGLEDNESTED. "
@@ -67761,10 +67761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing BUFFER. "
@@ -67961,10 +67961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing COMMENT. "
@@ -68161,10 +68161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing CSV. "
@@ -68361,10 +68361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing DATE. "
@@ -68561,10 +68561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing EMAIL. "
@@ -68761,10 +68761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing FILENAME. "
@@ -68961,10 +68961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing FILENAMENONDIRECTORY. "
@@ -69161,10 +69161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing FLOAT. "
@@ -69361,10 +69361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing FUNCTION. "
@@ -69561,10 +69561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing IP. "
@@ -69761,10 +69761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing ISBN. "
@@ -69961,10 +69961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing LINE. "
@@ -70161,10 +70161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing LIST. "
@@ -70361,10 +70361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing NAME. "
@@ -70561,10 +70561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing NUMBER. "
@@ -70761,10 +70761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing PAGE. "
@@ -70961,10 +70961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing PARAGRAPH. "
@@ -71161,10 +71161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing PHONE. "
@@ -71361,10 +71361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing REGION. "
@@ -71561,10 +71561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing SENTENCE. "
@@ -71761,10 +71761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing SEXP. "
@@ -71961,10 +71961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing SHSTRUCT. "
@@ -72161,10 +72161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing SYMBOL. "
@@ -72361,10 +72361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing URL. "
@@ -72561,10 +72561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing WORD. "
@@ -72761,10 +72761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'upper 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-upper-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-upper-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of UPPER residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'upper 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'upper 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-upper-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of UPPER residing withing WORDALPHAONLY. "
@@ -72961,10 +72961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'greateranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing GREATERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'greateranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'greateranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-greateranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing GREATERANGLEDNESTED. "
@@ -73161,10 +73161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'lesseranglednested 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing LESSERANGLEDNESTED. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'lesseranglednested 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'lesseranglednested 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-lesseranglednested-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing LESSERANGLEDNESTED. "
@@ -73361,10 +73361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'buffer 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-buffer-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing BUFFER. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'buffer 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'buffer 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-buffer-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing BUFFER. "
@@ -73561,10 +73561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'comment 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-comment-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing COMMENT. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'comment 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'comment 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-comment-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing COMMENT. "
@@ -73761,10 +73761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'csv 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-csv-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing CSV. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'csv 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'csv 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-csv-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing CSV. "
@@ -73961,10 +73961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'date 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-date-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing DATE. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'date 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'date 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-date-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing DATE. "
@@ -74161,10 +74161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'email 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-email-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing EMAIL. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'email 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'email 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-email-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing EMAIL. "
@@ -74361,10 +74361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'filename 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-filename-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing FILENAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'filename 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'filename 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-filename-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing FILENAME. "
@@ -74561,10 +74561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'filenamenondirectory 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing FILENAMENONDIRECTORY. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'filenamenondirectory 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'filenamenondirectory 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-filenamenondirectory-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing FILENAMENONDIRECTORY. "
@@ -74761,10 +74761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'float 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-float-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing FLOAT. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'float 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'float 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-float-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing FLOAT. "
@@ -74961,10 +74961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'function 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-function-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing FUNCTION. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'function 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'function 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-function-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing FUNCTION. "
@@ -75161,10 +75161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'ip 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-ip-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing IP. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'ip 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'ip 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-ip-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing IP. "
@@ -75361,10 +75361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'isbn 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-isbn-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing ISBN. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'isbn 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'isbn 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-isbn-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing ISBN. "
@@ -75561,10 +75561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'line 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-line-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing LINE. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'line 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'line 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-line-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing LINE. "
@@ -75761,10 +75761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'list 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-list-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing LIST. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'list 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'list 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-list-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing LIST. "
@@ -75961,10 +75961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'name 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-name-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing NAME. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'name 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'name 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-name-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing NAME. "
@@ -76161,10 +76161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'number 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-number-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing NUMBER. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'number 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'number 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-number-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing NUMBER. "
@@ -76361,10 +76361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'page 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-page-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing PAGE. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'page 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'page 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-page-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing PAGE. "
@@ -76561,10 +76561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'paragraph 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-paragraph-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing PARAGRAPH. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'paragraph 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'paragraph 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-paragraph-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing PARAGRAPH. "
@@ -76761,10 +76761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'phone 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-phone-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing PHONE. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'phone 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'phone 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-phone-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing PHONE. "
@@ -76961,10 +76961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'region 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-region-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-region-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing REGION. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'region 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-region-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing REGION. "
@@ -77161,10 +77161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'sentence 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-sentence-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing SENTENCE. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'sentence 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'sentence 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-sentence-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing SENTENCE. "
@@ -77361,10 +77361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'sexp 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-sexp-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing SEXP. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'sexp 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'sexp 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-sexp-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing SEXP. "
@@ -77561,10 +77561,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'shstruct 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-shstruct-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing SHSTRUCT. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'shstruct 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'shstruct 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-shstruct-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing SHSTRUCT. "
@@ -77761,10 +77761,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'symbol 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-symbol-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing SYMBOL. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'symbol 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'symbol 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-symbol-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing SYMBOL. "
@@ -77961,10 +77961,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'url 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-url-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing URL. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'url 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'url 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-url-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing URL. "
@@ -78161,10 +78161,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'word 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-word-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing WORD. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'word 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'word 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-word-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing WORD. "
@@ -78361,10 +78361,10 @@
   (interactive "*p")
   (ar-thing-in-thing 'xdigit 'wordalphaonly 'ar-th-kill arg))
 
-(defun ar-leftrightsinglequote-xdigit-in-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-xdigit-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LEFTRIGHTSINGLEQUOTE- at things class of XDIGIT residing withing WORDALPHAONLY. "
   (interactive "*p")
-  (ar-thing-in-thing 'xdigit 'wordalphaonly 'ar-th-leftrightsinglequote arg))
+  (ar-thing-in-thing 'xdigit 'wordalphaonly 'ar-th-curvedsinglequote arg))
 
 (defun ar-length-xdigit-in-wordalphaonly-atpt (&optional arg)
   "Employ actions of LENGTH- at things class of XDIGIT residing withing WORDALPHAONLY. "

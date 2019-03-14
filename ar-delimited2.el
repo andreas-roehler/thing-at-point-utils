@@ -138,15 +138,15 @@
   (interactive "*")
   (delimited2--intern 'greaterangle no-delimiters))
 
-(defun ar-delimited2leftrightsinglequote (&optional no-delimiters)
-  "Replace delimiters at point by leftrightsinglequotes. "
+(defun ar-delimited2curvedsinglequote (&optional no-delimiters)
+  "Replace delimiters at point by curvedsinglequotes. "
   (interactive "*")
-  (delimited2--intern 'leftrightsinglequote no-delimiters))
+  (delimited2--intern 'curvedsinglequote no-delimiters))
 
-(defun ar-delimited2leftrightsinglequote (&optional no-delimiters)
-  "Replace delimiters at point by leftrightsinglequotes. "
+(defun ar-delimited2curvedsinglequote (&optional no-delimiters)
+  "Replace delimiters at point by curvedsinglequotes. "
   (interactive "*")
-  (delimited2--intern 'leftrightsinglequote no-delimiters))
+  (delimited2--intern 'curvedsinglequote no-delimiters))
 
 (defun ar-delimited2parentize (&optional no-delimiters)
   "Replace delimiters at point by parentizes. "
