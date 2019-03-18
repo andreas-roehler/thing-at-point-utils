@@ -168,6 +168,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'beginendquote no-delimiters))
 
+(defun ar-slashparen-beginendquote-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around BEGINENDQUOTE at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'beginendquote no-delimiters))
+
 (defun ar-comment-beginendquote-atpt (&optional no-delimiters check)
   "Comments BEGINENDQUOTE at point if any. "
   (interactive "*P")
@@ -403,6 +408,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around BLOK at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'blok no-delimiters))
+
+(defun ar-slashparen-blok-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around BLOK at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'blok no-delimiters))
 
 (defun ar-slashparen-blok-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around BLOK at point if any. "
@@ -650,6 +660,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'doublebackslashed no-delimiters))
 
+(defun ar-slashparen-doublebackslashed-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around DOUBLEBACKSLASHED at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'doublebackslashed no-delimiters))
+
 (defun ar-comment-doublebackslashed-atpt (&optional no-delimiters check)
   "Comments DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
@@ -885,6 +900,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doublebackticked no-delimiters))
+
+(defun ar-slashparen-doublebackticked-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around DOUBLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'doublebackticked no-delimiters))
 
 (defun ar-slashparen-doublebackticked-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLEBACKTICKED at point if any. "
@@ -1132,6 +1152,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'doublebackslashedparen no-delimiters))
 
+(defun ar-slashparen-doublebackslashedparen-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'doublebackslashedparen no-delimiters))
+
 (defun ar-comment-doublebackslashedparen-atpt (&optional no-delimiters check)
   "Comments DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
@@ -1367,6 +1392,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLESLASHED at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doubleslashed no-delimiters))
+
+(defun ar-slashparen-doubleslashed-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around DOUBLESLASHED at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'doubleslashed no-delimiters))
 
 (defun ar-slashparen-doubleslashed-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around DOUBLESLASHED at point if any. "
@@ -1614,6 +1644,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'doubleslashedparen no-delimiters))
 
+(defun ar-slashparen-doubleslashedparen-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around DOUBLESLASHEDPAREN at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'doubleslashedparen no-delimiters))
+
 (defun ar-comment-doubleslashedparen-atpt (&optional no-delimiters check)
   "Comments DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
@@ -1849,6 +1884,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around MARKUP at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'markup no-delimiters))
+
+(defun ar-slashparen-markup-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around MARKUP at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'markup no-delimiters))
 
 (defun ar-slashparen-markup-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around MARKUP at point if any. "
@@ -2096,6 +2136,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'mldata no-delimiters))
 
+(defun ar-slashparen-mldata-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around MLDATA at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'mldata no-delimiters))
+
 (defun ar-comment-mldata-atpt (&optional no-delimiters check)
   "Comments MLDATA at point if any. "
   (interactive "*P")
@@ -2331,6 +2376,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around MLATTRIBUT at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'mlattribut no-delimiters))
+
+(defun ar-slashparen-mlattribut-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around MLATTRIBUT at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'mlattribut no-delimiters))
 
 (defun ar-slashparen-mlattribut-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around MLATTRIBUT at point if any. "
@@ -2578,6 +2628,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'mltag no-delimiters))
 
+(defun ar-slashparen-mltag-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around MLTAG at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'mltag no-delimiters))
+
 (defun ar-comment-mltag-atpt (&optional no-delimiters check)
   "Comments MLTAG at point if any. "
   (interactive "*P")
@@ -2813,6 +2868,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around SLASHEDPAREN at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'slashedparen no-delimiters))
+
+(defun ar-slashparen-slashedparen-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around SLASHEDPAREN at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'slashedparen no-delimiters))
 
 (defun ar-slashparen-slashedparen-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around SLASHEDPAREN at point if any. "
@@ -3060,6 +3120,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'tabledata no-delimiters))
 
+(defun ar-slashparen-tabledata-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around TABLEDATA at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'tabledata no-delimiters))
+
 (defun ar-comment-tabledata-atpt (&optional no-delimiters check)
   "Comments TABLEDATA at point if any. "
   (interactive "*P")
@@ -3301,6 +3366,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-slashparen 'xslstylesheet no-delimiters))
 
+(defun ar-slashparen-xslstylesheet-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around XSLSTYLESHEET at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'xslstylesheet no-delimiters))
+
 (defun ar-comment-xslstylesheet-atpt (&optional no-delimiters check)
   "Comments XSLSTYLESHEET at point if any. "
   (interactive "*P")
@@ -3536,6 +3606,11 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around XSLTEMPLATE at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'xsltemplate no-delimiters))
+
+(defun ar-slashparen-xsltemplate-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around XSLTEMPLATE at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'xsltemplate no-delimiters))
 
 (defun ar-slashparen-xsltemplate-atpt (&optional no-delimiters check)
   "Provides slashed parentheses around XSLTEMPLATE at point if any. "
