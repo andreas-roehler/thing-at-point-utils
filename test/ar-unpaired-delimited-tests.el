@@ -183,5 +183,16 @@
       (should (< 4 (length erg))))))
 
 
+(ert-deftest piped-unpaired-delimited-test ()
+  (ar-test-with-temp-buffer "|
+     ;;; | | Writer 'etc. \" |"
+      (text-mode)
+    (beginning-of-line)
+    (let ((erg (ar-delimited-atpt)))
+      (should (< 7 (length erg))))
+    (goto-char 22)
+    (let ((erg (ar-delimited-atpt)))
+      (should (< 8 (length erg))))))
+
 (provide 'ar-unpaired-delimited-tests)
 ;; ar-unpaired-delimited-tests.el ends here

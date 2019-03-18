@@ -76,6 +76,11 @@
    (interactive "*") 
    (ar-th-trim 'hyphened))
 
+(defun ar-trim-piped-atpt ()
+  "Returns beginning position of ‘piped’ if succesful."
+   (interactive "*") 
+   (ar-th-trim 'piped))
+
 (defun ar-trim-singlequoted-atpt ()
   "Returns beginning position of ‘singlequoted’ if succesful."
    (interactive "*") 

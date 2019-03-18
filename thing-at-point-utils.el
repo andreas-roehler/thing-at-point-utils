@@ -1770,6 +1770,151 @@
   (interactive "*P")
   (ar-th-hyphen 'wordalphaonly arg arg))
 
+(defun ar-pipe-greateranglednested-atpt (&optional arg)
+  "Pipe GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-pipe 'greateranglednested arg arg))
+
+(defun ar-pipe-lesseranglednested-atpt (&optional arg)
+  "Pipe LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-pipe 'lesseranglednested arg arg))
+
+(defun ar-pipe-buffer-atpt (&optional arg)
+  "Pipe BUFFER at point."
+  (interactive "*P")
+  (ar-th-pipe 'buffer arg arg))
+
+(defun ar-pipe-char-atpt (&optional arg)
+  "Pipe CHAR at point."
+  (interactive "*P")
+  (ar-th-pipe 'char arg arg))
+
+(defun ar-pipe-comment-atpt (&optional arg)
+  "Pipe COMMENT at point."
+  (interactive "*P")
+  (ar-th-pipe 'comment arg arg))
+
+(defun ar-pipe-csv-atpt (&optional arg)
+  "Pipe CSV at point."
+  (interactive "*P")
+  (ar-th-pipe 'csv arg arg))
+
+(defun ar-pipe-date-atpt (&optional arg)
+  "Pipe DATE at point."
+  (interactive "*P")
+  (ar-th-pipe 'date arg arg))
+
+(defun ar-pipe-email-atpt (&optional arg)
+  "Pipe EMAIL at point."
+  (interactive "*P")
+  (ar-th-pipe 'email arg arg))
+
+(defun ar-pipe-filename-atpt (&optional arg)
+  "Pipe FILENAME at point."
+  (interactive "*P")
+  (ar-th-pipe 'filename arg arg))
+
+(defun ar-pipe-filenamenondirectory-atpt (&optional arg)
+  "Pipe FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-pipe 'filenamenondirectory arg arg))
+
+(defun ar-pipe-float-atpt (&optional arg)
+  "Pipe FLOAT at point."
+  (interactive "*P")
+  (ar-th-pipe 'float arg arg))
+
+(defun ar-pipe-function-atpt (&optional arg)
+  "Pipe FUNCTION at point."
+  (interactive "*P")
+  (ar-th-pipe 'function arg arg))
+
+(defun ar-pipe-ip-atpt (&optional arg)
+  "Pipe IP at point."
+  (interactive "*P")
+  (ar-th-pipe 'ip arg arg))
+
+(defun ar-pipe-isbn-atpt (&optional arg)
+  "Pipe ISBN at point."
+  (interactive "*P")
+  (ar-th-pipe 'isbn arg arg))
+
+(defun ar-pipe-line-atpt (&optional arg)
+  "Pipe LINE at point."
+  (interactive "*P")
+  (ar-th-pipe 'line arg arg))
+
+(defun ar-pipe-list-atpt (&optional arg)
+  "Pipe LIST at point."
+  (interactive "*P")
+  (ar-th-pipe 'list arg arg))
+
+(defun ar-pipe-name-atpt (&optional arg)
+  "Pipe NAME at point."
+  (interactive "*P")
+  (ar-th-pipe 'name arg arg))
+
+(defun ar-pipe-number-atpt (&optional arg)
+  "Pipe NUMBER at point."
+  (interactive "*P")
+  (ar-th-pipe 'number arg arg))
+
+(defun ar-pipe-page-atpt (&optional arg)
+  "Pipe PAGE at point."
+  (interactive "*P")
+  (ar-th-pipe 'page arg arg))
+
+(defun ar-pipe-paragraph-atpt (&optional arg)
+  "Pipe PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-pipe 'paragraph arg arg))
+
+(defun ar-pipe-phone-atpt (&optional arg)
+  "Pipe PHONE at point."
+  (interactive "*P")
+  (ar-th-pipe 'phone arg arg))
+
+(defun ar-pipe-region-atpt (&optional arg)
+  "Pipe REGION at point."
+  (interactive "*P")
+  (ar-th-pipe 'region arg arg))
+
+(defun ar-pipe-sentence-atpt (&optional arg)
+  "Pipe SENTENCE at point."
+  (interactive "*P")
+  (ar-th-pipe 'sentence arg arg))
+
+(defun ar-pipe-sexp-atpt (&optional arg)
+  "Pipe SEXP at point."
+  (interactive "*P")
+  (ar-th-pipe 'sexp arg arg))
+
+(defun ar-pipe-shstruct-atpt (&optional arg)
+  "Pipe SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-pipe 'shstruct arg arg))
+
+(defun ar-pipe-symbol-atpt (&optional arg)
+  "Pipe SYMBOL at point."
+  (interactive "*P")
+  (ar-th-pipe 'symbol arg arg))
+
+(defun ar-pipe-url-atpt (&optional arg)
+  "Pipe URL at point."
+  (interactive "*P")
+  (ar-th-pipe 'url arg arg))
+
+(defun ar-pipe-word-atpt (&optional arg)
+  "Pipe WORD at point."
+  (interactive "*P")
+  (ar-th-pipe 'word arg arg))
+
+(defun ar-pipe-wordalphaonly-atpt (&optional arg)
+  "Pipe WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-pipe 'wordalphaonly arg arg))
+
 (defun ar-singlequote-greateranglednested-atpt (&optional arg)
   "Singlequote GREATERANGLEDNESTED at point."
   (interactive "*P")
@@ -4061,6 +4206,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "{" "}" arg arg)))
 
+(defun ar-brace-piped-atpt (&optional arg)
+  "Brace PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "{" "}" arg arg)))
+
 (defun ar-brace-singlequoted-atpt (&optional arg)
   "Brace SINGLEQUOTED at point ARG times."
   (interactive "*P")
@@ -4150,6 +4301,12 @@
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "[" "]" arg arg)))
+
+(defun ar-bracket-piped-atpt (&optional arg)
+  "Bracket PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "[" "]" arg arg)))
 
 (defun ar-bracket-singlequoted-atpt (&optional arg)
   "Bracket SINGLEQUOTED at point ARG times."
@@ -4241,6 +4398,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "<" ">" arg arg)))
 
+(defun ar-lesserangle-piped-atpt (&optional arg)
+  "Lesserangle PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "<" ">" arg arg)))
+
 (defun ar-lesserangle-singlequoted-atpt (&optional arg)
   "Lesserangle SINGLEQUOTED at point ARG times."
   (interactive "*P")
@@ -4330,6 +4493,12 @@
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened ">" "<" arg arg)))
+
+(defun ar-greaterangle-piped-atpt (&optional arg)
+  "Greaterangle PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped ">" "<" arg arg)))
 
 (defun ar-greaterangle-singlequoted-atpt (&optional arg)
   "Greaterangle SINGLEQUOTED at point ARG times."
@@ -4421,6 +4590,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "‘" "’" arg arg)))
 
+(defun ar-curvedsinglequote-piped-atpt (&optional arg)
+  "Curvedsinglequote PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "‘" "’" arg arg)))
+
 (defun ar-curvedsinglequote-singlequoted-atpt (&optional arg)
   "Curvedsinglequote SINGLEQUOTED at point ARG times."
   (interactive "*P")
@@ -4511,6 +4686,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "“" "”" arg arg)))
 
+(defun ar-curveddoublequote-piped-atpt (&optional arg)
+  "Curveddoublequote PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "“" "”" arg arg)))
+
 (defun ar-curveddoublequote-singlequoted-atpt (&optional arg)
   "Curveddoublequote SINGLEQUOTED at point ARG times."
   (interactive "*P")
@@ -4600,6 +4781,12 @@
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'hyphened "(" ")" arg arg)))
+
+(defun ar-parentize-piped-atpt (&optional arg)
+  "Parentize PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "(" ")" arg arg)))
 
 (defun ar-parentize-singlequoted-atpt (&optional arg)
   "Parentize SINGLEQUOTED at point ARG times."
@@ -9357,6 +9544,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'alnum arg))
 
+(defalias 'ar-pipe-alnum-atpt 'ar-alnum-pipe-atpt)
+(defun ar-alnum-pipe-atpt (&optional arg)
+  "Returns ALNUM at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'alnum arg))
+
 (defalias 'ar-singlequote-alnum-atpt 'ar-alnum-singlequote-atpt)
 (defun ar-alnum-singlequote-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
@@ -9470,6 +9663,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'alpha arg))
+
+(defalias 'ar-pipe-alpha-atpt 'ar-alpha-pipe-atpt)
+(defun ar-alpha-pipe-atpt (&optional arg)
+  "Returns ALPHA at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'alpha arg))
 
 (defalias 'ar-singlequote-alpha-atpt 'ar-alpha-singlequote-atpt)
 (defun ar-alpha-singlequote-atpt (&optional arg)
@@ -9585,6 +9784,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'ascii arg))
 
+(defalias 'ar-pipe-ascii-atpt 'ar-ascii-pipe-atpt)
+(defun ar-ascii-pipe-atpt (&optional arg)
+  "Returns ASCII at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'ascii arg))
+
 (defalias 'ar-singlequote-ascii-atpt 'ar-ascii-singlequote-atpt)
 (defun ar-ascii-singlequote-atpt (&optional arg)
   "Returns ASCII at point if any, nil otherwise "
@@ -9698,6 +9903,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'blank arg))
+
+(defalias 'ar-pipe-blank-atpt 'ar-blank-pipe-atpt)
+(defun ar-blank-pipe-atpt (&optional arg)
+  "Returns BLANK at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'blank arg))
 
 (defalias 'ar-singlequote-blank-atpt 'ar-blank-singlequote-atpt)
 (defun ar-blank-singlequote-atpt (&optional arg)
@@ -9813,6 +10024,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'cntrl arg))
 
+(defalias 'ar-pipe-cntrl-atpt 'ar-cntrl-pipe-atpt)
+(defun ar-cntrl-pipe-atpt (&optional arg)
+  "Returns CNTRL at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'cntrl arg))
+
 (defalias 'ar-singlequote-cntrl-atpt 'ar-cntrl-singlequote-atpt)
 (defun ar-cntrl-singlequote-atpt (&optional arg)
   "Returns CNTRL at point if any, nil otherwise "
@@ -9926,6 +10143,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'digit arg))
+
+(defalias 'ar-pipe-digit-atpt 'ar-digit-pipe-atpt)
+(defun ar-digit-pipe-atpt (&optional arg)
+  "Returns DIGIT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'digit arg))
 
 (defalias 'ar-singlequote-digit-atpt 'ar-digit-singlequote-atpt)
 (defun ar-digit-singlequote-atpt (&optional arg)
@@ -10041,6 +10264,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'graph arg))
 
+(defalias 'ar-pipe-graph-atpt 'ar-graph-pipe-atpt)
+(defun ar-graph-pipe-atpt (&optional arg)
+  "Returns GRAPH at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'graph arg))
+
 (defalias 'ar-singlequote-graph-atpt 'ar-graph-singlequote-atpt)
 (defun ar-graph-singlequote-atpt (&optional arg)
   "Returns GRAPH at point if any, nil otherwise "
@@ -10154,6 +10383,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'lower arg))
+
+(defalias 'ar-pipe-lower-atpt 'ar-lower-pipe-atpt)
+(defun ar-lower-pipe-atpt (&optional arg)
+  "Returns LOWER at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'lower arg))
 
 (defalias 'ar-singlequote-lower-atpt 'ar-lower-singlequote-atpt)
 (defun ar-lower-singlequote-atpt (&optional arg)
@@ -10269,6 +10504,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'nonascii arg))
 
+(defalias 'ar-pipe-nonascii-atpt 'ar-nonascii-pipe-atpt)
+(defun ar-nonascii-pipe-atpt (&optional arg)
+  "Returns NONASCII at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'nonascii arg))
+
 (defalias 'ar-singlequote-nonascii-atpt 'ar-nonascii-singlequote-atpt)
 (defun ar-nonascii-singlequote-atpt (&optional arg)
   "Returns NONASCII at point if any, nil otherwise "
@@ -10382,6 +10623,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'print arg))
+
+(defalias 'ar-pipe-print-atpt 'ar-print-pipe-atpt)
+(defun ar-print-pipe-atpt (&optional arg)
+  "Returns PRINT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'print arg))
 
 (defalias 'ar-singlequote-print-atpt 'ar-print-singlequote-atpt)
 (defun ar-print-singlequote-atpt (&optional arg)
@@ -10497,6 +10744,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'punct arg))
 
+(defalias 'ar-pipe-punct-atpt 'ar-punct-pipe-atpt)
+(defun ar-punct-pipe-atpt (&optional arg)
+  "Returns PUNCT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'punct arg))
+
 (defalias 'ar-singlequote-punct-atpt 'ar-punct-singlequote-atpt)
 (defun ar-punct-singlequote-atpt (&optional arg)
   "Returns PUNCT at point if any, nil otherwise "
@@ -10610,6 +10863,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'space arg))
+
+(defalias 'ar-pipe-space-atpt 'ar-space-pipe-atpt)
+(defun ar-space-pipe-atpt (&optional arg)
+  "Returns SPACE at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'space arg))
 
 (defalias 'ar-singlequote-space-atpt 'ar-space-singlequote-atpt)
 (defun ar-space-singlequote-atpt (&optional arg)
@@ -10725,6 +10984,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'upper arg))
 
+(defalias 'ar-pipe-upper-atpt 'ar-upper-pipe-atpt)
+(defun ar-upper-pipe-atpt (&optional arg)
+  "Returns UPPER at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'upper arg))
+
 (defalias 'ar-singlequote-upper-atpt 'ar-upper-singlequote-atpt)
 (defun ar-upper-singlequote-atpt (&optional arg)
   "Returns UPPER at point if any, nil otherwise "
@@ -10838,6 +11103,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'xdigit arg))
+
+(defalias 'ar-pipe-xdigit-atpt 'ar-xdigit-pipe-atpt)
+(defun ar-xdigit-pipe-atpt (&optional arg)
+  "Returns XDIGIT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'xdigit arg))
 
 (defalias 'ar-singlequote-xdigit-atpt 'ar-xdigit-singlequote-atpt)
 (defun ar-xdigit-singlequote-atpt (&optional arg)
@@ -10956,6 +11227,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'braced arg))
 
+(defalias 'ar-pipe-braced-atpt 'ar-braced-pipe-atpt)
+(defun ar-braced-pipe-atpt (&optional arg)
+  "Returns BRACED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'braced arg))
+
 (defalias 'ar-singlequote-braced-atpt 'ar-braced-singlequote-atpt)
 (defun ar-braced-singlequote-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
@@ -11069,6 +11346,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns BRACKETED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'bracketed arg))
+
+(defalias 'ar-pipe-bracketed-atpt 'ar-bracketed-pipe-atpt)
+(defun ar-bracketed-pipe-atpt (&optional arg)
+  "Returns BRACKETED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'bracketed arg))
 
 (defalias 'ar-singlequote-bracketed-atpt 'ar-bracketed-singlequote-atpt)
 (defun ar-bracketed-singlequote-atpt (&optional arg)
@@ -11184,6 +11467,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'lesserangled arg))
 
+(defalias 'ar-pipe-lesserangled-atpt 'ar-lesserangled-pipe-atpt)
+(defun ar-lesserangled-pipe-atpt (&optional arg)
+  "Returns LESSERANGLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'lesserangled arg))
+
 (defalias 'ar-singlequote-lesserangled-atpt 'ar-lesserangled-singlequote-atpt)
 (defun ar-lesserangled-singlequote-atpt (&optional arg)
   "Returns LESSERANGLED at point if any, nil otherwise "
@@ -11297,6 +11586,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns GREATERANGLED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'greaterangled arg))
+
+(defalias 'ar-pipe-greaterangled-atpt 'ar-greaterangled-pipe-atpt)
+(defun ar-greaterangled-pipe-atpt (&optional arg)
+  "Returns GREATERANGLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'greaterangled arg))
 
 (defalias 'ar-singlequote-greaterangled-atpt 'ar-greaterangled-singlequote-atpt)
 (defun ar-greaterangled-singlequote-atpt (&optional arg)
@@ -11412,6 +11707,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'curvedsinglequoted arg))
 
+(defalias 'ar-pipe-curvedsinglequoted-atpt 'ar-curvedsinglequoted-pipe-atpt)
+(defun ar-curvedsinglequoted-pipe-atpt (&optional arg)
+  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'curvedsinglequoted arg))
+
 (defalias 'ar-singlequote-curvedsinglequoted-atpt 'ar-curvedsinglequoted-singlequote-atpt)
 (defun ar-curvedsinglequoted-singlequote-atpt (&optional arg)
   "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
@@ -11526,6 +11827,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-hyphen 'curveddoublequoted arg))
 
+(defalias 'ar-pipe-curveddoublequoted-atpt 'ar-curveddoublequoted-pipe-atpt)
+(defun ar-curveddoublequoted-pipe-atpt (&optional arg)
+  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'curveddoublequoted arg))
+
 (defalias 'ar-singlequote-curveddoublequoted-atpt 'ar-curveddoublequoted-singlequote-atpt)
 (defun ar-curveddoublequoted-singlequote-atpt (&optional arg)
   "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
@@ -11639,6 +11946,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-hyphen 'parentized arg))
+
+(defalias 'ar-pipe-parentized-atpt 'ar-parentized-pipe-atpt)
+(defun ar-parentized-pipe-atpt (&optional arg)
+  "Returns PARENTIZED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'parentized arg))
 
 (defalias 'ar-singlequote-parentized-atpt 'ar-parentized-singlequote-atpt)
 (defun ar-parentized-singlequote-atpt (&optional arg)
@@ -21305,6 +21618,16 @@ See doku from `sort-subr', for details.
   (interactive "P")
   (ar-th-base-copy-or 'hyphen no-delimiters check))
 
+(defun ar-pipe-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with pipe(s).
+
+  Otherwise copy pipe(ed) at point
+  With NO-DELIMITERS, copy pipe(ed) without delimiters
+  With numerical argument 2 trim pipe
+  With negative argument kill pipe(ed) at point "
+  (interactive "P")
+  (ar-th-base-copy-or 'pipe no-delimiters check))
+
 (defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with singlequote(s).
 
@@ -21494,6 +21817,16 @@ See doku from `sort-subr', for details.
   With negative argument kill hyphen(ed) at point "
   (interactive "P")
   (ar-th-base-copy-or 'hyphen no-delimiters check))
+
+(defun ar-pipe-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with pipe(s).
+
+  Otherwise copy pipe(ed) at point
+  With NO-DELIMITERS, copy pipe(ed) without delimiters
+  With numerical argument 2 trim pipe
+  With negative argument kill pipe(ed) at point "
+  (interactive "P")
+  (ar-th-base-copy-or 'pipe no-delimiters check))
 
 (defun ar-singlequote-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with singlequote(s).

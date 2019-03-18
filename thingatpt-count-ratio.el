@@ -8494,6 +8494,118 @@
   (ar-th-ratio-base 'parentized 'hyphened beg end t))
 
 
+(defun ar-count-braced-in-piped-atpt (&optional beg end) 
+"Counts matches of braced in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'braced 'piped beg end nil))
+
+(defun ar-count-braced-in-piped-until-point (&optional beg end) 
+"Counts matches of braced in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'braced 'piped beg (point) nil))
+
+(defun ar-ratio-braced-in-piped-atpt (&optional beg end) 
+"Relation of braced in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'braced 'piped beg end t))
+
+
+(defun ar-count-bracketed-in-piped-atpt (&optional beg end) 
+"Counts matches of bracketed in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'bracketed 'piped beg end nil))
+
+(defun ar-count-bracketed-in-piped-until-point (&optional beg end) 
+"Counts matches of bracketed in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'bracketed 'piped beg (point) nil))
+
+(defun ar-ratio-bracketed-in-piped-atpt (&optional beg end) 
+"Relation of bracketed in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'bracketed 'piped beg end t))
+
+
+(defun ar-count-lesserangled-in-piped-atpt (&optional beg end) 
+"Counts matches of lesserangled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lesserangled 'piped beg end nil))
+
+(defun ar-count-lesserangled-in-piped-until-point (&optional beg end) 
+"Counts matches of lesserangled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lesserangled 'piped beg (point) nil))
+
+(defun ar-ratio-lesserangled-in-piped-atpt (&optional beg end) 
+"Relation of lesserangled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lesserangled 'piped beg end t))
+
+
+(defun ar-count-greaterangled-in-piped-atpt (&optional beg end) 
+"Counts matches of greaterangled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'greaterangled 'piped beg end nil))
+
+(defun ar-count-greaterangled-in-piped-until-point (&optional beg end) 
+"Counts matches of greaterangled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'greaterangled 'piped beg (point) nil))
+
+(defun ar-ratio-greaterangled-in-piped-atpt (&optional beg end) 
+"Relation of greaterangled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'greaterangled 'piped beg end t))
+
+
+(defun ar-count-curvedsinglequoted-in-piped-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curvedsinglequoted 'piped beg end nil))
+
+(defun ar-count-curvedsinglequoted-in-piped-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curvedsinglequoted 'piped beg (point) nil))
+
+(defun ar-ratio-curvedsinglequoted-in-piped-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curvedsinglequoted 'piped beg end t))
+
+
+(defun ar-count-curveddoublequoted-in-piped-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curveddoublequoted 'piped beg end nil))
+
+(defun ar-count-curveddoublequoted-in-piped-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curveddoublequoted 'piped beg (point) nil))
+
+(defun ar-ratio-curveddoublequoted-in-piped-atpt (&optional beg end) 
+"Relation of curveddoublequoted in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curveddoublequoted 'piped beg end t))
+
+
+(defun ar-count-parentized-in-piped-atpt (&optional beg end) 
+"Counts matches of parentized in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'parentized 'piped beg end nil))
+
+(defun ar-count-parentized-in-piped-until-point (&optional beg end) 
+"Counts matches of parentized in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'parentized 'piped beg (point) nil))
+
+(defun ar-ratio-parentized-in-piped-atpt (&optional beg end) 
+"Relation of parentized in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'parentized 'piped beg end t))
+
+
 (defun ar-count-braced-in-singlequoted-atpt (&optional beg end) 
 "Counts matches of braced in singlequoted if useful, returns nil otherwise "
   (interactive "p")
@@ -9315,6 +9427,22 @@
   (ar-th-ratio-base 'hyphened 'braced beg end t))
 
 
+(defun ar-count-piped-in-braced-atpt (&optional beg end) 
+"Counts matches of piped in braced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'braced beg end nil))
+
+(defun ar-count-piped-in-braced-until-point (&optional beg end) 
+"Counts matches of piped in braced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'braced beg (point) nil))
+
+(defun ar-ratio-piped-in-braced-atpt (&optional beg end) 
+"Relation of piped in braced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'braced beg end t))
+
+
 (defun ar-count-singlequoted-in-braced-atpt (&optional beg end) 
 "Counts matches of singlequoted in braced if useful, returns nil otherwise "
   (interactive "p")
@@ -9553,6 +9681,22 @@
 "Relation of hyphened in bracketed if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'hyphened 'bracketed beg end t))
+
+
+(defun ar-count-piped-in-bracketed-atpt (&optional beg end) 
+"Counts matches of piped in bracketed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'bracketed beg end nil))
+
+(defun ar-count-piped-in-bracketed-until-point (&optional beg end) 
+"Counts matches of piped in bracketed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'bracketed beg (point) nil))
+
+(defun ar-ratio-piped-in-bracketed-atpt (&optional beg end) 
+"Relation of piped in bracketed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'bracketed beg end t))
 
 
 (defun ar-count-singlequoted-in-bracketed-atpt (&optional beg end) 
@@ -9795,6 +9939,22 @@
   (ar-th-ratio-base 'hyphened 'lesserangled beg end t))
 
 
+(defun ar-count-piped-in-lesserangled-atpt (&optional beg end) 
+"Counts matches of piped in lesserangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'lesserangled beg end nil))
+
+(defun ar-count-piped-in-lesserangled-until-point (&optional beg end) 
+"Counts matches of piped in lesserangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'lesserangled beg (point) nil))
+
+(defun ar-ratio-piped-in-lesserangled-atpt (&optional beg end) 
+"Relation of piped in lesserangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'lesserangled beg end t))
+
+
 (defun ar-count-singlequoted-in-lesserangled-atpt (&optional beg end) 
 "Counts matches of singlequoted in lesserangled if useful, returns nil otherwise "
   (interactive "p")
@@ -10033,6 +10193,22 @@
 "Relation of hyphened in greaterangled if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'hyphened 'greaterangled beg end t))
+
+
+(defun ar-count-piped-in-greaterangled-atpt (&optional beg end) 
+"Counts matches of piped in greaterangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'greaterangled beg end nil))
+
+(defun ar-count-piped-in-greaterangled-until-point (&optional beg end) 
+"Counts matches of piped in greaterangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'greaterangled beg (point) nil))
+
+(defun ar-ratio-piped-in-greaterangled-atpt (&optional beg end) 
+"Relation of piped in greaterangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'greaterangled beg end t))
 
 
 (defun ar-count-singlequoted-in-greaterangled-atpt (&optional beg end) 
@@ -10275,6 +10451,22 @@
   (ar-th-ratio-base 'hyphened 'curvedsinglequoted beg end t))
 
 
+(defun ar-count-piped-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of piped in curvedsinglequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'curvedsinglequoted beg end nil))
+
+(defun ar-count-piped-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of piped in curvedsinglequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'curvedsinglequoted beg (point) nil))
+
+(defun ar-ratio-piped-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of piped in curvedsinglequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'curvedsinglequoted beg end t))
+
+
 (defun ar-count-singlequoted-in-curvedsinglequoted-atpt (&optional beg end) 
 "Counts matches of singlequoted in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
@@ -10515,6 +10707,22 @@
   (ar-th-ratio-base 'hyphened 'curveddoublequoted beg end t))
 
 
+(defun ar-count-piped-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of piped in curveddoublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'curveddoublequoted beg end nil))
+
+(defun ar-count-piped-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of piped in curveddoublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'curveddoublequoted beg (point) nil))
+
+(defun ar-ratio-piped-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of piped in curveddoublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'curveddoublequoted beg end t))
+
+
 (defun ar-count-singlequoted-in-curveddoublequoted-atpt (&optional beg end) 
 "Counts matches of singlequoted in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
@@ -10753,6 +10961,22 @@
 "Relation of hyphened in parentized if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'hyphened 'parentized beg end t))
+
+
+(defun ar-count-piped-in-parentized-atpt (&optional beg end) 
+"Counts matches of piped in parentized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'parentized beg end nil))
+
+(defun ar-count-piped-in-parentized-until-point (&optional beg end) 
+"Counts matches of piped in parentized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'parentized beg (point) nil))
+
+(defun ar-ratio-piped-in-parentized-atpt (&optional beg end) 
+"Relation of piped in parentized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'parentized beg end t))
 
 
 (defun ar-count-singlequoted-in-parentized-atpt (&optional beg end) 
