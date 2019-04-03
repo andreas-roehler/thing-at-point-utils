@@ -445,5 +445,14 @@ return wwrap"
     (ar-trim-delimited-atpt)
     (should (eq 3 (length (ar-graph-atpt))))))
 
+
+(ert-deftest ar-delimited-test-yqgUcN ()
+  (ar-test-with-elisp-buffer
+      "((use-region-p)
+ (region-beginning))"
+    (goto-char (point-max))
+    (search-backward "us")
+    (should (< (length (ar-delimited-atpt)) 30))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
