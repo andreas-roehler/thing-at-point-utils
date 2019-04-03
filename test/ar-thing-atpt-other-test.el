@@ -437,5 +437,13 @@ return wwrap"
     (ar-hide-delimited-atpt)
     (skip-chars-backward "^(")))
 
+(ert-deftest ar-trim-delimited-test-yqgUcN ()
+  (ar-test-with-elisp-buffer
+      "sort2 :: [Int]"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-trim-delimited-atpt)
+    (should (eq 3 (length (ar-graph-atpt))))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
