@@ -454,5 +454,11 @@ return wwrap"
     (search-backward "us")
     (should (< (length (ar-delimited-atpt)) 30))))
 
+(ert-deftest ar-regexp-atpt-test-yqgUcN ()
+  (ar-test-with-elisp-buffer
+      "((use-region-p)"
+    (search-backward "io")
+    (should (string= "region" (ar-regexp-atpt "[a-z]+")))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
