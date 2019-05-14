@@ -458,7 +458,8 @@ return wwrap"
   (ar-test-with-elisp-buffer
       "((use-region-p)"
     (search-backward "io")
-    (should (string= "region" (ar-regexp-atpt "[a-z]+")))))
+    (should (ar-regexp-atpt "[a-z]+"))
+    (should (string= "region" (match-string-no-properties 0)))))
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
