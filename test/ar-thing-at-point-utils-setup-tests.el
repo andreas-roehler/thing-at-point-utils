@@ -117,12 +117,6 @@ BODY is code to be executed within the temp buffer.  Point is
 	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
-
-(defvar ar-debug-p nil
-  "Avoid error")
-
-;; (setq ar-debug-p t)
-
 (defvar py-kugel-text
 "class kugel(object):
     zeit = time.strftime('%Y%m%d--%H-%M-%S')
@@ -326,6 +320,18 @@ BODY is code to be executed within the temp buffer.  Point is
 	     (font-lock-fontify-region (point-min) (point-max)))
        ,@body)
      (sit-for 0.1)))
+
+(defmacro ar-test-with-insert-function-elisp (function &rest body)
+  "Create temp buffer in `emacs-lisp-mode' inserting CONTENTS.
+BODY is code to be executed within the temp buffer.  Point is
+ at the end of buffer."
+  `(with-temp-buffer
+     (let (hs-minor-mode thing-copy-region)
+       (emacs-lisp-mode)
+       ,function
+       (when ar-switch-p
+	 (switch-to-buffer (current-buffer)))
+       ,@body)))
 
 (defmacro py-test-with-temp-buffer (contents &rest body)
   "Create temp buffer in `python-mode' inserting CONTENTS.

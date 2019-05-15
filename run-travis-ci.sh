@@ -163,11 +163,12 @@ if [ $ORT -eq 0 ]; then
     cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"
     cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
-    cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"
-    cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
-
+    cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"
+    cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
+    echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD"
+    cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD
     hier
     echo "Lade \$DIR6 und \$DIR7"
 else
