@@ -480,18 +480,26 @@ return wwrap"
 (ert-deftest ar-regexp-no-match-atpt-test-l43x6p ()
   (ar-test-with-insert-function-elisp
    (dotimes (_ 9) (insert " asdf "))
-   (switch-to-buffer (current-buffer)) 
    (should-not (ar-regexp-atpt "foo"))))
 
 (ert-deftest ar-regexp-no-match-atpt-test-ksr9Vy ()
   (ar-test-with-insert-function-elisp
    (dotimes (_ 99999) (insert " asdf "))
    (goto-char (point-min))
-   (switch-to-buffer (current-buffer)) 
    (insert "foo")
    (backward-char) 
-   (switch-to-buffer (current-buffer)) 
    (should (ar-regexp-atpt "foo"))))
+
+(ert-deftest ar-regexp-no-match-atpt-test-cKz5VZ ()
+  (ar-test-with-insert-function-elisp
+   "foo"
+   (dotimes (_ 99999) (insert " asdf "))
+   (should-not (ar-regexp-atpt "foo"))))
+
+(ert-deftest ar-regexp-no-match-atpt-test-wxu6We ()
+  (ar-test-with-elisp-buffer
+      "foo a"
+    (should-not (ar-regexp-atpt "foo"))))
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

@@ -26,6 +26,8 @@
 (defvar ar-switch-p nil
   "Switch into test-buffer.")
 
+;; (setq ar-switch-p t)
+
 (defvar ar-debug-p nil
   "Switch into test-buffer.")
 
@@ -328,6 +330,19 @@ BODY is code to be executed within the temp buffer.  Point is
   `(with-temp-buffer
      (let (hs-minor-mode thing-copy-region)
        (emacs-lisp-mode)
+       ,function
+       (when ar-switch-p
+	 (switch-to-buffer (current-buffer)))
+       ,@body)))
+
+(defmacro ar-test-with-insert-function-constents-elisp (contents function &rest body)
+  "Create temp buffer in `emacs-lisp-mode' inserting CONTENTS.
+BODY is code to be executed within the temp buffer.  Point is
+ at the end of buffer."
+  `(with-temp-buffer
+     (let (hs-minor-mode thing-copy-region)
+       (emacs-lisp-mode)
+       (insert contents)
        ,function
        (when ar-switch-p
 	 (switch-to-buffer (current-buffer)))
