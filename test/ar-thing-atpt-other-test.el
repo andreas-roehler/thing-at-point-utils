@@ -482,13 +482,13 @@ return wwrap"
    (dotimes (_ 9) (insert " asdf "))
    (should-not (ar-regexp-atpt "foo"))))
 
-(ert-deftest ar-regexp-no-match-atpt-test-ksr9Vy ()
-  (ar-test-with-insert-function-elisp
-   (dotimes (_ 99999) (insert " asdf "))
-   (goto-char (point-min))
-   (insert "foo")
-   (backward-char) 
-   (should (ar-regexp-atpt "foo"))))
+;; (ert-deftest ar-regexp-no-match-atpt-test-ksr9Vy ()
+;;   (ar-test-with-insert-function-elisp
+;;    (dotimes (_ 99999) (insert " asdf "))
+;;    (goto-char (point-min))
+;;    (insert "foo")
+;;    (backward-char) 
+;;    (should (ar-regexp-atpt "foo"))))
 
 (ert-deftest ar-regexp-no-match-atpt-test-cKz5VZ ()
   (ar-test-with-insert-function-elisp

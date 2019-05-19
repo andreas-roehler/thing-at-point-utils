@@ -77,6 +77,7 @@
       "_asdf_"
     (forward-char -1) 
     (ar-trim-underscored-atpt)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (provide 'thing-at-point-utils-tests)

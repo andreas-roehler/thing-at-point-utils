@@ -274,13 +274,15 @@
       "\\asdf\\"
       (forward-char 1)
     (ar-th-trim 'backslashed)
-    (should (eq (char-after) ?a))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-backslashed-lefttrim-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
       (forward-char 1)
-    (ar-th-trim 'backslashed)
+    (ar-th-trim-left 'backslashed)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-backslashed-right-trim-atpt-test ()
@@ -288,13 +290,15 @@
       "\\asdf\\"
       (forward-char 1)
     (ar-th-trim-right 'backslashed)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-backslashed-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
       (forward-char 1)
     (ar-th-underscore 'backslashed)
+    (goto-char (point-max))
     (should (eq (char-before) ?_))))
 
 (ert-deftest ar-whitespace-backslashed-atpt-test ()
@@ -302,6 +306,7 @@
       "\\asdf\\"
       (forward-char 1)
     (ar-th-whitespace 'backslashed)
+    (goto-char (point-max))
     (should (eq (char-before) ?\ ))))
 
 (ert-deftest ar-backslashed-backward-atpt-test ()
@@ -565,13 +570,15 @@
       "$asdf$"
       (forward-char 1)
     (ar-th-trim 'dollared)
-    (should (eq (char-after) ?a))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-dollared-lefttrim-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "$asdf$ "
       (forward-char 1)
     (ar-th-trim 'dollared)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-dollared-right-trim-atpt-test ()
@@ -579,7 +586,8 @@
       "$asdf$"
       (forward-char 1)
     (ar-th-trim-right 'dollared)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-dollared-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -834,7 +842,7 @@
       "asdf\"asdf\""
       (forward-char -1)
     (ar-th-separate 'doublequoted)
-    (forward-line -1) 
+    (forward-line -1)
     (should (bolp))))
 
 (ert-deftest ar-doublequoted-singlequote-atpt-test ()
@@ -849,13 +857,15 @@
       "\"asdf\""
       (forward-char 1)
     (ar-th-trim 'doublequoted)
-    (should (eq (char-after) ?a))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-doublequoted-lefttrim-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\"asdf\""
       (forward-char 1)
     (ar-th-trim 'doublequoted)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-doublequoted-right-trim-atpt-test ()
@@ -863,7 +873,8 @@
       "\"asdf\""
       (forward-char 1)
     (ar-th-trim-right 'doublequoted)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-doublequoted-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1133,6 +1144,7 @@
       "=asdf="
       (forward-char 1)
     (ar-th-trim 'equalized)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-equalized-lefttrim-atpt-test ()
@@ -1140,6 +1152,7 @@
       "=asdf="
       (forward-char 1)
     (ar-th-trim 'equalized)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-equalized-right-trim-atpt-test ()
@@ -1147,7 +1160,8 @@
       "=asdf="
       (forward-char 1)
     (ar-th-trim-right 'equalized)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-equalized-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1403,7 +1417,7 @@
       "asdf-asdf-"
       (forward-char -1)
     (ar-th-separate 'hyphened)
-    (should (bolp)))) 
+    (should (bolp))))
 
 (ert-deftest ar-hyphened-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1417,6 +1431,7 @@
       "-asdf-"
       (forward-char 1)
     (ar-th-trim 'hyphened)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-hyphened-lefttrim-atpt-test ()
@@ -1424,6 +1439,7 @@
       "-asdf-"
       (forward-char 1)
     (ar-th-trim 'hyphened)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-hyphened-right-trim-atpt-test ()
@@ -1431,7 +1447,8 @@
       "-asdf-"
       (forward-char 1)
     (ar-th-trim-right 'hyphened)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-hyphened-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1701,6 +1718,7 @@
       "'asdf'"
       (forward-char 1)
     (ar-th-trim 'singlequoted)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-singlequoted-lefttrim-atpt-test ()
@@ -1708,6 +1726,7 @@
       "'asdf'"
       (forward-char 1)
     (ar-th-trim 'singlequoted)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-singlequoted-right-trim-atpt-test ()
@@ -1715,7 +1734,8 @@
       "'asdf'"
       (forward-char 1)
     (ar-th-trim-right 'singlequoted)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-singlequoted-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1985,6 +2005,7 @@
       "/asdf/"
       (forward-char 1)
     (ar-th-trim 'slashed)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-slashed-lefttrim-atpt-test ()
@@ -1992,6 +2013,7 @@
       "/asdf/"
       (forward-char 1)
     (ar-th-trim'slashed)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-slashed-right-trim-atpt-test ()
@@ -1999,7 +2021,8 @@
       "/asdf/"
       (forward-char 1)
     (ar-th-trim-right 'slashed)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-slashed-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2269,6 +2292,7 @@
       "_asdf_"
       (forward-char 1)
     (ar-th-trim 'underscored)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-underscored-lefttrim-atpt-test ()
@@ -2276,6 +2300,7 @@
       "_asdf_"
       (forward-char 1)
     (ar-th-trim 'underscored)
+    (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
 (ert-deftest ar-underscored-right-trim-atpt-test ()
@@ -2283,7 +2308,8 @@
       "_asdf_"
       (forward-char 1)
     (ar-th-trim-right 'underscored)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-underscored-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2567,7 +2593,8 @@
       " asdf "
       (forward-char 1)
     (ar-th-trim-right 'whitespaced)
-    (should (eobp))))
+    (goto-char (point-max))
+    (should (eq (char-before) ?f))))
 
 (ert-deftest ar-underscore-whitespaced-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2599,7 +2626,7 @@
   (ar-test-with-elisp-buffer-point-min
       "asdf"
     (ar-triplebacktick-word-atpt)
-    (should (looking-back "```" (line-beginning-position))))) 
+    (should (looking-back "```" (line-beginning-position)))))
 
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 

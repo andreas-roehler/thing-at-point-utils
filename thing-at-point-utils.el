@@ -1,3 +1,3037 @@
+;;; thing-at-point-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2010-2019 Andreas Röhler, unless
+;; indicated otherwise
+
+;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
+;; indicated otherwise
+
+;; Version: 0.1
+
+;; Keywords: convenience
+
+;; This file is free software; you can redistribute it
+;; and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version.
+
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs; see the file COPYING.  If not, write to
+;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+;;; Commentary:
+
+;;; Code:
+
+(require 'thingatpt-utils-core)
+
+;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
+(defun ar-colon-greateranglednested-atpt (&optional arg)
+  "Colon GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-colon 'greateranglednested arg arg))
+
+(defun ar-colon-lesseranglednested-atpt (&optional arg)
+  "Colon LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-colon 'lesseranglednested arg arg))
+
+(defun ar-colon-buffer-atpt (&optional arg)
+  "Colon BUFFER at point."
+  (interactive "*P")
+  (ar-th-colon 'buffer arg arg))
+
+(defun ar-colon-char-atpt (&optional arg)
+  "Colon CHAR at point."
+  (interactive "*P")
+  (ar-th-colon 'char arg arg))
+
+(defun ar-colon-comment-atpt (&optional arg)
+  "Colon COMMENT at point."
+  (interactive "*P")
+  (ar-th-colon 'comment arg arg))
+
+(defun ar-colon-csv-atpt (&optional arg)
+  "Colon CSV at point."
+  (interactive "*P")
+  (ar-th-colon 'csv arg arg))
+
+(defun ar-colon-date-atpt (&optional arg)
+  "Colon DATE at point."
+  (interactive "*P")
+  (ar-th-colon 'date arg arg))
+
+(defun ar-colon-delimited-atpt (&optional arg)
+  "Colon DELIMITED at point."
+  (interactive "*P")
+  (ar-th-colon 'delimited arg arg))
+
+(defun ar-colon-email-atpt (&optional arg)
+  "Colon EMAIL at point."
+  (interactive "*P")
+  (ar-th-colon 'email arg arg))
+
+(defun ar-colon-filename-atpt (&optional arg)
+  "Colon FILENAME at point."
+  (interactive "*P")
+  (ar-th-colon 'filename arg arg))
+
+(defun ar-colon-filenamenondirectory-atpt (&optional arg)
+  "Colon FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-colon 'filenamenondirectory arg arg))
+
+(defun ar-colon-float-atpt (&optional arg)
+  "Colon FLOAT at point."
+  (interactive "*P")
+  (ar-th-colon 'float arg arg))
+
+(defun ar-colon-function-atpt (&optional arg)
+  "Colon FUNCTION at point."
+  (interactive "*P")
+  (ar-th-colon 'function arg arg))
+
+(defun ar-colon-ip-atpt (&optional arg)
+  "Colon IP at point."
+  (interactive "*P")
+  (ar-th-colon 'ip arg arg))
+
+(defun ar-colon-isbn-atpt (&optional arg)
+  "Colon ISBN at point."
+  (interactive "*P")
+  (ar-th-colon 'isbn arg arg))
+
+(defun ar-colon-line-atpt (&optional arg)
+  "Colon LINE at point."
+  (interactive "*P")
+  (ar-th-colon 'line arg arg))
+
+(defun ar-colon-list-atpt (&optional arg)
+  "Colon LIST at point."
+  (interactive "*P")
+  (ar-th-colon 'list arg arg))
+
+(defun ar-colon-name-atpt (&optional arg)
+  "Colon NAME at point."
+  (interactive "*P")
+  (ar-th-colon 'name arg arg))
+
+(defun ar-colon-number-atpt (&optional arg)
+  "Colon NUMBER at point."
+  (interactive "*P")
+  (ar-th-colon 'number arg arg))
+
+(defun ar-colon-page-atpt (&optional arg)
+  "Colon PAGE at point."
+  (interactive "*P")
+  (ar-th-colon 'page arg arg))
+
+(defun ar-colon-paragraph-atpt (&optional arg)
+  "Colon PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-colon 'paragraph arg arg))
+
+(defun ar-colon-phone-atpt (&optional arg)
+  "Colon PHONE at point."
+  (interactive "*P")
+  (ar-th-colon 'phone arg arg))
+
+(defun ar-colon-region-atpt (&optional arg)
+  "Colon REGION at point."
+  (interactive "*P")
+  (ar-th-colon 'region arg arg))
+
+(defun ar-colon-sentence-atpt (&optional arg)
+  "Colon SENTENCE at point."
+  (interactive "*P")
+  (ar-th-colon 'sentence arg arg))
+
+(defun ar-colon-sexp-atpt (&optional arg)
+  "Colon SEXP at point."
+  (interactive "*P")
+  (ar-th-colon 'sexp arg arg))
+
+(defun ar-colon-shstruct-atpt (&optional arg)
+  "Colon SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-colon 'shstruct arg arg))
+
+(defun ar-colon-symbol-atpt (&optional arg)
+  "Colon SYMBOL at point."
+  (interactive "*P")
+  (ar-th-colon 'symbol arg arg))
+
+(defun ar-colon-url-atpt (&optional arg)
+  "Colon URL at point."
+  (interactive "*P")
+  (ar-th-colon 'url arg arg))
+
+(defun ar-colon-word-atpt (&optional arg)
+  "Colon WORD at point."
+  (interactive "*P")
+  (ar-th-colon 'word arg arg))
+
+(defun ar-colon-wordalphaonly-atpt (&optional arg)
+  "Colon WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-colon 'wordalphaonly arg arg))
+
+(defun ar-cross-greateranglednested-atpt (&optional arg)
+  "Cross GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-cross 'greateranglednested arg arg))
+
+(defun ar-cross-lesseranglednested-atpt (&optional arg)
+  "Cross LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-cross 'lesseranglednested arg arg))
+
+(defun ar-cross-buffer-atpt (&optional arg)
+  "Cross BUFFER at point."
+  (interactive "*P")
+  (ar-th-cross 'buffer arg arg))
+
+(defun ar-cross-char-atpt (&optional arg)
+  "Cross CHAR at point."
+  (interactive "*P")
+  (ar-th-cross 'char arg arg))
+
+(defun ar-cross-comment-atpt (&optional arg)
+  "Cross COMMENT at point."
+  (interactive "*P")
+  (ar-th-cross 'comment arg arg))
+
+(defun ar-cross-csv-atpt (&optional arg)
+  "Cross CSV at point."
+  (interactive "*P")
+  (ar-th-cross 'csv arg arg))
+
+(defun ar-cross-date-atpt (&optional arg)
+  "Cross DATE at point."
+  (interactive "*P")
+  (ar-th-cross 'date arg arg))
+
+(defun ar-cross-delimited-atpt (&optional arg)
+  "Cross DELIMITED at point."
+  (interactive "*P")
+  (ar-th-cross 'delimited arg arg))
+
+(defun ar-cross-email-atpt (&optional arg)
+  "Cross EMAIL at point."
+  (interactive "*P")
+  (ar-th-cross 'email arg arg))
+
+(defun ar-cross-filename-atpt (&optional arg)
+  "Cross FILENAME at point."
+  (interactive "*P")
+  (ar-th-cross 'filename arg arg))
+
+(defun ar-cross-filenamenondirectory-atpt (&optional arg)
+  "Cross FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-cross 'filenamenondirectory arg arg))
+
+(defun ar-cross-float-atpt (&optional arg)
+  "Cross FLOAT at point."
+  (interactive "*P")
+  (ar-th-cross 'float arg arg))
+
+(defun ar-cross-function-atpt (&optional arg)
+  "Cross FUNCTION at point."
+  (interactive "*P")
+  (ar-th-cross 'function arg arg))
+
+(defun ar-cross-ip-atpt (&optional arg)
+  "Cross IP at point."
+  (interactive "*P")
+  (ar-th-cross 'ip arg arg))
+
+(defun ar-cross-isbn-atpt (&optional arg)
+  "Cross ISBN at point."
+  (interactive "*P")
+  (ar-th-cross 'isbn arg arg))
+
+(defun ar-cross-line-atpt (&optional arg)
+  "Cross LINE at point."
+  (interactive "*P")
+  (ar-th-cross 'line arg arg))
+
+(defun ar-cross-list-atpt (&optional arg)
+  "Cross LIST at point."
+  (interactive "*P")
+  (ar-th-cross 'list arg arg))
+
+(defun ar-cross-name-atpt (&optional arg)
+  "Cross NAME at point."
+  (interactive "*P")
+  (ar-th-cross 'name arg arg))
+
+(defun ar-cross-number-atpt (&optional arg)
+  "Cross NUMBER at point."
+  (interactive "*P")
+  (ar-th-cross 'number arg arg))
+
+(defun ar-cross-page-atpt (&optional arg)
+  "Cross PAGE at point."
+  (interactive "*P")
+  (ar-th-cross 'page arg arg))
+
+(defun ar-cross-paragraph-atpt (&optional arg)
+  "Cross PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-cross 'paragraph arg arg))
+
+(defun ar-cross-phone-atpt (&optional arg)
+  "Cross PHONE at point."
+  (interactive "*P")
+  (ar-th-cross 'phone arg arg))
+
+(defun ar-cross-region-atpt (&optional arg)
+  "Cross REGION at point."
+  (interactive "*P")
+  (ar-th-cross 'region arg arg))
+
+(defun ar-cross-sentence-atpt (&optional arg)
+  "Cross SENTENCE at point."
+  (interactive "*P")
+  (ar-th-cross 'sentence arg arg))
+
+(defun ar-cross-sexp-atpt (&optional arg)
+  "Cross SEXP at point."
+  (interactive "*P")
+  (ar-th-cross 'sexp arg arg))
+
+(defun ar-cross-shstruct-atpt (&optional arg)
+  "Cross SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-cross 'shstruct arg arg))
+
+(defun ar-cross-symbol-atpt (&optional arg)
+  "Cross SYMBOL at point."
+  (interactive "*P")
+  (ar-th-cross 'symbol arg arg))
+
+(defun ar-cross-url-atpt (&optional arg)
+  "Cross URL at point."
+  (interactive "*P")
+  (ar-th-cross 'url arg arg))
+
+(defun ar-cross-word-atpt (&optional arg)
+  "Cross WORD at point."
+  (interactive "*P")
+  (ar-th-cross 'word arg arg))
+
+(defun ar-cross-wordalphaonly-atpt (&optional arg)
+  "Cross WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-cross 'wordalphaonly arg arg))
+
+(defun ar-doubleslash-greateranglednested-atpt (&optional arg)
+  "Doubleslash GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'greateranglednested arg arg))
+
+(defun ar-doubleslash-lesseranglednested-atpt (&optional arg)
+  "Doubleslash LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'lesseranglednested arg arg))
+
+(defun ar-doubleslash-buffer-atpt (&optional arg)
+  "Doubleslash BUFFER at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'buffer arg arg))
+
+(defun ar-doubleslash-char-atpt (&optional arg)
+  "Doubleslash CHAR at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'char arg arg))
+
+(defun ar-doubleslash-comment-atpt (&optional arg)
+  "Doubleslash COMMENT at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'comment arg arg))
+
+(defun ar-doubleslash-csv-atpt (&optional arg)
+  "Doubleslash CSV at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'csv arg arg))
+
+(defun ar-doubleslash-date-atpt (&optional arg)
+  "Doubleslash DATE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'date arg arg))
+
+(defun ar-doubleslash-delimited-atpt (&optional arg)
+  "Doubleslash DELIMITED at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'delimited arg arg))
+
+(defun ar-doubleslash-email-atpt (&optional arg)
+  "Doubleslash EMAIL at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'email arg arg))
+
+(defun ar-doubleslash-filename-atpt (&optional arg)
+  "Doubleslash FILENAME at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'filename arg arg))
+
+(defun ar-doubleslash-filenamenondirectory-atpt (&optional arg)
+  "Doubleslash FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'filenamenondirectory arg arg))
+
+(defun ar-doubleslash-float-atpt (&optional arg)
+  "Doubleslash FLOAT at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'float arg arg))
+
+(defun ar-doubleslash-function-atpt (&optional arg)
+  "Doubleslash FUNCTION at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'function arg arg))
+
+(defun ar-doubleslash-ip-atpt (&optional arg)
+  "Doubleslash IP at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'ip arg arg))
+
+(defun ar-doubleslash-isbn-atpt (&optional arg)
+  "Doubleslash ISBN at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'isbn arg arg))
+
+(defun ar-doubleslash-line-atpt (&optional arg)
+  "Doubleslash LINE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'line arg arg))
+
+(defun ar-doubleslash-list-atpt (&optional arg)
+  "Doubleslash LIST at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'list arg arg))
+
+(defun ar-doubleslash-name-atpt (&optional arg)
+  "Doubleslash NAME at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'name arg arg))
+
+(defun ar-doubleslash-number-atpt (&optional arg)
+  "Doubleslash NUMBER at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'number arg arg))
+
+(defun ar-doubleslash-page-atpt (&optional arg)
+  "Doubleslash PAGE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'page arg arg))
+
+(defun ar-doubleslash-paragraph-atpt (&optional arg)
+  "Doubleslash PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'paragraph arg arg))
+
+(defun ar-doubleslash-phone-atpt (&optional arg)
+  "Doubleslash PHONE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'phone arg arg))
+
+(defun ar-doubleslash-region-atpt (&optional arg)
+  "Doubleslash REGION at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'region arg arg))
+
+(defun ar-doubleslash-sentence-atpt (&optional arg)
+  "Doubleslash SENTENCE at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'sentence arg arg))
+
+(defun ar-doubleslash-sexp-atpt (&optional arg)
+  "Doubleslash SEXP at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'sexp arg arg))
+
+(defun ar-doubleslash-shstruct-atpt (&optional arg)
+  "Doubleslash SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'shstruct arg arg))
+
+(defun ar-doubleslash-symbol-atpt (&optional arg)
+  "Doubleslash SYMBOL at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'symbol arg arg))
+
+(defun ar-doubleslash-url-atpt (&optional arg)
+  "Doubleslash URL at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'url arg arg))
+
+(defun ar-doubleslash-word-atpt (&optional arg)
+  "Doubleslash WORD at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'word arg arg))
+
+(defun ar-doubleslash-wordalphaonly-atpt (&optional arg)
+  "Doubleslash WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-doubleslash 'wordalphaonly arg arg))
+
+(defun ar-backslash-greateranglednested-atpt (&optional arg)
+  "Backslash GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backslash 'greateranglednested arg arg))
+
+(defun ar-backslash-lesseranglednested-atpt (&optional arg)
+  "Backslash LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backslash 'lesseranglednested arg arg))
+
+(defun ar-backslash-buffer-atpt (&optional arg)
+  "Backslash BUFFER at point."
+  (interactive "*P")
+  (ar-th-backslash 'buffer arg arg))
+
+(defun ar-backslash-char-atpt (&optional arg)
+  "Backslash CHAR at point."
+  (interactive "*P")
+  (ar-th-backslash 'char arg arg))
+
+(defun ar-backslash-comment-atpt (&optional arg)
+  "Backslash COMMENT at point."
+  (interactive "*P")
+  (ar-th-backslash 'comment arg arg))
+
+(defun ar-backslash-csv-atpt (&optional arg)
+  "Backslash CSV at point."
+  (interactive "*P")
+  (ar-th-backslash 'csv arg arg))
+
+(defun ar-backslash-date-atpt (&optional arg)
+  "Backslash DATE at point."
+  (interactive "*P")
+  (ar-th-backslash 'date arg arg))
+
+(defun ar-backslash-delimited-atpt (&optional arg)
+  "Backslash DELIMITED at point."
+  (interactive "*P")
+  (ar-th-backslash 'delimited arg arg))
+
+(defun ar-backslash-email-atpt (&optional arg)
+  "Backslash EMAIL at point."
+  (interactive "*P")
+  (ar-th-backslash 'email arg arg))
+
+(defun ar-backslash-filename-atpt (&optional arg)
+  "Backslash FILENAME at point."
+  (interactive "*P")
+  (ar-th-backslash 'filename arg arg))
+
+(defun ar-backslash-filenamenondirectory-atpt (&optional arg)
+  "Backslash FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-backslash 'filenamenondirectory arg arg))
+
+(defun ar-backslash-float-atpt (&optional arg)
+  "Backslash FLOAT at point."
+  (interactive "*P")
+  (ar-th-backslash 'float arg arg))
+
+(defun ar-backslash-function-atpt (&optional arg)
+  "Backslash FUNCTION at point."
+  (interactive "*P")
+  (ar-th-backslash 'function arg arg))
+
+(defun ar-backslash-ip-atpt (&optional arg)
+  "Backslash IP at point."
+  (interactive "*P")
+  (ar-th-backslash 'ip arg arg))
+
+(defun ar-backslash-isbn-atpt (&optional arg)
+  "Backslash ISBN at point."
+  (interactive "*P")
+  (ar-th-backslash 'isbn arg arg))
+
+(defun ar-backslash-line-atpt (&optional arg)
+  "Backslash LINE at point."
+  (interactive "*P")
+  (ar-th-backslash 'line arg arg))
+
+(defun ar-backslash-list-atpt (&optional arg)
+  "Backslash LIST at point."
+  (interactive "*P")
+  (ar-th-backslash 'list arg arg))
+
+(defun ar-backslash-name-atpt (&optional arg)
+  "Backslash NAME at point."
+  (interactive "*P")
+  (ar-th-backslash 'name arg arg))
+
+(defun ar-backslash-number-atpt (&optional arg)
+  "Backslash NUMBER at point."
+  (interactive "*P")
+  (ar-th-backslash 'number arg arg))
+
+(defun ar-backslash-page-atpt (&optional arg)
+  "Backslash PAGE at point."
+  (interactive "*P")
+  (ar-th-backslash 'page arg arg))
+
+(defun ar-backslash-paragraph-atpt (&optional arg)
+  "Backslash PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-backslash 'paragraph arg arg))
+
+(defun ar-backslash-phone-atpt (&optional arg)
+  "Backslash PHONE at point."
+  (interactive "*P")
+  (ar-th-backslash 'phone arg arg))
+
+(defun ar-backslash-region-atpt (&optional arg)
+  "Backslash REGION at point."
+  (interactive "*P")
+  (ar-th-backslash 'region arg arg))
+
+(defun ar-backslash-sentence-atpt (&optional arg)
+  "Backslash SENTENCE at point."
+  (interactive "*P")
+  (ar-th-backslash 'sentence arg arg))
+
+(defun ar-backslash-sexp-atpt (&optional arg)
+  "Backslash SEXP at point."
+  (interactive "*P")
+  (ar-th-backslash 'sexp arg arg))
+
+(defun ar-backslash-shstruct-atpt (&optional arg)
+  "Backslash SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-backslash 'shstruct arg arg))
+
+(defun ar-backslash-symbol-atpt (&optional arg)
+  "Backslash SYMBOL at point."
+  (interactive "*P")
+  (ar-th-backslash 'symbol arg arg))
+
+(defun ar-backslash-url-atpt (&optional arg)
+  "Backslash URL at point."
+  (interactive "*P")
+  (ar-th-backslash 'url arg arg))
+
+(defun ar-backslash-word-atpt (&optional arg)
+  "Backslash WORD at point."
+  (interactive "*P")
+  (ar-th-backslash 'word arg arg))
+
+(defun ar-backslash-wordalphaonly-atpt (&optional arg)
+  "Backslash WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-backslash 'wordalphaonly arg arg))
+
+(defun ar-backtick-greateranglednested-atpt (&optional arg)
+  "Backtick GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backtick 'greateranglednested arg arg))
+
+(defun ar-backtick-lesseranglednested-atpt (&optional arg)
+  "Backtick LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-backtick 'lesseranglednested arg arg))
+
+(defun ar-backtick-buffer-atpt (&optional arg)
+  "Backtick BUFFER at point."
+  (interactive "*P")
+  (ar-th-backtick 'buffer arg arg))
+
+(defun ar-backtick-char-atpt (&optional arg)
+  "Backtick CHAR at point."
+  (interactive "*P")
+  (ar-th-backtick 'char arg arg))
+
+(defun ar-backtick-comment-atpt (&optional arg)
+  "Backtick COMMENT at point."
+  (interactive "*P")
+  (ar-th-backtick 'comment arg arg))
+
+(defun ar-backtick-csv-atpt (&optional arg)
+  "Backtick CSV at point."
+  (interactive "*P")
+  (ar-th-backtick 'csv arg arg))
+
+(defun ar-backtick-date-atpt (&optional arg)
+  "Backtick DATE at point."
+  (interactive "*P")
+  (ar-th-backtick 'date arg arg))
+
+(defun ar-backtick-delimited-atpt (&optional arg)
+  "Backtick DELIMITED at point."
+  (interactive "*P")
+  (ar-th-backtick 'delimited arg arg))
+
+(defun ar-backtick-email-atpt (&optional arg)
+  "Backtick EMAIL at point."
+  (interactive "*P")
+  (ar-th-backtick 'email arg arg))
+
+(defun ar-backtick-filename-atpt (&optional arg)
+  "Backtick FILENAME at point."
+  (interactive "*P")
+  (ar-th-backtick 'filename arg arg))
+
+(defun ar-backtick-filenamenondirectory-atpt (&optional arg)
+  "Backtick FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-backtick 'filenamenondirectory arg arg))
+
+(defun ar-backtick-float-atpt (&optional arg)
+  "Backtick FLOAT at point."
+  (interactive "*P")
+  (ar-th-backtick 'float arg arg))
+
+(defun ar-backtick-function-atpt (&optional arg)
+  "Backtick FUNCTION at point."
+  (interactive "*P")
+  (ar-th-backtick 'function arg arg))
+
+(defun ar-backtick-ip-atpt (&optional arg)
+  "Backtick IP at point."
+  (interactive "*P")
+  (ar-th-backtick 'ip arg arg))
+
+(defun ar-backtick-isbn-atpt (&optional arg)
+  "Backtick ISBN at point."
+  (interactive "*P")
+  (ar-th-backtick 'isbn arg arg))
+
+(defun ar-backtick-line-atpt (&optional arg)
+  "Backtick LINE at point."
+  (interactive "*P")
+  (ar-th-backtick 'line arg arg))
+
+(defun ar-backtick-list-atpt (&optional arg)
+  "Backtick LIST at point."
+  (interactive "*P")
+  (ar-th-backtick 'list arg arg))
+
+(defun ar-backtick-name-atpt (&optional arg)
+  "Backtick NAME at point."
+  (interactive "*P")
+  (ar-th-backtick 'name arg arg))
+
+(defun ar-backtick-number-atpt (&optional arg)
+  "Backtick NUMBER at point."
+  (interactive "*P")
+  (ar-th-backtick 'number arg arg))
+
+(defun ar-backtick-page-atpt (&optional arg)
+  "Backtick PAGE at point."
+  (interactive "*P")
+  (ar-th-backtick 'page arg arg))
+
+(defun ar-backtick-paragraph-atpt (&optional arg)
+  "Backtick PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-backtick 'paragraph arg arg))
+
+(defun ar-backtick-phone-atpt (&optional arg)
+  "Backtick PHONE at point."
+  (interactive "*P")
+  (ar-th-backtick 'phone arg arg))
+
+(defun ar-backtick-region-atpt (&optional arg)
+  "Backtick REGION at point."
+  (interactive "*P")
+  (ar-th-backtick 'region arg arg))
+
+(defun ar-backtick-sentence-atpt (&optional arg)
+  "Backtick SENTENCE at point."
+  (interactive "*P")
+  (ar-th-backtick 'sentence arg arg))
+
+(defun ar-backtick-sexp-atpt (&optional arg)
+  "Backtick SEXP at point."
+  (interactive "*P")
+  (ar-th-backtick 'sexp arg arg))
+
+(defun ar-backtick-shstruct-atpt (&optional arg)
+  "Backtick SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-backtick 'shstruct arg arg))
+
+(defun ar-backtick-symbol-atpt (&optional arg)
+  "Backtick SYMBOL at point."
+  (interactive "*P")
+  (ar-th-backtick 'symbol arg arg))
+
+(defun ar-backtick-url-atpt (&optional arg)
+  "Backtick URL at point."
+  (interactive "*P")
+  (ar-th-backtick 'url arg arg))
+
+(defun ar-backtick-word-atpt (&optional arg)
+  "Backtick WORD at point."
+  (interactive "*P")
+  (ar-th-backtick 'word arg arg))
+
+(defun ar-backtick-wordalphaonly-atpt (&optional arg)
+  "Backtick WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-backtick 'wordalphaonly arg arg))
+
+(defun ar-dollar-greateranglednested-atpt (&optional arg)
+  "Dollar GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-dollar 'greateranglednested arg arg))
+
+(defun ar-dollar-lesseranglednested-atpt (&optional arg)
+  "Dollar LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-dollar 'lesseranglednested arg arg))
+
+(defun ar-dollar-buffer-atpt (&optional arg)
+  "Dollar BUFFER at point."
+  (interactive "*P")
+  (ar-th-dollar 'buffer arg arg))
+
+(defun ar-dollar-char-atpt (&optional arg)
+  "Dollar CHAR at point."
+  (interactive "*P")
+  (ar-th-dollar 'char arg arg))
+
+(defun ar-dollar-comment-atpt (&optional arg)
+  "Dollar COMMENT at point."
+  (interactive "*P")
+  (ar-th-dollar 'comment arg arg))
+
+(defun ar-dollar-csv-atpt (&optional arg)
+  "Dollar CSV at point."
+  (interactive "*P")
+  (ar-th-dollar 'csv arg arg))
+
+(defun ar-dollar-date-atpt (&optional arg)
+  "Dollar DATE at point."
+  (interactive "*P")
+  (ar-th-dollar 'date arg arg))
+
+(defun ar-dollar-delimited-atpt (&optional arg)
+  "Dollar DELIMITED at point."
+  (interactive "*P")
+  (ar-th-dollar 'delimited arg arg))
+
+(defun ar-dollar-email-atpt (&optional arg)
+  "Dollar EMAIL at point."
+  (interactive "*P")
+  (ar-th-dollar 'email arg arg))
+
+(defun ar-dollar-filename-atpt (&optional arg)
+  "Dollar FILENAME at point."
+  (interactive "*P")
+  (ar-th-dollar 'filename arg arg))
+
+(defun ar-dollar-filenamenondirectory-atpt (&optional arg)
+  "Dollar FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-dollar 'filenamenondirectory arg arg))
+
+(defun ar-dollar-float-atpt (&optional arg)
+  "Dollar FLOAT at point."
+  (interactive "*P")
+  (ar-th-dollar 'float arg arg))
+
+(defun ar-dollar-function-atpt (&optional arg)
+  "Dollar FUNCTION at point."
+  (interactive "*P")
+  (ar-th-dollar 'function arg arg))
+
+(defun ar-dollar-ip-atpt (&optional arg)
+  "Dollar IP at point."
+  (interactive "*P")
+  (ar-th-dollar 'ip arg arg))
+
+(defun ar-dollar-isbn-atpt (&optional arg)
+  "Dollar ISBN at point."
+  (interactive "*P")
+  (ar-th-dollar 'isbn arg arg))
+
+(defun ar-dollar-line-atpt (&optional arg)
+  "Dollar LINE at point."
+  (interactive "*P")
+  (ar-th-dollar 'line arg arg))
+
+(defun ar-dollar-list-atpt (&optional arg)
+  "Dollar LIST at point."
+  (interactive "*P")
+  (ar-th-dollar 'list arg arg))
+
+(defun ar-dollar-name-atpt (&optional arg)
+  "Dollar NAME at point."
+  (interactive "*P")
+  (ar-th-dollar 'name arg arg))
+
+(defun ar-dollar-number-atpt (&optional arg)
+  "Dollar NUMBER at point."
+  (interactive "*P")
+  (ar-th-dollar 'number arg arg))
+
+(defun ar-dollar-page-atpt (&optional arg)
+  "Dollar PAGE at point."
+  (interactive "*P")
+  (ar-th-dollar 'page arg arg))
+
+(defun ar-dollar-paragraph-atpt (&optional arg)
+  "Dollar PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-dollar 'paragraph arg arg))
+
+(defun ar-dollar-phone-atpt (&optional arg)
+  "Dollar PHONE at point."
+  (interactive "*P")
+  (ar-th-dollar 'phone arg arg))
+
+(defun ar-dollar-region-atpt (&optional arg)
+  "Dollar REGION at point."
+  (interactive "*P")
+  (ar-th-dollar 'region arg arg))
+
+(defun ar-dollar-sentence-atpt (&optional arg)
+  "Dollar SENTENCE at point."
+  (interactive "*P")
+  (ar-th-dollar 'sentence arg arg))
+
+(defun ar-dollar-sexp-atpt (&optional arg)
+  "Dollar SEXP at point."
+  (interactive "*P")
+  (ar-th-dollar 'sexp arg arg))
+
+(defun ar-dollar-shstruct-atpt (&optional arg)
+  "Dollar SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-dollar 'shstruct arg arg))
+
+(defun ar-dollar-symbol-atpt (&optional arg)
+  "Dollar SYMBOL at point."
+  (interactive "*P")
+  (ar-th-dollar 'symbol arg arg))
+
+(defun ar-dollar-url-atpt (&optional arg)
+  "Dollar URL at point."
+  (interactive "*P")
+  (ar-th-dollar 'url arg arg))
+
+(defun ar-dollar-word-atpt (&optional arg)
+  "Dollar WORD at point."
+  (interactive "*P")
+  (ar-th-dollar 'word arg arg))
+
+(defun ar-dollar-wordalphaonly-atpt (&optional arg)
+  "Dollar WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-dollar 'wordalphaonly arg arg))
+
+(defun ar-doublebacktick-greateranglednested-atpt (&optional arg)
+  "Doublebacktick GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'greateranglednested arg arg))
+
+(defun ar-doublebacktick-lesseranglednested-atpt (&optional arg)
+  "Doublebacktick LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'lesseranglednested arg arg))
+
+(defun ar-doublebacktick-buffer-atpt (&optional arg)
+  "Doublebacktick BUFFER at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'buffer arg arg))
+
+(defun ar-doublebacktick-char-atpt (&optional arg)
+  "Doublebacktick CHAR at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'char arg arg))
+
+(defun ar-doublebacktick-comment-atpt (&optional arg)
+  "Doublebacktick COMMENT at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'comment arg arg))
+
+(defun ar-doublebacktick-csv-atpt (&optional arg)
+  "Doublebacktick CSV at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'csv arg arg))
+
+(defun ar-doublebacktick-date-atpt (&optional arg)
+  "Doublebacktick DATE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'date arg arg))
+
+(defun ar-doublebacktick-delimited-atpt (&optional arg)
+  "Doublebacktick DELIMITED at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'delimited arg arg))
+
+(defun ar-doublebacktick-email-atpt (&optional arg)
+  "Doublebacktick EMAIL at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'email arg arg))
+
+(defun ar-doublebacktick-filename-atpt (&optional arg)
+  "Doublebacktick FILENAME at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'filename arg arg))
+
+(defun ar-doublebacktick-filenamenondirectory-atpt (&optional arg)
+  "Doublebacktick FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'filenamenondirectory arg arg))
+
+(defun ar-doublebacktick-float-atpt (&optional arg)
+  "Doublebacktick FLOAT at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'float arg arg))
+
+(defun ar-doublebacktick-function-atpt (&optional arg)
+  "Doublebacktick FUNCTION at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'function arg arg))
+
+(defun ar-doublebacktick-ip-atpt (&optional arg)
+  "Doublebacktick IP at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'ip arg arg))
+
+(defun ar-doublebacktick-isbn-atpt (&optional arg)
+  "Doublebacktick ISBN at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'isbn arg arg))
+
+(defun ar-doublebacktick-line-atpt (&optional arg)
+  "Doublebacktick LINE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'line arg arg))
+
+(defun ar-doublebacktick-list-atpt (&optional arg)
+  "Doublebacktick LIST at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'list arg arg))
+
+(defun ar-doublebacktick-name-atpt (&optional arg)
+  "Doublebacktick NAME at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'name arg arg))
+
+(defun ar-doublebacktick-number-atpt (&optional arg)
+  "Doublebacktick NUMBER at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'number arg arg))
+
+(defun ar-doublebacktick-page-atpt (&optional arg)
+  "Doublebacktick PAGE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'page arg arg))
+
+(defun ar-doublebacktick-paragraph-atpt (&optional arg)
+  "Doublebacktick PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'paragraph arg arg))
+
+(defun ar-doublebacktick-phone-atpt (&optional arg)
+  "Doublebacktick PHONE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'phone arg arg))
+
+(defun ar-doublebacktick-region-atpt (&optional arg)
+  "Doublebacktick REGION at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'region arg arg))
+
+(defun ar-doublebacktick-sentence-atpt (&optional arg)
+  "Doublebacktick SENTENCE at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'sentence arg arg))
+
+(defun ar-doublebacktick-sexp-atpt (&optional arg)
+  "Doublebacktick SEXP at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'sexp arg arg))
+
+(defun ar-doublebacktick-shstruct-atpt (&optional arg)
+  "Doublebacktick SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'shstruct arg arg))
+
+(defun ar-doublebacktick-symbol-atpt (&optional arg)
+  "Doublebacktick SYMBOL at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'symbol arg arg))
+
+(defun ar-doublebacktick-url-atpt (&optional arg)
+  "Doublebacktick URL at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'url arg arg))
+
+(defun ar-doublebacktick-word-atpt (&optional arg)
+  "Doublebacktick WORD at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'word arg arg))
+
+(defun ar-doublebacktick-wordalphaonly-atpt (&optional arg)
+  "Doublebacktick WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-doublebacktick 'wordalphaonly arg arg))
+
+(defun ar-doublequote-greateranglednested-atpt (&optional arg)
+  "Doublequote GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doublequote 'greateranglednested arg arg))
+
+(defun ar-doublequote-lesseranglednested-atpt (&optional arg)
+  "Doublequote LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-doublequote 'lesseranglednested arg arg))
+
+(defun ar-doublequote-buffer-atpt (&optional arg)
+  "Doublequote BUFFER at point."
+  (interactive "*P")
+  (ar-th-doublequote 'buffer arg arg))
+
+(defun ar-doublequote-char-atpt (&optional arg)
+  "Doublequote CHAR at point."
+  (interactive "*P")
+  (ar-th-doublequote 'char arg arg))
+
+(defun ar-doublequote-comment-atpt (&optional arg)
+  "Doublequote COMMENT at point."
+  (interactive "*P")
+  (ar-th-doublequote 'comment arg arg))
+
+(defun ar-doublequote-csv-atpt (&optional arg)
+  "Doublequote CSV at point."
+  (interactive "*P")
+  (ar-th-doublequote 'csv arg arg))
+
+(defun ar-doublequote-date-atpt (&optional arg)
+  "Doublequote DATE at point."
+  (interactive "*P")
+  (ar-th-doublequote 'date arg arg))
+
+(defun ar-doublequote-delimited-atpt (&optional arg)
+  "Doublequote DELIMITED at point."
+  (interactive "*P")
+  (ar-th-doublequote 'delimited arg arg))
+
+(defun ar-doublequote-email-atpt (&optional arg)
+  "Doublequote EMAIL at point."
+  (interactive "*P")
+  (ar-th-doublequote 'email arg arg))
+
+(defun ar-doublequote-filename-atpt (&optional arg)
+  "Doublequote FILENAME at point."
+  (interactive "*P")
+  (ar-th-doublequote 'filename arg arg))
+
+(defun ar-doublequote-filenamenondirectory-atpt (&optional arg)
+  "Doublequote FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-doublequote 'filenamenondirectory arg arg))
+
+(defun ar-doublequote-float-atpt (&optional arg)
+  "Doublequote FLOAT at point."
+  (interactive "*P")
+  (ar-th-doublequote 'float arg arg))
+
+(defun ar-doublequote-function-atpt (&optional arg)
+  "Doublequote FUNCTION at point."
+  (interactive "*P")
+  (ar-th-doublequote 'function arg arg))
+
+(defun ar-doublequote-ip-atpt (&optional arg)
+  "Doublequote IP at point."
+  (interactive "*P")
+  (ar-th-doublequote 'ip arg arg))
+
+(defun ar-doublequote-isbn-atpt (&optional arg)
+  "Doublequote ISBN at point."
+  (interactive "*P")
+  (ar-th-doublequote 'isbn arg arg))
+
+(defun ar-doublequote-line-atpt (&optional arg)
+  "Doublequote LINE at point."
+  (interactive "*P")
+  (ar-th-doublequote 'line arg arg))
+
+(defun ar-doublequote-list-atpt (&optional arg)
+  "Doublequote LIST at point."
+  (interactive "*P")
+  (ar-th-doublequote 'list arg arg))
+
+(defun ar-doublequote-name-atpt (&optional arg)
+  "Doublequote NAME at point."
+  (interactive "*P")
+  (ar-th-doublequote 'name arg arg))
+
+(defun ar-doublequote-number-atpt (&optional arg)
+  "Doublequote NUMBER at point."
+  (interactive "*P")
+  (ar-th-doublequote 'number arg arg))
+
+(defun ar-doublequote-page-atpt (&optional arg)
+  "Doublequote PAGE at point."
+  (interactive "*P")
+  (ar-th-doublequote 'page arg arg))
+
+(defun ar-doublequote-paragraph-atpt (&optional arg)
+  "Doublequote PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-doublequote 'paragraph arg arg))
+
+(defun ar-doublequote-phone-atpt (&optional arg)
+  "Doublequote PHONE at point."
+  (interactive "*P")
+  (ar-th-doublequote 'phone arg arg))
+
+(defun ar-doublequote-region-atpt (&optional arg)
+  "Doublequote REGION at point."
+  (interactive "*P")
+  (ar-th-doublequote 'region arg arg))
+
+(defun ar-doublequote-sentence-atpt (&optional arg)
+  "Doublequote SENTENCE at point."
+  (interactive "*P")
+  (ar-th-doublequote 'sentence arg arg))
+
+(defun ar-doublequote-sexp-atpt (&optional arg)
+  "Doublequote SEXP at point."
+  (interactive "*P")
+  (ar-th-doublequote 'sexp arg arg))
+
+(defun ar-doublequote-shstruct-atpt (&optional arg)
+  "Doublequote SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-doublequote 'shstruct arg arg))
+
+(defun ar-doublequote-symbol-atpt (&optional arg)
+  "Doublequote SYMBOL at point."
+  (interactive "*P")
+  (ar-th-doublequote 'symbol arg arg))
+
+(defun ar-doublequote-url-atpt (&optional arg)
+  "Doublequote URL at point."
+  (interactive "*P")
+  (ar-th-doublequote 'url arg arg))
+
+(defun ar-doublequote-word-atpt (&optional arg)
+  "Doublequote WORD at point."
+  (interactive "*P")
+  (ar-th-doublequote 'word arg arg))
+
+(defun ar-doublequote-wordalphaonly-atpt (&optional arg)
+  "Doublequote WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-doublequote 'wordalphaonly arg arg))
+
+(defun ar-equalize-greateranglednested-atpt (&optional arg)
+  "Equalize GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-equalize 'greateranglednested arg arg))
+
+(defun ar-equalize-lesseranglednested-atpt (&optional arg)
+  "Equalize LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-equalize 'lesseranglednested arg arg))
+
+(defun ar-equalize-buffer-atpt (&optional arg)
+  "Equalize BUFFER at point."
+  (interactive "*P")
+  (ar-th-equalize 'buffer arg arg))
+
+(defun ar-equalize-char-atpt (&optional arg)
+  "Equalize CHAR at point."
+  (interactive "*P")
+  (ar-th-equalize 'char arg arg))
+
+(defun ar-equalize-comment-atpt (&optional arg)
+  "Equalize COMMENT at point."
+  (interactive "*P")
+  (ar-th-equalize 'comment arg arg))
+
+(defun ar-equalize-csv-atpt (&optional arg)
+  "Equalize CSV at point."
+  (interactive "*P")
+  (ar-th-equalize 'csv arg arg))
+
+(defun ar-equalize-date-atpt (&optional arg)
+  "Equalize DATE at point."
+  (interactive "*P")
+  (ar-th-equalize 'date arg arg))
+
+(defun ar-equalize-delimited-atpt (&optional arg)
+  "Equalize DELIMITED at point."
+  (interactive "*P")
+  (ar-th-equalize 'delimited arg arg))
+
+(defun ar-equalize-email-atpt (&optional arg)
+  "Equalize EMAIL at point."
+  (interactive "*P")
+  (ar-th-equalize 'email arg arg))
+
+(defun ar-equalize-filename-atpt (&optional arg)
+  "Equalize FILENAME at point."
+  (interactive "*P")
+  (ar-th-equalize 'filename arg arg))
+
+(defun ar-equalize-filenamenondirectory-atpt (&optional arg)
+  "Equalize FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-equalize 'filenamenondirectory arg arg))
+
+(defun ar-equalize-float-atpt (&optional arg)
+  "Equalize FLOAT at point."
+  (interactive "*P")
+  (ar-th-equalize 'float arg arg))
+
+(defun ar-equalize-function-atpt (&optional arg)
+  "Equalize FUNCTION at point."
+  (interactive "*P")
+  (ar-th-equalize 'function arg arg))
+
+(defun ar-equalize-ip-atpt (&optional arg)
+  "Equalize IP at point."
+  (interactive "*P")
+  (ar-th-equalize 'ip arg arg))
+
+(defun ar-equalize-isbn-atpt (&optional arg)
+  "Equalize ISBN at point."
+  (interactive "*P")
+  (ar-th-equalize 'isbn arg arg))
+
+(defun ar-equalize-line-atpt (&optional arg)
+  "Equalize LINE at point."
+  (interactive "*P")
+  (ar-th-equalize 'line arg arg))
+
+(defun ar-equalize-list-atpt (&optional arg)
+  "Equalize LIST at point."
+  (interactive "*P")
+  (ar-th-equalize 'list arg arg))
+
+(defun ar-equalize-name-atpt (&optional arg)
+  "Equalize NAME at point."
+  (interactive "*P")
+  (ar-th-equalize 'name arg arg))
+
+(defun ar-equalize-number-atpt (&optional arg)
+  "Equalize NUMBER at point."
+  (interactive "*P")
+  (ar-th-equalize 'number arg arg))
+
+(defun ar-equalize-page-atpt (&optional arg)
+  "Equalize PAGE at point."
+  (interactive "*P")
+  (ar-th-equalize 'page arg arg))
+
+(defun ar-equalize-paragraph-atpt (&optional arg)
+  "Equalize PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-equalize 'paragraph arg arg))
+
+(defun ar-equalize-phone-atpt (&optional arg)
+  "Equalize PHONE at point."
+  (interactive "*P")
+  (ar-th-equalize 'phone arg arg))
+
+(defun ar-equalize-region-atpt (&optional arg)
+  "Equalize REGION at point."
+  (interactive "*P")
+  (ar-th-equalize 'region arg arg))
+
+(defun ar-equalize-sentence-atpt (&optional arg)
+  "Equalize SENTENCE at point."
+  (interactive "*P")
+  (ar-th-equalize 'sentence arg arg))
+
+(defun ar-equalize-sexp-atpt (&optional arg)
+  "Equalize SEXP at point."
+  (interactive "*P")
+  (ar-th-equalize 'sexp arg arg))
+
+(defun ar-equalize-shstruct-atpt (&optional arg)
+  "Equalize SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-equalize 'shstruct arg arg))
+
+(defun ar-equalize-symbol-atpt (&optional arg)
+  "Equalize SYMBOL at point."
+  (interactive "*P")
+  (ar-th-equalize 'symbol arg arg))
+
+(defun ar-equalize-url-atpt (&optional arg)
+  "Equalize URL at point."
+  (interactive "*P")
+  (ar-th-equalize 'url arg arg))
+
+(defun ar-equalize-word-atpt (&optional arg)
+  "Equalize WORD at point."
+  (interactive "*P")
+  (ar-th-equalize 'word arg arg))
+
+(defun ar-equalize-wordalphaonly-atpt (&optional arg)
+  "Equalize WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-equalize 'wordalphaonly arg arg))
+
+(defun ar-escape-greateranglednested-atpt (&optional arg)
+  "Escape GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-escape 'greateranglednested arg arg))
+
+(defun ar-escape-lesseranglednested-atpt (&optional arg)
+  "Escape LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-escape 'lesseranglednested arg arg))
+
+(defun ar-escape-buffer-atpt (&optional arg)
+  "Escape BUFFER at point."
+  (interactive "*P")
+  (ar-th-escape 'buffer arg arg))
+
+(defun ar-escape-char-atpt (&optional arg)
+  "Escape CHAR at point."
+  (interactive "*P")
+  (ar-th-escape 'char arg arg))
+
+(defun ar-escape-comment-atpt (&optional arg)
+  "Escape COMMENT at point."
+  (interactive "*P")
+  (ar-th-escape 'comment arg arg))
+
+(defun ar-escape-csv-atpt (&optional arg)
+  "Escape CSV at point."
+  (interactive "*P")
+  (ar-th-escape 'csv arg arg))
+
+(defun ar-escape-date-atpt (&optional arg)
+  "Escape DATE at point."
+  (interactive "*P")
+  (ar-th-escape 'date arg arg))
+
+(defun ar-escape-delimited-atpt (&optional arg)
+  "Escape DELIMITED at point."
+  (interactive "*P")
+  (ar-th-escape 'delimited arg arg))
+
+(defun ar-escape-email-atpt (&optional arg)
+  "Escape EMAIL at point."
+  (interactive "*P")
+  (ar-th-escape 'email arg arg))
+
+(defun ar-escape-filename-atpt (&optional arg)
+  "Escape FILENAME at point."
+  (interactive "*P")
+  (ar-th-escape 'filename arg arg))
+
+(defun ar-escape-filenamenondirectory-atpt (&optional arg)
+  "Escape FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-escape 'filenamenondirectory arg arg))
+
+(defun ar-escape-float-atpt (&optional arg)
+  "Escape FLOAT at point."
+  (interactive "*P")
+  (ar-th-escape 'float arg arg))
+
+(defun ar-escape-function-atpt (&optional arg)
+  "Escape FUNCTION at point."
+  (interactive "*P")
+  (ar-th-escape 'function arg arg))
+
+(defun ar-escape-ip-atpt (&optional arg)
+  "Escape IP at point."
+  (interactive "*P")
+  (ar-th-escape 'ip arg arg))
+
+(defun ar-escape-isbn-atpt (&optional arg)
+  "Escape ISBN at point."
+  (interactive "*P")
+  (ar-th-escape 'isbn arg arg))
+
+(defun ar-escape-line-atpt (&optional arg)
+  "Escape LINE at point."
+  (interactive "*P")
+  (ar-th-escape 'line arg arg))
+
+(defun ar-escape-list-atpt (&optional arg)
+  "Escape LIST at point."
+  (interactive "*P")
+  (ar-th-escape 'list arg arg))
+
+(defun ar-escape-name-atpt (&optional arg)
+  "Escape NAME at point."
+  (interactive "*P")
+  (ar-th-escape 'name arg arg))
+
+(defun ar-escape-number-atpt (&optional arg)
+  "Escape NUMBER at point."
+  (interactive "*P")
+  (ar-th-escape 'number arg arg))
+
+(defun ar-escape-page-atpt (&optional arg)
+  "Escape PAGE at point."
+  (interactive "*P")
+  (ar-th-escape 'page arg arg))
+
+(defun ar-escape-paragraph-atpt (&optional arg)
+  "Escape PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-escape 'paragraph arg arg))
+
+(defun ar-escape-phone-atpt (&optional arg)
+  "Escape PHONE at point."
+  (interactive "*P")
+  (ar-th-escape 'phone arg arg))
+
+(defun ar-escape-region-atpt (&optional arg)
+  "Escape REGION at point."
+  (interactive "*P")
+  (ar-th-escape 'region arg arg))
+
+(defun ar-escape-sentence-atpt (&optional arg)
+  "Escape SENTENCE at point."
+  (interactive "*P")
+  (ar-th-escape 'sentence arg arg))
+
+(defun ar-escape-sexp-atpt (&optional arg)
+  "Escape SEXP at point."
+  (interactive "*P")
+  (ar-th-escape 'sexp arg arg))
+
+(defun ar-escape-shstruct-atpt (&optional arg)
+  "Escape SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-escape 'shstruct arg arg))
+
+(defun ar-escape-symbol-atpt (&optional arg)
+  "Escape SYMBOL at point."
+  (interactive "*P")
+  (ar-th-escape 'symbol arg arg))
+
+(defun ar-escape-url-atpt (&optional arg)
+  "Escape URL at point."
+  (interactive "*P")
+  (ar-th-escape 'url arg arg))
+
+(defun ar-escape-word-atpt (&optional arg)
+  "Escape WORD at point."
+  (interactive "*P")
+  (ar-th-escape 'word arg arg))
+
+(defun ar-escape-wordalphaonly-atpt (&optional arg)
+  "Escape WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-escape 'wordalphaonly arg arg))
+
+(defun ar-hash-greateranglednested-atpt (&optional arg)
+  "Hash GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-hash 'greateranglednested arg arg))
+
+(defun ar-hash-lesseranglednested-atpt (&optional arg)
+  "Hash LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-hash 'lesseranglednested arg arg))
+
+(defun ar-hash-buffer-atpt (&optional arg)
+  "Hash BUFFER at point."
+  (interactive "*P")
+  (ar-th-hash 'buffer arg arg))
+
+(defun ar-hash-char-atpt (&optional arg)
+  "Hash CHAR at point."
+  (interactive "*P")
+  (ar-th-hash 'char arg arg))
+
+(defun ar-hash-comment-atpt (&optional arg)
+  "Hash COMMENT at point."
+  (interactive "*P")
+  (ar-th-hash 'comment arg arg))
+
+(defun ar-hash-csv-atpt (&optional arg)
+  "Hash CSV at point."
+  (interactive "*P")
+  (ar-th-hash 'csv arg arg))
+
+(defun ar-hash-date-atpt (&optional arg)
+  "Hash DATE at point."
+  (interactive "*P")
+  (ar-th-hash 'date arg arg))
+
+(defun ar-hash-delimited-atpt (&optional arg)
+  "Hash DELIMITED at point."
+  (interactive "*P")
+  (ar-th-hash 'delimited arg arg))
+
+(defun ar-hash-email-atpt (&optional arg)
+  "Hash EMAIL at point."
+  (interactive "*P")
+  (ar-th-hash 'email arg arg))
+
+(defun ar-hash-filename-atpt (&optional arg)
+  "Hash FILENAME at point."
+  (interactive "*P")
+  (ar-th-hash 'filename arg arg))
+
+(defun ar-hash-filenamenondirectory-atpt (&optional arg)
+  "Hash FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-hash 'filenamenondirectory arg arg))
+
+(defun ar-hash-float-atpt (&optional arg)
+  "Hash FLOAT at point."
+  (interactive "*P")
+  (ar-th-hash 'float arg arg))
+
+(defun ar-hash-function-atpt (&optional arg)
+  "Hash FUNCTION at point."
+  (interactive "*P")
+  (ar-th-hash 'function arg arg))
+
+(defun ar-hash-ip-atpt (&optional arg)
+  "Hash IP at point."
+  (interactive "*P")
+  (ar-th-hash 'ip arg arg))
+
+(defun ar-hash-isbn-atpt (&optional arg)
+  "Hash ISBN at point."
+  (interactive "*P")
+  (ar-th-hash 'isbn arg arg))
+
+(defun ar-hash-line-atpt (&optional arg)
+  "Hash LINE at point."
+  (interactive "*P")
+  (ar-th-hash 'line arg arg))
+
+(defun ar-hash-list-atpt (&optional arg)
+  "Hash LIST at point."
+  (interactive "*P")
+  (ar-th-hash 'list arg arg))
+
+(defun ar-hash-name-atpt (&optional arg)
+  "Hash NAME at point."
+  (interactive "*P")
+  (ar-th-hash 'name arg arg))
+
+(defun ar-hash-number-atpt (&optional arg)
+  "Hash NUMBER at point."
+  (interactive "*P")
+  (ar-th-hash 'number arg arg))
+
+(defun ar-hash-page-atpt (&optional arg)
+  "Hash PAGE at point."
+  (interactive "*P")
+  (ar-th-hash 'page arg arg))
+
+(defun ar-hash-paragraph-atpt (&optional arg)
+  "Hash PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-hash 'paragraph arg arg))
+
+(defun ar-hash-phone-atpt (&optional arg)
+  "Hash PHONE at point."
+  (interactive "*P")
+  (ar-th-hash 'phone arg arg))
+
+(defun ar-hash-region-atpt (&optional arg)
+  "Hash REGION at point."
+  (interactive "*P")
+  (ar-th-hash 'region arg arg))
+
+(defun ar-hash-sentence-atpt (&optional arg)
+  "Hash SENTENCE at point."
+  (interactive "*P")
+  (ar-th-hash 'sentence arg arg))
+
+(defun ar-hash-sexp-atpt (&optional arg)
+  "Hash SEXP at point."
+  (interactive "*P")
+  (ar-th-hash 'sexp arg arg))
+
+(defun ar-hash-shstruct-atpt (&optional arg)
+  "Hash SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-hash 'shstruct arg arg))
+
+(defun ar-hash-symbol-atpt (&optional arg)
+  "Hash SYMBOL at point."
+  (interactive "*P")
+  (ar-th-hash 'symbol arg arg))
+
+(defun ar-hash-url-atpt (&optional arg)
+  "Hash URL at point."
+  (interactive "*P")
+  (ar-th-hash 'url arg arg))
+
+(defun ar-hash-word-atpt (&optional arg)
+  "Hash WORD at point."
+  (interactive "*P")
+  (ar-th-hash 'word arg arg))
+
+(defun ar-hash-wordalphaonly-atpt (&optional arg)
+  "Hash WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-hash 'wordalphaonly arg arg))
+
+(defun ar-hyphen-greateranglednested-atpt (&optional arg)
+  "Hyphen GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-hyphen 'greateranglednested arg arg))
+
+(defun ar-hyphen-lesseranglednested-atpt (&optional arg)
+  "Hyphen LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-hyphen 'lesseranglednested arg arg))
+
+(defun ar-hyphen-buffer-atpt (&optional arg)
+  "Hyphen BUFFER at point."
+  (interactive "*P")
+  (ar-th-hyphen 'buffer arg arg))
+
+(defun ar-hyphen-char-atpt (&optional arg)
+  "Hyphen CHAR at point."
+  (interactive "*P")
+  (ar-th-hyphen 'char arg arg))
+
+(defun ar-hyphen-comment-atpt (&optional arg)
+  "Hyphen COMMENT at point."
+  (interactive "*P")
+  (ar-th-hyphen 'comment arg arg))
+
+(defun ar-hyphen-csv-atpt (&optional arg)
+  "Hyphen CSV at point."
+  (interactive "*P")
+  (ar-th-hyphen 'csv arg arg))
+
+(defun ar-hyphen-date-atpt (&optional arg)
+  "Hyphen DATE at point."
+  (interactive "*P")
+  (ar-th-hyphen 'date arg arg))
+
+(defun ar-hyphen-delimited-atpt (&optional arg)
+  "Hyphen DELIMITED at point."
+  (interactive "*P")
+  (ar-th-hyphen 'delimited arg arg))
+
+(defun ar-hyphen-email-atpt (&optional arg)
+  "Hyphen EMAIL at point."
+  (interactive "*P")
+  (ar-th-hyphen 'email arg arg))
+
+(defun ar-hyphen-filename-atpt (&optional arg)
+  "Hyphen FILENAME at point."
+  (interactive "*P")
+  (ar-th-hyphen 'filename arg arg))
+
+(defun ar-hyphen-filenamenondirectory-atpt (&optional arg)
+  "Hyphen FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-hyphen 'filenamenondirectory arg arg))
+
+(defun ar-hyphen-float-atpt (&optional arg)
+  "Hyphen FLOAT at point."
+  (interactive "*P")
+  (ar-th-hyphen 'float arg arg))
+
+(defun ar-hyphen-function-atpt (&optional arg)
+  "Hyphen FUNCTION at point."
+  (interactive "*P")
+  (ar-th-hyphen 'function arg arg))
+
+(defun ar-hyphen-ip-atpt (&optional arg)
+  "Hyphen IP at point."
+  (interactive "*P")
+  (ar-th-hyphen 'ip arg arg))
+
+(defun ar-hyphen-isbn-atpt (&optional arg)
+  "Hyphen ISBN at point."
+  (interactive "*P")
+  (ar-th-hyphen 'isbn arg arg))
+
+(defun ar-hyphen-line-atpt (&optional arg)
+  "Hyphen LINE at point."
+  (interactive "*P")
+  (ar-th-hyphen 'line arg arg))
+
+(defun ar-hyphen-list-atpt (&optional arg)
+  "Hyphen LIST at point."
+  (interactive "*P")
+  (ar-th-hyphen 'list arg arg))
+
+(defun ar-hyphen-name-atpt (&optional arg)
+  "Hyphen NAME at point."
+  (interactive "*P")
+  (ar-th-hyphen 'name arg arg))
+
+(defun ar-hyphen-number-atpt (&optional arg)
+  "Hyphen NUMBER at point."
+  (interactive "*P")
+  (ar-th-hyphen 'number arg arg))
+
+(defun ar-hyphen-page-atpt (&optional arg)
+  "Hyphen PAGE at point."
+  (interactive "*P")
+  (ar-th-hyphen 'page arg arg))
+
+(defun ar-hyphen-paragraph-atpt (&optional arg)
+  "Hyphen PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-hyphen 'paragraph arg arg))
+
+(defun ar-hyphen-phone-atpt (&optional arg)
+  "Hyphen PHONE at point."
+  (interactive "*P")
+  (ar-th-hyphen 'phone arg arg))
+
+(defun ar-hyphen-region-atpt (&optional arg)
+  "Hyphen REGION at point."
+  (interactive "*P")
+  (ar-th-hyphen 'region arg arg))
+
+(defun ar-hyphen-sentence-atpt (&optional arg)
+  "Hyphen SENTENCE at point."
+  (interactive "*P")
+  (ar-th-hyphen 'sentence arg arg))
+
+(defun ar-hyphen-sexp-atpt (&optional arg)
+  "Hyphen SEXP at point."
+  (interactive "*P")
+  (ar-th-hyphen 'sexp arg arg))
+
+(defun ar-hyphen-shstruct-atpt (&optional arg)
+  "Hyphen SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-hyphen 'shstruct arg arg))
+
+(defun ar-hyphen-symbol-atpt (&optional arg)
+  "Hyphen SYMBOL at point."
+  (interactive "*P")
+  (ar-th-hyphen 'symbol arg arg))
+
+(defun ar-hyphen-url-atpt (&optional arg)
+  "Hyphen URL at point."
+  (interactive "*P")
+  (ar-th-hyphen 'url arg arg))
+
+(defun ar-hyphen-word-atpt (&optional arg)
+  "Hyphen WORD at point."
+  (interactive "*P")
+  (ar-th-hyphen 'word arg arg))
+
+(defun ar-hyphen-wordalphaonly-atpt (&optional arg)
+  "Hyphen WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-hyphen 'wordalphaonly arg arg))
+
+(defun ar-pipe-greateranglednested-atpt (&optional arg)
+  "Pipe GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-pipe 'greateranglednested arg arg))
+
+(defun ar-pipe-lesseranglednested-atpt (&optional arg)
+  "Pipe LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-pipe 'lesseranglednested arg arg))
+
+(defun ar-pipe-buffer-atpt (&optional arg)
+  "Pipe BUFFER at point."
+  (interactive "*P")
+  (ar-th-pipe 'buffer arg arg))
+
+(defun ar-pipe-char-atpt (&optional arg)
+  "Pipe CHAR at point."
+  (interactive "*P")
+  (ar-th-pipe 'char arg arg))
+
+(defun ar-pipe-comment-atpt (&optional arg)
+  "Pipe COMMENT at point."
+  (interactive "*P")
+  (ar-th-pipe 'comment arg arg))
+
+(defun ar-pipe-csv-atpt (&optional arg)
+  "Pipe CSV at point."
+  (interactive "*P")
+  (ar-th-pipe 'csv arg arg))
+
+(defun ar-pipe-date-atpt (&optional arg)
+  "Pipe DATE at point."
+  (interactive "*P")
+  (ar-th-pipe 'date arg arg))
+
+(defun ar-pipe-delimited-atpt (&optional arg)
+  "Pipe DELIMITED at point."
+  (interactive "*P")
+  (ar-th-pipe 'delimited arg arg))
+
+(defun ar-pipe-email-atpt (&optional arg)
+  "Pipe EMAIL at point."
+  (interactive "*P")
+  (ar-th-pipe 'email arg arg))
+
+(defun ar-pipe-filename-atpt (&optional arg)
+  "Pipe FILENAME at point."
+  (interactive "*P")
+  (ar-th-pipe 'filename arg arg))
+
+(defun ar-pipe-filenamenondirectory-atpt (&optional arg)
+  "Pipe FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-pipe 'filenamenondirectory arg arg))
+
+(defun ar-pipe-float-atpt (&optional arg)
+  "Pipe FLOAT at point."
+  (interactive "*P")
+  (ar-th-pipe 'float arg arg))
+
+(defun ar-pipe-function-atpt (&optional arg)
+  "Pipe FUNCTION at point."
+  (interactive "*P")
+  (ar-th-pipe 'function arg arg))
+
+(defun ar-pipe-ip-atpt (&optional arg)
+  "Pipe IP at point."
+  (interactive "*P")
+  (ar-th-pipe 'ip arg arg))
+
+(defun ar-pipe-isbn-atpt (&optional arg)
+  "Pipe ISBN at point."
+  (interactive "*P")
+  (ar-th-pipe 'isbn arg arg))
+
+(defun ar-pipe-line-atpt (&optional arg)
+  "Pipe LINE at point."
+  (interactive "*P")
+  (ar-th-pipe 'line arg arg))
+
+(defun ar-pipe-list-atpt (&optional arg)
+  "Pipe LIST at point."
+  (interactive "*P")
+  (ar-th-pipe 'list arg arg))
+
+(defun ar-pipe-name-atpt (&optional arg)
+  "Pipe NAME at point."
+  (interactive "*P")
+  (ar-th-pipe 'name arg arg))
+
+(defun ar-pipe-number-atpt (&optional arg)
+  "Pipe NUMBER at point."
+  (interactive "*P")
+  (ar-th-pipe 'number arg arg))
+
+(defun ar-pipe-page-atpt (&optional arg)
+  "Pipe PAGE at point."
+  (interactive "*P")
+  (ar-th-pipe 'page arg arg))
+
+(defun ar-pipe-paragraph-atpt (&optional arg)
+  "Pipe PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-pipe 'paragraph arg arg))
+
+(defun ar-pipe-phone-atpt (&optional arg)
+  "Pipe PHONE at point."
+  (interactive "*P")
+  (ar-th-pipe 'phone arg arg))
+
+(defun ar-pipe-region-atpt (&optional arg)
+  "Pipe REGION at point."
+  (interactive "*P")
+  (ar-th-pipe 'region arg arg))
+
+(defun ar-pipe-sentence-atpt (&optional arg)
+  "Pipe SENTENCE at point."
+  (interactive "*P")
+  (ar-th-pipe 'sentence arg arg))
+
+(defun ar-pipe-sexp-atpt (&optional arg)
+  "Pipe SEXP at point."
+  (interactive "*P")
+  (ar-th-pipe 'sexp arg arg))
+
+(defun ar-pipe-shstruct-atpt (&optional arg)
+  "Pipe SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-pipe 'shstruct arg arg))
+
+(defun ar-pipe-symbol-atpt (&optional arg)
+  "Pipe SYMBOL at point."
+  (interactive "*P")
+  (ar-th-pipe 'symbol arg arg))
+
+(defun ar-pipe-url-atpt (&optional arg)
+  "Pipe URL at point."
+  (interactive "*P")
+  (ar-th-pipe 'url arg arg))
+
+(defun ar-pipe-word-atpt (&optional arg)
+  "Pipe WORD at point."
+  (interactive "*P")
+  (ar-th-pipe 'word arg arg))
+
+(defun ar-pipe-wordalphaonly-atpt (&optional arg)
+  "Pipe WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-pipe 'wordalphaonly arg arg))
+
+(defun ar-singlequote-greateranglednested-atpt (&optional arg)
+  "Singlequote GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-singlequote 'greateranglednested arg arg))
+
+(defun ar-singlequote-lesseranglednested-atpt (&optional arg)
+  "Singlequote LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-singlequote 'lesseranglednested arg arg))
+
+(defun ar-singlequote-buffer-atpt (&optional arg)
+  "Singlequote BUFFER at point."
+  (interactive "*P")
+  (ar-th-singlequote 'buffer arg arg))
+
+(defun ar-singlequote-char-atpt (&optional arg)
+  "Singlequote CHAR at point."
+  (interactive "*P")
+  (ar-th-singlequote 'char arg arg))
+
+(defun ar-singlequote-comment-atpt (&optional arg)
+  "Singlequote COMMENT at point."
+  (interactive "*P")
+  (ar-th-singlequote 'comment arg arg))
+
+(defun ar-singlequote-csv-atpt (&optional arg)
+  "Singlequote CSV at point."
+  (interactive "*P")
+  (ar-th-singlequote 'csv arg arg))
+
+(defun ar-singlequote-date-atpt (&optional arg)
+  "Singlequote DATE at point."
+  (interactive "*P")
+  (ar-th-singlequote 'date arg arg))
+
+(defun ar-singlequote-delimited-atpt (&optional arg)
+  "Singlequote DELIMITED at point."
+  (interactive "*P")
+  (ar-th-singlequote 'delimited arg arg))
+
+(defun ar-singlequote-email-atpt (&optional arg)
+  "Singlequote EMAIL at point."
+  (interactive "*P")
+  (ar-th-singlequote 'email arg arg))
+
+(defun ar-singlequote-filename-atpt (&optional arg)
+  "Singlequote FILENAME at point."
+  (interactive "*P")
+  (ar-th-singlequote 'filename arg arg))
+
+(defun ar-singlequote-filenamenondirectory-atpt (&optional arg)
+  "Singlequote FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-singlequote 'filenamenondirectory arg arg))
+
+(defun ar-singlequote-float-atpt (&optional arg)
+  "Singlequote FLOAT at point."
+  (interactive "*P")
+  (ar-th-singlequote 'float arg arg))
+
+(defun ar-singlequote-function-atpt (&optional arg)
+  "Singlequote FUNCTION at point."
+  (interactive "*P")
+  (ar-th-singlequote 'function arg arg))
+
+(defun ar-singlequote-ip-atpt (&optional arg)
+  "Singlequote IP at point."
+  (interactive "*P")
+  (ar-th-singlequote 'ip arg arg))
+
+(defun ar-singlequote-isbn-atpt (&optional arg)
+  "Singlequote ISBN at point."
+  (interactive "*P")
+  (ar-th-singlequote 'isbn arg arg))
+
+(defun ar-singlequote-line-atpt (&optional arg)
+  "Singlequote LINE at point."
+  (interactive "*P")
+  (ar-th-singlequote 'line arg arg))
+
+(defun ar-singlequote-list-atpt (&optional arg)
+  "Singlequote LIST at point."
+  (interactive "*P")
+  (ar-th-singlequote 'list arg arg))
+
+(defun ar-singlequote-name-atpt (&optional arg)
+  "Singlequote NAME at point."
+  (interactive "*P")
+  (ar-th-singlequote 'name arg arg))
+
+(defun ar-singlequote-number-atpt (&optional arg)
+  "Singlequote NUMBER at point."
+  (interactive "*P")
+  (ar-th-singlequote 'number arg arg))
+
+(defun ar-singlequote-page-atpt (&optional arg)
+  "Singlequote PAGE at point."
+  (interactive "*P")
+  (ar-th-singlequote 'page arg arg))
+
+(defun ar-singlequote-paragraph-atpt (&optional arg)
+  "Singlequote PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-singlequote 'paragraph arg arg))
+
+(defun ar-singlequote-phone-atpt (&optional arg)
+  "Singlequote PHONE at point."
+  (interactive "*P")
+  (ar-th-singlequote 'phone arg arg))
+
+(defun ar-singlequote-region-atpt (&optional arg)
+  "Singlequote REGION at point."
+  (interactive "*P")
+  (ar-th-singlequote 'region arg arg))
+
+(defun ar-singlequote-sentence-atpt (&optional arg)
+  "Singlequote SENTENCE at point."
+  (interactive "*P")
+  (ar-th-singlequote 'sentence arg arg))
+
+(defun ar-singlequote-sexp-atpt (&optional arg)
+  "Singlequote SEXP at point."
+  (interactive "*P")
+  (ar-th-singlequote 'sexp arg arg))
+
+(defun ar-singlequote-shstruct-atpt (&optional arg)
+  "Singlequote SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-singlequote 'shstruct arg arg))
+
+(defun ar-singlequote-symbol-atpt (&optional arg)
+  "Singlequote SYMBOL at point."
+  (interactive "*P")
+  (ar-th-singlequote 'symbol arg arg))
+
+(defun ar-singlequote-url-atpt (&optional arg)
+  "Singlequote URL at point."
+  (interactive "*P")
+  (ar-th-singlequote 'url arg arg))
+
+(defun ar-singlequote-word-atpt (&optional arg)
+  "Singlequote WORD at point."
+  (interactive "*P")
+  (ar-th-singlequote 'word arg arg))
+
+(defun ar-singlequote-wordalphaonly-atpt (&optional arg)
+  "Singlequote WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-singlequote 'wordalphaonly arg arg))
+
+(defun ar-slash-greateranglednested-atpt (&optional arg)
+  "Slash GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-slash 'greateranglednested arg arg))
+
+(defun ar-slash-lesseranglednested-atpt (&optional arg)
+  "Slash LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-slash 'lesseranglednested arg arg))
+
+(defun ar-slash-buffer-atpt (&optional arg)
+  "Slash BUFFER at point."
+  (interactive "*P")
+  (ar-th-slash 'buffer arg arg))
+
+(defun ar-slash-char-atpt (&optional arg)
+  "Slash CHAR at point."
+  (interactive "*P")
+  (ar-th-slash 'char arg arg))
+
+(defun ar-slash-comment-atpt (&optional arg)
+  "Slash COMMENT at point."
+  (interactive "*P")
+  (ar-th-slash 'comment arg arg))
+
+(defun ar-slash-csv-atpt (&optional arg)
+  "Slash CSV at point."
+  (interactive "*P")
+  (ar-th-slash 'csv arg arg))
+
+(defun ar-slash-date-atpt (&optional arg)
+  "Slash DATE at point."
+  (interactive "*P")
+  (ar-th-slash 'date arg arg))
+
+(defun ar-slash-delimited-atpt (&optional arg)
+  "Slash DELIMITED at point."
+  (interactive "*P")
+  (ar-th-slash 'delimited arg arg))
+
+(defun ar-slash-email-atpt (&optional arg)
+  "Slash EMAIL at point."
+  (interactive "*P")
+  (ar-th-slash 'email arg arg))
+
+(defun ar-slash-filename-atpt (&optional arg)
+  "Slash FILENAME at point."
+  (interactive "*P")
+  (ar-th-slash 'filename arg arg))
+
+(defun ar-slash-filenamenondirectory-atpt (&optional arg)
+  "Slash FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-slash 'filenamenondirectory arg arg))
+
+(defun ar-slash-float-atpt (&optional arg)
+  "Slash FLOAT at point."
+  (interactive "*P")
+  (ar-th-slash 'float arg arg))
+
+(defun ar-slash-function-atpt (&optional arg)
+  "Slash FUNCTION at point."
+  (interactive "*P")
+  (ar-th-slash 'function arg arg))
+
+(defun ar-slash-ip-atpt (&optional arg)
+  "Slash IP at point."
+  (interactive "*P")
+  (ar-th-slash 'ip arg arg))
+
+(defun ar-slash-isbn-atpt (&optional arg)
+  "Slash ISBN at point."
+  (interactive "*P")
+  (ar-th-slash 'isbn arg arg))
+
+(defun ar-slash-line-atpt (&optional arg)
+  "Slash LINE at point."
+  (interactive "*P")
+  (ar-th-slash 'line arg arg))
+
+(defun ar-slash-list-atpt (&optional arg)
+  "Slash LIST at point."
+  (interactive "*P")
+  (ar-th-slash 'list arg arg))
+
+(defun ar-slash-name-atpt (&optional arg)
+  "Slash NAME at point."
+  (interactive "*P")
+  (ar-th-slash 'name arg arg))
+
+(defun ar-slash-number-atpt (&optional arg)
+  "Slash NUMBER at point."
+  (interactive "*P")
+  (ar-th-slash 'number arg arg))
+
+(defun ar-slash-page-atpt (&optional arg)
+  "Slash PAGE at point."
+  (interactive "*P")
+  (ar-th-slash 'page arg arg))
+
+(defun ar-slash-paragraph-atpt (&optional arg)
+  "Slash PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-slash 'paragraph arg arg))
+
+(defun ar-slash-phone-atpt (&optional arg)
+  "Slash PHONE at point."
+  (interactive "*P")
+  (ar-th-slash 'phone arg arg))
+
+(defun ar-slash-region-atpt (&optional arg)
+  "Slash REGION at point."
+  (interactive "*P")
+  (ar-th-slash 'region arg arg))
+
+(defun ar-slash-sentence-atpt (&optional arg)
+  "Slash SENTENCE at point."
+  (interactive "*P")
+  (ar-th-slash 'sentence arg arg))
+
+(defun ar-slash-sexp-atpt (&optional arg)
+  "Slash SEXP at point."
+  (interactive "*P")
+  (ar-th-slash 'sexp arg arg))
+
+(defun ar-slash-shstruct-atpt (&optional arg)
+  "Slash SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-slash 'shstruct arg arg))
+
+(defun ar-slash-symbol-atpt (&optional arg)
+  "Slash SYMBOL at point."
+  (interactive "*P")
+  (ar-th-slash 'symbol arg arg))
+
+(defun ar-slash-url-atpt (&optional arg)
+  "Slash URL at point."
+  (interactive "*P")
+  (ar-th-slash 'url arg arg))
+
+(defun ar-slash-word-atpt (&optional arg)
+  "Slash WORD at point."
+  (interactive "*P")
+  (ar-th-slash 'word arg arg))
+
+(defun ar-slash-wordalphaonly-atpt (&optional arg)
+  "Slash WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-slash 'wordalphaonly arg arg))
+
+(defun ar-star-greateranglednested-atpt (&optional arg)
+  "Star GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-star 'greateranglednested arg arg))
+
+(defun ar-star-lesseranglednested-atpt (&optional arg)
+  "Star LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-star 'lesseranglednested arg arg))
+
+(defun ar-star-buffer-atpt (&optional arg)
+  "Star BUFFER at point."
+  (interactive "*P")
+  (ar-th-star 'buffer arg arg))
+
+(defun ar-star-char-atpt (&optional arg)
+  "Star CHAR at point."
+  (interactive "*P")
+  (ar-th-star 'char arg arg))
+
+(defun ar-star-comment-atpt (&optional arg)
+  "Star COMMENT at point."
+  (interactive "*P")
+  (ar-th-star 'comment arg arg))
+
+(defun ar-star-csv-atpt (&optional arg)
+  "Star CSV at point."
+  (interactive "*P")
+  (ar-th-star 'csv arg arg))
+
+(defun ar-star-date-atpt (&optional arg)
+  "Star DATE at point."
+  (interactive "*P")
+  (ar-th-star 'date arg arg))
+
+(defun ar-star-delimited-atpt (&optional arg)
+  "Star DELIMITED at point."
+  (interactive "*P")
+  (ar-th-star 'delimited arg arg))
+
+(defun ar-star-email-atpt (&optional arg)
+  "Star EMAIL at point."
+  (interactive "*P")
+  (ar-th-star 'email arg arg))
+
+(defun ar-star-filename-atpt (&optional arg)
+  "Star FILENAME at point."
+  (interactive "*P")
+  (ar-th-star 'filename arg arg))
+
+(defun ar-star-filenamenondirectory-atpt (&optional arg)
+  "Star FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-star 'filenamenondirectory arg arg))
+
+(defun ar-star-float-atpt (&optional arg)
+  "Star FLOAT at point."
+  (interactive "*P")
+  (ar-th-star 'float arg arg))
+
+(defun ar-star-function-atpt (&optional arg)
+  "Star FUNCTION at point."
+  (interactive "*P")
+  (ar-th-star 'function arg arg))
+
+(defun ar-star-ip-atpt (&optional arg)
+  "Star IP at point."
+  (interactive "*P")
+  (ar-th-star 'ip arg arg))
+
+(defun ar-star-isbn-atpt (&optional arg)
+  "Star ISBN at point."
+  (interactive "*P")
+  (ar-th-star 'isbn arg arg))
+
+(defun ar-star-line-atpt (&optional arg)
+  "Star LINE at point."
+  (interactive "*P")
+  (ar-th-star 'line arg arg))
+
+(defun ar-star-list-atpt (&optional arg)
+  "Star LIST at point."
+  (interactive "*P")
+  (ar-th-star 'list arg arg))
+
+(defun ar-star-name-atpt (&optional arg)
+  "Star NAME at point."
+  (interactive "*P")
+  (ar-th-star 'name arg arg))
+
+(defun ar-star-number-atpt (&optional arg)
+  "Star NUMBER at point."
+  (interactive "*P")
+  (ar-th-star 'number arg arg))
+
+(defun ar-star-page-atpt (&optional arg)
+  "Star PAGE at point."
+  (interactive "*P")
+  (ar-th-star 'page arg arg))
+
+(defun ar-star-paragraph-atpt (&optional arg)
+  "Star PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-star 'paragraph arg arg))
+
+(defun ar-star-phone-atpt (&optional arg)
+  "Star PHONE at point."
+  (interactive "*P")
+  (ar-th-star 'phone arg arg))
+
+(defun ar-star-region-atpt (&optional arg)
+  "Star REGION at point."
+  (interactive "*P")
+  (ar-th-star 'region arg arg))
+
+(defun ar-star-sentence-atpt (&optional arg)
+  "Star SENTENCE at point."
+  (interactive "*P")
+  (ar-th-star 'sentence arg arg))
+
+(defun ar-star-sexp-atpt (&optional arg)
+  "Star SEXP at point."
+  (interactive "*P")
+  (ar-th-star 'sexp arg arg))
+
+(defun ar-star-shstruct-atpt (&optional arg)
+  "Star SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-star 'shstruct arg arg))
+
+(defun ar-star-symbol-atpt (&optional arg)
+  "Star SYMBOL at point."
+  (interactive "*P")
+  (ar-th-star 'symbol arg arg))
+
+(defun ar-star-url-atpt (&optional arg)
+  "Star URL at point."
+  (interactive "*P")
+  (ar-th-star 'url arg arg))
+
+(defun ar-star-word-atpt (&optional arg)
+  "Star WORD at point."
+  (interactive "*P")
+  (ar-th-star 'word arg arg))
+
+(defun ar-star-wordalphaonly-atpt (&optional arg)
+  "Star WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-star 'wordalphaonly arg arg))
+
+(defun ar-tild-greateranglednested-atpt (&optional arg)
+  "Tild GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-tild 'greateranglednested arg arg))
+
+(defun ar-tild-lesseranglednested-atpt (&optional arg)
+  "Tild LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-tild 'lesseranglednested arg arg))
+
+(defun ar-tild-buffer-atpt (&optional arg)
+  "Tild BUFFER at point."
+  (interactive "*P")
+  (ar-th-tild 'buffer arg arg))
+
+(defun ar-tild-char-atpt (&optional arg)
+  "Tild CHAR at point."
+  (interactive "*P")
+  (ar-th-tild 'char arg arg))
+
+(defun ar-tild-comment-atpt (&optional arg)
+  "Tild COMMENT at point."
+  (interactive "*P")
+  (ar-th-tild 'comment arg arg))
+
+(defun ar-tild-csv-atpt (&optional arg)
+  "Tild CSV at point."
+  (interactive "*P")
+  (ar-th-tild 'csv arg arg))
+
+(defun ar-tild-date-atpt (&optional arg)
+  "Tild DATE at point."
+  (interactive "*P")
+  (ar-th-tild 'date arg arg))
+
+(defun ar-tild-delimited-atpt (&optional arg)
+  "Tild DELIMITED at point."
+  (interactive "*P")
+  (ar-th-tild 'delimited arg arg))
+
+(defun ar-tild-email-atpt (&optional arg)
+  "Tild EMAIL at point."
+  (interactive "*P")
+  (ar-th-tild 'email arg arg))
+
+(defun ar-tild-filename-atpt (&optional arg)
+  "Tild FILENAME at point."
+  (interactive "*P")
+  (ar-th-tild 'filename arg arg))
+
+(defun ar-tild-filenamenondirectory-atpt (&optional arg)
+  "Tild FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-tild 'filenamenondirectory arg arg))
+
+(defun ar-tild-float-atpt (&optional arg)
+  "Tild FLOAT at point."
+  (interactive "*P")
+  (ar-th-tild 'float arg arg))
+
+(defun ar-tild-function-atpt (&optional arg)
+  "Tild FUNCTION at point."
+  (interactive "*P")
+  (ar-th-tild 'function arg arg))
+
+(defun ar-tild-ip-atpt (&optional arg)
+  "Tild IP at point."
+  (interactive "*P")
+  (ar-th-tild 'ip arg arg))
+
+(defun ar-tild-isbn-atpt (&optional arg)
+  "Tild ISBN at point."
+  (interactive "*P")
+  (ar-th-tild 'isbn arg arg))
+
+(defun ar-tild-line-atpt (&optional arg)
+  "Tild LINE at point."
+  (interactive "*P")
+  (ar-th-tild 'line arg arg))
+
+(defun ar-tild-list-atpt (&optional arg)
+  "Tild LIST at point."
+  (interactive "*P")
+  (ar-th-tild 'list arg arg))
+
+(defun ar-tild-name-atpt (&optional arg)
+  "Tild NAME at point."
+  (interactive "*P")
+  (ar-th-tild 'name arg arg))
+
+(defun ar-tild-number-atpt (&optional arg)
+  "Tild NUMBER at point."
+  (interactive "*P")
+  (ar-th-tild 'number arg arg))
+
+(defun ar-tild-page-atpt (&optional arg)
+  "Tild PAGE at point."
+  (interactive "*P")
+  (ar-th-tild 'page arg arg))
+
+(defun ar-tild-paragraph-atpt (&optional arg)
+  "Tild PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-tild 'paragraph arg arg))
+
+(defun ar-tild-phone-atpt (&optional arg)
+  "Tild PHONE at point."
+  (interactive "*P")
+  (ar-th-tild 'phone arg arg))
+
+(defun ar-tild-region-atpt (&optional arg)
+  "Tild REGION at point."
+  (interactive "*P")
+  (ar-th-tild 'region arg arg))
+
+(defun ar-tild-sentence-atpt (&optional arg)
+  "Tild SENTENCE at point."
+  (interactive "*P")
+  (ar-th-tild 'sentence arg arg))
+
+(defun ar-tild-sexp-atpt (&optional arg)
+  "Tild SEXP at point."
+  (interactive "*P")
+  (ar-th-tild 'sexp arg arg))
+
+(defun ar-tild-shstruct-atpt (&optional arg)
+  "Tild SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-tild 'shstruct arg arg))
+
+(defun ar-tild-symbol-atpt (&optional arg)
+  "Tild SYMBOL at point."
+  (interactive "*P")
+  (ar-th-tild 'symbol arg arg))
+
+(defun ar-tild-url-atpt (&optional arg)
+  "Tild URL at point."
+  (interactive "*P")
+  (ar-th-tild 'url arg arg))
+
+(defun ar-tild-word-atpt (&optional arg)
+  "Tild WORD at point."
+  (interactive "*P")
+  (ar-th-tild 'word arg arg))
+
+(defun ar-tild-wordalphaonly-atpt (&optional arg)
+  "Tild WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-tild 'wordalphaonly arg arg))
+
+(defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
+  "Triplebacktick GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'greateranglednested arg arg))
+
+(defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
+  "Triplebacktick LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'lesseranglednested arg arg))
+
+(defun ar-triplebacktick-buffer-atpt (&optional arg)
+  "Triplebacktick BUFFER at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'buffer arg arg))
+
+(defun ar-triplebacktick-char-atpt (&optional arg)
+  "Triplebacktick CHAR at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'char arg arg))
+
+(defun ar-triplebacktick-comment-atpt (&optional arg)
+  "Triplebacktick COMMENT at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'comment arg arg))
+
+(defun ar-triplebacktick-csv-atpt (&optional arg)
+  "Triplebacktick CSV at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'csv arg arg))
+
+(defun ar-triplebacktick-date-atpt (&optional arg)
+  "Triplebacktick DATE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'date arg arg))
+
+(defun ar-triplebacktick-delimited-atpt (&optional arg)
+  "Triplebacktick DELIMITED at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'delimited arg arg))
+
+(defun ar-triplebacktick-email-atpt (&optional arg)
+  "Triplebacktick EMAIL at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'email arg arg))
+
+(defun ar-triplebacktick-filename-atpt (&optional arg)
+  "Triplebacktick FILENAME at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'filename arg arg))
+
+(defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
+  "Triplebacktick FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'filenamenondirectory arg arg))
+
+(defun ar-triplebacktick-float-atpt (&optional arg)
+  "Triplebacktick FLOAT at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'float arg arg))
+
+(defun ar-triplebacktick-function-atpt (&optional arg)
+  "Triplebacktick FUNCTION at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'function arg arg))
+
+(defun ar-triplebacktick-ip-atpt (&optional arg)
+  "Triplebacktick IP at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'ip arg arg))
+
+(defun ar-triplebacktick-isbn-atpt (&optional arg)
+  "Triplebacktick ISBN at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'isbn arg arg))
+
+(defun ar-triplebacktick-line-atpt (&optional arg)
+  "Triplebacktick LINE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'line arg arg))
+
+(defun ar-triplebacktick-list-atpt (&optional arg)
+  "Triplebacktick LIST at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'list arg arg))
+
+(defun ar-triplebacktick-name-atpt (&optional arg)
+  "Triplebacktick NAME at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'name arg arg))
+
+(defun ar-triplebacktick-number-atpt (&optional arg)
+  "Triplebacktick NUMBER at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'number arg arg))
+
+(defun ar-triplebacktick-page-atpt (&optional arg)
+  "Triplebacktick PAGE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'page arg arg))
+
+(defun ar-triplebacktick-paragraph-atpt (&optional arg)
+  "Triplebacktick PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'paragraph arg arg))
+
+(defun ar-triplebacktick-phone-atpt (&optional arg)
+  "Triplebacktick PHONE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'phone arg arg))
+
+(defun ar-triplebacktick-region-atpt (&optional arg)
+  "Triplebacktick REGION at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'region arg arg))
+
+(defun ar-triplebacktick-sentence-atpt (&optional arg)
+  "Triplebacktick SENTENCE at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'sentence arg arg))
+
+(defun ar-triplebacktick-sexp-atpt (&optional arg)
+  "Triplebacktick SEXP at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'sexp arg arg))
+
+(defun ar-triplebacktick-shstruct-atpt (&optional arg)
+  "Triplebacktick SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'shstruct arg arg))
+
+(defun ar-triplebacktick-symbol-atpt (&optional arg)
+  "Triplebacktick SYMBOL at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'symbol arg arg))
+
+(defun ar-triplebacktick-url-atpt (&optional arg)
+  "Triplebacktick URL at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'url arg arg))
+
+(defun ar-triplebacktick-word-atpt (&optional arg)
+  "Triplebacktick WORD at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'word arg arg))
+
+(defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
+  "Triplebacktick WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-triplebacktick 'wordalphaonly arg arg))
+
+(defun ar-underscore-greateranglednested-atpt (&optional arg)
+  "Underscore GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-underscore 'greateranglednested arg arg))
+
+(defun ar-underscore-lesseranglednested-atpt (&optional arg)
+  "Underscore LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-underscore 'lesseranglednested arg arg))
+
+(defun ar-underscore-buffer-atpt (&optional arg)
+  "Underscore BUFFER at point."
+  (interactive "*P")
+  (ar-th-underscore 'buffer arg arg))
+
+(defun ar-underscore-char-atpt (&optional arg)
+  "Underscore CHAR at point."
+  (interactive "*P")
+  (ar-th-underscore 'char arg arg))
+
+(defun ar-underscore-comment-atpt (&optional arg)
+  "Underscore COMMENT at point."
+  (interactive "*P")
+  (ar-th-underscore 'comment arg arg))
+
+(defun ar-underscore-csv-atpt (&optional arg)
+  "Underscore CSV at point."
+  (interactive "*P")
+  (ar-th-underscore 'csv arg arg))
+
+(defun ar-underscore-date-atpt (&optional arg)
+  "Underscore DATE at point."
+  (interactive "*P")
+  (ar-th-underscore 'date arg arg))
+
+(defun ar-underscore-delimited-atpt (&optional arg)
+  "Underscore DELIMITED at point."
+  (interactive "*P")
+  (ar-th-underscore 'delimited arg arg))
+
+(defun ar-underscore-email-atpt (&optional arg)
+  "Underscore EMAIL at point."
+  (interactive "*P")
+  (ar-th-underscore 'email arg arg))
+
+(defun ar-underscore-filename-atpt (&optional arg)
+  "Underscore FILENAME at point."
+  (interactive "*P")
+  (ar-th-underscore 'filename arg arg))
+
+(defun ar-underscore-filenamenondirectory-atpt (&optional arg)
+  "Underscore FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-underscore 'filenamenondirectory arg arg))
+
+(defun ar-underscore-float-atpt (&optional arg)
+  "Underscore FLOAT at point."
+  (interactive "*P")
+  (ar-th-underscore 'float arg arg))
+
+(defun ar-underscore-function-atpt (&optional arg)
+  "Underscore FUNCTION at point."
+  (interactive "*P")
+  (ar-th-underscore 'function arg arg))
+
+(defun ar-underscore-ip-atpt (&optional arg)
+  "Underscore IP at point."
+  (interactive "*P")
+  (ar-th-underscore 'ip arg arg))
+
+(defun ar-underscore-isbn-atpt (&optional arg)
+  "Underscore ISBN at point."
+  (interactive "*P")
+  (ar-th-underscore 'isbn arg arg))
+
+(defun ar-underscore-line-atpt (&optional arg)
+  "Underscore LINE at point."
+  (interactive "*P")
+  (ar-th-underscore 'line arg arg))
+
+(defun ar-underscore-list-atpt (&optional arg)
+  "Underscore LIST at point."
+  (interactive "*P")
+  (ar-th-underscore 'list arg arg))
+
+(defun ar-underscore-name-atpt (&optional arg)
+  "Underscore NAME at point."
+  (interactive "*P")
+  (ar-th-underscore 'name arg arg))
+
+(defun ar-underscore-number-atpt (&optional arg)
+  "Underscore NUMBER at point."
+  (interactive "*P")
+  (ar-th-underscore 'number arg arg))
+
+(defun ar-underscore-page-atpt (&optional arg)
+  "Underscore PAGE at point."
+  (interactive "*P")
+  (ar-th-underscore 'page arg arg))
+
+(defun ar-underscore-paragraph-atpt (&optional arg)
+  "Underscore PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-underscore 'paragraph arg arg))
+
+(defun ar-underscore-phone-atpt (&optional arg)
+  "Underscore PHONE at point."
+  (interactive "*P")
+  (ar-th-underscore 'phone arg arg))
+
+(defun ar-underscore-region-atpt (&optional arg)
+  "Underscore REGION at point."
+  (interactive "*P")
+  (ar-th-underscore 'region arg arg))
+
+(defun ar-underscore-sentence-atpt (&optional arg)
+  "Underscore SENTENCE at point."
+  (interactive "*P")
+  (ar-th-underscore 'sentence arg arg))
+
+(defun ar-underscore-sexp-atpt (&optional arg)
+  "Underscore SEXP at point."
+  (interactive "*P")
+  (ar-th-underscore 'sexp arg arg))
+
+(defun ar-underscore-shstruct-atpt (&optional arg)
+  "Underscore SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-underscore 'shstruct arg arg))
+
+(defun ar-underscore-symbol-atpt (&optional arg)
+  "Underscore SYMBOL at point."
+  (interactive "*P")
+  (ar-th-underscore 'symbol arg arg))
+
+(defun ar-underscore-url-atpt (&optional arg)
+  "Underscore URL at point."
+  (interactive "*P")
+  (ar-th-underscore 'url arg arg))
+
+(defun ar-underscore-word-atpt (&optional arg)
+  "Underscore WORD at point."
+  (interactive "*P")
+  (ar-th-underscore 'word arg arg))
+
+(defun ar-underscore-wordalphaonly-atpt (&optional arg)
+  "Underscore WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-underscore 'wordalphaonly arg arg))
+
+(defun ar-whitespace-greateranglednested-atpt (&optional arg)
+  "Whitespace GREATERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-whitespace 'greateranglednested arg arg))
+
+(defun ar-whitespace-lesseranglednested-atpt (&optional arg)
+  "Whitespace LESSERANGLEDNESTED at point."
+  (interactive "*P")
+  (ar-th-whitespace 'lesseranglednested arg arg))
+
+(defun ar-whitespace-buffer-atpt (&optional arg)
+  "Whitespace BUFFER at point."
+  (interactive "*P")
+  (ar-th-whitespace 'buffer arg arg))
+
+(defun ar-whitespace-char-atpt (&optional arg)
+  "Whitespace CHAR at point."
+  (interactive "*P")
+  (ar-th-whitespace 'char arg arg))
+
+(defun ar-whitespace-comment-atpt (&optional arg)
+  "Whitespace COMMENT at point."
+  (interactive "*P")
+  (ar-th-whitespace 'comment arg arg))
+
+(defun ar-whitespace-csv-atpt (&optional arg)
+  "Whitespace CSV at point."
+  (interactive "*P")
+  (ar-th-whitespace 'csv arg arg))
+
+(defun ar-whitespace-date-atpt (&optional arg)
+  "Whitespace DATE at point."
+  (interactive "*P")
+  (ar-th-whitespace 'date arg arg))
+
+(defun ar-whitespace-delimited-atpt (&optional arg)
+  "Whitespace DELIMITED at point."
+  (interactive "*P")
+  (ar-th-whitespace 'delimited arg arg))
+
+(defun ar-whitespace-email-atpt (&optional arg)
+  "Whitespace EMAIL at point."
+  (interactive "*P")
+  (ar-th-whitespace 'email arg arg))
+
+(defun ar-whitespace-filename-atpt (&optional arg)
+  "Whitespace FILENAME at point."
+  (interactive "*P")
+  (ar-th-whitespace 'filename arg arg))
+
+(defun ar-whitespace-filenamenondirectory-atpt (&optional arg)
+  "Whitespace FILENAMENONDIRECTORY at point."
+  (interactive "*P")
+  (ar-th-whitespace 'filenamenondirectory arg arg))
+
+(defun ar-whitespace-float-atpt (&optional arg)
+  "Whitespace FLOAT at point."
+  (interactive "*P")
+  (ar-th-whitespace 'float arg arg))
+
+(defun ar-whitespace-function-atpt (&optional arg)
+  "Whitespace FUNCTION at point."
+  (interactive "*P")
+  (ar-th-whitespace 'function arg arg))
+
+(defun ar-whitespace-ip-atpt (&optional arg)
+  "Whitespace IP at point."
+  (interactive "*P")
+  (ar-th-whitespace 'ip arg arg))
+
+(defun ar-whitespace-isbn-atpt (&optional arg)
+  "Whitespace ISBN at point."
+  (interactive "*P")
+  (ar-th-whitespace 'isbn arg arg))
+
+(defun ar-whitespace-line-atpt (&optional arg)
+  "Whitespace LINE at point."
+  (interactive "*P")
+  (ar-th-whitespace 'line arg arg))
+
+(defun ar-whitespace-list-atpt (&optional arg)
+  "Whitespace LIST at point."
+  (interactive "*P")
+  (ar-th-whitespace 'list arg arg))
+
+(defun ar-whitespace-name-atpt (&optional arg)
+  "Whitespace NAME at point."
+  (interactive "*P")
+  (ar-th-whitespace 'name arg arg))
+
+(defun ar-whitespace-number-atpt (&optional arg)
+  "Whitespace NUMBER at point."
+  (interactive "*P")
+  (ar-th-whitespace 'number arg arg))
+
+(defun ar-whitespace-page-atpt (&optional arg)
+  "Whitespace PAGE at point."
+  (interactive "*P")
+  (ar-th-whitespace 'page arg arg))
+
+(defun ar-whitespace-paragraph-atpt (&optional arg)
+  "Whitespace PARAGRAPH at point."
+  (interactive "*P")
+  (ar-th-whitespace 'paragraph arg arg))
+
+(defun ar-whitespace-phone-atpt (&optional arg)
+  "Whitespace PHONE at point."
+  (interactive "*P")
+  (ar-th-whitespace 'phone arg arg))
+
+(defun ar-whitespace-region-atpt (&optional arg)
+  "Whitespace REGION at point."
+  (interactive "*P")
+  (ar-th-whitespace 'region arg arg))
+
+(defun ar-whitespace-sentence-atpt (&optional arg)
+  "Whitespace SENTENCE at point."
+  (interactive "*P")
+  (ar-th-whitespace 'sentence arg arg))
+
+(defun ar-whitespace-sexp-atpt (&optional arg)
+  "Whitespace SEXP at point."
+  (interactive "*P")
+  (ar-th-whitespace 'sexp arg arg))
+
+(defun ar-whitespace-shstruct-atpt (&optional arg)
+  "Whitespace SHSTRUCT at point."
+  (interactive "*P")
+  (ar-th-whitespace 'shstruct arg arg))
+
+(defun ar-whitespace-symbol-atpt (&optional arg)
+  "Whitespace SYMBOL at point."
+  (interactive "*P")
+  (ar-th-whitespace 'symbol arg arg))
+
+(defun ar-whitespace-url-atpt (&optional arg)
+  "Whitespace URL at point."
+  (interactive "*P")
+  (ar-th-whitespace 'url arg arg))
+
+(defun ar-whitespace-word-atpt (&optional arg)
+  "Whitespace WORD at point."
+  (interactive "*P")
+  (ar-th-whitespace 'word arg arg))
+
+(defun ar-whitespace-wordalphaonly-atpt (&optional arg)
+  "Whitespace WORDALPHAONLY at point."
+  (interactive "*P")
+  (ar-th-whitespace 'wordalphaonly arg arg))
+
+;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
+;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
 (defun ar-brace-greateranglednested-atpt (&optional arg)
   "Brace GREATERANGLEDNESTED at point ARG times."
   (interactive "*P")
@@ -19306,3040 +22340,6 @@ See doku from `sort-subr', for details.
           (exchange-point-and-mark)
           (kill-new (buffer-substring-no-properties beg end)))
       (message "%s" "Can't detect beginning of emacs-batch-expression"))))
-;;; thing-at-point-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
-
-;; Copyright (C) 2010-2019 Andreas Röhler, unless
-;; indicated otherwise
-
-;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
-;; indicated otherwise
-
-;; Version: 0.1
-
-;; Keywords: convenience
-
-;; This file is free software; you can redistribute it
-;; and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version.
-
-;; This file is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs; see the file COPYING.  If not, write to
-;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-;; Boston, MA 02110-1301, USA.
-
-;;; Commentary:
-
-;;; Code:
-
-(require 'thingatpt-utils-core)
-
-;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
-(defun ar-colon-greateranglednested-atpt (&optional arg)
-  "Colon GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-colon 'greateranglednested arg arg))
-
-(defun ar-colon-lesseranglednested-atpt (&optional arg)
-  "Colon LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-colon 'lesseranglednested arg arg))
-
-(defun ar-colon-buffer-atpt (&optional arg)
-  "Colon BUFFER at point."
-  (interactive "*P")
-  (ar-th-colon 'buffer arg arg))
-
-(defun ar-colon-char-atpt (&optional arg)
-  "Colon CHAR at point."
-  (interactive "*P")
-  (ar-th-colon 'char arg arg))
-
-(defun ar-colon-comment-atpt (&optional arg)
-  "Colon COMMENT at point."
-  (interactive "*P")
-  (ar-th-colon 'comment arg arg))
-
-(defun ar-colon-csv-atpt (&optional arg)
-  "Colon CSV at point."
-  (interactive "*P")
-  (ar-th-colon 'csv arg arg))
-
-(defun ar-colon-date-atpt (&optional arg)
-  "Colon DATE at point."
-  (interactive "*P")
-  (ar-th-colon 'date arg arg))
-
-(defun ar-colon-delimited-atpt (&optional arg)
-  "Colon DELIMITED at point."
-  (interactive "*P")
-  (ar-th-colon 'delimited arg arg))
-
-(defun ar-colon-email-atpt (&optional arg)
-  "Colon EMAIL at point."
-  (interactive "*P")
-  (ar-th-colon 'email arg arg))
-
-(defun ar-colon-filename-atpt (&optional arg)
-  "Colon FILENAME at point."
-  (interactive "*P")
-  (ar-th-colon 'filename arg arg))
-
-(defun ar-colon-filenamenondirectory-atpt (&optional arg)
-  "Colon FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-colon 'filenamenondirectory arg arg))
-
-(defun ar-colon-float-atpt (&optional arg)
-  "Colon FLOAT at point."
-  (interactive "*P")
-  (ar-th-colon 'float arg arg))
-
-(defun ar-colon-function-atpt (&optional arg)
-  "Colon FUNCTION at point."
-  (interactive "*P")
-  (ar-th-colon 'function arg arg))
-
-(defun ar-colon-ip-atpt (&optional arg)
-  "Colon IP at point."
-  (interactive "*P")
-  (ar-th-colon 'ip arg arg))
-
-(defun ar-colon-isbn-atpt (&optional arg)
-  "Colon ISBN at point."
-  (interactive "*P")
-  (ar-th-colon 'isbn arg arg))
-
-(defun ar-colon-line-atpt (&optional arg)
-  "Colon LINE at point."
-  (interactive "*P")
-  (ar-th-colon 'line arg arg))
-
-(defun ar-colon-list-atpt (&optional arg)
-  "Colon LIST at point."
-  (interactive "*P")
-  (ar-th-colon 'list arg arg))
-
-(defun ar-colon-name-atpt (&optional arg)
-  "Colon NAME at point."
-  (interactive "*P")
-  (ar-th-colon 'name arg arg))
-
-(defun ar-colon-number-atpt (&optional arg)
-  "Colon NUMBER at point."
-  (interactive "*P")
-  (ar-th-colon 'number arg arg))
-
-(defun ar-colon-page-atpt (&optional arg)
-  "Colon PAGE at point."
-  (interactive "*P")
-  (ar-th-colon 'page arg arg))
-
-(defun ar-colon-paragraph-atpt (&optional arg)
-  "Colon PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-colon 'paragraph arg arg))
-
-(defun ar-colon-phone-atpt (&optional arg)
-  "Colon PHONE at point."
-  (interactive "*P")
-  (ar-th-colon 'phone arg arg))
-
-(defun ar-colon-region-atpt (&optional arg)
-  "Colon REGION at point."
-  (interactive "*P")
-  (ar-th-colon 'region arg arg))
-
-(defun ar-colon-sentence-atpt (&optional arg)
-  "Colon SENTENCE at point."
-  (interactive "*P")
-  (ar-th-colon 'sentence arg arg))
-
-(defun ar-colon-sexp-atpt (&optional arg)
-  "Colon SEXP at point."
-  (interactive "*P")
-  (ar-th-colon 'sexp arg arg))
-
-(defun ar-colon-shstruct-atpt (&optional arg)
-  "Colon SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-colon 'shstruct arg arg))
-
-(defun ar-colon-symbol-atpt (&optional arg)
-  "Colon SYMBOL at point."
-  (interactive "*P")
-  (ar-th-colon 'symbol arg arg))
-
-(defun ar-colon-url-atpt (&optional arg)
-  "Colon URL at point."
-  (interactive "*P")
-  (ar-th-colon 'url arg arg))
-
-(defun ar-colon-word-atpt (&optional arg)
-  "Colon WORD at point."
-  (interactive "*P")
-  (ar-th-colon 'word arg arg))
-
-(defun ar-colon-wordalphaonly-atpt (&optional arg)
-  "Colon WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-colon 'wordalphaonly arg arg))
-
-(defun ar-cross-greateranglednested-atpt (&optional arg)
-  "Cross GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-cross 'greateranglednested arg arg))
-
-(defun ar-cross-lesseranglednested-atpt (&optional arg)
-  "Cross LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-cross 'lesseranglednested arg arg))
-
-(defun ar-cross-buffer-atpt (&optional arg)
-  "Cross BUFFER at point."
-  (interactive "*P")
-  (ar-th-cross 'buffer arg arg))
-
-(defun ar-cross-char-atpt (&optional arg)
-  "Cross CHAR at point."
-  (interactive "*P")
-  (ar-th-cross 'char arg arg))
-
-(defun ar-cross-comment-atpt (&optional arg)
-  "Cross COMMENT at point."
-  (interactive "*P")
-  (ar-th-cross 'comment arg arg))
-
-(defun ar-cross-csv-atpt (&optional arg)
-  "Cross CSV at point."
-  (interactive "*P")
-  (ar-th-cross 'csv arg arg))
-
-(defun ar-cross-date-atpt (&optional arg)
-  "Cross DATE at point."
-  (interactive "*P")
-  (ar-th-cross 'date arg arg))
-
-(defun ar-cross-delimited-atpt (&optional arg)
-  "Cross DELIMITED at point."
-  (interactive "*P")
-  (ar-th-cross 'delimited arg arg))
-
-(defun ar-cross-email-atpt (&optional arg)
-  "Cross EMAIL at point."
-  (interactive "*P")
-  (ar-th-cross 'email arg arg))
-
-(defun ar-cross-filename-atpt (&optional arg)
-  "Cross FILENAME at point."
-  (interactive "*P")
-  (ar-th-cross 'filename arg arg))
-
-(defun ar-cross-filenamenondirectory-atpt (&optional arg)
-  "Cross FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-cross 'filenamenondirectory arg arg))
-
-(defun ar-cross-float-atpt (&optional arg)
-  "Cross FLOAT at point."
-  (interactive "*P")
-  (ar-th-cross 'float arg arg))
-
-(defun ar-cross-function-atpt (&optional arg)
-  "Cross FUNCTION at point."
-  (interactive "*P")
-  (ar-th-cross 'function arg arg))
-
-(defun ar-cross-ip-atpt (&optional arg)
-  "Cross IP at point."
-  (interactive "*P")
-  (ar-th-cross 'ip arg arg))
-
-(defun ar-cross-isbn-atpt (&optional arg)
-  "Cross ISBN at point."
-  (interactive "*P")
-  (ar-th-cross 'isbn arg arg))
-
-(defun ar-cross-line-atpt (&optional arg)
-  "Cross LINE at point."
-  (interactive "*P")
-  (ar-th-cross 'line arg arg))
-
-(defun ar-cross-list-atpt (&optional arg)
-  "Cross LIST at point."
-  (interactive "*P")
-  (ar-th-cross 'list arg arg))
-
-(defun ar-cross-name-atpt (&optional arg)
-  "Cross NAME at point."
-  (interactive "*P")
-  (ar-th-cross 'name arg arg))
-
-(defun ar-cross-number-atpt (&optional arg)
-  "Cross NUMBER at point."
-  (interactive "*P")
-  (ar-th-cross 'number arg arg))
-
-(defun ar-cross-page-atpt (&optional arg)
-  "Cross PAGE at point."
-  (interactive "*P")
-  (ar-th-cross 'page arg arg))
-
-(defun ar-cross-paragraph-atpt (&optional arg)
-  "Cross PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-cross 'paragraph arg arg))
-
-(defun ar-cross-phone-atpt (&optional arg)
-  "Cross PHONE at point."
-  (interactive "*P")
-  (ar-th-cross 'phone arg arg))
-
-(defun ar-cross-region-atpt (&optional arg)
-  "Cross REGION at point."
-  (interactive "*P")
-  (ar-th-cross 'region arg arg))
-
-(defun ar-cross-sentence-atpt (&optional arg)
-  "Cross SENTENCE at point."
-  (interactive "*P")
-  (ar-th-cross 'sentence arg arg))
-
-(defun ar-cross-sexp-atpt (&optional arg)
-  "Cross SEXP at point."
-  (interactive "*P")
-  (ar-th-cross 'sexp arg arg))
-
-(defun ar-cross-shstruct-atpt (&optional arg)
-  "Cross SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-cross 'shstruct arg arg))
-
-(defun ar-cross-symbol-atpt (&optional arg)
-  "Cross SYMBOL at point."
-  (interactive "*P")
-  (ar-th-cross 'symbol arg arg))
-
-(defun ar-cross-url-atpt (&optional arg)
-  "Cross URL at point."
-  (interactive "*P")
-  (ar-th-cross 'url arg arg))
-
-(defun ar-cross-word-atpt (&optional arg)
-  "Cross WORD at point."
-  (interactive "*P")
-  (ar-th-cross 'word arg arg))
-
-(defun ar-cross-wordalphaonly-atpt (&optional arg)
-  "Cross WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-cross 'wordalphaonly arg arg))
-
-(defun ar-doubleslash-greateranglednested-atpt (&optional arg)
-  "Doubleslash GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'greateranglednested arg arg))
-
-(defun ar-doubleslash-lesseranglednested-atpt (&optional arg)
-  "Doubleslash LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'lesseranglednested arg arg))
-
-(defun ar-doubleslash-buffer-atpt (&optional arg)
-  "Doubleslash BUFFER at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'buffer arg arg))
-
-(defun ar-doubleslash-char-atpt (&optional arg)
-  "Doubleslash CHAR at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'char arg arg))
-
-(defun ar-doubleslash-comment-atpt (&optional arg)
-  "Doubleslash COMMENT at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'comment arg arg))
-
-(defun ar-doubleslash-csv-atpt (&optional arg)
-  "Doubleslash CSV at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'csv arg arg))
-
-(defun ar-doubleslash-date-atpt (&optional arg)
-  "Doubleslash DATE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'date arg arg))
-
-(defun ar-doubleslash-delimited-atpt (&optional arg)
-  "Doubleslash DELIMITED at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'delimited arg arg))
-
-(defun ar-doubleslash-email-atpt (&optional arg)
-  "Doubleslash EMAIL at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'email arg arg))
-
-(defun ar-doubleslash-filename-atpt (&optional arg)
-  "Doubleslash FILENAME at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'filename arg arg))
-
-(defun ar-doubleslash-filenamenondirectory-atpt (&optional arg)
-  "Doubleslash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'filenamenondirectory arg arg))
-
-(defun ar-doubleslash-float-atpt (&optional arg)
-  "Doubleslash FLOAT at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'float arg arg))
-
-(defun ar-doubleslash-function-atpt (&optional arg)
-  "Doubleslash FUNCTION at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'function arg arg))
-
-(defun ar-doubleslash-ip-atpt (&optional arg)
-  "Doubleslash IP at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'ip arg arg))
-
-(defun ar-doubleslash-isbn-atpt (&optional arg)
-  "Doubleslash ISBN at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'isbn arg arg))
-
-(defun ar-doubleslash-line-atpt (&optional arg)
-  "Doubleslash LINE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'line arg arg))
-
-(defun ar-doubleslash-list-atpt (&optional arg)
-  "Doubleslash LIST at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'list arg arg))
-
-(defun ar-doubleslash-name-atpt (&optional arg)
-  "Doubleslash NAME at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'name arg arg))
-
-(defun ar-doubleslash-number-atpt (&optional arg)
-  "Doubleslash NUMBER at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'number arg arg))
-
-(defun ar-doubleslash-page-atpt (&optional arg)
-  "Doubleslash PAGE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'page arg arg))
-
-(defun ar-doubleslash-paragraph-atpt (&optional arg)
-  "Doubleslash PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'paragraph arg arg))
-
-(defun ar-doubleslash-phone-atpt (&optional arg)
-  "Doubleslash PHONE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'phone arg arg))
-
-(defun ar-doubleslash-region-atpt (&optional arg)
-  "Doubleslash REGION at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'region arg arg))
-
-(defun ar-doubleslash-sentence-atpt (&optional arg)
-  "Doubleslash SENTENCE at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'sentence arg arg))
-
-(defun ar-doubleslash-sexp-atpt (&optional arg)
-  "Doubleslash SEXP at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'sexp arg arg))
-
-(defun ar-doubleslash-shstruct-atpt (&optional arg)
-  "Doubleslash SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'shstruct arg arg))
-
-(defun ar-doubleslash-symbol-atpt (&optional arg)
-  "Doubleslash SYMBOL at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'symbol arg arg))
-
-(defun ar-doubleslash-url-atpt (&optional arg)
-  "Doubleslash URL at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'url arg arg))
-
-(defun ar-doubleslash-word-atpt (&optional arg)
-  "Doubleslash WORD at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'word arg arg))
-
-(defun ar-doubleslash-wordalphaonly-atpt (&optional arg)
-  "Doubleslash WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-doubleslash 'wordalphaonly arg arg))
-
-(defun ar-backslash-greateranglednested-atpt (&optional arg)
-  "Backslash GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backslash 'greateranglednested arg arg))
-
-(defun ar-backslash-lesseranglednested-atpt (&optional arg)
-  "Backslash LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backslash 'lesseranglednested arg arg))
-
-(defun ar-backslash-buffer-atpt (&optional arg)
-  "Backslash BUFFER at point."
-  (interactive "*P")
-  (ar-th-backslash 'buffer arg arg))
-
-(defun ar-backslash-char-atpt (&optional arg)
-  "Backslash CHAR at point."
-  (interactive "*P")
-  (ar-th-backslash 'char arg arg))
-
-(defun ar-backslash-comment-atpt (&optional arg)
-  "Backslash COMMENT at point."
-  (interactive "*P")
-  (ar-th-backslash 'comment arg arg))
-
-(defun ar-backslash-csv-atpt (&optional arg)
-  "Backslash CSV at point."
-  (interactive "*P")
-  (ar-th-backslash 'csv arg arg))
-
-(defun ar-backslash-date-atpt (&optional arg)
-  "Backslash DATE at point."
-  (interactive "*P")
-  (ar-th-backslash 'date arg arg))
-
-(defun ar-backslash-delimited-atpt (&optional arg)
-  "Backslash DELIMITED at point."
-  (interactive "*P")
-  (ar-th-backslash 'delimited arg arg))
-
-(defun ar-backslash-email-atpt (&optional arg)
-  "Backslash EMAIL at point."
-  (interactive "*P")
-  (ar-th-backslash 'email arg arg))
-
-(defun ar-backslash-filename-atpt (&optional arg)
-  "Backslash FILENAME at point."
-  (interactive "*P")
-  (ar-th-backslash 'filename arg arg))
-
-(defun ar-backslash-filenamenondirectory-atpt (&optional arg)
-  "Backslash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-backslash 'filenamenondirectory arg arg))
-
-(defun ar-backslash-float-atpt (&optional arg)
-  "Backslash FLOAT at point."
-  (interactive "*P")
-  (ar-th-backslash 'float arg arg))
-
-(defun ar-backslash-function-atpt (&optional arg)
-  "Backslash FUNCTION at point."
-  (interactive "*P")
-  (ar-th-backslash 'function arg arg))
-
-(defun ar-backslash-ip-atpt (&optional arg)
-  "Backslash IP at point."
-  (interactive "*P")
-  (ar-th-backslash 'ip arg arg))
-
-(defun ar-backslash-isbn-atpt (&optional arg)
-  "Backslash ISBN at point."
-  (interactive "*P")
-  (ar-th-backslash 'isbn arg arg))
-
-(defun ar-backslash-line-atpt (&optional arg)
-  "Backslash LINE at point."
-  (interactive "*P")
-  (ar-th-backslash 'line arg arg))
-
-(defun ar-backslash-list-atpt (&optional arg)
-  "Backslash LIST at point."
-  (interactive "*P")
-  (ar-th-backslash 'list arg arg))
-
-(defun ar-backslash-name-atpt (&optional arg)
-  "Backslash NAME at point."
-  (interactive "*P")
-  (ar-th-backslash 'name arg arg))
-
-(defun ar-backslash-number-atpt (&optional arg)
-  "Backslash NUMBER at point."
-  (interactive "*P")
-  (ar-th-backslash 'number arg arg))
-
-(defun ar-backslash-page-atpt (&optional arg)
-  "Backslash PAGE at point."
-  (interactive "*P")
-  (ar-th-backslash 'page arg arg))
-
-(defun ar-backslash-paragraph-atpt (&optional arg)
-  "Backslash PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-backslash 'paragraph arg arg))
-
-(defun ar-backslash-phone-atpt (&optional arg)
-  "Backslash PHONE at point."
-  (interactive "*P")
-  (ar-th-backslash 'phone arg arg))
-
-(defun ar-backslash-region-atpt (&optional arg)
-  "Backslash REGION at point."
-  (interactive "*P")
-  (ar-th-backslash 'region arg arg))
-
-(defun ar-backslash-sentence-atpt (&optional arg)
-  "Backslash SENTENCE at point."
-  (interactive "*P")
-  (ar-th-backslash 'sentence arg arg))
-
-(defun ar-backslash-sexp-atpt (&optional arg)
-  "Backslash SEXP at point."
-  (interactive "*P")
-  (ar-th-backslash 'sexp arg arg))
-
-(defun ar-backslash-shstruct-atpt (&optional arg)
-  "Backslash SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-backslash 'shstruct arg arg))
-
-(defun ar-backslash-symbol-atpt (&optional arg)
-  "Backslash SYMBOL at point."
-  (interactive "*P")
-  (ar-th-backslash 'symbol arg arg))
-
-(defun ar-backslash-url-atpt (&optional arg)
-  "Backslash URL at point."
-  (interactive "*P")
-  (ar-th-backslash 'url arg arg))
-
-(defun ar-backslash-word-atpt (&optional arg)
-  "Backslash WORD at point."
-  (interactive "*P")
-  (ar-th-backslash 'word arg arg))
-
-(defun ar-backslash-wordalphaonly-atpt (&optional arg)
-  "Backslash WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-backslash 'wordalphaonly arg arg))
-
-(defun ar-backtick-greateranglednested-atpt (&optional arg)
-  "Backtick GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backtick 'greateranglednested arg arg))
-
-(defun ar-backtick-lesseranglednested-atpt (&optional arg)
-  "Backtick LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-backtick 'lesseranglednested arg arg))
-
-(defun ar-backtick-buffer-atpt (&optional arg)
-  "Backtick BUFFER at point."
-  (interactive "*P")
-  (ar-th-backtick 'buffer arg arg))
-
-(defun ar-backtick-char-atpt (&optional arg)
-  "Backtick CHAR at point."
-  (interactive "*P")
-  (ar-th-backtick 'char arg arg))
-
-(defun ar-backtick-comment-atpt (&optional arg)
-  "Backtick COMMENT at point."
-  (interactive "*P")
-  (ar-th-backtick 'comment arg arg))
-
-(defun ar-backtick-csv-atpt (&optional arg)
-  "Backtick CSV at point."
-  (interactive "*P")
-  (ar-th-backtick 'csv arg arg))
-
-(defun ar-backtick-date-atpt (&optional arg)
-  "Backtick DATE at point."
-  (interactive "*P")
-  (ar-th-backtick 'date arg arg))
-
-(defun ar-backtick-delimited-atpt (&optional arg)
-  "Backtick DELIMITED at point."
-  (interactive "*P")
-  (ar-th-backtick 'delimited arg arg))
-
-(defun ar-backtick-email-atpt (&optional arg)
-  "Backtick EMAIL at point."
-  (interactive "*P")
-  (ar-th-backtick 'email arg arg))
-
-(defun ar-backtick-filename-atpt (&optional arg)
-  "Backtick FILENAME at point."
-  (interactive "*P")
-  (ar-th-backtick 'filename arg arg))
-
-(defun ar-backtick-filenamenondirectory-atpt (&optional arg)
-  "Backtick FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-backtick 'filenamenondirectory arg arg))
-
-(defun ar-backtick-float-atpt (&optional arg)
-  "Backtick FLOAT at point."
-  (interactive "*P")
-  (ar-th-backtick 'float arg arg))
-
-(defun ar-backtick-function-atpt (&optional arg)
-  "Backtick FUNCTION at point."
-  (interactive "*P")
-  (ar-th-backtick 'function arg arg))
-
-(defun ar-backtick-ip-atpt (&optional arg)
-  "Backtick IP at point."
-  (interactive "*P")
-  (ar-th-backtick 'ip arg arg))
-
-(defun ar-backtick-isbn-atpt (&optional arg)
-  "Backtick ISBN at point."
-  (interactive "*P")
-  (ar-th-backtick 'isbn arg arg))
-
-(defun ar-backtick-line-atpt (&optional arg)
-  "Backtick LINE at point."
-  (interactive "*P")
-  (ar-th-backtick 'line arg arg))
-
-(defun ar-backtick-list-atpt (&optional arg)
-  "Backtick LIST at point."
-  (interactive "*P")
-  (ar-th-backtick 'list arg arg))
-
-(defun ar-backtick-name-atpt (&optional arg)
-  "Backtick NAME at point."
-  (interactive "*P")
-  (ar-th-backtick 'name arg arg))
-
-(defun ar-backtick-number-atpt (&optional arg)
-  "Backtick NUMBER at point."
-  (interactive "*P")
-  (ar-th-backtick 'number arg arg))
-
-(defun ar-backtick-page-atpt (&optional arg)
-  "Backtick PAGE at point."
-  (interactive "*P")
-  (ar-th-backtick 'page arg arg))
-
-(defun ar-backtick-paragraph-atpt (&optional arg)
-  "Backtick PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-backtick 'paragraph arg arg))
-
-(defun ar-backtick-phone-atpt (&optional arg)
-  "Backtick PHONE at point."
-  (interactive "*P")
-  (ar-th-backtick 'phone arg arg))
-
-(defun ar-backtick-region-atpt (&optional arg)
-  "Backtick REGION at point."
-  (interactive "*P")
-  (ar-th-backtick 'region arg arg))
-
-(defun ar-backtick-sentence-atpt (&optional arg)
-  "Backtick SENTENCE at point."
-  (interactive "*P")
-  (ar-th-backtick 'sentence arg arg))
-
-(defun ar-backtick-sexp-atpt (&optional arg)
-  "Backtick SEXP at point."
-  (interactive "*P")
-  (ar-th-backtick 'sexp arg arg))
-
-(defun ar-backtick-shstruct-atpt (&optional arg)
-  "Backtick SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-backtick 'shstruct arg arg))
-
-(defun ar-backtick-symbol-atpt (&optional arg)
-  "Backtick SYMBOL at point."
-  (interactive "*P")
-  (ar-th-backtick 'symbol arg arg))
-
-(defun ar-backtick-url-atpt (&optional arg)
-  "Backtick URL at point."
-  (interactive "*P")
-  (ar-th-backtick 'url arg arg))
-
-(defun ar-backtick-word-atpt (&optional arg)
-  "Backtick WORD at point."
-  (interactive "*P")
-  (ar-th-backtick 'word arg arg))
-
-(defun ar-backtick-wordalphaonly-atpt (&optional arg)
-  "Backtick WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-backtick 'wordalphaonly arg arg))
-
-(defun ar-dollar-greateranglednested-atpt (&optional arg)
-  "Dollar GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-dollar 'greateranglednested arg arg))
-
-(defun ar-dollar-lesseranglednested-atpt (&optional arg)
-  "Dollar LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-dollar 'lesseranglednested arg arg))
-
-(defun ar-dollar-buffer-atpt (&optional arg)
-  "Dollar BUFFER at point."
-  (interactive "*P")
-  (ar-th-dollar 'buffer arg arg))
-
-(defun ar-dollar-char-atpt (&optional arg)
-  "Dollar CHAR at point."
-  (interactive "*P")
-  (ar-th-dollar 'char arg arg))
-
-(defun ar-dollar-comment-atpt (&optional arg)
-  "Dollar COMMENT at point."
-  (interactive "*P")
-  (ar-th-dollar 'comment arg arg))
-
-(defun ar-dollar-csv-atpt (&optional arg)
-  "Dollar CSV at point."
-  (interactive "*P")
-  (ar-th-dollar 'csv arg arg))
-
-(defun ar-dollar-date-atpt (&optional arg)
-  "Dollar DATE at point."
-  (interactive "*P")
-  (ar-th-dollar 'date arg arg))
-
-(defun ar-dollar-delimited-atpt (&optional arg)
-  "Dollar DELIMITED at point."
-  (interactive "*P")
-  (ar-th-dollar 'delimited arg arg))
-
-(defun ar-dollar-email-atpt (&optional arg)
-  "Dollar EMAIL at point."
-  (interactive "*P")
-  (ar-th-dollar 'email arg arg))
-
-(defun ar-dollar-filename-atpt (&optional arg)
-  "Dollar FILENAME at point."
-  (interactive "*P")
-  (ar-th-dollar 'filename arg arg))
-
-(defun ar-dollar-filenamenondirectory-atpt (&optional arg)
-  "Dollar FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-dollar 'filenamenondirectory arg arg))
-
-(defun ar-dollar-float-atpt (&optional arg)
-  "Dollar FLOAT at point."
-  (interactive "*P")
-  (ar-th-dollar 'float arg arg))
-
-(defun ar-dollar-function-atpt (&optional arg)
-  "Dollar FUNCTION at point."
-  (interactive "*P")
-  (ar-th-dollar 'function arg arg))
-
-(defun ar-dollar-ip-atpt (&optional arg)
-  "Dollar IP at point."
-  (interactive "*P")
-  (ar-th-dollar 'ip arg arg))
-
-(defun ar-dollar-isbn-atpt (&optional arg)
-  "Dollar ISBN at point."
-  (interactive "*P")
-  (ar-th-dollar 'isbn arg arg))
-
-(defun ar-dollar-line-atpt (&optional arg)
-  "Dollar LINE at point."
-  (interactive "*P")
-  (ar-th-dollar 'line arg arg))
-
-(defun ar-dollar-list-atpt (&optional arg)
-  "Dollar LIST at point."
-  (interactive "*P")
-  (ar-th-dollar 'list arg arg))
-
-(defun ar-dollar-name-atpt (&optional arg)
-  "Dollar NAME at point."
-  (interactive "*P")
-  (ar-th-dollar 'name arg arg))
-
-(defun ar-dollar-number-atpt (&optional arg)
-  "Dollar NUMBER at point."
-  (interactive "*P")
-  (ar-th-dollar 'number arg arg))
-
-(defun ar-dollar-page-atpt (&optional arg)
-  "Dollar PAGE at point."
-  (interactive "*P")
-  (ar-th-dollar 'page arg arg))
-
-(defun ar-dollar-paragraph-atpt (&optional arg)
-  "Dollar PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-dollar 'paragraph arg arg))
-
-(defun ar-dollar-phone-atpt (&optional arg)
-  "Dollar PHONE at point."
-  (interactive "*P")
-  (ar-th-dollar 'phone arg arg))
-
-(defun ar-dollar-region-atpt (&optional arg)
-  "Dollar REGION at point."
-  (interactive "*P")
-  (ar-th-dollar 'region arg arg))
-
-(defun ar-dollar-sentence-atpt (&optional arg)
-  "Dollar SENTENCE at point."
-  (interactive "*P")
-  (ar-th-dollar 'sentence arg arg))
-
-(defun ar-dollar-sexp-atpt (&optional arg)
-  "Dollar SEXP at point."
-  (interactive "*P")
-  (ar-th-dollar 'sexp arg arg))
-
-(defun ar-dollar-shstruct-atpt (&optional arg)
-  "Dollar SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-dollar 'shstruct arg arg))
-
-(defun ar-dollar-symbol-atpt (&optional arg)
-  "Dollar SYMBOL at point."
-  (interactive "*P")
-  (ar-th-dollar 'symbol arg arg))
-
-(defun ar-dollar-url-atpt (&optional arg)
-  "Dollar URL at point."
-  (interactive "*P")
-  (ar-th-dollar 'url arg arg))
-
-(defun ar-dollar-word-atpt (&optional arg)
-  "Dollar WORD at point."
-  (interactive "*P")
-  (ar-th-dollar 'word arg arg))
-
-(defun ar-dollar-wordalphaonly-atpt (&optional arg)
-  "Dollar WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-dollar 'wordalphaonly arg arg))
-
-(defun ar-doublebacktick-greateranglednested-atpt (&optional arg)
-  "Doublebacktick GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'greateranglednested arg arg))
-
-(defun ar-doublebacktick-lesseranglednested-atpt (&optional arg)
-  "Doublebacktick LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'lesseranglednested arg arg))
-
-(defun ar-doublebacktick-buffer-atpt (&optional arg)
-  "Doublebacktick BUFFER at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'buffer arg arg))
-
-(defun ar-doublebacktick-char-atpt (&optional arg)
-  "Doublebacktick CHAR at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'char arg arg))
-
-(defun ar-doublebacktick-comment-atpt (&optional arg)
-  "Doublebacktick COMMENT at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'comment arg arg))
-
-(defun ar-doublebacktick-csv-atpt (&optional arg)
-  "Doublebacktick CSV at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'csv arg arg))
-
-(defun ar-doublebacktick-date-atpt (&optional arg)
-  "Doublebacktick DATE at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'date arg arg))
-
-(defun ar-doublebacktick-delimited-atpt (&optional arg)
-  "Doublebacktick DELIMITED at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'delimited arg arg))
-
-(defun ar-doublebacktick-email-atpt (&optional arg)
-  "Doublebacktick EMAIL at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'email arg arg))
-
-(defun ar-doublebacktick-filename-atpt (&optional arg)
-  "Doublebacktick FILENAME at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'filename arg arg))
-
-(defun ar-doublebacktick-filenamenondirectory-atpt (&optional arg)
-  "Doublebacktick FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'filenamenondirectory arg arg))
-
-(defun ar-doublebacktick-float-atpt (&optional arg)
-  "Doublebacktick FLOAT at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'float arg arg))
-
-(defun ar-doublebacktick-function-atpt (&optional arg)
-  "Doublebacktick FUNCTION at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'function arg arg))
-
-(defun ar-doublebacktick-ip-atpt (&optional arg)
-  "Doublebacktick IP at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'ip arg arg))
-
-(defun ar-doublebacktick-isbn-atpt (&optional arg)
-  "Doublebacktick ISBN at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'isbn arg arg))
-
-(defun ar-doublebacktick-line-atpt (&optional arg)
-  "Doublebacktick LINE at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'line arg arg))
-
-(defun ar-doublebacktick-list-atpt (&optional arg)
-  "Doublebacktick LIST at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'list arg arg))
-
-(defun ar-doublebacktick-name-atpt (&optional arg)
-  "Doublebacktick NAME at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'name arg arg))
-
-(defun ar-doublebacktick-number-atpt (&optional arg)
-  "Doublebacktick NUMBER at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'number arg arg))
-
-(defun ar-doublebacktick-page-atpt (&optional arg)
-  "Doublebacktick PAGE at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'page arg arg))
-
-(defun ar-doublebacktick-paragraph-atpt (&optional arg)
-  "Doublebacktick PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'paragraph arg arg))
-
-(defun ar-doublebacktick-phone-atpt (&optional arg)
-  "Doublebacktick PHONE at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'phone arg arg))
-
-(defun ar-doublebacktick-region-atpt (&optional arg)
-  "Doublebacktick REGION at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'region arg arg))
-
-(defun ar-doublebacktick-sentence-atpt (&optional arg)
-  "Doublebacktick SENTENCE at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'sentence arg arg))
-
-(defun ar-doublebacktick-sexp-atpt (&optional arg)
-  "Doublebacktick SEXP at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'sexp arg arg))
-
-(defun ar-doublebacktick-shstruct-atpt (&optional arg)
-  "Doublebacktick SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'shstruct arg arg))
-
-(defun ar-doublebacktick-symbol-atpt (&optional arg)
-  "Doublebacktick SYMBOL at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'symbol arg arg))
-
-(defun ar-doublebacktick-url-atpt (&optional arg)
-  "Doublebacktick URL at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'url arg arg))
-
-(defun ar-doublebacktick-word-atpt (&optional arg)
-  "Doublebacktick WORD at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'word arg arg))
-
-(defun ar-doublebacktick-wordalphaonly-atpt (&optional arg)
-  "Doublebacktick WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-doublebacktick 'wordalphaonly arg arg))
-
-(defun ar-doublequote-greateranglednested-atpt (&optional arg)
-  "Doublequote GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doublequote 'greateranglednested arg arg))
-
-(defun ar-doublequote-lesseranglednested-atpt (&optional arg)
-  "Doublequote LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-doublequote 'lesseranglednested arg arg))
-
-(defun ar-doublequote-buffer-atpt (&optional arg)
-  "Doublequote BUFFER at point."
-  (interactive "*P")
-  (ar-th-doublequote 'buffer arg arg))
-
-(defun ar-doublequote-char-atpt (&optional arg)
-  "Doublequote CHAR at point."
-  (interactive "*P")
-  (ar-th-doublequote 'char arg arg))
-
-(defun ar-doublequote-comment-atpt (&optional arg)
-  "Doublequote COMMENT at point."
-  (interactive "*P")
-  (ar-th-doublequote 'comment arg arg))
-
-(defun ar-doublequote-csv-atpt (&optional arg)
-  "Doublequote CSV at point."
-  (interactive "*P")
-  (ar-th-doublequote 'csv arg arg))
-
-(defun ar-doublequote-date-atpt (&optional arg)
-  "Doublequote DATE at point."
-  (interactive "*P")
-  (ar-th-doublequote 'date arg arg))
-
-(defun ar-doublequote-delimited-atpt (&optional arg)
-  "Doublequote DELIMITED at point."
-  (interactive "*P")
-  (ar-th-doublequote 'delimited arg arg))
-
-(defun ar-doublequote-email-atpt (&optional arg)
-  "Doublequote EMAIL at point."
-  (interactive "*P")
-  (ar-th-doublequote 'email arg arg))
-
-(defun ar-doublequote-filename-atpt (&optional arg)
-  "Doublequote FILENAME at point."
-  (interactive "*P")
-  (ar-th-doublequote 'filename arg arg))
-
-(defun ar-doublequote-filenamenondirectory-atpt (&optional arg)
-  "Doublequote FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-doublequote 'filenamenondirectory arg arg))
-
-(defun ar-doublequote-float-atpt (&optional arg)
-  "Doublequote FLOAT at point."
-  (interactive "*P")
-  (ar-th-doublequote 'float arg arg))
-
-(defun ar-doublequote-function-atpt (&optional arg)
-  "Doublequote FUNCTION at point."
-  (interactive "*P")
-  (ar-th-doublequote 'function arg arg))
-
-(defun ar-doublequote-ip-atpt (&optional arg)
-  "Doublequote IP at point."
-  (interactive "*P")
-  (ar-th-doublequote 'ip arg arg))
-
-(defun ar-doublequote-isbn-atpt (&optional arg)
-  "Doublequote ISBN at point."
-  (interactive "*P")
-  (ar-th-doublequote 'isbn arg arg))
-
-(defun ar-doublequote-line-atpt (&optional arg)
-  "Doublequote LINE at point."
-  (interactive "*P")
-  (ar-th-doublequote 'line arg arg))
-
-(defun ar-doublequote-list-atpt (&optional arg)
-  "Doublequote LIST at point."
-  (interactive "*P")
-  (ar-th-doublequote 'list arg arg))
-
-(defun ar-doublequote-name-atpt (&optional arg)
-  "Doublequote NAME at point."
-  (interactive "*P")
-  (ar-th-doublequote 'name arg arg))
-
-(defun ar-doublequote-number-atpt (&optional arg)
-  "Doublequote NUMBER at point."
-  (interactive "*P")
-  (ar-th-doublequote 'number arg arg))
-
-(defun ar-doublequote-page-atpt (&optional arg)
-  "Doublequote PAGE at point."
-  (interactive "*P")
-  (ar-th-doublequote 'page arg arg))
-
-(defun ar-doublequote-paragraph-atpt (&optional arg)
-  "Doublequote PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-doublequote 'paragraph arg arg))
-
-(defun ar-doublequote-phone-atpt (&optional arg)
-  "Doublequote PHONE at point."
-  (interactive "*P")
-  (ar-th-doublequote 'phone arg arg))
-
-(defun ar-doublequote-region-atpt (&optional arg)
-  "Doublequote REGION at point."
-  (interactive "*P")
-  (ar-th-doublequote 'region arg arg))
-
-(defun ar-doublequote-sentence-atpt (&optional arg)
-  "Doublequote SENTENCE at point."
-  (interactive "*P")
-  (ar-th-doublequote 'sentence arg arg))
-
-(defun ar-doublequote-sexp-atpt (&optional arg)
-  "Doublequote SEXP at point."
-  (interactive "*P")
-  (ar-th-doublequote 'sexp arg arg))
-
-(defun ar-doublequote-shstruct-atpt (&optional arg)
-  "Doublequote SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-doublequote 'shstruct arg arg))
-
-(defun ar-doublequote-symbol-atpt (&optional arg)
-  "Doublequote SYMBOL at point."
-  (interactive "*P")
-  (ar-th-doublequote 'symbol arg arg))
-
-(defun ar-doublequote-url-atpt (&optional arg)
-  "Doublequote URL at point."
-  (interactive "*P")
-  (ar-th-doublequote 'url arg arg))
-
-(defun ar-doublequote-word-atpt (&optional arg)
-  "Doublequote WORD at point."
-  (interactive "*P")
-  (ar-th-doublequote 'word arg arg))
-
-(defun ar-doublequote-wordalphaonly-atpt (&optional arg)
-  "Doublequote WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-doublequote 'wordalphaonly arg arg))
-
-(defun ar-equalize-greateranglednested-atpt (&optional arg)
-  "Equalize GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-equalize 'greateranglednested arg arg))
-
-(defun ar-equalize-lesseranglednested-atpt (&optional arg)
-  "Equalize LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-equalize 'lesseranglednested arg arg))
-
-(defun ar-equalize-buffer-atpt (&optional arg)
-  "Equalize BUFFER at point."
-  (interactive "*P")
-  (ar-th-equalize 'buffer arg arg))
-
-(defun ar-equalize-char-atpt (&optional arg)
-  "Equalize CHAR at point."
-  (interactive "*P")
-  (ar-th-equalize 'char arg arg))
-
-(defun ar-equalize-comment-atpt (&optional arg)
-  "Equalize COMMENT at point."
-  (interactive "*P")
-  (ar-th-equalize 'comment arg arg))
-
-(defun ar-equalize-csv-atpt (&optional arg)
-  "Equalize CSV at point."
-  (interactive "*P")
-  (ar-th-equalize 'csv arg arg))
-
-(defun ar-equalize-date-atpt (&optional arg)
-  "Equalize DATE at point."
-  (interactive "*P")
-  (ar-th-equalize 'date arg arg))
-
-(defun ar-equalize-delimited-atpt (&optional arg)
-  "Equalize DELIMITED at point."
-  (interactive "*P")
-  (ar-th-equalize 'delimited arg arg))
-
-(defun ar-equalize-email-atpt (&optional arg)
-  "Equalize EMAIL at point."
-  (interactive "*P")
-  (ar-th-equalize 'email arg arg))
-
-(defun ar-equalize-filename-atpt (&optional arg)
-  "Equalize FILENAME at point."
-  (interactive "*P")
-  (ar-th-equalize 'filename arg arg))
-
-(defun ar-equalize-filenamenondirectory-atpt (&optional arg)
-  "Equalize FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-equalize 'filenamenondirectory arg arg))
-
-(defun ar-equalize-float-atpt (&optional arg)
-  "Equalize FLOAT at point."
-  (interactive "*P")
-  (ar-th-equalize 'float arg arg))
-
-(defun ar-equalize-function-atpt (&optional arg)
-  "Equalize FUNCTION at point."
-  (interactive "*P")
-  (ar-th-equalize 'function arg arg))
-
-(defun ar-equalize-ip-atpt (&optional arg)
-  "Equalize IP at point."
-  (interactive "*P")
-  (ar-th-equalize 'ip arg arg))
-
-(defun ar-equalize-isbn-atpt (&optional arg)
-  "Equalize ISBN at point."
-  (interactive "*P")
-  (ar-th-equalize 'isbn arg arg))
-
-(defun ar-equalize-line-atpt (&optional arg)
-  "Equalize LINE at point."
-  (interactive "*P")
-  (ar-th-equalize 'line arg arg))
-
-(defun ar-equalize-list-atpt (&optional arg)
-  "Equalize LIST at point."
-  (interactive "*P")
-  (ar-th-equalize 'list arg arg))
-
-(defun ar-equalize-name-atpt (&optional arg)
-  "Equalize NAME at point."
-  (interactive "*P")
-  (ar-th-equalize 'name arg arg))
-
-(defun ar-equalize-number-atpt (&optional arg)
-  "Equalize NUMBER at point."
-  (interactive "*P")
-  (ar-th-equalize 'number arg arg))
-
-(defun ar-equalize-page-atpt (&optional arg)
-  "Equalize PAGE at point."
-  (interactive "*P")
-  (ar-th-equalize 'page arg arg))
-
-(defun ar-equalize-paragraph-atpt (&optional arg)
-  "Equalize PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-equalize 'paragraph arg arg))
-
-(defun ar-equalize-phone-atpt (&optional arg)
-  "Equalize PHONE at point."
-  (interactive "*P")
-  (ar-th-equalize 'phone arg arg))
-
-(defun ar-equalize-region-atpt (&optional arg)
-  "Equalize REGION at point."
-  (interactive "*P")
-  (ar-th-equalize 'region arg arg))
-
-(defun ar-equalize-sentence-atpt (&optional arg)
-  "Equalize SENTENCE at point."
-  (interactive "*P")
-  (ar-th-equalize 'sentence arg arg))
-
-(defun ar-equalize-sexp-atpt (&optional arg)
-  "Equalize SEXP at point."
-  (interactive "*P")
-  (ar-th-equalize 'sexp arg arg))
-
-(defun ar-equalize-shstruct-atpt (&optional arg)
-  "Equalize SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-equalize 'shstruct arg arg))
-
-(defun ar-equalize-symbol-atpt (&optional arg)
-  "Equalize SYMBOL at point."
-  (interactive "*P")
-  (ar-th-equalize 'symbol arg arg))
-
-(defun ar-equalize-url-atpt (&optional arg)
-  "Equalize URL at point."
-  (interactive "*P")
-  (ar-th-equalize 'url arg arg))
-
-(defun ar-equalize-word-atpt (&optional arg)
-  "Equalize WORD at point."
-  (interactive "*P")
-  (ar-th-equalize 'word arg arg))
-
-(defun ar-equalize-wordalphaonly-atpt (&optional arg)
-  "Equalize WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-equalize 'wordalphaonly arg arg))
-
-(defun ar-escape-greateranglednested-atpt (&optional arg)
-  "Escape GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-escape 'greateranglednested arg arg))
-
-(defun ar-escape-lesseranglednested-atpt (&optional arg)
-  "Escape LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-escape 'lesseranglednested arg arg))
-
-(defun ar-escape-buffer-atpt (&optional arg)
-  "Escape BUFFER at point."
-  (interactive "*P")
-  (ar-th-escape 'buffer arg arg))
-
-(defun ar-escape-char-atpt (&optional arg)
-  "Escape CHAR at point."
-  (interactive "*P")
-  (ar-th-escape 'char arg arg))
-
-(defun ar-escape-comment-atpt (&optional arg)
-  "Escape COMMENT at point."
-  (interactive "*P")
-  (ar-th-escape 'comment arg arg))
-
-(defun ar-escape-csv-atpt (&optional arg)
-  "Escape CSV at point."
-  (interactive "*P")
-  (ar-th-escape 'csv arg arg))
-
-(defun ar-escape-date-atpt (&optional arg)
-  "Escape DATE at point."
-  (interactive "*P")
-  (ar-th-escape 'date arg arg))
-
-(defun ar-escape-delimited-atpt (&optional arg)
-  "Escape DELIMITED at point."
-  (interactive "*P")
-  (ar-th-escape 'delimited arg arg))
-
-(defun ar-escape-email-atpt (&optional arg)
-  "Escape EMAIL at point."
-  (interactive "*P")
-  (ar-th-escape 'email arg arg))
-
-(defun ar-escape-filename-atpt (&optional arg)
-  "Escape FILENAME at point."
-  (interactive "*P")
-  (ar-th-escape 'filename arg arg))
-
-(defun ar-escape-filenamenondirectory-atpt (&optional arg)
-  "Escape FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-escape 'filenamenondirectory arg arg))
-
-(defun ar-escape-float-atpt (&optional arg)
-  "Escape FLOAT at point."
-  (interactive "*P")
-  (ar-th-escape 'float arg arg))
-
-(defun ar-escape-function-atpt (&optional arg)
-  "Escape FUNCTION at point."
-  (interactive "*P")
-  (ar-th-escape 'function arg arg))
-
-(defun ar-escape-ip-atpt (&optional arg)
-  "Escape IP at point."
-  (interactive "*P")
-  (ar-th-escape 'ip arg arg))
-
-(defun ar-escape-isbn-atpt (&optional arg)
-  "Escape ISBN at point."
-  (interactive "*P")
-  (ar-th-escape 'isbn arg arg))
-
-(defun ar-escape-line-atpt (&optional arg)
-  "Escape LINE at point."
-  (interactive "*P")
-  (ar-th-escape 'line arg arg))
-
-(defun ar-escape-list-atpt (&optional arg)
-  "Escape LIST at point."
-  (interactive "*P")
-  (ar-th-escape 'list arg arg))
-
-(defun ar-escape-name-atpt (&optional arg)
-  "Escape NAME at point."
-  (interactive "*P")
-  (ar-th-escape 'name arg arg))
-
-(defun ar-escape-number-atpt (&optional arg)
-  "Escape NUMBER at point."
-  (interactive "*P")
-  (ar-th-escape 'number arg arg))
-
-(defun ar-escape-page-atpt (&optional arg)
-  "Escape PAGE at point."
-  (interactive "*P")
-  (ar-th-escape 'page arg arg))
-
-(defun ar-escape-paragraph-atpt (&optional arg)
-  "Escape PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-escape 'paragraph arg arg))
-
-(defun ar-escape-phone-atpt (&optional arg)
-  "Escape PHONE at point."
-  (interactive "*P")
-  (ar-th-escape 'phone arg arg))
-
-(defun ar-escape-region-atpt (&optional arg)
-  "Escape REGION at point."
-  (interactive "*P")
-  (ar-th-escape 'region arg arg))
-
-(defun ar-escape-sentence-atpt (&optional arg)
-  "Escape SENTENCE at point."
-  (interactive "*P")
-  (ar-th-escape 'sentence arg arg))
-
-(defun ar-escape-sexp-atpt (&optional arg)
-  "Escape SEXP at point."
-  (interactive "*P")
-  (ar-th-escape 'sexp arg arg))
-
-(defun ar-escape-shstruct-atpt (&optional arg)
-  "Escape SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-escape 'shstruct arg arg))
-
-(defun ar-escape-symbol-atpt (&optional arg)
-  "Escape SYMBOL at point."
-  (interactive "*P")
-  (ar-th-escape 'symbol arg arg))
-
-(defun ar-escape-url-atpt (&optional arg)
-  "Escape URL at point."
-  (interactive "*P")
-  (ar-th-escape 'url arg arg))
-
-(defun ar-escape-word-atpt (&optional arg)
-  "Escape WORD at point."
-  (interactive "*P")
-  (ar-th-escape 'word arg arg))
-
-(defun ar-escape-wordalphaonly-atpt (&optional arg)
-  "Escape WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-escape 'wordalphaonly arg arg))
-
-(defun ar-hash-greateranglednested-atpt (&optional arg)
-  "Hash GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-hash 'greateranglednested arg arg))
-
-(defun ar-hash-lesseranglednested-atpt (&optional arg)
-  "Hash LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-hash 'lesseranglednested arg arg))
-
-(defun ar-hash-buffer-atpt (&optional arg)
-  "Hash BUFFER at point."
-  (interactive "*P")
-  (ar-th-hash 'buffer arg arg))
-
-(defun ar-hash-char-atpt (&optional arg)
-  "Hash CHAR at point."
-  (interactive "*P")
-  (ar-th-hash 'char arg arg))
-
-(defun ar-hash-comment-atpt (&optional arg)
-  "Hash COMMENT at point."
-  (interactive "*P")
-  (ar-th-hash 'comment arg arg))
-
-(defun ar-hash-csv-atpt (&optional arg)
-  "Hash CSV at point."
-  (interactive "*P")
-  (ar-th-hash 'csv arg arg))
-
-(defun ar-hash-date-atpt (&optional arg)
-  "Hash DATE at point."
-  (interactive "*P")
-  (ar-th-hash 'date arg arg))
-
-(defun ar-hash-delimited-atpt (&optional arg)
-  "Hash DELIMITED at point."
-  (interactive "*P")
-  (ar-th-hash 'delimited arg arg))
-
-(defun ar-hash-email-atpt (&optional arg)
-  "Hash EMAIL at point."
-  (interactive "*P")
-  (ar-th-hash 'email arg arg))
-
-(defun ar-hash-filename-atpt (&optional arg)
-  "Hash FILENAME at point."
-  (interactive "*P")
-  (ar-th-hash 'filename arg arg))
-
-(defun ar-hash-filenamenondirectory-atpt (&optional arg)
-  "Hash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-hash 'filenamenondirectory arg arg))
-
-(defun ar-hash-float-atpt (&optional arg)
-  "Hash FLOAT at point."
-  (interactive "*P")
-  (ar-th-hash 'float arg arg))
-
-(defun ar-hash-function-atpt (&optional arg)
-  "Hash FUNCTION at point."
-  (interactive "*P")
-  (ar-th-hash 'function arg arg))
-
-(defun ar-hash-ip-atpt (&optional arg)
-  "Hash IP at point."
-  (interactive "*P")
-  (ar-th-hash 'ip arg arg))
-
-(defun ar-hash-isbn-atpt (&optional arg)
-  "Hash ISBN at point."
-  (interactive "*P")
-  (ar-th-hash 'isbn arg arg))
-
-(defun ar-hash-line-atpt (&optional arg)
-  "Hash LINE at point."
-  (interactive "*P")
-  (ar-th-hash 'line arg arg))
-
-(defun ar-hash-list-atpt (&optional arg)
-  "Hash LIST at point."
-  (interactive "*P")
-  (ar-th-hash 'list arg arg))
-
-(defun ar-hash-name-atpt (&optional arg)
-  "Hash NAME at point."
-  (interactive "*P")
-  (ar-th-hash 'name arg arg))
-
-(defun ar-hash-number-atpt (&optional arg)
-  "Hash NUMBER at point."
-  (interactive "*P")
-  (ar-th-hash 'number arg arg))
-
-(defun ar-hash-page-atpt (&optional arg)
-  "Hash PAGE at point."
-  (interactive "*P")
-  (ar-th-hash 'page arg arg))
-
-(defun ar-hash-paragraph-atpt (&optional arg)
-  "Hash PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-hash 'paragraph arg arg))
-
-(defun ar-hash-phone-atpt (&optional arg)
-  "Hash PHONE at point."
-  (interactive "*P")
-  (ar-th-hash 'phone arg arg))
-
-(defun ar-hash-region-atpt (&optional arg)
-  "Hash REGION at point."
-  (interactive "*P")
-  (ar-th-hash 'region arg arg))
-
-(defun ar-hash-sentence-atpt (&optional arg)
-  "Hash SENTENCE at point."
-  (interactive "*P")
-  (ar-th-hash 'sentence arg arg))
-
-(defun ar-hash-sexp-atpt (&optional arg)
-  "Hash SEXP at point."
-  (interactive "*P")
-  (ar-th-hash 'sexp arg arg))
-
-(defun ar-hash-shstruct-atpt (&optional arg)
-  "Hash SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-hash 'shstruct arg arg))
-
-(defun ar-hash-symbol-atpt (&optional arg)
-  "Hash SYMBOL at point."
-  (interactive "*P")
-  (ar-th-hash 'symbol arg arg))
-
-(defun ar-hash-url-atpt (&optional arg)
-  "Hash URL at point."
-  (interactive "*P")
-  (ar-th-hash 'url arg arg))
-
-(defun ar-hash-word-atpt (&optional arg)
-  "Hash WORD at point."
-  (interactive "*P")
-  (ar-th-hash 'word arg arg))
-
-(defun ar-hash-wordalphaonly-atpt (&optional arg)
-  "Hash WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-hash 'wordalphaonly arg arg))
-
-(defun ar-hyphen-greateranglednested-atpt (&optional arg)
-  "Hyphen GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-hyphen 'greateranglednested arg arg))
-
-(defun ar-hyphen-lesseranglednested-atpt (&optional arg)
-  "Hyphen LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-hyphen 'lesseranglednested arg arg))
-
-(defun ar-hyphen-buffer-atpt (&optional arg)
-  "Hyphen BUFFER at point."
-  (interactive "*P")
-  (ar-th-hyphen 'buffer arg arg))
-
-(defun ar-hyphen-char-atpt (&optional arg)
-  "Hyphen CHAR at point."
-  (interactive "*P")
-  (ar-th-hyphen 'char arg arg))
-
-(defun ar-hyphen-comment-atpt (&optional arg)
-  "Hyphen COMMENT at point."
-  (interactive "*P")
-  (ar-th-hyphen 'comment arg arg))
-
-(defun ar-hyphen-csv-atpt (&optional arg)
-  "Hyphen CSV at point."
-  (interactive "*P")
-  (ar-th-hyphen 'csv arg arg))
-
-(defun ar-hyphen-date-atpt (&optional arg)
-  "Hyphen DATE at point."
-  (interactive "*P")
-  (ar-th-hyphen 'date arg arg))
-
-(defun ar-hyphen-delimited-atpt (&optional arg)
-  "Hyphen DELIMITED at point."
-  (interactive "*P")
-  (ar-th-hyphen 'delimited arg arg))
-
-(defun ar-hyphen-email-atpt (&optional arg)
-  "Hyphen EMAIL at point."
-  (interactive "*P")
-  (ar-th-hyphen 'email arg arg))
-
-(defun ar-hyphen-filename-atpt (&optional arg)
-  "Hyphen FILENAME at point."
-  (interactive "*P")
-  (ar-th-hyphen 'filename arg arg))
-
-(defun ar-hyphen-filenamenondirectory-atpt (&optional arg)
-  "Hyphen FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-hyphen 'filenamenondirectory arg arg))
-
-(defun ar-hyphen-float-atpt (&optional arg)
-  "Hyphen FLOAT at point."
-  (interactive "*P")
-  (ar-th-hyphen 'float arg arg))
-
-(defun ar-hyphen-function-atpt (&optional arg)
-  "Hyphen FUNCTION at point."
-  (interactive "*P")
-  (ar-th-hyphen 'function arg arg))
-
-(defun ar-hyphen-ip-atpt (&optional arg)
-  "Hyphen IP at point."
-  (interactive "*P")
-  (ar-th-hyphen 'ip arg arg))
-
-(defun ar-hyphen-isbn-atpt (&optional arg)
-  "Hyphen ISBN at point."
-  (interactive "*P")
-  (ar-th-hyphen 'isbn arg arg))
-
-(defun ar-hyphen-line-atpt (&optional arg)
-  "Hyphen LINE at point."
-  (interactive "*P")
-  (ar-th-hyphen 'line arg arg))
-
-(defun ar-hyphen-list-atpt (&optional arg)
-  "Hyphen LIST at point."
-  (interactive "*P")
-  (ar-th-hyphen 'list arg arg))
-
-(defun ar-hyphen-name-atpt (&optional arg)
-  "Hyphen NAME at point."
-  (interactive "*P")
-  (ar-th-hyphen 'name arg arg))
-
-(defun ar-hyphen-number-atpt (&optional arg)
-  "Hyphen NUMBER at point."
-  (interactive "*P")
-  (ar-th-hyphen 'number arg arg))
-
-(defun ar-hyphen-page-atpt (&optional arg)
-  "Hyphen PAGE at point."
-  (interactive "*P")
-  (ar-th-hyphen 'page arg arg))
-
-(defun ar-hyphen-paragraph-atpt (&optional arg)
-  "Hyphen PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-hyphen 'paragraph arg arg))
-
-(defun ar-hyphen-phone-atpt (&optional arg)
-  "Hyphen PHONE at point."
-  (interactive "*P")
-  (ar-th-hyphen 'phone arg arg))
-
-(defun ar-hyphen-region-atpt (&optional arg)
-  "Hyphen REGION at point."
-  (interactive "*P")
-  (ar-th-hyphen 'region arg arg))
-
-(defun ar-hyphen-sentence-atpt (&optional arg)
-  "Hyphen SENTENCE at point."
-  (interactive "*P")
-  (ar-th-hyphen 'sentence arg arg))
-
-(defun ar-hyphen-sexp-atpt (&optional arg)
-  "Hyphen SEXP at point."
-  (interactive "*P")
-  (ar-th-hyphen 'sexp arg arg))
-
-(defun ar-hyphen-shstruct-atpt (&optional arg)
-  "Hyphen SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-hyphen 'shstruct arg arg))
-
-(defun ar-hyphen-symbol-atpt (&optional arg)
-  "Hyphen SYMBOL at point."
-  (interactive "*P")
-  (ar-th-hyphen 'symbol arg arg))
-
-(defun ar-hyphen-url-atpt (&optional arg)
-  "Hyphen URL at point."
-  (interactive "*P")
-  (ar-th-hyphen 'url arg arg))
-
-(defun ar-hyphen-word-atpt (&optional arg)
-  "Hyphen WORD at point."
-  (interactive "*P")
-  (ar-th-hyphen 'word arg arg))
-
-(defun ar-hyphen-wordalphaonly-atpt (&optional arg)
-  "Hyphen WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-hyphen 'wordalphaonly arg arg))
-
-(defun ar-pipe-greateranglednested-atpt (&optional arg)
-  "Pipe GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-pipe 'greateranglednested arg arg))
-
-(defun ar-pipe-lesseranglednested-atpt (&optional arg)
-  "Pipe LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-pipe 'lesseranglednested arg arg))
-
-(defun ar-pipe-buffer-atpt (&optional arg)
-  "Pipe BUFFER at point."
-  (interactive "*P")
-  (ar-th-pipe 'buffer arg arg))
-
-(defun ar-pipe-char-atpt (&optional arg)
-  "Pipe CHAR at point."
-  (interactive "*P")
-  (ar-th-pipe 'char arg arg))
-
-(defun ar-pipe-comment-atpt (&optional arg)
-  "Pipe COMMENT at point."
-  (interactive "*P")
-  (ar-th-pipe 'comment arg arg))
-
-(defun ar-pipe-csv-atpt (&optional arg)
-  "Pipe CSV at point."
-  (interactive "*P")
-  (ar-th-pipe 'csv arg arg))
-
-(defun ar-pipe-date-atpt (&optional arg)
-  "Pipe DATE at point."
-  (interactive "*P")
-  (ar-th-pipe 'date arg arg))
-
-(defun ar-pipe-delimited-atpt (&optional arg)
-  "Pipe DELIMITED at point."
-  (interactive "*P")
-  (ar-th-pipe 'delimited arg arg))
-
-(defun ar-pipe-email-atpt (&optional arg)
-  "Pipe EMAIL at point."
-  (interactive "*P")
-  (ar-th-pipe 'email arg arg))
-
-(defun ar-pipe-filename-atpt (&optional arg)
-  "Pipe FILENAME at point."
-  (interactive "*P")
-  (ar-th-pipe 'filename arg arg))
-
-(defun ar-pipe-filenamenondirectory-atpt (&optional arg)
-  "Pipe FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-pipe 'filenamenondirectory arg arg))
-
-(defun ar-pipe-float-atpt (&optional arg)
-  "Pipe FLOAT at point."
-  (interactive "*P")
-  (ar-th-pipe 'float arg arg))
-
-(defun ar-pipe-function-atpt (&optional arg)
-  "Pipe FUNCTION at point."
-  (interactive "*P")
-  (ar-th-pipe 'function arg arg))
-
-(defun ar-pipe-ip-atpt (&optional arg)
-  "Pipe IP at point."
-  (interactive "*P")
-  (ar-th-pipe 'ip arg arg))
-
-(defun ar-pipe-isbn-atpt (&optional arg)
-  "Pipe ISBN at point."
-  (interactive "*P")
-  (ar-th-pipe 'isbn arg arg))
-
-(defun ar-pipe-line-atpt (&optional arg)
-  "Pipe LINE at point."
-  (interactive "*P")
-  (ar-th-pipe 'line arg arg))
-
-(defun ar-pipe-list-atpt (&optional arg)
-  "Pipe LIST at point."
-  (interactive "*P")
-  (ar-th-pipe 'list arg arg))
-
-(defun ar-pipe-name-atpt (&optional arg)
-  "Pipe NAME at point."
-  (interactive "*P")
-  (ar-th-pipe 'name arg arg))
-
-(defun ar-pipe-number-atpt (&optional arg)
-  "Pipe NUMBER at point."
-  (interactive "*P")
-  (ar-th-pipe 'number arg arg))
-
-(defun ar-pipe-page-atpt (&optional arg)
-  "Pipe PAGE at point."
-  (interactive "*P")
-  (ar-th-pipe 'page arg arg))
-
-(defun ar-pipe-paragraph-atpt (&optional arg)
-  "Pipe PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-pipe 'paragraph arg arg))
-
-(defun ar-pipe-phone-atpt (&optional arg)
-  "Pipe PHONE at point."
-  (interactive "*P")
-  (ar-th-pipe 'phone arg arg))
-
-(defun ar-pipe-region-atpt (&optional arg)
-  "Pipe REGION at point."
-  (interactive "*P")
-  (ar-th-pipe 'region arg arg))
-
-(defun ar-pipe-sentence-atpt (&optional arg)
-  "Pipe SENTENCE at point."
-  (interactive "*P")
-  (ar-th-pipe 'sentence arg arg))
-
-(defun ar-pipe-sexp-atpt (&optional arg)
-  "Pipe SEXP at point."
-  (interactive "*P")
-  (ar-th-pipe 'sexp arg arg))
-
-(defun ar-pipe-shstruct-atpt (&optional arg)
-  "Pipe SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-pipe 'shstruct arg arg))
-
-(defun ar-pipe-symbol-atpt (&optional arg)
-  "Pipe SYMBOL at point."
-  (interactive "*P")
-  (ar-th-pipe 'symbol arg arg))
-
-(defun ar-pipe-url-atpt (&optional arg)
-  "Pipe URL at point."
-  (interactive "*P")
-  (ar-th-pipe 'url arg arg))
-
-(defun ar-pipe-word-atpt (&optional arg)
-  "Pipe WORD at point."
-  (interactive "*P")
-  (ar-th-pipe 'word arg arg))
-
-(defun ar-pipe-wordalphaonly-atpt (&optional arg)
-  "Pipe WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-pipe 'wordalphaonly arg arg))
-
-(defun ar-singlequote-greateranglednested-atpt (&optional arg)
-  "Singlequote GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-singlequote 'greateranglednested arg arg))
-
-(defun ar-singlequote-lesseranglednested-atpt (&optional arg)
-  "Singlequote LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-singlequote 'lesseranglednested arg arg))
-
-(defun ar-singlequote-buffer-atpt (&optional arg)
-  "Singlequote BUFFER at point."
-  (interactive "*P")
-  (ar-th-singlequote 'buffer arg arg))
-
-(defun ar-singlequote-char-atpt (&optional arg)
-  "Singlequote CHAR at point."
-  (interactive "*P")
-  (ar-th-singlequote 'char arg arg))
-
-(defun ar-singlequote-comment-atpt (&optional arg)
-  "Singlequote COMMENT at point."
-  (interactive "*P")
-  (ar-th-singlequote 'comment arg arg))
-
-(defun ar-singlequote-csv-atpt (&optional arg)
-  "Singlequote CSV at point."
-  (interactive "*P")
-  (ar-th-singlequote 'csv arg arg))
-
-(defun ar-singlequote-date-atpt (&optional arg)
-  "Singlequote DATE at point."
-  (interactive "*P")
-  (ar-th-singlequote 'date arg arg))
-
-(defun ar-singlequote-delimited-atpt (&optional arg)
-  "Singlequote DELIMITED at point."
-  (interactive "*P")
-  (ar-th-singlequote 'delimited arg arg))
-
-(defun ar-singlequote-email-atpt (&optional arg)
-  "Singlequote EMAIL at point."
-  (interactive "*P")
-  (ar-th-singlequote 'email arg arg))
-
-(defun ar-singlequote-filename-atpt (&optional arg)
-  "Singlequote FILENAME at point."
-  (interactive "*P")
-  (ar-th-singlequote 'filename arg arg))
-
-(defun ar-singlequote-filenamenondirectory-atpt (&optional arg)
-  "Singlequote FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-singlequote 'filenamenondirectory arg arg))
-
-(defun ar-singlequote-float-atpt (&optional arg)
-  "Singlequote FLOAT at point."
-  (interactive "*P")
-  (ar-th-singlequote 'float arg arg))
-
-(defun ar-singlequote-function-atpt (&optional arg)
-  "Singlequote FUNCTION at point."
-  (interactive "*P")
-  (ar-th-singlequote 'function arg arg))
-
-(defun ar-singlequote-ip-atpt (&optional arg)
-  "Singlequote IP at point."
-  (interactive "*P")
-  (ar-th-singlequote 'ip arg arg))
-
-(defun ar-singlequote-isbn-atpt (&optional arg)
-  "Singlequote ISBN at point."
-  (interactive "*P")
-  (ar-th-singlequote 'isbn arg arg))
-
-(defun ar-singlequote-line-atpt (&optional arg)
-  "Singlequote LINE at point."
-  (interactive "*P")
-  (ar-th-singlequote 'line arg arg))
-
-(defun ar-singlequote-list-atpt (&optional arg)
-  "Singlequote LIST at point."
-  (interactive "*P")
-  (ar-th-singlequote 'list arg arg))
-
-(defun ar-singlequote-name-atpt (&optional arg)
-  "Singlequote NAME at point."
-  (interactive "*P")
-  (ar-th-singlequote 'name arg arg))
-
-(defun ar-singlequote-number-atpt (&optional arg)
-  "Singlequote NUMBER at point."
-  (interactive "*P")
-  (ar-th-singlequote 'number arg arg))
-
-(defun ar-singlequote-page-atpt (&optional arg)
-  "Singlequote PAGE at point."
-  (interactive "*P")
-  (ar-th-singlequote 'page arg arg))
-
-(defun ar-singlequote-paragraph-atpt (&optional arg)
-  "Singlequote PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-singlequote 'paragraph arg arg))
-
-(defun ar-singlequote-phone-atpt (&optional arg)
-  "Singlequote PHONE at point."
-  (interactive "*P")
-  (ar-th-singlequote 'phone arg arg))
-
-(defun ar-singlequote-region-atpt (&optional arg)
-  "Singlequote REGION at point."
-  (interactive "*P")
-  (ar-th-singlequote 'region arg arg))
-
-(defun ar-singlequote-sentence-atpt (&optional arg)
-  "Singlequote SENTENCE at point."
-  (interactive "*P")
-  (ar-th-singlequote 'sentence arg arg))
-
-(defun ar-singlequote-sexp-atpt (&optional arg)
-  "Singlequote SEXP at point."
-  (interactive "*P")
-  (ar-th-singlequote 'sexp arg arg))
-
-(defun ar-singlequote-shstruct-atpt (&optional arg)
-  "Singlequote SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-singlequote 'shstruct arg arg))
-
-(defun ar-singlequote-symbol-atpt (&optional arg)
-  "Singlequote SYMBOL at point."
-  (interactive "*P")
-  (ar-th-singlequote 'symbol arg arg))
-
-(defun ar-singlequote-url-atpt (&optional arg)
-  "Singlequote URL at point."
-  (interactive "*P")
-  (ar-th-singlequote 'url arg arg))
-
-(defun ar-singlequote-word-atpt (&optional arg)
-  "Singlequote WORD at point."
-  (interactive "*P")
-  (ar-th-singlequote 'word arg arg))
-
-(defun ar-singlequote-wordalphaonly-atpt (&optional arg)
-  "Singlequote WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-singlequote 'wordalphaonly arg arg))
-
-(defun ar-slash-greateranglednested-atpt (&optional arg)
-  "Slash GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-slash 'greateranglednested arg arg))
-
-(defun ar-slash-lesseranglednested-atpt (&optional arg)
-  "Slash LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-slash 'lesseranglednested arg arg))
-
-(defun ar-slash-buffer-atpt (&optional arg)
-  "Slash BUFFER at point."
-  (interactive "*P")
-  (ar-th-slash 'buffer arg arg))
-
-(defun ar-slash-char-atpt (&optional arg)
-  "Slash CHAR at point."
-  (interactive "*P")
-  (ar-th-slash 'char arg arg))
-
-(defun ar-slash-comment-atpt (&optional arg)
-  "Slash COMMENT at point."
-  (interactive "*P")
-  (ar-th-slash 'comment arg arg))
-
-(defun ar-slash-csv-atpt (&optional arg)
-  "Slash CSV at point."
-  (interactive "*P")
-  (ar-th-slash 'csv arg arg))
-
-(defun ar-slash-date-atpt (&optional arg)
-  "Slash DATE at point."
-  (interactive "*P")
-  (ar-th-slash 'date arg arg))
-
-(defun ar-slash-delimited-atpt (&optional arg)
-  "Slash DELIMITED at point."
-  (interactive "*P")
-  (ar-th-slash 'delimited arg arg))
-
-(defun ar-slash-email-atpt (&optional arg)
-  "Slash EMAIL at point."
-  (interactive "*P")
-  (ar-th-slash 'email arg arg))
-
-(defun ar-slash-filename-atpt (&optional arg)
-  "Slash FILENAME at point."
-  (interactive "*P")
-  (ar-th-slash 'filename arg arg))
-
-(defun ar-slash-filenamenondirectory-atpt (&optional arg)
-  "Slash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-slash 'filenamenondirectory arg arg))
-
-(defun ar-slash-float-atpt (&optional arg)
-  "Slash FLOAT at point."
-  (interactive "*P")
-  (ar-th-slash 'float arg arg))
-
-(defun ar-slash-function-atpt (&optional arg)
-  "Slash FUNCTION at point."
-  (interactive "*P")
-  (ar-th-slash 'function arg arg))
-
-(defun ar-slash-ip-atpt (&optional arg)
-  "Slash IP at point."
-  (interactive "*P")
-  (ar-th-slash 'ip arg arg))
-
-(defun ar-slash-isbn-atpt (&optional arg)
-  "Slash ISBN at point."
-  (interactive "*P")
-  (ar-th-slash 'isbn arg arg))
-
-(defun ar-slash-line-atpt (&optional arg)
-  "Slash LINE at point."
-  (interactive "*P")
-  (ar-th-slash 'line arg arg))
-
-(defun ar-slash-list-atpt (&optional arg)
-  "Slash LIST at point."
-  (interactive "*P")
-  (ar-th-slash 'list arg arg))
-
-(defun ar-slash-name-atpt (&optional arg)
-  "Slash NAME at point."
-  (interactive "*P")
-  (ar-th-slash 'name arg arg))
-
-(defun ar-slash-number-atpt (&optional arg)
-  "Slash NUMBER at point."
-  (interactive "*P")
-  (ar-th-slash 'number arg arg))
-
-(defun ar-slash-page-atpt (&optional arg)
-  "Slash PAGE at point."
-  (interactive "*P")
-  (ar-th-slash 'page arg arg))
-
-(defun ar-slash-paragraph-atpt (&optional arg)
-  "Slash PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-slash 'paragraph arg arg))
-
-(defun ar-slash-phone-atpt (&optional arg)
-  "Slash PHONE at point."
-  (interactive "*P")
-  (ar-th-slash 'phone arg arg))
-
-(defun ar-slash-region-atpt (&optional arg)
-  "Slash REGION at point."
-  (interactive "*P")
-  (ar-th-slash 'region arg arg))
-
-(defun ar-slash-sentence-atpt (&optional arg)
-  "Slash SENTENCE at point."
-  (interactive "*P")
-  (ar-th-slash 'sentence arg arg))
-
-(defun ar-slash-sexp-atpt (&optional arg)
-  "Slash SEXP at point."
-  (interactive "*P")
-  (ar-th-slash 'sexp arg arg))
-
-(defun ar-slash-shstruct-atpt (&optional arg)
-  "Slash SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-slash 'shstruct arg arg))
-
-(defun ar-slash-symbol-atpt (&optional arg)
-  "Slash SYMBOL at point."
-  (interactive "*P")
-  (ar-th-slash 'symbol arg arg))
-
-(defun ar-slash-url-atpt (&optional arg)
-  "Slash URL at point."
-  (interactive "*P")
-  (ar-th-slash 'url arg arg))
-
-(defun ar-slash-word-atpt (&optional arg)
-  "Slash WORD at point."
-  (interactive "*P")
-  (ar-th-slash 'word arg arg))
-
-(defun ar-slash-wordalphaonly-atpt (&optional arg)
-  "Slash WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-slash 'wordalphaonly arg arg))
-
-(defun ar-star-greateranglednested-atpt (&optional arg)
-  "Star GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-star 'greateranglednested arg arg))
-
-(defun ar-star-lesseranglednested-atpt (&optional arg)
-  "Star LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-star 'lesseranglednested arg arg))
-
-(defun ar-star-buffer-atpt (&optional arg)
-  "Star BUFFER at point."
-  (interactive "*P")
-  (ar-th-star 'buffer arg arg))
-
-(defun ar-star-char-atpt (&optional arg)
-  "Star CHAR at point."
-  (interactive "*P")
-  (ar-th-star 'char arg arg))
-
-(defun ar-star-comment-atpt (&optional arg)
-  "Star COMMENT at point."
-  (interactive "*P")
-  (ar-th-star 'comment arg arg))
-
-(defun ar-star-csv-atpt (&optional arg)
-  "Star CSV at point."
-  (interactive "*P")
-  (ar-th-star 'csv arg arg))
-
-(defun ar-star-date-atpt (&optional arg)
-  "Star DATE at point."
-  (interactive "*P")
-  (ar-th-star 'date arg arg))
-
-(defun ar-star-delimited-atpt (&optional arg)
-  "Star DELIMITED at point."
-  (interactive "*P")
-  (ar-th-star 'delimited arg arg))
-
-(defun ar-star-email-atpt (&optional arg)
-  "Star EMAIL at point."
-  (interactive "*P")
-  (ar-th-star 'email arg arg))
-
-(defun ar-star-filename-atpt (&optional arg)
-  "Star FILENAME at point."
-  (interactive "*P")
-  (ar-th-star 'filename arg arg))
-
-(defun ar-star-filenamenondirectory-atpt (&optional arg)
-  "Star FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-star 'filenamenondirectory arg arg))
-
-(defun ar-star-float-atpt (&optional arg)
-  "Star FLOAT at point."
-  (interactive "*P")
-  (ar-th-star 'float arg arg))
-
-(defun ar-star-function-atpt (&optional arg)
-  "Star FUNCTION at point."
-  (interactive "*P")
-  (ar-th-star 'function arg arg))
-
-(defun ar-star-ip-atpt (&optional arg)
-  "Star IP at point."
-  (interactive "*P")
-  (ar-th-star 'ip arg arg))
-
-(defun ar-star-isbn-atpt (&optional arg)
-  "Star ISBN at point."
-  (interactive "*P")
-  (ar-th-star 'isbn arg arg))
-
-(defun ar-star-line-atpt (&optional arg)
-  "Star LINE at point."
-  (interactive "*P")
-  (ar-th-star 'line arg arg))
-
-(defun ar-star-list-atpt (&optional arg)
-  "Star LIST at point."
-  (interactive "*P")
-  (ar-th-star 'list arg arg))
-
-(defun ar-star-name-atpt (&optional arg)
-  "Star NAME at point."
-  (interactive "*P")
-  (ar-th-star 'name arg arg))
-
-(defun ar-star-number-atpt (&optional arg)
-  "Star NUMBER at point."
-  (interactive "*P")
-  (ar-th-star 'number arg arg))
-
-(defun ar-star-page-atpt (&optional arg)
-  "Star PAGE at point."
-  (interactive "*P")
-  (ar-th-star 'page arg arg))
-
-(defun ar-star-paragraph-atpt (&optional arg)
-  "Star PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-star 'paragraph arg arg))
-
-(defun ar-star-phone-atpt (&optional arg)
-  "Star PHONE at point."
-  (interactive "*P")
-  (ar-th-star 'phone arg arg))
-
-(defun ar-star-region-atpt (&optional arg)
-  "Star REGION at point."
-  (interactive "*P")
-  (ar-th-star 'region arg arg))
-
-(defun ar-star-sentence-atpt (&optional arg)
-  "Star SENTENCE at point."
-  (interactive "*P")
-  (ar-th-star 'sentence arg arg))
-
-(defun ar-star-sexp-atpt (&optional arg)
-  "Star SEXP at point."
-  (interactive "*P")
-  (ar-th-star 'sexp arg arg))
-
-(defun ar-star-shstruct-atpt (&optional arg)
-  "Star SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-star 'shstruct arg arg))
-
-(defun ar-star-symbol-atpt (&optional arg)
-  "Star SYMBOL at point."
-  (interactive "*P")
-  (ar-th-star 'symbol arg arg))
-
-(defun ar-star-url-atpt (&optional arg)
-  "Star URL at point."
-  (interactive "*P")
-  (ar-th-star 'url arg arg))
-
-(defun ar-star-word-atpt (&optional arg)
-  "Star WORD at point."
-  (interactive "*P")
-  (ar-th-star 'word arg arg))
-
-(defun ar-star-wordalphaonly-atpt (&optional arg)
-  "Star WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-star 'wordalphaonly arg arg))
-
-(defun ar-tild-greateranglednested-atpt (&optional arg)
-  "Tild GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-tild 'greateranglednested arg arg))
-
-(defun ar-tild-lesseranglednested-atpt (&optional arg)
-  "Tild LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-tild 'lesseranglednested arg arg))
-
-(defun ar-tild-buffer-atpt (&optional arg)
-  "Tild BUFFER at point."
-  (interactive "*P")
-  (ar-th-tild 'buffer arg arg))
-
-(defun ar-tild-char-atpt (&optional arg)
-  "Tild CHAR at point."
-  (interactive "*P")
-  (ar-th-tild 'char arg arg))
-
-(defun ar-tild-comment-atpt (&optional arg)
-  "Tild COMMENT at point."
-  (interactive "*P")
-  (ar-th-tild 'comment arg arg))
-
-(defun ar-tild-csv-atpt (&optional arg)
-  "Tild CSV at point."
-  (interactive "*P")
-  (ar-th-tild 'csv arg arg))
-
-(defun ar-tild-date-atpt (&optional arg)
-  "Tild DATE at point."
-  (interactive "*P")
-  (ar-th-tild 'date arg arg))
-
-(defun ar-tild-delimited-atpt (&optional arg)
-  "Tild DELIMITED at point."
-  (interactive "*P")
-  (ar-th-tild 'delimited arg arg))
-
-(defun ar-tild-email-atpt (&optional arg)
-  "Tild EMAIL at point."
-  (interactive "*P")
-  (ar-th-tild 'email arg arg))
-
-(defun ar-tild-filename-atpt (&optional arg)
-  "Tild FILENAME at point."
-  (interactive "*P")
-  (ar-th-tild 'filename arg arg))
-
-(defun ar-tild-filenamenondirectory-atpt (&optional arg)
-  "Tild FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-tild 'filenamenondirectory arg arg))
-
-(defun ar-tild-float-atpt (&optional arg)
-  "Tild FLOAT at point."
-  (interactive "*P")
-  (ar-th-tild 'float arg arg))
-
-(defun ar-tild-function-atpt (&optional arg)
-  "Tild FUNCTION at point."
-  (interactive "*P")
-  (ar-th-tild 'function arg arg))
-
-(defun ar-tild-ip-atpt (&optional arg)
-  "Tild IP at point."
-  (interactive "*P")
-  (ar-th-tild 'ip arg arg))
-
-(defun ar-tild-isbn-atpt (&optional arg)
-  "Tild ISBN at point."
-  (interactive "*P")
-  (ar-th-tild 'isbn arg arg))
-
-(defun ar-tild-line-atpt (&optional arg)
-  "Tild LINE at point."
-  (interactive "*P")
-  (ar-th-tild 'line arg arg))
-
-(defun ar-tild-list-atpt (&optional arg)
-  "Tild LIST at point."
-  (interactive "*P")
-  (ar-th-tild 'list arg arg))
-
-(defun ar-tild-name-atpt (&optional arg)
-  "Tild NAME at point."
-  (interactive "*P")
-  (ar-th-tild 'name arg arg))
-
-(defun ar-tild-number-atpt (&optional arg)
-  "Tild NUMBER at point."
-  (interactive "*P")
-  (ar-th-tild 'number arg arg))
-
-(defun ar-tild-page-atpt (&optional arg)
-  "Tild PAGE at point."
-  (interactive "*P")
-  (ar-th-tild 'page arg arg))
-
-(defun ar-tild-paragraph-atpt (&optional arg)
-  "Tild PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-tild 'paragraph arg arg))
-
-(defun ar-tild-phone-atpt (&optional arg)
-  "Tild PHONE at point."
-  (interactive "*P")
-  (ar-th-tild 'phone arg arg))
-
-(defun ar-tild-region-atpt (&optional arg)
-  "Tild REGION at point."
-  (interactive "*P")
-  (ar-th-tild 'region arg arg))
-
-(defun ar-tild-sentence-atpt (&optional arg)
-  "Tild SENTENCE at point."
-  (interactive "*P")
-  (ar-th-tild 'sentence arg arg))
-
-(defun ar-tild-sexp-atpt (&optional arg)
-  "Tild SEXP at point."
-  (interactive "*P")
-  (ar-th-tild 'sexp arg arg))
-
-(defun ar-tild-shstruct-atpt (&optional arg)
-  "Tild SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-tild 'shstruct arg arg))
-
-(defun ar-tild-symbol-atpt (&optional arg)
-  "Tild SYMBOL at point."
-  (interactive "*P")
-  (ar-th-tild 'symbol arg arg))
-
-(defun ar-tild-url-atpt (&optional arg)
-  "Tild URL at point."
-  (interactive "*P")
-  (ar-th-tild 'url arg arg))
-
-(defun ar-tild-word-atpt (&optional arg)
-  "Tild WORD at point."
-  (interactive "*P")
-  (ar-th-tild 'word arg arg))
-
-(defun ar-tild-wordalphaonly-atpt (&optional arg)
-  "Tild WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-tild 'wordalphaonly arg arg))
-
-(defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
-  "Triplebacktick GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'greateranglednested arg arg))
-
-(defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
-  "Triplebacktick LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'lesseranglednested arg arg))
-
-(defun ar-triplebacktick-buffer-atpt (&optional arg)
-  "Triplebacktick BUFFER at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'buffer arg arg))
-
-(defun ar-triplebacktick-char-atpt (&optional arg)
-  "Triplebacktick CHAR at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'char arg arg))
-
-(defun ar-triplebacktick-comment-atpt (&optional arg)
-  "Triplebacktick COMMENT at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'comment arg arg))
-
-(defun ar-triplebacktick-csv-atpt (&optional arg)
-  "Triplebacktick CSV at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'csv arg arg))
-
-(defun ar-triplebacktick-date-atpt (&optional arg)
-  "Triplebacktick DATE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'date arg arg))
-
-(defun ar-triplebacktick-delimited-atpt (&optional arg)
-  "Triplebacktick DELIMITED at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'delimited arg arg))
-
-(defun ar-triplebacktick-email-atpt (&optional arg)
-  "Triplebacktick EMAIL at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'email arg arg))
-
-(defun ar-triplebacktick-filename-atpt (&optional arg)
-  "Triplebacktick FILENAME at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'filename arg arg))
-
-(defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
-  "Triplebacktick FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'filenamenondirectory arg arg))
-
-(defun ar-triplebacktick-float-atpt (&optional arg)
-  "Triplebacktick FLOAT at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'float arg arg))
-
-(defun ar-triplebacktick-function-atpt (&optional arg)
-  "Triplebacktick FUNCTION at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'function arg arg))
-
-(defun ar-triplebacktick-ip-atpt (&optional arg)
-  "Triplebacktick IP at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'ip arg arg))
-
-(defun ar-triplebacktick-isbn-atpt (&optional arg)
-  "Triplebacktick ISBN at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'isbn arg arg))
-
-(defun ar-triplebacktick-line-atpt (&optional arg)
-  "Triplebacktick LINE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'line arg arg))
-
-(defun ar-triplebacktick-list-atpt (&optional arg)
-  "Triplebacktick LIST at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'list arg arg))
-
-(defun ar-triplebacktick-name-atpt (&optional arg)
-  "Triplebacktick NAME at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'name arg arg))
-
-(defun ar-triplebacktick-number-atpt (&optional arg)
-  "Triplebacktick NUMBER at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'number arg arg))
-
-(defun ar-triplebacktick-page-atpt (&optional arg)
-  "Triplebacktick PAGE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'page arg arg))
-
-(defun ar-triplebacktick-paragraph-atpt (&optional arg)
-  "Triplebacktick PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'paragraph arg arg))
-
-(defun ar-triplebacktick-phone-atpt (&optional arg)
-  "Triplebacktick PHONE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'phone arg arg))
-
-(defun ar-triplebacktick-region-atpt (&optional arg)
-  "Triplebacktick REGION at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'region arg arg))
-
-(defun ar-triplebacktick-sentence-atpt (&optional arg)
-  "Triplebacktick SENTENCE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'sentence arg arg))
-
-(defun ar-triplebacktick-sexp-atpt (&optional arg)
-  "Triplebacktick SEXP at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'sexp arg arg))
-
-(defun ar-triplebacktick-shstruct-atpt (&optional arg)
-  "Triplebacktick SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'shstruct arg arg))
-
-(defun ar-triplebacktick-symbol-atpt (&optional arg)
-  "Triplebacktick SYMBOL at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'symbol arg arg))
-
-(defun ar-triplebacktick-url-atpt (&optional arg)
-  "Triplebacktick URL at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'url arg arg))
-
-(defun ar-triplebacktick-word-atpt (&optional arg)
-  "Triplebacktick WORD at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'word arg arg))
-
-(defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
-  "Triplebacktick WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'wordalphaonly arg arg))
-
-(defun ar-underscore-greateranglednested-atpt (&optional arg)
-  "Underscore GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-underscore 'greateranglednested arg arg))
-
-(defun ar-underscore-lesseranglednested-atpt (&optional arg)
-  "Underscore LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-underscore 'lesseranglednested arg arg))
-
-(defun ar-underscore-buffer-atpt (&optional arg)
-  "Underscore BUFFER at point."
-  (interactive "*P")
-  (ar-th-underscore 'buffer arg arg))
-
-(defun ar-underscore-char-atpt (&optional arg)
-  "Underscore CHAR at point."
-  (interactive "*P")
-  (ar-th-underscore 'char arg arg))
-
-(defun ar-underscore-comment-atpt (&optional arg)
-  "Underscore COMMENT at point."
-  (interactive "*P")
-  (ar-th-underscore 'comment arg arg))
-
-(defun ar-underscore-csv-atpt (&optional arg)
-  "Underscore CSV at point."
-  (interactive "*P")
-  (ar-th-underscore 'csv arg arg))
-
-(defun ar-underscore-date-atpt (&optional arg)
-  "Underscore DATE at point."
-  (interactive "*P")
-  (ar-th-underscore 'date arg arg))
-
-(defun ar-underscore-delimited-atpt (&optional arg)
-  "Underscore DELIMITED at point."
-  (interactive "*P")
-  (ar-th-underscore 'delimited arg arg))
-
-(defun ar-underscore-email-atpt (&optional arg)
-  "Underscore EMAIL at point."
-  (interactive "*P")
-  (ar-th-underscore 'email arg arg))
-
-(defun ar-underscore-filename-atpt (&optional arg)
-  "Underscore FILENAME at point."
-  (interactive "*P")
-  (ar-th-underscore 'filename arg arg))
-
-(defun ar-underscore-filenamenondirectory-atpt (&optional arg)
-  "Underscore FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-underscore 'filenamenondirectory arg arg))
-
-(defun ar-underscore-float-atpt (&optional arg)
-  "Underscore FLOAT at point."
-  (interactive "*P")
-  (ar-th-underscore 'float arg arg))
-
-(defun ar-underscore-function-atpt (&optional arg)
-  "Underscore FUNCTION at point."
-  (interactive "*P")
-  (ar-th-underscore 'function arg arg))
-
-(defun ar-underscore-ip-atpt (&optional arg)
-  "Underscore IP at point."
-  (interactive "*P")
-  (ar-th-underscore 'ip arg arg))
-
-(defun ar-underscore-isbn-atpt (&optional arg)
-  "Underscore ISBN at point."
-  (interactive "*P")
-  (ar-th-underscore 'isbn arg arg))
-
-(defun ar-underscore-line-atpt (&optional arg)
-  "Underscore LINE at point."
-  (interactive "*P")
-  (ar-th-underscore 'line arg arg))
-
-(defun ar-underscore-list-atpt (&optional arg)
-  "Underscore LIST at point."
-  (interactive "*P")
-  (ar-th-underscore 'list arg arg))
-
-(defun ar-underscore-name-atpt (&optional arg)
-  "Underscore NAME at point."
-  (interactive "*P")
-  (ar-th-underscore 'name arg arg))
-
-(defun ar-underscore-number-atpt (&optional arg)
-  "Underscore NUMBER at point."
-  (interactive "*P")
-  (ar-th-underscore 'number arg arg))
-
-(defun ar-underscore-page-atpt (&optional arg)
-  "Underscore PAGE at point."
-  (interactive "*P")
-  (ar-th-underscore 'page arg arg))
-
-(defun ar-underscore-paragraph-atpt (&optional arg)
-  "Underscore PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-underscore 'paragraph arg arg))
-
-(defun ar-underscore-phone-atpt (&optional arg)
-  "Underscore PHONE at point."
-  (interactive "*P")
-  (ar-th-underscore 'phone arg arg))
-
-(defun ar-underscore-region-atpt (&optional arg)
-  "Underscore REGION at point."
-  (interactive "*P")
-  (ar-th-underscore 'region arg arg))
-
-(defun ar-underscore-sentence-atpt (&optional arg)
-  "Underscore SENTENCE at point."
-  (interactive "*P")
-  (ar-th-underscore 'sentence arg arg))
-
-(defun ar-underscore-sexp-atpt (&optional arg)
-  "Underscore SEXP at point."
-  (interactive "*P")
-  (ar-th-underscore 'sexp arg arg))
-
-(defun ar-underscore-shstruct-atpt (&optional arg)
-  "Underscore SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-underscore 'shstruct arg arg))
-
-(defun ar-underscore-symbol-atpt (&optional arg)
-  "Underscore SYMBOL at point."
-  (interactive "*P")
-  (ar-th-underscore 'symbol arg arg))
-
-(defun ar-underscore-url-atpt (&optional arg)
-  "Underscore URL at point."
-  (interactive "*P")
-  (ar-th-underscore 'url arg arg))
-
-(defun ar-underscore-word-atpt (&optional arg)
-  "Underscore WORD at point."
-  (interactive "*P")
-  (ar-th-underscore 'word arg arg))
-
-(defun ar-underscore-wordalphaonly-atpt (&optional arg)
-  "Underscore WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-underscore 'wordalphaonly arg arg))
-
-(defun ar-whitespace-greateranglednested-atpt (&optional arg)
-  "Whitespace GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-whitespace 'greateranglednested arg arg))
-
-(defun ar-whitespace-lesseranglednested-atpt (&optional arg)
-  "Whitespace LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-whitespace 'lesseranglednested arg arg))
-
-(defun ar-whitespace-buffer-atpt (&optional arg)
-  "Whitespace BUFFER at point."
-  (interactive "*P")
-  (ar-th-whitespace 'buffer arg arg))
-
-(defun ar-whitespace-char-atpt (&optional arg)
-  "Whitespace CHAR at point."
-  (interactive "*P")
-  (ar-th-whitespace 'char arg arg))
-
-(defun ar-whitespace-comment-atpt (&optional arg)
-  "Whitespace COMMENT at point."
-  (interactive "*P")
-  (ar-th-whitespace 'comment arg arg))
-
-(defun ar-whitespace-csv-atpt (&optional arg)
-  "Whitespace CSV at point."
-  (interactive "*P")
-  (ar-th-whitespace 'csv arg arg))
-
-(defun ar-whitespace-date-atpt (&optional arg)
-  "Whitespace DATE at point."
-  (interactive "*P")
-  (ar-th-whitespace 'date arg arg))
-
-(defun ar-whitespace-delimited-atpt (&optional arg)
-  "Whitespace DELIMITED at point."
-  (interactive "*P")
-  (ar-th-whitespace 'delimited arg arg))
-
-(defun ar-whitespace-email-atpt (&optional arg)
-  "Whitespace EMAIL at point."
-  (interactive "*P")
-  (ar-th-whitespace 'email arg arg))
-
-(defun ar-whitespace-filename-atpt (&optional arg)
-  "Whitespace FILENAME at point."
-  (interactive "*P")
-  (ar-th-whitespace 'filename arg arg))
-
-(defun ar-whitespace-filenamenondirectory-atpt (&optional arg)
-  "Whitespace FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-whitespace 'filenamenondirectory arg arg))
-
-(defun ar-whitespace-float-atpt (&optional arg)
-  "Whitespace FLOAT at point."
-  (interactive "*P")
-  (ar-th-whitespace 'float arg arg))
-
-(defun ar-whitespace-function-atpt (&optional arg)
-  "Whitespace FUNCTION at point."
-  (interactive "*P")
-  (ar-th-whitespace 'function arg arg))
-
-(defun ar-whitespace-ip-atpt (&optional arg)
-  "Whitespace IP at point."
-  (interactive "*P")
-  (ar-th-whitespace 'ip arg arg))
-
-(defun ar-whitespace-isbn-atpt (&optional arg)
-  "Whitespace ISBN at point."
-  (interactive "*P")
-  (ar-th-whitespace 'isbn arg arg))
-
-(defun ar-whitespace-line-atpt (&optional arg)
-  "Whitespace LINE at point."
-  (interactive "*P")
-  (ar-th-whitespace 'line arg arg))
-
-(defun ar-whitespace-list-atpt (&optional arg)
-  "Whitespace LIST at point."
-  (interactive "*P")
-  (ar-th-whitespace 'list arg arg))
-
-(defun ar-whitespace-name-atpt (&optional arg)
-  "Whitespace NAME at point."
-  (interactive "*P")
-  (ar-th-whitespace 'name arg arg))
-
-(defun ar-whitespace-number-atpt (&optional arg)
-  "Whitespace NUMBER at point."
-  (interactive "*P")
-  (ar-th-whitespace 'number arg arg))
-
-(defun ar-whitespace-page-atpt (&optional arg)
-  "Whitespace PAGE at point."
-  (interactive "*P")
-  (ar-th-whitespace 'page arg arg))
-
-(defun ar-whitespace-paragraph-atpt (&optional arg)
-  "Whitespace PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-whitespace 'paragraph arg arg))
-
-(defun ar-whitespace-phone-atpt (&optional arg)
-  "Whitespace PHONE at point."
-  (interactive "*P")
-  (ar-th-whitespace 'phone arg arg))
-
-(defun ar-whitespace-region-atpt (&optional arg)
-  "Whitespace REGION at point."
-  (interactive "*P")
-  (ar-th-whitespace 'region arg arg))
-
-(defun ar-whitespace-sentence-atpt (&optional arg)
-  "Whitespace SENTENCE at point."
-  (interactive "*P")
-  (ar-th-whitespace 'sentence arg arg))
-
-(defun ar-whitespace-sexp-atpt (&optional arg)
-  "Whitespace SEXP at point."
-  (interactive "*P")
-  (ar-th-whitespace 'sexp arg arg))
-
-(defun ar-whitespace-shstruct-atpt (&optional arg)
-  "Whitespace SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-whitespace 'shstruct arg arg))
-
-(defun ar-whitespace-symbol-atpt (&optional arg)
-  "Whitespace SYMBOL at point."
-  (interactive "*P")
-  (ar-th-whitespace 'symbol arg arg))
-
-(defun ar-whitespace-url-atpt (&optional arg)
-  "Whitespace URL at point."
-  (interactive "*P")
-  (ar-th-whitespace 'url arg arg))
-
-(defun ar-whitespace-word-atpt (&optional arg)
-  "Whitespace WORD at point."
-  (interactive "*P")
-  (ar-th-whitespace 'word arg arg))
-
-(defun ar-whitespace-wordalphaonly-atpt (&optional arg)
-  "Whitespace WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-whitespace 'wordalphaonly arg arg))
-
-;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
-;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
 
 
 

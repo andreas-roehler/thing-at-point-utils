@@ -328,9 +328,9 @@ BODY is code to be executed within the temp buffer.  Point is
 BODY is code to be executed within the temp buffer.  Point is
  at the end of buffer."
   `(with-temp-buffer
+     ,function
      (let (hs-minor-mode thing-copy-region)
        (emacs-lisp-mode)
-       ,function
        (when ar-switch-p
 	 (switch-to-buffer (current-buffer)))
        ,@body)))
