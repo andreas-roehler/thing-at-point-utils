@@ -415,9 +415,9 @@ return wwrap"
       (ar-forward-number-atpt)
     (should (eq (char-after) ?2))))
 
-(ert-deftest delimited-paren-test ()
+(ert-deftest delimited-paren-test-AV7ZAT ()
   (ar-test-with-elisp-buffer-point-min
-      "(f2oo1)"
+      "(f2oo1) "
       (should (eq 7 (length (ar-delimited-atpt))))))
 
 (ert-deftest ar-doublebackslashparen-char-in-region-test ()
@@ -500,6 +500,13 @@ return wwrap"
   (ar-test-with-elisp-buffer
       "foo a"
     (should-not (ar-regexp-atpt "foo"))))
+
+(ert-deftest ar-delimited-bracketed-atpt-test-CHahdS ()
+  (ar-test-with-elisp-buffer
+      "[[1,3,4,8]]"
+    (backward-char 2)
+    (should (string= "[1,3,4,8]" (ar-delimited-atpt)))))
+
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
