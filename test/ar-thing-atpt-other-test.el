@@ -445,7 +445,6 @@ return wwrap"
     (ar-trim-delimited-atpt)
     (should (eq 3 (length (ar-graph-atpt))))))
 
-
 (ert-deftest ar-delimited-test-yqgUcN ()
   (ar-test-with-elisp-buffer
       "((use-region-p)
@@ -462,7 +461,7 @@ return wwrap"
     (should (string= "region" (match-string-no-properties 0)))))
 
 ;; (defun ar-regexp-no-match-atpt-test-yqgUcN ()
-;;   (interactive) 
+;;   (interactive)
 ;;   (with-temp-buffer
 ;;     (dotimes (_ 99999) (insert " asdf "))
 ;;     (goto-char (point-max))
@@ -487,7 +486,7 @@ return wwrap"
 ;;    (dotimes (_ 99999) (insert " asdf "))
 ;;    (goto-char (point-min))
 ;;    (insert "foo")
-;;    (backward-char) 
+;;    (backward-char)
 ;;    (should (ar-regexp-atpt "foo"))))
 
 (ert-deftest ar-regexp-no-match-atpt-test-cKz5VZ ()
@@ -507,6 +506,63 @@ return wwrap"
     (backward-char 2)
     (should (string= "[1,3,4,8]" (ar-delimited-atpt)))))
 
+(ert-deftest ar-trim-delimited-atpt-test-CHahdS ()
+  (ar-test-with-elisp-buffer
+      "(* 2 2)"
+    (backward-char 2)
+    (ar-trim-delimited-atpt)
+    (goto-char (point-min)) 
+    (should (eq (char-after) ?*))))
+
+(ert-deftest ar-forward-symbol-atpt-test-CHahdS ()
+  (ar-test-with-elisp-buffer-point-min
+      "+++"
+    (ar-forward-symbol-atpt)
+    (should (eq (char-before) ?+))
+    (should (eobp))))
+
+(ert-deftest ar-backward-symbol-atpt-test-CHahdS ()
+  (ar-test-with-elisp-buffer
+      "+++"
+    (ar-backward-symbol-atpt)
+    (should (eq (char-after) ?+))
+    (should (bobp))))
+
+(ert-deftest ar-delimited-test-V5mQXw ()
+  (ar-test-point-min
+      "srcdir=@srcdir@
+# MinGW CPPFLAGS may use this.
+abs_top_srcdir=@abs_top_srcdir@
+"
+    'sh-mode
+    ar-switch-p
+      (search-forward "@s")
+    (should (string= "@srcdir@" (ar-delimited-atpt))))) 
+
+(ert-deftest ar-delimited-test-nslZtA ()
+  (ar-test
+      "(defun foo1 (&optional beg end))"
+    'emacs-lisp-mode
+    ar-switch-p
+    (goto-char (point-max)) 
+    (search-backward "opt")
+    (should (string= "(&optional beg end)" (ar-delimited-atpt)))))
+
+(ert-deftest ar-delimited-test-ORxX4x ()
+  (ar-test
+      "(add-to-list 'load-path \"~/foo\")"
+    'emacs-lisp-mode
+    ar-switch-p
+    (search-backward "oo") 
+    (string= "foo" (ar-delimited-atpt)))) 
+
+(ert-deftest ar-delimited-test-CkaEZw ()
+  (ar-test
+      "(* 2 2*)"
+    'fundamental-mode
+    ar-switch-p
+    (search-backward "2")
+   (should  (string= "(* 2 2*)" (ar-delimited-atpt))))) 
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
