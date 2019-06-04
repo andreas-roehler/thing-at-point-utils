@@ -511,7 +511,7 @@ return wwrap"
       "(* 2 2)"
     (backward-char 2)
     (ar-trim-delimited-atpt)
-    (goto-char (point-min)) 
+    (goto-char (point-min))
     (should (eq (char-after) ?*))))
 
 (ert-deftest ar-forward-symbol-atpt-test-CHahdS ()
@@ -537,14 +537,14 @@ abs_top_srcdir=@abs_top_srcdir@
     'sh-mode
     ar-switch-p
       (search-forward "@s")
-    (should (string= "@srcdir@" (ar-delimited-atpt))))) 
+    (should (string= "@srcdir@" (ar-delimited-atpt)))))
 
 (ert-deftest ar-delimited-test-nslZtA ()
   (ar-test
       "(defun foo1 (&optional beg end))"
     'emacs-lisp-mode
     ar-switch-p
-    (goto-char (point-max)) 
+    (goto-char (point-max))
     (search-backward "opt")
     (should (string= "(&optional beg end)" (ar-delimited-atpt)))))
 
@@ -553,8 +553,8 @@ abs_top_srcdir=@abs_top_srcdir@
       "(add-to-list 'load-path \"~/foo\")"
     'emacs-lisp-mode
     ar-switch-p
-    (search-backward "oo") 
-    (string= "foo" (ar-delimited-atpt)))) 
+    (search-backward "oo")
+    (string= "foo" (ar-delimited-atpt))))
 
 (ert-deftest ar-delimited-test-CkaEZw ()
   (ar-test
@@ -562,7 +562,15 @@ abs_top_srcdir=@abs_top_srcdir@
     'fundamental-mode
     ar-switch-p
     (search-backward "2")
-   (should  (string= "(* 2 2*)" (ar-delimited-atpt))))) 
+   (should  (string= "(* 2 2*)" (ar-delimited-atpt)))))
+
+(ert-deftest ar-delimited-test-qLwOV9 ()
+  (ar-test
+   "(add-to-list 'load-path \"~/arbeit/Emacs-allzeichenabk/emacs-26\.2\")"
+   'emacs-lisp-mode
+   ar-switch-p
+   (search-backward "ema")
+   (should (string=  "\"~/arbeit/Emacs-allzeichenabk/emacs-26.2\"" (ar-delimited-atpt)))))
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
