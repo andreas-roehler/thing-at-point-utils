@@ -453,53 +453,6 @@ return wwrap"
     (search-backward "us")
     (should (< (length (ar-delimited-atpt)) 30))))
 
-(ert-deftest ar-regexp-atpt-test-yqgUcN ()
-  (ar-test-with-elisp-buffer
-      "((use-region-p)"
-    (search-backward "io")
-    (should (ar-regexp-atpt "[a-z]+"))
-    (should (string= "region" (match-string-no-properties 0)))))
-
-;; (defun ar-regexp-no-match-atpt-test-yqgUcN ()
-;;   (interactive)
-;;   (with-temp-buffer
-;;     (dotimes (_ 99999) (insert " asdf "))
-;;     (goto-char (point-max))
-;;     (switch-to-buffer (current-buffer))
-;;     (ar-regexp-atpt "foo")))
-
-;; (defun ar-regexp-no-match-atpt-test-YDnGQj ()
-;;   (interactive)
-;;   (with-temp-buffer
-;;     (switch-to-buffer (current-buffer))
-;;     (dotimes (_ 9) (insert " asdf "))
-;;     (goto-char (point-max))
-;;     (ar-regexp-atpt "foo")))
-
-(ert-deftest ar-regexp-no-match-atpt-test-l43x6p ()
-  (ar-test-with-insert-function-elisp
-   (dotimes (_ 9) (insert " asdf "))
-   (should-not (ar-regexp-atpt "foo"))))
-
-;; (ert-deftest ar-regexp-no-match-atpt-test-ksr9Vy ()
-;;   (ar-test-with-insert-function-elisp
-;;    (dotimes (_ 99999) (insert " asdf "))
-;;    (goto-char (point-min))
-;;    (insert "foo")
-;;    (backward-char)
-;;    (should (ar-regexp-atpt "foo"))))
-
-(ert-deftest ar-regexp-no-match-atpt-test-cKz5VZ ()
-  (ar-test-with-insert-function-elisp
-   "foo"
-   (dotimes (_ 99999) (insert " asdf "))
-   (should-not (ar-regexp-atpt "foo"))))
-
-(ert-deftest ar-regexp-no-match-atpt-test-wxu6We ()
-  (ar-test-with-elisp-buffer
-      "foo a"
-    (should-not (ar-regexp-atpt "foo"))))
-
 (ert-deftest ar-delimited-bracketed-atpt-test-CHahdS ()
   (ar-test-with-elisp-buffer
       "[[1,3,4,8]]"
