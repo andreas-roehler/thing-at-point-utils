@@ -260,7 +260,7 @@
       "asdf\\asdf\\"
       (forward-char -1)
     (ar-th-separate 'backslashed)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-backslashed-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -556,7 +556,7 @@
       "asdf$asdf$"
       (forward-char -1)
     (ar-th-separate 'dollared)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-dollared-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1130,7 +1130,7 @@
       "asdf=asdf="
       (forward-char -1)
     (ar-th-separate 'equalized)
-    (should (bolp))))
+        (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-equalized-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1417,7 +1417,7 @@
       "asdf-asdf-"
       (forward-char -1)
     (ar-th-separate 'hyphened)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-hyphened-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1702,9 +1702,9 @@
 (ert-deftest ar-singlequoted-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf'asdf'"
-      (forward-char -1)
+    (forward-char -1)
     (ar-th-separate 'singlequoted)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-singlequoted-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1989,9 +1989,9 @@
 (ert-deftest ar-slashed-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf/asdf/"
-      (forward-char -1)
+    (forward-char -1)
     (ar-th-separate 'slashed)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-slashed-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2276,9 +2276,9 @@
 (ert-deftest ar-underscored-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf_asdf_"
-      (forward-char -1)
+    (forward-char -1)
     (ar-th-separate 'underscored)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
 (ert-deftest ar-underscored-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2563,9 +2563,9 @@
 (ert-deftest ar-whitespaced-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf asdf "
-      (forward-char -2)
+    (forward-char -2)
     (ar-th-separate 'whitespaced)
-    (should (bolp))))
+    (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 5))))
 
 (ert-deftest ar-whitespaced-singlequote-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
