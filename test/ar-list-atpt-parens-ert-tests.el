@@ -241,7 +241,14 @@
     (forward-char 1)
     (skip-chars-forward "^(")
     (ar-separate-list-atpt)
-    (should (eq (char-after) ?\)))))
+    (skip-chars-backward " \t\r\n\f")
+    (should (eq (char-before) ?t))
+    (forward-line 1)
+    (should (eq (char-after) ?\s))
+    (forward-char 1)
+    (should (eq (char-after) ?\())
+    (end-of-line) 
+    (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-singlequote-list-python-test ()
   (ar-test-with-python-buffer-point-min

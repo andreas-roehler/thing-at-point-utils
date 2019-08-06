@@ -276,7 +276,7 @@
   (ar-th-provide-test-buffer "html")
   (when arg (switch-to-buffer (current-buffer)))
   (goto-char 106)
-  (let ((orig (copy-marker (point))))
+  (let ((orig (point-marker)))
     (ar-doublebackslashparen-alnum-atpt)
     (goto-char orig)
     (ar-blok-graph-atpt)

@@ -246,10 +246,11 @@
 (ert-deftest ar-separate-bracketlist-atpt-test ()
   (ar-test-with-python-buffer-point-min
       "[[1, 2]]\n"
-    (forward-char 1)
-    (skip-syntax-forward "^(")
+    (forward-char 2)
+    ;; (skip-syntax-forward "^(")
     (ar-separate-list-atpt)
-    (should (eq (char-after) ?\]))))
+    (end-of-line) 
+    (should (eq (char-before) ?\]))))
 
 (ert-deftest ar-singlequote-bracketlist-atpt-test ()
   (ar-test-with-python-buffer-point-min
