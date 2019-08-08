@@ -342,7 +342,7 @@ BODY is code to be executed within the temp buffer.  Point is
   `(with-temp-buffer
      (let (hs-minor-mode thing-copy-region)
        (emacs-lisp-mode)
-       (insert contents)
+       (insert ,contents)
        ,function
        (when ar-switch-p
 	 (switch-to-buffer (current-buffer)))

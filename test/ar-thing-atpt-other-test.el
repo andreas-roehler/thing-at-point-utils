@@ -44,8 +44,9 @@ args = sys.argv"
    (skip-chars-forward " \t\r\n\f")
    (should (eq (char-after) ?a))))
 
-(ert-deftest ar-kill-comment-atpt-test ()
-  (ar-test-with-python-buffer-point-min "\"asdf
+(ert-deftest ar-in-string-atpt-test ()
+  (ar-test-with-python-buffer-point-min
+      "\"asdf
 \(defun foo1 (&optional beg end)
   sdsd\n\n"
     (should (ar-in-string-p))
@@ -167,6 +168,7 @@ args = sys.argv"
     (setq asdf nil)))"
 	(search-forward "save-")
       (ar-peel-list-atpt)
+      (sit-for 0.1)
       (should (looking-at "(baz"))))
 
 (ert-deftest ar-kill-doublequoted-atpt-test-1 ()
@@ -179,71 +181,6 @@ args = sys.argv"
 (ert-deftest ar-kill-doublequoted-atpt-test-2 ()
     (ar-test-with-elisp-buffer
 	"(defun general-close--typedef-maybe (beg regexp &optional closer)
-  (let (done)
-    (when (save-excursion
-	    (goto-char beg)
-	    (skip-chars-forward \" \\t\\r\\n\\f\")
-	    (looking-at regexp))
-      (general-close-insert-with-padding-maybe \"Int\")
-      (setq done t))
-    done))"
-      (search-backward "Int")
-      (ar-kill-doublequoted-atpt)
-      (should (eq (char-after) ?\)))))
-
-(ert-deftest ar-kill-doublequoted-atpt-test-3 ()
-    (ar-test-with-elisp-buffer
-	";;; general-close.el --- Insert closing delimiter -*- lexical-binding: t; -*-
-
-;; Authored and maintained by
-;; Emacs User Group Berlin <emacs-berlin@emacs-berlin.org>
-
-;; Version: 0.1
-;; Keywords: languages, lisp
-
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
-
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-;;; Commentary: M-x general-close RET: close any syntactic element.
-
-;; With optional `general-close-electric-listify-p' set to `t':
-
-;; ['a','b   ==> ['a','b'
-;; ['a','b'  ==> ['a','b',
-
-;; With `C-u'
-;; ['a','b', ==> ['a','b']
-
-;; An explicit M-x general-close RET will then revert the
-;; timer-triggered auto-closed, allowing to continue with contents
-
-;; Some valid Emacs Lisp suitable for testing
-;; (setq foo (list \"([{123}])\"))
-
-;; A first draft was published at emacs-devel list:
-;; http://lists.gnu.org/archive/html/emacs-devel/2013-09/msg00512.html
-
-;;; Code:
-
-\(defvar general-close-comint-pre-assignment-re   \"let [[:alpha:]][A-Za-z0-9_]\")
-\(defcustom general-close-comint-pre-assignment-re
-  \"let [[:alpha:]][A-Za-z0-9_]\"
-  \"Insert \\\"=\\\" when looking back. \"
-  :type 'string
-  :tag \"general-close-comint-pre-assignment-re\"
-  :group 'general-close)
-
-\(defun general-close--typedef-maybe (beg regexp &optional closer)
   (let (done)
     (when (save-excursion
 	    (goto-char beg)
@@ -423,12 +360,12 @@ return wwrap"
 (ert-deftest ar-doublebackslashparen-char-in-region-test ()
   (ar-test-with-elisp-buffer
       "asdf"
+    (goto-char (point-max))
     (push-mark)
     (goto-char (point-min))
     (ar-doublebackslashparen-char-in-region-atpt)
     (skip-chars-forward "^s")
-    (should (eq (char-before) 40))
-    ))
+    (should (eq (char-before) 40))))
 
 (ert-deftest ar-hide-delimited-test-cZqMPO ()
   (ar-test-with-elisp-buffer

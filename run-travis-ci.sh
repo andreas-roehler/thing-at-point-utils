@@ -177,4 +177,3 @@ else
     entfernt
 fi
 
-# -load $FILE3 \
