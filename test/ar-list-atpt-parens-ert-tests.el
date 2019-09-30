@@ -237,18 +237,16 @@
 
 (ert-deftest ar-separate-list-elisp-test ()
   (ar-test-with-elisp-buffer-point-min
-      "(list (cons 1 2))\n"
+    "(list (cons 1 2))"
     (forward-char 1)
     (skip-chars-forward "^(")
     (ar-separate-list-atpt)
     (skip-chars-backward " \t\r\n\f")
-    (should (eq (char-before) ?t))
-    (forward-line 1)
-    (should (eq (char-after) ?\s))
+    (should (eq (char-before) ?\)))
+    (back-to-indentation)
     (forward-char 1)
-    (should (eq (char-after) ?\())
-    (end-of-line) 
-    (should (eq (char-before) ?\)))))
+    (should (eq (char-after) ?c))))
+
 
 (ert-deftest ar-singlequote-list-python-test ()
   (ar-test-with-python-buffer-point-min
@@ -294,4 +292,3 @@
 
 (provide 'py-ert-execute-statement-test)
 ;;; ar-list-atpt-parens-tests.el ends here
- 

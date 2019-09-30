@@ -268,7 +268,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'beginendquote no-delimiters))
 
 ;; (defalias 'ar-beginendquote-whitespace-atpt 'ar-whitespace-beginendquote-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-beginendquote-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around BEGINENDQUOTE. "
 ;;   (interactive "*P")
@@ -514,7 +513,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'blok no-delimiters))
 
 ;; (defalias 'ar-blok-whitespace-atpt 'ar-whitespace-blok-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-blok-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around BLOK. "
 ;;   (interactive "*P")
@@ -760,7 +758,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'doublebackslashed no-delimiters))
 
 ;; (defalias 'ar-doublebackslashed-whitespace-atpt 'ar-whitespace-doublebackslashed-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-doublebackslashed-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DOUBLEBACKSLASHED. "
 ;;   (interactive "*P")
@@ -1006,7 +1003,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'doublebackticked no-delimiters))
 
 ;; (defalias 'ar-doublebackticked-whitespace-atpt 'ar-whitespace-doublebackticked-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-doublebackticked-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DOUBLEBACKTICKED. "
 ;;   (interactive "*P")
@@ -1252,7 +1248,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'doublebackslashedparen no-delimiters))
 
 ;; (defalias 'ar-doublebackslashedparen-whitespace-atpt 'ar-whitespace-doublebackslashedparen-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-doublebackslashedparen-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DOUBLEBACKSLASHEDPAREN. "
 ;;   (interactive "*P")
@@ -1498,7 +1493,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'doubleslashed no-delimiters))
 
 ;; (defalias 'ar-doubleslashed-whitespace-atpt 'ar-whitespace-doubleslashed-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-doubleslashed-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DOUBLESLASHED. "
 ;;   (interactive "*P")
@@ -1744,7 +1738,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'doubleslashedparen no-delimiters))
 
 ;; (defalias 'ar-doubleslashedparen-whitespace-atpt 'ar-whitespace-doubleslashedparen-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-doubleslashedparen-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DOUBLESLASHEDPAREN. "
 ;;   (interactive "*P")
@@ -1990,7 +1983,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'markup no-delimiters))
 
 ;; (defalias 'ar-markup-whitespace-atpt 'ar-whitespace-markup-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-markup-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around MARKUP. "
 ;;   (interactive "*P")
@@ -2236,7 +2228,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'mldata no-delimiters))
 
 ;; (defalias 'ar-mldata-whitespace-atpt 'ar-whitespace-mldata-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-mldata-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around MLDATA. "
 ;;   (interactive "*P")
@@ -2482,7 +2473,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'mlattribut no-delimiters))
 
 ;; (defalias 'ar-mlattribut-whitespace-atpt 'ar-whitespace-mlattribut-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-mlattribut-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around MLATTRIBUT. "
 ;;   (interactive "*P")
@@ -2728,7 +2718,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'mltag no-delimiters))
 
 ;; (defalias 'ar-mltag-whitespace-atpt 'ar-whitespace-mltag-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-mltag-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around MLTAG. "
 ;;   (interactive "*P")
@@ -2974,7 +2963,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'slashedparen no-delimiters))
 
 ;; (defalias 'ar-slashedparen-whitespace-atpt 'ar-whitespace-slashedparen-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-slashedparen-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around SLASHEDPAREN. "
 ;;   (interactive "*P")
@@ -3220,7 +3208,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'tabledata no-delimiters))
 
 ;; (defalias 'ar-tabledata-whitespace-atpt 'ar-whitespace-tabledata-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-tabledata-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around TABLEDATA. "
 ;;   (interactive "*P")
@@ -3466,7 +3453,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'xslstylesheet no-delimiters))
 
 ;; (defalias 'ar-xslstylesheet-whitespace-atpt 'ar-whitespace-xslstylesheet-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-xslstylesheet-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around XSLSTYLESHEET. "
 ;;   (interactive "*P")
@@ -3712,7 +3698,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'xsltemplate no-delimiters))
 
 ;; (defalias 'ar-xsltemplate-whitespace-atpt 'ar-whitespace-xsltemplate-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-xsltemplate-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around XSLTEMPLATE. "
 ;;   (interactive "*P")

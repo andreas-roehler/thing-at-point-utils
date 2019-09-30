@@ -5354,13 +5354,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'alnum arg))
 
-(defun ar-triplebacktick-alnum-atpt (&optional arg)
-  "Put triple backticks around alnum at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'alnum arg))
-
 (defun ar-delete-alnum-in-region (beg end)
   "Deletes ALNUM at point if any. "
   (interactive "*r")
@@ -5454,13 +5447,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'alpha arg))
-
-(defun ar-triplebacktick-alpha-atpt (&optional arg)
-  "Put triple backticks around alpha at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'alpha arg))
 
 (defun ar-delete-alpha-in-region (beg end)
   "Deletes ALPHA at point if any. "
@@ -5556,13 +5542,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'ascii arg))
 
-(defun ar-triplebacktick-ascii-atpt (&optional arg)
-  "Put triple backticks around ascii at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'ascii arg))
-
 (defun ar-delete-ascii-in-region (beg end)
   "Deletes ASCII at point if any. "
   (interactive "*r")
@@ -5656,13 +5635,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'blank arg))
-
-(defun ar-triplebacktick-blank-atpt (&optional arg)
-  "Put triple backticks around blank at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'blank arg))
 
 (defun ar-delete-blank-in-region (beg end)
   "Deletes BLANK at point if any. "
@@ -5758,13 +5730,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'cntrl arg))
 
-(defun ar-triplebacktick-cntrl-atpt (&optional arg)
-  "Put triple backticks around cntrl at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'cntrl arg))
-
 (defun ar-delete-cntrl-in-region (beg end)
   "Deletes CNTRL at point if any. "
   (interactive "*r")
@@ -5858,13 +5823,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'digit arg))
-
-(defun ar-triplebacktick-digit-atpt (&optional arg)
-  "Put triple backticks around digit at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'digit arg))
 
 (defun ar-delete-digit-in-region (beg end)
   "Deletes DIGIT at point if any. "
@@ -5960,13 +5918,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'graph arg))
 
-(defun ar-triplebacktick-graph-atpt (&optional arg)
-  "Put triple backticks around graph at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'graph arg))
-
 (defun ar-delete-graph-in-region (beg end)
   "Deletes GRAPH at point if any. "
   (interactive "*r")
@@ -6060,13 +6011,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'lower arg))
-
-(defun ar-triplebacktick-lower-atpt (&optional arg)
-  "Put triple backticks around lower at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'lower arg))
 
 (defun ar-delete-lower-in-region (beg end)
   "Deletes LOWER at point if any. "
@@ -6162,13 +6106,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'nonascii arg))
 
-(defun ar-triplebacktick-nonascii-atpt (&optional arg)
-  "Put triple backticks around nonascii at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'nonascii arg))
-
 (defun ar-delete-nonascii-in-region (beg end)
   "Deletes NONASCII at point if any. "
   (interactive "*r")
@@ -6262,13 +6199,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'print arg))
-
-(defun ar-triplebacktick-print-atpt (&optional arg)
-  "Put triple backticks around print at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'print arg))
 
 (defun ar-delete-print-in-region (beg end)
   "Deletes PRINT at point if any. "
@@ -6364,13 +6294,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'punct arg))
 
-(defun ar-triplebacktick-punct-atpt (&optional arg)
-  "Put triple backticks around punct at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'punct arg))
-
 (defun ar-delete-punct-in-region (beg end)
   "Deletes PUNCT at point if any. "
   (interactive "*r")
@@ -6464,13 +6387,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'space arg))
-
-(defun ar-triplebacktick-space-atpt (&optional arg)
-  "Put triple backticks around space at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'space arg))
 
 (defun ar-delete-space-in-region (beg end)
   "Deletes SPACE at point if any. "
@@ -6566,13 +6482,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'upper arg))
 
-(defun ar-triplebacktick-upper-atpt (&optional arg)
-  "Put triple backticks around upper at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'upper arg))
-
 (defun ar-delete-upper-in-region (beg end)
   "Deletes UPPER at point if any. "
   (interactive "*r")
@@ -6666,13 +6575,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'xdigit arg))
-
-(defun ar-triplebacktick-xdigit-atpt (&optional arg)
-  "Put triple backticks around xdigit at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'xdigit arg))
 
 (defun ar-delete-xdigit-in-region (beg end)
   "Deletes XDIGIT at point if any. "
@@ -6770,13 +6672,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'greateranglednested arg))
 
-(defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
-  "Put triple backticks around greateranglednested at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'greateranglednested arg))
-
 (defun ar-delete-greateranglednested-in-region (beg end)
   "Deletes GREATERANGLEDNESTED at point if any. "
   (interactive "*r")
@@ -6870,13 +6765,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'lesseranglednested arg))
-
-(defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
-  "Put triple backticks around lesseranglednested at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'lesseranglednested arg))
 
 (defun ar-delete-lesseranglednested-in-region (beg end)
   "Deletes LESSERANGLEDNESTED at point if any. "
@@ -6972,13 +6860,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'buffer arg))
 
-(defun ar-triplebacktick-buffer-atpt (&optional arg)
-  "Put triple backticks around buffer at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'buffer arg))
-
 (defun ar-delete-buffer-in-region (beg end)
   "Deletes BUFFER at point if any. "
   (interactive "*r")
@@ -7072,13 +6953,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'char arg))
-
-(defun ar-triplebacktick-char-atpt (&optional arg)
-  "Put triple backticks around char at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'char arg))
 
 (defun ar-delete-char-in-region (beg end)
   "Deletes CHAR at point if any. "
@@ -7174,13 +7048,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'comment arg))
 
-(defun ar-triplebacktick-comment-atpt (&optional arg)
-  "Put triple backticks around comment at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'comment arg))
-
 (defun ar-delete-comment-in-region (beg end)
   "Deletes COMMENT at point if any. "
   (interactive "*r")
@@ -7274,13 +7141,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'csv arg))
-
-(defun ar-triplebacktick-csv-atpt (&optional arg)
-  "Put triple backticks around csv at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'csv arg))
 
 (defun ar-delete-csv-in-region (beg end)
   "Deletes CSV at point if any. "
@@ -7376,13 +7236,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'date arg))
 
-(defun ar-triplebacktick-date-atpt (&optional arg)
-  "Put triple backticks around date at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'date arg))
-
 (defun ar-delete-date-in-region (beg end)
   "Deletes DATE at point if any. "
   (interactive "*r")
@@ -7476,13 +7329,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'delimited arg))
-
-(defun ar-triplebacktick-delimited-atpt (&optional arg)
-  "Put triple backticks around delimited at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'delimited arg))
 
 (defun ar-delete-delimited-in-region (beg end)
   "Deletes DELIMITED at point if any. "
@@ -7578,13 +7424,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'email arg))
 
-(defun ar-triplebacktick-email-atpt (&optional arg)
-  "Put triple backticks around email at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'email arg))
-
 (defun ar-delete-email-in-region (beg end)
   "Deletes EMAIL at point if any. "
   (interactive "*r")
@@ -7678,13 +7517,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'filename arg))
-
-(defun ar-triplebacktick-filename-atpt (&optional arg)
-  "Put triple backticks around filename at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'filename arg))
 
 (defun ar-delete-filename-in-region (beg end)
   "Deletes FILENAME at point if any. "
@@ -7780,13 +7612,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'filenamenondirectory arg))
 
-(defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
-  "Put triple backticks around filenamenondirectory at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'filenamenondirectory arg))
-
 (defun ar-delete-filenamenondirectory-in-region (beg end)
   "Deletes FILENAMENONDIRECTORY at point if any. "
   (interactive "*r")
@@ -7880,13 +7705,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'float arg))
-
-(defun ar-triplebacktick-float-atpt (&optional arg)
-  "Put triple backticks around float at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'float arg))
 
 (defun ar-delete-float-in-region (beg end)
   "Deletes FLOAT at point if any. "
@@ -7982,13 +7800,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'function arg))
 
-(defun ar-triplebacktick-function-atpt (&optional arg)
-  "Put triple backticks around function at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'function arg))
-
 (defun ar-delete-function-in-region (beg end)
   "Deletes FUNCTION at point if any. "
   (interactive "*r")
@@ -8082,13 +7893,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'ip arg))
-
-(defun ar-triplebacktick-ip-atpt (&optional arg)
-  "Put triple backticks around ip at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'ip arg))
 
 (defun ar-delete-ip-in-region (beg end)
   "Deletes IP at point if any. "
@@ -8184,13 +7988,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'isbn arg))
 
-(defun ar-triplebacktick-isbn-atpt (&optional arg)
-  "Put triple backticks around isbn at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'isbn arg))
-
 (defun ar-delete-isbn-in-region (beg end)
   "Deletes ISBN at point if any. "
   (interactive "*r")
@@ -8284,13 +8081,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'line arg))
-
-(defun ar-triplebacktick-line-atpt (&optional arg)
-  "Put triple backticks around line at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'line arg))
 
 (defun ar-delete-line-in-region (beg end)
   "Deletes LINE at point if any. "
@@ -8386,13 +8176,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'list arg))
 
-(defun ar-triplebacktick-list-atpt (&optional arg)
-  "Put triple backticks around list at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'list arg))
-
 (defun ar-delete-list-in-region (beg end)
   "Deletes LIST at point if any. "
   (interactive "*r")
@@ -8486,13 +8269,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'name arg))
-
-(defun ar-triplebacktick-name-atpt (&optional arg)
-  "Put triple backticks around name at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'name arg))
 
 (defun ar-delete-name-in-region (beg end)
   "Deletes NAME at point if any. "
@@ -8588,13 +8364,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'number arg))
 
-(defun ar-triplebacktick-number-atpt (&optional arg)
-  "Put triple backticks around number at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'number arg))
-
 (defun ar-delete-number-in-region (beg end)
   "Deletes NUMBER at point if any. "
   (interactive "*r")
@@ -8688,13 +8457,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'page arg))
-
-(defun ar-triplebacktick-page-atpt (&optional arg)
-  "Put triple backticks around page at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'page arg))
 
 (defun ar-delete-page-in-region (beg end)
   "Deletes PAGE at point if any. "
@@ -8790,13 +8552,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'paragraph arg))
 
-(defun ar-triplebacktick-paragraph-atpt (&optional arg)
-  "Put triple backticks around paragraph at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'paragraph arg))
-
 (defun ar-delete-paragraph-in-region (beg end)
   "Deletes PARAGRAPH at point if any. "
   (interactive "*r")
@@ -8890,13 +8645,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'phone arg))
-
-(defun ar-triplebacktick-phone-atpt (&optional arg)
-  "Put triple backticks around phone at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'phone arg))
 
 (defun ar-delete-phone-in-region (beg end)
   "Deletes PHONE at point if any. "
@@ -8992,13 +8740,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'region arg))
 
-(defun ar-triplebacktick-region-atpt (&optional arg)
-  "Put triple backticks around region at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'region arg))
-
 (defun ar-delete-region-in-region (beg end)
   "Deletes REGION at point if any. "
   (interactive "*r")
@@ -9092,13 +8833,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'sentence arg))
-
-(defun ar-triplebacktick-sentence-atpt (&optional arg)
-  "Put triple backticks around sentence at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'sentence arg))
 
 (defun ar-delete-sentence-in-region (beg end)
   "Deletes SENTENCE at point if any. "
@@ -9194,13 +8928,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'sexp arg))
 
-(defun ar-triplebacktick-sexp-atpt (&optional arg)
-  "Put triple backticks around sexp at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'sexp arg))
-
 (defun ar-delete-sexp-in-region (beg end)
   "Deletes SEXP at point if any. "
   (interactive "*r")
@@ -9294,13 +9021,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'shstruct arg))
-
-(defun ar-triplebacktick-shstruct-atpt (&optional arg)
-  "Put triple backticks around shstruct at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'shstruct arg))
 
 (defun ar-delete-shstruct-in-region (beg end)
   "Deletes SHSTRUCT at point if any. "
@@ -9396,13 +9116,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'symbol arg))
 
-(defun ar-triplebacktick-symbol-atpt (&optional arg)
-  "Put triple backticks around symbol at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'symbol arg))
-
 (defun ar-delete-symbol-in-region (beg end)
   "Deletes SYMBOL at point if any. "
   (interactive "*r")
@@ -9496,13 +9209,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'url arg))
-
-(defun ar-triplebacktick-url-atpt (&optional arg)
-  "Put triple backticks around url at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'url arg))
 
 (defun ar-delete-url-in-region (beg end)
   "Deletes URL at point if any. "
@@ -9598,13 +9304,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-triplequotesq 'word arg))
 
-(defun ar-triplebacktick-word-atpt (&optional arg)
-  "Put triple backticks around word at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'word arg))
-
 (defun ar-delete-word-in-region (beg end)
   "Deletes WORD at point if any. "
   (interactive "*r")
@@ -9698,13 +9397,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
   (ar-th-triplequotesq 'wordalphaonly arg))
-
-(defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
-  "Put triple backticks around wordalphaonly at point if any.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'wordalphaonly arg))
 
 (defun ar-delete-wordalphaonly-in-region (beg end)
   "Deletes WORDALPHAONLY at point if any. "
@@ -17012,7 +16704,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'braced no-delimiters))
 
 ;; (defalias 'ar-braced-whitespace-atpt 'ar-whitespace-braced-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-braced-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around BRACED. "
 ;;   (interactive "*P")
@@ -17258,7 +16949,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'bracketed no-delimiters))
 
 ;; (defalias 'ar-bracketed-whitespace-atpt 'ar-whitespace-bracketed-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-bracketed-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around BRACKETED. "
 ;;   (interactive "*P")
@@ -17504,7 +17194,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'lesserangled no-delimiters))
 
 ;; (defalias 'ar-lesserangled-whitespace-atpt 'ar-whitespace-lesserangled-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-lesserangled-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around LESSERANGLED. "
 ;;   (interactive "*P")
@@ -17750,7 +17439,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'greaterangled no-delimiters))
 
 ;; (defalias 'ar-greaterangled-whitespace-atpt 'ar-whitespace-greaterangled-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-greaterangled-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around GREATERANGLED. "
 ;;   (interactive "*P")
@@ -17996,7 +17684,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'curvedsinglequoted no-delimiters))
 
 ;; (defalias 'ar-curvedsinglequoted-whitespace-atpt 'ar-whitespace-curvedsinglequoted-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-curvedsinglequoted-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around CURVEDSINGLEQUOTED. "
 ;;   (interactive "*P")
@@ -18242,7 +17929,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'curveddoublequoted no-delimiters))
 
 ;; (defalias 'ar-curveddoublequoted-whitespace-atpt 'ar-whitespace-curveddoublequoted-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-curveddoublequoted-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around CURVEDDOUBLEQUOTED. "
 ;;   (interactive "*P")
@@ -18488,7 +18174,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'parentized no-delimiters))
 
 ;; (defalias 'ar-parentized-whitespace-atpt 'ar-whitespace-parentized-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-parentized-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around PARENTIZED. "
 ;;   (interactive "*P")
@@ -18738,7 +18423,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'list no-delimiters))
 
 ;; (defalias 'ar-list-whitespace-atpt 'ar-whitespace-list-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-list-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around LIST. "
 ;;   (interactive "*P")
@@ -18988,7 +18672,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'block no-delimiters))
 
 ;; (defalias 'ar-block-whitespace-atpt 'ar-whitespace-block-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-block-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around BLOCK. "
 ;;   (interactive "*P")
@@ -19234,7 +18917,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'block-or-clause no-delimiters))
 
 ;; (defalias 'ar-block-or-clause-whitespace-atpt 'ar-whitespace-block-or-clause-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-block-or-clause-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around BLOCK-OR-CLAUSE. "
 ;;   (interactive "*P")
@@ -19480,7 +19162,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'char no-delimiters))
 
 ;; (defalias 'ar-char-whitespace-atpt 'ar-whitespace-char-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-char-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around CHAR. "
 ;;   (interactive "*P")
@@ -19726,7 +19407,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'class no-delimiters))
 
 ;; (defalias 'ar-class-whitespace-atpt 'ar-whitespace-class-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-class-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around CLASS. "
 ;;   (interactive "*P")
@@ -19972,7 +19652,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'clause no-delimiters))
 
 ;; (defalias 'ar-clause-whitespace-atpt 'ar-whitespace-clause-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-clause-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around CLAUSE. "
 ;;   (interactive "*P")
@@ -20218,7 +19897,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'def-or-class no-delimiters))
 
 ;; (defalias 'ar-def-or-class-whitespace-atpt 'ar-whitespace-def-or-class-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-def-or-class-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DEF-OR-CLASS. "
 ;;   (interactive "*P")
@@ -20464,7 +20142,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'def no-delimiters))
 
 ;; (defalias 'ar-def-whitespace-atpt 'ar-whitespace-def-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-def-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DEF. "
 ;;   (interactive "*P")
@@ -20710,7 +20387,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'delimited no-delimiters))
 
 ;; (defalias 'ar-delimited-whitespace-atpt 'ar-whitespace-delimited-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-delimited-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around DELIMITED. "
 ;;   (interactive "*P")
@@ -20956,7 +20632,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'expression no-delimiters))
 
 ;; (defalias 'ar-expression-whitespace-atpt 'ar-whitespace-expression-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-expression-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around EXPRESSION. "
 ;;   (interactive "*P")
@@ -21202,7 +20877,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'partial-expression no-delimiters))
 
 ;; (defalias 'ar-partial-expression-whitespace-atpt 'ar-whitespace-partial-expression-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-partial-expression-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around PARTIAL-EXPRESSION. "
 ;;   (interactive "*P")
@@ -21448,7 +21122,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'statement no-delimiters))
 
 ;; (defalias 'ar-statement-whitespace-atpt 'ar-whitespace-statement-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-statement-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around STATEMENT. "
 ;;   (interactive "*P")
@@ -21694,7 +21367,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-underscore 'string no-delimiters))
 
 ;; (defalias 'ar-string-whitespace-atpt 'ar-whitespace-string-atpt)
-;; ;;;###autoload
 ;; (defun ar-whitespace-string-atpt (&optional no-delimiters check)
 ;;   "Put whitespace char around STRING. "
 ;;   (interactive "*P")

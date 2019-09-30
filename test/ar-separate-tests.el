@@ -31,7 +31,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
     (goto-char 10)
     (ar-separate-braced-atpt)
-    (beginning-of-line)
+    (forward-line -1) 
     (should (char-equal ?\{ (char-after)))
     (end-of-line)
     (should (char-equal ?\} (char-before)))
@@ -41,7 +41,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
     (goto-char 10)
     (ar-separate-bracketed-atpt)
-    (beginning-of-line)
+    (forward-line -1)
     (should (char-equal ?\[ (char-after)))
     (end-of-line)
     (should (char-equal ?\] (char-before)))
@@ -51,7 +51,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
     (goto-char 2)
     (ar-separate-lesserangled-atpt)
-    (beginning-of-line)
+    (forward-line -1)
     (should (char-equal ?\< (char-after)))
     (end-of-line)
     (should (char-equal ?\> (char-before)))
@@ -61,7 +61,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
       (goto-char 10)
     (ar-separate-greaterangled-atpt)
-    (beginning-of-line)
+    (forward-line -1)
     (should (char-equal ?\> (char-after)))
     (end-of-line)
     (should (char-equal ?\< (char-before)))))
@@ -70,7 +70,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
       (goto-char 11)
     (ar-separate-curvedsinglequoted-atpt)
-    (beginning-of-line)
+    (forward-line -1)
     (should (char-equal ?\‘ (char-after)))
     (end-of-line)
     (should (char-equal ?\’ (char-before)))))
@@ -79,7 +79,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
       (goto-char 10)
     (ar-separate-curveddoublequoted-atpt)
-    (beginning-of-line)
+    (forward-line -1)
     (should (char-equal ?\“ (char-after)))
     (end-of-line)
     (should (char-equal ?\” (char-before)))))
@@ -88,7 +88,7 @@
   (ar-test-with-temp-buffer "<{([>“{([‘asdf’])}”<])}>"
     (goto-char 10)
     (ar-separate-parentized-atpt)
-    (beginning-of-line)
+    (forward-line -1)
     (should (char-equal ?\( (char-after)))
     (end-of-line)
     (should (char-equal ?\) (char-before)))
