@@ -67,6 +67,45 @@ fi
 
 echo "\$EMACS: $EMACS"
 
+enfernt () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+\
+-load $TEST1 \
+-load $TEST2 \
+-load $TEST3 \
+-load $TEST4 \
+-load $TEST5 \
+-load $TEST7 \
+-load $TEST8 \
+-load $TEST9 \
+-load $TEST10 \
+-load $TEST12 \
+-load $TEST13 \
+-load $TEST15 \
+-load $TEST16 \
+-load $TEST17 \
+-load $TEST18 \
+-load $TEST19 \
+-f ert-run-tests-batch-and-exit
+}
 
 hier () {
     $EMACS -Q --batch \
@@ -683,48 +722,6 @@ h19 () {
 -f ert-run-tests-batch-and-exit
 }
 
-
-enfernt () {
-    $EMACS -Q --batch \
---eval "(message (emacs-version))" \
--load $FILE1 \
--load $FILE2 \
--load $FILE3 \
--load $FILE4 \
--load $FILE5 \
--load $FILE6 \
--load $FILE7 \
--load $FILE8 \
--load $FILE9 \
--load $FILE10 \
--load $FILE11 \
--load $FILE12 \
--load $FILE13 \
--load $FILE14 \
--load $FILE15 \
--load $FILE16 \
--load $FILE17 \
-\
--load $TEST1 \
--load $TEST2 \
--load $TEST3 \
--load $TEST4 \
--load $TEST5 \
--load $TEST7 \
--load $TEST8 \
--load $TEST9 \
--load $TEST10 \
--load $TEST12 \
--load $TEST13 \
--load $TEST15 \
--load $TEST16 \
--load $TEST17 \
--load $TEST18 \
--load $TEST19 \
--f ert-run-tests-batch-and-exit
-}
-
-
 # This var is set in my bashrc to 0
 ORT=${ORT:-1}
 
@@ -772,25 +769,10 @@ if [ $WERKSTATT -eq 0 ]; then
 	esac
     done
 
-# if [ $ORT -eq 0 ]; then
-
-#     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"
-#     cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
-#     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"
-#     cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
-#     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"
-#     cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
-#     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"
-#     cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
-#     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD"
-#     cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD
-#     hier
-#     echo "Lade \$DIR6 und \$DIR7"
 else
+
     echo "entfernt"
     echo "Lade testumgebung \"ENTFERNT\""
     entfernt
 fi
 
-#  -load $FILE11 \
-#  TEST14=test/ar-peel-tests.el
