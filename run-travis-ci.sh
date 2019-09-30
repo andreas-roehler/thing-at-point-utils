@@ -727,7 +727,7 @@ ORT=${ORT:-1}
 
 echo "\$ORT: $ORT"
 
-if [ $WERKSTATT -eq 0 ]; then
+if [ $ORT -eq 0 ]; then
     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"
     cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
     echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"
