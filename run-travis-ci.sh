@@ -67,45 +67,14 @@ fi
 
 echo "\$EMACS: $EMACS"
 
-enfernt () {
-    $EMACS -Q --batch \
---eval "(message (emacs-version))" \
--load $FILE1 \
--load $FILE2 \
--load $FILE3 \
--load $FILE4 \
--load $FILE5 \
--load $FILE6 \
--load $FILE7 \
--load $FILE8 \
--load $FILE9 \
--load $FILE10 \
--load $FILE11 \
--load $FILE12 \
--load $FILE13 \
--load $FILE14 \
--load $FILE15 \
--load $FILE16 \
--load $FILE17 \
-\
--load $TEST1 \
--load $TEST2 \
--load $TEST3 \
--load $TEST4 \
--load $TEST5 \
--load $TEST7 \
--load $TEST8 \
--load $TEST9 \
--load $TEST10 \
--load $TEST12 \
--load $TEST13 \
--load $TEST15 \
--load $TEST16 \
--load $TEST17 \
--load $TEST18 \
--load $TEST19 \
--f ert-run-tests-batch-and-exit
-}
+
+
+# This var is set in my bashrc to 0
+ORT=${ORT:-1}
+
+echo "\$ORT: $ORT"
+
+if [ $ORT -eq 0 ]; then
 
 hier () {
     $EMACS -Q --batch \
@@ -152,13 +121,6 @@ hier () {
 -f ert-run-tests-batch-and-exit
 }
 
-
-# This var is set in my bashrc to 0
-ORT=${ORT:-1}
-
-echo "\$ORT: $ORT"
-
-if [ $ORT -eq 0 ]; then
 h2 () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
@@ -742,7 +704,46 @@ h19 () {
 
 else
 
-    echo "entfernt"
+entfernt () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+\
+-load $TEST1 \
+-load $TEST2 \
+-load $TEST3 \
+-load $TEST4 \
+-load $TEST5 \
+-load $TEST7 \
+-load $TEST8 \
+-load $TEST9 \
+-load $TEST10 \
+-load $TEST12 \
+-load $TEST13 \
+-load $TEST15 \
+-load $TEST16 \
+-load $TEST17 \
+-load $TEST18 \
+-load $TEST19 \
+-f ert-run-tests-batch-and-exit
+}
+
     echo "Lade testumgebung \"ENTFERNT\""
     entfernt
 fi
