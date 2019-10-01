@@ -1,0 +1,210 @@
+;;; ar-thing-atpt-other-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2015  Andreas Röhler
+
+;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
+;; Keywords: lisp
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;;
+
+;;; Code:
+
+(ert-deftest ar-kill-comment-atpt-test ()
+  (ar-test-with-python-buffer-point-min
+   "import time
+
+# import wx
+
+# app = wx.PySimpleApp()
+# frame = wx.Frame(None,-1,\"Roulade\")
+# frame.Show(1)
+# app.MainLoop()
+
+# treffer, gruen, rot, schwarz, pair, impair, passe, manque
+args = sys.argv"
+   (search-forward "treffer")
+   (ar-kill-comment-atpt)
+   (skip-chars-backward " \t\r\n\f")
+   (should (eq (char-before) ?e))
+   (skip-chars-forward " \t\r\n\f")
+   (should (eq (char-after) ?a))))
+
+(ert-deftest ar-in-string-atpt-test ()
+  (ar-test-with-python-buffer-point-min
+      "\"asdf
+\(defun foo1 (&optional beg end)
+  sdsd\n\n"
+    (should (ar-in-string-p))
+    (forward-line 1)
+    (should (ar-in-string-p-fast))
+    (goto-char (point-max))
+    (should (ar-in-string-p))
+    (should (nth 3 (syntax-ppss)))
+    ))
+
+(ert-deftest ar-beginning-of-defun-test ()
+  (ar-test-with-elisp-buffer "(defun asdf ()
+  \"
+\(defun foo1 (&optional beg end)
+  sdsd\"\n\)\n"
+    (ar-beginning-of-defun)
+    (should (bobp))))
+
+(ert-deftest ar-doubleslash-char-test ()
+  (ar-test-with-elisp-buffer-point-min "asdf"
+    (ar-doubleslash-char-atpt)
+    (should (eq (char-before) ?\/))))
+
+(ert-deftest ar-doublebackslash-char-test ()
+  (ar-test-with-elisp-buffer-point-min "asdf"
+    (ar-doublebackslash-char-atpt)
+    (sit-for 0.1) 
+    (should (eq (char-before) ?\\))))
+
+(ert-deftest ar-doublebackslashparen-char-test ()
+  (ar-test-with-elisp-buffer-point-min "as"
+    (ar-doublebackslashparen-char-atpt 2)
+    (sit-for 0.1) 
+    (should (eq (char-before) ?\)))))
+
+(ert-deftest ar-bracked-braced-numarg-test ()
+  (ar-test-with-elisp-buffer-point-min "[a][s][d][f]"
+      (forward-char 2)
+    (ar-brace-bracketed-atpt 4)
+    (sit-for 0.1) 
+    (should (eobp))
+    (sit-for 0.1) 
+    (should (eq (char-before) ?}))))
+
+(ert-deftest ar-separate-alnum-in-parentized-atpt-test ()
+  (ar-test-with-elisp-buffer
+      "(defun asdf (&optional arg for bar))"
+    (forward-char -3)
+    (ar-separate-alnum-in-parentized-atpt)
+    (beginning-of-line)
+    (back-to-indentation)
+    (should (char-equal ?b (char-after)))
+    (forward-line -1)
+    (back-to-indentation)
+    (should (char-equal ?f (char-after)))))
+
+(ert-deftest ar-doublequote-graph-in-bracketed-atpt-test ()
+  (ar-test-with-python-buffer
+      "[defun asdf &optional arg for bar]"
+    (forward-char -1)
+    (ar-doublequote-graph-in-bracketed-atpt)
+    (forward-char -1)
+    (should (ar-in-string-p))))
+
+(ert-deftest ar-separate-doublequoted-in-bracketed-atpt-test ()
+  (ar-test-with-elisp-buffer
+	"[\"defun\" \"asdf\" \"&optional\" \"arg\" \"for\" \"bar\"]"
+      (let ((ar-thing-no-nest t))
+	(forward-char -3)
+	(ar-separate-doublequoted-in-bracketed-atpt)
+	(beginning-of-line)
+	(back-to-indentation)
+	(should (char-equal ?\" (char-after)))
+	(forward-line -1)
+	(back-to-indentation)
+	(should (char-equal ?\" (char-after))))))
+
+(ert-deftest ar-doublequote-alnum-atpt-test ()
+    (ar-test-with-elisp-buffer-point-min
+  "asdfg"
+  (ar-doublequote-alnum-atpt)
+  (should (eq (char-before) ?\"))))
+
+(ert-deftest ar-name-atpt-test1 ()
+  (ar-test-with-elisp-buffer
+      "asdfg"
+    (forward-char -1)
+    (let ((erg (ar-name-atpt)))
+      (should (string= erg "asdfg")))))
+
+(ert-deftest ar-in-doublequoted-atpt-test ()
+  (ar-test-with-elisp-buffer
+      ";; (setq foo
+\"asdf\""
+    (forward-char -1)
+    (should (eq 6 (length (ar-doublequoted-atpt))))))
+
+(ert-deftest ar-in-doublequoted-no-delimiters-test ()
+  (ar-test-with-elisp-buffer
+      ";; (setq foo
+\"asdf\""
+    (forward-char -1)
+    (should (eq 6 (length (ar-doublequoted-atpt nil t))))))
+
+(ert-deftest ar-in-string-atpt-test ()
+  (ar-test-with-elisp-buffer
+      ";; (setq foo
+\"asdf\""
+    (forward-char -1)
+    (should (eq 6 (length (ar-string-atpt))))))
+
+(ert-deftest ar-in-string-no-delimiters-test ()
+  (ar-test-with-elisp-buffer
+      ";; (setq foo
+\"asdf\""
+    (forward-char -1)
+    (should (eq 4 (length (ar-string-atpt '(4)))))))
+
+(ert-deftest ar-peel-list-atpt-test ()
+    (ar-test-with-elisp-buffer-point-min
+	"(defun foo ()
+  (let ((bar (save-excursion (baz nil nil))))
+    (setq asdf nil)))"
+	(search-forward "save-")
+      (sit-for 0.1) 
+      (ar-peel-list-atpt)
+      (sit-for 0.1)
+      (should (looking-at "(baz"))))
+
+(ert-deftest ar-kill-doublequoted-atpt-test-1 ()
+    (ar-test-with-elisp-buffer
+	"\"foo\""
+      (forward-char -1)
+      (ar-kill-doublequoted-atpt)
+      (should (eobp))))
+
+(ert-deftest ar-kill-doublequoted-atpt-test-2 ()
+    (ar-test-with-elisp-buffer
+	"(defun general-close--typedef-maybe (beg regexp &optional closer)
+  (let (done)
+    (when (save-excursion
+	    (goto-char beg)
+	    (skip-chars-forward \" \\t\\r\\n\\f\")
+	    (looking-at regexp))
+      (general-close-insert-with-padding-maybe \"Int\")
+      (setq done t))
+    done))"
+      (search-backward "Int")
+      (ar-kill-doublequoted-atpt)
+      (should (eq (char-after) ?\)))))
+
+(ert-deftest doublequoted-unpaired-delimited-test-1 ()
+  (ar-test-with-temp-buffer "\"
+     ;;; \" \" Write 'etc. \" \""
+      (text-mode)
+    (search-backward "rite")
+    (let ((erg (ar-doublequoted-atpt)))
+      (should erg))))
+
+(provide 'ar-thing-atpt-other-test)
+;;; ar-thing-atpt-other-test.el ends here
