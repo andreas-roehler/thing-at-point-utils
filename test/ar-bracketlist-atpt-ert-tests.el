@@ -64,9 +64,9 @@
   (ar-test-with-python-buffer-point-min
       "[[1, 2]]\n"
     (forward-char 1)
-    (skip-syntax-forward "^(")
+    ;; (skip-syntax-forward "^(")
     (ar-list-end-atpt)
-    (should (eq 7 (point)))))
+    (should (eq (char-after) ?\]))))
 
 (ert-deftest ar-in-bracketlist-p-atpt-test ()
   (ar-test-with-python-buffer-point-min

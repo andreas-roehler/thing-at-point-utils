@@ -691,10 +691,10 @@ h19 () {
 	    q) echo "Lade \$TEST13: \"$TEST13\"";h13;;
 	    r) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	    s) echo "Lade \$TEST15: \"$TEST15\"";h15;;
-	    t) echo "Lade \$TEST16: \"$TEST15\"";h16;;
-	    u) echo "Lade \$TEST17: \"$TEST15\"";h17;;
-	    v) echo "Lade \$TEST18: \"$TEST16\"";h18;;
-	    w) echo "Lade \$TEST19: \"$TEST17\"";h19;;
+	    t) echo "Lade \$TEST16: \"$TEST16\"";h16;;
+	    u) echo "Lade \$TEST17: \"$TEST17\"";h17;;
+	    v) echo "Lade \$TEST18: \"$TEST18\"";h18;;
+	    w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
 	    y) echo "Lade \$TEST8: \"$TEST8\"";h8;;
             h) echo "Lade testumgebung \"HIER\"";hier;;

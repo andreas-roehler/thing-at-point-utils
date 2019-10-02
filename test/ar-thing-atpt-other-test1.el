@@ -206,5 +206,13 @@ args = sys.argv"
     (let ((erg (ar-doublequoted-atpt)))
       (should erg))))
 
+(ert-deftest ar-end-of-list-test-VRZ1MG ()
+  (ar-test-with-elisp-buffer
+      "(defun foo1 (&optional beg end))"
+    (goto-char (point-max))
+    (search-backward "&")
+    (ar-end-of-list-atpt)
+    (should (eq (char-after) ?\)))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

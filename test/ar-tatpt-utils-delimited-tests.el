@@ -60,7 +60,8 @@
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
       (forward-char 1)
-    (should (ar-th-gotoend 'backslashed))))
+    (ar-th-gotoend 'backslashed)
+    (should (eq (char-after) 92))))
 
 (ert-deftest ar-backslashed-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -355,13 +356,14 @@
   (ar-test-with-elisp-buffer-point-min
       "$asdf$"
       (forward-char 1)
-    (should (ar-th-gotoend 'dollared))))
+    (ar-th-gotoend 'dollared)
+    (should (eq (char-after) ?$))))
 
 (ert-deftest ar-dollared-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "$asdf$"
       (forward-char 1)
-    (should (ar-th-length 'dollared))))
+    (should (eq 6 (ar-th-length 'dollared)))))
 
 (ert-deftest ar-dollared-copy-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -649,7 +651,8 @@
   (ar-test-with-elisp-buffer-point-min
       "\"asdf\""
       (forward-char 1)
-    (should (ar-th-gotoend 'doublequoted))))
+    (ar-th-gotoend 'doublequoted)
+    (should (eq (char-after) ?\"))))
 
 (ert-deftest ar-doublequoted-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -936,7 +939,8 @@
   (ar-test-with-elisp-buffer-point-min
       "=asdf="
       (forward-char 1)
-    (should (ar-th-gotoend 'equalized))))
+    (ar-th-gotoend 'equalized)
+    (should (eq (char-after) ?=))))
 
 (ert-deftest ar-equalized-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1223,7 +1227,8 @@
   (ar-test-with-elisp-buffer-point-min
       "-asdf-"
       (forward-char 1)
-    (should (ar-th-gotoend 'hyphened))))
+    (ar-th-gotoend 'hyphened)
+    (should (eq (char-after) ?-))))
 
 (ert-deftest ar-hyphened-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1510,7 +1515,8 @@
   (ar-test-with-elisp-buffer-point-min
       "'asdf'"
       (forward-char 1)
-    (should (ar-th-gotoend 'singlequoted))))
+    (ar-th-gotoend 'singlequoted)
+    (should (eq (char-after) ?'))))
 
 (ert-deftest ar-singlequoted-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -1797,7 +1803,8 @@
   (ar-test-with-elisp-buffer-point-min
       "/asdf/"
       (forward-char 1)
-    (should (ar-th-gotoend 'slashed))))
+    (ar-th-gotoend 'slashed)
+    (should (eq (char-after) 47))))
 
 (ert-deftest ar-slashed-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2083,8 +2090,10 @@
 (ert-deftest ar-underscored-end-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "_asdf_"
+      (goto-char (point-min)) 
       (forward-char 1)
-    (should (ar-th-gotoend 'underscored))))
+    (ar-th-gotoend 'underscored)
+    (should (eq (char-after) ?_))))
 
 (ert-deftest ar-underscored-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2371,7 +2380,8 @@
   (ar-test-with-elisp-buffer-point-min
       " asdf "
       (forward-char 1)
-    (should (ar-th-gotoend 'whitespaced))))
+    (ar-th-gotoend 'whitespaced)
+    (should (eq (char-after) 32))))
 
 (ert-deftest ar-whitespaced-length-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2613,6 +2623,7 @@
 (ert-deftest ar-whitespaced-forward-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       " asdf "
+      (goto-char (point-min)) 
       (forward-char 1)
     (should (ar-th-forward 'whitespaced))))
 

@@ -83,10 +83,12 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
 (ert-deftest ar-bracket-bracketed-in-region-test ()
   (ar-test-with-elisp-buffer
       "[foo]\n[bar]\n[baz]"
-    (push-mark)
-    (goto-char (point-min))
-    (ar-bracket-bracketed-in-region-atpt)
-    (should (looking-at "\\[\\["))))
+    (let ((ar-scan-whole-buffer t))
+      (goto-char (point-max))
+      (push-mark)
+      (goto-char (point-min))
+      (ar-bracket-bracketed-in-region-atpt)
+      (should (looking-at "\\[\\[")))))
 
 (ert-deftest ar-doublequote-bracketed-in-region-test ()
   (ar-test-with-elisp-buffer
@@ -100,25 +102,27 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
 (ert-deftest ar-brace-doublequoted-in-region-test ()
   (ar-test-with-elisp-buffer
       "\"foo1\"\n\"[bar]\""
-    (push-mark)
-    (goto-char (point-min))
-    (ar-brace-doublequoted-in-region-atpt)
-    (end-of-line)
-    (should (eq (char-before) ?\}))
-    (forward-char -3)
-    (should (eq (char-after) ?1))))
+    (let ((ar-scan-whole-buffer t))
+      (push-mark)
+      (goto-char (point-min))
+      (ar-brace-doublequoted-in-region-atpt)
+      (end-of-line)
+      (should (eq (char-before) ?\}))
+      (forward-char -3)
+      (should (eq (char-after) ?1)))))
 
 (ert-deftest ar-brace-hyphened-in-region-test ()
   (ar-test-with-elisp-buffer
       "-foo1-\n-bar-"
-    (push-mark)
-    (goto-char (point-min))
-    (ar-brace-hyphened-in-region-atpt)
-    (end-of-line)
-    (forward-char -1)
-    (should (eq (char-after) ?}))
-    (forward-char -2)
-    (should (eq (char-after) ?1))))
+    (let ((ar-scan-whole-buffer t))
+      (push-mark)
+      (goto-char (point-min))
+      (ar-brace-hyphened-in-region-atpt)
+      (end-of-line)
+      (forward-char -1)
+      (should (eq (char-after) ?}))
+      (forward-char -2)
+      (should (eq (char-after) ?1)))))
 
 (provide 'ar-thing-at-point-utils-forward-tests)
 ;;; ar-thing-at-point-utils-forward-tests.el ends here

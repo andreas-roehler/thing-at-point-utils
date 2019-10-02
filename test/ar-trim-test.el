@@ -27,6 +27,7 @@
 (ert-deftest ar-trim-braced-in-region-test ()
   (ar-test-with-elisp-buffer-point-min
       "{asdf} {asdf} {asdf}"
+      (goto-char (point-min)) 
       (set-mark (point))
     (end-of-line)
     (ar-trim-braced-in-region-atpt)
