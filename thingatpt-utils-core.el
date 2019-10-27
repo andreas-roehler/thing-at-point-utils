@@ -3828,15 +3828,31 @@ it defaults to `<', otherwise it defaults to `string<'."
 (defun ar-syntax-class-to-char (syntax-class)
   (aref " .w_()'\"$\/<>@!|" syntax-class))
 
-(defun ar-forward-syntax-class ()
-  (interactive)
-  (skip-syntax-forward (char-to-string
-                        (syntax-class-to-char
-                         (syntax-class (syntax-after (point)))))))
+(defun ar--forward-syntax-class-intern (syntax)
+  (skip-syntax-forward
+   (char-to-string
+    (ar-syntax-class-to-char
+     (syntax-class syntax)))))
 
-(defun ar-forward-syntax ()
+(defun ar-forward-syntax-class (&optional arg)
+  "Behavior like forward-same-syntax."
   (interactive)
-  (skip-syntax-forward (char-to-string (char-syntax (char-after)))))
+  (ar--forward-syntax-class-intern (syntax-after (point))))
+
+(setq ar-forward-syntax-classes-list (list 0 1 2 3 6))
+(defun ar-forward-syntax-classes (&optional arg)
+  "Skip chars forward belonging to syntax-classes ‘ar-forward-syntax-classes-list’"
+  (interactive "^p")
+  (let ((orig (point))
+	done)
+    (while (and (not (eobp))
+		(setq last (point))
+		(prog1 (not done)
+		  (dolist (ele ar-forward-syntax-classes-list)
+		    (ar--forward-syntax-class-intern (list ele)))))
+      (unless (< last (point))(setq done t)))
+    (< orig (point))))
+
 (defun ar-syntax-in-region-atpt (beg end)
   (interactive "r")
   (save-excursion
