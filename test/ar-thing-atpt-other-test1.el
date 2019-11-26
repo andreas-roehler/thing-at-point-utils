@@ -214,5 +214,41 @@ args = sys.argv"
     (ar-end-of-list-atpt)
     (should (eq (char-after) ?\)))))
 
+(ert-deftest ar-sort-indent-test-DZReV9 ()
+  (ar-test-with-elisp-buffer
+      "===
+Z\n\nB\nC\nA\n\nA\n---"
+    (goto-char (point-max))
+    (search-backward "C")
+    (ar-sort-indent)
+    (forward-line 1) 
+    (should (eq (char-after) ?B))))
+
+(ert-deftest ar-sort-indent-test-u7kbsF ()
+  (ar-test-with-elisp-buffer
+      "set(SRC
+  zaz\.c  # <- cursor on this line\.
+  bar\.c
+  baz\.c
+  foo\.c
+)"
+    (goto-char (point-max))
+    (search-backward "foo") 
+    (ar-sort-indent)
+    (end-of-line)
+    (should (looking-back "^ +bar.c" (line-beginning-position)))))
+
+(ert-deftest ar-sort-indent-test-VRZ1MG ()
+  (ar-test-with-elisp-buffer
+      "/* Structs, keep in order\. */
+
+struct FooBaz\;
+struct FooBar\;
+struct FooFoo\;
+struct AbcBaz\;  /* <- cursor on this line\. */"
+    (ar-sort-indent)
+    (goto-char (point-max))
+    (should (looking-back "^struct FooFoo\;" (line-beginning-position)))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

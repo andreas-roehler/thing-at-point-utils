@@ -3871,6 +3871,106 @@ it defaults to `<', otherwise it defaults to `string<'."
       (message (format "%s" stax)))
     stax))
 
+
+(defun ar-beginning-of-indent ()
+  "Go to the beginning of a section of equal indent."
+  (interactive)
+  (let ((indent (current-indentation))
+	(last (line-beginning-position)))
+    (while (and (not (bobp))
+		(progn (forward-line -1)
+		       (= indent (current-indentation)))
+		(not (empty-line-p))
+		(setq last (line-beginning-position))))
+    (goto-char last)
+    last))
+
+(defun ar--travel-this-indent-backward (&optional indent)
+  "Travel current INDENT backward.
+
+With optional INDENT travel bigger or equal indentation"
+  (let ((indent (or indent (current-indentation)))
+	(last (line-beginning-position)))
+    (while (and (not (bobp))
+		(progn (forward-line -1)
+		       (= indent (current-indentation)))
+		(not (empty-line-p))
+		(setq last (line-beginning-position))))
+    (goto-char last)
+    last))
+
+(defun ar-backward-indent ()
+  "Go to the beginning of a section of equal indent.
+
+If already at the beginning or before a indent, go to next indent upwards
+Returns final position when called from inside section, nil otherwise"
+  (interactive)
+  (unless (bobp)
+    (let (erg)
+      (setq erg (ar--travel-this-indent-backward))
+      (when erg (goto-char erg))
+      erg)))
+
+(defun ar-end-of-indent ()
+  "Go to the end of a section of equal indentation."
+  (interactive)
+  (let ((last (line-end-position))
+	(indent (current-indentation)))
+    (while (and (not (eobp)) (progn (forward-line 1) (and (not (empty-line-p)) (= indent (current-indentation))))(setq last (line-end-position))))
+    (goto-char last)
+    (point)))
+
+(defun ar--travel-this-indent-forward (indent)
+  "Internal use.
+
+Travel this INDENT forward"
+  (let (last)
+    (while (and (progn (forward-line 1)
+		       (eq indent (current-indentation)))
+		(not (empty-line-p))
+		(setq last (line-end-position))))
+    (when last (goto-char last))
+    last))
+
+(defun ar-forward-indent ()
+  "Go to the end of a section of equal indentation.
+
+If already at the end, go down to next indent in buffer
+Returns final position when called from inside section, nil otherwise"
+  (interactive)
+  (let (done
+	(last (point))
+	(orig (point))
+	(indent (current-indentation)))
+    (while (and (not (eobp)) (not done) (progn (forward-line 1) (back-to-indentation) (or (empty-line-p) (and (<= indent (current-indentation))(< last (point))(setq last (point)))(setq done t))))
+      (and (< indent (current-indentation))(setq done t)))
+    (if (and last (< orig last))
+	(progn (goto-char last)
+	       (end-of-line)
+	       (skip-chars-backward " \t\r\n\f"))
+      (skip-chars-forward " \t\r\n\f")
+      (end-of-line)
+      (skip-chars-backward " \t\r\n\f"))
+    (and (< orig (point))(point))))
+
+(defun ar-sort-indent ()
+  (interactive)
+  (save-excursion
+    (let ((beg (ar-beginning-of-indent))
+	  (end (ar-end-of-indent)))
+      (when (and beg end)
+	(save-restriction
+	  (narrow-to-region beg end)
+	  (sort-lines nil beg end))))))
+
+(defun ar-mark-indent ()
+  (interactive)
+  (let ((beg (ar-beginning-of-indent))
+	(end (ar-end-of-indent)))
+    (push-mark)
+    (goto-char beg)
+    (exchange-point-and-mark)))
+
 (defvar ar-paired-delimited-passiv-raw
   (list
    '(braced "{" "}")
