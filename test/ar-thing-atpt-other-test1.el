@@ -250,5 +250,28 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (goto-char (point-max))
     (should (looking-back "^struct FooFoo\;" (line-beginning-position)))))
 
+(ert-deftest ar-curved-singlequotes-delimited-test-VRZ1MG ()
+  (ar-test-with-elisp-buffer
+      "('‘asdf’'"
+    (goto-char (point-max))
+    (search-backward "f") 
+    (should (string= "‘asdf’" (ar-delimited-atpt)))))
+
+(ert-deftest ar-curved-singlequotes-delimited-test-Mt4YnS ()
+  (ar-test-with-elisp-buffer
+      "('\"‘asdf’\"'"
+    (goto-char (point-max))
+    (search-backward "f") 
+    (should (string= "‘asdf’" (ar-delimited-atpt)))))
+
+(ert-deftest ar-open-only-paren-stars-delimited-test-Mt4YnS ()
+  (ar-test-with-elisp-buffer
+    "(* 2 2*"
+    (goto-char (point-max))
+    (search-backward "2") 
+    (should (string= "* 2 2*" (ar-delimited-atpt)))))
+
+    
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
