@@ -178,7 +178,7 @@ return wwrap"
 
 (ert-deftest delimited-paren-test-AV7ZAT ()
   (ar-test-with-elisp-buffer-point-min
-      "(f2oo1) "
+      "(f2oo1)"
       (should (eq 7 (length (ar-delimited-atpt))))))
 
 (ert-deftest ar-doublebackslashparen-char-in-region-test ()
@@ -251,7 +251,7 @@ abs_top_srcdir=@abs_top_srcdir@
     'sh-mode
     ar-switch-p
       (search-forward "@s")
-    (should (string= "@srcdir@" (ar-delimited-atpt)))))
+    (should (string=  (ar-delimited-atpt) "@srcdir@"))))
 
 (ert-deftest ar-delimited-test-nslZtA ()
   (ar-test
@@ -285,6 +285,18 @@ abs_top_srcdir=@abs_top_srcdir@
    ar-switch-p
    (search-backward "ema")
    (should (string=  "\"~/arbeit/Emacs-allzeichenabk/emacs-26.2\"" (ar-delimited-atpt)))))
+
+(ert-deftest ar-delimited-test-r9C7hI ()
+  (ar-test
+   "[(&optional]"
+   'emacs-lisp-mode
+   ar-switch-p
+   (backward-char)
+   (ar-trim-delimited-atpt)
+   (should
+    (string=  (ar-graph-atpt) "(&optional"))))
+
+
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
