@@ -2090,7 +2090,7 @@
 (ert-deftest ar-underscored-end-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "_asdf_"
-      (goto-char (point-min)) 
+      (goto-char (point-min))
       (forward-char 1)
     (ar-th-gotoend 'underscored)
     (should (eq (char-after) ?_))))
@@ -2623,13 +2623,14 @@
 (ert-deftest ar-whitespaced-forward-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       " asdf "
-      (goto-char (point-min)) 
+      (goto-char (point-min))
       (forward-char 1)
     (should (ar-th-forward 'whitespaced))))
 
 (ert-deftest ar-backtick-word-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "asdf"
+      (goto-char (point-min))
     (ar-backtick-word-atpt)
     (should (eq (char-before) ?`))))
 
