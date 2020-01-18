@@ -296,6 +296,46 @@ abs_top_srcdir=@abs_top_srcdir@
    (should
     (string=  (ar-graph-atpt) "(&optional"))))
 
+(ert-deftest ar-delimited-xml-test-r9C7hI ()
+  (ar-test
+      "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
+    'sgml-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "wit")
+    (should
+     (string=  (ar-delimited-atpt) "<rdg wit=\"a2\">"))))
+
+(ert-deftest ar-delimited-xml-test-X3opvb ()
+  (ar-test
+      "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
+    'sgml-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "Foo")
+    (should
+     (string=  (ar-delimited-atpt) "Foo bar baz"))))
+
+;; (ert-deftest ar-delimited-xml-test-Ixa2Qy ()
+;;   (ar-test
+;;    "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
+;;    'sgml-mode
+;;    ar-switch-p
+;;    (backward-char)
+;;    (ar-delimited-atpt '())
+;;    (should
+;;     (string=  (ar-delimited-atpt) "(&optional"))))
+
+;; (ert-deftest ar-delimited-xml-test-8cc6Sc ()
+;;   (ar-test
+;;    "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
+;;    'sgml-mode
+;;    ar-switch-p
+;;    (backward-char)
+;;    (ar-trim-delimited-atpt)
+;;    (should
+;;     (string=  (ar-delimited-atpt) "(&optional"))))
+
 
 
 (provide 'ar-thing-atpt-other-test)
