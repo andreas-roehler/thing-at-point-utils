@@ -314,29 +314,26 @@ abs_top_srcdir=@abs_top_srcdir@
     (goto-char (point-max))
     (search-backward "Foo")
     (should
-     (string=  (ar-delimited-atpt) "Foo bar baz"))))
+     (string=  (ar-delimited-atpt '()) "Foo bar baz"))))
 
-;; (ert-deftest ar-delimited-xml-test-Ixa2Qy ()
-;;   (ar-test
-;;    "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
-;;    'sgml-mode
-;;    ar-switch-p
-;;    (backward-char)
-;;    (ar-delimited-atpt '())
-;;    (should
-;;     (string=  (ar-delimited-atpt) "(&optional"))))
+(ert-deftest ar-delimited-xml-test-Ixa2Qy ()
+  (ar-test
+   "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
+   'sgml-mode
+   ar-switch-p
+   (search-backward "stanz")
+   (ar-delimited-atpt '())
+   (should
+    (string=  (ar-delimited-atpt '()) "stanza"))))
 
-;; (ert-deftest ar-delimited-xml-test-8cc6Sc ()
-;;   (ar-test
-;;    "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
-;;    'sgml-mode
-;;    ar-switch-p
-;;    (backward-char)
-;;    (ar-trim-delimited-atpt)
-;;    (should
-;;     (string=  (ar-delimited-atpt) "(&optional"))))
-
-
+(ert-deftest ar-delimited-test-01Mzp2 ()
+  (ar-test
+      "‘@2’, ..., ‘@N’"
+    'Info-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "2")
+    (should (string=  (ar-delimited-atpt) "‘@2’"))))
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
