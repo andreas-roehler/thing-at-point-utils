@@ -335,5 +335,23 @@ abs_top_srcdir=@abs_top_srcdir@
     (search-backward "2")
     (should (string=  (ar-delimited-atpt) "‘@2’"))))
 
+(ert-deftest ar-delimited-test-1DthHC ()
+  (ar-test
+      "foo -="
+    'python-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "o")
+    (should-not (string=  (ar-delimited-atpt) "foo -="))))
+
+(ert-deftest ar-delimited-test-wZseP5 ()
+  (ar-test
+      "\"foo -=\""
+    'python-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "o")
+    (should (string=  (ar-delimited-atpt) "\"foo -=\""))))
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
