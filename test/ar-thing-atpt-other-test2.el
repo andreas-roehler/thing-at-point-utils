@@ -353,5 +353,16 @@ abs_top_srcdir=@abs_top_srcdir@
     (search-backward "o")
     (should (string=  (ar-delimited-atpt) "\"foo -=\""))))
 
+(ert-deftest ar-delimited-test-8XxN4R ()
+  (ar-test
+      "`fstring`"
+    'fundamental-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "g")
+    (should (string=  (ar-delimited-atpt) "`fstring`"))))
+
+
+
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
