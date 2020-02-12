@@ -362,6 +362,15 @@ abs_top_srcdir=@abs_top_srcdir@
     (search-backward "g")
     (should (string=  (ar-delimited-atpt) "`fstring`"))))
 
+(ert-deftest ar-delimited-singlequoted-test-8XxN4R ()
+  (ar-test
+      "result = 'Congratulations! You won a ' ++ 'penguin'"
+    'python-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "C")
+    (should (string=  (ar-delimited-atpt) "'Congratulations! You won a '"))))
+
 
 
 (provide 'ar-thing-atpt-other-test)
