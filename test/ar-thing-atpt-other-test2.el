@@ -371,6 +371,15 @@ abs_top_srcdir=@abs_top_srcdir@
     (search-backward "C")
     (should (string=  (ar-delimited-atpt) "'Congratulations! You won a '"))))
 
+(ert-deftest ar-delimited-angled-test-8XxN4R ()
+  (ar-test
+      "<greeting>"
+    'text-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "e")
+    (should (string=  (ar-delimited-atpt) "<greeting>"))))
+
 
 
 (provide 'ar-thing-atpt-other-test)
