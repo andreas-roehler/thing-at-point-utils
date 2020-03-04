@@ -380,7 +380,33 @@ abs_top_srcdir=@abs_top_srcdir@
     (search-backward "e")
     (should (string=  (ar-delimited-atpt) "<greeting>"))))
 
+;; (ert-deftest ar-delimited-braced-occurrence-test-8XxN4R ()
+;;   (ar-test
+;;       "\"Hr {},\\r\\rTrrr rr r rrrr {} rrrr rr \\
+;;  rrrrrrrr\. Yrr'rr rrrrrrr rrrrr rr {}  rrrrrrrr \\
+;; rr {} rr rrr rrrr\.\\r\\r\""
+;;     'python-mode
+;;     ar-switch-p
+;;     (goto-char (point-max))
+;;     (search-backward "Y")
+;;     (let ((erg (ar-delimited-atpt)))
+;;       (should (string=  erg "\"Hr {},\r\rTrrr rr r rrrr {} rrrr rr \
+;;  rrrrrrrr\. Yrr'rr rrrrrrr rrrrr rr {}  rrrrrrrr \
+;; rr {} rr rrr rrrr\.\r\r\"")))))
 
+
+(ert-deftest ar-iterable-test-8XxN4R ()
+  (ar-test
+      "for i in foo:
+    for j in bar:
+        if j in i:
+            print(foo_bar[j])
+"
+    'python-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "foo")
+    (should (string=  (ar-delimited-atpt) "(foo_bar[j])"))))
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here
