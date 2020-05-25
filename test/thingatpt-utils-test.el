@@ -1,6 +1,6 @@
 ;;; thingatpt-utils-test.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2019 Andreas Röhler, unless
+;; Copyright (C) 2010-2020 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless

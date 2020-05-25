@@ -380,6 +380,16 @@ abs_top_srcdir=@abs_top_srcdir@
     (search-backward "e")
     (should (string=  (ar-delimited-atpt) "<greeting>"))))
 
+(ert-deftest ar-delimited-underlines-test-8XxN4R ()
+  (ar-test
+      "foo = 'foo_bar_baz.txt'"
+    'python-mode
+    ar-switch-p
+    (goto-char (point-max))
+    (search-backward "a")
+    (should (string=  (ar-delimited-atpt) "'foo_bar_baz.txt'"))))
+
+
 ;; (ert-deftest ar-delimited-braced-occurrence-test-8XxN4R ()
 ;;   (ar-test
 ;;       "\"Hr {},\\r\\rTrrr rr r rrrr {} rrrr rr \\
@@ -393,6 +403,7 @@ abs_top_srcdir=@abs_top_srcdir@
 ;;       (should (string=  erg "\"Hr {},\r\rTrrr rr r rrrr {} rrrr rr \
 ;;  rrrrrrrr\. Yrr'rr rrrrrrr rrrrr rr {}  rrrrrrrr \
 ;; rr {} rr rrr rrrr\.\r\r\"")))))
+
 
 
 (ert-deftest ar-iterable-test-8XxN4R ()

@@ -25,54 +25,67 @@
 ;;; Code:
 
 (defun ar-delimited2backslashed-atpt ()
+  "Delimited2backslashed."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?\\))
 
 (defun ar-delimited2backticked-atpt ()
+  "Delimited2backticked."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?`))
 
 (defun ar-delimited2braced-atpt ()
+  "Delimited2braced."
   (interactive "*")
   (ar--transform-generic-delimited-atpt (cons ?{ ?})))
 
 (defun ar-delimited2bracketed-atpt ()
+  "Delimited2bracketed."
   (interactive "*")
   (ar--transform-generic-delimited-atpt (cons ?\[ ?\])))
 
 (defun ar-delimited2dollared-atpt ()
+  "Delimited2dollared."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?$))
 
 (defun ar-delimited2doublequoted-atpt ()
+  "Delimited2doublequoted."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?\"))
 
 (defun ar-delimited2equalized-atpt ()
+  "Delimited2equalized."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?=))
 
 (defun ar-delimited2hyphened-atpt ()
+  "Delimited2hyphened."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?-))
 
 (defun ar-delimited2parentized-atpt ()
+  "Delimited2parentized."
   (interactive "*")
   (ar--transform-generic-delimited-atpt (cons ?\( ?\))))
 
 (defun ar-delimited2singlequoted-atpt ()
+  "Delimited2singlequoted."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?'))
 
 (defun ar-delimited2slashed-atpt ()
+  "Delimited2slashed."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?\/))
 
 (defun ar-delimited2underscored-atpt ()
+  "Delimited2underscored."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?_))
 
 (defun ar-delimited2whitespaced-atpt ()
+  "Delimited2whitespaced."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?\ ))
 
