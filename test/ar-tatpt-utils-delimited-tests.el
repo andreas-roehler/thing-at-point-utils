@@ -2640,6 +2640,13 @@
     (ar-triplebacktick-word-atpt)
     (should (looking-back "```" (line-beginning-position)))))
 
+(ert-deftest ar-bracketed-atpt-test-V5h2sg ()
+  (ar-test-with-python-buffer
+      "\[\"<3\", \" Haskell\"]"
+    (goto-char (point-max))
+    (backward-char)
+    (should (string= "\[\"<3\", \" Haskell\"]" (ar-delimited-atpt)))))
+
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 
 (provide 'ar-tatpt-utils-delimited-tests)
