@@ -1,6 +1,6 @@
 ;;; ar-tatpt-utils-delimited-tests.el --- tests
 
-;; Copyright (C) 2015-2018  Andreas Röhler
+;; Copyright (C) 2015-2020  Andreas Röhler
 
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: lisp
@@ -25,6 +25,8 @@
 ;;; Code:
 
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw start
+
+;; (defvar ar-debug-p t)
 
 (ert-deftest ar-backslashed-atpt-old-test ()
   (ar-test-with-elisp-buffer-point-min
@@ -2646,6 +2648,20 @@
     (goto-char (point-max))
     (backward-char)
     (should (string= "\[\"<3\", \" Haskell\"]" (ar-delimited-atpt)))))
+
+(ert-deftest ar-angled-atpt-test-Zq97HB ()
+  (ar-test-with-python-buffer
+      "(<$>)"
+    (goto-char (point-max))
+    (backward-char 2)
+    (should (string= "<$>" (ar-delimited-atpt)))))
+
+(ert-deftest ar-braced-atpt-test-Zq97HB ()
+  (ar-test-with-python-buffer
+      "{<$>}"
+    (goto-char (point-max))
+    (backward-char 1)
+    (should (string= "{<$>}" (ar-delimited-atpt)))))
 
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 

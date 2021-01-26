@@ -69,5 +69,14 @@
     (forward-char -1)
     (should (eq 8 (length (ar-parentized-atpt))))))
 
+(ert-deftest ar-angled-atpt-YzYGzY-test ()
+  (ar-test-with-temp-buffer
+      "<2021-01-25 Mo>"
+      (should-not (eq 8 (length (ar-delimited-atpt))))))
+
+;; (ert-deftest ar-delete-angled-atpt-YzYGzY-test ()
+;;   (ar-test-with-temp-buffer))
+
+
 (provide 'ar-paired-delimit-tests)
 ;; ar-paired-delimit-tests.el ends here
