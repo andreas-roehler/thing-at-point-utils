@@ -25,7 +25,7 @@
 ;;; Code:
 
 (ert-deftest ar-kill-comment-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
    "import time
 
 # import wx
@@ -45,7 +45,7 @@ args = sys.argv"
    (should (eq (char-after) ?a))))
 
 (ert-deftest ar-in-string-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "\"asdf
 \(defun foo1 (&optional beg end)
   sdsd\n\n"
@@ -73,22 +73,22 @@ args = sys.argv"
 (ert-deftest ar-doublebackslash-char-test ()
   (ar-test-with-elisp-buffer-point-min "asdf"
     (ar-doublebackslash-char-atpt)
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (eq (char-before) ?\\))))
 
 (ert-deftest ar-doublebackslashparen-char-test ()
   (ar-test-with-elisp-buffer-point-min "as"
     (ar-doublebackslashparen-char-atpt 2)
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-bracked-braced-numarg-test ()
   (ar-test-with-elisp-buffer-point-min "[a][s][d][f]"
       (forward-char 2)
     (ar-brace-bracketed-atpt 4)
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (eobp))
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (eq (char-before) ?}))))
 
 (ert-deftest ar-separate-alnum-in-parentized-atpt-test ()
@@ -106,9 +106,9 @@ args = sys.argv"
 (ert-deftest ar-doublequote-graph-in-bracketed-atpt-test ()
   (ar-test-with-python-buffer
       "[defun asdf &optional arg for bar]"
-    (forward-char -1)
+    (goto-char (point-max))
+    (unless (bobp) (forward-char -1))
     (ar-doublequote-graph-in-bracketed-atpt)
-    (forward-char -1)
     (should (ar-in-string-p))))
 
 (ert-deftest ar-separate-doublequoted-in-bracketed-atpt-test ()
@@ -171,7 +171,7 @@ args = sys.argv"
   (let ((bar (save-excursion (baz nil nil))))
     (setq asdf nil)))"
 	(search-forward "save-")
-      (sit-for 0.1) 
+      (sit-for 0.1)
       (ar-peel-list-atpt)
       (sit-for 0.1)
       (should (looking-at "(baz"))))
@@ -221,7 +221,7 @@ Z\n\nB\nC\nA\n\nA\n---"
     (goto-char (point-max))
     (search-backward "C")
     (ar-sort-indent)
-    (forward-line 1) 
+    (forward-line 1)
     (should (eq (char-after) ?B))))
 
 (ert-deftest ar-sort-indent-test-u7kbsF ()
@@ -233,7 +233,7 @@ Z\n\nB\nC\nA\n\nA\n---"
   foo\.c
 )"
     (goto-char (point-max))
-    (search-backward "foo") 
+    (search-backward "foo")
     (ar-sort-indent)
     (end-of-line)
     (should (looking-back "^ +bar.c" (line-beginning-position)))))
@@ -254,24 +254,24 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
   (ar-test-with-elisp-buffer
       "('‘asdf’'"
     (goto-char (point-max))
-    (search-backward "f") 
+    (search-backward "f")
     (should (string= "‘asdf’" (ar-delimited-atpt)))))
 
 (ert-deftest ar-curved-singlequotes-delimited-test-Mt4YnS ()
   (ar-test-with-elisp-buffer
       "('\"‘asdf’\"'"
     (goto-char (point-max))
-    (search-backward "f") 
+    (search-backward "f")
     (should (string= "‘asdf’" (ar-delimited-atpt)))))
 
 (ert-deftest ar-open-only-paren-stars-delimited-test-Mt4YnS ()
   (ar-test-with-elisp-buffer
     "(* 2 2*"
     (goto-char (point-max))
-    (search-backward "2") 
+    (search-backward "2")
     (should (string= "* 2 2*" (ar-delimited-atpt)))))
 
-    
+
 
 (provide 'ar-thing-atpt-other-test)
 ;;; ar-thing-atpt-other-test.el ends here

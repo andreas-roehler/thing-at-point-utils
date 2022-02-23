@@ -2663,6 +2663,18 @@
     (backward-char 1)
     (should (string= "{<$>}" (ar-delimited-atpt)))))
 
+(ert-deftest ar-backticked-atpt-test-Zq97HB ()
+  (ar-test
+      "1. **Ensure that you have [LaTeX](https://www.latex-project.org/get) installed on your machine.**
+
+    The commands `which latex` and `which dvisvgm` must both return paths to the executables. `dvisvgm` should be present as part of your LaTeX installation, but it's also available [here](https://dvisvgm.de/Downloads).
+"
+    'markdown-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "dvisvgm" nil t 3)
+    (should (string= "dvisvgm" (ar-delimited-atpt)))))
+
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 
 (provide 'ar-tatpt-utils-delimited-tests)

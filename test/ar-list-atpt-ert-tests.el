@@ -22,35 +22,35 @@
 ;;; Code:
 
 (ert-deftest ar-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (eq 10 (length (ar-list-atpt))))))
 
 (ert-deftest ar-list-bounds-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (and (eq 7 (caar (ar-bounds-of-list-atpt)))(eq 17 (cdr (cadr (ar-bounds-of-list-atpt))))))))
 
 (ert-deftest ar-list-beginning-position-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (eq 7 (ar-list-beginning-position-atpt)))))
 
 (ert-deftest ar-list-end-position-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (eq 17 (ar-list-end-position-atpt)))))
 
 (ert-deftest ar-list-beginning-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -58,7 +58,7 @@
     (should (eq 7 (point)))))
 
 (ert-deftest ar-list-end-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -66,14 +66,14 @@
     (should (eq 16 (point)))))
 
 (ert-deftest ar-in-list-p-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (ar-in-list-p-atpt))))
 
 (ert-deftest ar-length-of-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -82,14 +82,14 @@
     (should (eq 17 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-copy-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (eq 10 (length (ar-copy-list-atpt))))))
 
 (ert-deftest ar-delete-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -97,7 +97,7 @@
     (should (eq (ar-length-of-list-atpt) 7))))
 
 (ert-deftest ar-doublequote-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -105,14 +105,14 @@
     (should (eq (char-before) ?\"))))
 
 (ert-deftest ar-slash-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
     (should (eq 10 (length (ar-list-atpt))))))
 
 (ert-deftest ar-doublebackslashparen-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -120,7 +120,7 @@
     (should (eq (char-before) ?\\))))
 
 (ert-deftest ar-doubleslash-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -128,7 +128,7 @@
     (should (eq (char-before) ?/))))
 
 (ert-deftest ar-doublebackslashparen-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -136,7 +136,7 @@
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-backslashparen-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -144,7 +144,7 @@
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-dollar-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -152,7 +152,7 @@
     (should (eq (char-before) ?$))))
 
 (ert-deftest ar-equalize-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -160,7 +160,7 @@
     (should (eq (char-before) ?=))))
 
 (ert-deftest ar-greater-list-angle-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -168,7 +168,7 @@
     (should (eq (char-before) ?<))))
 
 (ert-deftest ar-lesserangle-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -176,7 +176,7 @@
     (should (eq (char-before) ?>))))
 
 (ert-deftest ar-backslash-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -184,7 +184,7 @@
     (should (eq (char-before) ?\\))))
 
 (ert-deftest ar-backtick-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -192,7 +192,7 @@
     (should (eq (char-before) ?`))))
 
 (ert-deftest ar-brace-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -200,7 +200,7 @@
     (should (eq (char-before) ?}))))
 
 (ert-deftest ar-bracket-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -208,7 +208,7 @@
     (should (eq (char-before) ?\]))))
 
 (ert-deftest ar-hyphen-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -216,7 +216,7 @@
     (should (eq (char-before) ?\-))))
 
 (ert-deftest ar-mark-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -225,7 +225,7 @@
     (should (eq 17 (region-end)))))
 
 (ert-deftest ar-kill-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -233,7 +233,7 @@
     (should (eq (ar-length-of-list-atpt) 7))))
 
 (ert-deftest ar-parentize-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -241,7 +241,7 @@
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-separate-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -251,7 +251,7 @@
     (should (eq (char-after) 10))))
 
 (ert-deftest ar-singlequote-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -259,7 +259,7 @@
     (should (eq (char-before) ?'))))
 
 (ert-deftest ar-triplequotesq-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -267,7 +267,7 @@
     (should (looking-back "'''"))))
 
 (ert-deftest ar-triplequotedq-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -275,7 +275,7 @@
     (should (looking-back "\"\"\""))))
 
 (ert-deftest ar-trim-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")
@@ -283,7 +283,7 @@
     (should (eq (char-after) ?c))))
 
 (ert-deftest ar-left-trim-list-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-syntax-forward "^(")

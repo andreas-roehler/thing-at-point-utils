@@ -36,7 +36,7 @@
       (should (string= "\"asdf\"" erg)))))
 
 (ert-deftest ar-list-up-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "(list (cons 1 2))\n"
     (forward-char 1)
     (skip-chars-forward "^(")

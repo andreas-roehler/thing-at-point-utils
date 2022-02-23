@@ -1,6 +1,6 @@
 ;;; ar-thing-at-point-utils-setup-tests.el --- Provide needed forms -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2016  Andreas Röhler
+;; Copyright (C) 2015-2022  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 
@@ -205,40 +205,69 @@ def foo():
             pass
 ")
 
-(defmacro ar-test-with-python-buffer-point-min (contents &rest body)
+(defmacro py-test-with-temp-buffer (contents &rest body)
   "Create temp buffer in `python-mode' inserting CONTENTS.
 BODY is code to be executed within the temp buffer.  Point is
  at the beginning of buffer."
   (declare (indent 1) (debug t))
   `(with-temp-buffer
-     ;; requires python.el
-     ;; (and (featurep 'semantic) (unload-feature 'semantic))
-     ;; (and (featurep 'python) (unload-feature 'python))
      (let (hs-minor-mode py--imenu-create-index-p)
        (insert ,contents)
        (python-mode)
-       (goto-char (point-min))
-       ;; (message "(current-buffer): %s" (current-buffer))
-       (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-region (point-min) (point-max)))
-       ,@body)
-     (sit-for 0.1)))
+       (when py-debug-p
+	 (switch-to-buffer (current-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
+       ,@body)))
 
-(defmacro ar-test-with-python-buffer (contents &rest body)
+(defmacro py-test-with-temp-buffer-point-min (contents &rest body)
   "Create temp buffer in `python-mode' inserting CONTENTS.
 BODY is code to be executed within the temp buffer.  Point is
  at the end of buffer."
   (declare (indent 1) (debug t))
   `(with-temp-buffer
-     ;; (and (featurep 'python) (unload-feature 'python))
      (let (hs-minor-mode py--imenu-create-index-p)
        (insert ,contents)
+       (goto-char (point-min))
        (python-mode)
-       (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-region (point-min) (point-max)))
-       ;; (message "ERT %s" (point))
-       ,@body)
-     (sit-for 0.1)))
+       (when py-debug-p
+	 (switch-to-buffer (current-buffer))
+	 (font-lock-fontify-region (point-min) (point-max)))
+       ,@body)))
+
+;; (defmacro ar-test-with-python-buffer-point-min (contents &rest body)
+;;   "Create temp buffer in `python-mode' inserting CONTENTS.
+;; BODY is code to be executed within the temp buffer.  Point is
+;;  at the beginning of buffer."
+;;   (declare (indent 1) (debug t))
+;;   `(with-temp-buffer
+;;      ;; requires python.el
+;;      ;; (and (featurep 'semantic) (unload-feature 'semantic))
+;;      ;; (and (featurep 'python) (unload-feature 'python))
+;;      (let (hs-minor-mode py--imenu-create-index-p)
+;;        (insert ,contents)
+;;        (if (featurep 'python-mode)(python-mode)(python))
+;;        (goto-char (point-min))
+;;        ;; (message "(current-buffer): %s" (current-buffer))
+;;        (when ar-debug-p (switch-to-buffer (current-buffer))
+;; 	     (font-lock-fontify-region (point-min) (point-max)))
+;;        ,@body)
+;;      (sit-for 0.1)))
+
+;; (defmacro ar-test-with-python-buffer (contents &rest body)
+;;   "Create temp buffer in `python-mode' inserting CONTENTS.
+;; BODY is code to be executed within the temp buffer.  Point is
+;;  at the end of buffer."
+;;   (declare (indent 1) (debug t))
+;;   `(with-temp-buffer
+;;      ;; (and (featurep 'python) (unload-feature 'python))
+;;      (let (hs-minor-mode py--imenu-create-index-p)
+;;        (insert ,contents)
+;;        (python-mode)
+;;        (when ar-debug-p (switch-to-buffer (current-buffer))
+;; 	     (font-lock-fontify-region (point-min) (point-max)))
+;;        ;; (message "ERT %s" (point))
+;;        ,@body)
+;;      (sit-for 0.1)))
 
 (defmacro ar-test-with-scala-buffer-point-min (contents &rest body)
   "Create temp buffer in `scala-mode' inserting CONTENTS.
@@ -304,25 +333,6 @@ BODY is code to be executed within the temp buffer.  Point is
        (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
 
-(defmacro py-test-with-temp-buffer-point-min (contents &rest body)
-  "Create temp buffer in `python-mode' inserting CONTENTS.
-BODY is code to be executed within the temp buffer.  Point is
- at the beginning of buffer."
-  (declare (indent 1) (debug t))
-  `(with-temp-buffer
-     ;; requires python.el
-     ;; (and (featurep 'semantic) (unload-feature 'semantic))
-     ;; (and (featurep 'python) (unload-feature 'python))
-     (let (hs-minor-mode py--imenu-create-index-p)
-       (insert ,contents)
-       (python-mode)
-       (goto-char (point-min))
-       ;; (message "(current-buffer): %s" (current-buffer))
-       (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-region (point-min) (point-max)))
-       ,@body)
-     (sit-for 0.1)))
-
 (defmacro ar-test-with-insert-function-elisp (function &rest body)
   "Create temp buffer in `emacs-lisp-mode' inserting CONTENTS.
 BODY is code to be executed within the temp buffer.  Point is
@@ -347,22 +357,6 @@ BODY is code to be executed within the temp buffer.  Point is
        (when ar-switch-p
 	 (switch-to-buffer (current-buffer)))
        ,@body)))
-
-(defmacro py-test-with-temp-buffer (contents &rest body)
-  "Create temp buffer in `python-mode' inserting CONTENTS.
-BODY is code to be executed within the temp buffer.  Point is
- at the end of buffer."
-  (declare (indent 1) (debug t))
-  `(with-temp-buffer
-     ;; (and (featurep 'python) (unload-feature 'python))
-     (let (hs-minor-mode py--imenu-create-index-p)
-       (insert ,contents)
-       (python-mode)
-       (when ar-debug-p (switch-to-buffer (current-buffer))
-	     (font-lock-fontify-region (point-min) (point-max)))
-       ;; (message "ERT %s" (point))
-       ,@body)
-     (sit-for 0.1)))
 
 (provide 'ar-thing-at-point-utils-setup-tests)
 ;; ar-thing-at-point-utils-setup-tests.el ends here

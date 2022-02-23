@@ -275,7 +275,9 @@ Comments spanning multiple lines need comment-end string")
             (fixup-whitespace))))
       (when indent
         (back-to-indentation)
-        (indent-according-to-mode))
+	;; (funcall indent-line-function)
+        ;; (ignore-errors (indent-according-to-mode))
+	)
       (forward-line 1))
     (when span
       (goto-char last)

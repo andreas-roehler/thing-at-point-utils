@@ -1,6 +1,6 @@
 ;;; ar-list-atpt-parens-tests.el --- ar-list-atpt-parens-tests
 
-;; Copyright (C) 2015-2019  Andreas Röhler
+;; Copyright (C) 2015-2022  Andreas Röhler
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: languages, convenience
 

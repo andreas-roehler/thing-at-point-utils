@@ -36,6 +36,7 @@ FILE15=thingatpt-transform-generic-delimited.el
 FILE16=translate-paired-delimiters.el
 FILE17=thing-rest-list-in-region-only.el
 FILE18=thing-data-forms-aktiv-in-rest-list.el
+FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
 
 TEST1=test/ar-thing-at-point-utils-setup-tests.el
 TEST2=test/thing-at-point-utils-tests.el
@@ -62,7 +63,7 @@ TEST20=test/ar-delimited2delimited-tests.el
 if [ -s emacs24 ]; then
     EMACS=emacs24
 else
-    EMACS=emacs
+    EMACS=$HOME/emacs-28.0.91/src/emacs-28.0.91.1
 fi
 
 echo "\$EMACS: $EMACS"
@@ -100,6 +101,7 @@ hier () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 \
 -load $TEST1 \
 -load $TEST2 \
@@ -625,6 +627,7 @@ h18 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 \
 -load $TEST1 \
 -load $TEST18 \
@@ -661,88 +664,88 @@ h19 () {
 -f ert-run-tests-batch-and-exit
 }
 
-    echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"
-    cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
-    echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"
-    cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
-    echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"
-    cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
-    echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"
-    cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
-    echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD"
-    cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD
+echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"
+cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
+echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"
+cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
+echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"
+cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
+echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"
+cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
+echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD"
+cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD
 
-    while getopts abcdefghijklmnopqrstuvwxyz option
-    do
-        case $option in
-	    #  a) echo "Lade \$TEST1: \"$TEST1\"";h1;;
-	    b) echo "Lade \$TEST2: \"$TEST2\"";h2;;
-	    c) echo "Lade \$TEST3: \"$TEST3\"";h3;;
-	    d) echo "Lade \$TEST4: \"$TEST4\"";h4;;
-	    e) echo "Lade \$TEST5: \"$TEST5\"";h5;;
-	    f) echo "Lade \$TEST6: \"$TEST6\"";h6;;
-	    g) echo "Lade \$TEST7: \"$TEST7\"";h7;;
-	    i) echo "Lade \$TEST9: \"$TEST9\"";h9;;
-	    j) echo "Lade \$TEST10: \"$TEST10\"";h10;;
-	    k) echo "Lade \$TEST11: \"$TEST11\"";h11;;
-	    # m) echo "Lade \$TEST11: \"$TEST11\"";h11;;
-	    # n) echo "Lade \$TEST11: \"$TEST11\"";h11;;
-	    p) echo "Lade \$TEST12: \"$TEST12\"";h12;;
-	    q) echo "Lade \$TEST13: \"$TEST13\"";h13;;
-	    r) echo "Lade \$TEST14: \"$TEST14\"";h14;;
-	    s) echo "Lade \$TEST15: \"$TEST15\"";h15;;
-	    t) echo "Lade \$TEST16: \"$TEST16\"";h16;;
-	    u) echo "Lade \$TEST17: \"$TEST17\"";h17;;
-	    v) echo "Lade \$TEST18: \"$TEST18\"";h18;;
-	    w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
-	    x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
-	    y) echo "Lade \$TEST8: \"$TEST8\"";h8;;
-            h) echo "Lade testumgebung \"HIER\"";hier;;
+while getopts abcdefghijklmnopqrstuvwxyz option
+do
+    case $option in
+	#  a) echo "Lade \$TEST1: \"$TEST1\"";h1;;
+	b) echo "Lade \$TEST2: \"$TEST2\"";h2;;
+	c) echo "Lade \$TEST3: \"$TEST3\"";h3;;
+	d) echo "Lade \$TEST4: \"$TEST4\"";h4;;
+	e) echo "Lade \$TEST5: \"$TEST5\"";h5;;
+	f) echo "Lade \$TEST6: \"$TEST6\"";h6;;
+	g) echo "Lade \$TEST7: \"$TEST7\"";h7;;
+	i) echo "Lade \$TEST9: \"$TEST9\"";h9;;
+	j) echo "Lade \$TEST10: \"$TEST10\"";h10;;
+	k) echo "Lade \$TEST11: \"$TEST11\"";h11;;
+	# m) echo "Lade \$TEST11: \"$TEST11\"";h11;;
+	# n) echo "Lade \$TEST11: \"$TEST11\"";h11;;
+	p) echo "Lade \$TEST12: \"$TEST12\"";h12;;
+	q) echo "Lade \$TEST13: \"$TEST13\"";h13;;
+	r) echo "Lade \$TEST14: \"$TEST14\"";h14;;
+	s) echo "Lade \$TEST15: \"$TEST15\"";h15;;
+	t) echo "Lade \$TEST16: \"$TEST16\"";h16;;
+	u) echo "Lade \$TEST17: \"$TEST17\"";h17;;
+	v) echo "Lade \$TEST18: \"$TEST18\"";h18;;
+	w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
+	x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
+	y) echo "Lade \$TEST8: \"$TEST8\"";h8;;
+        h) echo "Lade testumgebung \"HIER\"";hier;;
 
-	esac
-    done
+    esac
+done
 
 else
 
-entfernt () {
-    $EMACS -Q --batch \
---eval "(message (emacs-version))" \
--load $FILE1 \
--load $FILE2 \
--load $FILE3 \
--load $FILE4 \
--load $FILE5 \
--load $FILE6 \
--load $FILE7 \
--load $FILE8 \
--load $FILE9 \
--load $FILE10 \
--load $FILE11 \
--load $FILE12 \
--load $FILE13 \
--load $FILE14 \
--load $FILE15 \
--load $FILE16 \
--load $FILE17 \
-\
--load $TEST1 \
--load $TEST2 \
--load $TEST3 \
--load $TEST4 \
--load $TEST5 \
--load $TEST7 \
--load $TEST8 \
--load $TEST9 \
--load $TEST10 \
--load $TEST12 \
--load $TEST13 \
--load $TEST15 \
--load $TEST16 \
--load $TEST17 \
--load $TEST18 \
--load $TEST19 \
--f ert-run-tests-batch-and-exit
-}
+    entfernt () {
+	$EMACS -Q --batch \
+	       --eval "(message (emacs-version))" \
+	       -load $FILE1 \
+	       -load $FILE2 \
+	       -load $FILE3 \
+	       -load $FILE4 \
+	       -load $FILE5 \
+	       -load $FILE6 \
+	       -load $FILE7 \
+	       -load $FILE8 \
+	       -load $FILE9 \
+	       -load $FILE10 \
+	       -load $FILE11 \
+	       -load $FILE12 \
+	       -load $FILE13 \
+	       -load $FILE14 \
+	       -load $FILE15 \
+	       -load $FILE16 \
+	       -load $FILE17 \
+	       \
+	       -load $TEST1 \
+	       -load $TEST2 \
+	       -load $TEST3 \
+	       -load $TEST4 \
+	       -load $TEST5 \
+	       -load $TEST7 \
+	       -load $TEST8 \
+	       -load $TEST9 \
+	       -load $TEST10 \
+	       -load $TEST12 \
+	       -load $TEST13 \
+	       -load $TEST15 \
+	       -load $TEST16 \
+	       -load $TEST17 \
+	       -load $TEST18 \
+	       -load $TEST19 \
+	       -f ert-run-tests-batch-and-exit
+    }
 
     echo "Lade testumgebung \"ENTFERNT\""
     entfernt

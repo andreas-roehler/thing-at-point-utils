@@ -25,7 +25,7 @@
 ;;; Code:
 
 (ert-deftest ar-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -37,7 +37,7 @@
     (should (eq 54 (length (ar-list-atpt))))))
 
 (ert-deftest ar-list-bounds-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -50,7 +50,7 @@
     (should (and (eq 47 (caar (ar-bounds-of-list-atpt)))(eq 101 (cdr (cadr (ar-bounds-of-list-atpt))))))))
 
 (ert-deftest ar-list-beginning-position-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -63,7 +63,7 @@
     (should (eq 47 (ar-list-beginning-position-atpt)))))
 
 (ert-deftest ar-list-end-position-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -76,7 +76,7 @@
     (should (eq 101 (ar-list-end-position-atpt)))))
 
 (ert-deftest ar-list-beginning-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -89,7 +89,7 @@
     (should (eq 47 (point)))))
 
 (ert-deftest ar-list-end-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -103,7 +103,7 @@
     (should (eq 100 (point)))))
 
 (ert-deftest ar-in-list-p-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -115,7 +115,7 @@
     (should (ar-in-list-p-atpt))))
 
 (ert-deftest ar-length-of-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -130,7 +130,7 @@
     (should (eq 79 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-copy-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -142,7 +142,7 @@
     (should (eq 54 (length (ar-copy-list-atpt))))))
 
 (ert-deftest ar-delete-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -155,7 +155,7 @@
     (should (eq 25 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-doublequote-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -168,7 +168,7 @@
     (should (eq (char-before) ?\"))))
 
 (ert-deftest ar-slash-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -181,7 +181,7 @@
     (should (looking-back "}/")))) 
 
 (ert-deftest ar-doublebackslash-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -194,7 +194,7 @@
     (should (eq (char-before) ?\\))))
 
 (ert-deftest ar-doubleslash-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -207,7 +207,7 @@
     (should (eq (char-before) ?/))))
 
 (ert-deftest ar-doublebackslashparen-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -220,7 +220,7 @@
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-slashparen-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -233,7 +233,7 @@
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-dollar-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -246,7 +246,7 @@
     (should (eq (char-before) ?$))))
 
 (ert-deftest ar-equalize-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -259,7 +259,7 @@
     (should (eq (char-before) ?=))))
 
 (ert-deftest ar-greater-list-angle-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -272,7 +272,7 @@
     (should (eq (char-before) ?<))))
 
 (ert-deftest ar-lesserangle-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -285,7 +285,7 @@
     (should (eq (char-before) ?>))))
 
 (ert-deftest ar-backslash-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -298,7 +298,7 @@
     (should (eq (char-before) ?\\))))
 
 (ert-deftest ar-backtick-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -311,7 +311,7 @@
     (should (eq (char-before) ?`))))
 
 (ert-deftest ar-brace-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -324,7 +324,7 @@
     (should (eq (char-before) ?}))))
 
 (ert-deftest ar-bracket-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -337,7 +337,7 @@
     (should (eq (char-before) ?\]))))
 
 (ert-deftest ar-hyphen-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -350,7 +350,7 @@
     (should (eq (char-before) ?\-))))
 
 (ert-deftest ar-mark-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -364,7 +364,7 @@
     (should (eq 101 (region-end)))))
 
 (ert-deftest ar-kill-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -377,7 +377,7 @@
     (should (eq 25 (ar-length-of-list-atpt)))))
 
 (ert-deftest ar-parentize-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -390,7 +390,7 @@
     (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-separate-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -403,7 +403,7 @@
     (should (eolp))))
 
 (ert-deftest ar-singlequote-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -416,7 +416,7 @@
     (should (eq (char-before) ?'))))
 
 (ert-deftest ar-triplequotesq-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -429,7 +429,7 @@
     (should (looking-back "'''"))))
 
 (ert-deftest ar-triplequotedq-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -442,7 +442,7 @@
     (should (looking-back "\"\"\""))))
 
 (ert-deftest ar-trim-bracelist-atpt-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
@@ -455,7 +455,7 @@
     (should (eq (char-after) 10))))
 
 (ert-deftest ar-left-trim-list-atpt-brace-test ()
-  (ar-test-with-python-buffer-point-min
+  (py-test-with-temp-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
         \"kill\": \"{ctrl-k}\",{
