@@ -2643,21 +2643,21 @@
     (should (looking-back "```" (line-beginning-position)))))
 
 (ert-deftest ar-bracketed-atpt-test-V5h2sg ()
-  (ar-test-with-python-buffer
+  (py-test-with-temp-buffer
       "\[\"<3\", \" Haskell\"]"
     (goto-char (point-max))
     (backward-char)
     (should (string= "\[\"<3\", \" Haskell\"]" (ar-delimited-atpt)))))
 
 (ert-deftest ar-angled-atpt-test-Zq97HB ()
-  (ar-test-with-python-buffer
+  (py-test-with-temp-buffer
       "(<$>)"
     (goto-char (point-max))
     (backward-char 2)
     (should (string= "<$>" (ar-delimited-atpt)))))
 
 (ert-deftest ar-braced-atpt-test-Zq97HB ()
-  (ar-test-with-python-buffer
+  (py-test-with-temp-buffer
       "{<$>}"
     (goto-char (point-max))
     (backward-char 1)

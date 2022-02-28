@@ -68,8 +68,6 @@ fi
 
 echo "\$EMACS: $EMACS"
 
-
-
 # This var is set in my bashrc to 0
 ORT=${ORT:-1}
 
@@ -685,14 +683,15 @@ do
 	e) echo "Lade \$TEST5: \"$TEST5\"";h5;;
 	f) echo "Lade \$TEST6: \"$TEST6\"";h6;;
 	g) echo "Lade \$TEST7: \"$TEST7\"";h7;;
+	h) echo "Lade testumgebung \"HIER\"";hier;;
 	i) echo "Lade \$TEST9: \"$TEST9\"";h9;;
 	j) echo "Lade \$TEST10: \"$TEST10\"";h10;;
-	k) echo "Lade \$TEST11: \"$TEST11\"";h11;;
+	#  k) echo "Lade \$TEST11: \"$TEST11\"";h11;;
 	# m) echo "Lade \$TEST11: \"$TEST11\"";h11;;
 	# n) echo "Lade \$TEST11: \"$TEST11\"";h11;;
 	p) echo "Lade \$TEST12: \"$TEST12\"";h12;;
 	q) echo "Lade \$TEST13: \"$TEST13\"";h13;;
-	r) echo "Lade \$TEST14: \"$TEST14\"";h14;;
+	#  r) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	s) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	t) echo "Lade \$TEST16: \"$TEST16\"";h16;;
 	u) echo "Lade \$TEST17: \"$TEST17\"";h17;;
@@ -700,7 +699,6 @@ do
 	w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
 	y) echo "Lade \$TEST8: \"$TEST8\"";h8;;
-        h) echo "Lade testumgebung \"HIER\"";hier;;
 
     esac
 done
@@ -750,4 +748,3 @@ else
     echo "Lade testumgebung \"ENTFERNT\""
     entfernt
 fi
-

@@ -33,6 +33,12 @@
 
 ;; (setq ar-debug-p t)
 
+(add-to-list 'load-path "/home/speck/arbeit/emacs-lisp/python-modes/components-python-mode/")
+(if (file-readable-p "/home/speck/arbeit/emacs-lisp/python-modes/components-python-mode/python-components-mode.el")
+    (load "/home/speck/arbeit/emacs-lisp/python-modes/components-python-mode/python-components-mode.el" nil t)
+  (when (file-readable-p "../python-mode.el")
+    (load "../python-mode.el")))
+
 (defmacro ar-test-with-temp-buffer (contents &rest body)
   "Create temp buffer inserting CONTENTS.
  BODY is code to be executed within the temp buffer.  Point is
