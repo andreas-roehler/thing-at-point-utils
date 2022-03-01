@@ -1431,12 +1431,12 @@ XEmacs-users: `unibyte' and `multibyte' class is unused i.e. set to \".\""
        (ar-forward-statement)))
 
 ;; String
-(defcustom th-string-beg-delimiter "‘“'\""
+(defcustom th-string-beg-delimiter "»‘“'\""
   "Specify the string start char."
   :type 'string
   :group 'werkstatt)
 
-(defcustom th-string-end-delimiter "”’'\""
+(defcustom th-string-end-delimiter "«”’'\""
   "Specify the string end char."
   :type 'string
   :group 'werkstatt)
@@ -1820,12 +1820,12 @@ Otherwise assume being behind an opening delimiter or at a closing "
   :type 'string
   :group 'werkstatt)
 
-(defcustom th-beg-delimiter "‘“{<>[("
+(defcustom th-beg-delimiter "»‘“{<>[("
   "Specify the delimiter char."
   :type 'string
   :group 'werkstatt)
 
-(defcustom th-end-delimiter "]}<>”)’"
+(defcustom th-end-delimiter "«]}<>”)’"
   "Specify the delimiter char."
   :type 'string
   :group 'werkstatt)
@@ -1955,7 +1955,7 @@ Otherwise assume being behind an opening delimiter or at a closing "
      (lambda ()
        (when (eq 4 (car (syntax-after (point))))
          (forward-sexp)
-         (forward-char -1) 
+         (forward-char -1)
          (cons (point)(1+ (point))))))
 
 ;; Markup
@@ -2132,7 +2132,7 @@ Otherwise assume being behind an opening delimiter or at a closing "
 
 (put 'number 'backward-op-at
      (lambda ()
-       (unless (bobp) 
+       (unless (bobp)
          (let ((case-fold-search t)
                erg)
            (cond ((and (looking-back "#?x?[0-9a-f]+" (line-beginning-position))
@@ -2461,7 +2461,7 @@ Otherwise assume being behind an opening delimiter or at a closing "
            (goto-char (match-end 0))
            (while (and (search-forward triplequotedsq nil 'move 1)
                        (ar-in-delimiter-base triplequotedsq)))
-           (when (looking-back triplequotedsq (line-beginning-position)) 
+           (when (looking-back triplequotedsq (line-beginning-position))
              (list (match-beginning 0) (match-end 0)))))))
 
 (put 'triplequotedsq 'forward-op-at
@@ -2495,7 +2495,7 @@ Otherwise assume being behind an opening delimiter or at a closing "
 ;; Word
 (put 'word 'beginning-op-at
      (lambda () (when (looking-at "\\w")
-		  (unless (or (looking-back "\\W" (line-beginning-position))(bolp)) 
+		  (unless (or (looking-back "\\W" (line-beginning-position))(bolp))
 		    (forward-word -1))
 		  (point))))
 
@@ -2565,7 +2565,7 @@ it would doublequote a word at point "
     (goto-char (cdr erg))
     (delete-char -1)
     (goto-char (car erg))
-    (delete-char 1))) 
+    (delete-char 1)))
 
 (defun ar-trim-region-atpt ()
   (interactive "*")
@@ -2573,7 +2573,7 @@ it would doublequote a word at point "
     (goto-char (cdr erg))
     (delete-char -1)
     (goto-char (car erg))
-    (delete-char 1))) 
+    (delete-char 1)))
 
 (defun ar--transform-generic-delimited-atpt (replacement)
   (interactive "*")
