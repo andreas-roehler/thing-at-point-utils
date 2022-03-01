@@ -52,13 +52,14 @@ TEST11=test/thingatpt-transform-delimited-test.el
 TEST12=test/ar-list-atpt-brace-ert-tests.el
 TEST13=test/ar-paired-delimited-tests.el
 TEST14=test/ar-delimited2delimited-tests.el
-TEST15=test/delimited2delimited-tests.el
+TEST15=
 TEST16=test/ar-separate-tests.el
 TEST17=test/ar-list-atpt-parens-ert-tests.el
 TEST18=test/ar-thing-atpt-other-test1.el
 TEST19=test/ar-thing-atpt-other-test2.el
 TEST20=test/ar-thing-atpt-other-test3.el
-TEST21=ar-thing-at-point-interactive-tests.el
+TEST21=test/ar-thing-atpt-other-test3.el
+TEST22=test/ar-thing-at-point-interactive-tests.el
 # TEST11  not ready
 
 if [ -s emacs24 ]; then
@@ -115,13 +116,13 @@ hier () {
 -load $TEST12 \
 -load $TEST13 \
 -load $TEST14 \
--load $TEST15 \
 -load $TEST16 \
 -load $TEST17 \
 -load $TEST18 \
 -load $TEST19 \
 -load $TEST20 \
 -load $TEST21 \
+-load $TEST22 \
 -f ert-run-tests-batch-and-exit
 }
 
@@ -636,7 +637,7 @@ h18 () {
 -f ert-run-tests-batch-and-exit
 }
 
-h19 () {
+h20 () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
 --eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
@@ -662,7 +663,7 @@ h19 () {
 -load $FILE18 \
 \
 -load $TEST1 \
--load $TEST19 \
+-load $TEST20 \
 -f ert-run-tests-batch-and-exit
 }
 
@@ -696,6 +697,66 @@ h21 () {
 -f ert-run-tests-batch-and-exit
 }
 
+h21 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"DIR1\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+\
+-load $TEST1 \
+-load $TEST21 \
+-f ert-run-tests-batch-and-exit
+}
+
+h22 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"DIR1\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+\
+-load $TEST1 \
+-load $TEST22 \
+-f ert-run-tests-batch-and-exit
+}
+
 
 echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"
 cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
@@ -705,8 +766,8 @@ echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"
 cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
 echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"
 cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
-echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD"
-cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD
+echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD/test/"
+cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thing-at-point-utils-setup-tests.el $PWD/test/
 
 while getopts 123456789abcdefghijklmnopqrstuvwxyz option
 do
@@ -725,14 +786,14 @@ do
 	c) echo "Lade \$TEST12: \"$TEST12\"";h12;;
 	d) echo "Lade \$TEST13: \"$TEST13\"";h13;;
 	e) echo "Lade \$TEST14: \"$TEST14\"";h14;;
-	f) echo "Lade \$TEST15: \"$TEST15\"";h15;;
+	#  f) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	g) echo "Lade \$TEST16: \"$TEST16\"";h16;;
 	h) echo "Lade \$TEST17: \"$TEST17\"";h17;;
 	i) echo "Lade \$TEST18: \"$TEST18\"";h19;;
 	j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
-	l) echo "Lade \$TEST21: \"$TEST12\"";h21;;
-	# m) echo "Lade \$TEST13: \"$TEST13\"";h13;;
+	l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
+	m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
 	# n) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	# o) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	# p) echo "Lade \$TEST16: \"$TEST16\"";h16;;

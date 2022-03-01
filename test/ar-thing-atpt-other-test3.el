@@ -61,19 +61,6 @@
     (should (eq (char-after) ?+))
     (should (bobp))))
 
-(ert-deftest ar-delimited-test-V5mQXw ()
-  (ar-test-point-min
-      "srcdir=@srcdir@
-# MinGW CPPFLAGS may use this.
-abs_top_srcdir=@abs_top_srcdir@
-"
-    'sh-mode
-    nil
-    (goto-char (point-min))
-    (search-forward "@s")
-    (sit-for 0.1) 
-    (should (string=  (ar-delimited-atpt) "@srcdir@"))))
-
 (ert-deftest ar-delimited-test-nslZtA ()
   (ar-test
       "(defun foo1 (&optional beg end))"
@@ -236,7 +223,6 @@ abs_top_srcdir=@abs_top_srcdir@
     (goto-char (point-max))
     (search-backward "foo")
     (should (string=  (ar-delimited-atpt) "(foo_bar[j])"))))
-
 
 (provide 'ar-thing-atpt-other-test3)
 ;;; ar-thing-atpt-other-test3.el ends here
