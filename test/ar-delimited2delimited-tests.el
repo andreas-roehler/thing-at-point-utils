@@ -2361,7 +2361,8 @@
     (goto-char (point-max))
     (forward-char -2)
     (ar-singlequoted2doublequoted-atpt)
-    (should (eq (char-before) ?\"))))
+    (should (eq (char-before) ?\"))
+    (should (eq (char-before (1- (point))) ?f))))
 
 (ert-deftest ar-singlequoted2equalized-atpt-test ()
   (ar-test-with-temp-buffer
