@@ -23,11 +23,6 @@
 
 ;;; Code:
 
-(defvar ar-switch-p nil
-  "Switch into test-buffer.")
-
-;; (setq ar-switch-p t)
-
 (defvar ar-debug-p nil
   "Switch into test-buffer.")
 
@@ -47,7 +42,7 @@
   `(with-temp-buffer
      (let (hs-minor-mode)
        (insert ,contents)
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer))
 	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
@@ -61,7 +56,7 @@ BODY is code to be executed within the temp buffer.  Point is
      (let (hs-minor-mode)
        (insert ,contents)
        (goto-char (point-min))
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer))
 	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
@@ -105,7 +100,7 @@ BODY is code to be executed within the temp buffer.  Point is
      (let (hs-minor-mode)
        (emacs-lisp-mode)
        (insert ,contents)
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer))
 	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
@@ -120,7 +115,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (insert ,contents)
        (emacs-lisp-mode)
        (goto-char (point-min))
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer))
 	 (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
@@ -319,7 +314,7 @@ BODY is code to be executed within the temp buffer.  Point is
      (let (hs-minor-mode)
        (shell-script-mode)
        (insert ,contents)
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer))
        (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
@@ -334,7 +329,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (insert ,contents)
        (shell-script-mode)
        (goto-char (point-min))
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer))
        (font-lock-fontify-region (point-min) (point-max)))
        ,@body)))
@@ -347,7 +342,7 @@ BODY is code to be executed within the temp buffer.  Point is
      ,function
      (let (hs-minor-mode thing-copy-region)
        (emacs-lisp-mode)
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer)))
        ,@body)))
 
@@ -360,7 +355,7 @@ BODY is code to be executed within the temp buffer.  Point is
        (emacs-lisp-mode)
        (insert ,contents)
        ,function
-       (when ar-switch-p
+       (when ar-debug-p
 	 (switch-to-buffer (current-buffer)))
        ,@body)))
 
