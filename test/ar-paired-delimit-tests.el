@@ -74,12 +74,19 @@
       "<2021-01-25 Mo>"
       (should-not (eq 8 (length (ar-delimited-atpt))))))
 
-;; (ert-deftest ar-delete-angled-atpt-YzYGzY-test ()
-;;   (ar-test-with-temp-buffer))
+(ert-deftest ar-left-right-single-quotation-atpt-YzYGzY-test ()
+  (ar-test-with-temp-buffer
+      "‘#+OPTIONS: tex:verbatim’"
+      (goto-char (point-max))
+    (backward-char 2)
+    (should (eq 25 (length (ar-delimited-atpt))))))
 
-
-;; »python-xstatic-jquery-ui«
-
+(ert-deftest ar-left-right-angle-atpt-YzYGzY-test ()
+  (ar-test-with-temp-buffer
+      "<foobar@example.com>"
+      (goto-char (point-max))
+    (backward-char 8)
+    (should (eq 20 (length (ar-delimited-atpt))))))
 
 (provide 'ar-paired-delimit-tests)
 ;; ar-paired-delimit-tests.el ends here

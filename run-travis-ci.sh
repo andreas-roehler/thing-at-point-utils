@@ -799,7 +799,7 @@ if [ $WERKSTATT -eq 0 ]; then
 	    f) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	    g) echo "Lade \$TEST16: \"$TEST16\"";h16;;
 	    h) echo "Lade \$TEST17: \"$TEST17\"";h17;;
-	    i) echo "Lade \$TEST18: \"$TEST18\"";h19;;
+	    i) echo "Lade \$TEST18: \"$TEST18\"";h18;;
 	    j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    #  k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
 	    #  l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
