@@ -2653,14 +2653,14 @@
   (py-test-with-temp-buffer
       "(<$>)"
     (goto-char (point-max))
-    (backward-char 2)
+    (search-backward ">")
     (should (string= "<$>" (ar-delimited-atpt)))))
 
 (ert-deftest ar-braced-atpt-test-Zq97HB ()
   (py-test-with-temp-buffer
       "{<$>}"
     (goto-char (point-max))
-    (backward-char 1)
+    (search-backward "}")
     (should (string= "{<$>}" (ar-delimited-atpt)))))
 
 (ert-deftest ar-backticked-atpt-test-Zq97HB ()
