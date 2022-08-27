@@ -5652,6 +5652,214 @@
   (ar-th-ratio-base 'upper 'braced beg end t))
 
 
+(defun ar-count-alnum-in-symboled-atpt (&optional beg end) 
+"Counts matches of alnum in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'symboled beg end nil))
+
+(defun ar-count-alnum-in-symboled-until-point (&optional beg end) 
+"Counts matches of alnum in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'symboled beg (point) nil))
+
+(defun ar-ratio-alnum-in-symboled-atpt (&optional beg end) 
+"Relation of alnum in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'symboled beg end t))
+
+
+(defun ar-count-alpha-in-symboled-atpt (&optional beg end) 
+"Counts matches of alpha in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'symboled beg end nil))
+
+(defun ar-count-alpha-in-symboled-until-point (&optional beg end) 
+"Counts matches of alpha in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'symboled beg (point) nil))
+
+(defun ar-ratio-alpha-in-symboled-atpt (&optional beg end) 
+"Relation of alpha in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'symboled beg end t))
+
+
+(defun ar-count-ascii-in-symboled-atpt (&optional beg end) 
+"Counts matches of ascii in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'symboled beg end nil))
+
+(defun ar-count-ascii-in-symboled-until-point (&optional beg end) 
+"Counts matches of ascii in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'symboled beg (point) nil))
+
+(defun ar-ratio-ascii-in-symboled-atpt (&optional beg end) 
+"Relation of ascii in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'symboled beg end t))
+
+
+(defun ar-count-blank-in-symboled-atpt (&optional beg end) 
+"Counts matches of blank in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'symboled beg end nil))
+
+(defun ar-count-blank-in-symboled-until-point (&optional beg end) 
+"Counts matches of blank in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'symboled beg (point) nil))
+
+(defun ar-ratio-blank-in-symboled-atpt (&optional beg end) 
+"Relation of blank in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'symboled beg end t))
+
+
+(defun ar-count-cntrl-in-symboled-atpt (&optional beg end) 
+"Counts matches of cntrl in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'symboled beg end nil))
+
+(defun ar-count-cntrl-in-symboled-until-point (&optional beg end) 
+"Counts matches of cntrl in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'symboled beg (point) nil))
+
+(defun ar-ratio-cntrl-in-symboled-atpt (&optional beg end) 
+"Relation of cntrl in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'symboled beg end t))
+
+
+(defun ar-count-digit-in-symboled-atpt (&optional beg end) 
+"Counts matches of digit in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'symboled beg end nil))
+
+(defun ar-count-digit-in-symboled-until-point (&optional beg end) 
+"Counts matches of digit in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'symboled beg (point) nil))
+
+(defun ar-ratio-digit-in-symboled-atpt (&optional beg end) 
+"Relation of digit in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'symboled beg end t))
+
+
+(defun ar-count-graph-in-symboled-atpt (&optional beg end) 
+"Counts matches of graph in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'symboled beg end nil))
+
+(defun ar-count-graph-in-symboled-until-point (&optional beg end) 
+"Counts matches of graph in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'symboled beg (point) nil))
+
+(defun ar-ratio-graph-in-symboled-atpt (&optional beg end) 
+"Relation of graph in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'symboled beg end t))
+
+
+(defun ar-count-lower-in-symboled-atpt (&optional beg end) 
+"Counts matches of lower in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'symboled beg end nil))
+
+(defun ar-count-lower-in-symboled-until-point (&optional beg end) 
+"Counts matches of lower in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'symboled beg (point) nil))
+
+(defun ar-ratio-lower-in-symboled-atpt (&optional beg end) 
+"Relation of lower in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'symboled beg end t))
+
+
+(defun ar-count-nonascii-in-symboled-atpt (&optional beg end) 
+"Counts matches of nonascii in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'symboled beg end nil))
+
+(defun ar-count-nonascii-in-symboled-until-point (&optional beg end) 
+"Counts matches of nonascii in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'symboled beg (point) nil))
+
+(defun ar-ratio-nonascii-in-symboled-atpt (&optional beg end) 
+"Relation of nonascii in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'symboled beg end t))
+
+
+(defun ar-count-print-in-symboled-atpt (&optional beg end) 
+"Counts matches of print in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'symboled beg end nil))
+
+(defun ar-count-print-in-symboled-until-point (&optional beg end) 
+"Counts matches of print in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'symboled beg (point) nil))
+
+(defun ar-ratio-print-in-symboled-atpt (&optional beg end) 
+"Relation of print in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'symboled beg end t))
+
+
+(defun ar-count-punct-in-symboled-atpt (&optional beg end) 
+"Counts matches of punct in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'symboled beg end nil))
+
+(defun ar-count-punct-in-symboled-until-point (&optional beg end) 
+"Counts matches of punct in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'symboled beg (point) nil))
+
+(defun ar-ratio-punct-in-symboled-atpt (&optional beg end) 
+"Relation of punct in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'symboled beg end t))
+
+
+(defun ar-count-space-in-symboled-atpt (&optional beg end) 
+"Counts matches of space in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'symboled beg end nil))
+
+(defun ar-count-space-in-symboled-until-point (&optional beg end) 
+"Counts matches of space in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'symboled beg (point) nil))
+
+(defun ar-ratio-space-in-symboled-atpt (&optional beg end) 
+"Relation of space in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'symboled beg end t))
+
+
+(defun ar-count-upper-in-symboled-atpt (&optional beg end) 
+"Counts matches of upper in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'symboled beg end nil))
+
+(defun ar-count-upper-in-symboled-until-point (&optional beg end) 
+"Counts matches of upper in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'symboled beg (point) nil))
+
+(defun ar-ratio-upper-in-symboled-atpt (&optional beg end) 
+"Relation of upper in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'symboled beg end t))
+
+
 (defun ar-count-alnum-in-bracketed-atpt (&optional beg end) 
 "Counts matches of alnum in bracketed if useful, returns nil otherwise "
   (interactive "p")
@@ -6921,6 +7129,22 @@
   (ar-th-ratio-base 'braced 'braced beg end t))
 
 
+(defun ar-count-symboled-in-braced-atpt (&optional beg end) 
+"Counts matches of symboled in braced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'braced beg end nil))
+
+(defun ar-count-symboled-in-braced-until-point (&optional beg end) 
+"Counts matches of symboled in braced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'braced beg (point) nil))
+
+(defun ar-ratio-symboled-in-braced-atpt (&optional beg end) 
+"Relation of symboled in braced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'braced beg end t))
+
+
 (defun ar-count-bracketed-in-braced-atpt (&optional beg end) 
 "Counts matches of bracketed in braced if useful, returns nil otherwise "
   (interactive "p")
@@ -7017,6 +7241,134 @@
   (ar-th-ratio-base 'parentized 'braced beg end t))
 
 
+(defun ar-count-braced-in-symboled-atpt (&optional beg end) 
+"Counts matches of braced in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'braced 'symboled beg end nil))
+
+(defun ar-count-braced-in-symboled-until-point (&optional beg end) 
+"Counts matches of braced in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'braced 'symboled beg (point) nil))
+
+(defun ar-ratio-braced-in-symboled-atpt (&optional beg end) 
+"Relation of braced in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'braced 'symboled beg end t))
+
+
+(defun ar-count-symboled-in-symboled-atpt (&optional beg end) 
+"Counts matches of symboled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'symboled beg end nil))
+
+(defun ar-count-symboled-in-symboled-until-point (&optional beg end) 
+"Counts matches of symboled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'symboled beg (point) nil))
+
+(defun ar-ratio-symboled-in-symboled-atpt (&optional beg end) 
+"Relation of symboled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'symboled beg end t))
+
+
+(defun ar-count-bracketed-in-symboled-atpt (&optional beg end) 
+"Counts matches of bracketed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'bracketed 'symboled beg end nil))
+
+(defun ar-count-bracketed-in-symboled-until-point (&optional beg end) 
+"Counts matches of bracketed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'bracketed 'symboled beg (point) nil))
+
+(defun ar-ratio-bracketed-in-symboled-atpt (&optional beg end) 
+"Relation of bracketed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'bracketed 'symboled beg end t))
+
+
+(defun ar-count-lesserangled-in-symboled-atpt (&optional beg end) 
+"Counts matches of lesserangled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lesserangled 'symboled beg end nil))
+
+(defun ar-count-lesserangled-in-symboled-until-point (&optional beg end) 
+"Counts matches of lesserangled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lesserangled 'symboled beg (point) nil))
+
+(defun ar-ratio-lesserangled-in-symboled-atpt (&optional beg end) 
+"Relation of lesserangled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lesserangled 'symboled beg end t))
+
+
+(defun ar-count-greaterangled-in-symboled-atpt (&optional beg end) 
+"Counts matches of greaterangled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'greaterangled 'symboled beg end nil))
+
+(defun ar-count-greaterangled-in-symboled-until-point (&optional beg end) 
+"Counts matches of greaterangled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'greaterangled 'symboled beg (point) nil))
+
+(defun ar-ratio-greaterangled-in-symboled-atpt (&optional beg end) 
+"Relation of greaterangled in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'greaterangled 'symboled beg end t))
+
+
+(defun ar-count-curvedsinglequoted-in-symboled-atpt (&optional beg end) 
+"Counts matches of curvedsinglequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curvedsinglequoted 'symboled beg end nil))
+
+(defun ar-count-curvedsinglequoted-in-symboled-until-point (&optional beg end) 
+"Counts matches of curvedsinglequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curvedsinglequoted 'symboled beg (point) nil))
+
+(defun ar-ratio-curvedsinglequoted-in-symboled-atpt (&optional beg end) 
+"Relation of curvedsinglequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curvedsinglequoted 'symboled beg end t))
+
+
+(defun ar-count-curveddoublequoted-in-symboled-atpt (&optional beg end) 
+"Counts matches of curveddoublequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curveddoublequoted 'symboled beg end nil))
+
+(defun ar-count-curveddoublequoted-in-symboled-until-point (&optional beg end) 
+"Counts matches of curveddoublequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curveddoublequoted 'symboled beg (point) nil))
+
+(defun ar-ratio-curveddoublequoted-in-symboled-atpt (&optional beg end) 
+"Relation of curveddoublequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'curveddoublequoted 'symboled beg end t))
+
+
+(defun ar-count-parentized-in-symboled-atpt (&optional beg end) 
+"Counts matches of parentized in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'parentized 'symboled beg end nil))
+
+(defun ar-count-parentized-in-symboled-until-point (&optional beg end) 
+"Counts matches of parentized in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'parentized 'symboled beg (point) nil))
+
+(defun ar-ratio-parentized-in-symboled-atpt (&optional beg end) 
+"Relation of parentized in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'parentized 'symboled beg end t))
+
+
 (defun ar-count-braced-in-bracketed-atpt (&optional beg end) 
 "Counts matches of braced in bracketed if useful, returns nil otherwise "
   (interactive "p")
@@ -7031,6 +7383,22 @@
 "Relation of braced in bracketed if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'bracketed beg end t))
+
+
+(defun ar-count-symboled-in-bracketed-atpt (&optional beg end) 
+"Counts matches of symboled in bracketed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'bracketed beg end nil))
+
+(defun ar-count-symboled-in-bracketed-until-point (&optional beg end) 
+"Counts matches of symboled in bracketed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'bracketed beg (point) nil))
+
+(defun ar-ratio-symboled-in-bracketed-atpt (&optional beg end) 
+"Relation of symboled in bracketed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'bracketed beg end t))
 
 
 (defun ar-count-bracketed-in-bracketed-atpt (&optional beg end) 
@@ -7145,6 +7513,22 @@
   (ar-th-ratio-base 'braced 'lesserangled beg end t))
 
 
+(defun ar-count-symboled-in-lesserangled-atpt (&optional beg end) 
+"Counts matches of symboled in lesserangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'lesserangled beg end nil))
+
+(defun ar-count-symboled-in-lesserangled-until-point (&optional beg end) 
+"Counts matches of symboled in lesserangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'lesserangled beg (point) nil))
+
+(defun ar-ratio-symboled-in-lesserangled-atpt (&optional beg end) 
+"Relation of symboled in lesserangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'lesserangled beg end t))
+
+
 (defun ar-count-bracketed-in-lesserangled-atpt (&optional beg end) 
 "Counts matches of bracketed in lesserangled if useful, returns nil otherwise "
   (interactive "p")
@@ -7255,6 +7639,22 @@
 "Relation of braced in greaterangled if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'greaterangled beg end t))
+
+
+(defun ar-count-symboled-in-greaterangled-atpt (&optional beg end) 
+"Counts matches of symboled in greaterangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'greaterangled beg end nil))
+
+(defun ar-count-symboled-in-greaterangled-until-point (&optional beg end) 
+"Counts matches of symboled in greaterangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'greaterangled beg (point) nil))
+
+(defun ar-ratio-symboled-in-greaterangled-atpt (&optional beg end) 
+"Relation of symboled in greaterangled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'greaterangled beg end t))
 
 
 (defun ar-count-bracketed-in-greaterangled-atpt (&optional beg end) 
@@ -7369,6 +7769,22 @@
   (ar-th-ratio-base 'braced 'curvedsinglequoted beg end t))
 
 
+(defun ar-count-symboled-in-curvedsinglequoted-atpt (&optional beg end) 
+"Counts matches of symboled in curvedsinglequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'curvedsinglequoted beg end nil))
+
+(defun ar-count-symboled-in-curvedsinglequoted-until-point (&optional beg end) 
+"Counts matches of symboled in curvedsinglequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'curvedsinglequoted beg (point) nil))
+
+(defun ar-ratio-symboled-in-curvedsinglequoted-atpt (&optional beg end) 
+"Relation of symboled in curvedsinglequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'curvedsinglequoted beg end t))
+
+
 (defun ar-count-bracketed-in-curvedsinglequoted-atpt (&optional beg end) 
 "Counts matches of bracketed in curvedsinglequoted if useful, returns nil otherwise "
   (interactive "p")
@@ -7481,6 +7897,22 @@
   (ar-th-ratio-base 'braced 'curveddoublequoted beg end t))
 
 
+(defun ar-count-symboled-in-curveddoublequoted-atpt (&optional beg end) 
+"Counts matches of symboled in curveddoublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'curveddoublequoted beg end nil))
+
+(defun ar-count-symboled-in-curveddoublequoted-until-point (&optional beg end) 
+"Counts matches of symboled in curveddoublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'curveddoublequoted beg (point) nil))
+
+(defun ar-ratio-symboled-in-curveddoublequoted-atpt (&optional beg end) 
+"Relation of symboled in curveddoublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'curveddoublequoted beg end t))
+
+
 (defun ar-count-bracketed-in-curveddoublequoted-atpt (&optional beg end) 
 "Counts matches of bracketed in curveddoublequoted if useful, returns nil otherwise "
   (interactive "p")
@@ -7591,6 +8023,22 @@
 "Relation of braced in parentized if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'parentized beg end t))
+
+
+(defun ar-count-symboled-in-parentized-atpt (&optional beg end) 
+"Counts matches of symboled in parentized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'parentized beg end nil))
+
+(defun ar-count-symboled-in-parentized-until-point (&optional beg end) 
+"Counts matches of symboled in parentized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'parentized beg (point) nil))
+
+(defun ar-ratio-symboled-in-parentized-atpt (&optional beg end) 
+"Relation of symboled in parentized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'parentized beg end t))
 
 
 (defun ar-count-bracketed-in-parentized-atpt (&optional beg end) 
@@ -7710,6 +8158,22 @@
   (ar-th-ratio-base 'braced 'backslashed beg end t))
 
 
+(defun ar-count-symboled-in-backslashed-atpt (&optional beg end) 
+"Counts matches of symboled in backslashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'backslashed beg end nil))
+
+(defun ar-count-symboled-in-backslashed-until-point (&optional beg end) 
+"Counts matches of symboled in backslashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'backslashed beg (point) nil))
+
+(defun ar-ratio-symboled-in-backslashed-atpt (&optional beg end) 
+"Relation of symboled in backslashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'backslashed beg end t))
+
+
 (defun ar-count-bracketed-in-backslashed-atpt (&optional beg end) 
 "Counts matches of bracketed in backslashed if useful, returns nil otherwise "
   (interactive "p")
@@ -7820,6 +8284,22 @@
 "Relation of braced in backticked if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'backticked beg end t))
+
+
+(defun ar-count-symboled-in-backticked-atpt (&optional beg end) 
+"Counts matches of symboled in backticked if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'backticked beg end nil))
+
+(defun ar-count-symboled-in-backticked-until-point (&optional beg end) 
+"Counts matches of symboled in backticked if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'backticked beg (point) nil))
+
+(defun ar-ratio-symboled-in-backticked-atpt (&optional beg end) 
+"Relation of symboled in backticked if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'backticked beg end t))
 
 
 (defun ar-count-bracketed-in-backticked-atpt (&optional beg end) 
@@ -7934,6 +8414,22 @@
   (ar-th-ratio-base 'braced 'coloned beg end t))
 
 
+(defun ar-count-symboled-in-coloned-atpt (&optional beg end) 
+"Counts matches of symboled in coloned if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'coloned beg end nil))
+
+(defun ar-count-symboled-in-coloned-until-point (&optional beg end) 
+"Counts matches of symboled in coloned if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'coloned beg (point) nil))
+
+(defun ar-ratio-symboled-in-coloned-atpt (&optional beg end) 
+"Relation of symboled in coloned if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'coloned beg end t))
+
+
 (defun ar-count-bracketed-in-coloned-atpt (&optional beg end) 
 "Counts matches of bracketed in coloned if useful, returns nil otherwise "
   (interactive "p")
@@ -8044,6 +8540,22 @@
 "Relation of braced in crossed if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'crossed beg end t))
+
+
+(defun ar-count-symboled-in-crossed-atpt (&optional beg end) 
+"Counts matches of symboled in crossed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'crossed beg end nil))
+
+(defun ar-count-symboled-in-crossed-until-point (&optional beg end) 
+"Counts matches of symboled in crossed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'crossed beg (point) nil))
+
+(defun ar-ratio-symboled-in-crossed-atpt (&optional beg end) 
+"Relation of symboled in crossed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'crossed beg end t))
 
 
 (defun ar-count-bracketed-in-crossed-atpt (&optional beg end) 
@@ -8158,6 +8670,22 @@
   (ar-th-ratio-base 'braced 'dollared beg end t))
 
 
+(defun ar-count-symboled-in-dollared-atpt (&optional beg end) 
+"Counts matches of symboled in dollared if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'dollared beg end nil))
+
+(defun ar-count-symboled-in-dollared-until-point (&optional beg end) 
+"Counts matches of symboled in dollared if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'dollared beg (point) nil))
+
+(defun ar-ratio-symboled-in-dollared-atpt (&optional beg end) 
+"Relation of symboled in dollared if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'dollared beg end t))
+
+
 (defun ar-count-bracketed-in-dollared-atpt (&optional beg end) 
 "Counts matches of bracketed in dollared if useful, returns nil otherwise "
   (interactive "p")
@@ -8268,6 +8796,22 @@
 "Relation of braced in doublequoted if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'doublequoted beg end t))
+
+
+(defun ar-count-symboled-in-doublequoted-atpt (&optional beg end) 
+"Counts matches of symboled in doublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'doublequoted beg end nil))
+
+(defun ar-count-symboled-in-doublequoted-until-point (&optional beg end) 
+"Counts matches of symboled in doublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'doublequoted beg (point) nil))
+
+(defun ar-ratio-symboled-in-doublequoted-atpt (&optional beg end) 
+"Relation of symboled in doublequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'doublequoted beg end t))
 
 
 (defun ar-count-bracketed-in-doublequoted-atpt (&optional beg end) 
@@ -8382,6 +8926,22 @@
   (ar-th-ratio-base 'braced 'equalized beg end t))
 
 
+(defun ar-count-symboled-in-equalized-atpt (&optional beg end) 
+"Counts matches of symboled in equalized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'equalized beg end nil))
+
+(defun ar-count-symboled-in-equalized-until-point (&optional beg end) 
+"Counts matches of symboled in equalized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'equalized beg (point) nil))
+
+(defun ar-ratio-symboled-in-equalized-atpt (&optional beg end) 
+"Relation of symboled in equalized if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'equalized beg end t))
+
+
 (defun ar-count-bracketed-in-equalized-atpt (&optional beg end) 
 "Counts matches of bracketed in equalized if useful, returns nil otherwise "
   (interactive "p")
@@ -8492,6 +9052,22 @@
 "Relation of braced in hashed if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'hashed beg end t))
+
+
+(defun ar-count-symboled-in-hashed-atpt (&optional beg end) 
+"Counts matches of symboled in hashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'hashed beg end nil))
+
+(defun ar-count-symboled-in-hashed-until-point (&optional beg end) 
+"Counts matches of symboled in hashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'hashed beg (point) nil))
+
+(defun ar-ratio-symboled-in-hashed-atpt (&optional beg end) 
+"Relation of symboled in hashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'hashed beg end t))
 
 
 (defun ar-count-bracketed-in-hashed-atpt (&optional beg end) 
@@ -8606,6 +9182,22 @@
   (ar-th-ratio-base 'braced 'hyphened beg end t))
 
 
+(defun ar-count-symboled-in-hyphened-atpt (&optional beg end) 
+"Counts matches of symboled in hyphened if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'hyphened beg end nil))
+
+(defun ar-count-symboled-in-hyphened-until-point (&optional beg end) 
+"Counts matches of symboled in hyphened if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'hyphened beg (point) nil))
+
+(defun ar-ratio-symboled-in-hyphened-atpt (&optional beg end) 
+"Relation of symboled in hyphened if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'hyphened beg end t))
+
+
 (defun ar-count-bracketed-in-hyphened-atpt (&optional beg end) 
 "Counts matches of bracketed in hyphened if useful, returns nil otherwise "
   (interactive "p")
@@ -8716,6 +9308,22 @@
 "Relation of braced in piped if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'piped beg end t))
+
+
+(defun ar-count-symboled-in-piped-atpt (&optional beg end) 
+"Counts matches of symboled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'piped beg end nil))
+
+(defun ar-count-symboled-in-piped-until-point (&optional beg end) 
+"Counts matches of symboled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'piped beg (point) nil))
+
+(defun ar-ratio-symboled-in-piped-atpt (&optional beg end) 
+"Relation of symboled in piped if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'piped beg end t))
 
 
 (defun ar-count-bracketed-in-piped-atpt (&optional beg end) 
@@ -8830,6 +9438,22 @@
   (ar-th-ratio-base 'braced 'singlequoted beg end t))
 
 
+(defun ar-count-symboled-in-singlequoted-atpt (&optional beg end) 
+"Counts matches of symboled in singlequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'singlequoted beg end nil))
+
+(defun ar-count-symboled-in-singlequoted-until-point (&optional beg end) 
+"Counts matches of symboled in singlequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'singlequoted beg (point) nil))
+
+(defun ar-ratio-symboled-in-singlequoted-atpt (&optional beg end) 
+"Relation of symboled in singlequoted if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'singlequoted beg end t))
+
+
 (defun ar-count-bracketed-in-singlequoted-atpt (&optional beg end) 
 "Counts matches of bracketed in singlequoted if useful, returns nil otherwise "
   (interactive "p")
@@ -8940,6 +9564,22 @@
 "Relation of braced in slashed if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'slashed beg end t))
+
+
+(defun ar-count-symboled-in-slashed-atpt (&optional beg end) 
+"Counts matches of symboled in slashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'slashed beg end nil))
+
+(defun ar-count-symboled-in-slashed-until-point (&optional beg end) 
+"Counts matches of symboled in slashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'slashed beg (point) nil))
+
+(defun ar-ratio-symboled-in-slashed-atpt (&optional beg end) 
+"Relation of symboled in slashed if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'slashed beg end t))
 
 
 (defun ar-count-bracketed-in-slashed-atpt (&optional beg end) 
@@ -9054,6 +9694,22 @@
   (ar-th-ratio-base 'braced 'stared beg end t))
 
 
+(defun ar-count-symboled-in-stared-atpt (&optional beg end) 
+"Counts matches of symboled in stared if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'stared beg end nil))
+
+(defun ar-count-symboled-in-stared-until-point (&optional beg end) 
+"Counts matches of symboled in stared if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'stared beg (point) nil))
+
+(defun ar-ratio-symboled-in-stared-atpt (&optional beg end) 
+"Relation of symboled in stared if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'stared beg end t))
+
+
 (defun ar-count-bracketed-in-stared-atpt (&optional beg end) 
 "Counts matches of bracketed in stared if useful, returns nil otherwise "
   (interactive "p")
@@ -9164,6 +9820,22 @@
 "Relation of braced in tilded if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'tilded beg end t))
+
+
+(defun ar-count-symboled-in-tilded-atpt (&optional beg end) 
+"Counts matches of symboled in tilded if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'tilded beg end nil))
+
+(defun ar-count-symboled-in-tilded-until-point (&optional beg end) 
+"Counts matches of symboled in tilded if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'tilded beg (point) nil))
+
+(defun ar-ratio-symboled-in-tilded-atpt (&optional beg end) 
+"Relation of symboled in tilded if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'tilded beg end t))
 
 
 (defun ar-count-bracketed-in-tilded-atpt (&optional beg end) 
@@ -9278,6 +9950,22 @@
   (ar-th-ratio-base 'braced 'underscored beg end t))
 
 
+(defun ar-count-symboled-in-underscored-atpt (&optional beg end) 
+"Counts matches of symboled in underscored if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'underscored beg end nil))
+
+(defun ar-count-symboled-in-underscored-until-point (&optional beg end) 
+"Counts matches of symboled in underscored if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'underscored beg (point) nil))
+
+(defun ar-ratio-symboled-in-underscored-atpt (&optional beg end) 
+"Relation of symboled in underscored if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'underscored beg end t))
+
+
 (defun ar-count-bracketed-in-underscored-atpt (&optional beg end) 
 "Counts matches of bracketed in underscored if useful, returns nil otherwise "
   (interactive "p")
@@ -9388,6 +10076,22 @@
 "Relation of braced in whitespaced if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'whitespaced beg end t))
+
+
+(defun ar-count-symboled-in-whitespaced-atpt (&optional beg end) 
+"Counts matches of symboled in whitespaced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'whitespaced beg end nil))
+
+(defun ar-count-symboled-in-whitespaced-until-point (&optional beg end) 
+"Counts matches of symboled in whitespaced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'whitespaced beg (point) nil))
+
+(defun ar-ratio-symboled-in-whitespaced-atpt (&optional beg end) 
+"Relation of symboled in whitespaced if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'whitespaced beg end t))
 
 
 (defun ar-count-bracketed-in-whitespaced-atpt (&optional beg end) 
@@ -9745,6 +10449,262 @@
 "Relation of whitespaced in braced if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'whitespaced 'braced beg end t))
+
+
+(defun ar-count-backslashed-in-symboled-atpt (&optional beg end) 
+"Counts matches of backslashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'backslashed 'symboled beg end nil))
+
+(defun ar-count-backslashed-in-symboled-until-point (&optional beg end) 
+"Counts matches of backslashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'backslashed 'symboled beg (point) nil))
+
+(defun ar-ratio-backslashed-in-symboled-atpt (&optional beg end) 
+"Relation of backslashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'backslashed 'symboled beg end t))
+
+
+(defun ar-count-backticked-in-symboled-atpt (&optional beg end) 
+"Counts matches of backticked in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'backticked 'symboled beg end nil))
+
+(defun ar-count-backticked-in-symboled-until-point (&optional beg end) 
+"Counts matches of backticked in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'backticked 'symboled beg (point) nil))
+
+(defun ar-ratio-backticked-in-symboled-atpt (&optional beg end) 
+"Relation of backticked in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'backticked 'symboled beg end t))
+
+
+(defun ar-count-coloned-in-symboled-atpt (&optional beg end) 
+"Counts matches of coloned in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'coloned 'symboled beg end nil))
+
+(defun ar-count-coloned-in-symboled-until-point (&optional beg end) 
+"Counts matches of coloned in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'coloned 'symboled beg (point) nil))
+
+(defun ar-ratio-coloned-in-symboled-atpt (&optional beg end) 
+"Relation of coloned in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'coloned 'symboled beg end t))
+
+
+(defun ar-count-crossed-in-symboled-atpt (&optional beg end) 
+"Counts matches of crossed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'crossed 'symboled beg end nil))
+
+(defun ar-count-crossed-in-symboled-until-point (&optional beg end) 
+"Counts matches of crossed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'crossed 'symboled beg (point) nil))
+
+(defun ar-ratio-crossed-in-symboled-atpt (&optional beg end) 
+"Relation of crossed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'crossed 'symboled beg end t))
+
+
+(defun ar-count-dollared-in-symboled-atpt (&optional beg end) 
+"Counts matches of dollared in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'dollared 'symboled beg end nil))
+
+(defun ar-count-dollared-in-symboled-until-point (&optional beg end) 
+"Counts matches of dollared in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'dollared 'symboled beg (point) nil))
+
+(defun ar-ratio-dollared-in-symboled-atpt (&optional beg end) 
+"Relation of dollared in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'dollared 'symboled beg end t))
+
+
+(defun ar-count-doublequoted-in-symboled-atpt (&optional beg end) 
+"Counts matches of doublequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'doublequoted 'symboled beg end nil))
+
+(defun ar-count-doublequoted-in-symboled-until-point (&optional beg end) 
+"Counts matches of doublequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'doublequoted 'symboled beg (point) nil))
+
+(defun ar-ratio-doublequoted-in-symboled-atpt (&optional beg end) 
+"Relation of doublequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'doublequoted 'symboled beg end t))
+
+
+(defun ar-count-equalized-in-symboled-atpt (&optional beg end) 
+"Counts matches of equalized in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'equalized 'symboled beg end nil))
+
+(defun ar-count-equalized-in-symboled-until-point (&optional beg end) 
+"Counts matches of equalized in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'equalized 'symboled beg (point) nil))
+
+(defun ar-ratio-equalized-in-symboled-atpt (&optional beg end) 
+"Relation of equalized in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'equalized 'symboled beg end t))
+
+
+(defun ar-count-hashed-in-symboled-atpt (&optional beg end) 
+"Counts matches of hashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'hashed 'symboled beg end nil))
+
+(defun ar-count-hashed-in-symboled-until-point (&optional beg end) 
+"Counts matches of hashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'hashed 'symboled beg (point) nil))
+
+(defun ar-ratio-hashed-in-symboled-atpt (&optional beg end) 
+"Relation of hashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'hashed 'symboled beg end t))
+
+
+(defun ar-count-hyphened-in-symboled-atpt (&optional beg end) 
+"Counts matches of hyphened in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'hyphened 'symboled beg end nil))
+
+(defun ar-count-hyphened-in-symboled-until-point (&optional beg end) 
+"Counts matches of hyphened in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'hyphened 'symboled beg (point) nil))
+
+(defun ar-ratio-hyphened-in-symboled-atpt (&optional beg end) 
+"Relation of hyphened in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'hyphened 'symboled beg end t))
+
+
+(defun ar-count-piped-in-symboled-atpt (&optional beg end) 
+"Counts matches of piped in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'symboled beg end nil))
+
+(defun ar-count-piped-in-symboled-until-point (&optional beg end) 
+"Counts matches of piped in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'symboled beg (point) nil))
+
+(defun ar-ratio-piped-in-symboled-atpt (&optional beg end) 
+"Relation of piped in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'piped 'symboled beg end t))
+
+
+(defun ar-count-singlequoted-in-symboled-atpt (&optional beg end) 
+"Counts matches of singlequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'singlequoted 'symboled beg end nil))
+
+(defun ar-count-singlequoted-in-symboled-until-point (&optional beg end) 
+"Counts matches of singlequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'singlequoted 'symboled beg (point) nil))
+
+(defun ar-ratio-singlequoted-in-symboled-atpt (&optional beg end) 
+"Relation of singlequoted in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'singlequoted 'symboled beg end t))
+
+
+(defun ar-count-slashed-in-symboled-atpt (&optional beg end) 
+"Counts matches of slashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'slashed 'symboled beg end nil))
+
+(defun ar-count-slashed-in-symboled-until-point (&optional beg end) 
+"Counts matches of slashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'slashed 'symboled beg (point) nil))
+
+(defun ar-ratio-slashed-in-symboled-atpt (&optional beg end) 
+"Relation of slashed in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'slashed 'symboled beg end t))
+
+
+(defun ar-count-stared-in-symboled-atpt (&optional beg end) 
+"Counts matches of stared in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'stared 'symboled beg end nil))
+
+(defun ar-count-stared-in-symboled-until-point (&optional beg end) 
+"Counts matches of stared in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'stared 'symboled beg (point) nil))
+
+(defun ar-ratio-stared-in-symboled-atpt (&optional beg end) 
+"Relation of stared in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'stared 'symboled beg end t))
+
+
+(defun ar-count-tilded-in-symboled-atpt (&optional beg end) 
+"Counts matches of tilded in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'tilded 'symboled beg end nil))
+
+(defun ar-count-tilded-in-symboled-until-point (&optional beg end) 
+"Counts matches of tilded in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'tilded 'symboled beg (point) nil))
+
+(defun ar-ratio-tilded-in-symboled-atpt (&optional beg end) 
+"Relation of tilded in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'tilded 'symboled beg end t))
+
+
+(defun ar-count-underscored-in-symboled-atpt (&optional beg end) 
+"Counts matches of underscored in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'underscored 'symboled beg end nil))
+
+(defun ar-count-underscored-in-symboled-until-point (&optional beg end) 
+"Counts matches of underscored in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'underscored 'symboled beg (point) nil))
+
+(defun ar-ratio-underscored-in-symboled-atpt (&optional beg end) 
+"Relation of underscored in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'underscored 'symboled beg end t))
+
+
+(defun ar-count-whitespaced-in-symboled-atpt (&optional beg end) 
+"Counts matches of whitespaced in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'whitespaced 'symboled beg end nil))
+
+(defun ar-count-whitespaced-in-symboled-until-point (&optional beg end) 
+"Counts matches of whitespaced in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'whitespaced 'symboled beg (point) nil))
+
+(defun ar-ratio-whitespaced-in-symboled-atpt (&optional beg end) 
+"Relation of whitespaced in symboled if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'whitespaced 'symboled beg end t))
 
 
 (defun ar-count-backslashed-in-bracketed-atpt (&optional beg end) 
@@ -11304,6 +12264,22 @@
   (ar-th-ratio-base 'braced 'anglednonest beg end t))
 
 
+(defun ar-count-symboled-in-anglednonest-atpt (&optional beg end) 
+"Counts matches of symboled in anglednonest if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'anglednonest beg end nil))
+
+(defun ar-count-symboled-in-anglednonest-until-point (&optional beg end) 
+"Counts matches of symboled in anglednonest if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'anglednonest beg (point) nil))
+
+(defun ar-ratio-symboled-in-anglednonest-atpt (&optional beg end) 
+"Relation of symboled in anglednonest if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'anglednonest beg end t))
+
+
 (defun ar-count-bracketed-in-anglednonest-atpt (&optional beg end) 
 "Counts matches of bracketed in anglednonest if useful, returns nil otherwise "
   (interactive "p")
@@ -11414,6 +12390,22 @@
 "Relation of braced in greateranglednested if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'greateranglednested beg end t))
+
+
+(defun ar-count-symboled-in-greateranglednested-atpt (&optional beg end) 
+"Counts matches of symboled in greateranglednested if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'greateranglednested beg end nil))
+
+(defun ar-count-symboled-in-greateranglednested-until-point (&optional beg end) 
+"Counts matches of symboled in greateranglednested if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'greateranglednested beg (point) nil))
+
+(defun ar-ratio-symboled-in-greateranglednested-atpt (&optional beg end) 
+"Relation of symboled in greateranglednested if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'greateranglednested beg end t))
 
 
 (defun ar-count-bracketed-in-greateranglednested-atpt (&optional beg end) 
@@ -11528,6 +12520,22 @@
   (ar-th-ratio-base 'braced 'lesseranglednested beg end t))
 
 
+(defun ar-count-symboled-in-lesseranglednested-atpt (&optional beg end) 
+"Counts matches of symboled in lesseranglednested if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'lesseranglednested beg end nil))
+
+(defun ar-count-symboled-in-lesseranglednested-until-point (&optional beg end) 
+"Counts matches of symboled in lesseranglednested if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'lesseranglednested beg (point) nil))
+
+(defun ar-ratio-symboled-in-lesseranglednested-atpt (&optional beg end) 
+"Relation of symboled in lesseranglednested if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'lesseranglednested beg end t))
+
+
 (defun ar-count-bracketed-in-lesseranglednested-atpt (&optional beg end) 
 "Counts matches of bracketed in lesseranglednested if useful, returns nil otherwise "
   (interactive "p")
@@ -11638,6 +12646,22 @@
 "Relation of braced in csv if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'csv beg end t))
+
+
+(defun ar-count-symboled-in-csv-atpt (&optional beg end) 
+"Counts matches of symboled in csv if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'csv beg end nil))
+
+(defun ar-count-symboled-in-csv-until-point (&optional beg end) 
+"Counts matches of symboled in csv if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'csv beg (point) nil))
+
+(defun ar-ratio-symboled-in-csv-atpt (&optional beg end) 
+"Relation of symboled in csv if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'csv beg end t))
 
 
 (defun ar-count-bracketed-in-csv-atpt (&optional beg end) 
@@ -11752,6 +12776,22 @@
   (ar-th-ratio-base 'braced 'line beg end t))
 
 
+(defun ar-count-symboled-in-line-atpt (&optional beg end) 
+"Counts matches of symboled in line if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'line beg end nil))
+
+(defun ar-count-symboled-in-line-until-point (&optional beg end) 
+"Counts matches of symboled in line if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'line beg (point) nil))
+
+(defun ar-ratio-symboled-in-line-atpt (&optional beg end) 
+"Relation of symboled in line if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'line beg end t))
+
+
 (defun ar-count-bracketed-in-line-atpt (&optional beg end) 
 "Counts matches of bracketed in line if useful, returns nil otherwise "
   (interactive "p")
@@ -11862,6 +12902,22 @@
 "Relation of braced in paragraph if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'paragraph beg end t))
+
+
+(defun ar-count-symboled-in-paragraph-atpt (&optional beg end) 
+"Counts matches of symboled in paragraph if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'paragraph beg end nil))
+
+(defun ar-count-symboled-in-paragraph-until-point (&optional beg end) 
+"Counts matches of symboled in paragraph if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'paragraph beg (point) nil))
+
+(defun ar-ratio-symboled-in-paragraph-atpt (&optional beg end) 
+"Relation of symboled in paragraph if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'paragraph beg end t))
 
 
 (defun ar-count-bracketed-in-paragraph-atpt (&optional beg end) 
@@ -11976,6 +13032,22 @@
   (ar-th-ratio-base 'braced 'region beg end t))
 
 
+(defun ar-count-symboled-in-region-atpt (&optional beg end) 
+"Counts matches of symboled in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'region beg end nil))
+
+(defun ar-count-symboled-in-region-until-point (&optional beg end) 
+"Counts matches of symboled in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'region beg (point) nil))
+
+(defun ar-ratio-symboled-in-region-atpt (&optional beg end) 
+"Relation of symboled in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'region beg end t))
+
+
 (defun ar-count-bracketed-in-region-atpt (&optional beg end) 
 "Counts matches of bracketed in region if useful, returns nil otherwise "
   (interactive "p")
@@ -12086,6 +13158,22 @@
 "Relation of braced in sentence if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'sentence beg end t))
+
+
+(defun ar-count-symboled-in-sentence-atpt (&optional beg end) 
+"Counts matches of symboled in sentence if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'sentence beg end nil))
+
+(defun ar-count-symboled-in-sentence-until-point (&optional beg end) 
+"Counts matches of symboled in sentence if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'sentence beg (point) nil))
+
+(defun ar-ratio-symboled-in-sentence-atpt (&optional beg end) 
+"Relation of symboled in sentence if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'sentence beg end t))
 
 
 (defun ar-count-bracketed-in-sentence-atpt (&optional beg end) 
@@ -12200,6 +13288,22 @@
   (ar-th-ratio-base 'braced 'string beg end t))
 
 
+(defun ar-count-symboled-in-string-atpt (&optional beg end) 
+"Counts matches of symboled in string if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'string beg end nil))
+
+(defun ar-count-symboled-in-string-until-point (&optional beg end) 
+"Counts matches of symboled in string if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'string beg (point) nil))
+
+(defun ar-ratio-symboled-in-string-atpt (&optional beg end) 
+"Relation of symboled in string if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'string beg end t))
+
+
 (defun ar-count-bracketed-in-string-atpt (&optional beg end) 
 "Counts matches of bracketed in string if useful, returns nil otherwise "
   (interactive "p")
@@ -12310,6 +13414,22 @@
 "Relation of braced in buffer if useful, returns nil otherwise "
   (interactive "p")
   (ar-th-ratio-base 'braced 'buffer beg end t))
+
+
+(defun ar-count-symboled-in-buffer-atpt (&optional beg end) 
+"Counts matches of symboled in buffer if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'buffer beg end nil))
+
+(defun ar-count-symboled-in-buffer-until-point (&optional beg end) 
+"Counts matches of symboled in buffer if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'buffer beg (point) nil))
+
+(defun ar-ratio-symboled-in-buffer-atpt (&optional beg end) 
+"Relation of symboled in buffer if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'symboled 'buffer beg end t))
 
 
 (defun ar-count-bracketed-in-buffer-atpt (&optional beg end) 

@@ -3006,6 +3006,251 @@ See doku from `sort-subr', for details.
     (when arg (message "%s" erg))
    erg))
 
+(defun ar-symbol-atpt (&optional no-delimiters)
+  "Returns symbol at point if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+  (interactive "P")
+  (ar-th 'symbol no-delimiters))
+
+(defun ar-bounds-of-symbol-atpt (&optional no-delimiters check)
+  "Returns a list, borders of symbol if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+  (interactive "P")
+  (ar-th-bounds 'symbol no-delimiters))
+
+(defun ar-symbol-beginning-position-atpt (&optional no-delimiters check)
+  "Returns a number, beginning position SYMBOL at point if any, nil otherwise.
+
+Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+  (interactive "P")
+  (ar-th-beg 'symbol no-delimiters))
+
+(defun ar-symbol-end-position-atpt (&optional no-delimiters check)
+  "Returns a number, end position of SYMBOL at point if any, nil otherwise.
+
+Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+  (interactive "P")
+  (ar-th-end 'symbol no-delimiters))
+
+(defun ar-beginning-of-symbol-atpt (&optional no-delimiters check)
+  "Goto beginning of symbol or char-class SYMBOL at point if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+  (interactive "P")
+  (ar-th-gotobeg 'symbol no-delimiters))
+
+(defun ar-end-of-symbol-atpt (&optional no-delimiters check)
+  "Goto end of symbol or char-class SYMBOL at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'symbol no-delimiters))
+
+(defun ar-in-symbol-p-atpt (&optional no-delimiters check)
+  "Returns bounds of SYMBOL at point, a list, if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'symbol no-delimiters))
+
+(defun ar-length-of-symbol-atpt (&optional no-delimiters check)
+  "Returns beginning of symbol or char-class SYMBOL at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'symbol no-delimiters))
+
+(defun ar-copy-symbol-atpt (&optional no-delimiters check)
+  "Returns a copy of SYMBOL at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-copy 'symbol no-delimiters))
+
+(defun ar-delete-symbol-atpt (&optional arg)
+  "Deletes SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-delete 'symbol arg))
+
+(defun ar-delete-symbol-in-region (beg end)
+  "Deletes SYMBOL at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'symbol beg end))
+
+(defun ar-blok-symbol-atpt (&optional no-delimiters check)
+  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around symbol.
+  Returns blok or nil if no SYMBOL at cursor-position. "
+  (interactive "*P")
+  (ar-th-blok 'symbol no-delimiters))
+
+(defun ar-backslashparen-symbol-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around symbol at point if any.
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*P")
+  (ar-th-backslashparen 'symbol no-delimiters))
+
+(defun ar-doublebackslash-symbol-atpt (&optional no-delimiters check)
+  "Puts doubled backslashes around SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslash 'symbol no-delimiters))
+
+(defun ar-doubleslash-symbol-atpt (&optional no-delimiters check)
+  "Puts doubled slashes around SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-doubleslash 'symbol no-delimiters))
+
+(defun ar-doublebackslashparen-symbol-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslashparen 'symbol no-delimiters))
+
+(defun ar-doublebacktick-symbol-atpt (&optional no-delimiters check)
+  "Provides double backticks around SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-doublebacktick 'symbol no-delimiters))
+
+(defun ar-slashparen-symbol-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'symbol no-delimiters))
+
+(defun ar-slashparen-symbol-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'symbol no-delimiters))
+
+(defun ar-comment-symbol-atpt (&optional no-delimiters check)
+  "Comments SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-comment 'symbol no-delimiters))
+
+(defun ar-commatize-symbol-atpt (&optional no-delimiters check)
+  "Put a comma after SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-commatize 'symbol no-delimiters))
+
+(defun ar-quote-symbol-atpt (&optional no-delimiters check)
+  "Put a singlequote before SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-quote 'symbol no-delimiters))
+
+
+(defun ar-mark-symbol-atpt (&optional arg)
+  "Marks SYMBOL at point if any. "
+  (interactive "P")
+  (ar-th-mark 'symbol))
+
+(defun ar-hide-symbol-atpt (&optional arg)
+  "Hides SYMBOL at point. "
+  (interactive "P")
+  (ar-th-hide 'symbol))
+
+(defun ar-show-symbol-atpt (&optional arg)
+  "Shows hidden SYMBOL at point. "
+  (interactive "P")
+  (ar-th-show 'symbol))
+
+(defun ar-hide-show-symbol-atpt (&optional arg)
+  "Alternatively hides or shows SYMBOL at point. "
+  (interactive "P")
+  (ar-th-hide-show 'symbol))
+
+(defun ar-highlight-symbol-atpt-mode (&optional no-delimiters check)
+  "Toggles symbol-highlight-atpt-mode "
+  (interactive "P")
+  (ar-th-highlight 'symbol no-delimiters))
+
+(defun ar-kill-symbol-atpt (&optional no-delimiters check)
+  "Kills SYMBOL at point if any. "
+  (interactive "*P")
+  (ar-th-kill 'symbol no-delimiters))
+
+(defun ar-curvedsinglequote-symbol-atpt (&optional no-delimiters check)
+  "Singlequotes alnum at point if any. "
+  (interactive "*P")
+  (ar-th-curvedsinglequote 'symbol no-delimiters))
+
+(defun ar-separate-symbol-atpt (&optional no-delimiters check)
+  "Separates SYMBOL at point if any, does nothing otherwise
+inserts newlines, borders are the beginning or the end of buffer "
+  (interactive "*P")
+  (ar-th-separate 'symbol no-delimiters))
+
+(defun ar-triplequotedq-symbol-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of doublequotes around symbol. "
+  (interactive "*P")
+  (ar-th-triplequotedq 'symbol no-delimiters))
+
+(defun ar-triplequotesq-symbol-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of singlequotes around symbol. "
+  (interactive "*P")
+  (ar-th-triplequotesq 'symbol no-delimiters))
+
+(defun ar-triplebacktick-symbol-atpt (&optional arg)
+  "Deletes symbol at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*P")
+  (ar-th-triplebacktick 'symbol arg))
+
+(defun ar-trim-symbol-atpt (&optional no-delimiters iact check)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'symbol no-delimiters iact check t t))
+
+(defun ar-left-trim-symbol-atpt (&optional no-delimiters iact check)
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'symbol no-delimiters iact check t))
+
+(defun ar-right-trim-symbol-atpt (&optional no-delimiters iact check)
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'symbol n no-delimiters iact check nil t))
+
+(defun ar-underscore-symbol-atpt (&optional no-delimiters check)
+  "Put underscore char around SYMBOL. "
+  (interactive "*P")
+  (ar-th-underscore 'symbol no-delimiters))
+
+;; (defalias 'ar-symbol-whitespace-atpt 'ar-whitespace-symbol-atpt)
+;; (defun ar-whitespace-symbol-atpt (&optional no-delimiters check)
+;;   "Put whitespace char around SYMBOL. "
+;;   (interactive "*P")
+;;   (ar-th-whitespace 'symbol nil t))
+
+(defun ar-forward-symbol-atpt (&optional arg)
+  "Moves forward over SYMBOL at point if any, does nothing otherwise.
+Returns end position of SYMBOL "
+  (interactive "P")
+  (ar-th-forward 'symbol arg))
+
+(defun ar-backward-symbol-atpt (&optional arg)
+  "Moves backward over SYMBOL before point if any, does nothing otherwise.
+Returns beginning position of SYMBOL "
+  (interactive "P")
+  (ar-th-backward 'symbol arg))
+
+(defun ar-transpose-symbol-atpt (&optional arg)
+  "Transposes SYMBOL with SYMBOL before point if any. "
+  (interactive "*P")
+  (ar-th-transpose 'symbol arg))
+
+(defun ar-sort-symbol-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts symbols in region, with ARG in reverse order.
+STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
+ENDKEYFUN might be a function specifying THING's end when sorting.
+With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+See doku from `sort-subr', for details.
+  "
+  (interactive "*P\nr")
+  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
+  (unless (use-region-p) (message "%s" "Region must be active!"))
+  (ar-th-sort 'symbol reverse beg end startkeyfun endkeyfun predicate)))
+
+(defun ar-check-symbol-atpt (&optional arg) 
+  "Return t if a SYMBOL at point exists, nil otherwise "
+  (interactive "P")
+  (let* ((beg (funcall (intern-soft (concat "ar-symbol-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-symbol-end-position-atpt"))))
+        (erg (ignore-errors (< beg end))))
+    (when arg (message "%s" erg))
+   erg))
+
 (defun ar-tabledata-atpt (&optional no-delimiters)
   "Returns tabledata at point if any, nil otherwise. 
 

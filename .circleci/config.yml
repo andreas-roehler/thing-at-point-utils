@@ -1,0 +1,45 @@
+version: 2.1
+
+aktion:
+  echo "Gebe Umgebung aus" 
+  ls -lart
+
+jobs:
+  thing-at-point-utils:
+    docker:
+      # - image: ubuntu-2004:202010-01
+      - image: silex/emacs:27.2
+    working_directory: ~/thing-at-point-utils
+    steps:
+      - run: apt update && apt install -y git ssh emacs
+      - checkout
+      - run:
+          name: Umgebung
+          command:
+            echo "Gebe Umgebung aus"; ls -lart
+
+      - run:
+          name: ERT tests
+          command: |
+            emacs -Q --batch \
+            --eval "(message (emacs-version))" \
+            --eval "(message (getenv \"PWD\"))" \
+            --eval "(setq python-indent-offset 4)" \
+            --eval "(setq python-indent-guess-indent-offset nil)" \
+            --eval "(setq python-indent-guess-indent-offset-verbose nil)" \
+            --eval "(load (expand-file-name \"beg-end.el\"))" \
+            --eval "(load (expand-file-name \"ar-subr.el\"))" \
+            --eval "(load (expand-file-name \"thingatpt-utils-map.el\"))" \
+            --eval "(load (expand-file-name \"thingatpt-utils-core.el\"))" \
+            --eval "(load (expand-file-name \"thing-at-point-utils.el\"))" \
+            --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-setup-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-tests.el\")" \
+            --eval "(setq ar-switch-p nil)" \
+            --eval "(sit-for 1)" \
+            -f ert-run-tests-batch-and-exit
+
+
+workflows:
+  thing-at-point-utils-workflow:
+    jobs:
+      - thing-at-point-utils  

@@ -3032,6 +3032,186 @@
 
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 ;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
+(defun ar-symbol-greateranglednested-atpt (&optional arg)
+  "Symbol GREATERANGLEDNESTED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'greateranglednested "`" "'" arg arg)))
+
+(defun ar-symbol-lesseranglednested-atpt (&optional arg)
+  "Symbol LESSERANGLEDNESTED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'lesseranglednested "`" "'" arg arg)))
+
+(defun ar-symbol-buffer-atpt (&optional arg)
+  "Symbol BUFFER at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'buffer "`" "'" arg arg)))
+
+(defun ar-symbol-char-atpt (&optional arg)
+  "Symbol CHAR at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'char "`" "'" arg arg)))
+
+(defun ar-symbol-comment-atpt (&optional arg)
+  "Symbol COMMENT at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'comment "`" "'" arg arg)))
+
+(defun ar-symbol-csv-atpt (&optional arg)
+  "Symbol CSV at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'csv "`" "'" arg arg)))
+
+(defun ar-symbol-date-atpt (&optional arg)
+  "Symbol DATE at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'date "`" "'" arg arg)))
+
+(defun ar-symbol-delimited-atpt (&optional arg)
+  "Symbol DELIMITED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'delimited "`" "'" arg arg)))
+
+(defun ar-symbol-email-atpt (&optional arg)
+  "Symbol EMAIL at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'email "`" "'" arg arg)))
+
+(defun ar-symbol-filename-atpt (&optional arg)
+  "Symbol FILENAME at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'filename "`" "'" arg arg)))
+
+(defun ar-symbol-filenamenondirectory-atpt (&optional arg)
+  "Symbol FILENAMENONDIRECTORY at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'filenamenondirectory "`" "'" arg arg)))
+
+(defun ar-symbol-float-atpt (&optional arg)
+  "Symbol FLOAT at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'float "`" "'" arg arg)))
+
+(defun ar-symbol-function-atpt (&optional arg)
+  "Symbol FUNCTION at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'function "`" "'" arg arg)))
+
+(defun ar-symbol-ip-atpt (&optional arg)
+  "Symbol IP at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'ip "`" "'" arg arg)))
+
+(defun ar-symbol-isbn-atpt (&optional arg)
+  "Symbol ISBN at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'isbn "`" "'" arg arg)))
+
+(defun ar-symbol-line-atpt (&optional arg)
+  "Symbol LINE at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'line "`" "'" arg arg)))
+
+(defun ar-symbol-list-atpt (&optional arg)
+  "Symbol LIST at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'list "`" "'" arg arg)))
+
+(defun ar-symbol-name-atpt (&optional arg)
+  "Symbol NAME at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'name "`" "'" arg arg)))
+
+(defun ar-symbol-number-atpt (&optional arg)
+  "Symbol NUMBER at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'number "`" "'" arg arg)))
+
+(defun ar-symbol-page-atpt (&optional arg)
+  "Symbol PAGE at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'page "`" "'" arg arg)))
+
+(defun ar-symbol-paragraph-atpt (&optional arg)
+  "Symbol PARAGRAPH at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'paragraph "`" "'" arg arg)))
+
+(defun ar-symbol-phone-atpt (&optional arg)
+  "Symbol PHONE at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'phone "`" "'" arg arg)))
+
+(defun ar-symbol-region-atpt (&optional arg)
+  "Symbol REGION at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'region "`" "'" arg arg)))
+
+(defun ar-symbol-sentence-atpt (&optional arg)
+  "Symbol SENTENCE at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'sentence "`" "'" arg arg)))
+
+(defun ar-symbol-sexp-atpt (&optional arg)
+  "Symbol SEXP at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'sexp "`" "'" arg arg)))
+
+(defun ar-symbol-shstruct-atpt (&optional arg)
+  "Symbol SHSTRUCT at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'shstruct "`" "'" arg arg)))
+
+(defun ar-symbol-symbol-atpt (&optional arg)
+  "Symbol SYMBOL at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symbol "`" "'" arg arg)))
+
+(defun ar-symbol-url-atpt (&optional arg)
+  "Symbol URL at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'url "`" "'" arg arg)))
+
+(defun ar-symbol-word-atpt (&optional arg)
+  "Symbol WORD at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'word "`" "'" arg arg)))
+
+(defun ar-symbol-wordalphaonly-atpt (&optional arg)
+  "Symbol WORDALPHAONLY at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'wordalphaonly "`" "'" arg arg)))
+
 (defun ar-brace-greateranglednested-atpt (&optional arg)
   "Brace GREATERANGLEDNESTED at point ARG times."
   (interactive "*P")
@@ -4294,6 +4474,102 @@
 
 ;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: end
 ;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: start
+(defun ar-symbol-backslashed-atpt (&optional arg)
+  "Symbol BACKSLASHED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'backslashed "`" "'" arg arg)))
+
+(defun ar-symbol-backticked-atpt (&optional arg)
+  "Symbol BACKTICKED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'backticked "`" "'" arg arg)))
+
+(defun ar-symbol-coloned-atpt (&optional arg)
+  "Symbol COLONED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'coloned "`" "'" arg arg)))
+
+(defun ar-symbol-crossed-atpt (&optional arg)
+  "Symbol CROSSED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'crossed "`" "'" arg arg)))
+
+(defun ar-symbol-dollared-atpt (&optional arg)
+  "Symbol DOLLARED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'dollared "`" "'" arg arg)))
+
+(defun ar-symbol-doublequoted-atpt (&optional arg)
+  "Symbol DOUBLEQUOTED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'doublequoted "`" "'" arg arg)))
+
+(defun ar-symbol-equalized-atpt (&optional arg)
+  "Symbol EQUALIZED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'equalized "`" "'" arg arg)))
+
+(defun ar-symbol-hashed-atpt (&optional arg)
+  "Symbol HASHED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'hashed "`" "'" arg arg)))
+
+(defun ar-symbol-hyphened-atpt (&optional arg)
+  "Symbol HYPHENED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'hyphened "`" "'" arg arg)))
+
+(defun ar-symbol-piped-atpt (&optional arg)
+  "Symbol PIPED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'piped "`" "'" arg arg)))
+
+(defun ar-symbol-singlequoted-atpt (&optional arg)
+  "Symbol SINGLEQUOTED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'singlequoted "`" "'" arg arg)))
+
+(defun ar-symbol-slashed-atpt (&optional arg)
+  "Symbol SLASHED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'slashed "`" "'" arg arg)))
+
+(defun ar-symbol-stared-atpt (&optional arg)
+  "Symbol STARED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'stared "`" "'" arg arg)))
+
+(defun ar-symbol-tilded-atpt (&optional arg)
+  "Symbol TILDED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'tilded "`" "'" arg arg)))
+
+(defun ar-symbol-underscored-atpt (&optional arg)
+  "Symbol UNDERSCORED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'underscored "`" "'" arg arg)))
+
+(defun ar-symbol-whitespaced-atpt (&optional arg)
+  "Symbol WHITESPACED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'whitespaced "`" "'" arg arg)))
+
 (defun ar-brace-backslashed-atpt (&optional arg)
   "Brace BACKSLASHED at point ARG times."
   (interactive "*P")
@@ -4974,6 +5250,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "{" "}")))
 
+(defun ar-brace-symboled-atpt (&optional arg)
+  "Brace SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "{" "}")))
+
 (defun ar-brace-bracketed-atpt (&optional arg)
   "Brace BRACKETED at point ARG times."
   (interactive "*P")
@@ -5010,11 +5292,65 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'parentized "{" "}")))
 
+(defun ar-symbol-braced-atpt (&optional arg)
+  "Symbol BRACED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'braced "`" "'")))
+
+(defun ar-symbol-symboled-atpt (&optional arg)
+  "Symbol SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "`" "'")))
+
+(defun ar-symbol-bracketed-atpt (&optional arg)
+  "Symbol BRACKETED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'bracketed "`" "'")))
+
+(defun ar-symbol-lesserangled-atpt (&optional arg)
+  "Symbol LESSERANGLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'lesserangled "`" "'")))
+
+(defun ar-symbol-greaterangled-atpt (&optional arg)
+  "Symbol GREATERANGLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'greaterangled "`" "'")))
+
+(defun ar-symbol-curvedsinglequoted-atpt (&optional arg)
+  "Symbol CURVEDSINGLEQUOTED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'curvedsinglequoted "`" "'")))
+
+(defun ar-symbol-curveddoublequoted-atpt (&optional arg)
+  "Symbol CURVEDDOUBLEQUOTED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'curveddoublequoted "`" "'")))
+
+(defun ar-symbol-parentized-atpt (&optional arg)
+  "Symbol PARENTIZED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'parentized "`" "'")))
+
 (defun ar-bracket-braced-atpt (&optional arg)
   "Bracket BRACED at point ARG times."
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "[" "]")))
+
+(defun ar-bracket-symboled-atpt (&optional arg)
+  "Bracket SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "[" "]")))
 
 (defun ar-bracket-bracketed-atpt (&optional arg)
   "Bracket BRACKETED at point ARG times."
@@ -5058,6 +5394,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "<" ">")))
 
+(defun ar-lesserangle-symboled-atpt (&optional arg)
+  "Lesserangle SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "<" ">")))
+
 (defun ar-lesserangle-bracketed-atpt (&optional arg)
   "Lesserangle BRACKETED at point ARG times."
   (interactive "*P")
@@ -5099,6 +5441,12 @@
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced ">" "<")))
+
+(defun ar-greaterangle-symboled-atpt (&optional arg)
+  "Greaterangle SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled ">" "<")))
 
 (defun ar-greaterangle-bracketed-atpt (&optional arg)
   "Greaterangle BRACKETED at point ARG times."
@@ -5142,6 +5490,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "‘" "’")))
 
+(defun ar-curvedsinglequote-symboled-atpt (&optional arg)
+  "Curvedsinglequote SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "‘" "’")))
+
 (defun ar-curvedsinglequote-bracketed-atpt (&optional arg)
   "Curvedsinglequote BRACKETED at point ARG times."
   (interactive "*P")
@@ -5184,6 +5538,12 @@
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "“" "”")))
 
+(defun ar-curveddoublequote-symboled-atpt (&optional arg)
+  "Curveddoublequote SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "“" "”")))
+
 (defun ar-curveddoublequote-bracketed-atpt (&optional arg)
   "Curveddoublequote BRACKETED at point ARG times."
   (interactive "*P")
@@ -5225,6 +5585,12 @@
   (interactive "*P")
   (dotimes (i (or arg 1))
     (ar-th-delimit--intern 'braced "(" ")")))
+
+(defun ar-parentize-symboled-atpt (&optional arg)
+  "Parentize SYMBOLED at point ARG times."
+  (interactive "*P")
+  (dotimes (i (or arg 1))
+    (ar-th-delimit--intern 'symboled "(" ")")))
 
 (defun ar-parentize-bracketed-atpt (&optional arg)
   "Parentize BRACKETED at point ARG times."
@@ -11210,6 +11576,126 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-whitespace 'braced arg))
 
+(defalias 'ar-colon-symboled-atpt 'ar-symboled-colon-atpt)
+(defun ar-symboled-colon-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-colon 'symboled arg))
+
+(defalias 'ar-cross-symboled-atpt 'ar-symboled-cross-atpt)
+(defun ar-symboled-cross-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-cross 'symboled arg))
+
+(defalias 'ar-doubleslash-symboled-atpt 'ar-symboled-doubleslash-atpt)
+(defun ar-symboled-doubleslash-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-doubleslash 'symboled arg))
+
+(defalias 'ar-backslash-symboled-atpt 'ar-symboled-backslash-atpt)
+(defun ar-symboled-backslash-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-backslash 'symboled arg))
+
+(defalias 'ar-backtick-symboled-atpt 'ar-symboled-backtick-atpt)
+(defun ar-symboled-backtick-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-backtick 'symboled arg))
+
+(defalias 'ar-dollar-symboled-atpt 'ar-symboled-dollar-atpt)
+(defun ar-symboled-dollar-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-dollar 'symboled arg))
+
+(defalias 'ar-doublebacktick-symboled-atpt 'ar-symboled-doublebacktick-atpt)
+(defun ar-symboled-doublebacktick-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-doublebacktick 'symboled arg))
+
+(defalias 'ar-doublequote-symboled-atpt 'ar-symboled-doublequote-atpt)
+(defun ar-symboled-doublequote-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-doublequote 'symboled arg))
+
+(defalias 'ar-equalize-symboled-atpt 'ar-symboled-equalize-atpt)
+(defun ar-symboled-equalize-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-equalize 'symboled arg))
+
+(defalias 'ar-escape-symboled-atpt 'ar-symboled-escape-atpt)
+(defun ar-symboled-escape-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-escape 'symboled arg))
+
+(defalias 'ar-hash-symboled-atpt 'ar-symboled-hash-atpt)
+(defun ar-symboled-hash-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-hash 'symboled arg))
+
+(defalias 'ar-hyphen-symboled-atpt 'ar-symboled-hyphen-atpt)
+(defun ar-symboled-hyphen-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-hyphen 'symboled arg))
+
+(defalias 'ar-pipe-symboled-atpt 'ar-symboled-pipe-atpt)
+(defun ar-symboled-pipe-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-pipe 'symboled arg))
+
+(defalias 'ar-singlequote-symboled-atpt 'ar-symboled-singlequote-atpt)
+(defun ar-symboled-singlequote-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-singlequote 'symboled arg))
+
+(defalias 'ar-slash-symboled-atpt 'ar-symboled-slash-atpt)
+(defun ar-symboled-slash-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-slash 'symboled arg))
+
+(defalias 'ar-star-symboled-atpt 'ar-symboled-star-atpt)
+(defun ar-symboled-star-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-star 'symboled arg))
+
+(defalias 'ar-tild-symboled-atpt 'ar-symboled-tild-atpt)
+(defun ar-symboled-tild-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-tild 'symboled arg))
+
+(defalias 'ar-triplebacktick-symboled-atpt 'ar-symboled-triplebacktick-atpt)
+(defun ar-symboled-triplebacktick-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-triplebacktick 'symboled arg))
+
+(defalias 'ar-underscore-symboled-atpt 'ar-symboled-underscore-atpt)
+(defun ar-symboled-underscore-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-underscore 'symboled arg))
+
+(defalias 'ar-whitespace-symboled-atpt 'ar-symboled-whitespace-atpt)
+(defun ar-symboled-whitespace-atpt (&optional arg)
+  "Returns SYMBOLED at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-whitespace 'symboled arg))
+
 (defalias 'ar-colon-bracketed-atpt 'ar-bracketed-colon-atpt)
 (defun ar-bracketed-colon-atpt (&optional arg)
   "Returns BRACKETED at point if any, nil otherwise "
@@ -11933,6 +12419,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 ;; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: start
 
 
+(defalias 'ar-symbol-alnum-atpt 'ar-alnum-symbol-atpt)
+(defun ar-alnum-symbol-atpt (&optional arg)
+  "Symbol ALNUM at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'alnum arg))
+
 (defalias 'ar-brace-alnum-atpt 'ar-alnum-brace-atpt)
 (defun ar-alnum-brace-atpt (&optional arg)
   "Brace ALNUM at point if any, nil otherwise "
@@ -11974,6 +12466,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize ALNUM at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'alnum arg))
+
+(defalias 'ar-symbol-alpha-atpt 'ar-alpha-symbol-atpt)
+(defun ar-alpha-symbol-atpt (&optional arg)
+  "Symbol ALPHA at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'alpha arg))
 
 (defalias 'ar-brace-alpha-atpt 'ar-alpha-brace-atpt)
 (defun ar-alpha-brace-atpt (&optional arg)
@@ -12017,6 +12515,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-parentize 'alpha arg))
 
+(defalias 'ar-symbol-ascii-atpt 'ar-ascii-symbol-atpt)
+(defun ar-ascii-symbol-atpt (&optional arg)
+  "Symbol ASCII at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'ascii arg))
+
 (defalias 'ar-brace-ascii-atpt 'ar-ascii-brace-atpt)
 (defun ar-ascii-brace-atpt (&optional arg)
   "Brace ASCII at point if any, nil otherwise "
@@ -12058,6 +12562,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize ASCII at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'ascii arg))
+
+(defalias 'ar-symbol-blank-atpt 'ar-blank-symbol-atpt)
+(defun ar-blank-symbol-atpt (&optional arg)
+  "Symbol BLANK at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'blank arg))
 
 (defalias 'ar-brace-blank-atpt 'ar-blank-brace-atpt)
 (defun ar-blank-brace-atpt (&optional arg)
@@ -12101,6 +12611,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-parentize 'blank arg))
 
+(defalias 'ar-symbol-cntrl-atpt 'ar-cntrl-symbol-atpt)
+(defun ar-cntrl-symbol-atpt (&optional arg)
+  "Symbol CNTRL at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'cntrl arg))
+
 (defalias 'ar-brace-cntrl-atpt 'ar-cntrl-brace-atpt)
 (defun ar-cntrl-brace-atpt (&optional arg)
   "Brace CNTRL at point if any, nil otherwise "
@@ -12142,6 +12658,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize CNTRL at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'cntrl arg))
+
+(defalias 'ar-symbol-digit-atpt 'ar-digit-symbol-atpt)
+(defun ar-digit-symbol-atpt (&optional arg)
+  "Symbol DIGIT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'digit arg))
 
 (defalias 'ar-brace-digit-atpt 'ar-digit-brace-atpt)
 (defun ar-digit-brace-atpt (&optional arg)
@@ -12185,6 +12707,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-parentize 'digit arg))
 
+(defalias 'ar-symbol-graph-atpt 'ar-graph-symbol-atpt)
+(defun ar-graph-symbol-atpt (&optional arg)
+  "Symbol GRAPH at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'graph arg))
+
 (defalias 'ar-brace-graph-atpt 'ar-graph-brace-atpt)
 (defun ar-graph-brace-atpt (&optional arg)
   "Brace GRAPH at point if any, nil otherwise "
@@ -12226,6 +12754,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize GRAPH at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'graph arg))
+
+(defalias 'ar-symbol-lower-atpt 'ar-lower-symbol-atpt)
+(defun ar-lower-symbol-atpt (&optional arg)
+  "Symbol LOWER at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'lower arg))
 
 (defalias 'ar-brace-lower-atpt 'ar-lower-brace-atpt)
 (defun ar-lower-brace-atpt (&optional arg)
@@ -12269,6 +12803,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-parentize 'lower arg))
 
+(defalias 'ar-symbol-nonascii-atpt 'ar-nonascii-symbol-atpt)
+(defun ar-nonascii-symbol-atpt (&optional arg)
+  "Symbol NONASCII at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'nonascii arg))
+
 (defalias 'ar-brace-nonascii-atpt 'ar-nonascii-brace-atpt)
 (defun ar-nonascii-brace-atpt (&optional arg)
   "Brace NONASCII at point if any, nil otherwise "
@@ -12310,6 +12850,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize NONASCII at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'nonascii arg))
+
+(defalias 'ar-symbol-print-atpt 'ar-print-symbol-atpt)
+(defun ar-print-symbol-atpt (&optional arg)
+  "Symbol PRINT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'print arg))
 
 (defalias 'ar-brace-print-atpt 'ar-print-brace-atpt)
 (defun ar-print-brace-atpt (&optional arg)
@@ -12353,6 +12899,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-parentize 'print arg))
 
+(defalias 'ar-symbol-punct-atpt 'ar-punct-symbol-atpt)
+(defun ar-punct-symbol-atpt (&optional arg)
+  "Symbol PUNCT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'punct arg))
+
 (defalias 'ar-brace-punct-atpt 'ar-punct-brace-atpt)
 (defun ar-punct-brace-atpt (&optional arg)
   "Brace PUNCT at point if any, nil otherwise "
@@ -12394,6 +12946,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize PUNCT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'punct arg))
+
+(defalias 'ar-symbol-space-atpt 'ar-space-symbol-atpt)
+(defun ar-space-symbol-atpt (&optional arg)
+  "Symbol SPACE at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'space arg))
 
 (defalias 'ar-brace-space-atpt 'ar-space-brace-atpt)
 (defun ar-space-brace-atpt (&optional arg)
@@ -12437,6 +12995,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-parentize 'space arg))
 
+(defalias 'ar-symbol-upper-atpt 'ar-upper-symbol-atpt)
+(defun ar-upper-symbol-atpt (&optional arg)
+  "Symbol UPPER at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'upper arg))
+
 (defalias 'ar-brace-upper-atpt 'ar-upper-brace-atpt)
 (defun ar-upper-brace-atpt (&optional arg)
   "Brace UPPER at point if any, nil otherwise "
@@ -12478,6 +13042,12 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Parentize UPPER at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-parentize 'upper arg))
+
+(defalias 'ar-symbol-xdigit-atpt 'ar-xdigit-symbol-atpt)
+(defun ar-xdigit-symbol-atpt (&optional arg)
+  "Symbol XDIGIT at point if any, nil otherwise "
+  (interactive "*P")
+  (ar-th-symbol 'xdigit arg))
 
 (defalias 'ar-brace-xdigit-atpt 'ar-xdigit-brace-atpt)
 (defun ar-xdigit-brace-atpt (&optional arg)
@@ -16743,6 +17313,251 @@ See doku from `sort-subr', for details.
   (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-braced-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-braced-end-position-atpt"))))
+        (erg (ignore-errors (< beg end))))
+    (when arg (message "%s" erg))
+   erg))
+
+(defun ar-symboled-atpt (&optional no-delimiters)
+  "Returns symboled at point if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+  (interactive "P")
+  (ar-th 'symboled no-delimiters))
+
+(defun ar-bounds-of-symboled-atpt (&optional no-delimiters check)
+  "Returns a list, borders of symboled if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+  (interactive "P")
+  (ar-th-bounds 'symboled no-delimiters))
+
+(defun ar-symboled-beginning-position-atpt (&optional no-delimiters check)
+  "Returns a number, beginning position SYMBOLED at point if any, nil otherwise.
+
+Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+  (interactive "P")
+  (ar-th-beg 'symboled no-delimiters))
+
+(defun ar-symboled-end-position-atpt (&optional no-delimiters check)
+  "Returns a number, end position of SYMBOLED at point if any, nil otherwise.
+
+Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+  (interactive "P")
+  (ar-th-end 'symboled no-delimiters))
+
+(defun ar-beginning-of-symboled-atpt (&optional no-delimiters check)
+  "Goto beginning of symbol or char-class SYMBOLED at point if any, nil otherwise. 
+
+Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+  (interactive "P")
+  (ar-th-gotobeg 'symboled no-delimiters))
+
+(defun ar-end-of-symboled-atpt (&optional no-delimiters check)
+  "Goto end of symbol or char-class SYMBOLED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'symboled no-delimiters))
+
+(defun ar-in-symboled-p-atpt (&optional no-delimiters check)
+  "Returns bounds of SYMBOLED at point, a list, if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'symboled no-delimiters))
+
+(defun ar-length-of-symboled-atpt (&optional no-delimiters check)
+  "Returns beginning of symbol or char-class SYMBOLED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'symboled no-delimiters))
+
+(defun ar-copy-symboled-atpt (&optional no-delimiters check)
+  "Returns a copy of SYMBOLED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-copy 'symboled no-delimiters))
+
+(defun ar-delete-symboled-atpt (&optional arg)
+  "Deletes SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-delete 'symboled arg))
+
+(defun ar-delete-symboled-in-region (beg end)
+  "Deletes SYMBOLED at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'symboled beg end))
+
+(defun ar-blok-symboled-atpt (&optional no-delimiters check)
+  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around symboled.
+  Returns blok or nil if no SYMBOLED at cursor-position. "
+  (interactive "*P")
+  (ar-th-blok 'symboled no-delimiters))
+
+(defun ar-backslashparen-symboled-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around symboled at point if any.
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*P")
+  (ar-th-backslashparen 'symboled no-delimiters))
+
+(defun ar-doublebackslash-symboled-atpt (&optional no-delimiters check)
+  "Puts doubled backslashes around SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslash 'symboled no-delimiters))
+
+(defun ar-doubleslash-symboled-atpt (&optional no-delimiters check)
+  "Puts doubled slashes around SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-doubleslash 'symboled no-delimiters))
+
+(defun ar-doublebackslashparen-symboled-atpt (&optional no-delimiters check)
+  "Provides doubleslashed parentheses around SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslashparen 'symboled no-delimiters))
+
+(defun ar-doublebacktick-symboled-atpt (&optional no-delimiters check)
+  "Provides double backticks around SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-doublebacktick 'symboled no-delimiters))
+
+(defun ar-slashparen-symboled-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'symboled no-delimiters))
+
+(defun ar-slashparen-symboled-atpt (&optional no-delimiters check)
+  "Provides slashed parentheses around SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'symboled no-delimiters))
+
+(defun ar-comment-symboled-atpt (&optional no-delimiters check)
+  "Comments SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-comment 'symboled no-delimiters))
+
+(defun ar-commatize-symboled-atpt (&optional no-delimiters check)
+  "Put a comma after SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-commatize 'symboled no-delimiters))
+
+(defun ar-quote-symboled-atpt (&optional no-delimiters check)
+  "Put a singlequote before SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-quote 'symboled no-delimiters))
+
+
+(defun ar-mark-symboled-atpt (&optional arg)
+  "Marks SYMBOLED at point if any. "
+  (interactive "P")
+  (ar-th-mark 'symboled))
+
+(defun ar-hide-symboled-atpt (&optional arg)
+  "Hides SYMBOLED at point. "
+  (interactive "P")
+  (ar-th-hide 'symboled))
+
+(defun ar-show-symboled-atpt (&optional arg)
+  "Shows hidden SYMBOLED at point. "
+  (interactive "P")
+  (ar-th-show 'symboled))
+
+(defun ar-hide-show-symboled-atpt (&optional arg)
+  "Alternatively hides or shows SYMBOLED at point. "
+  (interactive "P")
+  (ar-th-hide-show 'symboled))
+
+(defun ar-highlight-symboled-atpt-mode (&optional no-delimiters check)
+  "Toggles symboled-highlight-atpt-mode "
+  (interactive "P")
+  (ar-th-highlight 'symboled no-delimiters))
+
+(defun ar-kill-symboled-atpt (&optional no-delimiters check)
+  "Kills SYMBOLED at point if any. "
+  (interactive "*P")
+  (ar-th-kill 'symboled no-delimiters))
+
+(defun ar-curvedsinglequote-symboled-atpt (&optional no-delimiters check)
+  "Singlequotes alnum at point if any. "
+  (interactive "*P")
+  (ar-th-curvedsinglequote 'symboled no-delimiters))
+
+(defun ar-separate-symboled-atpt (&optional no-delimiters check)
+  "Separates SYMBOLED at point if any, does nothing otherwise
+inserts newlines, borders are the beginning or the end of buffer "
+  (interactive "*P")
+  (ar-th-separate 'symboled no-delimiters))
+
+(defun ar-triplequotedq-symboled-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of doublequotes around symboled. "
+  (interactive "*P")
+  (ar-th-triplequotedq 'symboled no-delimiters))
+
+(defun ar-triplequotesq-symboled-atpt (&optional no-delimiters check)
+  "Put triplequotes composed of singlequotes around symboled. "
+  (interactive "*P")
+  (ar-th-triplequotesq 'symboled no-delimiters))
+
+(defun ar-triplebacktick-symboled-atpt (&optional arg)
+  "Deletes symboled at point if any.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+  (interactive "*P")
+  (ar-th-triplebacktick 'symboled arg))
+
+(defun ar-trim-symboled-atpt (&optional no-delimiters iact check)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'symboled no-delimiters iact check t t))
+
+(defun ar-left-trim-symboled-atpt (&optional no-delimiters iact check)
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'symboled no-delimiters iact check t))
+
+(defun ar-right-trim-symboled-atpt (&optional no-delimiters iact check)
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'symboled n no-delimiters iact check nil t))
+
+(defun ar-underscore-symboled-atpt (&optional no-delimiters check)
+  "Put underscore char around SYMBOLED. "
+  (interactive "*P")
+  (ar-th-underscore 'symboled no-delimiters))
+
+;; (defalias 'ar-symboled-whitespace-atpt 'ar-whitespace-symboled-atpt)
+;; (defun ar-whitespace-symboled-atpt (&optional no-delimiters check)
+;;   "Put whitespace char around SYMBOLED. "
+;;   (interactive "*P")
+;;   (ar-th-whitespace 'symboled nil t))
+
+(defun ar-forward-symboled-atpt (&optional arg)
+  "Moves forward over SYMBOLED at point if any, does nothing otherwise.
+Returns end position of SYMBOLED "
+  (interactive "P")
+  (ar-th-forward 'symboled arg))
+
+(defun ar-backward-symboled-atpt (&optional arg)
+  "Moves backward over SYMBOLED before point if any, does nothing otherwise.
+Returns beginning position of SYMBOLED "
+  (interactive "P")
+  (ar-th-backward 'symboled arg))
+
+(defun ar-transpose-symboled-atpt (&optional arg)
+  "Transposes SYMBOLED with SYMBOLED before point if any. "
+  (interactive "*P")
+  (ar-th-transpose 'symboled arg))
+
+(defun ar-sort-symboled-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts symboleds in region, with ARG in reverse order.
+STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
+ENDKEYFUN might be a function specifying THING's end when sorting.
+With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+See doku from `sort-subr', for details.
+  "
+  (interactive "*P\nr")
+  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
+  (unless (use-region-p) (message "%s" "Region must be active!"))
+  (ar-th-sort 'symboled reverse beg end startkeyfun endkeyfun predicate)))
+
+(defun ar-check-symboled-atpt (&optional arg) 
+  "Return t if a SYMBOLED at point exists, nil otherwise "
+  (interactive "P")
+  (let* ((beg (funcall (intern-soft (concat "ar-symboled-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-symboled-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when arg (message "%s" erg))
    erg))
@@ -21612,6 +22427,16 @@ See doku from `sort-subr', for details.
   With negative argument kill whitespace(ed) at point "
   (interactive "P")
   (ar-th-base-copy-or 'whitespace no-delimiters check))
+
+(defun ar-symbol-or-copy-atpt (&optional no-delimiters check)
+  "If region is highlighted, provide THING at point with symbol(s).
+
+  Otherwise copy symbol(ed) at point
+  With NO-DELIMITERS, copy symbol(ed) without delimiters
+  With numerical argument 2 trim symbol
+  With negative argument kill symbol(ed) at point "
+  (interactive "P")
+  (ar-th-base-copy-or 'symbol no-delimiters check))
 
 (defun ar-brace-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with brace(s).
