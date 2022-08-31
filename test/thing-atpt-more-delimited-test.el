@@ -236,7 +236,7 @@
     "(defun foo1 (`&optional` beg end)"
     (goto-char (point-max))
     (search-backward "o")
-    (should (string= "`&optional`" (ar-delimited-atpt)))))w
+    (should (string= "`&optional`" (ar-delimited-atpt)))))
 
 (ert-deftest ar-minused-test-uoClPB ()
   (ar-test-with-temp-buffer-point-min
