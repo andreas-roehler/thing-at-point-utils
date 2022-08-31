@@ -18,6 +18,7 @@
 
 # Code:
 
+
 if [ $1 == e28 ]; then
     #  export EMACS="$HOME/emacs-28.0.91/src/emacs -Q"
     #  export EMACS=$(echo $(alias e28) | sed 's,alias [^~]*.\([^ ]*\).*,$HOME\1,g')
@@ -40,106 +41,792 @@ TESTDIR=test/
 export TESTDIR
 echo "\$TESTDIR: $TESTDIR"
 
+
 FILE1=beg-end.el
 FILE2=ar-subr.el
 FILE3=thingatpt-utils-map.el
 FILE4=thingatpt-utils-core.el
-FILE5=${TESTDIR}ar-thing-at-point-utils-setup-tests.el
+FILE5=thing-at-point-utils.el
+FILE6=thingatpt-highlight.el
+FILE7=thingatpt-transform-delimited.el
+FILE8=thing-unpaired-delimited-list-in-rest-list.el
+FILE9=thing-classes-in-rest-list.el
+FILE10=thing-delimited-list-in-counts-list.el
+FILE11=thing-unpaired-delimited-list-in-delimited-list.el
+FILE12=thing-classes-in-delimited-list.el
+FILE13=thing-at-point-peel.el
+FILE14=thingatpt-count-ratio.el
+FILE15=thingatpt-transform-generic-delimited.el
+FILE16=translate-paired-delimiters.el
+FILE17=thing-rest-list-in-region-only.el
+FILE18=thing-data-forms-aktiv-in-rest-list.el
+FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
+FILE20=test/thing-at-point-utils-setup-tests.el
 
-TEST1=${TESTDIR}thingatpt-utils-core-tests.el
+TEST1=test/thing-at-point-utils-tests.el
+TEST2=test/ar-paired-delimit-tests.el
+TEST3=test/ar-trim-test.el
+TEST4=test/ar-unpaired-delimited-tests.el
+TEST5=test/ar-bracketlist-atpt-ert-tests.el
+TEST6=test/ar-thing-at-point-utils-forward-tests.el
+TEST7=test/translate-paired-delimiters-test.el
+TEST8=test/ar-thing-at-point-utils-nodelim-classes-test.el
+TEST9=test/ar-tatpt-utils-delimited-tests.el
+TEST10=test/ar-list-atpt-brace-ert-tests.el
+TEST11=test/ar-paired-delimited-tests.el
+TEST12=test/ar-delimited2delimited-tests.el
+TEST13=test/ar-separate-tests.el
+TEST14=test/ar-list-atpt-parens-ert-tests.el
+TEST15=test/ar-thing-atpt-also-delimited-test.el
+TEST16=test/ar-thing-atpt-other-delimited-test.el
+TEST17=test/ar-thing-atpt-other-position-test.el
+TEST18=test/ar-thing-atpt-more-delimited-test.el
+TEST19=test/ar-thing-at-point-interactive-tests.el
+
+h1 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST1 \
+-f ert-run-tests-batch-and-exit
+}
 
 
-# if [ -s emacs24 ]; then
-#     EMACS=emacs24
-# else
-#     EMACS=emacs
-# fi
+h2 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST2 \
+-f ert-run-tests-batch-and-exit
+}
 
-echo "\$EMACS: $EMACS"
+h3 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST3 \
+-f ert-run-tests-batch-and-exit
+}
+
+h4 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST4 \
+-f ert-run-tests-batch-and-exit
+}
+
+h5 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST5 \
+-f ert-run-tests-batch-and-exit
+}
+
+h6 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST6 \
+-f ert-run-tests-batch-and-exit
+}
+
+h7 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST7 \
+-f ert-run-tests-batch-and-exit
+}
+
+h8 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST8 \
+-f ert-run-tests-batch-and-exit
+}
+
+h9 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST9 \
+-f ert-run-tests-batch-and-exit
+}
+
+h10 () {
+    $EMACS -Q --batch \
+	   --eval "(message (emacs-version))" \
+	   --eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+	   --eval "(add-to-list 'load-path (getenv \"test\"))" \
+	   -load $FILE1 \
+	   -load $FILE2 \
+	   -load $FILE3 \
+	   -load $FILE4 \
+	   -load $FILE5 \
+	   -load $FILE6 \
+	   -load $FILE7 \
+	   -load $FILE8 \
+	   -load $FILE9 \
+	   -load $FILE10 \
+	   -load $FILE11 \
+	   -load $FILE12 \
+	   -load $FILE13 \
+	   -load $FILE14 \
+	   -load $FILE15 \
+	   -load $FILE16 \
+	   -load $FILE17 \
+	   -load $FILE18 \
+	   -load $FILE20 \
+	   \
+	   -load $TEST10 \
+	   -f ert-run-tests-batch-and-exit
+}
+
+h11 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST11 \
+-f ert-run-tests-batch-and-exit
+}
+
+h12 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST12 \
+-f ert-run-tests-batch-and-exit
+}
+
+h13 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST13 \
+-f ert-run-tests-batch-and-exit
+}
+
+h14 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST14 \
+-f ert-run-tests-batch-and-exit
+}
+
+h15 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST15 \
+-f ert-run-tests-batch-and-exit
+}
+
+h16 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST16 \
+-f ert-run-tests-batch-and-exit
+}
+
+h17 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST17 \
+-f ert-run-tests-batch-and-exit
+}
+
+h18 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE19 \
+-load $FILE20 \
+\
+-load $TEST18 \
+-f ert-run-tests-batch-and-exit
+}
+
+h20 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST20 \
+-f ert-run-tests-batch-and-exit
+}
+
+h21 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST21 \
+-f ert-run-tests-batch-and-exit
+}
+
+h21 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+\
+-load $TEST21 \
+-f ert-run-tests-batch-and-exit
+}
+
+#  h22#  () {
+#     $EMACS -Q --batch \
+# --eval "(message (emacs-version))" \
+# --eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+# --eval "(add-to-list 'load-path (getenv \"test\"))" \
+# -load $FILE1 \
+# -load $FILE2 \
+# -load $FILE3 \
+# -load $FILE4 \
+# -load $FILE5 \
+# -load $FILE6 \
+# -load $FILE7 \
+# -load $FILE8 \
+# -load $FILE9 \
+# -load $FILE10 \
+# -load $FILE11 \
+# -load $FILE12 \
+# -load $FILE13 \
+# -load $FILE14 \
+# -load $FILE15 \
+# -load $FILE16 \
+# -load $FILE17 \
+# -load $FILE18 \
+# -load $FILE20 \
+# \
+# -load $TEST22 \
+# -f ert-run-tests-batch-and-exit
+# }
 
 hier () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
 -load $FILE4 \
 -load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE19 \
+-load $FILE20 \
 \
 -load $TEST1 \
+-load $TEST2 \
+-load $TEST3 \
+-load $TEST4 \
+-load $TEST5 \
+-load $TEST6 \
+-load $TEST7 \
+-load $TEST8 \
+-load $TEST9 \
+-load $TEST10 \
+-load $TEST12 \
+-load $TEST13 \
+-load $TEST14 \
+-load $TEST16 \
+-load $TEST17 \
+-load $TEST18 \
+-load $TEST19 \
 -f ert-run-tests-batch-and-exit
 }
 
-entfernt () {
-    $EMACS -Q --batch \
---eval "(message (emacs-version))" \
--load $FILE1 \
--load $FILE2 \
--load $FILE3 \
--load $FILE4 \
--load $FILE5 \
-\
--load $TEST1 \
--f ert-run-tests-batch-and-exit
-}
 
-
-WERKSTATT=${WERKSTATT:=1}
-echo "\$WERKSTATT: $WERKSTATT"
 if [ $WERKSTATT -eq 0 ]; then
 
-    while getopts 123456789abcdefghijklmpqrstuvx option
+    [ $HOME/werkstatt/thingatpt-utils-core/ar-subr.el -nt ${PWD}/ar-subr.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
+    [ $HOME/werkstatt/thingatpt-utils-core/beg-end.el -nt ${PWD}/beg-end.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
+    [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
+    [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el -nt ${PWD}/thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
+    [ $HOME/werkstatt/thingatpt-utils-core/test/thing-at-point-utils-setup-tests.el -nt ${PWD}/test/-at-point-utils-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/thing-at-point-utils-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/thing-at-point-utils-setup-tests.el $PWD/test/
+
+    while getopts 123456789abcdefghijklmnopqrstuvwxyz option
+
     do
-        case $option in
-	    1) echo "h1: Lade \$TEST1: \"$TEST1\"";hier;;
-	    # 2) echo "h2: Lade \$TEST2: \"$TEST2\"";h2;;
-	    # 3) echo "h3: Lade \$TEST3: \"$TEST3\"";h3;;
-	    # 4) echo "h4: Lade \$TEST4: \"$TEST4\"";h4;;
-	    # 5) echo "h5: Lade \$TEST5: \"$TEST5\"";h5;;
-	    # 6) echo "h6: Lade \$TEST6: \"$TEST6\"";h6;;
-	    # 7) echo "h7: Lade \$TEST7: \"$TEST7\"";h7;;
-	    # 8) echo "h8: Lade \$TEST8: \"$TEST8\"";h8;;
-	    # 9) echo "h9: Lade \$TEST9: \"$TEST9\"";h9;;
-	    # a) echo "h10: Lade \$TEST10: \"$TEST10\"";h10;;
-	    # b) echo "h11: Lade \$TEST11: \"$TEST11\"";h11;;
-	    # c) echo "h12: Lade \$TEST12: \"$TEST12\"";h12;;
-	    # d) echo "h13: Lade \$TEST13: \"$TEST13\"";h13;;
-	    # e) echo "h14: Lade \$TEST14: \"$TEST14\"";h14;;
-	    # f) echo "h15: Lade \$TEST15: \"$TEST15\"";h15;;
-	    # g) echo "h16: Lade \$TEST16: \"$TEST16\"";h16;;
-            # h) echo "h17: Running python-tests.el";h17;;
-	    # i) ;;
-	    # j) echo "h19: Lade \$TEST19: \"$TEST19\"";h19;;
-	    # k) echo "h20: Lade \$TEST20: \"$TEST20\"";h20;;
-	    l) echo "hier: Lade Testumgebung ‘hier’";hier;;
-	    #  m) echo "h20: Lade \$TEST20: \"$TEST20\"";h20;;
+	case $option in
+	    1) echo "Lade \$TEST1: \"$TEST1\"";h1;;
+	    2) echo "Lade \$TEST2: \"$TEST2\"";h2;;
+	    3) echo "Lade \$TEST3: \"$TEST3\"";h3;;
+	    4) echo "Lade \$TEST4: \"$TEST4\"";h4;;
+	    5) echo "Lade \$TEST5: \"$TEST5\"";h5;;
+	    6) echo "Lade \$TEST6: \"$TEST6\"";h6;;
+	    7) echo "Lade \$TEST7: \"$TEST7\"";h7;;
+	    8) echo "Lade \$TEST8: \"$TEST8\"";h8;;
+	    9) echo "Lade \$TEST9: \"$TEST9\"";h9;;
+	    a) echo "Lade \$TEST10: \"$TEST10\"";h10;;
+	    b) echo "Lade \$TEST11: \"$TEST11\"";h11;;
+	    c) echo "Lade \$TEST12: \"$TEST12\"";h12;;
+	    d) echo "Lade \$TEST13: \"$TEST13\"";h13;;
+	    e) echo "Lade \$TEST14: \"$TEST14\"";h14;;
+	    f) echo "Lade \$TEST15: \"$TEST15\"";h15;;
+	    g) echo "Lade \$TEST16: \"$TEST16\"";h16;;
+	    h) echo "Lade \$TEST17: \"$TEST17\"";h17;;
+	    i) echo "Lade \$TEST18: \"$TEST18\"";h18;;
+	    j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
+	    #  k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
+	    #  l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
+	    #  m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
+	    # n) echo "Lade \$TEST14: \"$TEST14\"";h14;;
+	    # o) echo "Lade \$TEST15: \"$TEST15\"";h15;;
+	    # p) echo "Lade \$TEST16: \"$TEST16\"";h16;;
+	    # q) echo "Lade \$TEST17: \"$TEST17\"";h17;;
+	    # r) echo "Lade \$TEST18: \"$TEST18\"";h18;;
+	    # s) echo "Lade \$TEST19: \"$TEST19\"";h19;;
+	    # p) echo "Lade \$TEST12: \"$TEST12\"";h12;;
+	    # q) echo "Lade \$TEST13: \"$TEST13\"";h13;;
+	    # #  r) echo "Lade \$TEST14: \"$TEST14\"";h14;;
+	    # s) echo "Lade \$TEST15: \"$TEST15\"";h15;;
+	    # t) echo "Lade \$TEST16: \"$TEST16\"";h16;;
+	    # u) echo "Lade \$TEST17: \"$TEST17\"";h17;;
+	    # v) echo "Lade \$TEST18: \"$TEST18\"";h18;;
+	    # w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
+	    x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
+	    y) echo "Lade testumgebung \"HIER\"";hier;;
 
 	esac
-	shift
-	echo "\$*: $*"
-	EMACS=$1
-	
     done
 
-    # hier1
-    # echo "Lade testumgebung \"HIER1\""
-    # hier2
-    # echo "Lade testumgebung \"HIER1\""
-
 else
-    echo "entfernt"
-    echo "\$WERKSTATT: $WERKSTATT"
+
     echo "Lade testumgebung \"ENTFERNT\""
     entfernt
+
 fi
-
-# if [ $ORT -eq 0 ]; then
-#     hier
-#     echo "Lade testumgebung \"$HOSTNAME\""
-# else
-#     echo "entfernt"
-#     echo "Lade testumgebung \"ENTFERNT\""
-#     entfernt
-# fi
-
-# -load $FILE3 \
