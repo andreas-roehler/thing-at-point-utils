@@ -9772,7 +9772,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 ;; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 
-
 (defalias 'ar-colon-alnum-atpt 'ar-alnum-colon-atpt)
 (defun ar-alnum-colon-atpt (&optional arg)
   "Returns ALNUM at point if any, nil otherwise "
@@ -11455,7 +11454,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 ;; ar-thing-at-point-utils-unpaired-paired: start
 
-
 (defalias 'ar-colon-braced-atpt 'ar-braced-colon-atpt)
 (defun ar-braced-colon-atpt (&optional arg)
   "Returns BRACED at point if any, nil otherwise "
@@ -12417,7 +12415,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (ar-th-whitespace 'parentized arg));; ar-thing-at-point-utils-unpaired-paired: end
 
 ;; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: start
-
 
 (defalias 'ar-symbol-alnum-atpt 'ar-alnum-symbol-atpt)
 (defun ar-alnum-symbol-atpt (&optional arg)
@@ -17194,7 +17191,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'braced no-delimiters))
 
-
 (defun ar-mark-braced-atpt (&optional arg)
   "Marks BRACED at point if any. "
   (interactive "P")
@@ -17438,7 +17434,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before SYMBOLED at point if any. "
   (interactive "*P")
   (ar-th-quote 'symboled no-delimiters))
-
 
 (defun ar-mark-symboled-atpt (&optional arg)
   "Marks SYMBOLED at point if any. "
@@ -17684,7 +17679,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'bracketed no-delimiters))
 
-
 (defun ar-mark-bracketed-atpt (&optional arg)
   "Marks BRACKETED at point if any. "
   (interactive "P")
@@ -17928,7 +17922,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before LESSERANGLED at point if any. "
   (interactive "*P")
   (ar-th-quote 'lesserangled no-delimiters))
-
 
 (defun ar-mark-lesserangled-atpt (&optional arg)
   "Marks LESSERANGLED at point if any. "
@@ -18174,7 +18167,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'greaterangled no-delimiters))
 
-
 (defun ar-mark-greaterangled-atpt (&optional arg)
   "Marks GREATERANGLED at point if any. "
   (interactive "P")
@@ -18418,7 +18410,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before CURVEDSINGLEQUOTED at point if any. "
   (interactive "*P")
   (ar-th-quote 'curvedsinglequoted no-delimiters))
-
 
 (defun ar-mark-curvedsinglequoted-atpt (&optional arg)
   "Marks CURVEDSINGLEQUOTED at point if any. "
@@ -18664,7 +18655,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'curveddoublequoted no-delimiters))
 
-
 (defun ar-mark-curveddoublequoted-atpt (&optional arg)
   "Marks CURVEDDOUBLEQUOTED at point if any. "
   (interactive "P")
@@ -18908,7 +18898,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before PARENTIZED at point if any. "
   (interactive "*P")
   (ar-th-quote 'parentized no-delimiters))
-
 
 (defun ar-mark-parentized-atpt (&optional arg)
   "Marks PARENTIZED at point if any. "
@@ -19158,7 +19147,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'list no-delimiters))
 
-
 (defun ar-mark-list-atpt (&optional arg)
   "Marks LIST at point if any. "
   (interactive "P")
@@ -19407,7 +19395,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'block no-delimiters))
 
-
 (defun ar-mark-block-atpt (&optional arg)
   "Marks BLOCK at point if any. "
   (interactive "P")
@@ -19651,7 +19638,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before BLOCK-OR-CLAUSE at point if any. "
   (interactive "*P")
   (ar-th-quote 'block-or-clause no-delimiters))
-
 
 (defun ar-mark-block-or-clause-atpt (&optional arg)
   "Marks BLOCK-OR-CLAUSE at point if any. "
@@ -19897,7 +19883,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'char no-delimiters))
 
-
 (defun ar-mark-char-atpt (&optional arg)
   "Marks CHAR at point if any. "
   (interactive "P")
@@ -20141,7 +20126,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before CLASS at point if any. "
   (interactive "*P")
   (ar-th-quote 'class no-delimiters))
-
 
 (defun ar-mark-class-atpt (&optional arg)
   "Marks CLASS at point if any. "
@@ -20387,7 +20371,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'clause no-delimiters))
 
-
 (defun ar-mark-clause-atpt (&optional arg)
   "Marks CLAUSE at point if any. "
   (interactive "P")
@@ -20631,7 +20614,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before DEF-OR-CLASS at point if any. "
   (interactive "*P")
   (ar-th-quote 'def-or-class no-delimiters))
-
 
 (defun ar-mark-def-or-class-atpt (&optional arg)
   "Marks DEF-OR-CLASS at point if any. "
@@ -20877,7 +20859,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'def no-delimiters))
 
-
 (defun ar-mark-def-atpt (&optional arg)
   "Marks DEF at point if any. "
   (interactive "P")
@@ -21121,7 +21102,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before DELIMITED at point if any. "
   (interactive "*P")
   (ar-th-quote 'delimited no-delimiters))
-
 
 (defun ar-mark-delimited-atpt (&optional arg)
   "Marks DELIMITED at point if any. "
@@ -21367,7 +21347,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'expression no-delimiters))
 
-
 (defun ar-mark-expression-atpt (&optional arg)
   "Marks EXPRESSION at point if any. "
   (interactive "P")
@@ -21611,7 +21590,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Put a singlequote before PARTIAL-EXPRESSION at point if any. "
   (interactive "*P")
   (ar-th-quote 'partial-expression no-delimiters))
-
 
 (defun ar-mark-partial-expression-atpt (&optional arg)
   "Marks PARTIAL-EXPRESSION at point if any. "
@@ -21857,7 +21835,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'statement no-delimiters))
 
-
 (defun ar-mark-statement-atpt (&optional arg)
   "Marks STATEMENT at point if any. "
   (interactive "P")
@@ -22102,7 +22079,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'string no-delimiters))
 
-
 (defun ar-mark-string-atpt (&optional arg)
   "Marks STRING at point if any. "
   (interactive "P")
@@ -22226,7 +22202,6 @@ See doku from `sort-subr', for details.
    erg))
 
 ;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: end
-
 
 (defun ar-colon-or-copy-atpt (&optional no-delimiters check)
   "If region is highlighted, provide THING at point with colon(s).
@@ -22837,8 +22812,6 @@ See doku from `sort-subr', for details.
           (exchange-point-and-mark)
           (kill-new (buffer-substring-no-properties beg end)))
       (message "%s" "Can't detect beginning of emacs-batch-expression"))))
-
-
 
 (provide 'thing-at-point-utils)
 ;;; thing-at-point-utils.el ends here
