@@ -35,6 +35,7 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-setup-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-core-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimit-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/thing-atpt-more-delimited-test.el\")" \
             --eval "(setq ar-switch-p nil)" \
             --eval "(sit-for 1)" \
