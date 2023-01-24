@@ -74,8 +74,8 @@
 
 (defun ar-th-test (&optional arg)
   "Checks available THING-atpt forms at point
-  Prints forms with values in bufffer `th-test',
-  with ARG also forms, which returned `nil' "
+  Prints forms with values in bufffer ‘th-test’,
+  with ARG also forms, which returned ‘nil’ "
   (interactive "p")
   (let ((pos (point))
         (arg (or arg 1))

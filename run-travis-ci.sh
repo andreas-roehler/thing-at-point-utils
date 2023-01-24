@@ -19,14 +19,26 @@
 # Code:
 
 
-if [ $1 == e28 ]; then
-    #  export EMACS="$HOME/emacs-28.0.91/src/emacs -Q"
-    #  export EMACS=$(echo $(alias e28) | sed 's,alias [^~]*.\([^ ]*\).*,$HOME\1,g')
-    export EMACS=$(echo $(alias e28) | sed 's,alias [^~]*.\([^ ]*\).*,/home/speck/\1,g')
+if [ $1 == e25 ]; then
+    export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
+elif
+    [ $1 == e26 ];then
+    export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
+elif
+    [ $1 == e27 ];then
+    #  export EMACS="$HOME/emacs-20220306/src/emacs -Q"
+    export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
+elif
+    [ $1 == e28 ];then
+    export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
 elif
     [ $1 == e29 ];then
-    #  export EMACS="$HOME/emacs-20220306/src/emacs -Q"
-    export EMACS=$(echo $(alias e29) | sed 's,alias [^~]*.\([^ ]*\).*,/home/speck/\1,g')
+    export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
+elif
+    [ $1 == e30 ];then
+    export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
+else
+    EMACS=emacs
 fi
 
 #  EMACS=emacs
@@ -819,7 +831,7 @@ if [ $WERKSTATT -eq 0 ]; then
 	    # v) echo "Lade \$TEST18: \"$TEST18\"";h18;;
 	    # w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
-	    y) echo "Lade testumgebung \"HIER\"";hier;;
+	    n) echo "Lade testumgebung \"HIER\"";hier;;
 
 	esac
     done

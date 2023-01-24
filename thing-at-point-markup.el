@@ -132,7 +132,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'beginendquote beg end))
 
 (defun ar-blok-beginendquote-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around beginendquote.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around beginendquote.
   Returns blok or nil if no BEGINENDQUOTE at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'beginendquote no-delimiters))
@@ -295,7 +295,7 @@ Returns beginning position of BEGINENDQUOTE "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -377,7 +377,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'blok beg end))
 
 (defun ar-blok-blok-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around blok.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around blok.
   Returns blok or nil if no BLOK at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'blok no-delimiters))
@@ -540,7 +540,7 @@ Returns beginning position of BLOK "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -622,7 +622,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'doublebackslashed beg end))
 
 (defun ar-blok-doublebackslashed-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublebackslashed.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around doublebackslashed.
   Returns blok or nil if no DOUBLEBACKSLASHED at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'doublebackslashed no-delimiters))
@@ -785,7 +785,7 @@ Returns beginning position of DOUBLEBACKSLASHED "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -867,7 +867,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'doublebackticked beg end))
 
 (defun ar-blok-doublebackticked-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublebackticked.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around doublebackticked.
   Returns blok or nil if no DOUBLEBACKTICKED at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'doublebackticked no-delimiters))
@@ -1030,7 +1030,7 @@ Returns beginning position of DOUBLEBACKTICKED "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -1112,7 +1112,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'doublebackslashedparen beg end))
 
 (defun ar-blok-doublebackslashedparen-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doublebackslashedparen.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around doublebackslashedparen.
   Returns blok or nil if no DOUBLEBACKSLASHEDPAREN at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'doublebackslashedparen no-delimiters))
@@ -1275,7 +1275,7 @@ Returns beginning position of DOUBLEBACKSLASHEDPAREN "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -1357,7 +1357,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'doubleslashed beg end))
 
 (defun ar-blok-doubleslashed-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doubleslashed.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around doubleslashed.
   Returns blok or nil if no DOUBLESLASHED at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'doubleslashed no-delimiters))
@@ -1520,7 +1520,7 @@ Returns beginning position of DOUBLESLASHED "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -1602,7 +1602,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'doubleslashedparen beg end))
 
 (defun ar-blok-doubleslashedparen-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around doubleslashedparen.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around doubleslashedparen.
   Returns blok or nil if no DOUBLESLASHEDPAREN at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'doubleslashedparen no-delimiters))
@@ -1765,7 +1765,7 @@ Returns beginning position of DOUBLESLASHEDPAREN "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -1847,7 +1847,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'markup beg end))
 
 (defun ar-blok-markup-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around markup.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around markup.
   Returns blok or nil if no MARKUP at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'markup no-delimiters))
@@ -2010,7 +2010,7 @@ Returns beginning position of MARKUP "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -2092,7 +2092,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'mldata beg end))
 
 (defun ar-blok-mldata-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around mldata.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around mldata.
   Returns blok or nil if no MLDATA at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'mldata no-delimiters))
@@ -2255,7 +2255,7 @@ Returns beginning position of MLDATA "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -2337,7 +2337,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'mlattribut beg end))
 
 (defun ar-blok-mlattribut-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around mlattribut.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around mlattribut.
   Returns blok or nil if no MLATTRIBUT at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'mlattribut no-delimiters))
@@ -2500,7 +2500,7 @@ Returns beginning position of MLATTRIBUT "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -2582,7 +2582,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'mltag beg end))
 
 (defun ar-blok-mltag-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around mltag.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around mltag.
   Returns blok or nil if no MLTAG at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'mltag no-delimiters))
@@ -2745,7 +2745,7 @@ Returns beginning position of MLTAG "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -2827,7 +2827,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'slashedparen beg end))
 
 (defun ar-blok-slashedparen-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around slashedparen.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around slashedparen.
   Returns blok or nil if no SLASHEDPAREN at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'slashedparen no-delimiters))
@@ -2990,7 +2990,7 @@ Returns beginning position of SLASHEDPAREN "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -3072,7 +3072,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'symbol beg end))
 
 (defun ar-blok-symbol-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around symbol.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around symbol.
   Returns blok or nil if no SYMBOL at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'symbol no-delimiters))
@@ -3235,7 +3235,7 @@ Returns beginning position of SYMBOL "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -3317,7 +3317,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'tabledata beg end))
 
 (defun ar-blok-tabledata-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around tabledata.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around tabledata.
   Returns blok or nil if no TABLEDATA at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'tabledata no-delimiters))
@@ -3480,7 +3480,7 @@ Returns beginning position of TABLEDATA "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -3562,7 +3562,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'xslstylesheet beg end))
 
 (defun ar-blok-xslstylesheet-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around xslstylesheet.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around xslstylesheet.
   Returns blok or nil if no XSLSTYLESHEET at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'xslstylesheet no-delimiters))
@@ -3725,7 +3725,7 @@ Returns beginning position of XSLSTYLESHEET "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
@@ -3807,7 +3807,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-delete-in-region 'xsltemplate beg end))
 
 (defun ar-blok-xsltemplate-atpt (&optional no-delimiters check)
-  "Puts `blok-startstring-atpt', `blok-endstring-atpt' around xsltemplate.
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around xsltemplate.
   Returns blok or nil if no XSLTEMPLATE at cursor-position. "
   (interactive "*P")
   (ar-th-blok 'xsltemplate no-delimiters))
@@ -3970,7 +3970,7 @@ Returns beginning position of XSLTEMPLATE "
 STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
 ENDKEYFUN might be a function specifying THING's end when sorting.
 With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from `sort-subr', for details.
+See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
   (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)

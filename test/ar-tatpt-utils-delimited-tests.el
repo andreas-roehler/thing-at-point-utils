@@ -234,13 +234,6 @@
 (ert-deftest ar-backslashed-kill-atpt-test ()
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
-      (forward-char 1)
-    (ar-th-kill 'backslashed)
-    (should (eq 1 (point)))))
-
-(ert-deftest ar-backslashed-kill-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
-      "\\asdf\\"
     (ar-th-kill 'backslashed)
     (should (eq 1 (point)))))
 
