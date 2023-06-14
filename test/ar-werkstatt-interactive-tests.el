@@ -25,7 +25,6 @@
 
 ;;; Code:
 
-(require 'setup-tests)
 
 (ert-deftest in-doublequoted-ignore-escaped-test ()
   (ar-test-with-temp-buffer

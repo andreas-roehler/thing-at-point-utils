@@ -46,7 +46,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (and (eq 47 (caar (ar-bounds-of-list-atpt)))(eq 101 (cdr (cadr (ar-bounds-of-list-atpt))))))))
 
 (ert-deftest ar-list-beginning-position-atpt-brace-test ()
@@ -59,7 +59,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (eq 47 (ar-list-beginning-position-atpt)))))
 
 (ert-deftest ar-list-end-position-atpt-brace-test ()
@@ -72,7 +72,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (should (eq 101 (ar-list-end-position-atpt)))))
 
 (ert-deftest ar-list-beginning-atpt-brace-test ()
@@ -98,7 +98,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (sit-for 0.1) 
+    (sit-for 0.1)
     (ar-list-end-atpt)
     (should (eq 100 (point)))))
 
@@ -178,7 +178,7 @@
     (end-of-line)
     (skip-syntax-forward "^(")
     (ar-slash-list-atpt)
-    (should (looking-back "}/")))) 
+    (should (looking-back "}/"))))
 
 (ert-deftest ar-doublebackslash-list-atpt-brace-test ()
   (py-test-with-temp-buffer-point-min

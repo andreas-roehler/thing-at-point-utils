@@ -1703,6 +1703,8 @@
 (ert-deftest ar-singlequoted-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf'asdf'"
+    (goto-char (point-max))
+    (skip-chars-backward " \t\r\n\f") 
     (forward-char -1)
     (ar-th-separate 'singlequoted)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))

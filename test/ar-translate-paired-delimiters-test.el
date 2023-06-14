@@ -25,7 +25,7 @@
 ;;; Code:
 
 (require 'translate-paired-delimiters)
-(require 'ar-thing-at-point-utils-setup-tests)
+
 
 (ert-deftest ar-paren2bracket-test ()
   (ar-test-with-temp-buffer

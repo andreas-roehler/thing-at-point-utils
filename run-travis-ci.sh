@@ -53,6 +53,7 @@ TESTDIR=test/
 export TESTDIR
 echo "\$TESTDIR: $TESTDIR"
 
+SETUP=${TESTDIR}ar-thingatpt-setup-tests.el
 
 FILE1=beg-end.el
 FILE2=ar-subr.el
@@ -73,7 +74,6 @@ FILE16=translate-paired-delimiters.el
 FILE17=thing-rest-list-in-region-only.el
 FILE18=thing-data-forms-aktiv-in-rest-list.el
 FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
-FILE20=test/thing-at-point-utils-setup-tests.el
 
 TEST1=test/thing-at-point-utils-tests.el
 TEST2=test/ar-paired-delimit-tests.el
@@ -118,8 +118,8 @@ h1 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST1 \
 -f ert-run-tests-batch-and-exit
 }
@@ -148,8 +148,8 @@ h2 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST2 \
 -f ert-run-tests-batch-and-exit
 }
@@ -177,8 +177,8 @@ h3 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST3 \
 -f ert-run-tests-batch-and-exit
 }
@@ -206,8 +206,8 @@ h4 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST4 \
 -f ert-run-tests-batch-and-exit
 }
@@ -235,8 +235,8 @@ h5 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST5 \
 -f ert-run-tests-batch-and-exit
 }
@@ -264,8 +264,8 @@ h6 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST6 \
 -f ert-run-tests-batch-and-exit
 }
@@ -293,8 +293,8 @@ h7 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST7 \
 -f ert-run-tests-batch-and-exit
 }
@@ -322,8 +322,8 @@ h8 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST8 \
 -f ert-run-tests-batch-and-exit
 }
@@ -351,8 +351,8 @@ h9 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST9 \
 -f ert-run-tests-batch-and-exit
 }
@@ -380,8 +380,7 @@ h10 () {
 	   -load $FILE16 \
 	   -load $FILE17 \
 	   -load $FILE18 \
-	   -load $FILE20 \
-	   \
+	   	   \
 	   -load $TEST10 \
 	   -f ert-run-tests-batch-and-exit
 }
@@ -409,8 +408,8 @@ h11 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST11 \
 -f ert-run-tests-batch-and-exit
 }
@@ -438,8 +437,8 @@ h12 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST12 \
 -f ert-run-tests-batch-and-exit
 }
@@ -467,8 +466,8 @@ h13 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST13 \
 -f ert-run-tests-batch-and-exit
 }
@@ -496,8 +495,8 @@ h14 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST14 \
 -f ert-run-tests-batch-and-exit
 }
@@ -525,8 +524,8 @@ h15 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST15 \
 -f ert-run-tests-batch-and-exit
 }
@@ -554,8 +553,8 @@ h16 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST16 \
 -f ert-run-tests-batch-and-exit
 }
@@ -583,8 +582,8 @@ h17 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST17 \
 -f ert-run-tests-batch-and-exit
 }
@@ -613,8 +612,8 @@ h18 () {
 -load $FILE17 \
 -load $FILE18 \
 -load $FILE19 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST18 \
 -f ert-run-tests-batch-and-exit
 }
@@ -642,8 +641,8 @@ h20 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST20 \
 -f ert-run-tests-batch-and-exit
 }
@@ -671,8 +670,8 @@ h21 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST21 \
 -f ert-run-tests-batch-and-exit
 }
@@ -700,8 +699,8 @@ h21 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST21 \
 -f ert-run-tests-batch-and-exit
 }
@@ -729,8 +728,7 @@ h21 () {
 # -load $FILE16 \
 # -load $FILE17 \
 # -load $FILE18 \
-# -load $FILE20 \
-# \
+# # \
 # -load $TEST22 \
 # -f ert-run-tests-batch-and-exit
 # }
@@ -759,8 +757,8 @@ hier () {
 -load $FILE17 \
 -load $FILE18 \
 -load $FILE19 \
--load $FILE20 \
 \
+-load $SETUP \
 -load $TEST1 \
 -load $TEST2 \
 -load $TEST3 \
@@ -788,7 +786,7 @@ if [ $WERKSTATT -eq 0 ]; then
     [ $HOME/werkstatt/thingatpt-utils-core/beg-end.el -nt ${PWD}/beg-end.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el -nt ${PWD}/thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
-    [ $HOME/werkstatt/thingatpt-utils-core/test/thing-at-point-utils-setup-tests.el -nt ${PWD}/test/-at-point-utils-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/thing-at-point-utils-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/thing-at-point-utils-setup-tests.el $PWD/test/
+    [ $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/
 
     while getopts 123456789abcdefghijklmnopqrstuvwxyz option
 

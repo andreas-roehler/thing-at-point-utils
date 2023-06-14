@@ -2836,10 +2836,6 @@
    :help " ‘ar-mark-phone-atpt’
    Mark PHONE at point if any, nil otherwise. "]
 
-  ["Mark REGION at point"  ar-mark-region-atpt
-   :help " ‘ar-mark-region-atpt’
-   Mark REGION at point if any, nil otherwise. "]
-
   ["Mark SENTENCE at point"  ar-mark-sentence-atpt
    :help " ‘ar-mark-sentence-atpt’
    Mark SENTENCE at point if any, nil otherwise. "]

@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-(require 'ar-thing-at-point-utils-setup-tests)
+
 
 ;; moved to ar-werkstatt-interactive-tests.el
 ;; as failing from shell
@@ -75,7 +75,9 @@
 (ert-deftest ar-trim-underscored-atpt-test ()
   (ar-test-with-elisp-buffer
       "_asdf_"
-    (forward-char -1) 
+    (goto-char (point-max))
+    (skip-chars-backward " \t\r\n\f")
+    (forward-char -1)
     (ar-trim-underscored-atpt)
     (goto-char (point-min))
     (should (eq (char-after) ?a))))
