@@ -143,8 +143,6 @@
   :prefix "ar-"
   :group 'fill)
 
-;; The following should be set in C-mode
-
 (defalias 'ar-comment-toggle-c-style-lor 'ar-c-toggle-comment-style-lor)
 (defun ar-c-toggle-comment-style-lor ()
   "Change the C default comment style"
@@ -542,17 +540,17 @@ region is commented alltogether. "
       (end-of-line)
       (ignore-errors
         (cond
-         ((ar-in-comment-p-lor)
+         ((ar-in-comment-p-atpt)
           (funcall ar-uncomment-function-lor copy beg end))
          (;; (empty-line-p)
           (eq 9 (char-after))
 	  (forward-line 1))
-         (t (funcall ar-comment-function-lor copy beg end)
-            (save-excursion
-              (goto-char beg)
-              (beginning-of-line)
-              (delete-region (point) (progn (skip-chars-forward " \t\r\n\f") (point)))
-              (indent-to indent))))))))
+         (t (funcall ar-comment-function-lor copy beg end))))
+      (save-excursion
+        (goto-char beg)
+        (beginning-of-line)
+        (delete-region (point) (progn (skip-chars-forward " \t\r\n\f") (point)))
+        (indent-to indent)))))
 
 (defun ar-comment-start-insert (comment-start &optional add indent no-padding)
   (let ((add (or add 0)))
