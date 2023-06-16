@@ -513,7 +513,7 @@ Comments empty lines ignoring value of `ar-comment-empty-lines-lor'"
         (funcall ar-uncomment-function-lor copy beg end)
       (funcall ar-comment-function-lor copy beg end))))
 
-(defun ar-comment-or-uncomment-lor (&optional copy beg end)
+(defun ar-comment-or-uncomment-lor (arg &optional beg end)
   "Comment line or region, unless it's already commented:
 uncomment then.
 With region: Only first line is checked for decision.
@@ -521,7 +521,7 @@ Thus if first line is not commented, but some lines below are,
 region is commented alltogether. "
   (interactive "*P")
   (save-match-data
-    (let* ((copy (or copy (eq 4 (prefix-numeric-value copy))))
+    (let* ((copy (eq 4 (prefix-numeric-value arg)))
            (beg (cond ((and beg end) beg)
                       ((region-active-p)
                        (region-beginning))
@@ -533,24 +533,61 @@ region is commented alltogether. "
 			   (copy-marker (line-end-position))
 			 (copy-marker (region-end))))
                       (t (copy-marker (line-end-position)))))
+           (erg (when copy (buffer-substring-no-properties beg end)))
            (indent (current-indentation)))
-      ;; (goto-char beg)
-      ;; (back-to-indentation)
-      ;; (setq beg (point))
-      (end-of-line)
-      (ignore-errors
-        (cond
-         ((ar-in-comment-p-atpt)
-          (funcall ar-uncomment-function-lor copy beg end))
-         (;; (empty-line-p)
-          (eq 9 (char-after))
-	  (forward-line 1))
-         (t (funcall ar-comment-function-lor copy beg end))))
-      (save-excursion
-        (goto-char beg)
-        (beginning-of-line)
-        (delete-region (point) (progn (skip-chars-forward " \t\r\n\f") (point)))
-        (indent-to indent)))))
+      (goto-char beg)
+      (push-mark)
+      (goto-char end)
+      (exchange-point-and-mark)
+      (comment-dwim copy)
+      (when copy
+        (save-excursion
+          (goto-char end)
+          (newline 1) 
+          (insert erg)))
+      (forward-line 1))))
+
+;; (defun ar-comment-or-uncomment-lor (&optional copy beg end)
+;;   "Comment line or region, unless it's already commented:
+;; uncomment then.
+;; With region: Only first line is checked for decision.
+;; Thus if first line is not commented, but some lines below are,
+;; region is commented alltogether. "
+;;   (interactive "*P")
+;;   (save-match-data
+;;     (let* ((copy (or copy (eq 4 (prefix-numeric-value copy))))
+;;            (beg (cond ((and beg end) beg)
+;;                       ((region-active-p)
+;;                        (region-beginning))
+;;                       (t (line-beginning-position))))
+;;            (end (cond ((and beg end)
+;;                        (copy-marker end))
+;;                       ((region-active-p)
+;;                        (if (eq (region-end) beg)
+;; 			   (copy-marker (line-end-position))
+;; 			 (copy-marker (region-end))))
+;;                       (t (copy-marker (line-end-position)))))
+;;            (indent (current-indentation)))
+
+;;       ;; (goto-char beg)
+;;       ;; (back-to-indentation)
+;;       ;; (setq beg (point))
+;;       (end-of-line)
+;;       (sit-for 0.1)
+;;       (ignore-errors
+;;         (cond
+;;          ((ar-in-comment-p-atpt)
+;;           (funcall ar-uncomment-function-lor copy beg end))
+;;          (;; (empty-line-p)
+;;           (eq 9 (char-after))
+;; 	  (forward-line 1))
+;;          (t (funcall ar-comment-function-lor copy beg end))))
+;;       (sit-for 0.1)
+;;       (save-excursion
+;;         (goto-char beg)
+;;         (beginning-of-line)
+;;         (delete-region (point) (progn (skip-chars-forward " \t\r\n\f") (point)))
+;;         (indent-to indent)))))
 
 (defun ar-comment-start-insert (comment-start &optional add indent no-padding)
   (let ((add (or add 0)))
