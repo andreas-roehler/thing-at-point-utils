@@ -272,10 +272,7 @@ Comments spanning multiple lines need comment-end string")
               (insert comment-end))
             (fixup-whitespace))))
       (when indent
-        (back-to-indentation)
-	;; (funcall indent-line-function)
-        ;; (ignore-errors (indent-according-to-mode))
-	)
+        (back-to-indentation))
       (forward-line 1))
     (when span
       (goto-char last)
@@ -513,39 +510,7 @@ Comments empty lines ignoring value of `ar-comment-empty-lines-lor'"
         (funcall ar-uncomment-function-lor copy beg end)
       (funcall ar-comment-function-lor copy beg end))))
 
-(defun ar-comment-or-uncomment-lor (arg &optional beg end)
-  "Comment line or region, unless it's already commented:
-uncomment then.
-With region: Only first line is checked for decision.
-Thus if first line is not commented, but some lines below are,
-region is commented alltogether. "
-  (interactive "*P")
-  (save-match-data
-    (let* ((copy (eq 4 (prefix-numeric-value arg)))
-           (beg (cond ((and beg end) beg)
-                      ((region-active-p)
-                       (region-beginning))
-                      (t (line-beginning-position))))
-           (end (cond ((and beg end)
-                       (copy-marker end))
-                      ((region-active-p)
-                       (if (eq (region-end) beg)
-			   (copy-marker (line-end-position))
-			 (copy-marker (region-end))))
-                      (t (copy-marker (line-end-position)))))
-           (erg (when copy (buffer-substring-no-properties beg end)))
-           (indent (current-indentation)))
-      (goto-char beg)
-      (push-mark)
-      (goto-char end)
-      (exchange-point-and-mark)
-      (comment-dwim copy)
-      (when copy
-        (save-excursion
-          (goto-char end)
-          (newline 1) 
-          (insert erg)))
-      (forward-line 1))))
+
 
 ;; (defun ar-comment-or-uncomment-lor (&optional copy beg end)
 ;;   "Comment line or region, unless it's already commented:
@@ -612,6 +577,45 @@ region is commented alltogether. "
   (substring comment-end (string-match (concat "[^" comment-padding "]") comment-end)))
 
 (defalias 'ar-in-comment-p-lor 'ar-in-comment-p-atpt)
+
+(defun ar-comment-or-uncomment-lor (arg &optional beg end)
+  "Comment line or region, unless it's already commented:
+uncomment then.
+With region: Only first line is checked for decision.
+Thus if first line is not commented, but some lines below are,
+region is commented alltogether. "
+  (interactive "*P")
+  (save-match-data
+    (let* ((copy (eq 4 (prefix-numeric-value arg)))
+           (beg (cond ((and beg end) beg)
+                      ((region-active-p)
+                       (region-beginning))
+                      (t (line-beginning-position))))
+           (end (cond ((and beg end)
+                       (copy-marker end))
+                      ((region-active-p)
+                       (if (eq (region-end) beg)
+			   (copy-marker (line-end-position))
+			 (copy-marker (region-end))))
+                      (t (copy-marker (line-end-position)))))
+           (erg (when copy (buffer-substring-no-properties beg end)))
+           (indent (current-indentation)))
+      (goto-char beg)
+      (push-mark)
+      (goto-char end)
+      (exchange-point-and-mark)
+      (comment-dwim copy)
+      (save-excursion
+        (goto-char beg)
+        (back-to-indentation)
+        (delete-region (line-beginning-position) (point))
+        (indent-to indent))
+      (when copy
+        (save-excursion
+          (goto-char end)
+          (newline 1)
+          (insert erg)))
+      (forward-line 1))))
 
 (provide 'ar-comment-lor)
 ;;; ar-comment-lor.el ends here
