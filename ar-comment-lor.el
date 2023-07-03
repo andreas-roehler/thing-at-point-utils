@@ -598,22 +598,17 @@ region is commented alltogether. "
 			   (copy-marker (line-end-position))
 			 (copy-marker (region-end))))
                       (t (copy-marker (line-end-position)))))
-           (erg (when copy (buffer-substring-no-properties beg end)))
-           (indent (current-indentation)))
+           (erg (when copy (buffer-substring-no-properties beg end))))
       (goto-char beg)
+      (back-to-indentation)
       (push-mark)
-      (goto-char end)
       (exchange-point-and-mark)
-      (comment-dwim copy)
-      (save-excursion
-        (goto-char beg)
-        (back-to-indentation)
-        (delete-region (line-beginning-position) (point))
-        (indent-to indent))
+      (ignore-errors (comment-or-uncomment-region beg end 1))
       (when copy
         (save-excursion
           (goto-char end)
-          (newline 1)
+          (split-line 1)
+          (forward-line 1)
           (insert erg)))
       (forward-line 1))))
 

@@ -94,6 +94,7 @@ TEST16=test/ar-thing-atpt-other-delimited-test.el
 TEST17=test/ar-thing-atpt-other-position-test.el
 TEST18=test/ar-thing-atpt-more-delimited-test.el
 TEST19=test/ar-thing-at-point-interactive-tests.el
+TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
 
 h1 () {
     $EMACS -Q --batch \
@@ -811,9 +812,9 @@ if [ $WERKSTATT -eq 0 ]; then
 	    h) echo "Lade \$TEST17: \"$TEST17\"";h17;;
 	    i) echo "Lade \$TEST18: \"$TEST18\"";h18;;
 	    j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
-	    #  k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
-	    #  l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
-	    #  m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
+	    k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
+	    # l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
+	    # m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
 	    # n) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	    # o) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	    # p) echo "Lade \$TEST16: \"$TEST16\"";h16;;
