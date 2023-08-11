@@ -48,13 +48,13 @@ Bericht enthält, in vollkommener Weise von den Mathematikern WILHELM
 MAGNUS, ÜLGA TAUS\"lKY, HELMUT ULM gelöst worden. Die Entwicklung der
 Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort von H. HASSE dargestellt.")
 
-(ert-deftest ar-forward-sentence-test-1 ()
+(ert-deftest ar-forward-sentence-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
       ;; "{asdf} {asdf} {asdf}"
       ar-atpt-forward-test-string
       (should (eq 9 (ar-forward-sentence-atpt)))))
 
-(ert-deftest ar-forward-sentence-test-2 ()
+(ert-deftest ar-forward-sentence-test-lUfVUu ()
   (ar-test-with-elisp-buffer-point-min
       ;; "{asdf} {asdf} {asdf}"
       ar-atpt-forward-test-string
@@ -64,7 +64,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
 
 ;; (search-forward "worden." nil t 1)
 
-(ert-deftest ar-doublequote-alnum-in-region-test ()
+(ert-deftest ar-doublequote-alnum-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "foo\nbar\nbaz"
     (push-mark)
@@ -72,7 +72,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
     (ar-doublequote-alnum-in-region-atpt)
     (should (eq (char-after) ?\"))))
 
-(ert-deftest ar-bracket-alnum-in-region-test ()
+(ert-deftest ar-bracket-alnum-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "foo\nbar\nbaz"
     (push-mark)
@@ -80,7 +80,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
     (ar-bracket-alnum-in-region-atpt)
     (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-bracket-bracketed-in-region-test ()
+(ert-deftest ar-bracket-bracketed-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "[foo]\n[bar]\n[baz]"
     (let ((ar-scan-whole-buffer t))
@@ -90,7 +90,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       (ar-bracket-bracketed-in-region-atpt)
       (should (looking-at "\\[\\[")))))
 
-(ert-deftest ar-doublequote-bracketed-in-region-test ()
+(ert-deftest ar-doublequote-bracketed-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "foo\n[bar]\n[baz]"
     (push-mark)
@@ -99,7 +99,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
     (goto-char (point-max))
     (should (eq (char-before) ?\"))))
 
-(ert-deftest ar-brace-doublequoted-in-region-test ()
+(ert-deftest ar-brace-doublequoted-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "\"foo1\"\n\"[bar]\""
     (let ((ar-scan-whole-buffer t))
@@ -111,7 +111,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       (forward-char -3)
       (should (eq (char-after) ?1)))))
 
-(ert-deftest ar-brace-hyphened-in-region-test ()
+(ert-deftest ar-brace-hyphened-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "-foo1-\n-bar-"
     (let ((ar-scan-whole-buffer t))

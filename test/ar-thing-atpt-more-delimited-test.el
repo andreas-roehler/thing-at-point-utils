@@ -35,13 +35,14 @@
 (ert-deftest ar-delimited-bracketed-atpt-test-CHahdS ()
   (ar-test-with-elisp-buffer
       "[[1,3,4,8]]"
+    (goto-char (point-max))
     (backward-char 2)
     (should (string= "[1,3,4,8]" (ar-delimited-atpt)))))
 
 (ert-deftest ar-trim-delimited-atpt-test-CHahdS ()
   (ar-test-with-elisp-buffer
       "(* 2 2)"
-    (goto-char (point-max)) 
+    (goto-char (point-max))
     (backward-char 2)
     (ar-trim-delimited-atpt)
     (goto-char (point-min))
@@ -100,10 +101,11 @@
    "[(&optional]"
    'emacs-lisp-mode
    ar-debug-p
+   (goto-char (point-max)) 
    (backward-char)
    (ar-trim-delimited-atpt)
    (should
-    (string=  (ar-graph-atpt) "(&optional"))))
+    (string=  (ar-graph-atpt) "\"(&optional\""))))
 
 (ert-deftest ar-delimited-xml-test-r9C7hI ()
   (ar-test
@@ -123,17 +125,17 @@
     (goto-char (point-max))
     (search-backward "Foo")
     (should
-     (string=  (ar-delimited-atpt '()) "Foo bar baz"))))
+     (string=  (ar-delimited-atpt) "\"Foo bar baz\""))))
 
 (ert-deftest ar-delimited-xml-test-Ixa2Qy ()
   (ar-test
    "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
    'sgml-mode
    ar-debug-p
+   (goto-char (point-max))
    (search-backward "stanz")
-   (ar-delimited-atpt '())
    (should
-    (string=  (ar-delimited-atpt '()) "stanza"))))
+    (string=  (ar-delimited-atpt) "\"stanza\""))))
 
 (ert-deftest ar-delimited-test-01Mzp2 ()
   (ar-test
