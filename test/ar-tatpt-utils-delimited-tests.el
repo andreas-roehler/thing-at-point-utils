@@ -1704,7 +1704,7 @@
   (ar-test-with-elisp-buffer
       "asdf'asdf'"
     (goto-char (point-max))
-    (skip-chars-backward " \t\r\n\f") 
+    (skip-chars-backward " \t\r\n\f")
     (forward-char -1)
     (ar-th-separate 'singlequoted)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
@@ -2282,6 +2282,7 @@
 (ert-deftest ar-underscored-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf_asdf_"
+    (goto-char (point-max)) 
     (forward-char -1)
     (ar-th-separate 'underscored)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
@@ -2570,6 +2571,7 @@
 (ert-deftest ar-whitespaced-separate-atpt-test ()
   (ar-test-with-elisp-buffer
       "asdf asdf "
+    (goto-char (point-max))
     (forward-char -2)
     (ar-th-separate 'whitespaced)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 5))))
