@@ -41,6 +41,7 @@
 (ert-deftest ar-trim-delimited-atpt-test-CHahdS ()
   (ar-test-with-elisp-buffer
       "(* 2 2)"
+    (goto-char (point-max)) 
     (backward-char 2)
     (ar-trim-delimited-atpt)
     (goto-char (point-min))
