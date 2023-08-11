@@ -18,7 +18,6 @@
 
 # Code:
 
-
 if [ $1 == e25 ]; then
     export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
 elif
@@ -53,7 +52,8 @@ TESTDIR=test/
 export TESTDIR
 echo "\$TESTDIR: $TESTDIR"
 
-SETUP=${TESTDIR}ar-thingatpt-setup-tests.el
+SETUP1=${TESTDIR}ar-thingatpt-setup-tests.el
+SETUP2=${TESTDIR}py-setup-ert-tests.el
 
 FILE1=beg-end.el
 FILE2=ar-subr.el
@@ -120,11 +120,11 @@ h1 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST1 \
 -f ert-run-tests-batch-and-exit
 }
-
 
 h2 () {
     $EMACS -Q --batch \
@@ -150,7 +150,8 @@ h2 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST2 \
 -f ert-run-tests-batch-and-exit
 }
@@ -179,7 +180,8 @@ h3 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST3 \
 -f ert-run-tests-batch-and-exit
 }
@@ -208,7 +210,8 @@ h4 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST4 \
 -f ert-run-tests-batch-and-exit
 }
@@ -237,7 +240,8 @@ h5 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST5 \
 -f ert-run-tests-batch-and-exit
 }
@@ -266,7 +270,8 @@ h6 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST6 \
 -f ert-run-tests-batch-and-exit
 }
@@ -295,7 +300,8 @@ h7 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST7 \
 -f ert-run-tests-batch-and-exit
 }
@@ -324,7 +330,8 @@ h8 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST8 \
 -f ert-run-tests-batch-and-exit
 }
@@ -353,7 +360,8 @@ h9 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST9 \
 -f ert-run-tests-batch-and-exit
 }
@@ -410,7 +418,8 @@ h11 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST11 \
 -f ert-run-tests-batch-and-exit
 }
@@ -439,7 +448,8 @@ h12 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST12 \
 -f ert-run-tests-batch-and-exit
 }
@@ -468,7 +478,8 @@ h13 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST13 \
 -f ert-run-tests-batch-and-exit
 }
@@ -497,7 +508,8 @@ h14 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST14 \
 -f ert-run-tests-batch-and-exit
 }
@@ -526,7 +538,8 @@ h15 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST15 \
 -f ert-run-tests-batch-and-exit
 }
@@ -555,7 +568,8 @@ h16 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST16 \
 -f ert-run-tests-batch-and-exit
 }
@@ -584,7 +598,8 @@ h17 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST17 \
 -f ert-run-tests-batch-and-exit
 }
@@ -614,7 +629,8 @@ h18 () {
 -load $FILE18 \
 -load $FILE19 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST18 \
 -f ert-run-tests-batch-and-exit
 }
@@ -643,7 +659,8 @@ h20 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST20 \
 -f ert-run-tests-batch-and-exit
 }
@@ -672,7 +689,8 @@ h21 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST21 \
 -f ert-run-tests-batch-and-exit
 }
@@ -701,7 +719,8 @@ h21 () {
 -load $FILE17 \
 -load $FILE18 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST21 \
 -f ert-run-tests-batch-and-exit
 }
@@ -759,7 +778,8 @@ hier () {
 -load $FILE18 \
 -load $FILE19 \
 \
--load $SETUP \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST1 \
 -load $TEST2 \
 -load $TEST3 \
@@ -780,7 +800,6 @@ hier () {
 -f ert-run-tests-batch-and-exit
 }
 
-
 if [ $WERKSTATT -eq 0 ]; then
 
     [ $HOME/werkstatt/thingatpt-utils-core/ar-subr.el -nt ${PWD}/ar-subr.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
@@ -788,6 +807,7 @@ if [ $WERKSTATT -eq 0 ]; then
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el -nt ${PWD}/thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/
+    [ $HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/test/py-setup-ert-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/test/py-setup-ert-tests.el $PWD/test/"; cp -u $HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/test/py-setup-ert-tests.el $PWD/test/
 
     while getopts 123456789abcdefghijklmnopqrstuvwxyz option
 
