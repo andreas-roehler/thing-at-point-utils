@@ -75,6 +75,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
 (ert-deftest ar-bracket-alnum-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "foo\nbar\nbaz"
+    (goto-char (point-max)) 
     (push-mark)
     (goto-char (point-min))
     (ar-bracket-alnum-in-region-atpt)
@@ -103,6 +104,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
   (ar-test-with-elisp-buffer
       "\"foo1\"\n\"[bar]\""
     (let ((ar-scan-whole-buffer t))
+      (goto-char (point-max))
       (push-mark)
       (goto-char (point-min))
       (ar-brace-doublequoted-in-region-atpt)
@@ -115,6 +117,7 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
   (ar-test-with-elisp-buffer
       "-foo1-\n-bar-"
     (let ((ar-scan-whole-buffer t))
+      (goto-char (point-max))
       (push-mark)
       (goto-char (point-min))
       (ar-brace-hyphened-in-region-atpt)

@@ -85,8 +85,9 @@
       "(* 2 2*)"
     'fundamental-mode
     ar-debug-p
+    (goto-char (point-max)) 
     (search-backward "2")
-   (should  (string= "(* 2 2*)" (ar-delimited-atpt)))))
+   (should  (string= "* 2 2*" (ar-delimited-atpt)))))
 
 (ert-deftest ar-delimited-test-qLwOV9 ()
   (ar-test
@@ -101,7 +102,7 @@
    "[(&optional]"
    'emacs-lisp-mode
    ar-debug-p
-   (goto-char (point-max)) 
+   (goto-char (point-max))
    (backward-char)
    (ar-trim-delimited-atpt)
    (should
