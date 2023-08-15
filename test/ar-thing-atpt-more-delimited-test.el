@@ -1,6 +1,6 @@
 ;;; ar-thing-atpt-more-delimited-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2022  Andreas Röhler
+;; Copyright (C) 2015-2023  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -85,7 +85,7 @@
       "(* 2 2*)"
     'fundamental-mode
     ar-debug-p
-    (goto-char (point-max)) 
+    (goto-char (point-max))
     (search-backward "2")
    (should  (string= "* 2 2*" (ar-delimited-atpt)))))
 
@@ -126,7 +126,7 @@
     (goto-char (point-max))
     (search-backward "Foo")
     (should
-     (string=  (ar-delimited-atpt) "\"Foo bar baz\""))))
+     (string=  (ar-delimited-atpt) ">Foo bar baz<"))))
 
 (ert-deftest ar-delimited-xml-test-Ixa2Qy ()
   (ar-test
@@ -137,15 +137,6 @@
    (search-backward "stanz")
    (should
     (string=  (ar-delimited-atpt) "\"stanza\""))))
-
-(ert-deftest ar-delimited-test-01Mzp2 ()
-  (ar-test
-      "‘@2’, ..., ‘@N’"
-    'Info-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (search-backward "2")
-    (should (string=  (ar-delimited-atpt) "‘@2’"))))
 
 (ert-deftest ar-delimited-test-1DthHC ()
   (ar-test
@@ -264,6 +255,35 @@
       (goto-char (point-max))
     (search-backward "<")
     (should (string= "<SPC>" (ar-delimited-atpt)))))
+
+(ert-deftest ar-delimited-test-01Mzp2 ()
+  (ar-test
+      "‘@2’, ..., ‘@N’"
+    'Info-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "2")
+    (should (string=  (ar-delimited-atpt) "@2’, ..., ‘@"))))
+
+(ert-deftest ar-delimited-test-959FwB ()
+  (ar-test
+      "‘22’, ..., ‘NN’"
+    'Info-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "2")
+    (should (string=  (ar-delimited-atpt) "‘22’"))))
+
+(ert-deftest ar-delimited-test-RZLuhG ()
+  (ar-test
+   "[(&optional]"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-max))
+   (backward-char)
+   (ar-trim-delimited-atpt)
+    (string=  (ar-graph-atpt) "\"[(&optional]\"")))
+
 
 (provide 'ar-thing-atpt-more-delimited-test)
 ;;; ar-thing-atpt-more-delimited-test.el ends here

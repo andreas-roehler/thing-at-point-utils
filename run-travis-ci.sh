@@ -18,6 +18,7 @@
 
 # Code:
 
+
 if [ $1 == e25 ]; then
     export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
 elif
@@ -48,7 +49,7 @@ echo "\$*: $*"
 PDIR=$PWD
 echo "\$PWD: $PWD"
 
-TESTDIR=test/
+TESTDIR=$PWD/test/
 export TESTDIR
 echo "\$TESTDIR: $TESTDIR"
 
@@ -74,6 +75,8 @@ FILE16=translate-paired-delimiters.el
 FILE17=thing-rest-list-in-region-only.el
 FILE18=thing-data-forms-aktiv-in-rest-list.el
 FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
+FILE20=ar-sexp.el
+FILE21=ar-comment-lor.el
 
 TEST1=test/thing-at-point-utils-tests.el
 TEST2=test/ar-paired-delimit-tests.el
@@ -95,6 +98,7 @@ TEST17=test/ar-thing-atpt-other-position-test.el
 TEST18=test/ar-thing-atpt-more-delimited-test.el
 TEST19=test/ar-thing-at-point-interactive-tests.el
 TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
+TEST21=test/ar-sexp-tests.el
 
 h1 () {
     $EMACS -Q --batch \
@@ -119,12 +123,14 @@ h1 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
 -load $TEST1 \
 -f ert-run-tests-batch-and-exit
 }
+
 
 h2 () {
     $EMACS -Q --batch \
@@ -149,6 +155,7 @@ h2 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -179,6 +186,7 @@ h3 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -209,6 +217,7 @@ h4 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -239,6 +248,7 @@ h5 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -269,6 +279,7 @@ h6 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -299,6 +310,7 @@ h7 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -329,6 +341,7 @@ h8 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -359,6 +372,7 @@ h9 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -417,6 +431,7 @@ h11 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -447,6 +462,7 @@ h12 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -477,6 +493,7 @@ h13 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -507,6 +524,7 @@ h14 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -537,6 +555,7 @@ h15 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -567,6 +586,7 @@ h16 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -597,6 +617,8 @@ h17 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
+-load $FILE21 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -628,6 +650,7 @@ h18 () {
 -load $FILE17 \
 -load $FILE18 \
 -load $FILE19 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -658,6 +681,8 @@ h20 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
+-load $FILE21 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -688,6 +713,8 @@ h21 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -695,7 +722,7 @@ h21 () {
 -f ert-run-tests-batch-and-exit
 }
 
-h21 () {
+h22 () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
 --eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
@@ -718,10 +745,11 @@ h21 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
--load $TEST21 \
+-load $TEST22 \
 -f ert-run-tests-batch-and-exit
 }
 
@@ -777,6 +805,7 @@ hier () {
 -load $FILE17 \
 -load $FILE18 \
 -load $FILE19 \
+-load $FILE20 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -800,6 +829,7 @@ hier () {
 -f ert-run-tests-batch-and-exit
 }
 
+
 if [ $WERKSTATT -eq 0 ]; then
 
     [ $HOME/werkstatt/thingatpt-utils-core/ar-subr.el -nt ${PWD}/ar-subr.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
@@ -807,7 +837,6 @@ if [ $WERKSTATT -eq 0 ]; then
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el -nt ${PWD}/thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/
-    [ $HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/test/py-setup-ert-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/test/py-setup-ert-tests.el $PWD/test/"; cp -u $HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/test/py-setup-ert-tests.el $PWD/test/
 
     while getopts 123456789abcdefghijklmnopqrstuvwxyz option
 
@@ -833,7 +862,7 @@ if [ $WERKSTATT -eq 0 ]; then
 	    i) echo "Lade \$TEST18: \"$TEST18\"";h18;;
 	    j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
-	    # l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
+	    l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
 	    # m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
 	    # n) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	    # o) echo "Lade \$TEST15: \"$TEST15\"";h15;;

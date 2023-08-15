@@ -2673,7 +2673,7 @@
 
     The commands `which latex` and `which dvisvgm` must both return paths to the executables. `dvisvgm` should be present as part of your LaTeX installation, but it's also available [here](https://dvisvgm.de/Downloads).
 "
-    'markdown-mode
+    'fundamental-mode
     ar-debug-p
     (goto-char (point-max))
     (search-backward "dvisvgm" nil t 3)
