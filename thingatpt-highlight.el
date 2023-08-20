@@ -62,7 +62,7 @@
 ;; (setq highlight-thing-beg-function 'ar-word-beginning-position-atpt)
 ;; (setq highlight-thing-end-function 'ar-word-end-position-atpt)
 
-(defun ar-th-highlight (thing &optional arg iact) 
+(defun ar-th-highlight (thing &optional arg) 
   (setq highlight-thing-beg-function (intern-soft (concat "ar-" (format "%s" thing) "-beginning-position-atpt")))
   (setq highlight-thing-end-function (intern-soft (concat "ar-" (format "%s" thing) "-end-position-atpt")))
   (highlight-thing-minor-mode))

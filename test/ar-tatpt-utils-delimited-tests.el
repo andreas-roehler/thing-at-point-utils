@@ -384,7 +384,7 @@
 (ert-deftest  ar-blok-dollared-atpt-test-2-kZaJVd ()
   (ar-test-with-elisp-buffer
       "$asdf$"
-    (goto-char (point-max)) 
+    (goto-char (point-max))
     (forward-char -1)
     (ar-th-blok 'dollared)
     (should (eq ?} (char-before)))))
@@ -2650,6 +2650,7 @@
   (py-test-with-temp-buffer
       "\[\"<3\", \" Haskell\"]"
     (goto-char (point-max))
+    (skip-chars-backward " \t\r\n\f") 
     (backward-char)
     (should (string= "\[\"<3\", \" Haskell\"]" (ar-delimited-atpt)))))
 

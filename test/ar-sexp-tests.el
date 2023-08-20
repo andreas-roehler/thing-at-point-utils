@@ -70,8 +70,9 @@
     ar-debug-p
     (goto-char (point-min))
     (ar-forward-sexp)
-    (should (eobp))
-    (should (eq (char-before) ?\)))))
+    (should (eq (char-before) ?\)))
+    (should (eq (char-before (1- (point))) ?\)))
+    ))
 
 (ert-deftest ar-emacs-fundamental-test-tqmEcC ()
   (ar-test-point-min
@@ -301,7 +302,9 @@
    ar-debug-p
    (goto-char (point-min))
    (search-forward "[" nil t 2)
-   (ar-forward-sexp)
+   (ar-forward-sexp-intern)
+   ; (ar-forward-sexp)
+   (message "ar-sexp-test-uwGqMo point should be 15: %s" (point))
    (should (eq (char-after) ?\)))
    (should (eq (char-before) ?>))
    ))

@@ -27,10 +27,10 @@
     (delete-region beg end)
     (insert erg)))
 
-(defun ar-peel-list-atpt (&optional iact arg)  
+(defun ar-peel-list-atpt (&optional arg)  
  "Remove list at point, preserve inner lists. "
   (interactive "*p")
-  (ar-th-peel 'list arg iact))
+  (ar-th-peel 'list arg))
 
 
 

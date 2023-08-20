@@ -24,7 +24,6 @@
 
 ;;; Code:
 
-
 (ert-deftest ar-bracketlist-atpt-test ()
   (py-test-with-temp-buffer-point-min
       "[[1, 2]]\n"
@@ -326,15 +325,20 @@
     (ar-left-trim-list-atpt)
     (should (eq (char-after) ?1))))
 
-(ert-deftest ar-double-bracketlist-atpt-test-1 ()
+(ert-deftest ar-double-bracketlist-atpt-test-2kUrYf ()
   (ar-test-with-temp-buffer
       "[[http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html]] and"
       (search-backward "B" nil t 1)
-    (let* ((bounds (ar-bounds-of-bracketed-atpt))
-	   (beg (caar bounds))
-	   (end (cadr (cadr bounds))))
-      (should (eq 51 (- end beg))))))
+    (should (eq 2 (caar (ar-bounds-of-bracketed-atpt))))))
 
+(ert-deftest ar-double-bracketlist-atpt-test-BLAUkn ()
+  (ar-test-with-temp-buffer
+      "[[http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html]] and"
+      (search-backward "B" nil t 1)
+    (should (eq 53 (cadr (cadr (ar-bounds-of-bracketed-atpt)))))))
+
+
+      ;; (should (eq 53 (cadr (cadr bounds)))))))
 
 (provide 'ar-bracketlist-atpt-ert-tests)
 

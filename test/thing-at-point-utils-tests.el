@@ -70,7 +70,8 @@
       "(car (cons 1 2))"
     (forward-char 1)
     (skip-chars-forward "^(")
-    (should (eq 6 (car-safe (ar-beginning-of-list-atpt))))))
+    (forward-char 1) 
+    (should (eq 6 (ar-beginning-of-list-atpt)))))
 
 (ert-deftest ar-trim-underscored-atpt-test ()
   (ar-test-with-elisp-buffer

@@ -238,7 +238,7 @@
       " ‘M-x append-to-register <RET> R’ can use ‘C-x r +’
  "
       (goto-char (point-min))
-    (forward-char 2)
+    (search-forward "a") 
     (should (string= "‘M-x append-to-register <RET> R’" (ar-delimited-atpt)))))
 
 (ert-deftest ar-less-than-greater-than-test-uoClPB ()

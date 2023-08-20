@@ -22,6 +22,8 @@
 
 ;; (require 'org)
 
+(defvar py-debug-p nil
+  "Internal use only." )
 ;; (setq py-debug-p t)
 
 (if (file-readable-p "../python-components-mode.el")

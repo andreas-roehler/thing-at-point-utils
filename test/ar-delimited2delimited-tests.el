@@ -1,7 +1,7 @@
 ;;; ar-delimited2delimited-tests.el --- delimited to delimited tests -*- lexical-binding: t; -*-
 
 
-;; Copyright (C) 2010-2022 Andreas Röhler, unless
+;; Copyright (C) 2010-2023 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
@@ -121,6 +121,103 @@
     (goto-char (point-max))
     (forward-char -2)
     (ar-braced2whitespaced-atpt)
+    (should (eq (char-before) ? ))))
+
+
+(ert-deftest ar-symboled2backslashed-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2backslashed-atpt)
+    (should (eq (char-before) ?\\))))
+
+(ert-deftest ar-symboled2backticked-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2backticked-atpt)
+    (should (eq (char-before) ?`))))
+
+(ert-deftest ar-symboled2coloned-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2coloned-atpt)
+    (should (eq (char-before) ?:))))
+
+(ert-deftest ar-symboled2dollared-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2dollared-atpt)
+    (should (eq (char-before) ?$))))
+
+(ert-deftest ar-symboled2doublequoted-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2doublequoted-atpt)
+    (should (eq (char-before) ?\"))))
+
+(ert-deftest ar-symboled2equalized-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2equalized-atpt)
+    (should (eq (char-before) ?=))))
+
+(ert-deftest ar-symboled2hyphened-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2hyphened-atpt)
+    (should (eq (char-before) ?-))))
+
+(ert-deftest ar-symboled2singlequoted-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2singlequoted-atpt)
+    (should (eq (char-before) ?'))))
+
+(ert-deftest ar-symboled2slashed-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2slashed-atpt)
+    (should (eq (char-before) ?/))))
+
+(ert-deftest ar-symboled2stared-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2stared-atpt)
+    (should (eq (char-before) ?*))))
+
+(ert-deftest ar-symboled2underscored-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2underscored-atpt)
+    (should (eq (char-before) ?_))))
+
+(ert-deftest ar-symboled2whitespaced-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2whitespaced-atpt)
     (should (eq (char-before) ? ))))
 
 (ert-deftest ar-bracketed2backslashed-atpt-test ()
@@ -707,6 +804,14 @@
     (ar-backslashed2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-backslashed2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "\\asdf\\"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-backslashed2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-backslashed2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "\\asdf\\"
@@ -771,6 +876,41 @@
     (ar-backticked2bracketed-atpt)
     (should (eq (char-before) ?\]))))
 
+
+(ert-deftest ar-coloned2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    ":asdf:"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-coloned2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
+
+(ert-deftest ar-doublequoted2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "\"asdf\""
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-doublequoted2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
+(ert-deftest ar-backticked2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf`"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-backticked2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
+
+(ert-deftest ar-dollared2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "$asdf$"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-dollared2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-backticked2lesserangled-atpt-test ()
   (ar-test-with-temp-buffer
     "`asdf`"
@@ -818,6 +958,14 @@
     (forward-char -2)
     (ar-coloned2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-coloned2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    ":asdf:"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-coloned2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-coloned2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -875,6 +1023,14 @@
     (ar-dollared2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-dollared2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "$asdf$"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-dollared2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-dollared2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "$asdf$"
@@ -930,6 +1086,14 @@
     (forward-char -2)
     (ar-doublequoted2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-doublequoted2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "\"asdf\""
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-doublequoted2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-doublequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -987,6 +1151,14 @@
     (ar-equalized2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-equalized2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "=asdf="
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-equalized2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-equalized2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "=asdf="
@@ -1042,6 +1214,14 @@
     (forward-char -2)
     (ar-hyphened2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-hyphened2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "-asdf-"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-hyphened2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-hyphened2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1099,6 +1279,14 @@
     (ar-singlequoted2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-singlequoted2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "'asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-singlequoted2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-singlequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "'asdf'"
@@ -1154,6 +1342,14 @@
     (forward-char -2)
     (ar-slashed2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-slashed2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "/asdf/"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-slashed2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-slashed2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1211,6 +1407,14 @@
     (ar-stared2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-stared2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "*asdf*"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-stared2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-stared2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "*asdf*"
@@ -1266,6 +1470,14 @@
     (forward-char -2)
     (ar-underscored2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-underscored2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "_asdf_"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-underscored2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-underscored2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1323,6 +1535,14 @@
     (ar-whitespaced2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-whitespaced2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    " asdf "
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-whitespaced2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-whitespaced2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     " asdf "
@@ -1370,6 +1590,14 @@
     (forward-char -2)
     (ar-whitespaced2parentized-atpt)
     (should (eq (char-before) ?\)))))
+
+(ert-deftest ar-braced2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "{asdf}"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-braced2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-braced2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1427,6 +1655,14 @@
     (ar-bracketed2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-bracketed2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "[asdf]"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-bracketed2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-bracketed2lesserangled-atpt-test ()
   (ar-test-with-temp-buffer
     "[asdf]"
@@ -1474,6 +1710,14 @@
     (forward-char -2)
     (ar-lesserangled2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-lesserangled2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "<asdf>"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-lesserangled2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-lesserangled2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1523,6 +1767,14 @@
     (ar-greaterangled2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-greaterangled2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    ">asdf<"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-greaterangled2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-greaterangled2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     ">asdf<"
@@ -1570,6 +1822,14 @@
     (forward-char -2)
     (ar-curvedsinglequoted2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-curvedsinglequoted2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "‘asdf’"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-curvedsinglequoted2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-curvedsinglequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1619,6 +1879,14 @@
     (ar-curveddoublequoted2braced-atpt)
     (should (eq (char-before) ?}))))
 
+(ert-deftest ar-curveddoublequoted2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "“asdf”"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-curveddoublequoted2symboled-atpt)
+    (should (eq (char-before) ?'))))
+
 (ert-deftest ar-curveddoublequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "“asdf”"
@@ -1666,6 +1934,14 @@
     (forward-char -2)
     (ar-parentized2braced-atpt)
     (should (eq (char-before) ?}))))
+
+(ert-deftest ar-parentized2symboled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "(asdf)"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-parentized2symboled-atpt)
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-parentized2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -2361,8 +2637,7 @@
     (goto-char (point-max))
     (forward-char -2)
     (ar-singlequoted2doublequoted-atpt)
-    (should (eq (char-before) ?\"))
-    (should (eq (char-before (1- (point))) ?f))))
+    (should (eq (char-before) ?\"))))
 
 (ert-deftest ar-singlequoted2equalized-atpt-test ()
   (ar-test-with-temp-buffer
