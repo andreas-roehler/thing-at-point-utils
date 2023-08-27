@@ -1,6 +1,5 @@
 ;;; ar-delimited2delimited-tests.el --- delimited to delimited tests -*- lexical-binding: t; -*-
 
-
 ;; Copyright (C) 2010-2023 Andreas Röhler, unless
 ;; indicated otherwise
 
@@ -122,7 +121,6 @@
     (forward-char -2)
     (ar-braced2whitespaced-atpt)
     (should (eq (char-before) ? ))))
-
 
 (ert-deftest ar-symboled2backslashed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -876,16 +874,6 @@
     (ar-backticked2bracketed-atpt)
     (should (eq (char-before) ?\]))))
 
-
-(ert-deftest ar-coloned2symboled-atpt-test ()
-  (ar-test-with-temp-buffer
-    ":asdf:"
-    (goto-char (point-max))
-    (forward-char -2)
-    (ar-coloned2symboled-atpt)
-    (should (eq (char-before) ?'))))
-
-
 (ert-deftest ar-doublequoted2symboled-atpt-test ()
   (ar-test-with-temp-buffer
     "\"asdf\""
@@ -901,7 +889,6 @@
     (forward-char -2)
     (ar-backticked2symboled-atpt)
     (should (eq (char-before) ?'))))
-
 
 (ert-deftest ar-dollared2symboled-atpt-test ()
   (ar-test-with-temp-buffer
@@ -1023,14 +1010,6 @@
     (ar-dollared2braced-atpt)
     (should (eq (char-before) ?}))))
 
-(ert-deftest ar-dollared2symboled-atpt-test ()
-  (ar-test-with-temp-buffer
-    "$asdf$"
-    (goto-char (point-max))
-    (forward-char -2)
-    (ar-dollared2symboled-atpt)
-    (should (eq (char-before) ?'))))
-
 (ert-deftest ar-dollared2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
     "$asdf$"
@@ -1086,14 +1065,6 @@
     (forward-char -2)
     (ar-doublequoted2braced-atpt)
     (should (eq (char-before) ?}))))
-
-(ert-deftest ar-doublequoted2symboled-atpt-test ()
-  (ar-test-with-temp-buffer
-    "\"asdf\""
-    (goto-char (point-max))
-    (forward-char -2)
-    (ar-doublequoted2symboled-atpt)
-    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-doublequoted2bracketed-atpt-test ()
   (ar-test-with-temp-buffer
@@ -3038,6 +3009,38 @@
     (forward-char -2)
     (ar-whitespaced2underscored-atpt)
     (should (eq (char-before) ?_))))
+
+(ert-deftest ar-symboled2greaterangled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2greaterangled-atpt)
+    (should (eq (char-before) ?<))))
+
+(ert-deftest ar-symboled2lesserangled-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2lesserangled-atpt)
+    (should (eq (char-before) ?>))))
+
+(ert-deftest ar-symboled2braced-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2braced-atpt)
+    (should (eq (char-before) ?}))))
+
+(ert-deftest ar-symboled2bracketed-atpt-test ()
+  (ar-test-with-temp-buffer
+    "`asdf'"
+    (goto-char (point-max))
+    (forward-char -2)
+    (ar-symboled2bracketed-atpt)
+    (should (eq (char-before) ?\]))))
 
 (provide 'ar-delimited2delimited-tests)
 ;;; ar-delimited2delimited-tests.el ends here

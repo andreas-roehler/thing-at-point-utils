@@ -255,7 +255,7 @@
   (ar-test-with-elisp-buffer
       "asdf\\asdf\\"
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'backslashed)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -316,7 +316,8 @@
   (ar-test-with-elisp-buffer-point-min
       "\\asdf\\"
       (forward-char 1)
-    (should (ar-th-forward 'backslashed))))
+    (ar-th-forward 'backslashed)
+    (should (eobp))))
 
 (ert-deftest ar-dollared-atpt-old-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
@@ -385,7 +386,7 @@
   (ar-test-with-elisp-buffer
       "$asdf$"
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-blok 'dollared)
     (should (eq ?} (char-before)))))
 
@@ -554,7 +555,7 @@
   (ar-test-with-elisp-buffer
       "asdf$asdf$"
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'dollared)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -842,7 +843,7 @@
   (ar-test-with-elisp-buffer
       "asdf\"asdf\""
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'doublequoted)
     (forward-line -1)
     (should (bolp))))
@@ -1132,7 +1133,7 @@
   (ar-test-with-elisp-buffer
       "asdf=asdf="
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'equalized)
         (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -1421,7 +1422,7 @@
   (ar-test-with-elisp-buffer
       "asdf-asdf-"
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'hyphened)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -1711,7 +1712,7 @@
       "asdf'asdf'"
     (goto-char (point-max))
     (skip-chars-backward " \t\r\n\f")
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'singlequoted)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -2000,7 +2001,7 @@
   (ar-test-with-elisp-buffer
       "asdf/asdf/"
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'slashed)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -2290,7 +2291,7 @@
   (ar-test-with-elisp-buffer
       "asdf_asdf_"
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-th-separate 'underscored)
     (should (eq (length (buffer-substring-no-properties (line-beginning-position) (line-end-position))) 6))))
 
@@ -2650,7 +2651,7 @@
   (py-test-with-temp-buffer
       "\[\"<3\", \" Haskell\"]"
     (goto-char (point-max))
-    (skip-chars-backward " \t\r\n\f") 
+    (skip-chars-backward " \t\r\n\f")
     (backward-char)
     (should (string= "\[\"<3\", \" Haskell\"]" (ar-delimited-atpt)))))
 

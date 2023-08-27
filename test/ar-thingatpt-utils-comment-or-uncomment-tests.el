@@ -24,6 +24,7 @@
 
 (require 'ar-subr)
 (require 'ar-thingatpt-setup-tests)
+(require 'ar-comment-lor)
 
 ;; (setq ar-debug-p t)
 
@@ -70,6 +71,23 @@ erg = nltk.pos_tag(res)
     (should (eq 0 (current-indentation)))
     (should (eq (char-after) ?f))))
 
+(ert-deftest ar-kill-comment-test-5gVmaJ ()
+  (ar-test-with-elisp-buffer
+      "defun foo1 (&optional beg end)
+  \" \"
+  (interactive \"*\")
+  ;; (let ((beg (cond (beg)
+  ;;                  ((use-region-p)
+  ;;                   (region-beginning))
+  ;;                  (t (point-min))))
+  ;;       (end (cond (end (copy-marker end))
+  ;;                  ((use-region-p)
+  ;;                   (copy-marker (region-end)))
+  ;;                  (t (copy-marker (point-max))))))"
+    (goto-char (point-max))
+    (search-backward ";; (let")
+    (ar-kill-comment-atpt)
+    (should (eobp))))
 
 (provide 'ar-thingatpt-utils-comment-or-uncomment-tests)
 ;;; ar-thingatpt-utils-comment-or-uncomment-tests.el ends here

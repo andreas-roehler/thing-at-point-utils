@@ -78,7 +78,7 @@
       "_asdf_"
     (goto-char (point-max))
     (skip-chars-backward " \t\r\n\f")
-    (forward-char -1)
+    (forward-char -2)
     (ar-trim-underscored-atpt)
     (goto-char (point-min))
     (should (eq (char-after) ?a))))

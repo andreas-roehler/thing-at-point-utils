@@ -69,7 +69,10 @@ Argument CHAR: the char after cursor position."
           (t
            (pcase (char-after)
              (?\{ (ar-forward-braced-atpt))
-             (?\( (ar-forward-parentized-atpt))
+             (?\(
+              ;; (message "ar-generic-match-p: %s" ar-generic-match-p)
+              (ar-forward-parentized-atpt)
+              )
              (?\[ (ar-forward-bracketed-atpt))
              (_
               (cond ((or (string-match (char-to-string (char-after)) th-beg-delimiter)(looking-at ar-delimiters-atpt))

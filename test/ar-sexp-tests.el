@@ -318,5 +318,17 @@
     (ar-forward-sexp)
     (should (eq (char-after) ?\())))
 
+(ert-deftest ar-ert-forward-sexp-test-2fegct ()
+  (ar-test-with-elisp-buffer-point-min
+"(defun foo ()
+  \"Closing paren matched here: )\"
+  )"
+      (goto-char (point-min))
+    (ar-forward-sexp)
+    (should-not (nth 3 (parse-partial-sexp (point-min) (point))))
+    (should (eq (char-before) ?\)))))
+
+
+
 (provide 'ar-sexp-tests)
 ;; ar-sexp-tests.el ends here
