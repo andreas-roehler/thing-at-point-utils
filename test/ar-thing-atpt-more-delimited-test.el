@@ -106,7 +106,7 @@
    (backward-char)
    (ar-trim-delimited-atpt)
    (should
-    (string=  (ar-graph-atpt) "\"(&optional\""))))
+    (string=  (ar-graph-atpt) "(&optional"))))
 
 (ert-deftest ar-delimited-xml-test-r9C7hI ()
   (ar-test

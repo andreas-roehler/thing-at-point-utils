@@ -142,10 +142,9 @@ args = sys.argv"
 
 (ert-deftest ar-in-doublequoted-atpt-test ()
   (ar-test-with-elisp-buffer
-      ";; (setq foo
-\"asdf\""
+      "(setq foo \"asdf\""
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (should (eq 6 (length (ar-doublequoted-atpt))))))
 
 (ert-deftest ar-in-doublequoted-no-delimiters-test ()
@@ -153,15 +152,15 @@ args = sys.argv"
       ";; (setq foo
 \"asdf\""
     (goto-char (point-max))
-    (forward-char -1)
-    (should (eq 6 (length (ar-doublequoted-atpt nil t))))))
+    (forward-char -2)
+    (should (eq 4 (length (ar-doublequoted-atpt t))))))
 
 (ert-deftest ar-in-string-atpt-test-pXDGrZ ()
   (ar-test-with-elisp-buffer
       ";; (setq foo
 \"asdf\""
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (should (eq 6 (length (ar-string-atpt))))))
 
 (ert-deftest ar-in-string-no-delimiters-test ()
@@ -169,7 +168,7 @@ args = sys.argv"
       ";; (setq foo
 \"asdf\""
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (should (eq 4 (length (ar-string-atpt '(4)))))))
 
 (ert-deftest ar-peel-list-atpt-test ()
@@ -183,11 +182,11 @@ args = sys.argv"
       (sit-for 0.1)
       (should (looking-at "(baz"))))
 
-(ert-deftest ar-kill-doublequoted-atpt-test-1 ()
+(ert-deftest ar-kill-doublequoted-atpt-test-R1feEn () ()
   (ar-test-with-elisp-buffer
       "\"foo\""
     (goto-char (point-max))
-    (forward-char -1)
+    (forward-char -2)
     (ar-kill-doublequoted-atpt)
     (should (eobp))))
 
@@ -207,7 +206,7 @@ args = sys.argv"
       (ar-kill-doublequoted-atpt)
       (should (eq (char-after) ?\)))))
 
-(ert-deftest doublequoted-unpaired-delimited-test-1 ()
+(ert-deftest doublequoted-unpaired-delimited-test-vMnHFn ()
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (text-mode)

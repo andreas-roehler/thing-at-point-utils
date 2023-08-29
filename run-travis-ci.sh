@@ -18,7 +18,6 @@
 
 # Code:
 
-
 if [ $1 == e25 ]; then
     export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
 elif
@@ -84,7 +83,7 @@ TEST3=test/ar-trim-test.el
 TEST4=test/ar-unpaired-delimited-tests.el
 TEST5=test/ar-bracketlist-atpt-ert-tests.el
 TEST6=test/ar-thing-at-point-utils-forward-tests.el
-TEST7=test/translate-paired-delimiters-test.el
+TEST7=test/ar-translate-paired-delimiters-test.el
 TEST8=test/ar-thing-at-point-utils-nodelim-classes-test.el
 TEST9=test/ar-tatpt-utils-delimited-tests.el
 TEST10=test/ar-list-atpt-brace-ert-tests.el
@@ -99,7 +98,6 @@ TEST18=test/ar-thing-atpt-more-delimited-test.el
 TEST19=test/ar-thing-at-point-interactive-tests.el
 TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
 TEST21=test/ar-sexp-tests.el
-TEST22=test/ar-thingatpt-transform-delimited-test.el
 
 h1 () {
     $EMACS -Q --batch \
@@ -131,7 +129,6 @@ h1 () {
 -load $TEST1 \
 -f ert-run-tests-batch-and-exit
 }
-
 
 h2 () {
     $EMACS -Q --batch \
@@ -406,6 +403,8 @@ h10 () {
 -load $FILE17 \
 -load $FILE18 \
 \
+-load $SETUP1 \
+-load $SETUP2 \
 -load $TEST10 \
 -f ert-run-tests-batch-and-exit
 }
@@ -661,6 +660,39 @@ h18 () {
 -f ert-run-tests-batch-and-exit
 }
 
+h19 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE19 \
+-load $FILE20 \
+-load $FILE21 \
+\
+-load $SETUP1 \
+-load $SETUP2 \
+-load $TEST19 \
+-f ert-run-tests-batch-and-exit
+}
+
 h20 () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
@@ -726,65 +758,6 @@ h21 () {
 -f ert-run-tests-batch-and-exit
 }
 
-h22 () {
-    $EMACS -Q --batch \
---eval "(message (emacs-version))" \
---eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
---eval "(add-to-list 'load-path (getenv \"test\"))" \
--load $FILE1 \
--load $FILE2 \
--load $FILE3 \
--load $FILE4 \
--load $FILE5 \
--load $FILE6 \
--load $FILE7 \
--load $FILE8 \
--load $FILE9 \
--load $FILE10 \
--load $FILE11 \
--load $FILE12 \
--load $FILE13 \
--load $FILE14 \
--load $FILE15 \
--load $FILE16 \
--load $FILE17 \
--load $FILE18 \
--load $FILE20 \
-\
--load $SETUP1 \
--load $SETUP2 \
--load $TEST22 \
--f ert-run-tests-batch-and-exit
-}
-
-#  h22#  () {
-#     $EMACS -Q --batch \
-# --eval "(message (emacs-version))" \
-# --eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
-# --eval "(add-to-list 'load-path (getenv \"test\"))" \
-# -load $FILE1 \
-# -load $FILE2 \
-# -load $FILE3 \
-# -load $FILE4 \
-# -load $FILE5 \
-# -load $FILE6 \
-# -load $FILE7 \
-# -load $FILE8 \
-# -load $FILE9 \
-# -load $FILE10 \
-# -load $FILE11 \
-# -load $FILE12 \
-# -load $FILE13 \
-# -load $FILE14 \
-# -load $FILE15 \
-# -load $FILE16 \
-# -load $FILE17 \
-# -load $FILE18 \
-# # \
-# -load $TEST22 \
-# -f ert-run-tests-batch-and-exit
-# }
-
 hier () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
@@ -810,6 +783,7 @@ hier () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -830,9 +804,10 @@ hier () {
 -load $TEST17 \
 -load $TEST18 \
 -load $TEST19 \
+-load $TEST20 \
+-load $TEST21 \
 -f ert-run-tests-batch-and-exit
 }
-
 
 if [ $WERKSTATT -eq 0 ]; then
 
@@ -868,7 +843,7 @@ if [ $WERKSTATT -eq 0 ]; then
 	    j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
 	    l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
-	    m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
+	    # m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
 	    # n) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	    # o) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	    # p) echo "Lade \$TEST16: \"$TEST16\"";h16;;

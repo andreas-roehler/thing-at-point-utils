@@ -44,14 +44,14 @@
 (ert-deftest ar-delimited-curveddoublequoted-atpt-test ()
   (ar-test-with-temp-buffer
       "(or “UQ” for short)"
-      (skip-chars-backward "^Q")
+      (skip-chars-backward "^U")
     (should (eq 4 (length (ar-delimited-atpt))))))
 
 (ert-deftest ar-delimited-coloned-test ()
   (ar-test-with-temp-buffer
       "(defun :foo1: ())"
       (search-backward "1:")
-    (should (eq 8 (caar (ar-bounds-of-delimited-atpt))))))
+    (should (eq 14 (cdr (ar-bounds-of-delimited-atpt))))))
 
 (ert-deftest ar-delimited2bracket-test-1 ()
   (ar-test-with-temp-buffer

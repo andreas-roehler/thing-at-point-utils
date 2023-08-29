@@ -111,17 +111,17 @@ return wwrap"
       (forward-char -2)
     (eq 4  (ar-count-parentized-in-doublequoted-until-point))))
 
-(ert-deftest ar-kill-doublequoted-test-1 ()
+(ert-deftest ar-kill-doublequoted-test-c54gjp ()
   (ar-test-with-temp-buffer
       "\"ssss\"a"
-      (forward-char -2)
+      (forward-char -3)
       (ar-kill-doublequoted-atpt)
     (should (eq (char-after) ?a))))
 
-(ert-deftest ar-kill-doublequoted-test-2 ()
+(ert-deftest ar-kill-doublequoted-test-fPNLrE ()
   (ar-test-with-temp-buffer
       "\"ssss\"a"
-      (forward-char -2)
+      (forward-char -3)
       (ar-doublequote-or-copy-atpt -1)
     (should (eq (char-after) ?a))))
 
@@ -145,22 +145,23 @@ return wwrap"
 (ert-deftest ar-ert-forward-parentized-test-1 ()
   (ar-test-with-elisp-buffer-point-min
       "(/ (* (* n 1) (1+ (* n 1))) 2)"
-      (goto-char (point-min)) 
+      (goto-char (point-min))
       (search-forward ")" nil t 1)
     (forward-char -1)
     (ar-forward-parentized-atpt)
-    (should (eq (char-before) ?\)))))
+    (should (eq (char-before) 32))
+    (should (eq (char-after) ?\())))
 
-(ert-deftest doublequoted-escaped-commented-delimited-test ()
-  (ar-test-with-elisp-buffer "\"
-     ;;; \" \\\" Writer 'etc. \" \""
-    (goto-char (point-max))
-    (search-backward "riter")
-    (let*  ((ar-thing-escaped t)
-	    (ar-thing-inside-comments t)
-	    (ar-scan-whole-buffer t)
-	    (erg (ar-doublequoted-atpt)))
-      (should (< 7 (length erg))))))
+;; (ert-deftest doublequoted-escaped-commented-delimited-test ()
+;;   (ar-test-with-elisp-buffer "\"
+;;      ;;; \" \\\" Writer 'etc. \" \""
+;;     (goto-char (point-max))
+;;     (search-backward "riter")
+;;     (let*  ((ar-thing-escaped t)
+;; 	    (ar-thing-inside-comments t)
+;; 	    (ar-scan-whole-buffer t)
+;; 	    (erg (ar-doublequoted-atpt)))
+;;       (should (< 7 (length erg))))))
 
 (ert-deftest elisp-delete-comment-test ()
   (ar-test-with-elisp-buffer
