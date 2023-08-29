@@ -35,9 +35,10 @@
   :type 'boolean
   :group 'werkstatt)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/straight/build/markdown-mode"))
-(require 'markdown-mode)
-
+(when (eq 0 (getenv "WERKSTATT"))
+  ;; being at my local machine
+  (add-to-list 'load-path (expand-file-name "~/.emacs.d/straight/build/markdown-mode"))
+  (require 'markdown-mode))
 
 (defun ar-toggle-debug-p ()
   "Toggle `ar-debug-p'. "
