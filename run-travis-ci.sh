@@ -73,7 +73,7 @@ FILE15=thingatpt-transform-generic-delimited.el
 FILE16=translate-paired-delimiters.el
 FILE17=thing-rest-list-in-region-only.el
 FILE18=thing-data-forms-aktiv-in-rest-list.el
-FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
+# FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
 FILE20=ar-sexp.el
 FILE21=ar-comment-lor.el
 
@@ -650,7 +650,6 @@ h18 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -683,7 +682,6 @@ h19 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -748,7 +746,6 @@ h21 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -781,7 +778,6 @@ hier () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
--load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \

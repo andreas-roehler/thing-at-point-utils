@@ -44,7 +44,6 @@ jobs:
             --eval "(load (expand-file-name \"thingatpt-transform-generic-delimited.el\"))" \
             --eval "(load (expand-file-name \"translate-paired-delimiters.el\"))" \
             --eval "(load (expand-file-name \"thing-rest-list-in-region-only.el\"))" \
-            --eval "(load (expand-file-name \"thing-data-forms-aktiv-in-rest-list.el\"))" \
             --eval "(load (expand-file-name \"ar-sexp.el\"))" \
             --eval "(load (expand-file-name \"ar-comment-lor.el\"))" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-setup-tests.el\")" \
