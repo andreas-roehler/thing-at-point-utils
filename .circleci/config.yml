@@ -58,7 +58,6 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-tatpt-utils-delimited-tests.el\")" \
-          
             --eval "(load \"/root/thing-at-point-utils/test/ar-list-atpt-brace-ert-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-delimited2delimited-tests.el\")" \
