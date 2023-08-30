@@ -29,7 +29,7 @@
 (ert-deftest in-doublequoted-ignore-escaped-test ()
   (ar-test-with-temp-buffer
       "\\\" \"asdf\""
-      (emacs-lisp-mode) 
+      (emacs-lisp-mode)
     (forward-char -2)
     (let ((erg (ar-doublequoted-atpt)))
       (should (string= "\"asdf\"" erg)))))
@@ -42,6 +42,16 @@
     (up-list)
     (should (eq 10 (char-after)))))
 
+
+(ert-deftest ar-delimited-xml-test-X3opvb ()
+  (ar-test
+      "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
+    'sgml-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "Foo")
+    (should
+     (string=  (ar-delimited-atpt) ">Foo bar baz<"))))
 
 ;; ar-werkstatt-interactive-tests.el ends here
 (provide 'ar-werkstatt-interactive-tests)

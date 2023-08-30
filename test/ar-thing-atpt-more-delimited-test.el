@@ -118,15 +118,6 @@
     (should
      (string=  (ar-delimited-atpt) "<rdg wit=\"a2\">"))))
 
-(ert-deftest ar-delimited-xml-test-X3opvb ()
-  (ar-test
-      "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
-    'sgml-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (search-backward "Foo")
-    (should
-     (string=  (ar-delimited-atpt) ">Foo bar baz<"))))
 
 (ert-deftest ar-delimited-xml-test-Ixa2Qy ()
   (ar-test
