@@ -50,7 +50,7 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/py-setup-ert-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimit-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/thing-atpt-more-delimited-test.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-more-delimited-test.el\")" \
             --eval "(setq ar-debug-p nil)" \
             --eval "(sit-for 1)" \
             -f ert-run-tests-batch-and-exit
