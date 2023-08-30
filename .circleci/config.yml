@@ -32,13 +32,27 @@ jobs:
             --eval "(load (expand-file-name \"thingatpt-utils-map.el\"))" \
             --eval "(load (expand-file-name \"thingatpt-utils-core.el\"))" \
             --eval "(load (expand-file-name \"thing-at-point-utils.el\"))" \
+            --eval "(load (expand-file-name \"thingatpt-highlight.el\"))" \
+            --eval "(load (expand-file-name \"thingatpt-transform-delimited.el\"))" \
+            --eval "(load (expand-file-name \"thing-unpaired-delimited-list-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"thing-classes-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"thing-delimited-list-in-counts-list.el\"))" \
+            --eval "(load (expand-file-name \"thing-classes-in-delimited-list.el\"))" \
+            --eval "(load (expand-file-name \"thing-unpaired-delimited-list-in-delimited-list.el\"))" \
+            --eval "(load (expand-file-name \"thing-at-point-peel.el\"))" \
+            --eval "(load (expand-file-name \"thingatpt-count-ratio.el\"))" \
+            --eval "(load (expand-file-name \"thingatpt-transform-generic-delimited.el\"))" \
+            --eval "(load (expand-file-name \"translate-paired-delimiters.el\"))" \
+            --eval "(load (expand-file-name \"thing-rest-list-in-region-only.el\"))" \
+            --eval "(load (expand-file-name \"thing-data-forms-aktiv-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-sexp.el\"))" \
+            --eval "(load (expand-file-name \"ar-comment-lor.el\"))" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-setup-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/py-setup-ert-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-core-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/thing-at-point-utils-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimit-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/thing-atpt-more-delimited-test.el\")" \
-            --eval "(setq ar-switch-p nil)" \
+            --eval "(setq ar-debug-p nil)" \
             --eval "(sit-for 1)" \
             -f ert-run-tests-batch-and-exit
 
