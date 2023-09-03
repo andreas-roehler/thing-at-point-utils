@@ -61,24 +61,22 @@
 Argument CHAR: the char after cursor position."
   (let ((pps (parse-partial-sexp (point-min) (point)))
         (char (ar--return-complement-char-maybe (char-after))))
-        (cond ((nth 3 pps)
-	   (goto-char (nth 8 pps))
-	   (forward-sexp))
-	  ((or (nth 4 pps)(eq (car (syntax-after (point))) 11))
-	   (ar-skip-blanks-and-comments nil pps))
-          (t
-           (pcase (char-after)
-             (?\{ (ar-forward-braced-atpt))
-             (?\(
-              ;; (message "ar-generic-match-p: %s" ar-generic-match-p)
-              (ar-forward-parentized-atpt)
-              )
-             (?\[ (ar-forward-bracketed-atpt))
-             (_
-              (cond ((or (string-match (char-to-string (char-after)) th-beg-delimiter)(looking-at ar-delimiters-atpt))
-                     (ar-forward-delimited-atpt))))))
-           (when (eq (char-after) char)
-                (unless (eobp) (forward-char 1))))))
+    (pcase (char-after)
+      (?\{ (ar-forward-braced-atpt))
+      (?\((ar-forward-parentized-atpt))
+      (?\[ (ar-forward-bracketed-atpt))
+      (_
+       (cond
+        ((or (string-match (char-to-string (char-after)) th-beg-delimiter)(looking-at (concat "[" (regexp-quote ar-delimiters-atpt) "]")))
+         (ar-forward-delimited-atpt))
+        ((nth 3 pps)
+	 (goto-char (nth 8 pps))
+	 (forward-sexp))
+	((or (nth 4 pps)(eq (car (syntax-after (point))) 11))
+	 (ar-skip-blanks-and-comments nil pps)))))))
+
+  ;; (when (eq (char-after) char)
+  ;;   (unless (eobp) (forward-char 1))))))
 
 (defun ar-backward-sexp-intern ()
   "Internally used.

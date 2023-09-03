@@ -79,6 +79,19 @@
         (let ((erg (length (ar-doublequoted-atpt))))
       (should (< 33 erg)))))
 
+(ert-deftest doublequoted-unpaired-delimited-test-tUDBmg ()
+  (ar-test-with-temp-buffer
+      "(setq foo
+      \"class OrderedDict1(dict):
+    \\\"\\\"\\\"
+    This implementation of a dictionary keeps track of the order
+    in which keys were inserted.
+    \\\"\\\"\\\"\")"
+      (emacs-lisp-mode)
+    (search-backward "class")
+        (let ((erg (length (ar-delimited-atpt))))
+      (should (< 33 erg)))))
+
 (ert-deftest ar-string-test-1 ()
   (ar-test-with-temp-buffer-point-min
       "def foo(arg1, arg2, arg3):
