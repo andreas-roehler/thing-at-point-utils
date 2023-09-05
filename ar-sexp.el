@@ -81,20 +81,17 @@ Argument CHAR: the char after cursor position."
 (defun ar-backward-sexp-intern ()
   "Internally used.
 Argument CHAR the char before cursor position."
-  (let (;;(complement-char (ar--return-complement-char-maybe char))
-        (pps (parse-partial-sexp (point-min) (point))))
-    (cond ((or (nth 3 pps) (nth 4 pps))
-	   (goto-char (nth 8 pps)))
-          ;; at comment-start
-          ;; (eq (car (syntax-after (point))) 11))
-	  ;; (ar-skip-blanks-and-comments nil pps))
-          (t
-           (pcase (char-before)
-             (?\} (ar-backward-braced-atpt))
-             (?\) (ar-backward-parentized-atpt))
-             (?\] (ar-backward-bracketed-atpt))
-             (_ (cond ((or (string-match (char-to-string (char-before)) th-beg-delimiter)(looking-back ar-delimiters-atpt (line-beginning-position)))
-                       (ar-backward-delimited-atpt)))))))))
+  ;; (let (;;(complement-char (ar--return-complement-char-maybe char))
+  ;; (pps (parse-partial-sexp (point-min) (point)))
+  ;; (char (ar--return-complement-char-maybe (char-before))))
+  (pcase (char-before)
+    (?\} (ar-backward-braced-atpt))
+    (?\) (ar-backward-parentized-atpt))
+    (?\] (ar-backward-bracketed-atpt))
+    (_ (when (or (string-match (char-to-string (char-before)) th-beg-delimiter)(looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position)))
+         ;; at-point functions work from cursor position
+         (forward-char -1)
+         (ar-backward-delimited-atpt)))))
 
 (defun ar-forward-sexp (&optional arg)
   "Move forward across one balanced expression (sexp).

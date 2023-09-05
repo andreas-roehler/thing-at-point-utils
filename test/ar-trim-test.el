@@ -59,7 +59,7 @@
     (save-excursion
       (goto-char beg))
     (when (interactive-p) (message \"%s %s\" beg end))))"
-    (should (eq 1 (caar (ar-bounds-of-list-atpt))))))
+    (should (eq 1 (car (ar-bounds-of-list-atpt))))))
 
 (provide 'ar-trim-test)
 ;;; ar-trim-test.el ends here

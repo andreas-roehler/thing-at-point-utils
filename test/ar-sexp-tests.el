@@ -482,6 +482,7 @@
    'emacs-lisp-mode
    ar-debug-p
    (goto-char (point-max))
+   (skip-chars-backward " \t\r\n\f") 
    (ar-backward-sexp)
    (should (eq (char-after) ?\{))
    ))
@@ -783,6 +784,16 @@
     (ar-forward-sexp)
     (should (eq (char-before) ?*))
     (should (eq (char-after) ?}))
+    ))
+
+(ert-deftest ar-ert-backward-sexp-test-k1ALAI ()
+  (ar-test-with-elisp-buffer
+      "\\s\"-*({<[\\]. []]>)*}\"]\"]"
+      (goto-char (point-max))
+    (skip-chars-backward "^*")
+    (ar-backward-sexp)
+    (should (eq (char-after) ?*))
+    (should (eq (char-before) ?-))
     ))
 
 (provide 'ar-sexp-tests)

@@ -38,7 +38,7 @@
     (goto-char (point-min))
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (should (and (eq 2 (caar (ar-bounds-of-list-atpt)))(eq 8 (cdr (cadr (ar-bounds-of-list-atpt))))))))
+    (should (and (eq 2 (car (ar-bounds-of-list-atpt)))(eq 8 (cdr (ar-bounds-of-list-atpt)))))))
 
 (ert-deftest ar-bracketlist-beginning-position-atpt-test ()
   (py-test-with-temp-buffer-point-min
@@ -329,13 +329,13 @@
   (ar-test-with-temp-buffer
       "[[http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html]] and"
       (search-backward "B" nil t 1)
-    (should (eq 2 (caar (ar-bounds-of-bracketed-atpt))))))
+    (should (eq 2 (car (ar-bounds-of-bracketed-atpt))))))
 
 (ert-deftest ar-double-bracketlist-atpt-test-BLAUkn ()
   (ar-test-with-temp-buffer
       "[[http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html]] and"
       (search-backward "B" nil t 1)
-    (should (eq 53 (cadr (cadr (ar-bounds-of-bracketed-atpt)))))))
+    (should (eq 53 (cdr (ar-bounds-of-bracketed-atpt))))))
 
 
       ;; (should (eq 53 (cadr (cadr bounds)))))))

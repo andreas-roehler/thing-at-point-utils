@@ -153,7 +153,7 @@ args = sys.argv"
 \"asdf\""
     (goto-char (point-max))
     (forward-char -2)
-    (should (eq 4 (length (ar-doublequoted-atpt t))))))
+    (should (eq 4 (length (ar-doublequoted-atpt '(4)))))))
 
 (ert-deftest ar-in-string-atpt-test-pXDGrZ ()
   (ar-test-with-elisp-buffer

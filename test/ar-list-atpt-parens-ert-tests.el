@@ -36,7 +36,7 @@
       "(list (cons 1 2))"
     (forward-char 1)
     (skip-chars-forward "^(")
-    (should (and (eq 7 (caar (ar-bounds-of-list-atpt)))(eq 17 (cdr (cadr (ar-bounds-of-list-atpt))))))))
+    (should (and (eq 7 (car (ar-bounds-of-list-atpt)))(eq 17 (cdr (ar-bounds-of-list-atpt)))))))
 
 (ert-deftest ar-list-beginning-position-elisp-test ()
   (ar-test-with-elisp-buffer-point-min

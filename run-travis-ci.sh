@@ -811,7 +811,7 @@ if [ $WERKSTATT -eq 0 ]; then
     [ $HOME/werkstatt/thingatpt-utils-core/beg-end.el -nt ${PWD}/beg-end.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el -nt ${PWD}/thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el nach $HOME/werkstatt/numbers-at-point"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $HOME/werkstatt/numbers-at-point
-
+    [ $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el -nt ${PWD}/ar-thingatpt-basic-definitions.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/
 
     while getopts 123456789abcdefghijklmnopqrstuvwxyz option

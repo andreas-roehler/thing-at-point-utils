@@ -46,8 +46,8 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (sit-for 0.1)
-    (should (and (eq 47 (caar (ar-bounds-of-list-atpt)))(eq 101 (cdr (cadr (ar-bounds-of-list-atpt))))))))
+    ;; (sit-for 0.1)
+    (should (and (eq 47 (car (ar-bounds-of-list-atpt)))(eq 101 (cdr (ar-bounds-of-list-atpt)))))))
 
 (ert-deftest ar-list-beginning-position-atpt-brace-test ()
   (py-test-with-temp-buffer-point-min
