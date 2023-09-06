@@ -97,7 +97,7 @@ TEST17=test/ar-thing-atpt-other-position-test.el
 TEST18=test/ar-thing-atpt-more-delimited-test.el
 TEST19=test/ar-thing-at-point-interactive-tests.el
 TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
-TEST21=test/ar-sexp-tests.el
+TEST21=test/ar-forward-sexp-tests.el
 
 h1 () {
     $EMACS -Q --batch \
