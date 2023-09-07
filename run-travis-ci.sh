@@ -73,7 +73,6 @@ FILE15=thingatpt-transform-generic-delimited.el
 FILE16=translate-paired-delimiters.el
 FILE17=thing-rest-list-in-region-only.el
 FILE18=thing-data-forms-aktiv-in-rest-list.el
-# FILE19=$HOME/arbeit/emacs-lisp/python-modes/gitlab-python-mode/python-mode.el
 FILE20=ar-sexp.el
 FILE21=ar-comment-lor.el
 
@@ -97,7 +96,8 @@ TEST17=test/ar-thing-atpt-other-position-test.el
 TEST18=test/ar-thing-atpt-more-delimited-test.el
 TEST19=test/ar-thing-at-point-interactive-tests.el
 TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
-TEST21=test/ar-forward-sexp-tests.el
+TEST21=test/ar-backward-sexp-tests.el
+TEST22=test/ar-forward-sexp-tests.el
 
 h1 () {
     $EMACS -Q --batch \
@@ -755,6 +755,38 @@ h21 () {
 -f ert-run-tests-batch-and-exit
 }
 
+h22 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE4 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE20 \
+-load $FILE21 \
+\
+-load $SETUP1 \
+-load $SETUP2 \
+-load $TEST22 \
+-f ert-run-tests-batch-and-exit
+}
+
 hier () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
@@ -802,6 +834,7 @@ hier () {
 -load $TEST19 \
 -load $TEST20 \
 -load $TEST21 \
+-load $TEST22 \
 -f ert-run-tests-batch-and-exit
 }
 
@@ -889,7 +922,7 @@ if [ $WERKSTATT -eq 0 ]; then
 	    j) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
 	    l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
-	    # m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
+	    m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
 	    # n) echo "Lade \$TEST14: \"$TEST14\"";h14;;
 	    # o) echo "Lade \$TEST15: \"$TEST15\"";h15;;
 	    # p) echo "Lade \$TEST16: \"$TEST16\"";h16;;

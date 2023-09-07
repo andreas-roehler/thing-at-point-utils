@@ -69,7 +69,8 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-other-position-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-more-delimited-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-comment-or-uncomment-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-sexp-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-forward-sexp-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-backward-sexp-tests.el\")" \
             --eval "(sit-for 1)" \
             -f ert-run-tests-batch-and-exit
 

@@ -23,7 +23,7 @@
 
 ;;; Code:
 
-(ert-deftest ar-sexp-test-NyIYwZ ()
+(ert-deftest ar-sexp-test-Yn2O6E ()
   (ar-test
       "[(asdf]"
    'emacs-lisp-mode
@@ -154,84 +154,6 @@
     (should (eobp))
     (should (eq (char-before) ?}))))
 
-(ert-deftest ar-sexp-test-SKyWXX ()
-  (ar-test
-      "[(asdf]"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (ar-backward-sexp)
-   (should (eq (char-after) ?\[))))
-
-(ert-deftest ar-sexp-test-RWfoG3 ()
-  (ar-test
-      "((asdf))"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (ar-backward-sexp)
-   (should-not (eq (char-after) ?\)))
-   ))
-
-(ert-deftest ar-sexp-test-Zk58le ()
-  (ar-test
-      "{(asdf}"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (ar-backward-sexp)
-   (should (eq (char-after) ?\{))
-   ))
-
-(ert-deftest ar-emacs-lisp-sexp-test-awtsCR ()
-  (ar-test
-      "((asdf))"
-    'emacs-lisp-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-fundamental-test-8gy0wy ()
-  (ar-test
-      "((asdf))"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-test-OlO7H1 ()
-  (ar-test
-      "[[asdf]]"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\[))))
-
-(ert-deftest ar-emacs--test-3QZk6j ()
-  (ar-test
-      "[(asdf]"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\[))))
-
-(ert-deftest ar-emacs--test-oy2hnH ()
-  (ar-test
-      "{(asdf}"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?{))))
 ;;
 (ert-deftest ar-emacs-lisp-sexp-backward-test-jzruRW ()
   (ar-test
@@ -457,85 +379,6 @@
     (should (eobp))
     (should (eq (char-before) ?}))))
 
-(ert-deftest ar-sexp-test-0Qwg73 ()
-  (ar-test
-      "[(asdf\"]\"]"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (ar-backward-sexp)
-   (should (eq (char-after) ?\[))))
-
-(ert-deftest ar-sexp-test-K5CfKV ()
-  (ar-test
-      "((asdf)\")\")"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (ar-backward-sexp)
-   (should-not (eq (char-after) ?\)))
-   ))
-
-(ert-deftest ar-sexp-test-g64KOA ()
-  (ar-test
-      "{(asdf\"}\"}"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (skip-chars-backward " \t\r\n\f") 
-   (ar-backward-sexp)
-   (should (eq (char-after) ?\{))
-   ))
-
-(ert-deftest ar-emacs-lisp-sexp-test-6WqoA8 ()
-  (ar-test
-      "((asdf)\")\")"
-    'emacs-lisp-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-fundamental-test-FC9JZG ()
-  (ar-test
-      "((asdf)\")\")"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-test-tqmEcC ()
-  (ar-test
-      "[[asdf\"]\"]]"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\[))))
-
-(ert-deftest ar-emacs--test-cMVJMz ()
-  (ar-test
-      "[(asdf\"]\"]"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\[))))
-
-(ert-deftest ar-emacs--test-wuhBwe ()
-  (ar-test
-      "{(asdf\"}\"}"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?{))))
 ;;
 (ert-deftest ar-emacs-lisp-sexp-backward-test-tZLyKD ()
   (ar-test
@@ -786,15 +629,67 @@
     (should (eq (char-after) ?}))
     ))
 
-(ert-deftest ar-ert-backward-sexp-test-k1ALAI ()
-  (ar-test-with-elisp-buffer
-      "\\s\"-*({<[\\]. []]>)*}\"]\"]"
-      (goto-char (point-max))
-    (skip-chars-backward "^*")
-    (ar-backward-sexp)
-    (should (eq (char-after) ?*))
-    (should (eq (char-before) ?-))
+
+(ert-deftest ar-sexp-test-NyIYwZ ()
+  (ar-test
+      "[(asdf\"]\"]"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-min))
+   (ar-forward-sexp)
+   (should (eq (char-before) ?\]))))
+
+(ert-deftest ar-sexp-test-RgMjiG ()
+  (ar-test
+      "((asdf)\")\")"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-min))
+   (ar-forward-sexp)
+   (should-not (eq (char-after) ?\)))
+   (should (eq (char-before) ?\)))
+   ))
+
+(ert-deftest ar-sexp-test-jWGSy4 ()
+  (ar-test
+      "{(asdf\"}\"}"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-min))
+   (ar-forward-sexp)
+   (should (eq (char-before) ?\}))
+   ))
+
+(ert-deftest ar-emacs-lisp-sexp-test-6esVUB ()
+  (ar-test-point-min
+      "((asdf)\")\")"
+    'emacs-lisp-mode
+    ar-debug-p
+    (goto-char (point-min))
+    (ar-forward-sexp)
+    (should (eobp))
+    (should (eq (char-before) ?\)))))
+
+(ert-deftest ar-emacs-fundamental-test-m0YUfQ ()
+  (ar-test-point-min
+      "((asdf)\")\")"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-min))
+    (ar-forward-sexp)
+    (should (eq (char-before) ?\)))
+    (should (eq (char-before (1- (point))) ?\"))
     ))
+
+(ert-deftest ar-emacs-fundamental-test-tqmEcC ()
+  (ar-test-point-min
+      "[[asdf\"]\"]]"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-min))
+    (ar-forward-sexp)
+    (should (eobp))
+    (should (eq (char-before) 93))))
 
 (provide 'ar-forward-sexp-tests)
 ;; ar-forward-sexp-tests.el ends here
