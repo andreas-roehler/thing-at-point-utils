@@ -142,15 +142,7 @@
     (should (bobp))
     (should (eq (char-after) ?\())))
 
-(ert-deftest ar-emacs-fundamental-test-FC9JZG ()
-  (ar-test
-      "((asdf)\")\")"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
+
 
 (ert-deftest ar-emacs-test-tqmEcC ()
   (ar-test

@@ -25,7 +25,6 @@
 
 ;;; Code:
 
-
 (ert-deftest in-doublequoted-ignore-escaped-test ()
   (ar-test-with-temp-buffer
       "\\\" \"asdf\""
@@ -42,7 +41,6 @@
     (up-list)
     (should (eq 10 (char-after)))))
 
-
 (ert-deftest ar-delimited-xml-test-X3opvb ()
   (ar-test
       "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
@@ -52,6 +50,75 @@
     (search-backward "Foo")
     (should
      (string=  (ar-delimited-atpt) ">Foo bar baz<"))))
+
+(ert-deftest ar-delimited-test-RZLuhG ()
+  (ar-test
+   "[(&optional]"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-max))
+   (backward-char)
+   (ar-trim-delimited-atpt)
+    (string=  (ar-graph-atpt) "\"[(&optional]\"")))
+
+(ert-deftest ar-delimited-test-r9C7hI ()
+  (ar-test
+   "[(&optional]"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-max))
+   (backward-char)
+   (ar-trim-delimited-atpt)
+   (should
+    (string=  (ar-graph-atpt) "(&optional"))))
+
+(ert-deftest ar-emacs-fundamental-test-FC9JZG ()
+  (ar-test
+      "((asdf)\")\")"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (ar-backward-sexp)
+    (should (bobp))
+    (should (eq (char-after) ?\())))
+
+(ert-deftest ar-emacs-lisp-sexp-test-6WqoA8 ()
+  (ar-test
+      "((asdf)\")\")"
+    'emacs-lisp-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (ar-backward-sexp)
+    (should (bobp))
+    (should (eq (char-after) ?\())))
+
+(ert-deftest ar-emacs-lisp-sexp-test-OAHdHO ()
+  (ar-test
+      "((asdf)\")\")"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (ar-backward-sexp)
+    (should (bobp))
+    (should (eq (char-after) ?\())))
+
+(ert-deftest ar-star-delimited-test-8IGPxf ()
+  (ar-test-with-elisp-buffer
+"(defun foo1 (&optional beg end)
+  \" \"
+  (interactive \"*\"))"
+    (goto-char (point-max))
+    (search-backward "*")
+    (should (string=  (ar-delimited-atpt) "\"*\"" ))))
+
+(ert-deftest ar-star-delimited-test-kFaFoc ()
+  (ar-test-with-elisp-buffer
+"(defun foo1 (&optional beg end)
+  \" \"
+  (interactive \"*\"))"
+    (goto-char (point-max))
+    (search-backward "*")
+    (should (string=  (ar-delimited-atpt '(4)) "*" ))))
 
 ;; ar-werkstatt-interactive-tests.el ends here
 (provide 'ar-werkstatt-interactive-tests)

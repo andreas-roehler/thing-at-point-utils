@@ -97,16 +97,6 @@
    (search-backward "ema")
    (should (string=  "\"~/arbeit/Emacs-allzeichenabk/emacs-26.2\"" (ar-delimited-atpt)))))
 
-(ert-deftest ar-delimited-test-r9C7hI ()
-  (ar-test
-   "[(&optional]"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (backward-char)
-   (ar-trim-delimited-atpt)
-   (should
-    (string=  (ar-graph-atpt) "(&optional"))))
 
 (ert-deftest ar-delimited-xml-test-r9C7hI ()
   (ar-test
@@ -265,15 +255,6 @@
     (search-backward "2")
     (should (string=  (ar-delimited-atpt) "‘22’"))))
 
-(ert-deftest ar-delimited-test-RZLuhG ()
-  (ar-test
-   "[(&optional]"
-   'emacs-lisp-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (backward-char)
-   (ar-trim-delimited-atpt)
-    (string=  (ar-graph-atpt) "\"[(&optional]\"")))
 
 
 (provide 'ar-thing-atpt-more-delimited-test)
