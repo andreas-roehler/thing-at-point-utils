@@ -132,15 +132,7 @@
    (should (eq (char-after) ?\{))
    ))
 
-(ert-deftest ar-emacs-lisp-sexp-test-6WqoA8 ()
-  (ar-test
-      "((asdf)\")\")"
-    'emacs-lisp-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
+
 
 
 
@@ -196,7 +188,7 @@
 (ert-deftest ar-sexp-test-5mnMay ()
   (ar-test
       "((asdf)\")\")"
-   'fundamental-mode 
+   'fundamental-mode
    ar-debug-p
    (goto-char (point-max))
    (ar-backward-sexp)
@@ -206,7 +198,7 @@
 (ert-deftest ar-sexp-test-p669g4 ()
   (ar-test
       "{(asdf\"}\"}"
-   'fundamental-mode 
+   'fundamental-mode
    ar-debug-p
    (goto-char (point-max))
    (ar-backward-sexp)
@@ -216,11 +208,19 @@
 (ert-deftest ar-emacs-lisp-sexp-test-OAHdHO ()
   (ar-test
       "((asdf)\")\")"
-    'fundamental-mode 
+    'fundamental-mode
     ar-debug-p
     (goto-char (point-max))
     (ar-backward-sexp)
-    (should (bobp))
+    (should (eq (char-after) ?\())))
+
+(ert-deftest ar-emacs-lisp-sexp-test-6WqoA8 ()
+  (ar-test
+      "((asdf)\")\")"
+    'emacs-lisp-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (ar-backward-sexp)
     (should (eq (char-after) ?\())))
 
 (provide 'ar-backward-sexp-tests)

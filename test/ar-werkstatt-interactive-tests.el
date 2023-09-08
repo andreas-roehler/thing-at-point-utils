@@ -82,26 +82,6 @@
     (should (bobp))
     (should (eq (char-after) ?\())))
 
-(ert-deftest ar-emacs-lisp-sexp-test-6WqoA8 ()
-  (ar-test
-      "((asdf)\")\")"
-    'emacs-lisp-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-lisp-sexp-test-OAHdHO ()
-  (ar-test
-      "((asdf)\")\")"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
 (ert-deftest ar-star-delimited-test-8IGPxf ()
   (ar-test-with-elisp-buffer
 "(defun foo1 (&optional beg end)
