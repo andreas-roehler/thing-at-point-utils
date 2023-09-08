@@ -30,32 +30,6 @@
 
 (require 'thing-at-point-utils)
 
-;;; Code:
-
-;; (defun ar-sexp ()
-;;   "Like `forward-sexp', diffs below.
-
-;; From inside string go to end-of-string.
-;; From inside comment, go to end-of-comment.
-
-;; At the end of sexp-same-level, go up if possible.
-;; Otherwise return nil."
-;;   (interactive)
-;;   (let ((orig (point))
-;; 	(pps (parse-partial-sexp (point-min) (point)))
-;; 	erg)
-;;     (cond ((nth 3 pps)
-;; 	   (goto-char (nth 8 pps))
-;; 	   (forward-sexp))
-;; 	  ((or (nth 4 pps)(eq (car (syntax-after (point))) 11))
-;; 	   (when (ar-skip-blanks-and-comments nil pps)
-;; 	     (ar-sexp)))
-;; 	  (t (or (progn (ignore-errors (forward-sexp))
-;; 			(< orig (point)))
-;; 		 (ignore-errors (up-list)))))
-;;     (when (< orig (point)) (setq erg (point)))
-;;     erg))
-
 (defun ar-forward-sexp-intern ()
   "Internally used.
 Argument CHAR: the char after cursor position."

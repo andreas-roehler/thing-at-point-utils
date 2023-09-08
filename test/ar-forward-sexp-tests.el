@@ -592,5 +592,60 @@
     (should (eobp))
     (should (eq (char-before) 93))))
 
+
+(ert-deftest ar-delimited-test-ptFoeA ()
+  (ar-test-with-elisp-buffer-point-min
+      "(defun foo (arg)
+  \" ( Some command   (\"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"
+      (goto-char (point-min))
+    (search-forward "Some")
+    (forward-char -6)
+    (ar-forward-sexp)
+    (should-not (eq (char-before) ?\"))
+    (should (eq (char-after) ?\())
+    ))
+
+(ert-deftest ar-delimited-test-m2rh7d ()
+  (ar-test-with-elisp-buffer-point-min
+      "(defun foo (arg)
+  \" ( Some command ]  (\"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"
+      (goto-char (point-min))
+    (search-forward "Some")
+    (forward-char -6)
+    (ar-forward-sexp)
+    (should-not (eq (char-before) ?\"))
+    (should (eq (char-after) ?\())
+    ))
+
+(ert-deftest ar-delimited-test-Yixwry ()
+  (ar-test-with-elisp-buffer-point-min
+"(defun foo (arg)
+  \"(Some command \\\"]\\\" )  ( \"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))
+"
+      (goto-char (point-min))
+    (search-forward "Some")
+    (forward-char -5)
+    (ar-forward-sexp)
+    (should-not (eq (char-before) ?\"))
+    (should (eq (char-before) ?\)))
+    ))
+
+
+
 (provide 'ar-forward-sexp-tests)
 ;; ar-forward-sexp-tests.el ends here
