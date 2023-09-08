@@ -298,5 +298,25 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (search-backward "*")
     (should (string=  (ar-delimited-atpt '(4)) "*" ))))
 
+(ert-deftest ar-delimited-test-ptFoeA ()
+  (ar-test-with-elisp-buffer-point-min
+      "(defun foo (arg)
+  \" ( Some command   (\"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"
+      (goto-char (point-min))
+    (search-forward "Some")
+    (forward-char -6)
+    (ar-forward-sexp)
+    (should-not (eq (char-before) ?\"))
+    (should (eq (char-after) ?\())
+    ))
+
+
+
+
 (provide 'ar-thing-atpt-other-delimited-test)
 ;;; ar-thing-atpt-other-delimited-test.el ends here

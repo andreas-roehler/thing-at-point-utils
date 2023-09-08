@@ -60,11 +60,18 @@
   "Internally used.
 Argument CHAR: the char after cursor position."
   (let ((pps (parse-partial-sexp (point-min) (point)))
-        (char (ar--return-complement-char-maybe (char-after))))
+        (char (ar--return-complement-char-maybe (char-after)))
+        (orig (point)))
     (pcase (char-after)
-      (?\{ (ar-forward-braced-atpt))
-      (?\((ar-forward-parentized-atpt))
-      (?\[ (ar-forward-bracketed-atpt))
+      (?\{ (unless (ar-forward-braced-atpt)
+             (goto-char orig)
+             nil))
+      (?\( (unless (ar-forward-parentized-atpt)
+             (goto-char orig)
+             nil))
+      (?\[ (unless (ar-forward-bracketed-atpt)
+             (goto-char orig)
+             nil))
       (_
        (cond
         ((or (string-match (char-to-string (char-after)) th-beg-delimiter)(looking-at (concat "[" (regexp-quote ar-delimiters-atpt) "]")))
@@ -84,14 +91,21 @@ Argument CHAR the char before cursor position."
   ;; (let (;;(complement-char (ar--return-complement-char-maybe char))
   ;; (pps (parse-partial-sexp (point-min) (point)))
   ;; (char (ar--return-complement-char-maybe (char-before))))
-  (pcase (char-before)
-    (?\} (ar-backward-braced-atpt))
-    (?\) (ar-backward-parentized-atpt))
-    (?\] (ar-backward-bracketed-atpt))
-    (_ (when (or (string-match (char-to-string (char-before)) th-beg-delimiter)(looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position)))
-         ;; at-point functions work from cursor position
-         (forward-char -1)
-         (ar-backward-delimited-atpt)))))
+    (let ((orig (point)))
+      (pcase (char-before)
+        (?\} (unless (ar-backward-braced-atpt)
+               (goto-char orig)
+               nil))
+        (?\) (unless (ar-backward-parentized-atpt)
+               (goto-char orig)
+               nil))
+        (?\] (unless (ar-backward-bracketed-atpt)
+               (goto-char orig)
+               nl))
+        (_ (when (or (string-match (char-to-string (char-before)) th-beg-delimiter)(looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position)))
+             ;; at-point functions work from cursor position
+             (forward-char -1)
+             (ar-backward-delimited-atpt))))))
 
 (defun ar-forward-sexp (&optional arg)
   "Move forward across one balanced expression (sexp).
