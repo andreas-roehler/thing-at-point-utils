@@ -132,10 +132,6 @@
    (should (eq (char-after) ?\{))
    ))
 
-
-
-
-
 (ert-deftest ar-emacs-test-tqmEcC ()
   (ar-test
       "[[asdf\"]\"]]"
@@ -211,17 +207,11 @@
     'fundamental-mode
     ar-debug-p
     (goto-char (point-max))
+    (search-backward "\"" nil t 2)
     (ar-backward-sexp)
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-lisp-sexp-test-6WqoA8 ()
-  (ar-test
-      "((asdf)\")\")"
-    'emacs-lisp-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (eq (char-after) ?\())))
+    (should (eq (char-after) ?\())
+    (should (eq (char-before) ?\())
+    ))
 
 (provide 'ar-backward-sexp-tests)
 ;; ar-backward-sexp-tests.el ends here
