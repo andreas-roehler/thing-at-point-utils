@@ -602,8 +602,9 @@ region is commented alltogether. "
       (goto-char beg)
       (back-to-indentation)
       (push-mark)
+      (goto-char end) 
       (exchange-point-and-mark)
-      (ignore-errors (comment-or-uncomment-region beg end 1))
+      (ignore-errors (comment-or-uncomment-region beg end))
       (when copy
         (save-excursion
           (goto-char end)
