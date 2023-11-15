@@ -75,7 +75,7 @@ Argument CHAR the char before cursor position."
                nil))
         (?\] (unless (ar-backward-bracketed-atpt)
                (goto-char orig)
-               nl))
+               nil))
         (_ (when (or (string-match (char-to-string (char-before)) th-beg-delimiter)(looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position)))
              ;; at-point functions work from cursor position
              (forward-char -1)
