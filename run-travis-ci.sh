@@ -52,6 +52,10 @@ TESTDIR=$PWD/test/
 export TESTDIR
 echo "\$TESTDIR: $TESTDIR"
 
+echo "\$WERKSTATT: $WERKSTATT"
+
+IFLOCAL=${IFLOCAL:=1}
+
 SETUP1=${TESTDIR}ar-thingatpt-setup-tests.el
 SETUP2=${TESTDIR}py-setup-ert-tests.el
 
@@ -923,7 +927,7 @@ entfernt () {
 -f ert-run-tests-batch-and-exit
 }
 
-if [ $WERKSTATT -eq 0 ]; then
+if [ $IFLOCAL -eq 0 ]; then
 
     [ $HOME/werkstatt/thingatpt-utils-core/ar-subr.el -nt ${PWD}/ar-subr.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/beg-end.el -nt ${PWD}/beg-end.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD

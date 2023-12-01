@@ -280,5 +280,16 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (search-backward "2")
     (should (string=  (ar-delimited-atpt) "* 2 2*" ))))
 
+(ert-deftest ar-ert-trim-test-zJuViH ()
+  (ar-test-with-elisp-buffer
+      "'(org-mode)"
+    (goto-char (point-max))
+    (skip-chars-backward "^o" (line-beginning-position))
+    (ar-trim-delimited-atpt)
+    (end-of-line)
+    (should (eq (char-before) ?e))
+    (skip-chars-backward "^'" (line-beginning-position))
+    (should (eq (char-after) ?o))))
+
 (provide 'ar-thing-atpt-other-delimited-test)
 ;;; ar-thing-atpt-other-delimited-test.el ends here
