@@ -213,5 +213,30 @@
     (should (eq (char-before) ?\())
     ))
 
+(ert-deftest ar-emacs-lisp-sexp-test-ZFPK6U ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "0" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\[))
+    (should (eq (char-before) ?f))
+    ))
+
+(ert-deftest ar-emacs-lisp-sexp-test-JsaamG ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "f" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?{))
+    (should (eq (char-before) 32))
+    ))
+
+
 (provide 'ar-backward-sexp-tests)
 ;; ar-backward-sexp-tests.el ends here

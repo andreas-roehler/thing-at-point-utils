@@ -13865,14 +13865,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'backslashed (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-backslashed-atpt (&optional no-delimiters)
-  "Moves forward over backslashed at point if any, does nothing otherwise.
-Returns end position of backslashed "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'backslashed no-delimiters))
 
 (defun ar-backward-backslashed-atpt (&optional no-delimiters)
-  "Moves backward over backslashed before point if any, does nothing otherwise.
-Returns beginning position of backslashed "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'backslashed no-delimiters))
 
@@ -14075,14 +14075,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'backticked (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-backticked-atpt (&optional no-delimiters)
-  "Moves forward over backticked at point if any, does nothing otherwise.
-Returns end position of backticked "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'backticked no-delimiters))
 
 (defun ar-backward-backticked-atpt (&optional no-delimiters)
-  "Moves backward over backticked before point if any, does nothing otherwise.
-Returns beginning position of backticked "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'backticked no-delimiters))
 
@@ -14285,14 +14285,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'coloned (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-coloned-atpt (&optional no-delimiters)
-  "Moves forward over coloned at point if any, does nothing otherwise.
-Returns end position of coloned "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'coloned no-delimiters))
 
 (defun ar-backward-coloned-atpt (&optional no-delimiters)
-  "Moves backward over coloned before point if any, does nothing otherwise.
-Returns beginning position of coloned "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'coloned no-delimiters))
 
@@ -14495,14 +14495,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'dollared (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-dollared-atpt (&optional no-delimiters)
-  "Moves forward over dollared at point if any, does nothing otherwise.
-Returns end position of dollared "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'dollared no-delimiters))
 
 (defun ar-backward-dollared-atpt (&optional no-delimiters)
-  "Moves backward over dollared before point if any, does nothing otherwise.
-Returns beginning position of dollared "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'dollared no-delimiters))
 
@@ -14705,14 +14705,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'doublequoted (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-doublequoted-atpt (&optional no-delimiters)
-  "Moves forward over doublequoted at point if any, does nothing otherwise.
-Returns end position of doublequoted "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'doublequoted no-delimiters))
 
 (defun ar-backward-doublequoted-atpt (&optional no-delimiters)
-  "Moves backward over doublequoted before point if any, does nothing otherwise.
-Returns beginning position of doublequoted "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'doublequoted no-delimiters))
 
@@ -14915,14 +14915,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'equalized (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-equalized-atpt (&optional no-delimiters)
-  "Moves forward over equalized at point if any, does nothing otherwise.
-Returns end position of equalized "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'equalized no-delimiters))
 
 (defun ar-backward-equalized-atpt (&optional no-delimiters)
-  "Moves backward over equalized before point if any, does nothing otherwise.
-Returns beginning position of equalized "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'equalized no-delimiters))
 
@@ -15125,14 +15125,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'hyphened (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-hyphened-atpt (&optional no-delimiters)
-  "Moves forward over hyphened at point if any, does nothing otherwise.
-Returns end position of hyphened "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'hyphened no-delimiters))
 
 (defun ar-backward-hyphened-atpt (&optional no-delimiters)
-  "Moves backward over hyphened before point if any, does nothing otherwise.
-Returns beginning position of hyphened "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'hyphened no-delimiters))
 
@@ -15335,14 +15335,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'singlequoted (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-singlequoted-atpt (&optional no-delimiters)
-  "Moves forward over singlequoted at point if any, does nothing otherwise.
-Returns end position of singlequoted "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'singlequoted no-delimiters))
 
 (defun ar-backward-singlequoted-atpt (&optional no-delimiters)
-  "Moves backward over singlequoted before point if any, does nothing otherwise.
-Returns beginning position of singlequoted "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'singlequoted no-delimiters))
 
@@ -15545,14 +15545,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'slashed (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-slashed-atpt (&optional no-delimiters)
-  "Moves forward over slashed at point if any, does nothing otherwise.
-Returns end position of slashed "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'slashed no-delimiters))
 
 (defun ar-backward-slashed-atpt (&optional no-delimiters)
-  "Moves backward over slashed before point if any, does nothing otherwise.
-Returns beginning position of slashed "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'slashed no-delimiters))
 
@@ -15755,14 +15755,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'stared (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-stared-atpt (&optional no-delimiters)
-  "Moves forward over stared at point if any, does nothing otherwise.
-Returns end position of stared "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'stared no-delimiters))
 
 (defun ar-backward-stared-atpt (&optional no-delimiters)
-  "Moves backward over stared before point if any, does nothing otherwise.
-Returns beginning position of stared "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'stared no-delimiters))
 
@@ -15965,14 +15965,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'underscored (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-underscored-atpt (&optional no-delimiters)
-  "Moves forward over underscored at point if any, does nothing otherwise.
-Returns end position of underscored "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'underscored no-delimiters))
 
 (defun ar-backward-underscored-atpt (&optional no-delimiters)
-  "Moves backward over underscored before point if any, does nothing otherwise.
-Returns beginning position of underscored "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'underscored no-delimiters))
 
@@ -16175,14 +16175,14 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-trim 'whitespaced (eq 4  (prefix-numeric-value no-delimiters)) nil t))
 
 (defun ar-forward-whitespaced-atpt (&optional no-delimiters)
-  "Moves forward over whitespaced at point if any, does nothing otherwise.
-Returns end position of whitespaced "
+  "Moves forward over accessible part of buffer until closing delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-forward 'whitespaced no-delimiters))
 
 (defun ar-backward-whitespaced-atpt (&optional no-delimiters)
-  "Moves backward over whitespaced before point if any, does nothing otherwise.
-Returns beginning position of whitespaced "
+  "Moves backward over accessible part of buffer until opening delimiter is found.
+Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'whitespaced no-delimiters))
 

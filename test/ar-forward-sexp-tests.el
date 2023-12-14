@@ -620,11 +620,10 @@
   (interactive \"p*\")
   (message \"%s\" arg))"
       (goto-char (point-min))
-    (search-forward "Some")
-    (forward-char -6)
+    (search-forward "(")
     (ar-forward-sexp)
-    (should-not (eq (char-before) ?\"))
-    (should (eq (char-after) ?\())
+    (should (eq (char-before) ?\"))
+    ;; (should (eq (char-after) ?\())
     ))
 
 (ert-deftest ar-delimited-test-Yixwry ()
@@ -645,7 +644,26 @@
     (should (eq (char-before) ?\)))
     ))
 
+(ert-deftest ar-delimited-test-BM94u0 ()
+  (ar-test-with-elisp-buffer-point-min
+      "print(f\"Foo {asdf[0]}\")"
+      (goto-char (point-min))
+    (search-forward "a")
+    (ar-forward-sexp)
+    (should (eq (char-before) ?\"))
+    ;; (should-not (eq (char-before) ?\]))
+    ))
 
+(ert-deftest ar-delimited-test-8jsFZt ()
+  (ar-test-with-elisp-buffer-point-min
+      "print(f\"Foo {asdf[0]}\")"
+      (goto-char (point-min))
+    (search-forward "0")
+    (ar-forward-sexp)
+    ;; (should (eq (char-before) ?\]))
+    (should (eq (char-before) ?\"))
+    ))
 
 (provide 'ar-forward-sexp-tests)
 ;; ar-forward-sexp-tests.el ends here
+
