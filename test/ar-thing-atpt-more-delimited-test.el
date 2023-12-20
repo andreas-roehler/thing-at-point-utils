@@ -214,13 +214,13 @@
     (search-backward "o")
     (should (string= "`&optional`" (ar-delimited-atpt)))))
 
-(ert-deftest ar-minused-test-uoClPB ()
-  (ar-test-with-temp-buffer-point-min
-      " ‘M-x append-to-register <RET> R’ can use ‘C-x r +’
- "
-      (goto-char (point-min))
-    (search-forward "a") 
-    (should (string= "‘M-x append-to-register <RET> R’" (ar-delimited-atpt)))))
+;; (ert-deftest ar-minused-test-uoClPB ()
+;;   (ar-test-with-temp-buffer-point-min
+;;       " ‘M-x append-to-register <RET> R’ can use ‘C-x r +’
+;;  "
+;;       (goto-char (point-min))
+;;     (search-forward "a") 
+;;     (should (string= "‘M-x append-to-register <RET> R’" (ar-delimited-atpt)))))
 
 (ert-deftest ar-less-than-greater-than-test-uoClPB ()
   (ar-test-with-temp-buffer

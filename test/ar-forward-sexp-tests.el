@@ -593,7 +593,7 @@
     (should (eq (char-before) 93))))
 
 
-(ert-deftest ar-delimited-test-ptFoeA ()
+(ert-deftest ar-forward-sexp-test-ptFoeA ()
   (ar-test-with-elisp-buffer-point-min
       "(defun foo (arg)
   \" ( Some command   (\"
@@ -610,7 +610,7 @@
     (should (eq (char-after) ?\())
     ))
 
-(ert-deftest ar-delimited-test-m2rh7d ()
+(ert-deftest ar-forward-sexp-test-m2rh7d ()
   (ar-test-with-elisp-buffer-point-min
       "(defun foo (arg)
   \" ( Some command ]  (\"
@@ -626,7 +626,7 @@
     ;; (should (eq (char-after) ?\())
     ))
 
-(ert-deftest ar-delimited-test-Yixwry ()
+(ert-deftest ar-forward-sexp-test-Yixwry ()
   (ar-test-with-elisp-buffer-point-min
 "(defun foo (arg)
   \"(Some command \\\"]\\\" )  ( \"
@@ -644,7 +644,7 @@
     (should (eq (char-before) ?\)))
     ))
 
-(ert-deftest ar-delimited-test-BM94u0 ()
+(ert-deftest ar-forward-sexp-test-BM94u0 ()
   (ar-test-with-elisp-buffer-point-min
       "print(f\"Foo {asdf[0]}\")"
       (goto-char (point-min))
@@ -654,9 +654,11 @@
     ;; (should-not (eq (char-before) ?\]))
     ))
 
-(ert-deftest ar-delimited-test-8jsFZt ()
-  (ar-test-with-elisp-buffer-point-min
+(ert-deftest ar-forward-sexp-test-8jsFZt ()
+  (ar-test
       "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
       (goto-char (point-min))
     (search-forward "0")
     (ar-forward-sexp)
@@ -666,4 +668,3 @@
 
 (provide 'ar-forward-sexp-tests)
 ;; ar-forward-sexp-tests.el ends here
-

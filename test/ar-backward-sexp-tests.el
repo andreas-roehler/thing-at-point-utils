@@ -23,7 +23,7 @@
 
 ;;; Code:
 
-(ert-deftest ar-sexp-test-SKyWXX ()
+(ert-deftest ar-backward-sexp-test-SKyWXX ()
   (ar-test
       "[(asdf]"
    'emacs-lisp-mode
@@ -32,7 +32,7 @@
    (ar-backward-sexp)
    (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-sexp-test-RWfoG3 ()
+(ert-deftest ar-backward-sexp-test-RWfoG3 ()
   (ar-test
       "((asdf))"
    'emacs-lisp-mode
@@ -42,7 +42,7 @@
    (should-not (eq (char-after) ?\)))
    ))
 
-(ert-deftest ar-sexp-test-Zk58le ()
+(ert-deftest ar-backward-sexp-test-Zk58le ()
   (ar-test
       "{(asdf}"
    'emacs-lisp-mode
@@ -52,7 +52,7 @@
    (should (eq (char-after) ?\{))
    ))
 
-(ert-deftest ar-emacs-lisp-sexp-test-awtsCR ()
+(ert-deftest ar-emacs-lisp-backward-sexp-test-awtsCR ()
   (ar-test
       "((asdf))"
     'emacs-lisp-mode
@@ -102,7 +102,7 @@
     (should (bobp))
     (should (eq (char-after) ?{))))
 
-(ert-deftest ar-sexp-test-0Qwg73 ()
+(ert-deftest ar-backward-sexp-test-0Qwg73 ()
   (ar-test
       "[(asdf\"]\"]"
    'emacs-lisp-mode
@@ -111,7 +111,7 @@
    (ar-backward-sexp)
    (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-sexp-test-K5CfKV ()
+(ert-deftest ar-backward-sexp-test-K5CfKV ()
   (ar-test
       "((asdf)\")\")"
    'emacs-lisp-mode
@@ -121,7 +121,7 @@
    (should-not (eq (char-after) ?\)))
    ))
 
-(ert-deftest ar-sexp-test-g64KOA ()
+(ert-deftest ar-backward-sexp-test-g64KOA ()
   (ar-test
       "{(asdf\"}\"}"
    'emacs-lisp-mode
@@ -172,7 +172,7 @@
     (should (eq (char-before) ?-))
     ))
 
-(ert-deftest ar-sexp-test-cos9FQ ()
+(ert-deftest ar-backward-sexp-test-cos9FQ ()
   (ar-test
       "[(asdf\"]\"]"
    'fundamental-mode
@@ -181,7 +181,7 @@
    (ar-backward-sexp)
    (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-sexp-test-5mnMay ()
+(ert-deftest ar-backward-sexp-test-5mnMay ()
   (ar-test
       "((asdf)\")\")"
    'fundamental-mode
@@ -191,7 +191,7 @@
    (should-not (eq (char-after) ?\)))
    ))
 
-(ert-deftest ar-sexp-test-p669g4 ()
+(ert-deftest ar-backward-sexp-test-p669g4 ()
   (ar-test
       "{(asdf\"}\"}"
    'fundamental-mode
@@ -201,7 +201,7 @@
    (should (eq (char-after) ?\{))
    ))
 
-(ert-deftest ar-emacs-lisp-sexp-test-OAHdHO ()
+(ert-deftest ar-emacs-lisp-backward-sexp-test-OAHdHO ()
   (ar-test
       "((asdf)\")\")"
     'fundamental-mode
@@ -213,7 +213,7 @@
     (should (eq (char-before) ?\())
     ))
 
-(ert-deftest ar-emacs-lisp-sexp-test-ZFPK6U ()
+(ert-deftest ar-emacs-lisp-backward-sexp-test-ZFPK6U ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
@@ -225,7 +225,7 @@
     (should (eq (char-before) ?f))
     ))
 
-(ert-deftest ar-emacs-lisp-sexp-test-JsaamG ()
+(ert-deftest ar-emacs-lisp-backward-sexp-tests-JsaamG ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
@@ -236,7 +236,6 @@
     (should (eq (char-after) ?{))
     (should (eq (char-before) 32))
     ))
-
 
 (provide 'ar-backward-sexp-tests)
 ;; ar-backward-sexp-tests.el ends here
