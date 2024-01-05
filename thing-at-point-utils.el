@@ -1,6 +1,6 @@
 ;;; thing-at-point-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2023 Andreas Röhler, unless
+;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
@@ -16224,123 +16224,87 @@ See doku from ‘sort-subr’, for details.
 
 ;; ar-thing-at-point-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start 
 
-(defun ar-in-backslashed-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` backslashed' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "\\\\" condition)))
+(defun ar-in-backslashed-p-atpt ()
+  "Returns beginning position of ` backslashed' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'backslashed))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-backticked-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` backticked' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "`" condition)))
+(defun ar-in-backticked-p-atpt ()
+  "Returns beginning position of ` backticked' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'backticked))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-coloned-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` coloned' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base ":" condition)))
+(defun ar-in-coloned-p-atpt ()
+  "Returns beginning position of ` coloned' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'coloned))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-dollared-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` dollared' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "\\$" condition)))
+(defun ar-in-dollared-p-atpt ()
+  "Returns beginning position of ` dollared' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'dollared))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-doublequoted-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` doublequoted' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "\"" condition)))
+(defun ar-in-doublequoted-p-atpt ()
+  "Returns beginning position of ` doublequoted' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'doublequoted))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-equalized-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` equalized' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "=" condition)))
+(defun ar-in-equalized-p-atpt ()
+  "Returns beginning position of ` equalized' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'equalized))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-hyphened-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` hyphened' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "-" condition)))
+(defun ar-in-hyphened-p-atpt ()
+  "Returns beginning position of ` hyphened' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'hyphened))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-singlequoted-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` singlequoted' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "'" condition)))
+(defun ar-in-singlequoted-p-atpt ()
+  "Returns beginning position of ` singlequoted' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'singlequoted))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-slashed-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` slashed' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "/" condition)))
+(defun ar-in-slashed-p-atpt ()
+  "Returns beginning position of ` slashed' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'slashed))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-stared-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` stared' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "*" condition)))
+(defun ar-in-stared-p-atpt ()
+  "Returns beginning position of ` stared' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'stared))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-underscored-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` underscored' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base "_" condition)))
+(defun ar-in-underscored-p-atpt ()
+  "Returns beginning position of ` underscored' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'underscored))))
     (when no-delimiters (message "%s" erg))
     erg))
 
-(defun ar-in-whitespaced-p-atpt (&optional no-delimiters condition)
-  "Returns beginning position of ` whitespaced' if inside, a number or a list, nil otherwise.
-
-Optional CONDITION accepts a function. If it returns ‘t’, result at point is discarded, search continues.
-Like check for in-comment, which is done internally."
-  (interactive "p")
-  (let ((erg (ar-in-delimiter-base " " condition)))
+(defun ar-in-whitespaced-p-atpt ()
+  "Returns beginning position of ` whitespaced' if inside, nil otherwise."
+  (interactive)
+  (let ((erg (car-safe (ar-th-bounds  'whitespaced))))
     (when no-delimiters (message "%s" erg))
     erg))
 

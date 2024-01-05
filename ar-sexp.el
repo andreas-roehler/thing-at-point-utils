@@ -1,10 +1,10 @@
 ;;; ar-sexp.el --- navigate balanced expressions
 
-;; Copyright (C) 2023 Andreas Röhler
+;; Copyright (C) 2023-2024 Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 
-;; Version: 0.1
+;; Version: 0.2
 
 ;; This file is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -26,50 +26,13 @@
 ;;   "")
 
 ;;; Commentary:
-;;
+;; Similar to ‘forward-sexp’ but, when called from inside a comment or string, match only inside.
+;; Likewise, when called from outside a comment or string, ignore these for a match.
 
 (require 'thing-at-point-utils)
 
 (defun ar-forward-sexp-intern ()
-  "Internally used.
-Argument CHAR: the char after cursor position."
-  (let ((pps (parse-partial-sexp (point-min) (point)))
-        (char (ar--return-complement-char-maybe (char-after)))
-        (orig (point)))
-    (when (nth 8 pps)
-           (save-restriction
-             (save-excursion
-             (goto-char (nth 8 pps)
-                        (narrow-to-region
-                         (point)
-                         (if (nth 3 pps) (progn (forward-sexp) (point))
-                           (forward-comment 1)))))))
-    (cond ((eq (car-safe (char-syntax (point))) 7)
-           (goto-char (nth 8 pps))
-           (forward-sexp)) 
-          (t (pcase (char-after)
-               (?\{ (unless (ar-forward-braced-atpt)
-                      (goto-char orig)
-                      nil))
-               (?\( (unless (ar-forward-parentized-atpt)
-                      (goto-char orig)
-                      nil))
-               (?\[ (unless (ar-forward-bracketed-atpt)
-                      (goto-char orig)
-                      nil))
-               (_
-                (cond
-                 ((or (string-match (char-to-string (char-after)) th-beg-delimiter)(looking-at (concat "[" (regexp-quote ar-delimiters-atpt) "]")))
-                  (ar-forward-delimited-atpt))
-                 ((nth 3 pps)
-	          (goto-char (nth 8 pps))
-	          (forward-sexp))
-	         ((or (nth 4 pps) (eq (car (syntax-after (point))) 11))
-	          (ar-skip-blanks-and-comments nil pps))))))
-          (widen))))
-
-  ;; (when (eq (char-after) char)
-  ;;   (unless (eobp) (forward-char 1))))))
+  (ignore-errors (ar-forward-delimited-atpt)))
 
 (defun ar-backward-sexp-intern ()
   "Internally used.
@@ -77,37 +40,107 @@ Argument CHAR the char before cursor position."
   ;; (let (;;(complement-char (ar--return-complement-char-maybe char))
   ;; (pps (parse-partial-sexp (point-min) (point)))
   ;; (char (ar--return-complement-char-maybe (char-before))))
+  (unless (bobp)
     (let ((orig (point)))
       (pcase (char-before)
-        (?\} (unless (ar-backward-braced-atpt)
-               (goto-char orig)
-               nil))
-        (?\) (unless (ar-backward-parentized-atpt)
-               (goto-char orig)
-               nil))
-        (?\] (unless (ar-backward-bracketed-atpt)
-               (goto-char orig)
-               nil))
-        (_ (when (or (string-match (char-to-string (char-before)) th-beg-delimiter)(looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position)))
-             ;; at-point functions work from cursor position
-             (forward-char -1)
-             (ar-backward-delimited-atpt))))))
+        (?\" (unless
+                 (progn
+                   (forward-char -1)
+                   (ar-backward-doublequoted-atpt))
+               (goto-char orig)))
+        (?\} (unless
+                 (progn
+                   (forward-char -1)
+                   (ar-backward-braced-atpt))
+               (goto-char orig)))
+        (?\) (unless
+                 (progn
+                   (forward-char -1)
+                   (ar-backward-parentized-atpt))
+               (goto-char orig)))
+        (?\] (unless
+                 (progn
+                   (forward-char -1)
+                   (ar-backward-bracketed-atpt))
+               (goto-char orig)))
+                (?\{ (forward-char -1)) 
+
+        (?\( (forward-char -1))
+             
+        (?\[ (forward-char -1))
+
+        (_
+         (pcase (char-after)
+           (?\" (unless
+                    (ar-backward-doublequoted-atpt)
+                  (goto-char orig)
+                  (unless (bobp)
+                    (forward-char -1)
+                    (ar-backward-sexp-intern))))
+           (?\} (unless
+                    (progn
+                      ;; (forward-char -1)
+                      (ar-backward-braced-atpt))
+                  (goto-char orig)))
+           (?\) (unless
+                    (progn
+                      ;; (forward-char -1)
+                      (ar-backward-parentized-atpt))
+                  (goto-char orig)))
+           (?\] (unless
+                    (progn
+                      ;; (forward-char -1)
+                      (ar-backward-bracketed-atpt))
+                  (goto-char orig)))
+
+           (_ (if
+                  (or
+                   (member (char-before) th-beg-delimiter-list)
+                   (looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position))
+                   ;; (ar-in-delimited-p)
+                   )
+                  ;; at-point functions work from cursor position
+                  ;; (forward-char -1)
+                  (ar-backward-delimited-atpt)
+                (backward-word))))))
+      (and (< (point) orig) (point)))))
 
 (defun ar-forward-sexp (&optional arg)
   "Move forward across one balanced expression (sexp).
 Negative ARG -N means move backward across N balanced expressions.
 
-If started from outside a string and comment, do not match inside and vice versa.
+If started from outside a string and comment, do not match inside
+and vice versa.
 
 Don't match an opening bracket with closing paren, but ], etc."
-  (interactive)
-  (if (< 0 (or arg 1))
-      (ar-forward-sexp-intern)
-    (ar-backward-sexp-intern)))
+  (interactive "P")
+  ;; (if (eq 4 (prefix-numeric-value arg))
+      ;; (with-temp-buffer
+      ;; process code inside string or comment by temporarily removing that property
+  (let ((pps (parse-partial-sexp (point-min) (point)))
+        erg)
+    (if (nth 8 pps)
+        (save-restriction
+          (save-excursion
+            (goto-char (nth 8 pps))
+            (narrow-to-region
+             (point)
+             (if (nth 3 pps)
+                 (progn (forward-sexp) (point))
+               (progn
+                 (forward-comment 1)
+                 (point))
+)))
+          (if (< 0 (or arg 1))
+              (ar-forward-sexp-intern)
+            (ar-backward-sexp-intern)))
+      (if (< 0 (or arg 1))
+          (ar-forward-sexp-intern)
+        (ar-backward-sexp-intern)))))
 
 (defun ar-backward-sexp (&optional arg)
   "Go backward over a balanced expression."
-  (interactive)
+  (interactive "P")
   (ar-forward-sexp -1))
 
 (provide 'ar-sexp)

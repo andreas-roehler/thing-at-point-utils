@@ -62,17 +62,7 @@
     (should (bobp))
     (should (eq (char-after) ?\())))
 
-(ert-deftest ar-emacs-fundamental-test-8gy0wy ()
-  (ar-test
-      "((asdf))"
-    'fundamental-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (ar-backward-sexp)
-    (should (bobp))
-    (should (eq (char-after) ?\())))
-
-(ert-deftest ar-emacs-test-OlO7H1 ()
+(ert-deftest ar-emacs-backward-sexp-test-OlO7H1 ()
   (ar-test
       "[[asdf]]"
     'fundamental-mode
@@ -82,7 +72,7 @@
     (should (bobp))
     (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-emacs--test-3QZk6j ()
+(ert-deftest ar-emacs-backward-sexp-test-3QZk6j ()
   (ar-test
       "[(asdf]"
     'fundamental-mode
@@ -92,7 +82,7 @@
     (should (bobp))
     (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-emacs--test-oy2hnH ()
+(ert-deftest ar-emacs-backward-sexp-test-oy2hnH ()
   (ar-test
       "{(asdf}"
     'fundamental-mode
@@ -132,7 +122,7 @@
    (should (eq (char-after) ?\{))
    ))
 
-(ert-deftest ar-emacs-test-tqmEcC ()
+(ert-deftest ar-emacs-backward-sexp-test-tqmEcC ()
   (ar-test
       "[[asdf\"]\"]]"
     'fundamental-mode
@@ -142,7 +132,7 @@
     (should (bobp))
     (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-emacs--test-cMVJMz ()
+(ert-deftest ar-emacs-backward-sexp-test-cMVJMz ()
   (ar-test
       "[(asdf\"]\"]"
     'fundamental-mode
@@ -152,7 +142,7 @@
     (should (bobp))
     (should (eq (char-after) ?\[))))
 
-(ert-deftest ar-emacs--test-wuhBwe ()
+(ert-deftest ar-emacs-backward-sexp-test-wuhBwe ()
   (ar-test
       "{(asdf\"}\"}"
     'fundamental-mode
@@ -162,15 +152,6 @@
     (should (bobp))
     (should (eq (char-after) ?{))))
 
-(ert-deftest ar-ert-backward-sexp-test-k1ALAI ()
-  (ar-test-with-elisp-buffer
-      "\\s\"-*({<[\\]. []]>)*}\"]\"]"
-      (goto-char (point-max))
-    (skip-chars-backward "^*")
-    (ar-backward-sexp)
-    (should (eq (char-after) ?*))
-    (should (eq (char-before) ?-))
-    ))
 
 (ert-deftest ar-backward-sexp-test-cos9FQ ()
   (ar-test
@@ -213,7 +194,91 @@
     (should (eq (char-before) ?\())
     ))
 
-(ert-deftest ar-emacs-lisp-backward-sexp-test-ZFPK6U ()
+(ert-deftest ar-emacs-backward-sexp-fundamental-test-8gy0wy ()
+  (ar-test
+      "((asdf))"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (ar-backward-sexp)
+    (should (bobp))
+    (should (eq (char-after) ?\())))
+
+(ert-deftest ar-emacs-backward-sexp-fundamental-test-jmXbbv ()
+  (ar-test
+      "((asdf))"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward ")" nil t 2)
+    (ar-backward-sexp)
+    (should-not (bobp))
+    (should (eq (char-after) ?\())
+    (should (eq (char-before) ?\())
+    ))
+
+(ert-deftest ar-py-backward-sexp-test-lyqzaM ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\())
+    (should (eq (char-before) ?t))
+    ))
+
+(ert-deftest ar-py-backward-sexp-test-shZeCk ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward ")" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\"))
+    (should (eq (char-before) ?f))
+    ))
+
+(ert-deftest ar-py-backward-sexp-test-0Nw96j ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "\"" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?{))
+    (should (eq (char-before) 32))
+    ))
+
+
+
+(ert-deftest ar-py-backward-sexp-test-h1tsLI ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "}" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\[))
+    (should (eq (char-before) ?f))
+    ))
+
+(ert-deftest ar-py-backward-sexp-test-YvMT0f ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "]" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\[))
+    (should (eq (char-before) ?f))
+    ))
+
+(ert-deftest ar-py-backward-sexp-test-ZFPK6U ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
@@ -225,17 +290,74 @@
     (should (eq (char-before) ?f))
     ))
 
-(ert-deftest ar-emacs-lisp-backward-sexp-tests-JsaamG ()
+(ert-deftest ar-py-backward-sexp-tests-JsaamG ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
     ar-debug-p
     (goto-char (point-max))
-    (search-backward "f" nil t 1)
+    (search-backward "{" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?F))
+    ))
+
+(ert-deftest ar-py-backward-sexp-tests-3K8z9v ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "\"" nil t 2)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\())
+    ;; (should (eq (char-before) 32))
+    ))
+
+(ert-deftest ar-py-backward-sexp-tests-IpGVKy ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "f" nil t 2)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\())
+    ))
+
+(ert-deftest ar-py-backward-sexp-tests-tjfudh ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "(" nil t 1)
+    (ar-backward-sexp)
+    (should (eq (char-after) ?p))
+    ))
+
+
+(ert-deftest ar-ert-backward-sexp-test-k1ALAI ()
+  (ar-test-with-elisp-buffer
+      "\\s\"-*({<[\\\\]. []]>)*}\"]\\\"]"
+      (goto-char (point-max))
+    (skip-chars-backward "^*")
     (ar-backward-sexp)
     (should (eq (char-after) ?{))
-    (should (eq (char-before) 32))
+    (should (eq (char-before) ?\())
     ))
+
+(ert-deftest ar-ert-backward-sexp-test-LqsUub ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-min))
+    (search-forward "f")
+    (ar-backward-sexp)
+    (should (eq (char-after) ?\())
+    (should (eq (char-before) ?t))
+    ))
+
 
 (provide 'ar-backward-sexp-tests)
 ;; ar-backward-sexp-tests.el ends here

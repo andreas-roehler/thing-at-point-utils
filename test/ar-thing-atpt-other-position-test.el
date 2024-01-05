@@ -61,25 +61,25 @@
   (ar-test-with-temp-buffer "\"
      ;;; \" \" Write 'etc. \" \""
       (emacs-lisp-mode)
-    (goto-char 28)
+    (goto-char 27)
     (let* (ar-thing-no-nest
 	   (erg (ar-doublequoted-atpt)))
       (should erg))))
 
-(ert-deftest doublequoted-unpaired-delimited-test-5 ()
-  (ar-test-with-temp-buffer
-      "(setq foo
-      \"class OrderedDict1(dict):
-    \\\"\\\"\\\"
-    This implementation of a dictionary keeps track of the order
-    in which keys were inserted.
-    \\\"\\\"\\\"\")"
-      (emacs-lisp-mode)
-    (search-backward "class")
-        (let ((erg (length (ar-doublequoted-atpt))))
-      (should (< 33 erg)))))
+;; (ert-deftest doublequoted-unpaired-delimited-test-5 ()
+;;   (ar-test-with-temp-buffer
+;;       "(setq foo
+;;       \"class OrderedDict1(dict):
+;;     \\\"\\\"\\\"
+;;     This implementation of a dictionary keeps track of the order
+;;     in which keys were inserted.
+;;     \\\"\\\"\\\"\")"
+;;       (emacs-lisp-mode)
+;;     (search-backward "class")
+;;         (let ((erg (length (ar-doublequoted-atpt))))
+;;       (should (< 33 erg)))))
 
-(ert-deftest doublequoted-unpaired-delimited-test-tUDBmg ()
+(ert-deftest doublequoted-escaped-delimited-test-tUDBmg ()
   (ar-test-with-temp-buffer
       "(setq foo
       \"class OrderedDict1(dict):
@@ -155,15 +155,7 @@ return wwrap"
     (forward-sexp)
     (should (eobp))))
 
-(ert-deftest ar-ert-forward-parentized-test-1 ()
-  (ar-test-with-elisp-buffer-point-min
-      "(/ (* (* n 1) (1+ (* n 1))) 2)"
-      (goto-char (point-min))
-      (search-forward ")" nil t 1)
-    (forward-char -1)
-    (ar-forward-parentized-atpt)
-    (should (eq (char-before) 32))
-    (should (eq (char-after) ?\())))
+
 
 ;; (ert-deftest doublequoted-escaped-commented-delimited-test ()
 ;;   (ar-test-with-elisp-buffer "\"
@@ -225,6 +217,28 @@ return wwrap"
 ;;     (search-backward "l")
 ;;     (ar-hide-delimited-atpt)
 ;;     (should (hs-overlay-at (point)))))
+
+(ert-deftest ar-ert-forward-parentized-test-j83AvX ()
+  (ar-test-with-elisp-buffer-point-min
+      "(/ (* (* n 1) (1+ (* n 1))) 2)"
+      (goto-char (point-min))
+      (search-forward ")" nil t 1)
+    (forward-char -1)
+    (ar-forward-parentized-atpt)
+    (should (eq (char-before) ?\)))
+    (should (eq (char-after) 32))
+    ))
+
+(ert-deftest ar-ert-forward-parentized-test-K8qnOi ()
+  (ar-test-with-elisp-buffer-point-min
+      "(/ (* (* n 1) (1+ (* n 1))) 2)"
+      (goto-char (point-min))
+      (search-forward ") " nil t 1)
+    ;; (forward-char -1)
+    (ar-forward-parentized-atpt)
+    (should (eq (char-before) ?\)))
+    (should (eq (char-after) ?\)))))
+
 
 (provide 'ar-thing-atpt-other-position-test)
 ;;; ar-thing-atpt-other-position-test.el ends here

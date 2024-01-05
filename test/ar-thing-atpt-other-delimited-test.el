@@ -85,11 +85,9 @@ args = sys.argv"
 (ert-deftest ar-bracked-braced-numarg-test ()
   (ar-test-with-elisp-buffer-point-min "[a][s][d][f]"
       (forward-char 2)
-    (ar-brace-bracketed-atpt 4)
-    (sit-for 0.1)
-    (should (eobp))
-    (sit-for 0.1)
-    (should (eq (char-before) ?}))))
+    (ar-brace-bracketed-atpt)
+    (should (eq (char-before) ?}))
+    (should (eq 6 (point)))))
 
 (ert-deftest ar-separate-alnum-in-parentized-atpt-test ()
   (ar-test-with-elisp-buffer
@@ -100,7 +98,7 @@ args = sys.argv"
     (beginning-of-line)
     (back-to-indentation)
     (should (char-equal ?b (char-after)))
-    (forward-line -1)
+    (forward-line -2)
     (back-to-indentation)
     (should (char-equal ?f (char-after)))))
 

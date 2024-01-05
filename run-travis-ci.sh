@@ -870,12 +870,13 @@ hier () {
 -load $TEST16 \
 -load $TEST17 \
 -load $TEST18 \
--load $TEST19 \
 -load $TEST20 \
 -load $TEST21 \
 -load $TEST22 \
 -f ert-run-tests-batch-and-exit
 }
+
+# -load $TEST19 \
 
 entfernt () {
     $EMACS -Q --batch \

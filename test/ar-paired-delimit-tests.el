@@ -81,11 +81,18 @@
     (backward-char 2)
     (should (eq 25 (length (ar-delimited-atpt))))))
 
-(ert-deftest ar-left-right-angle-atpt-YzYGzY-test ()
+(ert-deftest ar-left-right-angle-atpt-test-YzYGzY ()
   (ar-test-with-temp-buffer
       "<foobar@example.com>"
       (goto-char (point-max))
-    (backward-char 8)
+    (search-backward "p")
+    (should (eq 20 (length (ar-delimited-atpt))))))
+
+(ert-deftest ar-left-right-angle-atpt-test-1iuDg9 ()
+  (ar-test-with-temp-buffer
+      "<foobar@example.com>"
+      (goto-char (point-max))
+    (search-backward "@") 
     (should (eq 20 (length (ar-delimited-atpt))))))
 
 (provide 'ar-paired-delimit-tests)

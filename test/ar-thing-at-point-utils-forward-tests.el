@@ -95,9 +95,10 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
 (ert-deftest ar-doublequote-bracketed-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer
       "foo\n[bar]\n[baz]"
-    (goto-char (point-max)) 
+    (goto-char (point-max))
     (push-mark)
     (goto-char (point-min))
+    ;; (switch-to-buffer (current-buffer))
     (ar-doublequote-bracketed-in-region-atpt)
     (goto-char (point-max))
     (should (eq (char-before) ?\"))))

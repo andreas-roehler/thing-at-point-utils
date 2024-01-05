@@ -578,7 +578,7 @@ Comments empty lines ignoring value of `ar-comment-empty-lines-lor'"
 
 (defalias 'ar-in-comment-p-lor 'ar-in-comment-p-atpt)
 
-(defun ar-comment-or-uncomment-lor (arg &optional beg end)
+(defun ar-comment-or-uncomment-lor (&optional arg beg end)
   "Comment line or region, unless it's already commented:
 uncomment then.
 With region: Only first line is checked for decision.

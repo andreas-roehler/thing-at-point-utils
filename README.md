@@ -8,6 +8,11 @@
 Thing-at-point-utils [![Build Status](https://travis-ci.org/andreas-roehler/thing-at-point-utils.svg?branch=master)](https://travis-ci.org/andreas-roehler/thing-at-point-utils)
 ===
 
+# ar-forward-sexp, ar- backward-sexp
+
+Similar to ‘forward-sexp’ but, when called from inside a comment or string, match only inside.
+Likewise, when called from outside a comment or string, ignore comments or strings for a match.
+
 # thing-at-point-utils
 Delivers a set of functions to return, mover over or
 manipulate a given THING. 

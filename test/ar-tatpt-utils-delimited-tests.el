@@ -1186,7 +1186,8 @@
   (ar-test-with-elisp-buffer-point-min
       "=asdf="
       (forward-char 1)
-    (should (ar-th-backward 'equalized))))
+    (ar-th-backward 'equalized)
+    (should (eq (char-after) ?=))))
 
 (ert-deftest ar-equalized-forward-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min

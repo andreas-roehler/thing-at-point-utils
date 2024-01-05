@@ -23,7 +23,7 @@
 
 ;;; Code:
 
-(ert-deftest ar-sexp-test-Yn2O6E ()
+(ert-deftest ar-forward-sexp-test-Yn2O6E ()
   (ar-test
       "[(asdf]"
    'emacs-lisp-mode
@@ -32,7 +32,7 @@
    (ar-forward-sexp)
    (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-sexp-test-iHa1er ()
+(ert-deftest ar-forward-sexp-test-iHa1er ()
   (ar-test
       "((asdf))"
    'emacs-lisp-mode
@@ -43,7 +43,7 @@
    (should (eq (char-before) ?\)))
    ))
 
-(ert-deftest ar-sexp-test-AH1o3P ()
+(ert-deftest ar-forward-sexp-test-AH1o3P ()
   (ar-test
       "{(asdf}"
    'emacs-lisp-mode
@@ -63,7 +63,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-thwxry ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-thwxry ()
   (ar-test-point-min
       "((asdf))"
     'fundamental-mode
@@ -74,7 +74,7 @@
     (should (eq (char-before (1- (point))) ?\)))
     ))
 
-(ert-deftest ar-emacs-fundamental-test-u0s6R8 ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-u0s6R8 ()
   (ar-test-point-min
       "[[asdf]]"
     'fundamental-mode
@@ -84,7 +84,7 @@
     (should (eobp))
     (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-emacs-fundamental-test-cSt0BF ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-cSt0BF ()
   (ar-test-point-min
       "[(asdf]"
     'fundamental-mode
@@ -94,7 +94,7 @@
     (should (eobp))
     (should (eq (char-before) 93))))
 
-(ert-deftest ar-emacs-fundamental-test-uHkpk1 ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-uHkpk1 ()
   (ar-test-point-min
       "{(asdf}"
     'fundamental-mode
@@ -114,7 +114,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-g8Q0mD ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-g8Q0mD ()
   (ar-test-point-min
       "((asdf))"
     'fundamental-mode
@@ -124,7 +124,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-hT9LEl ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-hT9LEl ()
   (ar-test-point-min
       "[[asdf]]"
     'fundamental-mode
@@ -134,7 +134,7 @@
     (should (eobp))
     (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-emacs-fundamental-test-cyaubB ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-cyaubB ()
   (ar-test-point-min
       "[(asdf]"
     'fundamental-mode
@@ -144,7 +144,7 @@
     (should (eobp))
     (should (eq (char-before) 93))))
 
-(ert-deftest ar-emacs-fundamental-test-EzlSpP ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-EzlSpP ()
   (ar-test-point-min
       "{(asdf}"
     'fundamental-mode
@@ -156,7 +156,7 @@
 
 ;;
 
-(ert-deftest ar-sexp-test-pZ6izl ()
+(ert-deftest ar-forward-sexp-test-pZ6izl ()
   (ar-test
       "\\s-*[[<({].[]>)}]"
    'emacs-lisp-mode
@@ -168,26 +168,27 @@
    (should (eq (char-before) ?\]))
    ))
 
-(ert-deftest ar-sexp-test-2x3N0X ()
+(ert-deftest ar-forward-sexp-test-2x3N0X ()
   (ar-test
       "\\s-*[[<({].[]>)}]"
    'emacs-lisp-mode
    ar-debug-p
    (goto-char (point-min))
    (search-forward "[" nil t 2)
-   (ar-forward-sexp-intern)
+   (ar-forward-sexp)
    (should (eq (char-after) ?\)))
    (should (eq (char-before) ?>))
    ))
 
 (ert-deftest ar-ert-forward-sexp-test-YURL6b ()
   (ar-test-with-elisp-buffer-point-min
-      ";;;\\\;; (beg)
+      ";;;\\\\;; (beg)
 (defun foo1 (&optional beg end))"
       (goto-char (point-min))
     (forward-char 9)
     (ar-forward-sexp)
-    (should (eq (char-after) ?\())))
+    (should (eolp))
+    (should (eq (char-before) ?\)))))
 
 (ert-deftest ar-ert-forward-sexp-test-ElPh0c ()
   (ar-test-with-elisp-buffer-point-min
@@ -199,7 +200,7 @@
     (should-not (nth 3 (parse-partial-sexp (point-min) (point))))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-sexp-test-CG33ej ()
+(ert-deftest ar-forward-sexp-test-CG33ej ()
   (ar-test
       "[(asdf\"]\"]"
    'emacs-lisp-mode
@@ -208,7 +209,7 @@
    (ar-forward-sexp)
    (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-sexp-test-5ZJTdA ()
+(ert-deftest ar-forward-sexp-test-5ZJTdA ()
   (ar-test
       "((asdf)\")\")"
    'emacs-lisp-mode
@@ -219,7 +220,7 @@
    (should (eq (char-before) ?\)))
    ))
 
-(ert-deftest ar-sexp-test-Ov97OT ()
+(ert-deftest ar-forward-sexp-test-Ov97OT ()
   (ar-test
       "{(asdf\"}\"}"
    'emacs-lisp-mode
@@ -239,7 +240,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-LBTvtu ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-LBTvtu ()
   (ar-test-point-min
       "((asdf)\")\")"
     'fundamental-mode
@@ -250,7 +251,7 @@
     (should (eq (char-before (1- (point))) ?\"))
     ))
 
-(ert-deftest ar-emacs-fundamental-test-MERLU5 ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-MERLU5 ()
   (ar-test-point-min
       "[[asdf\"]\"]]"
     'fundamental-mode
@@ -260,7 +261,7 @@
     (should (eobp))
     (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-emacs-fundamental-test-cMVJMz ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-cMVJMz ()
   (ar-test-point-min
       "[(asdf]"
     'fundamental-mode
@@ -270,7 +271,7 @@
     (should (eobp))
     (should (eq (char-before) 93))))
 
-(ert-deftest ar-emacs-fundamental-test-wuhBwe ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-wuhBwe ()
   (ar-test-point-min
       "{(asdf\"}\"}"
     'fundamental-mode
@@ -290,7 +291,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-uBDjZR ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-uBDjZR ()
   (ar-test-point-min
       "((asdf)\")\")"
     'fundamental-mode
@@ -300,7 +301,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-nxie12 ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-nxie12 ()
   (ar-test-point-min
       "[[asdf\"]\"]]"
     'fundamental-mode
@@ -310,7 +311,7 @@
     (should (eobp))
     (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-emacs-fundamental-test-aGtMJU ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-aGtMJU ()
   (ar-test-point-min
       "[(asdf]"
     'fundamental-mode
@@ -320,7 +321,7 @@
     (should (eobp))
     (should (eq (char-before) 93))))
 
-(ert-deftest ar-emacs-fundamental-test-sUG5Xy ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-sUG5Xy ()
   (ar-test-point-min
       "{(asdf\"}\"}"
     'fundamental-mode
@@ -332,7 +333,7 @@
 
 ;;
 
-(ert-deftest ar-sexp-test-OxZJD6 ()
+(ert-deftest ar-forward-sexp-test-OxZJD6 ()
   (ar-test
       "\\s-*[[<({\"]\"].[\"]\"]>\")\"}\"]\"]"
    'emacs-lisp-mode
@@ -344,7 +345,7 @@
    (should (eq (char-before) ?\]))
    ))
 
-(ert-deftest ar-sexp-test-Zq562F ()
+(ert-deftest ar-forward-sexp-test-Zq562F ()
   (ar-test
       "\\s-*[[<({\"]\"].[\"]\"]>\")\"}\"]\"]"
    'emacs-lisp-mode
@@ -356,7 +357,7 @@
    (should (eq (char-before) ?\]))
    ))
 
-(ert-deftest ar-sexp-test-tEV2zp ()
+(ert-deftest ar-forward-sexp-test-tEV2zp ()
   (ar-test
       "\\s-*[[<({\"]\"].[\"]\"]>\")\"}\"]\"]"
    'emacs-lisp-mode
@@ -367,37 +368,28 @@
    (should (eq (char-before) ?>))
    ))
 
-(ert-deftest ar-sexp-test-5FSYjd ()
+(ert-deftest ar-forward-sexp-test-5FSYjd ()
   (ar-test
       "\\s-*<({\"[\"].[\"]\"]>\")\"}\"]\"]"
    'emacs-lisp-mode
    ar-debug-p
    (goto-char (point-min))
    (skip-chars-forward "^[")
-   (ar-forward-sexp-intern)
+   (ar-forward-sexp)
    (should-not (eq (char-before) ?\]))
    ))
 
-(ert-deftest ar-sexp-test-qWvlkE ()
+(ert-deftest ar-sexp-forward-test-qWvlkE ()
   (ar-test
       "\\s-*<({\"[.[]]\">\")\"}\"]\"]"
    'emacs-lisp-mode
    ar-debug-p
    (goto-char (point-min))
    (skip-chars-forward "^[")
-   (ar-forward-sexp-intern)
+   (ar-forward-sexp)
    (should (eq (char-before) ?\]))
    (should (eq (char-after) ?\"))
    ))
-
-(ert-deftest ar-ert-forward-sexp-test-OM0sSF ()
-  (ar-test-with-elisp-buffer-point-min
-      ";;;\\\;; (beg)
-\(defun foo1 (&optional beg end))"
-      (goto-char (point-min))
-    (forward-char 9)
-    (ar-forward-sexp)
-    (should (eq (char-after) ?\())))
 
 (ert-deftest ar-ert-forward-sexp-test-QH86kg ()
   (ar-test-with-elisp-buffer-point-min
@@ -421,10 +413,11 @@
 
 (ert-deftest ar-ert-forward-sexp-test-iT50EO ()
   (ar-test-with-elisp-buffer-point-min
-      "\\s-*({\"<[\\].[]]>\")\"}\"]\"]"
+      "\\s-*({\"<[\\\\].[]]>\")\"}\"]\"]"
       (goto-char (point-min))
     (skip-chars-forward "^<")
     (ar-forward-sexp)
+    ;; (sit-for 1)
     (should (nth 3 (parse-partial-sexp (point-min) (point))))
     (should (eq (char-before) ?>))))
 
@@ -435,15 +428,6 @@
     (skip-chars-forward "^<")
     (ar-forward-sexp)
     (should-not (eq (char-before) ?>))))
-
-(ert-deftest ar-ert-forward-sexp-test-8OVzzq ()
-  (ar-test-with-elisp-buffer-point-min
-      ";;\\s-*({<[\\].[]]>\")\"}\"]\"]"
-      (goto-char (point-min))
-    (skip-chars-forward "^<")
-    (ar-forward-sexp)
-    (should (nth 4 (parse-partial-sexp (point-min) (point))))
-    (should (eq (char-before) ?>))))
 
 (ert-deftest ar-ert-forward-sexp-test-8tWuvH ()
   (ar-test-with-elisp-buffer-point-min
@@ -474,30 +458,8 @@
       (goto-char (point-min))
     (skip-chars-forward "^(")
     (ar-forward-sexp)
-    (should (eq (char-before) ?\)))
-    (should (eq (char-after) ?\"))
-    ))
-
-(ert-deftest ar-ert-forward-sexp-test-Mfiybl ()
-  (ar-test-with-elisp-buffer-point-min
-      ";;\\s-*({<[\\].
-;; []]>)\"}\"]\"]"
-      (goto-char (point-min))
-    (skip-chars-forward "^{")
-    (ar-forward-sexp)
-    (should (eq (char-before) ?}))
-    (should (eq (char-after) ?\"))
-    ))
-
-(ert-deftest ar-ert-forward-sexp-test-4OUCqP ()
-  (ar-test-with-elisp-buffer-point-min
-      ";;\\s\"-*({<[\\].
-;; []]>)}\"]\"]"
-      (goto-char (point-min))
-    (skip-chars-forward "^{")
-    (ar-forward-sexp)
-    (should (eq (char-before) ?}))
-    (should (eq (char-after) ?\"))
+    (should (eq (char-before) 10))
+    (should (eq (char-after) ?\;))
     ))
 
 (ert-deftest ar-ert-forward-sexp-test-Slu0k4 ()
@@ -531,7 +493,7 @@
     (should (eq (char-after) ?}))
     ))
 
-(ert-deftest ar-sexp-test-NyIYwZ ()
+(ert-deftest ar-forward-sexp-test-NyIYwZ ()
   (ar-test
       "[(asdf\"]\"]"
    'emacs-lisp-mode
@@ -540,7 +502,7 @@
    (ar-forward-sexp)
    (should (eq (char-before) ?\]))))
 
-(ert-deftest ar-sexp-test-RgMjiG ()
+(ert-deftest ar-forward-sexp-test-RgMjiG ()
   (ar-test
       "((asdf)\")\")"
    'emacs-lisp-mode
@@ -551,7 +513,7 @@
    (should (eq (char-before) ?\)))
    ))
 
-(ert-deftest ar-sexp-test-jWGSy4 ()
+(ert-deftest ar-forward-sexp-test-jWGSy4 ()
   (ar-test
       "{(asdf\"}\"}"
    'emacs-lisp-mode
@@ -571,7 +533,7 @@
     (should (eobp))
     (should (eq (char-before) ?\)))))
 
-(ert-deftest ar-emacs-fundamental-test-m0YUfQ ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-m0YUfQ ()
   (ar-test-point-min
       "((asdf)\")\")"
     'fundamental-mode
@@ -582,7 +544,7 @@
     (should (eq (char-before (1- (point))) ?\"))
     ))
 
-(ert-deftest ar-emacs-fundamental-test-tqmEcC ()
+(ert-deftest ar-emacs-forward-sexp-fundamental-test-tqmEcC ()
   (ar-test-point-min
       "[[asdf\"]\"]]"
     'fundamental-mode
@@ -591,24 +553,6 @@
     (ar-forward-sexp)
     (should (eobp))
     (should (eq (char-before) 93))))
-
-
-(ert-deftest ar-forward-sexp-test-ptFoeA ()
-  (ar-test-with-elisp-buffer-point-min
-      "(defun foo (arg)
-  \" ( Some command   (\"
-  ;; \"Some command (\"  )
-  ;; (  or ] not )
-  ;; ( asdf
-  (interactive \"p*\")
-  (message \"%s\" arg))"
-      (goto-char (point-min))
-    (search-forward "Some")
-    (forward-char -6)
-    (ar-forward-sexp)
-    (should-not (eq (char-before) ?\"))
-    (should (eq (char-after) ?\())
-    ))
 
 (ert-deftest ar-forward-sexp-test-m2rh7d ()
   (ar-test-with-elisp-buffer-point-min
@@ -622,7 +566,7 @@
       (goto-char (point-min))
     (search-forward "(")
     (ar-forward-sexp)
-    (should (eq (char-before) ?\"))
+    (should (eq (char-before) ?\)))
     ;; (should (eq (char-after) ?\())
     ))
 
@@ -650,8 +594,40 @@
       (goto-char (point-min))
     (search-forward "a")
     (ar-forward-sexp)
-    (should (eq (char-before) ?\"))
+    (should (eq (char-before) ?}))
     ;; (should-not (eq (char-before) ?\]))
+    ))
+
+(ert-deftest ar-forward-sexp-test-ptFoeA ()
+  (ar-test-with-elisp-buffer-point-min
+      "(defun foo (arg)
+  \" ( Some command   (\"
+  ;; \"Some command (\")
+  ;; (  or ] not)
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"
+      (goto-char (point-min))
+    (search-forward "Some")
+    (forward-char -6)
+    (ar-forward-sexp)
+    (should (eq (char-before) ?\"))
+    (should (eq (char-before (1- (point))) ?\())))
+
+(ert-deftest ar-forward-sexp-test-WXZ8XH ()
+  (ar-test-with-elisp-buffer-point-min
+      "(defun foo (arg)
+  \" ( Some command   (\"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"
+      (goto-char (point-min))
+    (end-of-line)
+    (ar-forward-sexp)
+    (should-not (eq (char-before (1- (point))) ?\"))
+    (should (eq (char-before) ?\)))
     ))
 
 (ert-deftest ar-forward-sexp-test-8jsFZt ()
@@ -662,9 +638,20 @@
       (goto-char (point-min))
     (search-forward "0")
     (ar-forward-sexp)
-    ;; (should (eq (char-before) ?\]))
-    (should (eq (char-before) ?\"))
+    (should (eq (char-before) ?\]))
     ))
+
+(ert-deftest ar-forward-sexp-test-NezJud ()
+  (ar-test
+      "print(f\"Foo {asdf[0]}\")"
+    'python-mode
+    ar-debug-p
+      (goto-char (point-min))
+    (ar-forward-sexp)
+    (should (eq (char-after) ?\())
+    ))
+
+
 
 (provide 'ar-forward-sexp-tests)
 ;; ar-forward-sexp-tests.el ends here

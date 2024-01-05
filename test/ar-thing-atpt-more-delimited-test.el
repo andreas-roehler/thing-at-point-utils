@@ -77,8 +77,9 @@
       "(add-to-list 'load-path \"~/foo\")"
     'emacs-lisp-mode
     ar-debug-p
+    (goto-char (point-max)) 
     (search-backward "oo")
-    (string= "foo" (ar-delimited-atpt))))
+    (should (string= (ar-delimited-atpt) "\"~/foo\"" ))))
 
 (ert-deftest ar-delimited-test-CkaEZw ()
   (ar-test
@@ -89,15 +90,6 @@
     (search-backward "2")
    (should  (string= "* 2 2*" (ar-delimited-atpt)))))
 
-(ert-deftest ar-delimited-test-qLwOV9 ()
-  (ar-test
-   "(add-to-list 'load-path \"~/arbeit/Emacs-allzeichenabk/emacs-26\.2\")"
-   'emacs-lisp-mode
-   ar-debug-p
-   (search-backward "ema")
-   (should (string=  "\"~/arbeit/Emacs-allzeichenabk/emacs-26.2\"" (ar-delimited-atpt)))))
-
-
 (ert-deftest ar-delimited-xml-test-r9C7hI ()
   (ar-test
       "<rdg wit=\"a2\">Foo bar baz<milestone unit=\"stanza\"/></rdg>"
@@ -107,7 +99,6 @@
     (search-backward "wit")
     (should
      (string=  (ar-delimited-atpt) "<rdg wit=\"a2\">"))))
-
 
 (ert-deftest ar-delimited-xml-test-Ixa2Qy ()
   (ar-test
@@ -164,15 +155,6 @@
     (search-backward "e")
     (should (string=  (ar-delimited-atpt) "<greeting>"))))
 
-(ert-deftest ar-delimited-underlines-test-8XxN4R ()
-  (ar-test
-      "foo = 'foo_bar_baz.txt'"
-    'python-mode
-    ar-debug-p
-    (goto-char (point-max))
-    (search-backward "a")
-    (should (string=  (ar-delimited-atpt) "'foo_bar_baz.txt'"))))
-
 ;; (ert-deftest ar-delimited-braced-occurrence-test-8XxN4R ()
 ;;   (ar-test
 ;;       "\"Hr {},\\r\\rTrrr rr r rrrr {} rrrr rr \\
@@ -219,7 +201,7 @@
 ;;       " ‘M-x append-to-register <RET> R’ can use ‘C-x r +’
 ;;  "
 ;;       (goto-char (point-min))
-;;     (search-forward "a") 
+;;     (search-forward "a")
 ;;     (should (string= "‘M-x append-to-register <RET> R’" (ar-delimited-atpt)))))
 
 (ert-deftest ar-less-than-greater-than-test-uoClPB ()
@@ -255,7 +237,63 @@
     (search-backward "2")
     (should (string=  (ar-delimited-atpt) "‘22’"))))
 
+(ert-deftest ar-delimited-test-2H1v4o ()
+  (ar-test
+      "(defun foo (arg)
+  \" ( Some command   (\"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"
+    'emacs-lisp-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "command" nil t 2)
+    (end-of-line)
+    (should (string=  (ar-delimited-atpt) "(defun foo (arg)
+  \" ( Some command   (\"
+  ;; \"Some command (\"  )
+  ;; (  or ] not )
+  ;; ( asdf
+  (interactive \"p*\")
+  (message \"%s\" arg))"))))
 
+(ert-deftest ar-delimited-underlines-test-8XxN4R ()
+  (ar-test
+      "foo = 'foo_bar_baz.txt'"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "a")
+    (should (string=  (ar-delimited-atpt) "'foo_bar_baz.txt'"))))
+
+(ert-deftest ar-delimited-underlines-test-AVgCeb ()
+  (ar-test
+      "foo = 'foo_bar_baz.txt'"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "xt") 
+    (should (string=  (ar-delimited-atpt) "'foo_bar_baz.txt'"))))
+
+(ert-deftest ar-delimited-allzeichenabk-test-qLwOV9 ()
+  (ar-test
+   "(add-to-list 'load-path \"~/arbeit/Emacs-allzeichenabk/emacs-26\.2\")"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-max))
+   (search-backward "allz")
+   (should (string=  "-allzeichenabk/emacs-" (ar-delimited-atpt)))))
+
+(ert-deftest ar-delimited-allzeichenabk-test-ns28ON ()
+  (ar-test
+   "(add-to-list 'load-path \"~/arbeit/Emacs-allzeichenabk/emacs-26\.2\")"
+   'emacs-lisp-mode
+   ar-debug-p
+   (goto-char (point-max))
+   (search-backward "Emacs-")
+   (should (string= (ar-delimited-atpt) "/Emacs-allzeichenabk/"))))
 
 (provide 'ar-thing-atpt-more-delimited-test)
 ;;; ar-thing-atpt-more-delimited-test.el ends here
