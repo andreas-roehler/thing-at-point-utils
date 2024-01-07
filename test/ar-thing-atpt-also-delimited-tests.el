@@ -1,4 +1,4 @@
-;;; ar-thing-atpt-also-delimited-test.el --- tests succeeding when called interactively  -*- lexical-binding: t; -*-
+;;; ar-thing-atpt-also-delimited-tests.el --- tests succeeding when called interactively  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Andreas Röhler
 
@@ -78,5 +78,5 @@
   (forward-char -2)
   (should (eq 11 (length (ar-delimited-atpt))))))
 
-(provide 'ar-thing-atpt-also-delimited-test)
-;;; ar-thing-atpt-also-delimited-test.el ends here
+(provide 'ar-thing-atpt-also-delimited-tests)
+;;; ar-thing-atpt-also-delimited-tests.el ends here

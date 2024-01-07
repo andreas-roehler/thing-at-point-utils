@@ -1,4 +1,4 @@
-;;; ar-trim-test.el --- test trim commands           -*- lexical-binding: t; -*-
+;;; ar-trim-tests.el --- test trim commands           -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Andreas Röhler
 
@@ -61,5 +61,5 @@
     (when (interactive-p) (message \"%s %s\" beg end))))"
     (should (eq 1 (car (ar-bounds-of-list-atpt))))))
 
-(provide 'ar-trim-test)
-;;; ar-trim-test.el ends here
+(provide 'ar-trim-tests)
+;;; ar-trim-tests.el ends here

@@ -290,7 +290,7 @@
     (should (eq (char-before) ?f))
     ))
 
-(ert-deftest ar-py-backward-sexp-tests-JsaamG ()
+(ert-deftest ar-py-backward-sexp-test-JsaamG ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
@@ -301,7 +301,7 @@
     (should (eq (char-after) ?F))
     ))
 
-(ert-deftest ar-py-backward-sexp-tests-3K8z9v ()
+(ert-deftest ar-py-backward-sexp-test-3K8z9v ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
@@ -313,7 +313,7 @@
     ;; (should (eq (char-before) 32))
     ))
 
-(ert-deftest ar-py-backward-sexp-tests-IpGVKy ()
+(ert-deftest ar-py-backward-sexp-test-IpGVKy ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
@@ -324,7 +324,7 @@
     (should (eq (char-after) ?\())
     ))
 
-(ert-deftest ar-py-backward-sexp-tests-tjfudh ()
+(ert-deftest ar-py-backward-sexp-test-tjfudh ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
     'python-mode

@@ -1,4 +1,4 @@
-;;; translate-paired-delimiters.el --- Translate delimiter chars
+;;; ar-translate-paired-delimiters-tests.el --- Translate delimiter chars
 
 ;; Copyright (C) 2014  Andreas Roehler
 
@@ -64,5 +64,5 @@
     (should (eq ?\] (char-after)))))
 
 
-(provide 'translate-paired-delimiters-test)
-;;; translate-paired-delimiters.el ends here
+(provide 'translate-paired-delimiters-tests)
+;;; translate-paired-delimiters-tests ends here

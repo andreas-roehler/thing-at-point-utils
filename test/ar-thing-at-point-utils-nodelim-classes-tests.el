@@ -1,4 +1,4 @@
-;;; ar-thing-at-point-utils-nodelim-classes-test.el --- ar-thing-at-point-utils-nodelim-classes
+;;; ar-thing-at-point-utils-nodelim-classes-tests.el --- ar-thing-at-point-utils-nodelim-classes
 
 ;; Copyright (C) 2015  Andreas Roehler
 
@@ -121,5 +121,5 @@
 ;; ar-thing-at-point-utils-nodelim-core: ar-atpt-classes-tests end
 
 
-(provide 'ar-thing-at-point-utils-nodelim-classes-test)
-;;; ar-thing-at-point-utils-nodelim-classes-test.el ends here
+(provide 'ar-thing-at-point-utils-nodelim-classes-tests)
+;;; ar-thing-at-point-utils-nodelim-classes-tests.el ends here

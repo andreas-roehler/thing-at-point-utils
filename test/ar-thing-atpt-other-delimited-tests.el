@@ -1,4 +1,4 @@
-;;; ar-thing-atpt-other-delimited-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+;;; ar-thing-atpt-other-delimited-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015  Andreas Röhler
 
@@ -289,5 +289,5 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (skip-chars-backward "^'" (line-beginning-position))
     (should (eq (char-after) ?o))))
 
-(provide 'ar-thing-atpt-other-delimited-test)
-;;; ar-thing-atpt-other-delimited-test.el ends here
+(provide 'ar-thing-atpt-other-delimited-tests)
+;;; ar-thing-atpt-other-delimited-tests.el ends here

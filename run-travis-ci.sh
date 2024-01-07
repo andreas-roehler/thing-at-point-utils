@@ -83,27 +83,27 @@ FILE22=ar-tptp-mode.el
 
 TEST1=test/thing-at-point-utils-tests.el
 TEST2=test/ar-paired-delimit-tests.el
-TEST3=test/ar-trim-test.el
+TEST3=test/ar-trim-tests.el
 TEST4=test/ar-unpaired-delimited-tests.el
 TEST5=test/ar-bracketlist-atpt-ert-tests.el
 TEST6=test/ar-thing-at-point-utils-forward-tests.el
-TEST7=test/ar-translate-paired-delimiters-test.el
-TEST8=test/ar-thing-at-point-utils-nodelim-classes-test.el
+TEST7=test/ar-translate-paired-delimiters-tests.el
+TEST8=test/ar-thing-at-point-utils-nodelim-classes-tests.el
 TEST9=test/ar-tatpt-utils-delimited-tests.el
 TEST10=test/ar-list-atpt-brace-ert-tests.el
 TEST11=test/ar-paired-delimited-tests.el
 TEST12=test/ar-delimited2delimited-tests.el
 TEST13=test/ar-separate-tests.el
 TEST14=test/ar-list-atpt-parens-ert-tests.el
-TEST15=test/ar-thing-atpt-also-delimited-test.el
-TEST16=test/ar-thing-atpt-other-delimited-test.el
-TEST17=test/ar-thing-atpt-other-position-test.el
-TEST18=test/ar-thing-atpt-more-delimited-test.el
+TEST15=test/ar-thing-atpt-also-delimited-tests.el
+TEST16=test/ar-thing-atpt-other-delimited-tests.el
+TEST17=test/ar-thing-atpt-other-position-tests.el
+TEST18=test/ar-thing-atpt-more-delimited-tests.el
 TEST19=test/ar-thing-at-point-interactive-tests.el
 TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
 TEST21=test/ar-backward-sexp-tests.el
 TEST22=test/ar-forward-sexp-tests.el
-TEST23=test/ar-tptp-mode-test.el
+TEST23=test/ar-tptp-mode-tests.el
 
 h1 () {
     $EMACS -Q --batch \

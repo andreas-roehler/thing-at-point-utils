@@ -1,4 +1,4 @@
-;;; ar-thing-atpt-other-position-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+;;; ar-thing-atpt-other-position-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015-2022  Andreas Röhler
 
@@ -240,5 +240,5 @@ return wwrap"
     (should (eq (char-after) ?\)))))
 
 
-(provide 'ar-thing-atpt-other-position-test)
-;;; ar-thing-atpt-other-position-test.el ends here
+(provide 'ar-thing-atpt-other-position-tests)
+;;; ar-thing-atpt-other-position-tests.el ends here

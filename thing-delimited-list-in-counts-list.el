@@ -35,7 +35,6 @@
 
 ;; Further information is given with thingatpt-utils-core.el
 
-;;;###autoload
 (defun ar-braced-in-angled-no-nest-atpt ()
   "Employ actions of  at things class of BRACED residing withing ANGLED-NO-NEST. "
   (interactive "*")
