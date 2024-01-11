@@ -77,7 +77,7 @@
       "(add-to-list 'load-path \"~/foo\")"
     'emacs-lisp-mode
     ar-debug-p
-    (goto-char (point-max)) 
+    (goto-char (point-max))
     (search-backward "oo")
     (should (string= (ar-delimited-atpt) "\"~/foo\"" ))))
 
@@ -274,7 +274,7 @@
     'python-mode
     ar-debug-p
     (goto-char (point-max))
-    (search-backward "xt") 
+    (search-backward "xt")
     (should (string=  (ar-delimited-atpt) "'foo_bar_baz.txt'"))))
 
 (ert-deftest ar-delimited-allzeichenabk-test-qLwOV9 ()
@@ -294,6 +294,16 @@
    (goto-char (point-max))
    (search-backward "Emacs-")
    (should (string= (ar-delimited-atpt) "/Emacs-allzeichenabk/"))))
+
+(ert-deftest ar-scala-mode-delimited-test-l1Szyp ()
+  (ar-test
+      "// scala> digitsToDouble (Seq(’2’, ’0’, ’4’, ’.’, ’5’))"
+   'scala-mode
+   ar-debug-p
+   (goto-char (point-max))
+   (search-backward "5")
+   (should (string= (ar-delimited-atpt) "’5’"))))
+
 
 (provide 'ar-thing-atpt-more-delimited-test)
 ;;; ar-thing-atpt-more-delimited-test.el ends here
