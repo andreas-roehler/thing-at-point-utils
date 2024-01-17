@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-setup-tests.el --- Provide needed forms -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2023  Andreas Röhler
+;; Copyright (C) 2015-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 
@@ -23,8 +23,6 @@
 
 ;;; Code:
 
-;; (require 'ar-forward-sexp)
-
 (defvar ar-debug-p nil
   "Avoid error")
 
@@ -34,11 +32,6 @@
   ""
   :type 'boolean
   :group 'werkstatt)
-
-(when (eq 0 (getenv "WERKSTATT"))
-  ;; being at my local machine
-  (add-to-list 'load-path (expand-file-name "~/.emacs.d/straight/build/markdown-mode"))
-  (require 'markdown-mode))
 
 (defun ar-toggle-debug-p ()
   "Toggle `ar-debug-p'. "
