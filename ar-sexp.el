@@ -40,6 +40,7 @@ Argument CHAR the char before cursor position."
   ;; (let (;;(complement-char (ar--return-complement-char-maybe char))
   ;; (pps (parse-partial-sexp (point-min) (point)))
   ;; (char (ar--return-complement-char-maybe (char-before))))
+  (skip-chars-backward " \t\n\r\f")
   (unless (bobp)
     (let ((orig (point)))
       (pcase (char-before)
@@ -63,10 +64,10 @@ Argument CHAR the char before cursor position."
                    (forward-char -1)
                    (ar-backward-bracketed-atpt))
                (goto-char orig)))
-                (?\{ (forward-char -1)) 
+                (?\{ (forward-char -1))
 
         (?\( (forward-char -1))
-             
+
         (?\[ (forward-char -1))
 
         (_
