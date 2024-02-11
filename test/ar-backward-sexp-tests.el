@@ -358,6 +358,37 @@
     (should (eq (char-before) ?t))
     ))
 
+(ert-deftest ar-ert-backward-sexp-test-dLvHy6 ()
+  (ar-test
+"def usage():
+    print(\"\"\"Fehler: %s:
+'python roulette.py 1, 'python roulette.py 2', ... 'python roulette.py n'.
+\"\"\" % (
+          os.path.basename(sys.argv[0])))
+"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "%")
+    (skip-chars-backward " \t\r\n\f")
+    (ar-backward-sexp)
+    (should (looking-at "\"\"\""))
+    ))
+
+(ert-deftest ar-ert-backward-sexp-test-UgZLKt ()
+  (ar-test
+      "'''asdf'''"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (skip-chars-backward " \t\r\n\f")
+    (ar-backward-sexp)
+    (should (looking-at "'''"))
+    ))
+
+
+
+
 
 (provide 'ar-backward-sexp-tests)
 ;; ar-backward-sexp-tests.el ends here

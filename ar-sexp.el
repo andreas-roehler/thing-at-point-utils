@@ -44,11 +44,14 @@ Argument CHAR the char before cursor position."
   (unless (bobp)
     (let ((orig (point)))
       (pcase (char-before)
-        (?\" (unless
-                 (progn
-                   (forward-char -1)
-                   (ar-backward-doublequoted-atpt))
-               (goto-char orig)))
+        (?\" (cond ((looking-back "\"\"\"" (line-beginning-position))
+                    (while (and (search-backward (match-string-no-properties 0))
+                                (nth 8 (parse-partial-sexp (point-min) (point))))))
+                   (t (unless
+                          (progn
+                            (forward-char -1)
+                            (ar-backward-doublequoted-atpt))
+                        (goto-char orig)))))
         (?\} (unless
                  (progn
                    (forward-char -1)
@@ -64,7 +67,7 @@ Argument CHAR the char before cursor position."
                    (forward-char -1)
                    (ar-backward-bracketed-atpt))
                (goto-char orig)))
-                (?\{ (forward-char -1))
+        (?\{ (forward-char -1))
 
         (?\( (forward-char -1))
 
@@ -95,15 +98,17 @@ Argument CHAR the char before cursor position."
                   (goto-char orig)))
 
            (_ (if
-                  (or
-                   (member (char-before) th-beg-delimiter-list)
-                   (looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position))
-                   ;; (ar-in-delimited-p)
-                   )
-                  ;; at-point functions work from cursor position
-                  ;; (forward-char -1)
-                  (ar-backward-delimited-atpt)
-                (backward-word))))))
+                  (or (member (char-before) th-beg-delimiter-list)
+                      (looking-back (concat "[" ar-delimiters-atpt "]") (line-beginning-position)))
+                  (cond ((looking-back "\"\"\"\\|'''" (line-beginning-position))
+                         (while (and (search-backward (match-string-no-properties 0))
+                                     (nth 8 (parse-partial-sexp (point-min) (point))))))
+                        (t (save-restriction
+                             (narrow-to-region (line-beginning-position) (point))
+                             (ar-backward-delimited-atpt))))
+                (skip-syntax-backward "^|\s\"\\(\\)")
+                ;; (syntax-class-to-char 15)
+                )))))
       (and (< (point) orig) (point)))))
 
 (defun ar-forward-sexp (&optional arg)
