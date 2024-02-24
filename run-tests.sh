@@ -62,7 +62,7 @@ SETUP2=${TESTDIR}py-setup-ert-tests.el
 FILE1=beg-end.el
 FILE2=ar-subr.el
 FILE3=thingatpt-utils-map.el
-FILE4=thingatpt-utils-core.el
+FILE4=ar-thingatpt-utils-core.el
 FILE5=thing-at-point-utils.el
 FILE6=thingatpt-highlight.el
 FILE7=thingatpt-transform-delimited.el
@@ -933,7 +933,7 @@ if [ $IFLOCAL -eq 0 ]; then
     [ $HOME/werkstatt/thingatpt-utils-core/ar-subr.el -nt ${PWD}/ar-subr.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/beg-end.el -nt ${PWD}/beg-end.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/beg-end.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
-    [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el -nt ${PWD}/thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $PWD && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el nach $HOME/werkstatt/numbers-at-point"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-core.el $HOME/werkstatt/numbers-at-point
+    [ $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el -nt ${PWD}/ar-thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el $PWD && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el nach $HOME/werkstatt/numbers-at-point"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el $HOME/werkstatt/numbers-at-point
     [ $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el -nt ${PWD}/ar-thingatpt-basic-definitions.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/
 

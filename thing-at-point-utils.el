@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 (require 'ar-thingatpt-basic-definitions)
 ;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 (defun ar-colon-greateranglednested-atpt (&optional arg)
@@ -12394,7 +12394,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-alnum-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-alnum-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-alpha-atpt (&optional no-delimiters)
@@ -12494,7 +12494,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-alpha-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-alpha-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-ascii-atpt (&optional no-delimiters)
@@ -12594,7 +12594,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-ascii-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-ascii-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-blank-atpt (&optional no-delimiters)
@@ -12694,7 +12694,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-blank-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-blank-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-cntrl-atpt (&optional no-delimiters)
@@ -12794,7 +12794,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-cntrl-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-cntrl-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-digit-atpt (&optional no-delimiters)
@@ -12894,7 +12894,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-digit-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-digit-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-graph-atpt (&optional no-delimiters)
@@ -12994,7 +12994,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-graph-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-graph-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-lower-atpt (&optional no-delimiters)
@@ -13094,7 +13094,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-lower-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-lower-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-nonascii-atpt (&optional no-delimiters)
@@ -13194,7 +13194,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-nonascii-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-nonascii-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-print-atpt (&optional no-delimiters)
@@ -13294,7 +13294,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-print-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-print-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-punct-atpt (&optional no-delimiters)
@@ -13394,7 +13394,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-punct-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-punct-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-space-atpt (&optional no-delimiters)
@@ -13494,7 +13494,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-space-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-space-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-upper-atpt (&optional no-delimiters)
@@ -13594,7 +13594,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-upper-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-upper-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 
 (defun ar-blok-xdigit-atpt (&optional no-delimiters)
@@ -13694,7 +13694,7 @@ See doku from ‘sort-subr’, for details.
   (let* ((beg (funcall (intern-soft (concat "ar-xdigit-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-xdigit-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
    erg))
 ;; ar-thing-at-point-utils-nodelim-einzeln: end
 
@@ -16228,84 +16228,84 @@ See doku from ‘sort-subr’, for details.
   "Returns beginning position of ` backslashed' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'backslashed))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-backticked-p-atpt ()
   "Returns beginning position of ` backticked' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'backticked))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-coloned-p-atpt ()
   "Returns beginning position of ` coloned' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'coloned))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-dollared-p-atpt ()
   "Returns beginning position of ` dollared' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'dollared))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-doublequoted-p-atpt ()
   "Returns beginning position of ` doublequoted' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'doublequoted))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-equalized-p-atpt ()
   "Returns beginning position of ` equalized' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'equalized))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-hyphened-p-atpt ()
   "Returns beginning position of ` hyphened' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'hyphened))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-singlequoted-p-atpt ()
   "Returns beginning position of ` singlequoted' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'singlequoted))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-slashed-p-atpt ()
   "Returns beginning position of ` slashed' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'slashed))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-stared-p-atpt ()
   "Returns beginning position of ` stared' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'stared))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-underscored-p-atpt ()
   "Returns beginning position of ` underscored' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'underscored))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 (defun ar-in-whitespaced-p-atpt ()
   "Returns beginning position of ` whitespaced' if inside, nil otherwise."
   (interactive)
   (let ((erg (car-safe (ar-th-bounds  'whitespaced))))
-    (when no-delimiters (message "%s" erg))
+    (when ar-verbose-p (message "%s" erg))
     erg))
 
 ;; ar-thing-at-point-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: end

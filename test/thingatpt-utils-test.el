@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 (require 'time-stamp)
 (require 'ar-thingatpt-basic-definitions)
 (defvar ar-atpt-functions-testlist '())

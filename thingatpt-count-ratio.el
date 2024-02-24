@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 (require 'ar-thingatpt-basic-definitions)
 ;;; count/ratio ar-atpt-rest-list ar-atpt-classes start
 

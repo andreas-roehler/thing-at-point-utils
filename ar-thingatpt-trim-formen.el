@@ -28,7 +28,7 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 
 ;; ar-thingatpt-trim-formen-anlegen-intern ar-unpaired-delimited-passiv: start
 (defun ar-trim-backslashed-atpt ()

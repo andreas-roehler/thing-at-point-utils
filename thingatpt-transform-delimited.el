@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 (defun ar-braced2symboled-atpt ()
   (interactive "*")
   (ar--transform-delimited-intern "braced" "symboled"))

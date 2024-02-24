@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 (require 'ar-thingatpt-basic-definitions)
 ;; ar-thing-at-point-utils-markup ar-atpt-markup-list start
 
