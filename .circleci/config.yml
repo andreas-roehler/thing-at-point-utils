@@ -29,23 +29,23 @@ jobs:
             --eval "(setq python-indent-guess-indent-offset nil)" \
             --eval "(setq python-indent-guess-indent-offset-verbose nil)" \
             --eval "(load (expand-file-name \"ar-subr.el\"))" \
-            --eval "(load (expand-file-name \"beg-end.el\"))" \
-            --eval "(load (expand-file-name \"thingatpt-utils-map.el\"))" \
+            --eval "(load (expand-file-name \"ar-beg-end.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-utils-map.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-basic-definitions.el\"))" \
-            --eval "(load (expand-file-name \"thingatpt-utils-core.el\"))" \
-            --eval "(load (expand-file-name \"thing-at-point-utils.el\"))" \
-            --eval "(load (expand-file-name \"thingatpt-highlight.el\"))" \
-            --eval "(load (expand-file-name \"thingatpt-transform-delimited.el\"))" \
-            --eval "(load (expand-file-name \"thing-unpaired-delimited-list-in-rest-list.el\"))" \
-            --eval "(load (expand-file-name \"thing-classes-in-rest-list.el\"))" \
-            --eval "(load (expand-file-name \"thing-delimited-list-in-counts-list.el\"))" \
-            --eval "(load (expand-file-name \"thing-classes-in-delimited-list.el\"))" \
-            --eval "(load (expand-file-name \"thing-unpaired-delimited-list-in-delimited-list.el\"))" \
-            --eval "(load (expand-file-name \"thing-at-point-peel.el\"))" \
-            --eval "(load (expand-file-name \"thingatpt-count-ratio.el\"))" \
-            --eval "(load (expand-file-name \"thingatpt-transform-generic-delimited.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-utils-core.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-at-point-utils.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-highlight.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-transform-delimited.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-unpaired-delimited-list-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-classes-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-delimited-list-in-counts-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-classes-in-delimited-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-unpaired-delimited-list-in-delimited-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-at-point-peel.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-count-ratio.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-transform-generic-delimited.el\"))" \
             --eval "(load (expand-file-name \"translate-paired-delimiters.el\"))" \
-            --eval "(load (expand-file-name \"thing-rest-list-in-region-only.el\"))" \
+            --eval "(load (expand-file-name \"ar-thing-rest-list-in-region-only.el\"))" \
             --eval "(load (expand-file-name \"ar-sexp.el\"))" \
             --eval "(load (expand-file-name \"ar-comment-lor.el\"))" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-setup-tests.el\")" \
