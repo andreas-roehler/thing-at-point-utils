@@ -1,6 +1,6 @@
 ;;; ar-list-atpt-brace-tests.el --- ar-list-atpt-brace-tests
 
-;; Copyright (C) 2015  Andreas Roehler
+;; Copyright (C) 2015-2024  Andreas Roehler
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: languages, convenience
 
@@ -466,7 +466,5 @@
     (skip-syntax-forward "^(")
     (ar-left-trim-list-atpt)
     (should (eq (char-after) 10))))
-
-
 
 (provide 'ar-list-atpt-brace-tests)

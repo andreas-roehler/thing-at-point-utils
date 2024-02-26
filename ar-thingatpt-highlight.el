@@ -1,4 +1,4 @@
-;;; thingatpt-highlight.el --- th-at-point edit functions -*- lexical-binding: t; -*-
+;;; ar-thingatpt-highlight.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise
@@ -137,4 +137,4 @@ line is hightlighted by customizing the group highlight-thing."
 
 
 (provide 'ar-thingatpt-highlight)
-;;; thingatpt-highlight.el ends here
+;;; ar-thingatpt-highlight.el ends here

@@ -1,6 +1,6 @@
 ;;; ar-translate-paired-delimiters-tests.el --- Translate delimiter chars
 
-;; Copyright (C) 2014  Andreas Roehler
+;; Copyright (C) 2014-2024  Andreas Roehler
 
 ;; Author: Andreas Roehler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-(require 'translate-paired-delimiters)
+(require 'ar-translate-paired-delimiters)
 
 
 (ert-deftest ar-paren2bracket-test ()
@@ -64,5 +64,5 @@
     (should (eq ?\] (char-after)))))
 
 
-(provide 'translate-paired-delimiters-tests)
-;;; translate-paired-delimiters-tests ends here
+(provide 'ar-translate-paired-delimiters-tests)
+;;; ar-translate-paired-delimiters-tests ends here

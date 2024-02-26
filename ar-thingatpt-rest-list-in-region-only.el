@@ -5841,6 +5841,6 @@
   (interactive "*p")
   (ar-thing-in-thing 'wordalphaonly 'region 'ar-th-whitespace arg))
 
-(provide 'thing-rest-list-in-region-only)
+(provide 'ar-thingatpt-rest-list-in-region-only)
 ;;;thing-rest-list-in-region-only.el ends here
 

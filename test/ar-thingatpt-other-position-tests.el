@@ -1,6 +1,6 @@
-;;; ar-thing-atpt-other-position-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+;;; ar-thingatpt-other-position-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2022  Andreas Röhler
+;; Copyright (C) 2015-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -240,5 +240,5 @@ return wwrap"
     (should (eq (char-after) ?\)))))
 
 
-(provide 'ar-thing-atpt-other-position-tests)
-;;; ar-thing-atpt-other-position-tests.el ends here
+(provide 'ar-thingatpt-other-position-tests)
+;;; ar-thingatpt-other-position-tests.el ends here

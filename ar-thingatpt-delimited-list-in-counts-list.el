@@ -13714,5 +13714,5 @@
   (interactive "*")
   (ar-thing-in-thing 'parentized 'buffer 'ar-th-whitespace))
 
-(provide 'thing-delimited-list-in-counts-list)
+(provide 'ar-thingatpt-delimited-list-in-counts-list)
 ;;;thing-delimited-list-in-counts-list.el ends here

@@ -1,7 +1,7 @@
 ;; ar-thingatpt-utils-comment-or-uncomment-tests.el --- Tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2013 Free Software Foundation, Inc.
-;; Copyright (C) 2014-2023 Andreas Röhler, <andreas.roehler@online.de>
+;; Copyright (C) 2014-2024 Andreas Röhler, <andreas.roehler@online.de>
 
 ;; GNU Emacs is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

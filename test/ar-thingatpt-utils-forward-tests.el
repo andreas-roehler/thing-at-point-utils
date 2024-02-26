@@ -1,6 +1,6 @@
-;;; ar-thing-at-point-utils-forward-tests.el --- test forward forms -*- lexical-binding: t; -*-
+;;; ar-thingatpt-utils-forward-tests.el --- test forward forms -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2016  Andreas Röhler
+;; Copyright (C) 2016-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@online.de>
 ;; Keywords: lisp
@@ -130,5 +130,5 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       (forward-char -2)
       (should (eq (char-after) ?1)))))
 
-(provide 'ar-thing-at-point-utils-forward-tests)
-;;; ar-thing-at-point-utils-forward-tests.el ends here
+(provide 'ar-thingatpt-utils-forward-tests)
+;;; ar-thingatpt-utils-forward-tests.el ends here

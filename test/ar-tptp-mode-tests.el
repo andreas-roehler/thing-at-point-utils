@@ -1,4 +1,4 @@
-;;; ar-tptp-mode-ert-tests.el --- -*- lexical-binding: t; -*-
+;;; ar-tptp-mode-tests.el --- -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023 Andreas Röhler, <andreas.roehler@online.de>
 
@@ -34,5 +34,5 @@
     (should (eq (face-at-point) 'font-lock-comment-face))
     ))
 
-(provide 'ar-modes-tptp-tests)
-;;; ar-modes-tptp-tests.el ends here
+(provide 'ar-tptp-mode-tests)
+;;; ar-tptp-mode-tests.el ends here

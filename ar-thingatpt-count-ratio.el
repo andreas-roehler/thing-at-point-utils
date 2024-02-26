@@ -1,4 +1,4 @@
-;;; thingatpt-count-ratio.el --- th-at-point edit functions -*- lexical-binding: t; -*-
+;;; ar-thingatpt-count-ratio.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise
@@ -13326,4 +13326,4 @@
 
 
 (provide 'ar-thingatpt-count-ratio)
-;;; thingatpt-count-ratio.el ends here
+;;; ar-thingatpt-count-ratio.el ends here

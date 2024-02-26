@@ -1,4 +1,4 @@
-;;; thingatpt-utils-map --- the menu
+;;; ar-thingatpt-utils-map --- the menu
 
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless
@@ -7393,5 +7393,5 @@
 )))
 
     map))
-(provide 'thingatpt-utils-map)
-;;; thingatpt-utils-map.el ends here
+(provide 'ar-thingatpt-utils-map)
+;;; ar-thingatpt-utils-map.el ends here

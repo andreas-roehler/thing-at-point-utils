@@ -29,7 +29,7 @@
 ;; Similar to ‘forward-sexp’ but, when called from inside a comment or string, match only inside.
 ;; Likewise, when called from outside a comment or string, ignore these for a match.
 
-(require 'thing-at-point-utils)
+(require 'ar-thingatpt-utils)
 
 (defun ar-forward-sexp-intern ()
   (ignore-errors (ar-forward-delimited-atpt)))

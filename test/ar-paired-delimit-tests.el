@@ -25,7 +25,7 @@
 
 ;;; Code:
 
-(require 'thing-at-point-utils)
+(require 'ar-thingatpt-utils)
 
 (ert-deftest ar-brace-alnum-atpt-test ()
   (ar-test-with-temp-buffer "asdf48"

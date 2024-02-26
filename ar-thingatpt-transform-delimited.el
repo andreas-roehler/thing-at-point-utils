@@ -1,4 +1,4 @@
-;;; thingatpt-transform-delimited.el --- transform delimited forms
+;;; ar-thingatpt-transform-delimited.el --- transform delimited forms
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise
@@ -1549,4 +1549,4 @@
   (ar--transform-delimited-intern "whitespaced" "underscored"))
 
 (provide 'ar-thingatpt-transform-delimited)
-;;; thingatpt-transform-delimited.el ends here
+;;; ar-thingatpt-transform-delimited.el ends here

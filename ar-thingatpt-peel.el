@@ -34,5 +34,5 @@
 
 
 
-(provide 'thing-at-point-peel)
+(provide 'ar-thingatpt-peel)
 ;;; thing-at-point-peel.el ends here

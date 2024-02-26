@@ -1,6 +1,6 @@
-;;; ar-thing-atpt-more-delimited-test.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+;;; ar-thingatpt-more-delimited-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2023  Andreas Röhler
+;; Copyright (C) 2015-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -305,5 +305,5 @@
    (should (string= (ar-delimited-atpt) "’5’"))))
 
 
-(provide 'ar-thing-atpt-more-delimited-test)
-;;; ar-thing-atpt-more-delimited-test.el ends here
+(provide 'ar-thingatpt-more-delimited-tests)
+;;; ar-thingatpt-more-delimited-tests.el ends here

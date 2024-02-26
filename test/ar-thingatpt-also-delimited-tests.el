@@ -1,6 +1,6 @@
-;;; ar-thing-atpt-also-delimited-tests.el --- tests succeeding when called interactively  -*- lexical-binding: t; -*-
+;;; ar-thingatpt-also-delimited-tests.el --- tests succeeding when called interactively  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018  Andreas Röhler
+;; Copyright (C) 2018-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@online.de>
 ;; Keywords: convenience
@@ -78,5 +78,5 @@
   (forward-char -2)
   (should (eq 11 (length (ar-delimited-atpt))))))
 
-(provide 'ar-thing-atpt-also-delimited-tests)
-;;; ar-thing-atpt-also-delimited-tests.el ends here
+(provide 'ar-thingatpt-also-delimited-tests)
+;;; ar-thingatpt-also-delimited-tests.el ends here

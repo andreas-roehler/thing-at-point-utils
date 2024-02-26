@@ -28,10 +28,10 @@
 
 ;;; Code:
 
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 
-(require 'thing-at-point-utils)
-(require 'thingatpt-transform-delimited)
+(require 'ar-thingatpt-utils)
+(require 'ar-thingatpt-transform-delimited)
 
 (defun delimited2--interned (thing &optional no-delimiters)
   (let* ((bounds (ar-th-bounds 'delimited no-delimiters (interactive-p)))

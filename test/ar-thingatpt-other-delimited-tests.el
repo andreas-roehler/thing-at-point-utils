@@ -1,6 +1,6 @@
-;;; ar-thing-atpt-other-delimited-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
+;;; ar-thingatpt-other-delimited-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015  Andreas Röhler
+;; Copyright (C) 2015-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -289,5 +289,5 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (skip-chars-backward "^'" (line-beginning-position))
     (should (eq (char-after) ?o))))
 
-(provide 'ar-thing-atpt-other-delimited-tests)
-;;; ar-thing-atpt-other-delimited-tests.el ends here
+(provide 'ar-thingatpt-other-delimited-tests)
+;;; ar-thingatpt-other-delimited-tests.el ends here

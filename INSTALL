@@ -3,9 +3,9 @@ One way to install is putting this into Emacs' init-file:
 
 (add-to-list 'load-path "PATH/TO/werkstatt/thingatpt-utils-core")
 (add-to-list 'load-path "PATH/TO/werkstatt/thing-at-point-utils")
-(require 'thingatpt-utils-core)
+(require 'ar-thingatpt-utils-core)
 
 There is some stuff around.
 
 Probably you would want use this:
-(require 'thing-at-point-utils)
+(require 'ar-thingatpt-utils)

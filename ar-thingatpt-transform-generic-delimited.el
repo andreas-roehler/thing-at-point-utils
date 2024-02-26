@@ -91,5 +91,6 @@
 
 ;; (global-set-key [(control c) (control d) ( )] 'ar-delimited2whitespaced-atpt)
 ;; (global-set-key [(control c) (control d) (})] 'ar-delimited2braced-atpt)
-(provide 'thingatpt-transform-generic-delimited)
+
+(provide 'ar-thingatpt-transform-generic-delimited)
 ;;; thingatpt-transform-generic-delimited.el ends here

@@ -28859,5 +28859,5 @@ See doku from ‘sort-subr’, for details.
 
 
 
-(provide 'thing-at-point-utils)
+(provide 'ar-thingatpt-utils)
 ;;; thing-at-point-utils.el ends here

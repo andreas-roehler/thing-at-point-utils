@@ -1,6 +1,6 @@
-;;; translate-paired-delimiters.el --- Translate delimiter chars
+;;; ar-translate-paired-delimiters.el --- Translate delimiter chars
 
-;; Copyright (C) 2014-2018  Andreas Röhler
+;; Copyright (C) 2014-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -90,5 +90,5 @@
   "Translate delimiter chars FROM into char TO. "
   (ar--translate-paired-delimiters-base beg end ?{ ?\[ ?\]))
 
-(provide 'translate-paired-delimiters)
-;;; translate-paired-delimiters.el ends here
+(provide 'ar-translate-paired-delimiters)
+;;; ar-translate-paired-delimiters.el ends here

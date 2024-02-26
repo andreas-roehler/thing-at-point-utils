@@ -61,45 +61,45 @@ SETUP2=${TESTDIR}py-setup-ert-tests.el
 
 FILE1=ar-beg-end.el
 FILE2=ar-subr.el
-FILE3=thingatpt-utils-map.el
+FILE3=ar-thingatpt-utils-map.el
 FILE4=ar-thingatpt-utils-core.el
-FILE5=thing-at-point-utils.el
-FILE6=thingatpt-highlight.el
-FILE7=thingatpt-transform-delimited.el
-FILE8=thing-unpaired-delimited-list-in-rest-list.el
-FILE9=thing-classes-in-rest-list.el
-FILE10=thing-delimited-list-in-counts-list.el
-FILE11=thing-unpaired-delimited-list-in-delimited-list.el
-FILE12=thing-classes-in-delimited-list.el
-FILE13=thing-at-point-peel.el
-FILE14=thingatpt-count-ratio.el
-FILE15=thingatpt-transform-generic-delimited.el
-FILE16=translate-paired-delimiters.el
-FILE17=thing-rest-list-in-region-only.el
-FILE18=thing-data-forms-aktiv-in-rest-list.el
+FILE5=ar-thingatpt-utils.el
+FILE6=ar-thingatpt-highlight.el
+FILE7=ar-thingatpt-transform-delimited.el
+FILE8=ar-thingatpt-unpaired-delimited-list-in-rest-list.el
+FILE9=ar-thingatpt-classes-in-rest-list.el
+FILE10=ar-thingatpt-delimited-list-in-counts-list.el
+FILE11=ar-thingatpt-unpaired-delimited-list-in-delimited-list.el
+FILE12=ar-thingatpt-classes-in-delimited-list.el
+FILE13=ar-thingatpt-peel.el
+FILE14=ar-thingatpt-count-ratio.el
+FILE15=ar-thingatpt-transform-generic-delimited.el
+FILE16=ar-translate-paired-delimiters.el
+FILE17=ar-thingatpt-rest-list-in-region-only.el
+FILE18=ar-thingatpt-data-forms-aktiv-in-rest-list.el
 FILE20=ar-sexp.el
 FILE21=ar-comment-lor.el
 FILE22=ar-tptp-mode.el
 
-TEST1=test/thing-at-point-utils-tests.el
+TEST1=test/ar-thingatpt-utils-tests.el
 TEST2=test/ar-paired-delimit-tests.el
 TEST3=test/ar-trim-tests.el
 TEST4=test/ar-unpaired-delimited-tests.el
 TEST5=test/ar-bracketlist-atpt-ert-tests.el
-TEST6=test/ar-thing-at-point-utils-forward-tests.el
+TEST6=test/ar-thingatpt-utils-forward-tests.el
 TEST7=test/ar-translate-paired-delimiters-tests.el
-TEST8=test/ar-thing-at-point-utils-nodelim-classes-tests.el
+TEST8=test/ar-thingatpt-utils-nodelim-classes-tests.el
 TEST9=test/ar-tatpt-utils-delimited-tests.el
-TEST10=test/ar-list-atpt-brace-ert-tests.el
+TEST10=test/ar-list-atpt-brace-tests.el
 TEST11=test/ar-paired-delimited-tests.el
 TEST12=test/ar-delimited2delimited-tests.el
 TEST13=test/ar-separate-tests.el
-TEST14=test/ar-list-atpt-parens-ert-tests.el
-TEST15=test/ar-thing-atpt-also-delimited-tests.el
-TEST16=test/ar-thing-atpt-other-delimited-tests.el
-TEST17=test/ar-thing-atpt-other-position-tests.el
-TEST18=test/ar-thing-atpt-more-delimited-tests.el
-TEST19=test/ar-thing-at-point-interactive-tests.el
+TEST14=test/ar-list-atpt-parens-tests.el
+TEST15=test/ar-thingatpt-also-delimited-tests.el
+TEST16=test/ar-thingatpt-other-delimited-tests.el
+TEST17=test/ar-thingatpt-other-position-tests.el
+TEST18=test/ar-thingatpt-more-delimited-tests.el
+TEST19=test/ar-thingatpt-interactive-tests.el
 TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
 TEST21=test/ar-backward-sexp-tests.el
 TEST22=test/ar-forward-sexp-tests.el
@@ -932,7 +932,6 @@ if [ $IFLOCAL -eq 0 ]; then
 
     [ $HOME/werkstatt/thingatpt-utils-core/ar-subr.el -nt ${PWD}/ar-subr.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-subr.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/ar-beg-end.el -nt ${PWD}/ar-beg-end.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-beg-end.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-beg-end.el $PWD
-    [ $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el -nt ${PWD}/thingatpt-utils-map.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/thingatpt-utils-map.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el -nt ${PWD}/ar-thingatpt-utils-core.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el $PWD && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el nach $HOME/werkstatt/numbers-at-point"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-utils-core.el $HOME/werkstatt/numbers-at-point
     [ $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el -nt ${PWD}/ar-thingatpt-basic-definitions.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el $PWD"; cp -u $HOME/werkstatt/thingatpt-utils-core/ar-thingatpt-basic-definitions.el $PWD
     [ $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el -nt ${PWD}/test/ar-thingatpt-setup-tests.el ] && echo "cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/"; cp -u $HOME/werkstatt/thingatpt-utils-core/test/ar-thingatpt-setup-tests.el $PWD/test/

@@ -1,6 +1,6 @@
-;;; thing-at-point-utils-tests.el --- -*- lexical-binding: t; -*-
+;;; ar-thingatpt-utils-tests.el --- -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2014-2018  Andreas Roehler
+;; Copyright (C) 2014-2024  Andreas Roehler
 
 ;; Author: Andreas Roehler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -83,5 +83,5 @@
     (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
-(provide 'thing-at-point-utils-tests)
-;;; thing-at-point-utils-tests.el ends here
+(provide 'ar-thingatpt-utils-tests)
+;;; ar-thingatpt-utils-tests.el ends here

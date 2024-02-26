@@ -1,6 +1,6 @@
 ;;; thingatpt-unpaired-delimited-list-in-delimited-list.el --- thing-in-thing functions
 
-;; Copyright (C) 2010 Andreas Röhler, unless
+;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
@@ -13355,6 +13355,6 @@
   (interactive "*")
   (ar-thing-in-thing 'whitespaced 'parentized 'ar-th-whitespace (interactive-p)))
 
-(provide 'thingatpt-unpaired-delimited-list-in-delimited-list)
+(provide 'ar-thingatpt-unpaired-delimited-list-in-delimited-list)
 ;;;thingatpt-unpaired-delimited-list-in-delimited-list.el ends here
 
