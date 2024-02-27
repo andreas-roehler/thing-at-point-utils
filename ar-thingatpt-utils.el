@@ -1,4 +1,4 @@
-;;; thing-at-point-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
+;;; ar-thingatpt-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise
@@ -28860,4 +28860,4 @@ See doku from ‘sort-subr’, for details.
 
 
 (provide 'ar-thingatpt-utils)
-;;; thing-at-point-utils.el ends here
+;;; ar-thingatpt-utils.el ends here
