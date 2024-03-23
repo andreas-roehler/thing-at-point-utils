@@ -297,13 +297,14 @@
 
 (ert-deftest ar-scala-mode-delimited-test-l1Szyp ()
   (ar-test
-      "// scala> digitsToDouble (Seq(’2’, ’0’, ’4’, ’.’, ’5’))"
-   'scala-mode
-   ar-debug-p
-   (goto-char (point-max))
-   (search-backward "5")
-   (should (string= (ar-delimited-atpt) "’5’"))))
-
+      "// scala> digitsToDouble (Seq('2', '0', '4', '.', '5'))"
+    'scala-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "5")
+    (let ((erg (ar-delimited-atpt)))
+      (sit-for 0.1)
+      (should (string= erg "'5'")))))
 
 (provide 'ar-thingatpt-more-delimited-tests)
 ;;; ar-thingatpt-more-delimited-tests.el ends here
