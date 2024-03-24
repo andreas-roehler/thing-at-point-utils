@@ -52,7 +52,7 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/py-setup-ert-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimit-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-trim-test.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-trim-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-bracketlist-atpt-ert-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-more-delimited-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-forward-tests.el\")" \
