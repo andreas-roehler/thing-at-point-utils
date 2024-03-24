@@ -37,15 +37,15 @@ jobs:
             --eval "(load (expand-file-name \"ar-thingatpt-highlight.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-transform-delimited.el\"))" \
             --eval "(load (expand-file-name \"ar-thing-unpaired-delimited-list-in-rest-list.el\"))" \
-            --eval "(load (expand-file-name \"ar-thing-classes-in-rest-list.el\"))" \
-            --eval "(load (expand-file-name \"ar-thing-delimited-list-in-counts-list.el\"))" \
-            --eval "(load (expand-file-name \"ar-thing-classes-in-delimited-list.el\"))" \
-            --eval "(load (expand-file-name \"ar-thing-unpaired-delimited-list-in-delimited-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-classes-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-delimited-list-in-counts-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-classes-in-delimited-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-unpaired-delimited-list-in-delimited-list.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-peel.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-count-ratio.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-transform-generic-delimited.el\"))" \
             --eval "(load (expand-file-name \"translate-paired-delimiters.el\"))" \
-            --eval "(load (expand-file-name \"ar-thing-rest-list-in-region-only.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-rest-list-in-region-only.el\"))" \
             --eval "(load (expand-file-name \"ar-sexp.el\"))" \
             --eval "(load (expand-file-name \"ar-comment-lor.el\"))" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-setup-tests.el\")" \
@@ -54,7 +54,7 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimit-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-trim-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-bracketlist-atpt-ert-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-more-delimited-test.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-more-delimited-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-forward-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-test.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-test.el\")" \
