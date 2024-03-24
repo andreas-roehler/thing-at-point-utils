@@ -54,20 +54,20 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimit-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-trim-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-bracketlist-atpt-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-more-delimited-test.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-more-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-forward-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-test.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-test.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-translate-paired-delimiters-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-list-atpt-brace-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-paired-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-delimited2delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-separate-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-list-atpt-parens-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-also-delimited-test.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-other-delimited-test.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-other-position-test.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-more-delimited-test.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-also-delimited-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-other-delimited-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-other-position-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-more-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-comment-or-uncomment-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-forward-sexp-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-backward-sexp-tests.el\")" \
