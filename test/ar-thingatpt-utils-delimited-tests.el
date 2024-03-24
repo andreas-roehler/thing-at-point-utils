@@ -1,4 +1,4 @@
-;;; ar-tatpt-utils-delimited-tests.el --- tests
+;;; ar-thingatpt-utils-delimited-tests.el --- tests
 
 ;; Copyright (C) 2015-2020  Andreas Röhler
 
@@ -2684,5 +2684,5 @@
 
 ;; ar-thing-at-point-utils-delimited-tests: ar-unpaired-delimited-raw end
 
-(provide 'ar-tatpt-utils-delimited-tests)
-;;; ar-tatpt-utils-delimited-tests.el ends here
+(provide 'ar-thingatpt-utils-delimited-tests)
+;;; ar-thingatpt-utils-delimited-tests.el ends here
