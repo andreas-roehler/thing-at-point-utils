@@ -64,7 +64,7 @@ jobs:
             --eval "(load \"/root/thing-at-point-utils/test/ar-delimited2delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-separate-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-list-atpt-parens-tests.el\")" \
-            --eval "(load \"/root/thing-at-point-utils/test/ar-thing-atpt-also-delimited-tests.el\")" \
+            --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-also-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-other-delimited-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-other-position-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-more-delimited-tests.el\")" \
