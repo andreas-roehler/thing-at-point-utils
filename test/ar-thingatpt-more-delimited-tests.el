@@ -306,5 +306,17 @@
       (sit-for 0.1)
       (should (string= erg "'5'")))))
 
+(ert-deftest ar-scala-mode-delimited-test-SpDdtE ()
+  (ar-test
+      "var b = Seq[(Int, Int)]()"
+    'scala-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "[")
+    (ar-trim-delimited-atpt)
+    (should (eq (char-after) 40))))
+
+
+
 (provide 'ar-thingatpt-more-delimited-tests)
 ;;; ar-thingatpt-more-delimited-tests.el ends here

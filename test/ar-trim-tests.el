@@ -1,6 +1,6 @@
 ;;; ar-trim-tests.el --- test trim commands           -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2016  Andreas Röhler
+;; Copyright (C) 2016-2024  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
