@@ -36,7 +36,7 @@ jobs:
             --eval "(load (expand-file-name \"ar-thingatpt-utils.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-highlight.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-transform-delimited.el\"))" \
-            --eval "(load (expand-file-name \"ar-thing-unpaired-delimited-list-in-rest-list.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-unpaired-delimited-list-in-rest-list.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-classes-in-rest-list.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-delimited-list-in-counts-list.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-classes-in-delimited-list.el\"))" \
@@ -44,7 +44,7 @@ jobs:
             --eval "(load (expand-file-name \"ar-thingatpt-peel.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-count-ratio.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-transform-generic-delimited.el\"))" \
-            --eval "(load (expand-file-name \"translate-paired-delimiters.el\"))" \
+            --eval "(load (expand-file-name \"ar-translate-paired-delimiters.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-rest-list-in-region-only.el\"))" \
             --eval "(load (expand-file-name \"ar-sexp.el\"))" \
             --eval "(load (expand-file-name \"ar-comment-lor.el\"))" \

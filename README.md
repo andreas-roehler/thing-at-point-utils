@@ -1,6 +1,5 @@
 # thing-at-point-utils
-
-[![CircleCI thing-at-point-utils](https://circleci.com/gh/andreas-roehler/thing-at-point-utils.svg?style=svg)](https://app.circleci.com/pipelines/gh/andreas-roehler/thing-at-point-util)s
+[![CircleCI thing-at-point-utils](https://circleci.com/gh/andreas-roehler/thing-at-point-utils.svg?style=svg)](https://app.circleci.com/pipelines/gh/andreas-roehler/thing-at-point-utils)
 
 ===
 
