@@ -30,10 +30,10 @@
 ;; `ar-hide-bracketed-in-line-atpt' for example hides everything insides brackets within the given line. Resp. `ar-show-bracketed-in-line-atpt' or a function which toggles this state: ar-hide-show-bracketed-in-line-atpt.
 ;; 
 ;; Referring which implementations are to be expected, see the
-;; contents lists at the bottom of thingatpt-utils-core.el which are
+;; contents lists at the bottom of ar-thingatpt-utils-core.el which are
 ;; cross-used in general.
 
-;; Further information is given with thingatpt-utils-core.el
+;; Further information is given with ar-thingatpt-utils-core.el
 
 (defun ar-alnum-in-braced-atpt ()
   "Employ actions of  at things class of ALNUM residing withing BRACED. "

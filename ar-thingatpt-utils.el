@@ -29,7 +29,7 @@
 
 (require 'ar-thingatpt-utils-core)
 (require 'ar-thingatpt-basic-definitions)
-;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
+;; ar-thingatpt-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 (defun ar-colon-greateranglednested-atpt (&optional arg)
   "Colon GREATERANGLEDNESTED at point."
   (interactive "*P")
@@ -2640,8 +2640,8 @@
   (interactive "*P")
   (ar-th-whitespace 'wordalphaonly))
 
-;; ar-thing-at-point-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
-;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
+;; ar-thingatpt-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
+;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
 (defun ar-symbol-greateranglednested-atpt (&optional arg)
   "Symbol GREATERANGLEDNESTED at point ARG times."
   (interactive "*P")
@@ -4034,8 +4034,8 @@
   (dotimes (i (or arg 1))
     (ar-th-delim 'wordalphaonly "(" ")")))
 
-;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: end
-;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: start
+;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: end
+;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: start
 (defun ar-symbol-backslashed-atpt (&optional arg)
   "Symbol BACKSLASHED at point ARG times."
   (interactive "*P")
@@ -4804,8 +4804,8 @@
   (dotimes (i (or arg 1))
     (ar-th-delim 'whitespaced "(" ")")))
 
-;; ar-thing-at-point-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: end
-;; ar-thing-at-point-utils-activ-passiv ar-paired-delimited-passiv-raw: start
+;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: end
+;; ar-thingatpt-utils-activ-passiv ar-paired-delimited-passiv-raw: start
 (defun ar-brace-braced-atpt (&optional arg)
   "Brace BRACED at point ARG times."
   (interactive "*p")
@@ -5190,8 +5190,8 @@
   (dotimes (i (or arg 1))
     (ar-th-delim 'parentized "(" ")")))
 
-;; ar-thing-at-point-utils-activ-passiv ar-paired-delimited-passiv-raw: end
-;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: start
+;; ar-thingatpt-utils-activ-passiv ar-paired-delimited-passiv-raw: end
+;; ar-thingatpt-utils-nodelim-core ar-atpt-classes: start
 
 (defun ar-alnum-atpt (&optional no-delimiters)
   "Returns alnum at point as string if any, nil otherwise.
@@ -6508,8 +6508,8 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Deletes XDIGIT at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'xdigit beg end))
-;; ar-thing-at-point-utils-nodelim-core ar-atpt-classes: end
-;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list: start
+;; ar-thingatpt-utils-nodelim-core ar-atpt-classes: end
+;; ar-thingatpt-utils-nodelim-core ar-atpt-rest-list: start
 
 (defun ar-greateranglednested-atpt (&optional no-delimiters)
   "Returns greateranglednested at point as string if any, nil otherwise.
@@ -9236,9 +9236,9 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Deletes WORDALPHAONLY at point if any. "
   (interactive "*r")
   (ar-th-delete-in-region 'wordalphaonly beg end))
-;; ar-thing-at-point-utils-nodelim-core ar-atpt-rest-list: end
+;; ar-thingatpt-utils-nodelim-core ar-atpt-rest-list: end
 
-;; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
+;; ar-thingatpt-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 
 
 (defalias 'ar-colon-alnum-atpt 'ar-alnum-colon-atpt)
@@ -10751,9 +10751,9 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-xdigit-whitespace-atpt (&optional no-delimiters)
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-whitespace 'xdigit no-delimiters));; ar-thing-at-point-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
+  (ar-th-whitespace 'xdigit no-delimiters));; ar-thingatpt-utils-unpaired-delim-aktiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 
-;; ar-thing-at-point-utils-unpaired-paired: start
+;; ar-thingatpt-utils-unpaired-paired: start
 
 
 (defalias 'ar-colon-braced-atpt 'ar-braced-colon-atpt)
@@ -11618,9 +11618,9 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-parentized-whitespace-atpt (&optional no-delimiters)
   "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*P")
-  (ar-th-whitespace 'parentized no-delimiters));; ar-thing-at-point-utils-unpaired-paired: end
+  (ar-th-whitespace 'parentized no-delimiters));; ar-thingatpt-utils-unpaired-paired: end
 
-;; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: start
+;; ar-thingatpt-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: start
 
 
 (defalias 'ar-symbol-alnum-atpt 'ar-alnum-symbol-atpt)
@@ -12293,9 +12293,9 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-xdigit-parentize-atpt ()
   "Parentize XDIGIT at point if any, nil otherwise "
   (interactive "*")
-  (ar-th-parentize 'xdigit));; ar-thing-at-point-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: end
+  (ar-th-parentize 'xdigit));; ar-thingatpt-utils-delim-classes-paired ar-atpt-classes ar-paired-delimit-aktiv: end
 
-;; ar-thing-at-point-utils-nodelim-einzeln: start
+;; ar-thingatpt-utils-nodelim-einzeln: start
 
 (defun ar-blok-alnum-atpt (&optional no-delimiters)
   "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around alnum.
@@ -13696,9 +13696,9 @@ See doku from ‘sort-subr’, for details.
         (erg (ignore-errors (< beg end))))
     (when ar-verbose-p (message "%s" erg))
    erg))
-;; ar-thing-at-point-utils-nodelim-einzeln: end
+;; ar-thingatpt-utils-nodelim-einzeln: end
 
-;; ar-thing-at-point-utils-delimited-intern: ar-unpaired-delimited-raw: start
+;; ar-thingatpt-utils-delimited-intern: ar-unpaired-delimited-raw: start
 
 (defun ar-backslashed-atpt (&optional no-delimiters)
   "Returns backslashed at point if any, nil otherwise.
@@ -16220,9 +16220,9 @@ See doku from ‘sort-subr’, for details.
     (when arg (message "%s" erg))
    erg))
 
-;; ar-thing-at-point-utils-delimited-intern: ar-unpaired-delimited-raw: end
+;; ar-thingatpt-utils-delimited-intern: ar-unpaired-delimited-raw: end
 
-;; ar-thing-at-point-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start 
+;; ar-thingatpt-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start 
 
 (defun ar-in-backslashed-p-atpt ()
   "Returns beginning position of ` backslashed' if inside, nil otherwise."
@@ -16308,9 +16308,9 @@ See doku from ‘sort-subr’, for details.
     (when ar-verbose-p (message "%s" erg))
     erg))
 
-;; ar-thing-at-point-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: end
+;; ar-thingatpt-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: end
 
-;; ar-thing-at-point-utils-delimiters-core: ar-paired-delimited-passiv: start
+;; ar-thingatpt-utils-delimiters-core: ar-paired-delimited-passiv: start
 
 (defun ar-braced-atpt (&optional no-delimiters)
   "Returns braced at point if any, nil otherwise.
@@ -18224,9 +18224,9 @@ See doku from ‘sort-subr’, for details.
     (when arg (message "%s" erg))
    erg))
 
-;; ar-thing-at-point-utils-delimiters-core: ar-paired-delimited-passiv: end
+;; ar-thingatpt-utils-delimiters-core: ar-paired-delimited-passiv: end
 
-;; ar-thing-at-point-utils-delimiters-core list: start
+;; ar-thingatpt-utils-delimiters-core list: start
 
 (defun ar-list-atpt (&optional no-delimiters)
   "Returns list at point if any, nil otherwise.
@@ -18467,9 +18467,9 @@ See doku from ‘sort-subr’, for details.
     (when arg (message "%s" erg))
    erg))
 
-;; ar-thing-at-point-utils-delimiters-core list: end
+;; ar-thingatpt-utils-delimiters-core list: end
 
-;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: start
+;; ar-thingatpt-utils-delimiters-core: ar-atpt-expression-list: start
 
 (defun ar-block-atpt (&optional no-delimiters)
   "Returns block at point if any, nil otherwise.
@@ -21339,9 +21339,9 @@ See doku from ‘sort-subr’, for details.
     (when arg (message "%s" erg))
    erg))
 
-;; ar-thing-at-point-utils-delimiters-core: ar-atpt-expression-list: end
+;; ar-thingatpt-utils-delimiters-core: ar-atpt-expression-list: end
 
-;; ar-thing-at-point-utils-delimiters-core: ar-atpt-rest-list: start
+;; ar-thingatpt-utils-delimiters-core: ar-atpt-rest-list: start
 
 (defun ar-greateranglednested-atpt (&optional no-delimiters)
   "Returns greateranglednested at point if any, nil otherwise.
@@ -28274,7 +28274,7 @@ See doku from ‘sort-subr’, for details.
     (when arg (message "%s" erg))
    erg))
 
-;; ar-thing-at-point-utils-delimiters-core: ar-atpt-rest-list: end
+;; ar-thingatpt-utils-delimiters-core: ar-atpt-rest-list: end
 
 
 (defun ar-colon-or-copy-atpt (&optional no-delimiters)

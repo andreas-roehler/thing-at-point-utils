@@ -32,7 +32,9 @@
 (require 'ar-thingatpt-utils)
 
 (defun ar-forward-sexp-intern ()
-  (ignore-errors (ar-forward-delimited-atpt)))
+  (cond ((ignore-errors (ar-delimited-atpt))
+         (ar-end-of-delimited-atpt))
+        (t (skip-syntax-forward "^("))))
 
 (defun ar-backward-sexp-intern ()
   "Internally used.
@@ -120,29 +122,23 @@ and vice versa.
 
 Don't match an opening bracket with closing paren, but ], etc."
   (interactive "P")
-  ;; (if (eq 4 (prefix-numeric-value arg))
-      ;; (with-temp-buffer
-      ;; process code inside string or comment by temporarily removing that property
-  (let ((pps (parse-partial-sexp (point-min) (point)))
+  ;; (if (eq 4 (prefix- numeric-value arg))
+  ;; (with-temp-buffer
+  ;; process code inside string or comment by temporarily removing that property
+  (let ((pps (parse-partial-sexp(point-min) (point)))
         erg)
-    (if (nth 8 pps)
+    (if (< 0 (or arg 1))
+        (progn
+          (when(nth 8 pps)
+            (save-restriction
+              (narrow-to-region
+               (nth 8 pps)(point-max))))
+          (ar-forward-sexp-intern))
+      (when(nth 8 pps)
         (save-restriction
-          (save-excursion
-            (goto-char (nth 8 pps))
-            (narrow-to-region
-             (point)
-             (if (nth 3 pps)
-                 (progn (forward-sexp) (point))
-               (progn
-                 (forward-comment 1)
-                 (point))
-)))
-          (if (< 0 (or arg 1))
-              (ar-forward-sexp-intern)
-            (ar-backward-sexp-intern)))
-      (if (< 0 (or arg 1))
-          (ar-forward-sexp-intern)
-        (ar-backward-sexp-intern)))))
+          (narrow-to-region
+           (nth 8 pps) (point))))
+      (ar-backward-sexp-intern))))
 
 (defun ar-backward-sexp (&optional arg)
   "Go backward over a balanced expression."

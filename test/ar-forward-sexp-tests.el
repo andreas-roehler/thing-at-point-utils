@@ -151,7 +151,6 @@
     ar-debug-p
     (goto-char (point-min))
     (ar-forward-sexp-atpt)
-    (should (eobp))
     (should (eq (char-before) ?}))))
 
 ;;
@@ -380,7 +379,7 @@
    ))
 
 (ert-deftest ar-sexp-forward-test-qWvlkE ()
-  (ar-test
+  (ar-test-point-min
       "\\s-*<({\"[.[]]\">\")\"}\"]\"]"
    'emacs-lisp-mode
    ar-debug-p
@@ -458,8 +457,8 @@
       (goto-char (point-min))
     (skip-chars-forward "^(")
     (ar-forward-sexp)
-    (should (eq (char-before) 10))
-    (should (eq (char-after) ?\;))
+    (should (eq (char-before) 41))
+    (should (eq (char-after) ?\"))
     ))
 
 (ert-deftest ar-ert-forward-sexp-test-Slu0k4 ()
@@ -649,6 +648,19 @@
       (goto-char (point-min))
     (ar-forward-sexp)
     (should (eq (char-after) ?\())
+    ))
+
+(ert-deftest ar-forward-sexp-test-jiIyLX ()
+  (ar-test
+      "print('%(language)s has %(number)03d quote types.' %
+       {'language': \"Python\", \"number\": 2})
+"
+    'python-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "{") 
+    (ar-forward-sexp)
+    (should (eq (char-before) ?}))
     ))
 
 
