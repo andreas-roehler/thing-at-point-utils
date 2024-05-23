@@ -16222,7 +16222,7 @@ See doku from ‘sort-subr’, for details.
 
 ;; ar-thingatpt-utils-delimited-intern: ar-unpaired-delimited-raw: end
 
-;; ar-thingatpt-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start 
+;; ar-thingatpt-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start
 
 (defun ar-in-backslashed-p-atpt ()
   "Returns beginning position of ` backslashed' if inside, nil otherwise."

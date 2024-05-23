@@ -647,7 +647,7 @@
     ar-debug-p
       (goto-char (point-min))
     (ar-forward-sexp)
-    (should (eq (char-after) ?\())
+    (should (eq (char-before) ?\)))
     ))
 
 (ert-deftest ar-forward-sexp-test-jiIyLX ()

@@ -34,7 +34,8 @@
 (defun ar-forward-sexp-intern ()
   (cond ((ignore-errors (ar-delimited-atpt))
          (ar-end-of-delimited-atpt))
-        (t (skip-syntax-forward "^("))))
+        (t (skip-syntax-forward "^(")
+           (ar-end-of-delimited-atpt))))
 
 (defun ar-backward-sexp-intern ()
   "Internally used.
