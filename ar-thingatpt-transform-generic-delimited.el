@@ -24,6 +24,11 @@
 
 ;;; Code:
 
+(defun ar-delimited2ampersanded-atpt ()
+  "Delimited2ampersanded."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ?&))
+
 (defun ar-delimited2backslashed-atpt ()
   "Delimited2backslashed."
   (interactive "*")
@@ -59,15 +64,45 @@
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?=))
 
+(defun ar-delimited2exclamationed-atpt ()
+  "Delimited2exclamationed."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ?!))
+
+(defun ar-delimited2hashtaged-atpt ()
+  "Delimited2hashtaged."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ?#))
+
 (defun ar-delimited2hyphened-atpt ()
   "Delimited2hyphened."
   (interactive "*")
   (ar--transform-generic-delimited-atpt ?-))
 
+(defun ar-delimited2percented-atpt ()
+  "Delimited2percented."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ?%))
+
+(defun ar-delimited2piped-atpt ()
+  "Delimited2piped."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ?|))
+
+(defun ar-delimited2questioned-atpt ()
+  "Delimited2questioned."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ??))
+
 (defun ar-delimited2parentized-atpt ()
   "Delimited2parentized."
   (interactive "*")
   (ar--transform-generic-delimited-atpt (cons ?\( ?\))))
+
+(defun ar-delimited2sectioned-atpt ()
+  "Delimited2sectioned."
+  (interactive "*")
+  (ar--transform-generic-delimited-atpt ?§))
 
 (defun ar-delimited2singlequoted-atpt ()
   "Delimited2singlequoted."
