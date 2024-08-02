@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-utils-delimited-tests.el --- tests
 
-;; Copyright (C) 2015-2020  Andreas Röhler
+;; Copyright (C) 2015-2024  Andreas Röhler
 
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: lisp
@@ -2388,7 +2388,7 @@
       " asdf "
       (forward-char 1)
     (ar-th-gotoend 'whitespaced)
-    (should (eq (char-after) 32))))
+    (should (eq (char-before) 32))))
 
 (ert-deftest ar-whitespaced-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
@@ -2649,7 +2649,7 @@
     (should (looking-back "```" (line-beginning-position)))))
 
 (ert-deftest ar-bracketed-atpt-test-V5h2sg-kZaJVd ()
-  (py-test-with-temp-buffer
+  (ar-test-with-temp-buffer
       "\[\"<3\", \" Haskell\"]"
     (goto-char (point-max))
     (skip-chars-backward " \t\r\n\f")
@@ -2657,14 +2657,14 @@
     (should (string= "\[\"<3\", \" Haskell\"]" (ar-delimited-atpt)))))
 
 (ert-deftest ar-angled-atpt-test-Zq97HB-kZaJVd ()
-  (py-test-with-temp-buffer
+  (ar-test-with-temp-buffer
       "(<$>)"
     (goto-char (point-max))
     (search-backward ">")
     (should (string= "<$>" (ar-delimited-atpt)))))
 
 (ert-deftest ar-braced-atpt-test-Zq97HB-kZaJVd ()
-  (py-test-with-temp-buffer
+  (ar-test-with-temp-buffer
       "{<$>}"
     (goto-char (point-max))
     (search-backward "}")

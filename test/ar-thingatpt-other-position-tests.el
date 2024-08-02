@@ -89,8 +89,8 @@
     \\\"\\\"\\\"\")"
       (emacs-lisp-mode)
     (search-backward "class")
-        (let ((erg (length (ar-delimited-atpt))))
-      (should (< 33 erg)))))
+    (let ((erg (length (ar-delimited-atpt))))
+      (should (eq 33 erg)))))
 
 (ert-deftest ar-string-test-1 ()
   (ar-test-with-temp-buffer-point-min
