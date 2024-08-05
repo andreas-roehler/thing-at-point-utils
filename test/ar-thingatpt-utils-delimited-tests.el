@@ -63,7 +63,7 @@
       "\\asdf\\"
       (forward-char 1)
     (ar-th-gotoend 'backslashed)
-    (should (eq (char-after) 92))))
+    (should (eq (char-before) 92))))
 
 (ert-deftest ar-backslashed-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min

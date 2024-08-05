@@ -279,7 +279,7 @@
 
 (ert-deftest ar-delimited-allzeichenabk-test-qLwOV9 ()
   (ar-test
-   "(add-to-list 'load-path \"~/arbeit/Emacs-allzeichenabk/emacs-26\.2\")"
+   "(add-to-list 'load-path \"~/foo/Emacs-allzeichenabk/emacs-26\.2\")"
    'emacs-lisp-mode
    ar-debug-p
    (goto-char (point-max))
@@ -288,7 +288,7 @@
 
 (ert-deftest ar-delimited-allzeichenabk-test-ns28ON ()
   (ar-test
-   "(add-to-list 'load-path \"~/arbeit/Emacs-allzeichenabk/emacs-26\.2\")"
+   "(add-to-list 'load-path \"~/foo/Emacs-allzeichenabk/emacs-26\.2\")"
    'emacs-lisp-mode
    ar-debug-p
    (goto-char (point-max))
