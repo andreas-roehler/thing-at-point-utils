@@ -2095,11 +2095,11 @@
 
 (ert-deftest ar-underscored-end-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
-      "_asdf_"
+      "_asdf_ "
       (goto-char (point-min))
       (forward-char 1)
     (ar-th-gotoend 'underscored)
-    (should (eq (char-after) ?_))))
+    (should (eq (char-before) ?_))))
 
 (ert-deftest ar-underscored-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
