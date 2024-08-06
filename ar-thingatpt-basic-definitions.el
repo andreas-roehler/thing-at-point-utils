@@ -1235,7 +1235,7 @@ it would doublequote a word at point "
                                       (cdr end-raw))
                                      (t (cadr end-raw))))
                            end-raw)))
-                   (cons beg end)
+                   (and beg end (cons beg end))
                    )))))))
 
 (defun ar-th (thing &optional arg)
@@ -1636,8 +1636,6 @@ If optional positions BEG-2TH END-2TH are given, works on them instead. "
                  (cadr (cadr bounds)))
                 ((numberp (ignore-errors (cdr (cadr bounds))))
                  (cdr (cadr bounds))))))
-	 ;; (end (copy-marker (or (ignore-errors (car (car (cdr bounds))))(ignore-errors (car (cdr (cadr bounds))))(ignore-errors (cdr (cadr bounds)))(cdr-safe bounds))))
-         ;; ar-scan-whole-buffer
 	 (last 1)
 	 inner-end done)
     ;; (sit-for 0.1)
@@ -1653,14 +1651,10 @@ If optional positions BEG-2TH END-2TH are given, works on them instead. "
 	     (not (eobp))
              (or (not done) (< last (point)))
 	     (setq last (point)))
-             ;; (sit-for 0.5)
-	  ;; (progn
-            (funcall th-function thing-1th)
-	    (setq done t)
-            ;; )
+          (funcall th-function thing-1th)
+	  (setq done t)
 	  (unless (or (eobp) (eq 'char thing-1th))
-            (setq inner-end (ar-th-forward thing-1th 1))))
-        ))))
+            (setq inner-end (ar-th-forward thing-1th 1))))))))
 
 (defun ar-th-kill (thing &optional no-delimiters)
   " "
