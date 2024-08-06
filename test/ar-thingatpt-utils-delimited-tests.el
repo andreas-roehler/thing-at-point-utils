@@ -1517,9 +1517,10 @@
 (ert-deftest ar-singlequoted-end-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
       "'asdf'"
+      (goto-char (point-min)) 
       (forward-char 1)
     (ar-th-gotoend 'singlequoted)
-    (should (eq (char-after) ?'))))
+    (should (eq (char-before) ?'))))
 
 (ert-deftest ar-singlequoted-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
@@ -1809,7 +1810,7 @@
       "/asdf/"
       (forward-char 1)
     (ar-th-gotoend 'slashed)
-    (should (eq (char-after) 47))))
+    (should (eq (char-before) 47))))
 
 (ert-deftest ar-slashed-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min

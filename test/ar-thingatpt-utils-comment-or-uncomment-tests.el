@@ -89,5 +89,29 @@ erg = nltk.pos_tag(res)
     (ar-kill-comment-atpt)
     (should (eobp))))
 
+(ert-deftest ar-ert-delete-comment-test-BoqoQs ()
+  (ar-test-with-elisp-buffer-point-min
+      "(defun foo1 (&optional beg end)
+  \" \"
+  (interactive \"*\")
+  (let ((beg (cond (beg)
+                   ((use-region-p)
+                    (region-beginning))
+                   (t (point-min))))
+        (end (cond (end (copy-marker end))
+                   ((use-region-p)
+                    (copy-marker (region-end)))
+                   (t (copy-marker (point-max))))))
+    (save-excursion
+      (goto-char beg))
+    (when (interactive-p) (message \"%s %s\" beg end))))
+;;\\s-*({<[\\]. []]>\")\"}\"]\"]"
+      (goto-char (point-max))
+    (search-backward "s")
+    (ar-delete-comment-atpt)
+    (skip-chars-backward " \t\r\n\f") 
+    (should (eq (char-before) ?\)))
+    ))
+
 (provide 'ar-thingatpt-utils-comment-or-uncomment-tests)
 ;;; ar-thingatpt-utils-comment-or-uncomment-tests.el ends here

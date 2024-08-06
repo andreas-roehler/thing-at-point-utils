@@ -161,7 +161,7 @@ args = sys.argv"
     (forward-char -2)
     (should (eq 6 (length (ar-string-atpt))))))
 
-(ert-deftest ar-in-string-no-delimiters-test ()
+(ert-deftest ar-in-string-no-delimiters-test-3Lc1Ie ()
   (ar-test-with-elisp-buffer
       ";; (setq foo
 \"asdf\""
@@ -169,7 +169,7 @@ args = sys.argv"
     (forward-char -2)
     (should (eq 4 (length (ar-string-atpt '(4)))))))
 
-(ert-deftest ar-peel-list-atpt-test ()
+(ert-deftest ar-peel-list-atpt-test-yAeeNz ()
     (ar-test-with-elisp-buffer-point-min
 	"(defun foo ()
   (let ((bar (save-excursion (baz nil nil))))

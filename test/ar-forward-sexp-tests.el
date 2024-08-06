@@ -634,7 +634,8 @@
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
     ar-debug-p
-      (goto-char (point-min))
+    (goto-char (point-min))
+    (sit-for 0.1) 
     (search-forward "0")
     (ar-forward-sexp)
     (should (eq (char-before) ?\]))
@@ -658,7 +659,7 @@
     'python-mode
     ar-debug-p
     (goto-char (point-max))
-    (search-backward "{") 
+    (search-backward "{")
     (ar-forward-sexp)
     (should (eq (char-before) ?}))
     ))
