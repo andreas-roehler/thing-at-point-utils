@@ -1,6 +1,6 @@
 ;;; ar-tptp-mode-tests.el --- -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2023 Andreas Röhler, <andreas.roehler@online.de>
+;; Copyright (C) 2023-2024 Andreas Röhler, <andreas.roehler@online.de>
 
 ;; GNU Emacs is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -19,20 +19,27 @@
 
 ;;; Code:
 
-(require 'ar-tptp-mode)
+(if (file-readable-p (expand-file-name "~/werkstatt/thing-at-point-utils/ar-tptp-mode.el"))
+    (progn
+      (add-to-list 'load-path (expand-file-name "~/werkstatt/thing-at-point-utils/ar-tptp-mode.el"))
+      (require 'ar-tptp-mode))
+  (error "ar-tptp-mode (not available"))
+
 (require 'ar-thingatpt-setup-tests)
 
 (ert-deftest ar-compute-tptp-indentation-test-RbPpW2 ()
   (ar-test-point-min
       "% File     : AGT035^1 : TPTP v8.2.0. Bugfixed v5.4.0."
     'ar-tptp-mode
-    ar-verbose-p
+    ar-debug-p
     (goto-char (point-min))
-    (font-lock-fontify-buffer) 
+    (font-lock-fontify-buffer)
     (should (eq (face-at-point) 'font-lock-comment-delimiter-face))
     (forward-char 4)
     (should (eq (face-at-point) 'font-lock-comment-face))
     ))
+
+
 
 (provide 'ar-tptp-mode-tests)
 ;;; ar-tptp-mode-tests.el ends here

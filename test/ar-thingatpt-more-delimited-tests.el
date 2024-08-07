@@ -287,12 +287,12 @@
    (should (string=  "-allzeichenabk/emacs-" (ar-delimited-atpt)))))
 
 (ert-deftest ar-delimited-allzeichenabk-test-ns28ON ()
-  (ar-test
+  (ar-test-with-elisp-buffer-point-min
    "(add-to-list 'load-path \"~/foo/Emacs-allzeichenabk/emacs-26\.2\")"
-   'emacs-lisp-mode
    ar-debug-p
-   (goto-char (point-max))
-   (search-backward "Emacs-")
+   (goto-char (point-min))
+   (search-forward "Emac")
+   (sit-for 0.1) 
    (should (string= (ar-delimited-atpt) "/Emacs-allzeichenabk/"))))
 
 (provide 'ar-thingatpt-more-delimited-tests)

@@ -354,7 +354,7 @@
       "$asdf$"
       (forward-char 1)
     (ar-th-gotoend 'dollared)
-    (should (eq (char-after) ?$))))
+    (should (eq (char-before) ?$))))
 
 (ert-deftest ar-dollared-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
@@ -651,7 +651,7 @@
       "\"asdf\""
       (forward-char 1)
     (ar-th-gotoend 'doublequoted)
-    (should (eq (char-after) ?\"))))
+    (should (eq (char-before) ?\"))))
 
 (ert-deftest ar-doublequoted-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
@@ -940,7 +940,7 @@
       "=asdf="
       (forward-char 1)
     (ar-th-gotoend 'equalized)
-    (should (eq (char-after) ?=))))
+    (should (eq (char-before) ?=))))
 
 (ert-deftest ar-equalized-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
@@ -1230,7 +1230,7 @@
       "-asdf-"
       (forward-char 1)
     (ar-th-gotoend 'hyphened)
-    (should (eq (char-after) ?-))))
+    (should (eq (char-before) ?-))))
 
 (ert-deftest ar-hyphened-length-atpt-test-kZaJVd ()
   (ar-test-with-elisp-buffer-point-min
