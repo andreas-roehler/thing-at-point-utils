@@ -138,19 +138,20 @@ args = sys.argv"
     (let ((erg (ar-name-atpt)))
       (should (string= erg "asdfg")))))
 
-(ert-deftest ar-in-doublequoted-atpt-test ()
+(ert-deftest ar-in-doublequoted-atpt-test-R6VIxg ()
   (ar-test-with-elisp-buffer
       "(setq foo \"asdf\""
     (goto-char (point-max))
     (forward-char -2)
     (should (eq 6 (length (ar-doublequoted-atpt))))))
 
-(ert-deftest ar-in-doublequoted-no-delimiters-test ()
+(ert-deftest ar-in-doublequoted-no-delimiters-test-fj1fKE ()
   (ar-test-with-elisp-buffer
       ";; (setq foo
 \"asdf\""
     (goto-char (point-max))
     (forward-char -2)
+    (sit-for 0.1)
     (should (eq 4 (length (ar-doublequoted-atpt '(4)))))))
 
 (ert-deftest ar-in-string-atpt-test-pXDGrZ ()
@@ -167,6 +168,7 @@ args = sys.argv"
 \"asdf\""
     (goto-char (point-max))
     (forward-char -2)
+    ;; (sit-for 1) 
     (should (eq 4 (length (ar-string-atpt '(4)))))))
 
 (ert-deftest ar-peel-list-atpt-test-yAeeNz ()

@@ -314,12 +314,12 @@
     ))
 
 (ert-deftest ar-py-backward-sexp-test-IpGVKy ()
-  (ar-test
+  (ar-test-point-min
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
     ar-debug-p
-    (goto-char (point-max))
-    (search-backward "f" nil t 2)
+    (goto-char (point-min))
+    (search-forward "f" nil t)
     (ar-backward-sexp)
     (should (eq (char-after) ?\())
     ))
