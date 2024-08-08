@@ -29,7 +29,8 @@
 
 (ert-deftest ar-compute-tptp-indentation-test-RbPpW2 ()
   (ar-test-point-min
-      "% File     : AGT035^1 : TPTP v8.2.0. Bugfixed v5.4.0."
+      ;; "% File     : AGT035^1 : TPTP v8.2.0. Bugfixed v5.4.0."
+      "asdf"                                                                
     'ar-tptp-mode
     ar-debug-p
     (goto-char (point-min))

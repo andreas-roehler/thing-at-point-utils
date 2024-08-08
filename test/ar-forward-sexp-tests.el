@@ -630,12 +630,12 @@
     ))
 
 (ert-deftest ar-forward-sexp-test-8jsFZt ()
-  (ar-test
+  (ar-test-point-min
       "print(f\"Foo {asdf[0]}\")"
     'python-mode
     ar-debug-p
     (goto-char (point-min))
-    (sit-for 0.1) 
+    ;; (sit-for 0.1) 
     (search-forward "0")
     (ar-forward-sexp)
     (should (eq (char-before) ?\]))
