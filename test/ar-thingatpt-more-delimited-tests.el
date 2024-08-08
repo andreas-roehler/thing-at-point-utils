@@ -289,11 +289,46 @@
 (ert-deftest ar-delimited-allzeichenabk-test-ns28ON ()
   (ar-test-with-elisp-buffer-point-min
    "(add-to-list 'load-path \"~/foo/Emacs-allzeichenabk/emacs-26\.2\")"
-   ar-debug-p
    (goto-char (point-min))
    (search-forward "Emac")
-   (sit-for 0.1) 
+   (sit-for 0.1)
    (should (string= (ar-delimited-atpt) "/Emacs-allzeichenabk/"))))
+
+(ert-deftest ar-end-of-delimited-test-wTNokm ()
+  (ar-test-with-python-buffer-point-min
+      "print(f\"Foo {asdf[0]}\")"
+    (goto-char (point-min))
+    (search-forward "F")
+    ;; (sit-for 0.1)
+    (ar-end-of-delimited-atpt)
+    (should (eq (char-after) 41))))
+
+(ert-deftest ar-end-of-delimited-test-nIxpIP ()
+  (ar-test-with-python-buffer-point-min
+      "print(f\"Foo {asdf[0]}\")"
+    (goto-char (point-min))
+    (search-forward "0")
+    ;; (sit-for 0.1)
+    (ar-end-of-delimited-atpt)
+    (should (eq (char-after) ?}))))
+
+(ert-deftest ar-end-of-delimited-test-zRwEF8 ()
+  (ar-test-with-python-buffer-point-min
+      "print(f\"Foo {asdf[0]}\")"
+    (goto-char (point-min))
+    (search-forward "[")
+    ;; (sit-for 0.1)
+    (ar-end-of-delimited-atpt)
+    (should (eq (char-after) ?}))))
+
+(ert-deftest ar-end-of-delimited-test-BdUoxG ()
+  (ar-test-with-python-buffer-point-min
+      "print(f\"Foo {asd[0]}\")"
+    (goto-char (point-min))
+    (search-forward "d")
+    ;; (sit-for 0.1)
+    (ar-end-of-delimited-atpt)
+    (should (eq (char-after) ?}))))
 
 (provide 'ar-thingatpt-more-delimited-tests)
 ;;; ar-thingatpt-more-delimited-tests.el ends here
