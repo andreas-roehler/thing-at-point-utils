@@ -108,7 +108,7 @@ TEST20=test/ar-thingatpt-utils-comment-or-uncomment-tests.el
 TEST21=test/ar-backward-sexp-tests.el
 TEST22=test/ar-forward-sexp-tests.el
 TEST23=test/ar-tptp-mode-tests.el
-TEST24=test/ar-thingatpt-scala-mode.tests.el
+TEST24=test/ar-thingatpt-scala-mode-tests.el
 
 h1 () {
     $EMACS -Q --batch \
@@ -971,18 +971,19 @@ entfernt () {
 
 if [ $IFLOCAL -eq 0 ]; then
 
+    WGE=$HOME/werkstatt/emacs-generics
     WCO=$HOME/werkstatt/thingatpt-utils-core
     ATPT=$HOME/werkstatt/thing-at-point-utils
     WNA=$HOME/werkstatt/numbers-at-point
 
     cp -p ${WCO}/ar-subr.el ${ATPT}/ar-subr.el
-    cp -p ${WCO}/ar-beg-end.el ${ATPT}/ar-beg-end.el
+    cp -p ${WGE}/ar-beg-end.el ${ATPT}/ar-beg-end.el
     cp -p ${WCO}/ar-thingatpt-utils-core.el ${ATPT}/ar-thingatpt-utils-core.el
     cp -p ${WCO}/ar-thingatpt-basic-definitions.el ${ATPT}/ar-thingatpt-basic-definitions.el
     cp -p ${WCO}/test/ar-thingatpt-setup-tests.el ${ATPT}/test/ar-thingatpt-setup-tests.el
 
     cp -p ${WCO}/ar-subr.el ${WNA}/ar-subr.el
-    cp -p ${WCO}/ar-beg-end.el ${WNA}/ar-beg-end.el
+    cp -p ${WGE}/ar-beg-end.el ${WNA}/ar-beg-end.el
     cp -p ${WCO}/ar-thingatpt-basic-definitions.el ${WNA}/ar-thingatpt-basic-definitions.el
     cp -p ${WCO}/ar-thingatpt-utils-core.el ${WNA}/ar-thingatpt-utils-core.el
     cp -p ${ATPT}/ar-thingatpt-utils.el ${WNA}/ar-thingatpt-utils.el

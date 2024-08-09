@@ -635,9 +635,9 @@
     'python-mode
     ar-debug-p
     (goto-char (point-min))
-    ;; (sit-for 0.1) 
     (search-forward "0")
     (ar-forward-sexp)
+    (sit-for 0.1) 
     (should (eq (char-before) ?\]))
     ))
 
