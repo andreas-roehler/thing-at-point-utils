@@ -1,4 +1,4 @@
-;;; ar-sexp.el --- navigate balanced expressions
+;;; ar-sexp.el --- navigate balanced expressions and related stuff -*- lexical-binding: t; -*- 
 
 ;; Copyright (C) 2023-2024 Andreas Röhler
 
@@ -130,21 +130,93 @@ Don't match an opening bracket with closing paren, but ], etc."
         erg)
     (if (< 0 (or arg 1))
         (progn
-          (when(nth 8 pps)
-            (save-restriction
-              (narrow-to-region
-               (nth 8 pps)(point-max))))
+          ;; (when(nth 8 pps)
+          ;;   (save-restriction
+          ;;     (narrow-to-region
+          ;;      (nth 8 pps)(point-max))))
           (ar-forward-sexp-intern))
-      (when(nth 8 pps)
-        (save-restriction
-          (narrow-to-region
-           (nth 8 pps) (point))))
+      ;; (when(nth 8 pps)
+      ;;   (save-restriction
+      ;;     (narrow-to-region
+      ;;      (nth 8 pps) (point))))
       (ar-backward-sexp-intern))))
 
 (defun ar-backward-sexp (&optional arg)
   "Go backward over a balanced expression."
   (interactive "P")
   (ar-forward-sexp -1))
+
+
+(defun ar-align-equal-sign()
+  (interactive "*")
+  (ar-align-symbol "=")
+  )
+
+(defun ar-align-symbol (&optional arg)
+  (interactive "*p")
+  (unless (nth 8 (parse-partial-sexp (point-min) (point)))
+    (let ((regexp (or arg ar-align-default-re)))
+      ;; (when t
+      (when (or (eq this-command 'self-insert-command) (eq (prefix-numeric-value arg) 1))
+        (ar-align-symbol-intern)))))
+
+(defun ar-align-symbol-intern ()
+  (let (;; (pps (parse-partial-sexp (point-min) (point)))
+        (regexp
+        (negated-re "^=>\\|->\\|<-\\|=+")))
+    (save-excursion
+      (let ((end (copy-marker (line-end-position)))
+            (secondcolumn (and (looking-back (concat ".+" regexp "[[:space:]]*") (line-beginning-position))
+                               (not
+                                (save-excursion (goto-char (match-beginning 0))
+                                                (looking-back (concat ".+" regexp ".*") (line-beginning-position))))
+                               ;; (member (char-after) (list 32 ?\n ?\t ?\f))
+                               ;;  haskell
+                               (not (looking-back "main +\\(=+\\) *" (line-beginning-position)))
+                               (goto-char (match-beginning 1))
+                               ;; better match-data then from looking-back
+                               (looking-at regexp)
+                               (current-column)))
+            (maxcolumn 0)
+            (indent (current-indentation))
+            (orig (copy-marker (point)))
+            erg col)
+        ;; an equal-sign at current line
+        (when secondcolumn
+          ;; (message "(match-string-no-properties 1): %s" (match-string-no-properties 1))
+          (setq erg (match-string-no-properties 1))
+          ;; (message "erg: %s" erg)
+          (setq maxcolumn secondcolumn)
+          (setq orig (copy-marker (point)))
+          (while
+              (and (progn (beginning-of-line)
+                          (not (bobp)))
+                   (progn (forward-line -1)
+                          (not (looking-at comment-start)))
+                   (not (ar-empty-line-p))
+                   (<= (current-indentation) indent)
+                   (or
+                    (and (eq major-mode 'scala-mode) (looking-at " *case *$"))
+                    (setq col (string-match erg (buffer-substring-no-properties (line-beginning-position) (line-end-position))))))
+            (when col (move-to-column col))
+            (when (< maxcolumn (current-column))
+              (setq maxcolumn (current-column))))
+          ;; before going downward, reach the last match
+          ;; (when (match-beginning 1) (goto-char (match-beginning 1)))
+          (while (< (line-end-position) end)
+            (setq col (string-match erg (buffer-substring-no-properties (line-beginning-position) (line-end-position))))
+            (when col (move-to-column col)
+                  (when (< (current-column) maxcolumn)
+                    (insert (make-string (- maxcolumn (current-column)) 32))))
+            (forward-line 1))
+          (goto-char orig)
+          (when (concat negated-re "+ +\\(" regexp "\\)[[:blank:]]+.*")
+            (when (< (current-column) maxcolumn)
+              (insert (make-string (- maxcolumn (current-column)) 32)))))))))
+
+(defun ar-align-in-current-buffer ()
+  (interactive)
+  (add-hook 'post-command-hook #'ar-align-symbol nil t))
 
 (provide 'ar-sexp)
 ;;; ar-sexp.el ends here

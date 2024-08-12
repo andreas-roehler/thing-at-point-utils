@@ -976,7 +976,7 @@ if [ $IFLOCAL -eq 0 ]; then
     ATPT=$HOME/werkstatt/thing-at-point-utils
     WNA=$HOME/werkstatt/numbers-at-point
 
-    cp -p ${WCO}/ar-subr.el ${ATPT}/ar-subr.el
+    cp -p ${WGE}/ar-subr.el ${ATPT}/ar-subr.el
     cp -p ${WGE}/ar-beg-end.el ${ATPT}/ar-beg-end.el
     cp -p ${WCO}/ar-thingatpt-utils-core.el ${ATPT}/ar-thingatpt-utils-core.el
     cp -p ${WCO}/ar-thingatpt-basic-definitions.el ${ATPT}/ar-thingatpt-basic-definitions.el

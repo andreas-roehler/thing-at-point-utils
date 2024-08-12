@@ -102,14 +102,6 @@ args = sys.argv"
     (back-to-indentation)
     (should (char-equal ?f (char-after)))))
 
-(ert-deftest ar-doublequote-graph-in-bracketed-atpt-test ()
-  (py-test-with-temp-buffer
-      "[defun asdf &optional arg for bar]"
-    (goto-char (point-max))
-    (unless (bobp) (forward-char -1))
-    (ar-doublequote-graph-in-bracketed-atpt)
-    (should (ar-in-string-p))))
-
 (ert-deftest ar-separate-doublequoted-in-bracketed-atpt-test ()
   (ar-test-with-elisp-buffer
 	"[\"defun\" \"asdf\" \"&optional\" \"arg\" \"for\" \"bar\"]"
@@ -168,7 +160,7 @@ args = sys.argv"
 \"asdf\""
     (goto-char (point-max))
     (forward-char -2)
-    ;; (sit-for 1) 
+    ;; (sit-for 1)
     (should (eq 4 (length (ar-string-atpt '(4)))))))
 
 (ert-deftest ar-peel-list-atpt-test-yAeeNz ()
@@ -290,6 +282,38 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (should (eq (char-before) ?e))
     (skip-chars-backward "^'" (line-beginning-position))
     (should (eq (char-after) ?o))))
+
+(ert-deftest ar-doublequote-graph-in-bracketed-atpt-test ()
+  (py-test-with-temp-buffer
+      "[defun asdf &optional arg for bar]"
+    (goto-char (point-max))
+    (unless (bobp) (forward-char -1))
+    (ar-doublequote-graph-in-bracketed-atpt)
+    (should (ar-in-string-p))))
+
+(ert-deftest ar-align-inline-comment-HLk4Vq ()
+  (py-test-with-temp-buffer
+"dates = [
+    r'\d{2}\.\d{2}\.\d{2}',    #  \"DD.MM.YY\" foo
+    r'\b\w+ \d{1,2}, \d{4}\b',                  #  \"Month DD, YYYY\" foo
+]
+"
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "#")
+    (ar-align-symbol "#")
+    (should (eq (current-column) 12))))
+
+
+
+;; dates = [
+;;     r'\d{2}\.\d{2}\.\d{2}',                     #  \"DD.MM.YY\" foo
+;;     r'\b\w+ \d{1,2}, \d{4}\b',                  #  \"Month DD, YYYY\" foo
+;;     r'\b\w+ \d{1,2}(th|st|nd|rd)?, \d{4}\b',    #  \"Month DDth, YYYY\" foo
+;;     r'\b\d{1,2} - \d{1,2} \w+, \d{4}\b',        #  \"DD - DD Month, YYYY\" foo
+;;     r'\b\w+ \d{1,2}(-\d{1,2})? \d{4}\b',        #  \"Month DD(-DD) YYYY\" foo
+;;     r'\b\d{1,2}(-\d{1,2})? \w+ \d{4}\b'         #  \"DD(-DD) Month YYYY\" foo
+;; ]
 
 (provide 'ar-thingatpt-other-delimited-tests)
 ;;; ar-thingatpt-other-delimited-tests.el ends here
