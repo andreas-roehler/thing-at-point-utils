@@ -1,4 +1,4 @@
-;;; ar-sexp.el --- navigate balanced expressions and related stuff -*- lexical-binding: t; -*- 
+;;; ar-sexp.el --- navigate balanced expressions and related stuff -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2024 Andreas Röhler
 
@@ -147,72 +147,107 @@ Don't match an opening bracket with closing paren, but ], etc."
   (ar-forward-sexp -1))
 
 
+(defvar ar-align-default-re "\\(=>\\|->\\|<-\\|=\\)"
+  "Used by ar-align-symbol")
+
 (defun ar-align-equal-sign()
   (interactive "*")
   (ar-align-symbol "=")
   )
 
+(defun ar-align-inline-comment()
+  ""
+  (interactive "*")
+  (save-excursion
+    (let ((char (if (search-forward comment-start (line-end-position) t)
+                    (progn
+                      (goto-char (match-beginning 0))
+                      (skip-chars-forward "^[[:blank:]]+")
+                      (char-to-string (char-before)))
+                  (when (search-backward comment-start (line-beginning-position) t)
+                    (char-to-string (char-after))))))
+      (ar-align-symbol-intern char))))
+
+(defun ar-align-mode-specific-stop()
+  (pcase major-mode
+    (`scala-mode (and (eq major-mode 'scala-mode) (looking-at " *case *$")))))
+
+;; *** The two new functions 'looking-at-p' and 'string-match-p' can do
+;; the same matching as 'looking-at' and 'string-match' without changing
+;; the match data.
+
+(defun ar-align-symbol-intern (regexp)
+  ""
+  (save-excursion
+    (let ((end (copy-marker (line-end-position)))
+          (secondcolumn (and
+                         (or (looking-at (concat "\\(" regexp "\\)[[:space:]]*"))
+                             (looking-back (concat ".+\\(" regexp "\\)[[:space:]]*") (line-beginning-position)))
+                         (not
+                          (save-excursion
+                            (goto-char (match-beginning 1))
+                            (save-match-data
+                              (looking-back (concat ".+" regexp ".*") (line-beginning-position)))))
+                         ;; (member (char-after) (list 32 ?\n ?\t ?\f))
+                         ;;  haskell
+                         ;; (not (looking-back "main +\\(=+\\) *" (line-beginning-position)))
+                         (goto-char (match-beginning 1))
+                         ;; better match-data then from looking-back
+                         (looking-at regexp)
+                         (current-column)))
+          (erg (match-string-no-properties 0))
+          (maxcolumn 0)
+          (indent (current-indentation))
+          (orig (copy-marker (point)))
+          col)
+      ;; an equal-sign at current line
+      (when secondcolumn
+        ;; (message "(match-string-no-properties 1): %s" (match-string-no-properties 1))
+        ;; (setq erg (match-string-no-properties 1))
+        ;; (message "erg: %s" erg)
+        (setq maxcolumn secondcolumn)
+        ;; (setq orig (copy-marker (point)))
+        (while
+            (and (progn (beginning-of-line)
+                        (not (bobp)))
+                 (progn (forward-line -1)
+                        (not (looking-at comment-start)))
+                 (not (ar-empty-line-p))
+                 (<= (current-indentation) indent)
+                 (or
+                  (ar-align-mode-specific-stop)
+                  (setq col (string-match erg (buffer-substring-no-properties (line-beginning-position) (line-end-position))))))
+          (when col (move-to-column col))
+          (when (< maxcolumn (current-column))
+            (setq maxcolumn (current-column))))
+        ;; before going downward, reach the last match
+        ;; (when (match-beginning 1) (goto-char (match-beginning 1)))
+        (while (<= (line-end-position) end)
+          (setq col (string-match erg (buffer-substring-no-properties (line-beginning-position) (line-end-position))))
+          (when col (move-to-column col)
+                (when (< (current-column) maxcolumn)
+                  (insert (make-string (- maxcolumn (current-column)) 32))))
+          (forward-line 1))
+        (goto-char orig)
+        ;; (when (concat negated-re "+ +\\(" regexp "\\)[[:blank:]]+.*")
+        ;;   (when (< (current-column) maxcolumn)
+        ;;     (insert (make-string (- maxcolumn (current-column)) 32))))
+        ))))
+
 (defun ar-align-symbol (&optional arg)
   (interactive "*p")
   (unless (nth 8 (parse-partial-sexp (point-min) (point)))
-    (let ((regexp (or arg ar-align-default-re)))
+    (let ((regexp
+           (cond ((stringp arg)
+                  arg)
+                 ((not (looking-at "[[:alnum:]]"))
+                  (char-to-string (char-after)))
+                 (t ar-align-default-re))))
       ;; (when t
       (when (or (eq this-command 'self-insert-command) (eq (prefix-numeric-value arg) 1))
-        (ar-align-symbol-intern)))))
+        (ar-align-symbol-intern regexp)))))
 
-(defun ar-align-symbol-intern ()
-  (let (;; (pps (parse-partial-sexp (point-min) (point)))
-        (regexp
-        (negated-re "^=>\\|->\\|<-\\|=+")))
-    (save-excursion
-      (let ((end (copy-marker (line-end-position)))
-            (secondcolumn (and (looking-back (concat ".+" regexp "[[:space:]]*") (line-beginning-position))
-                               (not
-                                (save-excursion (goto-char (match-beginning 0))
-                                                (looking-back (concat ".+" regexp ".*") (line-beginning-position))))
-                               ;; (member (char-after) (list 32 ?\n ?\t ?\f))
-                               ;;  haskell
-                               (not (looking-back "main +\\(=+\\) *" (line-beginning-position)))
-                               (goto-char (match-beginning 1))
-                               ;; better match-data then from looking-back
-                               (looking-at regexp)
-                               (current-column)))
-            (maxcolumn 0)
-            (indent (current-indentation))
-            (orig (copy-marker (point)))
-            erg col)
-        ;; an equal-sign at current line
-        (when secondcolumn
-          ;; (message "(match-string-no-properties 1): %s" (match-string-no-properties 1))
-          (setq erg (match-string-no-properties 1))
-          ;; (message "erg: %s" erg)
-          (setq maxcolumn secondcolumn)
-          (setq orig (copy-marker (point)))
-          (while
-              (and (progn (beginning-of-line)
-                          (not (bobp)))
-                   (progn (forward-line -1)
-                          (not (looking-at comment-start)))
-                   (not (ar-empty-line-p))
-                   (<= (current-indentation) indent)
-                   (or
-                    (and (eq major-mode 'scala-mode) (looking-at " *case *$"))
-                    (setq col (string-match erg (buffer-substring-no-properties (line-beginning-position) (line-end-position))))))
-            (when col (move-to-column col))
-            (when (< maxcolumn (current-column))
-              (setq maxcolumn (current-column))))
-          ;; before going downward, reach the last match
-          ;; (when (match-beginning 1) (goto-char (match-beginning 1)))
-          (while (< (line-end-position) end)
-            (setq col (string-match erg (buffer-substring-no-properties (line-beginning-position) (line-end-position))))
-            (when col (move-to-column col)
-                  (when (< (current-column) maxcolumn)
-                    (insert (make-string (- maxcolumn (current-column)) 32))))
-            (forward-line 1))
-          (goto-char orig)
-          (when (concat negated-re "+ +\\(" regexp "\\)[[:blank:]]+.*")
-            (when (< (current-column) maxcolumn)
-              (insert (make-string (- maxcolumn (current-column)) 32)))))))))
+
 
 (defun ar-align-in-current-buffer ()
   (interactive)

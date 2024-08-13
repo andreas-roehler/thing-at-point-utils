@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(require 'py-setup-ert-tests)
+
 (ert-deftest ar-kill-comment-atpt-test ()
   (py-test-with-temp-buffer-point-min
    "import time
@@ -294,20 +296,39 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
 (ert-deftest ar-align-inline-comment-HLk4Vq ()
   (py-test-with-temp-buffer
 "dates = [
-    r'\d{2}\.\d{2}\.\d{2}',    #  \"DD.MM.YY\" foo
-    r'\b\w+ \d{1,2}, \d{4}\b',                  #  \"Month DD, YYYY\" foo
+    r'\\d{2}.\\d{2}.\\d{2}',      #  \"DD.MM.YY\" foo
+    r'\\bw+ \\d{1,2}, \\d{4}\\d' #  \"Month DD, YYYY\" foo
 ]
 "
     ar-debug-p
     (goto-char (point-max))
     (search-backward "#")
     (ar-align-symbol "#")
-    (should (eq (current-column) 12))))
+    (skip-chars-forward " \t\r\n\f") 
+    (should (eq (current-column) 31))))
+
+(ert-deftest ar-align-inline-comment-qjDxBH ()
+  (py-test-with-temp-buffer
+"dates = [
+    r'\\d{2}.\\d{2}.\\d{2}', #  \"DD.MM.YY\" foo
+    r'\\bw+ \\d{1,2}, \\d{4}\\d' #  \"Month DD, YYYY\" foo
+]
+"
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "#")
+    (ar-align-symbol "#")
+    (forward-line -1)
+    (beginning-of-line)
+    (search-forward "#")
+    (should (eq (current-column) 30))))
+
+
 
 
 
 ;; dates = [
-;;     r'\d{2}\.\d{2}\.\d{2}',                     #  \"DD.MM.YY\" foo
+;;     r'',                     #  \"DD.MM.YY\" foo
 ;;     r'\b\w+ \d{1,2}, \d{4}\b',                  #  \"Month DD, YYYY\" foo
 ;;     r'\b\w+ \d{1,2}(th|st|nd|rd)?, \d{4}\b',    #  \"Month DDth, YYYY\" foo
 ;;     r'\b\d{1,2} - \d{1,2} \w+, \d{4}\b',        #  \"DD - DD Month, YYYY\" foo
