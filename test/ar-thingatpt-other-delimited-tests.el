@@ -104,7 +104,7 @@ args = sys.argv"
     (back-to-indentation)
     (should (char-equal ?f (char-after)))))
 
-(ert-deftest ar-separate-doublequoted-in-bracketed-atpt-test ()
+(ert-deftest ar-separate-doublequoted-in-bracketed-atpt-test-GkKIGn ()
   (ar-test-with-elisp-buffer
 	"[\"defun\" \"asdf\" \"&optional\" \"arg\" \"for\" \"bar\"]"
       (let ((ar-thing-no-nest t))
@@ -124,7 +124,7 @@ args = sys.argv"
   (ar-doublequote-alnum-atpt)
   (should (eq (char-before) ?\"))))
 
-(ert-deftest ar-name-atpt-test1 ()
+(ert-deftest ar-name-atpt-test-6sTtES ()
   (ar-test-with-elisp-buffer
       "asdfg"
     (goto-char (point-max))
@@ -304,7 +304,7 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (goto-char (point-max))
     (search-backward "#")
     (ar-align-symbol "#")
-    (skip-chars-forward " \t\r\n\f") 
+    (skip-chars-forward " \t\r\n\f")
     (should (eq (current-column) 31))))
 
 (ert-deftest ar-align-inline-comment-qjDxBH ()
@@ -323,9 +323,13 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (search-forward "#")
     (should (eq (current-column) 30))))
 
-
-
-
+(ert-deftest ar-backward-delimited-qjDxBH ()
+  (ar-test
+      "::"
+    'fundamental-mode
+    ar-debug-p
+    (ar-backward-delimited-atpt)
+    (should (eq (char-after) ?:))))
 
 ;; dates = [
 ;;     r'',                     #  \"DD.MM.YY\" foo

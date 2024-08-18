@@ -47,14 +47,16 @@ Argument CHAR the char before cursor position."
   (unless (bobp)
     (let ((orig (point)))
       (pcase (char-before)
-        (?\" (cond ((looking-back "\"\"\"" (line-beginning-position))
+        (?\" (cond ((and (looking-back "\"\"\"" (line-beginning-position))
+                         (save-excursion (forward-char -3) (nth 3 (parse-partial-sexp (point-min) (point)))))
                     (while (and (search-backward (match-string-no-properties 0))
                                 (nth 8 (parse-partial-sexp (point-min) (point))))))
-                   (t (unless
-                          (progn
-                            (forward-char -1)
-                            (ar-backward-doublequoted-atpt))
-                        (goto-char orig)))))
+                   ((save-excursion (forward-char -1) (nth 3 (parse-partial-sexp (point-min) (point))))
+                    (forward-char -1)
+                    (goto-char (nth 8 (parse-partial-sexp (point-min) (point)))))
+                   (t (unless (bobp)
+                        (forward-char -1)
+                        (ar-backward-sexp-intern)))))
         (?\} (unless
                  (progn
                    (forward-char -1)
@@ -109,7 +111,7 @@ Argument CHAR the char before cursor position."
                         (t (save-restriction
                              (narrow-to-region (line-beginning-position) (point))
                              (ar-backward-delimited-atpt))))
-                (skip-syntax-backward "^|\s\"\\(\\)")
+                (skip-syntax-backward "^|\s\"\\(\\)" (line-beginning-position))
                 ;; (syntax-class-to-char 15)
                 )))))
       (and (< (point) orig) (point)))))

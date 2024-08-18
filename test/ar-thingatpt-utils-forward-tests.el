@@ -90,7 +90,8 @@ Theorie der algebraischen Zahlen bis in die neueste Zeit wird in dem Nachwort vo
       (push-mark)
       (goto-char (point-min))
       (ar-bracket-bracketed-in-region-atpt)
-      (should (looking-at "\\[\\[")))))
+      (goto-char (point-max)) 
+      (should (looking-back "\\]\\]" (line-beginning-position))))))
 
 (ert-deftest ar-doublequote-bracketed-in-region-test-kZaJVd ()
   (ar-test-with-elisp-buffer

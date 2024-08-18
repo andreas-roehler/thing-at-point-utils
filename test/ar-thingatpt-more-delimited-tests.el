@@ -299,8 +299,8 @@
       "print(f\"Foo {asdf[0]}\")"
     (goto-char (point-min))
     (search-forward "F")
-    ;; (sit-for 0.1)
     (ar-end-of-delimited-atpt)
+    (sit-for 0.1)
     (should (eq (char-after) 41))))
 
 (ert-deftest ar-end-of-delimited-test-nIxpIP ()

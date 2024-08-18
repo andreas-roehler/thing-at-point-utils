@@ -48,12 +48,13 @@
     (let ((erg (ar-doublequoted-atpt)))
       (should (eq 6 (length erg))))))
 
-(ert-deftest ar-in-doublequoted-test-3 ()
+(ert-deftest ar-in-doublequoted-test-SODSBS ()
   (ar-test-with-temp-buffer
       "\"
 ;;;\" \"Write 'etc. \""
       (emacs-lisp-mode)
-    (goto-char 9)
+    (goto-char (point-max))
+    (search-backward "i") 
     (let ((erg (ar-doublequoted-atpt)))
       (should (eq 14 (length erg))))))
 
@@ -70,7 +71,7 @@
       "(car (cons 1 2))"
     (forward-char 1)
     (skip-chars-forward "^(")
-    (forward-char 1) 
+    (forward-char 1)
     (should (eq 6 (ar-beginning-of-list-atpt)))))
 
 (ert-deftest ar-trim-underscored-atpt-test ()
