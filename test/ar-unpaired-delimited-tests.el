@@ -123,7 +123,6 @@
      ;;; ' ' Writer 'etc. \" '"
       (text-mode)
     (beginning-of-line)
-
     (let ((erg (ar-singlequoted-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)
