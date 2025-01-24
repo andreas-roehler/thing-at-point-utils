@@ -269,5 +269,5 @@ Return beginning of `try-block' if successful, nil otherwise"
   (and (ar-backward-try-block)
        (progn (beginning-of-line)(point))))
 
-(provide 'ar-emacs-generics-backward-forms)
+(provide (quote ar-emacs-generics-backward-forms))
 ;;; ar-emacs-generics-backward-forms.el ends here
