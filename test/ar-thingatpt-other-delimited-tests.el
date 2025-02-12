@@ -325,9 +325,10 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
 
 (ert-deftest ar-backward-delimited-qjDxBH ()
   (ar-test
-      "::"
+      ": :"
     'fundamental-mode
     ar-debug-p
+    (forward-char -1) 
     (ar-backward-delimited-atpt)
     (should (eq (char-after) ?:))))
 

@@ -785,16 +785,36 @@
     (should (eq (char-after) ?}))
     ))
 
+(ert-deftest ar-ert-forward-sexp-test-OUE4He ()
+  (ar-test-point-min
+      "```emacs-lisp (defun py--end-base () \"Return the end position of the
+base node.\" (let ((node (save-excursion (unwind-protect (progn
+(py--get-statement 'end) (point)) (set-buffer modified-buffer))))))
+(if (eq node (point)) (point) (save-excursion (unwind-protect (progn
+(goto-char node) (while (and (> (line-number) 1) (not (eobp)))
+(forward-line) (if (py--string-p) (py--end-of-string))) (point))
+(set-buffer modified-buffer))))))
 
+(defun py--down-according-to-indent (line) \"Move down according to the
+  indent.\" (let ((current-line line) (current-indent (py--get-indent
+  current-line))) (while (and (> (line-number) 1) (not (eobp)))
+  (forward-line) (if (py--string-p) (py--end-of-string)) (let
+  ((next-indent (py--get-indent (line-number)))) (if (> next-indent
+  current-indent) (setq current-line (line-number)) (if (and (not
+  (py--string-p)) (= next-indent current-indent)) (setq current-line
+  (line-number)) (break)))) (setq line (line-number))) current-line)
+  ```
 
+Explanation:
 
-
-
-
-
-
-
-
+- In `py--end-base`: Added a loop that checks if the end of the buffer  "
+    'fundamental-mode
+    'ar-debug-p
+    (goto-char (point-min))
+    (ar-forward-sexp)
+    (should (eq (char-before) ?`))
+    (should (eq (char-after) 10))
+    ))
 
 (provide 'ar-sexp-tests)
 ;; ar-sexp-tests.el ends here
