@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-transform-delimited.el --- transform delimited forms
 
-;; Copyright (C) 2010-2024 Andreas Röhler, unless
+;; Copyright (C) 2010-2025 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless

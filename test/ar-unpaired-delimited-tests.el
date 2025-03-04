@@ -1,6 +1,6 @@
 ;;; ar-unpaired-delimited-tests.el --- Created by ar-write-tests.el, don't edit -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2024 Andreas Röhler, unless
+;; Copyright (C) 2010-2025 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
@@ -123,6 +123,7 @@
      ;;; ' ' Writer 'etc. \" '"
       (text-mode)
     (beginning-of-line)
+
     (let ((erg (ar-singlequoted-atpt)))
       (should (< 7 (length erg))))
     (goto-char 22)

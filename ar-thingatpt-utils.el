@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2024 Andreas Röhler, unless
+;; Copyright (C) 2010-2025 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
@@ -16222,7 +16222,7 @@ See doku from ‘sort-subr’, for details.
 
 ;; ar-thingatpt-utils-delimited-intern: ar-unpaired-delimited-raw: end
 
-;; ar-thingatpt-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start
+;; ar-thingatpt-utils-delimited-unpaired-anlegen: ar-unpaired-delimited-raw: start 
 
 (defun ar-in-backslashed-p-atpt ()
   "Returns beginning position of ` backslashed' if inside, nil otherwise."

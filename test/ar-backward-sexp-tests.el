@@ -146,7 +146,6 @@
     (ar-backward-sexp)
     (should (eq (char-after) ?{))))
 
-
 (ert-deftest ar-backward-sexp-test-cos9FQ ()
   (ar-test
       "[(asdf\"]\"]"
@@ -245,8 +244,6 @@
     (should (eq (char-before) 32))
     ))
 
-
-
 (ert-deftest ar-py-backward-sexp-test-h1tsLI ()
   (ar-test
       "print(f\"Foo {asdf[0]}\")"
@@ -328,7 +325,6 @@
     (should (eq (char-after) ?p))
     ))
 
-
 (ert-deftest ar-ert-backward-sexp-test-k1ALAI ()
   (ar-test-with-elisp-buffer
       "\\s\"-*({<[\\\\]. []]>)*}\"]\\\"]"
@@ -378,10 +374,6 @@
     (ar-backward-sexp)
     (should (looking-at "'''"))
     ))
-
-
-
-
 
 (provide 'ar-backward-sexp-tests)
 ;; ar-backward-sexp-tests.el ends here
