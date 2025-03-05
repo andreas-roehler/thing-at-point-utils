@@ -1,6 +1,6 @@
 ;;; ar-tptp-mode-tests.el --- -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2023-2024 Andreas Röhler, <andreas.roehler@online.de>
+;; Copyright (C) 2023-2025 Andreas Röhler, <andreas.roehler@online.de>
 
 ;; GNU Emacs is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

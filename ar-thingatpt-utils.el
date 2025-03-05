@@ -2350,151 +2350,6 @@
   (interactive "*P")
   (ar-th-tild 'wordalphaonly))
 
-(defun ar-triplebacktick-greateranglednested-atpt (&optional arg)
-  "Triplebacktick GREATERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'greateranglednested))
-
-(defun ar-triplebacktick-lesseranglednested-atpt (&optional arg)
-  "Triplebacktick LESSERANGLEDNESTED at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'lesseranglednested))
-
-(defun ar-triplebacktick-buffer-atpt (&optional arg)
-  "Triplebacktick BUFFER at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'buffer))
-
-(defun ar-triplebacktick-char-atpt (&optional arg)
-  "Triplebacktick CHAR at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'char))
-
-(defun ar-triplebacktick-comment-atpt (&optional arg)
-  "Triplebacktick COMMENT at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'comment))
-
-(defun ar-triplebacktick-csv-atpt (&optional arg)
-  "Triplebacktick CSV at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'csv))
-
-(defun ar-triplebacktick-date-atpt (&optional arg)
-  "Triplebacktick DATE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'date))
-
-(defun ar-triplebacktick-delimited-atpt (&optional arg)
-  "Triplebacktick DELIMITED at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'delimited))
-
-(defun ar-triplebacktick-email-atpt (&optional arg)
-  "Triplebacktick EMAIL at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'email))
-
-(defun ar-triplebacktick-filename-atpt (&optional arg)
-  "Triplebacktick FILENAME at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'filename))
-
-(defun ar-triplebacktick-filenamenondirectory-atpt (&optional arg)
-  "Triplebacktick FILENAMENONDIRECTORY at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'filenamenondirectory))
-
-(defun ar-triplebacktick-float-atpt (&optional arg)
-  "Triplebacktick FLOAT at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'float))
-
-(defun ar-triplebacktick-function-atpt (&optional arg)
-  "Triplebacktick FUNCTION at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'function))
-
-(defun ar-triplebacktick-ip-atpt (&optional arg)
-  "Triplebacktick IP at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'ip))
-
-(defun ar-triplebacktick-isbn-atpt (&optional arg)
-  "Triplebacktick ISBN at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'isbn))
-
-(defun ar-triplebacktick-line-atpt (&optional arg)
-  "Triplebacktick LINE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'line))
-
-(defun ar-triplebacktick-list-atpt (&optional arg)
-  "Triplebacktick LIST at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'list))
-
-(defun ar-triplebacktick-name-atpt (&optional arg)
-  "Triplebacktick NAME at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'name))
-
-(defun ar-triplebacktick-number-atpt (&optional arg)
-  "Triplebacktick NUMBER at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'number))
-
-(defun ar-triplebacktick-page-atpt (&optional arg)
-  "Triplebacktick PAGE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'page))
-
-(defun ar-triplebacktick-paragraph-atpt (&optional arg)
-  "Triplebacktick PARAGRAPH at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'paragraph))
-
-(defun ar-triplebacktick-phone-atpt (&optional arg)
-  "Triplebacktick PHONE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'phone))
-
-(defun ar-triplebacktick-sentence-atpt (&optional arg)
-  "Triplebacktick SENTENCE at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'sentence))
-
-(defun ar-triplebacktick-sexp-atpt (&optional arg)
-  "Triplebacktick SEXP at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'sexp))
-
-(defun ar-triplebacktick-shstruct-atpt (&optional arg)
-  "Triplebacktick SHSTRUCT at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'shstruct))
-
-(defun ar-triplebacktick-symbol-atpt (&optional arg)
-  "Triplebacktick SYMBOL at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'symbol))
-
-(defun ar-triplebacktick-url-atpt (&optional arg)
-  "Triplebacktick URL at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'url))
-
-(defun ar-triplebacktick-word-atpt (&optional arg)
-  "Triplebacktick WORD at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'word))
-
-(defun ar-triplebacktick-wordalphaonly-atpt (&optional arg)
-  "Triplebacktick WORDALPHAONLY at point."
-  (interactive "*P")
-  (ar-th-triplebacktick 'wordalphaonly))
-
 (defun ar-underscore-greateranglednested-atpt (&optional arg)
   "Underscore GREATERANGLEDNESTED at point."
   (interactive "*P")
@@ -9482,12 +9337,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'alnum no-delimiters))
 
-(defalias 'ar-triplebacktick-alnum-atpt 'ar-alnum-triplebacktick-atpt)
-(defun ar-alnum-triplebacktick-atpt (&optional no-delimiters)
-  "Returns ALNUM at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'alnum no-delimiters))
-
 (defalias 'ar-underscore-alnum-atpt 'ar-alnum-underscore-atpt)
 (defun ar-alnum-underscore-atpt (&optional no-delimiters)
   "Returns ALNUM at point if any, nil otherwise "
@@ -9595,12 +9444,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns ALPHA at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'alpha no-delimiters))
-
-(defalias 'ar-triplebacktick-alpha-atpt 'ar-alpha-triplebacktick-atpt)
-(defun ar-alpha-triplebacktick-atpt (&optional no-delimiters)
-  "Returns ALPHA at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'alpha no-delimiters))
 
 (defalias 'ar-underscore-alpha-atpt 'ar-alpha-underscore-atpt)
 (defun ar-alpha-underscore-atpt (&optional no-delimiters)
@@ -9710,12 +9553,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'ascii no-delimiters))
 
-(defalias 'ar-triplebacktick-ascii-atpt 'ar-ascii-triplebacktick-atpt)
-(defun ar-ascii-triplebacktick-atpt (&optional no-delimiters)
-  "Returns ASCII at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'ascii no-delimiters))
-
 (defalias 'ar-underscore-ascii-atpt 'ar-ascii-underscore-atpt)
 (defun ar-ascii-underscore-atpt (&optional no-delimiters)
   "Returns ASCII at point if any, nil otherwise "
@@ -9823,12 +9660,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns BLANK at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'blank no-delimiters))
-
-(defalias 'ar-triplebacktick-blank-atpt 'ar-blank-triplebacktick-atpt)
-(defun ar-blank-triplebacktick-atpt (&optional no-delimiters)
-  "Returns BLANK at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'blank no-delimiters))
 
 (defalias 'ar-underscore-blank-atpt 'ar-blank-underscore-atpt)
 (defun ar-blank-underscore-atpt (&optional no-delimiters)
@@ -9938,12 +9769,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'cntrl no-delimiters))
 
-(defalias 'ar-triplebacktick-cntrl-atpt 'ar-cntrl-triplebacktick-atpt)
-(defun ar-cntrl-triplebacktick-atpt (&optional no-delimiters)
-  "Returns CNTRL at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'cntrl no-delimiters))
-
 (defalias 'ar-underscore-cntrl-atpt 'ar-cntrl-underscore-atpt)
 (defun ar-cntrl-underscore-atpt (&optional no-delimiters)
   "Returns CNTRL at point if any, nil otherwise "
@@ -10051,12 +9876,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns DIGIT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'digit no-delimiters))
-
-(defalias 'ar-triplebacktick-digit-atpt 'ar-digit-triplebacktick-atpt)
-(defun ar-digit-triplebacktick-atpt (&optional no-delimiters)
-  "Returns DIGIT at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'digit no-delimiters))
 
 (defalias 'ar-underscore-digit-atpt 'ar-digit-underscore-atpt)
 (defun ar-digit-underscore-atpt (&optional no-delimiters)
@@ -10166,12 +9985,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'graph no-delimiters))
 
-(defalias 'ar-triplebacktick-graph-atpt 'ar-graph-triplebacktick-atpt)
-(defun ar-graph-triplebacktick-atpt (&optional no-delimiters)
-  "Returns GRAPH at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'graph no-delimiters))
-
 (defalias 'ar-underscore-graph-atpt 'ar-graph-underscore-atpt)
 (defun ar-graph-underscore-atpt (&optional no-delimiters)
   "Returns GRAPH at point if any, nil otherwise "
@@ -10279,12 +10092,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns LOWER at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'lower no-delimiters))
-
-(defalias 'ar-triplebacktick-lower-atpt 'ar-lower-triplebacktick-atpt)
-(defun ar-lower-triplebacktick-atpt (&optional no-delimiters)
-  "Returns LOWER at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'lower no-delimiters))
 
 (defalias 'ar-underscore-lower-atpt 'ar-lower-underscore-atpt)
 (defun ar-lower-underscore-atpt (&optional no-delimiters)
@@ -10394,12 +10201,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'nonascii no-delimiters))
 
-(defalias 'ar-triplebacktick-nonascii-atpt 'ar-nonascii-triplebacktick-atpt)
-(defun ar-nonascii-triplebacktick-atpt (&optional no-delimiters)
-  "Returns NONASCII at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'nonascii no-delimiters))
-
 (defalias 'ar-underscore-nonascii-atpt 'ar-nonascii-underscore-atpt)
 (defun ar-nonascii-underscore-atpt (&optional no-delimiters)
   "Returns NONASCII at point if any, nil otherwise "
@@ -10507,12 +10308,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns PRINT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'print no-delimiters))
-
-(defalias 'ar-triplebacktick-print-atpt 'ar-print-triplebacktick-atpt)
-(defun ar-print-triplebacktick-atpt (&optional no-delimiters)
-  "Returns PRINT at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'print no-delimiters))
 
 (defalias 'ar-underscore-print-atpt 'ar-print-underscore-atpt)
 (defun ar-print-underscore-atpt (&optional no-delimiters)
@@ -10622,12 +10417,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'punct no-delimiters))
 
-(defalias 'ar-triplebacktick-punct-atpt 'ar-punct-triplebacktick-atpt)
-(defun ar-punct-triplebacktick-atpt (&optional no-delimiters)
-  "Returns PUNCT at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'punct no-delimiters))
-
 (defalias 'ar-underscore-punct-atpt 'ar-punct-underscore-atpt)
 (defun ar-punct-underscore-atpt (&optional no-delimiters)
   "Returns PUNCT at point if any, nil otherwise "
@@ -10735,12 +10524,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns SPACE at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'space no-delimiters))
-
-(defalias 'ar-triplebacktick-space-atpt 'ar-space-triplebacktick-atpt)
-(defun ar-space-triplebacktick-atpt (&optional no-delimiters)
-  "Returns SPACE at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'space no-delimiters))
 
 (defalias 'ar-underscore-space-atpt 'ar-space-underscore-atpt)
 (defun ar-space-underscore-atpt (&optional no-delimiters)
@@ -10850,12 +10633,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'upper no-delimiters))
 
-(defalias 'ar-triplebacktick-upper-atpt 'ar-upper-triplebacktick-atpt)
-(defun ar-upper-triplebacktick-atpt (&optional no-delimiters)
-  "Returns UPPER at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'upper no-delimiters))
-
 (defalias 'ar-underscore-upper-atpt 'ar-upper-underscore-atpt)
 (defun ar-upper-underscore-atpt (&optional no-delimiters)
   "Returns UPPER at point if any, nil otherwise "
@@ -10963,12 +10740,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns XDIGIT at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'xdigit no-delimiters))
-
-(defalias 'ar-triplebacktick-xdigit-atpt 'ar-xdigit-triplebacktick-atpt)
-(defun ar-xdigit-triplebacktick-atpt (&optional no-delimiters)
-  "Returns XDIGIT at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'xdigit no-delimiters))
 
 (defalias 'ar-underscore-xdigit-atpt 'ar-xdigit-underscore-atpt)
 (defun ar-xdigit-underscore-atpt (&optional no-delimiters)
@@ -11081,12 +10852,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'braced no-delimiters))
 
-(defalias 'ar-triplebacktick-braced-atpt 'ar-braced-triplebacktick-atpt)
-(defun ar-braced-triplebacktick-atpt (&optional no-delimiters)
-  "Returns BRACED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'braced no-delimiters))
-
 (defalias 'ar-underscore-braced-atpt 'ar-braced-underscore-atpt)
 (defun ar-braced-underscore-atpt (&optional no-delimiters)
   "Returns BRACED at point if any, nil otherwise "
@@ -11194,12 +10959,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns SYMBOLED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'symboled no-delimiters))
-
-(defalias 'ar-triplebacktick-symboled-atpt 'ar-symboled-triplebacktick-atpt)
-(defun ar-symboled-triplebacktick-atpt (&optional no-delimiters)
-  "Returns SYMBOLED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'symboled no-delimiters))
 
 (defalias 'ar-underscore-symboled-atpt 'ar-symboled-underscore-atpt)
 (defun ar-symboled-underscore-atpt (&optional no-delimiters)
@@ -11309,12 +11068,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'bracketed no-delimiters))
 
-(defalias 'ar-triplebacktick-bracketed-atpt 'ar-bracketed-triplebacktick-atpt)
-(defun ar-bracketed-triplebacktick-atpt (&optional no-delimiters)
-  "Returns BRACKETED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'bracketed no-delimiters))
-
 (defalias 'ar-underscore-bracketed-atpt 'ar-bracketed-underscore-atpt)
 (defun ar-bracketed-underscore-atpt (&optional no-delimiters)
   "Returns BRACKETED at point if any, nil otherwise "
@@ -11422,12 +11175,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns LESSERANGLED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'lesserangled no-delimiters))
-
-(defalias 'ar-triplebacktick-lesserangled-atpt 'ar-lesserangled-triplebacktick-atpt)
-(defun ar-lesserangled-triplebacktick-atpt (&optional no-delimiters)
-  "Returns LESSERANGLED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'lesserangled no-delimiters))
 
 (defalias 'ar-underscore-lesserangled-atpt 'ar-lesserangled-underscore-atpt)
 (defun ar-lesserangled-underscore-atpt (&optional no-delimiters)
@@ -11537,12 +11284,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'greaterangled no-delimiters))
 
-(defalias 'ar-triplebacktick-greaterangled-atpt 'ar-greaterangled-triplebacktick-atpt)
-(defun ar-greaterangled-triplebacktick-atpt (&optional no-delimiters)
-  "Returns GREATERANGLED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'greaterangled no-delimiters))
-
 (defalias 'ar-underscore-greaterangled-atpt 'ar-greaterangled-underscore-atpt)
 (defun ar-greaterangled-underscore-atpt (&optional no-delimiters)
   "Returns GREATERANGLED at point if any, nil otherwise "
@@ -11650,12 +11391,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'curvedsinglequoted no-delimiters))
-
-(defalias 'ar-triplebacktick-curvedsinglequoted-atpt 'ar-curvedsinglequoted-triplebacktick-atpt)
-(defun ar-curvedsinglequoted-triplebacktick-atpt (&optional no-delimiters)
-  "Returns CURVEDSINGLEQUOTED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'curvedsinglequoted no-delimiters))
 
 (defalias 'ar-underscore-curvedsinglequoted-atpt 'ar-curvedsinglequoted-underscore-atpt)
 (defun ar-curvedsinglequoted-underscore-atpt (&optional no-delimiters)
@@ -11765,12 +11500,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-tild 'curveddoublequoted no-delimiters))
 
-(defalias 'ar-triplebacktick-curveddoublequoted-atpt 'ar-curveddoublequoted-triplebacktick-atpt)
-(defun ar-curveddoublequoted-triplebacktick-atpt (&optional no-delimiters)
-  "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'curveddoublequoted no-delimiters))
-
 (defalias 'ar-underscore-curveddoublequoted-atpt 'ar-curveddoublequoted-underscore-atpt)
 (defun ar-curveddoublequoted-underscore-atpt (&optional no-delimiters)
   "Returns CURVEDDOUBLEQUOTED at point if any, nil otherwise "
@@ -11878,12 +11607,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Returns PARENTIZED at point if any, nil otherwise "
   (interactive "*P")
   (ar-th-tild 'parentized no-delimiters))
-
-(defalias 'ar-triplebacktick-parentized-atpt 'ar-parentized-triplebacktick-atpt)
-(defun ar-parentized-triplebacktick-atpt (&optional no-delimiters)
-  "Returns PARENTIZED at point if any, nil otherwise "
-  (interactive "*P")
-  (ar-th-triplebacktick 'parentized no-delimiters))
 
 (defalias 'ar-underscore-parentized-atpt 'ar-parentized-underscore-atpt)
 (defun ar-parentized-underscore-atpt (&optional no-delimiters)
@@ -28713,16 +28436,6 @@ See doku from ‘sort-subr’, for details.
   With negative argument kill tild(ed) at point "
   (interactive "p")
   (ar-th-base-copy-or 'tild no-delimiters))
-
-(defun ar-triplebacktick-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with triplebacktick(s).
-
-  Otherwise copy triplebacktick(ed) at point
-  With NO-DELIMITERS, copy triplebacktick(ed) without delimiters
-  With numerical argument 2 trim triplebacktick
-  With negative argument kill triplebacktick(ed) at point "
-  (interactive "p")
-  (ar-th-base-copy-or 'triplebacktick no-delimiters))
 
 (defun ar-underscore-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with underscore(s).

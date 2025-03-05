@@ -1,3 +1,0 @@
-
-"({defun} {foo1} (&{optional} {beg} {end})
-  "

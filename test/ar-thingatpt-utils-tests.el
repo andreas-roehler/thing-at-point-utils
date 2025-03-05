@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-utils-tests.el --- -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2014-2024  Andreas Roehler
+;; Copyright (C) 2014-2025  Andreas Roehler
 
 ;; Author: Andreas Roehler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp

@@ -1,6 +1,6 @@
 ;;; ar-bracketlist-atpt-tests.el --- ar-bracketlist-atpt-tests
 
-;; Copyright (C) 2015-2024  Andreas Röhler
+;; Copyright (C) 2015-2025  Andreas Röhler
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: languages, convenience
 

@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-other-delimited-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2024  Andreas Röhler
+;; Copyright (C) 2015-2025  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
@@ -328,7 +328,7 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
       ": :"
     'fundamental-mode
     ar-debug-p
-    (forward-char -1) 
+    (forward-char -1)
     (ar-backward-delimited-atpt)
     (should (eq (char-after) ?:))))
 
@@ -340,6 +340,15 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
 ;;     r'\b\w+ \d{1,2}(-\d{1,2})? \d{4}\b',        #  \"Month DD(-DD) YYYY\" foo
 ;;     r'\b\d{1,2}(-\d{1,2})? \w+ \d{4}\b'         #  \"DD(-DD) Month YYYY\" foo
 ;; ]
+
+(ert-deftest ar-backward-delimited-dOGoBa ()
+  (ar-test
+      "```asd```"
+    'fundamental-mode
+    ar-debug-p
+    (goto-char (point-max))
+    (search-backward "d")
+    (should (eq (length (ar-triplebackticked-atpt)) 9))))
 
 (provide 'ar-thingatpt-other-delimited-tests)
 ;;; ar-thingatpt-other-delimited-tests.el ends here

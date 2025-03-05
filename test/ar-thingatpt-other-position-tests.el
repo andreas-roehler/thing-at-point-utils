@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-other-position-tests.el --- More thing-atpt tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2024  Andreas Röhler
+;; Copyright (C) 2015-2025  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp
