@@ -241,7 +241,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'beginendquote no-delimiters))
 
 (defun ar-triplebacktick-beginendquote-atpt (&optional no-delimiters)
-  "Deletes beginendquote at point if any.
+  "Triplebacktick beginendquote at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -480,7 +480,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'blok no-delimiters))
 
 (defun ar-triplebacktick-blok-atpt (&optional no-delimiters)
-  "Deletes blok at point if any.
+  "Triplebacktick blok at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -719,7 +719,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'doublebackslashed no-delimiters))
 
 (defun ar-triplebacktick-doublebackslashed-atpt (&optional no-delimiters)
-  "Deletes doublebackslashed at point if any.
+  "Triplebacktick doublebackslashed at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -958,7 +958,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'doublebackticked no-delimiters))
 
 (defun ar-triplebacktick-doublebackticked-atpt (&optional no-delimiters)
-  "Deletes doublebackticked at point if any.
+  "Triplebacktick doublebackticked at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -1197,7 +1197,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'doublebackslashedparen no-delimiters))
 
 (defun ar-triplebacktick-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Deletes doublebackslashedparen at point if any.
+  "Triplebacktick doublebackslashedparen at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -1436,7 +1436,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'doubleslashed no-delimiters))
 
 (defun ar-triplebacktick-doubleslashed-atpt (&optional no-delimiters)
-  "Deletes doubleslashed at point if any.
+  "Triplebacktick doubleslashed at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -1675,7 +1675,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'doubleslashedparen no-delimiters))
 
 (defun ar-triplebacktick-doubleslashedparen-atpt (&optional no-delimiters)
-  "Deletes doubleslashedparen at point if any.
+  "Triplebacktick doubleslashedparen at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -1914,7 +1914,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'markup no-delimiters))
 
 (defun ar-triplebacktick-markup-atpt (&optional no-delimiters)
-  "Deletes markup at point if any.
+  "Triplebacktick markup at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -2153,7 +2153,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'mldata no-delimiters))
 
 (defun ar-triplebacktick-mldata-atpt (&optional no-delimiters)
-  "Deletes mldata at point if any.
+  "Triplebacktick mldata at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -2392,7 +2392,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'mlattribut no-delimiters))
 
 (defun ar-triplebacktick-mlattribut-atpt (&optional no-delimiters)
-  "Deletes mlattribut at point if any.
+  "Triplebacktick mlattribut at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -2631,7 +2631,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'mltag no-delimiters))
 
 (defun ar-triplebacktick-mltag-atpt (&optional no-delimiters)
-  "Deletes mltag at point if any.
+  "Triplebacktick mltag at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -2870,7 +2870,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'slashedparen no-delimiters))
 
 (defun ar-triplebacktick-slashedparen-atpt (&optional no-delimiters)
-  "Deletes slashedparen at point if any.
+  "Triplebacktick slashedparen at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -3109,7 +3109,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'symbol no-delimiters))
 
 (defun ar-triplebacktick-symbol-atpt (&optional no-delimiters)
-  "Deletes symbol at point if any.
+  "Triplebacktick symbol at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -3348,7 +3348,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'tabledata no-delimiters))
 
 (defun ar-triplebacktick-tabledata-atpt (&optional no-delimiters)
-  "Deletes tabledata at point if any.
+  "Triplebacktick tabledata at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -3587,7 +3587,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'xslstylesheet no-delimiters))
 
 (defun ar-triplebacktick-xslstylesheet-atpt (&optional no-delimiters)
-  "Deletes xslstylesheet at point if any.
+  "Triplebacktick xslstylesheet at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -3826,7 +3826,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'xsltemplate no-delimiters))
 
 (defun ar-triplebacktick-xsltemplate-atpt (&optional no-delimiters)
-  "Deletes xsltemplate at point if any.
+  "Triplebacktick xsltemplate at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")

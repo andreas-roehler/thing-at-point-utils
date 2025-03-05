@@ -16487,7 +16487,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'braced no-delimiters))
 
 (defun ar-triplebacktick-braced-atpt (&optional no-delimiters)
-  "Deletes braced at point if any.
+  "Triplebacktick braced at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -16726,7 +16726,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'symboled no-delimiters))
 
 (defun ar-triplebacktick-symboled-atpt (&optional no-delimiters)
-  "Deletes symboled at point if any.
+  "Triplebacktick symboled at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -16965,7 +16965,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'bracketed no-delimiters))
 
 (defun ar-triplebacktick-bracketed-atpt (&optional no-delimiters)
-  "Deletes bracketed at point if any.
+  "Triplebacktick bracketed at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -17204,7 +17204,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'lesserangled no-delimiters))
 
 (defun ar-triplebacktick-lesserangled-atpt (&optional no-delimiters)
-  "Deletes lesserangled at point if any.
+  "Triplebacktick lesserangled at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -17443,7 +17443,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'greaterangled no-delimiters))
 
 (defun ar-triplebacktick-greaterangled-atpt (&optional no-delimiters)
-  "Deletes greaterangled at point if any.
+  "Triplebacktick greaterangled at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -17682,7 +17682,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'curvedsinglequoted no-delimiters))
 
 (defun ar-triplebacktick-curvedsinglequoted-atpt (&optional no-delimiters)
-  "Deletes curvedsinglequoted at point if any.
+  "Triplebacktick curvedsinglequoted at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -17921,7 +17921,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'curveddoublequoted no-delimiters))
 
 (defun ar-triplebacktick-curveddoublequoted-atpt (&optional no-delimiters)
-  "Deletes curveddoublequoted at point if any.
+  "Triplebacktick curveddoublequoted at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -18160,7 +18160,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'parentized no-delimiters))
 
 (defun ar-triplebacktick-parentized-atpt (&optional no-delimiters)
-  "Deletes parentized at point if any.
+  "Triplebacktick parentized at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -18403,7 +18403,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'list no-delimiters))
 
 (defun ar-triplebacktick-list-atpt (&optional no-delimiters)
-  "Deletes list at point if any.
+  "Triplebacktick list at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -18646,7 +18646,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'block no-delimiters))
 
 (defun ar-triplebacktick-block-atpt (&optional no-delimiters)
-  "Deletes block at point if any.
+  "Triplebacktick block at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -18885,7 +18885,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'block-or-clause no-delimiters))
 
 (defun ar-triplebacktick-block-or-clause-atpt (&optional no-delimiters)
-  "Deletes block-or-clause at point if any.
+  "Triplebacktick block-or-clause at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -19124,7 +19124,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'char no-delimiters))
 
 (defun ar-triplebacktick-char-atpt (&optional no-delimiters)
-  "Deletes char at point if any.
+  "Triplebacktick char at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -19363,7 +19363,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'class no-delimiters))
 
 (defun ar-triplebacktick-class-atpt (&optional no-delimiters)
-  "Deletes class at point if any.
+  "Triplebacktick class at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -19602,7 +19602,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'clause no-delimiters))
 
 (defun ar-triplebacktick-clause-atpt (&optional no-delimiters)
-  "Deletes clause at point if any.
+  "Triplebacktick clause at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -19841,7 +19841,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'def-or-class no-delimiters))
 
 (defun ar-triplebacktick-def-or-class-atpt (&optional no-delimiters)
-  "Deletes def-or-class at point if any.
+  "Triplebacktick def-or-class at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -20080,7 +20080,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'def no-delimiters))
 
 (defun ar-triplebacktick-def-atpt (&optional no-delimiters)
-  "Deletes def at point if any.
+  "Triplebacktick def at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -20319,7 +20319,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'delimited no-delimiters))
 
 (defun ar-triplebacktick-delimited-atpt (&optional no-delimiters)
-  "Deletes delimited at point if any.
+  "Triplebacktick delimited at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -20558,7 +20558,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'expression no-delimiters))
 
 (defun ar-triplebacktick-expression-atpt (&optional no-delimiters)
-  "Deletes expression at point if any.
+  "Triplebacktick expression at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -20797,7 +20797,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'partial-expression no-delimiters))
 
 (defun ar-triplebacktick-partial-expression-atpt (&optional no-delimiters)
-  "Deletes partial-expression at point if any.
+  "Triplebacktick partial-expression at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -21036,7 +21036,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'statement no-delimiters))
 
 (defun ar-triplebacktick-statement-atpt (&optional no-delimiters)
-  "Deletes statement at point if any.
+  "Triplebacktick statement at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -21275,7 +21275,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'string no-delimiters))
 
 (defun ar-triplebacktick-string-atpt (&optional no-delimiters)
-  "Deletes string at point if any.
+  "Triplebacktick string at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -21518,7 +21518,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'greateranglednested no-delimiters))
 
 (defun ar-triplebacktick-greateranglednested-atpt (&optional no-delimiters)
-  "Deletes greateranglednested at point if any.
+  "Triplebacktick greateranglednested at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -21757,7 +21757,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'lesseranglednested no-delimiters))
 
 (defun ar-triplebacktick-lesseranglednested-atpt (&optional no-delimiters)
-  "Deletes lesseranglednested at point if any.
+  "Triplebacktick lesseranglednested at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -21996,7 +21996,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'buffer no-delimiters))
 
 (defun ar-triplebacktick-buffer-atpt (&optional no-delimiters)
-  "Deletes buffer at point if any.
+  "Triplebacktick buffer at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -22235,7 +22235,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'char no-delimiters))
 
 (defun ar-triplebacktick-char-atpt (&optional no-delimiters)
-  "Deletes char at point if any.
+  "Triplebacktick char at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -22474,7 +22474,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'comment no-delimiters))
 
 (defun ar-triplebacktick-comment-atpt (&optional no-delimiters)
-  "Deletes comment at point if any.
+  "Triplebacktick comment at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -22713,7 +22713,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'csv no-delimiters))
 
 (defun ar-triplebacktick-csv-atpt (&optional no-delimiters)
-  "Deletes csv at point if any.
+  "Triplebacktick csv at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -22952,7 +22952,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'date no-delimiters))
 
 (defun ar-triplebacktick-date-atpt (&optional no-delimiters)
-  "Deletes date at point if any.
+  "Triplebacktick date at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -23191,7 +23191,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'delimited no-delimiters))
 
 (defun ar-triplebacktick-delimited-atpt (&optional no-delimiters)
-  "Deletes delimited at point if any.
+  "Triplebacktick delimited at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -23430,7 +23430,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'email no-delimiters))
 
 (defun ar-triplebacktick-email-atpt (&optional no-delimiters)
-  "Deletes email at point if any.
+  "Triplebacktick email at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -23669,7 +23669,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'filename no-delimiters))
 
 (defun ar-triplebacktick-filename-atpt (&optional no-delimiters)
-  "Deletes filename at point if any.
+  "Triplebacktick filename at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -23908,7 +23908,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'filenamenondirectory no-delimiters))
 
 (defun ar-triplebacktick-filenamenondirectory-atpt (&optional no-delimiters)
-  "Deletes filenamenondirectory at point if any.
+  "Triplebacktick filenamenondirectory at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -24147,7 +24147,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'float no-delimiters))
 
 (defun ar-triplebacktick-float-atpt (&optional no-delimiters)
-  "Deletes float at point if any.
+  "Triplebacktick float at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -24386,7 +24386,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'function no-delimiters))
 
 (defun ar-triplebacktick-function-atpt (&optional no-delimiters)
-  "Deletes function at point if any.
+  "Triplebacktick function at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -24625,7 +24625,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'ip no-delimiters))
 
 (defun ar-triplebacktick-ip-atpt (&optional no-delimiters)
-  "Deletes ip at point if any.
+  "Triplebacktick ip at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -24864,7 +24864,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'isbn no-delimiters))
 
 (defun ar-triplebacktick-isbn-atpt (&optional no-delimiters)
-  "Deletes isbn at point if any.
+  "Triplebacktick isbn at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -25103,7 +25103,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'line no-delimiters))
 
 (defun ar-triplebacktick-line-atpt (&optional no-delimiters)
-  "Deletes line at point if any.
+  "Triplebacktick line at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -25342,7 +25342,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'list no-delimiters))
 
 (defun ar-triplebacktick-list-atpt (&optional no-delimiters)
-  "Deletes list at point if any.
+  "Triplebacktick list at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -25581,7 +25581,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'name no-delimiters))
 
 (defun ar-triplebacktick-name-atpt (&optional no-delimiters)
-  "Deletes name at point if any.
+  "Triplebacktick name at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -25820,7 +25820,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'number no-delimiters))
 
 (defun ar-triplebacktick-number-atpt (&optional no-delimiters)
-  "Deletes number at point if any.
+  "Triplebacktick number at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -26059,7 +26059,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'page no-delimiters))
 
 (defun ar-triplebacktick-page-atpt (&optional no-delimiters)
-  "Deletes page at point if any.
+  "Triplebacktick page at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -26298,7 +26298,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'paragraph no-delimiters))
 
 (defun ar-triplebacktick-paragraph-atpt (&optional no-delimiters)
-  "Deletes paragraph at point if any.
+  "Triplebacktick paragraph at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -26537,7 +26537,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'phone no-delimiters))
 
 (defun ar-triplebacktick-phone-atpt (&optional no-delimiters)
-  "Deletes phone at point if any.
+  "Triplebacktick phone at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -26776,7 +26776,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'sentence no-delimiters))
 
 (defun ar-triplebacktick-sentence-atpt (&optional no-delimiters)
-  "Deletes sentence at point if any.
+  "Triplebacktick sentence at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -27015,7 +27015,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'sexp no-delimiters))
 
 (defun ar-triplebacktick-sexp-atpt (&optional no-delimiters)
-  "Deletes sexp at point if any.
+  "Triplebacktick sexp at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -27254,7 +27254,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'shstruct no-delimiters))
 
 (defun ar-triplebacktick-shstruct-atpt (&optional no-delimiters)
-  "Deletes shstruct at point if any.
+  "Triplebacktick shstruct at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -27493,7 +27493,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'symbol no-delimiters))
 
 (defun ar-triplebacktick-symbol-atpt (&optional no-delimiters)
-  "Deletes symbol at point if any.
+  "Triplebacktick symbol at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -27732,7 +27732,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'url no-delimiters))
 
 (defun ar-triplebacktick-url-atpt (&optional no-delimiters)
-  "Deletes url at point if any.
+  "Triplebacktick url at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -27971,7 +27971,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'word no-delimiters))
 
 (defun ar-triplebacktick-word-atpt (&optional no-delimiters)
-  "Deletes word at point if any.
+  "Triplebacktick word at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
@@ -28210,7 +28210,7 @@ inserts newlines, borders are the beginning or the end of buffer "
   (ar-th-triplequotesq 'wordalphaonly no-delimiters))
 
 (defun ar-triplebacktick-wordalphaonly-atpt (&optional no-delimiters)
-  "Deletes wordalphaonly at point if any.
+  "Triplebacktick wordalphaonly at point.
 
 With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
   (interactive "*P")
