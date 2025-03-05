@@ -1,34 +1,4 @@
-;;; ar-thingatpt-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2025 Andreas Röhler, unless
-;; indicated otherwise
-
-;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
-;; indicated otherwise
-
-;; Version: 0.1
-
-;; Keywords: convenience
-
-;; This file is free software; you can redistribute it
-;; and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version.
-
-;; This file is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs; see the file COPYING.  If not, write to
-;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-;; Boston, MA 02110-1301, USA.
-
-;;; Commentary:
-
-;;; Code:
-
-(require 'ar-thingatpt-utils-core)
-(require 'ar-thingatpt-basic-definitions)
 ;; ar-thingatpt-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
 (defun ar-colon-greateranglednested-atpt (&optional arg)
   "Colon GREATERANGLEDNESTED at point."
@@ -13876,11 +13846,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'backslashed no-delimiters))
 
-;; (defun ar-triplebacktick-backslashed-atpt (&optional no-delimiters)
-;;   "Moves backward over backslashed before point if any, does nothing otherwise.
-;; Returns beginning position of backslashed "
-;;   (interactive "p")
-;;   (ar-th-delim 'backslashed "```" "```" no-delimiters))
+(defun ar-triplebacktick-backslashed-atpt (&optional no-delimiters)
+  "Moves backward over backslashed before point if any, does nothing otherwise.
+Returns beginning position of backslashed "
+  (interactive "p")
+  (ar-th-delim 'backslashed "```" "```" no-delimiters))
 
 (defun ar-transpose-backslashed-atpt (&optional no-delimiters)
   "Transposes backslashed at point with backslashed before if any.
@@ -14086,11 +14056,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'backticked no-delimiters))
 
-;; (defun ar-triplebacktick-backticked-atpt (&optional no-delimiters)
-;;   "Moves backward over backticked before point if any, does nothing otherwise.
-;; Returns beginning position of backticked "
-;;   (interactive "p")
-;;   (ar-th-delim 'backticked "```" "```" no-delimiters))
+(defun ar-triplebacktick-backticked-atpt (&optional no-delimiters)
+  "Moves backward over backticked before point if any, does nothing otherwise.
+Returns beginning position of backticked "
+  (interactive "p")
+  (ar-th-delim 'backticked "```" "```" no-delimiters))
 
 (defun ar-transpose-backticked-atpt (&optional no-delimiters)
   "Transposes backticked at point with backticked before if any.
@@ -14296,11 +14266,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'coloned no-delimiters))
 
-;; (defun ar-triplebacktick-coloned-atpt (&optional no-delimiters)
-;;   "Moves backward over coloned before point if any, does nothing otherwise.
-;; Returns beginning position of coloned "
-;;   (interactive "p")
-;;   (ar-th-delim 'coloned "```" "```" no-delimiters))
+(defun ar-triplebacktick-coloned-atpt (&optional no-delimiters)
+  "Moves backward over coloned before point if any, does nothing otherwise.
+Returns beginning position of coloned "
+  (interactive "p")
+  (ar-th-delim 'coloned "```" "```" no-delimiters))
 
 (defun ar-transpose-coloned-atpt (&optional no-delimiters)
   "Transposes coloned at point with coloned before if any.
@@ -14506,11 +14476,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'dollared no-delimiters))
 
-;; (defun ar-triplebacktick-dollared-atpt (&optional no-delimiters)
-;;   "Moves backward over dollared before point if any, does nothing otherwise.
-;; Returns beginning position of dollared "
-;;   (interactive "p")
-;;   (ar-th-delim 'dollared "```" "```" no-delimiters))
+(defun ar-triplebacktick-dollared-atpt (&optional no-delimiters)
+  "Moves backward over dollared before point if any, does nothing otherwise.
+Returns beginning position of dollared "
+  (interactive "p")
+  (ar-th-delim 'dollared "```" "```" no-delimiters))
 
 (defun ar-transpose-dollared-atpt (&optional no-delimiters)
   "Transposes dollared at point with dollared before if any.
@@ -14716,11 +14686,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'doublequoted no-delimiters))
 
-;; (defun ar-triplebacktick-doublequoted-atpt (&optional no-delimiters)
-;;   "Moves backward over doublequoted before point if any, does nothing otherwise.
-;; Returns beginning position of doublequoted "
-;;   (interactive "p")
-;;   (ar-th-delim 'doublequoted "```" "```" no-delimiters))
+(defun ar-triplebacktick-doublequoted-atpt (&optional no-delimiters)
+  "Moves backward over doublequoted before point if any, does nothing otherwise.
+Returns beginning position of doublequoted "
+  (interactive "p")
+  (ar-th-delim 'doublequoted "```" "```" no-delimiters))
 
 (defun ar-transpose-doublequoted-atpt (&optional no-delimiters)
   "Transposes doublequoted at point with doublequoted before if any.
@@ -14926,11 +14896,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'equalized no-delimiters))
 
-;; (defun ar-triplebacktick-equalized-atpt (&optional no-delimiters)
-;;   "Moves backward over equalized before point if any, does nothing otherwise.
-;; Returns beginning position of equalized "
-;;   (interactive "p")
-;;   (ar-th-delim 'equalized "```" "```" no-delimiters))
+(defun ar-triplebacktick-equalized-atpt (&optional no-delimiters)
+  "Moves backward over equalized before point if any, does nothing otherwise.
+Returns beginning position of equalized "
+  (interactive "p")
+  (ar-th-delim 'equalized "```" "```" no-delimiters))
 
 (defun ar-transpose-equalized-atpt (&optional no-delimiters)
   "Transposes equalized at point with equalized before if any.
@@ -15136,11 +15106,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'hyphened no-delimiters))
 
-;; (defun ar-triplebacktick-hyphened-atpt (&optional no-delimiters)
-;;   "Moves backward over hyphened before point if any, does nothing otherwise.
-;; Returns beginning position of hyphened "
-;;   (interactive "p")
-;;   (ar-th-delim 'hyphened "```" "```" no-delimiters))
+(defun ar-triplebacktick-hyphened-atpt (&optional no-delimiters)
+  "Moves backward over hyphened before point if any, does nothing otherwise.
+Returns beginning position of hyphened "
+  (interactive "p")
+  (ar-th-delim 'hyphened "```" "```" no-delimiters))
 
 (defun ar-transpose-hyphened-atpt (&optional no-delimiters)
   "Transposes hyphened at point with hyphened before if any.
@@ -15346,11 +15316,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'singlequoted no-delimiters))
 
-;; (defun ar-triplebacktick-singlequoted-atpt (&optional no-delimiters)
-;;   "Moves backward over singlequoted before point if any, does nothing otherwise.
-;; Returns beginning position of singlequoted "
-;;   (interactive "p")
-;;   (ar-th-delim 'singlequoted "```" "```" no-delimiters))
+(defun ar-triplebacktick-singlequoted-atpt (&optional no-delimiters)
+  "Moves backward over singlequoted before point if any, does nothing otherwise.
+Returns beginning position of singlequoted "
+  (interactive "p")
+  (ar-th-delim 'singlequoted "```" "```" no-delimiters))
 
 (defun ar-transpose-singlequoted-atpt (&optional no-delimiters)
   "Transposes singlequoted at point with singlequoted before if any.
@@ -15556,11 +15526,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'slashed no-delimiters))
 
-;; (defun ar-triplebacktick-slashed-atpt (&optional no-delimiters)
-;;   "Moves backward over slashed before point if any, does nothing otherwise.
-;; Returns beginning position of slashed "
-;;   (interactive "p")
-;;   (ar-th-delim 'slashed "```" "```" no-delimiters))
+(defun ar-triplebacktick-slashed-atpt (&optional no-delimiters)
+  "Moves backward over slashed before point if any, does nothing otherwise.
+Returns beginning position of slashed "
+  (interactive "p")
+  (ar-th-delim 'slashed "```" "```" no-delimiters))
 
 (defun ar-transpose-slashed-atpt (&optional no-delimiters)
   "Transposes slashed at point with slashed before if any.
@@ -15766,11 +15736,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'stared no-delimiters))
 
-;; (defun ar-triplebacktick-stared-atpt (&optional no-delimiters)
-;;   "Moves backward over stared before point if any, does nothing otherwise.
-;; Returns beginning position of stared "
-;;   (interactive "p")
-;;   (ar-th-delim 'stared "```" "```" no-delimiters))
+(defun ar-triplebacktick-stared-atpt (&optional no-delimiters)
+  "Moves backward over stared before point if any, does nothing otherwise.
+Returns beginning position of stared "
+  (interactive "p")
+  (ar-th-delim 'stared "```" "```" no-delimiters))
 
 (defun ar-transpose-stared-atpt (&optional no-delimiters)
   "Transposes stared at point with stared before if any.
@@ -15976,11 +15946,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'underscored no-delimiters))
 
-;; (defun ar-triplebacktick-underscored-atpt (&optional no-delimiters)
-;;   "Moves backward over underscored before point if any, does nothing otherwise.
-;; Returns beginning position of underscored "
-;;   (interactive "p")
-;;   (ar-th-delim 'underscored "```" "```" no-delimiters))
+(defun ar-triplebacktick-underscored-atpt (&optional no-delimiters)
+  "Moves backward over underscored before point if any, does nothing otherwise.
+Returns beginning position of underscored "
+  (interactive "p")
+  (ar-th-delim 'underscored "```" "```" no-delimiters))
 
 (defun ar-transpose-underscored-atpt (&optional no-delimiters)
   "Transposes underscored at point with underscored before if any.
@@ -16186,11 +16156,11 @@ Returns position if point was moved "
   (interactive "p")
   (ar-th-backward 'whitespaced no-delimiters))
 
-;; (defun ar-triplebacktick-whitespaced-atpt (&optional no-delimiters)
-;;   "Moves backward over whitespaced before point if any, does nothing otherwise.
-;; Returns beginning position of whitespaced "
-;;   (interactive "p")
-;;   (ar-th-delim 'whitespaced "```" "```" no-delimiters))
+(defun ar-triplebacktick-whitespaced-atpt (&optional no-delimiters)
+  "Moves backward over whitespaced before point if any, does nothing otherwise.
+Returns beginning position of whitespaced "
+  (interactive "p")
+  (ar-th-delim 'whitespaced "```" "```" no-delimiters))
 
 (defun ar-transpose-whitespaced-atpt (&optional no-delimiters)
   "Transposes whitespaced at point with whitespaced before if any.
@@ -28856,7 +28826,37 @@ See doku from ‘sort-subr’, for details.
           (exchange-point-and-mark)
           (kill-new (buffer-substring-no-properties beg end)))
       (message "%s" "Can't detect beginning of emacs-batch-expression"))))
+;;; ar-thingatpt-utils.el --- th-at-point edit functions -*- lexical-binding: t; -*-
 
+;; Copyright (C) 2010-2025 Andreas Röhler, unless
+;; indicated otherwise
+
+;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
+;; indicated otherwise
+
+;; Version: 0.1
+
+;; Keywords: convenience
+
+;; This file is free software; you can redistribute it
+;; and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version.
+
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs; see the file COPYING.  If not, write to
+;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+;;; Commentary:
+
+;;; Code:
+
+(require 'ar-thingatpt-utils-core)
+(require 'ar-thingatpt-basic-definitions)
 
 
 (provide 'ar-thingatpt-utils)
