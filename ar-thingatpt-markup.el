@@ -70,55 +70,55 @@
   "Returns beginendquote at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'beginendquote no-delimiters))
 
 (defun ar-bounds-of-beginendquote-atpt (&optional no-delimiters)
   "Returns a list, borders of beginendquote if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'beginendquote no-delimiters))
 
 (defun ar-beginendquote-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position BEGINENDQUOTE.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'beginendquote no-delimiters))
 
 (defun ar-beginendquote-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of BEGINENDQUOTE.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'beginendquote no-delimiters))
 
 (defun ar-beginning-of-beginendquote-atpt (&optional no-delimiters)
   "Goto beginning of BEGINENDQUOTE.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'beginendquote no-delimiters))
 
 (defun ar-end-of-beginendquote-atpt (&optional no-delimiters)
   "Goto end of BEGINENDQUOTE at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'beginendquote no-delimiters))
 
 (defun ar-in-beginendquote-p-atpt (&optional no-delimiters)
   "Returns bounds of BEGINENDQUOTE if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'beginendquote no-delimiters))
 
 (defun ar-length-of-beginendquote-atpt (&optional no-delimiters)
   "Returns beginning of BEGINENDQUOTE at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'beginendquote no-delimiters))
 
 (defun ar-copy-beginendquote-atpt (&optional no-delimiters)
   "Returns a copy of BEGINENDQUOTE. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'beginendquote no-delimiters))
 
 (defun ar-delete-beginendquote-atpt (&optional no-delimiters)
@@ -186,27 +186,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-beginendquote-atpt (&optional no-delimiters)
   "Marks BEGINENDQUOTE at point if any. "
-  (interactive "p")
-  (ar-th-mark 'beginendquote))
+  (interactive "P")
+  (ar-th-mark 'beginendquote no-delimiters))
 
 (defun ar-hide-beginendquote-atpt (&optional no-delimiters)
   "Hides BEGINENDQUOTE at point. "
-  (interactive "p")
-  (ar-th-hide 'beginendquote))
+  (interactive "P")
+  (ar-th-hide 'beginendquote nil nil no-delimiters))
 
 (defun ar-show-beginendquote-atpt (&optional no-delimiters)
   "Shows hidden BEGINENDQUOTE at point. "
-  (interactive "p")
-  (ar-th-show 'beginendquote))
+  (interactive "P")
+  (ar-th-show 'beginendquote nil nil no-delimiters))
 
 (defun ar-hide-show-beginendquote-atpt (&optional no-delimiters)
   "Alternatively hides or shows BEGINENDQUOTE at point. "
-  (interactive "p")
-  (ar-th-hide-show 'beginendquote))
+  (interactive "P")
+  (ar-th-hide-show 'beginendquote nil nil no-delimiters))
 
 (defun ar-highlight-beginendquote-atpt-mode (&optional no-delimiters)
   "Toggles beginendquote-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'beginendquote no-delimiters))
 
 (defun ar-kill-beginendquote-atpt (&optional no-delimiters)
@@ -265,13 +265,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-beginendquote-atpt (&optional no-delimiters)
   "Moves forward over BEGINENDQUOTE at point if any, does nothing otherwise.
 Returns end position of BEGINENDQUOTE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'beginendquote no-delimiters))
 
 (defun ar-backward-beginendquote-atpt (&optional no-delimiters)
   "Moves backward over BEGINENDQUOTE before point if any, does nothing otherwise.
 Returns beginning position of BEGINENDQUOTE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'beginendquote no-delimiters))
 
 (defun ar-transpose-beginendquote-atpt (&optional no-delimiters)
@@ -293,7 +293,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-beginendquote-atpt (&optional arg)
   "Return t if a BEGINENDQUOTE at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-beginendquote-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-beginendquote-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -304,55 +304,55 @@ See doku from ‘sort-subr’, for details.
   "Returns blok at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'blok no-delimiters))
 
 (defun ar-bounds-of-blok-atpt (&optional no-delimiters)
   "Returns a list, borders of blok if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'blok no-delimiters))
 
 (defun ar-blok-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position BLOK.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'blok no-delimiters))
 
 (defun ar-blok-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of BLOK.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'blok no-delimiters))
 
 (defun ar-beginning-of-blok-atpt (&optional no-delimiters)
   "Goto beginning of BLOK.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'blok no-delimiters))
 
 (defun ar-end-of-blok-atpt (&optional no-delimiters)
   "Goto end of BLOK at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'blok no-delimiters))
 
 (defun ar-in-blok-p-atpt (&optional no-delimiters)
   "Returns bounds of BLOK if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'blok no-delimiters))
 
 (defun ar-length-of-blok-atpt (&optional no-delimiters)
   "Returns beginning of BLOK at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'blok no-delimiters))
 
 (defun ar-copy-blok-atpt (&optional no-delimiters)
   "Returns a copy of BLOK. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'blok no-delimiters))
 
 (defun ar-delete-blok-atpt (&optional no-delimiters)
@@ -420,27 +420,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-blok-atpt (&optional no-delimiters)
   "Marks BLOK at point if any. "
-  (interactive "p")
-  (ar-th-mark 'blok))
+  (interactive "P")
+  (ar-th-mark 'blok no-delimiters))
 
 (defun ar-hide-blok-atpt (&optional no-delimiters)
   "Hides BLOK at point. "
-  (interactive "p")
-  (ar-th-hide 'blok))
+  (interactive "P")
+  (ar-th-hide 'blok nil nil no-delimiters))
 
 (defun ar-show-blok-atpt (&optional no-delimiters)
   "Shows hidden BLOK at point. "
-  (interactive "p")
-  (ar-th-show 'blok))
+  (interactive "P")
+  (ar-th-show 'blok nil nil no-delimiters))
 
 (defun ar-hide-show-blok-atpt (&optional no-delimiters)
   "Alternatively hides or shows BLOK at point. "
-  (interactive "p")
-  (ar-th-hide-show 'blok))
+  (interactive "P")
+  (ar-th-hide-show 'blok nil nil no-delimiters))
 
 (defun ar-highlight-blok-atpt-mode (&optional no-delimiters)
   "Toggles blok-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'blok no-delimiters))
 
 (defun ar-kill-blok-atpt (&optional no-delimiters)
@@ -499,13 +499,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-blok-atpt (&optional no-delimiters)
   "Moves forward over BLOK at point if any, does nothing otherwise.
 Returns end position of BLOK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'blok no-delimiters))
 
 (defun ar-backward-blok-atpt (&optional no-delimiters)
   "Moves backward over BLOK before point if any, does nothing otherwise.
 Returns beginning position of BLOK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'blok no-delimiters))
 
 (defun ar-transpose-blok-atpt (&optional no-delimiters)
@@ -527,7 +527,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-blok-atpt (&optional arg)
   "Return t if a BLOK at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-blok-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-blok-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -538,55 +538,55 @@ See doku from ‘sort-subr’, for details.
   "Returns doublebackslashed at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'doublebackslashed no-delimiters))
 
 (defun ar-bounds-of-doublebackslashed-atpt (&optional no-delimiters)
   "Returns a list, borders of doublebackslashed if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashed-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position DOUBLEBACKSLASHED.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashed-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of DOUBLEBACKSLASHED.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'doublebackslashed no-delimiters))
 
 (defun ar-beginning-of-doublebackslashed-atpt (&optional no-delimiters)
   "Goto beginning of DOUBLEBACKSLASHED.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'doublebackslashed no-delimiters))
 
 (defun ar-end-of-doublebackslashed-atpt (&optional no-delimiters)
   "Goto end of DOUBLEBACKSLASHED at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'doublebackslashed no-delimiters))
 
 (defun ar-in-doublebackslashed-p-atpt (&optional no-delimiters)
   "Returns bounds of DOUBLEBACKSLASHED if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doublebackslashed no-delimiters))
 
 (defun ar-length-of-doublebackslashed-atpt (&optional no-delimiters)
   "Returns beginning of DOUBLEBACKSLASHED at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'doublebackslashed no-delimiters))
 
 (defun ar-copy-doublebackslashed-atpt (&optional no-delimiters)
   "Returns a copy of DOUBLEBACKSLASHED. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'doublebackslashed no-delimiters))
 
 (defun ar-delete-doublebackslashed-atpt (&optional no-delimiters)
@@ -654,27 +654,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-doublebackslashed-atpt (&optional no-delimiters)
   "Marks DOUBLEBACKSLASHED at point if any. "
-  (interactive "p")
-  (ar-th-mark 'doublebackslashed))
+  (interactive "P")
+  (ar-th-mark 'doublebackslashed no-delimiters))
 
 (defun ar-hide-doublebackslashed-atpt (&optional no-delimiters)
   "Hides DOUBLEBACKSLASHED at point. "
-  (interactive "p")
-  (ar-th-hide 'doublebackslashed))
+  (interactive "P")
+  (ar-th-hide 'doublebackslashed nil nil no-delimiters))
 
 (defun ar-show-doublebackslashed-atpt (&optional no-delimiters)
   "Shows hidden DOUBLEBACKSLASHED at point. "
-  (interactive "p")
-  (ar-th-show 'doublebackslashed))
+  (interactive "P")
+  (ar-th-show 'doublebackslashed nil nil no-delimiters))
 
 (defun ar-hide-show-doublebackslashed-atpt (&optional no-delimiters)
   "Alternatively hides or shows DOUBLEBACKSLASHED at point. "
-  (interactive "p")
-  (ar-th-hide-show 'doublebackslashed))
+  (interactive "P")
+  (ar-th-hide-show 'doublebackslashed nil nil no-delimiters))
 
 (defun ar-highlight-doublebackslashed-atpt-mode (&optional no-delimiters)
   "Toggles doublebackslashed-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'doublebackslashed no-delimiters))
 
 (defun ar-kill-doublebackslashed-atpt (&optional no-delimiters)
@@ -733,13 +733,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-doublebackslashed-atpt (&optional no-delimiters)
   "Moves forward over DOUBLEBACKSLASHED at point if any, does nothing otherwise.
 Returns end position of DOUBLEBACKSLASHED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'doublebackslashed no-delimiters))
 
 (defun ar-backward-doublebackslashed-atpt (&optional no-delimiters)
   "Moves backward over DOUBLEBACKSLASHED before point if any, does nothing otherwise.
 Returns beginning position of DOUBLEBACKSLASHED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'doublebackslashed no-delimiters))
 
 (defun ar-transpose-doublebackslashed-atpt (&optional no-delimiters)
@@ -761,7 +761,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-doublebackslashed-atpt (&optional arg)
   "Return t if a DOUBLEBACKSLASHED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-doublebackslashed-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-doublebackslashed-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -772,55 +772,55 @@ See doku from ‘sort-subr’, for details.
   "Returns doublebackticked at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'doublebackticked no-delimiters))
 
 (defun ar-bounds-of-doublebackticked-atpt (&optional no-delimiters)
   "Returns a list, borders of doublebackticked if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doublebackticked no-delimiters))
 
 (defun ar-doublebackticked-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position DOUBLEBACKTICKED.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'doublebackticked no-delimiters))
 
 (defun ar-doublebackticked-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of DOUBLEBACKTICKED.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'doublebackticked no-delimiters))
 
 (defun ar-beginning-of-doublebackticked-atpt (&optional no-delimiters)
   "Goto beginning of DOUBLEBACKTICKED.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'doublebackticked no-delimiters))
 
 (defun ar-end-of-doublebackticked-atpt (&optional no-delimiters)
   "Goto end of DOUBLEBACKTICKED at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'doublebackticked no-delimiters))
 
 (defun ar-in-doublebackticked-p-atpt (&optional no-delimiters)
   "Returns bounds of DOUBLEBACKTICKED if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doublebackticked no-delimiters))
 
 (defun ar-length-of-doublebackticked-atpt (&optional no-delimiters)
   "Returns beginning of DOUBLEBACKTICKED at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'doublebackticked no-delimiters))
 
 (defun ar-copy-doublebackticked-atpt (&optional no-delimiters)
   "Returns a copy of DOUBLEBACKTICKED. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'doublebackticked no-delimiters))
 
 (defun ar-delete-doublebackticked-atpt (&optional no-delimiters)
@@ -888,27 +888,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-doublebackticked-atpt (&optional no-delimiters)
   "Marks DOUBLEBACKTICKED at point if any. "
-  (interactive "p")
-  (ar-th-mark 'doublebackticked))
+  (interactive "P")
+  (ar-th-mark 'doublebackticked no-delimiters))
 
 (defun ar-hide-doublebackticked-atpt (&optional no-delimiters)
   "Hides DOUBLEBACKTICKED at point. "
-  (interactive "p")
-  (ar-th-hide 'doublebackticked))
+  (interactive "P")
+  (ar-th-hide 'doublebackticked nil nil no-delimiters))
 
 (defun ar-show-doublebackticked-atpt (&optional no-delimiters)
   "Shows hidden DOUBLEBACKTICKED at point. "
-  (interactive "p")
-  (ar-th-show 'doublebackticked))
+  (interactive "P")
+  (ar-th-show 'doublebackticked nil nil no-delimiters))
 
 (defun ar-hide-show-doublebackticked-atpt (&optional no-delimiters)
   "Alternatively hides or shows DOUBLEBACKTICKED at point. "
-  (interactive "p")
-  (ar-th-hide-show 'doublebackticked))
+  (interactive "P")
+  (ar-th-hide-show 'doublebackticked nil nil no-delimiters))
 
 (defun ar-highlight-doublebackticked-atpt-mode (&optional no-delimiters)
   "Toggles doublebackticked-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'doublebackticked no-delimiters))
 
 (defun ar-kill-doublebackticked-atpt (&optional no-delimiters)
@@ -967,13 +967,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-doublebackticked-atpt (&optional no-delimiters)
   "Moves forward over DOUBLEBACKTICKED at point if any, does nothing otherwise.
 Returns end position of DOUBLEBACKTICKED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'doublebackticked no-delimiters))
 
 (defun ar-backward-doublebackticked-atpt (&optional no-delimiters)
   "Moves backward over DOUBLEBACKTICKED before point if any, does nothing otherwise.
 Returns beginning position of DOUBLEBACKTICKED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'doublebackticked no-delimiters))
 
 (defun ar-transpose-doublebackticked-atpt (&optional no-delimiters)
@@ -995,7 +995,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-doublebackticked-atpt (&optional arg)
   "Return t if a DOUBLEBACKTICKED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-doublebackticked-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-doublebackticked-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -1006,55 +1006,55 @@ See doku from ‘sort-subr’, for details.
   "Returns doublebackslashedparen at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'doublebackslashedparen no-delimiters))
 
 (defun ar-bounds-of-doublebackslashedparen-atpt (&optional no-delimiters)
   "Returns a list, borders of doublebackslashedparen if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashedparen-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position DOUBLEBACKSLASHEDPAREN.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashedparen-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of DOUBLEBACKSLASHEDPAREN.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'doublebackslashedparen no-delimiters))
 
 (defun ar-beginning-of-doublebackslashedparen-atpt (&optional no-delimiters)
   "Goto beginning of DOUBLEBACKSLASHEDPAREN.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'doublebackslashedparen no-delimiters))
 
 (defun ar-end-of-doublebackslashedparen-atpt (&optional no-delimiters)
   "Goto end of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'doublebackslashedparen no-delimiters))
 
 (defun ar-in-doublebackslashedparen-p-atpt (&optional no-delimiters)
   "Returns bounds of DOUBLEBACKSLASHEDPAREN if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
 (defun ar-length-of-doublebackslashedparen-atpt (&optional no-delimiters)
   "Returns beginning of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'doublebackslashedparen no-delimiters))
 
 (defun ar-copy-doublebackslashedparen-atpt (&optional no-delimiters)
   "Returns a copy of DOUBLEBACKSLASHEDPAREN. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'doublebackslashedparen no-delimiters))
 
 (defun ar-delete-doublebackslashedparen-atpt (&optional no-delimiters)
@@ -1122,27 +1122,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-doublebackslashedparen-atpt (&optional no-delimiters)
   "Marks DOUBLEBACKSLASHEDPAREN at point if any. "
-  (interactive "p")
-  (ar-th-mark 'doublebackslashedparen))
+  (interactive "P")
+  (ar-th-mark 'doublebackslashedparen no-delimiters))
 
 (defun ar-hide-doublebackslashedparen-atpt (&optional no-delimiters)
   "Hides DOUBLEBACKSLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-hide 'doublebackslashedparen))
+  (interactive "P")
+  (ar-th-hide 'doublebackslashedparen nil nil no-delimiters))
 
 (defun ar-show-doublebackslashedparen-atpt (&optional no-delimiters)
   "Shows hidden DOUBLEBACKSLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-show 'doublebackslashedparen))
+  (interactive "P")
+  (ar-th-show 'doublebackslashedparen nil nil no-delimiters))
 
 (defun ar-hide-show-doublebackslashedparen-atpt (&optional no-delimiters)
   "Alternatively hides or shows DOUBLEBACKSLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-hide-show 'doublebackslashedparen))
+  (interactive "P")
+  (ar-th-hide-show 'doublebackslashedparen nil nil no-delimiters))
 
 (defun ar-highlight-doublebackslashedparen-atpt-mode (&optional no-delimiters)
   "Toggles doublebackslashedparen-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'doublebackslashedparen no-delimiters))
 
 (defun ar-kill-doublebackslashedparen-atpt (&optional no-delimiters)
@@ -1201,13 +1201,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-doublebackslashedparen-atpt (&optional no-delimiters)
   "Moves forward over DOUBLEBACKSLASHEDPAREN at point if any, does nothing otherwise.
 Returns end position of DOUBLEBACKSLASHEDPAREN "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'doublebackslashedparen no-delimiters))
 
 (defun ar-backward-doublebackslashedparen-atpt (&optional no-delimiters)
   "Moves backward over DOUBLEBACKSLASHEDPAREN before point if any, does nothing otherwise.
 Returns beginning position of DOUBLEBACKSLASHEDPAREN "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'doublebackslashedparen no-delimiters))
 
 (defun ar-transpose-doublebackslashedparen-atpt (&optional no-delimiters)
@@ -1229,7 +1229,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-doublebackslashedparen-atpt (&optional arg)
   "Return t if a DOUBLEBACKSLASHEDPAREN at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-doublebackslashedparen-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-doublebackslashedparen-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -1240,55 +1240,55 @@ See doku from ‘sort-subr’, for details.
   "Returns doubleslashed at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'doubleslashed no-delimiters))
 
 (defun ar-bounds-of-doubleslashed-atpt (&optional no-delimiters)
   "Returns a list, borders of doubleslashed if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doubleslashed no-delimiters))
 
 (defun ar-doubleslashed-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position DOUBLESLASHED.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'doubleslashed no-delimiters))
 
 (defun ar-doubleslashed-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of DOUBLESLASHED.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'doubleslashed no-delimiters))
 
 (defun ar-beginning-of-doubleslashed-atpt (&optional no-delimiters)
   "Goto beginning of DOUBLESLASHED.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'doubleslashed no-delimiters))
 
 (defun ar-end-of-doubleslashed-atpt (&optional no-delimiters)
   "Goto end of DOUBLESLASHED at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'doubleslashed no-delimiters))
 
 (defun ar-in-doubleslashed-p-atpt (&optional no-delimiters)
   "Returns bounds of DOUBLESLASHED if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doubleslashed no-delimiters))
 
 (defun ar-length-of-doubleslashed-atpt (&optional no-delimiters)
   "Returns beginning of DOUBLESLASHED at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'doubleslashed no-delimiters))
 
 (defun ar-copy-doubleslashed-atpt (&optional no-delimiters)
   "Returns a copy of DOUBLESLASHED. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'doubleslashed no-delimiters))
 
 (defun ar-delete-doubleslashed-atpt (&optional no-delimiters)
@@ -1356,27 +1356,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-doubleslashed-atpt (&optional no-delimiters)
   "Marks DOUBLESLASHED at point if any. "
-  (interactive "p")
-  (ar-th-mark 'doubleslashed))
+  (interactive "P")
+  (ar-th-mark 'doubleslashed no-delimiters))
 
 (defun ar-hide-doubleslashed-atpt (&optional no-delimiters)
   "Hides DOUBLESLASHED at point. "
-  (interactive "p")
-  (ar-th-hide 'doubleslashed))
+  (interactive "P")
+  (ar-th-hide 'doubleslashed nil nil no-delimiters))
 
 (defun ar-show-doubleslashed-atpt (&optional no-delimiters)
   "Shows hidden DOUBLESLASHED at point. "
-  (interactive "p")
-  (ar-th-show 'doubleslashed))
+  (interactive "P")
+  (ar-th-show 'doubleslashed nil nil no-delimiters))
 
 (defun ar-hide-show-doubleslashed-atpt (&optional no-delimiters)
   "Alternatively hides or shows DOUBLESLASHED at point. "
-  (interactive "p")
-  (ar-th-hide-show 'doubleslashed))
+  (interactive "P")
+  (ar-th-hide-show 'doubleslashed nil nil no-delimiters))
 
 (defun ar-highlight-doubleslashed-atpt-mode (&optional no-delimiters)
   "Toggles doubleslashed-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'doubleslashed no-delimiters))
 
 (defun ar-kill-doubleslashed-atpt (&optional no-delimiters)
@@ -1435,13 +1435,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-doubleslashed-atpt (&optional no-delimiters)
   "Moves forward over DOUBLESLASHED at point if any, does nothing otherwise.
 Returns end position of DOUBLESLASHED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'doubleslashed no-delimiters))
 
 (defun ar-backward-doubleslashed-atpt (&optional no-delimiters)
   "Moves backward over DOUBLESLASHED before point if any, does nothing otherwise.
 Returns beginning position of DOUBLESLASHED "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'doubleslashed no-delimiters))
 
 (defun ar-transpose-doubleslashed-atpt (&optional no-delimiters)
@@ -1463,7 +1463,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-doubleslashed-atpt (&optional arg)
   "Return t if a DOUBLESLASHED at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-doubleslashed-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-doubleslashed-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -1474,55 +1474,55 @@ See doku from ‘sort-subr’, for details.
   "Returns doubleslashedparen at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'doubleslashedparen no-delimiters))
 
 (defun ar-bounds-of-doubleslashedparen-atpt (&optional no-delimiters)
   "Returns a list, borders of doubleslashedparen if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslashedparen-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position DOUBLESLASHEDPAREN.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslashedparen-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of DOUBLESLASHEDPAREN.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'doubleslashedparen no-delimiters))
 
 (defun ar-beginning-of-doubleslashedparen-atpt (&optional no-delimiters)
   "Goto beginning of DOUBLESLASHEDPAREN.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'doubleslashedparen no-delimiters))
 
 (defun ar-end-of-doubleslashedparen-atpt (&optional no-delimiters)
   "Goto end of DOUBLESLASHEDPAREN at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'doubleslashedparen no-delimiters))
 
 (defun ar-in-doubleslashedparen-p-atpt (&optional no-delimiters)
   "Returns bounds of DOUBLESLASHEDPAREN if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'doubleslashedparen no-delimiters))
 
 (defun ar-length-of-doubleslashedparen-atpt (&optional no-delimiters)
   "Returns beginning of DOUBLESLASHEDPAREN at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'doubleslashedparen no-delimiters))
 
 (defun ar-copy-doubleslashedparen-atpt (&optional no-delimiters)
   "Returns a copy of DOUBLESLASHEDPAREN. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'doubleslashedparen no-delimiters))
 
 (defun ar-delete-doubleslashedparen-atpt (&optional no-delimiters)
@@ -1590,27 +1590,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-doubleslashedparen-atpt (&optional no-delimiters)
   "Marks DOUBLESLASHEDPAREN at point if any. "
-  (interactive "p")
-  (ar-th-mark 'doubleslashedparen))
+  (interactive "P")
+  (ar-th-mark 'doubleslashedparen no-delimiters))
 
 (defun ar-hide-doubleslashedparen-atpt (&optional no-delimiters)
   "Hides DOUBLESLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-hide 'doubleslashedparen))
+  (interactive "P")
+  (ar-th-hide 'doubleslashedparen nil nil no-delimiters))
 
 (defun ar-show-doubleslashedparen-atpt (&optional no-delimiters)
   "Shows hidden DOUBLESLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-show 'doubleslashedparen))
+  (interactive "P")
+  (ar-th-show 'doubleslashedparen nil nil no-delimiters))
 
 (defun ar-hide-show-doubleslashedparen-atpt (&optional no-delimiters)
   "Alternatively hides or shows DOUBLESLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-hide-show 'doubleslashedparen))
+  (interactive "P")
+  (ar-th-hide-show 'doubleslashedparen nil nil no-delimiters))
 
 (defun ar-highlight-doubleslashedparen-atpt-mode (&optional no-delimiters)
   "Toggles doubleslashedparen-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'doubleslashedparen no-delimiters))
 
 (defun ar-kill-doubleslashedparen-atpt (&optional no-delimiters)
@@ -1669,13 +1669,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-doubleslashedparen-atpt (&optional no-delimiters)
   "Moves forward over DOUBLESLASHEDPAREN at point if any, does nothing otherwise.
 Returns end position of DOUBLESLASHEDPAREN "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'doubleslashedparen no-delimiters))
 
 (defun ar-backward-doubleslashedparen-atpt (&optional no-delimiters)
   "Moves backward over DOUBLESLASHEDPAREN before point if any, does nothing otherwise.
 Returns beginning position of DOUBLESLASHEDPAREN "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'doubleslashedparen no-delimiters))
 
 (defun ar-transpose-doubleslashedparen-atpt (&optional no-delimiters)
@@ -1697,7 +1697,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-doubleslashedparen-atpt (&optional arg)
   "Return t if a DOUBLESLASHEDPAREN at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-doubleslashedparen-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-doubleslashedparen-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -1708,55 +1708,55 @@ See doku from ‘sort-subr’, for details.
   "Returns markup at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'markup no-delimiters))
 
 (defun ar-bounds-of-markup-atpt (&optional no-delimiters)
   "Returns a list, borders of markup if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'markup no-delimiters))
 
 (defun ar-markup-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position MARKUP.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'markup no-delimiters))
 
 (defun ar-markup-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of MARKUP.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'markup no-delimiters))
 
 (defun ar-beginning-of-markup-atpt (&optional no-delimiters)
   "Goto beginning of MARKUP.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'markup no-delimiters))
 
 (defun ar-end-of-markup-atpt (&optional no-delimiters)
   "Goto end of MARKUP at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'markup no-delimiters))
 
 (defun ar-in-markup-p-atpt (&optional no-delimiters)
   "Returns bounds of MARKUP if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'markup no-delimiters))
 
 (defun ar-length-of-markup-atpt (&optional no-delimiters)
   "Returns beginning of MARKUP at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'markup no-delimiters))
 
 (defun ar-copy-markup-atpt (&optional no-delimiters)
   "Returns a copy of MARKUP. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'markup no-delimiters))
 
 (defun ar-delete-markup-atpt (&optional no-delimiters)
@@ -1824,27 +1824,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-markup-atpt (&optional no-delimiters)
   "Marks MARKUP at point if any. "
-  (interactive "p")
-  (ar-th-mark 'markup))
+  (interactive "P")
+  (ar-th-mark 'markup no-delimiters))
 
 (defun ar-hide-markup-atpt (&optional no-delimiters)
   "Hides MARKUP at point. "
-  (interactive "p")
-  (ar-th-hide 'markup))
+  (interactive "P")
+  (ar-th-hide 'markup nil nil no-delimiters))
 
 (defun ar-show-markup-atpt (&optional no-delimiters)
   "Shows hidden MARKUP at point. "
-  (interactive "p")
-  (ar-th-show 'markup))
+  (interactive "P")
+  (ar-th-show 'markup nil nil no-delimiters))
 
 (defun ar-hide-show-markup-atpt (&optional no-delimiters)
   "Alternatively hides or shows MARKUP at point. "
-  (interactive "p")
-  (ar-th-hide-show 'markup))
+  (interactive "P")
+  (ar-th-hide-show 'markup nil nil no-delimiters))
 
 (defun ar-highlight-markup-atpt-mode (&optional no-delimiters)
   "Toggles markup-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'markup no-delimiters))
 
 (defun ar-kill-markup-atpt (&optional no-delimiters)
@@ -1903,13 +1903,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-markup-atpt (&optional no-delimiters)
   "Moves forward over MARKUP at point if any, does nothing otherwise.
 Returns end position of MARKUP "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'markup no-delimiters))
 
 (defun ar-backward-markup-atpt (&optional no-delimiters)
   "Moves backward over MARKUP before point if any, does nothing otherwise.
 Returns beginning position of MARKUP "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'markup no-delimiters))
 
 (defun ar-transpose-markup-atpt (&optional no-delimiters)
@@ -1931,7 +1931,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-markup-atpt (&optional arg)
   "Return t if a MARKUP at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-markup-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-markup-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -1942,55 +1942,55 @@ See doku from ‘sort-subr’, for details.
   "Returns mldata at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'mldata no-delimiters))
 
 (defun ar-bounds-of-mldata-atpt (&optional no-delimiters)
   "Returns a list, borders of mldata if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'mldata no-delimiters))
 
 (defun ar-mldata-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position MLDATA.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'mldata no-delimiters))
 
 (defun ar-mldata-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of MLDATA.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'mldata no-delimiters))
 
 (defun ar-beginning-of-mldata-atpt (&optional no-delimiters)
   "Goto beginning of MLDATA.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'mldata no-delimiters))
 
 (defun ar-end-of-mldata-atpt (&optional no-delimiters)
   "Goto end of MLDATA at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'mldata no-delimiters))
 
 (defun ar-in-mldata-p-atpt (&optional no-delimiters)
   "Returns bounds of MLDATA if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'mldata no-delimiters))
 
 (defun ar-length-of-mldata-atpt (&optional no-delimiters)
   "Returns beginning of MLDATA at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'mldata no-delimiters))
 
 (defun ar-copy-mldata-atpt (&optional no-delimiters)
   "Returns a copy of MLDATA. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'mldata no-delimiters))
 
 (defun ar-delete-mldata-atpt (&optional no-delimiters)
@@ -2058,27 +2058,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-mldata-atpt (&optional no-delimiters)
   "Marks MLDATA at point if any. "
-  (interactive "p")
-  (ar-th-mark 'mldata))
+  (interactive "P")
+  (ar-th-mark 'mldata no-delimiters))
 
 (defun ar-hide-mldata-atpt (&optional no-delimiters)
   "Hides MLDATA at point. "
-  (interactive "p")
-  (ar-th-hide 'mldata))
+  (interactive "P")
+  (ar-th-hide 'mldata nil nil no-delimiters))
 
 (defun ar-show-mldata-atpt (&optional no-delimiters)
   "Shows hidden MLDATA at point. "
-  (interactive "p")
-  (ar-th-show 'mldata))
+  (interactive "P")
+  (ar-th-show 'mldata nil nil no-delimiters))
 
 (defun ar-hide-show-mldata-atpt (&optional no-delimiters)
   "Alternatively hides or shows MLDATA at point. "
-  (interactive "p")
-  (ar-th-hide-show 'mldata))
+  (interactive "P")
+  (ar-th-hide-show 'mldata nil nil no-delimiters))
 
 (defun ar-highlight-mldata-atpt-mode (&optional no-delimiters)
   "Toggles mldata-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'mldata no-delimiters))
 
 (defun ar-kill-mldata-atpt (&optional no-delimiters)
@@ -2137,13 +2137,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-mldata-atpt (&optional no-delimiters)
   "Moves forward over MLDATA at point if any, does nothing otherwise.
 Returns end position of MLDATA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'mldata no-delimiters))
 
 (defun ar-backward-mldata-atpt (&optional no-delimiters)
   "Moves backward over MLDATA before point if any, does nothing otherwise.
 Returns beginning position of MLDATA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'mldata no-delimiters))
 
 (defun ar-transpose-mldata-atpt (&optional no-delimiters)
@@ -2165,7 +2165,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-mldata-atpt (&optional arg)
   "Return t if a MLDATA at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-mldata-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-mldata-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -2176,55 +2176,55 @@ See doku from ‘sort-subr’, for details.
   "Returns mlattribut at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'mlattribut no-delimiters))
 
 (defun ar-bounds-of-mlattribut-atpt (&optional no-delimiters)
   "Returns a list, borders of mlattribut if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'mlattribut no-delimiters))
 
 (defun ar-mlattribut-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position MLATTRIBUT.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'mlattribut no-delimiters))
 
 (defun ar-mlattribut-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of MLATTRIBUT.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'mlattribut no-delimiters))
 
 (defun ar-beginning-of-mlattribut-atpt (&optional no-delimiters)
   "Goto beginning of MLATTRIBUT.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'mlattribut no-delimiters))
 
 (defun ar-end-of-mlattribut-atpt (&optional no-delimiters)
   "Goto end of MLATTRIBUT at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'mlattribut no-delimiters))
 
 (defun ar-in-mlattribut-p-atpt (&optional no-delimiters)
   "Returns bounds of MLATTRIBUT if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'mlattribut no-delimiters))
 
 (defun ar-length-of-mlattribut-atpt (&optional no-delimiters)
   "Returns beginning of MLATTRIBUT at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'mlattribut no-delimiters))
 
 (defun ar-copy-mlattribut-atpt (&optional no-delimiters)
   "Returns a copy of MLATTRIBUT. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'mlattribut no-delimiters))
 
 (defun ar-delete-mlattribut-atpt (&optional no-delimiters)
@@ -2292,27 +2292,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-mlattribut-atpt (&optional no-delimiters)
   "Marks MLATTRIBUT at point if any. "
-  (interactive "p")
-  (ar-th-mark 'mlattribut))
+  (interactive "P")
+  (ar-th-mark 'mlattribut no-delimiters))
 
 (defun ar-hide-mlattribut-atpt (&optional no-delimiters)
   "Hides MLATTRIBUT at point. "
-  (interactive "p")
-  (ar-th-hide 'mlattribut))
+  (interactive "P")
+  (ar-th-hide 'mlattribut nil nil no-delimiters))
 
 (defun ar-show-mlattribut-atpt (&optional no-delimiters)
   "Shows hidden MLATTRIBUT at point. "
-  (interactive "p")
-  (ar-th-show 'mlattribut))
+  (interactive "P")
+  (ar-th-show 'mlattribut nil nil no-delimiters))
 
 (defun ar-hide-show-mlattribut-atpt (&optional no-delimiters)
   "Alternatively hides or shows MLATTRIBUT at point. "
-  (interactive "p")
-  (ar-th-hide-show 'mlattribut))
+  (interactive "P")
+  (ar-th-hide-show 'mlattribut nil nil no-delimiters))
 
 (defun ar-highlight-mlattribut-atpt-mode (&optional no-delimiters)
   "Toggles mlattribut-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'mlattribut no-delimiters))
 
 (defun ar-kill-mlattribut-atpt (&optional no-delimiters)
@@ -2371,13 +2371,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-mlattribut-atpt (&optional no-delimiters)
   "Moves forward over MLATTRIBUT at point if any, does nothing otherwise.
 Returns end position of MLATTRIBUT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'mlattribut no-delimiters))
 
 (defun ar-backward-mlattribut-atpt (&optional no-delimiters)
   "Moves backward over MLATTRIBUT before point if any, does nothing otherwise.
 Returns beginning position of MLATTRIBUT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'mlattribut no-delimiters))
 
 (defun ar-transpose-mlattribut-atpt (&optional no-delimiters)
@@ -2399,7 +2399,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-mlattribut-atpt (&optional arg)
   "Return t if a MLATTRIBUT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-mlattribut-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-mlattribut-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -2410,55 +2410,55 @@ See doku from ‘sort-subr’, for details.
   "Returns mltag at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'mltag no-delimiters))
 
 (defun ar-bounds-of-mltag-atpt (&optional no-delimiters)
   "Returns a list, borders of mltag if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'mltag no-delimiters))
 
 (defun ar-mltag-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position MLTAG.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'mltag no-delimiters))
 
 (defun ar-mltag-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of MLTAG.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'mltag no-delimiters))
 
 (defun ar-beginning-of-mltag-atpt (&optional no-delimiters)
   "Goto beginning of MLTAG.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'mltag no-delimiters))
 
 (defun ar-end-of-mltag-atpt (&optional no-delimiters)
   "Goto end of MLTAG at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'mltag no-delimiters))
 
 (defun ar-in-mltag-p-atpt (&optional no-delimiters)
   "Returns bounds of MLTAG if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'mltag no-delimiters))
 
 (defun ar-length-of-mltag-atpt (&optional no-delimiters)
   "Returns beginning of MLTAG at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'mltag no-delimiters))
 
 (defun ar-copy-mltag-atpt (&optional no-delimiters)
   "Returns a copy of MLTAG. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'mltag no-delimiters))
 
 (defun ar-delete-mltag-atpt (&optional no-delimiters)
@@ -2526,27 +2526,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-mltag-atpt (&optional no-delimiters)
   "Marks MLTAG at point if any. "
-  (interactive "p")
-  (ar-th-mark 'mltag))
+  (interactive "P")
+  (ar-th-mark 'mltag no-delimiters))
 
 (defun ar-hide-mltag-atpt (&optional no-delimiters)
   "Hides MLTAG at point. "
-  (interactive "p")
-  (ar-th-hide 'mltag))
+  (interactive "P")
+  (ar-th-hide 'mltag nil nil no-delimiters))
 
 (defun ar-show-mltag-atpt (&optional no-delimiters)
   "Shows hidden MLTAG at point. "
-  (interactive "p")
-  (ar-th-show 'mltag))
+  (interactive "P")
+  (ar-th-show 'mltag nil nil no-delimiters))
 
 (defun ar-hide-show-mltag-atpt (&optional no-delimiters)
   "Alternatively hides or shows MLTAG at point. "
-  (interactive "p")
-  (ar-th-hide-show 'mltag))
+  (interactive "P")
+  (ar-th-hide-show 'mltag nil nil no-delimiters))
 
 (defun ar-highlight-mltag-atpt-mode (&optional no-delimiters)
   "Toggles mltag-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'mltag no-delimiters))
 
 (defun ar-kill-mltag-atpt (&optional no-delimiters)
@@ -2605,13 +2605,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-mltag-atpt (&optional no-delimiters)
   "Moves forward over MLTAG at point if any, does nothing otherwise.
 Returns end position of MLTAG "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'mltag no-delimiters))
 
 (defun ar-backward-mltag-atpt (&optional no-delimiters)
   "Moves backward over MLTAG before point if any, does nothing otherwise.
 Returns beginning position of MLTAG "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'mltag no-delimiters))
 
 (defun ar-transpose-mltag-atpt (&optional no-delimiters)
@@ -2633,7 +2633,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-mltag-atpt (&optional arg)
   "Return t if a MLTAG at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-mltag-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-mltag-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -2644,55 +2644,55 @@ See doku from ‘sort-subr’, for details.
   "Returns slashedparen at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'slashedparen no-delimiters))
 
 (defun ar-bounds-of-slashedparen-atpt (&optional no-delimiters)
   "Returns a list, borders of slashedparen if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'slashedparen no-delimiters))
 
 (defun ar-slashedparen-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position SLASHEDPAREN.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'slashedparen no-delimiters))
 
 (defun ar-slashedparen-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of SLASHEDPAREN.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'slashedparen no-delimiters))
 
 (defun ar-beginning-of-slashedparen-atpt (&optional no-delimiters)
   "Goto beginning of SLASHEDPAREN.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'slashedparen no-delimiters))
 
 (defun ar-end-of-slashedparen-atpt (&optional no-delimiters)
   "Goto end of SLASHEDPAREN at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'slashedparen no-delimiters))
 
 (defun ar-in-slashedparen-p-atpt (&optional no-delimiters)
   "Returns bounds of SLASHEDPAREN if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'slashedparen no-delimiters))
 
 (defun ar-length-of-slashedparen-atpt (&optional no-delimiters)
   "Returns beginning of SLASHEDPAREN at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'slashedparen no-delimiters))
 
 (defun ar-copy-slashedparen-atpt (&optional no-delimiters)
   "Returns a copy of SLASHEDPAREN. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'slashedparen no-delimiters))
 
 (defun ar-delete-slashedparen-atpt (&optional no-delimiters)
@@ -2760,27 +2760,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-slashedparen-atpt (&optional no-delimiters)
   "Marks SLASHEDPAREN at point if any. "
-  (interactive "p")
-  (ar-th-mark 'slashedparen))
+  (interactive "P")
+  (ar-th-mark 'slashedparen no-delimiters))
 
 (defun ar-hide-slashedparen-atpt (&optional no-delimiters)
   "Hides SLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-hide 'slashedparen))
+  (interactive "P")
+  (ar-th-hide 'slashedparen nil nil no-delimiters))
 
 (defun ar-show-slashedparen-atpt (&optional no-delimiters)
   "Shows hidden SLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-show 'slashedparen))
+  (interactive "P")
+  (ar-th-show 'slashedparen nil nil no-delimiters))
 
 (defun ar-hide-show-slashedparen-atpt (&optional no-delimiters)
   "Alternatively hides or shows SLASHEDPAREN at point. "
-  (interactive "p")
-  (ar-th-hide-show 'slashedparen))
+  (interactive "P")
+  (ar-th-hide-show 'slashedparen nil nil no-delimiters))
 
 (defun ar-highlight-slashedparen-atpt-mode (&optional no-delimiters)
   "Toggles slashedparen-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'slashedparen no-delimiters))
 
 (defun ar-kill-slashedparen-atpt (&optional no-delimiters)
@@ -2839,13 +2839,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-slashedparen-atpt (&optional no-delimiters)
   "Moves forward over SLASHEDPAREN at point if any, does nothing otherwise.
 Returns end position of SLASHEDPAREN "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'slashedparen no-delimiters))
 
 (defun ar-backward-slashedparen-atpt (&optional no-delimiters)
   "Moves backward over SLASHEDPAREN before point if any, does nothing otherwise.
 Returns beginning position of SLASHEDPAREN "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'slashedparen no-delimiters))
 
 (defun ar-transpose-slashedparen-atpt (&optional no-delimiters)
@@ -2867,7 +2867,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-slashedparen-atpt (&optional arg)
   "Return t if a SLASHEDPAREN at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-slashedparen-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-slashedparen-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -2878,55 +2878,55 @@ See doku from ‘sort-subr’, for details.
   "Returns tabledata at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'tabledata no-delimiters))
 
 (defun ar-bounds-of-tabledata-atpt (&optional no-delimiters)
   "Returns a list, borders of tabledata if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'tabledata no-delimiters))
 
 (defun ar-tabledata-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position TABLEDATA.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'tabledata no-delimiters))
 
 (defun ar-tabledata-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of TABLEDATA.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'tabledata no-delimiters))
 
 (defun ar-beginning-of-tabledata-atpt (&optional no-delimiters)
   "Goto beginning of TABLEDATA.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'tabledata no-delimiters))
 
 (defun ar-end-of-tabledata-atpt (&optional no-delimiters)
   "Goto end of TABLEDATA at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'tabledata no-delimiters))
 
 (defun ar-in-tabledata-p-atpt (&optional no-delimiters)
   "Returns bounds of TABLEDATA if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'tabledata no-delimiters))
 
 (defun ar-length-of-tabledata-atpt (&optional no-delimiters)
   "Returns beginning of TABLEDATA at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'tabledata no-delimiters))
 
 (defun ar-copy-tabledata-atpt (&optional no-delimiters)
   "Returns a copy of TABLEDATA. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'tabledata no-delimiters))
 
 (defun ar-delete-tabledata-atpt (&optional no-delimiters)
@@ -2994,27 +2994,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-tabledata-atpt (&optional no-delimiters)
   "Marks TABLEDATA at point if any. "
-  (interactive "p")
-  (ar-th-mark 'tabledata))
+  (interactive "P")
+  (ar-th-mark 'tabledata no-delimiters))
 
 (defun ar-hide-tabledata-atpt (&optional no-delimiters)
   "Hides TABLEDATA at point. "
-  (interactive "p")
-  (ar-th-hide 'tabledata))
+  (interactive "P")
+  (ar-th-hide 'tabledata nil nil no-delimiters))
 
 (defun ar-show-tabledata-atpt (&optional no-delimiters)
   "Shows hidden TABLEDATA at point. "
-  (interactive "p")
-  (ar-th-show 'tabledata))
+  (interactive "P")
+  (ar-th-show 'tabledata nil nil no-delimiters))
 
 (defun ar-hide-show-tabledata-atpt (&optional no-delimiters)
   "Alternatively hides or shows TABLEDATA at point. "
-  (interactive "p")
-  (ar-th-hide-show 'tabledata))
+  (interactive "P")
+  (ar-th-hide-show 'tabledata nil nil no-delimiters))
 
 (defun ar-highlight-tabledata-atpt-mode (&optional no-delimiters)
   "Toggles tabledata-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'tabledata no-delimiters))
 
 (defun ar-kill-tabledata-atpt (&optional no-delimiters)
@@ -3073,13 +3073,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-tabledata-atpt (&optional no-delimiters)
   "Moves forward over TABLEDATA at point if any, does nothing otherwise.
 Returns end position of TABLEDATA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'tabledata no-delimiters))
 
 (defun ar-backward-tabledata-atpt (&optional no-delimiters)
   "Moves backward over TABLEDATA before point if any, does nothing otherwise.
 Returns beginning position of TABLEDATA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'tabledata no-delimiters))
 
 (defun ar-transpose-tabledata-atpt (&optional no-delimiters)
@@ -3101,7 +3101,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-tabledata-atpt (&optional arg)
   "Return t if a TABLEDATA at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-tabledata-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-tabledata-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -3112,55 +3112,55 @@ See doku from ‘sort-subr’, for details.
   "Returns xslstylesheet at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'xslstylesheet no-delimiters))
 
 (defun ar-bounds-of-xslstylesheet-atpt (&optional no-delimiters)
   "Returns a list, borders of xslstylesheet if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'xslstylesheet no-delimiters))
 
 (defun ar-xslstylesheet-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position XSLSTYLESHEET.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'xslstylesheet no-delimiters))
 
 (defun ar-xslstylesheet-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of XSLSTYLESHEET.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'xslstylesheet no-delimiters))
 
 (defun ar-beginning-of-xslstylesheet-atpt (&optional no-delimiters)
   "Goto beginning of XSLSTYLESHEET.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'xslstylesheet no-delimiters))
 
 (defun ar-end-of-xslstylesheet-atpt (&optional no-delimiters)
   "Goto end of XSLSTYLESHEET at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'xslstylesheet no-delimiters))
 
 (defun ar-in-xslstylesheet-p-atpt (&optional no-delimiters)
   "Returns bounds of XSLSTYLESHEET if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'xslstylesheet no-delimiters))
 
 (defun ar-length-of-xslstylesheet-atpt (&optional no-delimiters)
   "Returns beginning of XSLSTYLESHEET at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'xslstylesheet no-delimiters))
 
 (defun ar-copy-xslstylesheet-atpt (&optional no-delimiters)
   "Returns a copy of XSLSTYLESHEET. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'xslstylesheet no-delimiters))
 
 (defun ar-delete-xslstylesheet-atpt (&optional no-delimiters)
@@ -3228,27 +3228,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-xslstylesheet-atpt (&optional no-delimiters)
   "Marks XSLSTYLESHEET at point if any. "
-  (interactive "p")
-  (ar-th-mark 'xslstylesheet))
+  (interactive "P")
+  (ar-th-mark 'xslstylesheet no-delimiters))
 
 (defun ar-hide-xslstylesheet-atpt (&optional no-delimiters)
   "Hides XSLSTYLESHEET at point. "
-  (interactive "p")
-  (ar-th-hide 'xslstylesheet))
+  (interactive "P")
+  (ar-th-hide 'xslstylesheet nil nil no-delimiters))
 
 (defun ar-show-xslstylesheet-atpt (&optional no-delimiters)
   "Shows hidden XSLSTYLESHEET at point. "
-  (interactive "p")
-  (ar-th-show 'xslstylesheet))
+  (interactive "P")
+  (ar-th-show 'xslstylesheet nil nil no-delimiters))
 
 (defun ar-hide-show-xslstylesheet-atpt (&optional no-delimiters)
   "Alternatively hides or shows XSLSTYLESHEET at point. "
-  (interactive "p")
-  (ar-th-hide-show 'xslstylesheet))
+  (interactive "P")
+  (ar-th-hide-show 'xslstylesheet nil nil no-delimiters))
 
 (defun ar-highlight-xslstylesheet-atpt-mode (&optional no-delimiters)
   "Toggles xslstylesheet-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'xslstylesheet no-delimiters))
 
 (defun ar-kill-xslstylesheet-atpt (&optional no-delimiters)
@@ -3307,13 +3307,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-xslstylesheet-atpt (&optional no-delimiters)
   "Moves forward over XSLSTYLESHEET at point if any, does nothing otherwise.
 Returns end position of XSLSTYLESHEET "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'xslstylesheet no-delimiters))
 
 (defun ar-backward-xslstylesheet-atpt (&optional no-delimiters)
   "Moves backward over XSLSTYLESHEET before point if any, does nothing otherwise.
 Returns beginning position of XSLSTYLESHEET "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'xslstylesheet no-delimiters))
 
 (defun ar-transpose-xslstylesheet-atpt (&optional no-delimiters)
@@ -3335,7 +3335,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-xslstylesheet-atpt (&optional arg)
   "Return t if a XSLSTYLESHEET at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-xslstylesheet-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-xslstylesheet-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -3346,55 +3346,55 @@ See doku from ‘sort-subr’, for details.
   "Returns xsltemplate at point if any, nil otherwise.
 
 Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th 'xsltemplate no-delimiters))
 
 (defun ar-bounds-of-xsltemplate-atpt (&optional no-delimiters)
   "Returns a list, borders of xsltemplate if any, nil otherwise.
 
 Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'xsltemplate no-delimiters))
 
 (defun ar-xsltemplate-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position XSLTEMPLATE.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-beg 'xsltemplate no-delimiters))
 
 (defun ar-xsltemplate-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of XSLTEMPLATE.
 
 Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-end 'xsltemplate no-delimiters))
 
 (defun ar-beginning-of-xsltemplate-atpt (&optional no-delimiters)
   "Goto beginning of XSLTEMPLATE.
 
 Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotobeg 'xsltemplate no-delimiters))
 
 (defun ar-end-of-xsltemplate-atpt (&optional no-delimiters)
   "Goto end of XSLTEMPLATE at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-gotoend 'xsltemplate no-delimiters))
 
 (defun ar-in-xsltemplate-p-atpt (&optional no-delimiters)
   "Returns bounds of XSLTEMPLATE if inside, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-bounds 'xsltemplate no-delimiters))
 
 (defun ar-length-of-xsltemplate-atpt (&optional no-delimiters)
   "Returns beginning of XSLTEMPLATE at point if any, nil otherwise. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-length 'xsltemplate no-delimiters))
 
 (defun ar-copy-xsltemplate-atpt (&optional no-delimiters)
   "Returns a copy of XSLTEMPLATE. "
-  (interactive "p")
+  (interactive "P")
   (ar-th-copy 'xsltemplate no-delimiters))
 
 (defun ar-delete-xsltemplate-atpt (&optional no-delimiters)
@@ -3462,27 +3462,27 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 
 (defun ar-mark-xsltemplate-atpt (&optional no-delimiters)
   "Marks XSLTEMPLATE at point if any. "
-  (interactive "p")
-  (ar-th-mark 'xsltemplate))
+  (interactive "P")
+  (ar-th-mark 'xsltemplate no-delimiters))
 
 (defun ar-hide-xsltemplate-atpt (&optional no-delimiters)
   "Hides XSLTEMPLATE at point. "
-  (interactive "p")
-  (ar-th-hide 'xsltemplate))
+  (interactive "P")
+  (ar-th-hide 'xsltemplate nil nil no-delimiters))
 
 (defun ar-show-xsltemplate-atpt (&optional no-delimiters)
   "Shows hidden XSLTEMPLATE at point. "
-  (interactive "p")
-  (ar-th-show 'xsltemplate))
+  (interactive "P")
+  (ar-th-show 'xsltemplate nil nil no-delimiters))
 
 (defun ar-hide-show-xsltemplate-atpt (&optional no-delimiters)
   "Alternatively hides or shows XSLTEMPLATE at point. "
-  (interactive "p")
-  (ar-th-hide-show 'xsltemplate))
+  (interactive "P")
+  (ar-th-hide-show 'xsltemplate nil nil no-delimiters))
 
 (defun ar-highlight-xsltemplate-atpt-mode (&optional no-delimiters)
   "Toggles xsltemplate-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'xsltemplate no-delimiters))
 
 (defun ar-kill-xsltemplate-atpt (&optional no-delimiters)
@@ -3541,13 +3541,13 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-forward-xsltemplate-atpt (&optional no-delimiters)
   "Moves forward over XSLTEMPLATE at point if any, does nothing otherwise.
 Returns end position of XSLTEMPLATE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'xsltemplate no-delimiters))
 
 (defun ar-backward-xsltemplate-atpt (&optional no-delimiters)
   "Moves backward over XSLTEMPLATE before point if any, does nothing otherwise.
 Returns beginning position of XSLTEMPLATE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'xsltemplate no-delimiters))
 
 (defun ar-transpose-xsltemplate-atpt (&optional no-delimiters)
@@ -3569,7 +3569,7 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-check-xsltemplate-atpt (&optional arg)
   "Return t if a XSLTEMPLATE at point exists, nil otherwise "
-  (interactive "p")
+  (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-xsltemplate-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-xsltemplate-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
