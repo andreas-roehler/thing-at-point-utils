@@ -69,35 +69,35 @@
 (defun ar-beginendquote-atpt (&optional no-delimiters)
   "Returns beginendquote at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'beginendquote no-delimiters))
 
 (defun ar-bounds-of-beginendquote-atpt (&optional no-delimiters)
   "Returns a list, borders of beginendquote if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'beginendquote no-delimiters))
 
 (defun ar-beginendquote-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position BEGINENDQUOTE at point if any, nil otherwise.
+  "Returns a number, beginning position BEGINENDQUOTE.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'beginendquote no-delimiters))
 
 (defun ar-beginendquote-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of BEGINENDQUOTE at point if any, nil otherwise.
+  "Returns a number, end position of BEGINENDQUOTE.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'beginendquote no-delimiters))
 
 (defun ar-beginning-of-beginendquote-atpt (&optional no-delimiters)
-  "Goto beginning of BEGINENDQUOTE at point if any, nil otherwise.
+  "Goto beginning of BEGINENDQUOTE.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'beginendquote no-delimiters))
 
@@ -107,7 +107,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'beginendquote no-delimiters))
 
 (defun ar-in-beginendquote-p-atpt (&optional no-delimiters)
-  "Returns bounds of BEGINENDQUOTE at point, a list, if inside, nil otherwise. "
+  "Returns bounds of BEGINENDQUOTE if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'beginendquote no-delimiters))
 
@@ -117,7 +117,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'beginendquote no-delimiters))
 
 (defun ar-copy-beginendquote-atpt (&optional no-delimiters)
-  "Returns a copy of BEGINENDQUOTE at point if any, nil otherwise. "
+  "Returns a copy of BEGINENDQUOTE. "
   (interactive "p")
   (ar-th-copy 'beginendquote no-delimiters))
 
@@ -162,11 +162,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around BEGINENDQUOTE at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'beginendquote no-delimiters))
-
-(defun ar-slashparen-beginendquote-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around BEGINENDQUOTE at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'beginendquote no-delimiters))
 
 (defun ar-slashparen-beginendquote-atpt (&optional no-delimiters)
   "Provides slashed parentheses around BEGINENDQUOTE at point if any. "
@@ -308,35 +303,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-blok-atpt (&optional no-delimiters)
   "Returns blok at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'blok no-delimiters))
 
 (defun ar-bounds-of-blok-atpt (&optional no-delimiters)
   "Returns a list, borders of blok if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'blok no-delimiters))
 
 (defun ar-blok-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position BLOK at point if any, nil otherwise.
+  "Returns a number, beginning position BLOK.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'blok no-delimiters))
 
 (defun ar-blok-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of BLOK at point if any, nil otherwise.
+  "Returns a number, end position of BLOK.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'blok no-delimiters))
 
 (defun ar-beginning-of-blok-atpt (&optional no-delimiters)
-  "Goto beginning of BLOK at point if any, nil otherwise.
+  "Goto beginning of BLOK.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'blok no-delimiters))
 
@@ -346,7 +341,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'blok no-delimiters))
 
 (defun ar-in-blok-p-atpt (&optional no-delimiters)
-  "Returns bounds of BLOK at point, a list, if inside, nil otherwise. "
+  "Returns bounds of BLOK if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'blok no-delimiters))
 
@@ -356,7 +351,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'blok no-delimiters))
 
 (defun ar-copy-blok-atpt (&optional no-delimiters)
-  "Returns a copy of BLOK at point if any, nil otherwise. "
+  "Returns a copy of BLOK. "
   (interactive "p")
   (ar-th-copy 'blok no-delimiters))
 
@@ -401,11 +396,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around BLOK at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'blok no-delimiters))
-
-(defun ar-slashparen-blok-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around BLOK at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'blok no-delimiters))
 
 (defun ar-slashparen-blok-atpt (&optional no-delimiters)
   "Provides slashed parentheses around BLOK at point if any. "
@@ -547,35 +537,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-doublebackslashed-atpt (&optional no-delimiters)
   "Returns doublebackslashed at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'doublebackslashed no-delimiters))
 
 (defun ar-bounds-of-doublebackslashed-atpt (&optional no-delimiters)
   "Returns a list, borders of doublebackslashed if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashed-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position DOUBLEBACKSLASHED at point if any, nil otherwise.
+  "Returns a number, beginning position DOUBLEBACKSLASHED.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'doublebackslashed no-delimiters))
 
 (defun ar-doublebackslashed-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of DOUBLEBACKSLASHED at point if any, nil otherwise.
+  "Returns a number, end position of DOUBLEBACKSLASHED.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'doublebackslashed no-delimiters))
 
 (defun ar-beginning-of-doublebackslashed-atpt (&optional no-delimiters)
-  "Goto beginning of DOUBLEBACKSLASHED at point if any, nil otherwise.
+  "Goto beginning of DOUBLEBACKSLASHED.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublebackslashed no-delimiters))
 
@@ -585,7 +575,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'doublebackslashed no-delimiters))
 
 (defun ar-in-doublebackslashed-p-atpt (&optional no-delimiters)
-  "Returns bounds of DOUBLEBACKSLASHED at point, a list, if inside, nil otherwise. "
+  "Returns bounds of DOUBLEBACKSLASHED if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'doublebackslashed no-delimiters))
 
@@ -595,7 +585,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'doublebackslashed no-delimiters))
 
 (defun ar-copy-doublebackslashed-atpt (&optional no-delimiters)
-  "Returns a copy of DOUBLEBACKSLASHED at point if any, nil otherwise. "
+  "Returns a copy of DOUBLEBACKSLASHED. "
   (interactive "p")
   (ar-th-copy 'doublebackslashed no-delimiters))
 
@@ -640,11 +630,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLEBACKSLASHED at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doublebackslashed no-delimiters))
-
-(defun ar-slashparen-doublebackslashed-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around DOUBLEBACKSLASHED at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'doublebackslashed no-delimiters))
 
 (defun ar-slashparen-doublebackslashed-atpt (&optional no-delimiters)
   "Provides slashed parentheses around DOUBLEBACKSLASHED at point if any. "
@@ -786,35 +771,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-doublebackticked-atpt (&optional no-delimiters)
   "Returns doublebackticked at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'doublebackticked no-delimiters))
 
 (defun ar-bounds-of-doublebackticked-atpt (&optional no-delimiters)
   "Returns a list, borders of doublebackticked if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'doublebackticked no-delimiters))
 
 (defun ar-doublebackticked-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position DOUBLEBACKTICKED at point if any, nil otherwise.
+  "Returns a number, beginning position DOUBLEBACKTICKED.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'doublebackticked no-delimiters))
 
 (defun ar-doublebackticked-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of DOUBLEBACKTICKED at point if any, nil otherwise.
+  "Returns a number, end position of DOUBLEBACKTICKED.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'doublebackticked no-delimiters))
 
 (defun ar-beginning-of-doublebackticked-atpt (&optional no-delimiters)
-  "Goto beginning of DOUBLEBACKTICKED at point if any, nil otherwise.
+  "Goto beginning of DOUBLEBACKTICKED.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublebackticked no-delimiters))
 
@@ -824,7 +809,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'doublebackticked no-delimiters))
 
 (defun ar-in-doublebackticked-p-atpt (&optional no-delimiters)
-  "Returns bounds of DOUBLEBACKTICKED at point, a list, if inside, nil otherwise. "
+  "Returns bounds of DOUBLEBACKTICKED if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'doublebackticked no-delimiters))
 
@@ -834,7 +819,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'doublebackticked no-delimiters))
 
 (defun ar-copy-doublebackticked-atpt (&optional no-delimiters)
-  "Returns a copy of DOUBLEBACKTICKED at point if any, nil otherwise. "
+  "Returns a copy of DOUBLEBACKTICKED. "
   (interactive "p")
   (ar-th-copy 'doublebackticked no-delimiters))
 
@@ -879,11 +864,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doublebackticked no-delimiters))
-
-(defun ar-slashparen-doublebackticked-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around DOUBLEBACKTICKED at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'doublebackticked no-delimiters))
 
 (defun ar-slashparen-doublebackticked-atpt (&optional no-delimiters)
   "Provides slashed parentheses around DOUBLEBACKTICKED at point if any. "
@@ -1025,35 +1005,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-doublebackslashedparen-atpt (&optional no-delimiters)
   "Returns doublebackslashedparen at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'doublebackslashedparen no-delimiters))
 
 (defun ar-bounds-of-doublebackslashedparen-atpt (&optional no-delimiters)
   "Returns a list, borders of doublebackslashedparen if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashedparen-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
+  "Returns a number, beginning position DOUBLEBACKSLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'doublebackslashedparen no-delimiters))
 
 (defun ar-doublebackslashedparen-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
+  "Returns a number, end position of DOUBLEBACKSLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'doublebackslashedparen no-delimiters))
 
 (defun ar-beginning-of-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Goto beginning of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
+  "Goto beginning of DOUBLEBACKSLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublebackslashedparen no-delimiters))
 
@@ -1063,7 +1043,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'doublebackslashedparen no-delimiters))
 
 (defun ar-in-doublebackslashedparen-p-atpt (&optional no-delimiters)
-  "Returns bounds of DOUBLEBACKSLASHEDPAREN at point, a list, if inside, nil otherwise. "
+  "Returns bounds of DOUBLEBACKSLASHEDPAREN if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
@@ -1073,7 +1053,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'doublebackslashedparen no-delimiters))
 
 (defun ar-copy-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Returns a copy of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
+  "Returns a copy of DOUBLEBACKSLASHEDPAREN. "
   (interactive "p")
   (ar-th-copy 'doublebackslashedparen no-delimiters))
 
@@ -1118,11 +1098,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doublebackslashedparen no-delimiters))
-
-(defun ar-slashparen-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'doublebackslashedparen no-delimiters))
 
 (defun ar-slashparen-doublebackslashedparen-atpt (&optional no-delimiters)
   "Provides slashed parentheses around DOUBLEBACKSLASHEDPAREN at point if any. "
@@ -1264,35 +1239,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-doubleslashed-atpt (&optional no-delimiters)
   "Returns doubleslashed at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'doubleslashed no-delimiters))
 
 (defun ar-bounds-of-doubleslashed-atpt (&optional no-delimiters)
   "Returns a list, borders of doubleslashed if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'doubleslashed no-delimiters))
 
 (defun ar-doubleslashed-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position DOUBLESLASHED at point if any, nil otherwise.
+  "Returns a number, beginning position DOUBLESLASHED.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'doubleslashed no-delimiters))
 
 (defun ar-doubleslashed-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of DOUBLESLASHED at point if any, nil otherwise.
+  "Returns a number, end position of DOUBLESLASHED.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'doubleslashed no-delimiters))
 
 (defun ar-beginning-of-doubleslashed-atpt (&optional no-delimiters)
-  "Goto beginning of DOUBLESLASHED at point if any, nil otherwise.
+  "Goto beginning of DOUBLESLASHED.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doubleslashed no-delimiters))
 
@@ -1302,7 +1277,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'doubleslashed no-delimiters))
 
 (defun ar-in-doubleslashed-p-atpt (&optional no-delimiters)
-  "Returns bounds of DOUBLESLASHED at point, a list, if inside, nil otherwise. "
+  "Returns bounds of DOUBLESLASHED if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'doubleslashed no-delimiters))
 
@@ -1312,7 +1287,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'doubleslashed no-delimiters))
 
 (defun ar-copy-doubleslashed-atpt (&optional no-delimiters)
-  "Returns a copy of DOUBLESLASHED at point if any, nil otherwise. "
+  "Returns a copy of DOUBLESLASHED. "
   (interactive "p")
   (ar-th-copy 'doubleslashed no-delimiters))
 
@@ -1357,11 +1332,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLESLASHED at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doubleslashed no-delimiters))
-
-(defun ar-slashparen-doubleslashed-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around DOUBLESLASHED at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'doubleslashed no-delimiters))
 
 (defun ar-slashparen-doubleslashed-atpt (&optional no-delimiters)
   "Provides slashed parentheses around DOUBLESLASHED at point if any. "
@@ -1503,35 +1473,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-doubleslashedparen-atpt (&optional no-delimiters)
   "Returns doubleslashedparen at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'doubleslashedparen no-delimiters))
 
 (defun ar-bounds-of-doubleslashedparen-atpt (&optional no-delimiters)
   "Returns a list, borders of doubleslashedparen if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslashedparen-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position DOUBLESLASHEDPAREN at point if any, nil otherwise.
+  "Returns a number, beginning position DOUBLESLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'doubleslashedparen no-delimiters))
 
 (defun ar-doubleslashedparen-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of DOUBLESLASHEDPAREN at point if any, nil otherwise.
+  "Returns a number, end position of DOUBLESLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'doubleslashedparen no-delimiters))
 
 (defun ar-beginning-of-doubleslashedparen-atpt (&optional no-delimiters)
-  "Goto beginning of DOUBLESLASHEDPAREN at point if any, nil otherwise.
+  "Goto beginning of DOUBLESLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doubleslashedparen no-delimiters))
 
@@ -1541,7 +1511,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'doubleslashedparen no-delimiters))
 
 (defun ar-in-doubleslashedparen-p-atpt (&optional no-delimiters)
-  "Returns bounds of DOUBLESLASHEDPAREN at point, a list, if inside, nil otherwise. "
+  "Returns bounds of DOUBLESLASHEDPAREN if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'doubleslashedparen no-delimiters))
 
@@ -1551,7 +1521,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'doubleslashedparen no-delimiters))
 
 (defun ar-copy-doubleslashedparen-atpt (&optional no-delimiters)
-  "Returns a copy of DOUBLESLASHEDPAREN at point if any, nil otherwise. "
+  "Returns a copy of DOUBLESLASHEDPAREN. "
   (interactive "p")
   (ar-th-copy 'doubleslashedparen no-delimiters))
 
@@ -1596,11 +1566,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around DOUBLESLASHEDPAREN at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'doubleslashedparen no-delimiters))
-
-(defun ar-slashparen-doubleslashedparen-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around DOUBLESLASHEDPAREN at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'doubleslashedparen no-delimiters))
 
 (defun ar-slashparen-doubleslashedparen-atpt (&optional no-delimiters)
   "Provides slashed parentheses around DOUBLESLASHEDPAREN at point if any. "
@@ -1742,35 +1707,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-markup-atpt (&optional no-delimiters)
   "Returns markup at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'markup no-delimiters))
 
 (defun ar-bounds-of-markup-atpt (&optional no-delimiters)
   "Returns a list, borders of markup if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'markup no-delimiters))
 
 (defun ar-markup-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position MARKUP at point if any, nil otherwise.
+  "Returns a number, beginning position MARKUP.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'markup no-delimiters))
 
 (defun ar-markup-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of MARKUP at point if any, nil otherwise.
+  "Returns a number, end position of MARKUP.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'markup no-delimiters))
 
 (defun ar-beginning-of-markup-atpt (&optional no-delimiters)
-  "Goto beginning of MARKUP at point if any, nil otherwise.
+  "Goto beginning of MARKUP.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'markup no-delimiters))
 
@@ -1780,7 +1745,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'markup no-delimiters))
 
 (defun ar-in-markup-p-atpt (&optional no-delimiters)
-  "Returns bounds of MARKUP at point, a list, if inside, nil otherwise. "
+  "Returns bounds of MARKUP if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'markup no-delimiters))
 
@@ -1790,7 +1755,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'markup no-delimiters))
 
 (defun ar-copy-markup-atpt (&optional no-delimiters)
-  "Returns a copy of MARKUP at point if any, nil otherwise. "
+  "Returns a copy of MARKUP. "
   (interactive "p")
   (ar-th-copy 'markup no-delimiters))
 
@@ -1835,11 +1800,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around MARKUP at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'markup no-delimiters))
-
-(defun ar-slashparen-markup-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around MARKUP at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'markup no-delimiters))
 
 (defun ar-slashparen-markup-atpt (&optional no-delimiters)
   "Provides slashed parentheses around MARKUP at point if any. "
@@ -1981,35 +1941,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-mldata-atpt (&optional no-delimiters)
   "Returns mldata at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'mldata no-delimiters))
 
 (defun ar-bounds-of-mldata-atpt (&optional no-delimiters)
   "Returns a list, borders of mldata if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'mldata no-delimiters))
 
 (defun ar-mldata-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position MLDATA at point if any, nil otherwise.
+  "Returns a number, beginning position MLDATA.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'mldata no-delimiters))
 
 (defun ar-mldata-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of MLDATA at point if any, nil otherwise.
+  "Returns a number, end position of MLDATA.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'mldata no-delimiters))
 
 (defun ar-beginning-of-mldata-atpt (&optional no-delimiters)
-  "Goto beginning of MLDATA at point if any, nil otherwise.
+  "Goto beginning of MLDATA.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'mldata no-delimiters))
 
@@ -2019,7 +1979,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'mldata no-delimiters))
 
 (defun ar-in-mldata-p-atpt (&optional no-delimiters)
-  "Returns bounds of MLDATA at point, a list, if inside, nil otherwise. "
+  "Returns bounds of MLDATA if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'mldata no-delimiters))
 
@@ -2029,7 +1989,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'mldata no-delimiters))
 
 (defun ar-copy-mldata-atpt (&optional no-delimiters)
-  "Returns a copy of MLDATA at point if any, nil otherwise. "
+  "Returns a copy of MLDATA. "
   (interactive "p")
   (ar-th-copy 'mldata no-delimiters))
 
@@ -2074,11 +2034,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around MLDATA at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'mldata no-delimiters))
-
-(defun ar-slashparen-mldata-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around MLDATA at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'mldata no-delimiters))
 
 (defun ar-slashparen-mldata-atpt (&optional no-delimiters)
   "Provides slashed parentheses around MLDATA at point if any. "
@@ -2220,35 +2175,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-mlattribut-atpt (&optional no-delimiters)
   "Returns mlattribut at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'mlattribut no-delimiters))
 
 (defun ar-bounds-of-mlattribut-atpt (&optional no-delimiters)
   "Returns a list, borders of mlattribut if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'mlattribut no-delimiters))
 
 (defun ar-mlattribut-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position MLATTRIBUT at point if any, nil otherwise.
+  "Returns a number, beginning position MLATTRIBUT.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'mlattribut no-delimiters))
 
 (defun ar-mlattribut-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of MLATTRIBUT at point if any, nil otherwise.
+  "Returns a number, end position of MLATTRIBUT.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'mlattribut no-delimiters))
 
 (defun ar-beginning-of-mlattribut-atpt (&optional no-delimiters)
-  "Goto beginning of MLATTRIBUT at point if any, nil otherwise.
+  "Goto beginning of MLATTRIBUT.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'mlattribut no-delimiters))
 
@@ -2258,7 +2213,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'mlattribut no-delimiters))
 
 (defun ar-in-mlattribut-p-atpt (&optional no-delimiters)
-  "Returns bounds of MLATTRIBUT at point, a list, if inside, nil otherwise. "
+  "Returns bounds of MLATTRIBUT if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'mlattribut no-delimiters))
 
@@ -2268,7 +2223,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'mlattribut no-delimiters))
 
 (defun ar-copy-mlattribut-atpt (&optional no-delimiters)
-  "Returns a copy of MLATTRIBUT at point if any, nil otherwise. "
+  "Returns a copy of MLATTRIBUT. "
   (interactive "p")
   (ar-th-copy 'mlattribut no-delimiters))
 
@@ -2313,11 +2268,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around MLATTRIBUT at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'mlattribut no-delimiters))
-
-(defun ar-slashparen-mlattribut-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around MLATTRIBUT at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'mlattribut no-delimiters))
 
 (defun ar-slashparen-mlattribut-atpt (&optional no-delimiters)
   "Provides slashed parentheses around MLATTRIBUT at point if any. "
@@ -2459,35 +2409,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-mltag-atpt (&optional no-delimiters)
   "Returns mltag at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'mltag no-delimiters))
 
 (defun ar-bounds-of-mltag-atpt (&optional no-delimiters)
   "Returns a list, borders of mltag if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'mltag no-delimiters))
 
 (defun ar-mltag-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position MLTAG at point if any, nil otherwise.
+  "Returns a number, beginning position MLTAG.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'mltag no-delimiters))
 
 (defun ar-mltag-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of MLTAG at point if any, nil otherwise.
+  "Returns a number, end position of MLTAG.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'mltag no-delimiters))
 
 (defun ar-beginning-of-mltag-atpt (&optional no-delimiters)
-  "Goto beginning of MLTAG at point if any, nil otherwise.
+  "Goto beginning of MLTAG.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'mltag no-delimiters))
 
@@ -2497,7 +2447,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'mltag no-delimiters))
 
 (defun ar-in-mltag-p-atpt (&optional no-delimiters)
-  "Returns bounds of MLTAG at point, a list, if inside, nil otherwise. "
+  "Returns bounds of MLTAG if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'mltag no-delimiters))
 
@@ -2507,7 +2457,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'mltag no-delimiters))
 
 (defun ar-copy-mltag-atpt (&optional no-delimiters)
-  "Returns a copy of MLTAG at point if any, nil otherwise. "
+  "Returns a copy of MLTAG. "
   (interactive "p")
   (ar-th-copy 'mltag no-delimiters))
 
@@ -2552,11 +2502,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around MLTAG at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'mltag no-delimiters))
-
-(defun ar-slashparen-mltag-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around MLTAG at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'mltag no-delimiters))
 
 (defun ar-slashparen-mltag-atpt (&optional no-delimiters)
   "Provides slashed parentheses around MLTAG at point if any. "
@@ -2698,35 +2643,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-slashedparen-atpt (&optional no-delimiters)
   "Returns slashedparen at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'slashedparen no-delimiters))
 
 (defun ar-bounds-of-slashedparen-atpt (&optional no-delimiters)
   "Returns a list, borders of slashedparen if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'slashedparen no-delimiters))
 
 (defun ar-slashedparen-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position SLASHEDPAREN at point if any, nil otherwise.
+  "Returns a number, beginning position SLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'slashedparen no-delimiters))
 
 (defun ar-slashedparen-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of SLASHEDPAREN at point if any, nil otherwise.
+  "Returns a number, end position of SLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'slashedparen no-delimiters))
 
 (defun ar-beginning-of-slashedparen-atpt (&optional no-delimiters)
-  "Goto beginning of SLASHEDPAREN at point if any, nil otherwise.
+  "Goto beginning of SLASHEDPAREN.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'slashedparen no-delimiters))
 
@@ -2736,7 +2681,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'slashedparen no-delimiters))
 
 (defun ar-in-slashedparen-p-atpt (&optional no-delimiters)
-  "Returns bounds of SLASHEDPAREN at point, a list, if inside, nil otherwise. "
+  "Returns bounds of SLASHEDPAREN if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'slashedparen no-delimiters))
 
@@ -2746,7 +2691,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'slashedparen no-delimiters))
 
 (defun ar-copy-slashedparen-atpt (&optional no-delimiters)
-  "Returns a copy of SLASHEDPAREN at point if any, nil otherwise. "
+  "Returns a copy of SLASHEDPAREN. "
   (interactive "p")
   (ar-th-copy 'slashedparen no-delimiters))
 
@@ -2791,11 +2736,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around SLASHEDPAREN at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'slashedparen no-delimiters))
-
-(defun ar-slashparen-slashedparen-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around SLASHEDPAREN at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'slashedparen no-delimiters))
 
 (defun ar-slashparen-slashedparen-atpt (&optional no-delimiters)
   "Provides slashed parentheses around SLASHEDPAREN at point if any. "
@@ -2937,35 +2877,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-tabledata-atpt (&optional no-delimiters)
   "Returns tabledata at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'tabledata no-delimiters))
 
 (defun ar-bounds-of-tabledata-atpt (&optional no-delimiters)
   "Returns a list, borders of tabledata if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'tabledata no-delimiters))
 
 (defun ar-tabledata-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position TABLEDATA at point if any, nil otherwise.
+  "Returns a number, beginning position TABLEDATA.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'tabledata no-delimiters))
 
 (defun ar-tabledata-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of TABLEDATA at point if any, nil otherwise.
+  "Returns a number, end position of TABLEDATA.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'tabledata no-delimiters))
 
 (defun ar-beginning-of-tabledata-atpt (&optional no-delimiters)
-  "Goto beginning of TABLEDATA at point if any, nil otherwise.
+  "Goto beginning of TABLEDATA.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'tabledata no-delimiters))
 
@@ -2975,7 +2915,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'tabledata no-delimiters))
 
 (defun ar-in-tabledata-p-atpt (&optional no-delimiters)
-  "Returns bounds of TABLEDATA at point, a list, if inside, nil otherwise. "
+  "Returns bounds of TABLEDATA if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'tabledata no-delimiters))
 
@@ -2985,7 +2925,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'tabledata no-delimiters))
 
 (defun ar-copy-tabledata-atpt (&optional no-delimiters)
-  "Returns a copy of TABLEDATA at point if any, nil otherwise. "
+  "Returns a copy of TABLEDATA. "
   (interactive "p")
   (ar-th-copy 'tabledata no-delimiters))
 
@@ -3030,11 +2970,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around TABLEDATA at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'tabledata no-delimiters))
-
-(defun ar-slashparen-tabledata-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around TABLEDATA at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'tabledata no-delimiters))
 
 (defun ar-slashparen-tabledata-atpt (&optional no-delimiters)
   "Provides slashed parentheses around TABLEDATA at point if any. "
@@ -3176,35 +3111,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-xslstylesheet-atpt (&optional no-delimiters)
   "Returns xslstylesheet at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'xslstylesheet no-delimiters))
 
 (defun ar-bounds-of-xslstylesheet-atpt (&optional no-delimiters)
   "Returns a list, borders of xslstylesheet if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'xslstylesheet no-delimiters))
 
 (defun ar-xslstylesheet-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position XSLSTYLESHEET at point if any, nil otherwise.
+  "Returns a number, beginning position XSLSTYLESHEET.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'xslstylesheet no-delimiters))
 
 (defun ar-xslstylesheet-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of XSLSTYLESHEET at point if any, nil otherwise.
+  "Returns a number, end position of XSLSTYLESHEET.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'xslstylesheet no-delimiters))
 
 (defun ar-beginning-of-xslstylesheet-atpt (&optional no-delimiters)
-  "Goto beginning of XSLSTYLESHEET at point if any, nil otherwise.
+  "Goto beginning of XSLSTYLESHEET.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'xslstylesheet no-delimiters))
 
@@ -3214,7 +3149,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'xslstylesheet no-delimiters))
 
 (defun ar-in-xslstylesheet-p-atpt (&optional no-delimiters)
-  "Returns bounds of XSLSTYLESHEET at point, a list, if inside, nil otherwise. "
+  "Returns bounds of XSLSTYLESHEET if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'xslstylesheet no-delimiters))
 
@@ -3224,7 +3159,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'xslstylesheet no-delimiters))
 
 (defun ar-copy-xslstylesheet-atpt (&optional no-delimiters)
-  "Returns a copy of XSLSTYLESHEET at point if any, nil otherwise. "
+  "Returns a copy of XSLSTYLESHEET. "
   (interactive "p")
   (ar-th-copy 'xslstylesheet no-delimiters))
 
@@ -3269,11 +3204,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around XSLSTYLESHEET at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'xslstylesheet no-delimiters))
-
-(defun ar-slashparen-xslstylesheet-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around XSLSTYLESHEET at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'xslstylesheet no-delimiters))
 
 (defun ar-slashparen-xslstylesheet-atpt (&optional no-delimiters)
   "Provides slashed parentheses around XSLSTYLESHEET at point if any. "
@@ -3415,35 +3345,35 @@ See doku from ‘sort-subr’, for details.
 (defun ar-xsltemplate-atpt (&optional no-delimiters)
   "Returns xsltemplate at point if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
+Optional \\[universal-argument] returns objects without delimiters"
   (interactive "p")
   (ar-th 'xsltemplate no-delimiters))
 
 (defun ar-bounds-of-xsltemplate-atpt (&optional no-delimiters)
   "Returns a list, borders of xsltemplate if any, nil otherwise.
 
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
+Optional \\[universal-argument] returns bounds without delimiters"
   (interactive "p")
   (ar-th-bounds 'xsltemplate no-delimiters))
 
 (defun ar-xsltemplate-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position XSLTEMPLATE at point if any, nil otherwise.
+  "Returns a number, beginning position XSLTEMPLATE.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-beg 'xsltemplate no-delimiters))
 
 (defun ar-xsltemplate-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of XSLTEMPLATE at point if any, nil otherwise.
+  "Returns a number, end position of XSLTEMPLATE.
 
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
+Optional \\[universal-argument] returns end position at delimiter "
   (interactive "p")
   (ar-th-end 'xsltemplate no-delimiters))
 
 (defun ar-beginning-of-xsltemplate-atpt (&optional no-delimiters)
-  "Goto beginning of XSLTEMPLATE at point if any, nil otherwise.
+  "Goto beginning of XSLTEMPLATE.
 
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
+Optional \\[universal-argument] returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'xsltemplate no-delimiters))
 
@@ -3453,7 +3383,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-gotoend 'xsltemplate no-delimiters))
 
 (defun ar-in-xsltemplate-p-atpt (&optional no-delimiters)
-  "Returns bounds of XSLTEMPLATE at point, a list, if inside, nil otherwise. "
+  "Returns bounds of XSLTEMPLATE if inside, nil otherwise. "
   (interactive "p")
   (ar-th-bounds 'xsltemplate no-delimiters))
 
@@ -3463,7 +3393,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-length 'xsltemplate no-delimiters))
 
 (defun ar-copy-xsltemplate-atpt (&optional no-delimiters)
-  "Returns a copy of XSLTEMPLATE at point if any, nil otherwise. "
+  "Returns a copy of XSLTEMPLATE. "
   (interactive "p")
   (ar-th-copy 'xsltemplate no-delimiters))
 
@@ -3508,11 +3438,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Provides double backticks around XSLTEMPLATE at point if any. "
   (interactive "*P")
   (ar-th-doublebacktick 'xsltemplate no-delimiters))
-
-(defun ar-slashparen-xsltemplate-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around XSLTEMPLATE at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'xsltemplate no-delimiters))
 
 (defun ar-slashparen-xsltemplate-atpt (&optional no-delimiters)
   "Provides slashed parentheses around XSLTEMPLATE at point if any. "
