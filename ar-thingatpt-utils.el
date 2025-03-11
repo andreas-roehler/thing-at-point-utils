@@ -30,5165 +30,4741 @@
 (require 'ar-thingatpt-utils-core)
 (require 'ar-thingatpt-basic-definitions)
 ;; ar-thingatpt-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: start
-(defun ar-colon-greateranglednested-atpt (&optional arg)
+(defun ar-colon-greateranglednested-atpt ()
   "Colon GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'greateranglednested))
 
-(defun ar-colon-lesseranglednested-atpt (&optional arg)
+(defun ar-colon-lesseranglednested-atpt ()
   "Colon LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'lesseranglednested))
 
-(defun ar-colon-buffer-atpt (&optional arg)
+(defun ar-colon-buffer-atpt ()
   "Colon BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'buffer))
 
-(defun ar-colon-char-atpt (&optional arg)
+(defun ar-colon-char-atpt ()
   "Colon CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'char))
 
-(defun ar-colon-comment-atpt (&optional arg)
+(defun ar-colon-comment-atpt ()
   "Colon COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'comment))
 
-(defun ar-colon-csv-atpt (&optional arg)
+(defun ar-colon-csv-atpt ()
   "Colon CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'csv))
 
-(defun ar-colon-date-atpt (&optional arg)
+(defun ar-colon-date-atpt ()
   "Colon DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'date))
 
-(defun ar-colon-delimited-atpt (&optional arg)
+(defun ar-colon-delimited-atpt ()
   "Colon DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'delimited))
 
-(defun ar-colon-email-atpt (&optional arg)
+(defun ar-colon-email-atpt ()
   "Colon EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'email))
 
-(defun ar-colon-filename-atpt (&optional arg)
+(defun ar-colon-filename-atpt ()
   "Colon FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'filename))
 
-(defun ar-colon-filenamenondirectory-atpt (&optional arg)
+(defun ar-colon-filenamenondirectory-atpt ()
   "Colon FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'filenamenondirectory))
 
-(defun ar-colon-float-atpt (&optional arg)
+(defun ar-colon-float-atpt ()
   "Colon FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'float))
 
-(defun ar-colon-function-atpt (&optional arg)
+(defun ar-colon-function-atpt ()
   "Colon FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'function))
 
-(defun ar-colon-ip-atpt (&optional arg)
+(defun ar-colon-ip-atpt ()
   "Colon IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'ip))
 
-(defun ar-colon-isbn-atpt (&optional arg)
+(defun ar-colon-isbn-atpt ()
   "Colon ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'isbn))
 
-(defun ar-colon-line-atpt (&optional arg)
+(defun ar-colon-line-atpt ()
   "Colon LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'line))
 
-(defun ar-colon-list-atpt (&optional arg)
+(defun ar-colon-list-atpt ()
   "Colon LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'list))
 
-(defun ar-colon-name-atpt (&optional arg)
+(defun ar-colon-name-atpt ()
   "Colon NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'name))
 
-(defun ar-colon-number-atpt (&optional arg)
+(defun ar-colon-number-atpt ()
   "Colon NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'number))
 
-(defun ar-colon-page-atpt (&optional arg)
+(defun ar-colon-page-atpt ()
   "Colon PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'page))
 
-(defun ar-colon-paragraph-atpt (&optional arg)
+(defun ar-colon-paragraph-atpt ()
   "Colon PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'paragraph))
 
-(defun ar-colon-phone-atpt (&optional arg)
+(defun ar-colon-phone-atpt ()
   "Colon PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'phone))
 
-(defun ar-colon-sentence-atpt (&optional arg)
+(defun ar-colon-sentence-atpt ()
   "Colon SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'sentence))
 
-(defun ar-colon-sexp-atpt (&optional arg)
+(defun ar-colon-sexp-atpt ()
   "Colon SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'sexp))
 
-(defun ar-colon-shstruct-atpt (&optional arg)
+(defun ar-colon-shstruct-atpt ()
   "Colon SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'shstruct))
 
-(defun ar-colon-symbol-atpt (&optional arg)
+(defun ar-colon-symbol-atpt ()
   "Colon SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'symbol))
 
-(defun ar-colon-url-atpt (&optional arg)
+(defun ar-colon-url-atpt ()
   "Colon URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'url))
 
-(defun ar-colon-word-atpt (&optional arg)
+(defun ar-colon-word-atpt ()
   "Colon WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'word))
 
-(defun ar-colon-wordalphaonly-atpt (&optional arg)
+(defun ar-colon-wordalphaonly-atpt ()
   "Colon WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-colon 'wordalphaonly))
 
-(defun ar-cross-greateranglednested-atpt (&optional arg)
+(defun ar-cross-greateranglednested-atpt ()
   "Cross GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'greateranglednested))
 
-(defun ar-cross-lesseranglednested-atpt (&optional arg)
+(defun ar-cross-lesseranglednested-atpt ()
   "Cross LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'lesseranglednested))
 
-(defun ar-cross-buffer-atpt (&optional arg)
+(defun ar-cross-buffer-atpt ()
   "Cross BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'buffer))
 
-(defun ar-cross-char-atpt (&optional arg)
+(defun ar-cross-char-atpt ()
   "Cross CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'char))
 
-(defun ar-cross-comment-atpt (&optional arg)
+(defun ar-cross-comment-atpt ()
   "Cross COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'comment))
 
-(defun ar-cross-csv-atpt (&optional arg)
+(defun ar-cross-csv-atpt ()
   "Cross CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'csv))
 
-(defun ar-cross-date-atpt (&optional arg)
+(defun ar-cross-date-atpt ()
   "Cross DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'date))
 
-(defun ar-cross-delimited-atpt (&optional arg)
+(defun ar-cross-delimited-atpt ()
   "Cross DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'delimited))
 
-(defun ar-cross-email-atpt (&optional arg)
+(defun ar-cross-email-atpt ()
   "Cross EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'email))
 
-(defun ar-cross-filename-atpt (&optional arg)
+(defun ar-cross-filename-atpt ()
   "Cross FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'filename))
 
-(defun ar-cross-filenamenondirectory-atpt (&optional arg)
+(defun ar-cross-filenamenondirectory-atpt ()
   "Cross FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'filenamenondirectory))
 
-(defun ar-cross-float-atpt (&optional arg)
+(defun ar-cross-float-atpt ()
   "Cross FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'float))
 
-(defun ar-cross-function-atpt (&optional arg)
+(defun ar-cross-function-atpt ()
   "Cross FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'function))
 
-(defun ar-cross-ip-atpt (&optional arg)
+(defun ar-cross-ip-atpt ()
   "Cross IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'ip))
 
-(defun ar-cross-isbn-atpt (&optional arg)
+(defun ar-cross-isbn-atpt ()
   "Cross ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'isbn))
 
-(defun ar-cross-line-atpt (&optional arg)
+(defun ar-cross-line-atpt ()
   "Cross LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'line))
 
-(defun ar-cross-list-atpt (&optional arg)
+(defun ar-cross-list-atpt ()
   "Cross LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'list))
 
-(defun ar-cross-name-atpt (&optional arg)
+(defun ar-cross-name-atpt ()
   "Cross NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'name))
 
-(defun ar-cross-number-atpt (&optional arg)
+(defun ar-cross-number-atpt ()
   "Cross NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'number))
 
-(defun ar-cross-page-atpt (&optional arg)
+(defun ar-cross-page-atpt ()
   "Cross PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'page))
 
-(defun ar-cross-paragraph-atpt (&optional arg)
+(defun ar-cross-paragraph-atpt ()
   "Cross PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'paragraph))
 
-(defun ar-cross-phone-atpt (&optional arg)
+(defun ar-cross-phone-atpt ()
   "Cross PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'phone))
 
-(defun ar-cross-sentence-atpt (&optional arg)
+(defun ar-cross-sentence-atpt ()
   "Cross SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'sentence))
 
-(defun ar-cross-sexp-atpt (&optional arg)
+(defun ar-cross-sexp-atpt ()
   "Cross SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'sexp))
 
-(defun ar-cross-shstruct-atpt (&optional arg)
+(defun ar-cross-shstruct-atpt ()
   "Cross SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'shstruct))
 
-(defun ar-cross-symbol-atpt (&optional arg)
+(defun ar-cross-symbol-atpt ()
   "Cross SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'symbol))
 
-(defun ar-cross-url-atpt (&optional arg)
+(defun ar-cross-url-atpt ()
   "Cross URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'url))
 
-(defun ar-cross-word-atpt (&optional arg)
+(defun ar-cross-word-atpt ()
   "Cross WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'word))
 
-(defun ar-cross-wordalphaonly-atpt (&optional arg)
+(defun ar-cross-wordalphaonly-atpt ()
   "Cross WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-cross 'wordalphaonly))
 
-(defun ar-doubleslash-greateranglednested-atpt (&optional arg)
+(defun ar-doubleslash-greateranglednested-atpt ()
   "Doubleslash GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'greateranglednested))
 
-(defun ar-doubleslash-lesseranglednested-atpt (&optional arg)
+(defun ar-doubleslash-lesseranglednested-atpt ()
   "Doubleslash LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'lesseranglednested))
 
-(defun ar-doubleslash-buffer-atpt (&optional arg)
+(defun ar-doubleslash-buffer-atpt ()
   "Doubleslash BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'buffer))
 
-(defun ar-doubleslash-char-atpt (&optional arg)
+(defun ar-doubleslash-char-atpt ()
   "Doubleslash CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'char))
 
-(defun ar-doubleslash-comment-atpt (&optional arg)
+(defun ar-doubleslash-comment-atpt ()
   "Doubleslash COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'comment))
 
-(defun ar-doubleslash-csv-atpt (&optional arg)
+(defun ar-doubleslash-csv-atpt ()
   "Doubleslash CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'csv))
 
-(defun ar-doubleslash-date-atpt (&optional arg)
+(defun ar-doubleslash-date-atpt ()
   "Doubleslash DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'date))
 
-(defun ar-doubleslash-delimited-atpt (&optional arg)
+(defun ar-doubleslash-delimited-atpt ()
   "Doubleslash DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'delimited))
 
-(defun ar-doubleslash-email-atpt (&optional arg)
+(defun ar-doubleslash-email-atpt ()
   "Doubleslash EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'email))
 
-(defun ar-doubleslash-filename-atpt (&optional arg)
+(defun ar-doubleslash-filename-atpt ()
   "Doubleslash FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'filename))
 
-(defun ar-doubleslash-filenamenondirectory-atpt (&optional arg)
+(defun ar-doubleslash-filenamenondirectory-atpt ()
   "Doubleslash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'filenamenondirectory))
 
-(defun ar-doubleslash-float-atpt (&optional arg)
+(defun ar-doubleslash-float-atpt ()
   "Doubleslash FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'float))
 
-(defun ar-doubleslash-function-atpt (&optional arg)
+(defun ar-doubleslash-function-atpt ()
   "Doubleslash FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'function))
 
-(defun ar-doubleslash-ip-atpt (&optional arg)
+(defun ar-doubleslash-ip-atpt ()
   "Doubleslash IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'ip))
 
-(defun ar-doubleslash-isbn-atpt (&optional arg)
+(defun ar-doubleslash-isbn-atpt ()
   "Doubleslash ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'isbn))
 
-(defun ar-doubleslash-line-atpt (&optional arg)
+(defun ar-doubleslash-line-atpt ()
   "Doubleslash LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'line))
 
-(defun ar-doubleslash-list-atpt (&optional arg)
+(defun ar-doubleslash-list-atpt ()
   "Doubleslash LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'list))
 
-(defun ar-doubleslash-name-atpt (&optional arg)
+(defun ar-doubleslash-name-atpt ()
   "Doubleslash NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'name))
 
-(defun ar-doubleslash-number-atpt (&optional arg)
+(defun ar-doubleslash-number-atpt ()
   "Doubleslash NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'number))
 
-(defun ar-doubleslash-page-atpt (&optional arg)
+(defun ar-doubleslash-page-atpt ()
   "Doubleslash PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'page))
 
-(defun ar-doubleslash-paragraph-atpt (&optional arg)
+(defun ar-doubleslash-paragraph-atpt ()
   "Doubleslash PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'paragraph))
 
-(defun ar-doubleslash-phone-atpt (&optional arg)
+(defun ar-doubleslash-phone-atpt ()
   "Doubleslash PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'phone))
 
-(defun ar-doubleslash-sentence-atpt (&optional arg)
+(defun ar-doubleslash-sentence-atpt ()
   "Doubleslash SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'sentence))
 
-(defun ar-doubleslash-sexp-atpt (&optional arg)
+(defun ar-doubleslash-sexp-atpt ()
   "Doubleslash SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'sexp))
 
-(defun ar-doubleslash-shstruct-atpt (&optional arg)
+(defun ar-doubleslash-shstruct-atpt ()
   "Doubleslash SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'shstruct))
 
-(defun ar-doubleslash-symbol-atpt (&optional arg)
+(defun ar-doubleslash-symbol-atpt ()
   "Doubleslash SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'symbol))
 
-(defun ar-doubleslash-url-atpt (&optional arg)
+(defun ar-doubleslash-url-atpt ()
   "Doubleslash URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'url))
 
-(defun ar-doubleslash-word-atpt (&optional arg)
+(defun ar-doubleslash-word-atpt ()
   "Doubleslash WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'word))
 
-(defun ar-doubleslash-wordalphaonly-atpt (&optional arg)
+(defun ar-doubleslash-wordalphaonly-atpt ()
   "Doubleslash WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doubleslash 'wordalphaonly))
 
-(defun ar-backslash-greateranglednested-atpt (&optional arg)
+(defun ar-backslash-greateranglednested-atpt ()
   "Backslash GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'greateranglednested))
 
-(defun ar-backslash-lesseranglednested-atpt (&optional arg)
+(defun ar-backslash-lesseranglednested-atpt ()
   "Backslash LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'lesseranglednested))
 
-(defun ar-backslash-buffer-atpt (&optional arg)
+(defun ar-backslash-buffer-atpt ()
   "Backslash BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'buffer))
 
-(defun ar-backslash-char-atpt (&optional arg)
+(defun ar-backslash-char-atpt ()
   "Backslash CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'char))
 
-(defun ar-backslash-comment-atpt (&optional arg)
+(defun ar-backslash-comment-atpt ()
   "Backslash COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'comment))
 
-(defun ar-backslash-csv-atpt (&optional arg)
+(defun ar-backslash-csv-atpt ()
   "Backslash CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'csv))
 
-(defun ar-backslash-date-atpt (&optional arg)
+(defun ar-backslash-date-atpt ()
   "Backslash DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'date))
 
-(defun ar-backslash-delimited-atpt (&optional arg)
+(defun ar-backslash-delimited-atpt ()
   "Backslash DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'delimited))
 
-(defun ar-backslash-email-atpt (&optional arg)
+(defun ar-backslash-email-atpt ()
   "Backslash EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'email))
 
-(defun ar-backslash-filename-atpt (&optional arg)
+(defun ar-backslash-filename-atpt ()
   "Backslash FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'filename))
 
-(defun ar-backslash-filenamenondirectory-atpt (&optional arg)
+(defun ar-backslash-filenamenondirectory-atpt ()
   "Backslash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'filenamenondirectory))
 
-(defun ar-backslash-float-atpt (&optional arg)
+(defun ar-backslash-float-atpt ()
   "Backslash FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'float))
 
-(defun ar-backslash-function-atpt (&optional arg)
+(defun ar-backslash-function-atpt ()
   "Backslash FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'function))
 
-(defun ar-backslash-ip-atpt (&optional arg)
+(defun ar-backslash-ip-atpt ()
   "Backslash IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'ip))
 
-(defun ar-backslash-isbn-atpt (&optional arg)
+(defun ar-backslash-isbn-atpt ()
   "Backslash ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'isbn))
 
-(defun ar-backslash-line-atpt (&optional arg)
+(defun ar-backslash-line-atpt ()
   "Backslash LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'line))
 
-(defun ar-backslash-list-atpt (&optional arg)
+(defun ar-backslash-list-atpt ()
   "Backslash LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'list))
 
-(defun ar-backslash-name-atpt (&optional arg)
+(defun ar-backslash-name-atpt ()
   "Backslash NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'name))
 
-(defun ar-backslash-number-atpt (&optional arg)
+(defun ar-backslash-number-atpt ()
   "Backslash NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'number))
 
-(defun ar-backslash-page-atpt (&optional arg)
+(defun ar-backslash-page-atpt ()
   "Backslash PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'page))
 
-(defun ar-backslash-paragraph-atpt (&optional arg)
+(defun ar-backslash-paragraph-atpt ()
   "Backslash PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'paragraph))
 
-(defun ar-backslash-phone-atpt (&optional arg)
+(defun ar-backslash-phone-atpt ()
   "Backslash PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'phone))
 
-(defun ar-backslash-sentence-atpt (&optional arg)
+(defun ar-backslash-sentence-atpt ()
   "Backslash SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'sentence))
 
-(defun ar-backslash-sexp-atpt (&optional arg)
+(defun ar-backslash-sexp-atpt ()
   "Backslash SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'sexp))
 
-(defun ar-backslash-shstruct-atpt (&optional arg)
+(defun ar-backslash-shstruct-atpt ()
   "Backslash SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'shstruct))
 
-(defun ar-backslash-symbol-atpt (&optional arg)
+(defun ar-backslash-symbol-atpt ()
   "Backslash SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'symbol))
 
-(defun ar-backslash-url-atpt (&optional arg)
+(defun ar-backslash-url-atpt ()
   "Backslash URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'url))
 
-(defun ar-backslash-word-atpt (&optional arg)
+(defun ar-backslash-word-atpt ()
   "Backslash WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'word))
 
-(defun ar-backslash-wordalphaonly-atpt (&optional arg)
+(defun ar-backslash-wordalphaonly-atpt ()
   "Backslash WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backslash 'wordalphaonly))
 
-(defun ar-backtick-greateranglednested-atpt (&optional arg)
+(defun ar-backtick-greateranglednested-atpt ()
   "Backtick GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'greateranglednested))
 
-(defun ar-backtick-lesseranglednested-atpt (&optional arg)
+(defun ar-backtick-lesseranglednested-atpt ()
   "Backtick LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'lesseranglednested))
 
-(defun ar-backtick-buffer-atpt (&optional arg)
+(defun ar-backtick-buffer-atpt ()
   "Backtick BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'buffer))
 
-(defun ar-backtick-char-atpt (&optional arg)
+(defun ar-backtick-char-atpt ()
   "Backtick CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'char))
 
-(defun ar-backtick-comment-atpt (&optional arg)
+(defun ar-backtick-comment-atpt ()
   "Backtick COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'comment))
 
-(defun ar-backtick-csv-atpt (&optional arg)
+(defun ar-backtick-csv-atpt ()
   "Backtick CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'csv))
 
-(defun ar-backtick-date-atpt (&optional arg)
+(defun ar-backtick-date-atpt ()
   "Backtick DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'date))
 
-(defun ar-backtick-delimited-atpt (&optional arg)
+(defun ar-backtick-delimited-atpt ()
   "Backtick DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'delimited))
 
-(defun ar-backtick-email-atpt (&optional arg)
+(defun ar-backtick-email-atpt ()
   "Backtick EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'email))
 
-(defun ar-backtick-filename-atpt (&optional arg)
+(defun ar-backtick-filename-atpt ()
   "Backtick FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'filename))
 
-(defun ar-backtick-filenamenondirectory-atpt (&optional arg)
+(defun ar-backtick-filenamenondirectory-atpt ()
   "Backtick FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'filenamenondirectory))
 
-(defun ar-backtick-float-atpt (&optional arg)
+(defun ar-backtick-float-atpt ()
   "Backtick FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'float))
 
-(defun ar-backtick-function-atpt (&optional arg)
+(defun ar-backtick-function-atpt ()
   "Backtick FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'function))
 
-(defun ar-backtick-ip-atpt (&optional arg)
+(defun ar-backtick-ip-atpt ()
   "Backtick IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'ip))
 
-(defun ar-backtick-isbn-atpt (&optional arg)
+(defun ar-backtick-isbn-atpt ()
   "Backtick ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'isbn))
 
-(defun ar-backtick-line-atpt (&optional arg)
+(defun ar-backtick-line-atpt ()
   "Backtick LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'line))
 
-(defun ar-backtick-list-atpt (&optional arg)
+(defun ar-backtick-list-atpt ()
   "Backtick LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'list))
 
-(defun ar-backtick-name-atpt (&optional arg)
+(defun ar-backtick-name-atpt ()
   "Backtick NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'name))
 
-(defun ar-backtick-number-atpt (&optional arg)
+(defun ar-backtick-number-atpt ()
   "Backtick NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'number))
 
-(defun ar-backtick-page-atpt (&optional arg)
+(defun ar-backtick-page-atpt ()
   "Backtick PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'page))
 
-(defun ar-backtick-paragraph-atpt (&optional arg)
+(defun ar-backtick-paragraph-atpt ()
   "Backtick PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'paragraph))
 
-(defun ar-backtick-phone-atpt (&optional arg)
+(defun ar-backtick-phone-atpt ()
   "Backtick PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'phone))
 
-(defun ar-backtick-sentence-atpt (&optional arg)
+(defun ar-backtick-sentence-atpt ()
   "Backtick SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'sentence))
 
-(defun ar-backtick-sexp-atpt (&optional arg)
+(defun ar-backtick-sexp-atpt ()
   "Backtick SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'sexp))
 
-(defun ar-backtick-shstruct-atpt (&optional arg)
+(defun ar-backtick-shstruct-atpt ()
   "Backtick SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'shstruct))
 
-(defun ar-backtick-symbol-atpt (&optional arg)
+(defun ar-backtick-symbol-atpt ()
   "Backtick SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'symbol))
 
-(defun ar-backtick-url-atpt (&optional arg)
+(defun ar-backtick-url-atpt ()
   "Backtick URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'url))
 
-(defun ar-backtick-word-atpt (&optional arg)
+(defun ar-backtick-word-atpt ()
   "Backtick WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'word))
 
-(defun ar-backtick-wordalphaonly-atpt (&optional arg)
+(defun ar-backtick-wordalphaonly-atpt ()
   "Backtick WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-backtick 'wordalphaonly))
 
-(defun ar-dollar-greateranglednested-atpt (&optional arg)
+(defun ar-dollar-greateranglednested-atpt ()
   "Dollar GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'greateranglednested))
 
-(defun ar-dollar-lesseranglednested-atpt (&optional arg)
+(defun ar-dollar-lesseranglednested-atpt ()
   "Dollar LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'lesseranglednested))
 
-(defun ar-dollar-buffer-atpt (&optional arg)
+(defun ar-dollar-buffer-atpt ()
   "Dollar BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'buffer))
 
-(defun ar-dollar-char-atpt (&optional arg)
+(defun ar-dollar-char-atpt ()
   "Dollar CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'char))
 
-(defun ar-dollar-comment-atpt (&optional arg)
+(defun ar-dollar-comment-atpt ()
   "Dollar COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'comment))
 
-(defun ar-dollar-csv-atpt (&optional arg)
+(defun ar-dollar-csv-atpt ()
   "Dollar CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'csv))
 
-(defun ar-dollar-date-atpt (&optional arg)
+(defun ar-dollar-date-atpt ()
   "Dollar DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'date))
 
-(defun ar-dollar-delimited-atpt (&optional arg)
+(defun ar-dollar-delimited-atpt ()
   "Dollar DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'delimited))
 
-(defun ar-dollar-email-atpt (&optional arg)
+(defun ar-dollar-email-atpt ()
   "Dollar EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'email))
 
-(defun ar-dollar-filename-atpt (&optional arg)
+(defun ar-dollar-filename-atpt ()
   "Dollar FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'filename))
 
-(defun ar-dollar-filenamenondirectory-atpt (&optional arg)
+(defun ar-dollar-filenamenondirectory-atpt ()
   "Dollar FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'filenamenondirectory))
 
-(defun ar-dollar-float-atpt (&optional arg)
+(defun ar-dollar-float-atpt ()
   "Dollar FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'float))
 
-(defun ar-dollar-function-atpt (&optional arg)
+(defun ar-dollar-function-atpt ()
   "Dollar FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'function))
 
-(defun ar-dollar-ip-atpt (&optional arg)
+(defun ar-dollar-ip-atpt ()
   "Dollar IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'ip))
 
-(defun ar-dollar-isbn-atpt (&optional arg)
+(defun ar-dollar-isbn-atpt ()
   "Dollar ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'isbn))
 
-(defun ar-dollar-line-atpt (&optional arg)
+(defun ar-dollar-line-atpt ()
   "Dollar LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'line))
 
-(defun ar-dollar-list-atpt (&optional arg)
+(defun ar-dollar-list-atpt ()
   "Dollar LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'list))
 
-(defun ar-dollar-name-atpt (&optional arg)
+(defun ar-dollar-name-atpt ()
   "Dollar NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'name))
 
-(defun ar-dollar-number-atpt (&optional arg)
+(defun ar-dollar-number-atpt ()
   "Dollar NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'number))
 
-(defun ar-dollar-page-atpt (&optional arg)
+(defun ar-dollar-page-atpt ()
   "Dollar PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'page))
 
-(defun ar-dollar-paragraph-atpt (&optional arg)
+(defun ar-dollar-paragraph-atpt ()
   "Dollar PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'paragraph))
 
-(defun ar-dollar-phone-atpt (&optional arg)
+(defun ar-dollar-phone-atpt ()
   "Dollar PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'phone))
 
-(defun ar-dollar-sentence-atpt (&optional arg)
+(defun ar-dollar-sentence-atpt ()
   "Dollar SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'sentence))
 
-(defun ar-dollar-sexp-atpt (&optional arg)
+(defun ar-dollar-sexp-atpt ()
   "Dollar SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'sexp))
 
-(defun ar-dollar-shstruct-atpt (&optional arg)
+(defun ar-dollar-shstruct-atpt ()
   "Dollar SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'shstruct))
 
-(defun ar-dollar-symbol-atpt (&optional arg)
+(defun ar-dollar-symbol-atpt ()
   "Dollar SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'symbol))
 
-(defun ar-dollar-url-atpt (&optional arg)
+(defun ar-dollar-url-atpt ()
   "Dollar URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'url))
 
-(defun ar-dollar-word-atpt (&optional arg)
+(defun ar-dollar-word-atpt ()
   "Dollar WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'word))
 
-(defun ar-dollar-wordalphaonly-atpt (&optional arg)
+(defun ar-dollar-wordalphaonly-atpt ()
   "Dollar WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-dollar 'wordalphaonly))
 
-(defun ar-doublequote-greateranglednested-atpt (&optional arg)
+(defun ar-doublequote-greateranglednested-atpt ()
   "Doublequote GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'greateranglednested))
 
-(defun ar-doublequote-lesseranglednested-atpt (&optional arg)
+(defun ar-doublequote-lesseranglednested-atpt ()
   "Doublequote LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'lesseranglednested))
 
-(defun ar-doublequote-buffer-atpt (&optional arg)
+(defun ar-doublequote-buffer-atpt ()
   "Doublequote BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'buffer))
 
-(defun ar-doublequote-char-atpt (&optional arg)
+(defun ar-doublequote-char-atpt ()
   "Doublequote CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'char))
 
-(defun ar-doublequote-comment-atpt (&optional arg)
+(defun ar-doublequote-comment-atpt ()
   "Doublequote COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'comment))
 
-(defun ar-doublequote-csv-atpt (&optional arg)
+(defun ar-doublequote-csv-atpt ()
   "Doublequote CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'csv))
 
-(defun ar-doublequote-date-atpt (&optional arg)
+(defun ar-doublequote-date-atpt ()
   "Doublequote DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'date))
 
-(defun ar-doublequote-delimited-atpt (&optional arg)
+(defun ar-doublequote-delimited-atpt ()
   "Doublequote DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'delimited))
 
-(defun ar-doublequote-email-atpt (&optional arg)
+(defun ar-doublequote-email-atpt ()
   "Doublequote EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'email))
 
-(defun ar-doublequote-filename-atpt (&optional arg)
+(defun ar-doublequote-filename-atpt ()
   "Doublequote FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'filename))
 
-(defun ar-doublequote-filenamenondirectory-atpt (&optional arg)
+(defun ar-doublequote-filenamenondirectory-atpt ()
   "Doublequote FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'filenamenondirectory))
 
-(defun ar-doublequote-float-atpt (&optional arg)
+(defun ar-doublequote-float-atpt ()
   "Doublequote FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'float))
 
-(defun ar-doublequote-function-atpt (&optional arg)
+(defun ar-doublequote-function-atpt ()
   "Doublequote FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'function))
 
-(defun ar-doublequote-ip-atpt (&optional arg)
+(defun ar-doublequote-ip-atpt ()
   "Doublequote IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'ip))
 
-(defun ar-doublequote-isbn-atpt (&optional arg)
+(defun ar-doublequote-isbn-atpt ()
   "Doublequote ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'isbn))
 
-(defun ar-doublequote-line-atpt (&optional arg)
+(defun ar-doublequote-line-atpt ()
   "Doublequote LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'line))
 
-(defun ar-doublequote-list-atpt (&optional arg)
+(defun ar-doublequote-list-atpt ()
   "Doublequote LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'list))
 
-(defun ar-doublequote-name-atpt (&optional arg)
+(defun ar-doublequote-name-atpt ()
   "Doublequote NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'name))
 
-(defun ar-doublequote-number-atpt (&optional arg)
+(defun ar-doublequote-number-atpt ()
   "Doublequote NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'number))
 
-(defun ar-doublequote-page-atpt (&optional arg)
+(defun ar-doublequote-page-atpt ()
   "Doublequote PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'page))
 
-(defun ar-doublequote-paragraph-atpt (&optional arg)
+(defun ar-doublequote-paragraph-atpt ()
   "Doublequote PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'paragraph))
 
-(defun ar-doublequote-phone-atpt (&optional arg)
+(defun ar-doublequote-phone-atpt ()
   "Doublequote PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'phone))
 
-(defun ar-doublequote-sentence-atpt (&optional arg)
+(defun ar-doublequote-sentence-atpt ()
   "Doublequote SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'sentence))
 
-(defun ar-doublequote-sexp-atpt (&optional arg)
+(defun ar-doublequote-sexp-atpt ()
   "Doublequote SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'sexp))
 
-(defun ar-doublequote-shstruct-atpt (&optional arg)
+(defun ar-doublequote-shstruct-atpt ()
   "Doublequote SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'shstruct))
 
-(defun ar-doublequote-symbol-atpt (&optional arg)
+(defun ar-doublequote-symbol-atpt ()
   "Doublequote SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'symbol))
 
-(defun ar-doublequote-url-atpt (&optional arg)
+(defun ar-doublequote-url-atpt ()
   "Doublequote URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'url))
 
-(defun ar-doublequote-word-atpt (&optional arg)
+(defun ar-doublequote-word-atpt ()
   "Doublequote WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'word))
 
-(defun ar-doublequote-wordalphaonly-atpt (&optional arg)
+(defun ar-doublequote-wordalphaonly-atpt ()
   "Doublequote WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-doublequote 'wordalphaonly))
 
-(defun ar-equalize-greateranglednested-atpt (&optional arg)
+(defun ar-equalize-greateranglednested-atpt ()
   "Equalize GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'greateranglednested))
 
-(defun ar-equalize-lesseranglednested-atpt (&optional arg)
+(defun ar-equalize-lesseranglednested-atpt ()
   "Equalize LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'lesseranglednested))
 
-(defun ar-equalize-buffer-atpt (&optional arg)
+(defun ar-equalize-buffer-atpt ()
   "Equalize BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'buffer))
 
-(defun ar-equalize-char-atpt (&optional arg)
+(defun ar-equalize-char-atpt ()
   "Equalize CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'char))
 
-(defun ar-equalize-comment-atpt (&optional arg)
+(defun ar-equalize-comment-atpt ()
   "Equalize COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'comment))
 
-(defun ar-equalize-csv-atpt (&optional arg)
+(defun ar-equalize-csv-atpt ()
   "Equalize CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'csv))
 
-(defun ar-equalize-date-atpt (&optional arg)
+(defun ar-equalize-date-atpt ()
   "Equalize DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'date))
 
-(defun ar-equalize-delimited-atpt (&optional arg)
+(defun ar-equalize-delimited-atpt ()
   "Equalize DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'delimited))
 
-(defun ar-equalize-email-atpt (&optional arg)
+(defun ar-equalize-email-atpt ()
   "Equalize EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'email))
 
-(defun ar-equalize-filename-atpt (&optional arg)
+(defun ar-equalize-filename-atpt ()
   "Equalize FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'filename))
 
-(defun ar-equalize-filenamenondirectory-atpt (&optional arg)
+(defun ar-equalize-filenamenondirectory-atpt ()
   "Equalize FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'filenamenondirectory))
 
-(defun ar-equalize-float-atpt (&optional arg)
+(defun ar-equalize-float-atpt ()
   "Equalize FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'float))
 
-(defun ar-equalize-function-atpt (&optional arg)
+(defun ar-equalize-function-atpt ()
   "Equalize FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'function))
 
-(defun ar-equalize-ip-atpt (&optional arg)
+(defun ar-equalize-ip-atpt ()
   "Equalize IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'ip))
 
-(defun ar-equalize-isbn-atpt (&optional arg)
+(defun ar-equalize-isbn-atpt ()
   "Equalize ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'isbn))
 
-(defun ar-equalize-line-atpt (&optional arg)
+(defun ar-equalize-line-atpt ()
   "Equalize LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'line))
 
-(defun ar-equalize-list-atpt (&optional arg)
+(defun ar-equalize-list-atpt ()
   "Equalize LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'list))
 
-(defun ar-equalize-name-atpt (&optional arg)
+(defun ar-equalize-name-atpt ()
   "Equalize NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'name))
 
-(defun ar-equalize-number-atpt (&optional arg)
+(defun ar-equalize-number-atpt ()
   "Equalize NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'number))
 
-(defun ar-equalize-page-atpt (&optional arg)
+(defun ar-equalize-page-atpt ()
   "Equalize PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'page))
 
-(defun ar-equalize-paragraph-atpt (&optional arg)
+(defun ar-equalize-paragraph-atpt ()
   "Equalize PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'paragraph))
 
-(defun ar-equalize-phone-atpt (&optional arg)
+(defun ar-equalize-phone-atpt ()
   "Equalize PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'phone))
 
-(defun ar-equalize-sentence-atpt (&optional arg)
+(defun ar-equalize-sentence-atpt ()
   "Equalize SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'sentence))
 
-(defun ar-equalize-sexp-atpt (&optional arg)
+(defun ar-equalize-sexp-atpt ()
   "Equalize SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'sexp))
 
-(defun ar-equalize-shstruct-atpt (&optional arg)
+(defun ar-equalize-shstruct-atpt ()
   "Equalize SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'shstruct))
 
-(defun ar-equalize-symbol-atpt (&optional arg)
+(defun ar-equalize-symbol-atpt ()
   "Equalize SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'symbol))
 
-(defun ar-equalize-url-atpt (&optional arg)
+(defun ar-equalize-url-atpt ()
   "Equalize URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'url))
 
-(defun ar-equalize-word-atpt (&optional arg)
+(defun ar-equalize-word-atpt ()
   "Equalize WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'word))
 
-(defun ar-equalize-wordalphaonly-atpt (&optional arg)
+(defun ar-equalize-wordalphaonly-atpt ()
   "Equalize WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-equalize 'wordalphaonly))
 
-(defun ar-escape-greateranglednested-atpt (&optional arg)
+(defun ar-escape-greateranglednested-atpt ()
   "Escape GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'greateranglednested))
 
-(defun ar-escape-lesseranglednested-atpt (&optional arg)
+(defun ar-escape-lesseranglednested-atpt ()
   "Escape LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'lesseranglednested))
 
-(defun ar-escape-buffer-atpt (&optional arg)
+(defun ar-escape-buffer-atpt ()
   "Escape BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'buffer))
 
-(defun ar-escape-char-atpt (&optional arg)
+(defun ar-escape-char-atpt ()
   "Escape CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'char))
 
-(defun ar-escape-comment-atpt (&optional arg)
+(defun ar-escape-comment-atpt ()
   "Escape COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'comment))
 
-(defun ar-escape-csv-atpt (&optional arg)
+(defun ar-escape-csv-atpt ()
   "Escape CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'csv))
 
-(defun ar-escape-date-atpt (&optional arg)
+(defun ar-escape-date-atpt ()
   "Escape DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'date))
 
-(defun ar-escape-delimited-atpt (&optional arg)
+(defun ar-escape-delimited-atpt ()
   "Escape DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'delimited))
 
-(defun ar-escape-email-atpt (&optional arg)
+(defun ar-escape-email-atpt ()
   "Escape EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'email))
 
-(defun ar-escape-filename-atpt (&optional arg)
+(defun ar-escape-filename-atpt ()
   "Escape FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'filename))
 
-(defun ar-escape-filenamenondirectory-atpt (&optional arg)
+(defun ar-escape-filenamenondirectory-atpt ()
   "Escape FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'filenamenondirectory))
 
-(defun ar-escape-float-atpt (&optional arg)
+(defun ar-escape-float-atpt ()
   "Escape FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'float))
 
-(defun ar-escape-function-atpt (&optional arg)
+(defun ar-escape-function-atpt ()
   "Escape FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'function))
 
-(defun ar-escape-ip-atpt (&optional arg)
+(defun ar-escape-ip-atpt ()
   "Escape IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'ip))
 
-(defun ar-escape-isbn-atpt (&optional arg)
+(defun ar-escape-isbn-atpt ()
   "Escape ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'isbn))
 
-(defun ar-escape-line-atpt (&optional arg)
+(defun ar-escape-line-atpt ()
   "Escape LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'line))
 
-(defun ar-escape-list-atpt (&optional arg)
+(defun ar-escape-list-atpt ()
   "Escape LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'list))
 
-(defun ar-escape-name-atpt (&optional arg)
+(defun ar-escape-name-atpt ()
   "Escape NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'name))
 
-(defun ar-escape-number-atpt (&optional arg)
+(defun ar-escape-number-atpt ()
   "Escape NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'number))
 
-(defun ar-escape-page-atpt (&optional arg)
+(defun ar-escape-page-atpt ()
   "Escape PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'page))
 
-(defun ar-escape-paragraph-atpt (&optional arg)
+(defun ar-escape-paragraph-atpt ()
   "Escape PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'paragraph))
 
-(defun ar-escape-phone-atpt (&optional arg)
+(defun ar-escape-phone-atpt ()
   "Escape PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'phone))
 
-(defun ar-escape-sentence-atpt (&optional arg)
+(defun ar-escape-sentence-atpt ()
   "Escape SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'sentence))
 
-(defun ar-escape-sexp-atpt (&optional arg)
+(defun ar-escape-sexp-atpt ()
   "Escape SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'sexp))
 
-(defun ar-escape-shstruct-atpt (&optional arg)
+(defun ar-escape-shstruct-atpt ()
   "Escape SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'shstruct))
 
-(defun ar-escape-symbol-atpt (&optional arg)
+(defun ar-escape-symbol-atpt ()
   "Escape SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'symbol))
 
-(defun ar-escape-url-atpt (&optional arg)
+(defun ar-escape-url-atpt ()
   "Escape URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'url))
 
-(defun ar-escape-word-atpt (&optional arg)
+(defun ar-escape-word-atpt ()
   "Escape WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'word))
 
-(defun ar-escape-wordalphaonly-atpt (&optional arg)
+(defun ar-escape-wordalphaonly-atpt ()
   "Escape WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-escape 'wordalphaonly))
 
-(defun ar-hash-greateranglednested-atpt (&optional arg)
+(defun ar-hash-greateranglednested-atpt ()
   "Hash GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'greateranglednested))
 
-(defun ar-hash-lesseranglednested-atpt (&optional arg)
+(defun ar-hash-lesseranglednested-atpt ()
   "Hash LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'lesseranglednested))
 
-(defun ar-hash-buffer-atpt (&optional arg)
+(defun ar-hash-buffer-atpt ()
   "Hash BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'buffer))
 
-(defun ar-hash-char-atpt (&optional arg)
+(defun ar-hash-char-atpt ()
   "Hash CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'char))
 
-(defun ar-hash-comment-atpt (&optional arg)
+(defun ar-hash-comment-atpt ()
   "Hash COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'comment))
 
-(defun ar-hash-csv-atpt (&optional arg)
+(defun ar-hash-csv-atpt ()
   "Hash CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'csv))
 
-(defun ar-hash-date-atpt (&optional arg)
+(defun ar-hash-date-atpt ()
   "Hash DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'date))
 
-(defun ar-hash-delimited-atpt (&optional arg)
+(defun ar-hash-delimited-atpt ()
   "Hash DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'delimited))
 
-(defun ar-hash-email-atpt (&optional arg)
+(defun ar-hash-email-atpt ()
   "Hash EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'email))
 
-(defun ar-hash-filename-atpt (&optional arg)
+(defun ar-hash-filename-atpt ()
   "Hash FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'filename))
 
-(defun ar-hash-filenamenondirectory-atpt (&optional arg)
+(defun ar-hash-filenamenondirectory-atpt ()
   "Hash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'filenamenondirectory))
 
-(defun ar-hash-float-atpt (&optional arg)
+(defun ar-hash-float-atpt ()
   "Hash FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'float))
 
-(defun ar-hash-function-atpt (&optional arg)
+(defun ar-hash-function-atpt ()
   "Hash FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'function))
 
-(defun ar-hash-ip-atpt (&optional arg)
+(defun ar-hash-ip-atpt ()
   "Hash IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'ip))
 
-(defun ar-hash-isbn-atpt (&optional arg)
+(defun ar-hash-isbn-atpt ()
   "Hash ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'isbn))
 
-(defun ar-hash-line-atpt (&optional arg)
+(defun ar-hash-line-atpt ()
   "Hash LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'line))
 
-(defun ar-hash-list-atpt (&optional arg)
+(defun ar-hash-list-atpt ()
   "Hash LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'list))
 
-(defun ar-hash-name-atpt (&optional arg)
+(defun ar-hash-name-atpt ()
   "Hash NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'name))
 
-(defun ar-hash-number-atpt (&optional arg)
+(defun ar-hash-number-atpt ()
   "Hash NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'number))
 
-(defun ar-hash-page-atpt (&optional arg)
+(defun ar-hash-page-atpt ()
   "Hash PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'page))
 
-(defun ar-hash-paragraph-atpt (&optional arg)
+(defun ar-hash-paragraph-atpt ()
   "Hash PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'paragraph))
 
-(defun ar-hash-phone-atpt (&optional arg)
+(defun ar-hash-phone-atpt ()
   "Hash PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'phone))
 
-(defun ar-hash-sentence-atpt (&optional arg)
+(defun ar-hash-sentence-atpt ()
   "Hash SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'sentence))
 
-(defun ar-hash-sexp-atpt (&optional arg)
+(defun ar-hash-sexp-atpt ()
   "Hash SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'sexp))
 
-(defun ar-hash-shstruct-atpt (&optional arg)
+(defun ar-hash-shstruct-atpt ()
   "Hash SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'shstruct))
 
-(defun ar-hash-symbol-atpt (&optional arg)
+(defun ar-hash-symbol-atpt ()
   "Hash SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'symbol))
 
-(defun ar-hash-url-atpt (&optional arg)
+(defun ar-hash-url-atpt ()
   "Hash URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'url))
 
-(defun ar-hash-word-atpt (&optional arg)
+(defun ar-hash-word-atpt ()
   "Hash WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'word))
 
-(defun ar-hash-wordalphaonly-atpt (&optional arg)
+(defun ar-hash-wordalphaonly-atpt ()
   "Hash WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hash 'wordalphaonly))
 
-(defun ar-hyphen-greateranglednested-atpt (&optional arg)
+(defun ar-hyphen-greateranglednested-atpt ()
   "Hyphen GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'greateranglednested))
 
-(defun ar-hyphen-lesseranglednested-atpt (&optional arg)
+(defun ar-hyphen-lesseranglednested-atpt ()
   "Hyphen LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'lesseranglednested))
 
-(defun ar-hyphen-buffer-atpt (&optional arg)
+(defun ar-hyphen-buffer-atpt ()
   "Hyphen BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'buffer))
 
-(defun ar-hyphen-char-atpt (&optional arg)
+(defun ar-hyphen-char-atpt ()
   "Hyphen CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'char))
 
-(defun ar-hyphen-comment-atpt (&optional arg)
+(defun ar-hyphen-comment-atpt ()
   "Hyphen COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'comment))
 
-(defun ar-hyphen-csv-atpt (&optional arg)
+(defun ar-hyphen-csv-atpt ()
   "Hyphen CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'csv))
 
-(defun ar-hyphen-date-atpt (&optional arg)
+(defun ar-hyphen-date-atpt ()
   "Hyphen DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'date))
 
-(defun ar-hyphen-delimited-atpt (&optional arg)
+(defun ar-hyphen-delimited-atpt ()
   "Hyphen DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'delimited))
 
-(defun ar-hyphen-email-atpt (&optional arg)
+(defun ar-hyphen-email-atpt ()
   "Hyphen EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'email))
 
-(defun ar-hyphen-filename-atpt (&optional arg)
+(defun ar-hyphen-filename-atpt ()
   "Hyphen FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'filename))
 
-(defun ar-hyphen-filenamenondirectory-atpt (&optional arg)
+(defun ar-hyphen-filenamenondirectory-atpt ()
   "Hyphen FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'filenamenondirectory))
 
-(defun ar-hyphen-float-atpt (&optional arg)
+(defun ar-hyphen-float-atpt ()
   "Hyphen FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'float))
 
-(defun ar-hyphen-function-atpt (&optional arg)
+(defun ar-hyphen-function-atpt ()
   "Hyphen FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'function))
 
-(defun ar-hyphen-ip-atpt (&optional arg)
+(defun ar-hyphen-ip-atpt ()
   "Hyphen IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'ip))
 
-(defun ar-hyphen-isbn-atpt (&optional arg)
+(defun ar-hyphen-isbn-atpt ()
   "Hyphen ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'isbn))
 
-(defun ar-hyphen-line-atpt (&optional arg)
+(defun ar-hyphen-line-atpt ()
   "Hyphen LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'line))
 
-(defun ar-hyphen-list-atpt (&optional arg)
+(defun ar-hyphen-list-atpt ()
   "Hyphen LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'list))
 
-(defun ar-hyphen-name-atpt (&optional arg)
+(defun ar-hyphen-name-atpt ()
   "Hyphen NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'name))
 
-(defun ar-hyphen-number-atpt (&optional arg)
+(defun ar-hyphen-number-atpt ()
   "Hyphen NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'number))
 
-(defun ar-hyphen-page-atpt (&optional arg)
+(defun ar-hyphen-page-atpt ()
   "Hyphen PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'page))
 
-(defun ar-hyphen-paragraph-atpt (&optional arg)
+(defun ar-hyphen-paragraph-atpt ()
   "Hyphen PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'paragraph))
 
-(defun ar-hyphen-phone-atpt (&optional arg)
+(defun ar-hyphen-phone-atpt ()
   "Hyphen PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'phone))
 
-(defun ar-hyphen-sentence-atpt (&optional arg)
+(defun ar-hyphen-sentence-atpt ()
   "Hyphen SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'sentence))
 
-(defun ar-hyphen-sexp-atpt (&optional arg)
+(defun ar-hyphen-sexp-atpt ()
   "Hyphen SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'sexp))
 
-(defun ar-hyphen-shstruct-atpt (&optional arg)
+(defun ar-hyphen-shstruct-atpt ()
   "Hyphen SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'shstruct))
 
-(defun ar-hyphen-symbol-atpt (&optional arg)
+(defun ar-hyphen-symbol-atpt ()
   "Hyphen SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'symbol))
 
-(defun ar-hyphen-url-atpt (&optional arg)
+(defun ar-hyphen-url-atpt ()
   "Hyphen URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'url))
 
-(defun ar-hyphen-word-atpt (&optional arg)
+(defun ar-hyphen-word-atpt ()
   "Hyphen WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'word))
 
-(defun ar-hyphen-wordalphaonly-atpt (&optional arg)
+(defun ar-hyphen-wordalphaonly-atpt ()
   "Hyphen WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-hyphen 'wordalphaonly))
 
-(defun ar-pipe-greateranglednested-atpt (&optional arg)
+(defun ar-pipe-greateranglednested-atpt ()
   "Pipe GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'greateranglednested))
 
-(defun ar-pipe-lesseranglednested-atpt (&optional arg)
+(defun ar-pipe-lesseranglednested-atpt ()
   "Pipe LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'lesseranglednested))
 
-(defun ar-pipe-buffer-atpt (&optional arg)
+(defun ar-pipe-buffer-atpt ()
   "Pipe BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'buffer))
 
-(defun ar-pipe-char-atpt (&optional arg)
+(defun ar-pipe-char-atpt ()
   "Pipe CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'char))
 
-(defun ar-pipe-comment-atpt (&optional arg)
+(defun ar-pipe-comment-atpt ()
   "Pipe COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'comment))
 
-(defun ar-pipe-csv-atpt (&optional arg)
+(defun ar-pipe-csv-atpt ()
   "Pipe CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'csv))
 
-(defun ar-pipe-date-atpt (&optional arg)
+(defun ar-pipe-date-atpt ()
   "Pipe DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'date))
 
-(defun ar-pipe-delimited-atpt (&optional arg)
+(defun ar-pipe-delimited-atpt ()
   "Pipe DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'delimited))
 
-(defun ar-pipe-email-atpt (&optional arg)
+(defun ar-pipe-email-atpt ()
   "Pipe EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'email))
 
-(defun ar-pipe-filename-atpt (&optional arg)
+(defun ar-pipe-filename-atpt ()
   "Pipe FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'filename))
 
-(defun ar-pipe-filenamenondirectory-atpt (&optional arg)
+(defun ar-pipe-filenamenondirectory-atpt ()
   "Pipe FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'filenamenondirectory))
 
-(defun ar-pipe-float-atpt (&optional arg)
+(defun ar-pipe-float-atpt ()
   "Pipe FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'float))
 
-(defun ar-pipe-function-atpt (&optional arg)
+(defun ar-pipe-function-atpt ()
   "Pipe FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'function))
 
-(defun ar-pipe-ip-atpt (&optional arg)
+(defun ar-pipe-ip-atpt ()
   "Pipe IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'ip))
 
-(defun ar-pipe-isbn-atpt (&optional arg)
+(defun ar-pipe-isbn-atpt ()
   "Pipe ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'isbn))
 
-(defun ar-pipe-line-atpt (&optional arg)
+(defun ar-pipe-line-atpt ()
   "Pipe LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'line))
 
-(defun ar-pipe-list-atpt (&optional arg)
+(defun ar-pipe-list-atpt ()
   "Pipe LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'list))
 
-(defun ar-pipe-name-atpt (&optional arg)
+(defun ar-pipe-name-atpt ()
   "Pipe NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'name))
 
-(defun ar-pipe-number-atpt (&optional arg)
+(defun ar-pipe-number-atpt ()
   "Pipe NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'number))
 
-(defun ar-pipe-page-atpt (&optional arg)
+(defun ar-pipe-page-atpt ()
   "Pipe PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'page))
 
-(defun ar-pipe-paragraph-atpt (&optional arg)
+(defun ar-pipe-paragraph-atpt ()
   "Pipe PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'paragraph))
 
-(defun ar-pipe-phone-atpt (&optional arg)
+(defun ar-pipe-phone-atpt ()
   "Pipe PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'phone))
 
-(defun ar-pipe-sentence-atpt (&optional arg)
+(defun ar-pipe-sentence-atpt ()
   "Pipe SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'sentence))
 
-(defun ar-pipe-sexp-atpt (&optional arg)
+(defun ar-pipe-sexp-atpt ()
   "Pipe SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'sexp))
 
-(defun ar-pipe-shstruct-atpt (&optional arg)
+(defun ar-pipe-shstruct-atpt ()
   "Pipe SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'shstruct))
 
-(defun ar-pipe-symbol-atpt (&optional arg)
+(defun ar-pipe-symbol-atpt ()
   "Pipe SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'symbol))
 
-(defun ar-pipe-url-atpt (&optional arg)
+(defun ar-pipe-url-atpt ()
   "Pipe URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'url))
 
-(defun ar-pipe-word-atpt (&optional arg)
+(defun ar-pipe-word-atpt ()
   "Pipe WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'word))
 
-(defun ar-pipe-wordalphaonly-atpt (&optional arg)
+(defun ar-pipe-wordalphaonly-atpt ()
   "Pipe WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-pipe 'wordalphaonly))
 
-(defun ar-singlequote-greateranglednested-atpt (&optional arg)
+(defun ar-singlequote-greateranglednested-atpt ()
   "Singlequote GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'greateranglednested))
 
-(defun ar-singlequote-lesseranglednested-atpt (&optional arg)
+(defun ar-singlequote-lesseranglednested-atpt ()
   "Singlequote LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'lesseranglednested))
 
-(defun ar-singlequote-buffer-atpt (&optional arg)
+(defun ar-singlequote-buffer-atpt ()
   "Singlequote BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'buffer))
 
-(defun ar-singlequote-char-atpt (&optional arg)
+(defun ar-singlequote-char-atpt ()
   "Singlequote CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'char))
 
-(defun ar-singlequote-comment-atpt (&optional arg)
+(defun ar-singlequote-comment-atpt ()
   "Singlequote COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'comment))
 
-(defun ar-singlequote-csv-atpt (&optional arg)
+(defun ar-singlequote-csv-atpt ()
   "Singlequote CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'csv))
 
-(defun ar-singlequote-date-atpt (&optional arg)
+(defun ar-singlequote-date-atpt ()
   "Singlequote DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'date))
 
-(defun ar-singlequote-delimited-atpt (&optional arg)
+(defun ar-singlequote-delimited-atpt ()
   "Singlequote DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'delimited))
 
-(defun ar-singlequote-email-atpt (&optional arg)
+(defun ar-singlequote-email-atpt ()
   "Singlequote EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'email))
 
-(defun ar-singlequote-filename-atpt (&optional arg)
+(defun ar-singlequote-filename-atpt ()
   "Singlequote FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'filename))
 
-(defun ar-singlequote-filenamenondirectory-atpt (&optional arg)
+(defun ar-singlequote-filenamenondirectory-atpt ()
   "Singlequote FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'filenamenondirectory))
 
-(defun ar-singlequote-float-atpt (&optional arg)
+(defun ar-singlequote-float-atpt ()
   "Singlequote FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'float))
 
-(defun ar-singlequote-function-atpt (&optional arg)
+(defun ar-singlequote-function-atpt ()
   "Singlequote FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'function))
 
-(defun ar-singlequote-ip-atpt (&optional arg)
+(defun ar-singlequote-ip-atpt ()
   "Singlequote IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'ip))
 
-(defun ar-singlequote-isbn-atpt (&optional arg)
+(defun ar-singlequote-isbn-atpt ()
   "Singlequote ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'isbn))
 
-(defun ar-singlequote-line-atpt (&optional arg)
+(defun ar-singlequote-line-atpt ()
   "Singlequote LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'line))
 
-(defun ar-singlequote-list-atpt (&optional arg)
+(defun ar-singlequote-list-atpt ()
   "Singlequote LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'list))
 
-(defun ar-singlequote-name-atpt (&optional arg)
+(defun ar-singlequote-name-atpt ()
   "Singlequote NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'name))
 
-(defun ar-singlequote-number-atpt (&optional arg)
+(defun ar-singlequote-number-atpt ()
   "Singlequote NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'number))
 
-(defun ar-singlequote-page-atpt (&optional arg)
+(defun ar-singlequote-page-atpt ()
   "Singlequote PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'page))
 
-(defun ar-singlequote-paragraph-atpt (&optional arg)
+(defun ar-singlequote-paragraph-atpt ()
   "Singlequote PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'paragraph))
 
-(defun ar-singlequote-phone-atpt (&optional arg)
+(defun ar-singlequote-phone-atpt ()
   "Singlequote PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'phone))
 
-(defun ar-singlequote-sentence-atpt (&optional arg)
+(defun ar-singlequote-sentence-atpt ()
   "Singlequote SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'sentence))
 
-(defun ar-singlequote-sexp-atpt (&optional arg)
+(defun ar-singlequote-sexp-atpt ()
   "Singlequote SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'sexp))
 
-(defun ar-singlequote-shstruct-atpt (&optional arg)
+(defun ar-singlequote-shstruct-atpt ()
   "Singlequote SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'shstruct))
 
-(defun ar-singlequote-symbol-atpt (&optional arg)
+(defun ar-singlequote-symbol-atpt ()
   "Singlequote SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'symbol))
 
-(defun ar-singlequote-url-atpt (&optional arg)
+(defun ar-singlequote-url-atpt ()
   "Singlequote URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'url))
 
-(defun ar-singlequote-word-atpt (&optional arg)
+(defun ar-singlequote-word-atpt ()
   "Singlequote WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'word))
 
-(defun ar-singlequote-wordalphaonly-atpt (&optional arg)
+(defun ar-singlequote-wordalphaonly-atpt ()
   "Singlequote WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-singlequote 'wordalphaonly))
 
-(defun ar-slash-greateranglednested-atpt (&optional arg)
+(defun ar-slash-greateranglednested-atpt ()
   "Slash GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'greateranglednested))
 
-(defun ar-slash-lesseranglednested-atpt (&optional arg)
+(defun ar-slash-lesseranglednested-atpt ()
   "Slash LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'lesseranglednested))
 
-(defun ar-slash-buffer-atpt (&optional arg)
+(defun ar-slash-buffer-atpt ()
   "Slash BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'buffer))
 
-(defun ar-slash-char-atpt (&optional arg)
+(defun ar-slash-char-atpt ()
   "Slash CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'char))
 
-(defun ar-slash-comment-atpt (&optional arg)
+(defun ar-slash-comment-atpt ()
   "Slash COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'comment))
 
-(defun ar-slash-csv-atpt (&optional arg)
+(defun ar-slash-csv-atpt ()
   "Slash CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'csv))
 
-(defun ar-slash-date-atpt (&optional arg)
+(defun ar-slash-date-atpt ()
   "Slash DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'date))
 
-(defun ar-slash-delimited-atpt (&optional arg)
+(defun ar-slash-delimited-atpt ()
   "Slash DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'delimited))
 
-(defun ar-slash-email-atpt (&optional arg)
+(defun ar-slash-email-atpt ()
   "Slash EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'email))
 
-(defun ar-slash-filename-atpt (&optional arg)
+(defun ar-slash-filename-atpt ()
   "Slash FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'filename))
 
-(defun ar-slash-filenamenondirectory-atpt (&optional arg)
+(defun ar-slash-filenamenondirectory-atpt ()
   "Slash FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'filenamenondirectory))
 
-(defun ar-slash-float-atpt (&optional arg)
+(defun ar-slash-float-atpt ()
   "Slash FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'float))
 
-(defun ar-slash-function-atpt (&optional arg)
+(defun ar-slash-function-atpt ()
   "Slash FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'function))
 
-(defun ar-slash-ip-atpt (&optional arg)
+(defun ar-slash-ip-atpt ()
   "Slash IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'ip))
 
-(defun ar-slash-isbn-atpt (&optional arg)
+(defun ar-slash-isbn-atpt ()
   "Slash ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'isbn))
 
-(defun ar-slash-line-atpt (&optional arg)
+(defun ar-slash-line-atpt ()
   "Slash LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'line))
 
-(defun ar-slash-list-atpt (&optional arg)
+(defun ar-slash-list-atpt ()
   "Slash LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'list))
 
-(defun ar-slash-name-atpt (&optional arg)
+(defun ar-slash-name-atpt ()
   "Slash NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'name))
 
-(defun ar-slash-number-atpt (&optional arg)
+(defun ar-slash-number-atpt ()
   "Slash NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'number))
 
-(defun ar-slash-page-atpt (&optional arg)
+(defun ar-slash-page-atpt ()
   "Slash PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'page))
 
-(defun ar-slash-paragraph-atpt (&optional arg)
+(defun ar-slash-paragraph-atpt ()
   "Slash PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'paragraph))
 
-(defun ar-slash-phone-atpt (&optional arg)
+(defun ar-slash-phone-atpt ()
   "Slash PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'phone))
 
-(defun ar-slash-sentence-atpt (&optional arg)
+(defun ar-slash-sentence-atpt ()
   "Slash SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'sentence))
 
-(defun ar-slash-sexp-atpt (&optional arg)
+(defun ar-slash-sexp-atpt ()
   "Slash SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'sexp))
 
-(defun ar-slash-shstruct-atpt (&optional arg)
+(defun ar-slash-shstruct-atpt ()
   "Slash SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'shstruct))
 
-(defun ar-slash-symbol-atpt (&optional arg)
+(defun ar-slash-symbol-atpt ()
   "Slash SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'symbol))
 
-(defun ar-slash-url-atpt (&optional arg)
+(defun ar-slash-url-atpt ()
   "Slash URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'url))
 
-(defun ar-slash-word-atpt (&optional arg)
+(defun ar-slash-word-atpt ()
   "Slash WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'word))
 
-(defun ar-slash-wordalphaonly-atpt (&optional arg)
+(defun ar-slash-wordalphaonly-atpt ()
   "Slash WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-slash 'wordalphaonly))
 
-(defun ar-star-greateranglednested-atpt (&optional arg)
+(defun ar-star-greateranglednested-atpt ()
   "Star GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'greateranglednested))
 
-(defun ar-star-lesseranglednested-atpt (&optional arg)
+(defun ar-star-lesseranglednested-atpt ()
   "Star LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'lesseranglednested))
 
-(defun ar-star-buffer-atpt (&optional arg)
+(defun ar-star-buffer-atpt ()
   "Star BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'buffer))
 
-(defun ar-star-char-atpt (&optional arg)
+(defun ar-star-char-atpt ()
   "Star CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'char))
 
-(defun ar-star-comment-atpt (&optional arg)
+(defun ar-star-comment-atpt ()
   "Star COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'comment))
 
-(defun ar-star-csv-atpt (&optional arg)
+(defun ar-star-csv-atpt ()
   "Star CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'csv))
 
-(defun ar-star-date-atpt (&optional arg)
+(defun ar-star-date-atpt ()
   "Star DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'date))
 
-(defun ar-star-delimited-atpt (&optional arg)
+(defun ar-star-delimited-atpt ()
   "Star DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'delimited))
 
-(defun ar-star-email-atpt (&optional arg)
+(defun ar-star-email-atpt ()
   "Star EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'email))
 
-(defun ar-star-filename-atpt (&optional arg)
+(defun ar-star-filename-atpt ()
   "Star FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'filename))
 
-(defun ar-star-filenamenondirectory-atpt (&optional arg)
+(defun ar-star-filenamenondirectory-atpt ()
   "Star FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'filenamenondirectory))
 
-(defun ar-star-float-atpt (&optional arg)
+(defun ar-star-float-atpt ()
   "Star FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'float))
 
-(defun ar-star-function-atpt (&optional arg)
+(defun ar-star-function-atpt ()
   "Star FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'function))
 
-(defun ar-star-ip-atpt (&optional arg)
+(defun ar-star-ip-atpt ()
   "Star IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'ip))
 
-(defun ar-star-isbn-atpt (&optional arg)
+(defun ar-star-isbn-atpt ()
   "Star ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'isbn))
 
-(defun ar-star-line-atpt (&optional arg)
+(defun ar-star-line-atpt ()
   "Star LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'line))
 
-(defun ar-star-list-atpt (&optional arg)
+(defun ar-star-list-atpt ()
   "Star LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'list))
 
-(defun ar-star-name-atpt (&optional arg)
+(defun ar-star-name-atpt ()
   "Star NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'name))
 
-(defun ar-star-number-atpt (&optional arg)
+(defun ar-star-number-atpt ()
   "Star NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'number))
 
-(defun ar-star-page-atpt (&optional arg)
+(defun ar-star-page-atpt ()
   "Star PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'page))
 
-(defun ar-star-paragraph-atpt (&optional arg)
+(defun ar-star-paragraph-atpt ()
   "Star PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'paragraph))
 
-(defun ar-star-phone-atpt (&optional arg)
+(defun ar-star-phone-atpt ()
   "Star PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'phone))
 
-(defun ar-star-sentence-atpt (&optional arg)
+(defun ar-star-sentence-atpt ()
   "Star SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'sentence))
 
-(defun ar-star-sexp-atpt (&optional arg)
+(defun ar-star-sexp-atpt ()
   "Star SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'sexp))
 
-(defun ar-star-shstruct-atpt (&optional arg)
+(defun ar-star-shstruct-atpt ()
   "Star SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'shstruct))
 
-(defun ar-star-symbol-atpt (&optional arg)
+(defun ar-star-symbol-atpt ()
   "Star SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'symbol))
 
-(defun ar-star-url-atpt (&optional arg)
+(defun ar-star-url-atpt ()
   "Star URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'url))
 
-(defun ar-star-word-atpt (&optional arg)
+(defun ar-star-word-atpt ()
   "Star WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'word))
 
-(defun ar-star-wordalphaonly-atpt (&optional arg)
+(defun ar-star-wordalphaonly-atpt ()
   "Star WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-star 'wordalphaonly))
 
-(defun ar-tild-greateranglednested-atpt (&optional arg)
+(defun ar-tild-greateranglednested-atpt ()
   "Tild GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'greateranglednested))
 
-(defun ar-tild-lesseranglednested-atpt (&optional arg)
+(defun ar-tild-lesseranglednested-atpt ()
   "Tild LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'lesseranglednested))
 
-(defun ar-tild-buffer-atpt (&optional arg)
+(defun ar-tild-buffer-atpt ()
   "Tild BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'buffer))
 
-(defun ar-tild-char-atpt (&optional arg)
+(defun ar-tild-char-atpt ()
   "Tild CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'char))
 
-(defun ar-tild-comment-atpt (&optional arg)
+(defun ar-tild-comment-atpt ()
   "Tild COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'comment))
 
-(defun ar-tild-csv-atpt (&optional arg)
+(defun ar-tild-csv-atpt ()
   "Tild CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'csv))
 
-(defun ar-tild-date-atpt (&optional arg)
+(defun ar-tild-date-atpt ()
   "Tild DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'date))
 
-(defun ar-tild-delimited-atpt (&optional arg)
+(defun ar-tild-delimited-atpt ()
   "Tild DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'delimited))
 
-(defun ar-tild-email-atpt (&optional arg)
+(defun ar-tild-email-atpt ()
   "Tild EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'email))
 
-(defun ar-tild-filename-atpt (&optional arg)
+(defun ar-tild-filename-atpt ()
   "Tild FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'filename))
 
-(defun ar-tild-filenamenondirectory-atpt (&optional arg)
+(defun ar-tild-filenamenondirectory-atpt ()
   "Tild FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'filenamenondirectory))
 
-(defun ar-tild-float-atpt (&optional arg)
+(defun ar-tild-float-atpt ()
   "Tild FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'float))
 
-(defun ar-tild-function-atpt (&optional arg)
+(defun ar-tild-function-atpt ()
   "Tild FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'function))
 
-(defun ar-tild-ip-atpt (&optional arg)
+(defun ar-tild-ip-atpt ()
   "Tild IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'ip))
 
-(defun ar-tild-isbn-atpt (&optional arg)
+(defun ar-tild-isbn-atpt ()
   "Tild ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'isbn))
 
-(defun ar-tild-line-atpt (&optional arg)
+(defun ar-tild-line-atpt ()
   "Tild LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'line))
 
-(defun ar-tild-list-atpt (&optional arg)
+(defun ar-tild-list-atpt ()
   "Tild LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'list))
 
-(defun ar-tild-name-atpt (&optional arg)
+(defun ar-tild-name-atpt ()
   "Tild NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'name))
 
-(defun ar-tild-number-atpt (&optional arg)
+(defun ar-tild-number-atpt ()
   "Tild NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'number))
 
-(defun ar-tild-page-atpt (&optional arg)
+(defun ar-tild-page-atpt ()
   "Tild PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'page))
 
-(defun ar-tild-paragraph-atpt (&optional arg)
+(defun ar-tild-paragraph-atpt ()
   "Tild PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'paragraph))
 
-(defun ar-tild-phone-atpt (&optional arg)
+(defun ar-tild-phone-atpt ()
   "Tild PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'phone))
 
-(defun ar-tild-sentence-atpt (&optional arg)
+(defun ar-tild-sentence-atpt ()
   "Tild SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'sentence))
 
-(defun ar-tild-sexp-atpt (&optional arg)
+(defun ar-tild-sexp-atpt ()
   "Tild SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'sexp))
 
-(defun ar-tild-shstruct-atpt (&optional arg)
+(defun ar-tild-shstruct-atpt ()
   "Tild SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'shstruct))
 
-(defun ar-tild-symbol-atpt (&optional arg)
+(defun ar-tild-symbol-atpt ()
   "Tild SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'symbol))
 
-(defun ar-tild-url-atpt (&optional arg)
+(defun ar-tild-url-atpt ()
   "Tild URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'url))
 
-(defun ar-tild-word-atpt (&optional arg)
+(defun ar-tild-word-atpt ()
   "Tild WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'word))
 
-(defun ar-tild-wordalphaonly-atpt (&optional arg)
+(defun ar-tild-wordalphaonly-atpt ()
   "Tild WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-tild 'wordalphaonly))
 
-(defun ar-underscore-greateranglednested-atpt (&optional arg)
+(defun ar-underscore-greateranglednested-atpt ()
   "Underscore GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'greateranglednested))
 
-(defun ar-underscore-lesseranglednested-atpt (&optional arg)
+(defun ar-underscore-lesseranglednested-atpt ()
   "Underscore LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'lesseranglednested))
 
-(defun ar-underscore-buffer-atpt (&optional arg)
+(defun ar-underscore-buffer-atpt ()
   "Underscore BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'buffer))
 
-(defun ar-underscore-char-atpt (&optional arg)
+(defun ar-underscore-char-atpt ()
   "Underscore CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'char))
 
-(defun ar-underscore-comment-atpt (&optional arg)
+(defun ar-underscore-comment-atpt ()
   "Underscore COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'comment))
 
-(defun ar-underscore-csv-atpt (&optional arg)
+(defun ar-underscore-csv-atpt ()
   "Underscore CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'csv))
 
-(defun ar-underscore-date-atpt (&optional arg)
+(defun ar-underscore-date-atpt ()
   "Underscore DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'date))
 
-(defun ar-underscore-delimited-atpt (&optional arg)
+(defun ar-underscore-delimited-atpt ()
   "Underscore DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'delimited))
 
-(defun ar-underscore-email-atpt (&optional arg)
+(defun ar-underscore-email-atpt ()
   "Underscore EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'email))
 
-(defun ar-underscore-filename-atpt (&optional arg)
+(defun ar-underscore-filename-atpt ()
   "Underscore FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'filename))
 
-(defun ar-underscore-filenamenondirectory-atpt (&optional arg)
+(defun ar-underscore-filenamenondirectory-atpt ()
   "Underscore FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'filenamenondirectory))
 
-(defun ar-underscore-float-atpt (&optional arg)
+(defun ar-underscore-float-atpt ()
   "Underscore FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'float))
 
-(defun ar-underscore-function-atpt (&optional arg)
+(defun ar-underscore-function-atpt ()
   "Underscore FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'function))
 
-(defun ar-underscore-ip-atpt (&optional arg)
+(defun ar-underscore-ip-atpt ()
   "Underscore IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'ip))
 
-(defun ar-underscore-isbn-atpt (&optional arg)
+(defun ar-underscore-isbn-atpt ()
   "Underscore ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'isbn))
 
-(defun ar-underscore-line-atpt (&optional arg)
+(defun ar-underscore-line-atpt ()
   "Underscore LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'line))
 
-(defun ar-underscore-list-atpt (&optional arg)
+(defun ar-underscore-list-atpt ()
   "Underscore LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'list))
 
-(defun ar-underscore-name-atpt (&optional arg)
+(defun ar-underscore-name-atpt ()
   "Underscore NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'name))
 
-(defun ar-underscore-number-atpt (&optional arg)
+(defun ar-underscore-number-atpt ()
   "Underscore NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'number))
 
-(defun ar-underscore-page-atpt (&optional arg)
+(defun ar-underscore-page-atpt ()
   "Underscore PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'page))
 
-(defun ar-underscore-paragraph-atpt (&optional arg)
+(defun ar-underscore-paragraph-atpt ()
   "Underscore PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'paragraph))
 
-(defun ar-underscore-phone-atpt (&optional arg)
+(defun ar-underscore-phone-atpt ()
   "Underscore PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'phone))
 
-(defun ar-underscore-sentence-atpt (&optional arg)
+(defun ar-underscore-sentence-atpt ()
   "Underscore SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'sentence))
 
-(defun ar-underscore-sexp-atpt (&optional arg)
+(defun ar-underscore-sexp-atpt ()
   "Underscore SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'sexp))
 
-(defun ar-underscore-shstruct-atpt (&optional arg)
+(defun ar-underscore-shstruct-atpt ()
   "Underscore SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'shstruct))
 
-(defun ar-underscore-symbol-atpt (&optional arg)
+(defun ar-underscore-symbol-atpt ()
   "Underscore SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'symbol))
 
-(defun ar-underscore-url-atpt (&optional arg)
+(defun ar-underscore-url-atpt ()
   "Underscore URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'url))
 
-(defun ar-underscore-word-atpt (&optional arg)
+(defun ar-underscore-word-atpt ()
   "Underscore WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'word))
 
-(defun ar-underscore-wordalphaonly-atpt (&optional arg)
+(defun ar-underscore-wordalphaonly-atpt ()
   "Underscore WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-underscore 'wordalphaonly))
 
-(defun ar-whitespace-greateranglednested-atpt (&optional arg)
+(defun ar-whitespace-greateranglednested-atpt ()
   "Whitespace GREATERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'greateranglednested))
 
-(defun ar-whitespace-lesseranglednested-atpt (&optional arg)
+(defun ar-whitespace-lesseranglednested-atpt ()
   "Whitespace LESSERANGLEDNESTED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'lesseranglednested))
 
-(defun ar-whitespace-buffer-atpt (&optional arg)
+(defun ar-whitespace-buffer-atpt ()
   "Whitespace BUFFER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'buffer))
 
-(defun ar-whitespace-char-atpt (&optional arg)
+(defun ar-whitespace-char-atpt ()
   "Whitespace CHAR at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'char))
 
-(defun ar-whitespace-comment-atpt (&optional arg)
+(defun ar-whitespace-comment-atpt ()
   "Whitespace COMMENT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'comment))
 
-(defun ar-whitespace-csv-atpt (&optional arg)
+(defun ar-whitespace-csv-atpt ()
   "Whitespace CSV at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'csv))
 
-(defun ar-whitespace-date-atpt (&optional arg)
+(defun ar-whitespace-date-atpt ()
   "Whitespace DATE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'date))
 
-(defun ar-whitespace-delimited-atpt (&optional arg)
+(defun ar-whitespace-delimited-atpt ()
   "Whitespace DELIMITED at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'delimited))
 
-(defun ar-whitespace-email-atpt (&optional arg)
+(defun ar-whitespace-email-atpt ()
   "Whitespace EMAIL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'email))
 
-(defun ar-whitespace-filename-atpt (&optional arg)
+(defun ar-whitespace-filename-atpt ()
   "Whitespace FILENAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'filename))
 
-(defun ar-whitespace-filenamenondirectory-atpt (&optional arg)
+(defun ar-whitespace-filenamenondirectory-atpt ()
   "Whitespace FILENAMENONDIRECTORY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'filenamenondirectory))
 
-(defun ar-whitespace-float-atpt (&optional arg)
+(defun ar-whitespace-float-atpt ()
   "Whitespace FLOAT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'float))
 
-(defun ar-whitespace-function-atpt (&optional arg)
+(defun ar-whitespace-function-atpt ()
   "Whitespace FUNCTION at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'function))
 
-(defun ar-whitespace-ip-atpt (&optional arg)
+(defun ar-whitespace-ip-atpt ()
   "Whitespace IP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'ip))
 
-(defun ar-whitespace-isbn-atpt (&optional arg)
+(defun ar-whitespace-isbn-atpt ()
   "Whitespace ISBN at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'isbn))
 
-(defun ar-whitespace-line-atpt (&optional arg)
+(defun ar-whitespace-line-atpt ()
   "Whitespace LINE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'line))
 
-(defun ar-whitespace-list-atpt (&optional arg)
+(defun ar-whitespace-list-atpt ()
   "Whitespace LIST at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'list))
 
-(defun ar-whitespace-name-atpt (&optional arg)
+(defun ar-whitespace-name-atpt ()
   "Whitespace NAME at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'name))
 
-(defun ar-whitespace-number-atpt (&optional arg)
+(defun ar-whitespace-number-atpt ()
   "Whitespace NUMBER at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'number))
 
-(defun ar-whitespace-page-atpt (&optional arg)
+(defun ar-whitespace-page-atpt ()
   "Whitespace PAGE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'page))
 
-(defun ar-whitespace-paragraph-atpt (&optional arg)
+(defun ar-whitespace-paragraph-atpt ()
   "Whitespace PARAGRAPH at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'paragraph))
 
-(defun ar-whitespace-phone-atpt (&optional arg)
+(defun ar-whitespace-phone-atpt ()
   "Whitespace PHONE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'phone))
 
-(defun ar-whitespace-sentence-atpt (&optional arg)
+(defun ar-whitespace-sentence-atpt ()
   "Whitespace SENTENCE at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'sentence))
 
-(defun ar-whitespace-sexp-atpt (&optional arg)
+(defun ar-whitespace-sexp-atpt ()
   "Whitespace SEXP at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'sexp))
 
-(defun ar-whitespace-shstruct-atpt (&optional arg)
+(defun ar-whitespace-shstruct-atpt ()
   "Whitespace SHSTRUCT at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'shstruct))
 
-(defun ar-whitespace-symbol-atpt (&optional arg)
+(defun ar-whitespace-symbol-atpt ()
   "Whitespace SYMBOL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'symbol))
 
-(defun ar-whitespace-url-atpt (&optional arg)
+(defun ar-whitespace-url-atpt ()
   "Whitespace URL at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'url))
 
-(defun ar-whitespace-word-atpt (&optional arg)
+(defun ar-whitespace-word-atpt ()
   "Whitespace WORD at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'word))
 
-(defun ar-whitespace-wordalphaonly-atpt (&optional arg)
+(defun ar-whitespace-wordalphaonly-atpt ()
   "Whitespace WORDALPHAONLY at point."
-  (interactive "*P")
+  (interactive "*")
   (ar-th-whitespace 'wordalphaonly))
 
 ;; ar-thingatpt-utils-aktiv-passiv ar-unpaired-delimit-aktiv ar-atpt-rest-list: end
 ;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: start
-(defun ar-symbol-greateranglednested-atpt (&optional arg)
+(defun ar-symbol-greateranglednested-atpt ()
   "Symbol GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "`" "'"))
 
-(defun ar-symbol-lesseranglednested-atpt (&optional arg)
+(defun ar-symbol-lesseranglednested-atpt ()
   "Symbol LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "`" "'"))
 
-(defun ar-symbol-buffer-atpt (&optional arg)
+(defun ar-symbol-buffer-atpt ()
   "Symbol BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'buffer "`" "'"))
 
-(defun ar-symbol-char-atpt (&optional arg)
+(defun ar-symbol-char-atpt ()
   "Symbol CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'char "`" "'"))
 
-(defun ar-symbol-comment-atpt (&optional arg)
+(defun ar-symbol-comment-atpt ()
   "Symbol COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'comment "`" "'"))
 
-(defun ar-symbol-csv-atpt (&optional arg)
+(defun ar-symbol-csv-atpt ()
   "Symbol CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'csv "`" "'"))
 
-(defun ar-symbol-date-atpt (&optional arg)
+(defun ar-symbol-date-atpt ()
   "Symbol DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'date "`" "'"))
 
-(defun ar-symbol-delimited-atpt (&optional arg)
+(defun ar-symbol-delimited-atpt ()
   "Symbol DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'delimited "`" "'"))
 
-(defun ar-symbol-email-atpt (&optional arg)
+(defun ar-symbol-email-atpt ()
   "Symbol EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'email "`" "'"))
 
-(defun ar-symbol-filename-atpt (&optional arg)
+(defun ar-symbol-filename-atpt ()
   "Symbol FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'filename "`" "'"))
 
-(defun ar-symbol-filenamenondirectory-atpt (&optional arg)
+(defun ar-symbol-filenamenondirectory-atpt ()
   "Symbol FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "`" "'"))
 
-(defun ar-symbol-float-atpt (&optional arg)
+(defun ar-symbol-float-atpt ()
   "Symbol FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'float "`" "'"))
 
-(defun ar-symbol-function-atpt (&optional arg)
+(defun ar-symbol-function-atpt ()
   "Symbol FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'function "`" "'"))
 
-(defun ar-symbol-ip-atpt (&optional arg)
+(defun ar-symbol-ip-atpt ()
   "Symbol IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'ip "`" "'"))
 
-(defun ar-symbol-isbn-atpt (&optional arg)
+(defun ar-symbol-isbn-atpt ()
   "Symbol ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'isbn "`" "'"))
 
-(defun ar-symbol-line-atpt (&optional arg)
+(defun ar-symbol-line-atpt ()
   "Symbol LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'line "`" "'"))
 
-(defun ar-symbol-list-atpt (&optional arg)
+(defun ar-symbol-list-atpt ()
   "Symbol LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'list "`" "'"))
 
-(defun ar-symbol-name-atpt (&optional arg)
+(defun ar-symbol-name-atpt ()
   "Symbol NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'name "`" "'"))
 
-(defun ar-symbol-number-atpt (&optional arg)
+(defun ar-symbol-number-atpt ()
   "Symbol NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'number "`" "'"))
 
-(defun ar-symbol-page-atpt (&optional arg)
+(defun ar-symbol-page-atpt ()
   "Symbol PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'page "`" "'"))
 
-(defun ar-symbol-paragraph-atpt (&optional arg)
+(defun ar-symbol-paragraph-atpt ()
   "Symbol PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "`" "'"))
 
-(defun ar-symbol-phone-atpt (&optional arg)
+(defun ar-symbol-phone-atpt ()
   "Symbol PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'phone "`" "'"))
 
-(defun ar-symbol-sentence-atpt (&optional arg)
+(defun ar-symbol-sentence-atpt ()
   "Symbol SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'sentence "`" "'"))
 
-(defun ar-symbol-sexp-atpt (&optional arg)
+(defun ar-symbol-sexp-atpt ()
   "Symbol SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'sexp "`" "'"))
 
-(defun ar-symbol-shstruct-atpt (&optional arg)
+(defun ar-symbol-shstruct-atpt ()
   "Symbol SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "`" "'"))
 
-(defun ar-symbol-symbol-atpt (&optional arg)
+(defun ar-symbol-symbol-atpt ()
   "Symbol SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'symbol "`" "'"))
 
-(defun ar-symbol-url-atpt (&optional arg)
+(defun ar-symbol-url-atpt ()
   "Symbol URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'url "`" "'"))
 
-(defun ar-symbol-word-atpt (&optional arg)
+(defun ar-symbol-word-atpt ()
   "Symbol WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'word "`" "'"))
 
-(defun ar-symbol-wordalphaonly-atpt (&optional arg)
+(defun ar-symbol-wordalphaonly-atpt ()
   "Symbol WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "`" "'"))
 
-(defun ar-brace-greateranglednested-atpt (&optional arg)
+(defun ar-brace-greateranglednested-atpt ()
   "Brace GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "{" "}"))
 
-(defun ar-brace-lesseranglednested-atpt (&optional arg)
+(defun ar-brace-lesseranglednested-atpt ()
   "Brace LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "{" "}"))
 
-(defun ar-brace-buffer-atpt (&optional arg)
+(defun ar-brace-buffer-atpt ()
   "Brace BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'buffer "{" "}"))
 
-(defun ar-brace-char-atpt (&optional arg)
+(defun ar-brace-char-atpt ()
   "Brace CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'char "{" "}"))
 
-(defun ar-brace-comment-atpt (&optional arg)
+(defun ar-brace-comment-atpt ()
   "Brace COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'comment "{" "}"))
 
-(defun ar-brace-csv-atpt (&optional arg)
+(defun ar-brace-csv-atpt ()
   "Brace CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'csv "{" "}"))
 
-(defun ar-brace-date-atpt (&optional arg)
+(defun ar-brace-date-atpt ()
   "Brace DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'date "{" "}"))
 
-(defun ar-brace-delimited-atpt (&optional arg)
+(defun ar-brace-delimited-atpt ()
   "Brace DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'delimited "{" "}"))
 
-(defun ar-brace-email-atpt (&optional arg)
+(defun ar-brace-email-atpt ()
   "Brace EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'email "{" "}"))
 
-(defun ar-brace-filename-atpt (&optional arg)
+(defun ar-brace-filename-atpt ()
   "Brace FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'filename "{" "}"))
 
-(defun ar-brace-filenamenondirectory-atpt (&optional arg)
+(defun ar-brace-filenamenondirectory-atpt ()
   "Brace FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "{" "}"))
 
-(defun ar-brace-float-atpt (&optional arg)
+(defun ar-brace-float-atpt ()
   "Brace FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'float "{" "}"))
 
-(defun ar-brace-function-atpt (&optional arg)
+(defun ar-brace-function-atpt ()
   "Brace FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'function "{" "}"))
 
-(defun ar-brace-ip-atpt (&optional arg)
+(defun ar-brace-ip-atpt ()
   "Brace IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'ip "{" "}"))
 
-(defun ar-brace-isbn-atpt (&optional arg)
+(defun ar-brace-isbn-atpt ()
   "Brace ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'isbn "{" "}"))
 
-(defun ar-brace-line-atpt (&optional arg)
+(defun ar-brace-line-atpt ()
   "Brace LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'line "{" "}"))
 
-(defun ar-brace-list-atpt (&optional arg)
+(defun ar-brace-list-atpt ()
   "Brace LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'list "{" "}"))
 
-(defun ar-brace-name-atpt (&optional arg)
+(defun ar-brace-name-atpt ()
   "Brace NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'name "{" "}"))
 
-(defun ar-brace-number-atpt (&optional arg)
+(defun ar-brace-number-atpt ()
   "Brace NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'number "{" "}"))
 
-(defun ar-brace-page-atpt (&optional arg)
+(defun ar-brace-page-atpt ()
   "Brace PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'page "{" "}"))
 
-(defun ar-brace-paragraph-atpt (&optional arg)
+(defun ar-brace-paragraph-atpt ()
   "Brace PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "{" "}"))
 
-(defun ar-brace-phone-atpt (&optional arg)
+(defun ar-brace-phone-atpt ()
   "Brace PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'phone "{" "}"))
 
-(defun ar-brace-sentence-atpt (&optional arg)
+(defun ar-brace-sentence-atpt ()
   "Brace SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'sentence "{" "}"))
 
-(defun ar-brace-sexp-atpt (&optional arg)
+(defun ar-brace-sexp-atpt ()
   "Brace SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'sexp "{" "}"))
 
-(defun ar-brace-shstruct-atpt (&optional arg)
+(defun ar-brace-shstruct-atpt ()
   "Brace SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "{" "}"))
 
-(defun ar-brace-symbol-atpt (&optional arg)
+(defun ar-brace-symbol-atpt ()
   "Brace SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'symbol "{" "}"))
 
-(defun ar-brace-url-atpt (&optional arg)
+(defun ar-brace-url-atpt ()
   "Brace URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'url "{" "}"))
 
-(defun ar-brace-word-atpt (&optional arg)
+(defun ar-brace-word-atpt ()
   "Brace WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'word "{" "}"))
 
-(defun ar-brace-wordalphaonly-atpt (&optional arg)
+(defun ar-brace-wordalphaonly-atpt ()
   "Brace WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "{" "}"))
 
-(defun ar-bracket-greateranglednested-atpt (&optional arg)
+(defun ar-bracket-greateranglednested-atpt ()
   "Bracket GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "[" "]"))
 
-(defun ar-bracket-lesseranglednested-atpt (&optional arg)
+(defun ar-bracket-lesseranglednested-atpt ()
   "Bracket LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "[" "]"))
 
-(defun ar-bracket-buffer-atpt (&optional arg)
+(defun ar-bracket-buffer-atpt ()
   "Bracket BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'buffer "[" "]"))
 
-(defun ar-bracket-char-atpt (&optional arg)
+(defun ar-bracket-char-atpt ()
   "Bracket CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'char "[" "]"))
 
-(defun ar-bracket-comment-atpt (&optional arg)
+(defun ar-bracket-comment-atpt ()
   "Bracket COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'comment "[" "]"))
 
-(defun ar-bracket-csv-atpt (&optional arg)
+(defun ar-bracket-csv-atpt ()
   "Bracket CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'csv "[" "]"))
 
-(defun ar-bracket-date-atpt (&optional arg)
+(defun ar-bracket-date-atpt ()
   "Bracket DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'date "[" "]"))
 
-(defun ar-bracket-delimited-atpt (&optional arg)
+(defun ar-bracket-delimited-atpt ()
   "Bracket DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'delimited "[" "]"))
 
-(defun ar-bracket-email-atpt (&optional arg)
+(defun ar-bracket-email-atpt ()
   "Bracket EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'email "[" "]"))
 
-(defun ar-bracket-filename-atpt (&optional arg)
+(defun ar-bracket-filename-atpt ()
   "Bracket FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'filename "[" "]"))
 
-(defun ar-bracket-filenamenondirectory-atpt (&optional arg)
+(defun ar-bracket-filenamenondirectory-atpt ()
   "Bracket FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "[" "]"))
 
-(defun ar-bracket-float-atpt (&optional arg)
+(defun ar-bracket-float-atpt ()
   "Bracket FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'float "[" "]"))
 
-(defun ar-bracket-function-atpt (&optional arg)
+(defun ar-bracket-function-atpt ()
   "Bracket FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'function "[" "]"))
 
-(defun ar-bracket-ip-atpt (&optional arg)
+(defun ar-bracket-ip-atpt ()
   "Bracket IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'ip "[" "]"))
 
-(defun ar-bracket-isbn-atpt (&optional arg)
+(defun ar-bracket-isbn-atpt ()
   "Bracket ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'isbn "[" "]"))
 
-(defun ar-bracket-line-atpt (&optional arg)
+(defun ar-bracket-line-atpt ()
   "Bracket LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'line "[" "]"))
 
-(defun ar-bracket-list-atpt (&optional arg)
+(defun ar-bracket-list-atpt ()
   "Bracket LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'list "[" "]"))
 
-(defun ar-bracket-name-atpt (&optional arg)
+(defun ar-bracket-name-atpt ()
   "Bracket NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'name "[" "]"))
 
-(defun ar-bracket-number-atpt (&optional arg)
+(defun ar-bracket-number-atpt ()
   "Bracket NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'number "[" "]"))
 
-(defun ar-bracket-page-atpt (&optional arg)
+(defun ar-bracket-page-atpt ()
   "Bracket PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'page "[" "]"))
 
-(defun ar-bracket-paragraph-atpt (&optional arg)
+(defun ar-bracket-paragraph-atpt ()
   "Bracket PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "[" "]"))
 
-(defun ar-bracket-phone-atpt (&optional arg)
+(defun ar-bracket-phone-atpt ()
   "Bracket PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'phone "[" "]"))
 
-(defun ar-bracket-sentence-atpt (&optional arg)
+(defun ar-bracket-sentence-atpt ()
   "Bracket SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'sentence "[" "]"))
 
-(defun ar-bracket-sexp-atpt (&optional arg)
+(defun ar-bracket-sexp-atpt ()
   "Bracket SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'sexp "[" "]"))
 
-(defun ar-bracket-shstruct-atpt (&optional arg)
+(defun ar-bracket-shstruct-atpt ()
   "Bracket SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "[" "]"))
 
-(defun ar-bracket-symbol-atpt (&optional arg)
+(defun ar-bracket-symbol-atpt ()
   "Bracket SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'symbol "[" "]"))
 
-(defun ar-bracket-url-atpt (&optional arg)
+(defun ar-bracket-url-atpt ()
   "Bracket URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'url "[" "]"))
 
-(defun ar-bracket-word-atpt (&optional arg)
+(defun ar-bracket-word-atpt ()
   "Bracket WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'word "[" "]"))
 
-(defun ar-bracket-wordalphaonly-atpt (&optional arg)
+(defun ar-bracket-wordalphaonly-atpt ()
   "Bracket WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "[" "]"))
 
-(defun ar-lesserangle-greateranglednested-atpt (&optional arg)
+(defun ar-lesserangle-greateranglednested-atpt ()
   "Lesserangle GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "<" ">"))
 
-(defun ar-lesserangle-lesseranglednested-atpt (&optional arg)
+(defun ar-lesserangle-lesseranglednested-atpt ()
   "Lesserangle LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "<" ">"))
 
-(defun ar-lesserangle-buffer-atpt (&optional arg)
+(defun ar-lesserangle-buffer-atpt ()
   "Lesserangle BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'buffer "<" ">"))
 
-(defun ar-lesserangle-char-atpt (&optional arg)
+(defun ar-lesserangle-char-atpt ()
   "Lesserangle CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'char "<" ">"))
 
-(defun ar-lesserangle-comment-atpt (&optional arg)
+(defun ar-lesserangle-comment-atpt ()
   "Lesserangle COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'comment "<" ">"))
 
-(defun ar-lesserangle-csv-atpt (&optional arg)
+(defun ar-lesserangle-csv-atpt ()
   "Lesserangle CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'csv "<" ">"))
 
-(defun ar-lesserangle-date-atpt (&optional arg)
+(defun ar-lesserangle-date-atpt ()
   "Lesserangle DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'date "<" ">"))
 
-(defun ar-lesserangle-delimited-atpt (&optional arg)
+(defun ar-lesserangle-delimited-atpt ()
   "Lesserangle DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'delimited "<" ">"))
 
-(defun ar-lesserangle-email-atpt (&optional arg)
+(defun ar-lesserangle-email-atpt ()
   "Lesserangle EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'email "<" ">"))
 
-(defun ar-lesserangle-filename-atpt (&optional arg)
+(defun ar-lesserangle-filename-atpt ()
   "Lesserangle FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'filename "<" ">"))
 
-(defun ar-lesserangle-filenamenondirectory-atpt (&optional arg)
+(defun ar-lesserangle-filenamenondirectory-atpt ()
   "Lesserangle FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "<" ">"))
 
-(defun ar-lesserangle-float-atpt (&optional arg)
+(defun ar-lesserangle-float-atpt ()
   "Lesserangle FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'float "<" ">"))
 
-(defun ar-lesserangle-function-atpt (&optional arg)
+(defun ar-lesserangle-function-atpt ()
   "Lesserangle FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'function "<" ">"))
 
-(defun ar-lesserangle-ip-atpt (&optional arg)
+(defun ar-lesserangle-ip-atpt ()
   "Lesserangle IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'ip "<" ">"))
 
-(defun ar-lesserangle-isbn-atpt (&optional arg)
+(defun ar-lesserangle-isbn-atpt ()
   "Lesserangle ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'isbn "<" ">"))
 
-(defun ar-lesserangle-line-atpt (&optional arg)
+(defun ar-lesserangle-line-atpt ()
   "Lesserangle LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'line "<" ">"))
 
-(defun ar-lesserangle-list-atpt (&optional arg)
+(defun ar-lesserangle-list-atpt ()
   "Lesserangle LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'list "<" ">"))
 
-(defun ar-lesserangle-name-atpt (&optional arg)
+(defun ar-lesserangle-name-atpt ()
   "Lesserangle NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'name "<" ">"))
 
-(defun ar-lesserangle-number-atpt (&optional arg)
+(defun ar-lesserangle-number-atpt ()
   "Lesserangle NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'number "<" ">"))
 
-(defun ar-lesserangle-page-atpt (&optional arg)
+(defun ar-lesserangle-page-atpt ()
   "Lesserangle PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'page "<" ">"))
 
-(defun ar-lesserangle-paragraph-atpt (&optional arg)
+(defun ar-lesserangle-paragraph-atpt ()
   "Lesserangle PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "<" ">"))
 
-(defun ar-lesserangle-phone-atpt (&optional arg)
+(defun ar-lesserangle-phone-atpt ()
   "Lesserangle PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'phone "<" ">"))
 
-(defun ar-lesserangle-sentence-atpt (&optional arg)
+(defun ar-lesserangle-sentence-atpt ()
   "Lesserangle SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'sentence "<" ">"))
 
-(defun ar-lesserangle-sexp-atpt (&optional arg)
+(defun ar-lesserangle-sexp-atpt ()
   "Lesserangle SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'sexp "<" ">"))
 
-(defun ar-lesserangle-shstruct-atpt (&optional arg)
+(defun ar-lesserangle-shstruct-atpt ()
   "Lesserangle SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "<" ">"))
 
-(defun ar-lesserangle-symbol-atpt (&optional arg)
+(defun ar-lesserangle-symbol-atpt ()
   "Lesserangle SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'symbol "<" ">"))
 
-(defun ar-lesserangle-url-atpt (&optional arg)
+(defun ar-lesserangle-url-atpt ()
   "Lesserangle URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'url "<" ">"))
 
-(defun ar-lesserangle-word-atpt (&optional arg)
+(defun ar-lesserangle-word-atpt ()
   "Lesserangle WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'word "<" ">"))
 
-(defun ar-lesserangle-wordalphaonly-atpt (&optional arg)
+(defun ar-lesserangle-wordalphaonly-atpt ()
   "Lesserangle WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "<" ">"))
 
-(defun ar-greaterangle-greateranglednested-atpt (&optional arg)
+(defun ar-greaterangle-greateranglednested-atpt ()
   "Greaterangle GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested ">" "<"))
 
-(defun ar-greaterangle-lesseranglednested-atpt (&optional arg)
+(defun ar-greaterangle-lesseranglednested-atpt ()
   "Greaterangle LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested ">" "<"))
 
-(defun ar-greaterangle-buffer-atpt (&optional arg)
+(defun ar-greaterangle-buffer-atpt ()
   "Greaterangle BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'buffer ">" "<"))
 
-(defun ar-greaterangle-char-atpt (&optional arg)
+(defun ar-greaterangle-char-atpt ()
   "Greaterangle CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'char ">" "<"))
 
-(defun ar-greaterangle-comment-atpt (&optional arg)
+(defun ar-greaterangle-comment-atpt ()
   "Greaterangle COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'comment ">" "<"))
 
-(defun ar-greaterangle-csv-atpt (&optional arg)
+(defun ar-greaterangle-csv-atpt ()
   "Greaterangle CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'csv ">" "<"))
 
-(defun ar-greaterangle-date-atpt (&optional arg)
+(defun ar-greaterangle-date-atpt ()
   "Greaterangle DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'date ">" "<"))
 
-(defun ar-greaterangle-delimited-atpt (&optional arg)
+(defun ar-greaterangle-delimited-atpt ()
   "Greaterangle DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'delimited ">" "<"))
 
-(defun ar-greaterangle-email-atpt (&optional arg)
+(defun ar-greaterangle-email-atpt ()
   "Greaterangle EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'email ">" "<"))
 
-(defun ar-greaterangle-filename-atpt (&optional arg)
+(defun ar-greaterangle-filename-atpt ()
   "Greaterangle FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'filename ">" "<"))
 
-(defun ar-greaterangle-filenamenondirectory-atpt (&optional arg)
+(defun ar-greaterangle-filenamenondirectory-atpt ()
   "Greaterangle FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory ">" "<"))
 
-(defun ar-greaterangle-float-atpt (&optional arg)
+(defun ar-greaterangle-float-atpt ()
   "Greaterangle FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'float ">" "<"))
 
-(defun ar-greaterangle-function-atpt (&optional arg)
+(defun ar-greaterangle-function-atpt ()
   "Greaterangle FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'function ">" "<"))
 
-(defun ar-greaterangle-ip-atpt (&optional arg)
+(defun ar-greaterangle-ip-atpt ()
   "Greaterangle IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'ip ">" "<"))
 
-(defun ar-greaterangle-isbn-atpt (&optional arg)
+(defun ar-greaterangle-isbn-atpt ()
   "Greaterangle ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'isbn ">" "<"))
 
-(defun ar-greaterangle-line-atpt (&optional arg)
+(defun ar-greaterangle-line-atpt ()
   "Greaterangle LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'line ">" "<"))
 
-(defun ar-greaterangle-list-atpt (&optional arg)
+(defun ar-greaterangle-list-atpt ()
   "Greaterangle LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'list ">" "<"))
 
-(defun ar-greaterangle-name-atpt (&optional arg)
+(defun ar-greaterangle-name-atpt ()
   "Greaterangle NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'name ">" "<"))
 
-(defun ar-greaterangle-number-atpt (&optional arg)
+(defun ar-greaterangle-number-atpt ()
   "Greaterangle NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'number ">" "<"))
 
-(defun ar-greaterangle-page-atpt (&optional arg)
+(defun ar-greaterangle-page-atpt ()
   "Greaterangle PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'page ">" "<"))
 
-(defun ar-greaterangle-paragraph-atpt (&optional arg)
+(defun ar-greaterangle-paragraph-atpt ()
   "Greaterangle PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'paragraph ">" "<"))
 
-(defun ar-greaterangle-phone-atpt (&optional arg)
+(defun ar-greaterangle-phone-atpt ()
   "Greaterangle PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'phone ">" "<"))
 
-(defun ar-greaterangle-sentence-atpt (&optional arg)
+(defun ar-greaterangle-sentence-atpt ()
   "Greaterangle SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'sentence ">" "<"))
 
-(defun ar-greaterangle-sexp-atpt (&optional arg)
+(defun ar-greaterangle-sexp-atpt ()
   "Greaterangle SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'sexp ">" "<"))
 
-(defun ar-greaterangle-shstruct-atpt (&optional arg)
+(defun ar-greaterangle-shstruct-atpt ()
   "Greaterangle SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'shstruct ">" "<"))
 
-(defun ar-greaterangle-symbol-atpt (&optional arg)
+(defun ar-greaterangle-symbol-atpt ()
   "Greaterangle SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'symbol ">" "<"))
 
-(defun ar-greaterangle-url-atpt (&optional arg)
+(defun ar-greaterangle-url-atpt ()
   "Greaterangle URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'url ">" "<"))
 
-(defun ar-greaterangle-word-atpt (&optional arg)
+(defun ar-greaterangle-word-atpt ()
   "Greaterangle WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'word ">" "<"))
 
-(defun ar-greaterangle-wordalphaonly-atpt (&optional arg)
+(defun ar-greaterangle-wordalphaonly-atpt ()
   "Greaterangle WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly ">" "<"))
 
-(defun ar-curvedsinglequote-greateranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-greateranglednested-atpt ()
   "Curvedsinglequote GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "‘" "’"))
 
-(defun ar-curvedsinglequote-lesseranglednested-atpt (&optional arg)
+(defun ar-curvedsinglequote-lesseranglednested-atpt ()
   "Curvedsinglequote LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "‘" "’"))
 
-(defun ar-curvedsinglequote-buffer-atpt (&optional arg)
+(defun ar-curvedsinglequote-buffer-atpt ()
   "Curvedsinglequote BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'buffer "‘" "’"))
 
-(defun ar-curvedsinglequote-char-atpt (&optional arg)
+(defun ar-curvedsinglequote-char-atpt ()
   "Curvedsinglequote CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'char "‘" "’"))
 
-(defun ar-curvedsinglequote-comment-atpt (&optional arg)
+(defun ar-curvedsinglequote-comment-atpt ()
   "Curvedsinglequote COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'comment "‘" "’"))
 
-(defun ar-curvedsinglequote-csv-atpt (&optional arg)
+(defun ar-curvedsinglequote-csv-atpt ()
   "Curvedsinglequote CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'csv "‘" "’"))
 
-(defun ar-curvedsinglequote-date-atpt (&optional arg)
+(defun ar-curvedsinglequote-date-atpt ()
   "Curvedsinglequote DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'date "‘" "’"))
 
-(defun ar-curvedsinglequote-delimited-atpt (&optional arg)
+(defun ar-curvedsinglequote-delimited-atpt ()
   "Curvedsinglequote DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'delimited "‘" "’"))
 
-(defun ar-curvedsinglequote-email-atpt (&optional arg)
+(defun ar-curvedsinglequote-email-atpt ()
   "Curvedsinglequote EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'email "‘" "’"))
 
-(defun ar-curvedsinglequote-filename-atpt (&optional arg)
+(defun ar-curvedsinglequote-filename-atpt ()
   "Curvedsinglequote FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'filename "‘" "’"))
 
-(defun ar-curvedsinglequote-filenamenondirectory-atpt (&optional arg)
+(defun ar-curvedsinglequote-filenamenondirectory-atpt ()
   "Curvedsinglequote FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "‘" "’"))
 
-(defun ar-curvedsinglequote-float-atpt (&optional arg)
+(defun ar-curvedsinglequote-float-atpt ()
   "Curvedsinglequote FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'float "‘" "’"))
 
-(defun ar-curvedsinglequote-function-atpt (&optional arg)
+(defun ar-curvedsinglequote-function-atpt ()
   "Curvedsinglequote FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'function "‘" "’"))
 
-(defun ar-curvedsinglequote-ip-atpt (&optional arg)
+(defun ar-curvedsinglequote-ip-atpt ()
   "Curvedsinglequote IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'ip "‘" "’"))
 
-(defun ar-curvedsinglequote-isbn-atpt (&optional arg)
+(defun ar-curvedsinglequote-isbn-atpt ()
   "Curvedsinglequote ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'isbn "‘" "’"))
 
-(defun ar-curvedsinglequote-line-atpt (&optional arg)
+(defun ar-curvedsinglequote-line-atpt ()
   "Curvedsinglequote LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'line "‘" "’"))
 
-(defun ar-curvedsinglequote-list-atpt (&optional arg)
+(defun ar-curvedsinglequote-list-atpt ()
   "Curvedsinglequote LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'list "‘" "’"))
 
-(defun ar-curvedsinglequote-name-atpt (&optional arg)
+(defun ar-curvedsinglequote-name-atpt ()
   "Curvedsinglequote NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'name "‘" "’"))
 
-(defun ar-curvedsinglequote-number-atpt (&optional arg)
+(defun ar-curvedsinglequote-number-atpt ()
   "Curvedsinglequote NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'number "‘" "’"))
 
-(defun ar-curvedsinglequote-page-atpt (&optional arg)
+(defun ar-curvedsinglequote-page-atpt ()
   "Curvedsinglequote PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'page "‘" "’"))
 
-(defun ar-curvedsinglequote-paragraph-atpt (&optional arg)
+(defun ar-curvedsinglequote-paragraph-atpt ()
   "Curvedsinglequote PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "‘" "’"))
 
-(defun ar-curvedsinglequote-phone-atpt (&optional arg)
+(defun ar-curvedsinglequote-phone-atpt ()
   "Curvedsinglequote PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'phone "‘" "’"))
 
-(defun ar-curvedsinglequote-sentence-atpt (&optional arg)
+(defun ar-curvedsinglequote-sentence-atpt ()
   "Curvedsinglequote SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'sentence "‘" "’"))
 
-(defun ar-curvedsinglequote-sexp-atpt (&optional arg)
+(defun ar-curvedsinglequote-sexp-atpt ()
   "Curvedsinglequote SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'sexp "‘" "’"))
 
-(defun ar-curvedsinglequote-shstruct-atpt (&optional arg)
+(defun ar-curvedsinglequote-shstruct-atpt ()
   "Curvedsinglequote SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "‘" "’"))
 
-(defun ar-curvedsinglequote-symbol-atpt (&optional arg)
+(defun ar-curvedsinglequote-symbol-atpt ()
   "Curvedsinglequote SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'symbol "‘" "’"))
 
-(defun ar-curvedsinglequote-url-atpt (&optional arg)
+(defun ar-curvedsinglequote-url-atpt ()
   "Curvedsinglequote URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'url "‘" "’"))
 
-(defun ar-curvedsinglequote-word-atpt (&optional arg)
+(defun ar-curvedsinglequote-word-atpt ()
   "Curvedsinglequote WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'word "‘" "’"))
 
-(defun ar-curvedsinglequote-wordalphaonly-atpt (&optional arg)
+(defun ar-curvedsinglequote-wordalphaonly-atpt ()
   "Curvedsinglequote WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "‘" "’"))
 
-(defun ar-curveddoublequote-greateranglednested-atpt (&optional arg)
+(defun ar-curveddoublequote-greateranglednested-atpt ()
   "Curveddoublequote GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "“" "”"))
 
-(defun ar-curveddoublequote-lesseranglednested-atpt (&optional arg)
+(defun ar-curveddoublequote-lesseranglednested-atpt ()
   "Curveddoublequote LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "“" "”"))
 
-(defun ar-curveddoublequote-buffer-atpt (&optional arg)
+(defun ar-curveddoublequote-buffer-atpt ()
   "Curveddoublequote BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'buffer "“" "”"))
 
-(defun ar-curveddoublequote-char-atpt (&optional arg)
+(defun ar-curveddoublequote-char-atpt ()
   "Curveddoublequote CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'char "“" "”"))
 
-(defun ar-curveddoublequote-comment-atpt (&optional arg)
+(defun ar-curveddoublequote-comment-atpt ()
   "Curveddoublequote COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'comment "“" "”"))
 
-(defun ar-curveddoublequote-csv-atpt (&optional arg)
+(defun ar-curveddoublequote-csv-atpt ()
   "Curveddoublequote CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'csv "“" "”"))
 
-(defun ar-curveddoublequote-date-atpt (&optional arg)
+(defun ar-curveddoublequote-date-atpt ()
   "Curveddoublequote DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'date "“" "”"))
 
-(defun ar-curveddoublequote-delimited-atpt (&optional arg)
+(defun ar-curveddoublequote-delimited-atpt ()
   "Curveddoublequote DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'delimited "“" "”"))
 
-(defun ar-curveddoublequote-email-atpt (&optional arg)
+(defun ar-curveddoublequote-email-atpt ()
   "Curveddoublequote EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'email "“" "”"))
 
-(defun ar-curveddoublequote-filename-atpt (&optional arg)
+(defun ar-curveddoublequote-filename-atpt ()
   "Curveddoublequote FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'filename "“" "”"))
 
-(defun ar-curveddoublequote-filenamenondirectory-atpt (&optional arg)
+(defun ar-curveddoublequote-filenamenondirectory-atpt ()
   "Curveddoublequote FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "“" "”"))
 
-(defun ar-curveddoublequote-float-atpt (&optional arg)
+(defun ar-curveddoublequote-float-atpt ()
   "Curveddoublequote FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'float "“" "”"))
 
-(defun ar-curveddoublequote-function-atpt (&optional arg)
+(defun ar-curveddoublequote-function-atpt ()
   "Curveddoublequote FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'function "“" "”"))
 
-(defun ar-curveddoublequote-ip-atpt (&optional arg)
+(defun ar-curveddoublequote-ip-atpt ()
   "Curveddoublequote IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'ip "“" "”"))
 
-(defun ar-curveddoublequote-isbn-atpt (&optional arg)
+(defun ar-curveddoublequote-isbn-atpt ()
   "Curveddoublequote ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'isbn "“" "”"))
 
-(defun ar-curveddoublequote-line-atpt (&optional arg)
+(defun ar-curveddoublequote-line-atpt ()
   "Curveddoublequote LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'line "“" "”"))
 
-(defun ar-curveddoublequote-list-atpt (&optional arg)
+(defun ar-curveddoublequote-list-atpt ()
   "Curveddoublequote LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'list "“" "”"))
 
-(defun ar-curveddoublequote-name-atpt (&optional arg)
+(defun ar-curveddoublequote-name-atpt ()
   "Curveddoublequote NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'name "“" "”"))
 
-(defun ar-curveddoublequote-number-atpt (&optional arg)
+(defun ar-curveddoublequote-number-atpt ()
   "Curveddoublequote NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'number "“" "”"))
 
-(defun ar-curveddoublequote-page-atpt (&optional arg)
+(defun ar-curveddoublequote-page-atpt ()
   "Curveddoublequote PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'page "“" "”"))
 
-(defun ar-curveddoublequote-paragraph-atpt (&optional arg)
+(defun ar-curveddoublequote-paragraph-atpt ()
   "Curveddoublequote PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "“" "”"))
 
-(defun ar-curveddoublequote-phone-atpt (&optional arg)
+(defun ar-curveddoublequote-phone-atpt ()
   "Curveddoublequote PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'phone "“" "”"))
 
-(defun ar-curveddoublequote-sentence-atpt (&optional arg)
+(defun ar-curveddoublequote-sentence-atpt ()
   "Curveddoublequote SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'sentence "“" "”"))
 
-(defun ar-curveddoublequote-sexp-atpt (&optional arg)
+(defun ar-curveddoublequote-sexp-atpt ()
   "Curveddoublequote SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'sexp "“" "”"))
 
-(defun ar-curveddoublequote-shstruct-atpt (&optional arg)
+(defun ar-curveddoublequote-shstruct-atpt ()
   "Curveddoublequote SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "“" "”"))
 
-(defun ar-curveddoublequote-symbol-atpt (&optional arg)
+(defun ar-curveddoublequote-symbol-atpt ()
   "Curveddoublequote SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'symbol "“" "”"))
 
-(defun ar-curveddoublequote-url-atpt (&optional arg)
+(defun ar-curveddoublequote-url-atpt ()
   "Curveddoublequote URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'url "“" "”"))
 
-(defun ar-curveddoublequote-word-atpt (&optional arg)
+(defun ar-curveddoublequote-word-atpt ()
   "Curveddoublequote WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'word "“" "”"))
 
-(defun ar-curveddoublequote-wordalphaonly-atpt (&optional arg)
+(defun ar-curveddoublequote-wordalphaonly-atpt ()
   "Curveddoublequote WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "“" "”"))
 
-(defun ar-parentize-greateranglednested-atpt (&optional arg)
+(defun ar-parentize-greateranglednested-atpt ()
   "Parentize GREATERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greateranglednested "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'greateranglednested "(" ")"))
 
-(defun ar-parentize-lesseranglednested-atpt (&optional arg)
+(defun ar-parentize-lesseranglednested-atpt ()
   "Parentize LESSERANGLEDNESTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesseranglednested "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'lesseranglednested "(" ")"))
 
-(defun ar-parentize-buffer-atpt (&optional arg)
+(defun ar-parentize-buffer-atpt ()
   "Parentize BUFFER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'buffer "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'buffer "(" ")"))
 
-(defun ar-parentize-char-atpt (&optional arg)
+(defun ar-parentize-char-atpt ()
   "Parentize CHAR at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'char "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'char "(" ")"))
 
-(defun ar-parentize-comment-atpt (&optional arg)
+(defun ar-parentize-comment-atpt ()
   "Parentize COMMENT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'comment "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'comment "(" ")"))
 
-(defun ar-parentize-csv-atpt (&optional arg)
+(defun ar-parentize-csv-atpt ()
   "Parentize CSV at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'csv "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'csv "(" ")"))
 
-(defun ar-parentize-date-atpt (&optional arg)
+(defun ar-parentize-date-atpt ()
   "Parentize DATE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'date "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'date "(" ")"))
 
-(defun ar-parentize-delimited-atpt (&optional arg)
+(defun ar-parentize-delimited-atpt ()
   "Parentize DELIMITED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'delimited "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'delimited "(" ")"))
 
-(defun ar-parentize-email-atpt (&optional arg)
+(defun ar-parentize-email-atpt ()
   "Parentize EMAIL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'email "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'email "(" ")"))
 
-(defun ar-parentize-filename-atpt (&optional arg)
+(defun ar-parentize-filename-atpt ()
   "Parentize FILENAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filename "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'filename "(" ")"))
 
-(defun ar-parentize-filenamenondirectory-atpt (&optional arg)
+(defun ar-parentize-filenamenondirectory-atpt ()
   "Parentize FILENAMENONDIRECTORY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'filenamenondirectory "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'filenamenondirectory "(" ")"))
 
-(defun ar-parentize-float-atpt (&optional arg)
+(defun ar-parentize-float-atpt ()
   "Parentize FLOAT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'float "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'float "(" ")"))
 
-(defun ar-parentize-function-atpt (&optional arg)
+(defun ar-parentize-function-atpt ()
   "Parentize FUNCTION at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'function "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'function "(" ")"))
 
-(defun ar-parentize-ip-atpt (&optional arg)
+(defun ar-parentize-ip-atpt ()
   "Parentize IP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'ip "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'ip "(" ")"))
 
-(defun ar-parentize-isbn-atpt (&optional arg)
+(defun ar-parentize-isbn-atpt ()
   "Parentize ISBN at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'isbn "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'isbn "(" ")"))
 
-(defun ar-parentize-line-atpt (&optional arg)
+(defun ar-parentize-line-atpt ()
   "Parentize LINE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'line "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'line "(" ")"))
 
-(defun ar-parentize-list-atpt (&optional arg)
+(defun ar-parentize-list-atpt ()
   "Parentize LIST at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'list "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'list "(" ")"))
 
-(defun ar-parentize-name-atpt (&optional arg)
+(defun ar-parentize-name-atpt ()
   "Parentize NAME at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'name "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'name "(" ")"))
 
-(defun ar-parentize-number-atpt (&optional arg)
+(defun ar-parentize-number-atpt ()
   "Parentize NUMBER at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'number "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'number "(" ")"))
 
-(defun ar-parentize-page-atpt (&optional arg)
+(defun ar-parentize-page-atpt ()
   "Parentize PAGE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'page "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'page "(" ")"))
 
-(defun ar-parentize-paragraph-atpt (&optional arg)
+(defun ar-parentize-paragraph-atpt ()
   "Parentize PARAGRAPH at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'paragraph "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'paragraph "(" ")"))
 
-(defun ar-parentize-phone-atpt (&optional arg)
+(defun ar-parentize-phone-atpt ()
   "Parentize PHONE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'phone "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'phone "(" ")"))
 
-(defun ar-parentize-sentence-atpt (&optional arg)
+(defun ar-parentize-sentence-atpt ()
   "Parentize SENTENCE at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sentence "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'sentence "(" ")"))
 
-(defun ar-parentize-sexp-atpt (&optional arg)
+(defun ar-parentize-sexp-atpt ()
   "Parentize SEXP at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'sexp "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'sexp "(" ")"))
 
-(defun ar-parentize-shstruct-atpt (&optional arg)
+(defun ar-parentize-shstruct-atpt ()
   "Parentize SHSTRUCT at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'shstruct "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'shstruct "(" ")"))
 
-(defun ar-parentize-symbol-atpt (&optional arg)
+(defun ar-parentize-symbol-atpt ()
   "Parentize SYMBOL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symbol "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'symbol "(" ")"))
 
-(defun ar-parentize-url-atpt (&optional arg)
+(defun ar-parentize-url-atpt ()
   "Parentize URL at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'url "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'url "(" ")"))
 
-(defun ar-parentize-word-atpt (&optional arg)
+(defun ar-parentize-word-atpt ()
   "Parentize WORD at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'word "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'word "(" ")"))
 
-(defun ar-parentize-wordalphaonly-atpt (&optional arg)
+(defun ar-parentize-wordalphaonly-atpt ()
   "Parentize WORDALPHAONLY at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'wordalphaonly "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'wordalphaonly "(" ")"))
 
 ;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-atpt-rest-list: end
 ;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: start
-(defun ar-symbol-backslashed-atpt (&optional arg)
+(defun ar-symbol-backslashed-atpt ()
   "Symbol BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "`" "'"))
 
-(defun ar-symbol-backticked-atpt (&optional arg)
+(defun ar-symbol-backticked-atpt ()
   "Symbol BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'backticked "`" "'"))
 
-(defun ar-symbol-coloned-atpt (&optional arg)
+(defun ar-symbol-coloned-atpt ()
   "Symbol COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'coloned "`" "'"))
 
-(defun ar-symbol-crossed-atpt (&optional arg)
+(defun ar-symbol-crossed-atpt ()
   "Symbol CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'crossed "`" "'"))
 
-(defun ar-symbol-dollared-atpt (&optional arg)
+(defun ar-symbol-dollared-atpt ()
   "Symbol DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'dollared "`" "'"))
 
-(defun ar-symbol-doublequoted-atpt (&optional arg)
+(defun ar-symbol-doublequoted-atpt ()
   "Symbol DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "`" "'"))
 
-(defun ar-symbol-equalized-atpt (&optional arg)
+(defun ar-symbol-equalized-atpt ()
   "Symbol EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'equalized "`" "'"))
 
-(defun ar-symbol-hashed-atpt (&optional arg)
+(defun ar-symbol-hashed-atpt ()
   "Symbol HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'hashed "`" "'"))
 
-(defun ar-symbol-hyphened-atpt (&optional arg)
+(defun ar-symbol-hyphened-atpt ()
   "Symbol HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "`" "'"))
 
-(defun ar-symbol-piped-atpt (&optional arg)
+(defun ar-symbol-piped-atpt ()
   "Symbol PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'piped "`" "'"))
 
-(defun ar-symbol-singlequoted-atpt (&optional arg)
+(defun ar-symbol-singlequoted-atpt ()
   "Symbol SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "`" "'"))
 
-(defun ar-symbol-slashed-atpt (&optional arg)
+(defun ar-symbol-slashed-atpt ()
   "Symbol SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'slashed "`" "'"))
 
-(defun ar-symbol-stared-atpt (&optional arg)
+(defun ar-symbol-stared-atpt ()
   "Symbol STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'stared "`" "'"))
 
-(defun ar-symbol-tilded-atpt (&optional arg)
+(defun ar-symbol-tilded-atpt ()
   "Symbol TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'tilded "`" "'"))
 
-(defun ar-symbol-underscored-atpt (&optional arg)
+(defun ar-symbol-underscored-atpt ()
   "Symbol UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'underscored "`" "'"))
 
-(defun ar-symbol-whitespaced-atpt (&optional arg)
+(defun ar-symbol-whitespaced-atpt ()
   "Symbol WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "`" "'"))
 
-(defun ar-brace-backslashed-atpt (&optional arg)
+(defun ar-brace-backslashed-atpt ()
   "Brace BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "{" "}"))
 
-(defun ar-brace-backticked-atpt (&optional arg)
+(defun ar-brace-backticked-atpt ()
   "Brace BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'backticked "{" "}"))
 
-(defun ar-brace-coloned-atpt (&optional arg)
+(defun ar-brace-coloned-atpt ()
   "Brace COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'coloned "{" "}"))
 
-(defun ar-brace-crossed-atpt (&optional arg)
+(defun ar-brace-crossed-atpt ()
   "Brace CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'crossed "{" "}"))
 
-(defun ar-brace-dollared-atpt (&optional arg)
+(defun ar-brace-dollared-atpt ()
   "Brace DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'dollared "{" "}"))
 
-(defun ar-brace-doublequoted-atpt (&optional arg)
+(defun ar-brace-doublequoted-atpt ()
   "Brace DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "{" "}"))
 
-(defun ar-brace-equalized-atpt (&optional arg)
+(defun ar-brace-equalized-atpt ()
   "Brace EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'equalized "{" "}"))
 
-(defun ar-brace-hashed-atpt (&optional arg)
+(defun ar-brace-hashed-atpt ()
   "Brace HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'hashed "{" "}"))
 
-(defun ar-brace-hyphened-atpt (&optional arg)
+(defun ar-brace-hyphened-atpt ()
   "Brace HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "{" "}"))
 
-(defun ar-brace-piped-atpt (&optional arg)
+(defun ar-brace-piped-atpt ()
   "Brace PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'piped "{" "}"))
 
-(defun ar-brace-singlequoted-atpt (&optional arg)
+(defun ar-brace-singlequoted-atpt ()
   "Brace SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "{" "}"))
 
-(defun ar-brace-slashed-atpt (&optional arg)
+(defun ar-brace-slashed-atpt ()
   "Brace SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'slashed "{" "}"))
 
-(defun ar-brace-stared-atpt (&optional arg)
+(defun ar-brace-stared-atpt ()
   "Brace STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'stared "{" "}"))
 
-(defun ar-brace-tilded-atpt (&optional arg)
+(defun ar-brace-tilded-atpt ()
   "Brace TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'tilded "{" "}"))
 
-(defun ar-brace-underscored-atpt (&optional arg)
+(defun ar-brace-underscored-atpt ()
   "Brace UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'underscored "{" "}"))
 
-(defun ar-brace-whitespaced-atpt (&optional arg)
+(defun ar-brace-whitespaced-atpt ()
   "Brace WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "{" "}"))
 
-(defun ar-bracket-backslashed-atpt (&optional arg)
+(defun ar-bracket-backslashed-atpt ()
   "Bracket BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "[" "]"))
 
-(defun ar-bracket-backticked-atpt (&optional arg)
+(defun ar-bracket-backticked-atpt ()
   "Bracket BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'backticked "[" "]"))
 
-(defun ar-bracket-coloned-atpt (&optional arg)
+(defun ar-bracket-coloned-atpt ()
   "Bracket COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'coloned "[" "]"))
 
-(defun ar-bracket-crossed-atpt (&optional arg)
+(defun ar-bracket-crossed-atpt ()
   "Bracket CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'crossed "[" "]"))
 
-(defun ar-bracket-dollared-atpt (&optional arg)
+(defun ar-bracket-dollared-atpt ()
   "Bracket DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'dollared "[" "]"))
 
-(defun ar-bracket-doublequoted-atpt (&optional arg)
+(defun ar-bracket-doublequoted-atpt ()
   "Bracket DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "[" "]"))
 
-(defun ar-bracket-equalized-atpt (&optional arg)
+(defun ar-bracket-equalized-atpt ()
   "Bracket EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'equalized "[" "]"))
 
-(defun ar-bracket-hashed-atpt (&optional arg)
+(defun ar-bracket-hashed-atpt ()
   "Bracket HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'hashed "[" "]"))
 
-(defun ar-bracket-hyphened-atpt (&optional arg)
+(defun ar-bracket-hyphened-atpt ()
   "Bracket HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "[" "]"))
 
-(defun ar-bracket-piped-atpt (&optional arg)
+(defun ar-bracket-piped-atpt ()
   "Bracket PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'piped "[" "]"))
 
-(defun ar-bracket-singlequoted-atpt (&optional arg)
+(defun ar-bracket-singlequoted-atpt ()
   "Bracket SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "[" "]"))
 
-(defun ar-bracket-slashed-atpt (&optional arg)
+(defun ar-bracket-slashed-atpt ()
   "Bracket SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'slashed "[" "]"))
 
-(defun ar-bracket-stared-atpt (&optional arg)
+(defun ar-bracket-stared-atpt ()
   "Bracket STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'stared "[" "]"))
 
-(defun ar-bracket-tilded-atpt (&optional arg)
+(defun ar-bracket-tilded-atpt ()
   "Bracket TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'tilded "[" "]"))
 
-(defun ar-bracket-underscored-atpt (&optional arg)
+(defun ar-bracket-underscored-atpt ()
   "Bracket UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'underscored "[" "]"))
 
-(defun ar-bracket-whitespaced-atpt (&optional arg)
+(defun ar-bracket-whitespaced-atpt ()
   "Bracket WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "[" "]"))
 
-(defun ar-lesserangle-backslashed-atpt (&optional arg)
+(defun ar-lesserangle-backslashed-atpt ()
   "Lesserangle BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "<" ">"))
 
-(defun ar-lesserangle-backticked-atpt (&optional arg)
+(defun ar-lesserangle-backticked-atpt ()
   "Lesserangle BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'backticked "<" ">"))
 
-(defun ar-lesserangle-coloned-atpt (&optional arg)
+(defun ar-lesserangle-coloned-atpt ()
   "Lesserangle COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'coloned "<" ">"))
 
-(defun ar-lesserangle-crossed-atpt (&optional arg)
+(defun ar-lesserangle-crossed-atpt ()
   "Lesserangle CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'crossed "<" ">"))
 
-(defun ar-lesserangle-dollared-atpt (&optional arg)
+(defun ar-lesserangle-dollared-atpt ()
   "Lesserangle DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'dollared "<" ">"))
 
-(defun ar-lesserangle-doublequoted-atpt (&optional arg)
+(defun ar-lesserangle-doublequoted-atpt ()
   "Lesserangle DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "<" ">"))
 
-(defun ar-lesserangle-equalized-atpt (&optional arg)
+(defun ar-lesserangle-equalized-atpt ()
   "Lesserangle EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'equalized "<" ">"))
 
-(defun ar-lesserangle-hashed-atpt (&optional arg)
+(defun ar-lesserangle-hashed-atpt ()
   "Lesserangle HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'hashed "<" ">"))
 
-(defun ar-lesserangle-hyphened-atpt (&optional arg)
+(defun ar-lesserangle-hyphened-atpt ()
   "Lesserangle HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "<" ">"))
 
-(defun ar-lesserangle-piped-atpt (&optional arg)
+(defun ar-lesserangle-piped-atpt ()
   "Lesserangle PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'piped "<" ">"))
 
-(defun ar-lesserangle-singlequoted-atpt (&optional arg)
+(defun ar-lesserangle-singlequoted-atpt ()
   "Lesserangle SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "<" ">"))
 
-(defun ar-lesserangle-slashed-atpt (&optional arg)
+(defun ar-lesserangle-slashed-atpt ()
   "Lesserangle SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'slashed "<" ">"))
 
-(defun ar-lesserangle-stared-atpt (&optional arg)
+(defun ar-lesserangle-stared-atpt ()
   "Lesserangle STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'stared "<" ">"))
 
-(defun ar-lesserangle-tilded-atpt (&optional arg)
+(defun ar-lesserangle-tilded-atpt ()
   "Lesserangle TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'tilded "<" ">"))
 
-(defun ar-lesserangle-underscored-atpt (&optional arg)
+(defun ar-lesserangle-underscored-atpt ()
   "Lesserangle UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'underscored "<" ">"))
 
-(defun ar-lesserangle-whitespaced-atpt (&optional arg)
+(defun ar-lesserangle-whitespaced-atpt ()
   "Lesserangle WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "<" ">"))
 
-(defun ar-greaterangle-backslashed-atpt (&optional arg)
+(defun ar-greaterangle-backslashed-atpt ()
   "Greaterangle BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'backslashed ">" "<"))
 
-(defun ar-greaterangle-backticked-atpt (&optional arg)
+(defun ar-greaterangle-backticked-atpt ()
   "Greaterangle BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'backticked ">" "<"))
 
-(defun ar-greaterangle-coloned-atpt (&optional arg)
+(defun ar-greaterangle-coloned-atpt ()
   "Greaterangle COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'coloned ">" "<"))
 
-(defun ar-greaterangle-crossed-atpt (&optional arg)
+(defun ar-greaterangle-crossed-atpt ()
   "Greaterangle CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'crossed ">" "<"))
 
-(defun ar-greaterangle-dollared-atpt (&optional arg)
+(defun ar-greaterangle-dollared-atpt ()
   "Greaterangle DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'dollared ">" "<"))
 
-(defun ar-greaterangle-doublequoted-atpt (&optional arg)
+(defun ar-greaterangle-doublequoted-atpt ()
   "Greaterangle DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted ">" "<"))
 
-(defun ar-greaterangle-equalized-atpt (&optional arg)
+(defun ar-greaterangle-equalized-atpt ()
   "Greaterangle EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'equalized ">" "<"))
 
-(defun ar-greaterangle-hashed-atpt (&optional arg)
+(defun ar-greaterangle-hashed-atpt ()
   "Greaterangle HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'hashed ">" "<"))
 
-(defun ar-greaterangle-hyphened-atpt (&optional arg)
+(defun ar-greaterangle-hyphened-atpt ()
   "Greaterangle HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'hyphened ">" "<"))
 
-(defun ar-greaterangle-piped-atpt (&optional arg)
+(defun ar-greaterangle-piped-atpt ()
   "Greaterangle PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'piped ">" "<"))
 
-(defun ar-greaterangle-singlequoted-atpt (&optional arg)
+(defun ar-greaterangle-singlequoted-atpt ()
   "Greaterangle SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted ">" "<"))
 
-(defun ar-greaterangle-slashed-atpt (&optional arg)
+(defun ar-greaterangle-slashed-atpt ()
   "Greaterangle SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'slashed ">" "<"))
 
-(defun ar-greaterangle-stared-atpt (&optional arg)
+(defun ar-greaterangle-stared-atpt ()
   "Greaterangle STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'stared ">" "<"))
 
-(defun ar-greaterangle-tilded-atpt (&optional arg)
+(defun ar-greaterangle-tilded-atpt ()
   "Greaterangle TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'tilded ">" "<"))
 
-(defun ar-greaterangle-underscored-atpt (&optional arg)
+(defun ar-greaterangle-underscored-atpt ()
   "Greaterangle UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'underscored ">" "<"))
 
-(defun ar-greaterangle-whitespaced-atpt (&optional arg)
+(defun ar-greaterangle-whitespaced-atpt ()
   "Greaterangle WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced ">" "<"))
 
-(defun ar-curvedsinglequote-backslashed-atpt (&optional arg)
+(defun ar-curvedsinglequote-backslashed-atpt ()
   "Curvedsinglequote BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "‘" "’"))
 
-(defun ar-curvedsinglequote-backticked-atpt (&optional arg)
+(defun ar-curvedsinglequote-backticked-atpt ()
   "Curvedsinglequote BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'backticked "‘" "’"))
 
-(defun ar-curvedsinglequote-coloned-atpt (&optional arg)
+(defun ar-curvedsinglequote-coloned-atpt ()
   "Curvedsinglequote COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'coloned "‘" "’"))
 
-(defun ar-curvedsinglequote-crossed-atpt (&optional arg)
+(defun ar-curvedsinglequote-crossed-atpt ()
   "Curvedsinglequote CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'crossed "‘" "’"))
 
-(defun ar-curvedsinglequote-dollared-atpt (&optional arg)
+(defun ar-curvedsinglequote-dollared-atpt ()
   "Curvedsinglequote DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'dollared "‘" "’"))
 
-(defun ar-curvedsinglequote-doublequoted-atpt (&optional arg)
+(defun ar-curvedsinglequote-doublequoted-atpt ()
   "Curvedsinglequote DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "‘" "’"))
 
-(defun ar-curvedsinglequote-equalized-atpt (&optional arg)
+(defun ar-curvedsinglequote-equalized-atpt ()
   "Curvedsinglequote EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'equalized "‘" "’"))
 
-(defun ar-curvedsinglequote-hashed-atpt (&optional arg)
+(defun ar-curvedsinglequote-hashed-atpt ()
   "Curvedsinglequote HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'hashed "‘" "’"))
 
-(defun ar-curvedsinglequote-hyphened-atpt (&optional arg)
+(defun ar-curvedsinglequote-hyphened-atpt ()
   "Curvedsinglequote HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "‘" "’"))
 
-(defun ar-curvedsinglequote-piped-atpt (&optional arg)
+(defun ar-curvedsinglequote-piped-atpt ()
   "Curvedsinglequote PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'piped "‘" "’"))
 
-(defun ar-curvedsinglequote-singlequoted-atpt (&optional arg)
+(defun ar-curvedsinglequote-singlequoted-atpt ()
   "Curvedsinglequote SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "‘" "’"))
 
-(defun ar-curvedsinglequote-slashed-atpt (&optional arg)
+(defun ar-curvedsinglequote-slashed-atpt ()
   "Curvedsinglequote SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'slashed "‘" "’"))
 
-(defun ar-curvedsinglequote-stared-atpt (&optional arg)
+(defun ar-curvedsinglequote-stared-atpt ()
   "Curvedsinglequote STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'stared "‘" "’"))
 
-(defun ar-curvedsinglequote-tilded-atpt (&optional arg)
+(defun ar-curvedsinglequote-tilded-atpt ()
   "Curvedsinglequote TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'tilded "‘" "’"))
 
-(defun ar-curvedsinglequote-underscored-atpt (&optional arg)
+(defun ar-curvedsinglequote-underscored-atpt ()
   "Curvedsinglequote UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'underscored "‘" "’"))
 
-(defun ar-curvedsinglequote-whitespaced-atpt (&optional arg)
+(defun ar-curvedsinglequote-whitespaced-atpt ()
   "Curvedsinglequote WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "‘" "’"))
 
-(defun ar-curveddoublequote-backslashed-atpt (&optional arg)
+(defun ar-curveddoublequote-backslashed-atpt ()
   "Curveddoublequote BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "“" "”"))
 
-(defun ar-curveddoublequote-backticked-atpt (&optional arg)
+(defun ar-curveddoublequote-backticked-atpt ()
   "Curveddoublequote BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'backticked "“" "”"))
 
-(defun ar-curveddoublequote-coloned-atpt (&optional arg)
+(defun ar-curveddoublequote-coloned-atpt ()
   "Curveddoublequote COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'coloned "“" "”"))
 
-(defun ar-curveddoublequote-crossed-atpt (&optional arg)
+(defun ar-curveddoublequote-crossed-atpt ()
   "Curveddoublequote CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'crossed "“" "”"))
 
-(defun ar-curveddoublequote-dollared-atpt (&optional arg)
+(defun ar-curveddoublequote-dollared-atpt ()
   "Curveddoublequote DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'dollared "“" "”"))
 
-(defun ar-curveddoublequote-doublequoted-atpt (&optional arg)
+(defun ar-curveddoublequote-doublequoted-atpt ()
   "Curveddoublequote DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "“" "”"))
 
-(defun ar-curveddoublequote-equalized-atpt (&optional arg)
+(defun ar-curveddoublequote-equalized-atpt ()
   "Curveddoublequote EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'equalized "“" "”"))
 
-(defun ar-curveddoublequote-hashed-atpt (&optional arg)
+(defun ar-curveddoublequote-hashed-atpt ()
   "Curveddoublequote HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'hashed "“" "”"))
 
-(defun ar-curveddoublequote-hyphened-atpt (&optional arg)
+(defun ar-curveddoublequote-hyphened-atpt ()
   "Curveddoublequote HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "“" "”"))
 
-(defun ar-curveddoublequote-piped-atpt (&optional arg)
+(defun ar-curveddoublequote-piped-atpt ()
   "Curveddoublequote PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'piped "“" "”"))
 
-(defun ar-curveddoublequote-singlequoted-atpt (&optional arg)
+(defun ar-curveddoublequote-singlequoted-atpt ()
   "Curveddoublequote SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "“" "”"))
 
-(defun ar-curveddoublequote-slashed-atpt (&optional arg)
+(defun ar-curveddoublequote-slashed-atpt ()
   "Curveddoublequote SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'slashed "“" "”"))
 
-(defun ar-curveddoublequote-stared-atpt (&optional arg)
+(defun ar-curveddoublequote-stared-atpt ()
   "Curveddoublequote STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'stared "“" "”"))
 
-(defun ar-curveddoublequote-tilded-atpt (&optional arg)
+(defun ar-curveddoublequote-tilded-atpt ()
   "Curveddoublequote TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'tilded "“" "”"))
 
-(defun ar-curveddoublequote-underscored-atpt (&optional arg)
+(defun ar-curveddoublequote-underscored-atpt ()
   "Curveddoublequote UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'underscored "“" "”"))
 
-(defun ar-curveddoublequote-whitespaced-atpt (&optional arg)
+(defun ar-curveddoublequote-whitespaced-atpt ()
   "Curveddoublequote WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "“" "”"))
 
-(defun ar-parentize-backslashed-atpt (&optional arg)
+(defun ar-parentize-backslashed-atpt ()
   "Parentize BACKSLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backslashed "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'backslashed "(" ")"))
 
-(defun ar-parentize-backticked-atpt (&optional arg)
+(defun ar-parentize-backticked-atpt ()
   "Parentize BACKTICKED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'backticked "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'backticked "(" ")"))
 
-(defun ar-parentize-coloned-atpt (&optional arg)
+(defun ar-parentize-coloned-atpt ()
   "Parentize COLONED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'coloned "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'coloned "(" ")"))
 
-(defun ar-parentize-crossed-atpt (&optional arg)
+(defun ar-parentize-crossed-atpt ()
   "Parentize CROSSED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'crossed "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'crossed "(" ")"))
 
-(defun ar-parentize-dollared-atpt (&optional arg)
+(defun ar-parentize-dollared-atpt ()
   "Parentize DOLLARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'dollared "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'dollared "(" ")"))
 
-(defun ar-parentize-doublequoted-atpt (&optional arg)
+(defun ar-parentize-doublequoted-atpt ()
   "Parentize DOUBLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'doublequoted "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'doublequoted "(" ")"))
 
-(defun ar-parentize-equalized-atpt (&optional arg)
+(defun ar-parentize-equalized-atpt ()
   "Parentize EQUALIZED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'equalized "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'equalized "(" ")"))
 
-(defun ar-parentize-hashed-atpt (&optional arg)
+(defun ar-parentize-hashed-atpt ()
   "Parentize HASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hashed "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'hashed "(" ")"))
 
-(defun ar-parentize-hyphened-atpt (&optional arg)
+(defun ar-parentize-hyphened-atpt ()
   "Parentize HYPHENED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'hyphened "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'hyphened "(" ")"))
 
-(defun ar-parentize-piped-atpt (&optional arg)
+(defun ar-parentize-piped-atpt ()
   "Parentize PIPED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'piped "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'piped "(" ")"))
 
-(defun ar-parentize-singlequoted-atpt (&optional arg)
+(defun ar-parentize-singlequoted-atpt ()
   "Parentize SINGLEQUOTED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'singlequoted "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'singlequoted "(" ")"))
 
-(defun ar-parentize-slashed-atpt (&optional arg)
+(defun ar-parentize-slashed-atpt ()
   "Parentize SLASHED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'slashed "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'slashed "(" ")"))
 
-(defun ar-parentize-stared-atpt (&optional arg)
+(defun ar-parentize-stared-atpt ()
   "Parentize STARED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'stared "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'stared "(" ")"))
 
-(defun ar-parentize-tilded-atpt (&optional arg)
+(defun ar-parentize-tilded-atpt ()
   "Parentize TILDED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'tilded "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'tilded "(" ")"))
 
-(defun ar-parentize-underscored-atpt (&optional arg)
+(defun ar-parentize-underscored-atpt ()
   "Parentize UNDERSCORED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'underscored "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'underscored "(" ")"))
 
-(defun ar-parentize-whitespaced-atpt (&optional arg)
+(defun ar-parentize-whitespaced-atpt ()
   "Parentize WHITESPACED at point ARG times."
-  (interactive "*P")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'whitespaced "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'whitespaced "(" ")"))
 
 ;; ar-thingatpt-utils-pair-rest ar-paired-delimit-aktiv-raw ar-unpaired-delimited-passiv: end
 ;; ar-thingatpt-utils-activ-passiv ar-paired-delimited-passiv-raw: start
-(defun ar-brace-braced-atpt (&optional arg)
+(defun ar-brace-braced-atpt ()
   "Brace BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'braced "{" "}"))
 
-(defun ar-brace-symboled-atpt (&optional arg)
+(defun ar-brace-symboled-atpt ()
   "Brace SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'symboled "{" "}"))
 
-(defun ar-brace-bracketed-atpt (&optional arg)
+(defun ar-brace-bracketed-atpt ()
   "Brace BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "{" "}"))
 
-(defun ar-brace-lesserangled-atpt (&optional arg)
+(defun ar-brace-lesserangled-atpt ()
   "Brace LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "{" "}"))
 
-(defun ar-brace-greaterangled-atpt (&optional arg)
+(defun ar-brace-greaterangled-atpt ()
   "Brace GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "{" "}"))
 
-(defun ar-brace-curvedsinglequoted-atpt (&optional arg)
+(defun ar-brace-curvedsinglequoted-atpt ()
   "Brace CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "{" "}"))
 
-(defun ar-brace-curveddoublequoted-atpt (&optional arg)
+(defun ar-brace-curveddoublequoted-atpt ()
   "Brace CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "{" "}"))
 
-(defun ar-brace-parentized-atpt (&optional arg)
+(defun ar-brace-parentized-atpt ()
   "Brace PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "{" "}")))
+  (interactive "*")
+  (ar-th-delim 'parentized "{" "}"))
 
-(defun ar-symbol-braced-atpt (&optional arg)
+(defun ar-symbol-braced-atpt ()
   "Symbol BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'braced "`" "'"))
 
-(defun ar-symbol-symboled-atpt (&optional arg)
+(defun ar-symbol-symboled-atpt ()
   "Symbol SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'symboled "`" "'"))
 
-(defun ar-symbol-bracketed-atpt (&optional arg)
+(defun ar-symbol-bracketed-atpt ()
   "Symbol BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "`" "'"))
 
-(defun ar-symbol-lesserangled-atpt (&optional arg)
+(defun ar-symbol-lesserangled-atpt ()
   "Symbol LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "`" "'"))
 
-(defun ar-symbol-greaterangled-atpt (&optional arg)
+(defun ar-symbol-greaterangled-atpt ()
   "Symbol GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "`" "'"))
 
-(defun ar-symbol-curvedsinglequoted-atpt (&optional arg)
+(defun ar-symbol-curvedsinglequoted-atpt ()
   "Symbol CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "`" "'"))
 
-(defun ar-symbol-curveddoublequoted-atpt (&optional arg)
+(defun ar-symbol-curveddoublequoted-atpt ()
   "Symbol CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "`" "'"))
 
-(defun ar-symbol-parentized-atpt (&optional arg)
+(defun ar-symbol-parentized-atpt ()
   "Symbol PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "`" "'")))
+  (interactive "*")
+  (ar-th-delim 'parentized "`" "'"))
 
-(defun ar-bracket-braced-atpt (&optional arg)
+(defun ar-bracket-braced-atpt ()
   "Bracket BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'braced "[" "]"))
 
-(defun ar-bracket-symboled-atpt (&optional arg)
+(defun ar-bracket-symboled-atpt ()
   "Bracket SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'symboled "[" "]"))
 
-(defun ar-bracket-bracketed-atpt (&optional arg)
+(defun ar-bracket-bracketed-atpt ()
   "Bracket BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "[" "]"))
 
-(defun ar-bracket-lesserangled-atpt (&optional arg)
+(defun ar-bracket-lesserangled-atpt ()
   "Bracket LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "[" "]"))
 
-(defun ar-bracket-greaterangled-atpt (&optional arg)
+(defun ar-bracket-greaterangled-atpt ()
   "Bracket GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "[" "]"))
 
-(defun ar-bracket-curvedsinglequoted-atpt (&optional arg)
+(defun ar-bracket-curvedsinglequoted-atpt ()
   "Bracket CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "[" "]"))
 
-(defun ar-bracket-curveddoublequoted-atpt (&optional arg)
+(defun ar-bracket-curveddoublequoted-atpt ()
   "Bracket CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "[" "]"))
 
-(defun ar-bracket-parentized-atpt (&optional arg)
+(defun ar-bracket-parentized-atpt ()
   "Bracket PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "[" "]")))
+  (interactive "*")
+  (ar-th-delim 'parentized "[" "]"))
 
-(defun ar-lesserangle-braced-atpt (&optional arg)
+(defun ar-lesserangle-braced-atpt ()
   "Lesserangle BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'braced "<" ">"))
 
-(defun ar-lesserangle-symboled-atpt (&optional arg)
+(defun ar-lesserangle-symboled-atpt ()
   "Lesserangle SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'symboled "<" ">"))
 
-(defun ar-lesserangle-bracketed-atpt (&optional arg)
+(defun ar-lesserangle-bracketed-atpt ()
   "Lesserangle BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "<" ">"))
 
-(defun ar-lesserangle-lesserangled-atpt (&optional arg)
+(defun ar-lesserangle-lesserangled-atpt ()
   "Lesserangle LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "<" ">"))
 
-(defun ar-lesserangle-greaterangled-atpt (&optional arg)
+(defun ar-lesserangle-greaterangled-atpt ()
   "Lesserangle GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "<" ">"))
 
-(defun ar-lesserangle-curvedsinglequoted-atpt (&optional arg)
+(defun ar-lesserangle-curvedsinglequoted-atpt ()
   "Lesserangle CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "<" ">"))
 
-(defun ar-lesserangle-curveddoublequoted-atpt (&optional arg)
+(defun ar-lesserangle-curveddoublequoted-atpt ()
   "Lesserangle CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "<" ">"))
 
-(defun ar-lesserangle-parentized-atpt (&optional arg)
+(defun ar-lesserangle-parentized-atpt ()
   "Lesserangle PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "<" ">")))
+  (interactive "*")
+  (ar-th-delim 'parentized "<" ">"))
 
-(defun ar-greaterangle-braced-atpt (&optional arg)
+(defun ar-greaterangle-braced-atpt ()
   "Greaterangle BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'braced ">" "<"))
 
-(defun ar-greaterangle-symboled-atpt (&optional arg)
+(defun ar-greaterangle-symboled-atpt ()
   "Greaterangle SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'symboled ">" "<"))
 
-(defun ar-greaterangle-bracketed-atpt (&optional arg)
+(defun ar-greaterangle-bracketed-atpt ()
   "Greaterangle BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'bracketed ">" "<"))
 
-(defun ar-greaterangle-lesserangled-atpt (&optional arg)
+(defun ar-greaterangle-lesserangled-atpt ()
   "Greaterangle LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled ">" "<"))
 
-(defun ar-greaterangle-greaterangled-atpt (&optional arg)
+(defun ar-greaterangle-greaterangled-atpt ()
   "Greaterangle GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled ">" "<"))
 
-(defun ar-greaterangle-curvedsinglequoted-atpt (&optional arg)
+(defun ar-greaterangle-curvedsinglequoted-atpt ()
   "Greaterangle CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted ">" "<"))
 
-(defun ar-greaterangle-curveddoublequoted-atpt (&optional arg)
+(defun ar-greaterangle-curveddoublequoted-atpt ()
   "Greaterangle CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted ">" "<"))
 
-(defun ar-greaterangle-parentized-atpt (&optional arg)
+(defun ar-greaterangle-parentized-atpt ()
   "Greaterangle PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized ">" "<")))
+  (interactive "*")
+  (ar-th-delim 'parentized ">" "<"))
 
-(defun ar-curvedsinglequote-braced-atpt (&optional arg)
+(defun ar-curvedsinglequote-braced-atpt ()
   "Curvedsinglequote BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'braced "‘" "’"))
 
-(defun ar-curvedsinglequote-symboled-atpt (&optional arg)
+(defun ar-curvedsinglequote-symboled-atpt ()
   "Curvedsinglequote SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'symboled "‘" "’"))
 
-(defun ar-curvedsinglequote-bracketed-atpt (&optional arg)
+(defun ar-curvedsinglequote-bracketed-atpt ()
   "Curvedsinglequote BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "‘" "’"))
 
-(defun ar-curvedsinglequote-lesserangled-atpt (&optional arg)
+(defun ar-curvedsinglequote-lesserangled-atpt ()
   "Curvedsinglequote LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "‘" "’"))
 
-(defun ar-curvedsinglequote-greaterangled-atpt (&optional arg)
+(defun ar-curvedsinglequote-greaterangled-atpt ()
   "Curvedsinglequote GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "‘" "’"))
 
-(defun ar-curvedsinglequote-curvedsinglequoted-atpt (&optional arg)
+(defun ar-curvedsinglequote-curvedsinglequoted-atpt ()
   "Curvedsinglequote CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "‘" "’"))
 
-(defun ar-curvedsinglequote-curveddoublequoted-atpt (&optional arg)
+(defun ar-curvedsinglequote-curveddoublequoted-atpt ()
   "Curvedsinglequote CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "‘" "’"))
 
-(defun ar-curvedsinglequote-parentized-atpt (&optional arg)
+(defun ar-curvedsinglequote-parentized-atpt ()
   "Curvedsinglequote PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "‘" "’")))
+  (interactive "*")
+  (ar-th-delim 'parentized "‘" "’"))
 
-(defun ar-curveddoublequote-braced-atpt (&optional arg)
+(defun ar-curveddoublequote-braced-atpt ()
   "Curveddoublequote BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'braced "“" "”"))
 
-(defun ar-curveddoublequote-symboled-atpt (&optional arg)
+(defun ar-curveddoublequote-symboled-atpt ()
   "Curveddoublequote SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'symboled "“" "”"))
 
-(defun ar-curveddoublequote-bracketed-atpt (&optional arg)
+(defun ar-curveddoublequote-bracketed-atpt ()
   "Curveddoublequote BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "“" "”"))
 
-(defun ar-curveddoublequote-lesserangled-atpt (&optional arg)
+(defun ar-curveddoublequote-lesserangled-atpt ()
   "Curveddoublequote LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "“" "”"))
 
-(defun ar-curveddoublequote-greaterangled-atpt (&optional arg)
+(defun ar-curveddoublequote-greaterangled-atpt ()
   "Curveddoublequote GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "“" "”"))
 
-(defun ar-curveddoublequote-curvedsinglequoted-atpt (&optional arg)
+(defun ar-curveddoublequote-curvedsinglequoted-atpt ()
   "Curveddoublequote CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "“" "”"))
 
-(defun ar-curveddoublequote-curveddoublequoted-atpt (&optional arg)
+(defun ar-curveddoublequote-curveddoublequoted-atpt ()
   "Curveddoublequote CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "“" "”"))
 
-(defun ar-curveddoublequote-parentized-atpt (&optional arg)
+(defun ar-curveddoublequote-parentized-atpt ()
   "Curveddoublequote PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "“" "”")))
+  (interactive "*")
+  (ar-th-delim 'parentized "“" "”"))
 
-(defun ar-parentize-braced-atpt (&optional arg)
+(defun ar-parentize-braced-atpt ()
   "Parentize BRACED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'braced "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'braced "(" ")"))
 
-(defun ar-parentize-symboled-atpt (&optional arg)
+(defun ar-parentize-symboled-atpt ()
   "Parentize SYMBOLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'symboled "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'symboled "(" ")"))
 
-(defun ar-parentize-bracketed-atpt (&optional arg)
+(defun ar-parentize-bracketed-atpt ()
   "Parentize BRACKETED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'bracketed "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'bracketed "(" ")"))
 
-(defun ar-parentize-lesserangled-atpt (&optional arg)
+(defun ar-parentize-lesserangled-atpt ()
   "Parentize LESSERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'lesserangled "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'lesserangled "(" ")"))
 
-(defun ar-parentize-greaterangled-atpt (&optional arg)
+(defun ar-parentize-greaterangled-atpt ()
   "Parentize GREATERANGLED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'greaterangled "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'greaterangled "(" ")"))
 
-(defun ar-parentize-curvedsinglequoted-atpt (&optional arg)
+(defun ar-parentize-curvedsinglequoted-atpt ()
   "Parentize CURVEDSINGLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curvedsinglequoted "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'curvedsinglequoted "(" ")"))
 
-(defun ar-parentize-curveddoublequoted-atpt (&optional arg)
+(defun ar-parentize-curveddoublequoted-atpt ()
   "Parentize CURVEDDOUBLEQUOTED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'curveddoublequoted "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'curveddoublequoted "(" ")"))
 
-(defun ar-parentize-parentized-atpt (&optional arg)
+(defun ar-parentize-parentized-atpt ()
   "Parentize PARENTIZED at point ARG times."
-  (interactive "*p")
-  (dotimes (i (or arg 1))
-    (ar-th-delim 'parentized "(" ")")))
+  (interactive "*")
+  (ar-th-delim 'parentized "(" ")"))
 
 ;; ar-thingatpt-utils-activ-passiv ar-paired-delimited-passiv-raw: end
 ;; ar-thingatpt-utils-nodelim-core ar-atpt-classes: start
@@ -5243,42 +4819,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-alnum-atpt (&optional no-delimiters)
   "Deletes alnum at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'alnum no-delimiters))
 
 (defun ar-kill-alnum-atpt (&optional no-delimiters)
   "Deletes alnum at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'alnum no-delimiters))
 
 (defun ar-forward-alnum-atpt (&optional no-delimiters)
   "Forward alnum at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'alnum no-delimiters))
 
 (defun ar-backward-alnum-atpt (&optional no-delimiters)
   "Backward alnum at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'alnum no-delimiters))
 
 (defun ar-triplequotedq-alnum-atpt (&optional no-delimiters)
   "Put triple doublequotes around alnum at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'alnum no-delimiters))
 
 (defun ar-triplequotesq-alnum-atpt (&optional no-delimiters)
   "Put triple singlequotes around alnum at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'alnum no-delimiters))
 
@@ -5337,42 +4913,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-alpha-atpt (&optional no-delimiters)
   "Deletes alpha at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'alpha no-delimiters))
 
 (defun ar-kill-alpha-atpt (&optional no-delimiters)
   "Deletes alpha at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'alpha no-delimiters))
 
 (defun ar-forward-alpha-atpt (&optional no-delimiters)
   "Forward alpha at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'alpha no-delimiters))
 
 (defun ar-backward-alpha-atpt (&optional no-delimiters)
   "Backward alpha at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'alpha no-delimiters))
 
 (defun ar-triplequotedq-alpha-atpt (&optional no-delimiters)
   "Put triple doublequotes around alpha at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'alpha no-delimiters))
 
 (defun ar-triplequotesq-alpha-atpt (&optional no-delimiters)
   "Put triple singlequotes around alpha at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'alpha no-delimiters))
 
@@ -5431,42 +5007,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-ascii-atpt (&optional no-delimiters)
   "Deletes ascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'ascii no-delimiters))
 
 (defun ar-kill-ascii-atpt (&optional no-delimiters)
   "Deletes ascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'ascii no-delimiters))
 
 (defun ar-forward-ascii-atpt (&optional no-delimiters)
   "Forward ascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'ascii no-delimiters))
 
 (defun ar-backward-ascii-atpt (&optional no-delimiters)
   "Backward ascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'ascii no-delimiters))
 
 (defun ar-triplequotedq-ascii-atpt (&optional no-delimiters)
   "Put triple doublequotes around ascii at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'ascii no-delimiters))
 
 (defun ar-triplequotesq-ascii-atpt (&optional no-delimiters)
   "Put triple singlequotes around ascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'ascii no-delimiters))
 
@@ -5525,42 +5101,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-blank-atpt (&optional no-delimiters)
   "Deletes blank at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'blank no-delimiters))
 
 (defun ar-kill-blank-atpt (&optional no-delimiters)
   "Deletes blank at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'blank no-delimiters))
 
 (defun ar-forward-blank-atpt (&optional no-delimiters)
   "Forward blank at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'blank no-delimiters))
 
 (defun ar-backward-blank-atpt (&optional no-delimiters)
   "Backward blank at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'blank no-delimiters))
 
 (defun ar-triplequotedq-blank-atpt (&optional no-delimiters)
   "Put triple doublequotes around blank at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'blank no-delimiters))
 
 (defun ar-triplequotesq-blank-atpt (&optional no-delimiters)
   "Put triple singlequotes around blank at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'blank no-delimiters))
 
@@ -5619,42 +5195,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-cntrl-atpt (&optional no-delimiters)
   "Deletes cntrl at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'cntrl no-delimiters))
 
 (defun ar-kill-cntrl-atpt (&optional no-delimiters)
   "Deletes cntrl at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'cntrl no-delimiters))
 
 (defun ar-forward-cntrl-atpt (&optional no-delimiters)
   "Forward cntrl at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'cntrl no-delimiters))
 
 (defun ar-backward-cntrl-atpt (&optional no-delimiters)
   "Backward cntrl at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'cntrl no-delimiters))
 
 (defun ar-triplequotedq-cntrl-atpt (&optional no-delimiters)
   "Put triple doublequotes around cntrl at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'cntrl no-delimiters))
 
 (defun ar-triplequotesq-cntrl-atpt (&optional no-delimiters)
   "Put triple singlequotes around cntrl at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'cntrl no-delimiters))
 
@@ -5713,42 +5289,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-digit-atpt (&optional no-delimiters)
   "Deletes digit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'digit no-delimiters))
 
 (defun ar-kill-digit-atpt (&optional no-delimiters)
   "Deletes digit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'digit no-delimiters))
 
 (defun ar-forward-digit-atpt (&optional no-delimiters)
   "Forward digit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'digit no-delimiters))
 
 (defun ar-backward-digit-atpt (&optional no-delimiters)
   "Backward digit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'digit no-delimiters))
 
 (defun ar-triplequotedq-digit-atpt (&optional no-delimiters)
   "Put triple doublequotes around digit at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'digit no-delimiters))
 
 (defun ar-triplequotesq-digit-atpt (&optional no-delimiters)
   "Put triple singlequotes around digit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'digit no-delimiters))
 
@@ -5807,42 +5383,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-graph-atpt (&optional no-delimiters)
   "Deletes graph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'graph no-delimiters))
 
 (defun ar-kill-graph-atpt (&optional no-delimiters)
   "Deletes graph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'graph no-delimiters))
 
 (defun ar-forward-graph-atpt (&optional no-delimiters)
   "Forward graph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'graph no-delimiters))
 
 (defun ar-backward-graph-atpt (&optional no-delimiters)
   "Backward graph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'graph no-delimiters))
 
 (defun ar-triplequotedq-graph-atpt (&optional no-delimiters)
   "Put triple doublequotes around graph at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'graph no-delimiters))
 
 (defun ar-triplequotesq-graph-atpt (&optional no-delimiters)
   "Put triple singlequotes around graph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'graph no-delimiters))
 
@@ -5901,42 +5477,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-lower-atpt (&optional no-delimiters)
   "Deletes lower at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'lower no-delimiters))
 
 (defun ar-kill-lower-atpt (&optional no-delimiters)
   "Deletes lower at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'lower no-delimiters))
 
 (defun ar-forward-lower-atpt (&optional no-delimiters)
   "Forward lower at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'lower no-delimiters))
 
 (defun ar-backward-lower-atpt (&optional no-delimiters)
   "Backward lower at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'lower no-delimiters))
 
 (defun ar-triplequotedq-lower-atpt (&optional no-delimiters)
   "Put triple doublequotes around lower at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'lower no-delimiters))
 
 (defun ar-triplequotesq-lower-atpt (&optional no-delimiters)
   "Put triple singlequotes around lower at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'lower no-delimiters))
 
@@ -5995,42 +5571,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-nonascii-atpt (&optional no-delimiters)
   "Deletes nonascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'nonascii no-delimiters))
 
 (defun ar-kill-nonascii-atpt (&optional no-delimiters)
   "Deletes nonascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'nonascii no-delimiters))
 
 (defun ar-forward-nonascii-atpt (&optional no-delimiters)
   "Forward nonascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'nonascii no-delimiters))
 
 (defun ar-backward-nonascii-atpt (&optional no-delimiters)
   "Backward nonascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'nonascii no-delimiters))
 
 (defun ar-triplequotedq-nonascii-atpt (&optional no-delimiters)
   "Put triple doublequotes around nonascii at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'nonascii no-delimiters))
 
 (defun ar-triplequotesq-nonascii-atpt (&optional no-delimiters)
   "Put triple singlequotes around nonascii at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'nonascii no-delimiters))
 
@@ -6089,42 +5665,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-print-atpt (&optional no-delimiters)
   "Deletes print at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'print no-delimiters))
 
 (defun ar-kill-print-atpt (&optional no-delimiters)
   "Deletes print at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'print no-delimiters))
 
 (defun ar-forward-print-atpt (&optional no-delimiters)
   "Forward print at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'print no-delimiters))
 
 (defun ar-backward-print-atpt (&optional no-delimiters)
   "Backward print at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'print no-delimiters))
 
 (defun ar-triplequotedq-print-atpt (&optional no-delimiters)
   "Put triple doublequotes around print at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'print no-delimiters))
 
 (defun ar-triplequotesq-print-atpt (&optional no-delimiters)
   "Put triple singlequotes around print at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'print no-delimiters))
 
@@ -6183,42 +5759,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-punct-atpt (&optional no-delimiters)
   "Deletes punct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'punct no-delimiters))
 
 (defun ar-kill-punct-atpt (&optional no-delimiters)
   "Deletes punct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'punct no-delimiters))
 
 (defun ar-forward-punct-atpt (&optional no-delimiters)
   "Forward punct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'punct no-delimiters))
 
 (defun ar-backward-punct-atpt (&optional no-delimiters)
   "Backward punct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'punct no-delimiters))
 
 (defun ar-triplequotedq-punct-atpt (&optional no-delimiters)
   "Put triple doublequotes around punct at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'punct no-delimiters))
 
 (defun ar-triplequotesq-punct-atpt (&optional no-delimiters)
   "Put triple singlequotes around punct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'punct no-delimiters))
 
@@ -6277,42 +5853,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-space-atpt (&optional no-delimiters)
   "Deletes space at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'space no-delimiters))
 
 (defun ar-kill-space-atpt (&optional no-delimiters)
   "Deletes space at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'space no-delimiters))
 
 (defun ar-forward-space-atpt (&optional no-delimiters)
   "Forward space at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'space no-delimiters))
 
 (defun ar-backward-space-atpt (&optional no-delimiters)
   "Backward space at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'space no-delimiters))
 
 (defun ar-triplequotedq-space-atpt (&optional no-delimiters)
   "Put triple doublequotes around space at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'space no-delimiters))
 
 (defun ar-triplequotesq-space-atpt (&optional no-delimiters)
   "Put triple singlequotes around space at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'space no-delimiters))
 
@@ -6371,42 +5947,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-upper-atpt (&optional no-delimiters)
   "Deletes upper at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'upper no-delimiters))
 
 (defun ar-kill-upper-atpt (&optional no-delimiters)
   "Deletes upper at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'upper no-delimiters))
 
 (defun ar-forward-upper-atpt (&optional no-delimiters)
   "Forward upper at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'upper no-delimiters))
 
 (defun ar-backward-upper-atpt (&optional no-delimiters)
   "Backward upper at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'upper no-delimiters))
 
 (defun ar-triplequotedq-upper-atpt (&optional no-delimiters)
   "Put triple doublequotes around upper at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'upper no-delimiters))
 
 (defun ar-triplequotesq-upper-atpt (&optional no-delimiters)
   "Put triple singlequotes around upper at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'upper no-delimiters))
 
@@ -6465,42 +6041,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-xdigit-atpt (&optional no-delimiters)
   "Deletes xdigit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'xdigit no-delimiters))
 
 (defun ar-kill-xdigit-atpt (&optional no-delimiters)
   "Deletes xdigit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'xdigit no-delimiters))
 
 (defun ar-forward-xdigit-atpt (&optional no-delimiters)
   "Forward xdigit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'xdigit no-delimiters))
 
 (defun ar-backward-xdigit-atpt (&optional no-delimiters)
   "Backward xdigit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'xdigit no-delimiters))
 
 (defun ar-triplequotedq-xdigit-atpt (&optional no-delimiters)
   "Put triple doublequotes around xdigit at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'xdigit no-delimiters))
 
 (defun ar-triplequotesq-xdigit-atpt (&optional no-delimiters)
   "Put triple singlequotes around xdigit at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'xdigit no-delimiters))
 
@@ -6561,42 +6137,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-greateranglednested-atpt (&optional no-delimiters)
   "Deletes greateranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'greateranglednested no-delimiters))
 
 (defun ar-kill-greateranglednested-atpt (&optional no-delimiters)
   "Deletes greateranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'greateranglednested no-delimiters))
 
 (defun ar-forward-greateranglednested-atpt (&optional no-delimiters)
   "Forward greateranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'greateranglednested no-delimiters))
 
 (defun ar-backward-greateranglednested-atpt (&optional no-delimiters)
   "Backward greateranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'greateranglednested no-delimiters))
 
 (defun ar-triplequotedq-greateranglednested-atpt (&optional no-delimiters)
   "Put triple doublequotes around greateranglednested at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'greateranglednested no-delimiters))
 
 (defun ar-triplequotesq-greateranglednested-atpt (&optional no-delimiters)
   "Put triple singlequotes around greateranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'greateranglednested no-delimiters))
 
@@ -6655,42 +6231,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-lesseranglednested-atpt (&optional no-delimiters)
   "Deletes lesseranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'lesseranglednested no-delimiters))
 
 (defun ar-kill-lesseranglednested-atpt (&optional no-delimiters)
   "Deletes lesseranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'lesseranglednested no-delimiters))
 
 (defun ar-forward-lesseranglednested-atpt (&optional no-delimiters)
   "Forward lesseranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'lesseranglednested no-delimiters))
 
 (defun ar-backward-lesseranglednested-atpt (&optional no-delimiters)
   "Backward lesseranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'lesseranglednested no-delimiters))
 
 (defun ar-triplequotedq-lesseranglednested-atpt (&optional no-delimiters)
   "Put triple doublequotes around lesseranglednested at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'lesseranglednested no-delimiters))
 
 (defun ar-triplequotesq-lesseranglednested-atpt (&optional no-delimiters)
   "Put triple singlequotes around lesseranglednested at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'lesseranglednested no-delimiters))
 
@@ -6749,42 +6325,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-buffer-atpt (&optional no-delimiters)
   "Deletes buffer at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'buffer no-delimiters))
 
 (defun ar-kill-buffer-atpt (&optional no-delimiters)
   "Deletes buffer at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'buffer no-delimiters))
 
 (defun ar-forward-buffer-atpt (&optional no-delimiters)
   "Forward buffer at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'buffer no-delimiters))
 
 (defun ar-backward-buffer-atpt (&optional no-delimiters)
   "Backward buffer at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'buffer no-delimiters))
 
 (defun ar-triplequotedq-buffer-atpt (&optional no-delimiters)
   "Put triple doublequotes around buffer at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'buffer no-delimiters))
 
 (defun ar-triplequotesq-buffer-atpt (&optional no-delimiters)
   "Put triple singlequotes around buffer at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'buffer no-delimiters))
 
@@ -6843,42 +6419,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-char-atpt (&optional no-delimiters)
   "Deletes char at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'char no-delimiters))
 
 (defun ar-kill-char-atpt (&optional no-delimiters)
   "Deletes char at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'char no-delimiters))
 
 (defun ar-forward-char-atpt (&optional no-delimiters)
   "Forward char at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'char no-delimiters))
 
 (defun ar-backward-char-atpt (&optional no-delimiters)
   "Backward char at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'char no-delimiters))
 
 (defun ar-triplequotedq-char-atpt (&optional no-delimiters)
   "Put triple doublequotes around char at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'char no-delimiters))
 
 (defun ar-triplequotesq-char-atpt (&optional no-delimiters)
   "Put triple singlequotes around char at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'char no-delimiters))
 
@@ -6937,42 +6513,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-comment-atpt (&optional no-delimiters)
   "Deletes comment at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'comment no-delimiters))
 
 (defun ar-kill-comment-atpt (&optional no-delimiters)
   "Deletes comment at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'comment no-delimiters))
 
 (defun ar-forward-comment-atpt (&optional no-delimiters)
   "Forward comment at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'comment no-delimiters))
 
 (defun ar-backward-comment-atpt (&optional no-delimiters)
   "Backward comment at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'comment no-delimiters))
 
 (defun ar-triplequotedq-comment-atpt (&optional no-delimiters)
   "Put triple doublequotes around comment at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'comment no-delimiters))
 
 (defun ar-triplequotesq-comment-atpt (&optional no-delimiters)
   "Put triple singlequotes around comment at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'comment no-delimiters))
 
@@ -7031,42 +6607,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-csv-atpt (&optional no-delimiters)
   "Deletes csv at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'csv no-delimiters))
 
 (defun ar-kill-csv-atpt (&optional no-delimiters)
   "Deletes csv at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'csv no-delimiters))
 
 (defun ar-forward-csv-atpt (&optional no-delimiters)
   "Forward csv at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'csv no-delimiters))
 
 (defun ar-backward-csv-atpt (&optional no-delimiters)
   "Backward csv at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'csv no-delimiters))
 
 (defun ar-triplequotedq-csv-atpt (&optional no-delimiters)
   "Put triple doublequotes around csv at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'csv no-delimiters))
 
 (defun ar-triplequotesq-csv-atpt (&optional no-delimiters)
   "Put triple singlequotes around csv at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'csv no-delimiters))
 
@@ -7125,42 +6701,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-date-atpt (&optional no-delimiters)
   "Deletes date at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'date no-delimiters))
 
 (defun ar-kill-date-atpt (&optional no-delimiters)
   "Deletes date at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'date no-delimiters))
 
 (defun ar-forward-date-atpt (&optional no-delimiters)
   "Forward date at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'date no-delimiters))
 
 (defun ar-backward-date-atpt (&optional no-delimiters)
   "Backward date at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'date no-delimiters))
 
 (defun ar-triplequotedq-date-atpt (&optional no-delimiters)
   "Put triple doublequotes around date at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'date no-delimiters))
 
 (defun ar-triplequotesq-date-atpt (&optional no-delimiters)
   "Put triple singlequotes around date at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'date no-delimiters))
 
@@ -7219,42 +6795,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-delimited-atpt (&optional no-delimiters)
   "Deletes delimited at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'delimited no-delimiters))
 
 (defun ar-kill-delimited-atpt (&optional no-delimiters)
   "Deletes delimited at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'delimited no-delimiters))
 
 (defun ar-forward-delimited-atpt (&optional no-delimiters)
   "Forward delimited at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'delimited no-delimiters))
 
 (defun ar-backward-delimited-atpt (&optional no-delimiters)
   "Backward delimited at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'delimited no-delimiters))
 
 (defun ar-triplequotedq-delimited-atpt (&optional no-delimiters)
   "Put triple doublequotes around delimited at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'delimited no-delimiters))
 
 (defun ar-triplequotesq-delimited-atpt (&optional no-delimiters)
   "Put triple singlequotes around delimited at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'delimited no-delimiters))
 
@@ -7313,42 +6889,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-email-atpt (&optional no-delimiters)
   "Deletes email at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'email no-delimiters))
 
 (defun ar-kill-email-atpt (&optional no-delimiters)
   "Deletes email at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'email no-delimiters))
 
 (defun ar-forward-email-atpt (&optional no-delimiters)
   "Forward email at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'email no-delimiters))
 
 (defun ar-backward-email-atpt (&optional no-delimiters)
   "Backward email at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'email no-delimiters))
 
 (defun ar-triplequotedq-email-atpt (&optional no-delimiters)
   "Put triple doublequotes around email at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'email no-delimiters))
 
 (defun ar-triplequotesq-email-atpt (&optional no-delimiters)
   "Put triple singlequotes around email at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'email no-delimiters))
 
@@ -7407,42 +6983,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-filename-atpt (&optional no-delimiters)
   "Deletes filename at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'filename no-delimiters))
 
 (defun ar-kill-filename-atpt (&optional no-delimiters)
   "Deletes filename at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'filename no-delimiters))
 
 (defun ar-forward-filename-atpt (&optional no-delimiters)
   "Forward filename at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'filename no-delimiters))
 
 (defun ar-backward-filename-atpt (&optional no-delimiters)
   "Backward filename at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'filename no-delimiters))
 
 (defun ar-triplequotedq-filename-atpt (&optional no-delimiters)
   "Put triple doublequotes around filename at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'filename no-delimiters))
 
 (defun ar-triplequotesq-filename-atpt (&optional no-delimiters)
   "Put triple singlequotes around filename at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'filename no-delimiters))
 
@@ -7501,42 +7077,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-filenamenondirectory-atpt (&optional no-delimiters)
   "Deletes filenamenondirectory at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'filenamenondirectory no-delimiters))
 
 (defun ar-kill-filenamenondirectory-atpt (&optional no-delimiters)
   "Deletes filenamenondirectory at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'filenamenondirectory no-delimiters))
 
 (defun ar-forward-filenamenondirectory-atpt (&optional no-delimiters)
   "Forward filenamenondirectory at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'filenamenondirectory no-delimiters))
 
 (defun ar-backward-filenamenondirectory-atpt (&optional no-delimiters)
   "Backward filenamenondirectory at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'filenamenondirectory no-delimiters))
 
 (defun ar-triplequotedq-filenamenondirectory-atpt (&optional no-delimiters)
   "Put triple doublequotes around filenamenondirectory at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'filenamenondirectory no-delimiters))
 
 (defun ar-triplequotesq-filenamenondirectory-atpt (&optional no-delimiters)
   "Put triple singlequotes around filenamenondirectory at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'filenamenondirectory no-delimiters))
 
@@ -7595,42 +7171,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-float-atpt (&optional no-delimiters)
   "Deletes float at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'float no-delimiters))
 
 (defun ar-kill-float-atpt (&optional no-delimiters)
   "Deletes float at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'float no-delimiters))
 
 (defun ar-forward-float-atpt (&optional no-delimiters)
   "Forward float at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'float no-delimiters))
 
 (defun ar-backward-float-atpt (&optional no-delimiters)
   "Backward float at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'float no-delimiters))
 
 (defun ar-triplequotedq-float-atpt (&optional no-delimiters)
   "Put triple doublequotes around float at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'float no-delimiters))
 
 (defun ar-triplequotesq-float-atpt (&optional no-delimiters)
   "Put triple singlequotes around float at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'float no-delimiters))
 
@@ -7689,42 +7265,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-function-atpt (&optional no-delimiters)
   "Deletes function at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'function no-delimiters))
 
 (defun ar-kill-function-atpt (&optional no-delimiters)
   "Deletes function at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'function no-delimiters))
 
 (defun ar-forward-function-atpt (&optional no-delimiters)
   "Forward function at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'function no-delimiters))
 
 (defun ar-backward-function-atpt (&optional no-delimiters)
   "Backward function at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'function no-delimiters))
 
 (defun ar-triplequotedq-function-atpt (&optional no-delimiters)
   "Put triple doublequotes around function at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'function no-delimiters))
 
 (defun ar-triplequotesq-function-atpt (&optional no-delimiters)
   "Put triple singlequotes around function at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'function no-delimiters))
 
@@ -7783,42 +7359,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-ip-atpt (&optional no-delimiters)
   "Deletes ip at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'ip no-delimiters))
 
 (defun ar-kill-ip-atpt (&optional no-delimiters)
   "Deletes ip at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'ip no-delimiters))
 
 (defun ar-forward-ip-atpt (&optional no-delimiters)
   "Forward ip at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'ip no-delimiters))
 
 (defun ar-backward-ip-atpt (&optional no-delimiters)
   "Backward ip at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'ip no-delimiters))
 
 (defun ar-triplequotedq-ip-atpt (&optional no-delimiters)
   "Put triple doublequotes around ip at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'ip no-delimiters))
 
 (defun ar-triplequotesq-ip-atpt (&optional no-delimiters)
   "Put triple singlequotes around ip at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'ip no-delimiters))
 
@@ -7877,42 +7453,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-isbn-atpt (&optional no-delimiters)
   "Deletes isbn at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'isbn no-delimiters))
 
 (defun ar-kill-isbn-atpt (&optional no-delimiters)
   "Deletes isbn at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'isbn no-delimiters))
 
 (defun ar-forward-isbn-atpt (&optional no-delimiters)
   "Forward isbn at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'isbn no-delimiters))
 
 (defun ar-backward-isbn-atpt (&optional no-delimiters)
   "Backward isbn at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'isbn no-delimiters))
 
 (defun ar-triplequotedq-isbn-atpt (&optional no-delimiters)
   "Put triple doublequotes around isbn at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'isbn no-delimiters))
 
 (defun ar-triplequotesq-isbn-atpt (&optional no-delimiters)
   "Put triple singlequotes around isbn at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'isbn no-delimiters))
 
@@ -7971,42 +7547,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-line-atpt (&optional no-delimiters)
   "Deletes line at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'line no-delimiters))
 
 (defun ar-kill-line-atpt (&optional no-delimiters)
   "Deletes line at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'line no-delimiters))
 
 (defun ar-forward-line-atpt (&optional no-delimiters)
   "Forward line at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'line no-delimiters))
 
 (defun ar-backward-line-atpt (&optional no-delimiters)
   "Backward line at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'line no-delimiters))
 
 (defun ar-triplequotedq-line-atpt (&optional no-delimiters)
   "Put triple doublequotes around line at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'line no-delimiters))
 
 (defun ar-triplequotesq-line-atpt (&optional no-delimiters)
   "Put triple singlequotes around line at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'line no-delimiters))
 
@@ -8065,42 +7641,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-list-atpt (&optional no-delimiters)
   "Deletes list at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'list no-delimiters))
 
 (defun ar-kill-list-atpt (&optional no-delimiters)
   "Deletes list at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'list no-delimiters))
 
 (defun ar-forward-list-atpt (&optional no-delimiters)
   "Forward list at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'list no-delimiters))
 
 (defun ar-backward-list-atpt (&optional no-delimiters)
   "Backward list at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'list no-delimiters))
 
 (defun ar-triplequotedq-list-atpt (&optional no-delimiters)
   "Put triple doublequotes around list at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'list no-delimiters))
 
 (defun ar-triplequotesq-list-atpt (&optional no-delimiters)
   "Put triple singlequotes around list at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'list no-delimiters))
 
@@ -8159,42 +7735,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-name-atpt (&optional no-delimiters)
   "Deletes name at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'name no-delimiters))
 
 (defun ar-kill-name-atpt (&optional no-delimiters)
   "Deletes name at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'name no-delimiters))
 
 (defun ar-forward-name-atpt (&optional no-delimiters)
   "Forward name at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'name no-delimiters))
 
 (defun ar-backward-name-atpt (&optional no-delimiters)
   "Backward name at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'name no-delimiters))
 
 (defun ar-triplequotedq-name-atpt (&optional no-delimiters)
   "Put triple doublequotes around name at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'name no-delimiters))
 
 (defun ar-triplequotesq-name-atpt (&optional no-delimiters)
   "Put triple singlequotes around name at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'name no-delimiters))
 
@@ -8253,42 +7829,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-number-atpt (&optional no-delimiters)
   "Deletes number at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'number no-delimiters))
 
 (defun ar-kill-number-atpt (&optional no-delimiters)
   "Deletes number at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'number no-delimiters))
 
 (defun ar-forward-number-atpt (&optional no-delimiters)
   "Forward number at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'number no-delimiters))
 
 (defun ar-backward-number-atpt (&optional no-delimiters)
   "Backward number at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'number no-delimiters))
 
 (defun ar-triplequotedq-number-atpt (&optional no-delimiters)
   "Put triple doublequotes around number at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'number no-delimiters))
 
 (defun ar-triplequotesq-number-atpt (&optional no-delimiters)
   "Put triple singlequotes around number at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'number no-delimiters))
 
@@ -8347,42 +7923,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-page-atpt (&optional no-delimiters)
   "Deletes page at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'page no-delimiters))
 
 (defun ar-kill-page-atpt (&optional no-delimiters)
   "Deletes page at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'page no-delimiters))
 
 (defun ar-forward-page-atpt (&optional no-delimiters)
   "Forward page at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'page no-delimiters))
 
 (defun ar-backward-page-atpt (&optional no-delimiters)
   "Backward page at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'page no-delimiters))
 
 (defun ar-triplequotedq-page-atpt (&optional no-delimiters)
   "Put triple doublequotes around page at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'page no-delimiters))
 
 (defun ar-triplequotesq-page-atpt (&optional no-delimiters)
   "Put triple singlequotes around page at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'page no-delimiters))
 
@@ -8441,42 +8017,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-paragraph-atpt (&optional no-delimiters)
   "Deletes paragraph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'paragraph no-delimiters))
 
 (defun ar-kill-paragraph-atpt (&optional no-delimiters)
   "Deletes paragraph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'paragraph no-delimiters))
 
 (defun ar-forward-paragraph-atpt (&optional no-delimiters)
   "Forward paragraph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'paragraph no-delimiters))
 
 (defun ar-backward-paragraph-atpt (&optional no-delimiters)
   "Backward paragraph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'paragraph no-delimiters))
 
 (defun ar-triplequotedq-paragraph-atpt (&optional no-delimiters)
   "Put triple doublequotes around paragraph at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'paragraph no-delimiters))
 
 (defun ar-triplequotesq-paragraph-atpt (&optional no-delimiters)
   "Put triple singlequotes around paragraph at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'paragraph no-delimiters))
 
@@ -8535,42 +8111,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-phone-atpt (&optional no-delimiters)
   "Deletes phone at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'phone no-delimiters))
 
 (defun ar-kill-phone-atpt (&optional no-delimiters)
   "Deletes phone at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'phone no-delimiters))
 
 (defun ar-forward-phone-atpt (&optional no-delimiters)
   "Forward phone at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'phone no-delimiters))
 
 (defun ar-backward-phone-atpt (&optional no-delimiters)
   "Backward phone at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'phone no-delimiters))
 
 (defun ar-triplequotedq-phone-atpt (&optional no-delimiters)
   "Put triple doublequotes around phone at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'phone no-delimiters))
 
 (defun ar-triplequotesq-phone-atpt (&optional no-delimiters)
   "Put triple singlequotes around phone at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'phone no-delimiters))
 
@@ -8629,42 +8205,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-sentence-atpt (&optional no-delimiters)
   "Deletes sentence at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'sentence no-delimiters))
 
 (defun ar-kill-sentence-atpt (&optional no-delimiters)
   "Deletes sentence at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'sentence no-delimiters))
 
 (defun ar-forward-sentence-atpt (&optional no-delimiters)
   "Forward sentence at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'sentence no-delimiters))
 
 (defun ar-backward-sentence-atpt (&optional no-delimiters)
   "Backward sentence at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'sentence no-delimiters))
 
 (defun ar-triplequotedq-sentence-atpt (&optional no-delimiters)
   "Put triple doublequotes around sentence at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'sentence no-delimiters))
 
 (defun ar-triplequotesq-sentence-atpt (&optional no-delimiters)
   "Put triple singlequotes around sentence at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'sentence no-delimiters))
 
@@ -8723,42 +8299,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-sexp-atpt (&optional no-delimiters)
   "Deletes sexp at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'sexp no-delimiters))
 
 (defun ar-kill-sexp-atpt (&optional no-delimiters)
   "Deletes sexp at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'sexp no-delimiters))
 
 (defun ar-forward-sexp-atpt (&optional no-delimiters)
   "Forward sexp at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'sexp no-delimiters))
 
 (defun ar-backward-sexp-atpt (&optional no-delimiters)
   "Backward sexp at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'sexp no-delimiters))
 
 (defun ar-triplequotedq-sexp-atpt (&optional no-delimiters)
   "Put triple doublequotes around sexp at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'sexp no-delimiters))
 
 (defun ar-triplequotesq-sexp-atpt (&optional no-delimiters)
   "Put triple singlequotes around sexp at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'sexp no-delimiters))
 
@@ -8817,42 +8393,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-shstruct-atpt (&optional no-delimiters)
   "Deletes shstruct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'shstruct no-delimiters))
 
 (defun ar-kill-shstruct-atpt (&optional no-delimiters)
   "Deletes shstruct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'shstruct no-delimiters))
 
 (defun ar-forward-shstruct-atpt (&optional no-delimiters)
   "Forward shstruct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'shstruct no-delimiters))
 
 (defun ar-backward-shstruct-atpt (&optional no-delimiters)
   "Backward shstruct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'shstruct no-delimiters))
 
 (defun ar-triplequotedq-shstruct-atpt (&optional no-delimiters)
   "Put triple doublequotes around shstruct at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'shstruct no-delimiters))
 
 (defun ar-triplequotesq-shstruct-atpt (&optional no-delimiters)
   "Put triple singlequotes around shstruct at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'shstruct no-delimiters))
 
@@ -8911,42 +8487,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-symbol-atpt (&optional no-delimiters)
   "Deletes symbol at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'symbol no-delimiters))
 
 (defun ar-kill-symbol-atpt (&optional no-delimiters)
   "Deletes symbol at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'symbol no-delimiters))
 
 (defun ar-forward-symbol-atpt (&optional no-delimiters)
   "Forward symbol at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'symbol no-delimiters))
 
 (defun ar-backward-symbol-atpt (&optional no-delimiters)
   "Backward symbol at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'symbol no-delimiters))
 
 (defun ar-triplequotedq-symbol-atpt (&optional no-delimiters)
   "Put triple doublequotes around symbol at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'symbol no-delimiters))
 
 (defun ar-triplequotesq-symbol-atpt (&optional no-delimiters)
   "Put triple singlequotes around symbol at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'symbol no-delimiters))
 
@@ -9005,42 +8581,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-url-atpt (&optional no-delimiters)
   "Deletes url at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'url no-delimiters))
 
 (defun ar-kill-url-atpt (&optional no-delimiters)
   "Deletes url at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'url no-delimiters))
 
 (defun ar-forward-url-atpt (&optional no-delimiters)
   "Forward url at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'url no-delimiters))
 
 (defun ar-backward-url-atpt (&optional no-delimiters)
   "Backward url at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'url no-delimiters))
 
 (defun ar-triplequotedq-url-atpt (&optional no-delimiters)
   "Put triple doublequotes around url at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'url no-delimiters))
 
 (defun ar-triplequotesq-url-atpt (&optional no-delimiters)
   "Put triple singlequotes around url at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'url no-delimiters))
 
@@ -9099,42 +8675,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-word-atpt (&optional no-delimiters)
   "Deletes word at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'word no-delimiters))
 
 (defun ar-kill-word-atpt (&optional no-delimiters)
   "Deletes word at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'word no-delimiters))
 
 (defun ar-forward-word-atpt (&optional no-delimiters)
   "Forward word at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'word no-delimiters))
 
 (defun ar-backward-word-atpt (&optional no-delimiters)
   "Backward word at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'word no-delimiters))
 
 (defun ar-triplequotedq-word-atpt (&optional no-delimiters)
   "Put triple doublequotes around word at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'word no-delimiters))
 
 (defun ar-triplequotesq-word-atpt (&optional no-delimiters)
   "Put triple singlequotes around word at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'word no-delimiters))
 
@@ -9193,42 +8769,42 @@ With \\[universal-argument] strip delimiters if suitable"
 (defun ar-delete-wordalphaonly-atpt (&optional no-delimiters)
   "Deletes wordalphaonly at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*p")
   (ar-th-delete 'wordalphaonly no-delimiters))
 
 (defun ar-kill-wordalphaonly-atpt (&optional no-delimiters)
   "Deletes wordalphaonly at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'wordalphaonly no-delimiters))
 
 (defun ar-forward-wordalphaonly-atpt (&optional no-delimiters)
   "Forward wordalphaonly at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-forward 'wordalphaonly no-delimiters))
 
 (defun ar-backward-wordalphaonly-atpt (&optional no-delimiters)
   "Backward wordalphaonly at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backward 'wordalphaonly no-delimiters))
 
 (defun ar-triplequotedq-wordalphaonly-atpt (&optional no-delimiters)
   "Put triple doublequotes around wordalphaonly at point as string if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotedq 'wordalphaonly no-delimiters))
 
 (defun ar-triplequotesq-wordalphaonly-atpt (&optional no-delimiters)
   "Put triple singlequotes around wordalphaonly at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplequotesq 'wordalphaonly no-delimiters))
 
@@ -12378,9 +11954,9 @@ Returns beginning position of ALNUM "
 
 (defun ar-sort-alnum-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts alnums in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -12478,9 +12054,9 @@ Returns beginning position of ALPHA "
 
 (defun ar-sort-alpha-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts alphas in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -12578,9 +12154,9 @@ Returns beginning position of ASCII "
 
 (defun ar-sort-ascii-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts asciis in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -12678,9 +12254,9 @@ Returns beginning position of BLANK "
 
 (defun ar-sort-blank-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts blanks in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -12778,9 +12354,9 @@ Returns beginning position of CNTRL "
 
 (defun ar-sort-cntrl-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts cntrls in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -12878,9 +12454,9 @@ Returns beginning position of DIGIT "
 
 (defun ar-sort-digit-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts digits in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -12978,9 +12554,9 @@ Returns beginning position of GRAPH "
 
 (defun ar-sort-graph-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts graphs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13078,9 +12654,9 @@ Returns beginning position of LOWER "
 
 (defun ar-sort-lower-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts lowers in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13178,9 +12754,9 @@ Returns beginning position of NONASCII "
 
 (defun ar-sort-nonascii-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts nonasciis in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13278,9 +12854,9 @@ Returns beginning position of PRINT "
 
 (defun ar-sort-print-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts prints in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13378,9 +12954,9 @@ Returns beginning position of PUNCT "
 
 (defun ar-sort-punct-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts puncts in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13478,9 +13054,9 @@ Returns beginning position of SPACE "
 
 (defun ar-sort-space-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts spaces in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13578,9 +13154,9 @@ Returns beginning position of UPPER "
 
 (defun ar-sort-upper-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts uppers in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13678,9 +13254,9 @@ Returns beginning position of XDIGIT "
 
 (defun ar-sort-xdigit-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts xdigits in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13705,20 +13281,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'backslashed no-delimiters))
 
 (defun ar-bounds-of-backslashed-atpt (&optional no-delimiters)
   "Returns a list, borders of backslashed if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'backslashed no-delimiters))
 
 (defun ar-backslashed-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position backslashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -13727,7 +13303,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-backslashed-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of backslashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'backslashed no-delimiters))
@@ -13735,35 +13311,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-backslashed-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class backslashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'backslashed no-delimiters))
 
 (defun ar-end-of-backslashed-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class backslashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'backslashed no-delimiters))
 
 (defun ar-length-of-backslashed-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class backslashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'backslashed no-delimiters))
 
 (defun ar-copy-backslashed-atpt (&optional no-delimiters)
   "Returns a copy of backslashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'backslashed no-delimiters))
 
 (defun ar-delete-backslashed-atpt (&optional no-delimiters)
   "Deletes backslashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'backslashed no-delimiters))
 
@@ -13778,41 +13354,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"backslashed\" in region.
   Returns blok or nil if no backslashed at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'backslashed no-delimiters))
 
 (defun ar-doubleslash-backslashed-atpt (&optional no-delimiters)
   "Puts doubled slashes around backslashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'backslashed no-delimiters))
 
 (defun ar-backslashparen-backslashed-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around backslashed at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'backslashed no-delimiters))
 
 (defun ar-comment-backslashed-atpt (&optional no-delimiters)
   "Comments backslashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'backslashed no-delimiters))
 
 (defun ar-commatize-backslashed-atpt (&optional no-delimiters)
   "Put a comma after backslashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'backslashed no-delimiters))
 
 (defun ar-mark-backslashed-atpt (&optional no-delimiters)
   "Marks backslashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'backslashed))
 
@@ -13839,7 +13415,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-backslashed-atpt (&optional no-delimiters)
   "Kills backslashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'backslashed no-delimiters))
 
@@ -13885,15 +13461,15 @@ Returns beginning position of backslashed "
 (defun ar-transpose-backslashed-atpt (&optional no-delimiters)
   "Transposes backslashed at point with backslashed before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'backslashed no-delimiters))
 
 (defun ar-sort-backslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts backslasheds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -13915,20 +13491,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'backticked no-delimiters))
 
 (defun ar-bounds-of-backticked-atpt (&optional no-delimiters)
   "Returns a list, borders of backticked if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'backticked no-delimiters))
 
 (defun ar-backticked-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position backticked at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -13937,7 +13513,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-backticked-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of backticked at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'backticked no-delimiters))
@@ -13945,35 +13521,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-backticked-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class backticked at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'backticked no-delimiters))
 
 (defun ar-end-of-backticked-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class backticked at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'backticked no-delimiters))
 
 (defun ar-length-of-backticked-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class backticked at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'backticked no-delimiters))
 
 (defun ar-copy-backticked-atpt (&optional no-delimiters)
   "Returns a copy of backticked at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'backticked no-delimiters))
 
 (defun ar-delete-backticked-atpt (&optional no-delimiters)
   "Deletes backticked at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'backticked no-delimiters))
 
@@ -13988,41 +13564,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"backticked\" in region.
   Returns blok or nil if no backticked at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'backticked no-delimiters))
 
 (defun ar-doubleslash-backticked-atpt (&optional no-delimiters)
   "Puts doubled slashes around backticked at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'backticked no-delimiters))
 
 (defun ar-backslashparen-backticked-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around backticked at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'backticked no-delimiters))
 
 (defun ar-comment-backticked-atpt (&optional no-delimiters)
   "Comments backticked at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'backticked no-delimiters))
 
 (defun ar-commatize-backticked-atpt (&optional no-delimiters)
   "Put a comma after backticked at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'backticked no-delimiters))
 
 (defun ar-mark-backticked-atpt (&optional no-delimiters)
   "Marks backticked at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'backticked))
 
@@ -14049,7 +13625,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-backticked-atpt (&optional no-delimiters)
   "Kills backticked at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'backticked no-delimiters))
 
@@ -14095,15 +13671,15 @@ Returns beginning position of backticked "
 (defun ar-transpose-backticked-atpt (&optional no-delimiters)
   "Transposes backticked at point with backticked before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'backticked no-delimiters))
 
 (defun ar-sort-backticked-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts backtickeds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -14125,20 +13701,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'coloned no-delimiters))
 
 (defun ar-bounds-of-coloned-atpt (&optional no-delimiters)
   "Returns a list, borders of coloned if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'coloned no-delimiters))
 
 (defun ar-coloned-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position coloned at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -14147,7 +13723,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-coloned-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of coloned at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'coloned no-delimiters))
@@ -14155,35 +13731,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-coloned-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class coloned at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'coloned no-delimiters))
 
 (defun ar-end-of-coloned-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class coloned at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'coloned no-delimiters))
 
 (defun ar-length-of-coloned-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class coloned at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'coloned no-delimiters))
 
 (defun ar-copy-coloned-atpt (&optional no-delimiters)
   "Returns a copy of coloned at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'coloned no-delimiters))
 
 (defun ar-delete-coloned-atpt (&optional no-delimiters)
   "Deletes coloned at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'coloned no-delimiters))
 
@@ -14198,41 +13774,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"coloned\" in region.
   Returns blok or nil if no coloned at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'coloned no-delimiters))
 
 (defun ar-doubleslash-coloned-atpt (&optional no-delimiters)
   "Puts doubled slashes around coloned at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'coloned no-delimiters))
 
 (defun ar-backslashparen-coloned-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around coloned at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'coloned no-delimiters))
 
 (defun ar-comment-coloned-atpt (&optional no-delimiters)
   "Comments coloned at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'coloned no-delimiters))
 
 (defun ar-commatize-coloned-atpt (&optional no-delimiters)
   "Put a comma after coloned at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'coloned no-delimiters))
 
 (defun ar-mark-coloned-atpt (&optional no-delimiters)
   "Marks coloned at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'coloned))
 
@@ -14259,7 +13835,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-coloned-atpt (&optional no-delimiters)
   "Kills coloned at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'coloned no-delimiters))
 
@@ -14305,15 +13881,15 @@ Returns beginning position of coloned "
 (defun ar-transpose-coloned-atpt (&optional no-delimiters)
   "Transposes coloned at point with coloned before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'coloned no-delimiters))
 
 (defun ar-sort-coloned-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts coloneds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -14335,20 +13911,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'dollared no-delimiters))
 
 (defun ar-bounds-of-dollared-atpt (&optional no-delimiters)
   "Returns a list, borders of dollared if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'dollared no-delimiters))
 
 (defun ar-dollared-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position dollared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -14357,7 +13933,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-dollared-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of dollared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'dollared no-delimiters))
@@ -14365,35 +13941,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-dollared-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class dollared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'dollared no-delimiters))
 
 (defun ar-end-of-dollared-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class dollared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'dollared no-delimiters))
 
 (defun ar-length-of-dollared-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class dollared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'dollared no-delimiters))
 
 (defun ar-copy-dollared-atpt (&optional no-delimiters)
   "Returns a copy of dollared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'dollared no-delimiters))
 
 (defun ar-delete-dollared-atpt (&optional no-delimiters)
   "Deletes dollared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'dollared no-delimiters))
 
@@ -14408,41 +13984,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"dollared\" in region.
   Returns blok or nil if no dollared at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'dollared no-delimiters))
 
 (defun ar-doubleslash-dollared-atpt (&optional no-delimiters)
   "Puts doubled slashes around dollared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'dollared no-delimiters))
 
 (defun ar-backslashparen-dollared-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around dollared at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'dollared no-delimiters))
 
 (defun ar-comment-dollared-atpt (&optional no-delimiters)
   "Comments dollared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'dollared no-delimiters))
 
 (defun ar-commatize-dollared-atpt (&optional no-delimiters)
   "Put a comma after dollared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'dollared no-delimiters))
 
 (defun ar-mark-dollared-atpt (&optional no-delimiters)
   "Marks dollared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'dollared))
 
@@ -14469,7 +14045,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-dollared-atpt (&optional no-delimiters)
   "Kills dollared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'dollared no-delimiters))
 
@@ -14515,15 +14091,15 @@ Returns beginning position of dollared "
 (defun ar-transpose-dollared-atpt (&optional no-delimiters)
   "Transposes dollared at point with dollared before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'dollared no-delimiters))
 
 (defun ar-sort-dollared-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts dollareds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -14545,20 +14121,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'doublequoted no-delimiters))
 
 (defun ar-bounds-of-doublequoted-atpt (&optional no-delimiters)
   "Returns a list, borders of doublequoted if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'doublequoted no-delimiters))
 
 (defun ar-doublequoted-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position doublequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -14567,7 +14143,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-doublequoted-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of doublequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'doublequoted no-delimiters))
@@ -14575,35 +14151,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-doublequoted-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class doublequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublequoted no-delimiters))
 
 (defun ar-end-of-doublequoted-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class doublequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'doublequoted no-delimiters))
 
 (defun ar-length-of-doublequoted-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class doublequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'doublequoted no-delimiters))
 
 (defun ar-copy-doublequoted-atpt (&optional no-delimiters)
   "Returns a copy of doublequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'doublequoted no-delimiters))
 
 (defun ar-delete-doublequoted-atpt (&optional no-delimiters)
   "Deletes doublequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'doublequoted no-delimiters))
 
@@ -14618,41 +14194,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"doublequoted\" in region.
   Returns blok or nil if no doublequoted at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'doublequoted no-delimiters))
 
 (defun ar-doubleslash-doublequoted-atpt (&optional no-delimiters)
   "Puts doubled slashes around doublequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'doublequoted no-delimiters))
 
 (defun ar-backslashparen-doublequoted-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around doublequoted at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'doublequoted no-delimiters))
 
 (defun ar-comment-doublequoted-atpt (&optional no-delimiters)
   "Comments doublequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'doublequoted no-delimiters))
 
 (defun ar-commatize-doublequoted-atpt (&optional no-delimiters)
   "Put a comma after doublequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'doublequoted no-delimiters))
 
 (defun ar-mark-doublequoted-atpt (&optional no-delimiters)
   "Marks doublequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'doublequoted))
 
@@ -14679,7 +14255,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-doublequoted-atpt (&optional no-delimiters)
   "Kills doublequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'doublequoted no-delimiters))
 
@@ -14725,15 +14301,15 @@ Returns beginning position of doublequoted "
 (defun ar-transpose-doublequoted-atpt (&optional no-delimiters)
   "Transposes doublequoted at point with doublequoted before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'doublequoted no-delimiters))
 
 (defun ar-sort-doublequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublequoteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -14755,20 +14331,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'equalized no-delimiters))
 
 (defun ar-bounds-of-equalized-atpt (&optional no-delimiters)
   "Returns a list, borders of equalized if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'equalized no-delimiters))
 
 (defun ar-equalized-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position equalized at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -14777,7 +14353,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-equalized-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of equalized at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'equalized no-delimiters))
@@ -14785,35 +14361,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-equalized-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class equalized at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'equalized no-delimiters))
 
 (defun ar-end-of-equalized-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class equalized at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'equalized no-delimiters))
 
 (defun ar-length-of-equalized-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class equalized at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'equalized no-delimiters))
 
 (defun ar-copy-equalized-atpt (&optional no-delimiters)
   "Returns a copy of equalized at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'equalized no-delimiters))
 
 (defun ar-delete-equalized-atpt (&optional no-delimiters)
   "Deletes equalized at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'equalized no-delimiters))
 
@@ -14828,41 +14404,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"equalized\" in region.
   Returns blok or nil if no equalized at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'equalized no-delimiters))
 
 (defun ar-doubleslash-equalized-atpt (&optional no-delimiters)
   "Puts doubled slashes around equalized at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'equalized no-delimiters))
 
 (defun ar-backslashparen-equalized-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around equalized at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'equalized no-delimiters))
 
 (defun ar-comment-equalized-atpt (&optional no-delimiters)
   "Comments equalized at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'equalized no-delimiters))
 
 (defun ar-commatize-equalized-atpt (&optional no-delimiters)
   "Put a comma after equalized at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'equalized no-delimiters))
 
 (defun ar-mark-equalized-atpt (&optional no-delimiters)
   "Marks equalized at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'equalized))
 
@@ -14889,7 +14465,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-equalized-atpt (&optional no-delimiters)
   "Kills equalized at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'equalized no-delimiters))
 
@@ -14935,15 +14511,15 @@ Returns beginning position of equalized "
 (defun ar-transpose-equalized-atpt (&optional no-delimiters)
   "Transposes equalized at point with equalized before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'equalized no-delimiters))
 
 (defun ar-sort-equalized-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts equalizeds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -14965,20 +14541,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'hyphened no-delimiters))
 
 (defun ar-bounds-of-hyphened-atpt (&optional no-delimiters)
   "Returns a list, borders of hyphened if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'hyphened no-delimiters))
 
 (defun ar-hyphened-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position hyphened at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -14987,7 +14563,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-hyphened-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of hyphened at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'hyphened no-delimiters))
@@ -14995,35 +14571,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-hyphened-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class hyphened at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'hyphened no-delimiters))
 
 (defun ar-end-of-hyphened-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class hyphened at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'hyphened no-delimiters))
 
 (defun ar-length-of-hyphened-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class hyphened at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'hyphened no-delimiters))
 
 (defun ar-copy-hyphened-atpt (&optional no-delimiters)
   "Returns a copy of hyphened at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'hyphened no-delimiters))
 
 (defun ar-delete-hyphened-atpt (&optional no-delimiters)
   "Deletes hyphened at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'hyphened no-delimiters))
 
@@ -15038,41 +14614,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"hyphened\" in region.
   Returns blok or nil if no hyphened at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'hyphened no-delimiters))
 
 (defun ar-doubleslash-hyphened-atpt (&optional no-delimiters)
   "Puts doubled slashes around hyphened at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'hyphened no-delimiters))
 
 (defun ar-backslashparen-hyphened-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around hyphened at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'hyphened no-delimiters))
 
 (defun ar-comment-hyphened-atpt (&optional no-delimiters)
   "Comments hyphened at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'hyphened no-delimiters))
 
 (defun ar-commatize-hyphened-atpt (&optional no-delimiters)
   "Put a comma after hyphened at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'hyphened no-delimiters))
 
 (defun ar-mark-hyphened-atpt (&optional no-delimiters)
   "Marks hyphened at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'hyphened))
 
@@ -15099,7 +14675,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-hyphened-atpt (&optional no-delimiters)
   "Kills hyphened at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'hyphened no-delimiters))
 
@@ -15145,15 +14721,15 @@ Returns beginning position of hyphened "
 (defun ar-transpose-hyphened-atpt (&optional no-delimiters)
   "Transposes hyphened at point with hyphened before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'hyphened no-delimiters))
 
 (defun ar-sort-hyphened-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts hypheneds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -15175,20 +14751,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'singlequoted no-delimiters))
 
 (defun ar-bounds-of-singlequoted-atpt (&optional no-delimiters)
   "Returns a list, borders of singlequoted if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'singlequoted no-delimiters))
 
 (defun ar-singlequoted-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position singlequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -15197,7 +14773,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-singlequoted-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of singlequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'singlequoted no-delimiters))
@@ -15205,35 +14781,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-singlequoted-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class singlequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'singlequoted no-delimiters))
 
 (defun ar-end-of-singlequoted-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class singlequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'singlequoted no-delimiters))
 
 (defun ar-length-of-singlequoted-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class singlequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'singlequoted no-delimiters))
 
 (defun ar-copy-singlequoted-atpt (&optional no-delimiters)
   "Returns a copy of singlequoted at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'singlequoted no-delimiters))
 
 (defun ar-delete-singlequoted-atpt (&optional no-delimiters)
   "Deletes singlequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'singlequoted no-delimiters))
 
@@ -15248,41 +14824,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"singlequoted\" in region.
   Returns blok or nil if no singlequoted at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'singlequoted no-delimiters))
 
 (defun ar-doubleslash-singlequoted-atpt (&optional no-delimiters)
   "Puts doubled slashes around singlequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'singlequoted no-delimiters))
 
 (defun ar-backslashparen-singlequoted-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around singlequoted at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'singlequoted no-delimiters))
 
 (defun ar-comment-singlequoted-atpt (&optional no-delimiters)
   "Comments singlequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'singlequoted no-delimiters))
 
 (defun ar-commatize-singlequoted-atpt (&optional no-delimiters)
   "Put a comma after singlequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'singlequoted no-delimiters))
 
 (defun ar-mark-singlequoted-atpt (&optional no-delimiters)
   "Marks singlequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'singlequoted))
 
@@ -15309,7 +14885,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-singlequoted-atpt (&optional no-delimiters)
   "Kills singlequoted at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'singlequoted no-delimiters))
 
@@ -15355,15 +14931,15 @@ Returns beginning position of singlequoted "
 (defun ar-transpose-singlequoted-atpt (&optional no-delimiters)
   "Transposes singlequoted at point with singlequoted before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'singlequoted no-delimiters))
 
 (defun ar-sort-singlequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts singlequoteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -15385,20 +14961,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'slashed no-delimiters))
 
 (defun ar-bounds-of-slashed-atpt (&optional no-delimiters)
   "Returns a list, borders of slashed if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'slashed no-delimiters))
 
 (defun ar-slashed-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position slashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -15407,7 +14983,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-slashed-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of slashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'slashed no-delimiters))
@@ -15415,35 +14991,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-slashed-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class slashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'slashed no-delimiters))
 
 (defun ar-end-of-slashed-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class slashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'slashed no-delimiters))
 
 (defun ar-length-of-slashed-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class slashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'slashed no-delimiters))
 
 (defun ar-copy-slashed-atpt (&optional no-delimiters)
   "Returns a copy of slashed at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'slashed no-delimiters))
 
 (defun ar-delete-slashed-atpt (&optional no-delimiters)
   "Deletes slashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'slashed no-delimiters))
 
@@ -15458,41 +15034,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"slashed\" in region.
   Returns blok or nil if no slashed at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'slashed no-delimiters))
 
 (defun ar-doubleslash-slashed-atpt (&optional no-delimiters)
   "Puts doubled slashes around slashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'slashed no-delimiters))
 
 (defun ar-backslashparen-slashed-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around slashed at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'slashed no-delimiters))
 
 (defun ar-comment-slashed-atpt (&optional no-delimiters)
   "Comments slashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'slashed no-delimiters))
 
 (defun ar-commatize-slashed-atpt (&optional no-delimiters)
   "Put a comma after slashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'slashed no-delimiters))
 
 (defun ar-mark-slashed-atpt (&optional no-delimiters)
   "Marks slashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'slashed))
 
@@ -15519,7 +15095,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-slashed-atpt (&optional no-delimiters)
   "Kills slashed at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'slashed no-delimiters))
 
@@ -15565,15 +15141,15 @@ Returns beginning position of slashed "
 (defun ar-transpose-slashed-atpt (&optional no-delimiters)
   "Transposes slashed at point with slashed before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'slashed no-delimiters))
 
 (defun ar-sort-slashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts slasheds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -15595,20 +15171,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'stared no-delimiters))
 
 (defun ar-bounds-of-stared-atpt (&optional no-delimiters)
   "Returns a list, borders of stared if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'stared no-delimiters))
 
 (defun ar-stared-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position stared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -15617,7 +15193,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-stared-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of stared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'stared no-delimiters))
@@ -15625,35 +15201,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-stared-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class stared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'stared no-delimiters))
 
 (defun ar-end-of-stared-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class stared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'stared no-delimiters))
 
 (defun ar-length-of-stared-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class stared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'stared no-delimiters))
 
 (defun ar-copy-stared-atpt (&optional no-delimiters)
   "Returns a copy of stared at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'stared no-delimiters))
 
 (defun ar-delete-stared-atpt (&optional no-delimiters)
   "Deletes stared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'stared no-delimiters))
 
@@ -15668,41 +15244,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"stared\" in region.
   Returns blok or nil if no stared at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'stared no-delimiters))
 
 (defun ar-doubleslash-stared-atpt (&optional no-delimiters)
   "Puts doubled slashes around stared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'stared no-delimiters))
 
 (defun ar-backslashparen-stared-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around stared at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'stared no-delimiters))
 
 (defun ar-comment-stared-atpt (&optional no-delimiters)
   "Comments stared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'stared no-delimiters))
 
 (defun ar-commatize-stared-atpt (&optional no-delimiters)
   "Put a comma after stared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'stared no-delimiters))
 
 (defun ar-mark-stared-atpt (&optional no-delimiters)
   "Marks stared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'stared))
 
@@ -15729,7 +15305,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-stared-atpt (&optional no-delimiters)
   "Kills stared at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'stared no-delimiters))
 
@@ -15775,15 +15351,15 @@ Returns beginning position of stared "
 (defun ar-transpose-stared-atpt (&optional no-delimiters)
   "Transposes stared at point with stared before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'stared no-delimiters))
 
 (defun ar-sort-stared-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts stareds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -15805,20 +15381,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'underscored no-delimiters))
 
 (defun ar-bounds-of-underscored-atpt (&optional no-delimiters)
   "Returns a list, borders of underscored if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'underscored no-delimiters))
 
 (defun ar-underscored-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position underscored at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -15827,7 +15403,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-underscored-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of underscored at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'underscored no-delimiters))
@@ -15835,35 +15411,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-underscored-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class underscored at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'underscored no-delimiters))
 
 (defun ar-end-of-underscored-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class underscored at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'underscored no-delimiters))
 
 (defun ar-length-of-underscored-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class underscored at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'underscored no-delimiters))
 
 (defun ar-copy-underscored-atpt (&optional no-delimiters)
   "Returns a copy of underscored at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'underscored no-delimiters))
 
 (defun ar-delete-underscored-atpt (&optional no-delimiters)
   "Deletes underscored at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'underscored no-delimiters))
 
@@ -15878,41 +15454,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"underscored\" in region.
   Returns blok or nil if no underscored at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'underscored no-delimiters))
 
 (defun ar-doubleslash-underscored-atpt (&optional no-delimiters)
   "Puts doubled slashes around underscored at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'underscored no-delimiters))
 
 (defun ar-backslashparen-underscored-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around underscored at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'underscored no-delimiters))
 
 (defun ar-comment-underscored-atpt (&optional no-delimiters)
   "Comments underscored at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'underscored no-delimiters))
 
 (defun ar-commatize-underscored-atpt (&optional no-delimiters)
   "Put a comma after underscored at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'underscored no-delimiters))
 
 (defun ar-mark-underscored-atpt (&optional no-delimiters)
   "Marks underscored at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'underscored))
 
@@ -15939,7 +15515,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-underscored-atpt (&optional no-delimiters)
   "Kills underscored at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'underscored no-delimiters))
 
@@ -15985,15 +15561,15 @@ Returns beginning position of underscored "
 (defun ar-transpose-underscored-atpt (&optional no-delimiters)
   "Transposes underscored at point with underscored before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'underscored no-delimiters))
 
 (defun ar-sort-underscored-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts underscoreds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -16015,20 +15591,20 @@ See doku from ‘sort-subr’, for details.
 
 With numerical ARG 2 ‘ar-scan-whole-buffer’ is non-nil, scan whole buffer
 
-With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, resp. to inner position of delimiter "
   (interactive "p")
   (ar-th 'whitespaced no-delimiters))
 
 (defun ar-bounds-of-whitespaced-atpt (&optional no-delimiters)
   "Returns a list, borders of whitespaced if any, nil otherwise.
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-bounds 'whitespaced no-delimiters))
 
 (defun ar-whitespaced-beginning-position-atpt (&optional no-delimiters)
   "Returns a number, beginning position whitespaced at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 "
   (interactive "p")
@@ -16037,7 +15613,7 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected
 (defun ar-whitespaced-end-position-atpt (&optional no-delimiters)
   "Returns a number, end position of whitespaced at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string.
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter.
 With CHECK scan accessible part of buffer, otherwise next delimiter is selected "
   (interactive "p")
   (ar-th-end 'whitespaced no-delimiters))
@@ -16045,35 +15621,35 @@ With CHECK scan accessible part of buffer, otherwise next delimiter is selected 
 (defun ar-beginning-of-whitespaced-atpt (&optional no-delimiters)
   "Goto beginning of symbol or char-class whitespaced at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotobeg 'whitespaced no-delimiters))
 
 (defun ar-end-of-whitespaced-atpt (&optional no-delimiters)
   "Goto end of symbol or char-class whitespaced at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS, to inner position of delimiter "
   (interactive "p")
   (ar-th-gotoend 'whitespaced no-delimiters))
 
 (defun ar-length-of-whitespaced-atpt (&optional no-delimiters)
   "Returns beginning of symbol or char-class whitespaced at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiting char or string. "
+With optional \\[universal-argument] NO-DELIMITERS, return inner position of delimiter. "
   (interactive "p")
   (ar-th-length 'whitespaced no-delimiters))
 
 (defun ar-copy-whitespaced-atpt (&optional no-delimiters)
   "Returns a copy of whitespaced at point if any, nil otherwise.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-copy 'whitespaced no-delimiters))
 
 (defun ar-delete-whitespaced-atpt (&optional no-delimiters)
   "Deletes whitespaced at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-delete 'whitespaced no-delimiters))
 
@@ -16088,41 +15664,41 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 If region is active, do that for all elements \"whitespaced\" in region.
   Returns blok or nil if no whitespaced at cursor-position.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-blok 'whitespaced no-delimiters))
 
 (defun ar-doubleslash-whitespaced-atpt (&optional no-delimiters)
   "Puts doubled slashes around whitespaced at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-doubleslash 'whitespaced no-delimiters))
 
 (defun ar-backslashparen-whitespaced-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around whitespaced at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'whitespaced no-delimiters))
 
 (defun ar-comment-whitespaced-atpt (&optional no-delimiters)
   "Comments whitespaced at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-comment 'whitespaced no-delimiters))
 
 (defun ar-commatize-whitespaced-atpt (&optional no-delimiters)
   "Put a comma after whitespaced at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-commatize 'whitespaced no-delimiters))
 
 (defun ar-mark-whitespaced-atpt (&optional no-delimiters)
   "Marks whitespaced at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "p")
   (ar-th-mark 'whitespaced))
 
@@ -16149,7 +15725,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-kill-whitespaced-atpt (&optional no-delimiters)
   "Kills whitespaced at point if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-kill 'whitespaced no-delimiters))
 
@@ -16195,15 +15771,15 @@ Returns beginning position of whitespaced "
 (defun ar-transpose-whitespaced-atpt (&optional no-delimiters)
   "Transposes whitespaced at point with whitespaced before if any.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-transpose 'whitespaced no-delimiters))
 
 (defun ar-sort-whitespaced-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts whitespaceds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -16385,7 +15961,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-braced-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around braced at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'braced no-delimiters))
 
@@ -16489,7 +16065,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-braced-atpt (&optional no-delimiters)
   "Triplebacktick braced at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'braced no-delimiters))
 
@@ -16532,9 +16108,9 @@ Returns beginning position of BRACED "
 
 (defun ar-sort-braced-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts braceds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -16624,7 +16200,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-symboled-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around symboled at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'symboled no-delimiters))
 
@@ -16728,7 +16304,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-symboled-atpt (&optional no-delimiters)
   "Triplebacktick symboled at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'symboled no-delimiters))
 
@@ -16771,9 +16347,9 @@ Returns beginning position of SYMBOLED "
 
 (defun ar-sort-symboled-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts symboleds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -16863,7 +16439,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-bracketed-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around bracketed at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'bracketed no-delimiters))
 
@@ -16967,7 +16543,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-bracketed-atpt (&optional no-delimiters)
   "Triplebacktick bracketed at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'bracketed no-delimiters))
 
@@ -17010,9 +16586,9 @@ Returns beginning position of BRACKETED "
 
 (defun ar-sort-bracketed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts bracketeds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -17102,7 +16678,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-lesserangled-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around lesserangled at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'lesserangled no-delimiters))
 
@@ -17206,7 +16782,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-lesserangled-atpt (&optional no-delimiters)
   "Triplebacktick lesserangled at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'lesserangled no-delimiters))
 
@@ -17249,9 +16825,9 @@ Returns beginning position of LESSERANGLED "
 
 (defun ar-sort-lesserangled-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts lesserangleds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -17341,7 +16917,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-greaterangled-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around greaterangled at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'greaterangled no-delimiters))
 
@@ -17445,7 +17021,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-greaterangled-atpt (&optional no-delimiters)
   "Triplebacktick greaterangled at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'greaterangled no-delimiters))
 
@@ -17488,9 +17064,9 @@ Returns beginning position of GREATERANGLED "
 
 (defun ar-sort-greaterangled-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts greaterangleds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -17580,7 +17156,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-curvedsinglequoted-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around curvedsinglequoted at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'curvedsinglequoted no-delimiters))
 
@@ -17684,7 +17260,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-curvedsinglequoted-atpt (&optional no-delimiters)
   "Triplebacktick curvedsinglequoted at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'curvedsinglequoted no-delimiters))
 
@@ -17727,9 +17303,9 @@ Returns beginning position of CURVEDSINGLEQUOTED "
 
 (defun ar-sort-curvedsinglequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts curvedsinglequoteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -17819,7 +17395,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-curveddoublequoted-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around curveddoublequoted at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'curveddoublequoted no-delimiters))
 
@@ -17923,7 +17499,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-curveddoublequoted-atpt (&optional no-delimiters)
   "Triplebacktick curveddoublequoted at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'curveddoublequoted no-delimiters))
 
@@ -17966,9 +17542,9 @@ Returns beginning position of CURVEDDOUBLEQUOTED "
 
 (defun ar-sort-curveddoublequoted-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts curveddoublequoteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -18058,7 +17634,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-parentized-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around parentized at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'parentized no-delimiters))
 
@@ -18162,7 +17738,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-parentized-atpt (&optional no-delimiters)
   "Triplebacktick parentized at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'parentized no-delimiters))
 
@@ -18205,9 +17781,9 @@ Returns beginning position of PARENTIZED "
 
 (defun ar-sort-parentized-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts parentizeds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -18301,7 +17877,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-list-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around list at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'list no-delimiters))
 
@@ -18405,7 +17981,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-list-atpt (&optional no-delimiters)
   "Triplebacktick list at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'list no-delimiters))
 
@@ -18448,9 +18024,9 @@ Returns beginning position of LIST "
 
 (defun ar-sort-list-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts lists in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -18544,7 +18120,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-block-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around block at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'block no-delimiters))
 
@@ -18648,7 +18224,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-block-atpt (&optional no-delimiters)
   "Triplebacktick block at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'block no-delimiters))
 
@@ -18691,9 +18267,9 @@ Returns beginning position of BLOCK "
 
 (defun ar-sort-block-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts blocks in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -18783,7 +18359,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-block-or-clause-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around block-or-clause at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'block-or-clause no-delimiters))
 
@@ -18887,7 +18463,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-block-or-clause-atpt (&optional no-delimiters)
   "Triplebacktick block-or-clause at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'block-or-clause no-delimiters))
 
@@ -18930,9 +18506,9 @@ Returns beginning position of BLOCK-OR-CLAUSE "
 
 (defun ar-sort-block-or-clause-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts block-or-clauses in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -19022,7 +18598,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-char-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around char at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'char no-delimiters))
 
@@ -19126,7 +18702,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-char-atpt (&optional no-delimiters)
   "Triplebacktick char at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'char no-delimiters))
 
@@ -19169,9 +18745,9 @@ Returns beginning position of CHAR "
 
 (defun ar-sort-char-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts chars in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -19261,7 +18837,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-class-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around class at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'class no-delimiters))
 
@@ -19365,7 +18941,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-class-atpt (&optional no-delimiters)
   "Triplebacktick class at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'class no-delimiters))
 
@@ -19408,9 +18984,9 @@ Returns beginning position of CLASS "
 
 (defun ar-sort-class-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts classs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -19500,7 +19076,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-clause-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around clause at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'clause no-delimiters))
 
@@ -19604,7 +19180,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-clause-atpt (&optional no-delimiters)
   "Triplebacktick clause at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'clause no-delimiters))
 
@@ -19647,9 +19223,9 @@ Returns beginning position of CLAUSE "
 
 (defun ar-sort-clause-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts clauses in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -19739,7 +19315,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-def-or-class-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around def-or-class at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'def-or-class no-delimiters))
 
@@ -19843,7 +19419,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-def-or-class-atpt (&optional no-delimiters)
   "Triplebacktick def-or-class at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'def-or-class no-delimiters))
 
@@ -19886,9 +19462,9 @@ Returns beginning position of DEF-OR-CLASS "
 
 (defun ar-sort-def-or-class-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts def-or-classs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -19978,7 +19554,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-def-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around def at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'def no-delimiters))
 
@@ -20082,7 +19658,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-def-atpt (&optional no-delimiters)
   "Triplebacktick def at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'def no-delimiters))
 
@@ -20125,9 +19701,9 @@ Returns beginning position of DEF "
 
 (defun ar-sort-def-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts defs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -20217,7 +19793,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-delimited-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around delimited at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'delimited no-delimiters))
 
@@ -20321,7 +19897,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-delimited-atpt (&optional no-delimiters)
   "Triplebacktick delimited at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'delimited no-delimiters))
 
@@ -20364,9 +19940,9 @@ Returns beginning position of DELIMITED "
 
 (defun ar-sort-delimited-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts delimiteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -20456,7 +20032,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-expression-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around expression at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'expression no-delimiters))
 
@@ -20560,7 +20136,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-expression-atpt (&optional no-delimiters)
   "Triplebacktick expression at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'expression no-delimiters))
 
@@ -20603,9 +20179,9 @@ Returns beginning position of EXPRESSION "
 
 (defun ar-sort-expression-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts expressions in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -20695,7 +20271,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-partial-expression-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around partial-expression at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'partial-expression no-delimiters))
 
@@ -20799,7 +20375,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-partial-expression-atpt (&optional no-delimiters)
   "Triplebacktick partial-expression at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'partial-expression no-delimiters))
 
@@ -20842,9 +20418,9 @@ Returns beginning position of PARTIAL-EXPRESSION "
 
 (defun ar-sort-partial-expression-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts partial-expressions in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -20934,7 +20510,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-statement-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around statement at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'statement no-delimiters))
 
@@ -21038,7 +20614,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-statement-atpt (&optional no-delimiters)
   "Triplebacktick statement at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'statement no-delimiters))
 
@@ -21081,9 +20657,9 @@ Returns beginning position of STATEMENT "
 
 (defun ar-sort-statement-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts statements in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -21173,7 +20749,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-string-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around string at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'string no-delimiters))
 
@@ -21277,7 +20853,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-string-atpt (&optional no-delimiters)
   "Triplebacktick string at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'string no-delimiters))
 
@@ -21320,9 +20896,9 @@ Returns beginning position of STRING "
 
 (defun ar-sort-string-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts strings in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -21416,7 +20992,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-greateranglednested-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around greateranglednested at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'greateranglednested no-delimiters))
 
@@ -21520,7 +21096,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-greateranglednested-atpt (&optional no-delimiters)
   "Triplebacktick greateranglednested at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'greateranglednested no-delimiters))
 
@@ -21563,9 +21139,9 @@ Returns beginning position of GREATERANGLEDNESTED "
 
 (defun ar-sort-greateranglednested-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts greateranglednesteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -21655,7 +21231,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-lesseranglednested-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around lesseranglednested at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'lesseranglednested no-delimiters))
 
@@ -21759,7 +21335,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-lesseranglednested-atpt (&optional no-delimiters)
   "Triplebacktick lesseranglednested at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'lesseranglednested no-delimiters))
 
@@ -21802,9 +21378,9 @@ Returns beginning position of LESSERANGLEDNESTED "
 
 (defun ar-sort-lesseranglednested-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts lesseranglednesteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -21894,7 +21470,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-buffer-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around buffer at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'buffer no-delimiters))
 
@@ -21998,7 +21574,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-buffer-atpt (&optional no-delimiters)
   "Triplebacktick buffer at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'buffer no-delimiters))
 
@@ -22041,9 +21617,9 @@ Returns beginning position of BUFFER "
 
 (defun ar-sort-buffer-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts buffers in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -22133,7 +21709,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-char-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around char at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'char no-delimiters))
 
@@ -22237,7 +21813,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-char-atpt (&optional no-delimiters)
   "Triplebacktick char at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'char no-delimiters))
 
@@ -22280,9 +21856,9 @@ Returns beginning position of CHAR "
 
 (defun ar-sort-char-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts chars in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -22372,7 +21948,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-comment-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around comment at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'comment no-delimiters))
 
@@ -22476,7 +22052,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-comment-atpt (&optional no-delimiters)
   "Triplebacktick comment at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'comment no-delimiters))
 
@@ -22519,9 +22095,9 @@ Returns beginning position of COMMENT "
 
 (defun ar-sort-comment-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts comments in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -22611,7 +22187,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-csv-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around csv at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'csv no-delimiters))
 
@@ -22715,7 +22291,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-csv-atpt (&optional no-delimiters)
   "Triplebacktick csv at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'csv no-delimiters))
 
@@ -22758,9 +22334,9 @@ Returns beginning position of CSV "
 
 (defun ar-sort-csv-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts csvs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -22850,7 +22426,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-date-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around date at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'date no-delimiters))
 
@@ -22954,7 +22530,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-date-atpt (&optional no-delimiters)
   "Triplebacktick date at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'date no-delimiters))
 
@@ -22997,9 +22573,9 @@ Returns beginning position of DATE "
 
 (defun ar-sort-date-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts dates in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -23089,7 +22665,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-delimited-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around delimited at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'delimited no-delimiters))
 
@@ -23193,7 +22769,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-delimited-atpt (&optional no-delimiters)
   "Triplebacktick delimited at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'delimited no-delimiters))
 
@@ -23236,9 +22812,9 @@ Returns beginning position of DELIMITED "
 
 (defun ar-sort-delimited-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts delimiteds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -23328,7 +22904,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-email-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around email at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'email no-delimiters))
 
@@ -23432,7 +23008,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-email-atpt (&optional no-delimiters)
   "Triplebacktick email at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'email no-delimiters))
 
@@ -23475,9 +23051,9 @@ Returns beginning position of EMAIL "
 
 (defun ar-sort-email-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts emails in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -23567,7 +23143,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-filename-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around filename at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'filename no-delimiters))
 
@@ -23671,7 +23247,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-filename-atpt (&optional no-delimiters)
   "Triplebacktick filename at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'filename no-delimiters))
 
@@ -23714,9 +23290,9 @@ Returns beginning position of FILENAME "
 
 (defun ar-sort-filename-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts filenames in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -23806,7 +23382,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-filenamenondirectory-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around filenamenondirectory at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'filenamenondirectory no-delimiters))
 
@@ -23910,7 +23486,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-filenamenondirectory-atpt (&optional no-delimiters)
   "Triplebacktick filenamenondirectory at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'filenamenondirectory no-delimiters))
 
@@ -23953,9 +23529,9 @@ Returns beginning position of FILENAMENONDIRECTORY "
 
 (defun ar-sort-filenamenondirectory-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts filenamenondirectorys in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -24045,7 +23621,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-float-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around float at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'float no-delimiters))
 
@@ -24149,7 +23725,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-float-atpt (&optional no-delimiters)
   "Triplebacktick float at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'float no-delimiters))
 
@@ -24192,9 +23768,9 @@ Returns beginning position of FLOAT "
 
 (defun ar-sort-float-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts floats in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -24284,7 +23860,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-function-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around function at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'function no-delimiters))
 
@@ -24388,7 +23964,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-function-atpt (&optional no-delimiters)
   "Triplebacktick function at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'function no-delimiters))
 
@@ -24431,9 +24007,9 @@ Returns beginning position of FUNCTION "
 
 (defun ar-sort-function-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts functions in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -24523,7 +24099,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-ip-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around ip at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'ip no-delimiters))
 
@@ -24627,7 +24203,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-ip-atpt (&optional no-delimiters)
   "Triplebacktick ip at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'ip no-delimiters))
 
@@ -24670,9 +24246,9 @@ Returns beginning position of IP "
 
 (defun ar-sort-ip-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts ips in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -24762,7 +24338,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-isbn-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around isbn at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'isbn no-delimiters))
 
@@ -24866,7 +24442,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-isbn-atpt (&optional no-delimiters)
   "Triplebacktick isbn at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'isbn no-delimiters))
 
@@ -24909,9 +24485,9 @@ Returns beginning position of ISBN "
 
 (defun ar-sort-isbn-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts isbns in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -25001,7 +24577,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-line-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around line at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'line no-delimiters))
 
@@ -25105,7 +24681,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-line-atpt (&optional no-delimiters)
   "Triplebacktick line at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'line no-delimiters))
 
@@ -25148,9 +24724,9 @@ Returns beginning position of LINE "
 
 (defun ar-sort-line-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts lines in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -25240,7 +24816,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-list-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around list at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'list no-delimiters))
 
@@ -25344,7 +24920,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-list-atpt (&optional no-delimiters)
   "Triplebacktick list at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'list no-delimiters))
 
@@ -25387,9 +24963,9 @@ Returns beginning position of LIST "
 
 (defun ar-sort-list-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts lists in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -25479,7 +25055,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-name-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around name at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'name no-delimiters))
 
@@ -25583,7 +25159,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-name-atpt (&optional no-delimiters)
   "Triplebacktick name at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'name no-delimiters))
 
@@ -25626,9 +25202,9 @@ Returns beginning position of NAME "
 
 (defun ar-sort-name-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts names in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -25718,7 +25294,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-number-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around number at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'number no-delimiters))
 
@@ -25822,7 +25398,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-number-atpt (&optional no-delimiters)
   "Triplebacktick number at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'number no-delimiters))
 
@@ -25865,9 +25441,9 @@ Returns beginning position of NUMBER "
 
 (defun ar-sort-number-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts numbers in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -25957,7 +25533,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-page-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around page at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'page no-delimiters))
 
@@ -26061,7 +25637,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-page-atpt (&optional no-delimiters)
   "Triplebacktick page at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'page no-delimiters))
 
@@ -26104,9 +25680,9 @@ Returns beginning position of PAGE "
 
 (defun ar-sort-page-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts pages in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -26196,7 +25772,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-paragraph-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around paragraph at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'paragraph no-delimiters))
 
@@ -26300,7 +25876,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-paragraph-atpt (&optional no-delimiters)
   "Triplebacktick paragraph at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'paragraph no-delimiters))
 
@@ -26343,9 +25919,9 @@ Returns beginning position of PARAGRAPH "
 
 (defun ar-sort-paragraph-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts paragraphs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -26435,7 +26011,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-phone-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around phone at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'phone no-delimiters))
 
@@ -26539,7 +26115,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-phone-atpt (&optional no-delimiters)
   "Triplebacktick phone at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'phone no-delimiters))
 
@@ -26582,9 +26158,9 @@ Returns beginning position of PHONE "
 
 (defun ar-sort-phone-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts phones in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -26674,7 +26250,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-sentence-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around sentence at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'sentence no-delimiters))
 
@@ -26778,7 +26354,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-sentence-atpt (&optional no-delimiters)
   "Triplebacktick sentence at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'sentence no-delimiters))
 
@@ -26821,9 +26397,9 @@ Returns beginning position of SENTENCE "
 
 (defun ar-sort-sentence-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts sentences in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -26913,7 +26489,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-sexp-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around sexp at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'sexp no-delimiters))
 
@@ -27017,7 +26593,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-sexp-atpt (&optional no-delimiters)
   "Triplebacktick sexp at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'sexp no-delimiters))
 
@@ -27060,9 +26636,9 @@ Returns beginning position of SEXP "
 
 (defun ar-sort-sexp-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts sexps in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -27152,7 +26728,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-shstruct-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around shstruct at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'shstruct no-delimiters))
 
@@ -27256,7 +26832,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-shstruct-atpt (&optional no-delimiters)
   "Triplebacktick shstruct at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'shstruct no-delimiters))
 
@@ -27299,9 +26875,9 @@ Returns beginning position of SHSTRUCT "
 
 (defun ar-sort-shstruct-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts shstructs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -27391,7 +26967,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-symbol-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around symbol at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'symbol no-delimiters))
 
@@ -27495,7 +27071,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-symbol-atpt (&optional no-delimiters)
   "Triplebacktick symbol at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'symbol no-delimiters))
 
@@ -27538,9 +27114,9 @@ Returns beginning position of SYMBOL "
 
 (defun ar-sort-symbol-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts symbols in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -27630,7 +27206,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-url-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around url at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'url no-delimiters))
 
@@ -27734,7 +27310,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-url-atpt (&optional no-delimiters)
   "Triplebacktick url at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'url no-delimiters))
 
@@ -27777,9 +27353,9 @@ Returns beginning position of URL "
 
 (defun ar-sort-url-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts urls in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -27869,7 +27445,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-word-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around word at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'word no-delimiters))
 
@@ -27973,7 +27549,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-word-atpt (&optional no-delimiters)
   "Triplebacktick word at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'word no-delimiters))
 
@@ -28016,9 +27592,9 @@ Returns beginning position of WORD "
 
 (defun ar-sort-word-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts words in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -28108,7 +27684,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-wordalphaonly-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around wordalphaonly at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'wordalphaonly no-delimiters))
 
@@ -28212,7 +27788,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-wordalphaonly-atpt (&optional no-delimiters)
   "Triplebacktick wordalphaonly at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'wordalphaonly no-delimiters))
 
@@ -28255,9 +27831,9 @@ Returns beginning position of WORDALPHAONLY "
 
 (defun ar-sort-wordalphaonly-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts wordalphaonlys in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -28827,9 +28403,9 @@ See doku from ‘sort-subr’, for details.
   (interactive "p")
   (ar-th-base-copy-or 'wordalphaonly no-delimiters))
 
-(defun emacs-batch-expression (&optional no-delimiters)
+(defun emacs-batch-expression ()
   "Copy and highlight an expression starting with \"eval\" or \"load\". "
-  (interactive "p")
+  (interactive "*")
   (unless (looking-back "[ \t\r\n\f]" (line-beginning-position))
     (skip-chars-backward " \t\r\n\f"))
 

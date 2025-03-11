@@ -139,7 +139,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-beginendquote-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around beginendquote at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'beginendquote no-delimiters))
 
@@ -243,7 +243,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-beginendquote-atpt (&optional no-delimiters)
   "Triplebacktick beginendquote at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'beginendquote no-delimiters))
 
@@ -286,9 +286,9 @@ Returns beginning position of BEGINENDQUOTE "
 
 (defun ar-sort-beginendquote-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts beginendquotes in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -378,7 +378,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-blok-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around blok at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'blok no-delimiters))
 
@@ -482,7 +482,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-blok-atpt (&optional no-delimiters)
   "Triplebacktick blok at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'blok no-delimiters))
 
@@ -525,9 +525,9 @@ Returns beginning position of BLOK "
 
 (defun ar-sort-blok-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts bloks in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -617,7 +617,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-doublebackslashed-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around doublebackslashed at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'doublebackslashed no-delimiters))
 
@@ -721,7 +721,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-doublebackslashed-atpt (&optional no-delimiters)
   "Triplebacktick doublebackslashed at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'doublebackslashed no-delimiters))
 
@@ -764,9 +764,9 @@ Returns beginning position of DOUBLEBACKSLASHED "
 
 (defun ar-sort-doublebackslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublebackslasheds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -856,7 +856,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-doublebackticked-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around doublebackticked at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'doublebackticked no-delimiters))
 
@@ -960,7 +960,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-doublebackticked-atpt (&optional no-delimiters)
   "Triplebacktick doublebackticked at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'doublebackticked no-delimiters))
 
@@ -1003,9 +1003,9 @@ Returns beginning position of DOUBLEBACKTICKED "
 
 (defun ar-sort-doublebackticked-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublebacktickeds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -1095,7 +1095,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-doublebackslashedparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around doublebackslashedparen at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'doublebackslashedparen no-delimiters))
 
@@ -1199,7 +1199,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-doublebackslashedparen-atpt (&optional no-delimiters)
   "Triplebacktick doublebackslashedparen at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'doublebackslashedparen no-delimiters))
 
@@ -1242,9 +1242,9 @@ Returns beginning position of DOUBLEBACKSLASHEDPAREN "
 
 (defun ar-sort-doublebackslashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublebackslashedparens in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -1334,7 +1334,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-doubleslashed-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around doubleslashed at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'doubleslashed no-delimiters))
 
@@ -1438,7 +1438,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-doubleslashed-atpt (&optional no-delimiters)
   "Triplebacktick doubleslashed at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'doubleslashed no-delimiters))
 
@@ -1481,9 +1481,9 @@ Returns beginning position of DOUBLESLASHED "
 
 (defun ar-sort-doubleslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doubleslasheds in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -1573,7 +1573,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-doubleslashedparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around doubleslashedparen at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'doubleslashedparen no-delimiters))
 
@@ -1677,7 +1677,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-doubleslashedparen-atpt (&optional no-delimiters)
   "Triplebacktick doubleslashedparen at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'doubleslashedparen no-delimiters))
 
@@ -1720,9 +1720,9 @@ Returns beginning position of DOUBLESLASHEDPAREN "
 
 (defun ar-sort-doubleslashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doubleslashedparens in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -1812,7 +1812,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-markup-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around markup at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'markup no-delimiters))
 
@@ -1916,7 +1916,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-markup-atpt (&optional no-delimiters)
   "Triplebacktick markup at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'markup no-delimiters))
 
@@ -1959,9 +1959,9 @@ Returns beginning position of MARKUP "
 
 (defun ar-sort-markup-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts markups in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -2051,7 +2051,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-mldata-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around mldata at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'mldata no-delimiters))
 
@@ -2155,7 +2155,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-mldata-atpt (&optional no-delimiters)
   "Triplebacktick mldata at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'mldata no-delimiters))
 
@@ -2198,9 +2198,9 @@ Returns beginning position of MLDATA "
 
 (defun ar-sort-mldata-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts mldatas in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -2290,7 +2290,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-mlattribut-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around mlattribut at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'mlattribut no-delimiters))
 
@@ -2394,7 +2394,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-mlattribut-atpt (&optional no-delimiters)
   "Triplebacktick mlattribut at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'mlattribut no-delimiters))
 
@@ -2437,9 +2437,9 @@ Returns beginning position of MLATTRIBUT "
 
 (defun ar-sort-mlattribut-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts mlattributs in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -2529,7 +2529,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-mltag-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around mltag at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'mltag no-delimiters))
 
@@ -2633,7 +2633,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-mltag-atpt (&optional no-delimiters)
   "Triplebacktick mltag at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'mltag no-delimiters))
 
@@ -2676,9 +2676,9 @@ Returns beginning position of MLTAG "
 
 (defun ar-sort-mltag-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts mltags in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -2768,7 +2768,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-slashedparen-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around slashedparen at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'slashedparen no-delimiters))
 
@@ -2872,7 +2872,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-slashedparen-atpt (&optional no-delimiters)
   "Triplebacktick slashedparen at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'slashedparen no-delimiters))
 
@@ -2915,9 +2915,9 @@ Returns beginning position of SLASHEDPAREN "
 
 (defun ar-sort-slashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts slashedparens in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -2930,245 +2930,6 @@ See doku from ‘sort-subr’, for details.
   (interactive "p")
   (let* ((beg (funcall (intern-soft (concat "ar-slashedparen-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-slashedparen-end-position-atpt"))))
-        (erg (ignore-errors (< beg end))))
-    (when arg (message "%s" erg))
-   erg))
-
-(defun ar-symbol-atpt (&optional no-delimiters)
-  "Returns symbol at point if any, nil otherwise.
-
-Optional \\[universal-argument], from a programm '(4), returns objects without delimiters"
-  (interactive "p")
-  (ar-th 'symbol no-delimiters))
-
-(defun ar-bounds-of-symbol-atpt (&optional no-delimiters)
-  "Returns a list, borders of symbol if any, nil otherwise.
-
-Optional \\[universal-argument], from a programm '(4), returns bounds without delimiters"
-  (interactive "p")
-  (ar-th-bounds 'symbol no-delimiters))
-
-(defun ar-symbol-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position SYMBOL at point if any, nil otherwise.
-
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
-  (interactive "p")
-  (ar-th-beg 'symbol no-delimiters))
-
-(defun ar-symbol-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of SYMBOL at point if any, nil otherwise.
-
-Optional \\[universal-argument], from a programm '(4), returns end position at delimiter "
-  (interactive "p")
-  (ar-th-end 'symbol no-delimiters))
-
-(defun ar-beginning-of-symbol-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class SYMBOL at point if any, nil otherwise.
-
-Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
-  (interactive "p")
-  (ar-th-gotobeg 'symbol no-delimiters))
-
-(defun ar-end-of-symbol-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-gotoend 'symbol no-delimiters))
-
-(defun ar-in-symbol-p-atpt (&optional no-delimiters)
-  "Returns bounds of SYMBOL at point, a list, if inside, nil otherwise. "
-  (interactive "p")
-  (ar-th-bounds 'symbol no-delimiters))
-
-(defun ar-length-of-symbol-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-length 'symbol no-delimiters))
-
-(defun ar-copy-symbol-atpt (&optional no-delimiters)
-  "Returns a copy of SYMBOL at point if any, nil otherwise. "
-  (interactive "p")
-  (ar-th-copy 'symbol no-delimiters))
-
-(defun ar-delete-symbol-atpt (&optional no-delimiters)
-  "Deletes SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-delete 'symbol no-delimiters))
-
-(defun ar-delete-symbol-in-region (beg end)
-  "Deletes SYMBOL at point if any. "
-  (interactive "*r")
-  (ar-th-delete-in-region 'symbol beg end))
-
-(defun ar-blok-symbol-atpt (&optional no-delimiters)
-  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around symbol.
-  Returns blok or nil if no SYMBOL at cursor-position. "
-  (interactive "*P")
-  (ar-th-blok 'symbol no-delimiters))
-
-(defun ar-backslashparen-symbol-atpt (&optional no-delimiters)
-  "Provides doubleslashed parentheses around symbol at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-backslashparen 'symbol no-delimiters))
-
-(defun ar-doublebackslash-symbol-atpt (&optional no-delimiters)
-  "Puts doubled backslashes around SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-doublebackslash 'symbol no-delimiters))
-
-(defun ar-doubleslash-symbol-atpt (&optional no-delimiters)
-  "Puts doubled slashes around SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-doubleslash 'symbol no-delimiters))
-
-(defun ar-doublebackslashparen-symbol-atpt (&optional no-delimiters)
-  "Provides doubleslashed parentheses around SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-doublebackslashparen 'symbol no-delimiters))
-
-(defun ar-doublebacktick-symbol-atpt (&optional no-delimiters)
-  "Provides double backticks around SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-doublebacktick 'symbol no-delimiters))
-
-(defun ar-slashparen-symbol-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'symbol no-delimiters))
-
-(defun ar-slashparen-symbol-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'symbol no-delimiters))
-
-(defun ar-comment-symbol-atpt (&optional no-delimiters)
-  "Comments SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-comment 'symbol no-delimiters))
-
-(defun ar-commatize-symbol-atpt (&optional no-delimiters)
-  "Put a comma after SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-commatize 'symbol no-delimiters))
-
-(defun ar-quote-symbol-atpt (&optional no-delimiters)
-  "Put a singlequote before SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-quote 'symbol no-delimiters))
-
-
-(defun ar-mark-symbol-atpt (&optional no-delimiters)
-  "Marks SYMBOL at point if any. "
-  (interactive "p")
-  (ar-th-mark 'symbol))
-
-(defun ar-hide-symbol-atpt (&optional no-delimiters)
-  "Hides SYMBOL at point. "
-  (interactive "p")
-  (ar-th-hide 'symbol))
-
-(defun ar-show-symbol-atpt (&optional no-delimiters)
-  "Shows hidden SYMBOL at point. "
-  (interactive "p")
-  (ar-th-show 'symbol))
-
-(defun ar-hide-show-symbol-atpt (&optional no-delimiters)
-  "Alternatively hides or shows SYMBOL at point. "
-  (interactive "p")
-  (ar-th-hide-show 'symbol))
-
-(defun ar-highlight-symbol-atpt-mode (&optional no-delimiters)
-  "Toggles symbol-highlight-atpt-mode "
-  (interactive "p")
-  (ar-th-highlight 'symbol no-delimiters))
-
-(defun ar-kill-symbol-atpt (&optional no-delimiters)
-  "Kills SYMBOL at point if any. "
-  (interactive "*P")
-  (ar-th-kill 'symbol no-delimiters))
-
-(defun ar-curvedsinglequote-symbol-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'symbol no-delimiters))
-
-(defun ar-separate-symbol-atpt (&optional no-delimiters)
-  "Separates SYMBOL at point if any, does nothing otherwise
-inserts newlines, borders are the beginning or the end of buffer "
-  (interactive "*P")
-  (ar-th-separate 'symbol no-delimiters))
-
-(defun ar-triplequotedq-symbol-atpt (&optional no-delimiters)
-  "Put triplequotes composed of doublequotes around symbol. "
-  (interactive "*P")
-  (ar-th-triplequotedq 'symbol no-delimiters))
-
-(defun ar-triplequotesq-symbol-atpt (&optional no-delimiters)
-  "Put triplequotes composed of singlequotes around symbol. "
-  (interactive "*P")
-  (ar-th-triplequotesq 'symbol no-delimiters))
-
-(defun ar-triplebacktick-symbol-atpt (&optional no-delimiters)
-  "Triplebacktick symbol at point.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
-  (interactive "*P")
-  (ar-th-triplebacktick 'symbol no-delimiters))
-
-(defun ar-trim-symbol-atpt (&optional no-delimiters)
-  "Removes leading and trailing char. "
-  (interactive "*")
-  (ar-th-trim 'symbol no-delimiters t t))
-
-(defun ar-left-trim-symbol-atpt (&optional no-delimiters)
-  "Removes leading char. "
-  (interactive "*")
-  (ar-th-trim 'symbol no-delimiters t))
-
-(defun ar-right-trim-symbol-atpt (&optional no-delimiters)
-  "Removes trailing char. "
-  (interactive "*")
-  (ar-th-trim 'symbol n no-delimiters nil t))
-
-(defun ar-underscore-symbol-atpt (&optional no-delimiters)
-  "Put underscore char around SYMBOL. "
-  (interactive "*P")
-  (ar-th-underscore 'symbol no-delimiters))
-
-(defun ar-forward-symbol-atpt (&optional no-delimiters)
-  "Moves forward over SYMBOL at point if any, does nothing otherwise.
-Returns end position of SYMBOL "
-  (interactive "p")
-  (ar-th-forward 'symbol no-delimiters))
-
-(defun ar-backward-symbol-atpt (&optional no-delimiters)
-  "Moves backward over SYMBOL before point if any, does nothing otherwise.
-Returns beginning position of SYMBOL "
-  (interactive "p")
-  (ar-th-backward 'symbol no-delimiters))
-
-(defun ar-transpose-symbol-atpt (&optional no-delimiters)
-  "Transposes SYMBOL with SYMBOL before point if any. "
-  (interactive "*P")
-  (ar-th-transpose 'symbol no-delimiters))
-
-(defun ar-sort-symbol-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts symbols in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
-See doku from ‘sort-subr’, for details.
-  "
-  (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'symbol reverse beg end startkeyfun endkeyfun predicate)))
-
-(defun ar-check-symbol-atpt (&optional arg)
-  "Return t if a SYMBOL at point exists, nil otherwise "
-  (interactive "p")
-  (let* ((beg (funcall (intern-soft (concat "ar-symbol-beginning-position-atpt"))))
-        (end (funcall (intern-soft (concat "ar-symbol-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when arg (message "%s" erg))
    erg))
@@ -3246,7 +3007,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-tabledata-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around tabledata at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'tabledata no-delimiters))
 
@@ -3350,7 +3111,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-tabledata-atpt (&optional no-delimiters)
   "Triplebacktick tabledata at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'tabledata no-delimiters))
 
@@ -3393,9 +3154,9 @@ Returns beginning position of TABLEDATA "
 
 (defun ar-sort-tabledata-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts tabledatas in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -3485,7 +3246,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-xslstylesheet-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around xslstylesheet at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'xslstylesheet no-delimiters))
 
@@ -3589,7 +3350,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-xslstylesheet-atpt (&optional no-delimiters)
   "Triplebacktick xslstylesheet at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'xslstylesheet no-delimiters))
 
@@ -3632,9 +3393,9 @@ Returns beginning position of XSLSTYLESHEET "
 
 (defun ar-sort-xslstylesheet-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts xslstylesheets in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
@@ -3724,7 +3485,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
 
 (defun ar-backslashparen-xsltemplate-atpt (&optional no-delimiters)
   "Provides doubleslashed parentheses around xsltemplate at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-backslashparen 'xsltemplate no-delimiters))
 
@@ -3828,7 +3589,7 @@ inserts newlines, borders are the beginning or the end of buffer "
 (defun ar-triplebacktick-xsltemplate-atpt (&optional no-delimiters)
   "Triplebacktick xsltemplate at point.
 
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiting char or string "
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
   (interactive "*P")
   (ar-th-triplebacktick 'xsltemplate no-delimiters))
 
@@ -3871,9 +3632,9 @@ Returns beginning position of XSLTEMPLATE "
 
 (defun ar-sort-xsltemplate-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts xsltemplates in region, with ARG in reverse order.
-STARTKEYFUN may be replaced by a function which stops at an alternative beginning.
-ENDKEYFUN might be a function specifying THING's end when sorting.
-With PREDICATE define a the function to compare. Defaults are `<' for numbers, otherwise `string<'.
+Optional: STARTKEYFUN 
+Optional: ENDKEYFUN 
+With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
