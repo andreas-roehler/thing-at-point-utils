@@ -57,7 +57,7 @@
       "(list (cons 1 2))"
     (forward-char 1)
     (skip-chars-forward "^(")
-    (ar-list-beginning-atpt)
+    (ar-beginning-of-list-atpt)
     (should (eq 7 (point)))))
 
 (ert-deftest ar-list-end-elisp-test ()
@@ -65,7 +65,7 @@
       "(list (cons 1 2))"
     (forward-char 1)
     (skip-chars-forward "^(")
-    (ar-list-end-atpt)
+    (ar-end-of-list-atpt)
     (should (eq (char-after) ?\)))))
 
 (ert-deftest ar-in-list-p-elisp-test ()

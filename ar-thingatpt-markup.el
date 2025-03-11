@@ -95,14 +95,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'beginendquote no-delimiters))
 
 (defun ar-beginning-of-beginendquote-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class BEGINENDQUOTE at point if any, nil otherwise.
+  "Goto beginning of BEGINENDQUOTE at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'beginendquote no-delimiters))
 
 (defun ar-end-of-beginendquote-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class BEGINENDQUOTE at point if any, nil otherwise. "
+  "Goto end of BEGINENDQUOTE at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'beginendquote no-delimiters))
 
@@ -112,7 +112,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'beginendquote no-delimiters))
 
 (defun ar-length-of-beginendquote-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class BEGINENDQUOTE at point if any, nil otherwise. "
+  "Returns beginning of BEGINENDQUOTE at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'beginendquote no-delimiters))
 
@@ -286,8 +286,8 @@ Returns beginning position of BEGINENDQUOTE "
 
 (defun ar-sort-beginendquote-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts beginendquotes in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -334,14 +334,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'blok no-delimiters))
 
 (defun ar-beginning-of-blok-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class BLOK at point if any, nil otherwise.
+  "Goto beginning of BLOK at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'blok no-delimiters))
 
 (defun ar-end-of-blok-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class BLOK at point if any, nil otherwise. "
+  "Goto end of BLOK at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'blok no-delimiters))
 
@@ -351,7 +351,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'blok no-delimiters))
 
 (defun ar-length-of-blok-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class BLOK at point if any, nil otherwise. "
+  "Returns beginning of BLOK at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'blok no-delimiters))
 
@@ -525,8 +525,8 @@ Returns beginning position of BLOK "
 
 (defun ar-sort-blok-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts bloks in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -573,14 +573,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'doublebackslashed no-delimiters))
 
 (defun ar-beginning-of-doublebackslashed-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class DOUBLEBACKSLASHED at point if any, nil otherwise.
+  "Goto beginning of DOUBLEBACKSLASHED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublebackslashed no-delimiters))
 
 (defun ar-end-of-doublebackslashed-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class DOUBLEBACKSLASHED at point if any, nil otherwise. "
+  "Goto end of DOUBLEBACKSLASHED at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'doublebackslashed no-delimiters))
 
@@ -590,7 +590,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'doublebackslashed no-delimiters))
 
 (defun ar-length-of-doublebackslashed-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class DOUBLEBACKSLASHED at point if any, nil otherwise. "
+  "Returns beginning of DOUBLEBACKSLASHED at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'doublebackslashed no-delimiters))
 
@@ -764,8 +764,8 @@ Returns beginning position of DOUBLEBACKSLASHED "
 
 (defun ar-sort-doublebackslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublebackslasheds in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -812,14 +812,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'doublebackticked no-delimiters))
 
 (defun ar-beginning-of-doublebackticked-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class DOUBLEBACKTICKED at point if any, nil otherwise.
+  "Goto beginning of DOUBLEBACKTICKED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublebackticked no-delimiters))
 
 (defun ar-end-of-doublebackticked-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class DOUBLEBACKTICKED at point if any, nil otherwise. "
+  "Goto end of DOUBLEBACKTICKED at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'doublebackticked no-delimiters))
 
@@ -829,7 +829,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'doublebackticked no-delimiters))
 
 (defun ar-length-of-doublebackticked-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class DOUBLEBACKTICKED at point if any, nil otherwise. "
+  "Returns beginning of DOUBLEBACKTICKED at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'doublebackticked no-delimiters))
 
@@ -1003,8 +1003,8 @@ Returns beginning position of DOUBLEBACKTICKED "
 
 (defun ar-sort-doublebackticked-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublebacktickeds in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -1051,14 +1051,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'doublebackslashedparen no-delimiters))
 
 (defun ar-beginning-of-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
+  "Goto beginning of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doublebackslashedparen no-delimiters))
 
 (defun ar-end-of-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
+  "Goto end of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'doublebackslashedparen no-delimiters))
 
@@ -1068,7 +1068,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'doublebackslashedparen no-delimiters))
 
 (defun ar-length-of-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
+  "Returns beginning of DOUBLEBACKSLASHEDPAREN at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'doublebackslashedparen no-delimiters))
 
@@ -1242,8 +1242,8 @@ Returns beginning position of DOUBLEBACKSLASHEDPAREN "
 
 (defun ar-sort-doublebackslashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doublebackslashedparens in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -1290,14 +1290,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'doubleslashed no-delimiters))
 
 (defun ar-beginning-of-doubleslashed-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class DOUBLESLASHED at point if any, nil otherwise.
+  "Goto beginning of DOUBLESLASHED at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doubleslashed no-delimiters))
 
 (defun ar-end-of-doubleslashed-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class DOUBLESLASHED at point if any, nil otherwise. "
+  "Goto end of DOUBLESLASHED at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'doubleslashed no-delimiters))
 
@@ -1307,7 +1307,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'doubleslashed no-delimiters))
 
 (defun ar-length-of-doubleslashed-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class DOUBLESLASHED at point if any, nil otherwise. "
+  "Returns beginning of DOUBLESLASHED at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'doubleslashed no-delimiters))
 
@@ -1481,8 +1481,8 @@ Returns beginning position of DOUBLESLASHED "
 
 (defun ar-sort-doubleslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doubleslasheds in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -1529,14 +1529,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'doubleslashedparen no-delimiters))
 
 (defun ar-beginning-of-doubleslashedparen-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class DOUBLESLASHEDPAREN at point if any, nil otherwise.
+  "Goto beginning of DOUBLESLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'doubleslashedparen no-delimiters))
 
 (defun ar-end-of-doubleslashedparen-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class DOUBLESLASHEDPAREN at point if any, nil otherwise. "
+  "Goto end of DOUBLESLASHEDPAREN at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'doubleslashedparen no-delimiters))
 
@@ -1546,7 +1546,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'doubleslashedparen no-delimiters))
 
 (defun ar-length-of-doubleslashedparen-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class DOUBLESLASHEDPAREN at point if any, nil otherwise. "
+  "Returns beginning of DOUBLESLASHEDPAREN at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'doubleslashedparen no-delimiters))
 
@@ -1720,8 +1720,8 @@ Returns beginning position of DOUBLESLASHEDPAREN "
 
 (defun ar-sort-doubleslashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts doubleslashedparens in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -1768,14 +1768,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'markup no-delimiters))
 
 (defun ar-beginning-of-markup-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class MARKUP at point if any, nil otherwise.
+  "Goto beginning of MARKUP at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'markup no-delimiters))
 
 (defun ar-end-of-markup-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class MARKUP at point if any, nil otherwise. "
+  "Goto end of MARKUP at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'markup no-delimiters))
 
@@ -1785,7 +1785,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'markup no-delimiters))
 
 (defun ar-length-of-markup-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class MARKUP at point if any, nil otherwise. "
+  "Returns beginning of MARKUP at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'markup no-delimiters))
 
@@ -1959,8 +1959,8 @@ Returns beginning position of MARKUP "
 
 (defun ar-sort-markup-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts markups in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -2007,14 +2007,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'mldata no-delimiters))
 
 (defun ar-beginning-of-mldata-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class MLDATA at point if any, nil otherwise.
+  "Goto beginning of MLDATA at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'mldata no-delimiters))
 
 (defun ar-end-of-mldata-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class MLDATA at point if any, nil otherwise. "
+  "Goto end of MLDATA at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'mldata no-delimiters))
 
@@ -2024,7 +2024,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'mldata no-delimiters))
 
 (defun ar-length-of-mldata-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class MLDATA at point if any, nil otherwise. "
+  "Returns beginning of MLDATA at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'mldata no-delimiters))
 
@@ -2198,8 +2198,8 @@ Returns beginning position of MLDATA "
 
 (defun ar-sort-mldata-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts mldatas in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -2246,14 +2246,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'mlattribut no-delimiters))
 
 (defun ar-beginning-of-mlattribut-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class MLATTRIBUT at point if any, nil otherwise.
+  "Goto beginning of MLATTRIBUT at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'mlattribut no-delimiters))
 
 (defun ar-end-of-mlattribut-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class MLATTRIBUT at point if any, nil otherwise. "
+  "Goto end of MLATTRIBUT at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'mlattribut no-delimiters))
 
@@ -2263,7 +2263,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'mlattribut no-delimiters))
 
 (defun ar-length-of-mlattribut-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class MLATTRIBUT at point if any, nil otherwise. "
+  "Returns beginning of MLATTRIBUT at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'mlattribut no-delimiters))
 
@@ -2437,8 +2437,8 @@ Returns beginning position of MLATTRIBUT "
 
 (defun ar-sort-mlattribut-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts mlattributs in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -2485,14 +2485,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'mltag no-delimiters))
 
 (defun ar-beginning-of-mltag-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class MLTAG at point if any, nil otherwise.
+  "Goto beginning of MLTAG at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'mltag no-delimiters))
 
 (defun ar-end-of-mltag-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class MLTAG at point if any, nil otherwise. "
+  "Goto end of MLTAG at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'mltag no-delimiters))
 
@@ -2502,7 +2502,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'mltag no-delimiters))
 
 (defun ar-length-of-mltag-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class MLTAG at point if any, nil otherwise. "
+  "Returns beginning of MLTAG at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'mltag no-delimiters))
 
@@ -2676,8 +2676,8 @@ Returns beginning position of MLTAG "
 
 (defun ar-sort-mltag-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts mltags in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -2724,14 +2724,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'slashedparen no-delimiters))
 
 (defun ar-beginning-of-slashedparen-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class SLASHEDPAREN at point if any, nil otherwise.
+  "Goto beginning of SLASHEDPAREN at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'slashedparen no-delimiters))
 
 (defun ar-end-of-slashedparen-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class SLASHEDPAREN at point if any, nil otherwise. "
+  "Goto end of SLASHEDPAREN at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'slashedparen no-delimiters))
 
@@ -2741,7 +2741,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'slashedparen no-delimiters))
 
 (defun ar-length-of-slashedparen-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class SLASHEDPAREN at point if any, nil otherwise. "
+  "Returns beginning of SLASHEDPAREN at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'slashedparen no-delimiters))
 
@@ -2915,8 +2915,8 @@ Returns beginning position of SLASHEDPAREN "
 
 (defun ar-sort-slashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts slashedparens in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -2963,14 +2963,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'tabledata no-delimiters))
 
 (defun ar-beginning-of-tabledata-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class TABLEDATA at point if any, nil otherwise.
+  "Goto beginning of TABLEDATA at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'tabledata no-delimiters))
 
 (defun ar-end-of-tabledata-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class TABLEDATA at point if any, nil otherwise. "
+  "Goto end of TABLEDATA at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'tabledata no-delimiters))
 
@@ -2980,7 +2980,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'tabledata no-delimiters))
 
 (defun ar-length-of-tabledata-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class TABLEDATA at point if any, nil otherwise. "
+  "Returns beginning of TABLEDATA at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'tabledata no-delimiters))
 
@@ -3154,8 +3154,8 @@ Returns beginning position of TABLEDATA "
 
 (defun ar-sort-tabledata-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts tabledatas in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -3202,14 +3202,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'xslstylesheet no-delimiters))
 
 (defun ar-beginning-of-xslstylesheet-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class XSLSTYLESHEET at point if any, nil otherwise.
+  "Goto beginning of XSLSTYLESHEET at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'xslstylesheet no-delimiters))
 
 (defun ar-end-of-xslstylesheet-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class XSLSTYLESHEET at point if any, nil otherwise. "
+  "Goto end of XSLSTYLESHEET at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'xslstylesheet no-delimiters))
 
@@ -3219,7 +3219,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'xslstylesheet no-delimiters))
 
 (defun ar-length-of-xslstylesheet-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class XSLSTYLESHEET at point if any, nil otherwise. "
+  "Returns beginning of XSLSTYLESHEET at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'xslstylesheet no-delimiters))
 
@@ -3393,8 +3393,8 @@ Returns beginning position of XSLSTYLESHEET "
 
 (defun ar-sort-xslstylesheet-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts xslstylesheets in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
@@ -3441,14 +3441,14 @@ Optional \\[universal-argument], from a programm '(4), returns end position at d
   (ar-th-end 'xsltemplate no-delimiters))
 
 (defun ar-beginning-of-xsltemplate-atpt (&optional no-delimiters)
-  "Goto beginning of symbol or char-class XSLTEMPLATE at point if any, nil otherwise.
+  "Goto beginning of XSLTEMPLATE at point if any, nil otherwise.
 
 Optional \\[universal-argument], from a programm '(4), returns start position after delimiter "
   (interactive "p")
   (ar-th-gotobeg 'xsltemplate no-delimiters))
 
 (defun ar-end-of-xsltemplate-atpt (&optional no-delimiters)
-  "Goto end of symbol or char-class XSLTEMPLATE at point if any, nil otherwise. "
+  "Goto end of XSLTEMPLATE at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-gotoend 'xsltemplate no-delimiters))
 
@@ -3458,7 +3458,7 @@ Optional \\[universal-argument], from a programm '(4), returns start position af
   (ar-th-bounds 'xsltemplate no-delimiters))
 
 (defun ar-length-of-xsltemplate-atpt (&optional no-delimiters)
-  "Returns beginning of symbol or char-class XSLTEMPLATE at point if any, nil otherwise. "
+  "Returns beginning of XSLTEMPLATE at point if any, nil otherwise. "
   (interactive "p")
   (ar-th-length 'xsltemplate no-delimiters))
 
@@ -3632,8 +3632,8 @@ Returns beginning position of XSLTEMPLATE "
 
 (defun ar-sort-xsltemplate-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
   "Sorts xsltemplates in region, with ARG in reverse order.
-Optional: STARTKEYFUN 
-Optional: ENDKEYFUN 
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
 With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "

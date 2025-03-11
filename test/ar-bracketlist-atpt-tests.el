@@ -62,7 +62,7 @@
     (goto-char (point-min))
     (forward-char 1)
     (skip-syntax-forward "^(")
-    (ar-list-beginning-atpt)
+    (ar-beginning-of-list-atpt)
     (should (eq 2 (point)))))
 
 (ert-deftest ar-bracketlist-end-atpt-test ()
@@ -71,7 +71,7 @@
     (goto-char (point-min))
     (forward-char 1)
     ;; (skip-syntax-forward "^(")
-    (ar-list-end-atpt)
+    (ar-end-of-list-atpt)
     (should (eq (char-after) ?\]))))
 
 (ert-deftest ar-in-bracketlist-p-atpt-test ()

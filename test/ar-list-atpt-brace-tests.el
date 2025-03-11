@@ -75,7 +75,7 @@
     (sit-for 0.1)
     (should (eq 101 (ar-list-end-position-atpt)))))
 
-(ert-deftest ar-list-beginning-atpt-brace-test ()
+(ert-deftest ar-beginning-of-list-atpt-brace-test ()
   (ar-test-with-python-buffer-point-min
       "feature_operation_matrix = {
     \"character\": {
@@ -85,7 +85,7 @@
     }\n"
     (end-of-line)
     (skip-syntax-forward "^(")
-    (ar-list-beginning-atpt)
+    (ar-beginning-of-list-atpt)
     (should (eq 47 (point)))))
 
 (ert-deftest ar-list-end-atpt-brace-test ()
@@ -99,7 +99,7 @@
     (end-of-line)
     (skip-syntax-forward "^(")
     (sit-for 0.1)
-    (ar-list-end-atpt)
+    (ar-end-of-list-atpt)
     (should (eq 101 (point)))))
 
 (ert-deftest ar-in-list-p-atpt-brace-test ()
