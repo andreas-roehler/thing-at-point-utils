@@ -287,9 +287,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'beginendquote reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'beginendquote reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-beginendquote-atpt (&optional arg)
   "Return t if a BEGINENDQUOTE at point exists, nil otherwise "
@@ -521,9 +520,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'blok reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'blok reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-blok-atpt (&optional arg)
   "Return t if a BLOK at point exists, nil otherwise "
@@ -755,9 +753,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublebackslashed reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'doublebackslashed reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-doublebackslashed-atpt (&optional arg)
   "Return t if a DOUBLEBACKSLASHED at point exists, nil otherwise "
@@ -989,9 +986,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublebackticked reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'doublebackticked reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-doublebackticked-atpt (&optional arg)
   "Return t if a DOUBLEBACKTICKED at point exists, nil otherwise "
@@ -1223,9 +1219,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublebackslashedparen reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'doublebackslashedparen reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-doublebackslashedparen-atpt (&optional arg)
   "Return t if a DOUBLEBACKSLASHEDPAREN at point exists, nil otherwise "
@@ -1457,9 +1452,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doubleslashed reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'doubleslashed reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-doubleslashed-atpt (&optional arg)
   "Return t if a DOUBLESLASHED at point exists, nil otherwise "
@@ -1691,9 +1685,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doubleslashedparen reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'doubleslashedparen reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-doubleslashedparen-atpt (&optional arg)
   "Return t if a DOUBLESLASHEDPAREN at point exists, nil otherwise "
@@ -1925,9 +1918,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'markup reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'markup reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-markup-atpt (&optional arg)
   "Return t if a MARKUP at point exists, nil otherwise "
@@ -2159,9 +2151,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'mldata reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'mldata reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-mldata-atpt (&optional arg)
   "Return t if a MLDATA at point exists, nil otherwise "
@@ -2393,9 +2384,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'mlattribut reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'mlattribut reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-mlattribut-atpt (&optional arg)
   "Return t if a MLATTRIBUT at point exists, nil otherwise "
@@ -2627,9 +2617,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'mltag reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'mltag reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-mltag-atpt (&optional arg)
   "Return t if a MLTAG at point exists, nil otherwise "
@@ -2861,9 +2850,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'slashedparen reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'slashedparen reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-slashedparen-atpt (&optional arg)
   "Return t if a SLASHEDPAREN at point exists, nil otherwise "
@@ -3095,9 +3083,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'tabledata reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'tabledata reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-tabledata-atpt (&optional arg)
   "Return t if a TABLEDATA at point exists, nil otherwise "
@@ -3329,9 +3316,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'xslstylesheet reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'xslstylesheet reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-xslstylesheet-atpt (&optional arg)
   "Return t if a XSLSTYLESHEET at point exists, nil otherwise "
@@ -3563,9 +3549,8 @@ With PREDICATE define a the function to compare.
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'xsltemplate reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'xsltemplate reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-xsltemplate-atpt (&optional arg)
   "Return t if a XSLTEMPLATE at point exists, nil otherwise "

@@ -1800,32 +1800,6 @@ Returns final position when called from inside section, nil otherwise"
     (goto-char beg)
     (exchange-point-and-mark)))
 
-
-(defvar ar-paired-delimited-passiv-raw
-  (list
-   '(symboled "`" "'")
-   '(braced "{" "}")
-   '(bracketed "[" "]")
-   '(lesserangled "<" ">")
-   '(greaterangled ">" "<")
-   '(curvedsinglequoted "‘" "’")
-   '(parentized "(" ")")))
-
-(defvar ar-unpaired-delimited-raw
-  (list
-   '(backslashed "\\\\")
-   '(backticked "`")
-   '(coloned ":")
-   '(dollared "$")
-   '(doublequoted "\\\"")
-   '(equalized "=")
-   '(hyphened "-")
-   '(singlequoted "'")
-   '(slashed "/")
-   '(stared "*")
-   '(underscored "_")
-   '(whitespaced " ")))
-
 (setq ar-paired-delimit-aktiv-raw
       (list
        '(symbol 96 39)
@@ -2123,6 +2097,7 @@ Returns final position when called from inside section, nil otherwise"
        'comment
        'csv
        'date
+       'delimited
        'email
        'filename
        'filenamenondirectory
@@ -2167,6 +2142,32 @@ Returns final position when called from inside section, nil otherwise"
        'string
        'buffer
        ))
+
+
+(defvar ar-paired-delimited-passiv-raw
+  (list
+   '(symboled "`" "'")
+   '(braced "{" "}")
+   '(bracketed "[" "]")
+   '(lesserangled "<" ">")
+   '(greaterangled ">" "<")
+   '(curvedsinglequoted "‘" "’")
+   '(parentized "(" ")")))
+
+(defvar ar-unpaired-delimited-raw
+  (list
+   '(backslashed "\\\\")
+   '(backticked "`")
+   '(coloned ":")
+   '(dollared "$")
+   '(doublequoted "\\\"")
+   '(equalized "=")
+   '(hyphened "-")
+   '(singlequoted "'")
+   '(slashed "/")
+   '(stared "*")
+   '(underscored "_")
+   '(whitespaced " ")))
 
 
 

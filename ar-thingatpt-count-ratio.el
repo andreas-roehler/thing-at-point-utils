@@ -1487,6 +1487,214 @@
   (ar-th-ratio-base 'upper 'date beg end t))
 
 
+(defun ar-count-alnum-in-delimited-atpt (&optional beg end) 
+"Counts matches of alnum in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'delimited beg end nil))
+
+(defun ar-count-alnum-in-delimited-until-point (&optional beg end) 
+"Counts matches of alnum in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'delimited beg (point) nil))
+
+(defun ar-ratio-alnum-in-delimited-atpt (&optional beg end) 
+"Relation of alnum in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'delimited beg end t))
+
+
+(defun ar-count-alpha-in-delimited-atpt (&optional beg end) 
+"Counts matches of alpha in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'delimited beg end nil))
+
+(defun ar-count-alpha-in-delimited-until-point (&optional beg end) 
+"Counts matches of alpha in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'delimited beg (point) nil))
+
+(defun ar-ratio-alpha-in-delimited-atpt (&optional beg end) 
+"Relation of alpha in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'delimited beg end t))
+
+
+(defun ar-count-ascii-in-delimited-atpt (&optional beg end) 
+"Counts matches of ascii in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'delimited beg end nil))
+
+(defun ar-count-ascii-in-delimited-until-point (&optional beg end) 
+"Counts matches of ascii in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'delimited beg (point) nil))
+
+(defun ar-ratio-ascii-in-delimited-atpt (&optional beg end) 
+"Relation of ascii in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'delimited beg end t))
+
+
+(defun ar-count-blank-in-delimited-atpt (&optional beg end) 
+"Counts matches of blank in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'delimited beg end nil))
+
+(defun ar-count-blank-in-delimited-until-point (&optional beg end) 
+"Counts matches of blank in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'delimited beg (point) nil))
+
+(defun ar-ratio-blank-in-delimited-atpt (&optional beg end) 
+"Relation of blank in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'delimited beg end t))
+
+
+(defun ar-count-cntrl-in-delimited-atpt (&optional beg end) 
+"Counts matches of cntrl in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'delimited beg end nil))
+
+(defun ar-count-cntrl-in-delimited-until-point (&optional beg end) 
+"Counts matches of cntrl in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'delimited beg (point) nil))
+
+(defun ar-ratio-cntrl-in-delimited-atpt (&optional beg end) 
+"Relation of cntrl in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'delimited beg end t))
+
+
+(defun ar-count-digit-in-delimited-atpt (&optional beg end) 
+"Counts matches of digit in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'delimited beg end nil))
+
+(defun ar-count-digit-in-delimited-until-point (&optional beg end) 
+"Counts matches of digit in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'delimited beg (point) nil))
+
+(defun ar-ratio-digit-in-delimited-atpt (&optional beg end) 
+"Relation of digit in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'delimited beg end t))
+
+
+(defun ar-count-graph-in-delimited-atpt (&optional beg end) 
+"Counts matches of graph in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'delimited beg end nil))
+
+(defun ar-count-graph-in-delimited-until-point (&optional beg end) 
+"Counts matches of graph in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'delimited beg (point) nil))
+
+(defun ar-ratio-graph-in-delimited-atpt (&optional beg end) 
+"Relation of graph in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'delimited beg end t))
+
+
+(defun ar-count-lower-in-delimited-atpt (&optional beg end) 
+"Counts matches of lower in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'delimited beg end nil))
+
+(defun ar-count-lower-in-delimited-until-point (&optional beg end) 
+"Counts matches of lower in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'delimited beg (point) nil))
+
+(defun ar-ratio-lower-in-delimited-atpt (&optional beg end) 
+"Relation of lower in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'delimited beg end t))
+
+
+(defun ar-count-nonascii-in-delimited-atpt (&optional beg end) 
+"Counts matches of nonascii in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'delimited beg end nil))
+
+(defun ar-count-nonascii-in-delimited-until-point (&optional beg end) 
+"Counts matches of nonascii in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'delimited beg (point) nil))
+
+(defun ar-ratio-nonascii-in-delimited-atpt (&optional beg end) 
+"Relation of nonascii in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'delimited beg end t))
+
+
+(defun ar-count-print-in-delimited-atpt (&optional beg end) 
+"Counts matches of print in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'delimited beg end nil))
+
+(defun ar-count-print-in-delimited-until-point (&optional beg end) 
+"Counts matches of print in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'delimited beg (point) nil))
+
+(defun ar-ratio-print-in-delimited-atpt (&optional beg end) 
+"Relation of print in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'delimited beg end t))
+
+
+(defun ar-count-punct-in-delimited-atpt (&optional beg end) 
+"Counts matches of punct in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'delimited beg end nil))
+
+(defun ar-count-punct-in-delimited-until-point (&optional beg end) 
+"Counts matches of punct in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'delimited beg (point) nil))
+
+(defun ar-ratio-punct-in-delimited-atpt (&optional beg end) 
+"Relation of punct in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'delimited beg end t))
+
+
+(defun ar-count-space-in-delimited-atpt (&optional beg end) 
+"Counts matches of space in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'delimited beg end nil))
+
+(defun ar-count-space-in-delimited-until-point (&optional beg end) 
+"Counts matches of space in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'delimited beg (point) nil))
+
+(defun ar-ratio-space-in-delimited-atpt (&optional beg end) 
+"Relation of space in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'delimited beg end t))
+
+
+(defun ar-count-upper-in-delimited-atpt (&optional beg end) 
+"Counts matches of upper in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'delimited beg end nil))
+
+(defun ar-count-upper-in-delimited-until-point (&optional beg end) 
+"Counts matches of upper in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'delimited beg (point) nil))
+
+(defun ar-ratio-upper-in-delimited-atpt (&optional beg end) 
+"Relation of upper in delimited if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'delimited beg end t))
+
+
 (defun ar-count-alnum-in-email-atpt (&optional beg end) 
 "Counts matches of alnum in email if useful, returns nil otherwise "
   (interactive "p")
