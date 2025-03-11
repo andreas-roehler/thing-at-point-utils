@@ -1226,8 +1226,7 @@ it would doublequote a word at point "
 	   (cons (point) (1+ (point))))
 	  (t (save-excursion
 	       (save-restriction
-		 (let* ((orig (point))
-			(beg-raw (funcall (get thing 'beginning-op-at)))
+		 (let* ((beg-raw (funcall (get thing 'beginning-op-at)))
                         (beg
                          (if (consp beg-raw)
                              (if no-delimiters
@@ -1629,7 +1628,7 @@ instead of working ‘-backward’ or ‘-forward’ deletes expression at point
 	      (newline 1)
 	      (indent-according-to-mode))))))
 
-(defun ar-thing-in-thing (thing-1th thing-2th th-function &optional no-delimiters)
+(defun ar-thing-in-thing (thing-1th thing-2th th-function)
   "Addresses things of 1th kind within the borders of the 2th,
 If optional positions BEG-2TH END-2TH are given, works on them instead. "
   (let* ((bounds (ar-th-bounds thing-2th))
@@ -1853,6 +1852,7 @@ Move backward with negative argument "
     (transpose-regions a b c d)
     d))
 
+(defalias 'ar-th-sort 'sort)
 ;; credits to sort-subr, sort.el
 ;; (defun ar-th-sort (thing reverse beg end startkeyfun endkeyfun)
 ;;   (save-excursion

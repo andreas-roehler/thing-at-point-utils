@@ -341,7 +341,7 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
 ;;     r'\b\d{1,2}(-\d{1,2})? \w+ \d{4}\b'         #  \"DD(-DD) Month YYYY\" foo
 ;; ]
 
-(ert-deftest ar-backward-delimited-dOGoBa ()
+(ert-deftest ar-triplebackticked-test-dOGoBa ()
   (ar-test
       "```asd```"
     'fundamental-mode
