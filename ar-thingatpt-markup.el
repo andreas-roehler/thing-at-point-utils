@@ -183,7 +183,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'beginendquote no-delimiters))
 
-
 (defun ar-mark-beginendquote-atpt (&optional no-delimiters)
   "Marks BEGINENDQUOTE at point if any. "
   (interactive "P")
@@ -269,7 +268,7 @@ Returns end position of BEGINENDQUOTE "
   (ar-th-forward 'beginendquote no-delimiters))
 
 (defun ar-backward-beginendquote-atpt (&optional no-delimiters)
-  "Moves backward over BEGINENDQUOTE before point if any, does nothing otherwise.
+  "Moves backward over BEGINENDQUOTE.
 Returns beginning position of BEGINENDQUOTE "
   (interactive "P")
   (ar-th-backward 'beginendquote no-delimiters))
@@ -416,7 +415,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'blok no-delimiters))
 
-
 (defun ar-mark-blok-atpt (&optional no-delimiters)
   "Marks BLOK at point if any. "
   (interactive "P")
@@ -502,7 +500,7 @@ Returns end position of BLOK "
   (ar-th-forward 'blok no-delimiters))
 
 (defun ar-backward-blok-atpt (&optional no-delimiters)
-  "Moves backward over BLOK before point if any, does nothing otherwise.
+  "Moves backward over BLOK.
 Returns beginning position of BLOK "
   (interactive "P")
   (ar-th-backward 'blok no-delimiters))
@@ -649,7 +647,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'doublebackslashed no-delimiters))
 
-
 (defun ar-mark-doublebackslashed-atpt (&optional no-delimiters)
   "Marks DOUBLEBACKSLASHED at point if any. "
   (interactive "P")
@@ -735,7 +732,7 @@ Returns end position of DOUBLEBACKSLASHED "
   (ar-th-forward 'doublebackslashed no-delimiters))
 
 (defun ar-backward-doublebackslashed-atpt (&optional no-delimiters)
-  "Moves backward over DOUBLEBACKSLASHED before point if any, does nothing otherwise.
+  "Moves backward over DOUBLEBACKSLASHED.
 Returns beginning position of DOUBLEBACKSLASHED "
   (interactive "P")
   (ar-th-backward 'doublebackslashed no-delimiters))
@@ -882,7 +879,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'doublebackticked no-delimiters))
 
-
 (defun ar-mark-doublebackticked-atpt (&optional no-delimiters)
   "Marks DOUBLEBACKTICKED at point if any. "
   (interactive "P")
@@ -968,7 +964,7 @@ Returns end position of DOUBLEBACKTICKED "
   (ar-th-forward 'doublebackticked no-delimiters))
 
 (defun ar-backward-doublebackticked-atpt (&optional no-delimiters)
-  "Moves backward over DOUBLEBACKTICKED before point if any, does nothing otherwise.
+  "Moves backward over DOUBLEBACKTICKED.
 Returns beginning position of DOUBLEBACKTICKED "
   (interactive "P")
   (ar-th-backward 'doublebackticked no-delimiters))
@@ -1115,7 +1111,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'doublebackslashedparen no-delimiters))
 
-
 (defun ar-mark-doublebackslashedparen-atpt (&optional no-delimiters)
   "Marks DOUBLEBACKSLASHEDPAREN at point if any. "
   (interactive "P")
@@ -1201,7 +1196,7 @@ Returns end position of DOUBLEBACKSLASHEDPAREN "
   (ar-th-forward 'doublebackslashedparen no-delimiters))
 
 (defun ar-backward-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Moves backward over DOUBLEBACKSLASHEDPAREN before point if any, does nothing otherwise.
+  "Moves backward over DOUBLEBACKSLASHEDPAREN.
 Returns beginning position of DOUBLEBACKSLASHEDPAREN "
   (interactive "P")
   (ar-th-backward 'doublebackslashedparen no-delimiters))
@@ -1348,7 +1343,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'doubleslashed no-delimiters))
 
-
 (defun ar-mark-doubleslashed-atpt (&optional no-delimiters)
   "Marks DOUBLESLASHED at point if any. "
   (interactive "P")
@@ -1434,7 +1428,7 @@ Returns end position of DOUBLESLASHED "
   (ar-th-forward 'doubleslashed no-delimiters))
 
 (defun ar-backward-doubleslashed-atpt (&optional no-delimiters)
-  "Moves backward over DOUBLESLASHED before point if any, does nothing otherwise.
+  "Moves backward over DOUBLESLASHED.
 Returns beginning position of DOUBLESLASHED "
   (interactive "P")
   (ar-th-backward 'doubleslashed no-delimiters))
@@ -1581,7 +1575,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'doubleslashedparen no-delimiters))
 
-
 (defun ar-mark-doubleslashedparen-atpt (&optional no-delimiters)
   "Marks DOUBLESLASHEDPAREN at point if any. "
   (interactive "P")
@@ -1667,7 +1660,7 @@ Returns end position of DOUBLESLASHEDPAREN "
   (ar-th-forward 'doubleslashedparen no-delimiters))
 
 (defun ar-backward-doubleslashedparen-atpt (&optional no-delimiters)
-  "Moves backward over DOUBLESLASHEDPAREN before point if any, does nothing otherwise.
+  "Moves backward over DOUBLESLASHEDPAREN.
 Returns beginning position of DOUBLESLASHEDPAREN "
   (interactive "P")
   (ar-th-backward 'doubleslashedparen no-delimiters))
@@ -1814,7 +1807,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'markup no-delimiters))
 
-
 (defun ar-mark-markup-atpt (&optional no-delimiters)
   "Marks MARKUP at point if any. "
   (interactive "P")
@@ -1900,7 +1892,7 @@ Returns end position of MARKUP "
   (ar-th-forward 'markup no-delimiters))
 
 (defun ar-backward-markup-atpt (&optional no-delimiters)
-  "Moves backward over MARKUP before point if any, does nothing otherwise.
+  "Moves backward over MARKUP.
 Returns beginning position of MARKUP "
   (interactive "P")
   (ar-th-backward 'markup no-delimiters))
@@ -2047,7 +2039,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'mldata no-delimiters))
 
-
 (defun ar-mark-mldata-atpt (&optional no-delimiters)
   "Marks MLDATA at point if any. "
   (interactive "P")
@@ -2133,7 +2124,7 @@ Returns end position of MLDATA "
   (ar-th-forward 'mldata no-delimiters))
 
 (defun ar-backward-mldata-atpt (&optional no-delimiters)
-  "Moves backward over MLDATA before point if any, does nothing otherwise.
+  "Moves backward over MLDATA.
 Returns beginning position of MLDATA "
   (interactive "P")
   (ar-th-backward 'mldata no-delimiters))
@@ -2280,7 +2271,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'mlattribut no-delimiters))
 
-
 (defun ar-mark-mlattribut-atpt (&optional no-delimiters)
   "Marks MLATTRIBUT at point if any. "
   (interactive "P")
@@ -2366,7 +2356,7 @@ Returns end position of MLATTRIBUT "
   (ar-th-forward 'mlattribut no-delimiters))
 
 (defun ar-backward-mlattribut-atpt (&optional no-delimiters)
-  "Moves backward over MLATTRIBUT before point if any, does nothing otherwise.
+  "Moves backward over MLATTRIBUT.
 Returns beginning position of MLATTRIBUT "
   (interactive "P")
   (ar-th-backward 'mlattribut no-delimiters))
@@ -2513,7 +2503,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'mltag no-delimiters))
 
-
 (defun ar-mark-mltag-atpt (&optional no-delimiters)
   "Marks MLTAG at point if any. "
   (interactive "P")
@@ -2599,7 +2588,7 @@ Returns end position of MLTAG "
   (ar-th-forward 'mltag no-delimiters))
 
 (defun ar-backward-mltag-atpt (&optional no-delimiters)
-  "Moves backward over MLTAG before point if any, does nothing otherwise.
+  "Moves backward over MLTAG.
 Returns beginning position of MLTAG "
   (interactive "P")
   (ar-th-backward 'mltag no-delimiters))
@@ -2746,7 +2735,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'slashedparen no-delimiters))
 
-
 (defun ar-mark-slashedparen-atpt (&optional no-delimiters)
   "Marks SLASHEDPAREN at point if any. "
   (interactive "P")
@@ -2832,7 +2820,7 @@ Returns end position of SLASHEDPAREN "
   (ar-th-forward 'slashedparen no-delimiters))
 
 (defun ar-backward-slashedparen-atpt (&optional no-delimiters)
-  "Moves backward over SLASHEDPAREN before point if any, does nothing otherwise.
+  "Moves backward over SLASHEDPAREN.
 Returns beginning position of SLASHEDPAREN "
   (interactive "P")
   (ar-th-backward 'slashedparen no-delimiters))
@@ -2979,7 +2967,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'tabledata no-delimiters))
 
-
 (defun ar-mark-tabledata-atpt (&optional no-delimiters)
   "Marks TABLEDATA at point if any. "
   (interactive "P")
@@ -3065,7 +3052,7 @@ Returns end position of TABLEDATA "
   (ar-th-forward 'tabledata no-delimiters))
 
 (defun ar-backward-tabledata-atpt (&optional no-delimiters)
-  "Moves backward over TABLEDATA before point if any, does nothing otherwise.
+  "Moves backward over TABLEDATA.
 Returns beginning position of TABLEDATA "
   (interactive "P")
   (ar-th-backward 'tabledata no-delimiters))
@@ -3212,7 +3199,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'xslstylesheet no-delimiters))
 
-
 (defun ar-mark-xslstylesheet-atpt (&optional no-delimiters)
   "Marks XSLSTYLESHEET at point if any. "
   (interactive "P")
@@ -3298,7 +3284,7 @@ Returns end position of XSLSTYLESHEET "
   (ar-th-forward 'xslstylesheet no-delimiters))
 
 (defun ar-backward-xslstylesheet-atpt (&optional no-delimiters)
-  "Moves backward over XSLSTYLESHEET before point if any, does nothing otherwise.
+  "Moves backward over XSLSTYLESHEET.
 Returns beginning position of XSLSTYLESHEET "
   (interactive "P")
   (ar-th-backward 'xslstylesheet no-delimiters))
@@ -3445,7 +3431,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-quote 'xsltemplate no-delimiters))
 
-
 (defun ar-mark-xsltemplate-atpt (&optional no-delimiters)
   "Marks XSLTEMPLATE at point if any. "
   (interactive "P")
@@ -3531,7 +3516,7 @@ Returns end position of XSLTEMPLATE "
   (ar-th-forward 'xsltemplate no-delimiters))
 
 (defun ar-backward-xsltemplate-atpt (&optional no-delimiters)
-  "Moves backward over XSLTEMPLATE before point if any, does nothing otherwise.
+  "Moves backward over XSLTEMPLATE.
 Returns beginning position of XSLTEMPLATE "
   (interactive "P")
   (ar-th-backward 'xsltemplate no-delimiters))
