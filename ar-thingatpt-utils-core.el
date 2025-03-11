@@ -2123,7 +2123,6 @@ Returns final position when called from inside section, nil otherwise"
        'comment
        'csv
        'date
-       'delimited
        'email
        'filename
        'filenamenondirectory

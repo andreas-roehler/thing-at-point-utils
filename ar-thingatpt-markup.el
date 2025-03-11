@@ -255,7 +255,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-beginendquote-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'beginendquote n no-delimiters nil t))
+  (ar-th-trim 'beginendquote no-delimiters nil t))
 
 (defun ar-underscore-beginendquote-atpt (&optional no-delimiters)
   "Put underscore char around BEGINENDQUOTE. "
@@ -489,7 +489,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-blok-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'blok n no-delimiters nil t))
+  (ar-th-trim 'blok no-delimiters nil t))
 
 (defun ar-underscore-blok-atpt (&optional no-delimiters)
   "Put underscore char around BLOK. "
@@ -723,7 +723,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-doublebackslashed-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashed n no-delimiters nil t))
+  (ar-th-trim 'doublebackslashed no-delimiters nil t))
 
 (defun ar-underscore-doublebackslashed-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLEBACKSLASHED. "
@@ -957,7 +957,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-doublebackticked-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackticked n no-delimiters nil t))
+  (ar-th-trim 'doublebackticked no-delimiters nil t))
 
 (defun ar-underscore-doublebackticked-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLEBACKTICKED. "
@@ -1191,7 +1191,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-doublebackslashedparen-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doublebackslashedparen n no-delimiters nil t))
+  (ar-th-trim 'doublebackslashedparen no-delimiters nil t))
 
 (defun ar-underscore-doublebackslashedparen-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLEBACKSLASHEDPAREN. "
@@ -1425,7 +1425,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-doubleslashed-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashed n no-delimiters nil t))
+  (ar-th-trim 'doubleslashed no-delimiters nil t))
 
 (defun ar-underscore-doubleslashed-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLESLASHED. "
@@ -1659,7 +1659,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-doubleslashedparen-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'doubleslashedparen n no-delimiters nil t))
+  (ar-th-trim 'doubleslashedparen no-delimiters nil t))
 
 (defun ar-underscore-doubleslashedparen-atpt (&optional no-delimiters)
   "Put underscore char around DOUBLESLASHEDPAREN. "
@@ -1893,7 +1893,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-markup-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'markup n no-delimiters nil t))
+  (ar-th-trim 'markup no-delimiters nil t))
 
 (defun ar-underscore-markup-atpt (&optional no-delimiters)
   "Put underscore char around MARKUP. "
@@ -2127,7 +2127,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-mldata-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'mldata n no-delimiters nil t))
+  (ar-th-trim 'mldata no-delimiters nil t))
 
 (defun ar-underscore-mldata-atpt (&optional no-delimiters)
   "Put underscore char around MLDATA. "
@@ -2361,7 +2361,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-mlattribut-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'mlattribut n no-delimiters nil t))
+  (ar-th-trim 'mlattribut no-delimiters nil t))
 
 (defun ar-underscore-mlattribut-atpt (&optional no-delimiters)
   "Put underscore char around MLATTRIBUT. "
@@ -2595,7 +2595,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-mltag-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'mltag n no-delimiters nil t))
+  (ar-th-trim 'mltag no-delimiters nil t))
 
 (defun ar-underscore-mltag-atpt (&optional no-delimiters)
   "Put underscore char around MLTAG. "
@@ -2829,7 +2829,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-slashedparen-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'slashedparen n no-delimiters nil t))
+  (ar-th-trim 'slashedparen no-delimiters nil t))
 
 (defun ar-underscore-slashedparen-atpt (&optional no-delimiters)
   "Put underscore char around SLASHEDPAREN. "
@@ -3063,7 +3063,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-tabledata-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'tabledata n no-delimiters nil t))
+  (ar-th-trim 'tabledata no-delimiters nil t))
 
 (defun ar-underscore-tabledata-atpt (&optional no-delimiters)
   "Put underscore char around TABLEDATA. "
@@ -3297,7 +3297,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-xslstylesheet-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'xslstylesheet n no-delimiters nil t))
+  (ar-th-trim 'xslstylesheet no-delimiters nil t))
 
 (defun ar-underscore-xslstylesheet-atpt (&optional no-delimiters)
   "Put underscore char around XSLSTYLESHEET. "
@@ -3531,7 +3531,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-xsltemplate-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'xsltemplate n no-delimiters nil t))
+  (ar-th-trim 'xsltemplate no-delimiters nil t))
 
 (defun ar-underscore-xsltemplate-atpt (&optional no-delimiters)
   "Put underscore char around XSLTEMPLATE. "

@@ -66,11 +66,6 @@
   (interactive "*")
   (ar-th-colon 'date))
 
-(defun ar-colon-delimited-atpt ()
-  "Colon DELIMITED at point."
-  (interactive "*")
-  (ar-th-colon 'delimited))
-
 (defun ar-colon-email-atpt ()
   "Colon EMAIL at point."
   (interactive "*")
@@ -210,11 +205,6 @@
   "Cross DATE at point."
   (interactive "*")
   (ar-th-cross 'date))
-
-(defun ar-cross-delimited-atpt ()
-  "Cross DELIMITED at point."
-  (interactive "*")
-  (ar-th-cross 'delimited))
 
 (defun ar-cross-email-atpt ()
   "Cross EMAIL at point."
@@ -356,11 +346,6 @@
   (interactive "*")
   (ar-th-backslash 'date))
 
-(defun ar-backslash-delimited-atpt ()
-  "Backslash DELIMITED at point."
-  (interactive "*")
-  (ar-th-backslash 'delimited))
-
 (defun ar-backslash-email-atpt ()
   "Backslash EMAIL at point."
   (interactive "*")
@@ -500,11 +485,6 @@
   "Backtick DATE at point."
   (interactive "*")
   (ar-th-backtick 'date))
-
-(defun ar-backtick-delimited-atpt ()
-  "Backtick DELIMITED at point."
-  (interactive "*")
-  (ar-th-backtick 'delimited))
 
 (defun ar-backtick-email-atpt ()
   "Backtick EMAIL at point."
@@ -646,11 +626,6 @@
   (interactive "*")
   (ar-th-dollar 'date))
 
-(defun ar-dollar-delimited-atpt ()
-  "Dollar DELIMITED at point."
-  (interactive "*")
-  (ar-th-dollar 'delimited))
-
 (defun ar-dollar-email-atpt ()
   "Dollar EMAIL at point."
   (interactive "*")
@@ -790,11 +765,6 @@
   "Doublequote DATE at point."
   (interactive "*")
   (ar-th-doublequote 'date))
-
-(defun ar-doublequote-delimited-atpt ()
-  "Doublequote DELIMITED at point."
-  (interactive "*")
-  (ar-th-doublequote 'delimited))
 
 (defun ar-doublequote-email-atpt ()
   "Doublequote EMAIL at point."
@@ -936,11 +906,6 @@
   (interactive "*")
   (ar-th-equalize 'date))
 
-(defun ar-equalize-delimited-atpt ()
-  "Equalize DELIMITED at point."
-  (interactive "*")
-  (ar-th-equalize 'delimited))
-
 (defun ar-equalize-email-atpt ()
   "Equalize EMAIL at point."
   (interactive "*")
@@ -1080,11 +1045,6 @@
   "Escape DATE at point."
   (interactive "*")
   (ar-th-escape 'date))
-
-(defun ar-escape-delimited-atpt ()
-  "Escape DELIMITED at point."
-  (interactive "*")
-  (ar-th-escape 'delimited))
 
 (defun ar-escape-email-atpt ()
   "Escape EMAIL at point."
@@ -1226,11 +1186,6 @@
   (interactive "*")
   (ar-th-hash 'date))
 
-(defun ar-hash-delimited-atpt ()
-  "Hash DELIMITED at point."
-  (interactive "*")
-  (ar-th-hash 'delimited))
-
 (defun ar-hash-email-atpt ()
   "Hash EMAIL at point."
   (interactive "*")
@@ -1370,11 +1325,6 @@
   "Hyphen DATE at point."
   (interactive "*")
   (ar-th-hyphen 'date))
-
-(defun ar-hyphen-delimited-atpt ()
-  "Hyphen DELIMITED at point."
-  (interactive "*")
-  (ar-th-hyphen 'delimited))
 
 (defun ar-hyphen-email-atpt ()
   "Hyphen EMAIL at point."
@@ -1516,11 +1466,6 @@
   (interactive "*")
   (ar-th-pipe 'date))
 
-(defun ar-pipe-delimited-atpt ()
-  "Pipe DELIMITED at point."
-  (interactive "*")
-  (ar-th-pipe 'delimited))
-
 (defun ar-pipe-email-atpt ()
   "Pipe EMAIL at point."
   (interactive "*")
@@ -1660,11 +1605,6 @@
   "Singlequote DATE at point."
   (interactive "*")
   (ar-th-singlequote 'date))
-
-(defun ar-singlequote-delimited-atpt ()
-  "Singlequote DELIMITED at point."
-  (interactive "*")
-  (ar-th-singlequote 'delimited))
 
 (defun ar-singlequote-email-atpt ()
   "Singlequote EMAIL at point."
@@ -1806,11 +1746,6 @@
   (interactive "*")
   (ar-th-slash 'date))
 
-(defun ar-slash-delimited-atpt ()
-  "Slash DELIMITED at point."
-  (interactive "*")
-  (ar-th-slash 'delimited))
-
 (defun ar-slash-email-atpt ()
   "Slash EMAIL at point."
   (interactive "*")
@@ -1950,11 +1885,6 @@
   "Star DATE at point."
   (interactive "*")
   (ar-th-star 'date))
-
-(defun ar-star-delimited-atpt ()
-  "Star DELIMITED at point."
-  (interactive "*")
-  (ar-th-star 'delimited))
 
 (defun ar-star-email-atpt ()
   "Star EMAIL at point."
@@ -2096,11 +2026,6 @@
   (interactive "*")
   (ar-th-tild 'date))
 
-(defun ar-tild-delimited-atpt ()
-  "Tild DELIMITED at point."
-  (interactive "*")
-  (ar-th-tild 'delimited))
-
 (defun ar-tild-email-atpt ()
   "Tild EMAIL at point."
   (interactive "*")
@@ -2241,11 +2166,6 @@
   (interactive "*")
   (ar-th-underscore 'date))
 
-(defun ar-underscore-delimited-atpt ()
-  "Underscore DELIMITED at point."
-  (interactive "*")
-  (ar-th-underscore 'delimited))
-
 (defun ar-underscore-email-atpt ()
   "Underscore EMAIL at point."
   (interactive "*")
@@ -2385,11 +2305,6 @@
   "Whitespace DATE at point."
   (interactive "*")
   (ar-th-whitespace 'date))
-
-(defun ar-whitespace-delimited-atpt ()
-  "Whitespace DELIMITED at point."
-  (interactive "*")
-  (ar-th-whitespace 'delimited))
 
 (defun ar-whitespace-email-atpt ()
   "Whitespace EMAIL at point."
@@ -2533,11 +2448,6 @@
   (interactive "*")
   (ar-th-delim 'date "`" "'"))
 
-(defun ar-symbol-delimited-atpt ()
-  "Symbol DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "`" "'"))
-
 (defun ar-symbol-email-atpt ()
   "Symbol EMAIL at point ARG times."
   (interactive "*")
@@ -2677,11 +2587,6 @@
   "Brace DATE at point ARG times."
   (interactive "*")
   (ar-th-delim 'date "{" "}"))
-
-(defun ar-brace-delimited-atpt ()
-  "Brace DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "{" "}"))
 
 (defun ar-brace-email-atpt ()
   "Brace EMAIL at point ARG times."
@@ -2823,11 +2728,6 @@
   (interactive "*")
   (ar-th-delim 'date "[" "]"))
 
-(defun ar-bracket-delimited-atpt ()
-  "Bracket DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "[" "]"))
-
 (defun ar-bracket-email-atpt ()
   "Bracket EMAIL at point ARG times."
   (interactive "*")
@@ -2967,11 +2867,6 @@
   "Lesserangle DATE at point ARG times."
   (interactive "*")
   (ar-th-delim 'date "<" ">"))
-
-(defun ar-lesserangle-delimited-atpt ()
-  "Lesserangle DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "<" ">"))
 
 (defun ar-lesserangle-email-atpt ()
   "Lesserangle EMAIL at point ARG times."
@@ -3113,11 +3008,6 @@
   (interactive "*")
   (ar-th-delim 'date ">" "<"))
 
-(defun ar-greaterangle-delimited-atpt ()
-  "Greaterangle DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited ">" "<"))
-
 (defun ar-greaterangle-email-atpt ()
   "Greaterangle EMAIL at point ARG times."
   (interactive "*")
@@ -3257,11 +3147,6 @@
   "Curvedsinglequote DATE at point ARG times."
   (interactive "*")
   (ar-th-delim 'date "‘" "’"))
-
-(defun ar-curvedsinglequote-delimited-atpt ()
-  "Curvedsinglequote DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "‘" "’"))
 
 (defun ar-curvedsinglequote-email-atpt ()
   "Curvedsinglequote EMAIL at point ARG times."
@@ -3403,11 +3288,6 @@
   (interactive "*")
   (ar-th-delim 'date "“" "”"))
 
-(defun ar-curveddoublequote-delimited-atpt ()
-  "Curveddoublequote DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "“" "”"))
-
 (defun ar-curveddoublequote-email-atpt ()
   "Curveddoublequote EMAIL at point ARG times."
   (interactive "*")
@@ -3547,11 +3427,6 @@
   "Parentize DATE at point ARG times."
   (interactive "*")
   (ar-th-delim 'date "(" ")"))
-
-(defun ar-parentize-delimited-atpt ()
-  "Parentize DELIMITED at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'delimited "(" ")"))
 
 (defun ar-parentize-email-atpt ()
   "Parentize EMAIL at point ARG times."
@@ -4814,7 +4689,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-alnum-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'alnum n no-delimiters nil t))
+  (ar-th-trim 'alnum no-delimiters nil t))
 
 (defun ar-underscore-alnum-atpt (&optional no-delimiters)
   "Put underscore char around ALNUM. "
@@ -5048,7 +4923,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-alpha-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'alpha n no-delimiters nil t))
+  (ar-th-trim 'alpha no-delimiters nil t))
 
 (defun ar-underscore-alpha-atpt (&optional no-delimiters)
   "Put underscore char around ALPHA. "
@@ -5282,7 +5157,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-ascii-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'ascii n no-delimiters nil t))
+  (ar-th-trim 'ascii no-delimiters nil t))
 
 (defun ar-underscore-ascii-atpt (&optional no-delimiters)
   "Put underscore char around ASCII. "
@@ -5516,7 +5391,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-blank-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'blank n no-delimiters nil t))
+  (ar-th-trim 'blank no-delimiters nil t))
 
 (defun ar-underscore-blank-atpt (&optional no-delimiters)
   "Put underscore char around BLANK. "
@@ -5750,7 +5625,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-cntrl-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'cntrl n no-delimiters nil t))
+  (ar-th-trim 'cntrl no-delimiters nil t))
 
 (defun ar-underscore-cntrl-atpt (&optional no-delimiters)
   "Put underscore char around CNTRL. "
@@ -5984,7 +5859,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-digit-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'digit n no-delimiters nil t))
+  (ar-th-trim 'digit no-delimiters nil t))
 
 (defun ar-underscore-digit-atpt (&optional no-delimiters)
   "Put underscore char around DIGIT. "
@@ -6218,7 +6093,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-graph-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'graph n no-delimiters nil t))
+  (ar-th-trim 'graph no-delimiters nil t))
 
 (defun ar-underscore-graph-atpt (&optional no-delimiters)
   "Put underscore char around GRAPH. "
@@ -6452,7 +6327,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-lower-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'lower n no-delimiters nil t))
+  (ar-th-trim 'lower no-delimiters nil t))
 
 (defun ar-underscore-lower-atpt (&optional no-delimiters)
   "Put underscore char around LOWER. "
@@ -6686,7 +6561,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-nonascii-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'nonascii n no-delimiters nil t))
+  (ar-th-trim 'nonascii no-delimiters nil t))
 
 (defun ar-underscore-nonascii-atpt (&optional no-delimiters)
   "Put underscore char around NONASCII. "
@@ -6920,7 +6795,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-print-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'print n no-delimiters nil t))
+  (ar-th-trim 'print no-delimiters nil t))
 
 (defun ar-underscore-print-atpt (&optional no-delimiters)
   "Put underscore char around PRINT. "
@@ -7154,7 +7029,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-punct-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'punct n no-delimiters nil t))
+  (ar-th-trim 'punct no-delimiters nil t))
 
 (defun ar-underscore-punct-atpt (&optional no-delimiters)
   "Put underscore char around PUNCT. "
@@ -7388,7 +7263,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-space-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'space n no-delimiters nil t))
+  (ar-th-trim 'space no-delimiters nil t))
 
 (defun ar-underscore-space-atpt (&optional no-delimiters)
   "Put underscore char around SPACE. "
@@ -7622,7 +7497,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-upper-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'upper n no-delimiters nil t))
+  (ar-th-trim 'upper no-delimiters nil t))
 
 (defun ar-underscore-upper-atpt (&optional no-delimiters)
   "Put underscore char around UPPER. "
@@ -7856,7 +7731,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-xdigit-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'xdigit n no-delimiters nil t))
+  (ar-th-trim 'xdigit no-delimiters nil t))
 
 (defun ar-underscore-xdigit-atpt (&optional no-delimiters)
   "Put underscore char around XDIGIT. "
@@ -8092,7 +7967,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-greateranglednested-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'greateranglednested n no-delimiters nil t))
+  (ar-th-trim 'greateranglednested no-delimiters nil t))
 
 (defun ar-underscore-greateranglednested-atpt (&optional no-delimiters)
   "Put underscore char around GREATERANGLEDNESTED. "
@@ -8326,7 +8201,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-lesseranglednested-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'lesseranglednested n no-delimiters nil t))
+  (ar-th-trim 'lesseranglednested no-delimiters nil t))
 
 (defun ar-underscore-lesseranglednested-atpt (&optional no-delimiters)
   "Put underscore char around LESSERANGLEDNESTED. "
@@ -8560,7 +8435,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-buffer-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'buffer n no-delimiters nil t))
+  (ar-th-trim 'buffer no-delimiters nil t))
 
 (defun ar-underscore-buffer-atpt (&optional no-delimiters)
   "Put underscore char around BUFFER. "
@@ -8794,7 +8669,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-char-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'char n no-delimiters nil t))
+  (ar-th-trim 'char no-delimiters nil t))
 
 (defun ar-underscore-char-atpt (&optional no-delimiters)
   "Put underscore char around CHAR. "
@@ -9028,7 +8903,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-comment-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'comment n no-delimiters nil t))
+  (ar-th-trim 'comment no-delimiters nil t))
 
 (defun ar-underscore-comment-atpt (&optional no-delimiters)
   "Put underscore char around COMMENT. "
@@ -9262,7 +9137,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-csv-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'csv n no-delimiters nil t))
+  (ar-th-trim 'csv no-delimiters nil t))
 
 (defun ar-underscore-csv-atpt (&optional no-delimiters)
   "Put underscore char around CSV. "
@@ -9496,7 +9371,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-date-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'date n no-delimiters nil t))
+  (ar-th-trim 'date no-delimiters nil t))
 
 (defun ar-underscore-date-atpt (&optional no-delimiters)
   "Put underscore char around DATE. "
@@ -9537,240 +9412,6 @@ See doku from ‘sort-subr’, for details.
   (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-date-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-date-end-position-atpt"))))
-        (erg (ignore-errors (< beg end))))
-    (when arg (message "%s" erg))
-   erg))
-
-(defun ar-delimited-atpt (&optional no-delimiters)
-  "Returns delimited at point if any, nil otherwise.
-
-Optional \\[universal-argument] returns objects without delimiters"
-  (interactive "P")
-  (ar-th 'delimited no-delimiters))
-
-(defun ar-bounds-of-delimited-atpt (&optional no-delimiters)
-  "Returns a list, borders of delimited if any, nil otherwise.
-
-Optional \\[universal-argument] returns bounds without delimiters"
-  (interactive "P")
-  (ar-th-bounds 'delimited no-delimiters))
-
-(defun ar-delimited-beginning-position-atpt (&optional no-delimiters)
-  "Returns a number, beginning position DELIMITED.
-
-Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "P")
-  (ar-th-beg 'delimited no-delimiters))
-
-(defun ar-delimited-end-position-atpt (&optional no-delimiters)
-  "Returns a number, end position of DELIMITED.
-
-Optional \\[universal-argument] returns end position at delimiter "
-  (interactive "P")
-  (ar-th-end 'delimited no-delimiters))
-
-(defun ar-beginning-of-delimited-atpt (&optional no-delimiters)
-  "Goto beginning of DELIMITED.
-
-Optional \\[universal-argument] returns start position after delimiter "
-  (interactive "P")
-  (ar-th-gotobeg 'delimited no-delimiters))
-
-(defun ar-end-of-delimited-atpt (&optional no-delimiters)
-  "Goto end of DELIMITED at point if any, nil otherwise. "
-  (interactive "P")
-  (ar-th-gotoend 'delimited no-delimiters))
-
-(defun ar-in-delimited-p-atpt (&optional no-delimiters)
-  "Returns bounds of DELIMITED if inside, nil otherwise. "
-  (interactive "P")
-  (ar-th-bounds 'delimited no-delimiters))
-
-(defun ar-length-of-delimited-atpt (&optional no-delimiters)
-  "Returns beginning of DELIMITED at point if any, nil otherwise. "
-  (interactive "P")
-  (ar-th-length 'delimited no-delimiters))
-
-(defun ar-copy-delimited-atpt (&optional no-delimiters)
-  "Returns a copy of DELIMITED. "
-  (interactive "P")
-  (ar-th-copy 'delimited no-delimiters))
-
-(defun ar-delete-delimited-atpt (&optional no-delimiters)
-  "Deletes DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-delete 'delimited no-delimiters))
-
-(defun ar-delete-delimited-in-region (beg end)
-  "Deletes DELIMITED at point if any. "
-  (interactive "*r")
-  (ar-th-delete-in-region 'delimited beg end))
-
-(defun ar-blok-delimited-atpt (&optional no-delimiters)
-  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around delimited.
-  Returns blok or nil if no DELIMITED at cursor-position. "
-  (interactive "*P")
-  (ar-th-blok 'delimited no-delimiters))
-
-(defun ar-backslashparen-delimited-atpt (&optional no-delimiters)
-  "Provides doubleslashed parentheses around delimited at point if any.
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
-  (interactive "*P")
-  (ar-th-backslashparen 'delimited no-delimiters))
-
-(defun ar-doublebackslash-delimited-atpt (&optional no-delimiters)
-  "Puts doubled backslashes around DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-doublebackslash 'delimited no-delimiters))
-
-(defun ar-doubleslash-delimited-atpt (&optional no-delimiters)
-  "Puts doubled slashes around DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-doubleslash 'delimited no-delimiters))
-
-(defun ar-doublebackslashparen-delimited-atpt (&optional no-delimiters)
-  "Provides doubleslashed parentheses around DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-doublebackslashparen 'delimited no-delimiters))
-
-(defun ar-doublebacktick-delimited-atpt (&optional no-delimiters)
-  "Provides double backticks around DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-doublebacktick 'delimited no-delimiters))
-
-(defun ar-slashparen-delimited-atpt (&optional no-delimiters)
-  "Provides slashed parentheses around DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-slashparen 'delimited no-delimiters))
-
-(defun ar-comment-delimited-atpt (&optional no-delimiters)
-  "Comments DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-comment 'delimited no-delimiters))
-
-(defun ar-commatize-delimited-atpt (&optional no-delimiters)
-  "Put a comma after DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-commatize 'delimited no-delimiters))
-
-(defun ar-quote-delimited-atpt (&optional no-delimiters)
-  "Put a singlequote before DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-quote 'delimited no-delimiters))
-
-
-(defun ar-mark-delimited-atpt (&optional no-delimiters)
-  "Marks DELIMITED at point if any. "
-  (interactive "P")
-  (ar-th-mark 'delimited no-delimiters))
-
-(defun ar-hide-delimited-atpt (&optional no-delimiters)
-  "Hides DELIMITED at point. "
-  (interactive "P")
-  (ar-th-hide 'delimited nil nil no-delimiters))
-
-(defun ar-show-delimited-atpt (&optional no-delimiters)
-  "Shows hidden DELIMITED at point. "
-  (interactive "P")
-  (ar-th-show 'delimited nil nil no-delimiters))
-
-(defun ar-hide-show-delimited-atpt (&optional no-delimiters)
-  "Alternatively hides or shows DELIMITED at point. "
-  (interactive "P")
-  (ar-th-hide-show 'delimited nil nil no-delimiters))
-
-(defun ar-highlight-delimited-atpt-mode (&optional no-delimiters)
-  "Toggles delimited-highlight-atpt-mode "
-  (interactive "P")
-  (ar-th-highlight 'delimited no-delimiters))
-
-(defun ar-kill-delimited-atpt (&optional no-delimiters)
-  "Kills DELIMITED at point if any. "
-  (interactive "*P")
-  (ar-th-kill 'delimited no-delimiters))
-
-(defun ar-curvedsinglequote-delimited-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'delimited no-delimiters))
-
-(defun ar-separate-delimited-atpt (&optional no-delimiters)
-  "Separates DELIMITED at point if any, does nothing otherwise
-inserts newlines, borders are the beginning or the end of buffer "
-  (interactive "*P")
-  (ar-th-separate 'delimited no-delimiters))
-
-(defun ar-triplequotedq-delimited-atpt (&optional no-delimiters)
-  "Put triplequotes composed of doublequotes around delimited. "
-  (interactive "*P")
-  (ar-th-triplequotedq 'delimited no-delimiters))
-
-(defun ar-triplequotesq-delimited-atpt (&optional no-delimiters)
-  "Put triplequotes composed of singlequotes around delimited. "
-  (interactive "*P")
-  (ar-th-triplequotesq 'delimited no-delimiters))
-
-(defun ar-triplebacktick-delimited-atpt (&optional no-delimiters)
-  "Triplebacktick delimited at point.
-
-With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
-  (interactive "*P")
-  (ar-th-triplebacktick 'delimited no-delimiters))
-
-(defun ar-trim-delimited-atpt (&optional no-delimiters)
-  "Removes leading and trailing char. "
-  (interactive "*")
-  (ar-th-trim 'delimited no-delimiters t t))
-
-(defun ar-left-trim-delimited-atpt (&optional no-delimiters)
-  "Removes leading char. "
-  (interactive "*")
-  (ar-th-trim 'delimited no-delimiters t))
-
-(defun ar-right-trim-delimited-atpt (&optional no-delimiters)
-  "Removes trailing char. "
-  (interactive "*")
-  (ar-th-trim 'delimited n no-delimiters nil t))
-
-(defun ar-underscore-delimited-atpt (&optional no-delimiters)
-  "Put underscore char around DELIMITED. "
-  (interactive "*P")
-  (ar-th-underscore 'delimited no-delimiters))
-
-(defun ar-forward-delimited-atpt (&optional no-delimiters)
-  "Moves forward over DELIMITED at point if any, does nothing otherwise.
-Returns end position of DELIMITED "
-  (interactive "P")
-  (ar-th-forward 'delimited no-delimiters))
-
-(defun ar-backward-delimited-atpt (&optional no-delimiters)
-  "Moves backward over DELIMITED before point if any, does nothing otherwise.
-Returns beginning position of DELIMITED "
-  (interactive "P")
-  (ar-th-backward 'delimited no-delimiters))
-
-(defun ar-transpose-delimited-atpt (&optional no-delimiters)
-  "Transposes DELIMITED with DELIMITED before point if any. "
-  (interactive "*P")
-  (ar-th-transpose 'delimited no-delimiters))
-
-(defun ar-sort-delimited-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts delimiteds in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
-  "
-  (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'delimited reverse beg end startkeyfun endkeyfun predicate)))
-
-(defun ar-check-delimited-atpt (&optional arg)
-  "Return t if a DELIMITED at point exists, nil otherwise "
-  (interactive "P")
-  (let* ((beg (funcall (intern-soft (concat "ar-delimited-beginning-position-atpt"))))
-        (end (funcall (intern-soft (concat "ar-delimited-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when arg (message "%s" erg))
    erg))
@@ -9964,7 +9605,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-email-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'email n no-delimiters nil t))
+  (ar-th-trim 'email no-delimiters nil t))
 
 (defun ar-underscore-email-atpt (&optional no-delimiters)
   "Put underscore char around EMAIL. "
@@ -10198,7 +9839,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-filename-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'filename n no-delimiters nil t))
+  (ar-th-trim 'filename no-delimiters nil t))
 
 (defun ar-underscore-filename-atpt (&optional no-delimiters)
   "Put underscore char around FILENAME. "
@@ -10432,7 +10073,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-filenamenondirectory-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'filenamenondirectory n no-delimiters nil t))
+  (ar-th-trim 'filenamenondirectory no-delimiters nil t))
 
 (defun ar-underscore-filenamenondirectory-atpt (&optional no-delimiters)
   "Put underscore char around FILENAMENONDIRECTORY. "
@@ -10666,7 +10307,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-float-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'float n no-delimiters nil t))
+  (ar-th-trim 'float no-delimiters nil t))
 
 (defun ar-underscore-float-atpt (&optional no-delimiters)
   "Put underscore char around FLOAT. "
@@ -10900,7 +10541,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-function-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'function n no-delimiters nil t))
+  (ar-th-trim 'function no-delimiters nil t))
 
 (defun ar-underscore-function-atpt (&optional no-delimiters)
   "Put underscore char around FUNCTION. "
@@ -11134,7 +10775,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-ip-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'ip n no-delimiters nil t))
+  (ar-th-trim 'ip no-delimiters nil t))
 
 (defun ar-underscore-ip-atpt (&optional no-delimiters)
   "Put underscore char around IP. "
@@ -11368,7 +11009,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-isbn-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'isbn n no-delimiters nil t))
+  (ar-th-trim 'isbn no-delimiters nil t))
 
 (defun ar-underscore-isbn-atpt (&optional no-delimiters)
   "Put underscore char around ISBN. "
@@ -11602,7 +11243,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-line-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'line n no-delimiters nil t))
+  (ar-th-trim 'line no-delimiters nil t))
 
 (defun ar-underscore-line-atpt (&optional no-delimiters)
   "Put underscore char around LINE. "
@@ -11836,7 +11477,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-list-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'list n no-delimiters nil t))
+  (ar-th-trim 'list no-delimiters nil t))
 
 (defun ar-underscore-list-atpt (&optional no-delimiters)
   "Put underscore char around LIST. "
@@ -12070,7 +11711,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-name-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'name n no-delimiters nil t))
+  (ar-th-trim 'name no-delimiters nil t))
 
 (defun ar-underscore-name-atpt (&optional no-delimiters)
   "Put underscore char around NAME. "
@@ -12304,7 +11945,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-number-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'number n no-delimiters nil t))
+  (ar-th-trim 'number no-delimiters nil t))
 
 (defun ar-underscore-number-atpt (&optional no-delimiters)
   "Put underscore char around NUMBER. "
@@ -12538,7 +12179,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-page-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'page n no-delimiters nil t))
+  (ar-th-trim 'page no-delimiters nil t))
 
 (defun ar-underscore-page-atpt (&optional no-delimiters)
   "Put underscore char around PAGE. "
@@ -12772,7 +12413,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-paragraph-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'paragraph n no-delimiters nil t))
+  (ar-th-trim 'paragraph no-delimiters nil t))
 
 (defun ar-underscore-paragraph-atpt (&optional no-delimiters)
   "Put underscore char around PARAGRAPH. "
@@ -13006,7 +12647,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-phone-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'phone n no-delimiters nil t))
+  (ar-th-trim 'phone no-delimiters nil t))
 
 (defun ar-underscore-phone-atpt (&optional no-delimiters)
   "Put underscore char around PHONE. "
@@ -13240,7 +12881,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-sentence-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'sentence n no-delimiters nil t))
+  (ar-th-trim 'sentence no-delimiters nil t))
 
 (defun ar-underscore-sentence-atpt (&optional no-delimiters)
   "Put underscore char around SENTENCE. "
@@ -13474,7 +13115,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-sexp-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'sexp n no-delimiters nil t))
+  (ar-th-trim 'sexp no-delimiters nil t))
 
 (defun ar-underscore-sexp-atpt (&optional no-delimiters)
   "Put underscore char around SEXP. "
@@ -13708,7 +13349,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-shstruct-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'shstruct n no-delimiters nil t))
+  (ar-th-trim 'shstruct no-delimiters nil t))
 
 (defun ar-underscore-shstruct-atpt (&optional no-delimiters)
   "Put underscore char around SHSTRUCT. "
@@ -13942,7 +13583,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-symbol-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'symbol n no-delimiters nil t))
+  (ar-th-trim 'symbol no-delimiters nil t))
 
 (defun ar-underscore-symbol-atpt (&optional no-delimiters)
   "Put underscore char around SYMBOL. "
@@ -14176,7 +13817,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-url-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'url n no-delimiters nil t))
+  (ar-th-trim 'url no-delimiters nil t))
 
 (defun ar-underscore-url-atpt (&optional no-delimiters)
   "Put underscore char around URL. "
@@ -14410,7 +14051,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-word-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'word n no-delimiters nil t))
+  (ar-th-trim 'word no-delimiters nil t))
 
 (defun ar-underscore-word-atpt (&optional no-delimiters)
   "Put underscore char around WORD. "
@@ -14644,7 +14285,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-wordalphaonly-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'wordalphaonly n no-delimiters nil t))
+  (ar-th-trim 'wordalphaonly no-delimiters nil t))
 
 (defun ar-underscore-wordalphaonly-atpt (&optional no-delimiters)
   "Put underscore char around WORDALPHAONLY. "
@@ -19349,9 +18990,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'backslashed reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'backslashed reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-backslashed-atpt (&optional arg)
   "Return t if a backslashed at point exists, nil otherwise "
@@ -19559,9 +19199,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'backticked reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'backticked reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-backticked-atpt (&optional arg)
   "Return t if a backticked at point exists, nil otherwise "
@@ -19769,9 +19408,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'coloned reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'coloned reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-coloned-atpt (&optional arg)
   "Return t if a coloned at point exists, nil otherwise "
@@ -19979,9 +19617,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'dollared reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'dollared reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-dollared-atpt (&optional arg)
   "Return t if a dollared at point exists, nil otherwise "
@@ -20189,9 +19826,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublequoted reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'doublequoted reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-doublequoted-atpt (&optional arg)
   "Return t if a doublequoted at point exists, nil otherwise "
@@ -20399,9 +20035,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'equalized reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'equalized reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-equalized-atpt (&optional arg)
   "Return t if a equalized at point exists, nil otherwise "
@@ -20609,9 +20244,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'hyphened reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'hyphened reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-hyphened-atpt (&optional arg)
   "Return t if a hyphened at point exists, nil otherwise "
@@ -20819,9 +20453,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'singlequoted reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'singlequoted reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-singlequoted-atpt (&optional arg)
   "Return t if a singlequoted at point exists, nil otherwise "
@@ -21029,9 +20662,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'slashed reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'slashed reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-slashed-atpt (&optional arg)
   "Return t if a slashed at point exists, nil otherwise "
@@ -21239,9 +20871,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'stared reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'stared reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-stared-atpt (&optional arg)
   "Return t if a stared at point exists, nil otherwise "
@@ -21449,9 +21080,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'underscored reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'underscored reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-underscored-atpt (&optional arg)
   "Return t if a underscored at point exists, nil otherwise "
@@ -21659,9 +21289,8 @@ Optional: PREDICATE
 See doku from ‘sort-subr’, for details.
   "
   (interactive "*P\nr")
-  (let ((reverse (when reverse)) startkeyfun endkeyfun predicate)
   (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'whitespaced reverse beg end startkeyfun endkeyfun predicate)))
+  (ar-th-sort 'whitespaced reverse beg end startkeyfun endkeyfun predicate))
 
 (defun ar-check-whitespaced-atpt (&optional arg)
   "Return t if a whitespaced at point exists, nil otherwise "
@@ -21953,7 +21582,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-braced-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'braced n no-delimiters nil t))
+  (ar-th-trim 'braced no-delimiters nil t))
 
 (defun ar-underscore-braced-atpt (&optional no-delimiters)
   "Put underscore char around BRACED. "
@@ -22187,7 +21816,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-symboled-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'symboled n no-delimiters nil t))
+  (ar-th-trim 'symboled no-delimiters nil t))
 
 (defun ar-underscore-symboled-atpt (&optional no-delimiters)
   "Put underscore char around SYMBOLED. "
@@ -22421,7 +22050,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-bracketed-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'bracketed n no-delimiters nil t))
+  (ar-th-trim 'bracketed no-delimiters nil t))
 
 (defun ar-underscore-bracketed-atpt (&optional no-delimiters)
   "Put underscore char around BRACKETED. "
@@ -22655,7 +22284,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-lesserangled-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'lesserangled n no-delimiters nil t))
+  (ar-th-trim 'lesserangled no-delimiters nil t))
 
 (defun ar-underscore-lesserangled-atpt (&optional no-delimiters)
   "Put underscore char around LESSERANGLED. "
@@ -22889,7 +22518,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-greaterangled-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'greaterangled n no-delimiters nil t))
+  (ar-th-trim 'greaterangled no-delimiters nil t))
 
 (defun ar-underscore-greaterangled-atpt (&optional no-delimiters)
   "Put underscore char around GREATERANGLED. "
@@ -23123,7 +22752,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-curvedsinglequoted-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'curvedsinglequoted n no-delimiters nil t))
+  (ar-th-trim 'curvedsinglequoted no-delimiters nil t))
 
 (defun ar-underscore-curvedsinglequoted-atpt (&optional no-delimiters)
   "Put underscore char around CURVEDSINGLEQUOTED. "
@@ -23357,7 +22986,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-curveddoublequoted-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'curveddoublequoted n no-delimiters nil t))
+  (ar-th-trim 'curveddoublequoted no-delimiters nil t))
 
 (defun ar-underscore-curveddoublequoted-atpt (&optional no-delimiters)
   "Put underscore char around CURVEDDOUBLEQUOTED. "
@@ -23591,7 +23220,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-parentized-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'parentized n no-delimiters nil t))
+  (ar-th-trim 'parentized no-delimiters nil t))
 
 (defun ar-underscore-parentized-atpt (&optional no-delimiters)
   "Put underscore char around PARENTIZED. "
@@ -23829,7 +23458,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-list-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'list n no-delimiters nil t))
+  (ar-th-trim 'list no-delimiters nil t))
 
 (defun ar-underscore-list-atpt (&optional no-delimiters)
   "Put underscore char around LIST. "
@@ -24067,7 +23696,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-block-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'block n no-delimiters nil t))
+  (ar-th-trim 'block no-delimiters nil t))
 
 (defun ar-underscore-block-atpt (&optional no-delimiters)
   "Put underscore char around BLOCK. "
@@ -24301,7 +23930,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-block-or-clause-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'block-or-clause n no-delimiters nil t))
+  (ar-th-trim 'block-or-clause no-delimiters nil t))
 
 (defun ar-underscore-block-or-clause-atpt (&optional no-delimiters)
   "Put underscore char around BLOCK-OR-CLAUSE. "
@@ -24535,7 +24164,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-char-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'char n no-delimiters nil t))
+  (ar-th-trim 'char no-delimiters nil t))
 
 (defun ar-underscore-char-atpt (&optional no-delimiters)
   "Put underscore char around CHAR. "
@@ -24769,7 +24398,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-class-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'class n no-delimiters nil t))
+  (ar-th-trim 'class no-delimiters nil t))
 
 (defun ar-underscore-class-atpt (&optional no-delimiters)
   "Put underscore char around CLASS. "
@@ -25003,7 +24632,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-clause-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'clause n no-delimiters nil t))
+  (ar-th-trim 'clause no-delimiters nil t))
 
 (defun ar-underscore-clause-atpt (&optional no-delimiters)
   "Put underscore char around CLAUSE. "
@@ -25237,7 +24866,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-def-or-class-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'def-or-class n no-delimiters nil t))
+  (ar-th-trim 'def-or-class no-delimiters nil t))
 
 (defun ar-underscore-def-or-class-atpt (&optional no-delimiters)
   "Put underscore char around DEF-OR-CLASS. "
@@ -25471,7 +25100,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-def-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'def n no-delimiters nil t))
+  (ar-th-trim 'def no-delimiters nil t))
 
 (defun ar-underscore-def-atpt (&optional no-delimiters)
   "Put underscore char around DEF. "
@@ -25705,7 +25334,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-delimited-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'delimited n no-delimiters nil t))
+  (ar-th-trim 'delimited no-delimiters nil t))
 
 (defun ar-underscore-delimited-atpt (&optional no-delimiters)
   "Put underscore char around DELIMITED. "
@@ -25939,7 +25568,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-expression-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'expression n no-delimiters nil t))
+  (ar-th-trim 'expression no-delimiters nil t))
 
 (defun ar-underscore-expression-atpt (&optional no-delimiters)
   "Put underscore char around EXPRESSION. "
@@ -26173,7 +25802,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-partial-expression-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'partial-expression n no-delimiters nil t))
+  (ar-th-trim 'partial-expression no-delimiters nil t))
 
 (defun ar-underscore-partial-expression-atpt (&optional no-delimiters)
   "Put underscore char around PARTIAL-EXPRESSION. "
@@ -26407,7 +26036,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-statement-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'statement n no-delimiters nil t))
+  (ar-th-trim 'statement no-delimiters nil t))
 
 (defun ar-underscore-statement-atpt (&optional no-delimiters)
   "Put underscore char around STATEMENT. "
@@ -26641,7 +26270,7 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
 (defun ar-right-trim-string-atpt (&optional no-delimiters)
   "Removes trailing char. "
   (interactive "*")
-  (ar-th-trim 'string n no-delimiters nil t))
+  (ar-th-trim 'string no-delimiters nil t))
 
 (defun ar-underscore-string-atpt (&optional no-delimiters)
   "Put underscore char around STRING. "
@@ -27018,16 +26647,6 @@ See doku from ‘sort-subr’, for details.
   With negative argument kill date(ed) at point "
   (interactive "p")
   (ar-th-base-copy-or 'date no-delimiters))
-
-(defun ar-delimited-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with delimited(s).
-
-  Otherwise copy delimited(ed) at point
-  With NO-DELIMITERS, copy delimited(ed) without delimiters
-  With numerical argument 2 trim delimited
-  With negative argument kill delimited(ed) at point "
-  (interactive "p")
-  (ar-th-base-copy-or 'delimited no-delimiters))
 
 (defun ar-email-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with email(s).
