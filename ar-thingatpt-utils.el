@@ -16135,27 +16135,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-alnum-atpt (&optional no-delimiters)
   "Marks ALNUM at point if any. "
-  (interactive "p")
-  (ar-th-mark 'alnum))
+  (interactive "P")
+  (ar-th-mark 'alnum no-delimiters))
 
 (defun ar-hide-alnum-atpt (&optional no-delimiters)
   "Hides ALNUM at point. "
-  (interactive "p")
-  (ar-th-hide 'alnum))
+  (interactive "P")
+  (ar-th-hide 'alnum no-delimiters))
 
 (defun ar-show-alnum-atpt (&optional no-delimiters)
   "Shows hidden ALNUM at point. "
-  (interactive "p")
-  (ar-th-show 'alnum))
+  (interactive "P")
+  (ar-th-show 'alnum no-delimiters))
 
 (defun ar-hide-show-alnum-atpt (&optional no-delimiters)
   "Alternatively hides or shows ALNUM at point. "
-  (interactive "p")
-  (ar-th-hide-show 'alnum))
+  (interactive "P")
+  (ar-th-hide-show 'alnum no-delimiters))
 
 (defun ar-highlight-alnum-atpt-mode (&optional no-delimiters)
   "Toggles alnum-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'alnum no-delimiters))
 
 (defun ar-kill-alnum-atpt (&optional no-delimiters)
@@ -16181,13 +16181,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-alnum-atpt (&optional no-delimiters)
   "Moves forward over ALNUM at point if any, does nothing otherwise.
 Returns end position of ALNUM "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'alnum no-delimiters))
 
 (defun ar-backward-alnum-atpt (&optional no-delimiters)
   "Moves backward over ALNUM.
 Returns beginning position of ALNUM "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'alnum no-delimiters))
 
 (defun ar-transpose-alnum-atpt (&optional no-delimiters)
@@ -16206,9 +16206,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'alnum reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-alnum-atpt (&optional no-delimiters)
+(defun ar-check-alnum-atpt ()
   "Return t if a ALNUM at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-alnum-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-alnum-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16233,27 +16233,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-alpha-atpt (&optional no-delimiters)
   "Marks ALPHA at point if any. "
-  (interactive "p")
-  (ar-th-mark 'alpha))
+  (interactive "P")
+  (ar-th-mark 'alpha no-delimiters))
 
 (defun ar-hide-alpha-atpt (&optional no-delimiters)
   "Hides ALPHA at point. "
-  (interactive "p")
-  (ar-th-hide 'alpha))
+  (interactive "P")
+  (ar-th-hide 'alpha no-delimiters))
 
 (defun ar-show-alpha-atpt (&optional no-delimiters)
   "Shows hidden ALPHA at point. "
-  (interactive "p")
-  (ar-th-show 'alpha))
+  (interactive "P")
+  (ar-th-show 'alpha no-delimiters))
 
 (defun ar-hide-show-alpha-atpt (&optional no-delimiters)
   "Alternatively hides or shows ALPHA at point. "
-  (interactive "p")
-  (ar-th-hide-show 'alpha))
+  (interactive "P")
+  (ar-th-hide-show 'alpha no-delimiters))
 
 (defun ar-highlight-alpha-atpt-mode (&optional no-delimiters)
   "Toggles alpha-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'alpha no-delimiters))
 
 (defun ar-kill-alpha-atpt (&optional no-delimiters)
@@ -16279,13 +16279,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-alpha-atpt (&optional no-delimiters)
   "Moves forward over ALPHA at point if any, does nothing otherwise.
 Returns end position of ALPHA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'alpha no-delimiters))
 
 (defun ar-backward-alpha-atpt (&optional no-delimiters)
   "Moves backward over ALPHA.
 Returns beginning position of ALPHA "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'alpha no-delimiters))
 
 (defun ar-transpose-alpha-atpt (&optional no-delimiters)
@@ -16304,9 +16304,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'alpha reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-alpha-atpt (&optional no-delimiters)
+(defun ar-check-alpha-atpt ()
   "Return t if a ALPHA at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-alpha-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-alpha-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16331,27 +16331,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-ascii-atpt (&optional no-delimiters)
   "Marks ASCII at point if any. "
-  (interactive "p")
-  (ar-th-mark 'ascii))
+  (interactive "P")
+  (ar-th-mark 'ascii no-delimiters))
 
 (defun ar-hide-ascii-atpt (&optional no-delimiters)
   "Hides ASCII at point. "
-  (interactive "p")
-  (ar-th-hide 'ascii))
+  (interactive "P")
+  (ar-th-hide 'ascii no-delimiters))
 
 (defun ar-show-ascii-atpt (&optional no-delimiters)
   "Shows hidden ASCII at point. "
-  (interactive "p")
-  (ar-th-show 'ascii))
+  (interactive "P")
+  (ar-th-show 'ascii no-delimiters))
 
 (defun ar-hide-show-ascii-atpt (&optional no-delimiters)
   "Alternatively hides or shows ASCII at point. "
-  (interactive "p")
-  (ar-th-hide-show 'ascii))
+  (interactive "P")
+  (ar-th-hide-show 'ascii no-delimiters))
 
 (defun ar-highlight-ascii-atpt-mode (&optional no-delimiters)
   "Toggles ascii-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'ascii no-delimiters))
 
 (defun ar-kill-ascii-atpt (&optional no-delimiters)
@@ -16377,13 +16377,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-ascii-atpt (&optional no-delimiters)
   "Moves forward over ASCII at point if any, does nothing otherwise.
 Returns end position of ASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'ascii no-delimiters))
 
 (defun ar-backward-ascii-atpt (&optional no-delimiters)
   "Moves backward over ASCII.
 Returns beginning position of ASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'ascii no-delimiters))
 
 (defun ar-transpose-ascii-atpt (&optional no-delimiters)
@@ -16402,9 +16402,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'ascii reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-ascii-atpt (&optional no-delimiters)
+(defun ar-check-ascii-atpt ()
   "Return t if a ASCII at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-ascii-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-ascii-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16429,27 +16429,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-blank-atpt (&optional no-delimiters)
   "Marks BLANK at point if any. "
-  (interactive "p")
-  (ar-th-mark 'blank))
+  (interactive "P")
+  (ar-th-mark 'blank no-delimiters))
 
 (defun ar-hide-blank-atpt (&optional no-delimiters)
   "Hides BLANK at point. "
-  (interactive "p")
-  (ar-th-hide 'blank))
+  (interactive "P")
+  (ar-th-hide 'blank no-delimiters))
 
 (defun ar-show-blank-atpt (&optional no-delimiters)
   "Shows hidden BLANK at point. "
-  (interactive "p")
-  (ar-th-show 'blank))
+  (interactive "P")
+  (ar-th-show 'blank no-delimiters))
 
 (defun ar-hide-show-blank-atpt (&optional no-delimiters)
   "Alternatively hides or shows BLANK at point. "
-  (interactive "p")
-  (ar-th-hide-show 'blank))
+  (interactive "P")
+  (ar-th-hide-show 'blank no-delimiters))
 
 (defun ar-highlight-blank-atpt-mode (&optional no-delimiters)
   "Toggles blank-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'blank no-delimiters))
 
 (defun ar-kill-blank-atpt (&optional no-delimiters)
@@ -16475,13 +16475,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-blank-atpt (&optional no-delimiters)
   "Moves forward over BLANK at point if any, does nothing otherwise.
 Returns end position of BLANK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'blank no-delimiters))
 
 (defun ar-backward-blank-atpt (&optional no-delimiters)
   "Moves backward over BLANK.
 Returns beginning position of BLANK "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'blank no-delimiters))
 
 (defun ar-transpose-blank-atpt (&optional no-delimiters)
@@ -16500,9 +16500,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'blank reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-blank-atpt (&optional no-delimiters)
+(defun ar-check-blank-atpt ()
   "Return t if a BLANK at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-blank-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-blank-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16527,27 +16527,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-cntrl-atpt (&optional no-delimiters)
   "Marks CNTRL at point if any. "
-  (interactive "p")
-  (ar-th-mark 'cntrl))
+  (interactive "P")
+  (ar-th-mark 'cntrl no-delimiters))
 
 (defun ar-hide-cntrl-atpt (&optional no-delimiters)
   "Hides CNTRL at point. "
-  (interactive "p")
-  (ar-th-hide 'cntrl))
+  (interactive "P")
+  (ar-th-hide 'cntrl no-delimiters))
 
 (defun ar-show-cntrl-atpt (&optional no-delimiters)
   "Shows hidden CNTRL at point. "
-  (interactive "p")
-  (ar-th-show 'cntrl))
+  (interactive "P")
+  (ar-th-show 'cntrl no-delimiters))
 
 (defun ar-hide-show-cntrl-atpt (&optional no-delimiters)
   "Alternatively hides or shows CNTRL at point. "
-  (interactive "p")
-  (ar-th-hide-show 'cntrl))
+  (interactive "P")
+  (ar-th-hide-show 'cntrl no-delimiters))
 
 (defun ar-highlight-cntrl-atpt-mode (&optional no-delimiters)
   "Toggles cntrl-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'cntrl no-delimiters))
 
 (defun ar-kill-cntrl-atpt (&optional no-delimiters)
@@ -16573,13 +16573,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-cntrl-atpt (&optional no-delimiters)
   "Moves forward over CNTRL at point if any, does nothing otherwise.
 Returns end position of CNTRL "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'cntrl no-delimiters))
 
 (defun ar-backward-cntrl-atpt (&optional no-delimiters)
   "Moves backward over CNTRL.
 Returns beginning position of CNTRL "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'cntrl no-delimiters))
 
 (defun ar-transpose-cntrl-atpt (&optional no-delimiters)
@@ -16598,9 +16598,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'cntrl reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-cntrl-atpt (&optional no-delimiters)
+(defun ar-check-cntrl-atpt ()
   "Return t if a CNTRL at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-cntrl-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-cntrl-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16625,27 +16625,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-digit-atpt (&optional no-delimiters)
   "Marks DIGIT at point if any. "
-  (interactive "p")
-  (ar-th-mark 'digit))
+  (interactive "P")
+  (ar-th-mark 'digit no-delimiters))
 
 (defun ar-hide-digit-atpt (&optional no-delimiters)
   "Hides DIGIT at point. "
-  (interactive "p")
-  (ar-th-hide 'digit))
+  (interactive "P")
+  (ar-th-hide 'digit no-delimiters))
 
 (defun ar-show-digit-atpt (&optional no-delimiters)
   "Shows hidden DIGIT at point. "
-  (interactive "p")
-  (ar-th-show 'digit))
+  (interactive "P")
+  (ar-th-show 'digit no-delimiters))
 
 (defun ar-hide-show-digit-atpt (&optional no-delimiters)
   "Alternatively hides or shows DIGIT at point. "
-  (interactive "p")
-  (ar-th-hide-show 'digit))
+  (interactive "P")
+  (ar-th-hide-show 'digit no-delimiters))
 
 (defun ar-highlight-digit-atpt-mode (&optional no-delimiters)
   "Toggles digit-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'digit no-delimiters))
 
 (defun ar-kill-digit-atpt (&optional no-delimiters)
@@ -16671,13 +16671,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-digit-atpt (&optional no-delimiters)
   "Moves forward over DIGIT at point if any, does nothing otherwise.
 Returns end position of DIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'digit no-delimiters))
 
 (defun ar-backward-digit-atpt (&optional no-delimiters)
   "Moves backward over DIGIT.
 Returns beginning position of DIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'digit no-delimiters))
 
 (defun ar-transpose-digit-atpt (&optional no-delimiters)
@@ -16696,9 +16696,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'digit reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-digit-atpt (&optional no-delimiters)
+(defun ar-check-digit-atpt ()
   "Return t if a DIGIT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-digit-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-digit-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16723,27 +16723,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-graph-atpt (&optional no-delimiters)
   "Marks GRAPH at point if any. "
-  (interactive "p")
-  (ar-th-mark 'graph))
+  (interactive "P")
+  (ar-th-mark 'graph no-delimiters))
 
 (defun ar-hide-graph-atpt (&optional no-delimiters)
   "Hides GRAPH at point. "
-  (interactive "p")
-  (ar-th-hide 'graph))
+  (interactive "P")
+  (ar-th-hide 'graph no-delimiters))
 
 (defun ar-show-graph-atpt (&optional no-delimiters)
   "Shows hidden GRAPH at point. "
-  (interactive "p")
-  (ar-th-show 'graph))
+  (interactive "P")
+  (ar-th-show 'graph no-delimiters))
 
 (defun ar-hide-show-graph-atpt (&optional no-delimiters)
   "Alternatively hides or shows GRAPH at point. "
-  (interactive "p")
-  (ar-th-hide-show 'graph))
+  (interactive "P")
+  (ar-th-hide-show 'graph no-delimiters))
 
 (defun ar-highlight-graph-atpt-mode (&optional no-delimiters)
   "Toggles graph-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'graph no-delimiters))
 
 (defun ar-kill-graph-atpt (&optional no-delimiters)
@@ -16769,13 +16769,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-graph-atpt (&optional no-delimiters)
   "Moves forward over GRAPH at point if any, does nothing otherwise.
 Returns end position of GRAPH "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'graph no-delimiters))
 
 (defun ar-backward-graph-atpt (&optional no-delimiters)
   "Moves backward over GRAPH.
 Returns beginning position of GRAPH "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'graph no-delimiters))
 
 (defun ar-transpose-graph-atpt (&optional no-delimiters)
@@ -16794,9 +16794,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'graph reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-graph-atpt (&optional no-delimiters)
+(defun ar-check-graph-atpt ()
   "Return t if a GRAPH at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-graph-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-graph-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16821,27 +16821,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-lower-atpt (&optional no-delimiters)
   "Marks LOWER at point if any. "
-  (interactive "p")
-  (ar-th-mark 'lower))
+  (interactive "P")
+  (ar-th-mark 'lower no-delimiters))
 
 (defun ar-hide-lower-atpt (&optional no-delimiters)
   "Hides LOWER at point. "
-  (interactive "p")
-  (ar-th-hide 'lower))
+  (interactive "P")
+  (ar-th-hide 'lower no-delimiters))
 
 (defun ar-show-lower-atpt (&optional no-delimiters)
   "Shows hidden LOWER at point. "
-  (interactive "p")
-  (ar-th-show 'lower))
+  (interactive "P")
+  (ar-th-show 'lower no-delimiters))
 
 (defun ar-hide-show-lower-atpt (&optional no-delimiters)
   "Alternatively hides or shows LOWER at point. "
-  (interactive "p")
-  (ar-th-hide-show 'lower))
+  (interactive "P")
+  (ar-th-hide-show 'lower no-delimiters))
 
 (defun ar-highlight-lower-atpt-mode (&optional no-delimiters)
   "Toggles lower-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'lower no-delimiters))
 
 (defun ar-kill-lower-atpt (&optional no-delimiters)
@@ -16867,13 +16867,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-lower-atpt (&optional no-delimiters)
   "Moves forward over LOWER at point if any, does nothing otherwise.
 Returns end position of LOWER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'lower no-delimiters))
 
 (defun ar-backward-lower-atpt (&optional no-delimiters)
   "Moves backward over LOWER.
 Returns beginning position of LOWER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'lower no-delimiters))
 
 (defun ar-transpose-lower-atpt (&optional no-delimiters)
@@ -16892,9 +16892,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'lower reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-lower-atpt (&optional no-delimiters)
+(defun ar-check-lower-atpt ()
   "Return t if a LOWER at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-lower-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-lower-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -16919,27 +16919,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-nonascii-atpt (&optional no-delimiters)
   "Marks NONASCII at point if any. "
-  (interactive "p")
-  (ar-th-mark 'nonascii))
+  (interactive "P")
+  (ar-th-mark 'nonascii no-delimiters))
 
 (defun ar-hide-nonascii-atpt (&optional no-delimiters)
   "Hides NONASCII at point. "
-  (interactive "p")
-  (ar-th-hide 'nonascii))
+  (interactive "P")
+  (ar-th-hide 'nonascii no-delimiters))
 
 (defun ar-show-nonascii-atpt (&optional no-delimiters)
   "Shows hidden NONASCII at point. "
-  (interactive "p")
-  (ar-th-show 'nonascii))
+  (interactive "P")
+  (ar-th-show 'nonascii no-delimiters))
 
 (defun ar-hide-show-nonascii-atpt (&optional no-delimiters)
   "Alternatively hides or shows NONASCII at point. "
-  (interactive "p")
-  (ar-th-hide-show 'nonascii))
+  (interactive "P")
+  (ar-th-hide-show 'nonascii no-delimiters))
 
 (defun ar-highlight-nonascii-atpt-mode (&optional no-delimiters)
   "Toggles nonascii-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'nonascii no-delimiters))
 
 (defun ar-kill-nonascii-atpt (&optional no-delimiters)
@@ -16965,13 +16965,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-nonascii-atpt (&optional no-delimiters)
   "Moves forward over NONASCII at point if any, does nothing otherwise.
 Returns end position of NONASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'nonascii no-delimiters))
 
 (defun ar-backward-nonascii-atpt (&optional no-delimiters)
   "Moves backward over NONASCII.
 Returns beginning position of NONASCII "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'nonascii no-delimiters))
 
 (defun ar-transpose-nonascii-atpt (&optional no-delimiters)
@@ -16990,9 +16990,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'nonascii reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-nonascii-atpt (&optional no-delimiters)
+(defun ar-check-nonascii-atpt ()
   "Return t if a NONASCII at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-nonascii-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-nonascii-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17017,27 +17017,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-print-atpt (&optional no-delimiters)
   "Marks PRINT at point if any. "
-  (interactive "p")
-  (ar-th-mark 'print))
+  (interactive "P")
+  (ar-th-mark 'print no-delimiters))
 
 (defun ar-hide-print-atpt (&optional no-delimiters)
   "Hides PRINT at point. "
-  (interactive "p")
-  (ar-th-hide 'print))
+  (interactive "P")
+  (ar-th-hide 'print no-delimiters))
 
 (defun ar-show-print-atpt (&optional no-delimiters)
   "Shows hidden PRINT at point. "
-  (interactive "p")
-  (ar-th-show 'print))
+  (interactive "P")
+  (ar-th-show 'print no-delimiters))
 
 (defun ar-hide-show-print-atpt (&optional no-delimiters)
   "Alternatively hides or shows PRINT at point. "
-  (interactive "p")
-  (ar-th-hide-show 'print))
+  (interactive "P")
+  (ar-th-hide-show 'print no-delimiters))
 
 (defun ar-highlight-print-atpt-mode (&optional no-delimiters)
   "Toggles print-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'print no-delimiters))
 
 (defun ar-kill-print-atpt (&optional no-delimiters)
@@ -17063,13 +17063,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-print-atpt (&optional no-delimiters)
   "Moves forward over PRINT at point if any, does nothing otherwise.
 Returns end position of PRINT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'print no-delimiters))
 
 (defun ar-backward-print-atpt (&optional no-delimiters)
   "Moves backward over PRINT.
 Returns beginning position of PRINT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'print no-delimiters))
 
 (defun ar-transpose-print-atpt (&optional no-delimiters)
@@ -17088,9 +17088,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'print reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-print-atpt (&optional no-delimiters)
+(defun ar-check-print-atpt ()
   "Return t if a PRINT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-print-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-print-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17115,27 +17115,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-punct-atpt (&optional no-delimiters)
   "Marks PUNCT at point if any. "
-  (interactive "p")
-  (ar-th-mark 'punct))
+  (interactive "P")
+  (ar-th-mark 'punct no-delimiters))
 
 (defun ar-hide-punct-atpt (&optional no-delimiters)
   "Hides PUNCT at point. "
-  (interactive "p")
-  (ar-th-hide 'punct))
+  (interactive "P")
+  (ar-th-hide 'punct no-delimiters))
 
 (defun ar-show-punct-atpt (&optional no-delimiters)
   "Shows hidden PUNCT at point. "
-  (interactive "p")
-  (ar-th-show 'punct))
+  (interactive "P")
+  (ar-th-show 'punct no-delimiters))
 
 (defun ar-hide-show-punct-atpt (&optional no-delimiters)
   "Alternatively hides or shows PUNCT at point. "
-  (interactive "p")
-  (ar-th-hide-show 'punct))
+  (interactive "P")
+  (ar-th-hide-show 'punct no-delimiters))
 
 (defun ar-highlight-punct-atpt-mode (&optional no-delimiters)
   "Toggles punct-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'punct no-delimiters))
 
 (defun ar-kill-punct-atpt (&optional no-delimiters)
@@ -17161,13 +17161,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-punct-atpt (&optional no-delimiters)
   "Moves forward over PUNCT at point if any, does nothing otherwise.
 Returns end position of PUNCT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'punct no-delimiters))
 
 (defun ar-backward-punct-atpt (&optional no-delimiters)
   "Moves backward over PUNCT.
 Returns beginning position of PUNCT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'punct no-delimiters))
 
 (defun ar-transpose-punct-atpt (&optional no-delimiters)
@@ -17186,9 +17186,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'punct reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-punct-atpt (&optional no-delimiters)
+(defun ar-check-punct-atpt ()
   "Return t if a PUNCT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-punct-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-punct-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17213,27 +17213,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-space-atpt (&optional no-delimiters)
   "Marks SPACE at point if any. "
-  (interactive "p")
-  (ar-th-mark 'space))
+  (interactive "P")
+  (ar-th-mark 'space no-delimiters))
 
 (defun ar-hide-space-atpt (&optional no-delimiters)
   "Hides SPACE at point. "
-  (interactive "p")
-  (ar-th-hide 'space))
+  (interactive "P")
+  (ar-th-hide 'space no-delimiters))
 
 (defun ar-show-space-atpt (&optional no-delimiters)
   "Shows hidden SPACE at point. "
-  (interactive "p")
-  (ar-th-show 'space))
+  (interactive "P")
+  (ar-th-show 'space no-delimiters))
 
 (defun ar-hide-show-space-atpt (&optional no-delimiters)
   "Alternatively hides or shows SPACE at point. "
-  (interactive "p")
-  (ar-th-hide-show 'space))
+  (interactive "P")
+  (ar-th-hide-show 'space no-delimiters))
 
 (defun ar-highlight-space-atpt-mode (&optional no-delimiters)
   "Toggles space-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'space no-delimiters))
 
 (defun ar-kill-space-atpt (&optional no-delimiters)
@@ -17259,13 +17259,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-space-atpt (&optional no-delimiters)
   "Moves forward over SPACE at point if any, does nothing otherwise.
 Returns end position of SPACE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'space no-delimiters))
 
 (defun ar-backward-space-atpt (&optional no-delimiters)
   "Moves backward over SPACE.
 Returns beginning position of SPACE "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'space no-delimiters))
 
 (defun ar-transpose-space-atpt (&optional no-delimiters)
@@ -17284,9 +17284,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'space reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-space-atpt (&optional no-delimiters)
+(defun ar-check-space-atpt ()
   "Return t if a SPACE at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-space-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-space-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17311,27 +17311,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-upper-atpt (&optional no-delimiters)
   "Marks UPPER at point if any. "
-  (interactive "p")
-  (ar-th-mark 'upper))
+  (interactive "P")
+  (ar-th-mark 'upper no-delimiters))
 
 (defun ar-hide-upper-atpt (&optional no-delimiters)
   "Hides UPPER at point. "
-  (interactive "p")
-  (ar-th-hide 'upper))
+  (interactive "P")
+  (ar-th-hide 'upper no-delimiters))
 
 (defun ar-show-upper-atpt (&optional no-delimiters)
   "Shows hidden UPPER at point. "
-  (interactive "p")
-  (ar-th-show 'upper))
+  (interactive "P")
+  (ar-th-show 'upper no-delimiters))
 
 (defun ar-hide-show-upper-atpt (&optional no-delimiters)
   "Alternatively hides or shows UPPER at point. "
-  (interactive "p")
-  (ar-th-hide-show 'upper))
+  (interactive "P")
+  (ar-th-hide-show 'upper no-delimiters))
 
 (defun ar-highlight-upper-atpt-mode (&optional no-delimiters)
   "Toggles upper-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'upper no-delimiters))
 
 (defun ar-kill-upper-atpt (&optional no-delimiters)
@@ -17357,13 +17357,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-upper-atpt (&optional no-delimiters)
   "Moves forward over UPPER at point if any, does nothing otherwise.
 Returns end position of UPPER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'upper no-delimiters))
 
 (defun ar-backward-upper-atpt (&optional no-delimiters)
   "Moves backward over UPPER.
 Returns beginning position of UPPER "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'upper no-delimiters))
 
 (defun ar-transpose-upper-atpt (&optional no-delimiters)
@@ -17382,9 +17382,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'upper reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-upper-atpt (&optional no-delimiters)
+(defun ar-check-upper-atpt ()
   "Return t if a UPPER at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-upper-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-upper-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
@@ -17409,27 +17409,27 @@ See doku from ‘sort-subr’, for details.
 
 (defun ar-mark-xdigit-atpt (&optional no-delimiters)
   "Marks XDIGIT at point if any. "
-  (interactive "p")
-  (ar-th-mark 'xdigit))
+  (interactive "P")
+  (ar-th-mark 'xdigit no-delimiters))
 
 (defun ar-hide-xdigit-atpt (&optional no-delimiters)
   "Hides XDIGIT at point. "
-  (interactive "p")
-  (ar-th-hide 'xdigit))
+  (interactive "P")
+  (ar-th-hide 'xdigit no-delimiters))
 
 (defun ar-show-xdigit-atpt (&optional no-delimiters)
   "Shows hidden XDIGIT at point. "
-  (interactive "p")
-  (ar-th-show 'xdigit))
+  (interactive "P")
+  (ar-th-show 'xdigit no-delimiters))
 
 (defun ar-hide-show-xdigit-atpt (&optional no-delimiters)
   "Alternatively hides or shows XDIGIT at point. "
-  (interactive "p")
-  (ar-th-hide-show 'xdigit))
+  (interactive "P")
+  (ar-th-hide-show 'xdigit no-delimiters))
 
 (defun ar-highlight-xdigit-atpt-mode (&optional no-delimiters)
   "Toggles xdigit-highlight-atpt-mode "
-  (interactive "p")
+  (interactive "P")
   (ar-th-highlight 'xdigit no-delimiters))
 
 (defun ar-kill-xdigit-atpt (&optional no-delimiters)
@@ -17455,13 +17455,13 @@ See doku from ‘sort-subr’, for details.
 (defun ar-forward-xdigit-atpt (&optional no-delimiters)
   "Moves forward over XDIGIT at point if any, does nothing otherwise.
 Returns end position of XDIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-forward 'xdigit no-delimiters))
 
 (defun ar-backward-xdigit-atpt (&optional no-delimiters)
   "Moves backward over XDIGIT.
 Returns beginning position of XDIGIT "
-  (interactive "p")
+  (interactive "P")
   (ar-th-backward 'xdigit no-delimiters))
 
 (defun ar-transpose-xdigit-atpt (&optional no-delimiters)
@@ -17480,9 +17480,9 @@ See doku from ‘sort-subr’, for details.
   (unless (use-region-p) (message "%s" "Region must be active!"))
   (ar-th-sort 'xdigit reverse beg end startkeyfun endkeyfun predicate))
 
-(defun ar-check-xdigit-atpt (&optional no-delimiters)
+(defun ar-check-xdigit-atpt ()
   "Return t if a XDIGIT at point exists, nil otherwise "
-  (interactive "p")
+  (interactive)
   (let* ((beg (funcall (intern-soft (concat "ar-xdigit-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-xdigit-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
