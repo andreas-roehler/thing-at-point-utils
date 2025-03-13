@@ -1801,6 +1801,28 @@ Returns final position when called from inside section, nil otherwise"
     (exchange-point-and-mark)))
 
 
+(defvar ar-restricted-delimit-aktiv
+  (list
+   'colon
+   'cross
+   'doubleslash
+   'backslash
+   'backtick
+   'dollar
+   'doublequote
+   'equalize
+   'escape
+   'hash
+   'hyphen
+   'pipe
+   'singlequote
+   'slash
+   'star
+   'tild
+   'whitespace
+   )
+  "")
+
 (defvar ar-paired-delimited-passiv-raw
   (list
    '(symboled "`" "'")
@@ -2024,6 +2046,7 @@ Returns final position when called from inside section, nil otherwise"
        'partial-expression
        'statement
        'string
+       'symbol
        ))
 
 (setq ar-atpt-markup-list
@@ -2138,7 +2161,6 @@ Returns final position when called from inside section, nil otherwise"
        'sentence
        'sexp
        'shstruct
-       'symbol
        'url
        'word
        'wordalphaonly
