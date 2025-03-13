@@ -213,11 +213,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'beginendquote no-delimiters))
 
-(defun ar-curvedsinglequote-beginendquote-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'beginendquote no-delimiters))
-
 (defun ar-separate-beginendquote-atpt (&optional no-delimiters)
   "Separates BEGINENDQUOTE at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -444,11 +439,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills BLOK at point if any. "
   (interactive "*P")
   (ar-th-kill 'blok no-delimiters))
-
-(defun ar-curvedsinglequote-blok-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'blok no-delimiters))
 
 (defun ar-separate-blok-atpt (&optional no-delimiters)
   "Separates BLOK at point if any, does nothing otherwise
@@ -677,11 +667,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'doublebackslashed no-delimiters))
 
-(defun ar-curvedsinglequote-doublebackslashed-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'doublebackslashed no-delimiters))
-
 (defun ar-separate-doublebackslashed-atpt (&optional no-delimiters)
   "Separates DOUBLEBACKSLASHED at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -908,11 +893,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills DOUBLEBACKTICKED at point if any. "
   (interactive "*P")
   (ar-th-kill 'doublebackticked no-delimiters))
-
-(defun ar-curvedsinglequote-doublebackticked-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'doublebackticked no-delimiters))
 
 (defun ar-separate-doublebackticked-atpt (&optional no-delimiters)
   "Separates DOUBLEBACKTICKED at point if any, does nothing otherwise
@@ -1141,11 +1121,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'doublebackslashedparen no-delimiters))
 
-(defun ar-curvedsinglequote-doublebackslashedparen-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'doublebackslashedparen no-delimiters))
-
 (defun ar-separate-doublebackslashedparen-atpt (&optional no-delimiters)
   "Separates DOUBLEBACKSLASHEDPAREN at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -1372,11 +1347,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills DOUBLESLASHED at point if any. "
   (interactive "*P")
   (ar-th-kill 'doubleslashed no-delimiters))
-
-(defun ar-curvedsinglequote-doubleslashed-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'doubleslashed no-delimiters))
 
 (defun ar-separate-doubleslashed-atpt (&optional no-delimiters)
   "Separates DOUBLESLASHED at point if any, does nothing otherwise
@@ -1605,11 +1575,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'doubleslashedparen no-delimiters))
 
-(defun ar-curvedsinglequote-doubleslashedparen-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'doubleslashedparen no-delimiters))
-
 (defun ar-separate-doubleslashedparen-atpt (&optional no-delimiters)
   "Separates DOUBLESLASHEDPAREN at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -1836,11 +1801,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills MARKUP at point if any. "
   (interactive "*P")
   (ar-th-kill 'markup no-delimiters))
-
-(defun ar-curvedsinglequote-markup-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'markup no-delimiters))
 
 (defun ar-separate-markup-atpt (&optional no-delimiters)
   "Separates MARKUP at point if any, does nothing otherwise
@@ -2069,11 +2029,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'mldata no-delimiters))
 
-(defun ar-curvedsinglequote-mldata-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'mldata no-delimiters))
-
 (defun ar-separate-mldata-atpt (&optional no-delimiters)
   "Separates MLDATA at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -2300,11 +2255,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills MLATTRIBUT at point if any. "
   (interactive "*P")
   (ar-th-kill 'mlattribut no-delimiters))
-
-(defun ar-curvedsinglequote-mlattribut-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'mlattribut no-delimiters))
 
 (defun ar-separate-mlattribut-atpt (&optional no-delimiters)
   "Separates MLATTRIBUT at point if any, does nothing otherwise
@@ -2533,11 +2483,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'mltag no-delimiters))
 
-(defun ar-curvedsinglequote-mltag-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'mltag no-delimiters))
-
 (defun ar-separate-mltag-atpt (&optional no-delimiters)
   "Separates MLTAG at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -2764,11 +2709,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills SLASHEDPAREN at point if any. "
   (interactive "*P")
   (ar-th-kill 'slashedparen no-delimiters))
-
-(defun ar-curvedsinglequote-slashedparen-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'slashedparen no-delimiters))
 
 (defun ar-separate-slashedparen-atpt (&optional no-delimiters)
   "Separates SLASHEDPAREN at point if any, does nothing otherwise
@@ -2997,11 +2937,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'tabledata no-delimiters))
 
-(defun ar-curvedsinglequote-tabledata-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'tabledata no-delimiters))
-
 (defun ar-separate-tabledata-atpt (&optional no-delimiters)
   "Separates TABLEDATA at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -3229,11 +3164,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   (interactive "*P")
   (ar-th-kill 'xslstylesheet no-delimiters))
 
-(defun ar-curvedsinglequote-xslstylesheet-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'xslstylesheet no-delimiters))
-
 (defun ar-separate-xslstylesheet-atpt (&optional no-delimiters)
   "Separates XSLSTYLESHEET at point if any, does nothing otherwise
 inserts newlines, borders are the beginning or the end of buffer "
@@ -3460,11 +3390,6 @@ With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of de
   "Kills XSLTEMPLATE at point if any. "
   (interactive "*P")
   (ar-th-kill 'xsltemplate no-delimiters))
-
-(defun ar-curvedsinglequote-xsltemplate-atpt (&optional no-delimiters)
-  "Singlequotes alnum at point if any. "
-  (interactive "*P")
-  (ar-th-curvedsinglequote 'xsltemplate no-delimiters))
 
 (defun ar-separate-xsltemplate-atpt (&optional no-delimiters)
   "Separates XSLTEMPLATE at point if any, does nothing otherwise
