@@ -1,4 +1,4 @@
-;;; ar-bracketlist-atpt-tests.el --- ar-bracketlist-atpt-tests
+;;; ar-bracketlist-atpt-tests.el --- ar-bracketlist-atpt-tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015-2025  Andreas Röhler
 ;; Author: Andreas Roehler <andreas.roehler@online.de>

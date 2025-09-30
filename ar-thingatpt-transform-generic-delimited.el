@@ -1,4 +1,4 @@
-;;; thingatpt-transform-generic-delimited.el --- Replace delimiters
+;;; thingatpt-transform-generic-delimited.el --- Replace delimiters -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016-2024  Andreas Röhler
 

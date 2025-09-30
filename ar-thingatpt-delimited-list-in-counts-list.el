@@ -1,4 +1,4 @@
-;;; thing-delimited-list-in-counts-list.el --- thing-in-thing functions
+;;; thing-delimited-list-in-counts-list.el --- thing-in-thing functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless
 ;; indicated otherwise

@@ -1,4 +1,4 @@
-;;; ar-list-atpt-parens-tests.el --- ar-list-atpt-parens-tests
+;;; ar-list-atpt-parens-tests.el --- ar-list-atpt-parens-tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015-2025  Andreas Röhler
 ;; Author: Andreas Roehler <andreas.roehler@online.de>

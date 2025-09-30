@@ -1,4 +1,4 @@
-;;; ar-comment-lor.el --- comment/uncomment line or region
+;;; ar-comment-lor.el --- comment/uncomment line or region -*- lexical-binding: t; -*- -*- lexical-binding: t; -*-
 
 ;; Author: Andreas Röhler <andreas.roehler@online.de>, unless indicated otherwise
 
@@ -87,12 +87,12 @@
 ;;; Code:
 
 ;; defvars below should be set already, here just to be sure
-(defvar comment-end "")
-(make-variable-buffer-local 'comment-end)
-(defvar comment-start ";")
-(make-variable-buffer-local 'comment-start)
-(defvar comment-padding " ")
-(make-variable-buffer-local 'comment-padding)
+;; (defvar comment-end "")
+;; (make-variable-buffer-local 'comment-end)
+;; (defvar comment-start ";")
+;; (make-variable-buffer-local 'comment-start)
+;; (defvar comment-padding " ")
+;; (make-variable-buffer-local 'comment-padding)
 
 (defvar comment-add 0
   "A var of this name now is used internal only, here set to avoid errors. ")

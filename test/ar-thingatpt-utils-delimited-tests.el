@@ -1,4 +1,4 @@
-;;; ar-thingatpt-utils-delimited-tests.el --- tests
+;;; ar-thingatpt-utils-delimited-tests.el --- tests -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015-2025  Andreas Röhler
 

@@ -154,8 +154,7 @@ Don't match an opening bracket with closing paren, but ], etc."
 
 (defun ar-align-equal-sign()
   (interactive "*")
-  (ar-align-symbol "=")
-  )
+  (ar-align-symbol "="))
 
 (defun ar-align-inline-comment()
   ""

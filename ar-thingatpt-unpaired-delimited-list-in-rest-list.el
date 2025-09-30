@@ -1,4 +1,4 @@
-;;; thingatpt-unpaired-delimited-list-in-rest-list.el --- thing-in-thing functions
+;;; thingatpt-unpaired-delimited-list-in-rest-list.el --- thing-in-thing functions -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2025 Andreas Röhler, unless
 ;; indicated otherwise

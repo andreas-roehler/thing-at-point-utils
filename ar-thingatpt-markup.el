@@ -3017,6 +3017,233 @@ See doku from ‘sort-subr’, for details.
     (when arg (message "%s" erg))
    erg))
 
+(defun ar-triplebackticked-atpt (&optional no-delimiters)
+  "Returns triplebackticked at point if any, nil otherwise.
+
+Optional \\[universal-argument] returns objects without delimiters"
+  (interactive "P")
+  (ar-th 'triplebackticked no-delimiters))
+
+(defun ar-bounds-of-triplebackticked-atpt (&optional no-delimiters)
+  "Returns a list, borders of triplebackticked if any, nil otherwise.
+
+Optional \\[universal-argument] returns bounds without delimiters"
+  (interactive "P")
+  (ar-th-bounds 'triplebackticked no-delimiters))
+
+(defun ar-triplebackticked-beginning-position-atpt (&optional no-delimiters)
+  "Returns a number, beginning position TRIPLEBACKTICKED.
+
+Optional \\[universal-argument] returns start position after delimiter "
+  (interactive "P")
+  (ar-th-beg 'triplebackticked no-delimiters))
+
+(defun ar-triplebackticked-end-position-atpt (&optional no-delimiters)
+  "Returns a number, end position of TRIPLEBACKTICKED.
+
+Optional \\[universal-argument] returns end position at delimiter "
+  (interactive "P")
+  (ar-th-end 'triplebackticked no-delimiters))
+
+(defun ar-beginning-of-triplebackticked-atpt (&optional no-delimiters)
+  "Goto beginning of TRIPLEBACKTICKED.
+
+Optional \\[universal-argument] returns start position after delimiter "
+  (interactive "P")
+  (ar-th-gotobeg 'triplebackticked no-delimiters))
+
+(defun ar-end-of-triplebackticked-atpt (&optional no-delimiters)
+  "Goto end of TRIPLEBACKTICKED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'triplebackticked no-delimiters))
+
+(defun ar-in-triplebackticked-p-atpt (&optional no-delimiters)
+  "Returns bounds of TRIPLEBACKTICKED if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'triplebackticked no-delimiters))
+
+(defun ar-length-of-triplebackticked-atpt (&optional no-delimiters)
+  "Returns beginning of TRIPLEBACKTICKED at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'triplebackticked no-delimiters))
+
+(defun ar-copy-triplebackticked-atpt (&optional no-delimiters)
+  "Returns a copy of TRIPLEBACKTICKED. "
+  (interactive "P")
+  (ar-th-copy 'triplebackticked no-delimiters))
+
+(defun ar-delete-triplebackticked-atpt (&optional no-delimiters)
+  "Deletes TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-delete 'triplebackticked no-delimiters))
+
+(defun ar-delete-triplebackticked-in-region (beg end)
+  "Deletes TRIPLEBACKTICKED at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'triplebackticked beg end))
+
+(defun ar-blok-triplebackticked-atpt (&optional no-delimiters)
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around triplebackticked.
+  Returns blok or nil if no TRIPLEBACKTICKED at cursor-position. "
+  (interactive "*P")
+  (ar-th-blok 'triplebackticked no-delimiters))
+
+(defun ar-backslashparen-triplebackticked-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around triplebackticked at point if any.
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
+  (interactive "*P")
+  (ar-th-backslashparen 'triplebackticked no-delimiters))
+
+(defun ar-doublebackslash-triplebackticked-atpt (&optional no-delimiters)
+  "Puts doubled backslashes around TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslash 'triplebackticked no-delimiters))
+
+(defun ar-doubleslash-triplebackticked-atpt (&optional no-delimiters)
+  "Puts doubled slashes around TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-doubleslash 'triplebackticked no-delimiters))
+
+(defun ar-doublebackslashparen-triplebackticked-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslashparen 'triplebackticked no-delimiters))
+
+(defun ar-doublebacktick-triplebackticked-atpt (&optional no-delimiters)
+  "Provides double backticks around TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-doublebacktick 'triplebackticked no-delimiters))
+
+(defun ar-slashparen-triplebackticked-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'triplebackticked no-delimiters))
+
+(defun ar-comment-triplebackticked-atpt (&optional no-delimiters)
+  "Comments TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-comment 'triplebackticked no-delimiters))
+
+(defun ar-commatize-triplebackticked-atpt (&optional no-delimiters)
+  "Put a comma after TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-commatize 'triplebackticked no-delimiters))
+
+(defun ar-quote-triplebackticked-atpt (&optional no-delimiters)
+  "Put a singlequote before TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-quote 'triplebackticked no-delimiters))
+
+(defun ar-mark-triplebackticked-atpt (&optional no-delimiters)
+  "Marks TRIPLEBACKTICKED at point if any. "
+  (interactive "P")
+  (ar-th-mark 'triplebackticked no-delimiters))
+
+(defun ar-hide-triplebackticked-atpt (&optional no-delimiters)
+  "Hides TRIPLEBACKTICKED at point. "
+  (interactive "P")
+  (ar-th-hide 'triplebackticked nil nil no-delimiters))
+
+(defun ar-show-triplebackticked-atpt (&optional no-delimiters)
+  "Shows hidden TRIPLEBACKTICKED at point. "
+  (interactive "P")
+  (ar-th-show 'triplebackticked nil nil no-delimiters))
+
+(defun ar-hide-show-triplebackticked-atpt (&optional no-delimiters)
+  "Alternatively hides or shows TRIPLEBACKTICKED at point. "
+  (interactive "P")
+  (ar-th-hide-show 'triplebackticked nil nil no-delimiters))
+
+(defun ar-highlight-triplebackticked-atpt-mode (&optional no-delimiters)
+  "Toggles triplebackticked-highlight-atpt-mode "
+  (interactive "P")
+  (ar-th-highlight 'triplebackticked no-delimiters))
+
+(defun ar-kill-triplebackticked-atpt (&optional no-delimiters)
+  "Kills TRIPLEBACKTICKED at point if any. "
+  (interactive "*P")
+  (ar-th-kill 'triplebackticked no-delimiters))
+
+(defun ar-separate-triplebackticked-atpt (&optional no-delimiters)
+  "Separates TRIPLEBACKTICKED at point if any, does nothing otherwise
+inserts newlines, borders are the beginning or the end of buffer "
+  (interactive "*P")
+  (ar-th-separate 'triplebackticked no-delimiters))
+
+(defun ar-triplequotedq-triplebackticked-atpt (&optional no-delimiters)
+  "Put triplequotes composed of doublequotes around triplebackticked. "
+  (interactive "*P")
+  (ar-th-triplequotedq 'triplebackticked no-delimiters))
+
+(defun ar-triplequotesq-triplebackticked-atpt (&optional no-delimiters)
+  "Put triplequotes composed of singlequotes around triplebackticked. "
+  (interactive "*P")
+  (ar-th-triplequotesq 'triplebackticked no-delimiters))
+
+(defun ar-triplebacktick-triplebackticked-atpt (&optional no-delimiters)
+  "Triplebacktick triplebackticked at point.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
+  (interactive "*P")
+  (ar-th-triplebacktick 'triplebackticked no-delimiters))
+
+(defun ar-trim-triplebackticked-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'triplebackticked no-delimiters t t))
+
+(defun ar-left-trim-triplebackticked-atpt (&optional no-delimiters)
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'triplebackticked no-delimiters t))
+
+(defun ar-right-trim-triplebackticked-atpt (&optional no-delimiters)
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'triplebackticked no-delimiters nil t))
+
+(defun ar-underscore-triplebackticked-atpt (&optional no-delimiters)
+  "Put underscore char around TRIPLEBACKTICKED. "
+  (interactive "*P")
+  (ar-th-underscore 'triplebackticked no-delimiters))
+
+(defun ar-forward-triplebackticked-atpt (&optional no-delimiters)
+  "Moves forward over TRIPLEBACKTICKED at point if any, does nothing otherwise.
+Returns end position of TRIPLEBACKTICKED "
+  (interactive "P")
+  (ar-th-forward 'triplebackticked no-delimiters))
+
+(defun ar-backward-triplebackticked-atpt (&optional no-delimiters)
+  "Moves backward over TRIPLEBACKTICKED.
+Returns beginning position of TRIPLEBACKTICKED "
+  (interactive "P")
+  (ar-th-backward 'triplebackticked no-delimiters))
+
+(defun ar-transpose-triplebackticked-atpt (&optional no-delimiters)
+  "Transposes TRIPLEBACKTICKED with TRIPLEBACKTICKED before point if any. "
+  (interactive "*P")
+  (ar-th-transpose 'triplebackticked no-delimiters))
+
+(defun ar-sort-triplebackticked-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts triplebacktickeds in region, with ARG in reverse order.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
+See doku from ‘sort-subr’, for details.
+  "
+  (interactive "*P\nr")
+  (unless (use-region-p) (message "%s" "Region must be active!"))
+  (ar-th-sort 'triplebackticked reverse beg end startkeyfun endkeyfun predicate))
+
+(defun ar-check-triplebackticked-atpt (&optional arg)
+  "Return t if a TRIPLEBACKTICKED at point exists, nil otherwise "
+  (interactive "P")
+  (let* ((beg (funcall (intern-soft (concat "ar-triplebackticked-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-triplebackticked-end-position-atpt"))))
+        (erg (ignore-errors (< beg end))))
+    (when arg (message "%s" erg))
+   erg))
+
 (defun ar-xslstylesheet-atpt (&optional no-delimiters)
   "Returns xslstylesheet at point if any, nil otherwise.
 

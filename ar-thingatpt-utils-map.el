@@ -1,4 +1,4 @@
-;;; ar-thingatpt-utils-map --- the menu
+;;; ar-thingatpt-utils-map --- the menu -*- lexical-binding: t; -*-
 
 
 ;; Copyright (C) 2010-2024 Andreas Röhler, unless

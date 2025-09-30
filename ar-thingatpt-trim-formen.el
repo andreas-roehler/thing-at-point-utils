@@ -1,4 +1,4 @@
-;;; ar-thingatpt-trim-formen.el --- Trim at point
+;;; ar-thingatpt-trim-formen.el --- Trim at point -*- lexical-binding: t; -*-
 
 
 ;; Copyright (C) 2010-2025 Andreas Röhler, unless
