@@ -345,7 +345,7 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
   (ar-test
       "```asd```"
     'fundamental-mode
-    ar-debug-p
+    'ar-debug-p
     (goto-char (point-max))
     (search-backward "d")
     (should (eq (length (ar-triplebackticked-atpt)) 9))))

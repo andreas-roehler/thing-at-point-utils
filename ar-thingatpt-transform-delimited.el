@@ -1,4 +1,4 @@
-;;; ar-thingatpt-transform-delimited.el --- transform delimited forms
+;;; ar-thingatpt-transform-delimited.el --- transform delimited forms -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2010-2025 Andreas Röhler, unless
 ;; indicated otherwise
