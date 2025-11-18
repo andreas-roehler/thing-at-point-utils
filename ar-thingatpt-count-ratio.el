@@ -3359,6 +3359,214 @@
   (ar-th-ratio-base 'upper 'phone beg end t))
 
 
+(defun ar-count-alnum-in-region-atpt (&optional beg end) 
+"Counts matches of alnum in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'region beg end nil))
+
+(defun ar-count-alnum-in-region-until-point (&optional beg end) 
+"Counts matches of alnum in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'region beg (point) nil))
+
+(defun ar-ratio-alnum-in-region-atpt (&optional beg end) 
+"Relation of alnum in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alnum 'region beg end t))
+
+
+(defun ar-count-alpha-in-region-atpt (&optional beg end) 
+"Counts matches of alpha in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'region beg end nil))
+
+(defun ar-count-alpha-in-region-until-point (&optional beg end) 
+"Counts matches of alpha in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'region beg (point) nil))
+
+(defun ar-ratio-alpha-in-region-atpt (&optional beg end) 
+"Relation of alpha in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'alpha 'region beg end t))
+
+
+(defun ar-count-ascii-in-region-atpt (&optional beg end) 
+"Counts matches of ascii in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'region beg end nil))
+
+(defun ar-count-ascii-in-region-until-point (&optional beg end) 
+"Counts matches of ascii in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'region beg (point) nil))
+
+(defun ar-ratio-ascii-in-region-atpt (&optional beg end) 
+"Relation of ascii in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'ascii 'region beg end t))
+
+
+(defun ar-count-blank-in-region-atpt (&optional beg end) 
+"Counts matches of blank in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'region beg end nil))
+
+(defun ar-count-blank-in-region-until-point (&optional beg end) 
+"Counts matches of blank in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'region beg (point) nil))
+
+(defun ar-ratio-blank-in-region-atpt (&optional beg end) 
+"Relation of blank in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'blank 'region beg end t))
+
+
+(defun ar-count-cntrl-in-region-atpt (&optional beg end) 
+"Counts matches of cntrl in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'region beg end nil))
+
+(defun ar-count-cntrl-in-region-until-point (&optional beg end) 
+"Counts matches of cntrl in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'region beg (point) nil))
+
+(defun ar-ratio-cntrl-in-region-atpt (&optional beg end) 
+"Relation of cntrl in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'cntrl 'region beg end t))
+
+
+(defun ar-count-digit-in-region-atpt (&optional beg end) 
+"Counts matches of digit in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'region beg end nil))
+
+(defun ar-count-digit-in-region-until-point (&optional beg end) 
+"Counts matches of digit in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'region beg (point) nil))
+
+(defun ar-ratio-digit-in-region-atpt (&optional beg end) 
+"Relation of digit in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'digit 'region beg end t))
+
+
+(defun ar-count-graph-in-region-atpt (&optional beg end) 
+"Counts matches of graph in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'region beg end nil))
+
+(defun ar-count-graph-in-region-until-point (&optional beg end) 
+"Counts matches of graph in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'region beg (point) nil))
+
+(defun ar-ratio-graph-in-region-atpt (&optional beg end) 
+"Relation of graph in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'graph 'region beg end t))
+
+
+(defun ar-count-lower-in-region-atpt (&optional beg end) 
+"Counts matches of lower in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'region beg end nil))
+
+(defun ar-count-lower-in-region-until-point (&optional beg end) 
+"Counts matches of lower in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'region beg (point) nil))
+
+(defun ar-ratio-lower-in-region-atpt (&optional beg end) 
+"Relation of lower in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'lower 'region beg end t))
+
+
+(defun ar-count-nonascii-in-region-atpt (&optional beg end) 
+"Counts matches of nonascii in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'region beg end nil))
+
+(defun ar-count-nonascii-in-region-until-point (&optional beg end) 
+"Counts matches of nonascii in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'region beg (point) nil))
+
+(defun ar-ratio-nonascii-in-region-atpt (&optional beg end) 
+"Relation of nonascii in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'nonascii 'region beg end t))
+
+
+(defun ar-count-print-in-region-atpt (&optional beg end) 
+"Counts matches of print in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'region beg end nil))
+
+(defun ar-count-print-in-region-until-point (&optional beg end) 
+"Counts matches of print in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'region beg (point) nil))
+
+(defun ar-ratio-print-in-region-atpt (&optional beg end) 
+"Relation of print in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'print 'region beg end t))
+
+
+(defun ar-count-punct-in-region-atpt (&optional beg end) 
+"Counts matches of punct in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'region beg end nil))
+
+(defun ar-count-punct-in-region-until-point (&optional beg end) 
+"Counts matches of punct in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'region beg (point) nil))
+
+(defun ar-ratio-punct-in-region-atpt (&optional beg end) 
+"Relation of punct in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'punct 'region beg end t))
+
+
+(defun ar-count-space-in-region-atpt (&optional beg end) 
+"Counts matches of space in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'region beg end nil))
+
+(defun ar-count-space-in-region-until-point (&optional beg end) 
+"Counts matches of space in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'region beg (point) nil))
+
+(defun ar-ratio-space-in-region-atpt (&optional beg end) 
+"Relation of space in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'space 'region beg end t))
+
+
+(defun ar-count-upper-in-region-atpt (&optional beg end) 
+"Counts matches of upper in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'region beg end nil))
+
+(defun ar-count-upper-in-region-until-point (&optional beg end) 
+"Counts matches of upper in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'region beg (point) nil))
+
+(defun ar-ratio-upper-in-region-atpt (&optional beg end) 
+"Relation of upper in region if useful, returns nil otherwise "
+  (interactive "p")
+  (ar-th-ratio-base 'upper 'region beg end t))
+
+
 (defun ar-count-alnum-in-sentence-atpt (&optional beg end) 
 "Counts matches of alnum in sentence if useful, returns nil otherwise "
   (interactive "p")

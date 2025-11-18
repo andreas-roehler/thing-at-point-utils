@@ -29,60 +29,76 @@
 ;; moved to ar-werkstatt-interactive-tests.el
 ;; as failing from shell
 
-(ert-deftest ar-in-doublequoted-test-1 ()
-  (ar-test-with-temp-buffer
+(ert-deftest ar-in-doublequoted-test-szpCWi ()
+  (ar-test-point-min
       "\"
 ;;;\" \"Write 'etc. \""
-      (emacs-lisp-mode)
-    (let (ar-thing-no-nest)
-      (goto-char 2)
-      (let ((erg (ar-doublequoted-atpt)))
-	(should (eq 6 (length erg)))))))
-
-(ert-deftest ar-in-doublequoted-test-2 ()
-  (ar-test-with-temp-buffer
-      "\"
-;;;\" \"Write 'etc. \""
-      (emacs-lisp-mode)
-    (goto-char 3)
+    'emacs-lisp-mode
+    'ar-verbose-p
+    (goto-char (point-min))
+    (forward-char 2)
     (let ((erg (ar-doublequoted-atpt)))
       (should (eq 6 (length erg))))))
 
-(ert-deftest ar-in-doublequoted-test-SODSBS ()
-  (ar-test-with-temp-buffer
-      "\"
-;;;\" \"Write 'etc. \""
-      (emacs-lisp-mode)
-    (goto-char (point-max))
-    (search-backward "i") 
-    (let ((erg (ar-doublequoted-atpt)))
-      (should (eq 14 (length erg))))))
-
-(ert-deftest ar-in-comment-p-atpt-test ()
-  (ar-test-with-temp-buffer
+(ert-deftest ar-in-comment-p-test-LYSuTO ()
+  (ar-test-point-min
       "
 \"
 ;;;\""
-      (emacs-lisp-mode)
-      (should (not (ar-in-comment-p-atpt)))))
+    'emacs-lisp-mode
+    'ar-verbose-p
+    (goto-char (point-min))
+    (should (not (ar-in-comment-p-atpt)))))
 
-(ert-deftest ar-beginning-of-list-atpt-test ()
-  (ar-test-with-elisp-buffer-point-min
+(ert-deftest ar-in-comment-p-test-MSWlgv ()
+  (ar-test
+      "
+\"
+;;;\""
+    'emacs-lisp-mode
+    'ar-verbose-p
+    (goto-char (point-max))
+    (should (not (ar-in-comment-p-atpt)))))
+
+(ert-deftest ar-in-comment-p-test-9Wt1e4 ()
+  (ar-test
+    "
+;;; "
+    'emacs-lisp-mode
+    'ar-verbose-p
+    (goto-char (point-max))
+    (should (ar-in-comment-p-atpt))))
+
+(ert-deftest ar-beginning-of-list-atpt-test-1EIvbZ ()
+  (ar-test-point-min
       "(car (cons 1 2))"
+    'emacs-lisp-mode
+    'ar-verbose-p
     (forward-char 1)
     (skip-chars-forward "^(")
     (forward-char 1)
     (should (eq 6 (ar-beginning-of-list-atpt)))))
 
-(ert-deftest ar-trim-underscored-atpt-test ()
+(ert-deftest ar-trim-underscored-atpt-JnI06E ()
   (ar-test-with-elisp-buffer
       "_asdf_"
+    'emacs-lisp-mode
+    'ar-verbose-p
     (goto-char (point-max))
     (skip-chars-backward " \t\r\n\f")
     (forward-char -2)
     (ar-trim-underscored-atpt)
     (goto-char (point-min))
     (should (eq (char-after) ?a))))
+
+(ert-deftest ar-doublebackslashparen-in-region-2LkYLb ()
+  ""
+  (ar-test-point-min
+     "_asdf_"
+   'python-mode
+   'ar-verbose-p
+   (ar-doublebackslashparen-in-region-atpt)
+   ))
 
 (provide 'ar-thingatpt-utils-tests)
 ;;; ar-thingatpt-utils-tests.el ends here

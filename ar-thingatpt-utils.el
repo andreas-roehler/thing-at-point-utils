@@ -126,6 +126,11 @@
   (interactive "*")
   (ar-th-colon 'phone))
 
+(defun ar-colon-region-atpt ()
+  "Colon REGION at point."
+  (interactive "*")
+  (ar-th-colon 'region))
+
 (defun ar-colon-sentence-atpt ()
   "Colon SENTENCE at point."
   (interactive "*")
@@ -250,6 +255,11 @@
   "Cross PHONE at point."
   (interactive "*")
   (ar-th-cross 'phone))
+
+(defun ar-cross-region-atpt ()
+  "Cross REGION at point."
+  (interactive "*")
+  (ar-th-cross 'region))
 
 (defun ar-cross-sentence-atpt ()
   "Cross SENTENCE at point."
@@ -376,6 +386,11 @@
   (interactive "*")
   (ar-th-doubleslash 'phone))
 
+(defun ar-doubleslash-region-atpt ()
+  "Doubleslash REGION at point."
+  (interactive "*")
+  (ar-th-doubleslash 'region))
+
 (defun ar-doubleslash-sentence-atpt ()
   "Doubleslash SENTENCE at point."
   (interactive "*")
@@ -500,6 +515,11 @@
   "Backslash PHONE at point."
   (interactive "*")
   (ar-th-backslash 'phone))
+
+(defun ar-backslash-region-atpt ()
+  "Backslash REGION at point."
+  (interactive "*")
+  (ar-th-backslash 'region))
 
 (defun ar-backslash-sentence-atpt ()
   "Backslash SENTENCE at point."
@@ -626,6 +646,11 @@
   (interactive "*")
   (ar-th-backtick 'phone))
 
+(defun ar-backtick-region-atpt ()
+  "Backtick REGION at point."
+  (interactive "*")
+  (ar-th-backtick 'region))
+
 (defun ar-backtick-sentence-atpt ()
   "Backtick SENTENCE at point."
   (interactive "*")
@@ -750,6 +775,11 @@
   "Dollar PHONE at point."
   (interactive "*")
   (ar-th-dollar 'phone))
+
+(defun ar-dollar-region-atpt ()
+  "Dollar REGION at point."
+  (interactive "*")
+  (ar-th-dollar 'region))
 
 (defun ar-dollar-sentence-atpt ()
   "Dollar SENTENCE at point."
@@ -876,6 +906,11 @@
   (interactive "*")
   (ar-th-doublequote 'phone))
 
+(defun ar-doublequote-region-atpt ()
+  "Doublequote REGION at point."
+  (interactive "*")
+  (ar-th-doublequote 'region))
+
 (defun ar-doublequote-sentence-atpt ()
   "Doublequote SENTENCE at point."
   (interactive "*")
@@ -1000,6 +1035,11 @@
   "Equalize PHONE at point."
   (interactive "*")
   (ar-th-equalize 'phone))
+
+(defun ar-equalize-region-atpt ()
+  "Equalize REGION at point."
+  (interactive "*")
+  (ar-th-equalize 'region))
 
 (defun ar-equalize-sentence-atpt ()
   "Equalize SENTENCE at point."
@@ -1126,6 +1166,11 @@
   (interactive "*")
   (ar-th-escape 'phone))
 
+(defun ar-escape-region-atpt ()
+  "Escape REGION at point."
+  (interactive "*")
+  (ar-th-escape 'region))
+
 (defun ar-escape-sentence-atpt ()
   "Escape SENTENCE at point."
   (interactive "*")
@@ -1250,6 +1295,11 @@
   "Hash PHONE at point."
   (interactive "*")
   (ar-th-hash 'phone))
+
+(defun ar-hash-region-atpt ()
+  "Hash REGION at point."
+  (interactive "*")
+  (ar-th-hash 'region))
 
 (defun ar-hash-sentence-atpt ()
   "Hash SENTENCE at point."
@@ -1376,6 +1426,11 @@
   (interactive "*")
   (ar-th-hyphen 'phone))
 
+(defun ar-hyphen-region-atpt ()
+  "Hyphen REGION at point."
+  (interactive "*")
+  (ar-th-hyphen 'region))
+
 (defun ar-hyphen-sentence-atpt ()
   "Hyphen SENTENCE at point."
   (interactive "*")
@@ -1500,6 +1555,11 @@
   "Pipe PHONE at point."
   (interactive "*")
   (ar-th-pipe 'phone))
+
+(defun ar-pipe-region-atpt ()
+  "Pipe REGION at point."
+  (interactive "*")
+  (ar-th-pipe 'region))
 
 (defun ar-pipe-sentence-atpt ()
   "Pipe SENTENCE at point."
@@ -1626,6 +1686,11 @@
   (interactive "*")
   (ar-th-singlequote 'phone))
 
+(defun ar-singlequote-region-atpt ()
+  "Singlequote REGION at point."
+  (interactive "*")
+  (ar-th-singlequote 'region))
+
 (defun ar-singlequote-sentence-atpt ()
   "Singlequote SENTENCE at point."
   (interactive "*")
@@ -1750,6 +1815,11 @@
   "Slash PHONE at point."
   (interactive "*")
   (ar-th-slash 'phone))
+
+(defun ar-slash-region-atpt ()
+  "Slash REGION at point."
+  (interactive "*")
+  (ar-th-slash 'region))
 
 (defun ar-slash-sentence-atpt ()
   "Slash SENTENCE at point."
@@ -1876,6 +1946,11 @@
   (interactive "*")
   (ar-th-star 'phone))
 
+(defun ar-star-region-atpt ()
+  "Star REGION at point."
+  (interactive "*")
+  (ar-th-star 'region))
+
 (defun ar-star-sentence-atpt ()
   "Star SENTENCE at point."
   (interactive "*")
@@ -2000,6 +2075,11 @@
   "Tild PHONE at point."
   (interactive "*")
   (ar-th-tild 'phone))
+
+(defun ar-tild-region-atpt ()
+  "Tild REGION at point."
+  (interactive "*")
+  (ar-th-tild 'region))
 
 (defun ar-tild-sentence-atpt ()
   "Tild SENTENCE at point."
@@ -2126,6 +2206,11 @@
   (interactive "*")
   (ar-th-underscore 'phone))
 
+(defun ar-underscore-region-atpt ()
+  "Underscore REGION at point."
+  (interactive "*")
+  (ar-th-underscore 'region))
+
 (defun ar-underscore-sentence-atpt ()
   "Underscore SENTENCE at point."
   (interactive "*")
@@ -2250,6 +2335,11 @@
   "Whitespace PHONE at point."
   (interactive "*")
   (ar-th-whitespace 'phone))
+
+(defun ar-whitespace-region-atpt ()
+  "Whitespace REGION at point."
+  (interactive "*")
+  (ar-th-whitespace 'region))
 
 (defun ar-whitespace-sentence-atpt ()
   "Whitespace SENTENCE at point."
@@ -2378,6 +2468,11 @@
   (interactive "*")
   (ar-th-delim 'phone "`" "'"))
 
+(defun ar-symbol-region-atpt ()
+  "Symbol REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "`" "'"))
+
 (defun ar-symbol-sentence-atpt ()
   "Symbol SENTENCE at point ARG times."
   (interactive "*")
@@ -2502,6 +2597,11 @@
   "Brace PHONE at point ARG times."
   (interactive "*")
   (ar-th-delim 'phone "{" "}"))
+
+(defun ar-brace-region-atpt ()
+  "Brace REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "{" "}"))
 
 (defun ar-brace-sentence-atpt ()
   "Brace SENTENCE at point ARG times."
@@ -2628,6 +2728,11 @@
   (interactive "*")
   (ar-th-delim 'phone "[" "]"))
 
+(defun ar-bracket-region-atpt ()
+  "Bracket REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "[" "]"))
+
 (defun ar-bracket-sentence-atpt ()
   "Bracket SENTENCE at point ARG times."
   (interactive "*")
@@ -2752,6 +2857,11 @@
   "Lesserangle PHONE at point ARG times."
   (interactive "*")
   (ar-th-delim 'phone "<" ">"))
+
+(defun ar-lesserangle-region-atpt ()
+  "Lesserangle REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "<" ">"))
 
 (defun ar-lesserangle-sentence-atpt ()
   "Lesserangle SENTENCE at point ARG times."
@@ -2878,6 +2988,11 @@
   (interactive "*")
   (ar-th-delim 'phone ">" "<"))
 
+(defun ar-greaterangle-region-atpt ()
+  "Greaterangle REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region ">" "<"))
+
 (defun ar-greaterangle-sentence-atpt ()
   "Greaterangle SENTENCE at point ARG times."
   (interactive "*")
@@ -3002,6 +3117,11 @@
   "Curvedsinglequote PHONE at point ARG times."
   (interactive "*")
   (ar-th-delim 'phone "‘" "’"))
+
+(defun ar-curvedsinglequote-region-atpt ()
+  "Curvedsinglequote REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "‘" "’"))
 
 (defun ar-curvedsinglequote-sentence-atpt ()
   "Curvedsinglequote SENTENCE at point ARG times."
@@ -3128,6 +3248,11 @@
   (interactive "*")
   (ar-th-delim 'phone "“" "”"))
 
+(defun ar-curveddoublequote-region-atpt ()
+  "Curveddoublequote REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "“" "”"))
+
 (defun ar-curveddoublequote-sentence-atpt ()
   "Curveddoublequote SENTENCE at point ARG times."
   (interactive "*")
@@ -3252,6 +3377,11 @@
   "Parentize PHONE at point ARG times."
   (interactive "*")
   (ar-th-delim 'phone "(" ")"))
+
+(defun ar-parentize-region-atpt ()
+  "Parentize REGION at point ARG times."
+  (interactive "*")
+  (ar-th-delim 'region "(" ")"))
 
 (defun ar-parentize-sentence-atpt ()
   "Parentize SENTENCE at point ARG times."
@@ -11739,6 +11869,233 @@ See doku from ‘sort-subr’, for details.
   (interactive "P")
   (let* ((beg (funcall (intern-soft (concat "ar-phone-beginning-position-atpt"))))
         (end (funcall (intern-soft (concat "ar-phone-end-position-atpt"))))
+        (erg (ignore-errors (< beg end))))
+    (when arg (message "%s" erg))
+   erg))
+
+(defun ar-region-atpt (&optional no-delimiters)
+  "Returns region at point if any, nil otherwise.
+
+Optional \\[universal-argument] returns objects without delimiters"
+  (interactive "P")
+  (ar-th 'region no-delimiters))
+
+(defun ar-bounds-of-region-atpt (&optional no-delimiters)
+  "Returns a list, borders of region if any, nil otherwise.
+
+Optional \\[universal-argument] returns bounds without delimiters"
+  (interactive "P")
+  (ar-th-bounds 'region no-delimiters))
+
+(defun ar-region-beginning-position-atpt (&optional no-delimiters)
+  "Returns a number, beginning position REGION.
+
+Optional \\[universal-argument] returns start position after delimiter "
+  (interactive "P")
+  (ar-th-beg 'region no-delimiters))
+
+(defun ar-region-end-position-atpt (&optional no-delimiters)
+  "Returns a number, end position of REGION.
+
+Optional \\[universal-argument] returns end position at delimiter "
+  (interactive "P")
+  (ar-th-end 'region no-delimiters))
+
+(defun ar-beginning-of-region-atpt (&optional no-delimiters)
+  "Goto beginning of REGION.
+
+Optional \\[universal-argument] returns start position after delimiter "
+  (interactive "P")
+  (ar-th-gotobeg 'region no-delimiters))
+
+(defun ar-end-of-region-atpt (&optional no-delimiters)
+  "Goto end of REGION at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-gotoend 'region no-delimiters))
+
+(defun ar-in-region-p-atpt (&optional no-delimiters)
+  "Returns bounds of REGION if inside, nil otherwise. "
+  (interactive "P")
+  (ar-th-bounds 'region no-delimiters))
+
+(defun ar-length-of-region-atpt (&optional no-delimiters)
+  "Returns beginning of REGION at point if any, nil otherwise. "
+  (interactive "P")
+  (ar-th-length 'region no-delimiters))
+
+(defun ar-copy-region-atpt (&optional no-delimiters)
+  "Returns a copy of REGION. "
+  (interactive "P")
+  (ar-th-copy 'region no-delimiters))
+
+(defun ar-delete-region-atpt (&optional no-delimiters)
+  "Deletes REGION at point if any. "
+  (interactive "*P")
+  (ar-th-delete 'region no-delimiters))
+
+(defun ar-delete-region-in-region (beg end)
+  "Deletes REGION at point if any. "
+  (interactive "*r")
+  (ar-th-delete-in-region 'region beg end))
+
+(defun ar-blok-region-atpt (&optional no-delimiters)
+  "Puts ‘blok-startstring-atpt’, ‘blok-endstring-atpt’ around region.
+  Returns blok or nil if no REGION at cursor-position. "
+  (interactive "*P")
+  (ar-th-blok 'region no-delimiters))
+
+(defun ar-backslashparen-region-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around region at point if any.
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
+  (interactive "*P")
+  (ar-th-backslashparen 'region no-delimiters))
+
+(defun ar-doublebackslash-region-atpt (&optional no-delimiters)
+  "Puts doubled backslashes around REGION at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslash 'region no-delimiters))
+
+(defun ar-doubleslash-region-atpt (&optional no-delimiters)
+  "Puts doubled slashes around REGION at point if any. "
+  (interactive "*P")
+  (ar-th-doubleslash 'region no-delimiters))
+
+(defun ar-doublebackslashparen-region-atpt (&optional no-delimiters)
+  "Provides doubleslashed parentheses around REGION at point if any. "
+  (interactive "*P")
+  (ar-th-doublebackslashparen 'region no-delimiters))
+
+(defun ar-doublebacktick-region-atpt (&optional no-delimiters)
+  "Provides double backticks around REGION at point if any. "
+  (interactive "*P")
+  (ar-th-doublebacktick 'region no-delimiters))
+
+(defun ar-slashparen-region-atpt (&optional no-delimiters)
+  "Provides slashed parentheses around REGION at point if any. "
+  (interactive "*P")
+  (ar-th-slashparen 'region no-delimiters))
+
+(defun ar-comment-region-atpt (&optional no-delimiters)
+  "Comments REGION at point if any. "
+  (interactive "*P")
+  (ar-th-comment 'region no-delimiters))
+
+(defun ar-commatize-region-atpt (&optional no-delimiters)
+  "Put a comma after REGION at point if any. "
+  (interactive "*P")
+  (ar-th-commatize 'region no-delimiters))
+
+(defun ar-quote-region-atpt (&optional no-delimiters)
+  "Put a singlequote before REGION at point if any. "
+  (interactive "*P")
+  (ar-th-quote 'region no-delimiters))
+
+(defun ar-mark-region-atpt (&optional no-delimiters)
+  "Marks REGION at point if any. "
+  (interactive "P")
+  (ar-th-mark 'region no-delimiters))
+
+(defun ar-hide-region-atpt (&optional no-delimiters)
+  "Hides REGION at point. "
+  (interactive "P")
+  (ar-th-hide 'region nil nil no-delimiters))
+
+(defun ar-show-region-atpt (&optional no-delimiters)
+  "Shows hidden REGION at point. "
+  (interactive "P")
+  (ar-th-show 'region nil nil no-delimiters))
+
+(defun ar-hide-show-region-atpt (&optional no-delimiters)
+  "Alternatively hides or shows REGION at point. "
+  (interactive "P")
+  (ar-th-hide-show 'region nil nil no-delimiters))
+
+(defun ar-highlight-region-atpt-mode (&optional no-delimiters)
+  "Toggles region-highlight-atpt-mode "
+  (interactive "P")
+  (ar-th-highlight 'region no-delimiters))
+
+(defun ar-kill-region-atpt (&optional no-delimiters)
+  "Kills REGION at point if any. "
+  (interactive "*P")
+  (ar-th-kill 'region no-delimiters))
+
+(defun ar-separate-region-atpt (&optional no-delimiters)
+  "Separates REGION at point if any, does nothing otherwise
+inserts newlines, borders are the beginning or the end of buffer "
+  (interactive "*P")
+  (ar-th-separate 'region no-delimiters))
+
+(defun ar-triplequotedq-region-atpt (&optional no-delimiters)
+  "Put triplequotes composed of doublequotes around region. "
+  (interactive "*P")
+  (ar-th-triplequotedq 'region no-delimiters))
+
+(defun ar-triplequotesq-region-atpt (&optional no-delimiters)
+  "Put triplequotes composed of singlequotes around region. "
+  (interactive "*P")
+  (ar-th-triplequotesq 'region no-delimiters))
+
+(defun ar-triplebacktick-region-atpt (&optional no-delimiters)
+  "Triplebacktick region at point.
+
+With optional \\[universal-argument] NO-DELIMITERS resp. to inner position of delimiter "
+  (interactive "*P")
+  (ar-th-triplebacktick 'region no-delimiters))
+
+(defun ar-trim-region-atpt (&optional no-delimiters)
+  "Removes leading and trailing char. "
+  (interactive "*")
+  (ar-th-trim 'region no-delimiters t t))
+
+(defun ar-left-trim-region-atpt (&optional no-delimiters)
+  "Removes leading char. "
+  (interactive "*")
+  (ar-th-trim 'region no-delimiters t))
+
+(defun ar-right-trim-region-atpt (&optional no-delimiters)
+  "Removes trailing char. "
+  (interactive "*")
+  (ar-th-trim 'region no-delimiters nil t))
+
+(defun ar-underscore-region-atpt (&optional no-delimiters)
+  "Put underscore char around REGION. "
+  (interactive "*P")
+  (ar-th-underscore 'region no-delimiters))
+
+(defun ar-forward-region-atpt (&optional no-delimiters)
+  "Moves forward over REGION at point if any, does nothing otherwise.
+Returns end position of REGION "
+  (interactive "P")
+  (ar-th-forward 'region no-delimiters))
+
+(defun ar-backward-region-atpt (&optional no-delimiters)
+  "Moves backward over REGION.
+Returns beginning position of REGION "
+  (interactive "P")
+  (ar-th-backward 'region no-delimiters))
+
+(defun ar-transpose-region-atpt (&optional no-delimiters)
+  "Transposes REGION with REGION before point if any. "
+  (interactive "*P")
+  (ar-th-transpose 'region no-delimiters))
+
+(defun ar-sort-region-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
+  "Sorts regions in region, with ARG in reverse order.
+Optional: STARTKEYFUN
+Optional: ENDKEYFUN
+With PREDICATE define a the function to compare.
+See doku from ‘sort-subr’, for details.
+  "
+  (interactive "*P\nr")
+  (unless (use-region-p) (message "%s" "Region must be active!"))
+  (ar-th-sort 'region reverse beg end startkeyfun endkeyfun predicate))
+
+(defun ar-check-region-atpt (&optional arg)
+  "Return t if a REGION at point exists, nil otherwise "
+  (interactive "P")
+  (let* ((beg (funcall (intern-soft (concat "ar-region-beginning-position-atpt"))))
+        (end (funcall (intern-soft (concat "ar-region-end-position-atpt"))))
         (erg (ignore-errors (< beg end))))
     (when arg (message "%s" erg))
    erg))
@@ -26437,6 +26794,16 @@ See doku from ‘sort-subr’, for details.
   With negative argument kill phone(ed) at point "
   (interactive "P")
   (ar-th-base-copy-or 'phone no-delimiters))
+
+(defun ar-region-or-copy-atpt (&optional no-delimiters)
+  "If region is highlighted, provide THING at point with region(s).
+
+  Otherwise copy region(ed) at point
+  With NO-DELIMITERS, copy region(ed) without delimiters
+  With numerical argument 2 trim region
+  With negative argument kill region(ed) at point "
+  (interactive "P")
+  (ar-th-base-copy-or 'region no-delimiters))
 
 (defun ar-sentence-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with sentence(s).
