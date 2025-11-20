@@ -273,16 +273,11 @@ Returns beginning position of BEGINENDQUOTE "
   (interactive "*P")
   (ar-th-transpose 'beginendquote no-delimiters))
 
-(defun ar-sort-beginendquote-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts beginendquotes in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-beginendquote-atpt (&optional reverse)
+  "Sorts beginendquotes in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'beginendquote reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'beginendquote reverse))
 
 (defun ar-check-beginendquote-atpt (&optional arg)
   "Return t if a BEGINENDQUOTE at point exists, nil otherwise "
@@ -500,16 +495,11 @@ Returns beginning position of BLOK "
   (interactive "*P")
   (ar-th-transpose 'blok no-delimiters))
 
-(defun ar-sort-blok-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts bloks in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-blok-atpt (&optional reverse)
+  "Sorts bloks in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'blok reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'blok reverse))
 
 (defun ar-check-blok-atpt (&optional arg)
   "Return t if a BLOK at point exists, nil otherwise "
@@ -727,16 +717,11 @@ Returns beginning position of DOUBLEBACKSLASHED "
   (interactive "*P")
   (ar-th-transpose 'doublebackslashed no-delimiters))
 
-(defun ar-sort-doublebackslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts doublebackslasheds in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-doublebackslashed-atpt (&optional reverse)
+  "Sorts doublebackslasheds in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublebackslashed reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'doublebackslashed reverse))
 
 (defun ar-check-doublebackslashed-atpt (&optional arg)
   "Return t if a DOUBLEBACKSLASHED at point exists, nil otherwise "
@@ -954,16 +939,11 @@ Returns beginning position of DOUBLEBACKTICKED "
   (interactive "*P")
   (ar-th-transpose 'doublebackticked no-delimiters))
 
-(defun ar-sort-doublebackticked-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts doublebacktickeds in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-doublebackticked-atpt (&optional reverse)
+  "Sorts doublebacktickeds in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublebackticked reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'doublebackticked reverse))
 
 (defun ar-check-doublebackticked-atpt (&optional arg)
   "Return t if a DOUBLEBACKTICKED at point exists, nil otherwise "
@@ -1181,16 +1161,11 @@ Returns beginning position of DOUBLEBACKSLASHEDPAREN "
   (interactive "*P")
   (ar-th-transpose 'doublebackslashedparen no-delimiters))
 
-(defun ar-sort-doublebackslashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts doublebackslashedparens in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-doublebackslashedparen-atpt (&optional reverse)
+  "Sorts doublebackslashedparens in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doublebackslashedparen reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'doublebackslashedparen reverse))
 
 (defun ar-check-doublebackslashedparen-atpt (&optional arg)
   "Return t if a DOUBLEBACKSLASHEDPAREN at point exists, nil otherwise "
@@ -1408,16 +1383,11 @@ Returns beginning position of DOUBLESLASHED "
   (interactive "*P")
   (ar-th-transpose 'doubleslashed no-delimiters))
 
-(defun ar-sort-doubleslashed-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts doubleslasheds in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-doubleslashed-atpt (&optional reverse)
+  "Sorts doubleslasheds in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doubleslashed reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'doubleslashed reverse))
 
 (defun ar-check-doubleslashed-atpt (&optional arg)
   "Return t if a DOUBLESLASHED at point exists, nil otherwise "
@@ -1635,16 +1605,11 @@ Returns beginning position of DOUBLESLASHEDPAREN "
   (interactive "*P")
   (ar-th-transpose 'doubleslashedparen no-delimiters))
 
-(defun ar-sort-doubleslashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts doubleslashedparens in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-doubleslashedparen-atpt (&optional reverse)
+  "Sorts doubleslashedparens in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'doubleslashedparen reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'doubleslashedparen reverse))
 
 (defun ar-check-doubleslashedparen-atpt (&optional arg)
   "Return t if a DOUBLESLASHEDPAREN at point exists, nil otherwise "
@@ -1862,16 +1827,11 @@ Returns beginning position of MARKUP "
   (interactive "*P")
   (ar-th-transpose 'markup no-delimiters))
 
-(defun ar-sort-markup-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts markups in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-markup-atpt (&optional reverse)
+  "Sorts markups in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'markup reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'markup reverse))
 
 (defun ar-check-markup-atpt (&optional arg)
   "Return t if a MARKUP at point exists, nil otherwise "
@@ -2089,16 +2049,11 @@ Returns beginning position of MLDATA "
   (interactive "*P")
   (ar-th-transpose 'mldata no-delimiters))
 
-(defun ar-sort-mldata-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts mldatas in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-mldata-atpt (&optional reverse)
+  "Sorts mldatas in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'mldata reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'mldata reverse))
 
 (defun ar-check-mldata-atpt (&optional arg)
   "Return t if a MLDATA at point exists, nil otherwise "
@@ -2316,16 +2271,11 @@ Returns beginning position of MLATTRIBUT "
   (interactive "*P")
   (ar-th-transpose 'mlattribut no-delimiters))
 
-(defun ar-sort-mlattribut-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts mlattributs in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-mlattribut-atpt (&optional reverse)
+  "Sorts mlattributs in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'mlattribut reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'mlattribut reverse))
 
 (defun ar-check-mlattribut-atpt (&optional arg)
   "Return t if a MLATTRIBUT at point exists, nil otherwise "
@@ -2543,16 +2493,11 @@ Returns beginning position of MLTAG "
   (interactive "*P")
   (ar-th-transpose 'mltag no-delimiters))
 
-(defun ar-sort-mltag-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts mltags in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-mltag-atpt (&optional reverse)
+  "Sorts mltags in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'mltag reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'mltag reverse))
 
 (defun ar-check-mltag-atpt (&optional arg)
   "Return t if a MLTAG at point exists, nil otherwise "
@@ -2770,16 +2715,11 @@ Returns beginning position of SLASHEDPAREN "
   (interactive "*P")
   (ar-th-transpose 'slashedparen no-delimiters))
 
-(defun ar-sort-slashedparen-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts slashedparens in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-slashedparen-atpt (&optional reverse)
+  "Sorts slashedparens in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'slashedparen reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'slashedparen reverse))
 
 (defun ar-check-slashedparen-atpt (&optional arg)
   "Return t if a SLASHEDPAREN at point exists, nil otherwise "
@@ -2997,16 +2937,11 @@ Returns beginning position of TABLEDATA "
   (interactive "*P")
   (ar-th-transpose 'tabledata no-delimiters))
 
-(defun ar-sort-tabledata-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts tabledatas in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-tabledata-atpt (&optional reverse)
+  "Sorts tabledatas in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'tabledata reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'tabledata reverse))
 
 (defun ar-check-tabledata-atpt (&optional arg)
   "Return t if a TABLEDATA at point exists, nil otherwise "
@@ -3224,16 +3159,11 @@ Returns beginning position of TRIPLEBACKTICKED "
   (interactive "*P")
   (ar-th-transpose 'triplebackticked no-delimiters))
 
-(defun ar-sort-triplebackticked-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts triplebacktickeds in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-triplebackticked-atpt (&optional reverse)
+  "Sorts triplebacktickeds in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'triplebackticked reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'triplebackticked reverse))
 
 (defun ar-check-triplebackticked-atpt (&optional arg)
   "Return t if a TRIPLEBACKTICKED at point exists, nil otherwise "
@@ -3451,16 +3381,11 @@ Returns beginning position of XSLSTYLESHEET "
   (interactive "*P")
   (ar-th-transpose 'xslstylesheet no-delimiters))
 
-(defun ar-sort-xslstylesheet-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts xslstylesheets in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-xslstylesheet-atpt (&optional reverse)
+  "Sorts xslstylesheets in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'xslstylesheet reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'xslstylesheet reverse))
 
 (defun ar-check-xslstylesheet-atpt (&optional arg)
   "Return t if a XSLSTYLESHEET at point exists, nil otherwise "
@@ -3678,16 +3603,11 @@ Returns beginning position of XSLTEMPLATE "
   (interactive "*P")
   (ar-th-transpose 'xsltemplate no-delimiters))
 
-(defun ar-sort-xsltemplate-atpt (reverse beg end &optional startkeyfun endkeyfun predicate)
-  "Sorts xsltemplates in region, with ARG in reverse order.
-Optional: STARTKEYFUN
-Optional: ENDKEYFUN
-With PREDICATE define a the function to compare.
-See doku from ‘sort-subr’, for details.
+(defun ar-sort-xsltemplate-atpt (&optional reverse)
+  "Sorts xsltemplates in at point, with \\[universal-argument] in reverse order.
   "
-  (interactive "*P\nr")
-  (unless (use-region-p) (message "%s" "Region must be active!"))
-  (ar-th-sort 'xsltemplate reverse beg end startkeyfun endkeyfun predicate))
+  (interactive "*P")
+  (ar-th-sort 'xsltemplate reverse))
 
 (defun ar-check-xsltemplate-atpt (&optional arg)
   "Return t if a XSLTEMPLATE at point exists, nil otherwise "

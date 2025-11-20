@@ -100,5 +100,14 @@
    (ar-doublebackslashparen-in-region-atpt)
    ))
 
+(ert-deftest ar-ert-sort-list-test-oz1CKn ()
+  (ar-test-with-elisp-buffer
+      "(list ?> ?<)"
+      (goto-char (point-max))
+    (backward-char)
+    (ar-sort-list-atpt)
+    (should (looking-back "\\?< \\?>)" (line-beginning-position)))
+    ))
+
 (provide 'ar-thingatpt-utils-tests)
 ;;; ar-thingatpt-utils-tests.el ends here
