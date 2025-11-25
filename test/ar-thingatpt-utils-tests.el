@@ -94,9 +94,12 @@
 (ert-deftest ar-doublebackslashparen-in-region-2LkYLb ()
   ""
   (ar-test-point-min
-     "_asdf_"
+     "_(asdf)_"
    'python-mode
    'ar-verbose-p
+   (goto-char (point-min))
+   (push-mark)
+   (goto-char (point-max)) 
    (ar-doublebackslashparen-in-region-atpt)
    ))
 

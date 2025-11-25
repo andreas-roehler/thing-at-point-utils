@@ -350,5 +350,37 @@ struct AbcBaz\;  /* <- cursor on this line\. */"
     (search-backward "d")
     (should (eq (length (ar-triplebackticked-atpt)) 9))))
 
+(ert-deftest ar-quote-word-in-region-test-OJaQWR ()
+  (ar-test-point-min
+      "A B"
+    'fundamental-mode
+    'ar-debug-p
+    (goto-char (point-min))
+    (push-mark)
+    (goto-char (point-max))
+    (ar-quote-word-in-region-atpt)
+    (goto-char (point-min))
+    (should (eq (char-after) ?'))
+    (skip-chars-forward "^B")
+    (should (eq (char-before) ?'))
+    ))
+
+
+(ert-deftest ar-quote-word-in-region-test-7RepUU ()
+  (ar-test-point-min
+      "(A B)"
+    'fundamental-mode
+    'ar-debug-p
+    (goto-char (point-min))
+    (push-mark)
+    (goto-char (point-max))
+    (ar-quote-word-in-region-atpt)
+    (goto-char (point-min))
+    (skip-chars-forward "^A")
+    (should (eq (char-before) ?'))
+    (skip-chars-forward "^B")
+    (should (eq (char-before) ?'))
+    ))
+
 (provide 'ar-thingatpt-other-delimited-tests)
 ;;; ar-thingatpt-other-delimited-tests.el ends here
