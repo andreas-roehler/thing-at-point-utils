@@ -81,6 +81,7 @@ FILE15=ar-thingatpt-transform-generic-delimited.el
 FILE16=ar-translate-paired-delimiters.el
 FILE17=ar-thingatpt-rest-list-in-region-only.el
 FILE18=ar-thingatpt-data-forms-aktiv-in-rest-list.el
+FILE19=ar-thingatpt-markup.el
 FILE20=ar-sexp.el
 FILE21=ar-comment-lor.el
 FILE22=ar-tptp-mode.el
@@ -109,6 +110,7 @@ TEST21=test/ar-backward-sexp-tests.el
 TEST22=test/ar-forward-sexp-tests.el
 TEST23=test/ar-tptp-mode-tests.el
 TEST24=test/ar-thingatpt-scala-mode-tests.el
+TEST25=test/ar-thingatpt-peel-tests.el
 
 h1 () {
     $EMACS -Q --batch \
@@ -133,6 +135,7 @@ h1 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -164,6 +167,7 @@ h2 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -195,6 +199,7 @@ h3 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -227,6 +232,7 @@ h4 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -258,6 +264,7 @@ h5 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -289,6 +296,7 @@ h6 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -320,6 +328,7 @@ h7 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -351,6 +360,7 @@ h8 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -382,6 +392,7 @@ h9 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -413,6 +424,7 @@ h10 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -443,6 +455,7 @@ h11 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -474,6 +487,7 @@ h12 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -505,6 +519,7 @@ h13 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -536,6 +551,7 @@ h14 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -567,6 +583,7 @@ h15 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -598,6 +615,7 @@ h16 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 \
 -load $SETUP1 \
@@ -629,6 +647,7 @@ h17 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -661,6 +680,7 @@ h18 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -693,6 +713,7 @@ h19 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -725,6 +746,7 @@ h20 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -757,6 +779,7 @@ h21 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -789,6 +812,7 @@ h22 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \
@@ -821,6 +845,7 @@ h23 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 -load $FILE22 \
@@ -854,6 +879,7 @@ h24 () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 -load $FILE22 \
@@ -887,6 +913,7 @@ hier () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 -load $FILE22 \
@@ -942,6 +969,7 @@ entfernt () {
 -load $FILE16 \
 -load $FILE17 \
 -load $FILE18 \
+-load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
 \

@@ -20841,10 +20841,10 @@
   (interactive "*")
   (ar-thing-in-thing 'doublebackslashparen 'phone 'ar-th-whitespace))
 
-(defun ar-doublebackslashparen-in-region-atpt ()
-  "Employ actions of  at things class of DOUBLEBACKSLASHPAREN residing withing REGION. "
-  (interactive "*")
-  (ar-thing-in-thing 'doublebackslashparen 'region 'ar-th))
+;; (defun ar-doublebackslashparen-in-region-atpt ()
+;;   "Employ actions of  at things class of DOUBLEBACKSLASHPAREN residing withing REGION. "
+;;   (interactive "*")
+;;   (ar-thing-in-thing 'doublebackslashparen 'region 'ar-th))
 
 (defun ar-greaterangle-doublebackslashparen-in-region-atpt ()
   "Employ actions of GREATERANGLE- at things class of DOUBLEBACKSLASHPAREN residing withing REGION. "

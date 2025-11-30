@@ -91,17 +91,18 @@
     (goto-char (point-min))
     (should (eq (char-after) ?a))))
 
-(ert-deftest ar-doublebackslashparen-in-region-2LkYLb ()
+(ert-deftest ar-doublebackslashparen-alnum-atpt-2LkYLb ()
   ""
   (ar-test-point-min
-     "_(asdf)_"
-   'python-mode
-   'ar-verbose-p
-   (goto-char (point-min))
-   (push-mark)
-   (goto-char (point-max)) 
-   (ar-doublebackslashparen-in-region-atpt)
-   ))
+      "_(asdf)_"
+    'python-mode
+    'ar-verbose-p
+    (goto-char (point-min))
+    (search-forward "a")
+    (ar-doublebackslashparen-alnum-atpt)
+    (should (eq (char-before) 41))
+    (search-backward "a")
+    (should (eq (char-before) 40))))
 
 (ert-deftest ar-ert-sort-list-test-oz1CKn ()
   (ar-test-with-elisp-buffer

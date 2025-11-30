@@ -39,12 +39,22 @@
   "Employ actions of  at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th))
- 
+
+(defun ar-alnum-in-region-atpt ()
+  "Employ actions of  at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th)) 
+
 (defun ar-greaterangle-alnum-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-alnum-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-alnum-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
@@ -54,172 +64,342 @@
   "Employ actions of BACKSLASH at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-alnum-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-backslash)) 
+
 (defun ar-beg-alnum-in-braced-atpt ()
   "Employ actions of BEG at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-alnum-in-region-atpt ()
+  "Employ actions of BEG at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-beg)) 
+
 (defun ar-blok-alnum-in-braced-atpt ()
   "Employ actions of BLOK at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-alnum-in-region-atpt ()
+  "Employ actions of BLOK at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-blok)) 
+
 (defun ar-bounds-alnum-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-alnum-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-bounds)) 
+
 (defun ar-brace-alnum-in-braced-atpt ()
   "Employ actions of BRACE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-alnum-in-region-atpt ()
+  "Employ actions of BRACE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-brace)) 
+
 (defun ar-bracket-alnum-in-braced-atpt ()
   "Employ actions of BRACKET at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-alnum-in-region-atpt ()
+  "Employ actions of BRACKET at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-alnum-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-alnum-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-commatize)) 
+
 (defun ar-comment-alnum-in-braced-atpt ()
   "Employ actions of COMMENT at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-alnum-in-region-atpt ()
+  "Employ actions of COMMENT at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-comment)) 
+
 (defun ar-dollar-alnum-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-alnum-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-alnum-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-alnum-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-alnum-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-alnum-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-alnum-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-alnum-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-alnum-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-alnum-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-alnum-in-braced-atpt ()
   "Employ actions of END at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-end))
- 
+
+(defun ar-end-alnum-in-region-atpt ()
+  "Employ actions of END at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-end)) 
+
 (defun ar-escape-alnum-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-alnum-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-escape)) 
+
 (defun ar-hide-alnum-in-braced-atpt ()
   "Employ actions of HIDE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-alnum-in-region-atpt ()
+  "Employ actions of HIDE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-alnum-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-alnum-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-alnum-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-alnum-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-alnum-in-braced-atpt ()
   "Employ actions of KILL at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-alnum-in-region-atpt ()
+  "Employ actions of KILL at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-alnum-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-alnum-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-alnum-in-braced-atpt ()
   "Employ actions of LENGTH at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-length))
- 
+
+(defun ar-length-alnum-in-region-atpt ()
+  "Employ actions of LENGTH at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-length)) 
+
 (defun ar-parentize-alnum-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-alnum-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-parentize)) 
+
 (defun ar-quote-alnum-in-braced-atpt ()
   "Employ actions of QUOTE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-alnum-in-region-atpt ()
+  "Employ actions of QUOTE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-quote)) 
+
 (defun ar-separate-alnum-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-alnum-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-separate)) 
+
 (defun ar-show-alnum-in-braced-atpt ()
   "Employ actions of SHOW at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-show))
- 
+
+(defun ar-show-alnum-in-region-atpt ()
+  "Employ actions of SHOW at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-show)) 
+
 (defun ar-singlequote-alnum-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-alnum-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-alnum-in-braced-atpt ()
   "Employ actions of SLASH at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-alnum-in-region-atpt ()
+  "Employ actions of SLASH at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-alnum-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-alnum-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-alnum-in-braced-atpt ()
   "Employ actions of SORT at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-alnum-in-region-atpt ()
+  "Employ actions of SORT at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-sort)) 
+
 (defun ar-trim-alnum-in-braced-atpt ()
   "Employ actions of TRIM at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-alnum-in-region-atpt ()
+  "Employ actions of TRIM at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-alnum-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-alnum-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-alnum-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-alnum-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-alnum-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-alnum-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-alnum-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of ALNUM residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alnum 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-alnum-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of ALNUM residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alnum 'region 'ar-th-whitespace)) 
+
 (defun ar-alnum-in-bracketed-atpt ()
   "Employ actions of  at things class of ALNUM residing withing BRACKETED. "
   (interactive "*")
@@ -1149,187 +1329,372 @@
   "Employ actions of  at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th))
- 
+
+(defun ar-alpha-in-region-atpt ()
+  "Employ actions of  at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th)) 
+
 (defun ar-greaterangle-alpha-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-alpha-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-alpha-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-alpha-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-alpha-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-alpha-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-backslash)) 
+
 (defun ar-beg-alpha-in-braced-atpt ()
   "Employ actions of BEG at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-alpha-in-region-atpt ()
+  "Employ actions of BEG at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-beg)) 
+
 (defun ar-blok-alpha-in-braced-atpt ()
   "Employ actions of BLOK at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-alpha-in-region-atpt ()
+  "Employ actions of BLOK at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-blok)) 
+
 (defun ar-bounds-alpha-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-alpha-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-bounds)) 
+
 (defun ar-brace-alpha-in-braced-atpt ()
   "Employ actions of BRACE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-alpha-in-region-atpt ()
+  "Employ actions of BRACE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-brace)) 
+
 (defun ar-bracket-alpha-in-braced-atpt ()
   "Employ actions of BRACKET at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-alpha-in-region-atpt ()
+  "Employ actions of BRACKET at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-alpha-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-alpha-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-commatize)) 
+
 (defun ar-comment-alpha-in-braced-atpt ()
   "Employ actions of COMMENT at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-alpha-in-region-atpt ()
+  "Employ actions of COMMENT at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-comment)) 
+
 (defun ar-dollar-alpha-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-alpha-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-alpha-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-alpha-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-alpha-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-alpha-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-alpha-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-alpha-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-alpha-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-alpha-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-alpha-in-braced-atpt ()
   "Employ actions of END at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-end))
- 
+
+(defun ar-end-alpha-in-region-atpt ()
+  "Employ actions of END at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-end)) 
+
 (defun ar-escape-alpha-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-alpha-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-escape)) 
+
 (defun ar-hide-alpha-in-braced-atpt ()
   "Employ actions of HIDE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-alpha-in-region-atpt ()
+  "Employ actions of HIDE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-alpha-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-alpha-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-alpha-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-alpha-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-alpha-in-braced-atpt ()
   "Employ actions of KILL at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-alpha-in-region-atpt ()
+  "Employ actions of KILL at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-alpha-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-alpha-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-alpha-in-braced-atpt ()
   "Employ actions of LENGTH at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-length))
- 
+
+(defun ar-length-alpha-in-region-atpt ()
+  "Employ actions of LENGTH at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-length)) 
+
 (defun ar-parentize-alpha-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-alpha-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-parentize)) 
+
 (defun ar-quote-alpha-in-braced-atpt ()
   "Employ actions of QUOTE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-alpha-in-region-atpt ()
+  "Employ actions of QUOTE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-quote)) 
+
 (defun ar-separate-alpha-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-alpha-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-separate)) 
+
 (defun ar-show-alpha-in-braced-atpt ()
   "Employ actions of SHOW at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-show))
- 
+
+(defun ar-show-alpha-in-region-atpt ()
+  "Employ actions of SHOW at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-show)) 
+
 (defun ar-singlequote-alpha-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-alpha-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-alpha-in-braced-atpt ()
   "Employ actions of SLASH at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-alpha-in-region-atpt ()
+  "Employ actions of SLASH at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-alpha-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-alpha-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-alpha-in-braced-atpt ()
   "Employ actions of SORT at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-alpha-in-region-atpt ()
+  "Employ actions of SORT at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-sort)) 
+
 (defun ar-trim-alpha-in-braced-atpt ()
   "Employ actions of TRIM at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-alpha-in-region-atpt ()
+  "Employ actions of TRIM at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-alpha-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-alpha-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-alpha-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-alpha-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-alpha-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-alpha-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-alpha-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of ALPHA residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'alpha 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-alpha-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of ALPHA residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'alpha 'region 'ar-th-whitespace)) 
+
 (defun ar-alpha-in-bracketed-atpt ()
   "Employ actions of  at things class of ALPHA residing withing BRACKETED. "
   (interactive "*")
@@ -2259,187 +2624,372 @@
   "Employ actions of  at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th))
- 
+
+(defun ar-ascii-in-region-atpt ()
+  "Employ actions of  at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th)) 
+
 (defun ar-greaterangle-ascii-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-ascii-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-ascii-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-ascii-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-ascii-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-ascii-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-backslash)) 
+
 (defun ar-beg-ascii-in-braced-atpt ()
   "Employ actions of BEG at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-ascii-in-region-atpt ()
+  "Employ actions of BEG at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-beg)) 
+
 (defun ar-blok-ascii-in-braced-atpt ()
   "Employ actions of BLOK at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-ascii-in-region-atpt ()
+  "Employ actions of BLOK at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-blok)) 
+
 (defun ar-bounds-ascii-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-ascii-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-bounds)) 
+
 (defun ar-brace-ascii-in-braced-atpt ()
   "Employ actions of BRACE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-ascii-in-region-atpt ()
+  "Employ actions of BRACE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-brace)) 
+
 (defun ar-bracket-ascii-in-braced-atpt ()
   "Employ actions of BRACKET at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-ascii-in-region-atpt ()
+  "Employ actions of BRACKET at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-ascii-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-ascii-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-commatize)) 
+
 (defun ar-comment-ascii-in-braced-atpt ()
   "Employ actions of COMMENT at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-ascii-in-region-atpt ()
+  "Employ actions of COMMENT at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-comment)) 
+
 (defun ar-dollar-ascii-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-ascii-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-ascii-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-ascii-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-ascii-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-ascii-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-ascii-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-ascii-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-ascii-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-ascii-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-ascii-in-braced-atpt ()
   "Employ actions of END at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-end))
- 
+
+(defun ar-end-ascii-in-region-atpt ()
+  "Employ actions of END at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-end)) 
+
 (defun ar-escape-ascii-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-ascii-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-escape)) 
+
 (defun ar-hide-ascii-in-braced-atpt ()
   "Employ actions of HIDE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-ascii-in-region-atpt ()
+  "Employ actions of HIDE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-ascii-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-ascii-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-ascii-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-ascii-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-ascii-in-braced-atpt ()
   "Employ actions of KILL at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-ascii-in-region-atpt ()
+  "Employ actions of KILL at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-ascii-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-ascii-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-ascii-in-braced-atpt ()
   "Employ actions of LENGTH at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-length))
- 
+
+(defun ar-length-ascii-in-region-atpt ()
+  "Employ actions of LENGTH at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-length)) 
+
 (defun ar-parentize-ascii-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-ascii-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-parentize)) 
+
 (defun ar-quote-ascii-in-braced-atpt ()
   "Employ actions of QUOTE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-ascii-in-region-atpt ()
+  "Employ actions of QUOTE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-quote)) 
+
 (defun ar-separate-ascii-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-ascii-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-separate)) 
+
 (defun ar-show-ascii-in-braced-atpt ()
   "Employ actions of SHOW at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-show))
- 
+
+(defun ar-show-ascii-in-region-atpt ()
+  "Employ actions of SHOW at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-show)) 
+
 (defun ar-singlequote-ascii-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-ascii-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-ascii-in-braced-atpt ()
   "Employ actions of SLASH at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-ascii-in-region-atpt ()
+  "Employ actions of SLASH at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-ascii-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-ascii-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-ascii-in-braced-atpt ()
   "Employ actions of SORT at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-ascii-in-region-atpt ()
+  "Employ actions of SORT at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-sort)) 
+
 (defun ar-trim-ascii-in-braced-atpt ()
   "Employ actions of TRIM at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-ascii-in-region-atpt ()
+  "Employ actions of TRIM at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-ascii-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-ascii-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-ascii-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-ascii-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-ascii-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-ascii-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-ascii-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of ASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'ascii 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-ascii-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of ASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'ascii 'region 'ar-th-whitespace)) 
+
 (defun ar-ascii-in-bracketed-atpt ()
   "Employ actions of  at things class of ASCII residing withing BRACKETED. "
   (interactive "*")
@@ -3369,187 +3919,372 @@
   "Employ actions of  at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th))
- 
+
+(defun ar-blank-in-region-atpt ()
+  "Employ actions of  at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th)) 
+
 (defun ar-greaterangle-blank-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-blank-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-blank-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-blank-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-blank-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-blank-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-backslash)) 
+
 (defun ar-beg-blank-in-braced-atpt ()
   "Employ actions of BEG at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-blank-in-region-atpt ()
+  "Employ actions of BEG at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-beg)) 
+
 (defun ar-blok-blank-in-braced-atpt ()
   "Employ actions of BLOK at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-blank-in-region-atpt ()
+  "Employ actions of BLOK at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-blok)) 
+
 (defun ar-bounds-blank-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-blank-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-bounds)) 
+
 (defun ar-brace-blank-in-braced-atpt ()
   "Employ actions of BRACE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-blank-in-region-atpt ()
+  "Employ actions of BRACE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-brace)) 
+
 (defun ar-bracket-blank-in-braced-atpt ()
   "Employ actions of BRACKET at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-blank-in-region-atpt ()
+  "Employ actions of BRACKET at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-blank-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-blank-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-commatize)) 
+
 (defun ar-comment-blank-in-braced-atpt ()
   "Employ actions of COMMENT at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-blank-in-region-atpt ()
+  "Employ actions of COMMENT at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-comment)) 
+
 (defun ar-dollar-blank-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-blank-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-blank-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-blank-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-blank-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-blank-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-blank-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-blank-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-blank-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-blank-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-blank-in-braced-atpt ()
   "Employ actions of END at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-end))
- 
+
+(defun ar-end-blank-in-region-atpt ()
+  "Employ actions of END at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-end)) 
+
 (defun ar-escape-blank-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-blank-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-escape)) 
+
 (defun ar-hide-blank-in-braced-atpt ()
   "Employ actions of HIDE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-blank-in-region-atpt ()
+  "Employ actions of HIDE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-blank-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-blank-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-blank-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-blank-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-blank-in-braced-atpt ()
   "Employ actions of KILL at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-blank-in-region-atpt ()
+  "Employ actions of KILL at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-blank-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-blank-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-blank-in-braced-atpt ()
   "Employ actions of LENGTH at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-length))
- 
+
+(defun ar-length-blank-in-region-atpt ()
+  "Employ actions of LENGTH at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-length)) 
+
 (defun ar-parentize-blank-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-blank-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-parentize)) 
+
 (defun ar-quote-blank-in-braced-atpt ()
   "Employ actions of QUOTE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-blank-in-region-atpt ()
+  "Employ actions of QUOTE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-quote)) 
+
 (defun ar-separate-blank-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-blank-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-separate)) 
+
 (defun ar-show-blank-in-braced-atpt ()
   "Employ actions of SHOW at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-show))
- 
+
+(defun ar-show-blank-in-region-atpt ()
+  "Employ actions of SHOW at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-show)) 
+
 (defun ar-singlequote-blank-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-blank-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-blank-in-braced-atpt ()
   "Employ actions of SLASH at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-blank-in-region-atpt ()
+  "Employ actions of SLASH at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-blank-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-blank-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-blank-in-braced-atpt ()
   "Employ actions of SORT at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-blank-in-region-atpt ()
+  "Employ actions of SORT at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-sort)) 
+
 (defun ar-trim-blank-in-braced-atpt ()
   "Employ actions of TRIM at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-blank-in-region-atpt ()
+  "Employ actions of TRIM at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-blank-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-blank-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-blank-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-blank-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-blank-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-blank-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-blank-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of BLANK residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'blank 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-blank-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of BLANK residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'blank 'region 'ar-th-whitespace)) 
+
 (defun ar-blank-in-bracketed-atpt ()
   "Employ actions of  at things class of BLANK residing withing BRACKETED. "
   (interactive "*")
@@ -4479,187 +5214,372 @@
   "Employ actions of  at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th))
- 
+
+(defun ar-cntrl-in-region-atpt ()
+  "Employ actions of  at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th)) 
+
 (defun ar-greaterangle-cntrl-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-cntrl-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-cntrl-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-cntrl-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-cntrl-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-cntrl-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-backslash)) 
+
 (defun ar-beg-cntrl-in-braced-atpt ()
   "Employ actions of BEG at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-cntrl-in-region-atpt ()
+  "Employ actions of BEG at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-beg)) 
+
 (defun ar-blok-cntrl-in-braced-atpt ()
   "Employ actions of BLOK at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-cntrl-in-region-atpt ()
+  "Employ actions of BLOK at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-blok)) 
+
 (defun ar-bounds-cntrl-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-cntrl-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-bounds)) 
+
 (defun ar-brace-cntrl-in-braced-atpt ()
   "Employ actions of BRACE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-cntrl-in-region-atpt ()
+  "Employ actions of BRACE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-brace)) 
+
 (defun ar-bracket-cntrl-in-braced-atpt ()
   "Employ actions of BRACKET at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-cntrl-in-region-atpt ()
+  "Employ actions of BRACKET at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-cntrl-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-cntrl-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-commatize)) 
+
 (defun ar-comment-cntrl-in-braced-atpt ()
   "Employ actions of COMMENT at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-cntrl-in-region-atpt ()
+  "Employ actions of COMMENT at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-comment)) 
+
 (defun ar-dollar-cntrl-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-cntrl-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-cntrl-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-cntrl-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-cntrl-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-cntrl-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-cntrl-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-cntrl-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-cntrl-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-cntrl-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-cntrl-in-braced-atpt ()
   "Employ actions of END at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-end))
- 
+
+(defun ar-end-cntrl-in-region-atpt ()
+  "Employ actions of END at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-end)) 
+
 (defun ar-escape-cntrl-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-cntrl-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-escape)) 
+
 (defun ar-hide-cntrl-in-braced-atpt ()
   "Employ actions of HIDE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-cntrl-in-region-atpt ()
+  "Employ actions of HIDE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-cntrl-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-cntrl-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-cntrl-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-cntrl-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-cntrl-in-braced-atpt ()
   "Employ actions of KILL at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-cntrl-in-region-atpt ()
+  "Employ actions of KILL at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-cntrl-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-cntrl-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-cntrl-in-braced-atpt ()
   "Employ actions of LENGTH at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-length))
- 
+
+(defun ar-length-cntrl-in-region-atpt ()
+  "Employ actions of LENGTH at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-length)) 
+
 (defun ar-parentize-cntrl-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-cntrl-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-parentize)) 
+
 (defun ar-quote-cntrl-in-braced-atpt ()
   "Employ actions of QUOTE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-cntrl-in-region-atpt ()
+  "Employ actions of QUOTE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-quote)) 
+
 (defun ar-separate-cntrl-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-cntrl-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-separate)) 
+
 (defun ar-show-cntrl-in-braced-atpt ()
   "Employ actions of SHOW at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-show))
- 
+
+(defun ar-show-cntrl-in-region-atpt ()
+  "Employ actions of SHOW at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-show)) 
+
 (defun ar-singlequote-cntrl-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-cntrl-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-cntrl-in-braced-atpt ()
   "Employ actions of SLASH at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-cntrl-in-region-atpt ()
+  "Employ actions of SLASH at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-cntrl-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-cntrl-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-cntrl-in-braced-atpt ()
   "Employ actions of SORT at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-cntrl-in-region-atpt ()
+  "Employ actions of SORT at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-sort)) 
+
 (defun ar-trim-cntrl-in-braced-atpt ()
   "Employ actions of TRIM at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-cntrl-in-region-atpt ()
+  "Employ actions of TRIM at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-cntrl-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-cntrl-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-cntrl-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-cntrl-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-cntrl-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-cntrl-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-cntrl-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of CNTRL residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'cntrl 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-cntrl-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of CNTRL residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'cntrl 'region 'ar-th-whitespace)) 
+
 (defun ar-cntrl-in-bracketed-atpt ()
   "Employ actions of  at things class of CNTRL residing withing BRACKETED. "
   (interactive "*")
@@ -5589,187 +6509,372 @@
   "Employ actions of  at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th))
- 
+
+(defun ar-digit-in-region-atpt ()
+  "Employ actions of  at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th)) 
+
 (defun ar-greaterangle-digit-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-digit-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-digit-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-digit-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-digit-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-digit-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-backslash)) 
+
 (defun ar-beg-digit-in-braced-atpt ()
   "Employ actions of BEG at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-digit-in-region-atpt ()
+  "Employ actions of BEG at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-beg)) 
+
 (defun ar-blok-digit-in-braced-atpt ()
   "Employ actions of BLOK at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-digit-in-region-atpt ()
+  "Employ actions of BLOK at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-blok)) 
+
 (defun ar-bounds-digit-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-digit-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-bounds)) 
+
 (defun ar-brace-digit-in-braced-atpt ()
   "Employ actions of BRACE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-digit-in-region-atpt ()
+  "Employ actions of BRACE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-brace)) 
+
 (defun ar-bracket-digit-in-braced-atpt ()
   "Employ actions of BRACKET at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-digit-in-region-atpt ()
+  "Employ actions of BRACKET at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-digit-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-digit-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-commatize)) 
+
 (defun ar-comment-digit-in-braced-atpt ()
   "Employ actions of COMMENT at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-digit-in-region-atpt ()
+  "Employ actions of COMMENT at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-comment)) 
+
 (defun ar-dollar-digit-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-digit-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-digit-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-digit-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-digit-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-digit-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-digit-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-digit-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-digit-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-digit-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-digit-in-braced-atpt ()
   "Employ actions of END at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-end))
- 
+
+(defun ar-end-digit-in-region-atpt ()
+  "Employ actions of END at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-end)) 
+
 (defun ar-escape-digit-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-digit-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-escape)) 
+
 (defun ar-hide-digit-in-braced-atpt ()
   "Employ actions of HIDE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-digit-in-region-atpt ()
+  "Employ actions of HIDE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-digit-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-digit-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-digit-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-digit-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-digit-in-braced-atpt ()
   "Employ actions of KILL at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-digit-in-region-atpt ()
+  "Employ actions of KILL at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-digit-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-digit-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-digit-in-braced-atpt ()
   "Employ actions of LENGTH at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-length))
- 
+
+(defun ar-length-digit-in-region-atpt ()
+  "Employ actions of LENGTH at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-length)) 
+
 (defun ar-parentize-digit-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-digit-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-parentize)) 
+
 (defun ar-quote-digit-in-braced-atpt ()
   "Employ actions of QUOTE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-digit-in-region-atpt ()
+  "Employ actions of QUOTE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-quote)) 
+
 (defun ar-separate-digit-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-digit-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-separate)) 
+
 (defun ar-show-digit-in-braced-atpt ()
   "Employ actions of SHOW at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-show))
- 
+
+(defun ar-show-digit-in-region-atpt ()
+  "Employ actions of SHOW at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-show)) 
+
 (defun ar-singlequote-digit-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-digit-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-digit-in-braced-atpt ()
   "Employ actions of SLASH at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-digit-in-region-atpt ()
+  "Employ actions of SLASH at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-digit-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-digit-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-digit-in-braced-atpt ()
   "Employ actions of SORT at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-digit-in-region-atpt ()
+  "Employ actions of SORT at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-sort)) 
+
 (defun ar-trim-digit-in-braced-atpt ()
   "Employ actions of TRIM at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-digit-in-region-atpt ()
+  "Employ actions of TRIM at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-digit-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-digit-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-digit-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-digit-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-digit-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-digit-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-digit-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of DIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'digit 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-digit-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of DIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'digit 'region 'ar-th-whitespace)) 
+
 (defun ar-digit-in-bracketed-atpt ()
   "Employ actions of  at things class of DIGIT residing withing BRACKETED. "
   (interactive "*")
@@ -6699,187 +7804,372 @@
   "Employ actions of  at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th))
- 
+
+(defun ar-graph-in-region-atpt ()
+  "Employ actions of  at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th)) 
+
 (defun ar-greaterangle-graph-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-graph-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-graph-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-graph-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-graph-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-graph-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-backslash)) 
+
 (defun ar-beg-graph-in-braced-atpt ()
   "Employ actions of BEG at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-graph-in-region-atpt ()
+  "Employ actions of BEG at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-beg)) 
+
 (defun ar-blok-graph-in-braced-atpt ()
   "Employ actions of BLOK at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-graph-in-region-atpt ()
+  "Employ actions of BLOK at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-blok)) 
+
 (defun ar-bounds-graph-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-graph-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-bounds)) 
+
 (defun ar-brace-graph-in-braced-atpt ()
   "Employ actions of BRACE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-graph-in-region-atpt ()
+  "Employ actions of BRACE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-brace)) 
+
 (defun ar-bracket-graph-in-braced-atpt ()
   "Employ actions of BRACKET at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-graph-in-region-atpt ()
+  "Employ actions of BRACKET at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-graph-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-graph-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-commatize)) 
+
 (defun ar-comment-graph-in-braced-atpt ()
   "Employ actions of COMMENT at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-graph-in-region-atpt ()
+  "Employ actions of COMMENT at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-comment)) 
+
 (defun ar-dollar-graph-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-graph-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-graph-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-graph-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-graph-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-graph-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-graph-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-graph-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-graph-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-graph-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-graph-in-braced-atpt ()
   "Employ actions of END at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-end))
- 
+
+(defun ar-end-graph-in-region-atpt ()
+  "Employ actions of END at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-end)) 
+
 (defun ar-escape-graph-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-graph-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-escape)) 
+
 (defun ar-hide-graph-in-braced-atpt ()
   "Employ actions of HIDE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-graph-in-region-atpt ()
+  "Employ actions of HIDE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-graph-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-graph-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-graph-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-graph-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-graph-in-braced-atpt ()
   "Employ actions of KILL at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-graph-in-region-atpt ()
+  "Employ actions of KILL at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-graph-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-graph-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-graph-in-braced-atpt ()
   "Employ actions of LENGTH at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-length))
- 
+
+(defun ar-length-graph-in-region-atpt ()
+  "Employ actions of LENGTH at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-length)) 
+
 (defun ar-parentize-graph-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-graph-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-parentize)) 
+
 (defun ar-quote-graph-in-braced-atpt ()
   "Employ actions of QUOTE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-graph-in-region-atpt ()
+  "Employ actions of QUOTE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-quote)) 
+
 (defun ar-separate-graph-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-graph-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-separate)) 
+
 (defun ar-show-graph-in-braced-atpt ()
   "Employ actions of SHOW at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-show))
- 
+
+(defun ar-show-graph-in-region-atpt ()
+  "Employ actions of SHOW at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-show)) 
+
 (defun ar-singlequote-graph-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-graph-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-graph-in-braced-atpt ()
   "Employ actions of SLASH at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-graph-in-region-atpt ()
+  "Employ actions of SLASH at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-graph-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-graph-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-graph-in-braced-atpt ()
   "Employ actions of SORT at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-graph-in-region-atpt ()
+  "Employ actions of SORT at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-sort)) 
+
 (defun ar-trim-graph-in-braced-atpt ()
   "Employ actions of TRIM at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-graph-in-region-atpt ()
+  "Employ actions of TRIM at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-graph-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-graph-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-graph-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-graph-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-graph-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-graph-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-graph-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of GRAPH residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'graph 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-graph-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of GRAPH residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'graph 'region 'ar-th-whitespace)) 
+
 (defun ar-graph-in-bracketed-atpt ()
   "Employ actions of  at things class of GRAPH residing withing BRACKETED. "
   (interactive "*")
@@ -7809,187 +9099,372 @@
   "Employ actions of  at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th))
- 
+
+(defun ar-lower-in-region-atpt ()
+  "Employ actions of  at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th)) 
+
 (defun ar-greaterangle-lower-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-lower-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-lower-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-lower-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-lower-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-lower-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-backslash)) 
+
 (defun ar-beg-lower-in-braced-atpt ()
   "Employ actions of BEG at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-lower-in-region-atpt ()
+  "Employ actions of BEG at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-beg)) 
+
 (defun ar-blok-lower-in-braced-atpt ()
   "Employ actions of BLOK at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-lower-in-region-atpt ()
+  "Employ actions of BLOK at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-blok)) 
+
 (defun ar-bounds-lower-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-lower-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-bounds)) 
+
 (defun ar-brace-lower-in-braced-atpt ()
   "Employ actions of BRACE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-lower-in-region-atpt ()
+  "Employ actions of BRACE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-brace)) 
+
 (defun ar-bracket-lower-in-braced-atpt ()
   "Employ actions of BRACKET at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-lower-in-region-atpt ()
+  "Employ actions of BRACKET at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-lower-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-lower-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-commatize)) 
+
 (defun ar-comment-lower-in-braced-atpt ()
   "Employ actions of COMMENT at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-lower-in-region-atpt ()
+  "Employ actions of COMMENT at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-comment)) 
+
 (defun ar-dollar-lower-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-lower-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-lower-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-lower-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-lower-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-lower-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-lower-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-lower-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-lower-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-lower-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-lower-in-braced-atpt ()
   "Employ actions of END at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-end))
- 
+
+(defun ar-end-lower-in-region-atpt ()
+  "Employ actions of END at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-end)) 
+
 (defun ar-escape-lower-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-lower-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-escape)) 
+
 (defun ar-hide-lower-in-braced-atpt ()
   "Employ actions of HIDE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-lower-in-region-atpt ()
+  "Employ actions of HIDE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-lower-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-lower-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-lower-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-lower-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-lower-in-braced-atpt ()
   "Employ actions of KILL at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-lower-in-region-atpt ()
+  "Employ actions of KILL at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-lower-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-lower-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-lower-in-braced-atpt ()
   "Employ actions of LENGTH at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-length))
- 
+
+(defun ar-length-lower-in-region-atpt ()
+  "Employ actions of LENGTH at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-length)) 
+
 (defun ar-parentize-lower-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-lower-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-parentize)) 
+
 (defun ar-quote-lower-in-braced-atpt ()
   "Employ actions of QUOTE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-lower-in-region-atpt ()
+  "Employ actions of QUOTE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-quote)) 
+
 (defun ar-separate-lower-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-lower-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-separate)) 
+
 (defun ar-show-lower-in-braced-atpt ()
   "Employ actions of SHOW at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-show))
- 
+
+(defun ar-show-lower-in-region-atpt ()
+  "Employ actions of SHOW at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-show)) 
+
 (defun ar-singlequote-lower-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-lower-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-lower-in-braced-atpt ()
   "Employ actions of SLASH at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-lower-in-region-atpt ()
+  "Employ actions of SLASH at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-lower-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-lower-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-lower-in-braced-atpt ()
   "Employ actions of SORT at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-lower-in-region-atpt ()
+  "Employ actions of SORT at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-sort)) 
+
 (defun ar-trim-lower-in-braced-atpt ()
   "Employ actions of TRIM at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-lower-in-region-atpt ()
+  "Employ actions of TRIM at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-lower-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-lower-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-lower-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-lower-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-lower-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-lower-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-lower-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of LOWER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'lower 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-lower-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of LOWER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'lower 'region 'ar-th-whitespace)) 
+
 (defun ar-lower-in-bracketed-atpt ()
   "Employ actions of  at things class of LOWER residing withing BRACKETED. "
   (interactive "*")
@@ -8919,187 +10394,372 @@
   "Employ actions of  at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th))
- 
+
+(defun ar-nonascii-in-region-atpt ()
+  "Employ actions of  at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th)) 
+
 (defun ar-greaterangle-nonascii-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-nonascii-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-nonascii-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-nonascii-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-nonascii-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-nonascii-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-backslash)) 
+
 (defun ar-beg-nonascii-in-braced-atpt ()
   "Employ actions of BEG at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-nonascii-in-region-atpt ()
+  "Employ actions of BEG at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-beg)) 
+
 (defun ar-blok-nonascii-in-braced-atpt ()
   "Employ actions of BLOK at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-nonascii-in-region-atpt ()
+  "Employ actions of BLOK at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-blok)) 
+
 (defun ar-bounds-nonascii-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-nonascii-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-bounds)) 
+
 (defun ar-brace-nonascii-in-braced-atpt ()
   "Employ actions of BRACE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-nonascii-in-region-atpt ()
+  "Employ actions of BRACE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-brace)) 
+
 (defun ar-bracket-nonascii-in-braced-atpt ()
   "Employ actions of BRACKET at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-nonascii-in-region-atpt ()
+  "Employ actions of BRACKET at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-nonascii-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-nonascii-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-commatize)) 
+
 (defun ar-comment-nonascii-in-braced-atpt ()
   "Employ actions of COMMENT at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-nonascii-in-region-atpt ()
+  "Employ actions of COMMENT at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-comment)) 
+
 (defun ar-dollar-nonascii-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-nonascii-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-nonascii-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-nonascii-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-nonascii-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-nonascii-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-nonascii-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-nonascii-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-nonascii-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-nonascii-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-nonascii-in-braced-atpt ()
   "Employ actions of END at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-end))
- 
+
+(defun ar-end-nonascii-in-region-atpt ()
+  "Employ actions of END at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-end)) 
+
 (defun ar-escape-nonascii-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-nonascii-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-escape)) 
+
 (defun ar-hide-nonascii-in-braced-atpt ()
   "Employ actions of HIDE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-nonascii-in-region-atpt ()
+  "Employ actions of HIDE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-nonascii-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-nonascii-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-nonascii-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-nonascii-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-nonascii-in-braced-atpt ()
   "Employ actions of KILL at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-nonascii-in-region-atpt ()
+  "Employ actions of KILL at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-nonascii-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-nonascii-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-nonascii-in-braced-atpt ()
   "Employ actions of LENGTH at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-length))
- 
+
+(defun ar-length-nonascii-in-region-atpt ()
+  "Employ actions of LENGTH at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-length)) 
+
 (defun ar-parentize-nonascii-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-nonascii-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-parentize)) 
+
 (defun ar-quote-nonascii-in-braced-atpt ()
   "Employ actions of QUOTE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-nonascii-in-region-atpt ()
+  "Employ actions of QUOTE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-quote)) 
+
 (defun ar-separate-nonascii-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-nonascii-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-separate)) 
+
 (defun ar-show-nonascii-in-braced-atpt ()
   "Employ actions of SHOW at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-show))
- 
+
+(defun ar-show-nonascii-in-region-atpt ()
+  "Employ actions of SHOW at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-show)) 
+
 (defun ar-singlequote-nonascii-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-nonascii-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-nonascii-in-braced-atpt ()
   "Employ actions of SLASH at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-nonascii-in-region-atpt ()
+  "Employ actions of SLASH at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-nonascii-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-nonascii-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-nonascii-in-braced-atpt ()
   "Employ actions of SORT at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-nonascii-in-region-atpt ()
+  "Employ actions of SORT at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-sort)) 
+
 (defun ar-trim-nonascii-in-braced-atpt ()
   "Employ actions of TRIM at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-nonascii-in-region-atpt ()
+  "Employ actions of TRIM at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-nonascii-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-nonascii-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-nonascii-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-nonascii-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-nonascii-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-nonascii-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-nonascii-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of NONASCII residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'nonascii 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-nonascii-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of NONASCII residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'nonascii 'region 'ar-th-whitespace)) 
+
 (defun ar-nonascii-in-bracketed-atpt ()
   "Employ actions of  at things class of NONASCII residing withing BRACKETED. "
   (interactive "*")
@@ -10029,187 +11689,372 @@
   "Employ actions of  at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th))
- 
+
+(defun ar-print-in-region-atpt ()
+  "Employ actions of  at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th)) 
+
 (defun ar-greaterangle-print-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-print-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-print-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-print-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-print-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-print-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-backslash)) 
+
 (defun ar-beg-print-in-braced-atpt ()
   "Employ actions of BEG at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-print-in-region-atpt ()
+  "Employ actions of BEG at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-beg)) 
+
 (defun ar-blok-print-in-braced-atpt ()
   "Employ actions of BLOK at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-print-in-region-atpt ()
+  "Employ actions of BLOK at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-blok)) 
+
 (defun ar-bounds-print-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-print-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-bounds)) 
+
 (defun ar-brace-print-in-braced-atpt ()
   "Employ actions of BRACE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-print-in-region-atpt ()
+  "Employ actions of BRACE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-brace)) 
+
 (defun ar-bracket-print-in-braced-atpt ()
   "Employ actions of BRACKET at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-print-in-region-atpt ()
+  "Employ actions of BRACKET at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-print-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-print-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-commatize)) 
+
 (defun ar-comment-print-in-braced-atpt ()
   "Employ actions of COMMENT at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-print-in-region-atpt ()
+  "Employ actions of COMMENT at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-comment)) 
+
 (defun ar-dollar-print-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-print-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-print-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-print-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-print-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-print-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-print-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-print-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-print-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-print-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-print-in-braced-atpt ()
   "Employ actions of END at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-end))
- 
+
+(defun ar-end-print-in-region-atpt ()
+  "Employ actions of END at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-end)) 
+
 (defun ar-escape-print-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-print-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-escape)) 
+
 (defun ar-hide-print-in-braced-atpt ()
   "Employ actions of HIDE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-print-in-region-atpt ()
+  "Employ actions of HIDE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-print-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-print-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-print-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-print-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-print-in-braced-atpt ()
   "Employ actions of KILL at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-print-in-region-atpt ()
+  "Employ actions of KILL at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-print-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-print-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-print-in-braced-atpt ()
   "Employ actions of LENGTH at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-length))
- 
+
+(defun ar-length-print-in-region-atpt ()
+  "Employ actions of LENGTH at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-length)) 
+
 (defun ar-parentize-print-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-print-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-parentize)) 
+
 (defun ar-quote-print-in-braced-atpt ()
   "Employ actions of QUOTE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-print-in-region-atpt ()
+  "Employ actions of QUOTE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-quote)) 
+
 (defun ar-separate-print-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-print-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-separate)) 
+
 (defun ar-show-print-in-braced-atpt ()
   "Employ actions of SHOW at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-show))
- 
+
+(defun ar-show-print-in-region-atpt ()
+  "Employ actions of SHOW at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-show)) 
+
 (defun ar-singlequote-print-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-print-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-print-in-braced-atpt ()
   "Employ actions of SLASH at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-print-in-region-atpt ()
+  "Employ actions of SLASH at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-print-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-print-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-print-in-braced-atpt ()
   "Employ actions of SORT at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-print-in-region-atpt ()
+  "Employ actions of SORT at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-sort)) 
+
 (defun ar-trim-print-in-braced-atpt ()
   "Employ actions of TRIM at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-print-in-region-atpt ()
+  "Employ actions of TRIM at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-print-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-print-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-print-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-print-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-print-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-print-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-print-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of PRINT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'print 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-print-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of PRINT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'print 'region 'ar-th-whitespace)) 
+
 (defun ar-print-in-bracketed-atpt ()
   "Employ actions of  at things class of PRINT residing withing BRACKETED. "
   (interactive "*")
@@ -11139,187 +12984,372 @@
   "Employ actions of  at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th))
- 
+
+(defun ar-punct-in-region-atpt ()
+  "Employ actions of  at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th)) 
+
 (defun ar-greaterangle-punct-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-punct-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-punct-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-punct-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-punct-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-punct-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-backslash)) 
+
 (defun ar-beg-punct-in-braced-atpt ()
   "Employ actions of BEG at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-punct-in-region-atpt ()
+  "Employ actions of BEG at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-beg)) 
+
 (defun ar-blok-punct-in-braced-atpt ()
   "Employ actions of BLOK at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-punct-in-region-atpt ()
+  "Employ actions of BLOK at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-blok)) 
+
 (defun ar-bounds-punct-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-punct-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-bounds)) 
+
 (defun ar-brace-punct-in-braced-atpt ()
   "Employ actions of BRACE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-punct-in-region-atpt ()
+  "Employ actions of BRACE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-brace)) 
+
 (defun ar-bracket-punct-in-braced-atpt ()
   "Employ actions of BRACKET at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-punct-in-region-atpt ()
+  "Employ actions of BRACKET at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-punct-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-punct-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-commatize)) 
+
 (defun ar-comment-punct-in-braced-atpt ()
   "Employ actions of COMMENT at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-punct-in-region-atpt ()
+  "Employ actions of COMMENT at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-comment)) 
+
 (defun ar-dollar-punct-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-punct-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-punct-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-punct-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-punct-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-punct-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-punct-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-punct-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-punct-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-punct-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-punct-in-braced-atpt ()
   "Employ actions of END at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-end))
- 
+
+(defun ar-end-punct-in-region-atpt ()
+  "Employ actions of END at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-end)) 
+
 (defun ar-escape-punct-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-punct-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-escape)) 
+
 (defun ar-hide-punct-in-braced-atpt ()
   "Employ actions of HIDE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-punct-in-region-atpt ()
+  "Employ actions of HIDE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-punct-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-punct-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-punct-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-punct-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-punct-in-braced-atpt ()
   "Employ actions of KILL at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-punct-in-region-atpt ()
+  "Employ actions of KILL at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-punct-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-punct-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-punct-in-braced-atpt ()
   "Employ actions of LENGTH at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-length))
- 
+
+(defun ar-length-punct-in-region-atpt ()
+  "Employ actions of LENGTH at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-length)) 
+
 (defun ar-parentize-punct-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-punct-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-parentize)) 
+
 (defun ar-quote-punct-in-braced-atpt ()
   "Employ actions of QUOTE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-punct-in-region-atpt ()
+  "Employ actions of QUOTE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-quote)) 
+
 (defun ar-separate-punct-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-punct-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-separate)) 
+
 (defun ar-show-punct-in-braced-atpt ()
   "Employ actions of SHOW at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-show))
- 
+
+(defun ar-show-punct-in-region-atpt ()
+  "Employ actions of SHOW at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-show)) 
+
 (defun ar-singlequote-punct-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-punct-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-punct-in-braced-atpt ()
   "Employ actions of SLASH at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-punct-in-region-atpt ()
+  "Employ actions of SLASH at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-punct-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-punct-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-punct-in-braced-atpt ()
   "Employ actions of SORT at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-punct-in-region-atpt ()
+  "Employ actions of SORT at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-sort)) 
+
 (defun ar-trim-punct-in-braced-atpt ()
   "Employ actions of TRIM at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-punct-in-region-atpt ()
+  "Employ actions of TRIM at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-punct-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-punct-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-punct-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-punct-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-punct-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-punct-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-punct-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of PUNCT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'punct 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-punct-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of PUNCT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'punct 'region 'ar-th-whitespace)) 
+
 (defun ar-punct-in-bracketed-atpt ()
   "Employ actions of  at things class of PUNCT residing withing BRACKETED. "
   (interactive "*")
@@ -12249,187 +14279,372 @@
   "Employ actions of  at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th))
- 
+
+(defun ar-space-in-region-atpt ()
+  "Employ actions of  at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th)) 
+
 (defun ar-greaterangle-space-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-space-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-space-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-space-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-space-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-space-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-backslash)) 
+
 (defun ar-beg-space-in-braced-atpt ()
   "Employ actions of BEG at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-space-in-region-atpt ()
+  "Employ actions of BEG at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-beg)) 
+
 (defun ar-blok-space-in-braced-atpt ()
   "Employ actions of BLOK at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-space-in-region-atpt ()
+  "Employ actions of BLOK at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-blok)) 
+
 (defun ar-bounds-space-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-space-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-bounds)) 
+
 (defun ar-brace-space-in-braced-atpt ()
   "Employ actions of BRACE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-space-in-region-atpt ()
+  "Employ actions of BRACE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-brace)) 
+
 (defun ar-bracket-space-in-braced-atpt ()
   "Employ actions of BRACKET at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-space-in-region-atpt ()
+  "Employ actions of BRACKET at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-space-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-space-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-commatize)) 
+
 (defun ar-comment-space-in-braced-atpt ()
   "Employ actions of COMMENT at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-space-in-region-atpt ()
+  "Employ actions of COMMENT at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-comment)) 
+
 (defun ar-dollar-space-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-space-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-space-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-space-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-space-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-space-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-space-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-space-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-space-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-space-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-space-in-braced-atpt ()
   "Employ actions of END at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-end))
- 
+
+(defun ar-end-space-in-region-atpt ()
+  "Employ actions of END at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-end)) 
+
 (defun ar-escape-space-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-space-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-escape)) 
+
 (defun ar-hide-space-in-braced-atpt ()
   "Employ actions of HIDE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-space-in-region-atpt ()
+  "Employ actions of HIDE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-space-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-space-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-space-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-space-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-space-in-braced-atpt ()
   "Employ actions of KILL at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-space-in-region-atpt ()
+  "Employ actions of KILL at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-space-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-space-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-space-in-braced-atpt ()
   "Employ actions of LENGTH at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-length))
- 
+
+(defun ar-length-space-in-region-atpt ()
+  "Employ actions of LENGTH at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-length)) 
+
 (defun ar-parentize-space-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-space-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-parentize)) 
+
 (defun ar-quote-space-in-braced-atpt ()
   "Employ actions of QUOTE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-space-in-region-atpt ()
+  "Employ actions of QUOTE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-quote)) 
+
 (defun ar-separate-space-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-space-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-separate)) 
+
 (defun ar-show-space-in-braced-atpt ()
   "Employ actions of SHOW at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-show))
- 
+
+(defun ar-show-space-in-region-atpt ()
+  "Employ actions of SHOW at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-show)) 
+
 (defun ar-singlequote-space-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-space-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-space-in-braced-atpt ()
   "Employ actions of SLASH at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-space-in-region-atpt ()
+  "Employ actions of SLASH at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-space-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-space-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-space-in-braced-atpt ()
   "Employ actions of SORT at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-space-in-region-atpt ()
+  "Employ actions of SORT at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-sort)) 
+
 (defun ar-trim-space-in-braced-atpt ()
   "Employ actions of TRIM at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-space-in-region-atpt ()
+  "Employ actions of TRIM at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-space-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-space-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-space-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-space-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-space-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-space-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-space-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of SPACE residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'space 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-space-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of SPACE residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'space 'region 'ar-th-whitespace)) 
+
 (defun ar-space-in-bracketed-atpt ()
   "Employ actions of  at things class of SPACE residing withing BRACKETED. "
   (interactive "*")
@@ -13359,187 +15574,372 @@
   "Employ actions of  at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th))
- 
+
+(defun ar-upper-in-region-atpt ()
+  "Employ actions of  at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th)) 
+
 (defun ar-greaterangle-upper-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-upper-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-upper-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-upper-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-upper-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-upper-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-backslash)) 
+
 (defun ar-beg-upper-in-braced-atpt ()
   "Employ actions of BEG at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-upper-in-region-atpt ()
+  "Employ actions of BEG at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-beg)) 
+
 (defun ar-blok-upper-in-braced-atpt ()
   "Employ actions of BLOK at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-upper-in-region-atpt ()
+  "Employ actions of BLOK at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-blok)) 
+
 (defun ar-bounds-upper-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-upper-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-bounds)) 
+
 (defun ar-brace-upper-in-braced-atpt ()
   "Employ actions of BRACE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-upper-in-region-atpt ()
+  "Employ actions of BRACE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-brace)) 
+
 (defun ar-bracket-upper-in-braced-atpt ()
   "Employ actions of BRACKET at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-upper-in-region-atpt ()
+  "Employ actions of BRACKET at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-upper-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-upper-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-commatize)) 
+
 (defun ar-comment-upper-in-braced-atpt ()
   "Employ actions of COMMENT at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-upper-in-region-atpt ()
+  "Employ actions of COMMENT at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-comment)) 
+
 (defun ar-dollar-upper-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-upper-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-upper-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-upper-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-upper-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-upper-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-upper-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-upper-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-upper-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-upper-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-upper-in-braced-atpt ()
   "Employ actions of END at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-end))
- 
+
+(defun ar-end-upper-in-region-atpt ()
+  "Employ actions of END at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-end)) 
+
 (defun ar-escape-upper-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-upper-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-escape)) 
+
 (defun ar-hide-upper-in-braced-atpt ()
   "Employ actions of HIDE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-upper-in-region-atpt ()
+  "Employ actions of HIDE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-upper-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-upper-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-upper-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-upper-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-upper-in-braced-atpt ()
   "Employ actions of KILL at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-upper-in-region-atpt ()
+  "Employ actions of KILL at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-upper-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-upper-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-upper-in-braced-atpt ()
   "Employ actions of LENGTH at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-length))
- 
+
+(defun ar-length-upper-in-region-atpt ()
+  "Employ actions of LENGTH at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-length)) 
+
 (defun ar-parentize-upper-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-upper-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-parentize)) 
+
 (defun ar-quote-upper-in-braced-atpt ()
   "Employ actions of QUOTE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-upper-in-region-atpt ()
+  "Employ actions of QUOTE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-quote)) 
+
 (defun ar-separate-upper-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-upper-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-separate)) 
+
 (defun ar-show-upper-in-braced-atpt ()
   "Employ actions of SHOW at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-show))
- 
+
+(defun ar-show-upper-in-region-atpt ()
+  "Employ actions of SHOW at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-show)) 
+
 (defun ar-singlequote-upper-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-upper-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-upper-in-braced-atpt ()
   "Employ actions of SLASH at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-upper-in-region-atpt ()
+  "Employ actions of SLASH at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-upper-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-upper-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-upper-in-braced-atpt ()
   "Employ actions of SORT at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-upper-in-region-atpt ()
+  "Employ actions of SORT at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-sort)) 
+
 (defun ar-trim-upper-in-braced-atpt ()
   "Employ actions of TRIM at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-upper-in-region-atpt ()
+  "Employ actions of TRIM at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-upper-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-upper-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-upper-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-upper-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-upper-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-upper-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-upper-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of UPPER residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'upper 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-upper-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of UPPER residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'upper 'region 'ar-th-whitespace)) 
+
 (defun ar-upper-in-bracketed-atpt ()
   "Employ actions of  at things class of UPPER residing withing BRACKETED. "
   (interactive "*")
@@ -14469,187 +16869,372 @@
   "Employ actions of  at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th))
- 
+
+(defun ar-xdigit-in-region-atpt ()
+  "Employ actions of  at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th)) 
+
 (defun ar-greaterangle-xdigit-in-braced-atpt ()
   "Employ actions of GREATER-ANGLE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-greaterangle))
- 
+
+(defun ar-greaterangle-xdigit-in-region-atpt ()
+  "Employ actions of GREATER-ANGLE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-greaterangle)) 
+
 (defun ar-lesserangle-xdigit-in-braced-atpt ()
   "Employ actions of LESSER-ANGLE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-lesserangle))
- 
+
+(defun ar-lesserangle-xdigit-in-region-atpt ()
+  "Employ actions of LESSER-ANGLE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-lesserangle)) 
+
 (defun ar-backslash-xdigit-in-braced-atpt ()
   "Employ actions of BACKSLASH at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-backslash))
- 
+
+(defun ar-backslash-xdigit-in-region-atpt ()
+  "Employ actions of BACKSLASH at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-backslash)) 
+
 (defun ar-beg-xdigit-in-braced-atpt ()
   "Employ actions of BEG at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-beg))
- 
+
+(defun ar-beg-xdigit-in-region-atpt ()
+  "Employ actions of BEG at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-beg)) 
+
 (defun ar-blok-xdigit-in-braced-atpt ()
   "Employ actions of BLOK at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-blok))
- 
+
+(defun ar-blok-xdigit-in-region-atpt ()
+  "Employ actions of BLOK at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-blok)) 
+
 (defun ar-bounds-xdigit-in-braced-atpt ()
   "Employ actions of BOUNDS at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-bounds))
- 
+
+(defun ar-bounds-xdigit-in-region-atpt ()
+  "Employ actions of BOUNDS at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-bounds)) 
+
 (defun ar-brace-xdigit-in-braced-atpt ()
   "Employ actions of BRACE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-brace))
- 
+
+(defun ar-brace-xdigit-in-region-atpt ()
+  "Employ actions of BRACE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-brace)) 
+
 (defun ar-bracket-xdigit-in-braced-atpt ()
   "Employ actions of BRACKET at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-bracket))
- 
+
+(defun ar-bracket-xdigit-in-region-atpt ()
+  "Employ actions of BRACKET at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-bracket)) 
+
 (defun ar-commatize-xdigit-in-braced-atpt ()
   "Employ actions of COMMATIZE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-commatize))
- 
+
+(defun ar-commatize-xdigit-in-region-atpt ()
+  "Employ actions of COMMATIZE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-commatize)) 
+
 (defun ar-comment-xdigit-in-braced-atpt ()
   "Employ actions of COMMENT at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-comment))
- 
+
+(defun ar-comment-xdigit-in-region-atpt ()
+  "Employ actions of COMMENT at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-comment)) 
+
 (defun ar-dollar-xdigit-in-braced-atpt ()
   "Employ actions of DOLLAR at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-dollar))
- 
+
+(defun ar-dollar-xdigit-in-region-atpt ()
+  "Employ actions of DOLLAR at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-dollar)) 
+
 (defun ar-double-backslash-xdigit-in-braced-atpt ()
   "Employ actions of DOUBLE-BACKSLASH at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-double-backslash))
- 
+
+(defun ar-double-backslash-xdigit-in-region-atpt ()
+  "Employ actions of DOUBLE-BACKSLASH at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-double-backslash)) 
+
 (defun ar-doublequote-xdigit-in-braced-atpt ()
   "Employ actions of DOUBLEQUOTE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-doublequote))
- 
+
+(defun ar-doublequote-xdigit-in-region-atpt ()
+  "Employ actions of DOUBLEQUOTE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-doublequote)) 
+
 (defun ar-doubleslash-xdigit-in-braced-atpt ()
   "Employ actions of DOUBLESLASH at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-doubleslash))
- 
+
+(defun ar-doubleslash-xdigit-in-region-atpt ()
+  "Employ actions of DOUBLESLASH at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-doubleslash)) 
+
 (defun ar-doubleslash-paren-xdigit-in-braced-atpt ()
   "Employ actions of DOUBLESLASH-PAREN at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-doubleslash-paren))
- 
+
+(defun ar-doubleslash-paren-xdigit-in-region-atpt ()
+  "Employ actions of DOUBLESLASH-PAREN at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-doubleslash-paren)) 
+
 (defun ar-end-xdigit-in-braced-atpt ()
   "Employ actions of END at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-end))
- 
+
+(defun ar-end-xdigit-in-region-atpt ()
+  "Employ actions of END at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-end)) 
+
 (defun ar-escape-xdigit-in-braced-atpt ()
   "Employ actions of ESCAPE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-escape))
- 
+
+(defun ar-escape-xdigit-in-region-atpt ()
+  "Employ actions of ESCAPE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-escape)) 
+
 (defun ar-hide-xdigit-in-braced-atpt ()
   "Employ actions of HIDE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-hide))
- 
+
+(defun ar-hide-xdigit-in-region-atpt ()
+  "Employ actions of HIDE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-hide)) 
+
 (defun ar-hide-show-xdigit-in-braced-atpt ()
   "Employ actions of HIDE-SHOW at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-hide-show))
- 
+
+(defun ar-hide-show-xdigit-in-region-atpt ()
+  "Employ actions of HIDE-SHOW at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-hide-show)) 
+
 (defun ar-hyphen-xdigit-in-braced-atpt ()
   "Employ actions of HYPHEN at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-hyphen))
- 
+
+(defun ar-hyphen-xdigit-in-region-atpt ()
+  "Employ actions of HYPHEN at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-hyphen)) 
+
 (defun ar-kill-xdigit-in-braced-atpt ()
   "Employ actions of KILL at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-kill))
- 
+
+(defun ar-kill-xdigit-in-region-atpt ()
+  "Employ actions of KILL at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-kill)) 
+
 (defun ar-left-right-singlequote-xdigit-in-braced-atpt ()
   "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-left-right-singlequote))
- 
+
+(defun ar-left-right-singlequote-xdigit-in-region-atpt ()
+  "Employ actions of LEFT-RIGHT-SINGLEQUOTE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-left-right-singlequote)) 
+
 (defun ar-length-xdigit-in-braced-atpt ()
   "Employ actions of LENGTH at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-length))
- 
+
+(defun ar-length-xdigit-in-region-atpt ()
+  "Employ actions of LENGTH at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-length)) 
+
 (defun ar-parentize-xdigit-in-braced-atpt ()
   "Employ actions of PARENTIZE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-parentize))
- 
+
+(defun ar-parentize-xdigit-in-region-atpt ()
+  "Employ actions of PARENTIZE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-parentize)) 
+
 (defun ar-quote-xdigit-in-braced-atpt ()
   "Employ actions of QUOTE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-quote))
- 
+
+(defun ar-quote-xdigit-in-region-atpt ()
+  "Employ actions of QUOTE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-quote)) 
+
 (defun ar-separate-xdigit-in-braced-atpt ()
   "Employ actions of SEPARATE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-separate))
- 
+
+(defun ar-separate-xdigit-in-region-atpt ()
+  "Employ actions of SEPARATE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-separate)) 
+
 (defun ar-show-xdigit-in-braced-atpt ()
   "Employ actions of SHOW at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-show))
- 
+
+(defun ar-show-xdigit-in-region-atpt ()
+  "Employ actions of SHOW at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-show)) 
+
 (defun ar-singlequote-xdigit-in-braced-atpt ()
   "Employ actions of SINGLEQUOTE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-singlequote))
- 
+
+(defun ar-singlequote-xdigit-in-region-atpt ()
+  "Employ actions of SINGLEQUOTE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-singlequote)) 
+
 (defun ar-slash-xdigit-in-braced-atpt ()
   "Employ actions of SLASH at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-slash))
- 
+
+(defun ar-slash-xdigit-in-region-atpt ()
+  "Employ actions of SLASH at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-slash)) 
+
 (defun ar-slashparen-xdigit-in-braced-atpt ()
   "Employ actions of SLASHPAREN at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-slashparen))
- 
+
+(defun ar-slashparen-xdigit-in-region-atpt ()
+  "Employ actions of SLASHPAREN at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-slashparen)) 
+
 (defun ar-sort-xdigit-in-braced-atpt ()
   "Employ actions of SORT at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-sort))
- 
+
+(defun ar-sort-xdigit-in-region-atpt ()
+  "Employ actions of SORT at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-sort)) 
+
 (defun ar-trim-xdigit-in-braced-atpt ()
   "Employ actions of TRIM at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-trim))
- 
+
+(defun ar-trim-xdigit-in-region-atpt ()
+  "Employ actions of TRIM at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-trim)) 
+
 (defun ar-trim-left-xdigit-in-braced-atpt ()
   "Employ actions of TRIM-LEFT at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-trim-left))
- 
+
+(defun ar-trim-left-xdigit-in-region-atpt ()
+  "Employ actions of TRIM-LEFT at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-trim-left)) 
+
 (defun ar-trim-right-xdigit-in-braced-atpt ()
   "Employ actions of TRIM-RIGHT at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-trim-right))
- 
+
+(defun ar-trim-right-xdigit-in-region-atpt ()
+  "Employ actions of TRIM-RIGHT at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-trim-right)) 
+
 (defun ar-underscore-xdigit-in-braced-atpt ()
   "Employ actions of UNDERSCORE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-underscore))
- 
+
+(defun ar-underscore-xdigit-in-region-atpt ()
+  "Employ actions of UNDERSCORE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-underscore)) 
+
 (defun ar-whitespace-xdigit-in-braced-atpt ()
   "Employ actions of WHITESPACE at things class of XDIGIT residing withing BRACED. "
   (interactive "*")
   (ar-thing-in-thing 'xdigit 'braced 'ar-th-whitespace))
- 
+
+(defun ar-whitespace-xdigit-in-region-atpt ()
+  "Employ actions of WHITESPACE at things class of XDIGIT residing withing REGION. "
+  (interactive "*")
+  (ar-thing-in-thing 'xdigit 'region 'ar-th-whitespace)) 
+
 (defun ar-xdigit-in-bracketed-atpt ()
   "Employ actions of  at things class of XDIGIT residing withing BRACKETED. "
   (interactive "*")
