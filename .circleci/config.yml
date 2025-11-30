@@ -48,6 +48,7 @@ jobs:
             --eval "(load (expand-file-name \"ar-thingatpt-rest-list-in-region-only.el\"))" \
             --eval "(load (expand-file-name \"ar-sexp.el\"))" \
             --eval "(load (expand-file-name \"ar-comment-lor.el\"))" \
+            --eval "(load (expand-file-name \"ar-thingatpt-markup.el\"))" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-setup-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/py-setup-ert-tests.el\")" \
             --eval "(load \"/root/thing-at-point-utils/test/ar-thingatpt-utils-tests.el\")" \
