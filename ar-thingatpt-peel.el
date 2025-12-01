@@ -33,7 +33,7 @@
 ;; Peel functions start
 (defun ar--raise-inner-list (beg end)
   (let* ((bounds (ar-bounds-of-list-atpt))
-	 (inner-beg (or (ignore-errors (caar bounds))(car-save bounds)))
+	 (inner-beg (or (ignore-errors (caar bounds))(car-safe bounds)))
 	 (inner-end
 	  (cond ((ignore-errors (listp bounds))
 		 (if (ignore-errors (numberp (cdr bounds)))
