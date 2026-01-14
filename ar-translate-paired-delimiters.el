@@ -1,6 +1,6 @@
 ;;; ar-translate-paired-delimiters.el --- Translate delimiter chars -*- lexical-binding: t; -*- 
 
-;; Copyright (C) 2014-2025  Andreas Röhler
+;; Copyright (C) 2014-2026  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>
 ;; Keywords: lisp

@@ -1,5 +1,5 @@
 ;;; thing-delimited-list-in-data-forms-aktiv.el --- thing-in-thing functions -*- lexical-binding: t; -*-
-;; Copyright (C) 2010-2016 Andreas Röhler, unless
+;; Copyright (C) 2010-2026 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless

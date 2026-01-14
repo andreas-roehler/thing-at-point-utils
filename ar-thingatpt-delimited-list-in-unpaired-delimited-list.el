@@ -1,6 +1,6 @@
 ;;; thingatpt-delimited-list-in-unpaired-delimited-list.el --- thing-in-thing functions -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2024 Andreas Röhler, unless
+;; Copyright (C) 2010-2026 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless
