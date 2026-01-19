@@ -33,15 +33,6 @@
     (ar-trim-braced-in-region-atpt)
     (should (eq (char-before) ?f))))
 
-;; (ert-deftest ar-peel-list-with-string-test-1 ()
-;;   (ar-test-with-elisp-buffer-point-min
-;;       "(expand-file-name \"~/werkstatt/general-key\")"
-;;       (forward-char 2)
-;;     (ar-peel-list-atpt)
-;;     (forward-char 1)
-;;     (should-not (nth 1 (parse-partial-sexp (point-min) (point))))
-;;     (should (nth 3 (parse-partial-sexp (point-min) (point))))))
-
 (ert-deftest ar-bounds-of-list-with-string-test-1 ()
   (ar-test-with-elisp-buffer-point-min
       "(expand-file-name \"~/werkstatt/general-key\")"

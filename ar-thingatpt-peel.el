@@ -62,7 +62,7 @@
 (defun ar-peel-list-atpt (&optional arg)  
  "Remove list at point, preserve inner lists. "
   (interactive "*p")
-  (ar-th-peel 'list arg))
+  (ar-th-peel 'list))
 
 
 

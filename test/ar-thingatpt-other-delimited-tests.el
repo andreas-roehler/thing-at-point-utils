@@ -165,17 +165,6 @@ args = sys.argv"
     ;; (sit-for 1)
     (should (eq 4 (length (ar-string-atpt '(4)))))))
 
-(ert-deftest ar-peel-list-atpt-test-yAeeNz ()
-    (ar-test-with-elisp-buffer-point-min
-	"(defun foo ()
-  (let ((bar (save-excursion (baz nil nil))))
-    (setq asdf nil)))"
-	(search-forward "save-")
-      (sit-for 0.1)
-      (ar-peel-list-atpt)
-      (sit-for 0.1)
-      (should (looking-at "(baz"))))
-
 (ert-deftest ar-kill-doublequoted-atpt-test-R1feEn () ()
   (ar-test-with-elisp-buffer
       "\"foo\""

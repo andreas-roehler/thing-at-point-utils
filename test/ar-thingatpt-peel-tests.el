@@ -39,9 +39,31 @@
     'emacs-lisp-mode
     'ar-verbose-p
     (goto-char (point-max))
-    (forward-char -1) 
+    (forward-char -1)
     (ar-peel-list-atpt)
+    (sit-for 0.1)
     (should (looking-back "(&optional beg end)" (line-beginning-position)))))
+
+(ert-deftest ar-peel-list-atpt-test-yAeeNz ()
+  (ar-test-with-elisp-buffer-point-min
+	"(defun foo ()
+  (let ((bar (save-excursion (baz nil nil))))
+    (setq asdf nil)))"
+	(search-forward "save-")
+      ;; (sit-for 0.1)
+      (ar-peel-list-atpt)
+      ;; (sit-for 0.1)
+      (should (looking-back "(let ((bar (baz nil nil)" (line-beginning-position)1)))
+  )
+
+;; (ert-deftest ar-peel-list-with-string-test-HhDRbb ()
+;;   (ar-test-with-elisp-buffer-point-min
+;;       "(expand-file-name \"~/werkstatt/general-key\")"
+;;       (forward-char 2)
+;;     (ar-peel-list-atpt)
+;;     (forward-char 1)
+;;     (should-not (nth 1 (parse-partial-sexp (point-min) (point))))
+;;     (should (nth 3 (parse-partial-sexp (point-min) (point))))))
 
 (provide 'ar-thingatpt-peel-tests)
 ;;; ar-thingatpt-peel-tests.el ends here
