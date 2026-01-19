@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-also-delimited-tests.el --- tests succeeding when called interactively  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018-2025  Andreas Röhler
+;; Copyright (C) 2018-2026  Andreas Röhler
 
 ;; Author: Andreas Röhler <andreas.roehler@online.de>
 ;; Keywords: convenience

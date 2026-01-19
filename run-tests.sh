@@ -28,7 +28,6 @@ elif
     export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
 elif
     [ $1 == e27 ];then
-    #  export EMACS="$HOME/emacs-20220306/src/emacs -Q"
     export EMACS=$(echo $(alias $1) | sed "s,alias [^~]*.\([^ ]*\).*,$HOME\1,g")
 elif
     [ $1 == e28 ];then
@@ -65,26 +64,29 @@ echo "\$SETUP1: $SETUP1"
 
 FILE1=ar-beg-end.el
 FILE2=ar-subr.el
-FILE3=ar-thingatpt-utils-map.el
-FILE4=ar-thingatpt-utils-core.el
-FILE5=ar-thingatpt-utils.el
-FILE6=ar-thingatpt-highlight.el
-FILE7=ar-thingatpt-transform-delimited.el
-FILE8=ar-thingatpt-unpaired-delimited-list-in-rest-list.el
-FILE9=ar-thingatpt-classes-in-rest-list.el
-FILE10=ar-thingatpt-delimited-list-in-counts-list.el
-FILE11=ar-thingatpt-unpaired-delimited-list-in-delimited-list.el
-FILE12=ar-thingatpt-classes-in-delimited-list.el
-FILE13=ar-thingatpt-peel.el
-FILE14=ar-thingatpt-count-ratio.el
-FILE15=ar-thingatpt-transform-generic-delimited.el
-FILE16=ar-translate-paired-delimiters.el
-FILE17=ar-thingatpt-rest-list-in-region-only.el
-FILE18=ar-thingatpt-data-forms-aktiv-in-rest-list.el
-FILE19=ar-thingatpt-markup.el
-FILE20=ar-sexp.el
-FILE21=ar-comment-lor.el
-FILE22=ar-tptp-mode.el
+FILE3=ar-subr-x.el
+FILE4=ar-emacs-generics-start-Zf98zM.el
+FILE5=ar-thingatpt-utils-map.el
+FILE6=ar-thingatpt-utils-core.el
+FILE7=ar-thingatpt-utils.el
+FILE8=ar-thingatpt-highlight.el
+FILE9=ar-thingatpt-transform-delimited.el
+FILE10=ar-thingatpt-unpaired-delimited-list-in-rest-list.el
+FILE11=ar-thingatpt-classes-in-rest-list.el
+FILE12=ar-thingatpt-delimited-list-in-counts-list.el
+FILE13=ar-thingatpt-unpaired-delimited-list-in-delimited-list.el
+FILE14=ar-thingatpt-classes-in-delimited-list.el
+FILE15=ar-thingatpt-peel.el
+FILE16=ar-thingatpt-count-ratio.el
+FILE17=ar-thingatpt-transform-generic-delimited.el
+FILE18=ar-translate-paired-delimiters.el
+FILE19=ar-thingatpt-rest-list-in-region-only.el
+FILE20=ar-thingatpt-data-forms-aktiv-in-rest-list.el
+FILE21=ar-thingatpt-markup.el
+FILE22=ar-sexp.el
+FILE23=ar-comment-lor.el
+FILE24=ar-tptp-mode.el
+
 
 TEST1=test/ar-thingatpt-utils-tests.el
 TEST2=test/ar-paired-delimit-tests.el
@@ -137,12 +139,17 @@ h1 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
 -load $TEST1 \
 -f ert-run-tests-batch-and-exit
 }
+
 
 h2 () {
     $EMACS -Q --batch \
@@ -169,6 +176,10 @@ h2 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -202,6 +213,9 @@ h3 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -234,6 +248,10 @@ h4 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -266,6 +284,10 @@ h5 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -298,6 +320,10 @@ h6 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -330,6 +356,10 @@ h7 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -362,6 +392,10 @@ h8 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -394,6 +428,10 @@ h9 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -457,6 +495,10 @@ h11 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -489,6 +531,10 @@ h12 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -521,6 +567,10 @@ h13 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -553,6 +603,10 @@ h14 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -585,6 +639,10 @@ h15 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -617,6 +675,10 @@ h16 () {
 -load $FILE18 \
 -load $FILE19 \
 -load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -650,6 +712,9 @@ h17 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -683,6 +748,9 @@ h18 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -716,6 +784,9 @@ h19 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -749,6 +820,9 @@ h20 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -782,6 +856,9 @@ h21 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -815,6 +892,9 @@ h22 () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -849,6 +929,8 @@ h23 () {
 -load $FILE20 \
 -load $FILE21 \
 -load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -883,6 +965,8 @@ h24 () {
 -load $FILE20 \
 -load $FILE21 \
 -load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -917,6 +1001,12 @@ hier () {
 -load $FILE20 \
 -load $FILE21 \
 -load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -972,6 +1062,9 @@ entfernt () {
 -load $FILE19 \
 -load $FILE20 \
 -load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
 \
 -load $SETUP1 \
 -load $SETUP2 \
@@ -1005,6 +1098,7 @@ if [ $IFLOCAL -eq 0 ]; then
     WNA=$HOME/werkstatt/numbers-at-point
 
     cp -pu ${GEN}/ar-subr.el .
+    cp -pu ${GEN}/ar-subr-x.el .
     cp -pu ${GEN}/ar-beg-end.el .
     cp -pu ${GEN}/ar-emacs-generics-start-Zf98zM.el .
     cp -pu ${GEN}/ar-navigate.el .

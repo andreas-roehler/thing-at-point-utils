@@ -1,6 +1,6 @@
 ;;; ar-thing-at-point-utils-nodelim-classes-tests.el --- ar-thing-at-point-utils-nodelim-classes
 
-;; Copyright (C) 2015-2025  Andreas Roehler
+;; Copyright (C) 2015-2026  Andreas Roehler
 
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: lisp

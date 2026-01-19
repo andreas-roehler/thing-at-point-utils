@@ -1,6 +1,6 @@
 ;;; ar-thingatpt-utils-delimited-tests.el --- tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015-2025  Andreas Röhler
+;; Copyright (C) 2015-2026  Andreas Röhler
 
 ;; Author: Andreas Roehler <andreas.roehler@online.de>
 ;; Keywords: lisp

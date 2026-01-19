@@ -1,6 +1,6 @@
 ;;; ar-paired-delimit-tests.el --- more th-at-point tests -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2010-2022 Andreas Röhler, unless
+;; Copyright (C) 2010-2026 Andreas Röhler, unless
 ;; indicated otherwise
 
 ;; Author: Andreas Röhler <andreas.roehler@easy-emacs.de>, unless

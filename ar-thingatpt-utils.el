@@ -36,11 +36,6 @@
   (interactive "*")
   (ar-th-colon 'lesseranglednested))
 
-(defun ar-colon-buffer-atpt ()
-  "Colon BUFFER at point."
-  (interactive "*")
-  (ar-th-colon 'buffer))
-
 (defun ar-colon-comment-atpt ()
   "Colon COMMENT at point."
   (interactive "*")
@@ -165,11 +160,6 @@
   "Cross LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-cross 'lesseranglednested))
-
-(defun ar-cross-buffer-atpt ()
-  "Cross BUFFER at point."
-  (interactive "*")
-  (ar-th-cross 'buffer))
 
 (defun ar-cross-comment-atpt ()
   "Cross COMMENT at point."
@@ -296,11 +286,6 @@
   (interactive "*")
   (ar-th-doubleslash 'lesseranglednested))
 
-(defun ar-doubleslash-buffer-atpt ()
-  "Doubleslash BUFFER at point."
-  (interactive "*")
-  (ar-th-doubleslash 'buffer))
-
 (defun ar-doubleslash-comment-atpt ()
   "Doubleslash COMMENT at point."
   (interactive "*")
@@ -425,11 +410,6 @@
   "Backslash LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-backslash 'lesseranglednested))
-
-(defun ar-backslash-buffer-atpt ()
-  "Backslash BUFFER at point."
-  (interactive "*")
-  (ar-th-backslash 'buffer))
 
 (defun ar-backslash-comment-atpt ()
   "Backslash COMMENT at point."
@@ -556,11 +536,6 @@
   (interactive "*")
   (ar-th-backtick 'lesseranglednested))
 
-(defun ar-backtick-buffer-atpt ()
-  "Backtick BUFFER at point."
-  (interactive "*")
-  (ar-th-backtick 'buffer))
-
 (defun ar-backtick-comment-atpt ()
   "Backtick COMMENT at point."
   (interactive "*")
@@ -685,11 +660,6 @@
   "Dollar LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-dollar 'lesseranglednested))
-
-(defun ar-dollar-buffer-atpt ()
-  "Dollar BUFFER at point."
-  (interactive "*")
-  (ar-th-dollar 'buffer))
 
 (defun ar-dollar-comment-atpt ()
   "Dollar COMMENT at point."
@@ -816,11 +786,6 @@
   (interactive "*")
   (ar-th-doublequote 'lesseranglednested))
 
-(defun ar-doublequote-buffer-atpt ()
-  "Doublequote BUFFER at point."
-  (interactive "*")
-  (ar-th-doublequote 'buffer))
-
 (defun ar-doublequote-comment-atpt ()
   "Doublequote COMMENT at point."
   (interactive "*")
@@ -945,11 +910,6 @@
   "Equalize LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-equalize 'lesseranglednested))
-
-(defun ar-equalize-buffer-atpt ()
-  "Equalize BUFFER at point."
-  (interactive "*")
-  (ar-th-equalize 'buffer))
 
 (defun ar-equalize-comment-atpt ()
   "Equalize COMMENT at point."
@@ -1076,11 +1036,6 @@
   (interactive "*")
   (ar-th-escape 'lesseranglednested))
 
-(defun ar-escape-buffer-atpt ()
-  "Escape BUFFER at point."
-  (interactive "*")
-  (ar-th-escape 'buffer))
-
 (defun ar-escape-comment-atpt ()
   "Escape COMMENT at point."
   (interactive "*")
@@ -1205,11 +1160,6 @@
   "Hash LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-hash 'lesseranglednested))
-
-(defun ar-hash-buffer-atpt ()
-  "Hash BUFFER at point."
-  (interactive "*")
-  (ar-th-hash 'buffer))
 
 (defun ar-hash-comment-atpt ()
   "Hash COMMENT at point."
@@ -1336,11 +1286,6 @@
   (interactive "*")
   (ar-th-hyphen 'lesseranglednested))
 
-(defun ar-hyphen-buffer-atpt ()
-  "Hyphen BUFFER at point."
-  (interactive "*")
-  (ar-th-hyphen 'buffer))
-
 (defun ar-hyphen-comment-atpt ()
   "Hyphen COMMENT at point."
   (interactive "*")
@@ -1465,11 +1410,6 @@
   "Pipe LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-pipe 'lesseranglednested))
-
-(defun ar-pipe-buffer-atpt ()
-  "Pipe BUFFER at point."
-  (interactive "*")
-  (ar-th-pipe 'buffer))
 
 (defun ar-pipe-comment-atpt ()
   "Pipe COMMENT at point."
@@ -1596,11 +1536,6 @@
   (interactive "*")
   (ar-th-singlequote 'lesseranglednested))
 
-(defun ar-singlequote-buffer-atpt ()
-  "Singlequote BUFFER at point."
-  (interactive "*")
-  (ar-th-singlequote 'buffer))
-
 (defun ar-singlequote-comment-atpt ()
   "Singlequote COMMENT at point."
   (interactive "*")
@@ -1725,11 +1660,6 @@
   "Slash LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-slash 'lesseranglednested))
-
-(defun ar-slash-buffer-atpt ()
-  "Slash BUFFER at point."
-  (interactive "*")
-  (ar-th-slash 'buffer))
 
 (defun ar-slash-comment-atpt ()
   "Slash COMMENT at point."
@@ -1856,11 +1786,6 @@
   (interactive "*")
   (ar-th-star 'lesseranglednested))
 
-(defun ar-star-buffer-atpt ()
-  "Star BUFFER at point."
-  (interactive "*")
-  (ar-th-star 'buffer))
-
 (defun ar-star-comment-atpt ()
   "Star COMMENT at point."
   (interactive "*")
@@ -1985,11 +1910,6 @@
   "Tild LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-tild 'lesseranglednested))
-
-(defun ar-tild-buffer-atpt ()
-  "Tild BUFFER at point."
-  (interactive "*")
-  (ar-th-tild 'buffer))
 
 (defun ar-tild-comment-atpt ()
   "Tild COMMENT at point."
@@ -2116,11 +2036,6 @@
   (interactive "*")
   (ar-th-underscore 'lesseranglednested))
 
-(defun ar-underscore-buffer-atpt ()
-  "Underscore BUFFER at point."
-  (interactive "*")
-  (ar-th-underscore 'buffer))
-
 (defun ar-underscore-comment-atpt ()
   "Underscore COMMENT at point."
   (interactive "*")
@@ -2245,11 +2160,6 @@
   "Whitespace LESSERANGLEDNESTED at point."
   (interactive "*")
   (ar-th-whitespace 'lesseranglednested))
-
-(defun ar-whitespace-buffer-atpt ()
-  "Whitespace BUFFER at point."
-  (interactive "*")
-  (ar-th-whitespace 'buffer))
 
 (defun ar-whitespace-comment-atpt ()
   "Whitespace COMMENT at point."
@@ -2378,11 +2288,6 @@
   (interactive "*")
   (ar-th-delim 'lesseranglednested "`" "'"))
 
-(defun ar-symbol-buffer-atpt ()
-  "Symbol BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "`" "'"))
-
 (defun ar-symbol-comment-atpt ()
   "Symbol COMMENT at point ARG times."
   (interactive "*")
@@ -2507,11 +2412,6 @@
   "Brace LESSERANGLEDNESTED at point ARG times."
   (interactive "*")
   (ar-th-delim 'lesseranglednested "{" "}"))
-
-(defun ar-brace-buffer-atpt ()
-  "Brace BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "{" "}"))
 
 (defun ar-brace-comment-atpt ()
   "Brace COMMENT at point ARG times."
@@ -2638,11 +2538,6 @@
   (interactive "*")
   (ar-th-delim 'lesseranglednested "[" "]"))
 
-(defun ar-bracket-buffer-atpt ()
-  "Bracket BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "[" "]"))
-
 (defun ar-bracket-comment-atpt ()
   "Bracket COMMENT at point ARG times."
   (interactive "*")
@@ -2767,11 +2662,6 @@
   "Lesserangle LESSERANGLEDNESTED at point ARG times."
   (interactive "*")
   (ar-th-delim 'lesseranglednested "<" ">"))
-
-(defun ar-lesserangle-buffer-atpt ()
-  "Lesserangle BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "<" ">"))
 
 (defun ar-lesserangle-comment-atpt ()
   "Lesserangle COMMENT at point ARG times."
@@ -2898,11 +2788,6 @@
   (interactive "*")
   (ar-th-delim 'lesseranglednested ">" "<"))
 
-(defun ar-greaterangle-buffer-atpt ()
-  "Greaterangle BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer ">" "<"))
-
 (defun ar-greaterangle-comment-atpt ()
   "Greaterangle COMMENT at point ARG times."
   (interactive "*")
@@ -3027,11 +2912,6 @@
   "Curvedsinglequote LESSERANGLEDNESTED at point ARG times."
   (interactive "*")
   (ar-th-delim 'lesseranglednested "‘" "’"))
-
-(defun ar-curvedsinglequote-buffer-atpt ()
-  "Curvedsinglequote BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "‘" "’"))
 
 (defun ar-curvedsinglequote-comment-atpt ()
   "Curvedsinglequote COMMENT at point ARG times."
@@ -3158,11 +3038,6 @@
   (interactive "*")
   (ar-th-delim 'lesseranglednested "“" "”"))
 
-(defun ar-curveddoublequote-buffer-atpt ()
-  "Curveddoublequote BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "“" "”"))
-
 (defun ar-curveddoublequote-comment-atpt ()
   "Curveddoublequote COMMENT at point ARG times."
   (interactive "*")
@@ -3287,11 +3162,6 @@
   "Parentize LESSERANGLEDNESTED at point ARG times."
   (interactive "*")
   (ar-th-delim 'lesseranglednested "(" ")"))
-
-(defun ar-parentize-buffer-atpt ()
-  "Parentize BUFFER at point ARG times."
-  (interactive "*")
-  (ar-th-delim 'buffer "(" ")"))
 
 (defun ar-parentize-comment-atpt ()
   "Parentize COMMENT at point ARG times."
@@ -25937,16 +25807,6 @@ Returns beginning position of SYMBOL "
   With negative argument kill lesseranglednested(ed) at point "
   (interactive "P")
   (ar-th-base-copy-or 'lesseranglednested no-delimiters))
-
-(defun ar-buffer-or-copy-atpt (&optional no-delimiters)
-  "If region is highlighted, provide THING at point with buffer(s).
-
-  Otherwise copy buffer(ed) at point
-  With NO-DELIMITERS, copy buffer(ed) without delimiters
-  With numerical argument 2 trim buffer
-  With negative argument kill buffer(ed) at point "
-  (interactive "P")
-  (ar-th-base-copy-or 'buffer no-delimiters))
 
 (defun ar-comment-or-copy-atpt (&optional no-delimiters)
   "If region is highlighted, provide THING at point with comment(s).
