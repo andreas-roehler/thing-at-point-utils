@@ -65,7 +65,7 @@ echo "\$SETUP1: $SETUP1"
 FILE1=ar-beg-end.el
 FILE2=ar-subr.el
 FILE3=ar-subr-x.el
-# FILE4=ar-emacs-generics-start-Zf98zM.el
+FILE4=ar-vars.el
 FILE5=ar-thingatpt-utils-map.el
 FILE6=ar-thingatpt-utils-core.el
 FILE7=ar-thingatpt-utils.el
@@ -1072,6 +1072,7 @@ if [ $IFLOCAL -eq 0 ]; then
     WNA=$HOME/werkstatt/numbers-at-point
 
     cp -pu ${GEN}/ar-subr.el .
+    # cp -pu ${GEN}/ar-vars.el .
     cp -pu ${GEN}/ar-subr-x.el .
     cp -pu ${GEN}/ar-beg-end.el .
     cp -pu ${GEN}/ar-emacs-generics-start-Zf98zM.el .
