@@ -26,7 +26,7 @@
 
 (require 'py-setup-ert-tests)
 
-(ert-deftest ar-kill-comment-atpt-test ()
+(ert-deftest ar-kill-comment-atpt-test-aZDINr ()
   (py-test-with-temp-buffer-point-min
    "import time
 

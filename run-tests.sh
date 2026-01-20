@@ -65,7 +65,7 @@ echo "\$SETUP1: $SETUP1"
 FILE1=ar-beg-end.el
 FILE2=ar-subr.el
 FILE3=ar-subr-x.el
-FILE4=ar-emacs-generics-start-Zf98zM.el
+# FILE4=ar-emacs-generics-start-Zf98zM.el
 FILE5=ar-thingatpt-utils-map.el
 FILE6=ar-thingatpt-utils-core.el
 FILE7=ar-thingatpt-utils.el
@@ -122,7 +122,6 @@ h1 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -159,7 +158,6 @@ h2 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -195,7 +193,6 @@ h3 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -231,7 +228,6 @@ h4 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -267,7 +263,6 @@ h5 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -303,7 +298,6 @@ h6 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -339,7 +333,6 @@ h7 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -375,7 +368,6 @@ h8 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -411,7 +403,6 @@ h9 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -447,7 +438,6 @@ h10 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -478,7 +468,6 @@ h11 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -514,7 +503,6 @@ h12 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -550,7 +538,6 @@ h13 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -586,7 +573,6 @@ h14 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -622,7 +608,6 @@ h15 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -658,7 +643,6 @@ h16 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -694,7 +678,6 @@ h17 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -730,7 +713,6 @@ h18 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -766,7 +748,6 @@ h19 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -802,7 +783,6 @@ h20 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -838,7 +818,6 @@ h21 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -874,7 +853,6 @@ h22 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -910,7 +888,6 @@ h23 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -946,7 +923,6 @@ h24 () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -982,7 +958,6 @@ hier () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
@@ -1044,7 +1019,6 @@ entfernt () {
 -load $FILE1 \
 -load $FILE2 \
 -load $FILE3 \
--load $FILE4 \
 -load $FILE5 \
 -load $FILE6 \
 -load $FILE7 \
