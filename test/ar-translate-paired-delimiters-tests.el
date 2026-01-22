@@ -1,4 +1,4 @@
-;;; ar-translate-paired-delimiters-tests.el --- Translate delimiter chars
+;;; ar-translate-paired-delimiters-tests.el --- Translate delimiter chars -*- lexical-binding: t; -*- 
 
 ;; Copyright (C) 2014-2026  Andreas Roehler
 

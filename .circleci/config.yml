@@ -29,6 +29,7 @@ jobs:
             --eval "(setq python-indent-guess-indent-offset nil)" \
             --eval "(setq python-indent-guess-indent-offset-verbose nil)" \
             --eval "(load (expand-file-name \"ar-subr.el\"))" \
+            --eval "(load (expand-file-name \"ar-subr-x.el\"))" \
             --eval "(load (expand-file-name \"ar-beg-end.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-utils-map.el\"))" \
             --eval "(load (expand-file-name \"ar-thingatpt-basic-definitions.el\"))" \
