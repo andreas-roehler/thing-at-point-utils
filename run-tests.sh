@@ -950,6 +950,41 @@ h24 () {
 -f ert-run-tests-batch-and-exit
 }
 
+h25 () {
+    $EMACS -Q --batch \
+--eval "(message (emacs-version))" \
+--eval "(add-to-list 'load-path (getenv \"WERKSTATT/\"))" \
+--eval "(add-to-list 'load-path (getenv \"test\"))" \
+-load $FILE1 \
+-load $FILE2 \
+-load $FILE3 \
+-load $FILE5 \
+-load $FILE6 \
+-load $FILE7 \
+-load $FILE8 \
+-load $FILE9 \
+-load $FILE10 \
+-load $FILE11 \
+-load $FILE12 \
+-load $FILE13 \
+-load $FILE14 \
+-load $FILE15 \
+-load $FILE16 \
+-load $FILE17 \
+-load $FILE18 \
+-load $FILE19 \
+-load $FILE20 \
+-load $FILE21 \
+-load $FILE22 \
+-load $FILE23 \
+-load $FILE24 \
+\
+-load $SETUP1 \
+-load $SETUP2 \
+-load $TEST25 \
+-f ert-run-tests-batch-and-exit
+}
+
 hier () {
     $EMACS -Q --batch \
 --eval "(message (emacs-version))" \
@@ -1006,10 +1041,9 @@ hier () {
 -load $TEST22 \
 -load $TEST23 \
 -load $TEST24 \
+-load $TEST25 \
 -f ert-run-tests-batch-and-exit
 }
-
-# -load $TEST19 \
 
 entfernt () {
     $EMACS -Q --batch \
@@ -1109,10 +1143,13 @@ if [ $IFLOCAL -eq 0 ]; then
 	    k) echo "Lade \$TEST20: \"$TEST20\"";h20;;
 	    l) echo "Lade \$TEST21: \"$TEST21\"";h21;;
 	    m) echo "Lade \$TEST22: \"$TEST22\"";h22;;
-            # n unten für alle
-	    o) echo "Lade \$TEST14: \"$TEST14\"";h23;;
-	    p) echo "Lade \$TEST16: \"$TEST16\"";h24;;
-	    # q) echo "Lade \$TEST17: \"$TEST17\"";h17;;
+            n) echo "Lade \$TEST23: \"$TEST23\"";h23;;
+	    o) echo "Lade \$TEST24: \"$TEST24\"";h24;;
+	    p) echo "Lade \$TEST25: \"$TEST25\"";h25;; 
+            y) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
+	    z) echo "Lade testumgebung \"HIER\"";hier;;
+
+            # q) echo "Lade \$TEST17: \"$TEST17\"";h17;;
 	    # r) echo "Lade \$TEST18: \"$TEST18\"";h18;;
 	    # s) echo "Lade \$TEST19: \"$TEST19\"";h19;;
 	    # p) echo "Lade \$TEST12: \"$TEST12\"";h12;;
@@ -1123,8 +1160,7 @@ if [ $IFLOCAL -eq 0 ]; then
 	    # u) echo "Lade \$TEST17: \"$TEST17\"";h17;;
 	    # v) echo "Lade \$TEST18: \"$TEST18\"";h18;;
 	    # w) echo "Lade \$TEST19: \"$TEST19\"";h19;;
-	    x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
-	    n) echo "Lade testumgebung \"HIER\"";hier;;
+	    # x) echo "Lade testumgebung \"ENTFERNT\""; entfernt;;
 
 	esac
     done

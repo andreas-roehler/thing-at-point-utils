@@ -31,7 +31,7 @@
     'ar-verbose-p
     (goto-char (point-min))
     (ar-peel-list-atpt)
-    (should (looking-at "(&optional beg end)"))))
+    (should (looking-back "(&optional beg end)" (line-beginning-position)))))
 
 (ert-deftest ar-peel-test-MumEC3 ()
   (ar-test
