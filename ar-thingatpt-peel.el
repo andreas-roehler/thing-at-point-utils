@@ -32,8 +32,12 @@
 
 ;; Peel functions start
 (defun ar--raise-inner-list (beg end)
+  "Raise inner list.
+
+BEG
+Argument END end of list."
   (let* ((bounds (ar-bounds-of-list-atpt))
-	 (inner-beg (or (ignore-errors (caar bounds))(car-save bounds)))
+	 (inner-beg (or (ignore-errors (caar bounds))(car-safe bounds)))
 	 (inner-end
 	  (cond ((ignore-errors (listp bounds))
 		 (if (ignore-errors (numberp (cdr bounds)))
@@ -47,6 +51,7 @@
     (insert erg)))
 
 (defun ar--raise-inner-sexp (beg end)
+  ""
   (skip-chars-forward (concat "^" th-beg-delimiter ar-delimiters-atpt))
   (let* ((bounds (ar-bounds-of-delimited-atpt))
 	 (inner-beg (or (ignore-errors (caar bounds))(car-safe bounds)))
@@ -59,12 +64,10 @@
     (delete-region beg end)
     (insert erg)))
 
-(defun ar-peel-list-atpt (&optional arg)  
+(defun ar-peel-list-atpt (&optional arg)
  "Remove list at point, preserve inner lists. "
-  (interactive "*p")
-  (ar-th-peel 'list arg))
-
-
+  (interactive "*P")
+  (ar-th-peel 'list (eq 4  (prefix-numeric-value arg))))
 
 (provide 'ar-thingatpt-peel)
 ;;; ar-thingatpt-peel.el ends here
