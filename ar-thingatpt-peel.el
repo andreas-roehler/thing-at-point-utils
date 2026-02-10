@@ -28,7 +28,6 @@
 
 ;;; Code:
 
-(require 'ar-thingatpt-basic-definitions)
 (require 'ar-thingatpt-utils-core)
 
 ;; Peel functions start
@@ -60,7 +59,7 @@
     (delete-region beg end)
     (insert erg)))
 
-(defun ar-peel-list-atpt (&optional arg)
+(defun ar-peel-list-atpt (&optional arg)  
  "Remove list at point, preserve inner lists. "
   (interactive "*p")
   (ar-th-peel 'list arg))
