@@ -88,6 +88,7 @@
 
 ;; Compatibility code - Set highlight-foregroundcolor.
 
+;;;###autoload
 (defun highlight-thing-set-fg-color (color)
   "Set foregroundcolor for highlighting cursor-word to COLOR.
 Key: \\[highlight-thing-set-fg-color]"
@@ -98,6 +99,7 @@ Key: \\[highlight-thing-set-fg-color]"
 
 ;; Compatibility code - Set highlight-backgroundcolor.
 
+;;;###autoload
 (defun highlight-thing-set-bg-color (color)
   "Set backgroundcolor for highlighting cursor-word to COLOR.
 Key: \\[highlight-thing-set-bg-color]"
